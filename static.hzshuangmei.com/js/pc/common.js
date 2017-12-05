@@ -80,7 +80,7 @@ var tools = (
             }
         }
         module.addKSTScript = function() {
-            addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=391627&fI=78939");
+            addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=391627&fI=778788");
         };
         module.addBaiduScript = function() {
             addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103 ");
