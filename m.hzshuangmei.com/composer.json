@@ -1,0 +1,7 @@
+{
+  "name" : "demo",
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.org/"
+  } ]
+}
