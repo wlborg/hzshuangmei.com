@@ -65,9 +65,10 @@
 .article_case_content p .fon2{
     font-size: 14px;
     display: inline-block;
-    width: 619px;
+    width: 670px;
     position: relative;
-    top: 18px;
+    top: -18px;
+    left: 39px;
 }
 .article_case_content .data_b{
     width:707px;
