@@ -216,13 +216,14 @@ header h1 img {
     width: 187px;
     height: 170px;
     overflow: hidden;
+    margin-bottom: 27px;
 }
 #expert .last-one {
     width: 342px;
     height: 360px;
 }
 #expert img {
-    width:100%;
+    width:98%;
     padding: 1px;
     border: 1px solid #e7e7e7;
 
@@ -328,7 +329,7 @@ nav > ul > li ul .n_button a {
     width: 189px;
     height: 26px;
     position: relative;
-    top: -89px;
+    top: -84px;
     line-height: 28px;
 }
 
@@ -460,7 +461,7 @@ nav > ul > li ul .n_button a {
     height: 2px;
     background-color: #8a5ea8;
     position: relative;
-    top: -91px;
+    top: -86px;
     left: 79px;
 }
 
