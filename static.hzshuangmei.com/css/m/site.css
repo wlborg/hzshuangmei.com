@@ -353,9 +353,11 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .article .article-main { padding: 1.25rem 2% 2rem; font-size: 0.6rem; line-height: 1.5; color: #565656; text-align: justify;}
 .doctor-article .article-main, .project-article .article-main { padding: 0 2%; }
 .article .article-main h1, .article .article-main h2, .article .article-main h3, .article .article-main h4, .article .article-main h5, .article .article-main h6 { color: #303030; }
-.article .article-main P { margin-top: 0.4rem; margin-bottom: 0.4rem; }
-.article .article-main img { margin-top: 0.25rem; margin-bottom: 0.25rem; width: 100%; max-width: 20rem; }
-.equipment .article-main img { width: 50%; }
+.article .article-main P { margin-top: 0.4rem; margin-bottom: 0.4rem; text-indent: 2em;}
+.article .article-main img { margin-top: 0.25rem; margin-bottom: 0.25rem; width: 100%; max-width: 20rem;display: block; }
+/* .equipment .article-main img { width: 50%; } */
+.article .article-main ol li{list-style: decimal;}
+.article .article-main ul li{list-style: disc ;}
 .article .article-main em{margin-top:-0.4rem;display:block;text-align:center;font-size: 0.4rem;}
 .relate-link { margin-top: 2.5em; margin-bottom: 1em; padding: 0 2% 1.5rem; font-size: 0.3rem; color: #6a6a6a; line-height: 0.85rem; }
 .relate-link a {    /* display:block; */
