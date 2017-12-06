@@ -219,7 +219,7 @@ header h1 img {
 }
 #expert .last-one {
     width: 342px;
-    height: 360px;
+    height: 364px;
 }
 #expert img {
     width: 98%;
@@ -227,10 +227,8 @@ header h1 img {
 }
 
 #expert img:last-child {
-    width: 342px;
+    width: 338px;
     height: 360px;
-    border: 1px solid #e7e7e7;
-    padding: 1px;
 
 }
 
@@ -308,13 +306,14 @@ nav > ul > li ul .n_button a {
     padding-bottom: 0;
     margin-top: -10px;
     border: 1px solid #e7e7e7;
-    margin-bottom: 27px;
+    margin-bottom: 31px;
 }
 
 #expert ul li:first-child {
     padding-top: 5px;
     border: none;
     height: 50px;
+    margin-bottom: 26px;
 }
 
 #expert h5 {
