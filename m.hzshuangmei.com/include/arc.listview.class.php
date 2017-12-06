@@ -1014,7 +1014,8 @@ class ListView
         }
         else
         {
-            $indexpage="<li>首页</li>\r\n";
+            // $indexpage="<li>首页</li>\r\n";
+            $indexpage="\r\n";
         }
 
         //下一页,未页的链接
@@ -1025,7 +1026,8 @@ class ListView
         }
         else
         {
-            $endpage="<li>末页</li>\r\n";
+            // $endpage="<li>末页</li>\r\n";
+            $endpage="\r\n";
         }
 
         //option链接
