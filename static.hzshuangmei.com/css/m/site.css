@@ -108,7 +108,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #news p { font-size: 0.35rem; line-height: 1.5em; color: #cacaca; padding-right: 1.125rem; }
 #news .item, #video .item { position: relative; overflow: hidden; }
 #news .more, #video .more { position: absolute; bottom: 0; right: 0; text-transform: uppercase; display: block; border: solid 1px #a69ec4; width: 1.125rem; height: 0.4rem; font-size: 0.3rem; line-height: 0.4rem; color: #8276ab; text-align: center; }
-#video { position: relative; padding: 0.35rem 3% 0.35rem 2%; background: #ededed; }
+#video { position: relative; padding: 0.35rem 3% 0.35rem 2%; background: #ededed;min-height:.55rem;}
 #video .item { padding-left: 4.85rem;    /* height: 42rem/@fb; */ }
 #video h2 { position: absolute; top: 0; bottom: 0; left: 2%; margin: auto; padding-right: 0.6rem; border-right: dotted 0.05rem #cfcdcd;    /* padding-right: 18rem/@fb; */ font-size: 0.65rem; line-height: 0.65rem; color: #9464b4;    /* width: 105rem/@fb; */ height: 1em; }
 #video .icon-show { display: inline-block; vertical-align: middle; width: 1.42307692em; height: 0.80769231em; background: url('//img.hzshuangmei.com/m/icon_show.png') center center no-repeat; background-size: 100%; }
