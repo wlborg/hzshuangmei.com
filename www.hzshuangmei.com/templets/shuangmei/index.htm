@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
 <head>
@@ -417,9 +418,9 @@
                 </li>
                 {/dede:arclist}
             </ul>
-
+<!--111-->
             <ul class="clearFix">
-                {dede:arclist typeid=13 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project" channelid="19"}
+                {dede:arclist typeid=12 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project" channelid="19"}
                 <li>
                     <div class="clients_t">
                         <a href="[field:arcurl/]">
@@ -427,7 +428,7 @@
                             <span>术前</span>
                             <p>[美丽蜕变] [field:title/]</p>
                         </a>
-                        <a href="[field:arcurl/]">
+                        <a href="[field:arcurl/]" class="qiehuan">
                             <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
                             <span>术后</span>
                             <p>[美丽蜕变] [field:title/]</p>
@@ -450,7 +451,6 @@
         <ul class="clearFix">
             <li>
                 <h2><a href="/honors/">红妆荣誉<span>Red makeup honor</span></a></h2>
-
                 <div class="swiper-button-next swiper-button-next5 swiper-button-next5_1"></div>
                 <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_1"></div>
                 <div class="swiper-container swiper-container5 swiper-container5_1">
