@@ -223,6 +223,7 @@ header h1 img {
 }
 #expert img {
     width: 98%;
+    padding: 1px;
 }
 
 #expert img:last-child {
