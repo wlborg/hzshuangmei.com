@@ -644,3 +644,27 @@ Error: You have an error in your SQL syntax; check the manual that corresponds t
 Time2017-12-05 09:28:38
 */
 ?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b  
+           where a.id =b.aid and a.typeid in ( 46,47,48, )  order by rand() limit 4 </font>
+Time2017-12-05 16:05:27
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b  
+           where a.id =b.aid and a.typeid in ( 46,47,48, )  order by rand() limit 4 </font>
+Time2017-12-05 17:17:36
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b  
+           where a.id =b.aid and a.typeid in ( 46,47,48, )  order by rand() limit 4 </font>
+Time2017-12-05 17:55:45
+*/
+?>
