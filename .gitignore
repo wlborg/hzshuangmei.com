@@ -1,7 +1,6 @@
 /components/
 /default*/
 *.html
-*.xml
 *.tar.gz
 *.tar
 !*.php
