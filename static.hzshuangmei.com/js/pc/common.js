@@ -106,7 +106,7 @@ var tools = (
             var hostname = window.location.hostname;
            var urls=window.location.href.split("/");
           urls.pop();
-      var hostname = urls.join("/");
+          hostname = urls.join("/");
             $("a:not([href=''],[href='#'],[class*='j-consult'])").on('mouseenter', function(event) {
                 var bool = false;
                  //鼠标指向的链接
@@ -254,7 +254,7 @@ $(function() {
     tools.addBaiduScript();
     tools.bindConsultHref();
     //资源预加载
-    tools.preReady();
+   //   tools.preReady();
     //禁止盗图
     tools.anti_Stealing_Images();
 });
