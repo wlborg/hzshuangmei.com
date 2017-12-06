@@ -1,0 +1,11 @@
+/* TEAM */
+UI Designers：全体设计团队
+FE Developers：陈晓珍 王苗
+Operators：全体编辑
+Location：海口 中国
+
+/* SITE */
+Language：中文
+Standards:HTML5,CSS3,Javascript...
+Components：jQuery,swiper,etc
+IDE: Sublime Text,VS Code, Photoshop,FlashFXP,etc
