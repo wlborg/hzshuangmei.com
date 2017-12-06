@@ -141,7 +141,7 @@ h3{
 .case-article-modal{position: fixed;top:0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, .6);z-index: -10;visibility: hidden;}
 .case-article-modal.case-show{z-index: 99999;visibility: visible;}
 .case-article-modal .case-modal-imgbox{height:80%;width:50%;position: absolute;top:0;bottom: 0;left:0;right:0;margin:auto;z-index:10;margin:auto;}
-.case-article-modal  #case-modal-img{max-height:100%;position: absolute;top:0;bottom: 0;left:0;right:0;margin:auto;}
+.case-article-modal  #case-modal-img{max-height:100%;max-width:80%;position: absolute;top:0;bottom: 0;left:0;right:0;margin:auto;}
 .case-article-modal .case-close { position: absolute; top:10%; right:10%; width: 44px; height: 44px; background: url('//img.hzshuangmei.com/pc/btn_close2.png') center center no-repeat; background-size: 100%; }
 .case-article-modal .case-close:hover { cursor: pointer; }
 .case-article-modal .case-btn{position:absolute;display:block;width:84px;height:164px}
