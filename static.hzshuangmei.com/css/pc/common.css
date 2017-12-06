@@ -219,7 +219,7 @@ header h1 img {
 }
 #expert .last-one {
     width: 342px;
-    height: 364px;
+    height: 362px;
 }
 #expert img {
     width: 98%;
@@ -227,7 +227,7 @@ header h1 img {
 }
 
 #expert img:last-child {
-    width: 338px;
+    width: 340px;
     height: 360px;
 
 }
