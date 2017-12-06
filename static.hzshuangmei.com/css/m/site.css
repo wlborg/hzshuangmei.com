@@ -148,8 +148,8 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #diary .des { margin-top: 0.3rem; font-size: 0.4rem; line-height: 1.5em;    /* color: #b6b6b6; */ color: #3e3d3d }
 #diary .pic { margin-top: 0.5rem; }
 #diary .pic img { width: 100%; display: block; }
-#diary .before { float: left; position: relative; overflow: hidden; width: 50%; max-width: 7.35rem; }
-#diary .after { float: left; position: relative; overflow: hidden; width: 50%; max-width: 7.35rem; }
+#diary .before { float: left; position: relative; overflow: hidden; width: 50%; max-width: 7.35rem;outline: solid 1px #eaeaea; }
+#diary .after { float: left; position: relative; overflow: hidden; width: 50%; max-width: 7.35rem;outline: solid 1px #eaeaea; }
 #diary .flag { position: absolute; left: 0; bottom: -1rem; width: 2rem; height: 2rem; border-top-right-radius: 1.25rem; border-bottom-right-radius: 1.25rem; background: rgba(154, 66, 172, 0.4); font-size: 0.5rem; line-height: 1rem; color: #fff; padding-left: 0.5rem; }
 #diary .label { padding: 0.4rem 0 0.5rem; height: 0.8rem; line-height: 0.8rem; }
 #diary .label span { display: inline-block; vertical-align: middle; }
