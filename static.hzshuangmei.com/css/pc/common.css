@@ -213,7 +213,7 @@ header h1 img {
     height: 460px;
 }
 #expert a {
-    width: 187px;
+    width: 188px;
     height: 169px;
     overflow: hidden;
 }
@@ -326,12 +326,12 @@ nav > ul > li ul .n_button a {
 
 
 #expert p {
-    background-color: rgba(255, 255, 255, 0.502);
-    width:187px;
+    background-color: rgba(255,255,255,.502);
+    width: 187px;
     height: 26px;
     position: relative;
-    top: -81px;
-    line-height: 28px;
+    top: -84px;
+    line-height: 26px;
 }
 
 .n_f {
@@ -462,7 +462,7 @@ nav > ul > li ul .n_button a {
     height: 2px;
     background-color: #8a5ea8;
     position: relative;
-    top: -84px;
+    top: -86px;
     left: 79px;
 }
 
