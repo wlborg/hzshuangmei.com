@@ -103,26 +103,40 @@ var tools = (
              当鼠标指向超链接的时候，预加载prerender,当鼠标离开的时候取消prerender
         */
         module.preReady = function() {
-            var hostname = window.location.hostname;
+            // var hostname = window.location.hostname;
+            var urls=window.location.href.split("/");
+           urls.pop();
+       var hostname = urls.join("/");
             $("a:not([href=''],[href='#'],[class*='j-consult'])").on('mouseenter', function(event) {
                 var bool = false;
-                var pre_url = $(this).attr("href");
+                 //鼠标指向的链接
+                var pre_url = $(this).attr("href").split("/");
+                if(pre_url[0]==""){
+                            pre_url.shift();
+                }
+                   pre_url=pre_url.join("/");
                 $("link").each(function() {
-                    if (($(this).attr("href") == pre_url)) { //判断是否已经存在存在则不添加
+                    if (($(this).attr("href") == pre_url)) { //判断是否已经存在,存在则不添加
                         bool = true;
                     }
                 });
                 if (!bool) {
-                    $("head").append('<link rel="prefetch" href="//' + hostname +"/"+ pre_url + '">');
-                    $("head").append('<link rel="preconnect" href="//' + hostname+"/" + pre_url + '">');
-                    $("head").append('<link rel="prerender" href="//' + hostname +"/"+ pre_url + '">');
+                    // $("head").append('<link rel="prefetch" href="//' + hostname +"/"+ pre_url + '">');
+                    // $("head").append('<link rel="preconnect" href="//' + hostname+"/" + pre_url + '">');
+                    // $("head").append('<link rel="prerender" href="//' + hostname +"/"+ pre_url + '">');
+                    $("head").append('<link rel="prefetch" href="' + hostname +"/"+ pre_url + '">');
+                    $("head").append('<link rel="preconnect" href="' + hostname+"/" + pre_url + '">');
+                    $("head").append('<link rel="prerender" href="' + hostname +"/"+ pre_url + '">');
                 }
             });
             $("a:not([href=''],[href='#'])").on('mouseleave', function(event) {
                 var pre_url = $(this).attr("href"); //只要鼠标移出就删除  不用判断
-                $('link[rel="prefetch"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                $('link[rel="preconnect"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                $('link[rel="prerender"][href="//' + hostname +"/"+ pre_url + '"]').remove();
+                // $('link[rel="prefetch"][href="//' + hostname +"/"+ pre_url + '"]').remove();
+                // $('link[rel="preconnect"][href="//' + hostname +"/"+ pre_url + '"]').remove();
+                // $('link[rel="prerender"][href="//' + hostname +"/"+ pre_url + '"]').remove();
+                $('link[rel="prefetch"][href="' + hostname +"/"+ pre_url + '"]').remove();
+                $('link[rel="preconnect"][href="' + hostname +"/"+ pre_url + '"]').remove();
+                $('link[rel="prerender"][href="' + hostname +"/"+ pre_url + '"]').remove();
             });
         };
 /*

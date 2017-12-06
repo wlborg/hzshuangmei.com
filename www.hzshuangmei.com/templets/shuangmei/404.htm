@@ -5,7 +5,7 @@
     <title>404_{dede:global.cfg_webname/}</title>
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
-    {dede:include filename="_link.htm"/} 
+    {dede:include filename="_link.htm"/}
  <style>
     .error-body {
         width: 980px;
@@ -33,7 +33,7 @@
         margin-top: 30px;
     }
     </style>
-</head>    
+</head>
 <body>
 {dede:include filename="_header.htm"/}
 
@@ -53,13 +53,14 @@
 </body>
 {dede:include filename="_script.htm"/}
 </html>
-<script type="text/javascript" language="javascript">   
-function iFrameHeight() {   
-var ifm= document.getElementById("iframepage");   
-var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+<script type="text/javascript" language="javascript">
+function iFrameHeight() {
+var ifm= document.getElementById("iframepage");
+var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;
 if(ifm != null && subWeb != null) {
    ifm.height = subWeb.body.scrollHeight;
    ifm.width = subWeb.body.scrollWidth;
-}   
-}   
+}
+}
 </script>
+<!--  404 page -->
