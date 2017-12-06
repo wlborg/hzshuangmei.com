@@ -254,7 +254,7 @@ $(function() {
     tools.addBaiduScript();
     tools.bindConsultHref();
     //资源预加载
-     tools.preReady();
+  //     tools.preReady();
     //禁止盗图
     tools.anti_Stealing_Images();
 });
