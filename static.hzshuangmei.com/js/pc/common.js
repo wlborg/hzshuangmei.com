@@ -103,20 +103,19 @@ var tools = (
              当鼠标指向超链接的时候，预加载prerender,当鼠标离开的时候取消prerender
         */
         module.preReady = function() {
-            // var hostname = window.location.hostname;
-           // var urls=window.location.href.split("/");
-        //   urls.pop();
-      // var hostname = urls.join("/");
+            var hostname = window.location.hostname;
+           var urls=window.location.href.split("/");
+          urls.pop();
+      var hostname = urls.join("/");
             $("a:not([href=''],[href='#'],[class*='j-consult'])").on('mouseenter', function(event) {
                 var bool = false;
                  //鼠标指向的链接
-             //   var pre_url = $(this).attr("href").split("/");
+               var pre_url = $(this).attr("href").split("/");
 
-                // if(pre_url[0]==""){
-                //             pre_url.shift();
-                // }
-                //    pre_url=pre_url.join("/");
-                 var pre_url = $(this).attr("href");
+                if(pre_url[0]==""){
+                            pre_url.shift();
+                }
+                   pre_url=pre_url.join("/");
                 $("link").each(function() {
                     if (($(this).attr("href") == pre_url)) { //判断是否已经存在,存在则不添加
                         bool = true;
@@ -126,9 +125,9 @@ var tools = (
                     // $("head").append('<link rel="prefetch" href="//' + hostname +"/"+ pre_url + '">');
                     // $("head").append('<link rel="preconnect" href="//' + hostname+"/" + pre_url + '">');
                     // $("head").append('<link rel="prerender" href="//' + hostname +"/"+ pre_url + '">');
-                    $("head").append('<link rel="prefetch" href="'+ pre_url + '">');
-                    $("head").append('<link rel="preconnect" href="' + pre_url + '">');
-                    $("head").append('<link rel="prerender" href="' +  pre_url + '">');
+                    $("head").append('<link rel="prefetch" href="'+hostname+ "/"+pre_url + '">');
+                    $("head").append('<link rel="preconnect" href="'+hostname+ "/"+ pre_url + '">');
+                    $("head").append('<link rel="prerender" href="'+hostname+ "/" +  pre_url + '">');
                 }
             });
             $("a:not([href=''],[href='#'])").on('mouseleave', function(event) {
@@ -136,9 +135,9 @@ var tools = (
                 // $('link[rel="prefetch"][href="//' + hostname +"/"+ pre_url + '"]').remove();
                 // $('link[rel="preconnect"][href="//' + hostname +"/"+ pre_url + '"]').remove();
                 // $('link[rel="prerender"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                $('link[rel="prefetch"][href="' + pre_url + '"]').remove();
-                $('link[rel="preconnect"][href="' + pre_url + '"]').remove();
-                $('link[rel="prerender"][href="' +  pre_url + '"]').remove();
+                $('link[rel="prefetch"][href="'+hostname+ "/" + pre_url + '"]').remove();
+                $('link[rel="preconnect"][href="'+hostname+ "/" + pre_url + '"]').remove();
+                $('link[rel="prerender"][href="' +hostname+ "/"+  pre_url + '"]').remove();
             });
         };
 /*
