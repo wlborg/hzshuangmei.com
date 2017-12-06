@@ -214,19 +214,15 @@ header h1 img {
 }
 #expert a {
     width: 187px;
-    height: 170px;
+    height: 169px;
     overflow: hidden;
-    margin-bottom: 27px;
 }
 #expert .last-one {
     width: 342px;
     height: 360px;
 }
 #expert img {
-    width:98%;
-    padding: 1px;
-    border: 1px solid #e7e7e7;
-
+    width: 98%;
 }
 
 #expert img:last-child {
@@ -306,13 +302,18 @@ nav > ul > li ul .n_button a {
 }
 
 #expert ul li {
+    width: 187px;
+    height: 170px;
     padding-bottom: 0;
     margin-top: -10px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 27px;
 }
 
 #expert ul li:first-child {
-    padding-bottom: 25px;
-    padding-top: 5px
+    padding-top: 5px;
+    border: none;
+    height: 50px;
 }
 
 #expert h5 {
@@ -326,10 +327,10 @@ nav > ul > li ul .n_button a {
 
 #expert p {
     background-color: rgba(255, 255, 255, 0.502);
-    width: 189px;
+    width:187px;
     height: 26px;
     position: relative;
-    top: -84px;
+    top: -81px;
     line-height: 28px;
 }
 
@@ -461,7 +462,7 @@ nav > ul > li ul .n_button a {
     height: 2px;
     background-color: #8a5ea8;
     position: relative;
-    top: -86px;
+    top: -84px;
     left: 79px;
 }
 
