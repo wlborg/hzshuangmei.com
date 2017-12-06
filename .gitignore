@@ -7,6 +7,10 @@
 !*.php
 !*.css
 !*.js
+.txt
+.project
+.buildpath
+composer.json
 /.well-known
 /www.hzshuangmei.com/a/
 /m.hzshuangmei.com/a/
