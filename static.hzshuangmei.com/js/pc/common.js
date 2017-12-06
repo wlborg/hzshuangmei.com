@@ -109,9 +109,14 @@ var tools = (
        var hostname = urls.join("/");
             $("a:not([href=''],[href='#'],[class*='j-consult'])").on('mouseenter', function(event) {
                 var bool = false;
-                var pre_url = $(this).attr("href");
+                 //鼠标指向的链接
+                var pre_url = $(this).attr("href").split("/");
+                if(pre_url[0]==""){
+                            pre_url.shift();
+                }
+                   pre_url=pre_url.join("/");
                 $("link").each(function() {
-                    if (($(this).attr("href") == pre_url)) { //判断是否已经存在存在则不添加
+                    if (($(this).attr("href") == pre_url)) { //判断是否已经存在,存在则不添加
                         bool = true;
                     }
                 });
