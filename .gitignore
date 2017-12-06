@@ -1,8 +1,8 @@
 /components/
 /default*/
 *.html
-!/alidata1/web/www.hzshuangmei.com/xapp/templets/admin/
-!/alidata1/web/m.hzshuangmei.com/xapp/templets/admin/
+!/alidata1/web/www.hzshuangmei.com/xapp/templets/admin/*.xml
+!/alidata1/web/m.hzshuangmei.com/xapp/templets/admin/*.xml
 *.xml
 *.tar.gz
 *.tar
