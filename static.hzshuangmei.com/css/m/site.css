@@ -359,6 +359,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .article .article-main ol li{list-style: decimal;}
 .article .article-main ul li{list-style: disc ;}
 .article .article-main em{margin-top:-0.4rem;display:block;text-align:center;font-size: 0.4rem;}
+.article .article-main br{display: none;}
 .relate-link { margin-top: 2.5em; margin-bottom: 1em; padding: 0 2% 1.5rem; font-size: 0.3rem; color: #6a6a6a; line-height: 0.85rem; }
 .relate-link a {    /* display:block; */
 font-size: 0.3rem; line-height: 0.85rem; color: #6a6a6a; }
