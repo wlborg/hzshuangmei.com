@@ -46,13 +46,13 @@
 /*}*/
 .article_case_content .data p i{
     display: inline-block;
-     width: 7px;
-     height: 7px;
+    width: 7px;
+    height: 7px;
     margin-right: 3px;
     position: relative;
-    top: 2px;
-    border:1px solid #af9ac6;
-    border-radius: 10%;
+    top: -1px;
+    border: 1px solid #af9ac6;
+    border-radius: 50%;
 }
 /*.article_case_content .data p .beauty{*/
     /*background:url(//img.hzshuangmei.com/pc/beauty.png) no-repeat center;*/
@@ -76,8 +76,8 @@
     display: inline-block;
     width: 670px;
     position: relative;
-    top: -18px;
-    left: 39px;
+    top: -20px;
+    left: 79px;
 }
 .article_case_content .data_b{
     width:707px;
@@ -90,10 +90,10 @@
     position:relative;
     top:-17px;
 }
-.article_case_content .data_b .fon1{
-    position:relative;
-    top:-17px;
-}
+/*.article_case_content .data_b .fon1{*/
+    /*position:relative;*/
+    /*top:-17px;*/
+/*}*/
 h3{
     color:#7d5599;
     font-size:30px;
