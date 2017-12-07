@@ -13,6 +13,8 @@ table { border-collapse:collapse; }
     display: block;
     clear: both;
 }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
 .shuang_m1 {
     width: 1200px;
     margin: 0 auto;
@@ -88,12 +90,12 @@ header .top .shuang_m1 .qq {
     background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center;
 }
 
-header h1 {
+header .sm_logo {
     text-align: center;
     height: 131px;
 }
 
-header h1 img {
+header .sm_logo img {
     padding-top: 7px;
     display: inline-block;
 }
