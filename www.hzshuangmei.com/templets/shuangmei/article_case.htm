@@ -3,7 +3,7 @@
 
 <head>
     {dede:include filename="_meta.htm"/}
-    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <title>{dede:field.title/}的{dede:field.typename/}美丽日记_{dede:global.cfg_webname/}</title>
     <meta name="keywords" content="{dede:field name='keywords'/}" />
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
     {dede:include filename="_link.htm"/}
@@ -72,6 +72,10 @@
                         </div>
                     </div>
                     {dede:field.body/}
+                </div>
+                <div class="page clearFix">
+                    <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
+                    <p><span>下一篇：</span>{dede:prenext get='pre'/}</p>
                 </div>
                 {dede:include filename="article_bottom.htm"/}
             </div>
