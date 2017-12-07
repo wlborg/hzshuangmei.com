@@ -51,7 +51,7 @@
     font-size:12px;
     color:#8e8e8e;
 }
-.article_case_content .tit i{
+.article_case_content .tit a{
     display:inline-block;
     width:66px;
     height:19px;
