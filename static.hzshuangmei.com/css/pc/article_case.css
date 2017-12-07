@@ -36,33 +36,41 @@
 .article_case_content .data_t>div:last-child{
     margin-left:68px;
 }
+/*.article_case_content .data p i{*/
+    /*display: inline-block;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*margin-right: 3px;*/
+    /*position: relative;*/
+    /*top: 2px;*/
+/*}*/
 .article_case_content .data p i{
     display: inline-block;
-    /* width: 7px; */
-    /* height: 7px; */
-    width: 20px;
-    height: 20px;
+     width: 7px;
+     height: 7px;
     margin-right: 3px;
     position: relative;
     top: 2px;
+    border:1px solid #af9ac6;
+    border-radius: 10%;
 }
-.article_case_content .data p .beauty{
-    background:url(//img.hzshuangmei.com/pc/beauty.png) no-repeat center;
-}
-.article_case_content .data p .case{
-    background:url(//img.hzshuangmei.com/pc/case.png) no-repeat center;
-}
-.article_case_content .data p .doctor{
-    background:url(//img.hzshuangmei.com/pc/doctor.png) no-repeat center;
-}
-.article_case_content .data p .comment{
-    background:url(//img.hzshuangmei.com/pc/comment.png) no-repeat center;
-    top: 4px;
-}
-/*.article_case_content p .fon1{*/
-    /*color:#313030;*/
-    /*font-size:16px;*/
+/*.article_case_content .data p .beauty{*/
+    /*background:url(//img.hzshuangmei.com/pc/beauty.png) no-repeat center;*/
 /*}*/
+/*.article_case_content .data p .case{*/
+    /*background:url(//img.hzshuangmei.com/pc/case.png) no-repeat center;*/
+/*}*/
+/*.article_case_content .data p .doctor{*/
+    /*background:url(//img.hzshuangmei.com/pc/doctor.png) no-repeat center;*/
+/*}*/
+/*.article_case_content .data p .comment{*/
+    /*background:url(//img.hzshuangmei.com/pc/comment.png) no-repeat center;*/
+    /*top: 4px;*/
+/*}*/
+.article_case_content p .fon1{
+    color:#313030;
+    font-size:16px;
+}
 .article_case_content p .fon2{
     font-size: 14px;
     display: inline-block;
