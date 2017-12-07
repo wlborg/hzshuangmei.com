@@ -13,6 +13,8 @@ table { border-collapse:collapse; }
     display: block;
     clear: both;
 }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
 .shuang_m1 {
     width: 1200px;
     margin: 0 auto;
