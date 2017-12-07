@@ -26,3 +26,55 @@ ol,ul,dl
 p {
     text-indent: 2em;
 }
+
+ .step {
+    border-bottom: solid 1px #f0f0f0;
+    padding: 30px 5%
+}
+
+ .step .title {
+    position: relative;
+    display: inline-block;
+    background: #cbbfe3;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height:28px;
+    color: #fff;
+}
+
+.step .title strong {
+    color: #cf35ba;
+    font-weight: normal
+}
+
+.step .title i {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #cbbfe3;
+    border-width: 14px 10px
+}
+
+ .step .des {
+    margin-top: 6px;
+    margin-bottom: 24px;
+    font-size: 20px;;
+    line-height: 1.6;
+    color: #9b71a5;
+    text-indent:0;
+}
+
+.step .pic {
+    font-size: 0
+}
+
+ .step .pic img {
+    display: inline-block;
+    width: 49%;
+    margin: 0 1% 1% 0
+}
