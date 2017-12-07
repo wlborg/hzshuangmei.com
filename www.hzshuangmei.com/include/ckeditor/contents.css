@@ -27,7 +27,8 @@ p {
     text-indent: 2em;
 }
 .main_content h4 {
-    height: 32px
+    height: 32px;
+	font-weight:normal;
 }
 
  .main_content h4 span {
