@@ -21,8 +21,7 @@
     margin-left: 15px;
 }
 .article_case_content .data_t>div{
-    /* float:left; */
-    line-height: 43px;
+    margin: 13px 0 20px;
 }
 .article_case_content .data_t>div p {
     float: left;
@@ -103,7 +102,7 @@
     display: inline-block;
     width: 610px;
     position: relative;
-    top: -19px;
+    top: -20px;
     left: 92px;
 }
 .article_case_content p .fon3 {
@@ -113,6 +112,9 @@
     position: relative;
     top: -22px;
     left: 92px;
+    color: #8c4a99;
+}
+.article_case_content p .fon3 a {
     color: #8c4a99;
 }
 .article_case_content .data_b{
