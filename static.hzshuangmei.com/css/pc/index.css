@@ -270,7 +270,7 @@ h3 img{
 .index_expert #tabCon3{
     width:1200px;
     margin:44px auto 0;
-    height: 448px;
+    height: 478px;
 }
 .index_expert #tabCon3 p {
     height: 53px;
@@ -435,6 +435,7 @@ h3 img{
     display:block;
     width:354px!important;
     color: #693290;
+    margin-left: 1px;
 }
 .index_environment ul li>h2{
 font-size:22px;
