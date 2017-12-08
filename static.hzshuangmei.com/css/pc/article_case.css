@@ -132,13 +132,15 @@ h3{
     color: #575757;
     margin: 12px 0 19px 28px;
     line-height: 1.5em;
+    width: 830px;
+    text-align: justify;
 }
 .article_case_content .main .main_content div{
     margin:0 0 52px 28px;
 }
 .article_case_content .main .main_content div>img{
     float:left;
-    margin-right:10px;
+    margin-right: 16px;
     margin-bottom: 10px;
     width: 31%;
     border: 1px solid #ebebeb;
