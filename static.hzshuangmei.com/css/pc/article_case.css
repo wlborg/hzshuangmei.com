@@ -74,7 +74,7 @@
     display: inline-block;
     width: 7px;
     height: 7px;
-    margin-right: 3px;
+    margin-right: 5px;
     position: relative;
     top: -1px;
     border: 1px solid #af9ac6;
@@ -104,8 +104,16 @@
     width: 610px;
     position: relative;
     top: -19px;
-    /* border: 1px solid blue; */
     left: 92px;
+}
+.article_case_content p .fon3 {
+    font-size: 18px;
+    display: inline-block;
+    width: 610px;
+    position: relative;
+    top: -22px;
+    left: 92px;
+    color: #8c4a99;
 }
 .article_case_content .data_b{
     /* width:707px; */
