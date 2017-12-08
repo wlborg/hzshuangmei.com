@@ -550,7 +550,7 @@ function getCaseArticleRelateProject($typeid)
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
     }
     if($ns>0){
-          $relateproject.= ' <div class="imgbox">
+          $relateproject= ' <div class="imgbox">
                         '.$relateproject.'
                          </div> ';
     }
@@ -692,7 +692,7 @@ function getDoctorArticleRelateProject($typeid)
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
     }
     if($ns>0){
-          $relateproject.= ' <div class="imgbox">
+          $relateproject= ' <div class="imgbox">
                         '.$relateproject.'
                          </div> ';
     }
@@ -1010,7 +1010,7 @@ function getProjectArticleRelateProject($id)
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
     }
     if($ns>0){
-          $relateproject.= ' <div class="imgbox">
+          $relateproject= ' <div class="imgbox">
                         '.$relateproject.'
                          </div> ';
     }
