@@ -11,7 +11,9 @@
     color:#5a5a5a;
     padding-top: 20px;
 }
-
+.article_case_content .data>div {
+    float: left;
+}
 .article_case_content .data_t{
     /* padding-top:20px; */
     width: 700px;
@@ -21,6 +23,12 @@
 .article_case_content .data_t>div{
     /* float:left; */
     line-height: 43px;
+}
+.article_case_content .data_t>div p {
+    float: left;
+}
+.article_case_content .data_t>div p:last-child {
+    margin-left: 195px;
 }
 /* .article_case_content .data_t>div:first-child{
     margin-left:40px;
@@ -49,7 +57,6 @@
 .article_case_content .data_t>div:nth-child(2){
     margin-left:16px;
     width: 710px;
-    border: 1px solid red;
 }
 .article_case_content .data_t>div:last-child{
     /* margin-left:68px; */
