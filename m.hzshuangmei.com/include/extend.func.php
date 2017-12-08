@@ -549,6 +549,12 @@ function getCaseArticleRelateProject($typeid)
       $litpic = replaceurl($row["litpic"]);
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
     }
+    if($ns>0){
+          $relateproject.= ' <div class="imgbox">
+                        '.$relateproject.'
+                         </div> ';
+    }
+   
     return $relateproject;
 }
 
@@ -684,6 +690,11 @@ function getDoctorArticleRelateProject($typeid)
       $url = $urlarray['arcurl'];
       $litpic = replaceurl($row["litpic"]);
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
+    }
+    if($ns>0){
+          $relateproject.= ' <div class="imgbox">
+                        '.$relateproject.'
+                         </div> ';
     }
     return $relateproject;
 }
@@ -997,6 +1008,11 @@ function getProjectArticleRelateProject($id)
       $url = $urlarray['arcurl'];
       $litpic = replaceurl($row["litpic"]);
       $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>'; 
+    }
+    if($ns>0){
+          $relateproject.= ' <div class="imgbox">
+                        '.$relateproject.'
+                         </div> ';
     }
     return $relateproject;
 }
