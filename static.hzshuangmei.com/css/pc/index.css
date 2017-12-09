@@ -313,6 +313,7 @@ h3 img {
 
 .index_expert #tab3 .fli3 {
     background-color: #672a9a;
+    cursor: pointer;
 }
 
 .index_expert #tabCon3 {
@@ -376,6 +377,7 @@ h3 img {
 .index_clients #tab4 .fli4 {
     color: #fff;
     background-color: rgb(106, 21, 125);
+    cursor: pointer;
 }
 
 .index_clients #tabCon4 ul li {
