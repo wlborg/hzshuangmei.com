@@ -4,101 +4,110 @@
 <head>
     {dede:include filename="_meta.htm"/}
     <title>{dede:field.title/}的{dede:field.typename/}美丽日记_{dede:global.cfg_webname/}</title>
-    <meta name="keywords" content="{dede:field name='keywords'/}" />
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_case.css" />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_case.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css"/>
 </head>
 
 <body>
-    {dede:include filename="_header.htm"/} {dede:myad name='topbanner_pc'/}
-    <div class="m1">
-        <div class="location">
-            <i></i><span>当前位置：</span>{dede:field name='position'/}
-        </div>
-        <div class="line"></div>
-        <div class="article_case_content clearFix">
-            <div class="center">
-                <h1>{dede:field.title/}</h1>
-                <p class="tit">
-                    <span>来源 : {dede:field.source/}</span>
-                    <span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
-                    <span>点击量：{dede:field.click /} </span>
-                    <a href="javascript:void(0)" class="j-consult"></a>
-                </p>
-                <div class="data">
-                    <div class="data_t clearFix">
-                        <div class="data_after">
-                            <img src="{dede:field.imgafter function='replaceurl(@me)'/}" alt="{dede:field.title/}">
-                        </div>
-                        <div>
-                            <p>
-                                <i></i><span class="fon1">求美者：</span><span>{dede:field.title/}</span>
-                                <!--<i class="beauty" title="求美者"></i>：<span>{dede:field.title/}</span>-->
-                            </p>
-                            <p>
-                                <i></i><span class="fon1">项&nbsp;&nbsp;&nbsp;&nbsp;目：</span><span>{dede:field.project/}</span>
-                                <!--<i class="case" title="项目"></i>：<span>{dede:field.project/}</span>-->
-                            </p>
-                        </div>
-                        <div>
-                            <p><i></i><span class="fon1">专&nbsp;&nbsp;&nbsp;&nbsp;家：</span><span>{dede:field.doctor/}</span></p>
-                            <!--<p><i class="doctor" title="专家"></i>：<span>{dede:field.doctor/}</span></p>-->
-                        </div>
+{dede:include filename="_header.htm"/} {dede:myad name='topbanner_pc'/}
+<div class="m1">
+    <div class="location">
+        <i></i><span>当前位置：</span>{dede:field name='position'/}
+    </div>
+    <div class="line"></div>
+    <div class="article_case_content clearFix">
+        <div class="center">
+            <h1>{dede:field.title/}</h1>
+
+            <p class="tit">
+                <span>来源 : {dede:field.source/}</span>
+                <span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
+                <span>点击量：{dede:field.click /} </span>
+                <a href="javascript:void(0)" class="j-consult"></a>
+            </p>
+
+            <div class="data clearFix">
+                <div class="data_after">
+                    <img src="{dede:field.imgafter function='replaceurl(@me)'/}" alt="{dede:field.title/}">
+                </div>
+                <div class="data_t">
+                    <div class="clearFix">
+                        <p>
+                            <i></i>
+                            <span class="fon1">求&nbsp;&nbsp;美&nbsp;&nbsp;者：</span><span>{dede:field.title/}</span>
+                        </p>
+
+                        <p><i></i>
+                            <span class="fon1">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：</span><span>{dede:field.doctor/}</span>
+                        </p>
+
                     </div>
-                    <p class="data_b"><i></i><span class="fon1">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
-                    <span class="fon2">{dede:field.note/}</span>
+                    <p>
+                        <i></i><span class="fon1">蜕变方案：</span><span class="fon2">{dede:field.project/}</span>
                     </p>
-                    <!--<p class="data_b"><i class="comment" title="评价"></i><span>：</span><span class="fon2">{dede:field.note/}</span>-->
-                    <!--</p>-->
+                    <p class="data_b"><i></i><span class="fon1">评&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                        <span class="fon2">{dede:field.note/}</span>
+                    </p>
                 </div>
-                <div class="main">
-                    <h3>美丽蜕变过程</h3>
-                    <div class="line3"></div>
-                    <div class="main_content">
-                        <h4><span>{dede:field.title1/}</span><i></i></h4>
-                        <p>{dede:field.des1/}</p>
-                        <div class="clearFix">
-                            {dede:field.imgs1/}
-                        </div>
-                    </div>
-                    <div class="main_content">
-                        <h4><span>{dede:field.title2/}</span><i></i></h4>
-                        <p>{dede:field.des2/}</p>
-                        <div class="clearFix">
-                            {dede:field.imgs2/}
-                        </div>
-                    </div>
-                    <div class="main_content">
-                        <h4><span>{dede:field.title3/}</span><i></i></h4>
-                        <p>{dede:field.des3/}</p>
-                        <div class="clearFix">
-                            {dede:field.imgs3/}
-                        </div>
-                    </div>
-                    {dede:field.body/}
-                </div>
-                <div class="page clearFix">
-                    <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
-                    <p><span>下一篇：</span>{dede:prenext get='pre'/}</p>
-                </div>
-                {dede:include filename="article_bottom.htm"/}
+
             </div>
-            <div class="gdyb">
-                {dede:include filename="article_aside.htm"/}
+            <div class="main">
+                <h3>美丽蜕变过程</h3>
+
+                <div class="line3"></div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title1/}</span><i></i></h4>
+
+                    <p>{dede:field.des1/}</p>
+
+                    <div class="clearFix">
+                        {dede:field.imgs1/}
+                    </div>
+                </div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title2/}</span><i></i></h4>
+
+                    <p>{dede:field.des2/}</p>
+
+                    <div class="clearFix">
+                        {dede:field.imgs2/}
+                    </div>
+                </div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title3/}</span><i></i></h4>
+
+                    <p>{dede:field.des3/}</p>
+
+                    <div class="clearFix">
+                        {dede:field.imgs3/}
+                    </div>
+                </div>
+                {dede:field.body/}
             </div>
+            <div class="page clearFix">
+                <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
+
+                <p><span>下一篇：</span>{dede:prenext get='pre'/}</p>
+            </div>
+            {dede:include filename="article_bottom.htm"/}
+        </div>
+        <div class="gdyb">
+            {dede:include filename="article_aside.htm"/}
         </div>
     </div>
-    {dede:include filename="_footer.htm"/}
-    <div class="case-article-modal">
-        <div class="case-modal-imgbox">
-            <img src="" alt="" id="case-modal-img">
-            <a href="javascript:void(0);" class="case-btn case-prev"></a>
-            <a href="javascript:void(0);" class="case-btn case-next"></a>
-        </div>
-        <div class="case-close"></div>
+</div>
+{dede:include filename="_footer.htm"/}
+<div class="case-article-modal">
+    <div class="case-modal-imgbox">
+        <img src="" alt="" id="case-modal-img">
+        <a href="javascript:void(0);" class="case-btn case-prev"></a>
+        <a href="javascript:void(0);" class="case-btn case-next"></a>
     </div>
+    <div class="case-close"></div>
+</div>
 </body>
 {dede:include filename="_script.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/article_common.js"></script>
