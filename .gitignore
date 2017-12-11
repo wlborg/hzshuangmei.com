@@ -38,3 +38,4 @@ backupdata/
 cache/
 tplcache/
 sessions*/
+!kst.html
