@@ -491,6 +491,7 @@
 
            }
            module.addKSTScript = function() {
+            //to be changed
                addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=391627&fI=78939");
            }
            module.addBaiduScript = function() {
@@ -501,7 +502,7 @@
                if (consultEs.length > 0) {
                    consultEs.on('click', function(event) {
                        event.preventDefault();
-                       window.location.href = '/swt/shangwutong.html';
+                       window.location.href = '/kst/kst.html';
                    });
                } else {
                    console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
@@ -583,7 +584,7 @@
                       casemodal.addClass('show');
                    })
                });
-               
+
            }
 
            return module;
