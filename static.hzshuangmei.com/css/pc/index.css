@@ -30,6 +30,7 @@
     color: #693290;
     line-height: 18px;
     padding-left: 15px;
+    width: 100px;
 }
 
 .index_news .video p {
@@ -81,6 +82,7 @@
     color: #693290;
     line-height: 18px;
     padding-left: 15px;
+    width: 100px;
     /*border-left: 1px solid #dadada;*/
     /*margin-left: 22px;*/
     /*color: #693290;*/
