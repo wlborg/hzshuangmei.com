@@ -4,14 +4,16 @@ var video = new Swiper('.video_swiper', {
     //paginationClickable: true,
     spaceBetween: 30,
     keyboardControl: true,
+    autoplayDisableOnInteraction : false,
     nextButton: '.video-button-next',
-    prevButton: '.video-button-prev',
+    prevButton: '.video-button-prev'
     //autoplay:5000
 });
 var news = new Swiper('.news_swiper', {
     pagination: '.news-pagination',
     paginationClickable: true,
     spaceBetween: 30,
+    autoplayDisableOnInteraction : false,
     nextButton: '.news-button-next',
     prevButton: '.news-button-prev'
 });
@@ -65,6 +67,7 @@ var index_expert = new Swiper('.swiper-container4', {
     loop:true,
     slidesPerView: 4,
     paginationClickable: true,
+    autoplayDisableOnInteraction : false,
     nextButton: '.swiper-button-next4',
     prevButton: '.swiper-button-prev4',
     spaceBetween: 40
@@ -93,6 +96,7 @@ var swiper5 = new Swiper('.swiper-container5_1', {
     slidesPerView: 1,
     spaceBetween: 30,
     keyboardControl: true,
+    autoplayDisableOnInteraction : false,
     nextButton: '.swiper-button-next5_1',
     prevButton: '.swiper-button-prev5_1'
 });
@@ -102,6 +106,7 @@ var swiper6 = new Swiper('.swiper-container5_2', {
     slidesPerView: 1,
     spaceBetween: 30,
     keyboardControl: true,
+    autoplayDisableOnInteraction : false,
     nextButton: '.swiper-button-next5_2',
     prevButton: '.swiper-button-prev5_2'
 });
@@ -112,5 +117,6 @@ var swiper7 = new Swiper('.swiper-container5_3', {
     spaceBetween: 30,
     keyboardControl: true,
     nextButton: '.swiper-button-next5_3',
-    prevButton: '.swiper-button-prev5_3'
+    prevButton: '.swiper-button-prev5_3',
+    autoplayDisableOnInteraction : false
 });
