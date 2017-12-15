@@ -4,7 +4,6 @@ var video = new Swiper('.video_swiper', {
     //paginationClickable: true,
     spaceBetween: 30,
     keyboardControl: true,
-    autoplayDisableOnInteraction : false,
     nextButton: '.video-button-next',
     prevButton: '.video-button-prev'
     //autoplay:5000
@@ -13,7 +12,6 @@ var news = new Swiper('.news_swiper', {
     pagination: '.news-pagination',
     paginationClickable: true,
     spaceBetween: 30,
-    autoplayDisableOnInteraction : false,
     nextButton: '.news-button-next',
     prevButton: '.news-button-prev'
 });
