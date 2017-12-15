@@ -9,6 +9,7 @@
 !*.php
 !*.css
 !*.js
+*.mp4
 .txt
 .project
 .buildpath
