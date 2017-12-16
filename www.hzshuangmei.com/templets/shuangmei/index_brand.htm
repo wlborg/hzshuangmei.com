@@ -3,6 +3,8 @@
 
 <head>
     {dede:include filename="_meta.htm"/}
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
     <title>{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
     <meta content="设计观彩恒,前端成效珍/" name="author" />
