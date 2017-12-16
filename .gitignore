@@ -1,8 +1,6 @@
 /components/
 /default*/
 *.html
-!/www.hzshuangmei.com/xapp/templets/admin/*.xml
-!/m.hzshuangmei.com/xapp/templets/admin/*.xml
 *.xml
 *.tar.gz
 *.tar
@@ -14,6 +12,7 @@
 .project
 .buildpath
 composer.json
+!xapp/
 /www.hzshuangmei.com/a/
 /m.hzshuangmei.com/a/
 data/
