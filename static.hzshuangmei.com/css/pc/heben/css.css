@@ -46,7 +46,7 @@ img {
   border-radius: 10px;
   margin: 55px auto;
   margin-bottom: 3px; }
-  .button p {
+  .button a {
     font-size: 22px;
     color: #fff;
     line-height: 52px; }
@@ -468,7 +468,7 @@ img {
             background: #fff;
             width: 140px;
             margin: 24px auto 82px 12px; }
-            .part6 .contain .main .wrap .slider .box .button p {
+            .part6 .contain .main .wrap .slider .box .button a {
               font-size: 22px;
               line-height: 42px;
               color: #000000;
