@@ -160,6 +160,7 @@
                             <img src="{dede:global.cfg_imgpath/}/pc/n_video_center.png" alt="video center"/>
                         </a>
                     </h2>
+
                     <div class="swiper-button-next video-button-next"></div>
                     <div class="swiper-button-prev video-button-prev"></div>
                     {dede:myad name='videopic_pc'/}
@@ -171,14 +172,16 @@
                             <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png" alt="latest activity"/>
                         </a>
                     </h2>
+
                     <div class="news_content">
                         <div class="swiper-button-next news-button-next"></div>
                         <div class="swiper-button-prev news-button-prev"></div>
                         <div class="swiper-container news_swiper">
                             <div class="swiper-wrapper">
-                                {dede:arclist typeid=1 orderby='pubdate' flag="c" row='3' addfields="thumb" channelid="20"}
+                                {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
                                 <a href="[field:arcurl/]" class="swiper-slide">
                                     <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]">
+
                                     <div class="timu">[field:fulltitle/]</div>
                                     <div class="date">
                                         <span>[field:pubdate function='strftime("%d",@me)'/]</span>
@@ -192,14 +195,16 @@
                     </div>
                     <div class="inform">
                         <span class="tj_tit">最新推荐：</span>
+
                         <div class="swiper-container news_tuijian">
                             <div class="swiper-wrapper">
-                                {dede:arclist typeid=1 orderby='pubdate' row='3'}
+                                {dede:arclist typeid=1 orderby='id' row='3'}
                                 <div class="swiper-slide">
                                     <p class="recommend">
                                         <i></i>
-                                        <a href="{dede:global.cfg_basehost/}[field:arcurl/]" class="conment_a">[field:fulltitle/]</a>
+                                        <a href="[field:arcurl/]" class="conment_a">[field:fulltitle/]</a>
                                     </p>
+
                                     <p class="clock">
                                         <i></i><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>
                                     </p>
@@ -505,57 +510,66 @@
         <!--<a href="" class="ask">MORE+</a>-->
         <!--</div>-->
         <!--</div>-->
-<div class="index_environment">
-    <div class="m1">
-        <ul class="clearFix">
-            <li>
-                <h2><a href="/honors/">红妆荣誉<span>Red makeup honor</span></a></h2>
-                <div class="swiper-button-next swiper-button-next5 swiper-button-next5_1"></div>
-                <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_2"></div>
-                <div class="swiper-container swiper-container5 swiper-container5_1">
-                    <div class="swiper-wrapper">
-                        {dede:arclist typeid=57 titlelen="120" flag="c" orderby='pubdate' addfields="thumb" channelid="1"}
-                        <a href="[field:arcurl/]" class="swiper-slide">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p>[field:title/]</p>
-                        </a>
-                        {/dede:arclist}
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h2><a href="/environment/">红妆环境<span>Red makeup environment</span></a></h2>
-                <div class="swiper-button-next swiper-button-next5 swiper-button-next5_2"></div>
-                <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_2"></div>
-                <div class="swiper-container swiper-container5 swiper-container5_2">
-                    <div class="swiper-wrapper">
-                        {dede:arclist typeid=58 titlelen="120" flag="c" orderby='pubdate' row='3' addfields="thumb" channelid="1"}
-                        <a href="[field:arcurl/]" class="swiper-slide">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p>[field:title/]</p>
-                        </a>
-                        {/dede:arclist}
-                    </div>
-                </div>
-            </li>
-            <li>
-                <h2><a href="/equipment/">尖端设备<span>sophisticated equipment</span></a></h2>
-                <div class="swiper-button-next swiper-button-next5 swiper-button-next5_3"></div>
-                <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_3"></div>
-                <div class="swiper-container swiper-container5 swiper-container5_3">
-                    <div class="swiper-wrapper">
-                        {dede:arclist typeid=59 titlelen="120" flag="c" orderby='pubdate' addfields="thumb" channelid="1"}
-                        <a href="[field:arcurl/]" class="swiper-slide">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p>[field:title/]</p>
-                        </a>
-                        {/dede:arclist}
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
+        <div class="index_environment">
+            <div class="m1">
+                <ul class="clearFix">
+                    <li>
+                        <h2><a href="/honors/">红妆荣誉<span>Red makeup honor</span></a></h2>
+
+                        <div class="swiper-button-next swiper-button-next5 swiper-button-next5_1"></div>
+                        <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_1"></div>
+                        <div class="swiper-container swiper-container5 swiper-container5_1">
+                            <div class="swiper-wrapper">
+                                {dede:arclist typeid=57 titlelen="120" flag="c" orderby='id' addfields="thumb"
+                                channelid="1"}
+                                <a href="[field:arcurl/]" class="swiper-slide">
+                                    <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+
+                                    <p>[field:title/]</p>
+                                </a>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="/environment/">红妆环境<span>Red makeup environment</span></a></h2>
+
+                        <div class="swiper-button-next swiper-button-next5 swiper-button-next5_2"></div>
+                        <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_2"></div>
+                        <div class="swiper-container swiper-container5 swiper-container5_2">
+                            <div class="swiper-wrapper">
+                                {dede:arclist typeid=58 titlelen="120" flag="c" orderby='id' row='3' addfields="thumb"
+                                channelid="1"}
+                                <a href="[field:arcurl/]" class="swiper-slide">
+                                    <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+
+                                    <p>[field:title/]</p>
+                                </a>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><a href="/equipment/">尖端设备<span>sophisticated equipment</span></a></h2>
+
+                        <div class="swiper-button-next swiper-button-next5 swiper-button-next5_3"></div>
+                        <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_3"></div>
+                        <div class="swiper-container swiper-container5 swiper-container5_3">
+                            <div class="swiper-wrapper">
+                                {dede:arclist typeid=59 titlelen="120" flag="c" orderby='id' addfields="thumb"
+                                channelid="1"}
+                                <a href="[field:arcurl/]" class="swiper-slide">
+                                    <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+
+                                    <p>[field:title/]</p>
+                                </a>
+                                {/dede:arclist}
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
         {dede:include filename="_footer.htm"/}
     </body>
     {dede:include filename="_script.htm"/}
