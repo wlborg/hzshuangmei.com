@@ -80,7 +80,7 @@ var tools = (
             }
         }
         module.addKSTScript = function() {
-            addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=391627&fI=778788");
+            addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
         };
         module.addBaiduScript = function() {
             addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103 ");
@@ -250,7 +250,7 @@ var effects = (
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
-    // tools.addKSTScript();
+     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
     //资源预加载
