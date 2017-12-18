@@ -6,8 +6,9 @@ _script.htm,公脚本资源模板 位于body底部
 
 404.htm, 404页面
 index.htm,主页模板
-
+index_jc_beian.htm,备案审核首页模板
 index_default.htm,默认自定义频道封面
+index_brand.htm,品牌页模板
 index_article.htm,品牌频道封面模板
 list_default.htm,默认自定义模型列表模板
 list_article.htm,默认文章列表模板
