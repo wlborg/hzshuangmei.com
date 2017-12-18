@@ -492,7 +492,7 @@
            }
            module.addKSTScript = function() {
             //to be changed
-               addScript("https://hztk5.kuaishang.cn/bs/ks.j?cI=391627&fI=78939");
+               addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1");
            }
            module.addBaiduScript = function() {
                addScript("https://hm.baidu.com/hm.js?cdb0e6daab9a851a15e716817a452897");
@@ -586,7 +586,6 @@
                });
 
            }
-
            return module;
        }
    )(window.effects || {});
@@ -598,7 +597,7 @@
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        tools.addBaiduTuiSong();
-       // tools.addKSTScript();
+       tools.addKSTScript();
        tools.addBaiduScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
