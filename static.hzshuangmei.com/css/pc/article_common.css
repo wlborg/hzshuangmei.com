@@ -84,6 +84,13 @@
 
     color: #727272;
 }
+.ar_ar h3,
+.ar_ar h4,
+.ar_ar h5,
+.ar_ar h6 {
+    text-align: center;
+}
+
 .ar_ar p img {
     display: block;
     margin: 1em auto;
