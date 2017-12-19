@@ -67,7 +67,7 @@ img {
 }
 
 .button a {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     color: #fff;
     line-height: 1.3rem;
 }
@@ -764,6 +764,7 @@ img {
     background: #fff;
     width: 3.5rem;
     margin: 0.6rem auto 2.05rem 0.3rem;
+    text-align: center;
 }
 
 .part6 .contain .main .wrap .slider .box .button a {
@@ -774,6 +775,8 @@ img {
     margin-left: 0;
     text-align: center;
     background: none;
+    width: 2.95rem;
+    display: block;
 }
 
 .part6 .contain .main .wrap .slider .box section {
@@ -799,7 +802,23 @@ img {
     font-size: 0.45rem;
     color: #fff;
 }
+.part6 .contain .main .wrap .slider .box .liuzhikun {
+    font-size: 1.0rem;
+    font-weight: 100;
+    color: #1a1a1a;
+    width: 6.75rem;
+    background: #c43838;
+    margin-top: 2rem;
+    /*width: 4.25rem;*/
+    height: 1.0rem;
+    margin-left: 1.35rem;
+    margin-bottom: 0.85rem;
+}
 
+.part6 .contain .main .wrap .slider .box .liuzhikun span {
+    font-size: 0.45rem;
+    color: #fff;
+}
 .part6 .contain .main .wrap .slider .box section h3 {
     font-size: 0.7rem;
     font-weight: 900;
@@ -875,7 +894,10 @@ img {
     background: none;
     padding-left: 0;
 }
-
+.part6 .contain .main .wrap .slider .like p:nth-child(8) {
+    background: none;
+    padding-left: 0;
+}
 .part6 .contain .main .wrap .slider .like {
     padding-bottom: 1rem;
     background: url("//img.hzshuangmei.com/m/heben/img_like.jpg") right top no-repeat;
@@ -895,4 +917,5 @@ img {
 .clip {
     background: url('//img.hzshuangmei.com/m/heben/bg_button.png') no-repeat;
     background-size: 100% 100%;
+    padding: 0.21rem 0.65rem;
 }
