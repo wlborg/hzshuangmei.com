@@ -506,7 +506,7 @@
                    consultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
-                        var linkInfo ="porjectHaveConsultLinks"+linkCount+ "-visitLinkNumIs"+num;
+                        var linkInfo ="porjectHaveConsultLinks"+linkCount+ "----visitLinkNumIs"+num;
                         var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
@@ -522,7 +522,7 @@
                    siteConsultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
-                        var linkInfo ="siteHaveAnotherConsultLinks"+siteLinkCount+ "-visitLinkNumIs"+num;
+                        var linkInfo ="AnotherConsultLinks"+siteLinkCount+ "----visitLinkNumIs"+num;
                         var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
