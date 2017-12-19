@@ -91,7 +91,8 @@ var tools = (
                 consultEs.on('click', function(event) {
                     event.preventDefault();
                     var currTitle = document.title;
-                    window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
+                    // window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
+                    window.open("https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948?" + currTitle);
                     //  window.location.href = '/swt/shangwutong.html';
                 });
             } else {
