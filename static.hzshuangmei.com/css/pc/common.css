@@ -142,9 +142,9 @@ header .sm_logo img {
 #nav > ul > li > a {
     color: #fff;
     text-align: center;
-    /*padding-top: 18px;*/
+    padding-top: 18px;
     height: 41px;
-    margin-top: 18px;
+    /*margin-top: 18px;*/
     line-height: 3px;
     position: relative;
     top: 0;
