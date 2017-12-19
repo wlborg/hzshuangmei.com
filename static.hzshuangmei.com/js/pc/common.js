@@ -95,7 +95,7 @@ var tools = (
                     $(this).on('click', function() {
                         var num = index + 1;
                         var currTitle = document.title+"第"+num+"个咨询链接";
-                        window.open("https://www.hzshuangmei.com/kst/kst.html?ref=\'"+encodeURIComponent(currTitle)+"\'");
+                        window.open("https://www.hzshuangmei.com/kst/kst.html?ref=\'"+currTitle+"\'");
                     })
                 });
             } else {
