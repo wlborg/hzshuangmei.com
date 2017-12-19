@@ -87,17 +87,31 @@ var tools = (
         };
         module.bindConsultHref = function() {
             var consultEs = $('.j-consult');
-            if (consultEs.length > 0) {
-                consultEs.on('click', function(event) {
-                    event.preventDefault();
-                    var currTitle = document.title;
-                    // window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
-                    window.open("https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948?" + currTitle);
-                    //  window.location.href = '/swt/shangwutong.html';
+
+           
+
+             if (consultEs.length > 0) {
+                consultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var currTitle = document.title+"第"+num+"个咨询链接";
+                        window.open("https://www.hzshuangmei.com/kst/kst.html?ref=\'"+encodeURIComponent(currTitle)+"\'");
+                    })
                 });
             } else {
                 console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
             }
+            // if (consultEs.length > 0) {
+            //     consultEs.on('click', function(event) {
+            //         event.preventDefault();
+            //         var currTitle = document.title;
+            //         // window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
+            //         window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
+            //         //  window.location.href = '/swt/shangwutong.html';
+            //     });
+            // } else {
+            //     console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
+            // }
         };
         /*
              前端资源预加载
