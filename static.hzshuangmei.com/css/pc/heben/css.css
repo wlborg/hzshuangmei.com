@@ -575,8 +575,8 @@ img.icon {
 }
 #nav > ul > li > a {
   margin-top: 18px;
+  padding-top:0
 }
-
 .n_button {
   height: 28px;
   margin-top:0
@@ -586,5 +586,8 @@ img.icon {
   color: #000;
 }
 .n_button a:hover span {
+  color: #000;
+}
+#project span {
   color: #000;
 }
