@@ -589,7 +589,9 @@ footer .humanstxt {
     position: relative;
     top: 10px;
 }
-
+footer .left a {
+    color: #fff;
+}
 /*¹Ì¶¨µÄÐü¸¡´°*/
 .yb_conct {
     position: fixed;
