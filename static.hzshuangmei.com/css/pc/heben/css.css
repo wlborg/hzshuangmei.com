@@ -573,3 +573,18 @@ img.icon {
   top: 624px;
   left: 572px;
 }
+#nav > ul > li > a {
+  margin-top: 18px;
+}
+
+.n_button {
+  height: 28px;
+  margin-top:0
+}
+
+.n_button a span{
+  color: #000;
+}
+.n_button a:hover span {
+  color: #000;
+}
