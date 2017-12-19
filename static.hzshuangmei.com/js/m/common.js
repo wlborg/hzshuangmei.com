@@ -503,7 +503,9 @@
                    consultEs.on('click', function(event) {
                        event.preventDefault();
                        // window.location.href = '/kst/kst.html';
-                       window.location.href = "https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948&ism=1&ref=\'"+encodeURIComponent(window.location.href)+"\'";
+                       var title=document.title;
+                       var href="https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948&ism=1&ref=\'"+encodeURIComponent(title)+"\'";
+                       window.location.href = href;
                    });
                } else {
                    console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
