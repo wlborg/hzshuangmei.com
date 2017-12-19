@@ -500,11 +500,16 @@
            module.bindConsultHref = function() {
                var consultEs = $('.j-consult');
                if (consultEs.length > 0) {
-                   consultEs.on('click', function(event) {
-                       event.preventDefault();
-                       // window.location.href = '/kst/kst.html';
-                       window.location.href = "https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1&ref=\'"+infos.href+"\'";
-                   });
+
+
+                   consultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var linkInfo = "linksNumIs"+num;
+                        var href="https://m.hzshuangmei.com/kst/kst.html?ref=\'"+infos.href+"\'&infos=\'"+linkInfo+"\'";
+                       window.location.href = href;
+                    })
+                  });
                } else {
                    console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
                }
