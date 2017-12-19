@@ -113,20 +113,20 @@ body {
 .m3,
 .m5,
 .m7 {
-    background: url(../images/bg_btm.jpg) center bottom no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bg_btm.jpg) center bottom no-repeat;
     background-size: 100%
 }
 
 .m4,
 .m6 {
-    background: url(../images/bg_top.jpg) center bottom no-repeat #daeefe;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bg_top.jpg) center bottom no-repeat #daeefe;
     background-size: 100%
 }
 
 .m1 h2 {
     margin: 15.625% 0 6.25%;
     padding-bottom: 10.78125%;
-    background: url(../images/bgt1.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt1.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -219,14 +219,14 @@ body {
 }
 
 .m2 {
-    background: url(../images/bg2.jpg) bottom center no-repeat #daeefe;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bg2.jpg) bottom center no-repeat #daeefe;
     background-size: auto 100%
 }
 
 .m2-1 h2 {
     margin-bottom: 5.625%;
     padding-bottom: 10.3125%;
-    background: url(../images/bgt2.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt2.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -289,7 +289,7 @@ body {
 .m3-1 h2 {
     margin-bottom: 4.6875%;
     padding-bottom: 10.3125%;
-    background: url(../images/bgt3.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt3.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -344,7 +344,7 @@ body {
 .m4 h2 {
     margin-bottom: 5.9375%;
     padding-bottom: 10.9375%;
-    background: url(../images/bgt4.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt4.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -409,22 +409,22 @@ body {
 }
 
 .m4 .content .box1 {
-    background: url(../images/img4_01.jpg) bottom center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/img4_01.jpg) bottom center no-repeat;
     background-size: 100%
 }
 
 .m4 .content .box2 {
-    background: url(../images/img4_02.jpg) bottom center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/img4_02.jpg) bottom center no-repeat;
     background-size: 100%
 }
 
 .m4 .content .box3 {
-    background: url(../images/img4_03.jpg) bottom center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/img4_03.jpg) bottom center no-repeat;
     background-size: 100%
 }
 
 .m4 .content .box4 {
-    background: url(../images/img4_04.jpg) bottom center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/img4_04.jpg) bottom center no-repeat;
     background-size: 100%
 }
 
@@ -440,7 +440,7 @@ body {
 .m5 h2 {
     margin: 3.75%;
     padding-bottom: 10.78125%;
-    background: url(../images/bgt5.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt5.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -456,7 +456,7 @@ body {
 .m5 .content div h3 {
     margin: 4.375% 0;
     padding-bottom: 4.375%;
-    background: url(../images/bgt5_2.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt5_2.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -467,7 +467,7 @@ body {
 .m6 h2 {
     margin-bottom: 3.75%;
     padding-bottom: 14.375%;
-    background: url(../images/bgt6.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt6.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -520,7 +520,7 @@ body {
 .m7 h2 {
     margin-bottom: 4.6875%;
     padding-bottom: 10.78125%;
-    background: url(../images/bgt7.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt7.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -538,14 +538,14 @@ body {
 }
 
 .m8 {
-    background: url(../images/bg8.jpg) bottom center no-repeat #daeefe;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bg8.jpg) bottom center no-repeat #daeefe;
     background-size: auto 100%
 }
 
 .m8-1 h2 {
     margin-bottom: 3.75%;
     padding-bottom: 12.5%;
-    background: url(../images/bgt8.jpg) center center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bgt8.jpg) center center no-repeat;
     background-size: auto 100%
 }
 
@@ -553,7 +553,7 @@ body {
     padding: 2.625% 0 8.8125% 1.5625%;
     width: 68.75%;
     text-align: left;
-    background: url(../images/img8_2.jpg) bottom right no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/img8_2.jpg) bottom right no-repeat;
     background-size: auto 100%
 }
 
@@ -583,7 +583,7 @@ body {
     float: left;
     width: 100%;
     color: #6b7bb3;
-    background: url(../images/bg8_icon1.jpg) left center no-repeat;
+    background: url(//img.hzshuangmei.com/m/dlslb/images/bg8_icon1.jpg) left center no-repeat;
     background-size: auto 30%
 }
 
