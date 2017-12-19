@@ -506,7 +506,7 @@
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo = "linksNumIs"+num;
-                        var href="https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948&ism=1&ref=\'"+encodeURIComponent(infos.href)+"\'&infos=\'"+encodeURIComponent(linkInfo)+"\'";
+                        var href="https://www.hzshuangmei.com/kst/kst.html?ref=\'"+encodeURIComponent(infos.href)+"\'&infos=\'"+encodeURIComponent(linkInfo)+"\'";
                        window.location.href = href;
                     })
                   });
