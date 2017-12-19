@@ -637,3 +637,10 @@ footer .humanstxt {
     text-indent: 80px;
     color: #fff;
 }
+.yb_phone a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 80px;
+    color: #fff;
+}
