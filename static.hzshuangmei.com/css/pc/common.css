@@ -291,8 +291,8 @@ nav > ul > li ul li h5 {
 .n_button {
     background-color: rgb(106, 21, 125);
     width: 60px;
-    height: 29px;
-    line-height: 12px;
+    height: 12px;
+    /*line-height: 12px;*/
     font-size: 12px;
     margin: 0 auto;
     border: 1px solid #b992c2;
@@ -302,7 +302,8 @@ nav > ul > li ul li h5 {
 nav > ul > li ul .n_button a {
     color: #fff;
     width: 61px;
-    padding-top: 8px;
+    line-height: 26px;
+    /*padding-top: 8px;*/
 }
 
 #expert ul li {
