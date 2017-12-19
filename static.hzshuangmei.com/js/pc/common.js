@@ -87,16 +87,16 @@ var tools = (
             addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103 ");
         };
         module.bindConsultHref = function() {
-
             //专题快商通
             var consultEs = $('.j-consult');
+            //专题内容区快商通链接总数
             var linkCount = consultEs.length;
             if (linkCount > 0) {
-
+                //给每个咨询元素绑定单击事件
                 consultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
-                        var linkInfo = "porjectHaveConsultLinks" + linkCount + "----visitLinkNumIs" + num;
+                        var linkInfo = "porjectConsultLinksCountIs" + linkCount + "----visitedLinkNumberIs" + num;
                         var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
                         window.location.href = href;
                     })
@@ -106,13 +106,14 @@ var tools = (
             }
             //站点快商通
             var siteConsultEs = $('.j-site-consult');
+            //非专题内容区的咨询链接总数
             var siteLinkCount = siteConsultEs.length;
             if (siteLinkCount > 0) {
 
                 siteConsultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
-                        var linkInfo = "AnotherConsultLinks" + siteLinkCount + "----visitLinkNumIs" + num;
+                        var linkInfo = "AnotherConsultLinksCountIs" + siteLinkCount + "----visitedLinkNumberIs" + num;
                         var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
                         window.location.href = href;
                     })
