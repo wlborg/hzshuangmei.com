@@ -506,7 +506,7 @@
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo = "linksNumIs"+num;
-                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo+";
+                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
                   });
