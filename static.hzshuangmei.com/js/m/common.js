@@ -499,13 +499,13 @@
            }
            module.bindConsultHref = function() {
                var consultEs = $('.j-consult');
-               if (consultEs.length > 0) {
-
+               var linkCount=consultEs.length;
+               if (linkCount > 0) {
 
                    consultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
-                        var linkInfo = "linksNumIs"+num;
+                        var linkInfo ="haveConsultLinks"+linkCount+ "&visitLinksNumIs"+num;
                         var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
