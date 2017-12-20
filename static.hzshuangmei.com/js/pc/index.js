@@ -135,7 +135,7 @@ function preReady() {
             $("head").append('<link rel="prerender" href=https://www.hzshuangmei.com/' + pre_url + '>');
         }
     });
-    $("a:not([href=''][href='#'])").on('mouseleave', function(event) {
+    $("a:not([href=''][href='#'])").on('mouseout', function(event) {
         var pre_url = $(this).attr("href");
         $('link[rel="preconnect"][href=https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
         $('link[rel="prefetch"][href=https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
