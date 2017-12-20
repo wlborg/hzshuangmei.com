@@ -68,6 +68,7 @@ var tools = (
                 }, 500);
             });
         };
+
         function addScript(src) {
             var bldyE = document.getElementsByTagName("body");
             var scriptE = document.createElement("script");
@@ -86,16 +87,39 @@ var tools = (
             addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103 ");
         };
         module.bindConsultHref = function() {
+            //专题快商通
             var consultEs = $('.j-consult');
-            if (consultEs.length > 0) {
-                consultEs.on('click', function(event) {
-                    event.preventDefault();
-                    var currTitle = document.title;
-                    window.open("https://www.hzshuangmei.com/kst/kst.html?" + currTitle);
-                    //  window.location.href = '/swt/shangwutong.html';
+            //专题内容区快商通链接总数
+            var linkCount = consultEs.length;
+            if (linkCount > 0) {
+                //给每个咨询元素绑定单击事件
+                consultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var linkInfo = "porjectConsultLinksCountIs" + linkCount + "----visitedLinkNumberIs" + num;
+                        var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
+                        window.location.href = href;
+                    })
                 });
             } else {
-                console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
+                console.log('若专题中需要咨询按钮请给元素添加"j-consult"类以激活');
+            }
+            //站点快商通
+            var siteConsultEs = $('.j-site-consult');
+            //非专题内容区的咨询链接总数
+            var siteLinkCount = siteConsultEs.length;
+            if (siteLinkCount > 0) {
+
+                siteConsultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var linkInfo = "AnotherConsultLinksCountIs" + siteLinkCount + "----visitedLinkNumberIs" + num;
+                        var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
+                        window.location.href = href;
+                    })
+                });
+            } else {
+                console.log('若站点中需要其他咨询按钮请给元素添加"j-site-consult"类以激活，注意和专题中的咨询做区别');
             }
         };
         /*
@@ -104,18 +128,18 @@ var tools = (
         */
         module.preReady = function() {
             var hostname = window.location.hostname;
-           var urls=window.location.href.split("/");
-          urls.pop();
-          hostname = urls.join("/");
+            var urls = window.location.href.split("/");
+            urls.pop();
+            hostname = urls.join("/");
             $("a:not([href=''],[href='#'],[class*='j-consult'])").on('mouseenter', function(event) {
                 var bool = false;
-                 //鼠标指向的链接
-               var pre_url = $(this).attr("href").split("/");
+                //鼠标指向的链接
+                var pre_url = $(this).attr("href").split("/");
 
-                if(pre_url[0]==""){
-                            pre_url.shift();
+                if (pre_url[0] == "") {
+                    pre_url.shift();
                 }
-                   pre_url=pre_url.join("/");
+                pre_url = pre_url.join("/");
                 $("link").each(function() {
                     if (($(this).attr("href") == pre_url)) { //判断是否已经存在,存在则不添加
                         bool = true;
@@ -125,9 +149,9 @@ var tools = (
                     // $("head").append('<link rel="prefetch" href="//' + hostname +"/"+ pre_url + '">');
                     // $("head").append('<link rel="preconnect" href="//' + hostname+"/" + pre_url + '">');
                     // $("head").append('<link rel="prerender" href="//' + hostname +"/"+ pre_url + '">');
-                    $("head").append('<link rel="prefetch" href="'+hostname+ "/"+pre_url + '">');
-                    $("head").append('<link rel="preconnect" href="'+hostname+ "/"+ pre_url + '">');
-                    $("head").append('<link rel="prerender" href="'+hostname+ "/" +  pre_url + '">');
+                    $("head").append('<link rel="prefetch" href="' + hostname + "/" + pre_url + '">');
+                    $("head").append('<link rel="preconnect" href="' + hostname + "/" + pre_url + '">');
+                    $("head").append('<link rel="prerender" href="' + hostname + "/" + pre_url + '">');
                 }
             });
             $("a:not([href=''],[href='#'])").on('mouseleave', function(event) {
@@ -135,27 +159,27 @@ var tools = (
                 // $('link[rel="prefetch"][href="//' + hostname +"/"+ pre_url + '"]').remove();
                 // $('link[rel="preconnect"][href="//' + hostname +"/"+ pre_url + '"]').remove();
                 // $('link[rel="prerender"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                $('link[rel="prefetch"][href="'+hostname+ "/" + pre_url + '"]').remove();
-                $('link[rel="preconnect"][href="'+hostname+ "/" + pre_url + '"]').remove();
-                $('link[rel="prerender"][href="' +hostname+ "/"+  pre_url + '"]').remove();
+                $('link[rel="prefetch"][href="' + hostname + "/" + pre_url + '"]').remove();
+                $('link[rel="preconnect"][href="' + hostname + "/" + pre_url + '"]').remove();
+                $('link[rel="prerender"][href="' + hostname + "/" + pre_url + '"]').remove();
             });
         };
-/*
-   防止案例日记图片被盗取
- */
-           module.anti_Stealing_Images = function() {
-                var smallImgs =  $(".article_case_content").find(".main_content").find('img');
-                var  bigImgs = $("#case-modal-img");
-                    smallImgs.each(function(index) {
-                                            $(this).contextmenu(function(event){
-                                                event.preventDefault();
-                                            });
-                    });
-                          bigImgs.each(function(index) {
-                                            $(this).contextmenu(function(event){
-                                                event.preventDefault();
-                                            });
-                    });
+        /*
+           防止案例日记图片被盗取
+         */
+        module.anti_Stealing_Images = function() {
+            var smallImgs = $(".article_case_content").find(".main_content").find('img');
+            var bigImgs = $("#case-modal-img");
+            smallImgs.each(function(index) {
+                $(this).contextmenu(function(event) {
+                    event.preventDefault();
+                });
+            });
+            bigImgs.each(function(index) {
+                $(this).contextmenu(function(event) {
+                    event.preventDefault();
+                });
+            });
         };
         return module;
     }
@@ -239,6 +263,7 @@ var effects = (
                 casecurrentbigimgnum = num;
                 addimgurl(num);
             });
+
             function addimgurl(num) {
                 imgurl = baseimgurl + num + ".jpg";
                 casemodalimg.attr('src', imgurl);
@@ -250,11 +275,11 @@ var effects = (
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
-     tools.addKSTScript();
+    tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
     //资源预加载
-  //     tools.preReady();
+    //     tools.preReady();
     //禁止盗图
     tools.anti_Stealing_Images();
 });
@@ -271,7 +296,7 @@ $(function() {
     s.parentNode.insertBefore(bp, s);
 })();
 // 360自动收录
-(function(){
-var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633":"https://jspassport.ssl.qhimg.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633";
-document.write('<script src="' + src + '" id="sozz"><\/script>');
+(function() {
+    var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633" : "https://jspassport.ssl.qhimg.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633";
+    document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
