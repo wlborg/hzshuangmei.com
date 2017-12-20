@@ -163,10 +163,9 @@ function preReady() {
 
 function(event) {
         var pre_url = $(this).attr("href");
-        console.log("输出了mouseleave");
-        $('link[rel="preconnect"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
-        $('link[rel="prefetch"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
-        $('link[rel="prerender"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
+        $('link[rel="preconnect"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
+        $('link[rel="prefetch"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
+        $('link[rel="prerender"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
 
     });
 }
