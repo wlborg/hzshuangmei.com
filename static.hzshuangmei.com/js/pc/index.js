@@ -130,12 +130,12 @@ function preReady() {
             }
         });
         if (!bool) {
-            $("head").append('<link rel="preconnect" href=https://www.hzshuangmei.com/' + pre_url + '>');
-            $("head").append('<link rel="prefetch" href=https://www.hzshuangmei.com/' + pre_url + '>');
-            $("head").append('<link rel="prerender" href=https://www.hzshuangmei.com/' + pre_url + '>');
+            $("head").stop().append('<link rel="preconnect" href=https://www.hzshuangmei.com/' + pre_url + '>');
+            $("head").stop().append('<link rel="prefetch" href=https://www.hzshuangmei.com/' + pre_url + '>');
+            $("head").stop().append('<link rel="prerender" href=https://www.hzshuangmei.com/' + pre_url + '>');
         }
     });
-    $("a:not([href=''][href='#'])").on('mouseout', function(event) {
+    $("a:not([href=''][href='#'])").on('mouseleave', function(event) {
         var pre_url = $(this).attr("href");
         $('link[rel="preconnect"][href=https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
         $('link[rel="prefetch"][href=https://www.hzshuangmei.com/"' + pre_url + '"' + ']').remove();
