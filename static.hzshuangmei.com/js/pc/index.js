@@ -121,28 +121,28 @@ var swiper7 = new Swiper('.swiper-container5_3', {
 });
 
 //pre render
-function preReady() {
-    $("a:not([href=''][href='#'])").on('mouseenter', function(event) {
-        var bool = false;
-        var pre_url = $(this).attr("href");
-        $("link").each(function() {
-            if (($(this).attr("href") == pre_url)) {
-                bool = true;
-            }
-        });
-        if (!bool) {
-            $("head").stop().append('<link rel="preconnect" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-            $("head").stop().append('<link rel="prefetch" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-            $("head").stop().append('<link rel="prerender" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-        }
-    });
-    $("a:not([href=''][href='#'])").on('mouseleave', function(event) {
-        var pre_url = $(this).attr("href");
-        $('link[rel="preconnect"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-        $('link[rel="prefetch"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-        $('link[rel="prerender"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-    });
-}
-$(function() {
-    preReady();
-});
+// function preReady() {
+//     $("a:not([href=''][href='#'])").on('mouseenter', function(event) {
+//         var bool = false;
+//         var pre_url = $(this).attr("href");
+//         $("link").each(function() {
+//             if (($(this).attr("href") == pre_url)) {
+//                 bool = true;
+//             }
+//         });
+//         if (!bool) {
+//             $("head").stop().append('<link rel="preconnect" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
+//             $("head").stop().append('<link rel="prefetch" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
+//             $("head").stop().append('<link rel="prerender" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
+//         }
+//     });
+//     $("a:not([href=''][href='#'])").on('mouseleave', function(event) {
+//         var pre_url = $(this).attr("href");
+//         $('link[rel="preconnect"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
+//         $('link[rel="prefetch"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
+//         $('link[rel="prerender"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
+//     });
+// }
+// $(function() {
+//     preReady();
+// });
