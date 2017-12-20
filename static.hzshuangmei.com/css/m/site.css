@@ -400,12 +400,12 @@ font-size: 0.3rem; line-height: 0.85rem; color: #6a6a6a; }
 .relatemodule .heading .line span { position: absolute; left: 0; right: 0; top: -0.05rem; margin: auto; display: block; width: 0.1rem; height: 0.1rem; background: #d8d0df; transform: rotateZ(45deg); }
 
 .relateporject .heading .line{border-bottom: solid 1px #7e52a2;}
-.relateporject .content { padding: 0.55rem 3.5% 1.65rem; font-size: 0; text-align: center; }
-.relateporject .content .imgbox { background: #865ba9; font-size: 0; padding:.1rem 0;}
-.relateporject .content img { margin: 0.125rem; width: 47.5%; max-width: 7.6rem; }
+.relateporject .contents { padding: 0.55rem 3.5% 1.65rem; font-size: 0; text-align: center; }
+.relateporject .contents .imgbox { background: #865ba9; font-size: 0; padding:.1rem 0;}
+.relateporject .contents img { margin: 0.125rem; width: 47.5%; max-width: 7.6rem; }
 .articlerelatedoctor{background:#76449e;height: 13.15rem; }
 .articlerelatedoctor .heading .line{border-bottom: solid 1px #8a60ab;}
-.articlerelatedoctor .content {padding: .55rem 2% 1.9rem; }
+.articlerelatedoctor .contents {padding: .55rem 2% 1.9rem; }
 .articlerelatedoctor .zhuanjia-item{border: solid 1px #906aaf;overflow:hidden;}
 .articlerelatedoctor .zhuanjia-thum{border: solid 3px #76449e;}
 .articlerelatedoctor .zhuanjia-title{font-size:0.8rem;border-bottom: solid 1px #5e367e;background:url(//img.hzshuangmei.com/m/icon_people2.png) left center no-repeat;background-size:0.75rem 0.7rem;}
@@ -417,7 +417,7 @@ font-size: 0.3rem; line-height: 0.85rem; color: #6a6a6a; }
 
 /* .articlerelatecase{height: 15rem;} */
  #articleslidecase{height:9.5rem;}
-.articlerelatecase .content{padding-top: 0.55rem ;padding-bottom: 1.9rem;}
+.articlerelatecase .contents{padding-top: 0.55rem ;padding-bottom: 1.9rem;}
 .articlerelatecase #diary .item{border:none; height: 9.5rem;width:14.4rem;}
 .articlerelatecase #diary .pic{margin-top: 0;}
 .articlerelatecase #diary .label span{ color: #704096;}
