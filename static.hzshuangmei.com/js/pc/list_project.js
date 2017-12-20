@@ -40,7 +40,8 @@ function pchange2(obj){
 
 //prerender
 function preReady() {
-    $("a:not([href=''][href='#'])").hover(
+//顶部导航区域
+    $("#nav").find("a:not([href=''][href='#'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
@@ -61,6 +62,31 @@ function(event) {
         $('link[rel="preconnect"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
         $('link[rel="prefetch"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
         $('link[rel="prerender"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
+
+    });
+
+//非导航区域
+    $("#ptabCon2").find("a:not([href=''][href='#'])").hover(
+        function(event) {
+        var bool = false;
+        var pre_url = $(this).attr("href");
+        $("link").each(function() {
+            if (($(this).attr("href") == pre_url)) {
+                bool = true;
+            }
+        });
+        if (!bool) {
+            $("head").append('<link rel="preconnect" href="https://www.hzshuangmei.com/projects/' + pre_url +'"'+ '>');
+            $("head").append('<link rel="prefetch" href="https://www.hzshuangmei.com/projects/' + pre_url +'"'+ '>');
+            $("head").append('<link rel="prerender" href="https://www.hzshuangmei.com/projects/' + pre_url +'"'+ '>');
+        }
+    },
+
+function(event) {
+        var pre_url = $(this).attr("href");
+        $('link[rel="preconnect"][href="https://www.hzshuangmei.com/projects/' + pre_url + '"' + ']').remove();
+        $('link[rel="prefetch"][href="https://www.hzshuangmei.com/projects/' + pre_url + '"' + ']').remove();
+        $('link[rel="prerender"][href="https://www.hzshuangmei.com/projects/' + pre_url + '"' + ']').remove();
 
     });
 }
