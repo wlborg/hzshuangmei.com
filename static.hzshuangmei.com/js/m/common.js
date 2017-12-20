@@ -492,20 +492,45 @@
            }
            module.addKSTScript = function() {
             //to be changed
-               addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1");
+               addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1&ref=''");
            }
            module.addBaiduScript = function() {
                addScript("https://hm.baidu.com/hm.js?cdb0e6daab9a851a15e716817a452897");
            }
            module.bindConsultHref = function() {
+               //专题快商通
                var consultEs = $('.j-consult');
-               if (consultEs.length > 0) {
-                   consultEs.on('click', function(event) {
-                       event.preventDefault();
-                       window.location.href = '/kst/kst.html';
-                   });
+               //专题内容区快商通链接总数
+               var linkCount=consultEs.length;
+               if (linkCount > 0) {
+                   //给每个咨询元素绑定单击事件
+                   consultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var linkInfo ="porjectConsultLinksCountIs"+linkCount+ "----visitedLinkNumberIs"+num;
+                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
+                       window.location.href = href;
+                    })
+                  });
                } else {
-                   console.log('若需要其他咨询按钮请给元素添加"j-consult"类以激活');
+                   console.log('若专题中需要咨询按钮请给元素添加"j-consult"类以激活');
+               }
+               //站点快商通
+               var siteConsultEs = $('.j-site-consult');
+               //非专题内容区的咨询链接总数
+               var siteLinkCount=siteConsultEs.length;
+               if (siteLinkCount > 0) {
+
+                   siteConsultEs.each(function(index) {
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        var linkInfo ="AnotherConsultLinksCountIs"+siteLinkCount+ "----visitedLinkNumberIs"+num;
+                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
+                       window.location.href = href;
+                    })
+                  });
+               } else {
+                   console.log('若站点中需要其他咨询按钮请给元素添加"j-site-consult"类以激活，注意和专题中的咨询做区别');
                }
            }
            return module;
@@ -547,7 +572,7 @@
            };
 
            module.showMoreProject = function(num) {
-               num = num + 1;
+               var num = num + 1;
                var moreitems = $('.project-items li:nth-child(n+' + num + ')');
                if (moreitems.length) {
                    var morebtn = $('.pro-more');
