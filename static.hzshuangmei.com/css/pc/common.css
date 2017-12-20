@@ -177,6 +177,7 @@ header .sm_logo img {
     margin-left: -400px;
     /* margin-top: -1px; */
     height: 510px;
+    border: 1px solid #efebeb;
 }
 
 #nav ul li:hover #project {
