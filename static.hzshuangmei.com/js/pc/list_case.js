@@ -95,22 +95,22 @@ function(event) {
             }
         });
         if (!bool) {
-            $("head").append('<link rel="preconnect" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-            $("head").append('<link rel="prefetch" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-            $("head").append('<link rel="prerender" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
+            $("head").append('<link rel="preconnect" href="https://www.hzshuangmei.com' + pre_url +'"'+ '>');
+            $("head").append('<link rel="prefetch" href="https://www.hzshuangmei.com' + pre_url +'"'+ '>');
+            $("head").append('<link rel="prerender" href="https://www.hzshuangmei.com' + pre_url +'"'+ '>');
         }
     },
 
 function(event) {
         var pre_url = $(this).attr("href");
-        $('link[rel="preconnect"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
-        $('link[rel="prefetch"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
-        $('link[rel="prerender"][href="https://www.hzshuangmei.com/' + pre_url + '"' + ']').remove();
+        $('link[rel="preconnect"][href="https://www.hzshuangmei.com' + pre_url + '"' + ']').remove();
+        $('link[rel="prefetch"][href="https://www.hzshuangmei.com' + pre_url + '"' + ']').remove();
+        $('link[rel="prerender"][href="https://www.hzshuangmei.com' + pre_url + '"' + ']').remove();
 
     });
 
 //非导航区域
-    $("#doctors_tabCon").find("a:not([href=''][href='#'])").hover(
+    $("#case_tabCon").find("a:not([href=''][href='#'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
