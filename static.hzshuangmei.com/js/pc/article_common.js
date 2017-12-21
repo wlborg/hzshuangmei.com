@@ -5,10 +5,10 @@ var aside_swiper = new Swiper('.aside_swiper', {
     spaceBetween: 30,
     keyboardControl: true
 });
-//����
+//baidu share
 window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "24" }, "share": {} };
 with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = '/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
-//�����̶�
+//right sidebar fixed
 $(document).ready(function () {
     var a = $("#ar_aside").offset();
     var c = $("#index_items").offset();
@@ -21,4 +21,20 @@ $(document).ready(function () {
             $("#ar_aside").removeClass("fixed2");
         }
     });
+});
+
+//prerender Cases Big images
+function  preReadyCaseBigPics() {
+//日记详情页加载完成的时候，加载日记的所有大图
+var currentFileName=window.location.pathname.split("/")[window.location.pathname.split("/").length-1];
+var currentID=currentFileName.split(".")[0];
+//var BigImgsNum=$(".main").find("img").length();
+$(".main").find("img").each(function(index, el) {
+          $("head").append('<link rel="prefetch" href="https://uploads.hzshuangmei.com/bigcaseimage/"'+currentID+'"/"'+index+1+'".jpg"' + '>');
+});
+
+}
+
+$(function() {
+    preReadyCaseBigPics();
 });
