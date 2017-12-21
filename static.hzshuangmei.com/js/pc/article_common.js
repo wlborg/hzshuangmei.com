@@ -29,9 +29,11 @@ var currentFileName=window.location.pathname.split("/")[window.location.pathname
 var currentID=currentFileName.split(".")[0];
 var BigImgsNum=$(".main").find("img").length;
 for (var i = 1 ; i <BigImgsNum+1; i++) {
-            $("head").append('<link rel="prefetch" href="https://uploads.hzshuangmei.com/bigcaseimage/"'+currentID+'"\/"'+i+'".jpg"' + '>');
+            $("head").append('<link rel="prefetch" href="https://uploads.hzshuangmei.com/bigcaseimage/'+currentID+'/'+i+'.jpg">');
  }
 }
 $(function() {
     preReadyCaseBigPics();
 });
+
+
