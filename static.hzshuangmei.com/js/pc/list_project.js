@@ -67,7 +67,6 @@ function(event) {
 
 //子导航区域
 //项目
-    $("#project").find("a:not([href=''][href='#'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
