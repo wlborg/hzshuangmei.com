@@ -115,12 +115,6 @@ function(event) {
 
     });
 
-
-
-
-
-
-
 //非导航区域
     $("#ptabCon2").find("a:not([href=''][href='#'])").hover(
         function(event) {
