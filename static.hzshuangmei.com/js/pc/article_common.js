@@ -26,7 +26,7 @@ $(document).ready(function () {
 function  preReadyCaseBigPics() {
 //日记详情页加载完成的时候，加载日记的所有大图
 var currentFileName=window.location.pathname.split("/")[window.location.pathname.split("/").length-1];
-var currentID=currentFileName.split(".")[0];
+var currentID=$.trim(currentFileName.split(".")[0]);
 var BigImgsNum=$(".main").find("img").length;
 for (var i = 1 ; i <BigImgsNum+1; i++) {
             $("head").append('<link rel="prefetch" href="https://uploads.hzshuangmei.com/bigcaseimage/"'+currentID+'"/"'+i+'".jpg"' + '>');
