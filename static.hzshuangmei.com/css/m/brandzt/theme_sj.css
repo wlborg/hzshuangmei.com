@@ -155,7 +155,8 @@ h2 {
     margin-bottom: .5rem;
     font-size: .4rem;
     line-height: .65rem;
-    color: #cbc7d4
+    color: #cbc7d4;
+    text-align: justify;
 }
 
 .zt-m1 .content-box .p1 {
@@ -191,7 +192,7 @@ h2 {
 
 .zt-m2 .title-box {
     width: 4.75rem;
-    height: 2.7rem
+    height: 2.7rem;
 }
 
 .zt-m2 h2 {
