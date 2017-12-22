@@ -643,16 +643,16 @@ h3 img {
     top: 234px;
 }
 .index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {
-    background-image: url({dede:global.cfg_imgpath/}/pc/p2_arrow_r.png);
+    background-image: url(//img.hzshuangmei.com/pc/p2_arrow_r.png);
     right: -65px;
     left: auto;
 }
-/*.index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {*/
-    /*background-image: url(//img.hzshuangmei.com/pc/p2_arrow_r.png);*/
-    /*right: -65px;*/
-    /*left: auto;*/
-    /*top: 234px !important;*/
-/*}*/
+.index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {
+    background-image: url(//img.hzshuangmei.com/pc/p2_arrow_r.png);
+    right: -65px;
+    left: auto;
+    top: 234px !important;
+}
 
 .index_expert #tabCon3 .swiper-button-next4, .swiper-button-prev4 {
     position: absolute;
@@ -668,7 +668,9 @@ h3 img {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.index_expert .swiper-slide {
+    margin-right: 36px!important;
+}
 .index_environment .swiper-button-next5, .swiper-button-prev5 {
     position: relative;
     top: -14px;
@@ -696,4 +698,7 @@ h3 img {
     left: 303px;
     top: -26px;
     right: auto;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
 }
