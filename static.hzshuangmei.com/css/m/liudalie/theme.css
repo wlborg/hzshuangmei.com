@@ -237,12 +237,14 @@ body {
 
 .zt-m1 .content-box1 .list1 li {
     padding-left: .5rem;
+     height: .6rem;
     background: url(//img.hzshuangmei.com/m/liudalie/bg1-itemicon.jpg) .175rem center no-repeat;
-    background-size: .2rem .2rem
+    background-size: .2rem .2rem;
 }
 
 .zt-m1 .content-box1 .list2 li {
-    padding-left: .25rem
+    padding-left: .25rem;
+     height: 1.2rem;
 }
 
 .zt-m1 .content-box1 p {
@@ -250,6 +252,7 @@ body {
     padding-left: .25rem;
     font-size: .5rem;
     line-height: .65rem;
+    height: 1.3rem;
     color: #737373
 }
 
