@@ -576,7 +576,7 @@ h3 img {
 /*news*/
 .index_news .news .news-button-prev, .swiper-container-rtl .news-button-next {
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
-    left: 654px;
+    left: 684px;
     top: -35px;
     right: auto;
 }
@@ -584,13 +584,13 @@ h3 img {
 .index_news .news .news-button-next, .swiper-container-rtl .news-button-prev {
     background-image: url("//img.hzshuangmei.com/pc/arrow_r.png");
     right: 10px;
-    left: auto;
+    /*left: auto;*/
 }
 
 .index_news .news .news-button-next, .news-button-prev {
     position: relative;
     top: -23px;
-    left: 686px;
+    left:713px;
     width: 23px;
     height: 22px;
     margin-top: -10px;
@@ -608,7 +608,7 @@ h3 img {
     height: 16px;
     display: inline-block;
     border-radius: 100%;
-    background: #dfdfdf;
+    background: rgb(255, 255, 255);
     opacity: 1;
 }
 
@@ -619,7 +619,7 @@ h3 img {
 
 .index_news .news .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 10px;
-    left: 295px;
+    left: 323px;
     width: 100%;
 }
 
@@ -642,13 +642,17 @@ h3 img {
     right: auto;
     top: 234px;
 }
-
 .index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {
-    background-image: url(//img.hzshuangmei.com/pc/p2_arrow_r.png);
+    background-image: url({dede:global.cfg_imgpath/}/pc/p2_arrow_r.png);
     right: -65px;
     left: auto;
-    top: 234px !important;
 }
+/*.index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {*/
+    /*background-image: url(//img.hzshuangmei.com/pc/p2_arrow_r.png);*/
+    /*right: -65px;*/
+    /*left: auto;*/
+    /*top: 234px !important;*/
+/*}*/
 
 .index_expert #tabCon3 .swiper-button-next4, .swiper-button-prev4 {
     position: absolute;
