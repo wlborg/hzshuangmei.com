@@ -102,7 +102,7 @@ body {
 .banner {
     padding-bottom: 50%;
     background: url(//img.hzshuangmei.com/m/liudalie/banner.jpg) center top no-repeat;
-    background-size: auto 100%
+    background-size: 100%;
 }
 
 .zt-m1 .title {
