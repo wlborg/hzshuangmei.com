@@ -96,7 +96,8 @@ body {
 
 .zt-m1 .content-box1 .list1,
 .zt-m1 .content-box1 .list2 {
-    padding-right: 8rem
+    padding-right: 8rem;
+    width: 8rem;
 }
 
 .banner {
@@ -206,6 +207,7 @@ body {
     margin-top: .4rem;
     padding-left: 1.2rem;
     line-height: 1.05rem;
+        height: 1.05rem;
     font-size: .75rem;
     color: #333
 }
@@ -217,7 +219,7 @@ body {
 
 .zt-m1 .content-box1 .icon2 {
     background: url(//img.hzshuangmei.com/m/liudalie/bg1_icon2.png) left center no-repeat;
-    background-size: 1.1rem .8rem
+    background-size: 1.1rem 1.05rem
 }
 
 .zt-m1 .content-box1 .icon3 {
@@ -253,7 +255,7 @@ body {
     font-size: .5rem;
     line-height: .65rem;
     height: 1.3rem;
-    color: #737373
+    color: #737373;
 }
 
 .zt-m1 .content-box2 {
