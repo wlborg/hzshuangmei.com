@@ -3,11 +3,11 @@
 
 <head>
     {dede:include filename="_meta.htm"/}
-    <meta name="author" content="Éè¼Æ£º¹Û²Êºã£¬Ç°¶Ë£º³ÂÏşÕä" />
+    <meta name="author" content="è®¾è®¡ï¼šè§‚å½©æ’ï¼Œå‰ç«¯ï¼šé™ˆæ™“ç" />
     <meta name="keywords" content="{dede:global.cfg_keywords/}" />
     <meta name="description" content="{dede:global.cfg_description/}" />
     <meta name="google-site-verification" content="Odmo8X4zeUG1WPcCrCAueZz-dyBPFBs4Zqlb9FBT5z4" />
-    <!-- ÒÆ¶¯¶ËÉèÖÃ Î¨Ò»URL-->
+    <!-- ç§»åŠ¨ç«¯è®¾ç½® å”¯ä¸€URL-->
     <link rel="canonical" href="https://www.hzshuangmei.com/">
     <title>{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
@@ -19,30 +19,30 @@
     {dede:include filename="_header.htm"/}
     <!-- /menu -->
     <div class="contents">
-        <h1><span class="sr-only">ºì×±Ë«ÃÀ</span></h1>
-        <!-- ¶¥²¿banner -->
+        <h1><span class="sr-only">çº¢å¦†åŒç¾</span></h1>
+        <!-- é¡¶éƒ¨banner -->
         {dede:myad name='topbanner_sj'/}
-        <!-- /¶¥²¿banner -->
-        <!-- Ê×Ò³µ¼º½ -->
+        <!-- /é¡¶éƒ¨banner -->
+        <!-- é¦–é¡µå¯¼èˆª -->
         {dede:include filename="_sj_index_nav.htm"/}
-        <!-- /Ê×Ò³µ¼º½ -->
-        <!-- ÏîÄ¿ÍÆ¼ö -->
+        <!-- /é¦–é¡µå¯¼èˆª -->
+        <!-- é¡¹ç›®æ¨è -->
         {dede:myad name='centerpic_sj'/}
-        <!-- /ÏîÄ¿ÍÆ¼ö -->
+        <!-- /é¡¹ç›®æ¨è -->
         <div id="news">
-            <h2><span class="sr-only">ĞÂÎÅÖĞĞÄ</span></h2>
+            <h2><span class="sr-only">æ–°é—»ä¸­å¿ƒ</span></h2>
             <div class="item">
                 {dede:arclist  typeid='1' row='1' titlelen="120"}
 
                 <h3><a href="[field:arcurl/]" title="[field:title/] ">[field:title/] </a></h3><!--
-                       <p>Ê±¼ä[field:pubdate function='strftime("%Y-%m-%d %H:%M","@me")' /]</p> -->
+                       <p>æ—¶é—´[field:pubdate function='strftime("%Y-%m-%d %H:%M","@me")' /]</p> -->
                 <a href="/news/" title="more" class="more">more</a>
                 {/dede:arclist}
 
             </div>
         </div>
         <div id="video">
-            <h2>ÊÓÆµÖĞĞÄ <span class="icon-show"></span></h2>
+            <h2>è§†é¢‘ä¸­å¿ƒ <span class="icon-show"></span></h2>
             <div class="item">
                 {dede:arclist  typeid='60' row='1' titlelen="120"}
                 <h3><a href="[field:arcurl/]" title="[field:title/] ">[field:title/] </a></h3>
@@ -50,13 +50,13 @@
                 {/dede:arclist}
             </div>
         </div>
-        <!-- Ò½Éú -->
+        <!-- åŒ»ç”Ÿ -->
         {dede:include filename="_sj_index_doctor.htm"/}
-        <!-- Ò½Éú -->
+        <!-- åŒ»ç”Ÿ -->
         <div id="diary">
             <div class="heading">
-                <h2>ÃÀÀöÈÕ¼Ç</h2>
-                <a href="/cases/" class="more"> more/¸ü¶à</a>
+                <h2>ç¾ä¸½æ—¥è®°</h2>
+                <a href="/cases/" class="more"> more/æ›´å¤š</a>
                 <div class="line"></div>
             </div>
             <div class="content">
@@ -72,15 +72,15 @@
                         <p class="des">[field:note function='cn_substr(@me,120)'/]...</p>
                         <div class="pic f-cb">
                             <div class="before ">
-                                <a href="[field:arcurl/]"><img src="[field:imgbefore function='replaceurl(@me)'/]" alt="ÊõÇ°"></a>
+                                <a href="[field:arcurl/]"><img src="[field:imgbefore function='replaceurl(@me)'/]" alt="æœ¯å‰"></a>
                                 <div class="flag">
-                                    ÊõÇ°
+                                    æœ¯å‰
                                 </div>
                             </div>
                             <div class="after">
-                                <a href="[field:arcurl/]"><img src="[field:imgafter function='replaceurl(@me)/]" alt="Êõºó"></a>
+                                <a href="[field:arcurl/]"><img src="[field:imgafter function='replaceurl(@me)/]" alt="æœ¯å"></a>
                                 <div class="flag">
-                                    Êõºó
+                                    æœ¯å
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="title">
                     <span class="lefticon"></span>
-                    <h3><a href="/honors/">ºì×±ÈÙÓş</a></h3>
+                    <h3><a href="/honors/">çº¢å¦†è£èª‰</a></h3>
                     <span class="righticon"></span>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="title">
                     <span class="lefticon"></span>
-                    <h3><a href="/environment/">ºì×±»·¾³</a></h3>
+                    <h3><a href="/environment/">çº¢å¦†ç¯å¢ƒ</a></h3>
                     <span class="righticon"></span>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="title">
                     <span class="lefticon"></span>
-                    <h3><a href="/equipment/">¶¥¼âÉè±¸</a></h3>
+                    <h3><a href="/equipment/">é¡¶å°–è®¾å¤‡</a></h3>
                     <span class="righticon"></span>
                 </div>
             </div>
