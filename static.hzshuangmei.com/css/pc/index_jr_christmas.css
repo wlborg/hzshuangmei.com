@@ -933,3 +933,6 @@ footer .middle {
 .index_items .shuang_m1 > div:last-child i {
     background: url(//img.hzshuangmei.com/pc/p5_04_1.png) no-repeat center;
 }
+#nav > ul > li:hover a{
+    color:#fff
+}
