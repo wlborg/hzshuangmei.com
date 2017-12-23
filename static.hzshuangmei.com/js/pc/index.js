@@ -145,7 +145,7 @@ var swiper7 = new Swiper('.swiper-container5_3', {
 //     });
 // }
 function preReady() {
-    $("a:not([href=''][href='#'])").hover(
+    $("a:not([href='javascript:void(0)'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");

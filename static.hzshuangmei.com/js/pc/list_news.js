@@ -15,7 +15,7 @@ with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 //prerender
 function preReady() {
 //顶部主导航区域
-    $(".nav_list").children("a:not([href=''][href='#'])").hover(
+    $(".nav_list").children("a:not([href='javascript:void(0)'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
@@ -41,7 +41,7 @@ function(event) {
 
 //子导航区域
 //项目
-    $("#project").find("li:not([class='n_button'])").find("a:not([href=''][href='#'])").hover(
+    $("#project").find("li:not([class='n_button'])").find("a:not([href='javascript:void(0)'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
@@ -65,7 +65,7 @@ function(event) {
 
     });
     //专家
-    $("#expert").find("a:not([href=''][href='#'])").hover(
+    $("#expert").find("a:not([href='javascript:void(0)'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
@@ -90,7 +90,7 @@ function(event) {
     });
 
 //非导航区域
-    $(".news_main").find("a:not([href=''][href='#'])").hover(
+    $(".news_main").find("a:not([href='javascript:void(0)'])").hover(
         function(event) {
         var bool = false;
         var pre_url = $(this).attr("href");
