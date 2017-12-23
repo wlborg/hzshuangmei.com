@@ -187,7 +187,7 @@ $(function () {
         var startPositionLeft = Math.random() * documentWidth;
         var sizeFlake = minSize + Math.random() * maxSize;
         var endPositionLeft = Math.random() * documentWidth;
-        var durationFall = documentHeight * 10 + Math.random() * 2000;
+        var durationFall = documentHeight * 10 + Math.random() * 1000;
         var startOpacity = 0.7 + 0.3 * Math.random();
         var endOpacity = 0.5 * Math.random();
         flake.clone().appendTo($("body")).css({
