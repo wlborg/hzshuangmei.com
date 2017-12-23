@@ -586,6 +586,10 @@ header .sm_logo {
 .banner .banner_snow {
     position: absolute;
     z-index: 10000;
+
+}
+.banner .banner_snow img{
+    width:100%
 }
 .banner .banner-pagination .swiper-pagination-bullet-active{
     background: #a60606;
