@@ -702,3 +702,6 @@ h3 img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 4px;
 }
+#nav > ul > li:hover a {
+    color: #fff;
+}
