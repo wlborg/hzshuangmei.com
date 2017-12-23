@@ -569,7 +569,7 @@ header .sm_logo {
 }
 #nav {
     background:url(//img.hzshuangmei.com/pc/nav_bg.jpg) no-repeat center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 #nav .bor_r {
     border-right: 1px solid #fff;
@@ -941,4 +941,7 @@ footer .middle {
 }
 #expert {
     z-index: 9999999;
+}
+.index_news .news .timu {
+    color: #9d0100;
 }
