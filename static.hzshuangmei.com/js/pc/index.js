@@ -179,7 +179,7 @@ $(function() {
 var minSize = 5;
 var maxSize = 50;
 var newOn = 80;
-var flake = $("<div></div>").css({ "position": "absolute", "top": "-50px" }).html("❅");
+var flake = $("<div></div>").css({ "position": "absolute", "top": "-50px"}).html("❅");
 $(function () {
     var documentHeight = $(document).height();
     var documentWidth = $(document).width();
