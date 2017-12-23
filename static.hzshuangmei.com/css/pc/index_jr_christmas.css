@@ -916,5 +916,20 @@ footer .middle {
     background-color: rgba(157, 1, 0, 0.6);
 }
 .index_items .shuang_m1 > div span {
-    color: #555;
+    color: #404040;
+}
+.index_items .shuang_m1 > div ul a {
+    color: #404040;
+}
+.index_items .shuang_m1 > div:first-child i {
+    background: url(//img.hzshuangmei.com/pc/p5_01_1.png) no-repeat center;
+}
+.index_items .shuang_m1 > div:nth-child(2) i {
+    background: url(//img.hzshuangmei.com/pc/p5_02_1.png) no-repeat center;
+}
+.index_items .shuang_m1 > div:nth-child(3) i {
+    background: url(//img.hzshuangmei.com/pc/p5_03_1.png) no-repeat center;
+}
+.index_items .shuang_m1 > div:last-child i {
+    background: url(//img.hzshuangmei.com/pc/p5_04_1.png) no-repeat center;
 }
