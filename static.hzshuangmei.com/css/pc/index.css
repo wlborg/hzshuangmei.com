@@ -414,6 +414,8 @@ h3 img {
 .index_clients .clients_t img {
     max-width: 291px;
     max-height: 421px;
+    width: 291px;
+    height: 313px;
 }
 
 .index_clients #tabCon4 ul li .clients_t span {
