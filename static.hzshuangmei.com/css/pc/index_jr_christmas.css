@@ -936,3 +936,9 @@ footer .middle {
 #nav > ul > li:hover a{
     color:#fff
 }
+#nav > ul > li #project {
+    z-index: 9999999;
+}
+#expert {
+    z-index: 9999999;
+}
