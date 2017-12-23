@@ -178,7 +178,7 @@ $(function() {
 // merry Xmas snow
 var minSize = 5;
 var maxSize = 50;
-var newOn = 50;
+var newOn = 80;
 var flake = $("<div></div>").css({ "position": "absolute", "top": "-50px"}).html("❅");
 $(function () {
     var documentHeight = $(document).height();
@@ -187,7 +187,7 @@ $(function () {
         var startPositionLeft = Math.random() * documentWidth;
         var sizeFlake = minSize + Math.random() * maxSize;
         var endPositionLeft = Math.random() * documentWidth;
-        var durationFall = documentHeight * 10 + Math.random() * 3000;
+        var durationFall = documentHeight * 10 + Math.random() * 2000;
         var startOpacity = 0.7 + 0.3 * Math.random();
         var endOpacity = 0.5 * Math.random();
         flake.clone().appendTo($("body")).css({
