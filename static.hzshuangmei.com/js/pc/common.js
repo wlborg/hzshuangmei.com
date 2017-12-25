@@ -97,7 +97,7 @@ var tools = (
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo = "porjectConsultLinksCountIs" + linkCount + "----visitedLinkNumberIs" + num;
-                        var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
+                        var href = "https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=" + infos.href + "&infos=" + linkInfo;
                         window.location.href = href;
                     })
                 });
@@ -114,7 +114,7 @@ var tools = (
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo = "AnotherConsultLinksCountIs" + siteLinkCount + "----visitedLinkNumberIs" + num;
-                        var href = "https://www.hzshuangmei.com/kst/kst.html?ref=" + infos.href + "&infos=" + linkInfo;
+                        var href = "https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=" + infos.href + "&infos=" + linkInfo;
                         window.location.href = href;
                     })
                 });
