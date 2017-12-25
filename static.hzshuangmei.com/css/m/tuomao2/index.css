@@ -3,3 +3,24 @@
     vertical-align: bottom;
     display:block;
 }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+.zixun1{
+    position:relative
+}
+.zixun1 .anniu1{
+    position: absolute;
+    right:0
+}
+.zixun2{
+    position:relative
+}
+.zixun2 .anniu2{
+    position: absolute;
+    top: 0.3rem;
+    left: 1rem;
+}
+.zixun2 .anniu3{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
