@@ -136,7 +136,7 @@ header .sm_logo img {
 #nav > ul > li {
     flex: 1;
     height: 59px;
-    position: relative;
+    /*position: relative;*/
 }
 
 #nav > ul > li > a {
