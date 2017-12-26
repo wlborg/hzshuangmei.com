@@ -23,7 +23,7 @@ a { text-decoration: none; }
     color:black;
 } */
 body { padding-top: 40px !important; overflow-x: hidden; }
-body { font-family: sans-serif, "微软雅黑", "Microsoft Yahei", Verdana, Arial; background: #fff; }
+body { font-family: sans-serif, Verdana, Arial; background: #fff; }
 
 /* 统一清除浮动 */
 .f-fr { float: right; }
