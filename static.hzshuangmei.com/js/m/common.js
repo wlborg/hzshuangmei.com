@@ -577,7 +577,7 @@
                if (moreitems.length) {
                    var morebtn = $('.pro-more');
                    moreitems.css('display', "none")
-                   morebtn.css('display', 'inline-block');
+                   morebtn.css('display', 'block');
                    morebtn.click(function(event) {
                        moreitems.css('display', 'inline-block');
                        $(this).css('display', 'none');
