@@ -1103,14 +1103,14 @@ footer .middle {
 }
 .index_news .news .news_content img {
     width: 737px;
-    height: 252px;
+    height: 254px;
 }
 .index_news .news .news_content {
     position: relative;
-    top: -10px;
+    top: -13px;
 }
 .index_news .news .timu {
-    top: 220px;
+    top: 222px;
 }
 .index_news .video .swiper-container {
     width: 369px;
