@@ -1119,3 +1119,15 @@ footer .middle {
 .swiper-container.video_swiper.video_swiper {
     top: -38px;
 }
+.index_news .news .inform .tj_tit {
+    top: -9px;
+}
+.index_news .news .recommend {
+    padding-top: 28px;
+}
+.index_news .news .clock {
+    padding-top: 28px;
+}
+.index_news .video p {
+    padding-top: 11px;
+}
