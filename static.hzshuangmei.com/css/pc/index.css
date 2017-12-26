@@ -846,3 +846,34 @@ h3 img {
 #nav > ul > li:hover a {
     color: #fff;
 }
+
+.index_news .news .news_content img {
+    width: 737px;
+    height: 254px;
+}
+.index_news .news .news_content {
+    position: relative;
+    top: -13px;
+}
+.index_news .news .timu {
+    top: 222px;
+}
+.index_news .video .swiper-container {
+    width: 369px;
+    height: 340px;
+}
+.swiper-container.video_swiper.video_swiper {
+    top: -38px;
+}
+.index_news .news .inform .tj_tit {
+    top: -9px;
+}
+.index_news .news .recommend {
+    padding-top: 28px;
+}
+.index_news .news .clock {
+    padding-top: 28px;
+}
+.index_news .video p {
+    padding-top: 11px;
+}
