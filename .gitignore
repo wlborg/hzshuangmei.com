@@ -1,5 +1,6 @@
 /components/
 /default*/
+*.7z
 *.html
 *.xml
 *.tar.gz
