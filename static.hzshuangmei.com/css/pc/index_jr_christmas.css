@@ -1101,3 +1101,21 @@ footer .middle {
 .index_news .news .timu {
     color: #9d0100;
 }
+.index_news .news .news_content img {
+    width: 737px;
+    height: 252px;
+}
+.index_news .news .news_content {
+    position: relative;
+    top: -10px;
+}
+.index_news .news .timu {
+    top: 220px;
+}
+.index_news .video .swiper-container {
+    width: 369px;
+    height: 298px;
+}
+.swiper-container.video_swiper.video_swiper {
+    top: -10px;
+}
