@@ -508,7 +508,7 @@
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo ="porjectConsultLinksCountIs"+linkCount+ "----visitedLinkNumberIs"+num;
-                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
+                        var href="https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
                   });
@@ -525,7 +525,7 @@
                     $(this).on('click', function() {
                         var num = index + 1;
                         var linkInfo ="AnotherConsultLinksCountIs"+siteLinkCount+ "----visitedLinkNumberIs"+num;
-                        var href="https://m.hzshuangmei.com/kst/kst.html?ref="+infos.href+"&infos="+linkInfo;
+                        var href="https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref="+infos.href+"&infos="+linkInfo;
                        window.location.href = href;
                     })
                   });
@@ -579,7 +579,7 @@
                    moreitems.css('display', "none")
                    morebtn.css('display', 'block');
                    morebtn.click(function(event) {
-                       moreitems.css('display', 'block');
+                       moreitems.css('display', 'inline-block');
                        $(this).css('display', 'none');
                    });
                }
