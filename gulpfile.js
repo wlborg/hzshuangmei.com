@@ -14,6 +14,9 @@ var RevAll = require('gulp-rev-all');
   // var jshint = require('gulp-jshint');
  var uglify = require('gulp-uglify');
  var cleanCSS = require('gulp-clean-css');
+   var filter = require('gulp-filter');
+    var RevAll = require('gulp-rev-all');
+   var  del = require('del');
 
   /*  optimer html files*/
 gulp.task('htmlmin', function () {
@@ -157,10 +160,10 @@ gulp.task('default',['htmlmin','cssmin','optimage','jsmin'], function() {
 
 
 
-gulp.task('version', function () {
-  gulp
-    .src('dist/**')
-    .pipe(RevAll.revision())
-    .pipe(gulp.dest('cdn'));
+// gulp.task('version', function () {
+//   gulp
+//     .src('dist/**')
+//     .pipe(RevAll.revision())
+//     .pipe(gulp.dest('cdn'));
 
-});
+// });
