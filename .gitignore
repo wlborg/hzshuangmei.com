@@ -1,5 +1,10 @@
 /components/
 /default*/
+/node_modules/
+gulpfile.js
+package.json
+/dist/
+/src/
 *.7z
 *.html
 *.xml
