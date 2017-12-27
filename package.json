@@ -1,8 +1,10 @@
 {
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^1.0.1",
     "gulp-clean-css": "^3.9.0",
+    "gulp-filter": "^5.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.0.0",
     "gulp-jshint": "^2.0.4",
