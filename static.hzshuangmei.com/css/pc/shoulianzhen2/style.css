@@ -1,0 +1,590 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #e2dcfb;
+  font-family: "微软雅黑"; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  display: block;
+  border: none; }
+
+.row {
+  min-width: 1200px;
+  margin: 0; }
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1; }
+
+.banner {
+  width: 100%; }
+  .banner img {
+    width: 100%; }
+
+.title {
+  background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_1.jpg") center top no-repeat; }
+  .title h3 {
+    font-size: 26px;
+    color: #9786c1;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 100; }
+
+.part1 {
+  margin-top: 100px; }
+  .part1 .main {
+    background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part2.jpg") -325px 84px no-repeat, url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part2.jpg") 159% 84px no-repeat; }
+    .part1 .main .foreword {
+      position: relative;
+      margin-top: 44px;
+      font-size: 18px;
+      color: #4c4c4c;
+      line-height: 28px;
+      padding-top: 8px;
+      padding-bottom: 8px; }
+    .part1 .main .foreword:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -225px;
+      width: 450px;
+      height: 2px;
+      background: linear-gradient(left, #e4defb, #f7f9fe, #e4defb);
+      background: -webkit-linear-gradient(left, #e4defb, #f7f9fe, #e4defb); }
+    .part1 .main .foreword:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 590px;
+      height: 2px;
+      left: 50%;
+      margin-left: -295px;
+      background: linear-gradient(left, #e4defb, #f7f9fe, #e4defb);
+      background: -webkit-linear-gradient(left, #e4defb, #f7f9fe, #e4defb); }
+    .part1 .main ul {
+      width: 1144px;
+      margin: 0 auto;
+      margin-top: 40px; }
+      .part1 .main ul li {
+        float: left;
+        width: 190px; }
+        .part1 .main ul li p {
+          text-align: left;
+          font-size: 15px;
+          color: #666666;
+          margin-top: 24px;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          transition: all 1.5s; }
+        .part1 .main ul li.current p {
+          opacity: 1;
+          filter: alpha(opacity=1); }
+        .part1 .main ul li h2 {
+          position: relative;
+          font-size: 24px;
+          color: #8774b4;
+          font-weight: 100;
+          width: 130px;
+          margin: 0 auto;
+          margin-top: 14px;
+          border-bottom: 2px solid #9582c6; }
+        .part1 .main ul li h2:after {
+          position: absolute;
+          content: '';
+          height: 0;
+          width: 0;
+          top: 100%;
+          left: 50%;
+          margin-left: -3px;
+          border-top: 9px solid #9582c6;
+          border-bottom: 9px solid transparent;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent; }
+        .part1 .main ul li img {
+          margin: 0 auto; }
+        .part1 .main ul li .img_2 {
+          width: 166px;
+          padding: 8px;
+          margin-top: 6px;
+          border-radius: 10px;
+          border: 1px dashed #7f6dac; }
+      .part1 .main ul .li_even {
+        margin-top: 70px; }
+
+.button {
+  position: relative;
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(top, #b2a4d8, #ece8fb, #b2a4d8); }
+  .button span {
+        display: block;
+    position: relative;
+    font-size: 24px;
+    color: #404040;
+    height: 46px;
+    line-height: 46px;
+    text-align: center; }
+  .button span:after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 1px;
+    bottom: 1px;
+    left: 50%;
+    margin-left: -110px;
+    background: -webkit-linear-gradient(left, #b4a7d5, #fff, #b4a7d5); }
+
+.button:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  width: 220px;
+  height: 1px;
+  top: 102%;
+  left: 50%;
+  margin-left: -110px;
+  background: -webkit-linear-gradient(left, #d6cef4, #fff, #d6cef4); }
+
+.button:after {
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 40px;
+  top: 100%;
+  left: 50%;
+  border-radius: 50px;
+  margin-left: -125px;
+  background-image: -webkit-gradient(linear, 0 0, 0 40%, from(#cbc2e9), to(#e4defb)); }
+
+.part2 {
+  margin-top: 60px; }
+  .part2 .main {
+    position: relative;
+    background-image: -webkit-gradient(linear, 0 0, 0 10%, from(#b5a8dc), to(#e2dcfb)); }
+    .part2 .main img {
+      float: left;
+      margin-top: 24px; }
+    .part2 .main .contain {
+      text-align: left;
+      float: right;
+      width: 644px;
+      margin-top: 130px; }
+      .part2 .main .contain .title {
+        width: 484px;
+        background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_2.jpg") center top no-repeat; }
+      .part2 .main .contain h2 {
+        margin-top: 60px;
+        margin-left: 40px;
+        color: #8774b4;
+        font-size: 30px;
+        font-weight: 100; }
+      .part2 .main .contain h2:nth-child(4) {
+        margin-top: 50px; }
+      .part2 .main .contain p {
+        margin-left: 40px;
+        width: 600px;
+        letter-spacing: 1px;
+        margin-top: 18px;
+        font-size: 18px;
+        color: #4c4c4c; }
+        .part2 .main .contain .p_1{
+          width: 580px;
+          letter-spacing: 0;
+        }
+    .part2 .main .down {
+      float: left;
+      width: 100%;
+      background: #9582c6; }
+      .part2 .main .down ul {
+        margin-top: 74px; }
+        .part2 .main .down ul li {
+          float: left;
+          margin-left: 55px;
+          width: 170px; }
+          .part2 .main .down ul li img {
+            margin: 0 auto;
+            float: none; }
+          .part2 .main .down ul li p {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 18px; }
+      .part2 .main .down .tip {
+        width: 600px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 42px;
+        margin-bottom: 60px;
+        color: #fff;
+        font-size: 18px;
+        border: 1px dashed #fff;
+        border-radius: 40px;
+        line-height: 40px; }
+        .part2 .main .down .tip span {
+          color: #f9ec19; }
+    .part2 .main .before {
+      position: absolute;
+      border: 2px dashed #736596;
+      border-radius: 50%;
+      top: 42%;
+      left: 24%; }
+      .part2 .main .before img {
+        margin-top: 0;
+        margin: 12px; }
+    .part2 .main .button {
+      position: absolute;
+      margin-top: -23px;
+      top: 100%;
+      left: 50%;
+      margin-left: -120px; }
+      .part2 .main .button span {
+        text-align: center; }
+
+.part3 {
+  margin-top: 120px; }
+  .part3 .title {
+    background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_3.jpg") center top no-repeat; }
+  .part3 .main {
+    margin-top: 50px; }
+    .part3 .main p:first-child {
+      font-size: 20px;
+      color: #666666; }
+    .part3 .main img {
+      float: left; }
+    .part3 .main .part3_left,
+    .part3 .main .part3_right {
+      width: 49%;
+      margin-top: 30px; }
+      .part3 .main .part3_left h2,
+      .part3 .main .part3_left p,
+      .part3 .main .part3_right h2,
+      .part3 .main .part3_right p {
+        float: left;
+        margin-left: 20px; }
+      .part3 .main .part3_left p,
+      .part3 .main .part3_right p {
+        font-size: 20px;
+        margin-top: 4px; }
+      .part3 .main .part3_left h2,
+      .part3 .main .part3_right h2 {
+        position: relative;
+        color: #8774b4;
+        font-size: 30px;
+        font-weight: 100;
+        margin-top: 70px; }
+      .part3 .main .part3_left h2:before,
+      .part3 .main .part3_right h2:before {
+        position: absolute;
+        top: 50%;
+        margin-top: -6px;
+        content: '';
+        left: -20px;
+        border-right: 6px solid #b0a4d8;
+        border-left: 6px solid transparent;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent; }
+      .part3 .main .part3_left h2:after,
+      .part3 .main .part3_right h2:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        margin-top: -6px;
+        right: -20px;
+        border-right: 6px solid transparent;
+        border-left: 6px solid #b0a4d8;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent; }
+    .part3 .main .part3_left {
+      float: left; }
+    .part3 .main .part3_right {
+      float: right; }
+
+.part4 {
+  margin-top: 44px;
+  background: #9582c6; }
+  .part4 .main {
+    position: relative;
+    background: #a792de;
+    padding-top: 90px;
+    height: 960px; }
+    .part4 .main .title {
+      background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_4.jpg") center top no-repeat; }
+      .part4 .main .title h3 {
+        color: #fff; }
+    .part4 .main .p_1 {
+      color: #333;
+      font-size: 18px;
+      width: 921px;
+      margin: 0 auto;
+      margin-top: 40px;
+      text-align: left; }
+      .part4 .main .p_1 span {
+        color: #f9ec19; }
+    .part4 .main .fram {
+      width: 1045px;
+      height: 534px;
+      border: 2px solid #333;
+      margin-left: 106px;
+      margin-top: 34px; }
+      .part4 .main .fram .contain {
+        width: 1058px;
+        height: 513px;
+        background: #e2dcfb;
+        margin-left: -56px;
+        margin-top: 40px; }
+        .part4 .main .fram .contain h2 {
+          font-size: 30px;
+          color: #8774b4;
+          font-weight: 100;
+          line-height: 48px;
+          display: inline-block;
+          border-bottom: 1px solid #8774b4; }
+        .part4 .main .fram .contain .h2_2 {
+          margin-top: 55px; }
+        .part4 .main .fram .contain p {
+          font-size: 18px;
+          color: #4c4c4c;
+          margin-top: 10px; }
+        .part4 .main .fram .contain img {
+          margin-top: 76px;
+          float: left; }
+        .part4 .main .fram .contain .contain_left {
+          float: left;
+          width: 340px;
+          margin-top: 96px;
+          text-align: right;
+          margin-right: 50px; }
+        .part4 .main .fram .contain .contain_right {
+          text-align: left;
+          float: left;
+          width: 235px;
+          margin-top: 96px;
+          margin-left: 50px; }
+          .part4 .main .fram .contain .contain_right .h2_2 {
+            margin-top: 27px; }
+        .part4 .main .fram .contain .promise {
+          float: left;
+          width: 568px;
+          font-size: 16px;
+          color: #1a1a1a;
+          margin-top: 40px;
+          margin-left: 254px; }
+    .part4 .main .button {
+      margin-top: 54px; }
+  .part4 .main:before,
+  .part4 .main:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 20px;
+    top: 0; }
+  .part4 .main:before {
+    right: 100%;
+    background: -webkit-linear-gradient(right, #8574b0, #9582c6); }
+  .part4 .main:after {
+    left: 100%;
+    background: -webkit-linear-gradient(left, #8574b0, #9582c6); }
+
+.part5 {
+  margin-top: 136px; }
+  .part5 .main .title {
+    background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_5.jpg") center top no-repeat; }
+  .part5 .main ul {
+    margin-top: 50px;
+    margin-left: 64px; }
+    .part5 .main ul li {
+      float: left;
+      margin-right: 82px; }
+      .part5 .main ul li h2 {
+        font-size: 30px;
+        color: #725ba6;
+        font-weight: 100;
+        margin-top: 12px; }
+      .part5 .main ul li p {
+        font-size: 18px;
+        color: #4c4c4c;
+        margin-top: 18px; }
+    .part5 .main ul .li_last {
+      margin-right: 0; }
+
+.part6 {
+  margin-top: 100px;
+  background: #9582c6; }
+  .part6 .main {
+    padding-top: 76px;
+    padding-bottom: 60px;
+    background: -webkit-radial-gradient(circle, #a89bcf, #9582c6 90%); }
+    .part6 .main .title {
+      background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_6.png") center top no-repeat; }
+      .part6 .main .title h3 {
+        color: #fff; }
+    .part6 .main ul {
+      margin-top: 50px;
+      margin-left: 40px; }
+      .part6 .main ul li {
+        float: left;
+        width: 226px;
+        margin-right: 66px;
+        text-align: left; }
+        .part6 .main ul li h2 {
+          margin-left: 90px;
+          font-size: 22px;
+          color: #fff;
+          margin-top: 140px;
+          font-weight: 100; }
+        .part6 .main ul li p {
+          font-size: 18px;
+          color: #fff;
+          margin-top: 20px; }
+      .part6 .main ul .li1 {
+        background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part6-1.png") center top no-repeat; }
+      .part6 .main ul .li2 {
+        background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part6-2.png") center top no-repeat; }
+      .part6 .main ul .li3 {
+        background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part6-3.png") center top no-repeat; }
+      .part6 .main ul .li4 {
+        margin-right: 0;
+        background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part6-4.png") center top no-repeat; }
+        .part6 .main ul .li4 h2 {
+          margin-left: 70px; }
+
+.part6_it {
+  margin-top: -25px; }
+
+.part7 {
+  margin-top: 140px; }
+  .part7 .title {
+    background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_7.jpg") center top no-repeat; }
+  .part7 .wrap {
+    width: 1180px;
+    margin-left: 10px;
+    overflow: hidden; }
+  .part7 .slider {
+    width: 1872px; }
+  .part7 img {
+    margin-top: 50px;
+    float: left;
+    margin-right: 64px; }
+  .part7 .img_3 {
+    margin-right: 0; }
+
+.part8 {
+  position: relative;
+  margin-top: 100px;
+  padding-top: 80px;
+  height: 802px;
+  background: -webkit-radial-gradient(circle, #c3b6e7, #9582c6 90%); }
+  .part8 .main {
+    height: 100%;
+    background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_part8.png") 192px bottom no-repeat; }
+    .part8 .main .title {
+      background: url("//img.hzshuangmei.com/pc/shoulianzhen2/bg_title_8.png") center top no-repeat; }
+      .part8 .main .title h3 {
+        color: #fff; }
+    .part8 .main ul li {
+      float: left;
+      position: relative;
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: #ded7fb;
+      overflow: hidden; }
+      .part8 .main ul li img {
+        margin: 0 auto;
+        margin-top: 24px; }
+      .part8 .main ul li .img_1 {
+        display: none; }
+      .part8 .main ul li .img_2 {
+        display: block; }
+      .part8 .main ul li.current {
+        background: #7f6cb1; }
+        .part8 .main ul li.current .img_1 {
+          display: block; }
+        .part8 .main ul li.current .img_2 {
+          display: none; }
+    .part8 .main ul .li_1 {
+      top: 80px;
+      left: 240px; }
+    .part8 .main ul .li_2 {
+      top: 150px;
+      left: 100px; }
+    .part8 .main ul .li_3 {
+      top: 244px;
+      left: -20px; }
+    .part8 .main .wrap {
+      width: 394px;
+      margin-top: 202px;
+      margin-left: 343px;
+      overflow: hidden; }
+      .part8 .main .wrap .slider_part8 {
+        width: 2328px; }
+        .part8 .main .wrap .slider_part8 .box {
+          float: left;
+          width: 394px; }
+          .part8 .main .wrap .slider_part8 .box h2 {
+            font-size: 22px;
+            color: #1a1a1a; }
+          .part8 .main .wrap .slider_part8 .box p {
+            text-align: left;
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-left: 33px;
+            margin-top: 90px;
+            line-height: 32px; }
+  .part8 .like {
+    margin-top: -427px;
+    float: right;
+    width: 550px;
+     }
+  .part8 .button {
+    margin-top: 15px;
+    margin-left: 420px; }
+  .part8 .button:after {
+    background: -webkit-gradient(linear, 0 0, 0 40%, from(#ccc3eb), to(#ded7fb)); }
+  .like_doctor{
+    position: absolute;
+    top: 190px;
+    left: 790px;
+  }
+.foot{
+  height: 350px;
+}
+.slider {
+    float: left;
+}
+
+.indemo {
+    width: 400%;
+}
+/*# sourceMappingURL=style.css.map */
