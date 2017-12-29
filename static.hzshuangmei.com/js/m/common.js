@@ -579,7 +579,7 @@
                    moreitems.css('display', "none")
                    morebtn.css('display', 'block');
                    morebtn.click(function(event) {
-                       moreitems.css('display', 'block');
+                       moreitems.css('display', 'inline-block');
                        $(this).css('display', 'none');
                    });
                }
