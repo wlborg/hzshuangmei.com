@@ -500,7 +500,7 @@ img {
       .part8 .main .title h3 {
         color: #fff; }
     .part8 .main .slider_part8 .name {
-      width: 4.5rem;
+      width: 6rem;
       margin-top: 1.75rem;
       margin-left: 5.9rem;
       font-size: 1.1rem;
@@ -517,15 +517,18 @@ img {
       background: url("//img.hzshuangmei.com/m/shoulianzhen2/bg_part8_h2.png") left center no-repeat;
       background-size: 0.75rem;
       color: #1a1a1a; }
-      .part8 .main .slider_part8 .box1 h2 p,
-      .part8 .main .slider_part8 .box2 h2 p {
+      .part8 .main .slider_part8 .box1 h2 span,
+      .part8 .main .slider_part8 .box2 h2 span {
+        display: block;
         margin-left: 1rem;
         padding-left: 0.25rem;
         height: 1.025rem;
         line-height: 1.025rem;
         border: 0.05rem solid #7866a7;
         background: none;
-        color: #1a1a1a; }
+        color: #1a1a1a; 
+      text-align: left;
+    font-size: 0.45rem}
     .part8 .main .slider_part8 .box1 p,
     .part8 .main .slider_part8 .box2 p {
       text-align: left;
@@ -542,7 +545,7 @@ img {
       margin-left: 5.9rem; }
       .part8 .main .slider_part8 .box1 h2 {
         width: 10rem; }
-        .part8 .main .slider_part8 .box1 h2 p {
+        .part8 .main .slider_part8 .box1 h2 span {
           width: 8.2rem; }
       .part8 .main .slider_part8 .box1 p {
         width: 8.55rem; }
@@ -550,7 +553,7 @@ img {
       width: 8rem;
       margin-top: 0.85rem;
       margin-left: 7.8rem; }
-      .part8 .main .slider_part8 .box2 h2 p{
+      .part8 .main .slider_part8 .box2 h2 span{
         width: 6.2rem;
       }
 
