@@ -50,7 +50,7 @@ img {
 
 .title {
   background: url("//img.hzshuangmei.com/m/shoulianzhen2/bg_title_1.png") center top no-repeat;
-  background-size: 12.25rem 1.35rem; }
+  background-size: 12.25rem 1.35rem;padding: 1px; }
   .title h3 {
     font-size: 0.65rem;
     color: #9786c1;
