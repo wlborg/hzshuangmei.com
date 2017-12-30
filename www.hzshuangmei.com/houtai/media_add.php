@@ -16,6 +16,7 @@ if(empty($dopost)) $dopost = "";
 //上传
 if($dopost=="upload")
 {
+    csrf_check();
     require_once(DEDEINC."/image.func.php");
     $sparr_image = Array("image/pjpeg","image/jpeg","image/gif","image/png","image/x-png","image/wbmp");
     $sparr_flash = Array("application/xshockwaveflash");
@@ -66,11 +67,6 @@ if($dopost=="upload")
                 MkdirAll($cfg_basedir.$savePath,777);
                 CloseFtp();
             }
-              if (preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename))){
-		ShowMsg("你指定的文件名被系统禁止！",'java script:;');
-		exit();
-		
-             }
             $fullfilename = $cfg_basedir.$filename;
             if($mediatype==1)
             {
