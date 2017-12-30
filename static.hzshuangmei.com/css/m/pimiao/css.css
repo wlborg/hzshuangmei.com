@@ -42,7 +42,7 @@ height: 2.15rem;
 .main2-in{width:100%; height:14.6rem; padding-top:1.125rem; margin:0 auto;}
 .title2{width:14.675rem;height: 3.4rem; margin:0 auto;}
 .main2-in ul{width: 100%; height:12.5rem; padding-top:0.3rem;}
-.main2-in ul li{width:7.125rem; float:left; background: url(images/xian.png) no-repeat top center;background-size:contain;
+.main2-in ul li{width:7.125rem; float:left; background: url(https://img.hzshuangmei.com/m/pimiao/images/xian.png) no-repeat top center;background-size:contain;
           margin: 0 0 0.875rem 0.6rem }
           .main2-in ul li:nth-child(even){
             margin-left: 0.4rem;
@@ -50,7 +50,7 @@ height: 2.15rem;
 .libox{width: 7.125rem; height:7.125rem; position:relative; border-radius:50%;  margin:0 auto;border:0.075rem solid #c5a0ac;overflow: hidden;}
 .libox img{width:7.125rem; height: 7.125rem; border-radius: 50%; }
 .libox span{width: 100%; height:2.2rem; position: absolute;background-color: #ffffff; opacity: 0.3; filter:alpha(30); bottom:0; left:0;}
-.libox p{width: 100%; height:2.2rem; position: absolute; bottom:0; left:0; line-height:2.2rem; font-size: 0.6rem;
+.libox p{width: 100%; height:2.2rem; position: absolute; bottom:0; left:0; line-height:2.2rem; font-size: 0.6rem;background-color: rgba(255, 255, 255, 0.5);
             color:#633434; text-align:center;}
 .zixun2{margin:0 auto;}
 .zixun2 .em1{border-bottom: 20px solid #f9edf1;}
@@ -59,7 +59,7 @@ height: 2.15rem;
 .mian3{width: 16.0rem; margin: 0 auto; }
 .title3{width:11.975rem;height: 3.95rem; margin:0 auto; padding-top:2.1rem}
 .adv1{width: 100%;  border-bottom: 0.02rem dashed #cccccc; padding-top: 0.5rem}
-.adv1 h3, .adv2 h3, .adv3 h3, .adv4 h3{width:13.0rem; height:1.95rem; background: url(images/arrow.png) no-repeat; background-size: contain; font-size: 0.85rem; color: #b08b99;margin-left: 0.575rem;
+.adv1 h3, .adv2 h3, .adv3 h3, .adv4 h3{width:13.0rem; height:1.95rem; background: url(https://img.hzshuangmei.com/m/pimiao/images/arrow.png) no-repeat; background-size: contain; font-size: 0.85rem; color: #b08b99;margin-left: 0.575rem;
         line-height: 1.55rem; text-indent: 0.5em}
 .adv-arc{width: 14.875rem; margin: 10px auto ; padding-bottom:0.3rem; font-size: 0.45rem; color:#7f7f7f; }
 .adv1-b{width:14.75rem;height: 7.05rem; background-color: #f7e0e9; padding-top: 0.23rem;margin:0 auto 0.7rem;}
@@ -78,7 +78,7 @@ width: 3.05rem;
 margin-left: 0.6rem;
 }
 .adv2{width: 100%; height:10.875rem; padding-top: 1.175rem; border-bottom: 0.02rem dashed #cccccc;margin-bottom: 1.125rem;}
-.adv2 h3, .adv4 h3{ background: url(images/arrow2.png) no-repeat; background-size: contain; text-indent: 1em; margin-left: auto;}
+.adv2 h3, .adv4 h3{ background: url(https://img.hzshuangmei.com/m/pimiao/images/arrow2.png) no-repeat; background-size: contain; text-indent: 1em; margin-left: auto;}
 .adv2-left{width:100%;  position: relative;  float: left;}
 .adv2img{width:10.1rem; position: absolute; top:0; right: 0.15675675675675677rem;height: 4.675rem}
 .ty{width:1.8rem;  border-right: 0.125rem solid #49c5b7; font-size:0.45rem; color:#464545; padding-top: 0.1rem;
@@ -140,7 +140,7 @@ margin-left: 0.6rem;
 .xiao1{width: 3.1rem; text-align: center; line-height: 0.525rem; font-size: 0.45rem; color:#b5919e; }
 .xiao img{width:3.3rem;height: 0.95rem}
 /*main4*/
-.main4{width:16rem;  background-color: #f9ebf0; overflow: hidden;height:22.575rem;}
+.main4{width:16rem;  background-color: #f9ebf0; overflow: hidden;height:22.575rem;margin:auto;}
 .mian4-in{width:15.6rem;  margin:1.225rem auto 3.225rem; background-color: #ffffff; overflow: hidden;position: relative;height: 20.075rem;}
 .adv4-in{
     position: relative;
@@ -256,11 +256,26 @@ margin: auto;
 /*main6*/
 .main6{width: 16rem; height:42rem; margin:0 auto; background-color: #f9edf1; padding-top: 0.95rem;}
 .title6{width:10.425rem; margin:0 auto;}
-.mian6-in{width: 13.8rem; height:8.75rem; background-color:#fbc8d9; padding-top: 0.25rem; margin-top: 0.3rem; }
+.mian6-in{width: 13.8rem; height:8.75rem; background-color:#fbc8d9; padding-top: 0.25rem; margin-top: 0.3rem;position: relative; }
 .mian6-in img{width:6.525rem;height: 8.55rem; display: inline-block;margin-left: 0.25rem;margin-right: -0.25rem;}
 .main6 .auto{margin-left: auto}
+.zi1,.zi2{
+    color: white;
+    position: absolute;
+    width: 2.25rem;
+    height: 0.75rem;
+    font-size: 0.7rem;
+    top: 7.65rem;
+
+}
+.zi1{
+    left: 2.25rem;
+}
+.zi2{
+    left: 9.625rem;
+}
 /*main7*/
-.main7{width: 16.0rem; height: 8.9rem; padding-top: 0.9rem; margin:0 auto;}
+.main7{width: 16.0rem; height: 19.5rem; padding-top: 0.9rem; margin:0 auto;}
 .title7{width:10.75rem; margin:0 auto; }
 .mian7-in{width: 100%; height:6.94rem; padding-top: 0.4rem;}
 .main7-t{width:15.05rem;margin: auto; position: relative;}
