@@ -1,0 +1,136 @@
+@charset "utf-8";
+.banner1 h1, .right { float: right }
+.banner1, .row6, .row8 { min-width: 1200px }
+a, body { color: #000 }
+body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, html, input, label, li, p, textarea, ul { margin: 0; padding: 0 }
+form { display: inline }
+img { border: 0 }
+td { word-break: break-all }
+dd, dl, dt, li, ul { list-style: none }
+a { text-decoration: none }
+a:hover { color: #1b303e }
+.clearfix:after { clear: both; content: "."; display: block; height: 0; overflow: hidden; visibility: hidden }
+.none { display: none }
+body { font: 16px/1.5 'Microsoft Yahei', Verdana, Arial, sans-serif; background-color: #fff }
+.container { margin: 0 auto; padding-bottom: 56px; width: 1200px; text-align: center }
+.container h2 { margin: 56px auto 90px; line-height: 126px; text-indent: -2000px }
+.container .bg_button { text-align: left; padding-top: 10px }
+.container .bg_button a { padding-left: 15px; font-size: 24px; color: #fff }
+.container .bg_button a:hover { color: #1b303e }
+.banner1 { height: 726px; text-align: left; background: url(//img.hzshuangmei.com/pc/nose/banner.jpg) center top no-repeat }
+.banner1 h1 { margin-top: 168px; padding-left: 20px; height: 63px; width: 635px; font-family: "宋体"; font-size: 42px; color: #3aafa3; display: inline-block; text-align: left }
+.banner1 img { width: 655px; height: 91px; float: right }
+.banner1 .consult { width: 216px; height: 46px; background: #fc6367; border-radius: 8px; padding-top: 4px; position: relative; left: 766px; top: 614px }
+.banner1 .consult a { font-size: 24px; letter-spacing: 3px; color: #fff }
+.banner1 .consult a:hover { color: #1b303e }
+#banner_bottom_bg { height: 56px; background: #62c5bb }
+.row1 .container { background: url(//img.hzshuangmei.com/pc/nose/bg_nose_1.png) center 540px no-repeat }
+.row1 .container .nose1img { padding-bottom: 57px }
+.row1 .container .nose1img img { vertical-align: top }
+.row1 .container .nose1img .pt18 { padding-top: 18px }
+.row1 .container .nose1detail { margin-bottom: 84px }
+.row1 .container .nose1detail>div { width: 282px; display: inline-block; vertical-align: top }
+.row1 .container .nose1detail>div h4 { font-size: 26px }
+.row1 .container .nose1detail>div p { font-size: 18px }
+.row1 .container .nose1detail .n1d1 { margin-left: 8px }
+.row1 .container .nose1detail .n1d2 { padding-top: 18px; margin-left: 15px }
+.row1 .container .nose1detail .n1d3 { margin-left: 0 }
+.row1 .container .nose1detail .n1d4 { padding-top: 18px; margin-left: 10px }
+.row1 .container .bg_button { padding-top: 8px }
+.row1 .container .bg_button a { font-size: 28px }
+.banner2 { background: url(//img.hzshuangmei.com/pc/nose/banner2_bg0.png) 0 10px repeat-x; padding-bottom: 0 }
+.banner2 .container { padding-top: 142px; padding-bottom: 0; width: 1270px; height: 312px; background: url(//img.hzshuangmei.com/pc/nose/banner2_bg.png) center top no-repeat }
+.banner2 .container p { width: 600px; margin-left: 440px; font-size: 24px; color: #fff }
+.banner2 .container p span { font-size: 34px; font-weight: 700 }
+.banner2 .container img { margin-top: 20px; margin-left: 540px }
+.row2 .container .subtitle { background: url(//img.hzshuangmei.com/pc/nose/bg_nose_2_subtitle_quest.png) center center no-repeat; padding: 18px 0 }
+.row2 .container .subtitle p { font-size: 23px; color: #1b303e }
+.row2 .container .subtitle h3 { font-size: 45px; color: #1b303e }
+.row2 .container .nose2detail { padding-bottom: 70px }
+.row2 .container .nose2detail>div { display: inline-block; vertical-align: top; margin-top: 24px; width: 557px }
+.row2 .container .nose2detail>div>div { padding: 38px 0 0 154px; width: 334px; height: 134px; font-size: 18px; text-align: left; background: url(//img.hzshuangmei.com/pc/nose/bg_nose_2_border.png) center center no-repeat }
+.row2 .container .nose2detail>div .nose2d2 { padding: 42px 0 0 60px; width: 408px }
+.banner3 { height: 359px; background: url(//img.hzshuangmei.com/pc/nose/banner3_bg.jpg) center center no-repeat #1d202a }
+.banner3 .container { padding-top: 132px }
+.banner3 .container p { padding-left: 54px; font-size: 20px; text-align: left; color: #fff }
+.container .nosedetail, .container .noseimage { padding-left: 50px; display: inline-block; text-align: left }
+.banner3 .container p span { font-size: 32px; font-weight: 700; color: #fc6367 }
+.container .nosedetail { width: 470px; border-left: solid 2px #000 }
+.container .nosedetail>div { padding-top: 5px; padding-bottom: 24px; position: relative }
+.container .nosedetail>div h4 { font-size: 24px; color: #1b303e }
+.container .nosedetail>div p { font-size: 18px }
+.container .nosedetail .detail3 { padding-bottom: 65px }
+.container .nosedetail .detail4 { padding-bottom: 0 }
+.container .nosedetail .sprite { position: absolute; left: -85px; top: 0 }
+.container .noseimage { vertical-align: top; margin-left: -40px; width: 630px; height: 539px; background: url(//img.hzshuangmei.com/pc/nose/bg_nose_345.jpg) center top no-repeat }
+.container .noseimage p { margin: 8px 0; height: 48px; font-size: 24px; color: #fff }
+.container .noseimage p span { margin-right: 12px; vertical-align: middle }
+.row6 { margin-top: 56px; padding-top: 1px; background: url(//img.hzshuangmei.com/pc/nose/bg_nose_6.jpg) center top no-repeat #1d202a }
+.row6 .container>div>div { display: inline-block; vertical-align: top; padding-right: 45px; padding-bottom: 62px; width: 261px; background: url(//img.hzshuangmei.com/pc/nose/icon_6_angle.png) 270px 90px no-repeat }
+.row6 .container>div>div img { margin: 0; padding: 0 }
+.row6 .container>div>div .reason { padding: 0 12px; margin: -6px 0 0 8px; background: #2c3a4c; opacity: .9; width: 218px; color: #fff; text-align: left }
+.row6 .container>div>div .reason .reasontitle { padding-left: 48px; padding-bottom: 12px; border-bottom: solid 2px #fff; position: relative }
+.row6 .container>div>div .reason .reasontitle p { font-size: 20px }
+.row6 .container>div>div .reason .reasontitle .p2 { font-size: 16px }
+.row6 .container>div>div .reason .reasontitle span { position: absolute; top: 6px; left: 0; padding: 0 6px; font-size: 30px; line-height: 44px; color: #000; background: #05dec8 }
+.row6 .container>div>div .reason .reasondetail { padding-top: 22px; height: 152px; font-size: 16px; color: #dfe0e2 }
+.row6 .container>div>div .r { margin: -6px 0 0 9px }
+.row6 .container>div .r4 { padding-right: 0 }
+.row7 .container>div { padding-top: 120px; height: 676px; text-align: left }
+.row7 .container>div h4 { font-size: 40px }
+.row7 .container>div p { margin-top: 30px; margin-bottom: 50px; font-size: 18px; line-height: 30px }
+.row7 .container>div .bg_button { display: block }
+.row7 .container>div .nose_contrast { margin-top: 30px }
+.row7 .container .person1 { padding-left: 546px; margin-bottom: 120px; background: url(//img.hzshuangmei.com/pc/nose/bg_nose_7_1.jpg) left top no-repeat }
+.row7 .container .person1 .img_nose_7_1 { position: relative; top: -120px; left: 320px }
+.row7 .container .person2 { height: 806px; padding-top: 75px; padding-left: 70px; background: url(//img.hzshuangmei.com/pc/nose/bg_nose_7_2.jpg) right top no-repeat }
+.row8 { background: url(//img.hzshuangmei.com/pc/nose/bg_nose_8.jpg) center top no-repeat #1d202a }
+.row8 .container { height: 1126px; position: relative }
+.row8 .container .wangzhikup { position: absolute; bottom: 0; left: 30px; z-index: 1 }
+.row8 .container>div { width:582px; text-align: left; position: relative; left: 600px; top: 280px }
+.row8 .container>div h2 { margin: 0 0 58px; line-height: 72px; text-indent: 0; font-size: 72px; color: #dfe0e2 }
+.row8 .container>div>div { padding: 40px 52px 12px 48px; background: #fff; opacity: .9; letter-spacing: 2px }
+.row8 .container>div>div h3 { font-size: 55px; color: #1b303e }
+.row8 .container>div>div ul { padding-left: 16px; padding-bottom: 16px;line-height: 30px }
+.row8 .container>div>div img { padding-top: 18px;display: block;position: relative;left: -49px; }
+.row8 .container>div>div ul li { list-style-type: circle }
+.row8 .container>div>div h4 { margin-top: 24px; font-size: 28px }
+.row8 .container>div>div p { font-size: 20px; padding-bottom: 58px }
+.row8 .container>div .whiteborder { background: 0 0; width: 486px; height: 624px; border: 1px solid #fff; position: absolute; left: 15px; top: 118px }
+.row8 .container>div .consult { padding: 0; width: 348px; border-radius: 4px; background: #fc6367; opacity: 1; position: relative; top: -30px; left: 160px }
+.act_title, .nose_contrast, .sprite { overflow: hidden; background-repeat: no-repeat }
+.row8 .container>div .consult a { padding-left: 18px; color: #fff; font-size: 38px }
+.row8 .container>div .consult a:hover { color: #1b303e }
+.act_title { background-image: url(//img.hzshuangmei.com/pc/nose/act_title.png) }
+.act_text_title_1 { width: 618px; height: 119px; background-position: -2px -250px }
+.act_text_title_2 { width: 616px; height: 117px; background-position: -2px -373px }
+.act_text_title_3 { width: 626px; height: 120px; background-position: -2px -2px }
+.act_text_title_4 { width: 621px; height: 120px; background-position: -2px -126px }
+.act_text_title_5 { width: 614px; height: 117px; background-position: -2px -615px }
+.act_text_title_6 { width: 615px; height: 117px; background-position: -2px -494px }
+.act_text_title_7 { width: 588px; height: 116px; background-position: -2px -736px }
+.nose_contrast { display: inline-block; background-image: url(//img.hzshuangmei.com/pc/nose/nose_contrast.jpg) }
+.img_nose_3_1 { width: 539px; height: 172px; background-position: -2px -915px }
+.img_nose_3_2 { width: 617px; height: 190px; background-position: -2px -2px }
+.img_nose_4_1 { width: 541px; height: 198px; background-position: -2px -572px }
+.img_nose_4_2 { width: 617px; height: 187px; background-position: -2px -194px }
+.img_nose_5_1 { width: 541px; height: 141px; background-position: -2px -772px }
+.img_nose_5_2 { width: 617px; height: 187px; background-position: -2px -383px }
+.img_nose_7_1 { width: 335px; height: 463px; background-position: -340px -1089px }
+.img_nose_7_2 { width: 336px; height: 463px; background-position: -2px -1089px }
+.sprite { display: inline-block; background-image: url(//img.hzshuangmei.com/pc/nose/icons.png) }
+.bg_button { width: 314px; height: 71px; background-position: -2px -2px }
+.icon_3_1 { width: 71px; height: 68px; background-position: -466px -2px }
+.icon_3_2 { width: 69px; height: 68px; background-position: -539px -2px }
+.icon_3_3, .icon_3_4 { width: 72px; height: 68px }
+.icon_3_3 { background-position: -318px -2px }
+.icon_3_4 { background-position: -392px -2px }
+.icon_3_5 { width: 48px; height: 47px; background-position: -664px -2px }
+.icon_3_6 { width: 52px; height: 47px; background-position: -610px -2px }
+@-webkit-keyframes shake {
+	0%, 100%, 21% { -webkit-transform: translateX(0) }
+	15%, 3%, 9% { -webkit-transform: translateX(-5px) }
+	12%, 18%, 6% { -webkit-transform: translateX(5px) }
+}
+.consult { -webkit-animation: shake 5s infinite }
+.consult:hover { -webkit-animation: shake 0s infinite }
