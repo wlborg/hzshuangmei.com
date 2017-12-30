@@ -201,7 +201,7 @@ $cfg_templets_skin = empty($cfg_df_style)? $cfg_mainsite.$cfg_templets_dir."/def
 $cfg_cmsurl = $cfg_mainsite.$cfg_cmspath;
 
 //插件目录，这个目录是用于存放计数器、投票、评论等程序的必要动态程序
-$cfg_plus_dir = $cfg_cmspath.'/plugin';
+$cfg_plus_dir = $cfg_cmspath.'/plus';
 $cfg_phpurl = $cfg_mainsite.$cfg_plus_dir;
 
 $cfg_mobile_dir = $cfg_cmspath.'/m';
@@ -223,10 +223,10 @@ $cfg_medias_dir = $cfg_cmspath.$cfg_medias_dir;
 $cfg_mediasurl = $cfg_mainsite.$cfg_medias_dir;
 
 //上传的普通图片的路径,建议按默认
-$cfg_image_dir = $cfg_medias_dir.'/img';
+$cfg_image_dir = $cfg_medias_dir.'/allimg';
 
 //上传的缩略图
-$ddcfg_image_dir = $cfg_medias_dir.'thumb';
+$ddcfg_image_dir = $cfg_medias_dir.'/litimg';
 
 //用户投稿图片存放目录
 $cfg_user_dir = $cfg_medias_dir.'/userup';
@@ -238,21 +238,17 @@ $cfg_soft_dir = $cfg_medias_dir.'/soft';
 $cfg_other_medias = $cfg_medias_dir.'/media';
 
 //软件摘要信息，****请不要删除本项**** 否则系统无法正确接收系统漏洞或升级信息
-//$cfg_version = 'V57_UTF8_SP2';
-$cfg_version = '';
+$cfg_version = 'V57_UTF8_SP2';
 $cfg_soft_lang = 'utf-8';
 $cfg_soft_public = 'base';
 
-//$cfg_softname = '织梦内容管理系统';
-$cfg_softname = '内容管理系统';
-//$cfg_soft_enname = 'DedeCMS';
-$cfg_soft_enname = 'CMS';
-//$cfg_soft_devteam = 'DedeCMS官方团队';
-$cfg_soft_devteam = 'Team';
+$cfg_softname = '织梦内容管理系统';
+$cfg_soft_enname = 'DedeCMS';
+$cfg_soft_devteam = 'DedeCMS官方团队';
 
 //文档的默认命名规则
 $art_shortname = $cfg_df_ext = '.html';
-$cfg_df_namerule = '{typedir}/{aid}'.$cfg_df_ext;
+$cfg_df_namerule = '{typedir}/{Y}/{M}{D}/{aid}'.$cfg_df_ext;
 
 //新建目录的权限，如果你使用别的属性，本程不保证程序能顺利在Linux或Unix系统运行
 if(isset($cfg_ftp_mkdir) && $cfg_ftp_mkdir=='Y')
@@ -309,40 +305,13 @@ if(!isset($cfg_NotPrintHead)) {
 }
 
 //自动加载类库处理
-function __autoload($classname)
+if (version_compare(PHP_VERSION, '7.2.0', '>='))
 {
-    global $cfg_soft_lang;
-    $classname = preg_replace("/[^0-9a-z_]/i", '', $classname);
-    if( class_exists ( $classname ) )
-    {
-        return TRUE;
-    }
-    $classfile = $classname.'.php';
-    $libclassfile = $classname.'.class.php';
-        if ( is_file ( DEDEINC.'/'.$libclassfile ) )
-        {
-            require DEDEINC.'/'.$libclassfile;
-        }
-        else if( is_file ( DEDEMODEL.'/'.$classfile ) )
-        {
-            require DEDEMODEL.'/'.$classfile;
-        }
-        else
-        {
-            if (DEBUG_LEVEL === TRUE)
-            {
-                echo '<pre>';
-				echo $classname.'类找不到';
-				echo '</pre>';
-				exit ();
-            }
-            else
-            {
-                header ( "location:/404.html" );
-                die ();
-            }
-        }
+    require_once(DEDEINC.'/autoload7.inc.php');
+} else {
+    require_once(DEDEINC.'/autoload.inc.php');
 }
+
 
 //引入数据库类
 if ( $GLOBALS['cfg_dbtype'] =='mysql' )
@@ -356,8 +325,6 @@ if ( $GLOBALS['cfg_dbtype'] =='mysql' )
 } else {
     require_once(DEDEINC.'/dedesqlite.class.php');
 }
-    
-
 
 //全局常用函数
 require_once(DEDEINC.'/common.func.php');
