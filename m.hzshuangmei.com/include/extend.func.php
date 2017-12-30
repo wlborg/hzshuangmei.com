@@ -22,7 +22,7 @@ function litimgurls($imgid=0)
 
 function replaceurl($newurl)
 {
-    $newurl=str_replace('/uploads/','//uploads.hzshuangmei.com/',$newurl);
+    $newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
     return $newurl;
 }
 function getdoctorthumb($id)
