@@ -5,6 +5,8 @@
 <title>增加广告</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script language="javascript" src="../include/js/dedeajax2.js"></script>
+<script language='javascript' src="js/main.js"></script>
 <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
 <script language="javascript">
 function checkSubmit()
@@ -53,7 +55,6 @@ function checkSubmit()
     <td height="200" bgcolor="#FFFFFF" valign="top"><table width="100%" border="0" cellspacing="4" cellpadding="4">
  
           <input name="normbody[style]" type="hidden" value="code" id="adstyle"/>
-          <input type="hidden" name="token" value="<?php echo make_hash();?>" />
           <input type='hidden' name='dopost' value='save'>
           <tr>
             <td height="25" colspan="3">广告代码的调用方法：{dede:myad name='广告位标识'/} </td>
@@ -181,7 +182,11 @@ function checkSubmit()
       <table width="80%" cellpadding=3 cellspacing=1 class='i_table'>
         <tr>
           <td class="b" width="30%"><b>图片地址*</b></td>
-          <td class="b"><input type="text" size="40" name="normbody[url]" value="" class='iptxt'/></td>
+          <td class="b">
+          <input type="text" size="40" name="pic" id="pic" value="" class='iptxt'/>
+          <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
+                  
+          </td>
         </tr>
         <tr>
           <td class="b"><b>图片链接*</b></td>

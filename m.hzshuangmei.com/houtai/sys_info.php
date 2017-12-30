@@ -47,15 +47,6 @@ function ReWriteConfig()
 //保存配置的改动
 if($dopost=="save")
 {
-    if(!isset($token)){
-        echo 'No token found!';
-        exit;
-    }
-
-    if(strcasecmp($token, $_SESSION['token']) != 0){
-        echo 'Token mismatch!';
-        exit;
-    }
     foreach($_POST as $k=>$v)
     {
         if(preg_match("#^edit___#", $k))
@@ -76,15 +67,6 @@ if($dopost=="save")
 //增加新变量
 else if($dopost=='add')
 {
-    if(!isset($token)){
-        echo 'No token found!';
-        exit;
-    }
-
-    if(strcasecmp($token, $_SESSION['token']) != 0){
-        echo 'Token mismatch!';
-        exit;
-    }
     if($vartype=='bool' && ($nvarvalue!='Y' && $nvarvalue!='N'))
     {
         ShowMsg("布尔变量值必须为'Y'或'N'!","-1");
@@ -198,5 +180,5 @@ EOT;
     echo $hash;
     exit();
 }
-make_hash();
+
 include DedeInclude('templets/sys_info.htm');
