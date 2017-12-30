@@ -440,7 +440,6 @@ table {
 
 .main9-in {
     width: 13.55rem;
-    height: 1.275rem;
     padding-top: 1.625rem;
     margin: 0 auto
 }
@@ -481,20 +480,4 @@ table {
 
 .main9-in .nomargin {
     margin: 0
-}
-
-.padfoot {
-    height: 73px
-}
-
-.footer {
-    border: 1px solid #e1e1e1;
-    width: 100%;
-    font-size: 16px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fafafa;
-    z-index: 9999
 }
