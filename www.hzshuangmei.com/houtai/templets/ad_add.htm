@@ -6,7 +6,7 @@
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calendar/calendar.js"></script>
 <script language="javascript" src="../include/js/dedeajax2.js"></script>
-<script language='javascript' src="js/main.js"></script>
+ <script language='javascript' src="js/main.js"></script>
 <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
 <script language="javascript">
 function checkSubmit()
@@ -53,8 +53,9 @@ function checkSubmit()
   </tr>
   <tr>
     <td height="200" bgcolor="#FFFFFF" valign="top"><table width="100%" border="0" cellspacing="4" cellpadding="4">
- 
+
           <input name="normbody[style]" type="hidden" value="code" id="adstyle"/>
+          <input type="hidden" name="token" value="<?php echo make_hash();?>" />
           <input type='hidden' name='dopost' value='save'>
           <tr>
             <td height="25" colspan="3">广告代码的调用方法：{dede:myad name='广告位标识'/} </td>
@@ -106,7 +107,7 @@ function checkSubmit()
 							showsTime      :    true,
 							timeFormat     :    "24"
 						});
-				 </script> 
+				 </script>
               到
               <input name="endtime" type="text" id="endtime" value="<?php echo $endDay?>" class='iptxt'/>
               <script language="javascript" type="text/javascript">
@@ -143,7 +144,7 @@ function checkSubmit()
             <td height="53" align="center">&nbsp;</td>
             <td colspan="2"><input name="imageField" type="image" src="images/button_ok.gif" width="60" height="22" border="0" class="np" /></td>
           </tr>
-        
+
       </table></td>
   </tr>
 </table>
@@ -183,10 +184,10 @@ function checkSubmit()
         <tr>
           <td class="b" width="30%"><b>图片地址*</b></td>
           <td class="b">
-          <input type="text" size="40" name="pic" id="pic" value="" class='iptxt'/>
-          <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
-                  
-          </td>
+       <input type="text" size="40" name="pic" id="pic" value="" class='iptxt'/>
+       <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
+                     </td>
+          <td class="b"><input type="text" size="40" name="normbody[url]" value="" class='iptxt'/></td>
         </tr>
         <tr>
           <td class="b"><b>图片链接*</b></td>
@@ -222,7 +223,7 @@ function checkSubmit()
         </tr>
       </table>
     </div>
-    
+
 </div>
 <script language="JavaScript">
 (function($){
@@ -230,7 +231,7 @@ function checkSubmit()
 		$("#advert").html("").html($("#formtxt>#"+idName).html());
 		$("#adstyle").val(idName);
 	}
-	
+
 	showcode('code');
 
 	$("#changeTab>li").click(function()
@@ -240,7 +241,7 @@ function checkSubmit()
 		$(".content").each(function()
 		{
 			if("t_" + $(this)[0].id == thistab)
-			{ 
+			{
 			    $("#changeTab>li").removeClass("act");
 			    $("#t_" + $(this)[0].id).addClass("act");
 			    showcode($(this)[0].id);

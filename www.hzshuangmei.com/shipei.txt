@@ -1,0 +1,7 @@
+https://www.hzshuangmei.com/ https://m.hzshuangmei.com/
+https://www.hzshuangmei.com/([a-zA-Z]+)/ https://m.hzshuangmei.com/${1}/
+https://www.hzshuangmei.com/([a-zA-Z]+)/list_([0-9]+).html https://m.hzshuangmei.com/${1}/list_${2}.html
+https://www.hzshuangmei.com/([a-zA-Z]+)/([a-zA-Z]+).html https://m.hzshuangmei.com/${1}/${2}.html
+https://www.hzshuangmei.com/([a-zA-Z]+)/([a-zA-Z]+)/ https://m.hzshuangmei.com/${1}/${2}/
+https://www.hzshuangmei.com/([a-zA-Z]+)/([a-zA-Z]+)/list_([0-9]+).html https://m.hzshuangmei.com/${1}/${2}list_${3}.html
+https://www.hzshuangmei.com/([a-zA-Z]+)/([a-zA-Z]+)/([a-zA-Z]+).html https://m.hzshuangmei.com/${1}/${2}/${3}.html
