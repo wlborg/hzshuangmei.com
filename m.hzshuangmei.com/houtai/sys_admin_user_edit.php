@@ -16,7 +16,6 @@ $id = preg_replace("#[^0-9]#", '', $id);
 
 if($dopost=='saveedit')
 {
-    csrf_check();
     $pwd = trim($pwd);
     if($pwd!='' && preg_match("#[^0-9a-zA-Z_@!\.-]#", $pwd))
     {
@@ -119,5 +118,4 @@ while($nrow = $dsql->GetObject('op'))
         $typeOptions .= "<option value='{$nrow->id}' class='stype'".(in_array($nrow->id, $typeids) ? ' selected' : '').">—{$nrow->typename}</option>\r\n";
     }
 }
-make_hash();
 include DedeInclude('templets/sys_admin_user_edit.htm');
