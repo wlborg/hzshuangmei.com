@@ -5,6 +5,8 @@
 <title>更改广告</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script language="javascript" src="../include/js/dedeajax2.js"></script>
+<script language='javascript' src="js/main.js"></script>
 </head>
 <body background="images/allbg.gif" leftmargin='8' topmargin='8'>
 <table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#D6D6D6">
@@ -16,7 +18,6 @@
         <form action="ad_edit.php" method="post" enctype="multipart/form-data" name="form1">
           <input type='hidden' name='aid' value='<?php echo $aid?>'>
           <input type='hidden' name='dopost' value='saveedit'>
-          <input type="hidden" name="token" value="<?php echo make_hash();?>" />
           <tr>
             <td height="25" align="center">广告位标识：</td>
             <td colspan="2"><?php echo $row['tagname']; ?></td>
@@ -77,12 +78,42 @@
           </tr>
           <tr>
             <td height="80" align="center">正常显示内容：</td>
-            <td width="76%"><textarea name="normbody" rows="10" id="normbody" style="width:80%;height:100"><?php echo dede_htmlspecialchars(stripslashes($row['normbody']))?></textarea></td>
-            <td width="9%">&nbsp;</td>
+            <td width="76%">
+            <?php
+            
+            if(strstr($row['normbody'],'id="qyuef"'))
+            {
+            $pat = '/<a[^>]*?\s*href=\"(.*?)\"(.*?)>(.*?)<\/a>/i';
+            preg_match_all($pat,$row['normbody'], $m);
+            $piclink=$m[1][0];
+            $pic=$m[3][0];
+            $pattern="/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/"; 
+            preg_match_all($pattern,$pic,$match); 
+            $qyuefpic=$match[1][0]
+            ?>
+            <input type="hidden" size="40" name="img" id="img" value="qyuefimg" class='iptxt'/>
+            <input type="text" size="40" name="pic" id="pic" value="<?php echo $qyuefpic?>" class='iptxt'/>
+          <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
+          <tr>
+            <td height="80" align="center">图片链接：</td>
+            <td><input type="text" size="40" name="piclink" id="piclink" value="<?php echo $piclink?>" class='iptxt'/></td>
+            <td>&nbsp;</td>
           </tr>
+            <?php
+            }else{
+            
+           ?>
+            <textarea name="normbody" rows="10" id="normbody" style="width:80%;height:100"><?php echo $row['normbody']?></textarea>
+            <?php
+            }
+          
+            ?>
+           
+          
+          
           <tr>
             <td height="80" align="center">过期显示内容：</td>
-            <td><textarea name="expbody" rows="10" id="expbody" style="width:80%;height:100"><?php echo dede_htmlspecialchars($row['expbody'])?></textarea></td>
+            <td><textarea name="expbody" rows="10" id="expbody" style="width:80%;height:100"><?php echo $row['expbody']?></textarea></td>
             <td>&nbsp;</td>
           </tr>
           <tr>

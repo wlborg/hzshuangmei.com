@@ -52,55 +52,6 @@ if (version_compare(PHP_VERSION, '7.0.0', '>='))
     }
 }
 
-function make_hash()
-{
-    $rand = dede_random_bytes(16);
-    $_SESSION['token'] = ($rand === FALSE)
-        ? md5(uniqid(mt_rand(), TRUE))
-        : bin2hex($rand);
-    return $_SESSION['token'];
-}
-
-function dede_random_bytes($length)
-{
-    if (empty($length) OR ! ctype_digit((string) $length))
-    {
-        return FALSE;
-    }
-    if (function_exists('random_bytes'))
-    {
-        try
-        {
-            return random_bytes((int) $length);
-        }
-        catch (Exception $e)
-        {
-            return FALSE;
-        }
-    }
-    if (defined('MCRYPT_DEV_URANDOM') && ($output = mcrypt_create_iv($length, MCRYPT_DEV_URANDOM)) !== FALSE)
-    {
-        return $output;
-    }
-    if (is_readable('/dev/urandom') && ($fp = fopen('/dev/urandom', 'rb')) !== FALSE)
-    {
-        is_php('5.4') && stream_set_chunk_size($fp, $length);
-        $output = fread($fp, $length);
-        fclose($fp);
-        if ($output !== FALSE)
-        {
-            return $output;
-        }
-    }
-
-    if (function_exists('openssl_random_pseudo_bytes'))
-    {
-        return openssl_random_pseudo_bytes($length);
-    }
-
-    return FALSE;
-}
-
 
 /**
  *  载入小助手,系统默认载入小助手
