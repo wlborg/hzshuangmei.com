@@ -3,12 +3,12 @@
  * 广告添加
  *
  * @version        $Id: ad_add.php 1 8:26 2010年7月12日Z tianya $
- * @package        DedeCMS.Administrator
+ * @package        028jwz.Administrator
  * @copyright      Copyright (c) 2007 - 2010, DesDev, Inc.
- * @license        http://help.dedecms.com/usersguide/license.html
- * @link           http://www.dedecms.com
+ * @license        http://help.028jwz.com/usersguide/license.html
+ * @link           http://www.028jwz.com
  */
-
+ 
 require(dirname(__FILE__)."/config.php");
 CheckPurview('plus_广告管理');
 require_once DEDEINC."/typelink.class.php";
@@ -16,7 +16,6 @@ if(empty($dopost)) $dopost = "";
 
 if($dopost=="save")
 {
-    csrf_check();
     //timeset tagname typeid normbody expbody
     $tagname = trim($tagname);
     $row = $dsql->GetOne("SELECT typeid FROM #@__myad WHERE typeid='$typeid' AND tagname LIKE '$tagname'");
@@ -34,9 +33,8 @@ if($dopost=="save")
     }
     else if($normbody['style']=='txt')
     {
-
-        // $normbody = "<a href=\"{$link}\" font-size=\"{$normbody['size']}\" color=\"{$normbody['color']}\">{$normbody['title']}</a>";
-           $normbody = "<a href=\"{$link}\" id=\"qyuef\"><img src=\"{$pic}\"$width $height border=\"0\" /></a>";
+        
+        $normbody = "<a href=\"{$link}\" font-size=\"{$normbody['size']}\" color=\"{$normbody['color']}\">{$normbody['title']}</a>";
     }
     else if($normbody['style']=='img')
     {
@@ -56,7 +54,7 @@ if($dopost=="save")
         {
             $height = "height=\"{$normbody['height']}\"";
         }
-        $normbody = "<a href=\"{$link}\"><img src=\"{$normbody['url']}\"$width $height border=\"0\" /></a>";
+        $normbody = "<a href=\"{$link}\" id=\"qyuef\"><img src=\"{$pic}\"$width $height border=\"0\" /></a>";
     }
     else
     {
@@ -82,6 +80,7 @@ if($dopost=="save")
      INSERT INTO #@__myad(clsid,typeid,tagname,adname,timeset,starttime,endtime,normbody,expbody)
      VALUES('$clsid','$typeid','$tagname','$adname','$timeset','$starttime','$endtime','$normbody','$expbody');
     ";
+
     $dsql->ExecuteNoneQuery($query);
     ShowMsg("成功增加一个广告！","ad_main.php");
     exit();
