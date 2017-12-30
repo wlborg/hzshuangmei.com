@@ -15,7 +15,6 @@ if(empty($dopost)) $dopost = "";
 //查看表结构
 if($dopost=="viewinfo")
 {
-    csrf_check();
     if(empty($tablename))
     {
         echo "没有指定表名！";
@@ -33,7 +32,6 @@ if($dopost=="viewinfo")
 //优化表
 else if($dopost=="opimize")
 {
-    csrf_check();
     if(empty($tablename))
     {
         echo "没有指定表名！";
@@ -49,7 +47,6 @@ else if($dopost=="opimize")
 //优化全部表
 else if($dopost=="opimizeAll")
 {
-    csrf_check();
     $dsql->SetQuery("SHOW TABLES");
     $dsql->Execute('t');
     while($row = $dsql->GetArray('t',MYSQL_BOTH))
@@ -67,7 +64,6 @@ else if($dopost=="opimizeAll")
 //修复表
 else if($dopost=="repair")
 {
-    csrf_check();
     if(empty($tablename))
     {
         echo "没有指定表名！";
@@ -83,7 +79,6 @@ else if($dopost=="repair")
 //修复全部表
 else if($dopost=="repairAll")
 {
-    csrf_check();
     $dsql->SetQuery("Show Tables");
     $dsql->Execute('t');
     while($row = $dsql->GetArray('t',MYSQL_BOTH))
@@ -101,7 +96,6 @@ else if($dopost=="repairAll")
 //执行SQL语句
 else if($dopost=="query")
 {
-    csrf_check();
     $sqlquery = trim(stripslashes($sqlquery));
     if(preg_match("#drop(.*)table#i", $sqlquery) || preg_match("#drop(.*)database#", $sqlquery))
     {
@@ -175,5 +169,4 @@ else if($dopost=="query")
     }
     exit();
 }
-make_hash();
 include DedeInclude('templets/sys_sql_query.htm');
