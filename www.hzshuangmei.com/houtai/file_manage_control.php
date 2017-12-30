@@ -37,7 +37,6 @@ function __newdir();
 ----------------*/
 else if($fmdo=="newdir")
 {
-    csrf_check();
     $fmm->NewDir($newpath);
 }
 
@@ -68,7 +67,6 @@ function __saveEdit();
 ----------------*/
 else if($fmdo=="edit")
 {
-    csrf_check();
     $filename = str_replace("..", "", $filename);
     $file = "$cfg_basedir$activepath/$filename";
     $str = stripslashes($str);
