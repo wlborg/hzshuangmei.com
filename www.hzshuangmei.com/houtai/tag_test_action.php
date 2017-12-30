@@ -11,7 +11,6 @@
 require_once(dirname(__FILE__)."/config.php");
 CheckPurview('temp_Test');
 require_once(DEDEINC."/arc.partview.class.php");
-csrf_check();
 if(empty($partcode))
 {
     ShowMsg('错误请求','javascript:;');

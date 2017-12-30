@@ -60,16 +60,6 @@ if($cuserLogin->getUserID()==-1)
     exit();
 }
 
-function csrf_check()
-{
-    global $token;
-
-    if(!isset($token) || strcasecmp($token, $_SESSION['token']) != 0){
-        echo '<a href="http://bbs.dedecms.com/907721.html">DedeCMS:CSRF Token Check Failed!</a>';
-        exit;
-    }
-}
-
 function XSSClean($val)
 {
 
