@@ -8,7 +8,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 require(dirname(__FILE__)."/config.php");
 CheckPurview('plus_广告管理');
 require_once DEDEINC."/typelink.class.php";
@@ -34,8 +34,9 @@ if($dopost=="save")
     }
     else if($normbody['style']=='txt')
     {
-        
-        $normbody = "<a href=\"{$link}\" font-size=\"{$normbody['size']}\" color=\"{$normbody['color']}\">{$normbody['title']}</a>";
+
+        // $normbody = "<a href=\"{$link}\" font-size=\"{$normbody['size']}\" color=\"{$normbody['color']}\">{$normbody['title']}</a>";
+           $normbody = "<a href=\"{$link}\" id=\"qyuef\"><img src=\"{$pic}\"$width $height border=\"0\" /></a>";
     }
     else if($normbody['style']=='img')
     {
