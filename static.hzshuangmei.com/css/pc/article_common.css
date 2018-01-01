@@ -5,7 +5,6 @@
 .location {
     margin: 19px 8px 6px 29px;
 }
-
 .location i {
     display: inline-block;
     width: 17px;
@@ -15,19 +14,16 @@
 
     background: url(//img.hzshuangmei.com/pc/home.png) no-repeat center;
 }
-
 .location span {
     font-size: 14px;
 
     color: #9d85c1;
 }
-
 .location a {
     font-size: 12px;
 
     color: #696969;
 }
-
 .line {
     width: 870px;
     height: 7px;
@@ -67,7 +63,6 @@
 
     background: url(//img.hzshuangmei.com/pc/ar_case_qq.png) no-repeat center;
 }
-
 .ar_ar {
     width: 750px;
     margin: 45px auto 0;
@@ -88,15 +83,16 @@
 /*.ar_ar h4,*/
 /*.ar_ar h5,*/
 /*.ar_ar h6 {*/
-    /*text-align: center;*/
+/*text-align: center;*/
 /*}*/
-
 .ar_ar p img {
     display: block;
+    width: 100%;
     margin: 1em auto;
 
     text-align: center;
-    /*width: 100%;*/
+
+    border-radius: 4px;
 }
 .ar_ar div {
     margin: 1em 0;
@@ -110,10 +106,12 @@
 }
 .ar_ar div img {
     display: block;
+    width: 100%;
     margin: 1em auto;
 
     text-align: center;
-    /*width: 100%;*/
+
+    border-radius: 4px;
 }
 .ar_ar br {
     display: none;
@@ -153,7 +151,6 @@
 
     color: blue;
 }
-
 .article_case_content .page {
     margin: 40px 0 20px;
 
@@ -219,7 +216,6 @@
 .article_case_content .share .bdsharebuttonbox {
     margin-top: 47px;
 }
-
 .article_case_content .share .share_ewm {
     margin: 9px 75px 0 75px;
 }
@@ -237,7 +233,6 @@
 
     color: #340b56;
 }
-
 .article_case_content .share .zixun .share_07 {
     display: inline-block;
     width: 21px;
@@ -274,7 +269,6 @@
 .article_case_content .cor_tit {
     margin: 40px 0 0 30px;
 }
-
 .article_case_content .cor_content {
     width: 790px;
     margin: 25px auto 30px;
@@ -472,3 +466,4 @@ tr {
 
     float: left;
 }
+
