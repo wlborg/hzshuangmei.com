@@ -102,7 +102,7 @@ a { color: #fff; border: none; text-decoration: none}
     margin-right: 0.2rem;
 }
 /* .ty .inde{letter-spacing:0.2rem} */
-.ty2{width: 0.5rem; position: absolute; font-size: 0.5rem; color:#e498a3; top:1.1rem; left: 2.25rem; line-height: 0.625rem}
+.ty2{width: 0.5rem; position: absolute; font-size: 0.5rem; color:#e498a3; top:1.1rem; left: 3.8rem; line-height: 0.625rem}
 .adv2-left em{position: absolute; top: 5.325rem;width: 0.35rem;height: 0.35rem;}
 .adv2-left em.square1{left:7.925rem; background-color:#2d9dac;}
 .adv2-left em.square2{left:11.55rem; background-color:#8b317d;}
@@ -314,6 +314,5 @@ a { color: #fff; border: none; text-decoration: none}
 .cen img{width:5.2rem;position: absolute; border:0.05rem solid #d99dad;  top: 0.6rem;right: 0.4rem}
 .cen ul{  float: left; padding-top: 0.5rem;height: 4.0rem;margin-top: 1.25rem}
 .cen ul li{ line-height: 0.7rem; font-size: 0.5rem; color:#7c726f;}
-.b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
-
+ .b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
 
