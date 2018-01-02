@@ -12,7 +12,7 @@ a { color: #fff; border: none; text-decoration: none}
 .bn{width:16rem;margin: auto}
 .impor{width: 1px; height: 1px; text-indent: 50em; overflow: hidden; position: absolute;}
 /*main1*/
-.main1{width: 16.0rem; height:16rem; margin: 0 auto; padding: 1.75rem 0.05rem 0; }
+.main1{width: 16.0rem; height:16rem; margin: 0 auto; padding-top: 1.75rem}
 .title1{width:8.675rem;height: 3.175rem; margin:0 auto; }
 .main1-in{width: 16.0rem; height:4.5rem; margin-top: 0.4rem;position: relative}
 .yiqi{width:6.625rem; height:9.875rem; border:1px solid #bf9b94; border-radius: 2px; position: relative; float:left;}
