@@ -12,7 +12,7 @@ a { color: #fff; border: none; text-decoration: none}
 .bn{width:16rem;margin: auto}
 .impor{width: 1px; height: 1px; text-indent: 50em; overflow: hidden; position: absolute;}
 /*main1*/
-.main1{width: 15.8rem; height:16rem; margin: 0 auto; padding-top: 1.75rem}
+.main1{width: 16.0rem; height:16rem; margin: 0 auto; padding-top: 1.75rem}
 .title1{width:8.675rem;height: 3.175rem; margin:0 auto; }
 .main1-in{width: 16.0rem; height:4.5rem; margin-top: 0.4rem;position: relative}
 .yiqi{width:6.625rem; height:9.875rem; border:1px solid #bf9b94; border-radius: 2px; position: relative; float:left;}
@@ -226,20 +226,26 @@ font-size:0.825rem;}
     height: 100%;
     width:5.625rem;
     font-size: 0.45rem;
-    position: relative;
+    position: absolute;
 }.mian4-in .boxcont .right p{
      width: 5.125rem;
      /* ext-align: center; */
      position: absolute;
-     line-height: 0.45rem;
+     line-height:0.6rem;
      font-size: 0.45rem;
-     height: 0.45rem;
+     height: 0.6rem;
      top: 0;
      left: 0;
      right: 0;
      bottom: 0;
      margin: auto;
  }
+.mian4-in .boxcont .right  .p4{
+    height: 1.8rem
+}
+.mian4-in .boxcont .right  .p6{
+    height: 1.2rem;
+}
 /*mian5*/
 .mian5{width:16rem;  margin:0 auto; padding-top: 1.175rem;position: relative;height: 20.075rem;}
 .mian5 .lijizixun{
@@ -274,7 +280,6 @@ font-size:0.825rem;}
 .zi2{
     left: 9.625rem;
 }
-.z12{left: 33px}
 /*main7*/
 .main7{width: 16.0rem; height: 19.5rem; padding-top: 0.9rem; margin:0 auto;}
 .title7{width:10.75rem; margin:0 auto; }
@@ -287,6 +292,6 @@ font-size:0.825rem;}
 .cen img{width:5.2rem;position: absolute; border:0.05rem solid #d99dad;  top: 0.6rem;right: 0.4rem}
 .cen ul{  float: left; padding-top: 0.5rem;height: 4.0rem;margin-top: 1.25rem}
 .cen ul li{ line-height: 0.7rem; font-size: 0.5rem; color:#7c726f;}
-.b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
+ .b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
 /*.padfoot{height:1.825rem}*/
 /*.footer{border:1px #e1e1e1 solid;width:100%;font-size:0.4rem;position:fixed;bottom:0;left:0;right:0;background-color:#fafafa;z-index:9999} */
