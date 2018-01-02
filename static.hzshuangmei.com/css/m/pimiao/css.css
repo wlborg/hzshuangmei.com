@@ -113,7 +113,7 @@ a { color: #fff; border: none; text-decoration: none}
 .speed span{font-size:0.375rem; position: absolute; bottom:-0.5rem}
 .speed em{    position: absolute;
     top: 0px;
-    right: -14px;
+    right: -0.35rem;
     font-size: 0.375rem;
     font-style: normal;
     line-height: 0.06486486486486487rem;}
@@ -315,5 +315,5 @@ a { color: #fff; border: none; text-decoration: none}
 .cen ul{  float: left; padding-top: 0.5rem;height: 4.0rem;margin-top: 1.25rem}
 .cen ul li{ line-height: 0.7rem; font-size: 0.5rem; color:#7c726f;}
 .b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
-/*.padfoot{height:1.825rem}*/
-/*.footer{border:1px #e1e1e1 solid;width:100%;font-size:0.4rem;position:fixed;bottom:0;left:0;right:0;background-color:#fafafa;z-index:9999}*/
+
+
