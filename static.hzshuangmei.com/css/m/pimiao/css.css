@@ -12,7 +12,7 @@ a { color: #fff; border: none; text-decoration: none}
 .bn{width:16rem;margin: auto}
 .impor{width: 1px; height: 1px; text-indent: 50em; overflow: hidden; position: absolute;}
 /*main1*/
-.main1{width: 16.0rem; height:16rem; margin: 0 auto; padding-top: 1.75rem}
+.main1{width: 15.8rem; height:16rem; margin: 0 auto; padding-top: 1.75rem}
 .title1{width:8.675rem;height: 3.175rem; margin:0 auto; }
 .main1-in{width: 16.0rem; height:4.5rem; margin-top: 0.4rem;position: relative}
 .yiqi{width:6.625rem; height:9.875rem; border:1px solid #bf9b94; border-radius: 2px; position: relative; float:left;}
@@ -53,15 +53,15 @@ a { color: #fff; border: none; text-decoration: none}
 .libox p{width: 100%; height:2.2rem; position: absolute; bottom:0; left:0; line-height:2.2rem; font-size: 0.6rem;background-color: rgba(255, 255, 255, 0.5);
     color:#633434; text-align:center;}
 .zixun2{margin:0 auto;}
-.zixun2 .em1{border-bottom: 20px solid #f9edf1;}
-.zixun2 .em2{border-top: 20px solid #f9edf1;}
+.zixun2 .em1{border-bottom: 0.5rem solid #f9edf1;}
+.zixun2 .em2{border-top: 0.5rem solid #f9edf1;}
 /*mian3*/
 .mian3{width: 16.0rem; margin: 0 auto; }
 .title3{width:11.975rem;height: 3.95rem; margin:0 auto; padding-top:2.1rem}
 .adv1{width: 100%;  border-bottom: 0.02rem dashed #cccccc; padding-top: 0.5rem}
 .adv1 h3, .adv2 h3, .adv3 h3, .adv4 h3{width:13.0rem; height:1.95rem; background: url(https://img.hzshuangmei.com/m/pimiao/images/arrow.png) no-repeat; background-size: contain; font-size: 0.85rem; color: #b08b99;margin-left: 0.575rem;
     line-height: 1.55rem; text-indent: 0.5em}
-.adv-arc{width: 14.875rem; margin: 10px auto ; padding-bottom:0.3rem; font-size: 0.45rem; color:#7f7f7f; }
+.adv-arc{width: 14.875rem; margin: 0.25rem auto ; padding-bottom:0.3rem; font-size: 0.45rem; color:#7f7f7f; }
 .adv1-b{width:14.75rem;height: 7.05rem; background-color: #f7e0e9; padding-top: 0.23rem;margin:0 auto 0.7rem;}
 .adv1-b img{width:11.5rem; margin:0 auto;}
 .adv1-b ul{width: 11.5rem; height: auto; margin:0 auto; padding-top: 0.1rem}
@@ -195,7 +195,7 @@ font-size:0.825rem;}
     /*     padding: 0.6rem 0.425rem; */
 }
 .mian4-in .boxcont .left p{
-    margin: 22px auto ;
+    margin: 0.55rem auto ;
 
     font-size: 0.45rem;
     width: 4.95rem;
@@ -248,8 +248,8 @@ font-size:0.825rem;}
     bottom: 0.7rem;
     margin-left: -2.7625rem;
 }
-.title5{width:431px;height: 161px; margin:0 auto;}
-.mian5-in{width:100%; height:11.825rem; background-color:#e7e6e6; border-radius: 5px; padding:0.1rem 0 0 0.01rem; box-sizing: border-box;
+.title5{width:10.775rem;height: 4.025rem; margin:0 auto;}
+.mian5-in{width:100%; height:11.825rem; background-color:#e7e6e6; border-radius: 0.125rem; padding:0.1rem 0 0 0.01rem; box-sizing: border-box;
     margin-top: 0.5rem}
 .mian5-in img{width:7.725rem; float:left;height: 5.575rem;margin-bottom: 0.1rem;}
 .zixun3{margin:0.3rem auto 0;}
@@ -274,6 +274,7 @@ font-size:0.825rem;}
 .zi2{
     left: 9.625rem;
 }
+/*.z12{left: 33px}*/
 /*main7*/
 .main7{width: 16.0rem; height: 19.5rem; padding-top: 0.9rem; margin:0 auto;}
 .title7{width:10.75rem; margin:0 auto; }
@@ -286,6 +287,6 @@ font-size:0.825rem;}
 .cen img{width:5.2rem;position: absolute; border:0.05rem solid #d99dad;  top: 0.6rem;right: 0.4rem}
 .cen ul{  float: left; padding-top: 0.5rem;height: 4.0rem;margin-top: 1.25rem}
 .cen ul li{ line-height: 0.7rem; font-size: 0.5rem; color:#7c726f;}
-.b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
-.padfoot{height:73px}
-.footer{border:1px #e1e1e1 solid;width:100%;font-size:16px;position:fixed;bottom:0;left:0;right:0;background-color:#fafafa;z-index:9999}
+/* .b7{width:14.9rem; height: auto; font-size: 0.45rem; color:#7c726f; line-height: 0.6rem;margin:auto;}
+.padfoot{height:1.825rem}
+.footer{border:1px #e1e1e1 solid;width:100%;font-size:0.4rem;position:fixed;bottom:0;left:0;right:0;background-color:#fafafa;z-index:9999} */
