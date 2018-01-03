@@ -1,0 +1,37 @@
+<script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script>
+    <script>
+    function popup() {
+        layer.open({
+            //isOutAnim: false,
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shade: 0,
+            shadeClose: true,
+            anim: 0,
+            skin: 'popup',
+            area: ['600px', '450px'],
+            time: 6000,
+            resize: false,
+            btn: ['一会再说', '马上预约'],
+            yes: function(index, layero) {
+                //按钮【按钮一】的回调
+                //$("#layui-layer1").hide();
+                layer.close(index);
+            },
+            btn2: function(index, layero) {
+                //按钮【按钮二】的回调
+                //return false 开启该代码可禁止点击该按钮关闭
+                //打开快商通
+                layer.close(index);
+                window.open('https://www.baidu.com');
+            },
+            btnAlign: 'c',
+            content: '<img src="+{dede:global.cfg_imgpath/}+"/pc/kst/"+{dede:field.filename/}+".png"/>',
+            end: function() {
+                setTimeout(popup, 10000)
+            }
+        })
+    }
+    popup();
+    </script>
