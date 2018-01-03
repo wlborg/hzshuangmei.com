@@ -21,7 +21,7 @@ return $lit_imglist;
 }
 function replaceurl($newurl)
 {
-$newurl=str_replace('/uploads/','//uploads.hzshuangmei.com/',$newurl);
+$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
 return $newurl;
 }
 function getdoctorthumb($id)
@@ -85,82 +85,81 @@ where a.aid='$id'");
 $project=$row['project'];
 return $project;
 }
-function getrelatecase($typeid)
+function getProjectListRelateCase($typeid)
 {
 global $dsql;
 $relatecase="";
-$relatetypeid = 0;
+$relatetypeid = "";
 $indicators="";
 $list="";
 $counter=0;
 switch ($typeid)
 {
 case 14:
-$relatetypeid= 35;
+$relatetypeid= '35';
 break;
 case 15:
-$relatetypeid= 36;
+$relatetypeid= '36';
 break;
 case 24:
-$relatetypeid= 46;
+$relatetypeid= '46,47,48';
 break;
 case 25:
-$relatetypeid= 47;
+$relatetypeid= '46,47,48,';
 break;
 case 26:
-$relatetypeid= 48;
+$relatetypeid= '46,47,48,';
 break;
 case 17:
-$relatetypeid= 38;
+$relatetypeid= '38';
 break;
 case 18:
-$relatetypeid= 39;
+$relatetypeid= '39';
 break;
 case 19:
-$relatetypeid= 40;
+$relatetypeid= '40';
 break;
 case 20:
-$relatetypeid= 41;
+$relatetypeid= '41';
 break;
 case 27:
-$relatetypeid= 49;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 28:
-$relatetypeid= 50;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 29:
-$relatetypeid= 51;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 30:
-$relatetypeid= 52;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 31:
-$relatetypeid= 53;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 32:
-$relatetypeid= 54;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 33:
-$relatetypeid= 55;
+$relatetypeid= '49,50,51,52,53,54,55';
 break;
 case 22:
-$relatetypeid= 43;
+$relatetypeid= '43';
 break;
 case 23:
-$relatetypeid= 44;
+$relatetypeid= '44';
 break;
 case 34:
-$relatetypeid= 45;
+$relatetypeid= '45';
 break;
 default:
-$relatetypeid= 35;
+$relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
-
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
@@ -215,16 +214,235 @@ $list.= '
 $counter=$counter+1;
 
 }
-$relatecase.= ' <ol class="carousel-indicators">
-  '.$indicators.'
-</ol>'
-.'<div class="carousel-inner" role="listbox"> '
-  . $list
-.'</div>';
+if($ns>0){
+$relatecase.= '<div id="slidecase" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
 
 return $relatecase;
 }
-function getrelateproject($typeid)
+function getCaseArticleRelateCase($id)
+{
+global $dsql;
+$typeid=0;
+$relatecase="";
+$relatetypeid = "";
+$indicators="";
+$list="";
+$counter=0;
+$row = $dsql->GetOne("SELECT * FROM #@__archives
+where id='$id'");
+$typeid=$row['typeid'];
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
+where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$imgbefore = replaceurl($row["imgbefore"]);
+$imgafter = replaceurl($row["imgafter"]);
+$project=$row["project"];
+$click=$row["click"];
+if($counter == 0){
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
+$list.= '
+<div class="item active" >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}else{
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
+$list.= '
+<div class="item " >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}
+$counter=$counter+1;
+}
+if($ns>0){
+$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
+return  $relatecase;
+}
+function getCaseArticleRelateDoctor($typeid)
+{
+global $dsql;
+$relatedoctor="";
+$relatetypeid = 0;
+$indicators="";
+$list="";
+$counter=0;
+switch ($typeid)
+{
+case 35 :
+$relatetypeid= 3;
+break;
+case 36 :
+$relatetypeid=3 ;
+break;
+case 46:
+$relatetypeid= 3;
+break;
+case 47:
+$relatetypeid=  3;
+break;
+case 48:
+$relatetypeid=  3;
+break;
+case 38 :
+$relatetypeid= 3;
+break;
+case 39 :
+$relatetypeid= 3;
+break;
+case  40 :
+$relatetypeid= 3;
+break;
+case 41 :
+$relatetypeid=4;
+break;
+case 49 :
+$relatetypeid=4 ;
+break;
+case 50 :
+$relatetypeid= 4;
+break;
+case 51 :
+$relatetypeid= 4;
+break;
+case 52 :
+$relatetypeid= 4;
+break;
+case 53 :
+$relatetypeid=4 ;
+break;
+case  54 :
+$relatetypeid= 4;
+break;
+case  55 :
+$relatetypeid=4 ;
+break;
+case 43 :
+$relatetypeid=4 ;
+break;
+case 44:
+$relatetypeid=4;
+break;
+case 45 :
+$relatetypeid= 4 ;
+break;
+default:
+$relatetypeid= 3 ;
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
+where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 2 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$thumb = replaceurl($row["thumb"]);
+$zhiwei = $row["zhiwei"];
+$shanchang = $row["shanchang"];
+
+if($counter == 0){
+$indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
+$list.= '
+<div class="item zhuanjia-item active">
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-info">
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <p class="zhiwei">'.$zhiwei.'</p>
+    <p class="shanchang">擅长项目：'.$shanchang.' </p>
+    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+  </div>
+</div>';
+}else{
+$indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
+$list.= '
+<div class="item zhuanjia-item">
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-info">
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <p class="zhiwei">'.$zhiwei.'</p>
+    <p class="shanchang">擅长项目：'.$shanchang.' </p>
+    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+  </div>
+</div>';
+}
+$counter=$counter+1;
+}
+if($ns>0){
+$relatedoctor.= '<div id="articleslidedoctor" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
+return $relatedoctor;
+}
+function getCaseArticleRelateProject($typeid)
 {
 global $dsql;
 $relateproject="";
@@ -303,6 +521,448 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$relateproject= ' <div class="imgbox">
+  '.$relateproject.'
+</div> ';
+}
+
+return $relateproject;
+}
+function getDoctorArticleRelateCase($typeid)
+{
+global $dsql;
+$relatecase="";
+$relatetypeid = "";
+$indicators="";
+$list="";
+$counter=0;
+switch ($typeid)
+{
+case 3 :
+$relatetypeid=  '35,36,46,47,48,38,39,40';
+break;
+case 4 :
+$relatetypeid= '41,49,50,51,52,53,54,55,43,44,45';
+break;
+default:
+$relatetypeid= '35';
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
+where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$imgbefore = replaceurl($row["imgbefore"]);
+$imgafter = replaceurl($row["imgafter"]);
+$project=$row["project"];
+$click=$row["click"];
+if($counter == 0){
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
+$list.= '
+<div class="item active" >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}else{
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
+$list.= '
+<div class="item " >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}
+$counter=$counter+1;
+}
+if($ns>0){
+$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
+return $relatecase;
+}
+function getDoctorArticleRelateProject($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = "";
+switch ($typeid)
+{
+case 3 :
+$relatetypeid=  '14,15,24,25,26,17,18,19';
+break;
+case 4 :
+$relatetypeid= '20,27,28,29,30,31,32,33,22,23,34';
+break;
+default:
+$relatetypeid= '14';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic = replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$relateproject= ' <div class="imgbox">
+  '.$relateproject.'
+</div> ';
+}
+return $relateproject;
+}
+function getProjectArticleRelateCase($typeid)
+{
+global $dsql;
+$relatecase="";
+$relatetypeid = "";
+$indicators="";
+$list="";
+$counter=0;
+switch ($typeid)
+{
+case 14:
+$relatetypeid= '35';
+break;
+case 15:
+$relatetypeid= '36';
+break;
+case 24:
+$relatetypeid= '46,47,48';
+break;
+case 25:
+$relatetypeid= '46,47,48,';
+break;
+case 26:
+$relatetypeid= '46,47,48,';
+break;
+case 17:
+$relatetypeid= '38';
+break;
+case 18:
+$relatetypeid= '39';
+break;
+case 19:
+$relatetypeid= '40';
+break;
+case 20:
+$relatetypeid= '41';
+break;
+case 27:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 28:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 29:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 30:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 31:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 32:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 33:
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 22:
+$relatetypeid= '43';
+break;
+case 23:
+$relatetypeid= '44';
+break;
+case 34:
+$relatetypeid= '45';
+break;
+default:
+$relatetypeid= '35';
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
+where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$imgbefore = replaceurl($row["imgbefore"]);
+$imgafter = replaceurl($row["imgafter"]);
+$project=$row["project"];
+$click=$row["click"];
+if($counter == 0){
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
+$list.= '
+<div class="item active" >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}else{
+$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
+$list.= '
+<div class="item " >
+  <div class="pic f-cb">
+    <div class="before ">
+      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <div class="flag">
+        术前
+      </div>
+    </div>
+    <div class="after">
+      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <div class="flag">
+        术后
+      </div>
+    </div>
+  </div>
+  <div class="label f-cb">
+    <span class="pro">'.$project.'</span>
+    <div class="right">
+      <a href="'.$url.'"><span class="show"></span></a>
+      <span class="click">'.$click.'</span>
+    </div>
+  </div>
+</div>';
+}
+$counter=$counter+1;
+}
+if($ns>0){
+$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
+return $relatecase;
+}
+function getProjectArticleRelateDoctor($typeid)
+{
+global $dsql;
+$relatedoctor="";
+$relatetypeid = 0;
+$indicators="";
+$list="";
+$counter=0;
+switch ($typeid)
+{
+case 14:
+$relatetypeid= 3;
+break;
+case 15:
+$relatetypeid= 3;
+break;
+case 24:
+$relatetypeid= 3;
+break;
+case 25:
+$relatetypeid= 3;
+break;
+case 26:
+$relatetypeid= 3;
+break;
+case 17:
+$relatetypeid= 3;
+break;
+case 18:
+$relatetypeid= 3;
+break;
+case 19:
+$relatetypeid= 3;
+break;
+case 20:
+$relatetypeid=4;
+break;
+case 27:
+$relatetypeid= 4;
+break;
+case 28:
+$relatetypeid= 4;
+break;
+case 29:
+$relatetypeid= 4;
+break;
+case 30:
+$relatetypeid= 4;
+break;
+case 31:
+$relatetypeid= 4;
+break;
+case 32:
+$relatetypeid= 4;
+break;
+case 33:
+$relatetypeid= 4;
+break;
+case 22:
+$relatetypeid=4;
+break;
+case 23:
+$relatetypeid= 4;
+break;
+case 34:
+$relatetypeid= 4;
+break;
+default:
+$relatetypeid= 3;
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
+where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 2 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$thumb = replaceurl($row["thumb"]);
+$zhiwei = $row["zhiwei"];
+$shanchang = $row["shanchang"];
+
+if($counter == 0){
+$indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
+$list.= '
+<div class="item zhuanjia-item active">
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-info">
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <p class="zhiwei">'.$zhiwei.'</p>
+    <p class="shanchang">擅长项目：'.$shanchang.' </p>
+    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+  </div>
+</div>';
+}else{
+$indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
+$list.= '
+<div class="item zhuanjia-item">
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-info">
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <p class="zhiwei">'.$zhiwei.'</p>
+    <p class="shanchang">擅长项目：'.$shanchang.' </p>
+    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+  </div>
+</div>';
+}
+$counter=$counter+1;
+}
+if($ns>0){
+$relatedoctor.= '<div id="articleslidedoctor" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>'
+  .'<div class="carousel-inner" role="listbox"> '
+    . $list
+  .'</div>
+</div>';
+}
+return $relatedoctor;
+}
+function getProjectArticleRelateProject($id)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = "";
+$row = $dsql->GetOne("SELECT * FROM #@__archives
+where id='$id'");
+$typeid=$row['typeid'];
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic = replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$relateproject= ' <div class="imgbox">
+  '.$relateproject.'
+</div> ';
 }
 return $relateproject;
 }
