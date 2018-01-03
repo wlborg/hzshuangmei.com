@@ -1,7 +1,7 @@
 .tjb{
     width: 100%;
     min-height:916px;
-    background:url(../img/tjb_bg.jpg) no-repeat fixed;
+    background:url(//img.hzshuangmei.com/pc/tjb_bg.jpg) no-repeat fixed;
     background-size: cover;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     vertical-align: bottom;
 }
 .tbj_b{
-    /*background: url("../img/tjb_rjbg.png") top center;*/
+    /*background: url("//img.hzshuangmei.com/pc/tjb_rjbg.png") top center;*/
     background-color:rgba(255,255,255,0.5);
     /*opacity: 0.5;*/
     width: 372px;
