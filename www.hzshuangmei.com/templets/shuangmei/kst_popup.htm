@@ -13,7 +13,7 @@ var  filename= window.location.pathname.split("/")[window.location.pathname.spli
         anim: 0,
         skin: 'popup',
         area: ['600px', '450px'],
-        time: 6000,
+        //time: 6000,
         resize: false,
         btn: ['一会再说', '马上预约'],
         yes: function(index, layero) {
@@ -25,7 +25,7 @@ var  filename= window.location.pathname.split("/")[window.location.pathname.spli
             //按钮【按钮二】的回调
             //return false 开启该代码可禁止点击该按钮关闭
             //打开快商通
-            window.open("https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=pc_popup&target");
+            window.open("https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=pc_popup&"+target);
             layer.close(index);
         },
         btnAlign: 'c',
