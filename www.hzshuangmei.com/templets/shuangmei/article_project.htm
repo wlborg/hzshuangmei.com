@@ -17,49 +17,6 @@
 {dede:include filename="_header.htm"/}
 {dede:field.body/}
 {dede:field.body_more/}
-<div class="tjb">
-    <div class="m1 m_rj">
-        <div class="tjb_title1">
-            <img src="{dede:global.cfg_imgpath/}/pc/tjb_title1.png" alt=""/>
-        </div>
-        <ul class="tjb_rj clearFix">
-            {dede:FIELD.typeid function='getProjectArticleRelateCase(@me)'/}
-        </ul>
-    </div>
-<div class="relatemodule articlerelatecase">
-    <div class="heading">
-        <h2 class="title"><span class="lefticon2"></span>相关日记<span class="righticon2"></span></h2>
-        <div class="line">
-            <span></span>
-        </div>
-    </div>
-    <div class="contents" id="diary">
-        {dede:FIELD.typeid function='getProjectArticleRelateCase(@me)'/}
-    </div>
-</div>
-<div class=" relatemodule articlerelatedoctor">
-    <div class="heading">
-        <h2 class="title"><span class="lefticon2"></span>推荐专家<span class="righticon2"></span></h2>
-        <div class="line">
-            <span></span>
-        </div>
-    </div>
-    <div class="contents">
-        {dede:FIELD.typeid function='getProjectArticleRelateDoctor(@me)'/}
-    </div>
-</div>
-<div class="relatemodule relateporject">
-    <div class="heading">
-        <h2 class="title"><span class="lefticon"></span>推荐项目<span class="righticon"></span></h2>
-        <div class="line">
-            <span></span>
-        </div>
-    </div>
-    <div class="contents">
-        {dede:FIELD.id function='getProjectArticleRelateProject(@me)'/}
-    </div>
-</div>
-</div>
 
 {dede:include filename="_footer.htm"/}
 </body>
