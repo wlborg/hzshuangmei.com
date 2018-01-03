@@ -678,6 +678,10 @@ footer .left a {
     color: #fff;
 }
 /* kst popup*/
+
+body .popup .layui-layer-content {
+    height: 393px;   /* fixed init ion popup*/
+}
 body .popup .layui-layer-btn .layui-layer-btn0 {
     width: 100px;
     margin: 5px 15px 0;
