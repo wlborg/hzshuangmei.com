@@ -1,8 +1,8 @@
 <script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script>
 <script>
 function popup() {
-
-var  filename= {dede: field.filename /};
+//get current page filename
+var  filename= window.location.pathname.split("/")[window.location.pathname.split("/").length-1].split(".")[0];
     layer.open({
         type: 1,
         title: false,
