@@ -16,7 +16,7 @@ a:hover { color: #6E4A8A }
 .footer { border: 1px solid #e1e1e1; font-size: 0.4rem; position: fixed; bottom: 0; left: 0; right: 0; background-color: #fafafa; z-index: 9999 }
 .container { padding-bottom: 1.75%; max-width: 16rem; text-align: center }
 .container > img { display: block; margin: 9.8958333% auto 5.2083333% }
-.container .bg_button { width: 49.0625000%; margin: 0 auto 2%; text-align: left; padding: 0.5rem 0 0.45rem; background: url(//img.hzshuangmei.com/m/nose/bg_button.png) center bottom no-repeat; background-size: 100% }
+.container .bg_button { width: 49.0625000%; margin: 0 auto 2%; text-align: left; padding: 0.5rem 0 0.45rem; background: url(https://img.hzshuangmei.com/m/nose/bg_button.png) center bottom no-repeat; background-size: 100% }
 .container .bg_button a { display: block; padding-left: 4.7770701%; font-size: 0.6rem; color: #fff; line-height: 1rem }
 .row1 .container > img { width: 96.5625% }
 .row2 .container > img { width: 96.25% }
@@ -26,7 +26,7 @@ a:hover { color: #6E4A8A }
 .row6 .container > img { width: 96.09375% }
 .row7 .container > img { width: 91.875% }
 .banner1 { background: #1d202a; border-bottom: solid 0.925rem #62c5bb }
-.banner1 .row { max-width: 24rem; width: 100%; margin: 0 auto; background: url(//img.hzshuangmei.com/m/nose/banner1_bg.png) right top no-repeat #1d202a; background-size: auto 100% }
+.banner1 .row { max-width: 24rem; width: 100%; margin: 0 auto; background: url(https://img.hzshuangmei.com/m/nose/banner1_bg.png) right top no-repeat #1d202a; background-size: auto 100% }
 .banner1 .row .container { max-width: 100%; width: 100%; text-align: left; padding-bottom: 50.3125%; position: relative }
 .banner1 .row .container .consult { width: 36.45833333%; position: absolute; right: 12.5%; top: 83.6099585%; text-align: center }
 .banner1 .row .container .consult .awrap { display: inline-block; border-radius: 0.2rem; line-height: 1.5; background: #fc6367 }
@@ -40,10 +40,10 @@ a:hover { color: #6E4A8A }
 .row1 .container .bg_button { margin-top: 3%; margin-bottom: 2%; padding-top: 2.1875% }
 .row1 .container .bg_button a { font-size: 0.7rem }
 .banner2 { padding-bottom: 0 }
-.banner2 .container { background: url(//img.hzshuangmei.com/m/nose/banner2_bg.png) center top no-repeat; background-size: 100% }
+.banner2 .container { background: url(https://img.hzshuangmei.com/m/nose/banner2_bg.png) center top no-repeat; background-size: 100% }
 .banner2 .container p { padding: 20.5625% 0 25.5625%; margin-left: 35%; margin-right: 0; font-size: 0.45rem; color: #fff }
 .banner2 .container p span { font-size: 0.65rem; font-weight: 700 }
-.row2 .container .subtitle { background: url(//img.hzshuangmei.com/m/nose/bg_quest.png) center center no-repeat; background-size: 14.375%; padding: 3.90625% }
+.row2 .container .subtitle { background: url(https://img.hzshuangmei.com/m/nose/bg_quest.png) center center no-repeat; background-size: 14.375%; padding: 3.90625% }
 .row2 .container .subtitle p { font-size: 0.45rem; color: #1b303e }
 .row2 .container .subtitle h3 { font-size: 0.95rem; color: #1b303e }
 .row2 .container .nose2detail { padding-bottom: 5% }
@@ -55,10 +55,10 @@ a:hover { color: #6E4A8A }
 .row2 .container .nose2detail > div > div .imgbg { position: absolute; top: 0.05rem; width: 100%; padding-bottom: 0.625rem }
 .row2 .container .nose2detail > div > div .content { padding: 0.45rem 1.675%; border: 1px solid #02ac9b; border-radius: 0.2rem; border-top: none }
 .row2 .container .nose2detail > div .nose2d1 { width: 35.9375%; background-size: 100% }
-.row2 .container .nose2detail > div .nose2d1 .imgbg { background: url(//img.hzshuangmei.com/m/nose/bg_angle_left.jpg) center top no-repeat; background-size: 100% }
+.row2 .container .nose2detail > div .nose2d1 .imgbg { background: url(https://img.hzshuangmei.com/m/nose/bg_angle_left.jpg) center top no-repeat; background-size: 100% }
 .row2 .container .nose2detail > div .nose2d2 { width: 59.375% }
-.row2 .container .nose2detail > div .nose2d2 .imgbg { background: url(//img.hzshuangmei.com/m/nose/bg_angle_right.jpg) center top no-repeat; background-size: 100% }
-.banner3 .container { background: url(//img.hzshuangmei.com/m/nose/banner3_bg.png) center center no-repeat; background-size: 100%; padding-top: 9.375%; padding-bottom: 10.9375% }
+.row2 .container .nose2detail > div .nose2d2 .imgbg { background: url(https://img.hzshuangmei.com/m/nose/bg_angle_right.jpg) center top no-repeat; background-size: 100% }
+.banner3 .container { background: url(https://img.hzshuangmei.com/m/nose/banner3_bg.png) center center no-repeat; background-size: 100%; padding-top: 9.375%; padding-bottom: 10.9375% }
 .banner3 .container p { padding-left: 8.75%; padding-right: 43.4375%; font-size: 0.45rem; text-align: center; color: #fff }
 .banner3 .container p span { font-size: 0.8rem; font-weight: 700; color: #fc6367 }
 .container .nosedetail { margin-top: 4.6875%; display: inline-block; width: 82.8125%; text-align: left; border-left: solid 0.05rem #000; border-bottom: solid 0.05rem #000 }
@@ -76,7 +76,7 @@ a:hover { color: #6E4A8A }
 .container .nosedetail .detail3 p { color: #000 }
 .container .nosedetail .sprite { position: absolute; left: -6.4150943%; top: 0 }
 .container .nosedetail .point { position: relative; left: 100%; top: 0.1rem; padding: 0; width: 0.2rem; height: 0.2rem; background: #000; border-radius: 100% }
-.container .noseimage { display: inline-block; vertical-align: top; text-align: left; padding-left: 1.875%; width: 98.125%; padding-bottom: 2.1875%; background: url(//img.hzshuangmei.com/m/nose/bg_nose_345.png) center top no-repeat #1b3442; background-size: 100% }
+.container .noseimage { display: inline-block; vertical-align: top; text-align: left; padding-left: 1.875%; width: 98.125%; padding-bottom: 2.1875%; background: url(https://img.hzshuangmei.com/m/nose/bg_nose_345.png) center top no-repeat #1b3442; background-size: 100% }
 .container .noseimage p { margin: 0.2rem 0; height: 1.2rem; font-size: 0.6rem; color: #fff }
 .container .noseimage p span { display: inline-block; margin-right: 0.3rem; vertical-align: middle }
 .container .noseimage .noseimg1 { width: 85.9872611% }
@@ -85,7 +85,7 @@ a:hover { color: #6E4A8A }
 .row6 .container { max-width: 16rem; width: 100%; padding-bottom: 5.3125% }
 .row6 .container > div { margin: 0 auto; width: 89.6875%; text-align: left }
 .row6 .container > div > div { display: inline-block; vertical-align: top; padding-bottom: 4.87804878% }
-.row6 .container > div > div > div .reason { display: inline-block; vertical-align: top; padding: 0 2.09059233% 1%; margin: -0.15rem 0 0 0.2rem; background: url(//img.hzshuangmei.com/m/nose/bg_nose_6_detail.png) left bottom no-repeat; background-size: auto 60%; opacity: .9; width: 37.9790941%; color: #fff; text-align: left }
+.row6 .container > div > div > div .reason { display: inline-block; vertical-align: top; padding: 0 2.09059233% 1%; margin: -0.15rem 0 0 0.2rem; background: url(https://img.hzshuangmei.com/m/nose/bg_nose_6_detail.png) left bottom no-repeat; background-size: auto 60%; opacity: .9; width: 37.9790941%; color: #fff; text-align: left }
 .row6 .container > div > div > div .reason img { width: 137.6146789%; position: relative; padding-bottom: 4.587156%; left: -9.1743119% }
 .row6 .container > div > div > div .reason .reasontitle { padding-left: 20%; padding-bottom: 0.3rem; border-bottom: solid 0.05rem #fff; position: relative }
 .row6 .container > div > div > div .reason .reasontitle p { font-size: 0.5rem }
@@ -101,9 +101,9 @@ a:hover { color: #6E4A8A }
 .row7 .container > div p { font-size: 0.45rem }
 .row7 .container > div .bg_button { display: block }
 .row7 .container > div .nose_contrast { margin-top: 0.75rem }
-.row7 .container .person1 { padding-left: 46.875%; padding-bottom: 70%; background: url(//img.hzshuangmei.com/m/nose/bg_nose_7_1.png) left top no-repeat; background-size: 95% }
+.row7 .container .person1 { padding-left: 46.875%; padding-bottom: 70%; background: url(https://img.hzshuangmei.com/m/nose/bg_nose_7_1.png) left top no-repeat; background-size: 95% }
 .row7 .container .person1 .sprite1 { width: 90%; padding-bottom: 0.44rem }
-.row7 .container .person2 { margin-top: 0; padding-bottom: 50%; padding-top: 11.71875%; padding-left: 1.5625%; background: url(//img.hzshuangmei.com/m/nose/bg_nose_7_2.png) right top no-repeat; background-size: 95% }
+.row7 .container .person2 { margin-top: 0; padding-bottom: 50%; padding-top: 11.71875%; padding-left: 1.5625%; background: url(https://img.hzshuangmei.com/m/nose/bg_nose_7_2.png) right top no-repeat; background-size: 95% }
 .row7 .container .person2 p { width: 53.125% }
 .row7 .container .bg_button { padding-top: 0.3rem; margin-top: 0.4rem; margin-left: 0 }
 .row8 { background: #1d202a }
@@ -122,14 +122,14 @@ a:hover { color: #6E4A8A }
 .row8 .container > div .consult { display: inline-block; padding: 0.25rem 0; border-radius: 0.1rem; background: #fc6367; opacity: 1; position: relative; left: 1rem; top: -0.75rem }
 .row8 .container > div .consult a { padding: 0 0.45rem; color: #fff; font-size: 0.8rem }
 .sprite { display: inline-block; overflow: hidden; background-repeat: no-repeat }
-.icon1 { width: 23.3538462%; padding-bottom: 27%; background: url(//img.hzshuangmei.com/m/nose/icon1.png) center top no-repeat; background-size: 99% }
-.icon2 { width: 45.6666667%; padding-bottom: 70.6666667%; background: url(//img.hzshuangmei.com/m/nose/icon2.png) center top no-repeat; background-size: 99% }
+.icon1 { width: 23.3538462%; padding-bottom: 27%; background: url(https://img.hzshuangmei.com/m/nose/icon1.png) center top no-repeat; background-size: 99% }
+.icon2 { width: 45.6666667%; padding-bottom: 70.6666667%; background: url(https://img.hzshuangmei.com/m/nose/icon2.png) center top no-repeat; background-size: 99% }
 .icon3, .icon4 { width: 13.1%; padding-bottom: 15% }
-.icon3 { background: url(//img.hzshuangmei.com/m/nose/icon3.png) center top no-repeat; background-size: 99% }
-.icon4 { background: url(//img.hzshuangmei.com/m/nose/icon4.png) center top no-repeat; background-size: 99% }
+.icon3 { background: url(https://img.hzshuangmei.com/m/nose/icon3.png) center top no-repeat; background-size: 99% }
+.icon4 { background: url(https://img.hzshuangmei.com/m/nose/icon4.png) center top no-repeat; background-size: 99% }
 .icon5, .icon6 { width: 8.6433121%; padding-bottom: 8.6433121% }
-.icon5 { background: url(//img.hzshuangmei.com/m/nose/icon5.png) center center no-repeat; background-size: 99% }
-.icon6 { background: url(//img.hzshuangmei.com/m/nose/icon6.png) center center no-repeat; background-size: 99% }
+.icon5 { background: url(https://img.hzshuangmei.com/m/nose/icon5.png) center center no-repeat; background-size: 99% }
+.icon6 { background: url(https://img.hzshuangmei.com/m/nose/icon6.png) center center no-repeat; background-size: 99% }
 @-webkit-keyframes shake {
   0%, 100%, 21% { -webkit-transform: translateX(0) }
   15%, 3%, 9% { -webkit-transform: translateX(-0.125rem) }

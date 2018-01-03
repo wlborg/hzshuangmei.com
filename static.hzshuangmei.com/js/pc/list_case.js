@@ -136,5 +136,5 @@ function(event) {
 }
 
 $(function() {
-    preReady();
+    //preReady();
 });

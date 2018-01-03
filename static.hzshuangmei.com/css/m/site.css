@@ -147,8 +147,8 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #diary .des { margin-top: .3rem; font-size: .4rem; line-height: 1.5em;    /* color: #b6b6b6; */ color: #3e3d3d; }
 #diary .pic { margin-top: .5rem; }
 #diary .pic img { display: block; width: 100%; }
-#diary .before { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; outline: outset 1px #eaeaea; }
-#diary .after { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; outline: outset 1px #eaeaea; }
+#diary .before { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; /* outline: outset 1px #eaeaea;  */}
+#diary .after { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; /* outline: outset 1px #eaeaea; */ }
 #diary .flag { position: absolute; bottom: -1rem; left: 0; width: 2rem; height: 2rem; padding-left: .5rem; font-size: .5rem; line-height: 1rem; color: #fff; border-top-right-radius: 1.25rem; border-bottom-right-radius: 1.25rem; background: rgba(154, 66, 172, .4); }
 #diary .label { height: .8rem; padding: .4rem 0 .5rem; line-height: .8rem; }
 #diary .label span { display: inline-block; vertical-align: middle; }
@@ -401,7 +401,7 @@ font-size: .3rem; line-height: .85rem; color: #6a6a6a; }
 .relateporject .heading .line { border-bottom: solid 1px #7e52a2; }
 .relateporject .contents { padding: .55rem 3.5% 1.65rem; font-size: 0; text-align: center; }
 .relateporject .contents .imgbox { padding: .1rem 0; font-size: 0; background: #865ba9; }
-.relateporject .contents img { width: 47.5%; max-width: 7.6rem; margin: .125rem; }
+.relateporject .contents img {display: inline-block; width: 47.5%; max-width: 7.6rem; margin: .125rem; }
 .articlerelatedoctor { height: 13.15rem; background: #76449e; }
 .articlerelatedoctor .heading .line { border-bottom: solid 1px #8a60ab; }
 .articlerelatedoctor .contents { padding: .55rem 2% 1.9rem; }
