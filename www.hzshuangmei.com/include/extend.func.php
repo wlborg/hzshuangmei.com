@@ -957,10 +957,19 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<div id="ptabCon">
+                    <div class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></div>
+                    <div><img src="'.$litpic.'" alt="'.$title.'"></div>
+                </div>
+                <div id="ptab">
+                    <ul>
+                        <li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>
+                        <li><img src="'.$litpic.'" alt="'.$title.'"></li>
+                    </ul>
+                </div>';
 }
 if($ns>0){
-$relateproject= ' <div class="imgbox">
+$relateproject= '  <div class="project_banner clearFix">
   '.$relateproject.'
 </div> ';
 }
