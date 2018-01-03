@@ -530,6 +530,7 @@ $relateproject= ' <div class="imgbox">
 
 return $relateproject;
 }
+// 医生文章页案例固定
 function getDoctorArticleRelateCase($typeid)
 {
 global $dsql;
@@ -550,7 +551,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -563,69 +564,28 @@ $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
 if($counter == 0){
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
+// $indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
-<div class="item active" >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
-}else{
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
-$list.= '
-<div class="item " >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
-}
-$counter=$counter+1;
-}
+      <li class="clearFix">
+                <a href="'.$url.'" class="tjb_l"><img src="'.$imgafter.'" alt="术后"/></a>
+                <div class="tjb_r">
+                    <p class="p3"><a href="" class="tjb_name">关海涛</a></p>
+                    <p class="p4"><a href="">美容外科京华院长</a></p>
+                    <div class="tjb_sc clearFix">
+                        <p>擅长项目：</p>
+                        <p>'.$project.'</p>
+                    </div>
+                    <div class="tjb_button">
+                        <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"/></a>
+                    </div>
+                </div>
+            </li>';
+
 if($ns>0){
-$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    '.$indicators.'
-  </ol>'
-  .'<div class="carousel-inner" role="listbox"> '
+$relatecase.= 
+  .'<div> '
     . $list
-  .'</div>
-</div>';
+  .'</div>';
 }
 return $relatecase;
 }
