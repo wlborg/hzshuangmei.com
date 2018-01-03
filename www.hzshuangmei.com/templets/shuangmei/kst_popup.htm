@@ -1,6 +1,8 @@
 <script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script>
 <script>
 function popup() {
+
+var  filename= {dede: field.filename /};
     layer.open({
         type: 1,
         title: false,
@@ -26,11 +28,9 @@ function popup() {
             $(".layui-layer-btn1").addClass('j-consult');
         },
         btnAlign: 'c',
-        content: '<img src="' + {dede: global.cfg_imgpath /} + '/pc/kst/' +{dede: field.filename /} + '.png'+'"'+'/>',
-        end: function() {
-            setTimeout(popup, 10000);
-        }
-    })
+        content: '<img src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
+        end: function() { setTimeout(popup, 10000);  }
+    });
 }
 popup();
 </script>
