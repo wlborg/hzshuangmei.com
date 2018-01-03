@@ -947,7 +947,7 @@ $row = $dsql->GetOne("SELECT * FROM #@__archives
 where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 4 ");
+where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 1 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
