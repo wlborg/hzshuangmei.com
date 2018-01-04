@@ -736,7 +736,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -878,12 +878,13 @@ function getProjectArticleRelateProject($id)
 global $dsql;
 $relateproject="";
 $relatetypeid = "";
+$list="";
 $row = $dsql->GetOne("SELECT * FROM #@__archives
 
-where id='$id'"); echo($row);
+where id='$id'"); 
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 1 ");
+where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -893,21 +894,24 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<div id="ptabCon">
-                    <a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>
-                    <a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>
-                </div>
-                <div id="ptab">
-                    <ul>
-                        <li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>
-                        <li><img src="'.$litpic.'" alt="'.$title.'"></li>
-                    </ul>
-                </div>';
+if($counter == 0){
+$relateproject.='<li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}else{
+$relateproject.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$list.= '<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+$counter=$counter+1;
 }
 if($ns>0){
-$relateproject= '  <div class="project_banner clearFix">
-  '.$relateproject.'
-</div> ';
+$relateprojects.= '<div class="project_banner clearFix">
+  <div id="ptabCon">
+    '.$list.'
+  </div>'
+  .'<div id="ptab"> <ul>'
+    . $relateproject
+  .'</ul></div>
+</div>';
 }
-return $relateproject;
+return $relateprojects;
 }
