@@ -678,15 +678,26 @@ footer .left a {
     color: #fff;
 }
 /* kst popup*/
+body .popup .layui-layer-content {
+    height: 393px!important;   /* fixed init ion popup*/
+}
 body .popup .layui-layer-btn .layui-layer-btn0 {
     width: 100px;
     margin: 5px 15px 0;
 
     color: #999;
-    border: 1px solid #dedede;
+    border: 1px solid #cecece;
     background-color: #fff;
 }
 body .popup .layui-layer-btn .layui-layer-btn1 {
+    width: 100px;
+    margin: 5px 15px 0;
+
+    color: #7d64c3;
+    border: 1px solid #cbbeef;
+    background-color: #fff;
+}
+body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 100px;
     margin: 5px 15px 0;
 
