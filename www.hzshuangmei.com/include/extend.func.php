@@ -878,9 +878,10 @@ function getProjectArticleRelateProject($id)
 global $dsql;
 $relateproject="";
 $relatetypeid = "";
+$list="";
 $row = $dsql->GetOne("SELECT * FROM #@__archives
 
-where id='$id'"); echo($row);
+where id='$id'"); 
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 2 ");
@@ -894,23 +895,23 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
 if($counter == "pli"){
-$indicators.='<li class="'.$counter.'"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$relateproject.='<li class="'.$counter.'"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
 $list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }else{
-$indicators.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$relateproject.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
 $list.= '<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 $counter=$counter+1;
 }
 if($ns>0){
-$relatedoctor.= '<div class="project_banner clearFix">
+$relateprojects.= '<div class="project_banner clearFix">
   <div id="ptabCon">
     '.$list.'
   </div>'
   .'<div id="ptab"> <ul>'
-    . $indicators
+    . $relateproject
   .'</ul></div>
 </div>';
 }
-return $relateproject;
+return $relateprojects;
 }
