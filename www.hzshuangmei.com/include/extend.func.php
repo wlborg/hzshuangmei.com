@@ -944,7 +944,8 @@ global $dsql;
 $relateproject="";
 $relatetypeid = "";
 $row = $dsql->GetOne("SELECT * FROM #@__archives
-where id='$id'");
+ 
+where id='$id'"); echo($row);
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 1 ");
@@ -958,8 +959,8 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
 $relateproject.='<div id="ptabCon">
-                    <div class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></div>
-                    <div><img src="'.$litpic.'" alt="'.$title.'"></div>
+                    <a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>
+                    <a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>
                 </div>
                 <div id="ptab">
                     <ul>
