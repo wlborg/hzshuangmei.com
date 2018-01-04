@@ -31,7 +31,7 @@ a {
 .bn-zixun{width:206px; height: 125px; background: url(//img.hzshuangmei.com/pc/pimiao/images/bnye.png) no-repeat; float:right;}
 .bn-zixun a{width: 100%; height: 100%; display: block;}
 .pal1{font-size: 26px; color:#de828f; width: 100%; height: 75px; line-height: 100px; text-align: center; transition:all 0.5s;}
-.bn-zixun:hover	a .pal1{color:#ffffff; text-shadow: 3px 3px 5px #f4a0ac}
+.bn-zixun:hover	.pal1 a{color:#ffffff; text-shadow: 3px 3px 5px #f4a0ac}
 .bn-zixun img{margin:0 auto;}
 /*main1*/
 .main1{width: 1020px; height: 938px; margin: 0 auto; padding-top: 80px; }
