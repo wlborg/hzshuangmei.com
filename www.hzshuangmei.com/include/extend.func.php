@@ -748,7 +748,7 @@ $imgbefore = replaceurl($row["imgbefore"]);
 $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
-$list.= '
+$list.= '<li>
               <a href="'.$url.'" class="tbj_t">
                   <img src="'.$imgafter.'" alt="术后"/>
               </a>
@@ -757,13 +757,14 @@ $list.= '
                   <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
                   <p class="p2">'.$project.'</p>
                   <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
-              </div>';
+              </div>
+              </li>';
 }
 
 if($ns>0){
-$relatecase.= '  <li> '
+$relatecase.= '  <ul class="tjb_rj clearFix"> '
     . $list
-  .'</li>';
+  .'</ul>';
 }
 return $relatecase;
 }
@@ -851,7 +852,7 @@ $thumb = replaceurl($row["thumb"]);
 $zhiwei = $row["zhiwei"];
 $shanchang = $row["shanchang"];
 
-$list.= '
+$list.= '<li class="clearFix">
                 <a href="'.$url.'" class="tjb_l"><img src="'.$thumb.'" alt=""/></a>
                 <div class="tjb_r">
                     <p class="p3"><a href="'.$url.'" class="tjb_name">'.$title.'</a></p>
@@ -863,12 +864,12 @@ $list.= '
                     <div class="tjb_button">
                         <a href="'.$url.'"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt=""/></a>
                     </div>
-                </div>';
+                </div></li>';
 }
 if($ns>0){
-$relatedoctor.= ' <li class="clearFix"> '
+$relatedoctor.= ' <ul class="tjb_zj clearFix"> '
     . $list
-  .'</li>';
+  .'</ul>';
 }
 return $relatedoctor;
 }
