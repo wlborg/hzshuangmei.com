@@ -1,6 +1,6 @@
 
 var ptabs=document.getElementById("ptab").getElementsByTagName("li");
-var pdivs=document.getElementById("ptabCon").getElementsByTagName("div");
+var pdivs=document.getElementById("ptabCon").getElementsByTagName("a");
 for(var i=0;i<ptabs.length;i++){
     ptabs[i].onmouseover=function(){pchange1(this);}
 }

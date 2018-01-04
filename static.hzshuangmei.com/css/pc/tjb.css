@@ -196,10 +196,8 @@ height:370px;
 #ptabCon {
     clear: both;
 }
-#ptab .pli{
-    color:red;
-}
-#ptabCon div {
+
+#ptabCon a {
     display:none;
     width:780px;
     height:497px;
