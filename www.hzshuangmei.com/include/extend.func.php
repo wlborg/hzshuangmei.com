@@ -748,70 +748,22 @@ $imgbefore = replaceurl($row["imgbefore"]);
 $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
-if($counter == 0){
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
-<div class="item active" >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
-}else{
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
-$list.= '
-<div class="item " >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
+              <a href="'.$url.'" class="tbj_t">
+                  <img src="'.$imgafter.'" alt="术后"/>
+              </a>
+              <div class="tbj_b">
+                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
+                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <p class="p2">'.$project.'</p>
+                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+              </div>';
 }
-$counter=$counter+1;
-}
+
 if($ns>0){
-$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    '.$indicators.'
-  </ol>'
-  .'<div class="carousel-inner" role="listbox"> '
+$relatecase.= '  <li> '
     . $list
-  .'</div>
-</div>';
+  .'</li>';
 }
 return $relatecase;
 }
