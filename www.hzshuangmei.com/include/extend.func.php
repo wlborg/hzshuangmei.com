@@ -878,14 +878,11 @@ function getProjectArticleRelateProject($id)
 global $dsql;
 $relateproject="";
 $relatetypeid = "";
-$list="";
-$counter=0;
 $row = $dsql->GetOne("SELECT * FROM #@__archives
-
-where id='$id'"); 
+where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 2 ");
+where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -895,24 +892,12 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-if($counter == 0){
-$relateproject.='<li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
-$list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
-}else{
-$relateproject.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
-$list.= '<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
-}
-$counter=$counter+1;
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$relateprojects.= '<div class="project_banner clearFix">
-  <div id="ptabCon">
-    '.$list.'
-  </div>'
-  .'<div id="ptab"> <ul>'
-    . $relateproject
-  .'</ul></div>
-</div>';
+$relateproject= ' <div class="tjb_img clearFix">
+  '.$relateproject.'
+</div> ';
 }
-return $relateprojects;
+return $relateproject;
 }
