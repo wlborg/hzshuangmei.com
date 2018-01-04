@@ -893,7 +893,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-if($counter == pli){
+if($counter == "pli"){
 $indicators.='<li class="'.$counter.'"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
 $list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }else{
