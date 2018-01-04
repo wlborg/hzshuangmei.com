@@ -879,6 +879,7 @@ global $dsql;
 $relateproject="";
 $relatetypeid = "";
 $list="";
+$counter=0;
 $row = $dsql->GetOne("SELECT * FROM #@__archives
 
 where id='$id'"); 
