@@ -1,7 +1,7 @@
 .tjb{
     width: 100%;
     min-height:916px;
-    background:url(../img/tjb_bg.jpg) no-repeat fixed;
+    background:url(//img.hzshuangmei.com/pc/tjb_bg.jpg) no-repeat fixed;
     background-size: cover;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     vertical-align: bottom;
 }
 .tbj_b{
-    /*background: url("../img/tjb_rjbg.png") top center;*/
+    /*background: url("//img.hzshuangmei.com/pc/tjb_rjbg.png") top center;*/
     background-color:rgba(255,255,255,0.5);
     /*opacity: 0.5;*/
     width: 372px;
@@ -208,4 +208,28 @@ height:370px;
     display:block;
     width:780px;
     height:497px;
+}
+.m_rj{
+    width:1200px;
+    margin:0 auto
+}
+.m_zj{
+    width:1200px;
+    margin:0 auto
+}
+.m_xm{
+    width:1200px;
+    margin:0 auto
+}
+.tjb_title1 img {
+    display: inline!important;
+}
+.tjb_title2 img {
+    display: inline!important;
+}
+.tjb_title3 img {
+    display: inline!important;
+}
+.tjb_button a img {
+    display: inline;
 }
