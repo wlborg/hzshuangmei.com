@@ -893,21 +893,24 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<div id="ptabCon">
-                    <a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>
-                    <a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>
-                </div>
-                <div id="ptab">
-                    <ul>
-                        <li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>
-                        <li><img src="'.$litpic.'" alt="'.$title.'"></li>
-                    </ul>
-                </div>';
+if($counter == pli){
+$indicators.='<li class="'.$counter.'"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}else{
+$indicators.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
+$list.= '<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+$counter=$counter+1;
 }
 if($ns>0){
-$relateproject= '  <div class="project_banner clearFix">
-  '.$relateproject.'
-</div> ';
+$relatedoctor.= '<div class="project_banner clearFix">
+  <div id="ptabCon">
+    '.$list.'
+  </div>'
+  .'<div id="ptab"> <ul>'
+    . $indicators
+  .'</ul></div>
+</div>';
 }
 return $relateproject;
 }

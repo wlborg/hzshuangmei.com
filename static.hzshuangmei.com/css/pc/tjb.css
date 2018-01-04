@@ -221,3 +221,15 @@ height:370px;
     width:1200px;
     margin:0 auto
 }
+.tjb_title1 img {
+    display: inline!important;
+}
+.tjb_title2 img {
+    display: inline!important;
+}
+.tjb_title3 img {
+    display: inline!important;
+}
+.tjb_button a img {
+    display: inline;
+}
