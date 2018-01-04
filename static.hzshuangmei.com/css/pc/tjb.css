@@ -187,3 +187,24 @@ height:370px;
 .tjb_img>a:nth-child(2){
     margin-bottom:1px;
 }
+.tjb_title1 img{
+    margin:0 auto
+}
+.tjb_title2 img{
+    margin:0 auto
+}
+.tjb_title3 img{
+    margin:0 auto
+}
+.m_zj {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m_rj {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m_xm {
+    width: 1200px;
+    margin: 0 auto;
+}
