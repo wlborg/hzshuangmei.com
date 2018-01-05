@@ -317,6 +317,9 @@ nav > ul > li ul li {
 nav > ul > li ul li a p {
     font-size: 12px;
 }
+nav > ul > li #project > ul > li a p span {
+    color: #000;
+}
 nav > ul > li #project > ul > li:nth-child(2) a p span {
     color: #ac0000;
 }
