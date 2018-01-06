@@ -1,5 +1,20 @@
-<script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script>
-<script>
+/*
+* @Author: chj
+* @FileName:kst_popup.js
+* @Date:   2018-01-06 11:05:43
+* @Last Modified by:   chj
+* @Last Modified time: 2018-01-06 11:19:44
+*/
+/* PC版   自定义弹窗邀请框 */
+/*
+    弹窗显示 时间time参数控制（豪秒）
+    setTimeout 设置循环时间（毫秒）
+    使用图片和M端弹窗图片一致
+
+使用方法：
+1. <script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script> 引入
+2. 配置
+ */
 function popup() {
 //get current page filename
 var target=window.location.href;
@@ -54,5 +69,5 @@ var flag=0;
              }
     });
 }
-popup();
-</script>
+//popup();
+
