@@ -1,7 +1,7 @@
 .tjb{
     width: 100%;
     min-height:916px;
-    background:url(../img/tjb_bg.jpg) no-repeat fixed;
+    background:url(//img.hzshuangmei.com/pc/tjb_bg.jpg) no-repeat fixed;
     background-size: cover;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     vertical-align: bottom;
 }
 .tbj_b{
-    /*background: url("../img/tjb_rjbg.png") top center;*/
+    /*background: url("//img.hzshuangmei.com/pc/tjb_rjbg.png") top center;*/
     background-color:rgba(255,255,255,0.5);
     /*opacity: 0.5;*/
     width: 372px;
@@ -165,47 +165,46 @@ height:370px;
     margin:48px auto 122px;
 }
 
-.project_banner{
-    width:1174px;
-    height:497px;
-    padding-top:15px;
-    margin:0 auto
-}
-.project_banner a{
-    display:block
-}
-.project_banner #ptabCon{
-    float:left;
-    width:780px;
-    height:497px;
+.tjb_img{
+    height: 496px;
     overflow: hidden;
+    margin: auto;
+    padding-top: 16px;
 }
-.project_banner #ptabCon img{
-    height:100%;
-    width: 100%;
-}
-.project_banner #ptab{
-    float:right;
-}
-.project_banner #ptab li{
-    margin-bottom:6px;
+.tjb_img>a img{
     width:386px;
     height:246px;
-    overflow: hidden;
 }
-#ptabCon {
-    clear: both;
+.tjb_img>a:first-child{
+    float:left;
+    margin:0 6px 0 15px;
+
 }
-#ptab .pli{
-    color:red;
-}
-#ptabCon div {
-    display:none;
+.tjb_img>a:first-child img{
     width:780px;
-    height:497px;
+    height:496px;
 }
-#ptabCon .pdiv {
-    display:block;
-    width:780px;
-    height:497px;
+.tjb_img>a:nth-child(2){
+    margin-bottom:1px;
+}
+.tjb_title1 img{
+    margin:0 auto
+}
+.tjb_title2 img{
+    margin:0 auto
+}
+.tjb_title3 img{
+    margin:0 auto
+}
+.m_zj {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m_rj {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m_xm {
+    width: 1200px;
+    margin: 0 auto;
 }
