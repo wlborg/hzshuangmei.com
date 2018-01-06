@@ -3,7 +3,7 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 11:05:43
 * @Last Modified by:   chj
-* @Last Modified time: 2018-01-06 11:19:44
+* @Last Modified time: 2018-01-06 11:46:11
 */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -69,5 +69,5 @@ var flag=0;
              }
     });
 }
-//popup();
+popup();
 
