@@ -22,8 +22,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -416,6 +416,7 @@ body .popup .layui-m-layerbtn span[no] {
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    border-bottom-left-radius: 0;
     background-color: #fff;
 }
 body .popup .layui-m-layerbtn span[yes] {
