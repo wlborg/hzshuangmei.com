@@ -3,14 +3,13 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
-* @Last Modified time: 2018-01-06 12:44:46
+* @Last Modified time: 2018-01-06 14:01:42
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
     弹窗显示 时间time参数控制（豪秒）
     setTimeout 设置循环时间（毫秒）
-    使用图片和M端弹窗图片一致
-
+自定义弹窗图片大小： (600*385)
 使用方法：
 1. <script src="{dede:global.cfg_jspath/}/pc/layer/mobile/layer.js"></script> 引入
 2. 配置
@@ -20,6 +19,11 @@ function popup() {
     var target = window.location.href;
     var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
     //var timer = null;
+//如果当前页面没有对应弹窗图片，则使用默认的图片default.png
+if(filename=="")
+{
+      filename="default";
+}
     layer.open({
         type: 1,
         anim: 'up',
