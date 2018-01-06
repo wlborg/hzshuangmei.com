@@ -3,7 +3,7 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
-* @Last Modified time: 2018-01-06 11:46:22
+* @Last Modified time: 2018-01-06 12:44:46
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -26,7 +26,7 @@ function popup() {
         shade: 0,
         shadeClose: true,
         className: 'popup',
-        time:5,     //弹窗停留时间
+      //  time:5,     //弹窗停留时间
         btn: ['立即了解', '稍后了解'],
         no: function(index, layero) {
             //按钮【按钮二】的回调
