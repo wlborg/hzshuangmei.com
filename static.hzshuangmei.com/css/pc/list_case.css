@@ -46,17 +46,17 @@
 }
 #case_tab li {
     border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(234, 233, 233);
-    width: 93px;
+    background-color: #7a5195;
+    width: 148px;
     height: 45px;
-    font-size: 16px;
+    font-size: 24px;
     color: #6b6b6b;
     text-align: center;
     line-height: 48px;
     cursor: pointer;
 }
 #case_tab .case_fli{
-    background-color: #855ca3;
+    background-color: #fff;
 }
 #case_tab .case_fli a{
     color: #fff!important;
