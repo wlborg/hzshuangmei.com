@@ -48,11 +48,11 @@
     border: 1px solid rgb(255, 255, 255);
     background-color: #7a5195;
     width: 148px;
-    height: 45px;
+    height: 54px;
     font-size: 24px;
     color: #6b6b6b;
     text-align: center;
-    line-height: 48px;
+    line-height: 54px;
     cursor: pointer;
 }
 #case_tab .case_fli{
