@@ -22,8 +22,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -395,30 +395,48 @@ body {
 /* typographical */
 
 /*popup*/
+
 body .popup {
     width: 80%!important;
 }
-body .popup .layui-m-layerbtn span[no] {
-    font-size: 1rem;
+body .popup .layui-m-layerbtn {
+    border: 0;
+}
+body .popup .layui-m-layerbtn .never {
+    font-size: .8rem;
 
     color: #999;
     border: 1px solid #cecece;
+    border: 0;
     border-top: 0;
-    border-right: 0;
+    border-right: 1px solid #cecece;
     border-bottom-right-radius: 0;
     background-color: #fff;
 }
+body .popup .layui-m-layerbtn span[no] {
+    font-size: .8rem;
+
+    color: #7d64c3;
+    border: 1px solid #cbbeef;
+    border: 0;
+    border-top: 0;
+    border-right: 0;
+    border-right: 1px solid #cecece;
+    border-left: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+}
 body .popup .layui-m-layerbtn span[yes] {
-    font-size: 1rem;
+    font-size: .8rem;
 
     color: #fff;
     border: 1px solid #dedede;
+    border: 0;
     border-top: 0;
-    border-left: 0;
+    border-right: 1px solid #cecece;
     border-bottom-left-radius: 0;
     background-color: #7d64c3;
 }
-
 body .popup .layui-m-layercont img {
     display: block;
     width: 100%;
