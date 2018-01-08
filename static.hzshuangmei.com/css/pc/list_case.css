@@ -56,9 +56,9 @@
     cursor: pointer;
 }
 #case_tab .case_fli{
-    background-color: #fff;
+    background-color: #380d5b;
 }
-#case_tab .case_fli a{
+#case_tab li a{
     color: #fff!important;
 }
 
