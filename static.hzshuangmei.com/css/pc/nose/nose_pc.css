@@ -88,7 +88,7 @@ body { font: 16px/1.5 'Microsoft Yahei', Verdana, Arial, sans-serif; background-
 .row8 .container { height: 1126px; position: relative }
 .row8 .container .wangzhikup { position: absolute; bottom: 0; left: 30px; z-index: 1 }
 .row8 .container>div { width:582px; text-align: left; position: relative; left: 600px; top: 280px }
-.row8 .container>div h2 { margin: 0 0 58px; line-height: 72px; text-indent: 0; font-size: 72px; color: #dfe0e2 }
+.row8 .container>div h2 { margin: 0 0 58px; line-height: 64px; text-indent: 0; font-size: 64px; color: #dfe0e2 }
 .row8 .container>div>div { padding: 40px 52px 12px 48px; background: #fff; opacity: .9; letter-spacing: 2px }
 .row8 .container>div>div h3 { font-size: 55px; color: #1b303e }
 .row8 .container>div>div ul { padding-left: 16px; padding-bottom: 16px;line-height: 30px }
