@@ -550,7 +550,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -562,70 +562,23 @@ $imgbefore = replaceurl($row["imgbefore"]);
 $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
-if($counter == 0){
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" class="active"></li>' ;
-$list.= '
-<div class="item active" >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
-}else{
-$indicators.='<li data-target="#articleslidecase" data-slide-to="'.$counter.'" ></li>' ;
-$list.= '
-<div class="item " >
-  <div class="pic f-cb">
-    <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
-    </div>
-    <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
-    </div>
-  </div>
-  <div class="label f-cb">
-    <span class="pro">'.$project.'</span>
-    <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
-      <span class="click">'.$click.'</span>
-    </div>
-  </div>
-</div>';
+$list.= '<li>
+              <a href="'.$url.'" class="tbj_t">
+                  <img src="'.$imgafter.'" alt="术后"/>
+              </a>
+              <div class="tbj_b">
+                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
+                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <p class="p2">'.$project.'</p>
+                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+              </div>
+              </li>';
 }
-$counter=$counter+1;
-}
+
 if($ns>0){
-$relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    '.$indicators.'
-  </ol>'
-  .'<div class="carousel-inner" role="listbox"> '
+$relatecase.= '  <ul class="tjb_rj clearFix"> '
     . $list
-  .'</div>
-</div>';
+  .'</ul>';
 }
 return $relatecase;
 }
@@ -659,7 +612,7 @@ $litpic = replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$relateproject= ' <div class="imgbox">
+$relateproject= ' <div class="tjb_img clearFix">
   '.$relateproject.'
 </div> ';
 }
@@ -878,14 +831,11 @@ function getProjectArticleRelateProject($id)
 global $dsql;
 $relateproject="";
 $relatetypeid = "";
-$list="";
-$counter=0;
 $row = $dsql->GetOne("SELECT * FROM #@__archives
-
-where id='$id'"); 
+where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 2 ");
+where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -895,24 +845,12 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-if($counter == 0){
-$relateproject.='<li class="pli"><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
-$list.= '<a href="'.$url.'" class="pdiv"><img src="'.$litpic.'" alt="'.$title.'"></a>';
-}else{
-$relateproject.='<li><img src="'.$litpic.'" alt="'.$title.'"></li>' ;
-$list.= '<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
-}
-$counter=$counter+1;
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$relateprojects.= '<div class="project_banner clearFix">
-  <div id="ptabCon">
-    '.$list.'
-  </div>'
-  .'<div id="ptab"> <ul>'
-    . $relateproject
-  .'</ul></div>
-</div>';
+$relateproject= ' <div class="tjb_img clearFix">
+  '.$relateproject.'
+</div> ';
 }
-return $relateprojects;
+return $relateproject;
 }
