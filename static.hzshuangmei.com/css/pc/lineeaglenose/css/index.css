@@ -12,6 +12,12 @@
     vertical-align: bottom;
 
 }
+.ghtimg{
+    margin-top: -12px;
+    width: 170px;
+    position: relative;
+    top: -4px;
+}
 .part1 .m1>img{
     padding-top:145px
 }
