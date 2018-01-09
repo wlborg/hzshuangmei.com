@@ -565,10 +565,10 @@ h4 {
 }
 
 .part7 .gallery-thumbs {
-    width: 9.125rem;
+    width: 13.125rem;
     height: 0.9rem;
     background: url(https://img.hzshuangmei.com/m/lineeaglenose/p7_tab.png) no-repeat;
-    background-size:100%;
+    background-size: cover;
     margin: 1.675rem auto 1.025rem
 }
 
