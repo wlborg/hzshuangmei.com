@@ -51,17 +51,19 @@ table {
     clip: rect(0, 0, 0, 0);
 }
 
-body {
-    font-size: 0;
-}
-
 .banner {
     margin: auto;
-    width: 16.0rem
+    height: 15.25rem;
+
 }
 
 .banner img {
-    width: 16.0rem;
+    height: 15.25rem;
+}
+.banner a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .m1 {
@@ -75,6 +77,7 @@ body {
 .m1con {
 
     box-shadow: 0.05rem 0.1rem 0.4rem #d7d3d3;
+    font-size: 0;
     background-color: #f1eded;
     position: relative;
     width: 13.05rem;
@@ -148,10 +151,12 @@ body {
 
 }
 .m2{
+    font-size: 0;
     text-align: center;
     margin: auto;
     height: 31.9rem;
-    background: url("//img.hzshuangmei.com/pc/hzsypxf/images/m2bg.png") no-repeat center;
+    background: url("//img.hzshuangmei.com/m/hzsypxf/images/m2bg.png") no-repeat center;
+    background-size: 100%;
 }
 .m2con{
     padding-top: 1px;
@@ -228,6 +233,7 @@ body {
 .m3con{
 
     position: relative;
+    font-size: 0;
     width: 16.0rem;
     margin: auto;
 
@@ -291,8 +297,10 @@ body {
 }
 
 .m4{
+    font-size: 0;
     height: 30.5rem;
-    background: url("//img.hzshuangmei.com/pc/hzsypxf/images/m4bg.jpg") no-repeat center;
+    background: url("//img.hzshuangmei.com/m/hzsypxf/images/m4bg.jpg") no-repeat center;
+    background-size: 100%;
 }
 .m4con{
     padding-top: 1px;
@@ -368,6 +376,7 @@ body {
     width: 12.525rem;
     margin-top: 1.0rem;
     color: rgba(171,126,129,0.85);
+    border: 1px solid #846063;
 }
 .m4 .djzx span{
     margin-left: 0.5rem;
@@ -375,6 +384,7 @@ body {
 }
 .m5{
     width: 16.0rem;
+    font-size: 0;
     margin: auto;
     height: 34.3rem;
     background-color:#f1eded;
@@ -564,10 +574,12 @@ body {
     margin-left: 0.5rem;
 }
 .m6con{
+    font-size: 0;
     padding-top: 1px;
     width: 16.0rem;
     margin: auto;
-    background: url("//img.hzshuangmei.com/pc/hzsypxf/images/m6bg.jpg") no-repeat top;
+    background: url("//img.hzshuangmei.com/m/hzsypxf/images/m6bg.jpg") no-repeat top;
+    background-size: 100%;
 }
 .m6tit1{
     display: block;
@@ -599,12 +611,14 @@ body {
     background-color: #907c7e;
 }
 .m7con{
+    font-size: 0;
     background-color: #262435;
     height: 27.625rem;
     width: 16.0rem;
     margin: auto;
     position: relative;
-    background: url("//img.hzshuangmei.com/pc/hzsypxf/images/m7bg.jpg") no-repeat top;
+    background: url("//img.hzshuangmei.com/m/hzsypxf/images/m7bg.jpg") no-repeat left top;
+    background-size: auto 100%;
 }
 .m71{
     width: 7.8rem;
@@ -668,8 +682,8 @@ body {
     left: 0.25rem;
     width: 15.5rem;
     margin: auto;
-    border-left: solid 1px #f1ede8;
-    border-bottom: solid 1px #f1ede8;
+    border-left: solid 0.025rem #f1ede8;
+    border-bottom: solid 0.025rem #f1ede8;
 }
 .m7 ul::after{
     content: " ";
@@ -678,15 +692,19 @@ body {
 }
 .m7 li{
     height: 1.55rem;
+    /*border-bottom:solid 1px #f1ede8 ;*/
     width: 3.85rem;
-    border-right: solid 1px #f1ede8;
-    border-top: solid 1px #f1ede8;
+    border-right: solid 0.025rem #f1ede8;
+    border-top: solid 0.025rem #f1ede8;
     font-size: 0.425rem;
     line-height: 1.55rem;
     color: #c2c3c3;
     text-align: center;
     float: left;
 
+}
+.m7 .ul14{
+    font-size:0.35rem;
 }
 .m7 li:last-child{
     width: 7.725rem;
@@ -702,6 +720,7 @@ body {
 
 }
 .djzxm7{
+    cursor:pointer;
     position: absolute;
     width: 7.65rem;
     height: 1.0rem;
