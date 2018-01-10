@@ -3,7 +3,9 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
+
 * @Last Modified time: 2018-01-10 15:46:50
+
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -31,8 +33,11 @@ function popup() {
         shade: 0,
         shadeClose: true,
         className: 'popup',
+
         //time:6,     //弹窗停留时间
+
         btn: ['立即咨询', '稍后再说'],
+
         no: function(index, layero) {
             //按钮【稍后了解】的回调
             //暂时关闭弹窗
@@ -54,12 +59,16 @@ function popup() {
                 // 永远关闭弹窗
                 window.clearTimeout(timer);
             } else {
+
                 timer = setTimeout(popup, 15000);
+
             }
         }
     });
     //创建第三个按钮 “不再提示”
+
     $(".layui-m-layerbtn").prepend('<span class="never" id="never">不再提醒</span>');
+
     // "不再提示"按钮绑定点击事件
     $(".layui-m-layerbtn").on('click', "#never", function() {
         //点击之后清除循环定时器
