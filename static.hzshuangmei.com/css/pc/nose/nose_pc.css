@@ -90,13 +90,13 @@ body { font: 16px/1.5 'Microsoft Yahei', Verdana, Arial, sans-serif; background-
 .row8 .container>div { width:582px; text-align: left; position: relative; left: 600px; top: 280px }
 .row8 .container>div h2 { margin: 0 0 58px; line-height: 64px; text-indent: 0; font-size: 64px; color: #dfe0e2 }
 .row8 .container>div>div { padding: 40px 52px 12px 48px; background: #fff; opacity: .9; letter-spacing: 2px }
-.row8 .container>div>div h3 { font-size: 55px; color: #1b303e }
+.row8 .container>div>div h3 { font-size: 55px; color: #1b303e;font-weight: bold; }
 .row8 .container>div>div ul { padding-left: 16px; padding-bottom: 16px;line-height: 30px }
 .row8 .container>div>div img { padding-top: 18px;display: block;position: relative;left: -49px; }
 .row8 .container>div>div ul li { list-style-type: circle }
 .row8 .container>div>div h4 { margin-top: 24px; font-size: 28px }
 .row8 .container>div>div p { font-size: 20px; padding-bottom: 58px }
-.row8 .container>div .whiteborder { background: 0 0; width: 486px; height: 624px; border: 1px solid #fff; position: absolute; left: 15px; top: 118px }
+.row8 .container>div .whiteborder { background: 0 0; width: 486px; height: 650px; border: 1px solid #fff; position: absolute; left: 15px; top: 110px }
 .row8 .container>div .consult { padding: 0; width: 348px; border-radius: 4px; background: #fc6367; opacity: 1; position: relative; top: -30px; left: 160px }
 .act_title, .nose_contrast, .sprite { overflow: hidden; background-repeat: no-repeat }
 .row8 .container>div .consult a { padding-left: 18px; color: #fff; font-size: 38px }
