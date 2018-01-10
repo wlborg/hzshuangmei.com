@@ -22,8 +22,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -139,6 +139,10 @@ body {
 
 /* layout */
 .custom-wrapper {
+    /* fixed navbar */
+    position: fixed;
+    z-index: 20180110;
+
     height: 2.35rem;
     overflow: hidden;
 }
