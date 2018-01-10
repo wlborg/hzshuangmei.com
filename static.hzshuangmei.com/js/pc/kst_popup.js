@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-10 18:03:21
+ * @Last Modified time: 2018-01-10 18:14:31
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -29,6 +29,9 @@ $.ajax({
     dataType: "jsonp",
     processData: false,
     complete: function (data) {
+              if(data.status==200) {
+            console.log('ifresh!');
+      }
       if(data.status==404) {
      filename="default";
       }
