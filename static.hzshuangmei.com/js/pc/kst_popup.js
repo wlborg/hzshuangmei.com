@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-10 17:26:03
+ * @Last Modified time: 2018-01-10 17:44:45
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -25,9 +25,10 @@ function popup() {
     $.ajax({
         url: 'https://img.hzshuangmei.com/pc/kst/' + filename + '.png',
         type: 'GET',
-          dataType: 'JSONP',
-        complete: function(response) {
-            if (response.status == 404) {
+        //async: false, //同步请求
+        dataType: 'JSONP',
+        statusCode: {
+            404: function() {
                 filename = "default";
             }
         }
