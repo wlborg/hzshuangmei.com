@@ -300,6 +300,7 @@ table {
     font-size: 0;
     height: 30.5rem;
     background: url("//img.hzshuangmei.com/m/hzsypxf/images/m4bg.jpg") no-repeat center;
+    background-size: 100%;
 }
 .m4con{
     padding-top: 1px;
@@ -682,7 +683,7 @@ table {
     width: 15.5rem;
     margin: auto;
     border-left: solid 1px #f1ede8;
-    /*border-bottom: solid 1px #f1ede8;*/
+    border-bottom: solid 1px #f1ede8;
 }
 .m7 ul::after{
     content: " ";
@@ -691,7 +692,7 @@ table {
 }
 .m7 li{
     height: 1.55rem;
-    border-bottom:solid 1px #f1ede8 ;
+    /*border-bottom:solid 1px #f1ede8 ;*/
     width: 3.85rem;
     border-right: solid 1px #f1ede8;
     border-top: solid 1px #f1ede8;
@@ -701,6 +702,9 @@ table {
     text-align: center;
     float: left;
 
+}
+.m7 .ul14{
+    font-size:0.35rem;
 }
 .m7 li:last-child{
     width: 7.725rem;
