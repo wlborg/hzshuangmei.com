@@ -31,5 +31,38 @@ function popup() {
         }
     });
 }
+//调用自定义邀请框
 popup();
+//顶部分享按钮配置
+        var nativeShare = new NativeShare()
+        var shareData = {
+            title: '{dede:field.title/}',
+            desc: '{dede:field.description/}',
+            // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
+            link: '{dede:field.arcurl/}',
+            icon: 'https://img.hzshuangmei.com/m/favicon.ico',
+            // 不要过于依赖以下两个回调，很多浏览器是不支持的
+            success: function() {
+                alert('success')
+            },
+            fail: function() {
+                alert('fail')
+            }
+        }
+        nativeShare.setShareData(shareData)
+
+        function call(command) {
+            try {
+                nativeShare.call(command)
+            } catch (err) {
+                // 如果不支持，你可以在这里做降级处理
+                alert(err.message)
+            }
+        }
+
+        function setTitle(title) {
+            nativeShare.setShareData({
+                title: title,
+            })
+        }
 </script>
