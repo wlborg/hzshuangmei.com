@@ -682,8 +682,8 @@ table {
     left: 0.25rem;
     width: 15.5rem;
     margin: auto;
-    border-left: solid 1px #f1ede8;
-    border-bottom: solid 1px #f1ede8;
+    border-left: solid 0.025rem #f1ede8;
+    border-bottom: solid 0.025rem #f1ede8;
 }
 .m7 ul::after{
     content: " ";
@@ -694,8 +694,8 @@ table {
     height: 1.55rem;
     /*border-bottom:solid 1px #f1ede8 ;*/
     width: 3.85rem;
-    border-right: solid 1px #f1ede8;
-    border-top: solid 1px #f1ede8;
+    border-right: solid 0.025rem #f1ede8;
+    border-top: solid 0.025rem #f1ede8;
     font-size: 0.425rem;
     line-height: 1.55rem;
     color: #c2c3c3;
