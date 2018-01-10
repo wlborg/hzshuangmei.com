@@ -662,7 +662,7 @@ body{
     height: 70px;
     border: solid 2px #9e4249;
     text-align: center;
-    right: 390px;
+    right: 515px;
     bottom: 143px;
     -webkit-animation:aa1 2s infinite ;
     -o-animation:aa1 2s infinite ;
@@ -683,7 +683,7 @@ body{
     letter-spacing: -10px;
 }
 .m7 .djzxm7:last-child{
-    right: 48px;
+    right:0;
     bottom: 143px;
 }
 .banner a{
