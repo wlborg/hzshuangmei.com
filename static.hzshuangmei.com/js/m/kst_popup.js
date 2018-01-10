@@ -4,7 +4,8 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-10 15:22:10
+* @Last Modified time: 2018-01-10 15:46:50
+
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -33,7 +34,8 @@ function popup() {
         shadeClose: true,
         className: 'popup',
 
-        time:6,     //弹窗停留时间
+        //time:6,     //弹窗停留时间
+
         btn: ['立即咨询', '稍后再说'],
 
         no: function(index, layero) {
