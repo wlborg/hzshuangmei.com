@@ -618,7 +618,7 @@ table {
     margin: auto;
     position: relative;
     background: url("//img.hzshuangmei.com/m/hzsypxf/images/m7bg.jpg") no-repeat left top;
-    background-size: 100%;
+    background-size: auto 100%;
 }
 .m71{
     width: 7.8rem;
