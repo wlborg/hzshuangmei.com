@@ -681,8 +681,21 @@ footer .left a {
     color: #fff;
 }
 /* kst popup*/
+body .popup {
+    background-color: transparent;
+}
+
+body .popup .layui-layer-btn {
+    padding-top: 12px;
+}
+
+
 body .popup .layui-layer-content {
-    height: 393px!important;   /* fixed init ion popup*/
+    height: 385px!important;   /* fixed init ion popup*/
+}
+body .popup .layui-layer-content img {
+    display: block;
+    width: 100%;
 }
 body .popup .layui-layer-btn .layui-layer-btn0 {
     width: 100px;
