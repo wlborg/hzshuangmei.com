@@ -361,7 +361,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .article .article-main em { display: block; margin-top: -.2rem; font-size: .4rem; text-align: center; }
 .article .article-main br { display: none; }
 .relate-link { padding: 0 2% 1.5rem; margin-top: 2.5em; margin-bottom: 1em; font-size: .3rem; line-height: .85rem; color: #6a6a6a; }
-.relate-link a {    display:block;width:100%;font-size: .3rem; line-height: .85rem; color: #6a6a6a; padding: 0 .4rem; }
+.relate-link a {    display:block;font-size: .3rem; line-height: .85rem; color: #6a6a6a; padding: 0 .4rem; }
 .relate-link .prev { float: left; width: 42%; overflow: hidden; line-height: .85rem; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
 .relate-link .next { float: right; width: 42%;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
 
