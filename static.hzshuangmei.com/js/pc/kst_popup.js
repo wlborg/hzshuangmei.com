@@ -1,12 +1,10 @@
 /*
-* @Author: chj
-* @FileName:kst_popup.js
-* @Date:   2018-01-06 11:05:43
-* @Last Modified by:   chj
-
-* @Last Modified time: 2018-01-10 16:56:31
-
-*/
+ * @Author: chj
+ * @FileName:kst_popup.js
+ * @Date:   2018-01-06 11:05:43
+ * @Last Modified by:   chj
+ * @Last Modified time: 2018-01-10 17:17:06
+ */
 /* PC版   自定义弹窗邀请框 */
 /*
     弹窗显示 时间time参数控制（豪秒）
@@ -18,40 +16,23 @@
 2. 配置
  */
 function popup() {
-//get current page filename
-var target=window.location.href;
-var  filename= window.location.pathname.split("/")[window.location.pathname.split("/").length-1].split(".")[0];
-var timer =null;
-//如果当前页面没有对应弹窗图片，则使用默认的图片default.png
-//判断一个url是否可以访问
-function imgOk(img_url,fun){
-  $.ajax({
-      url:img_url,
-      type:"get",
-      success:function(){
-        //说明请求的url存在，并且可以访问
-        if($.isFunction(fun)){
-                fun(true);
-              }
-      },
-      statusCode:{
-        404:function(){
-          //说明请求的url不存在
-          if($.isFunction(fun)){
-            fun(false);
-          }
+    //get current page filename
+    var target = window.location.href;
+    var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
+    var timer = null;
+    //如果当前页面没有对应弹窗图片，则使用默认的图片default.png
+    //判断一个url是否可以访问
+    $.ajax({
+        url: 'https://img.hzshuangmei.com/pc/kst/' + filename + '.png',
+        type: 'GET',
+        complete: function(response) {
+            if (response.status == 404) {
+                filename = "default";
+            }
         }
-      }
     });
-}
-//检查图片是否存在
-imgOk('img.hzshuangmei.com/pc/kst/' +filename +'.png',function(res){
-    if(!res){
-       filename="default";
-    }
-});
-//不永远关闭弹窗
-var flag=0;
+    //不永远关闭弹窗
+    var flag = 0;
     layer.open({
         type: 1,
         title: false,
@@ -61,45 +42,42 @@ var flag=0;
         anim: 0,
         skin: 'popup',
         area: ['600px', '450px'],
-
         //time: 6000,
-
         resize: false,
-        btn: ['不再提醒','稍后再说', '立即咨询'],
+        btn: ['不再提醒', '稍后再说', '立即咨询'],
         yes: function(index, layero) {
             //按钮【按钮一】的回调
             //$("#layui-layer1").hide();
             //永远关闭弹窗
-            flag=1;
+            flag = 1;
             layer.closeAll();
         },
         btn2: function(index, layero) {
             //按钮【按钮二】的回调
             //$("#layui-layer1").hide();
             //暂时关闭弹窗
-            flag=0;
+            flag = 0;
             layer.close(index);
         },
         btn3: function(index, layero) {
             //按钮【按钮三】的回调
             //return false 开启该代码可禁止点击该按钮关闭
             //打开快商通
-                   //暂时关闭弹窗
-            flag=0;
-        window.open("https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=pc_popup&"+target);
+            //暂时关闭弹窗
+            flag = 0;
+            window.open("https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=pc_popup&" + target);
             layer.close(index);
         },
         btnAlign: 'c',
-        content: '<img width="600" height="385" src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
+        content: '<img width="600" height="385" src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>',
         end: function() {
-            if(flag==1){
+            if (flag == 1) {
                 // 永远关闭弹窗
-                     window.clearTimeout(timer);
-            }else{
-                 timer=setTimeout(popup, 15000);
+                window.clearTimeout(timer);
+            } else {
+                timer = setTimeout(popup, 15000);
             }
-             }
+        }
     });
 }
 popup();
-
