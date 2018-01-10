@@ -34,12 +34,14 @@ function popup() {
 //调用自定义邀请框
 popup();
 //顶部分享按钮配置
-        var nativeShare = new NativeShare()
+        var nativeShare = new NativeShare();
+        var shareUrl=window.location.href;
+        var shareTitle=document.title;
         var shareData = {
-            title: '{dede:field.title/}',
-            desc: '{dede:field.description/}',
+            title: 'shareTitle',
+            // desc: '{dede:field.description/}',
             // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
-            link: '{dede:field.arcurl/}',
+            link: 'shareUrl',
             icon: 'https://img.hzshuangmei.com/m/favicon.ico',
             // 不要过于依赖以下两个回调，很多浏览器是不支持的
             success: function() {
