@@ -3,7 +3,7 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
-* @Last Modified time: 2018-01-10 12:05:58
+* @Last Modified time: 2018-01-10 12:15:02
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -74,10 +74,10 @@ popup();
         var shareUrl=window.location.href;
         var shareTitle=document.title;
         var shareData = {
-            title: 'shareTitle',
+            title: shareTitle,
             // desc: '{dede:field.description/}',
             // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
-            link: 'shareUrl',
+            link: shareUrl,
             icon: 'https://img.hzshuangmei.com/m/favicon.ico',
             // 不要过于依赖以下两个回调，很多浏览器是不支持的
             success: function() {
