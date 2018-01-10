@@ -3,7 +3,7 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
-* @Last Modified time: 2018-01-10 12:57:03
+* @Last Modified time: 2018-01-10 13:10:45
 */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -96,11 +96,14 @@ popup();
              //   alert(err.message)
                 //  如果无法分享，弹窗提示，复制链接，手动分享
                 function manualCopy(){
-                    shareUrl.select();
+                    var link=$('input');
+                      link.value=shareUrl;
+                    link.select();
                         document.execCommand("copy");
                 }
+                     manualCopy();
                     alert("抱歉，暂不支持分享"+"\n"+"点击确认之后会自动复制当前页面地址");
-                manualCopy();
+
             }
         }
         // function setTitle(title) {
