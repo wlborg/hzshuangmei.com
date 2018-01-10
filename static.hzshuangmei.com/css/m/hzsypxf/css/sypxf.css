@@ -368,6 +368,7 @@ body {
     width: 12.525rem;
     margin-top: 1.0rem;
     color: rgba(171,126,129,0.85);
+    border: 1px solid #846063;
 }
 .m4 .djzx span{
     margin-left: 0.5rem;
@@ -702,6 +703,7 @@ body {
 
 }
 .djzxm7{
+    cursor:pointer;
     position: absolute;
     width: 7.65rem;
     height: 1.0rem;
