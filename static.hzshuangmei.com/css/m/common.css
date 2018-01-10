@@ -139,6 +139,9 @@ body {
 
 /* layout */
 .custom-wrapper {
+    /* fixed navbar */
+    position: fixed;
+
     height: 2.35rem;
     overflow: hidden;
 }
