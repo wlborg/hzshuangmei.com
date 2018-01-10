@@ -649,6 +649,7 @@ body{
 
 }
 .m7 .djzxm7{
+    cursor:pointer;
     padding-left: 15px;
     border-radius: 35px;
     overflow: hidden;
