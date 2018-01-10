@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 11:05:43
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-10 15:46:37
+* @Last Modified time: 2018-01-10 16:56:31
 
 */
 /* PC版   自定义弹窗邀请框 */
@@ -23,10 +23,33 @@ var target=window.location.href;
 var  filename= window.location.pathname.split("/")[window.location.pathname.split("/").length-1].split(".")[0];
 var timer =null;
 //如果当前页面没有对应弹窗图片，则使用默认的图片default.png
-if(filename=="")
-{
-      filename="default";
+//判断一个url是否可以访问
+function imgOk(img_url,fun){
+  $.ajax({
+      url:img_url,
+      type:"get",
+      success:function(){
+        //说明请求的url存在，并且可以访问
+        if($.isFunction(fun)){
+                fun(true);
+              }
+      },
+      statusCode:{
+        404:function(){
+          //说明请求的url不存在
+          if($.isFunction(fun)){
+            fun(false);
+          }
+        }
+      }
+    });
 }
+//检查图片是否存在
+imgOk('img.hzshuangmei.com/pc/kst/' +filename +'.png',function(res){
+    if(!res){
+       filename="default";
+    }
+});
 //不永远关闭弹窗
 var flag=0;
     layer.open({
