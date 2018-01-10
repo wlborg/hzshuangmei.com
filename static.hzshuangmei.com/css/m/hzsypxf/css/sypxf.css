@@ -639,6 +639,9 @@ table {
     background-size: auto 100%;
 
 }
+.m7 .hen{
+    margin-left: 0.375rem;
+}
 .m71{
     width: 7.8rem;
     position: absolute;
@@ -701,10 +704,9 @@ table {
     left: 0.25rem;
     width: 15.5rem;
     margin: auto;
-
-    border-left: solid 0.025rem #f1ede8;
-    border-bottom: solid 0.025rem #f1ede8;
-
+ dev_wgc
+    border-left: solid 0.025rem #484653;
+    border-bottom: solid 0.025rem #484653;
 }
 .m7 ul::after{
     content: " ";
@@ -716,8 +718,9 @@ table {
 
     /*border-bottom:solid 1px #f1ede8 ;*/
     width: 3.85rem;
-    border-right: solid 0.025rem #f1ede8;
-    border-top: solid 0.025rem #f1ede8;
+
+    border-right: solid 0.025rem #484653;
+    border-top: solid 0.025rem #484653;
 
     font-size: 0.425rem;
     line-height: 1.55rem;
