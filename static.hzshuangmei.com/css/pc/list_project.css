@@ -154,8 +154,10 @@
     margin: 42px 5px 40px;
 }
 #ptabCon2 a img{
-    border:1px solid #ededed;
+    border: 1px solid #ededed;
     padding: 1px;
+    width: 386px;
+    height: 246px;
 }
 #ptabCon2 p{
     display:inline-block;
