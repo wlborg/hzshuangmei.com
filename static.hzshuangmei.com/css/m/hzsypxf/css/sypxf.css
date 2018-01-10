@@ -704,21 +704,9 @@ table {
     left: 0.25rem;
     width: 15.5rem;
     margin: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
     border-left: solid 0.025rem #484653;
     border-bottom: solid 0.025rem #484653;
-=======
 
-    border-left: solid 0.025rem #f1ede8;
-    border-bottom: solid 0.025rem #f1ede8;
-
->>>>>>> refs/remotes/origin/master
-=======
- dev_wgc
-    border-left: solid 0.025rem #484653;
-    border-bottom: solid 0.025rem #484653;
->>>>>>> origin/dev_wgc
 }
 .m7 ul::after{
     content: " ";
@@ -730,21 +718,10 @@ table {
 
     /*border-bottom:solid 1px #f1ede8 ;*/
     width: 3.85rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border-right: solid 0.025rem #484653;
-    border-top: solid 0.025rem #484653;
-=======
-    border-right: solid 0.025rem #f1ede8;
-    border-top: solid 0.025rem #f1ede8;
-
->>>>>>> refs/remotes/origin/master
-=======
-
     border-right: solid 0.025rem #484653;
     border-top: solid 0.025rem #484653;
 
->>>>>>> origin/dev_wgc
+
     font-size: 0.425rem;
     line-height: 1.55rem;
     color: #c2c3c3;
