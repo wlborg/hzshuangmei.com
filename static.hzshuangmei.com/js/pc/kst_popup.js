@@ -3,7 +3,9 @@
 * @FileName:kst_popup.js
 * @Date:   2018-01-06 11:05:43
 * @Last Modified by:   chj
+
 * @Last Modified time: 2018-01-10 15:46:37
+
 */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -36,7 +38,9 @@ var flag=0;
         anim: 0,
         skin: 'popup',
         area: ['600px', '450px'],
+
         //time: 6000,
+
         resize: false,
         btn: ['不再提醒','稍后再说', '立即咨询'],
         yes: function(index, layero) {
