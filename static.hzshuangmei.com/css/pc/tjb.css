@@ -65,6 +65,11 @@
     padding-top: 10px;
     width:344px;
     margin:0 auto;
+    color: #5c2672;
+    font-size:18px;
+}
+.tbj_b .p2 br{
+    display:none;
 }
 .tbj_b .p2 a{
     font-size:18px;
