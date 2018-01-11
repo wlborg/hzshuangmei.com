@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-11 09:40:38
+ * @Last Modified time: 2018-01-11 11:14:31
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -15,32 +15,17 @@
 1. <script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script> 引入
 2. 配置
  */
+function imgNotFound() {
+        var img = $(".popup img").get(0);
+        //默认图片
+        img.src = "//img.hzshuangmei.com/pc/kst/default.png";
+        img.onerror = null;
+    }
 function popup() {
     //get current page filename
     var target = window.location.href;
     var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
     var timer = null;
-    //如果当前页面没有对应弹窗图片，则使用默认的图片default.png
-    //判断一个url是否可以访问
-    //
-    $(function(){
-        $.ajax({
-    type: 'get',
-    cache: true,
-    url: 'img.hzshuangmei.com/pc/kst/' + filename + '.png',
-    dataType: "jsonp",
-    processData: false,
-    complete: function (response) {
-        console.info(response);
-      if(response.status==404) {
-          console.log('404 error!');
-          console.log('img.hzshuangmei.com/pc/kst/' + filename + '.png');
-     filename="default";
-        console.log(filename);
-      }
-    }
-});
-    })
     //不永远关闭弹窗
     var flag = 0;
     layer.open({
@@ -52,7 +37,7 @@ function popup() {
         anim: 0,
         skin: 'popup',
         area: ['600px', '450px'],
-        //time: 6000,
+        time: 6000,
         resize: false,
         btn: ['不再提醒', '稍后再说', '立即咨询'],
         yes: function(index, layero) {
@@ -79,7 +64,7 @@ function popup() {
             layer.close(index);
         },
         btnAlign: 'c',
-        content: '<img width="600" height="385" src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>',
+        content: '<img width="600" height="385" onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>',
         end: function() {
             if (flag == 1) {
                 // 永远关闭弹窗
