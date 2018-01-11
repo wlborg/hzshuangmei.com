@@ -103,11 +103,11 @@
 
     //			鼠标移出box时开始定时器
     $(".box1").mouseleave(function () {
-        timer = setInterval(nextimg, 2000);
+        timer = setInterval(nextimg, 3000);
     });
 
     //			进入页面自动开始定时器
-    timer = setInterval(nextimg, 2000);
+    timer = setInterval(nextimg, 3000);
 })();
 $('.m5hove').hover(function () {
         $(this).css({
