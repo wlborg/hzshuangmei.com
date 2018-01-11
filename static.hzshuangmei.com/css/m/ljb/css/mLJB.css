@@ -745,8 +745,8 @@ padding-top: 3.525rem;
 
         .yimeiright > p {
 
-            border-top:1px dashed #6b677b ;
-            border-bottom: 1px dashed #6b677b;
+            border-top:0.025rem dashed #6b677b ;
+            border-bottom: 0.025rem dashed #6b677b;
             padding: 0.25rem 0;
             text-indent: 2em;
             text-align: left;
@@ -833,7 +833,7 @@ margin: auto;
     width: 1.625rem;
     height: 1.625rem;
     border-radius: 50%;
-    border: solid 1px #ffe0b8;
+    border: solid 0.025rem #ffe0b8;
 
         }
 
@@ -885,7 +885,7 @@ bottom: -1.225rem;
         width: 15.75rem;
     height: 20.05rem;
     border-radius: 0.75rem;
-    border: solid 2px rgba(235, 204, 159, 0.5);
+    border: solid 0.05rem rgba(235, 204, 159, 0.5);
     margin-bottom: 2.2rem;
 }
 .xgpage{
