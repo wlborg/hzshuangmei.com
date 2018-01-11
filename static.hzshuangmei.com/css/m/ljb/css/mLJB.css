@@ -415,9 +415,24 @@ width: 5.3rem;
 .m3 .cont{
     padding-top: 2.3rem;
 }
+.banner{
+    width: 16rem;
+    margin: auto;
+}
+.banner img{
+    width: 16rem;
+}
+.banner a{
+    display: inline-block;
+    width: 16rem;
+    height: 100%;
+}
 
 .m3tit{
     margin-bottom: 0.125rem;
+}
+.m3tit img{
+    width: 8.65rem;
 }
 .metit img{
 width: 8.65rem;
@@ -799,14 +814,14 @@ margin: auto;
     width: 3.65rem;
     margin: auto;
 }
-        .banyuan {
-            margin: 0 auto 0.25rem;
+.banyuan {
+    margin: 0 auto 0.25rem;
     position: relative;
     width: 1.7rem;
-    height: 1.05rem;
+    height: 1.15rem;
     overflow: hidden;
     font-size: 0;
-        }
+}
 
         .banyuan span {
               color: #ffdfb5;
