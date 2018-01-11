@@ -142,8 +142,8 @@ body {
     /* fixed navbar */
     position: fixed;
     z-index: 20180110;
-
     height: 2.35rem;
+    width: 16rem;
     overflow: hidden;
 }
 
