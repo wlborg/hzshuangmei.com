@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-11 09:40:38
+ * @Last Modified time: 2018-01-11 09:56:13
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -23,24 +23,27 @@ function popup() {
     //如果当前页面没有对应弹窗图片，则使用默认的图片default.png
     //判断一个url是否可以访问
     //
-    $(function(){
-        $.ajax({
-    type: 'get',
-    cache: true,
-    url: 'img.hzshuangmei.com/pc/kst/' + filename + '.png',
-    dataType: "jsonp",
-    processData: false,
-    complete: function (response) {
-        console.info(response);
-      if(response.status==404) {
-          console.log('404 error!');
-          console.log('img.hzshuangmei.com/pc/kst/' + filename + '.png');
-     filename="default";
-        console.log(filename);
-      }
-    }
+//     $(function(){
+//         $.ajax({
+//     type: 'get',
+//     cache: true,
+//     url: 'img.hzshuangmei.com/pc/kst/' + filename + '.png',
+//     dataType: "jsonp",
+//     processData: false,
+//     complete: function (response) {
+//         console.info(response);
+//       if(response.status==404) {
+//      filename="default";
+//        console.log('img.hzshuangmei.com/pc/kst/' + filename + '.png');
+//        return false;
+//       }
+//     }
+// });
+//     })
+// 如果对应图片不显示，使用默认图片
+$(".popup img").error(function() {
+        filename="default";
 });
-    })
     //不永远关闭弹窗
     var flag = 0;
     layer.open({
