@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-11 09:16:45
+ * @Last Modified time: 2018-01-11 09:31:54
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -32,11 +32,9 @@ function popup() {
     processData: false,
     complete: function (response) {
         console.info(response);
-              if(response.status==200) {
-            console.log('ifresh!');
-      }
       if(response.status==404) {
           console.log('404 error!');
+          console.log(url);
      filename="default";
         console.log(filename);
       }
