@@ -826,6 +826,7 @@ margin: auto;
         .banyuan span {
               color: #ffdfb5;
     position: absolute;
+      right: 0.025rem;
     bottom: 0;
     display: block;
     font-size: 0.5rem;
@@ -838,7 +839,8 @@ margin: auto;
         }
 
         .quyu2 .banyuan span{
-            top:0;
+            top:0.025rem;
+            right: 0.025rem;
          /*    line-height: 98px */
         ;
         }
