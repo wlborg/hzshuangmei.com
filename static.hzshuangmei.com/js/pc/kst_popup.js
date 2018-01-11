@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-01-11 09:56:13
+ * @Last Modified time: 2018-01-11 10:04:53
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -41,7 +41,7 @@ function popup() {
 // });
 //     })
 // 如果对应图片不显示，使用默认图片
-$(".popup img").error(function() {
+$(".popup>img").error(function() {
         filename="default";
 });
     //不永远关闭弹窗
