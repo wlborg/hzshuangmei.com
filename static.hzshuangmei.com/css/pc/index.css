@@ -405,15 +405,16 @@ h3 img {
 
 .index_expert #tabCon3 li {
     position: absolute;
-
-    display: none;
+    height:0;
+    /*display: none;*/
     width: 1200px;
 }
 
 .index_expert #tabCon3 .fdiv3 {
     z-index: 10000;
-
     display: block;
+    height:478px;
+    background-color:#390c5f;
 }
 
 .index_expert #tabCon3 img {
