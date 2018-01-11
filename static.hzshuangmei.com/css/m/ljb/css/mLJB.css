@@ -488,7 +488,7 @@ position: absolute;
 bottom: 0;
 }
 .img1 div .img1p1{
-    width:7.45rem
+    width:7.875rem
 }
 .img1 div .img1p2{
     width:6.75rem;
@@ -826,7 +826,6 @@ margin: auto;
         .banyuan span {
               color: #ffdfb5;
     position: absolute;
-      right: 0.025rem;
     bottom: 0;
     display: block;
     font-size: 0.5rem;
@@ -840,7 +839,7 @@ margin: auto;
 
         .quyu2 .banyuan span{
             top:0.025rem;
-            right: 0.025rem;
+
          /*    line-height: 98px */
         ;
         }
