@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-11 13:49:15
+* @Last Modified time: 2018-01-12 14:06:13
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -21,7 +21,6 @@ function imgNotFound() {
         //默认图片
         img.src = "//img.hzshuangmei.com/pc/kst/default.png";
         img.onerror = null;
-        reutrn true;
     }
 function popup() {
     //get current page filename
