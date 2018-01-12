@@ -93,8 +93,10 @@ html {
 /*内容*/
 
 .banner {
+
     background: url("//img.hzshuangmei.com/pc/ljb/images/bg1.jpg") center top no-repeat;
     height: 700px;
+    cursor: pointer;
 }
 
 .cont {
