@@ -698,7 +698,8 @@ body .popup .layui-layer-content img {
     display: block;
     width: 100%;
 
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 body .popup .layui-layer-btn .layui-layer-btn0 {
     width: 100px;
