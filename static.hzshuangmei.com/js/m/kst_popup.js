@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-12 14:06:13
+* @Last Modified time: 2018-01-13 17:02:22
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -35,7 +35,7 @@ function popup() {
         shade: 0,
         shadeClose: true,
         className: 'popup',
-        time:6,     //弹窗停留时间
+        time:12,     //弹窗停留时间
         btn: ['立即咨询', '稍后再说'],
         no: function(index, layero) {
             //按钮【稍后了解】的回调
