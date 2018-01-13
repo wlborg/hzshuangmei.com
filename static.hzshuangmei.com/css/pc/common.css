@@ -682,6 +682,7 @@ footer .left a {
 }
 /* kst popup*/
 body .popup {
+    border-radius: 10px;
     background-color: transparent;
 }
 
