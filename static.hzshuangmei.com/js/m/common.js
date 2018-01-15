@@ -552,7 +552,7 @@
        function(module) {
            var that = this;
            module.lightCurNav = function(ulClassname, curClassname) {
-               if (!$(ulClassname)) return;
+               if (!$(ulClassname).length) return;
 
                $(ulClassname).find("li").each(function(index, element) {
                    var href = $(this).find("a").attr("href");
@@ -586,7 +586,7 @@
            };
            module.showBigCasePic = function(modalClassName, imgSelectorName) {
                var casemodal = $(modalClassName);
-               if (!casemodal) return;
+               if (!casemodal.length) return;
                var casemodalimg = $(imgSelectorName);
 
                var paths = window.location.href.split("/");
@@ -610,7 +610,24 @@
                    })
                });
 
-           }
+           };
+           module.hiddeEmptyRelate = function (){
+               if (!$('.relateporject').length) return;
+
+               var slidecase =$('#articleslidecase');
+               var slidedocotor =$('#articleslidedoctor');
+               var relateProject =$('.relateporject  .imgbox');
+
+               if(!slidecase.length){
+                   $('.articlerelatecase').css("display","none");
+               }
+               if(!slidedocotor.length){
+                   $('.articlerelatedoctor').css("display","none");
+               }
+               if(!relateProject.length){
+                   $('.relateporject').css("display","none");
+               }
+           };
            return module;
        }
    )(window.effects || {});
@@ -621,6 +638,7 @@
        effects.lightCurNav("#casenav", "active");
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
+       effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
        tools.addKSTScript();
        tools.addBaiduScript();
