@@ -19,11 +19,13 @@ $lit_imglist = $ChannelUnit->GetlitImgLinks($row['imgurls']);
 //返回结果
 return $lit_imglist;
 }
+//后台上传图片链接处理
 function replaceurl($newurl)
 {
 $newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
 return $newurl;
 }
+//获取医生的缩略图
 function getdoctorthumb($id)
 {
 global $thumb,$dsql;
@@ -32,6 +34,7 @@ where a.aid='$id'");
 $thumb=replaceurl($row['thumb']);
 return $thumb;
 }
+//获取医生职位
 function getdoctorzhiwei($id)
 {
 global $zhiwei,$dsql;
@@ -40,6 +43,7 @@ where a.aid='$id'");
 $zhiwei=replaceurl($row['zhiwei']);
 return $zhiwei;
 }
+//获取医生擅长项目
 function getdoctorshanchang($id)
 {
 global $shanchang,$dsql;
@@ -49,6 +53,7 @@ where a.aid='$id'");
 $shanchang=replaceurl($row['shanchang']);
 return $shanchang;
 }
+//获取案例术后图
 function getcaseimgafter($id)
 {
 global $imgafter,$dsql;
@@ -58,6 +63,7 @@ where a.aid='$id'");
 $imgafter=replaceurl($row['imgafter']);
 return $imgafter;
 }
+//获取案例术前图
 function getcaseimgbefore($id)
 {
 global $imgbefore,$dsql;
@@ -67,6 +73,7 @@ where a.aid='$id'");
 $imgbefore=replaceurl($row['imgbefore']);
 return $imgbefore;
 }
+//获取案例评价
 function getcasenote($id)
 {
 global $note,$dsql;
@@ -76,6 +83,7 @@ where a.aid='$id'");
 $note=$row['note'];
 return $note;
 }
+//获取案例涉及项目
 function getcaseproject($id)
 {
 global $project,$dsql;
@@ -85,6 +93,7 @@ where a.aid='$id'");
 $project=$row['project'];
 return $project;
 }
+
 function getProjectListRelateCase($typeid)
 {
 global $dsql;
@@ -530,25 +539,39 @@ $relateproject= ' <div class="imgbox">
 
 return $relateproject;
 }
+
+/**
+*  获取医生相关的案例信息
+*  根据当前医生专题所属的栏目ID，获取相关的案例信息
+* @param     $typeid     医生所在栏目ID
+*/
 function getDoctorArticleRelateCase($typeid)
 {
 global $dsql;
+//相关案例
 $relatecase="";
+//日记栏目ID
 $relatetypeid = "";
 $indicators="";
 $list="";
 $counter=0;
+//根据当前医生所属了；栏目ID，找到对应的日记栏目ID
 switch ($typeid)
 {
-case 3 :
-$relatetypeid=  '35,36,46,47,48,38,39,40';
+case 3 :    //整形医生
+$relatetypeid=  '35,36,46,47,48,38,39,40,43,44,45';    //鼻部眼部等日记
 break;
-case 4 :
-$relatetypeid= '41,49,50,51,52,53,54,55,43,44,45';
+case 4 :     //皮肤医生
+$relatetypeid= '49,50,51,52,53,54,55';    // 激光项目
+break;
+case 5 :     //纹绣师
+$relatetypeid= '41';    // 激光项目
 break;
 default:
 $relatetypeid= '35';
 }
+// a.id =b.aid  通过文档ID主表和附加表关联
+//  根据对应案例所属栏目ID 查询案例信息，随机获取3条案例信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
 where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
@@ -582,22 +605,35 @@ $relatecase.= '  <ul class="tjb_rj clearFix"> '
 }
 return $relatecase;
 }
+
+/**
+*  获取医生相关的项目信息
+*  根据当前医生专题所属的栏目ID，获取相关的项目信息
+* @param     $typeid     医生所在栏目ID
+*/
 function getDoctorArticleRelateProject($typeid)
 {
 global $dsql;
+//相关栏目
 $relateproject="";
+//项目项目栏目ID
 $relatetypeid = "";
+//根据当医生的栏目ID，找到对应项目栏目ID
 switch ($typeid)
 {
-case 3 :
-$relatetypeid=  '14,15,24,25,26,17,18,19';
+case 3 :   //整形医生
+$relatetypeid=  '14,15,24,25,26,17,18,19,22,23,34';    //鼻眼胸部等
 break;
-case 4 :
-$relatetypeid= '20,27,28,29,30,31,32,33,22,23,34';
+case 4 :    //皮肤医生
+$relatetypeid= '27,28,29,30,31,32,33';
+break;
+case 5 :    //纹绣师
+$relatetypeid= '20';
 break;
 default:
 $relatetypeid= '14';
 }
+//随机查询  栏目其他项目专题信息4条
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
 $dsql->Execute();
@@ -618,14 +654,24 @@ $relateproject= ' <div class="tjb_img clearFix">
 }
 return $relateproject;
 }
+
+/**
+*  获取项目专题页相关案例信息
+*  根据当前项目专题所属的栏目ID，获取相关的案例
+* @param     $typeid     项目所在栏目ID
+*/
+
 function getProjectArticleRelateCase($typeid)
 {
 global $dsql;
+//项目案例
 $relatecase="";
+//相关栏目
 $relatetypeid = "";
 $indicators="";
 $list="";
 $counter=0;
+//根据当前项目所在栏目ID，找到对应案例ID
 switch ($typeid)
 {
 case 14:
@@ -652,8 +698,8 @@ break;
 case 19:
 $relatetypeid= '40';
 break;
-case 20:
-$relatetypeid= '41';
+case 20:   //纹绣项目
+$relatetypeid= '41';  //纹绣日记
 break;
 case 27:
 $relatetypeid= '49,50,51,52,53,54,55';
@@ -688,6 +734,8 @@ break;
 default:
 $relatetypeid= '35';
 }
+// a.id =b.aid  通过文档ID主表和附加表关联
+//  根据对应案例所属栏目ID 查询案例信息，随机获取3条案例信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
 where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
@@ -721,6 +769,13 @@ $relatecase.= '  <ul class="tjb_rj clearFix"> '
 }
 return $relatecase;
 }
+
+/**
+*  获取项目专题页相关医生信息
+*  根据当前项目专题所属的栏目ID，获取相关的医生
+* @param     $typeid     项目所在栏目ID
+*/
+
 function getProjectArticleRelateDoctor($typeid)
 {
 global $dsql;
@@ -729,80 +784,93 @@ $relatetypeid = 0;
 $indicators="";
 $list="";
 $counter=0;
+//根据当前项目所在栏目ID，找到对应医生栏目ID
 switch ($typeid)
 {
-case 14:
+case 14:  //鼻部项目
+$relatetypeid= 3;   //整形医生
+break;
+case 15:  //眼部项目
+$relatetypeid= 3;  //整形医生
+break;
+case 24:   //下巴项目
+$relatetypeid= 3;  //整形医生
+break;
+case 25:    //脂肪项目
+$relatetypeid= 3;   //整形医生
+break;
+case 26:     //唇部项目
+$relatetypeid= 3;   //整形医生
+break;
+case 17:   //胸部项目
+$relatetypeid= 3;  //整形医生
+break;
+case 18:   //私密项目
+$relatetypeid= 3;    //整形医生
+break;
+case 19:   //体雕项目
+$relatetypeid= 3;    //整形医生
+break;
+case 20:    //纹绣项目
+$relatetypeid=5;    //纹绣师
+break;
+case 27: //祛痣祛胎记
+$relatetypeid= 4;  //皮肤医生
+break;
+case 28:    //修复疤痕
+$relatetypeid= 4;    //皮肤医生
+break;
+case 29:    //嫩肤美白
+$relatetypeid= 4;     //皮肤医生
+break;
+case 30:         //激光脱毛
+$relatetypeid= 4;    //皮肤医生
+break;
+case 31:    //美肤祛斑
+$relatetypeid= 4;    //皮肤医生
+break;
+case 32:   //嫩肤祛痘
+$relatetypeid= 4;    //皮肤医生
+break;
+case 33:    //紧致祛皱
+$relatetypeid= 4;    //皮肤医生
+break;
+case 22:    //玻尿酸
+$relatetypeid=3;
+break;
+case 23:    //BOTOX
 $relatetypeid= 3;
 break;
-case 15:
+case 34:    //衡力
 $relatetypeid= 3;
-break;
-case 24:
-$relatetypeid= 3;
-break;
-case 25:
-$relatetypeid= 3;
-break;
-case 26:
-$relatetypeid= 3;
-break;
-case 17:
-$relatetypeid= 3;
-break;
-case 18:
-$relatetypeid= 3;
-break;
-case 19:
-$relatetypeid= 3;
-break;
-case 20:
-$relatetypeid=4;
-break;
-case 27:
-$relatetypeid= 4;
-break;
-case 28:
-$relatetypeid= 4;
-break;
-case 29:
-$relatetypeid= 4;
-break;
-case 30:
-$relatetypeid= 4;
-break;
-case 31:
-$relatetypeid= 4;
-break;
-case 32:
-$relatetypeid= 4;
-break;
-case 33:
-$relatetypeid= 4;
-break;
-case 22:
-$relatetypeid=4;
-break;
-case 23:
-$relatetypeid= 4;
-break;
-case 34:
-$relatetypeid= 4;
 break;
 default:
 $relatetypeid= 3;
 }
+// a.id =b.aid  通过文档ID主表和附加表关联
+//  根据对应医生所属栏目ID 查询医生信息，随机获取2条医生信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
 where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 2 ");
+//执行查询
 $dsql->Execute();
+//获取记录数量
 $ns = $dsql->GetTotalRow();
+//循环处理数据集合
 while($row=$dsql->GetArray())
 {
+// 医生所在文档ID
 $id = $row["id"];
+//医生文档标题
 $title = cn_substr($row["title"],80,0);
+//该医生的文档信息
 $urlarray = GetOneArchive($id);
+//医生URL
 $url = $urlarray['arcurl'];
+//医生缩略图
 $thumb = replaceurl($row["thumb"]);
+//医生职位
 $zhiwei = $row["zhiwei"];
+//医生擅长项目
 $shanchang = $row["shanchang"];
 
 $list.= '<li class="clearFix">
@@ -826,25 +894,46 @@ $relatedoctor.= ' <ul class="tjb_zj clearFix"> '
 }
 return $relatedoctor;
 }
+
+/**
+*  获取项目专题页相关项目
+*  根据当前项目专题的ID，获取相关的项目
+* @param     $id  文档ID
+*/
 function getProjectArticleRelateProject($id)
 {
 global $dsql;
+//相关项目
 $relateproject="";
+//相关栏目ID
 $relatetypeid = "";
+//获取当前项目专题页所在栏目页的全部信息
 $row = $dsql->GetOne("SELECT * FROM #@__archives
 where id='$id'");
+//获取当前项目专题页所在的栏目ID
 $typeid=$row['typeid'];
+//随机查询同级栏目其他项目专题信息3条，并排除自身
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 3 ");
+//执行查询
 $dsql->Execute();
+//获取记录数量
 $ns = $dsql->GetTotalRow();
+//循环处理数据集合
 while($row=$dsql->GetArray())
 {
+   /*   相关专题数据    */
+  //文档ID
 $id = $row["id"];
+//文档标题
 $title = cn_substr($row["title"],80,0);
+//指定文档ID的这篇文档信息
 $urlarray = GetOneArchive($id);
+//对应的URL
 $url = $urlarray['arcurl'];
+//缩略图处理
 $litpic = replaceurl($row["litpic"]);
+//项目项目处理
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
