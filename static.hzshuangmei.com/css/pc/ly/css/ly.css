@@ -41,7 +41,7 @@ body{
 }
 .bannercon>a{
     position: absolute;
-    left: 377px;
+    left: 275px;
     top: 434px;
     border-radius: 50%;
     z-index: 2;
@@ -49,10 +49,13 @@ body{
     height: 137px;
 }
 .anniu{
-    width: 1200px;
-    margin: auto;
-    position: relative;
-
+    position:absolute;
+}
+.banner .anniu{
+    left: 280px;
+    top: 437px;
+    width: 136px;
+    height: 136px;
 }
 
 .xzbk{
@@ -64,8 +67,6 @@ body{
 }
 .banner1{
     position: absolute;
-    left: 280px;
-    top: 437px;
     width: 130px;
 }
 
@@ -85,8 +86,8 @@ body{
 .banner2{
 
     position: absolute;
-    left: 277px;
-    top: 434px;
+    left: -3px;
+    top: -3px;
     width: 135px;
 }
 .m1{
@@ -96,6 +97,7 @@ body{
 }
 .m1cont{
     height: 1380px;
+    position: relative;
     width: 1400px;
     margin: auto;
     padding-top: 1px;
@@ -206,7 +208,6 @@ body{
     margin-left: -75px;
 }
 .djzx1{
-    top: 68px;
     width: 150px;
 
 }
@@ -217,7 +218,6 @@ body{
 .m2con{
     padding-top: 1px;
     width: 1400px;
-
     margin: auto;
     position: relative;
 
@@ -290,23 +290,47 @@ body{
 .m2text .p3{
     width: 288px;
 }
-.m2 .anniu .djzx{
-    top: 188px;
+.m1 .anniu{
+    width: 150px;
+    height: 187px;
+    top: 1130px;
+    left: 50%;
+    margin-left: -75px;
 }
-.m2 .anniu span{
+
+.m1 .anniu span{
     position: absolute;
     top: 244px;
     font-size: 24px;
     line-height: 42px;
     color: #3f4179;
 }
+.m2 .anniu{
+    width: 370px;
+    height: 186px;
+    left: 50%;
+    top: 1032px;
+    margin-left: -178px;
+}
+.m2 .anniu span{
+    position: absolute;
+    top: 53px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #3f4179;
+}
 .m2 .anniu span:first-child{
     left: 50%;
-    margin-left: -154px;
+    margin-left: -158px;
 }
 .m2 .anniu span:last-child{
     left: 50%;
-    margin-left: 80px;
+    margin-left: 86px;
+}
+.m2 .anniu div{
+    top: 98px;
+    width: 340px;
+    margin-left: -158px;
 }
 .annium{
     transition: all 1s;
@@ -317,13 +341,76 @@ body{
 .annium:hover{
     transform:scale(1.1);
 }
+
+.m3 .anniu{
+    width: 370px;
+    height: 186px;
+    left: 50%;
+    top: 1144px;
+
+    margin-left: -178px;
+}
+.m3 .anniu span{
+    position: absolute;
+    top: 85px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #3f4179;
+}
+.m3 .anniu span:first-child{
+    left: 50%;
+    margin-left: -180px;
+}
+.m3 .anniu span:last-child{
+    left: 50%;
+    margin-left: 86px;
+}
+.m3 .anniu div{
+    top: 130px;
+    width: 380px;
+    margin-left: -190px;
+}
+.m4 .anniu{
+    width: 510px;
+    height: 186px;
+    left: 50%;
+    top: 1050px;
+    margin-left: -255px;
+}
+.m4 .anniu span{
+    position: absolute;
+    top: 80px;
+    font-size: 24px;
+    line-height: 42px;
+    color: #3f4179;
+}
+.m4 .anniu span:first-child{
+    left: 50%;
+    margin-left: -224px;
+}
+.m4 .anniu span:last-child{
+    left: 50%;
+    margin-left: 86px;
+}
+.m4 .anniu div{
+    top: 125px;
+    width: 480px;
+    margin-left: -240px;
+}
+.m5 .anniu{
+    width: 510px;
+    height: 186px;
+    left: 50%;
+    top: 1270px;
+    margin-left: -255px;
+}
 .m3{
     height: 1418px;
     background: url("//img.hzshuangmei.com/pc/ly/images/m3bg.jpg")no-repeat top center;
 }
 .m3con{
-    height: 1214px;
     position: relative;
+    height: 1214px;
     width: 1400px;
     margin: auto;
     padding-top: 1px;
@@ -386,24 +473,7 @@ body{
     margin-top: -46px;
 
 }
-.m3 .anniu .djzx{
-    top: -70px;
-}
-.m3 .anniu span{
-    position: absolute;
-    top: 24px;
-    font-size: 24px;
-    line-height: 42px;
-    color: #3f4179;
-}
-.m3 .anniu span:first-child{
-    left: 50%;
-    margin-left: -170px;
-}
-.m3 .anniu span:last-child{
-    left: 50%;
-    margin-left: 76px;
-}
+
 .m4{
     background: url("//img.hzshuangmei.com/pc/ly/images/m4bg.jpg") no-repeat top center;
     height: 1320px;
@@ -554,21 +624,7 @@ body{
 .pageren span+img{
     margin-right: 48px;
 }
-.m4 .anniu span{
-    position: absolute;
-    top: 145px;
-    font-size: 24px;
-    line-height: 42px;
-    color: #3f4179;
-}
-.m4 .anniu span:first-child{
-    left: 50%;
-    margin-left: -222px;
-}
-.m4 .anniu span:last-child{
-    left: 50%;
-    margin-left: 85px;
-}
+
 .m5{
     height: 1486px;
     background-color: #f4f3f8;
@@ -710,13 +766,5 @@ body{
     top: 193px;
     z-index: 1;
 }
-.m3 .anniu div{
-    top: 66px;
-    width: 360px;
-    margin-left: -180px;
-}
-.m2 .anniu div{
-    top: 290px;
-    width: 340px;
-    margin-left: -158px;
-}
+
+
