@@ -109,50 +109,124 @@
     //			进入页面自动开始定时器
     timer = setInterval(nextimg, 1500);
 })();
-$('.m5hove').hover(function () {
-        $(this).css({
-            'color': 'white',
+$('.m5hove').hover(
+    m51
+);
+function  m51 (){
+    $(this).css({
+        'color': 'white',
         'background-color': '#e8984c'
-        });
-        $(this).siblings('.m5hove').css(
-            {
-                'background-color': 'white',
-        'color': 'black'
-            }
-        )
     });
-    $('.face').hover(function () {
-       $('.t51').css('display','block') ;
-       $('.quyu1').css('display','block');
-        $('.quyu2').css('display', 'none');
-       $('.t52').css('display', 'none');
+    $(this).siblings('.m5hove').css(
+        {
+            'background-color': 'white',
+            'color': 'black'
+        }
+    )
+}
+
+
+$('.face').hover(
+    face
+);
+function face() {
+    $('.t51').css('display','block') ;
+    $('.quyu1').css('display','block');
+    $('.quyu2').css('display', 'none');
+    $('.t52').css('display', 'none');
+}
+$('.ruf').hover(ruf);
+function ruf() {
+    $('.t52').css('display','block') ;
+    $('.quyu2').css('display','block');
+    $('.quyu1').css('display', 'none');
+    $('.t51').css('display', 'none');
+}
+
+$('.xgpage').hover( xgpage);
+function xgpage() {
+    $(this).css({
+        'background-color': '#4f3077'
+
     });
-    $('.ruf').hover(function () {
-        $('.t52').css('display','block') ;
-        $('.quyu2').css('display','block');
-        $('.quyu1').css('display', 'none');
-        $('.t51').css('display', 'none');
-    });
-    $('.xgpage').hover(function () {
-        $(this).css({
+    $(this).siblings('.xgpage').css(
+        {
+            'background-color': '#cccccc'
+        }
+    )
+}
+$('.xgpage1').hover(
+    xgpage1
+);
+function xgpage1() {
+    $('.xgpage_img1').css('display','block') ;
+    $('.xgpage_img2').css('display','none');
+}
+
+
+$('.xgpage2').hover(
+    xgpage2
+
+);
+function xgpage2() {
+    $('.xgpage_img2').css('display','block') ;
+    $('.xgpage_img1').css('display','none');
+}
+
+function aab() {
+    if($('.xgpage_img1').css('display')=='none'){
+        xgpage1();
+        $('.xgpage1').css({
             'background-color': '#4f3077'
 
         });
-        $(this).siblings('.xgpage').css(
+        $('.xgpage1').siblings('.xgpage').css(
             {
                 'background-color': '#cccccc'
             }
         )
-    })
-    $('.xgpage1').hover(
-        function () {
-            $('.xgpage_img1').css('display','block') ;
-            $('.xgpage_img2').css('display','none');
-        }
-    )
-    $('.xgpage2').hover(
-        function () {
-            $('.xgpage_img2').css('display','block') ;
-            $('.xgpage_img1').css('display','none');
-        }
-    )
+    }
+    else {
+        $('.xgpage2').css({
+            'background-color': '#4f3077'
+
+        });
+        $('.xgpage2').siblings('.xgpage').css(
+            {
+                'background-color': '#cccccc'
+            }
+        )
+        xgpage2()
+    }
+}
+function aac() {
+    if(  $('.quyu1').css('display')=='none'){
+        face();
+        $('.face').css({
+            'color': 'white',
+            'background-color': '#e8984c'
+        });
+        $('.face').siblings('.m5hove').css(
+            {
+                'background-color': 'white',
+                'color': 'black'
+            }
+        )
+    }
+    else {
+        ruf();
+        $('.ruf').css({
+            'color': 'white',
+            'background-color': '#e8984c'
+        });
+        $('.ruf').siblings('.m5hove').css(
+            {
+                'background-color': 'white',
+                'color': 'black'
+            }
+        )
+    }
+}
+//			进入页面自动开始定时器
+qiehuan= setInterval(aab, 4000);
+lalala=setInterval(aac, 4000);
