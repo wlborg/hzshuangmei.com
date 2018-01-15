@@ -255,8 +255,8 @@ h3 img {
 }
 
 .index_project #tab2 ul {
-    width: 381px;
-    /*width:510px;*/
+    /*width: 381px;*/
+    width:510px;
     height: 34px;
     margin: 17px auto 32px;
 }
