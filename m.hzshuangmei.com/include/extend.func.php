@@ -541,10 +541,13 @@ $counter=0;
 switch ($typeid)
 {
 case 3 :
-$relatetypeid=  '35,36,46,47,48,38,39,40';
+$relatetypeid=  '35,36,46,47,48,38,39,40,43,44,45';
 break;
 case 4 :
-$relatetypeid= '41,49,50,51,52,53,54,55,43,44,45';
+$relatetypeid= '49,50,51,52,53,54,55';
+break;
+case 5 :     //纹绣师
+$relatetypeid= '41';    // 激光项目
 break;
 default:
 $relatetypeid= '35';
@@ -637,10 +640,13 @@ $relatetypeid = "";
 switch ($typeid)
 {
 case 3 :
-$relatetypeid=  '14,15,24,25,26,17,18,19';
+$relatetypeid=  '14,15,24,25,26,17,18,19,22,23,34';
 break;
 case 4 :
-$relatetypeid= '20,27,28,29,30,31,32,33,22,23,34';
+$relatetypeid= '27,28,29,30,31,32,33';
+break;
+case 5 :    //纹绣师
+$relatetypeid= '20';
 break;
 default:
 $relatetypeid= '14';
@@ -850,7 +856,7 @@ case 19:
 $relatetypeid= 3;
 break;
 case 20:
-$relatetypeid=4;
+$relatetypeid=5;
 break;
 case 27:
 $relatetypeid= 4;
@@ -874,13 +880,13 @@ case 33:
 $relatetypeid= 4;
 break;
 case 22:
-$relatetypeid=4;
+$relatetypeid=3;
 break;
 case 23:
-$relatetypeid= 4;
+$relatetypeid= 3;
 break;
 case 34:
-$relatetypeid= 4;
+$relatetypeid= 3;
 break;
 default:
 $relatetypeid= 3;
