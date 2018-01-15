@@ -627,7 +627,7 @@
                if(!relateProject){
                    $('.relateporject').attr("display","none");
                }
-           }
+           };
            return module;
        }
    )(window.effects || {});
@@ -638,11 +638,11 @@
        effects.lightCurNav("#casenav", "active");
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
+       effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
        tools.addKSTScript();
        tools.addBaiduScript();
        tools.bindConsultHref();
-       tools.hiddeEmptyRelate();
        tools.activeGoTopTool(".j-gotop");
    });
 
