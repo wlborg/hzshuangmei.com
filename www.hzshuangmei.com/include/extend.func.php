@@ -185,7 +185,7 @@ $list.= '
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
-      <a href="javascript:void(0)" class="consult j-consult">立即<br>咨询</a>
+      <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
   </div>
 </div>';
@@ -206,7 +206,7 @@ $list.= '
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
-      <a href="javascript:void(0)" class="consult j-consult">立即<br>咨询</a>
+      <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
   </div>
 </div>';
