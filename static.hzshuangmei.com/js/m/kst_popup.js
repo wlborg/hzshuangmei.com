@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-11 13:49:15
+* @Last Modified time: 2018-01-13 17:02:22
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -21,7 +21,6 @@ function imgNotFound() {
         //默认图片
         img.src = "//img.hzshuangmei.com/pc/kst/default.png";
         img.onerror = null;
-        reutrn true;
     }
 function popup() {
     //get current page filename
@@ -36,7 +35,7 @@ function popup() {
         shade: 0,
         shadeClose: true,
         className: 'popup',
-        time:6,     //弹窗停留时间
+        time:12,     //弹窗停留时间
         btn: ['立即咨询', '稍后再说'],
         no: function(index, layero) {
             //按钮【稍后了解】的回调
