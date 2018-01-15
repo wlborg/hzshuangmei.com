@@ -618,13 +618,13 @@
                var slidedocotor =$('#articleslidedoctor');
                var relateProject =$('.relateporject  .imgbox');
 
-               if(!slidecase){
+               if(!slidecase.length){
                    $('.articlerelatecase').attr("display","none");
                }
-               if(!slidedocotor){
+               if(!slidedocotor.length){
                    $('.articlerelatedoctor').attr("display","none");
                }
-               if(!relateProject){
+               if(!relateProject.length){
                    $('.relateporject').attr("display","none");
                }
            };
