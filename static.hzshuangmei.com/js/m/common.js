@@ -552,7 +552,7 @@
        function(module) {
            var that = this;
            module.lightCurNav = function(ulClassname, curClassname) {
-               if (!$(ulClassname)) return;
+               if (!$(ulClassname).length) return;
 
                $(ulClassname).find("li").each(function(index, element) {
                    var href = $(this).find("a").attr("href");
@@ -586,7 +586,7 @@
            };
            module.showBigCasePic = function(modalClassName, imgSelectorName) {
                var casemodal = $(modalClassName);
-               if (!casemodal) return;
+               if (!casemodal.length) return;
                var casemodalimg = $(imgSelectorName);
 
                var paths = window.location.href.split("/");
@@ -612,20 +612,20 @@
 
            };
            module.hiddeEmptyRelate = function (){
-               if (!$('.relateporject')) return;
+               if (!$('.relateporject').length) return;
 
                var slidecase =$('#articleslidecase');
                var slidedocotor =$('#articleslidedoctor');
                var relateProject =$('.relateporject  .imgbox');
 
                if(!slidecase.length){
-                   $('.articlerelatecase').attr("display","none");
+                   $('.articlerelatecase').css("display","none");
                }
                if(!slidedocotor.length){
-                   $('.articlerelatedoctor').attr("display","none");
+                   $('.articlerelatedoctor').css("display","none");
                }
                if(!relateProject.length){
-                   $('.relateporject').attr("display","none");
+                   $('.relateporject').css("display","none");
                }
            };
            return module;
