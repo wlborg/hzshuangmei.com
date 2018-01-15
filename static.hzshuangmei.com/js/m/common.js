@@ -610,7 +610,24 @@
                    })
                });
 
-           }
+           };
+           module.hiddeEmptyRelate = function (){
+               if (!$('.relateporject')) return;
+
+               var slidecase =$('#articleslidecase');
+               var slidedocotor =$('#articleslidedoctor');
+               var relateProject =$('.relateporject  .imgbox');
+
+               if(!slidecase.length){
+                   $('.articlerelatecase').attr("display","none");
+               }
+               if(!slidedocotor.length){
+                   $('.articlerelatedoctor').attr("display","none");
+               }
+               if(!relateProject.length){
+                   $('.relateporject').attr("display","none");
+               }
+           };
            return module;
        }
    )(window.effects || {});
@@ -621,6 +638,7 @@
        effects.lightCurNav("#casenav", "active");
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
+       effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
        tools.addKSTScript();
        tools.addBaiduScript();
