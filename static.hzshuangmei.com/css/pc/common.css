@@ -567,8 +567,9 @@ footer .right .right_t .ewm {
     width: 105px;
     height: 107px;
     margin-right: 10px;
+    /*  background: url(//img.hzshuangmei.com/pc/f_ewm.jpg) no-repeat center; */
 
-    background: url(//img.hzshuangmei.com/pc/f_ewm.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/WeChatApplet.jpg) no-repeat center;
 }
 footer .right .right_t .f_phone {
     width: 71px;
