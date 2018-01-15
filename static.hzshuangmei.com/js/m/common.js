@@ -619,13 +619,13 @@
                var relateProject =$('.relateporject  .imgbox');
 
                if(!slidecase.length){
-                   $('.articlerelatecase').attr("display","none");
+                   $('.articlerelatecase').css("display","none");
                }
                if(!slidedocotor.length){
-                   $('.articlerelatedoctor').attr("display","none");
+                   $('.articlerelatedoctor').css("display","none");
                }
                if(!relateProject.length){
-                   $('.relateporject').attr("display","none");
+                   $('.relateporject').css("display","none");
                }
            };
            return module;
