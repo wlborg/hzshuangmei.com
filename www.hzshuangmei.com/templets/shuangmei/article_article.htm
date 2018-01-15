@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
     <head>
+        <!--   {dede:field.filename/}   -->
         {dede:include filename="_meta.htm"/}
         <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
         <meta name="keywords" content="{dede:field name='keywords'/}" />
@@ -26,7 +27,7 @@
                     <h1>{dede:field.title/}</h1>
                     <p class="tit"><span>来源:红妆双美</span>
                     <span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /}</span>
-                    <span>点击量：{dede:field.click /}</span><a href="javascript:void(0)" class="j-consult"></a></p>
+                    <span>点击量：{dede:field.click /}</span><a href="javascript:void(0)" class="j-consult" rel="nofollow"></a></p>
                     <div class="ar_ar">
                         {dede:field.body /}
                     </div>

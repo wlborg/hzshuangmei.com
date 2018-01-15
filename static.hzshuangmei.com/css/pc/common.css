@@ -568,7 +568,9 @@ footer .right .right_t .ewm {
     height: 107px;
     margin-right: 10px;
 
-    background: url(//img.hzshuangmei.com/pc/f_ewm.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/WeChatApplet.jpg) no-repeat center;
+    /*  background: url(//img.hzshuangmei.com/pc/f_ewm.jpg) no-repeat center; */
+    background-size: contain;
 }
 footer .right .right_t .f_phone {
     width: 71px;
@@ -682,6 +684,7 @@ footer .left a {
 }
 /* kst popup*/
 body .popup {
+    border-radius: 10px;
     background-color: transparent;
 }
 
@@ -696,9 +699,12 @@ body .popup .layui-layer-content {
 body .popup .layui-layer-content img {
     display: block;
     width: 100%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 body .popup .layui-layer-btn .layui-layer-btn0 {
-    width: 100px;
+    width: 120px;
     margin: 5px 15px 0;
 
     color: #999;
@@ -706,7 +712,7 @@ body .popup .layui-layer-btn .layui-layer-btn0 {
     background-color: #fff;
 }
 body .popup .layui-layer-btn .layui-layer-btn1 {
-    width: 100px;
+    width: 120px;
     margin: 5px 15px 0;
 
     color: #7d64c3;
@@ -714,7 +720,7 @@ body .popup .layui-layer-btn .layui-layer-btn1 {
     background-color: #fff;
 }
 body .popup .layui-layer-btn .layui-layer-btn2 {
-    width: 100px;
+    width: 120px;
     margin: 5px 15px 0;
 
     color: #fff;
