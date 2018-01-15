@@ -309,10 +309,10 @@ body{
     margin-left: 80px;
 }
 .annium{
-    transition: all 2s;
-    -moz-transition: all 2s;	/* Firefox 4 */
-    -webkit-transition: all 2s;	/* Safari 和 Chrome */
-    -o-transition: all 2s;
+    transition: all 1s;
+    -moz-transition: all 1s;	/* Firefox 4 */
+    -webkit-transition: all 1s;	/* Safari 和 Chrome */
+    -o-transition: all 1s;
 }
 .annium:hover{
     transform:scale(1.1);
