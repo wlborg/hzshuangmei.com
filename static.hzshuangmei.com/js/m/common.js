@@ -610,6 +610,23 @@
                    })
                });
 
+           };
+           module.hiddeEmptyRelate = function (){
+               if (!$('.relateporject')) return;
+
+               var slidecase =$('#articleslidecase');
+               var slidedocotor =$('#articleslidedoctor');
+               var relateProject =$('.relateporject  .imgbox');
+
+               if(!slidecase){
+                   $('.articlerelatecase').attr("display","none");
+               }
+               if(!slidedocotor){
+                   $('.articlerelatedoctor').attr("display","none");
+               }
+               if(!relateProject){
+                   $('.relateporject').attr("display","none");
+               }
            }
            return module;
        }
@@ -625,6 +642,7 @@
        tools.addKSTScript();
        tools.addBaiduScript();
        tools.bindConsultHref();
+       tools.hiddeEmptyRelate();
        tools.activeGoTopTool(".j-gotop");
    });
 
