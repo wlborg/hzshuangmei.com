@@ -319,6 +319,12 @@ $relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="ca
 }
 return  $relatecase;
 }
+
+/**
+*  获取案例相关的医生
+*  根据当前项目专题的ID，获取相关的项目
+* @param     $typeid  案例栏目iD
+*/
 function getCaseArticleRelateDoctor($typeid)
 {
 global $dsql;
@@ -354,7 +360,7 @@ case  40 :
 $relatetypeid= 3;
 break;
 case 41 :
-$relatetypeid=4;
+$relatetypeid=5;
 break;
 case 49 :
 $relatetypeid=4 ;
@@ -378,13 +384,13 @@ case  55 :
 $relatetypeid=4 ;
 break;
 case 43 :
-$relatetypeid=4 ;
+$relatetypeid=3 ;
 break;
 case 44:
-$relatetypeid=4;
+$relatetypeid=3;
 break;
 case 45 :
-$relatetypeid= 4 ;
+$relatetypeid= 3 ;
 break;
 default:
 $relatetypeid= 3 ;
