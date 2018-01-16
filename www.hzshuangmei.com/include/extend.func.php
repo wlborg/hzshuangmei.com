@@ -599,7 +599,9 @@ $list.= '<li>
 }
 
 if($ns>0){
-$relatecase.= '  <ul class="tjb_rj clearFix"> '
+$relatecase.= '  <div class="tjb_title1">
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+        </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
 }
@@ -648,9 +650,12 @@ $litpic = replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$relateproject= ' <div class="tjb_img clearFix">
+$relateproject= '   <div class="tjb_title3">
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+        </div> <div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
-</div> ';
+</div>        </div>
+ ';
 }
 return $relateproject;
 }
@@ -890,7 +895,9 @@ $list.= '<li class="clearFix">
                 </div></li>';
 }
 if($ns>0){
-$relatedoctor.= ' <ul class="tjb_zj clearFix"> '
+$relatedoctor.= ' <div class="tjb_title2">
+            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt=""/>
+        </div><ul class="tjb_zj clearFix"> '
     . $list
   .'</ul>';
 }
@@ -939,9 +946,12 @@ $litpic = replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$relateproject= ' <div class="tjb_img clearFix">
+$relateproject= '   <div class="tjb_title3">
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+        </div><div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
-</div> ';
+</div>         </div>
+';
 }
 return $relateproject;
 }
