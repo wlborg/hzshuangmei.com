@@ -309,10 +309,10 @@ body{
     margin-left: 80px;
 }
 .annium{
-    transition: all 2s;
-    -moz-transition: all 2s;	/* Firefox 4 */
-    -webkit-transition: all 2s;	/* Safari 和 Chrome */
-    -o-transition: all 2s;
+    transition: all 1s;
+    -moz-transition: all 1s;	/* Firefox 4 */
+    -webkit-transition: all 1s;	/* Safari 和 Chrome */
+    -o-transition: all 1s;
 }
 .annium:hover{
     transform:scale(1.1);
@@ -617,7 +617,7 @@ body{
     box-shadow: 0px 5px 5px 0px
     rgba(41, 55, 93, 0.43);
 }
-.swiper-container2 .swiper-slide-active img:last-child{
+.m5 .swiper-container2 .swiper-slide-active img:last-child{
     width: 495px;
     height: 671px;
     border: solid 8px rgba(255, 255, 255, 0.2);
