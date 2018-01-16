@@ -763,7 +763,9 @@ $list.= '<li>
 }
 
 if($ns>0){
-$relatecase.= '  <ul class="tjb_rj clearFix"> '
+$relatecase.= '   <div class="tjb_title1">
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+        </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
 }
