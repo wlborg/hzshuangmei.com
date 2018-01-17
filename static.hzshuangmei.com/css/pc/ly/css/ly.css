@@ -73,23 +73,13 @@ body{
 
 @keyframes xuanzhuan {
     0%{
-
-        transform:rotate(0deg);
-        -moz-transform:rotate(0deg) ;
-        -ms-transform:rotate(0deg) ;
-        -webkit-transform:rotate(0deg) ;
-        -o-transform:rotate(0deg) ;
-
+        transform:rotate(0deg);;
     }
     /*50%{*/
     /*transform:rotate(180deg);;*/
     /*}*/
     100%{
-        transform:rotate(360deg);
-        -moz-transform:rotate(360deg) ;
-        -ms-transform:rotate(360deg) ;
-        -webkit-transform:rotate(360deg) ;
-        -o-transform:rotate(360deg) ;
+        transform:rotate(360deg);;
     }
 }
 
@@ -349,11 +339,7 @@ body{
     -o-transition: all 1s;
 }
 .annium:hover{
-    transform:scale(1.2);
-    -moz-transform:scale(1.2);
-    -ms-transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    -o-transform:scale(1.2);
+    transform:scale(1.1);
 }
 
 .m3 .anniu{
@@ -661,6 +647,7 @@ body{
 .swiper-container2 .ml1{
     width: 404px;
     height: 543px;
+    margin-left: 5px;
 }
 .m5  .swiper-container2 .swiper-slide{
     z-index: 1;
@@ -693,9 +680,11 @@ body{
     border: solid 8px rgba(255, 255, 255, 0.2);
     margin-top: -110px;
     box-shadow: 0px 0px 0px 0px;
+
 }
-.swiper-container2 .swiper-slide-duplicate-next img:last-child{
+.m5 .swiper-container2 .swiper-slide-duplicate-next img:last-child{
     box-shadow: 0px 0px 0px 0px;
+    opacity: 0;
 }
 .m5 .swiper-container2 .swiper-slide img:first-child{
     width: 179px;
@@ -780,5 +769,7 @@ body{
     top: 193px;
     z-index: 1;
 }
+
+
 
 
