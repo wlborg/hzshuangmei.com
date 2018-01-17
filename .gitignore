@@ -15,6 +15,7 @@
 .buildpath
 composer.json
 !xapp/
+!xapp/templets/admin/*.xml
 /www.hzshuangmei.com/a/
 /m.hzshuangmei.com/a/
 data/
