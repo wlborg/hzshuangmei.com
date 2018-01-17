@@ -25,6 +25,7 @@
 .banner .bannerimg{
     width: 16.0rem;
     margin: auto;
+    height: 13.725rem
 }
 .banner .anniu{
     left: 0px;
@@ -39,11 +40,11 @@
     left: 1.425rem;
 }
 .banner .anniu img:last-child{
-    width: 3.0rem;
+width: 2.95rem;
     animation: xuanzhuan 4s linear infinite;
-    -webkit-animation:xuanzhuan 4s linear infinite;
-    -o-animation:xuanzhuan 4s linear infinite;
-    -moz-animation:  xuanzhuan 4s linear infinite;
+    -webkit-animation: xuanzhuan 4s linear infinite;
+    -o-animation: xuanzhuan 4s linear infinite;
+    -moz-animation: xuanzhuan 4s linear infinite;
     position: absolute;
     left: 1.525rem;
     top: 0.1rem;
@@ -152,7 +153,8 @@
     width: 5.925rem;
     height: 1.275rem;
     background:url("//img.hzshuangmei.com/m/ly/images/1.png");
-    background-size: auto 100%;
+    background-size:5.925rem 1.325rem
+
 
 }
 .shijian p{
