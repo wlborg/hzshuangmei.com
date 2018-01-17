@@ -481,11 +481,8 @@ width: 2.95rem;
     display: block;
 }
 .swiper-container1{
-    width: 10.85rem;
+    width: 9.625rem;
     margin: auto;
-}
-.swiper-container1  .swiper-slide{
-    margin-right: 1.1rem;
 }
 .swiper-container1 img{
     width: 2.7rem;
