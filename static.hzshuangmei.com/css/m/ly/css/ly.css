@@ -15,17 +15,23 @@
     clip: rect(0, 0, 0, 0);
 }
 .banner{
+    width: 16.0rem;
     padding-top: 0.025rem;
     font-size: 0;
     height: 13.725rem;
     margin: auto;
-    background: url("//img.hzshuangmei.com/m/ly/images/banner.jpg") center no-repeat;
+    position: relative;
+}
+.banner .bannerimg{
+    width: 16.0rem;
+    margin: auto;
 }
 .banner .anniu{
+    left: 0px;
+    top: 8.375rem;
     width: 16.0rem;
-    margin: 8.55rem auto 0;
-    height: 3.1rem;
-    position:relative;
+    height: 3.5rem;
+    position:absolute;
 }
 .banner .anniu img:first-child{
     position: absolute;
@@ -34,9 +40,28 @@
 }
 .banner .anniu img:last-child{
     width: 3.0rem;
+    animation: xuanzhuan 4s linear infinite;
+    -webkit-animation:xuanzhuan 4s linear infinite;
+    -o-animation:xuanzhuan 4s linear infinite;
+    -moz-animation:  xuanzhuan 4s linear infinite;
     position: absolute;
     left: 1.525rem;
     top: 0.1rem;
+}
+@keyframes xuanzhuan {
+    0%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+    ;
+    }
+    100%{
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+    }
 }
 .m1{
     background-color: #f4f3f8;
