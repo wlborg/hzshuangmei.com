@@ -143,7 +143,7 @@
     height: 5.425rem;
     background: url("//img.hzshuangmei.com/m/ly/images/m1img2.jpg") no-repeat center;
 
-    /*background-size: auto 100%;*/
+    background-size: 24.0rem  5.425rem;
 }
 .shijian div{
     top: 0.7rem;
@@ -152,7 +152,7 @@
     width: 5.925rem;
     height: 1.275rem;
     background:url("//img.hzshuangmei.com/m/ly/images/1.png");
-    /*background-size: auto 100%;*/
+    background-size: auto 100%;
 
 }
 .shijian p{
@@ -193,7 +193,7 @@
     position: relative;
     height: 15.75rem;
     background: url("//img.hzshuangmei.com/m/ly/images/m2bg1.jpg") no-repeat center;
-    /*background-size: auto 100%;*/
+    background-size: 24.0rem 15.75rem;
 }
 .m2img4{
     width: 3.4rem;
@@ -295,7 +295,7 @@
     position: relative;
     height: 7.825rem;
     background: url("//img.hzshuangmei.com/m/ly/images/m2bg3.jpg") no-repeat center;
-    /*background-size: auto 100%;*/
+    background-size: 24.0rem 7.825rem
 }
 .m2con3 .d1{
     width: 10.7rem;
@@ -354,7 +354,7 @@
     position: relative;
     height:23.75rem;
     background:url("//img.hzshuangmei.com/m/ly/images/m3bg.jpg") no-repeat top center;
-    /*background-size: auto 100%;*/
+    background-size: 24.0rem 20.125rem;
 }
 .m3con{
     padding-top: 0.025rem;
@@ -467,7 +467,7 @@
     margin: auto;
     height: 28.65rem;
     background: url("//img.hzshuangmei.com/m/ly/images/m4bg.jpg") no-repeat top center;
-    /*background-size: auto 100%;*/
+    background-size: 24.0rem 25rem;
 
 }
 .m4con{
