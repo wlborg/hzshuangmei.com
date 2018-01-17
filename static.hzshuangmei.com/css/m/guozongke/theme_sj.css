@@ -23,19 +23,19 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .banner .g-doc { padding-bottom: 50% }
 .zt-m1 .title { height: 1.5rem; background: url("https://img.hzshuangmei.com/m/guozongke/bgt1.png") center center no-repeat; background-size: auto 100% }
 .zt-m1 .content { background: url("https://img.hzshuangmei.com/m/guozongke/bgc1.jpg") center center no-repeat; height: 13.85rem; background-size: auto 100% }
-.zt-m1 .consult { width: 7.6rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult1.png") center center no-repeat; background-size: auto 100% }
+.zt-m1 .consult { width: 7.6rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult1.png") center center no-repeat; background-size: contain }
 .zt-m2 { background: url("https://img.hzshuangmei.com/m/guozongke/bg2.jpg") center top no-repeat; height: 30.9rem; background-size: 100% }
 .zt-m2 .title { height: 0.8rem; background: url("https://img.hzshuangmei.com/m/guozongke/bgt2.png") center center no-repeat; background-size: auto 100% }
-.zt-m2 .consult { width: 6.85rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult2.png") center center no-repeat; background-size: auto 100% }
+.zt-m2 .consult { width: 6.85rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult2.png") center center no-repeat; background-size: contain }
 .zt-m3 .title { height: 1rem; padding-top: 1rem; background: url('https://img.hzshuangmei.com/m/guozongke/bgt3.png') center top no-repeat; background-size: auto 1rem }
-.zt-m3 .consult { width: 8.4rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult3.png") center center no-repeat; background-size: auto 100% }
+.zt-m3 .consult { width: 8.4rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult3.png") center center no-repeat; background-size: contain }
 .zt-m4 { background: url("https://img.hzshuangmei.com/m/guozongke/bg4.jpg") center top no-repeat; height: 21.7rem; background-size: 100% }
 .zt-m4 .title { height: 1.3rem; background: url("https://img.hzshuangmei.com/m/guozongke/bgt4.png") center center no-repeat; background-size: auto 100% }
-.zt-m4 .consult { width: 9.45rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult4.png") center center no-repeat; background-size: auto 100% }
+.zt-m4 .consult { width: 9.45rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult4.png") center center no-repeat; background-size: contain }
 .zt-m5 .title { height: 1.6rem; background: url("https://img.hzshuangmei.com/m/guozongke/bgt5.png") center center no-repeat; background-size: auto 100% }
-.zt-m5 .consult { width: 11.05rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult5.png") center center no-repeat; background-size: auto 100% }
+.zt-m5 .consult { width: 11.05rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult5.png") center center no-repeat; background-size: contain }
 .zt-m6 .title { height: 1.15rem; background: url("https://img.hzshuangmei.com/m/guozongke/bgt6.png") center center no-repeat; background-size: auto 100% }
-.zt-m6 .consult { width: 9.4rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult6.png") center center no-repeat; background-size: auto 100% }
+.zt-m6 .consult { width: 9.4rem; height: 1.4rem; background: url("https://img.hzshuangmei.com/m/guozongke/bg_consult6.png") center center no-repeat; background-size: contain }
 .zt-m1 .title { position: relative; top: 1.1rem; margin-top: 0.25rem }
 .zt-m1 .content { padding: 1px 0 }
 .zt-m1 .content h3 { font-size: 0.8rem; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.75rem; letter-spacing: 0rem; color: #333333 }
@@ -49,18 +49,20 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .zt-m2 .g-doc { padding-top: 2.25rem }
 .zt-m2 .title { }
 .zt-m2 .content p { margin-top: 0.8rem; padding: 0 0.15rem; font-size: 0.45rem; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 0.6rem; letter-spacing: 0.0075rem; color: #ffffff; text-align: justify }
-.zt-m2 .content .img-box { position: relative; margin-top: 0.5rem }
-.zt-m2 .content .img-box img { width: 100% }
-.zt-m2 .content .des { position: absolute; width: 7.5rem; height: 1.25rem; padding-top: 0.15rem; height: 1.1rem; font-size: 0.4rem; line-height: 0.5rem; background-color: rgba(0, 0, 0, 0.72); font-weight: normal; font-style: normal; font-stretch: normal; letter-spacing: 0rem; color: #ffffff; text-align: center }
-.zt-m2 .content .des1 { top: 9.975rem; left: 0rem; width: 8.3rem }
-.zt-m2 .content .des2 { top: 4.5rem; left: 8.475rem }
-.zt-m2 .content .des3 { top: 9.95rem; left: 8.475rem; line-height: 1.25rem; padding-top: 0; height: 1.25rem }
-.zt-m2 .content .des4 { width: 9.425rem; top: 17.125rem; left: 0rem }
-.zt-m2 .content .des5 { width: 6.375rem; top: 17.125rem; left: 9.6rem }
+.zt-m2 .content .img-box { position: relative; margin-top: 0.5rem; width: 16rem; height: 18.4rem }
+.zt-m2 .content .img-box img { width: 100%; display: block }
+.zt-m2 .content .des { position: absolute; width: 7.5rem }
+.zt-m2 .content .des p { position: absolute; left: 0; bottom: 0; width: 100%; margin: 0; padding: 0.15rem 0 0; height: 1.1rem; font-size: 0.4rem; line-height: 0.5rem; background-color: rgba(0, 0, 0, 0.72); font-weight: normal; font-style: normal; font-stretch: normal; letter-spacing: 0rem; color: #ffffff; text-align: center }
+.zt-m2 .content .des1 { top: 0rem; left: 0rem; width: 8.3rem }
+.zt-m2 .content .des2 { top: 0rem; left: 8.475rem }
+.zt-m2 .content .des3 { top: 5.7rem; left: 8.475rem }
+.zt-m2 .content .des3 p { line-height: 1.25rem; padding-top: 0; height: 1.25rem }
+.zt-m2 .content .des4 { width: 9.425rem; top: 11.4rem; left: 0rem }
+.zt-m2 .content .des5 { width: 6.375rem; top: 11.4rem; left: 9.6rem }
 .zt-m2 .consult { margin-top: 1rem }
 .zt-m3 .title { font-size: 0.5rem; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1rem; letter-spacing: 0rem; color: #1c28b1; text-align: center }
 .zt-m3 .content { margin-top: 0.5rem }
-.zt-m3 .content .g-row { margin-bottom: 0.55rem }
+.zt-m3 .content .g-row { margin-bottom: 0.55rem; padding: 0 0.1rem }
 .zt-m3 .content .g-item { padding: 0.7rem 0.45rem 0; width: 42%; height: 9.55rem; border: solid 1px #e1e3fc }
 .zt-m3 .content .g-item img { border-radius: 0.5rem; width: 6.675rem; height: 5.1rem }
 .zt-m3 .content .g-item h3 { position: relative; margin-top: 0.4rem; padding-bottom: 0.25rem; font-size: 0.5rem; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 0.6rem; letter-spacing: 0.03rem; color: #444dd5; text-align: center }
