@@ -148,13 +148,13 @@
 }
 #doctors_tabCon ul li .doctor1>div .order{
     background-color: rgba( 255, 255, 255, 0.6 );
-    margin-top:53%;
+    margin-top:80%;
     margin-left:45px;
     color:#000;
 }
 #doctors_tabCon ul li .doctor1>div .consult{
     background-color: rgba( 110, 54, 147, 0.6 );
-    margin-top:53%;
+    margin-top:80%;
     margin-left: 12px;
     color:#fff;
 }
