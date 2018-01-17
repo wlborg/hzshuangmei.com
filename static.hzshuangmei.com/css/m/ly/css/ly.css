@@ -484,6 +484,9 @@ width: 2.95rem;
     width: 10.85rem;
     margin: auto;
 }
+.swiper-container1  .swiper-slide{
+    margin-right: 1.1rem;
+}
 .swiper-container1 img{
     width: 2.7rem;
     border-radius: 50%;
