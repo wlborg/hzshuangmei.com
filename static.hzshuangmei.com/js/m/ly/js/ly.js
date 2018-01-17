@@ -8,7 +8,6 @@ var swiper1 = new Swiper('.swiper-container1', {
     slidesPerView : 3,
     nextButton: '.next1',
     prevButton: '.prev1',
-    spaceBetween: 44,
     // 如果需要分页器
     autoplayDisableOnInteraction: false,
     paginationClickable: true,
