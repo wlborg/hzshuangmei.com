@@ -32,7 +32,7 @@ setInterval(aa,100);
 var swiper2 = new Swiper('.swiper-container2', {
     direction: 'horizontal',
     loop: true,
-//    autoplay: 3000,//自动轮播
+    autoplay: 3000,//自动轮播
     speed: 500,
     slidesPerView : 3,
     loopedSlides: 3,
