@@ -24,7 +24,6 @@
 .banner .bannerimg{
     width: 16.0rem;
     margin: auto;
-    height: 13.725rem
 }
 .banner .anniu{
       left: 2.2rem;
@@ -644,7 +643,7 @@ width: 2.5rem;
 }
 .m5  .swiper-container2 .swiper-slide{
     z-index: 1;
-    margin-top: 2.5rem;
+    margin-top: 1.875rem;
     position: relative;
 
 }
