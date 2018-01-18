@@ -481,6 +481,7 @@ width: 2.5rem;
 .swiper-container1{
     width: 9.6rem;
     margin: auto;
+    left: 0.25rem;
 }
 .swiper-container1 img{
     width: 2.7rem;
