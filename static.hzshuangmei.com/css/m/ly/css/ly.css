@@ -18,35 +18,32 @@
     width: 16.0rem;
     padding-top: 0.025rem;
     font-size: 0;
-    height: 13.725rem;
     margin: auto;
     position: relative;
 }
 .banner .bannerimg{
     width: 16.0rem;
     margin: auto;
-    height: 13.725rem
 }
 .banner .anniu{
-    left: 0px;
-    top: 8.375rem;
-    width: 16.0rem;
-    height: 3.5rem;
-    position:absolute;
+      left: 2.2rem;
+    top: 5.85rem;
+    width: 3.75rem;
+    height: 2.5rem;
+    position: absolute;
 }
 .banner .anniu img:first-child{
     position: absolute;
-    width: 3.1rem;
-    left: 1.425rem;
+    width: 2.625rem;
 }
 .banner .anniu img:last-child{
-width: 2.95rem;
+width: 2.5rem;
     animation: xuanzhuan 4s linear infinite;
     -webkit-animation: xuanzhuan 4s linear infinite;
     -o-animation: xuanzhuan 4s linear infinite;
     -moz-animation: xuanzhuan 4s linear infinite;
     position: absolute;
-    left: 1.525rem;
+    left: 0.075rem;
     top: 0.1rem;
 }
 @keyframes xuanzhuan {
@@ -158,6 +155,7 @@ width: 2.95rem;
 
 }
 .shijian p{
+    text-indent: 0.9rem;
     color: #dfdfdf;
     margin: auto;
     width: 14.85rem;
@@ -481,11 +479,8 @@ width: 2.95rem;
     display: block;
 }
 .swiper-container1{
-    width: 10.85rem;
+    width: 9.6rem;
     margin: auto;
-}
-.swiper-container1  .swiper-slide{
-    margin-right: 1.1rem;
 }
 .swiper-container1 img{
     width: 2.7rem;
@@ -648,7 +643,7 @@ width: 2.95rem;
 }
 .m5  .swiper-container2 .swiper-slide{
     z-index: 1;
-    margin-top: 2.5rem;
+    margin-top: 1.875rem;
     position: relative;
 
 }
