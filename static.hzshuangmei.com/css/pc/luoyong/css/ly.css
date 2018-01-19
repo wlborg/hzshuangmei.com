@@ -11,9 +11,7 @@ a{
 a:hover{
     text-decoration: none;
 }
-body{
-    font-size: 0;
-}
+
 
 .yinshen {
     position: absolute;
@@ -32,7 +30,7 @@ body{
 .banner{
     position: relative;
     height: 684px;
-    background: url("//img.hzshuangmei.com/pc/ly/images/bannerbg.jpg") no-repeat center;
+    background: url("//img.hzshuangmei.com/pc/luoyong/images/bannerbg.jpg") no-repeat center;
 }
 .bannercon{
     width: 1400px;
@@ -91,7 +89,6 @@ body{
     width: 135px;
 }
 .m1{
-
     font-size: 0;
     background-color: #f4f3f8;
 }
@@ -212,7 +209,8 @@ body{
 
 }
 .m2{
-    background: url("//img.hzshuangmei.com/pc/ly/images/m2bg.jpg") no-repeat center top;
+    font-size: 0;
+    background: url("//img.hzshuangmei.com/pc/luoyong/images/m2bg.jpg") no-repeat center top;
     height: 1264px;
 }
 .m2con{
@@ -386,7 +384,7 @@ body{
 }
 .m4 .anniu span:first-child{
     left: 50%;
-    margin-left: -224px;
+    margin-left: -232px;
 }
 .m4 .anniu span:last-child{
     left: 50%;
@@ -405,8 +403,9 @@ body{
     margin-left: -255px;
 }
 .m3{
+    font-size: 0;
     height: 1418px;
-    background: url("//img.hzshuangmei.com/pc/ly/images/m3bg.jpg")no-repeat top center;
+    background: url("//img.hzshuangmei.com/pc/luoyong/images/m3bg.jpg")no-repeat top center;
 }
 .m3con{
     position: relative;
@@ -475,7 +474,8 @@ body{
 }
 
 .m4{
-    background: url("//img.hzshuangmei.com/pc/ly/images/m4bg.jpg") no-repeat top center;
+    font-size: 0;
+    background: url("//img.hzshuangmei.com/pc/luoyong/images/m4bg.jpg") no-repeat top center;
     height: 1320px;
 }
 .m4con{
@@ -626,6 +626,7 @@ body{
 }
 
 .m5{
+    font-size: 0;
     height: 1486px;
     background-color: #f4f3f8;
 }
