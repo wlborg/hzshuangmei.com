@@ -139,7 +139,7 @@ width: 2.5rem;
     width: 16.0rem;
     margin: auto;
     height: 5.425rem;
-    background: url("//img.hzshuangmei.com/m/ly/images/m1img2.jpg") no-repeat center;
+    background: url("//img.hzshuangmei.com/m/luoyong/images/m1img2.jpg") no-repeat center;
 
     background-size: 24.0rem  5.425rem;
 }
@@ -149,7 +149,7 @@ width: 2.5rem;
     right: 1.275rem;
     width: 5.925rem;
     height: 1.275rem;
-    background:url("//img.hzshuangmei.com/m/ly/images/1.png");
+    background:url("//img.hzshuangmei.com/m/luoyong/images/1.png");
     background-size:5.925rem 1.325rem
 
 
@@ -192,7 +192,7 @@ width: 2.5rem;
 .m2con1{
     position: relative;
     height: 15.75rem;
-    background: url("//img.hzshuangmei.com/m/ly/images/m2bg1.jpg") no-repeat center;
+    background: url("//img.hzshuangmei.com/m/luoyong/images/m2bg1.jpg") no-repeat center;
     background-size: 24.0rem 15.75rem;
 }
 .m2img4{
@@ -294,7 +294,7 @@ width: 2.5rem;
 .m2con3{
     position: relative;
     height: 7.825rem;
-    background: url("//img.hzshuangmei.com/m/ly/images/m2bg3.jpg") no-repeat center;
+    background: url("//img.hzshuangmei.com/m/luoyong/images/m2bg3.jpg") no-repeat center;
     background-size: 24.0rem 7.825rem
 }
 .m2con3 .d1{
@@ -353,7 +353,7 @@ width: 2.5rem;
     margin: auto;
     position: relative;
     height:23.75rem;
-    background:url("//img.hzshuangmei.com/m/ly/images/m3bg.jpg") no-repeat top center;
+    background:url("//img.hzshuangmei.com/m/luoyong/images/m3bg.jpg") no-repeat top center;
     background-size: 24.0rem 20.125rem;
 }
 .m3con{
@@ -466,7 +466,7 @@ width: 2.5rem;
     width: 16.0rem;
     margin: auto;
     height: 28.65rem;
-    background: url("//img.hzshuangmei.com/m/ly/images/m4bg.jpg") no-repeat top center;
+    background: url("//img.hzshuangmei.com/m/luoyong/images/m4bg.jpg") no-repeat top center;
     background-size: 24.0rem 25rem;
 
 }
@@ -481,6 +481,7 @@ width: 2.5rem;
 .swiper-container1{
     width: 9.6rem;
     margin: auto;
+    left: 0.25rem;
 }
 .swiper-container1 img{
     width: 2.7rem;
