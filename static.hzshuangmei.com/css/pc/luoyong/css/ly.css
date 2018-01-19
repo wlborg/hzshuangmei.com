@@ -11,9 +11,7 @@ a{
 a:hover{
     text-decoration: none;
 }
-body{
-    font-size: 0;
-}
+
 
 .yinshen {
     position: absolute;
@@ -91,7 +89,6 @@ body{
     width: 135px;
 }
 .m1{
-
     font-size: 0;
     background-color: #f4f3f8;
 }
@@ -212,6 +209,7 @@ body{
 
 }
 .m2{
+    font-size: 0;
     background: url("//img.hzshuangmei.com/pc/luoyong/images/m2bg.jpg") no-repeat center top;
     height: 1264px;
 }
@@ -405,6 +403,7 @@ body{
     margin-left: -255px;
 }
 .m3{
+    font-size: 0;
     height: 1418px;
     background: url("//img.hzshuangmei.com/pc/luoyong/images/m3bg.jpg")no-repeat top center;
 }
@@ -475,6 +474,7 @@ body{
 }
 
 .m4{
+    font-size: 0;
     background: url("//img.hzshuangmei.com/pc/luoyong/images/m4bg.jpg") no-repeat top center;
     height: 1320px;
 }
@@ -626,6 +626,7 @@ body{
 }
 
 .m5{
+    font-size: 0;
     height: 1486px;
     background-color: #f4f3f8;
 }
