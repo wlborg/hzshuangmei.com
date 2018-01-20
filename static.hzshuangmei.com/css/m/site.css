@@ -176,6 +176,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .copyright { padding: .9rem 0 1.05rem; background: #eee; }
 .copyright p { font-size: .35rem; line-height: 1.71428571em; text-align: center; color: #77718f; }
 .copyright p span { font-size: .45rem; }
+.copyright p a { font-size: .35rem; line-height: 1.71428571em; text-align: center; color: #77718f;}
 
 /*********************** project_list ***********************/
 .item_icons { display: inline-block; overflow: hidden; background-image: url("https://img.hzshuangmei.com/m/items.png"); background-repeat: no-repeat; background-size: 2.4rem 9.55rem; }
