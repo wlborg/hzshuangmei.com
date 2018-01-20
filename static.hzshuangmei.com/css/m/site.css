@@ -176,6 +176,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .copyright { padding: .9rem 0 1.05rem; background: #eee; }
 .copyright p { font-size: .35rem; line-height: 1.71428571em; text-align: center; color: #77718f; }
 .copyright p span { font-size: .45rem; }
+.copyright p a { font-size: .35rem; line-height: 1.71428571em; text-align: center; color: #77718f;}
 
 /*********************** project_list ***********************/
 .item_icons { display: inline-block; overflow: hidden; background-image: url("https://img.hzshuangmei.com/m/items.png"); background-repeat: no-repeat; background-size: 2.4rem 9.55rem; }
@@ -363,9 +364,9 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .article .article-main em { display: block; margin-top: -.2rem; font-size: .4rem; text-align: center; }
 .article .article-main br { display: none; }
 .relate-link { padding: 0 2% 1.5rem; margin-top: 2.5em; margin-bottom: 1em; font-size: .3rem; line-height: .85rem; color: #6a6a6a; }
-.relate-link a { display: block; padding: 0 .4rem; font-size: .3rem; line-height: .85rem; color: #6a6a6a; }
-.relate-link .prev { float: left; width: 42%; overflow: hidden; line-height: .85rem; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
-.relate-link .next { float: right; width: 42%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
+.relate-link a { display: inline-block;  font-size: .3rem; line-height: .85rem; color: #6a6a6a; }
+.relate-link .prev { float: left; width: 42%; padding: 0 .4rem;overflow: hidden; line-height: .85rem; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
+.relate-link .next { float: right; width: 42%; padding: 0 .4rem;overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border: solid 1px #e0d3ed; }
 
 /********************* case_article *********************/
 .case .heading-wrap { padding: 0 3%; background: #f5f5f5; }
