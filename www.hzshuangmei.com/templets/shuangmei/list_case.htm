@@ -58,7 +58,13 @@
                 </li>
                 {/dede:list}
             </ul>
+            <div class="ns_pa clearFix">
+                <ul class="pagination clearFix">
+                    {dede:pagelist istitem="pre,next" listsize="5"/}
+                </ul>
+            </div>
         </div>
+
     </div>{dede:include filename="_footer.htm"/}</body>{dede:include filename="_script.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/list_case.js"></script>
 
