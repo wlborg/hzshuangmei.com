@@ -125,7 +125,10 @@ footer .right .right_b i{display:inline-block;width:12px;height:16px;margin-righ
 footer .right .right_b span{font-size:16px;}
 footer .right .right_b a{margin:0 6px;font-size:12px;color:#fff;}
 footer .humanstxt{position:relative;top:10px;}
-footer .left a{color:#fff;}
+footer .left a{color:#ceb3e0;}
+footer .copyright{padding-top: 22px;color:#ceb3e0;}
+footer .copyright a{color:#fff}
+footer .copyright a:hover {color: #dadada;  }
 
 /*固定的悬浮窗*/
 .yb_conct{position:fixed;right:-128px;z-index:999999;cursor:pointer;transition:all .3s ease;}
