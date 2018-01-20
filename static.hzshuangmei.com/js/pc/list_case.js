@@ -1,20 +1,28 @@
-
-var case_tabs=document.getElementById("case_tab").getElementsByTagName("li");
-var case_divs=document.getElementById("case_tabCon").getElementsByTagName("li");
-for(var i=0;i<case_tabs.length;i++){
-    case_tabs[i].onclick=function(){case_change(this);}
-}
-function case_change(obj){
-    for(var i=0;i<case_tabs.length;i++){
-        if(case_tabs[i]==obj){
-            case_tabs[i].className="case_fli";
-            case_divs[i].className="case_fdiv clearFix";
-        }else{
-            case_tabs[i].className="";
-            case_divs[i].className="clearFix";
-        }
-    }
-}
+//
+//var case_tabs=document.getElementById("case_tab").getElementsByTagName("li");
+//var case_divs=document.getElementById("case_tabCon").getElementsByTagName("li");
+//for(var i=0;i<case_tabs.length;i++){
+//    case_tabs[i].onclick=function(){case_change(this);}
+//}
+//function case_change(obj){
+//    for(var i=0;i<case_tabs.length;i++){
+//        if(case_tabs[i]==obj){
+//            case_tabs[i].className="case_fli";
+//            case_divs[i].className="case_fdiv clearFix";
+//        }else{
+//            case_tabs[i].className="";
+//            case_divs[i].className="clearFix";
+//        }
+//    }
+//}
+$(function () {
+    $(".case_con").eq(0).show();
+    $(".btn li").click(function(){
+        var num =$(".btn li").index(this);
+        $(".case_con").hide();
+        $(".case_con").eq(num).show().slblings().hide();
+    })
+});
 
 $(function () {
     var position = $(window).height();
