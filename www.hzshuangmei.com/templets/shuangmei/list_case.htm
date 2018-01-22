@@ -18,17 +18,6 @@
         <div class="case_content">
             <div id="case_tab">
                 <ul class="btn">
-                        <!--<li class="case_fli"><a href="#ca_01">眼部 ></a></li>-->
-                        <!--<li><a href="/cases/eye/#ca_01">鼻部 ></a></li>-->
-                        <!--<li><a href="#ca_01">面部 ></a></li>-->
-                        <!--<li><a href="#ca_01">纹绣 ></a></li>-->
-                        <!--<li><a href="#ca_01">皮肤 ></a></li>-->
-                        <!--<li><a href="#ca_01">胸部 ></a></li>-->
-                        <!--<li><a href="#ca_01">私密 ></a></li>-->
-                        <!--<li><a href="#ca_01">形体 ></a></li>-->
-                        <!--<li><a href="#ca_01">玻尿酸 ></a></li>-->
-                        <!--<li><a href="#ca_01">botox ></a></li>-->
-                        <!--<li><a href="#ca_01">衡力 ></a></li>-->
                     <li><a href="/cases/eye/#ca_01">眼部 ></a></li>
                     <li><a href="/cases/nose/#ca_01">鼻部 ></a></li>
                     <li><a href="/cases/face/#ca_01">面部 ></a></li>
@@ -43,27 +32,29 @@
                 </ul>
             </div>
             <ul id="case_tabCon">
-                <li class="case_con clearFix">
+                <li class="case_con">
                 {dede:list pagesize="9" orderby="weight" orderway="asc" addfields="imgbefore,imgafter,job,doctor,project"}
-                    <div class="list">
-                        <a class="t0" href="[field:arcurl/]" target="_blank">
-                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
-                        </a>
-                        <div class="ltt">
-                            <a class="l_ico" href="[field:arcurl/]" target="_blank">
-                                <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
+                    <div class="clearFix">
+                        <div class="list">
+                            <a class="t0" href="[field:arcurl/]" target="_blank">
+                                <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
                             </a>
-                            <div class="txt">
-                                <a class="t1" href="[field:arcurl/]" target="_blank">
-                                    <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
+                            <div class="ltt">
+                                <a class="l_ico" href="[field:arcurl/]" target="_blank">
+                                    <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
                                 </a>
-                                <div class="t2">塑美项目： [field:project/]</div>
-                                <div class="t3">塑美专家：[field:doctor/]</div>
+                                <div class="txt">
+                                    <a class="t1" href="[field:arcurl/]" target="_blank">
+                                        <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
+                                    </a>
+                                    <div class="t2">塑美项目： [field:project/]</div>
+                                    <div class="t3">塑美专家：[field:doctor/]</div>
+                                </div>
                             </div>
+                            <a class="t4" href="[field:arcurl/]" target="_blank">
+                                <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
+                            </a>
                         </div>
-                        <a class="t4" href="[field:arcurl/]" target="_blank">
-                            <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
-                        </a>
                     </div>
                     {/dede:list}
                     <div class="ns_pa clearFix">
