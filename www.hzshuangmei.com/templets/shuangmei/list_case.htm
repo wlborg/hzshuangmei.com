@@ -33,8 +33,8 @@
             </div>
             <ul id="case_tabCon">
                 <li class="case_con">
-                {dede:list pagesize="9" orderby="weight" orderway="asc" addfields="imgbefore,imgafter,job,doctor,project"}
                     <div class="clearFix">
+                {dede:list pagesize="9" orderby="weight" orderway="asc" addfields="imgbefore,imgafter,job,doctor,project"}
                         <div class="list">
                             <a class="t0" href="[field:arcurl/]" target="_blank">
                                 <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
@@ -55,8 +55,8 @@
                                 <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
                             </a>
                         </div>
-                    </div>
                     {/dede:list}
+                    </div>
                     <div class="ns_pa clearFix">
                         <ul class="pagination clearFix">
                             {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
