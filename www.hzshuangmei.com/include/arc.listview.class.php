@@ -769,6 +769,12 @@ class ListView
         else if($orderby=="lastpost") {
             $ordersql = "  ORDER BY arc.lastpost $orderWay";
         }
+
+            else if($orderby=="weight") {
+            $ordersql = "  ORDER BY arc.weight $orderWay";
+        }
+
+
         else {
             $ordersql=" ORDER BY arc.sortrank $orderWay";
         }
@@ -807,7 +813,7 @@ class ListView
         }
 
         //如果不用默认的sortrank或id排序，使用联合查询（数据量大时非常缓慢）
-        if(preg_match('/hot|click|lastpost/', $orderby))
+        if(preg_match('/hot|click|lastpost|weight/', $orderby))
         {
             $query = "SELECT arc.*,tp.typedir,tp.typename,tp.isdefault,tp.defaultname,
            tp.namerule,tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
