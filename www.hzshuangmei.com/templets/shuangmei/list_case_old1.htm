@@ -18,21 +18,32 @@
         <div class="case_content">
             <div id="case_tab">
                 <ul class="btn">
-                    <li><a href="/cases/eye/">眼部 ></a></li>
-                    <li><a href="/cases/nose/">鼻部 ></a></li>
-                    <li><a href="/cases/face/">面部 ></a></li>
-                    <li><a href="/cases/tattoo/">纹绣 ></a></li>
-                    <li><a href="/cases/skin/">皮肤 ></a></li>
-                    <li><a href="/cases/chest/">胸部 ></a></li>
-                    <li><a href="/cases/private/">私密 ></a></li>
-                    <li><a href="/cases/body/">形体 ></a></li>
-                    <li><a href="/cases/ha/">玻尿酸 ></a></li>
-                    <li><a href="/cases/botox/">botox ></a></li>
-                    <li><a href="/cases/hengli/">衡力 ></a></li>
+                        <li class="case_fli"><a href="#ca_01">眼部 ></a></li>
+                        <li><a href="#ca_01">鼻部 ></a></li>
+                        <li><a href="#ca_01">面部 ></a></li>
+                        <li><a href="#ca_01">纹绣 ></a></li>
+                        <li><a href="#ca_01">皮肤 ></a></li>
+                        <li><a href="#ca_01">胸部 ></a></li>
+                        <li><a href="#ca_01">私密 ></a></li>
+                        <li><a href="#ca_01">形体 ></a></li>
+                        <li><a href="#ca_01">玻尿酸 ></a></li>
+                        <li><a href="#ca_01">botox ></a></li>
+                        <li><a href="#ca_01">衡力 ></a></li>
+                    <!--<li><a href="/cases/eye/">眼部 ></a></li>-->
+                    <!--<li><a href="/cases/nose/">鼻部 ></a></li>-->
+                    <!--<li><a href="/cases/face/">面部 ></a></li>-->
+                    <!--<li><a href="/cases/tattoo/">纹绣 ></a></li>-->
+                    <!--<li><a href="/cases/skin/">皮肤 ></a></li>-->
+                    <!--<li><a href="/cases/chest/">胸部 ></a></li>-->
+                    <!--<li><a href="/cases/private/">私密 ></a></li>-->
+                    <!--<li><a href="/cases/body/">形体 ></a></li>-->
+                    <!--<li><a href="/cases/ha/">玻尿酸 ></a></li>-->
+                    <!--<li><a href="/cases/botox/">botox ></a></li>-->
+                    <!--<li><a href="/cases/hengli/">衡力 ></a></li>-->
                 </ul>
             </div>
             <ul id="case_tabCon">
-                {dede:list pagesize="9" orderby="weight" orderway="asc"}
+                {dede:list pagesize="9" typeid=35 orderby='id' addfields="imgbefore,imgafter,job,doctor,project" channelid="19"}
                 <li class="case_con clearFix">
                     <div class="list">
                         <a class="t0" href="[field:arcurl/]" target="_blank">
@@ -54,14 +65,48 @@
                             <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
                         </a>
                     </div>
+                    <div class="ns_pa clearFix">
+                        <ul class="pagination clearFix">
+                            {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
+                        </ul>
+                    </div>
+                </li>
+                {/dede:list}
+                {dede:list pagesize="9" typeid=36 orderby='id' addfields="imgbefore,imgafter,job,doctor,project" channelid="19"}
+                <li class="case_con clearFix">
+                    <div class="list">
+                        <a class="t0" href="[field:arcurl/]" target="_blank">
+                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
+                        </a>
+                        <div class="ltt">
+                            <a class="l_ico" href="[field:arcurl/]" target="_blank">
+                                <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
+                            </a>
+                            <div class="txt">
+                                <a class="t1" href="[field:arcurl/]" target="_blank">
+                                    <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
+                                </a>
+                                <div class="t2">塑美项目： [field:project/]</div>
+                                <div class="t3">塑美专家：[field:doctor/]</div>
+                            </div>
+                        </div>
+                        <a class="t4" href="[field:arcurl/]" target="_blank">
+                            <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
+                        </a>
+                    </div>
+                    <div class="ns_pa clearFix">
+                        <ul class="pagination clearFix">
+                            {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
+                        </ul>
+                    </div>
                 </li>
                 {/dede:list}
             </ul>
-            <div class="ns_pa clearFix">
-                <ul class="pagination clearFix">
-                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
-                </ul>
-            </div>
+            <!--<div class="ns_pa clearFix">-->
+                <!--<ul class="pagination clearFix">-->
+                    <!--{dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}-->
+                <!--</ul>-->
+            <!--</div>-->
         </div>
     </div>{dede:include filename="_footer.htm"/}</body>{dede:include filename="_script.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/list_case.js"></script>
