@@ -17,7 +17,6 @@ $('.m3page>div').hover(function () {
 $(window).scroll(function(){
     if($(window).scrollTop()>1000){
         $('.anniu1').animate({right:'50%', marginRight:'-293px'},1500);
-        console.log($(window).scrollTop())
     }
     if($(window).scrollTop()>2500){
         $('.anniu2').animate({left:'50%'},1500);
