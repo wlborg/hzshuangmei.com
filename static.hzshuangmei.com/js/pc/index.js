@@ -68,8 +68,8 @@ var index_expert = new Swiper('.swiper-container4', {
     paginationClickable: true,
     autoplayDisableOnInteraction : false,
     nextButton: '.swiper-button-next4',
-    prevButton: '.swiper-button-prev4',
-    spaceBetween: 40
+    prevButton: '.swiper-button-prev4'
+    //spaceBetween: 40
 });
 
 var tabs4=document.getElementById("tab4").getElementsByTagName("li");
