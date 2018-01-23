@@ -233,6 +233,7 @@
                 <li class="fli4">整形美容案例</li>
                 <li>皮肤激光案例</li>
                 <li>注射微整案例</li>
+                <li>医学纹绣案例</li>
             </ul>
         </div>
         <div id="tabCon4">
@@ -264,7 +265,7 @@
                 {/dede:arclist}
             </ul>
             <ul class="clearFix">
-                {dede:arclist typeid=12 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+                {dede:arclist typeid=42 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
                 channelid="19"}
                 <li>
                     <div class="clients_t">
@@ -292,6 +293,33 @@
             </ul>
             <ul class="clearFix">
                 {dede:arclist typeid=13 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+                channelid="19"}
+                <li>
+                    <div class="clients_t">
+                        <a href="[field:arcurl/]" target="_blank">
+                            <img src="[field:imgbefore function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <span>术前</span>
+
+                            <p>[美丽蜕变] [field:title/]</p>
+                        </a>
+                        <a href="[field:arcurl/]" class="qiehuan" target="_blank">
+                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <span>术后</span>
+
+                            <p>[美丽蜕变] [field:title/]</p>
+                        </a>
+                    </div>
+                    <div class="clients_b">
+                        <p>塑美方案：[field:project/]</p>
+
+                        <p>塑美专家：[field:doctor/]</p>
+                        <a href="[field:arcurl/]" class="xiangqing">案例详情</a>
+                    </div>
+                </li>
+                {/dede:arclist}
+            </ul>
+            <ul class="clearFix">
+                {dede:arclist typeid=41 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
                 channelid="19"}
                 <li>
                     <div class="clients_t">
