@@ -538,6 +538,7 @@
          */
                module.anti_Stealing_Images = function() {
             var smallImgs = $(".case-main").find(".pic").find('img');
+            var bigImgs = $("#modal-img");
             smallImgs.each(function(index) {
                 $(this).contextmenu(function(event) {
                     event.preventDefault();
