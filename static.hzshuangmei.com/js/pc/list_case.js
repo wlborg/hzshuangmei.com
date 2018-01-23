@@ -14,6 +14,7 @@
 //            case_divs[i].className="clearFix";
 //        }
 //    }
+
 //}
 $(function () {
     $(".case_con").eq(0).show();
