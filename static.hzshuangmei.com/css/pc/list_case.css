@@ -192,8 +192,8 @@
     top:-1px;
 }
 .pagination{
-    width: 410px;
-    margin: 0 auto;
+    width: 600px;
+    margin: 0 auto 50px
 }
 .pagination>li{
     float:left;
