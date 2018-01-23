@@ -810,7 +810,8 @@ h3 img {
             background-size: 43px 101px;
 }
 .index_expert .swiper-slide {
-    margin-right: 36px!important;
+    /*margin-right: 36px!important;*/
+    width: 305px;
 }
 .index_environment .swiper-button-next5,
 .swiper-button-prev5 {
