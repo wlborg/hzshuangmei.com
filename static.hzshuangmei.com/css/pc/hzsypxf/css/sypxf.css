@@ -28,7 +28,7 @@ table { border-collapse:collapse; border-spacing:0; }
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
 }
-body{
+.m1,.m2,.m3,.m4,.m5,.m6,.m7{
     font-size: 0;
 }
 .m1_con1{
