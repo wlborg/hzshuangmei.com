@@ -314,9 +314,6 @@ $(function() {
 
 // 分期框
 $(function(){
-    var $img=$("<img src='//img.hzshuangmei.com/pc/fqfk/images/fq.png' class='fq'>");
-    $('body').append($img);
-});
-$("body").delegate(".fq","click",function(){
-    window.open("https://www.hzshuangmei.com/activity/fqfk.html")
+    var $fqaa=$('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
+    $('body').append($fqaa);
 });
