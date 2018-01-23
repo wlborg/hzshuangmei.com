@@ -533,6 +533,22 @@
                    console.log('若站点中需要其他咨询按钮请给元素添加"j-site-consult"类以激活，注意和专题中的咨询做区别');
                }
            }
+         /*
+           防止案例日记图片被盗取
+         */
+               module.anti_Stealing_Images = function() {
+            var smallImgs = $(".case-main").find(".pic").find('img');
+            smallImgs.each(function(index) {
+                $(this).contextmenu(function(event) {
+                    event.preventDefault();
+                });
+            });
+            bigImgs.each(function(index) {
+                $(this).contextmenu(function(event) {
+                    event.preventDefault();
+                });
+            });
+        };
            return module;
        }
    )(window.tools || {});
@@ -644,6 +660,8 @@
        tools.addBaiduScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
+       //禁止右键盗取案例图片
+       tools.anti_Stealing_Images();
    });
 
 //Baidu自动推送
