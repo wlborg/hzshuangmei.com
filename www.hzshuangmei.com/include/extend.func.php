@@ -637,7 +637,7 @@ $relatetypeid= '14';
 }
 //随机查询  栏目其他项目专题信息4条
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
+where  a.typeid in ( $relatetypeid ) order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
