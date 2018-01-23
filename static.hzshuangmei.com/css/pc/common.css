@@ -150,3 +150,28 @@ body .popup .layui-layer-content img{display:block;width:100%;border-top-left-ra
 body .popup .layui-layer-btn .layui-layer-btn0{width:120px;margin:5px 15px 0;color:#999;border:1px solid #cecece;background-color:#fff;}
 body .popup .layui-layer-btn .layui-layer-btn1{width:120px;margin:5px 15px 0;color:#7d64c3;border:1px solid #cbbeef;background-color:#fff;}
 body .popup .layui-layer-btn .layui-layer-btn2{width:120px;margin:5px 15px 0;color:#fff;border:1px solid #dedede;    /*background-color: rgba(169, 125, 203, .8);*/background-color:#7d64c3;}
+
+/*抖动分期*/
+@-moz-keyframes tada{
+    0%{-moz-transform:scale(1);}
+    91%,92%{-moz-transform:scale(0.9) rotate(-3deg);}
+    93%,95%,97%,99%{-moz-transform:scale(1.2) rotate(3deg);}
+    94%,96%,98%{-moz-transform:scale(1.2) rotate(-3deg);}
+    100%{-moz-transform:scale(1) rotate(0);}
+}
+
+@-webkit-keyframes tada{
+    0%{-webkit-transform:scale(1);}
+    91%,92%{-webkit-transform:scale(0.9) rotate(-3deg);}
+    93%,95%,97%,99%{-webkit-transform:scale(1.2) rotate(3deg);}
+    94%,96%,98%{-webkit-transform:scale(1.2) rotate(-3deg);}
+    100%{-webkit-transform:scale(1) rotate(0);}}
+.fq{
+    position: fixed;
+    width: 200px;
+    left: 20px;
+    bottom: 20px;
+    z-index:1000;
+    -webkit-animation: tada 10s -9s ease both infinite;
+    -moz-animation: tada 10s -9s ease both infinite;
+}
