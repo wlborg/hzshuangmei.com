@@ -176,8 +176,8 @@
                     </li>
                     {dede:arclist typeid=5   isweight='y' orderby='weight' orderway='asc' row='2'}
                     <li>
-                        <!--<a href="[field:arcurl/]" target="_blank">-->
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank">
+                        <a href="[field:arcurl/]" target="_blank">
+                        <!--<a class="j-site-consult" href="javascript:void(0)" target="_blank">-->
                         <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
                             <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
                             <i></i>
@@ -192,7 +192,7 @@
                     {dede:arclist typeid=2 flag="h" orderby='id' row='2'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                            <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
                             <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
                             <i></i>
                         </a>
