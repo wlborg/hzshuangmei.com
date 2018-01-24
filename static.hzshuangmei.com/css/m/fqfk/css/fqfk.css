@@ -30,6 +30,7 @@ a:hover{
     width: 16.0rem;
     height:20.65rem;
     background: url("//img.hzshuangmei.com/m/fqfk/images/banner.jpg") no-repeat center;
+    background-size: 16.0rem 20.65rem;
 }
 .m2con{
     padding-top: 0.025rem;
@@ -47,7 +48,7 @@ a:hover{
     position: absolute;
     top: 3.2rem;
     left: 50%;
-    width: 6.55rem;
+ /*    width: 6.55rem; */
     margin-left: -3.4rem;
     height: 0.6rem;
     font-size: 0.6rem;
@@ -129,6 +130,9 @@ a:hover{
     margin-left: -6.65rem;
     top: -3.3rem;
 }
+.anniu1 img{
+    width:13.3rem;
+}
 .anniu1 span:nth-child(1){
     width: 9.5rem;
     height: 0.95rem;
@@ -152,6 +156,7 @@ a:hover{
 .m3{
     height: 37.125rem;
     background: url("//img.hzshuangmei.com/m/fqfk/images/m3bg.jpg") center no-repeat;
+    background-size: 16.0rem 37.125rem;
 }
 .m3con{
     width: 16.0rem;
@@ -291,8 +296,6 @@ a:hover{
     position: absolute;
     top: -1.45rem;
     left: 6.75rem;
-    width: 2.1rem;
-    height: 0.7rem;
     font-size: 0.7rem;
     color: #cbc1e9;
 }
@@ -559,6 +562,7 @@ pre{
     position: absolute;
     top: -0.55rem;
     right: -0.125rem;
+    width: 4.15rem;
 }
 .d3 .m5q p:last-child{
     margin-left: 0.625rem;
@@ -621,7 +625,6 @@ pre{
             left: 1.0rem;
             top: 13.0rem;
             position: absolute;
-            width: 7.55rem;
             height: 1.5rem;
             font-size: 1.5rem;
             line-height: 1.5rem;
@@ -631,7 +634,6 @@ pre{
             left: 1.0rem;
             top: 14.75rem;
             position: absolute;
-            width: 7.425rem;
             height: 0.825rem;
             font-size: 0.825rem;
             line-height: 0.825rem;
