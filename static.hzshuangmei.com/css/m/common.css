@@ -141,24 +141,27 @@ body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-feedback,body #LXB_CONT
 
 /* 修复移动端快商通弹窗大小 */
 body #_ks_ol_inviteWin{
-    margin-top: -7.15rem;
-    margin-left: -7.5rem;
+    margin-top: -7.15rem !important;
+    margin-left: -7.5rem !important;
 }
 body #divbg{
-    width: 15rem;
-    height: 14.35rem;
+    width: 15rem !important;
+    height: 14.35rem!important;
+    background-image: none!important;
+  background: url(https://img.hzshuangmei.com/m/swt/sj_swt.png) no-repeat;
+  background-size: 100%;
 }
 body #div19{
-    left: 7.2rem;
-    top: 11.45rem;
-    width: 6.5rem;
-    height: 1.9rem;
-    line-height: 1.3rem;
-    font-size: 0.9rem;
+    left: 7.2rem!important;
+    top: 11.45rem!important;
+    width: 6.5rem!important;
+    height: 1.9rem!important;
+    line-height: 1.3rem!important;
+    font-size: 0.9rem!important;
 }
 body #div23{
-    left: 1.75rem;
-    top: 11.85rem;
-    width: 4.75rem;
-    height: 1.15rem;
+    left: 1.75rem !important;
+    top: 11.85rem !important;
+    width: 4.75rem!important;
+    height: 1.15rem!important;
 }
