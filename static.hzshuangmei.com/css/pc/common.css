@@ -42,7 +42,7 @@ header .sm_logo img{display:inline-block;padding-top:7px;}
 #nav > ul > li > a span:last-child{font-size:12px;line-height:3.333;text-transform:uppercase;}
 #nav .bor_r{border-right:1px solid #360d57;}
 #nav .bor_l{border-left:1px solid #580d95;}
-#nav > ul > li #project{position:absolute;z-index:100;display:none;width:1200px;    /* margin-top: -1px; */height:510px;margin-left:-400px;border:1px solid #efebeb;background-color:#fff;}
+#nav > ul > li #project{position:absolute;z-index:100;display:none;width:1200px;    /* margin-top: -1px; */height:460px;margin-left:-400px;border:1px solid #efebeb;background-color:#fff;}
 #nav ul li:hover #project{display:block;}
 .currnet{font-weight:bold;background:#6a157d;}
 #nav > ul > li:hover{background:#6a157d;}
