@@ -606,7 +606,7 @@ a:hover{
     background: url(//img.hzshuangmei.com/pc/fqfk/images/qa4.png) no-repeat center
 }
 .qaqcon>p:nth-child(1){
-    width: 480px;
+    width: 500px;
     height: 32px;
     font-size: 32px;
     line-height: 32px;
@@ -664,7 +664,7 @@ a:hover{
     margin: auto;
 }
 .m6con>h3{
-    width: 375px;
+    /*width: 375px;*/
     height: 75px;
     font-size: 75px;
     line-height: 75px;
