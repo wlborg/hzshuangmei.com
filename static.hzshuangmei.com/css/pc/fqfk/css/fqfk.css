@@ -236,7 +236,8 @@ a:hover{
 .m3page>div :nth-child(1){
     margin: 56px auto 13px;
     display: block;
-    width: 108px;
+    width: 120px;
+    text-align: center;
     height: 36px;
     font-size: 36px;
     line-height: 35px;
@@ -319,7 +320,6 @@ a:hover{
     left: 50%;
     margin-left: -60px;
     top:-72px;
-    width: 105px;
     line-height: 35px;
     height: 35px;
     font-size: 35px;
