@@ -292,7 +292,7 @@ $(function() {
     //禁止盗案例图
     tools.anti_Stealing_Images();
     //禁用鼠标右键
-    tools.Disable_Rightmouse_Button();
+    //tools.Disable_Rightmouse_Button();
 });
 // 百度自动推送  17.11.25
 (function() {
