@@ -9,12 +9,13 @@
         </div>
         <div class="swiper-container center1 aside_swiper">
             <div class="swiper-wrapper">
-                {dede:arclist typeid=6 orderby='pubdate' flag = 'a' row='5'}
+ <!--                {dede:arclist typeid=6 orderby='pubdate' flag = 'a' row='5'}
                 <a href="[field:arcurl/]" class="swiper-slide">
                     <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"/>
                     <div class="timu">[field:title/]</div>
                 </a>
-                {/dede:arclist}
+                {/dede:arclist} -->
+                   {dede:FIELD.typeid function='hotProjectAboutCase(@me)'/}
             </div>
             <div class="swiper-pagination aside-pagination"></div>
         </div>
