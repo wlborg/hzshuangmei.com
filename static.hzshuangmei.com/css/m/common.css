@@ -130,6 +130,6 @@ body #div23 { left: 1.75rem !important; top: 11.85rem !important; width: 4.75rem
 
 /*系统快商通样式更改*/
 #_ks_ol_inviteWin { left: 50%; top: 50%; margin-top: -3.58rem !important; margin-left: -3.75rem !important; }
-#divbg { width: 7.5rem !important; height: 7.17rem !important; }
+#divbg { width: 7.5rem !important; height: 7.17rem !important;background-size: 100%; }
 #div19 { left: 3.6rem !important; top: 5.72rem !important; width: 3.25rem !important; height: 1rem !important; line-height: 0.65rem !important; font-size: 0.45rem !important; }
 #div23 { left: 0.88rem !important; top: 5.92rem !important; width: 2.38rem !important; height: 0.57rem !important; line-height: 0 !important; }
