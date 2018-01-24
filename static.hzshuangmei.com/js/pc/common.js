@@ -109,7 +109,6 @@ var tools = (
             //非专题内容区的咨询链接总数
             var siteLinkCount = siteConsultEs.length;
             if (siteLinkCount > 0) {
-
                 siteConsultEs.each(function(index) {
                     $(this).on('click', function() {
                         var num = index + 1;
@@ -135,7 +134,6 @@ var tools = (
                 var bool = false;
                 //鼠标指向的链接
                 var pre_url = $(this).attr("href").split("/");
-
                 if (pre_url[0] == "") {
                     pre_url.shift();
                 }
@@ -181,6 +179,17 @@ var tools = (
                 });
             });
         };
+        /*
+        全站禁用鼠标右键
+         */
+        module.Disable_Rightmouse_Button = function() {
+            $(document).ready(function() {
+                $(document).bind("contextmenu", function(e) {
+                    e.preventDefault();
+                    return false;
+                });
+            });
+        }
         return module;
     }
 )(window.tools || {});
@@ -280,8 +289,10 @@ $(function() {
     tools.bindConsultHref();
     //资源预加载
     //     tools.preReady();
-    //禁止盗图
+    //禁止盗案例图
     tools.anti_Stealing_Images();
+    //禁用鼠标右键
+    tools.Disable_Rightmouse_Button();
 });
 // 百度自动推送  17.11.25
 (function() {
@@ -300,3 +311,9 @@ $(function() {
     var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633" : "https://jspassport.ssl.qhimg.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633";
     document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
+
+// 分期框
+$(function(){
+    var $fqaa=$('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
+    $('body').append($fqaa);
+});
