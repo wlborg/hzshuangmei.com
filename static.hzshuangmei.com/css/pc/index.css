@@ -390,17 +390,14 @@ h3 img {
 .index_expert #tabCon3 p {
     position: relative;
     top: -56px;
-
-    width: 289px;
+    width: 290px;
     height: 53px;
-
     font-size: 20px;
     line-height: 53px;
-
     text-align: center;
-
     color: #551f7f;
     background-color: rgba(255, 255, 255, .502);
+    margin:0 auto;
 }
 
 .index_expert #tabCon3 li {
@@ -430,7 +427,7 @@ h3 img {
 }
 
 .index_clients #tab4 ul {
-    width: 382px;
+    width: 508px;
     margin: 24px auto 50px;
 }
 
@@ -810,7 +807,9 @@ h3 img {
             background-size: 43px 101px;
 }
 .index_expert .swiper-slide {
-    margin-right: 36px!important;
+    /*margin-right: 36px!important;*/
+    width: 305px;
+    text-align: center;
 }
 .index_environment .swiper-button-next5,
 .swiper-button-prev5 {
