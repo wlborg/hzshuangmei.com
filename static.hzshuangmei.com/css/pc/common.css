@@ -42,7 +42,7 @@ header .sm_logo img{display:inline-block;padding-top:7px;}
 #nav > ul > li > a span:last-child{font-size:12px;line-height:3.333;text-transform:uppercase;}
 #nav .bor_r{border-right:1px solid #360d57;}
 #nav .bor_l{border-left:1px solid #580d95;}
-#nav > ul > li #project{position:absolute;z-index:100;display:none;width:1200px;    /* margin-top: -1px; */height:510px;margin-left:-400px;border:1px solid #efebeb;background-color:#fff;}
+#nav > ul > li #project{position:absolute;z-index:100;display:none;width:1200px;    /* margin-top: -1px; */height:460px;margin-left:-400px;border:1px solid #efebeb;background-color:#fff;}
 #nav ul li:hover #project{display:block;}
 .currnet{font-weight:bold;background:#6a157d;}
 #nav > ul > li:hover{background:#6a157d;}
@@ -56,6 +56,7 @@ header .sm_logo img{display:inline-block;padding-top:7px;}
 nav ul li:hover #expert{display:block;}
 #expert ul{float:left;width:158px;margin-top:-2px;margin-right:22px;margin-left:23px;}
 .n_r{color:#ac0000;}
+#expert .moon a {  display: block;  width: 344px;  }
 #project ul li{padding-bottom:15px;}
 nav > ul > li ul li{text-align:center;}
 nav > ul > li ul li a p{font-size:12px;}
@@ -63,6 +64,7 @@ nav > ul > li #project > ul > li a p span{color:#000;}
 nav > ul > li #project > ul > li:nth-child(2) a p span{color:#ac0000;}
 nav > ul > li #project > ul > li:nth-child(2) a p i{display:inline-block;width:11px;height:11px;padding-right:5px;background:url(//img.hzshuangmei.com/pc/nav_star.png) no-repeat center;}
 nav > ul > li ul li h5{width:158px;height:23px;    /*padding-top: 28px;*/margin-top:28px;font-size:16px;font-weight:bold;line-height:15px;color:#666;border-bottom:2px solid rgba(206,206,206,.8);}
+nav > ul > li ul li h5 a {  display: block!important;  height: 18px!important;  }
 .n_button{width:60px;height:12px;margin:0 auto;margin-top:15px;    /*line-height: 12px;*/font-size:12px;border:1px solid #b992c2;background-color:rgb(106,21,125);}
 nav > ul > li ul .n_button a{width:61px;line-height:26px;color:#fff;    /*padding-top: 8px;*/}
 #expert ul li{width:187px;height:170px;padding-bottom:0;margin-top:-10px;margin-bottom:31px;border:1px solid #e7e7e7;}

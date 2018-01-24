@@ -1,0 +1,641 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.yinshen {
+    position: absolute;
+    width: 0.025rem;
+    height: 0.025rem;
+    padding: 0;
+    margin: -0.025rem;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.m1,.m2,.m3,.m4,.m5,.m6{
+    margin: auto;
+    font-size: 0;
+    width: 16.0rem;
+    position: relative;
+}
+.m1{
+    width: 16.0rem;
+    height:20.65rem;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/banner.jpg") no-repeat center;
+    background-size: 16.0rem 20.65rem;
+}
+.m2con{
+    padding-top: 0.025rem;
+    background-color: #d0ecfe;
+    width: 16.0rem;
+    height: 17.65rem;
+    margin: auto;
+}
+.m2tit{
+    margin:1.375rem auto 1.3rem;
+    display: block;
+    width: 12.475rem;
+}
+.m2con>span{
+    position: absolute;
+    top: 3.2rem;
+    left: 50%;
+ /*    width: 6.55rem; */
+    margin-left: -3.25rem;
+    height: 0.6rem;
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    color: #514c5b;
+
+}
+.buzhou{
+    width: 15.85rem;
+    margin: auto;
+}
+.buzhou>div{
+    border-radius: 1.4rem;
+    overflow: hidden;
+    display: inline-block;
+    width: 3.925rem;
+    margin-right:0.05rem;
+    height: 6.825rem;
+}
+.buzhou>.d1{
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m2img1.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.buzhou>.d2{
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m2img2.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.buzhou>.d3{
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m2img3.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.buzhou>.d4{
+    margin-right: 0;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m2img4.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.buzhou>div p:nth-child(1){
+    width: 1.25rem;
+    height: 1.25rem;
+    margin:0.75rem auto;
+    border-radius: 50%;
+    border: solid 0.05rem #c398f0;
+    line-height: 1.25rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #cd9bff;
+}
+.buzhou>div p:nth-child(2){
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #ffffff;
+}
+.buzhou>div p:nth-child(3){
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    color: #e1dff5;
+    margin:0.55rem auto 0;
+}
+.buzhou>.d1 p:nth-child(3){
+    width: 3.5rem;
+}
+.buzhou>.d2 p:nth-child(3){
+    width: 3.0rem;
+}
+.buzhou>.d3 p:nth-child(3){
+    width: 2.6rem;
+}
+.buzhou>.d4 p:nth-child(3){
+    width: 3.55rem;
+    font-size: 0.5rem;
+}
+.anniu1{
+    height: 4.25rem;
+    width: 13.3rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -6.65rem;
+    top: -3.3rem;
+}
+.anniu1 img{
+    width:13.3rem;
+}
+.anniu1 span:nth-child(1){
+    width: 9.5rem;
+    height: 0.95rem;
+    font-size: 0.95rem;
+    display: block;
+    line-height: 1.15rem;
+    margin:0 auto 0.125rem;
+    color: #535e66;
+}
+.anniu1 span:nth-child(3){
+    width: 4.8rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.175rem;
+    top: 1.85rem;
+    height: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.15rem;
+    color: #469fbd;
+}
+.m3{
+    height: 37.125rem;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m3bg.jpg") center no-repeat;
+    background-size: 16.0rem 37.125rem;
+}
+.m3con{
+    width: 16.0rem;
+    margin: auto;
+    padding-top: 0.025rem;
+}
+.m3con>span{
+    position: absolute;
+    width: 9.6rem;
+    left: 3.15rem;
+    top: 7.95rem;
+    height: 0.6rem;
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    color: #514c5b;
+}
+.m3tit{
+    width: 14.5rem;
+    display: block;
+    margin:3.375rem auto 0;
+}
+.m3page>div{
+    position: absolute;
+    width: 4.775rem;
+    height: 4.775rem;
+    border-radius:50%;
+}
+.m3page>.d1{
+    z-index: 2;
+    left: 6.575rem;
+    top: 10.0rem;
+    background-color: rgba(79, 110, 225, 0.8);
+}
+.m3page>.d2{
+    top: 11.575rem;
+    right: 0.85rem;
+    background-color: rgba(79, 159, 225, 0.8);
+}
+.m3page>.d3{
+    top: 14.9rem;
+    left: 5.9rem;
+    background-color: rgba(79, 159, 225, 0.8);
+}
+.m3page>.d4{
+    top: 17.0rem;
+    right: 1.875rem;
+    z-index: 2;
+    background-color: rgba(77, 126, 228, 0.8);
+}
+.m3page>.d5{
+    top: 20.95rem;
+    left: 6.0rem;
+    background-color: rgba(77, 126, 228, 0.8);
+}
+.m3page>.d6{
+    top: 21.625rem;
+    right : 0.45rem;
+    background-color: rgba(79, 159, 225, 0.88);
+}
+.m3page>div :nth-child(1){
+    text-align: center;
+    display:block;
+    margin:1.0rem auto 0.35rem;
+    height: 0.775rem;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    color: #ffffff;
+}
+.m3page>div :nth-child(2){
+
+    width: 4.225rem;
+    border-top: 0.025rem solid #4189c1;
+    border-bottom: 0.025rem solid #8fd4ff;
+    margin:0 auto 0.5rem;
+}
+.m3page>div :nth-child(3){
+    position: absolute;
+    left: 50%;
+    margin-left: -0.075rem;
+    top: 2.05rem;
+    width: 0.15rem;
+    height: 0.15rem;
+    background-color: #57a9e4;
+    border: solid 0.025rem #4686c8;
+    border-radius: 50%;
+}
+.m3page>div>p{
+    text-align: center;
+    font-size: 0.55rem;
+    line-height: 0.7rem;
+    color: #dde6fa;
+}
+.anniu2{
+    position: absolute;
+    top: 27.25rem;
+    right: 0;
+    width: 11.25rem;
+    height: 2.9rem;
+
+}
+.anniu2 img{
+    width: 11.25rem;
+}
+.anniu2 a :nth-child(1){
+    font-size: 0.55rem;
+    top: 0.45rem;
+    left: 2.5rem;
+    color: #000000;
+    position: absolute;
+    -webkit-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    transform: rotate(13deg);
+}
+.anniu2 a :nth-child(3){
+    top: 0.95rem;
+    -webkit-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    transform: rotate(13deg);
+    left: 4.9rem;
+    position: absolute;
+    font-size: 0.55rem;
+    color: #000000;
+}
+.m4{
+    width: 16.0rem;
+    background-color: #5e36b4;
+}
+.m4tit{
+    width: 11.85rem;
+    position: absolute;
+    top: -3.75rem;
+    left: 50%;
+    margin-left: -5.925rem;
+
+}
+.m4con>span{
+    position: absolute;
+    top: -1.45rem;
+    left: 6.75rem;
+    font-size: 0.7rem;
+    color: #cbc1e9;
+}
+.m4con{
+    padding-top: 0.025rem;
+}
+.m4con>div{
+    position: relative;
+    margin-top: 0.625rem;
+
+}
+.m4l{
+    width: 7.075rem;
+}
+.m4con .d1>span,.m4con .d3>span{
+    width: 4.2rem;
+    left: 1.1rem;
+    top: 0.2rem;
+}
+.m4con ul{
+    width: 15.8rem;
+    margin: auto;
+}
+.m4con ul::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.m4con li{
+    float: left;
+    position: relative;
+    margin-right: 0.1rem;
+    height: 7.55rem;
+    background-color: #562497;
+    margin-bottom: 0.5rem;
+}
+
+.m4con ul li:last-child{
+    margin-right: 0;
+}
+.m4con li img:nth-child(1),.m4con li{
+    width: 5.2rem;
+}
+.m4licon{
+    width: 5.2rem;
+    height: 2.875rem;
+    position: absolute;
+    text-align: center;
+    color: #e6dbe9;
+    bottom: 0.3rem;
+}
+.m4licon>h4{
+
+    height: 0.7rem;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    color: #ffffff;
+}
+.m4licon>div{
+    margin: 0.175rem auto 0.5rem;
+}
+.m4licon>div>span{
+    margin-right: 0.25rem;
+    font-size: 0.45rem;
+    line-height: 0.45rem;
+}
+.m4licon>div>span:last-child{
+    margin-right: 0;
+}
+.m4licon a{
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 3.5rem;
+    height: 0.625rem;
+    background-color:transparent;
+    border: solid 0.025rem #6aa6ae;
+}
+.m4licon a>img{
+    width: 0.425rem;
+    position: absolute;
+    top: 0.05rem;
+    right: 0.45rem;
+}
+.m4licon a>span{
+    text-align: left;
+    margin-left: -0.6rem;
+    font-size: 0.45rem;
+    color: #56e9fd;
+    line-height: 0.625rem;
+}
+.m4r{
+    width: 7.075rem;
+    margin-left:8.925rem;
+}
+.m4con>div>span{
+    font-size: 0.7rem;
+    position: absolute;
+    color: #1d2438;
+}
+.d2 .m4licon>div>span,.d3 .m4licon>div>span{
+    margin-right: 0.125rem;
+}
+.d2 .m4licon>div>span:last-child,.d3 .m4licon>div>span:last-child{
+    margin-right: 0;
+}
+
+.m4con .d2>span{
+    width: 5.0rem;
+    right: 0.5rem;
+    top: 0.2rem;
+}
+.m4con .d4>span{
+    width: 5.0rem;
+    right: 0.25rem;
+    top: 0.2rem;
+}
+.m5{
+    width: 16.0rem;
+    position: relative;
+    margin: auto;
+    background-color:#8080ff;
+}
+.m5con>img:first-child{
+    width: 16.0rem;
+    margin: auto;
+}
+.anniu3 a,.anniu3 a img{
+    display: block;
+    width: 11.05rem;
+    height: 3.75rem
+}
+.anniu3 a{
+    position: absolute;
+    top: 0.375rem;
+    left: 50%;
+    margin-left: -5.525rem;
+
+}
+.m5u11{
+    width: 15.55rem;
+    margin: 3.75rem auto 0.625rem;
+}
+.m5l1{
+    width: 15.55rem;
+    height: 4.25rem;
+    position: relative;
+    margin-bottom: 0.625rem;
+}
+.m5l1 img{
+    width: 4.15rem;
+}
+.m5l1 div{
+    position: absolute;
+    bottom:0;
+    right: 0.85rem;
+    width: 11.3rem;
+    height: 3.425rem;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m5q.png") center no-repeat;
+    background-size: 100% 100%;
+}
+.m5q p:first-child{
+    text-align: center;
+    margin: 0.2rem 0 0.125rem;
+    height: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: #502c9f;
+}
+.m5q p:last-child{
+    height: 0.7rem;
+    margin-left: 0.125rem;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    color: #392170;
+}
+.m5l2{
+    position: relative;
+    width: 15.55rem;
+    height: 5.75rem;
+    margin: auto;
+}
+.m5l2 div{
+    position: absolute;
+    margin-top: 0.1rem;
+    width: 12.625rem;
+    height: 5.65rem;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m5a1.png") center no-repeat;
+    background-size: 100% 100%;
+}
+.m5l2>img{
+    position: absolute;
+    width: 4.15rem;
+    top: -0.45rem;
+    right: -0.2rem;
+}
+.m5tit{
+    width: 13.125rem;
+    position: absolute;
+    top: 6.375rem;
+    left: 1.375rem;
+}
+.m5con>span{
+    position: absolute;
+    left: 4.3rem;
+    top: 8.875rem;
+    height: 0.65rem;
+    font-size: 0.65rem;
+    line-height: 0.65rem;
+    color: #2c2834;
+}
+.m5l2  div>p{
+    text-align: center;
+    font-size: 0.7rem;
+    margin-left: -0.875rem;
+    margin-top: 1.05rem;
+    line-height: 0.7rem;
+    color: #b9b8f5;
+}
+.m5l2 ul{
+    margin-top: 0.6rem;
+    margin-left: 0.65rem;
+}
+.m5l2 li{
+    font-size: 0.45rem;
+    line-height: 0.9rem;
+    color: #9898f7;
+}
+.m5l2>a{
+    position: absolute;
+    top: 3.025rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    right: 3.75rem;
+    width: 2.25rem;
+    height: 1.5rem;
+    font-size: 0.6rem;
+    color: #c6c6fe;
+    line-height: 0.6rem;
+    z-index: 2;
+}
+pre{
+    display: inline-block;
+}
+.m52l2 ul li{
+    width: 8.45rem;
+}
+.m52l2 ul li p{
+    margin-left: 2.75rem;
+}
+.m5l3{
+    position: relative;
+}
+.m5l3>div{
+    margin-left: 0.25rem;
+    background: url("//img.hzshuangmei.com/m/fqfk/images/m5a2.png") center no-repeat;
+    width: 12.2rem;
+    height: 3.55rem;
+    background-size: 100% 100%;
+}
+.m5l3>img{
+    position: absolute;
+    top: -0.55rem;
+    right: -0.125rem;
+    width: 4.15rem;
+}
+.d3 .m5q p:last-child{
+    margin-left: 0.625rem;
+}
+.m5l3 div p{
+    font-size: 0.7rem;
+    color: #9898f7;
+    margin-left: 1.25rem;
+}
+.m5l3 div p:first-child{
+    padding-top: 0.75rem;
+}
+.m5l3 a{
+    top:0.675rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    right: 5.275rem;
+    width: 2.25rem;
+    height: 1.5rem;
+    font-size: 0.6rem;
+    color: #c6c6fe;
+    line-height: 0.6rem;
+    z-index: 2;
+    position: absolute;
+}
+.d2 .m5u11,.d3 .m5u11{
+    margin-top: 1.05rem;
+}
+.d3 .m5u11{
+    margin-bottom: 0;
+}
+.m6img1{
+    width: 16.0rem;
+    height: 22.9rem;
+}
+.m6con>div{
+    width: 16.0rem;
+    height: 3.5rem;
+    background-color: #332259;
+    position: relative;
+}
+.anniu4{
+    width: 12.375rem;
+    position: absolute;
+    top: -0.625rem;
+    left: 2.25rem;
+}
+.anniu4 img{
+    width: 12.375rem;
+}
+     .anniu4 span{
+            position: absolute;
+            top: 1.425rem;
+            left: 2.65rem;
+            font-size: 0.85rem;
+            color: #000000;
+        }
+        .m6con>h3{
+            left: 1.0rem;
+            top: 13.0rem;
+            position: absolute;
+            height: 1.5rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: #282c35;
+        }
+        .m6con>p{
+            left: 1.0rem;
+            top: 14.75rem;
+            position: absolute;
+            height: 0.825rem;
+            font-size: 0.825rem;
+            line-height: 0.825rem;
+            color: #282c35;
+        }
