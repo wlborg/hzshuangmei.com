@@ -955,3 +955,100 @@ $relateproject= '   <div class="tjb_title3">
 }
 return $relateproject;
 }
+
+
+/*
+案例详情页右侧功能
+*/
+
+/*  与案例相关的热门项目
+  typeid 为当前案例文档所在栏目ID
+
+*/
+function hotProjectAboutCase($typeid)
+{
+global $dsql;
+//相关项目
+$relateproject="";
+//对应的项目栏目ID
+$relateprojecttypeid = 0;
+switch ($typeid)
+{
+case 35 :
+$relateprojecttypeid= 14;
+break;
+case 36 :
+$relateprojecttypeid=15 ;
+break;
+case 46:
+$relateprojecttypeid=  24;
+break;
+case 47:
+$relateprojecttypeid=  25;
+break;
+case 48:
+$relateprojecttypeid=  26;
+break;
+case 38 :
+$relateprojecttypeid= 17;
+break;
+case 39 :
+$relateprojecttypeid= 18;
+break;
+case  40 :
+$relateprojecttypeid= 19;
+break;
+case 41 :
+$relateprojecttypeid=20;
+break;
+case 49 :
+$relateprojecttypeid=27 ;
+break;
+case 50 :
+$relateprojecttypeid= 28;
+break;
+case 51 :
+$relateprojecttypeid= 29;
+break;
+case 52 :
+$relateprojecttypeid= 30;
+break;
+case 53 :
+$relateprojecttypeid=31 ;
+break;
+case  54 :
+$relateprojecttypeid= 32;
+break;
+case  55 :
+$relateprojecttypeid=33 ;
+break;
+case 43 :
+$relateprojecttypeid=22 ;
+break;
+case 44:
+$relateprojecttypeid=  23;
+break;
+case 45 :
+$relateprojecttypeid= 34 ;
+break;
+default:
+$relateprojecttypeid= 14 ;
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relateprojecttypeid' order by rand() limit 5 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic = replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'" class="swiper-slide"><img src="'.$litpic.'" alt="'.$title.'">
+ <div class="timu">'.$title.'</div>
+</a>';
+}
+
+return $relateproject;
+}
