@@ -56,6 +56,7 @@ header .sm_logo img{display:inline-block;padding-top:7px;}
 nav ul li:hover #expert{display:block;}
 #expert ul{float:left;width:158px;margin-top:-2px;margin-right:22px;margin-left:23px;}
 .n_r{color:#ac0000;}
+#expert .moon a {  display: block;  width: 344px;  }
 #project ul li{padding-bottom:15px;}
 nav > ul > li ul li{text-align:center;}
 nav > ul > li ul li a p{font-size:12px;}
