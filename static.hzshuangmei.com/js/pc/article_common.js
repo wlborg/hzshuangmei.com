@@ -2,7 +2,8 @@ var aside_swiper = new Swiper('.aside_swiper', {
     pagination: '.aside-pagination',
     slidesPerView: 1,
     paginationClickable: true,
-    spaceBetween: 30,
+    //spaceBetween: 30,
+    autoplay:5000,
     keyboardControl: true
 });
 //baidu share
