@@ -135,7 +135,13 @@ body #div23 { left: 1.75rem !important; top: 11.85rem !important; width: 4.75rem
 #div23 { left: 0.88rem !important; top: 5.92rem !important; width: 2.38rem !important; height: 0.57rem !important; line-height: 0 !important; } */
 
 /*系统快商通样式更改 图片尺寸600px*/
-#_ks_ol_inviteWin {  margin-top: -7.16rem !important; margin-left: -7.5rem !important; }
+/* #_ks_ol_inviteWin {  margin-top: -7.16rem !important; margin-left: -7.5rem !important; }
 #divbg { width: 15rem !important; height: 14.34rem !important;background-size: 100%; }
 #div19 { left: 7.2rem !important; top: 11.44rem !important; width: 6.5rem !important; height: 2rem !important; line-height: 1.3rem !important; font-size: 0.9rem !important; }
 #div23 { left: 1.76rem !important; top: 11.84rem !important; width: 4.76rem !important; height: 1.14rem !important; line-height: 0 !important; }
+ */
+/*系统快商通样式更改 图片尺寸520px*/
+#_ks_ol_inviteWin {  margin-top: -6.21rem !important; margin-left: -6.5rem !important; }
+#divbg { width: 13rem !important; height: 12.43rem !important;background-size: 100%; }
+#div19 { left: 6.24rem !important; top: 9.91rem !important; width: 5.63rem !important; height: 1.73rem !important; line-height: 1.13rem !important; font-size: 0.78rem !important; }
+#div23 { left: 1.53rem !important; top: 10.26rem !important; width: 4.13rem !important; height: 0.99rem !important; line-height: 0 !important; }
