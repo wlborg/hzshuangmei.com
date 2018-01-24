@@ -610,11 +610,30 @@ pre{
 .anniu4 img{
     width: 12.375rem;
 }
-.anniu4 span{
-    position: absolute;
-    top: 1.425rem;
-    left: 2.65rem;
-    font-size: 8.5rem
-    ;
-    color: #000000;
-}
+     .anniu4 span{
+            position: absolute;
+            top: 1.425rem;
+            left: 2.65rem;
+            font-size: 0.85rem;
+            color: #000000;
+        }
+        .m6con>h3{
+            left: 1.0rem;
+            top: 13.0rem;
+            position: absolute;
+            width: 7.55rem;
+            height: 1.5rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: #282c35;
+        }
+        .m6con>p{
+            left: 1.0rem;
+            top: 14.75rem;
+            position: absolute;
+            width: 7.425rem;
+            height: 0.825rem;
+            font-size: 0.825rem;
+            line-height: 0.825rem;
+            color: #282c35;
+        }
