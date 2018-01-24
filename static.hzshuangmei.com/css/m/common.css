@@ -138,3 +138,27 @@ body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-latest-call,body #LXB_CONTAIN
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-tip,body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-tip{width:96%;top:2.5rem;left:2%;display:block;}
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-tip-content,body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-tip-content{color:#2d85d5;font-size:0.6rem;line-height:0.7rem;}
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-feedback,body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback{width:96%;top:2.5rem;left:2%;display:block;}
+
+/* 修复移动端快商通弹窗大小 */
+body #_ks_ol_inviteWin{
+    margin-top: -7.15rem;
+    margin-left: -7.5rem;
+}
+body #divbg{
+    width: 15rem;
+    height: 14.35rem;
+}
+body #div19{
+    left: 7.2rem;
+    top: 11.45rem;
+    width: 6.5rem;
+    height: 1.9rem;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+body #div23{
+    left: 1.75rem;
+    top: 11.85rem;
+    width: 4.75rem;
+    height: 1.15rem;
+}
