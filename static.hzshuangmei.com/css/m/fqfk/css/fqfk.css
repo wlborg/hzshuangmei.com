@@ -134,12 +134,13 @@ a:hover{
     width:13.3rem;
 }
 .anniu1 span:nth-child(1){
-    /*width: 9.5rem;*/
+    width: 10rem;
+    text-align: center;
     height: 0.95rem;
     font-size: 0.95rem;
     display: block;
     line-height: 1.15rem;
-    margin:0 auto 0.125rem;
+    margin: 0 auto 0.125rem;
     color: #535e66;
 }
 .anniu1 span:nth-child(3){
