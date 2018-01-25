@@ -172,17 +172,17 @@ $indicators.='<li data-target="#slidecase" data-slide-to="'.$counter.'" class="a
 $list.= '
 <div class="item active" >
   <div class="left">
-    <p class="name"><a href=" '.$url.' ">'.$title.'</a></p>
+    <p class="name"><a href=" '.$url.' " target="_blank">'.$title.'</a></p>
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <p class="info">术前</p>
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
@@ -193,17 +193,17 @@ $indicators.='<li data-target="#slidecase" data-slide-to="'.$counter.'" ></li>' 
 $list.= '
 <div class="item " >
   <div class="left">
-    <p class="name"><a href=" '.$url.' ">'.$title.'</a></p>
+    <p class="name"><a href=" '.$url.' " target="_blank">'.$title.'</a></p>
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <p class="info">术前</p>
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
@@ -255,13 +255,13 @@ $list.= '
 <div class="item active" >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <div class="flag">
         术前
       </div>
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="术后"></a>
       <div class="flag">
         术后
       </div>
@@ -270,7 +270,7 @@ $list.= '
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="'.$url.'" target="_blank"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -281,13 +281,13 @@ $list.= '
 <div class="item " >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <div class="flag">
         术前
       </div>
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="术后"></a>
       <div class="flag">
         术后
       </div>
@@ -296,7 +296,7 @@ $list.= '
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="'.$url.'" target="_blank"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -403,24 +403,24 @@ if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }else{
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
 $list.= '
 <div class="item zhuanjia-item">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }
@@ -516,7 +516,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= ' <div class="imgbox">
@@ -571,20 +571,20 @@ $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
 $list.= '<li>
-              <a href="'.$url.'" class="tbj_t">
+              <a href="'.$url.'" class="tbj_t" target="_blank">
                   <img src="'.$imgafter.'" alt="术后"/>
               </a>
               <div class="tbj_b">
-                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
-                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <a href="'.$url.'" class="tbj_b_img" target="_blank"><img src="'.$imgbefore.'" alt="术前"/></a>
+                  <p class="p1 tbj_b_p1">【 速美项目 】</p>
                   <p class="p2">'.$project.'</p>
-                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+                  <a href="'.$url.'" class="tjb_video" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt="整形案例视频"/></a>
               </div>
               </li>';
 }
 if($ns>0){
 $relatecase.= '  <div class="tjb_title1">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt="相关日记"/>
         </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
@@ -630,11 +630,11 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt="相关项目"/>
         </div> <div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
 </div>        </div>
@@ -736,20 +736,20 @@ $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
 $list.= '<li>
-              <a href="'.$url.'" class="tbj_t">
+              <a href="'.$url.'" class="tbj_t" target="_blank">
                   <img src="'.$imgafter.'" alt="术后"/>
               </a>
               <div class="tbj_b">
-                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
-                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <a href="'.$url.'" class="tbj_b_img" target="_blank"><img src="'.$imgbefore.'" alt="术前"/></a>
+                     <p class="p1 tbj_b_p1">【 速美项目 】</p>
                   <p class="p2">'.$project.'</p>
-                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+                  <a href="'.$url.'" class="tjb_video" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt="整形案例视频"/></a>
               </div>
               </li>';
 }
 if($ns>0){
 $relatecase.= '   <div class="tjb_title1">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt="相关日记"/>
         </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
@@ -858,22 +858,22 @@ $zhiwei = $row["zhiwei"];
 //医生擅长项目
 $shanchang = $row["shanchang"];
 $list.= '<li class="clearFix">
-                <a href="'.$url.'" class="tjb_l"><img src="'.$thumb.'" alt=""/></a>
+                <a href="'.$url.'" class="tjb_l" target="_blank"><img src="'.$thumb.'" alt="'.$title.'"/></a>
                 <div class="tjb_r">
-                    <p class="p3"><a href="'.$url.'" class="tjb_name">'.$title.'</a></p>
-                    <p class="p4"><a href="'.$url.'">'.$zhiwei.'</a></p>
+                    <p class="p3"><a href="'.$url.'" class="tjb_name" target="_blank">'.$title.'</a></p>
+                    <p class="p4"><a href="'.$url.'" target="_blank">'.$zhiwei.'</a></p>
                     <div class="tjb_sc clearFix">
                         <p>擅长项目：</p>
                         <p>'.$shanchang.' </p>
                     </div>
                     <div class="tjb_button">
-                        <a href="'.$url.'"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt=""/></a>
+                        <a href="'.$url.'" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt="点击咨询"/></a>
                     </div>
                 </div></li>';
 }
 if($ns>0){
 $relatedoctor.= ' <div class="tjb_title2">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt="推荐专家"/>
         </div><ul class="tjb_zj clearFix"> '
     . $list
   .'</ul>';
@@ -919,11 +919,11 @@ $url = $urlarray['arcurl'];
 //缩略图处理
 $litpic = replaceurl($row["litpic"]);
 //项目项目处理
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt="相关项目"/>
         </div><div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
 </div>         </div>
@@ -1017,7 +1017,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'" class="swiper-slide"><img src="'.$litpic.'" alt="'.$title.'">
+$relateproject.='<a href="'.$url.'" class="swiper-slide" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"/>
  <div class="timu">'.$title.'</div>
 </a>';
 }
