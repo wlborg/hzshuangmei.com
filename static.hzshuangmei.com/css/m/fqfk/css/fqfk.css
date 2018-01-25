@@ -134,7 +134,7 @@ a:hover{
     width:13.3rem;
 }
 .anniu1 span:nth-child(1){
-    width: 9.5rem;
+    /*width: 9.5rem;*/
     height: 0.95rem;
     font-size: 0.95rem;
     display: block;
