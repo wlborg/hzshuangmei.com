@@ -1106,7 +1106,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"/></a>';
+$relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'" width="281" height="193"/></a>';
 }
 return $relatedoctor;
 }
