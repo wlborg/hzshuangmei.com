@@ -122,8 +122,8 @@ body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-latest-call, body #LXB_CONTAI
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-tip, body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-tip { width: 96%; top: 2.5rem; left: 2%; display: block; }
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-tip-content, body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-tip-content { color: #2d85d5; font-size: 0.6rem; line-height: 0.7rem; }
 body #LXB_CONTAINER.lxb-container-mobile-3 .lxb-cb-input-feedback, body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback { width: 96%; top: 2.5rem; left: 2%; display: block; }
-/* 修复移动端快商通弹窗大小 */
-/* body #_ks_ol_inviteWin { margin-top: -7.15rem !important; margin-left: -7.5rem !important; }
-body #divbg { width: 15rem !important; height: 14.35rem !important; background-image: none !important; background: url(https://img.hzshuangmei.com/m/swt/sj_swt.png) no-repeat; background-size: 100%; }
-body #div19 { left: 7.2rem !important; top: 11.45rem !important; width: 6.5rem !important; height: 1.9rem !important; line-height: 1.3rem !important; font-size: 0.9rem !important; }
-body #div23 { left: 1.75rem !important; top: 11.85rem !important; width: 4.75rem !important; height: 1.15rem !important; } */
+/*系统快商通样式更改 图片尺寸520px*/
+#_ks_ol_inviteWin {  margin-top: -6.21rem !important; margin-left: -6.5rem !important; }
+#divbg { width: 13rem !important; height: 12.43rem !important;background-size: 100%; }
+#div19 { left: 6.24rem !important; top: 9.91rem !important; width: 5.63rem !important; height: 1.73rem !important; line-height: 1.13rem !important; font-size: 0.78rem !important; }
+#div23 { left: 1.53rem !important; top: 10.26rem !important; width: 4.13rem !important; height: 0.99rem !important; line-height: 0 !important; }

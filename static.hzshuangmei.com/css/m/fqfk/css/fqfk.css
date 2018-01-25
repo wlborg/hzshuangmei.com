@@ -27,6 +27,7 @@ a:hover{
     position: relative;
 }
 .m1{
+    margin-top: -0.025rem;
     width: 16.0rem;
     height:20.65rem;
     background: url("//img.hzshuangmei.com/m/fqfk/images/banner.jpg") no-repeat center;
@@ -63,6 +64,7 @@ a:hover{
 .buzhou>div{
     border-radius: 1.4rem;
     overflow: hidden;
+    vertical-align: top;
     display: inline-block;
     width: 3.925rem;
     margin-right:0.05rem;
@@ -134,21 +136,22 @@ a:hover{
     width:13.3rem;
 }
 .anniu1 span:nth-child(1){
-    width: 9.5rem;
+    width: 10rem;
+    text-align: center;
     height: 0.95rem;
     font-size: 0.95rem;
     display: block;
     line-height: 1.15rem;
-    margin:0 auto 0.125rem;
+    margin: 0 auto 0.125rem;
     color: #535e66;
 }
 .anniu1 span:nth-child(3){
-    width: 4.8rem;
+    /*width: 4.8rem;*/
     position: absolute;
     left: 50%;
     margin-left: -2.175rem;
     top: 1.85rem;
-    height: 0.8rem;
+    /*height: 0.8rem;*/
     font-size: 0.8rem;
     line-height: 1.15rem;
     color: #469fbd;
@@ -229,7 +232,7 @@ a:hover{
 
     width: 4.225rem;
     border-top: 0.025rem solid #4189c1;
-    border-bottom: 0.025rem solid #8fd4ff;
+    border-bottom: 0.025rem solid #59aee9;
     margin:0 auto 0.5rem;
 }
 .m3page>div :nth-child(3){
@@ -245,7 +248,7 @@ a:hover{
 }
 .m3page>div>p{
     text-align: center;
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     line-height: 0.7rem;
     color: #dde6fa;
 }
@@ -522,7 +525,7 @@ a:hover{
 }
 .m5l2 li{
     font-size: 0.45rem;
-    line-height: 0.9rem;
+    line-height: 0.7rem;
     color: #9898f7;
 }
 .m5l2>a{
