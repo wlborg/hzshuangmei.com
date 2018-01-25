@@ -6,16 +6,12 @@ global $lit_imglist,$dsql;
 $row = $dsql->GetOne("SELECT c.addtable FROM #@__archives AS a LEFT JOIN #@__channeltype AS c
 ON a.channel=c.id where a.id='$imgid'");
 $addtable = trim($row['addtable']);
-
 //获取图片附加表imgurls字段内容进行处理
 $row = $dsql->GetOne("Select imgurls From `$addtable` where aid='$imgid'");
-
 //调用inc_channel_unit.php中ChannelUnit类
 $ChannelUnit = new ChannelUnit(2,$imgid);
-
 //调用ChannelUnit类中GetlitImgLinks方法处理缩略图
 $lit_imglist = $ChannelUnit->GetlitImgLinks($row['imgurls']);
-
 //返回结果
 return $lit_imglist;
 }
@@ -47,7 +43,6 @@ return $zhiwei;
 function getdoctorshanchang($id)
 {
 global $shanchang,$dsql;
-
 $row = $dsql->GetOne("SELECT a.shanchang FROM #@__addondoctors AS a
 where a.aid='$id'");
 $shanchang=replaceurl($row['shanchang']);
@@ -57,7 +52,6 @@ return $shanchang;
 function getcaseimgafter($id)
 {
 global $imgafter,$dsql;
-
 $row = $dsql->GetOne("SELECT a.imgafter FROM #@__addoncase AS a
 where a.aid='$id'");
 $imgafter=replaceurl($row['imgafter']);
@@ -67,7 +61,6 @@ return $imgafter;
 function getcaseimgbefore($id)
 {
 global $imgbefore,$dsql;
-
 $row = $dsql->GetOne("SELECT a.imgbefore FROM #@__addoncase AS a
 where a.aid='$id'");
 $imgbefore=replaceurl($row['imgbefore']);
@@ -77,7 +70,6 @@ return $imgbefore;
 function getcasenote($id)
 {
 global $note,$dsql;
-
 $row = $dsql->GetOne("SELECT a.note FROM #@__addoncase AS a
 where a.aid='$id'");
 $note=$row['note'];
@@ -87,13 +79,11 @@ return $note;
 function getcaseproject($id)
 {
 global $project,$dsql;
-
 $row = $dsql->GetOne("SELECT a.project FROM #@__addoncase AS a
 where a.aid='$id'");
 $project=$row['project'];
 return $project;
 }
-
 function getProjectListRelateCase($typeid)
 {
 global $dsql;
@@ -221,7 +211,6 @@ $list.= '
 </div>';
 }
 $counter=$counter+1;
-
 }
 if($ns>0){
 $relatecase.= '<div id="slidecase" class="carousel slide" data-ride="carousel">
@@ -233,7 +222,6 @@ $relatecase.= '<div id="slidecase" class="carousel slide" data-ride="carousel">
   .'</div>
 </div>';
 }
-
 return $relatecase;
 }
 function getCaseArticleRelateCase($id)
@@ -411,7 +399,6 @@ $url = $urlarray['arcurl'];
 $thumb = replaceurl($row["thumb"]);
 $zhiwei = $row["zhiwei"];
 $shanchang = $row["shanchang"];
-
 if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
@@ -536,10 +523,8 @@ $relateproject= ' <div class="imgbox">
   '.$relateproject.'
 </div> ';
 }
-
 return $relateproject;
 }
-
 /**
 *  获取医生相关的案例信息
 *  根据当前医生专题所属的栏目ID，获取相关的案例信息
@@ -597,7 +582,6 @@ $list.= '<li>
               </div>
               </li>';
 }
-
 if($ns>0){
 $relatecase.= '  <div class="tjb_title1">
             <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
@@ -607,7 +591,6 @@ $relatecase.= '  <div class="tjb_title1">
 }
 return $relatecase;
 }
-
 /**
 *  获取医生相关的项目信息
 *  根据当前医生专题所属的栏目ID，获取相关的项目信息
@@ -659,13 +642,11 @@ $relateproject= '   <div class="tjb_title3">
 }
 return $relateproject;
 }
-
 /**
 *  获取项目专题页相关案例信息
 *  根据当前项目专题所属的栏目ID，获取相关的案例
 * @param     $typeid     项目所在栏目ID
 */
-
 function getProjectArticleRelateCase($typeid)
 {
 global $dsql;
@@ -766,7 +747,6 @@ $list.= '<li>
               </div>
               </li>';
 }
-
 if($ns>0){
 $relatecase.= '   <div class="tjb_title1">
             <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
@@ -776,13 +756,11 @@ $relatecase.= '   <div class="tjb_title1">
 }
 return $relatecase;
 }
-
 /**
 *  获取项目专题页相关医生信息
 *  根据当前项目专题所属的栏目ID，获取相关的医生
 * @param     $typeid     项目所在栏目ID
 */
-
 function getProjectArticleRelateDoctor($typeid)
 {
 global $dsql;
@@ -879,7 +857,6 @@ $thumb = replaceurl($row["thumb"]);
 $zhiwei = $row["zhiwei"];
 //医生擅长项目
 $shanchang = $row["shanchang"];
-
 $list.= '<li class="clearFix">
                 <a href="'.$url.'" class="tjb_l"><img src="'.$thumb.'" alt=""/></a>
                 <div class="tjb_r">
@@ -903,7 +880,6 @@ $relatedoctor.= ' <div class="tjb_title2">
 }
 return $relatedoctor;
 }
-
 /**
 *  获取项目专题页相关项目
 *  根据当前项目专题的ID，获取相关的项目
@@ -955,15 +931,11 @@ $relateproject= '   <div class="tjb_title3">
 }
 return $relateproject;
 }
-
-
 /*
 案例详情页右侧功能
 */
-
 /*  与案例相关的热门项目
   typeid 为当前案例文档所在栏目ID
-
 */
 function hotProjectAboutCase($typeid)
 {
@@ -1049,6 +1021,92 @@ $relateproject.='<a href="'.$url.'" class="swiper-slide"><img src="'.$litpic.'" 
  <div class="timu">'.$title.'</div>
 </a>';
 }
-
 return $relateproject;
+}
+/*
+获取案例对应的推荐专家
+  $typeid  为当前案例日记所属的日记栏目ID
+*/
+function commendDoctorsAboutCase ($typeid){
+  global $dsql;
+$relatedoctortypeid="";
+$relatedoctor = "";
+// 判断当前日记文档案例属于哪种类型
+// 并根据类型设置对应的调取专家类型
+switch ($typeid)
+{
+case 35 :
+$relatedoctortypeid= 3;
+break;
+case 36 :
+$relatedoctortypeid=3 ;
+break;
+case 46:
+$relatedoctortypeid= 3;
+break;
+case 47:
+$relatedoctortypeid=  3;
+break;
+case 48:
+$relatedoctortypeid=  3;
+break;
+case 38 :
+$relatedoctortypeid= 3;
+break;
+case 39 :
+$relatedoctortypeid= 3;
+break;
+case  40 :
+$relatedoctortypeid= 3;
+break;
+case 41 :
+$relatedoctortypeid=5;
+break;
+case 49 :
+$relatedoctortypeid=4 ;
+break;
+case 50 :
+$relatedoctortypeid= 4;
+break;
+case 51 :
+$relatedoctortypeid= 4;
+break;
+case 52 :
+$relatedoctortypeid= 4;
+break;
+case 53 :
+$relatedoctortypeid=4 ;
+break;
+case  54 :
+$relatedoctortypeid= 4;
+break;
+case  55 :
+$relatedoctortypeid=4 ;
+break;
+case 43 :
+$relatedoctortypeid=3;
+break;
+case 44:
+$relatedoctortypeid=3;
+break;
+case 45 :
+$relatedoctortypeid= 3 ;
+break;
+default:
+$relatedoctortypeid= 3 ;
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
+where a.id =b.aid and a.typeid='$relatedoctortypeid'  and b.aid  <> '36' order by rand() limit 2 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'" width="281" height="193"/></a>';
+}
+return $relatedoctor;
 }
