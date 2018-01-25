@@ -236,7 +236,8 @@ a:hover{
 .m3page>div :nth-child(1){
     margin: 56px auto 13px;
     display: block;
-    width: 108px;
+    width: 120px;
+    text-align: center;
     height: 36px;
     font-size: 36px;
     line-height: 35px;
@@ -319,7 +320,6 @@ a:hover{
     left: 50%;
     margin-left: -60px;
     top:-72px;
-    width: 105px;
     line-height: 35px;
     height: 35px;
     font-size: 35px;
@@ -606,7 +606,7 @@ a:hover{
     background: url(//img.hzshuangmei.com/pc/fqfk/images/qa4.png) no-repeat center
 }
 .qaqcon>p:nth-child(1){
-    width: 480px;
+    width: 500px;
     height: 32px;
     font-size: 32px;
     line-height: 32px;
@@ -664,7 +664,7 @@ a:hover{
     margin: auto;
 }
 .m6con>h3{
-    width: 375px;
+    /*width: 375px;*/
     height: 75px;
     font-size: 75px;
     line-height: 75px;
