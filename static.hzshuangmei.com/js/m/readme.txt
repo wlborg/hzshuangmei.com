@@ -4,5 +4,6 @@ mobile-util.js:  双美手机站，专题rem工具脚本，在专题中引用
 
 MSClass.js    : pc端可用的 幻灯片插件
 
+hammer.min.js: 双美手机站，手势控制库
 
 专题js文件按专题名称新建文件后，存放到对应的文件夹中
