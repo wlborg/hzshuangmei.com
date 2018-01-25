@@ -146,7 +146,7 @@ $(function() {
     var slide3 = new XZSlide({
         cover: $(".m6 .slideW"),
         container: $(".m6 .slideC"),
-        itemCount: 2,
+        itemCount: 3,
         // itemWidth:640,
         resp:true,
         speed: 300,
