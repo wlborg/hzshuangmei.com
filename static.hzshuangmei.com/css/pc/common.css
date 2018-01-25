@@ -48,7 +48,7 @@ header .sm_logo img{display:inline-block;padding-top:7px;}
 #nav > ul > li:hover{background:#6a157d;}
 #project ul{float:left;width:158px;margin-top:-2px;margin-left:12px;}
 #project img{width:152px;height:86px;padding:1px;border:1px solid #e7e7e7;}
-#expert{position:absolute;z-index:100;display:none;width:1200px;height:460px;margin:0 auto 0;margin-left:-600px;background-color:#fff;}
+#expert{position:absolute; border: 1px solid #efebeb;z-index:100;display:none;width:1200px;height:460px;margin:0 auto 0;margin-left:-600px;background-color:#fff;}
 #expert a{width:188px;height:169px;overflow:hidden;}
 #expert .last-one{width:342px;height:362px;}
 #expert img{width:98%;padding:1px;}
