@@ -81,12 +81,12 @@ body {
 }
 
 .banner {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/banner.jpg) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/banner.jpg) center top no-repeat;
     height: 700px
 }
 
 .m1, .m3, .m6 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg.jpg) left top
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg.jpg) left top
 }
 
 .m2 .g-doc, .m4 .g-doc, .m5 .g-doc {
@@ -94,11 +94,11 @@ body {
 }
 
 .m2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg2.jpg) center bottom no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg2.jpg) center bottom no-repeat
 }
 
 .m2 h2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt2.jpg) center 40px no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt2.jpg) center 40px no-repeat;
     height: 166px;
     width: 698px
 }
@@ -109,53 +109,53 @@ body {
 }
 
 .m2 .next {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_next1.jpg) center top no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_next1.jpg) center top no-repeat
 }
 
 .m2 .prev {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_prev1.jpg) center top no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_prev1.jpg) center top no-repeat
 }
 
 .m2 .row2 span {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_get.jpg) center bottom no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_get.jpg) center bottom no-repeat;
     width: 66px
 }
 
 .m2 .slideW:hover .next {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_next2.jpg) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_next2.jpg) center top no-repeat;
     height: 50px;
     width: 50px
 }
 
 .m2 .slideW:hover .prev {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_prev2.jpg) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_prev2.jpg) center top no-repeat;
     height: 50px;
     width: 50px
 }
 
 .m3 h2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt3.jpg) center 40px no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt3.jpg) center 40px no-repeat;
     height: 105px;
     width: 925px
 }
 
 .m3 .content {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg3_circle.jpg) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg3_circle.jpg) center top no-repeat;
     height: 516px
 }
 
 .m1 h2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt4.jpg) center 40px no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt4.jpg) center 40px no-repeat;
     height: 172px;
     width: 844px
 }
 
 .m5 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg4.jpg) center bottom no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg4.jpg) center bottom no-repeat
 }
 
 .m5 h2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt5.jpg) center 40px no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt5.jpg) center 40px no-repeat;
     height: 105px;
     width: 831px
 }
@@ -166,15 +166,15 @@ body {
 }
 
 .m5 .next {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_next3.jpg) center top no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_next3.jpg) center top no-repeat
 }
 
 .m5 .prev {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_prev3.jpg) center top no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_prev3.jpg) center top no-repeat
 }
 
 .m6 h2 {
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt6.jpg) center 40px no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt6.jpg) center 40px no-repeat;
     height: 167px;
     width: 626px
 }
@@ -198,14 +198,14 @@ body {
 .jiantou::before {
     top: 0;
     left: 0;
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt_tl.png) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt_tl.png) center top no-repeat;
     width: 142px
 }
 
 .jiantou::after {
     right: 0;
     bottom: 0;
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bgt_br.png) center top no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bgt_br.png) center top no-repeat;
     width: 143px
 }
 
@@ -630,13 +630,13 @@ body {
     display: inline-block;
     padding-left: 10px;
     font-size: 18px;
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_line.jpg) left center no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_line.jpg) left center no-repeat
 }
 
 .m6 .item li {
     font-size: 18px;
     color: #4d4d4d;
-    background: url(//img.hzshuangmei.com/pc/bnsbgc/images/bg_item.jpg) left 18px no-repeat
+    background: url(//img.hzshuangmei.com/pc/bnsbcg/images/bg_item.jpg) left 18px no-repeat
 }
 
 .m6 h4 {
