@@ -6,16 +6,12 @@ global $lit_imglist,$dsql;
 $row = $dsql->GetOne("SELECT c.addtable FROM #@__archives AS a LEFT JOIN #@__channeltype AS c
 ON a.channel=c.id where a.id='$imgid'");
 $addtable = trim($row['addtable']);
-
 //获取图片附加表imgurls字段内容进行处理
 $row = $dsql->GetOne("Select imgurls From `$addtable` where aid='$imgid'");
-
 //调用inc_channel_unit.php中ChannelUnit类
 $ChannelUnit = new ChannelUnit(2,$imgid);
-
 //调用ChannelUnit类中GetlitImgLinks方法处理缩略图
 $lit_imglist = $ChannelUnit->GetlitImgLinks($row['imgurls']);
-
 //返回结果
 return $lit_imglist;
 }
@@ -47,7 +43,6 @@ return $zhiwei;
 function getdoctorshanchang($id)
 {
 global $shanchang,$dsql;
-
 $row = $dsql->GetOne("SELECT a.shanchang FROM #@__addondoctors AS a
 where a.aid='$id'");
 $shanchang=replaceurl($row['shanchang']);
@@ -57,7 +52,6 @@ return $shanchang;
 function getcaseimgafter($id)
 {
 global $imgafter,$dsql;
-
 $row = $dsql->GetOne("SELECT a.imgafter FROM #@__addoncase AS a
 where a.aid='$id'");
 $imgafter=replaceurl($row['imgafter']);
@@ -67,7 +61,6 @@ return $imgafter;
 function getcaseimgbefore($id)
 {
 global $imgbefore,$dsql;
-
 $row = $dsql->GetOne("SELECT a.imgbefore FROM #@__addoncase AS a
 where a.aid='$id'");
 $imgbefore=replaceurl($row['imgbefore']);
@@ -77,7 +70,6 @@ return $imgbefore;
 function getcasenote($id)
 {
 global $note,$dsql;
-
 $row = $dsql->GetOne("SELECT a.note FROM #@__addoncase AS a
 where a.aid='$id'");
 $note=$row['note'];
@@ -87,13 +79,11 @@ return $note;
 function getcaseproject($id)
 {
 global $project,$dsql;
-
 $row = $dsql->GetOne("SELECT a.project FROM #@__addoncase AS a
 where a.aid='$id'");
 $project=$row['project'];
 return $project;
 }
-
 function getProjectListRelateCase($typeid)
 {
 global $dsql;
@@ -182,17 +172,17 @@ $indicators.='<li data-target="#slidecase" data-slide-to="'.$counter.'" class="a
 $list.= '
 <div class="item active" >
   <div class="left">
-    <p class="name"><a href=" '.$url.' ">'.$title.'</a></p>
+    <p class="name"><a href=" '.$url.' " target="_blank">'.$title.'</a></p>
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <p class="info">术前</p>
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
@@ -203,17 +193,17 @@ $indicators.='<li data-target="#slidecase" data-slide-to="'.$counter.'" ></li>' 
 $list.= '
 <div class="item " >
   <div class="left">
-    <p class="name"><a href=" '.$url.' ">'.$title.'</a></p>
+    <p class="name"><a href=" '.$url.' " target="_blank">'.$title.'</a></p>
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <p class="info">术前</p>
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="'.$title.'"></a>
       <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
@@ -221,7 +211,6 @@ $list.= '
 </div>';
 }
 $counter=$counter+1;
-
 }
 if($ns>0){
 $relatecase.= '<div id="slidecase" class="carousel slide" data-ride="carousel">
@@ -233,7 +222,6 @@ $relatecase.= '<div id="slidecase" class="carousel slide" data-ride="carousel">
   .'</div>
 </div>';
 }
-
 return $relatecase;
 }
 function getCaseArticleRelateCase($id)
@@ -267,13 +255,13 @@ $list.= '
 <div class="item active" >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <div class="flag">
         术前
       </div>
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="术后"></a>
       <div class="flag">
         术后
       </div>
@@ -282,7 +270,7 @@ $list.= '
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="'.$url.'" target="_blank"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -293,13 +281,13 @@ $list.= '
 <div class="item " >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgbefore.'" alt="术前"></a>
       <div class="flag">
         术前
       </div>
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
+      <a href="'.$url.'" target="_blank"><img src="'.$imgafter.'" alt="术后"></a>
       <div class="flag">
         术后
       </div>
@@ -308,7 +296,7 @@ $list.= '
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="'.$url.'" target="_blank"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -411,29 +399,28 @@ $url = $urlarray['arcurl'];
 $thumb = replaceurl($row["thumb"]);
 $zhiwei = $row["zhiwei"];
 $shanchang = $row["shanchang"];
-
 if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }else{
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
 $list.= '
 <div class="item zhuanjia-item">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }
@@ -529,17 +516,15 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= ' <div class="imgbox">
   '.$relateproject.'
 </div> ';
 }
-
 return $relateproject;
 }
-
 /**
 *  获取医生相关的案例信息
 *  根据当前医生专题所属的栏目ID，获取相关的案例信息
@@ -586,28 +571,26 @@ $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
 $list.= '<li>
-              <a href="'.$url.'" class="tbj_t">
+              <a href="'.$url.'" class="tbj_t" target="_blank">
                   <img src="'.$imgafter.'" alt="术后"/>
               </a>
               <div class="tbj_b">
-                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
-                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <a href="'.$url.'" class="tbj_b_img" target="_blank"><img src="'.$imgbefore.'" alt="术前"/></a>
+                  <p class="p1 tbj_b_p1">【 速美项目 】</p>
                   <p class="p2">'.$project.'</p>
-                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+                  <a href="'.$url.'" class="tjb_video" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt="整形案例视频"/></a>
               </div>
               </li>';
 }
-
 if($ns>0){
 $relatecase.= '  <div class="tjb_title1">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt="相关日记"/>
         </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
 }
 return $relatecase;
 }
-
 /**
 *  获取医生相关的项目信息
 *  根据当前医生专题所属的栏目ID，获取相关的项目信息
@@ -647,11 +630,11 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt="相关项目"/>
         </div> <div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
 </div>        </div>
@@ -659,13 +642,11 @@ $relateproject= '   <div class="tjb_title3">
 }
 return $relateproject;
 }
-
 /**
 *  获取项目专题页相关案例信息
 *  根据当前项目专题所属的栏目ID，获取相关的案例
 * @param     $typeid     项目所在栏目ID
 */
-
 function getProjectArticleRelateCase($typeid)
 {
 global $dsql;
@@ -755,34 +736,31 @@ $imgafter = replaceurl($row["imgafter"]);
 $project=$row["project"];
 $click=$row["click"];
 $list.= '<li>
-              <a href="'.$url.'" class="tbj_t">
+              <a href="'.$url.'" class="tbj_t" target="_blank">
                   <img src="'.$imgafter.'" alt="术后"/>
               </a>
               <div class="tbj_b">
-                  <a href="'.$url.'" class="tbj_b_img"><img src="'.$imgbefore.'" alt="术前"/></a>
-                  <p class="p1"><a href="'.$url.'" class="tbj_b_p1">【 速美项目 】</a></p>
+                  <a href="'.$url.'" class="tbj_b_img" target="_blank"><img src="'.$imgbefore.'" alt="术前"/></a>
+                     <p class="p1 tbj_b_p1">【 速美项目 】</p>
                   <p class="p2">'.$project.'</p>
-                  <a href="'.$url.'" class="tjb_video"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt=""/></a>
+                  <a href="'.$url.'" class="tjb_video" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_video.png" alt="整形案例视频"/></a>
               </div>
               </li>';
 }
-
 if($ns>0){
 $relatecase.= '   <div class="tjb_title1">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt="相关日记"/>
         </div><ul class="tjb_rj clearFix"> '
     . $list
   .'</ul>';
 }
 return $relatecase;
 }
-
 /**
 *  获取项目专题页相关医生信息
 *  根据当前项目专题所属的栏目ID，获取相关的医生
 * @param     $typeid     项目所在栏目ID
 */
-
 function getProjectArticleRelateDoctor($typeid)
 {
 global $dsql;
@@ -879,31 +857,29 @@ $thumb = replaceurl($row["thumb"]);
 $zhiwei = $row["zhiwei"];
 //医生擅长项目
 $shanchang = $row["shanchang"];
-
 $list.= '<li class="clearFix">
-                <a href="'.$url.'" class="tjb_l"><img src="'.$thumb.'" alt=""/></a>
+                <a href="'.$url.'" class="tjb_l" target="_blank"><img src="'.$thumb.'" alt="'.$title.'"/></a>
                 <div class="tjb_r">
-                    <p class="p3"><a href="'.$url.'" class="tjb_name">'.$title.'</a></p>
-                    <p class="p4"><a href="'.$url.'">'.$zhiwei.'</a></p>
+                    <p class="p3"><a href="'.$url.'" class="tjb_name" target="_blank">'.$title.'</a></p>
+                    <p class="p4"><a href="'.$url.'" target="_blank">'.$zhiwei.'</a></p>
                     <div class="tjb_sc clearFix">
                         <p>擅长项目：</p>
                         <p>'.$shanchang.' </p>
                     </div>
                     <div class="tjb_button">
-                        <a href="'.$url.'"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt=""/></a>
+                        <a href="'.$url.'" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt="点击咨询"/></a>
                     </div>
                 </div></li>';
 }
 if($ns>0){
 $relatedoctor.= ' <div class="tjb_title2">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt="推荐专家"/>
         </div><ul class="tjb_zj clearFix"> '
     . $list
   .'</ul>';
 }
 return $relatedoctor;
 }
-
 /**
 *  获取项目专题页相关项目
 *  根据当前项目专题的ID，获取相关的项目
@@ -943,11 +919,11 @@ $url = $urlarray['arcurl'];
 //缩略图处理
 $litpic = replaceurl($row["litpic"]);
 //项目项目处理
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>
+            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt="相关项目"/>
         </div><div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
 </div>         </div>
@@ -955,15 +931,11 @@ $relateproject= '   <div class="tjb_title3">
 }
 return $relateproject;
 }
-
-
 /*
 案例详情页右侧功能
 */
-
 /*  与案例相关的热门项目
   typeid 为当前案例文档所在栏目ID
-
 */
 function hotProjectAboutCase($typeid)
 {
@@ -1045,10 +1017,96 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'" class="swiper-slide"><img src="'.$litpic.'" alt="'.$title.'">
+$relateproject.='<a href="'.$url.'" class="swiper-slide" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"/>
  <div class="timu">'.$title.'</div>
 </a>';
 }
-
 return $relateproject;
+}
+/*
+获取案例对应的推荐专家
+  $typeid  为当前案例日记所属的日记栏目ID
+*/
+function commendDoctorsAboutCase ($typeid){
+  global $dsql;
+$relatedoctortypeid="";
+$relatedoctor = "";
+// 判断当前日记文档案例属于哪种类型
+// 并根据类型设置对应的调取专家类型
+switch ($typeid)
+{
+case 35 :
+$relatedoctortypeid= 3;
+break;
+case 36 :
+$relatedoctortypeid=3 ;
+break;
+case 46:
+$relatedoctortypeid= 3;
+break;
+case 47:
+$relatedoctortypeid=  3;
+break;
+case 48:
+$relatedoctortypeid=  3;
+break;
+case 38 :
+$relatedoctortypeid= 3;
+break;
+case 39 :
+$relatedoctortypeid= 3;
+break;
+case  40 :
+$relatedoctortypeid= 3;
+break;
+case 41 :
+$relatedoctortypeid=5;
+break;
+case 49 :
+$relatedoctortypeid=4 ;
+break;
+case 50 :
+$relatedoctortypeid= 4;
+break;
+case 51 :
+$relatedoctortypeid= 4;
+break;
+case 52 :
+$relatedoctortypeid= 4;
+break;
+case 53 :
+$relatedoctortypeid=4 ;
+break;
+case  54 :
+$relatedoctortypeid= 4;
+break;
+case  55 :
+$relatedoctortypeid=4 ;
+break;
+case 43 :
+$relatedoctortypeid=3;
+break;
+case 44:
+$relatedoctortypeid=3;
+break;
+case 45 :
+$relatedoctortypeid= 3 ;
+break;
+default:
+$relatedoctortypeid= 3 ;
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
+where a.id =b.aid and a.typeid='$relatedoctortypeid'  and b.aid  <> '36' order by rand() limit 2 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'" width="281" height="193"/></a>';
+}
+return $relatedoctor;
 }
