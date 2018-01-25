@@ -27,6 +27,7 @@ a:hover{
     position: relative;
 }
 .m1{
+    margin-top: -0.025rem;
     width: 16.0rem;
     height:20.65rem;
     background: url("//img.hzshuangmei.com/m/fqfk/images/banner.jpg") no-repeat center;
@@ -63,6 +64,7 @@ a:hover{
 .buzhou>div{
     border-radius: 1.4rem;
     overflow: hidden;
+    vertical-align: top;
     display: inline-block;
     width: 3.925rem;
     margin-right:0.05rem;
@@ -230,7 +232,7 @@ a:hover{
 
     width: 4.225rem;
     border-top: 0.025rem solid #4189c1;
-    border-bottom: 0.025rem solid #8fd4ff;
+    border-bottom: 0.025rem solid #59aee9;
     margin:0 auto 0.5rem;
 }
 .m3page>div :nth-child(3){
@@ -523,7 +525,7 @@ a:hover{
 }
 .m5l2 li{
     font-size: 0.45rem;
-    line-height: 0.9rem;
+    line-height: 0.7rem;
     color: #9898f7;
 }
 .m5l2>a{
