@@ -399,7 +399,7 @@ default:
 $relatetypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid'  and b.aid  <> '36' order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -857,7 +857,7 @@ $relatetypeid= 3;
 // a.id =b.aid  通过文档ID主表和附加表关联
 //  根据对应医生所属栏目ID 查询医生信息，随机获取2条医生信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36' order by rand() limit 2 ");
 //执行查询
 $dsql->Execute();
 //获取记录数量
