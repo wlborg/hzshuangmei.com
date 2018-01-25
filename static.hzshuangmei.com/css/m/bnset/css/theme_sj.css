@@ -197,7 +197,7 @@ body {
     padding-bottom: 1rem
 }
 
-h2::after, h2::before {
+.jiantou::after, .jiantou::before {
     position: absolute;
     content: " ";
     height: .5rem;
@@ -208,14 +208,14 @@ h2::after, h2::before {
     padding-bottom: 0
 }
 
-h2::before {
+.jiantou::before {
     top: 0;
     left: 0;
     background: url(//img.hzshuangmei.com/m/bnset/images/bgt_tl.jpg) center top no-repeat;
     background-size: auto .5rem
 }
 
-h2::after {
+.jiantou::after {
     right: 0;
     bottom: 0;
     background: url(//img.hzshuangmei.com/m/bnset/images/bgt_br.jpg) center top no-repeat;
