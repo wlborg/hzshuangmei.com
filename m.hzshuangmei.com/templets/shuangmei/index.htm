@@ -171,7 +171,7 @@
     <script src="https://js.hzshuangmei.com/m/hammer.min.js" type="text/javascript"></script>
     <script type="text/javascript">
     $(function() {
-        var myElement = $('.Mycarousel');
+        var myElement = $('.Mycarousel').eq(0);
         var hm = new Hammer(myElement);
         hm.on("swipeleft", function() {
             $('.Mycarousel').carousel('next');
