@@ -147,11 +147,11 @@
                     <li>
                         <h5><a href="">整形美容专家</a></h5>
                     </li>
-                    {dede:arclist typeid=3   isweight='y'  orderby='weight' orderway='asc' row='2'}
+                    {dede:arclist typeid=3  channelid="17"  isweight='y'  orderby='weight' orderway='asc' row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
+                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li> {/dede:arclist}
@@ -160,11 +160,11 @@
                     <li>
                         <h5><a href="">激光美容专家</a></h5>
                     </li>
-                    {dede:arclist typeid=4   isweight='y' orderby='weight' orderway='asc' row='2'}
+                    {dede:arclist typeid=4   channelid="17" isweight='y' orderby='weight' orderway='asc' row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
+                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -174,12 +174,12 @@
                     <li>
                         <h5><a href="">医学纹绣</a></h5>
                     </li>
-                    {dede:arclist typeid=5   isweight='y' orderby='weight' orderway='asc' row='2'}
+                    {dede:arclist typeid=5    channelid="17" isweight='y' orderby='weight' orderway='asc' row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
                         <!--<a class="j-site-consult" href="javascript:void(0)" target="_blank">-->
-                        <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
+                    <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -189,11 +189,11 @@
                     <li>
                         <h5><a href="">特邀专家</a></h5>
                     </li>
-                    {dede:arclist typeid=2 flag="h" orderby='id' row='2'}
+                    {dede:arclist typeid=2   channelid="17" flag="h" orderby='id' row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:id function='getdoctorthumb(@me) /]" alt=""/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:id function='getdoctorzhiwei(@me) /]</span></p>
+                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
