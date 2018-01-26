@@ -522,7 +522,7 @@ div.part2 .main .wrap .imgwrap img {
 .part6 {
     max-width: 24.0rem;
     text-align: left;
-    margin: 0.825rem auto 0.825rem auto;
+    margin: 0.825rem auto 0;
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6.jpg") center top no-repeat;
     background-size: cover;
 }
@@ -599,7 +599,7 @@ div.part2 .main .wrap .imgwrap img {
 .part6 .contact {
     display: block;
     margin-top: 1.0rem;
-    margin-bottom: 0.3rem;
+    /*margin-bottom: 0.3rem;*/
 }
 .part6 .contact .prise, .part6 .contact .appointement {
     width: 3.15rem;
@@ -632,7 +632,7 @@ div.part2 .main .wrap .imgwrap img {
 .part6 .contact .appointement {
     background: #fd3358;
     margin-left: 11.3rem;
-    margin-top: -0.9rem;
+    margin-top: -0.95rem;
     padding-top: 1px;
 }
 .part6 .contact .appointement span {
