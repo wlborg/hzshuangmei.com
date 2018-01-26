@@ -1,45 +1,51 @@
 ﻿@charset "UTF-8";
-
-
+body {
+    /*width: 100%;
+     */
+    /*margin: 0;
+     */
+    /*padding: 0;
+     */
+    /*padding-top:1rem;
+     */
+    /*padding-left: 0.05rem;
+     */
+    /*padding-right: 0.05rem;
+     */
+    /*margin-bottom:2rem;
+     */
+}
 * {
     font-family: "微软雅黑";
     padding: 0;
     margin: 0;
 }
-
 ul li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
 }
-
 img {
     display: block;
     border: none;
 }
-
 .row {
     text-align: center;
     margin: 0;
 }
-
 .main {
     width: 15.95rem;
     margin: 0 auto;
 }
-
 .title {
     width: 16.0rem;
     margin: 0 auto;
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_title.jpg") center bottom no-repeat;
 }
-
 .title h2 {
     font-size: 0.9rem;
     color: #7d5613;
@@ -47,55 +53,45 @@ img {
     text-align: center;
     padding-bottom: 0.625rem;
 }
-
 .title h2 span {
     color: #ff0000;
 }
-
 .banner {
     width: 100%;
 }
-
 .banner img {
     width: 100%;
 }
-
 .part1 {
     margin-top: 0.75rem;
 }
-
 .part1 .title {
     background-size: 100% 70%;
 }
-
 .part1 .main {
+    height: 18.525rem;
     position: relative;
     margin-top: 0.8rem;
 }
-
 .part1 .main section {
     position: relative;
     width: 7.84rem;
     float: left;
 }
-
 .part1 .main section h3 {
     font-size: 0.75rem;
     color: #202020;
     font-weight: 400;
 }
-
 .part1 .main section p {
     font-size: 0.55rem;
     color: #363636;
     font-weight: 500;
 }
-
 .part1 .main section span {
     font-size: 0.5rem;
     color: #6c6a6a;
 }
-
 .part1 .main section:before {
     position: absolute;
     content: "";
@@ -104,116 +100,96 @@ img {
     border-radius: 50%;
     background: #fd3358;
 }
-
 .part1 .main section:nth-child(1) {
     border-top: 0.025rem dashed #626262;
     border-right: 0.025rem dashed #626262;
     margin-top: 1.25rem;
     margin-left: 8.0rem;
 }
-
 .part1 .main section:nth-child(1) span {
     display: block;
     margin-bottom: 0.7rem;
     margin-top: 0.375rem;
 }
-
 .part1 .main section:nth-child(1)::before {
     top: -0.225rem;
     left: -0.225rem;
 }
-
 .part1 .main section:nth-child(2) {
     margin-top: 0.825rem;
     margin-left: 0.0rem;
     border-left: 0.025rem dashed #626262;
     border-bottom: 0.025rem dashed #626262;
 }
-
 .part1 .main section:nth-child(2) h3 {
     margin-top: 0.65rem;
 }
-
 .part1 .main section:nth-child(2) span {
     display: block;
     margin-top: 0.25rem;
 }
-
 .part1 .main section:nth-child(2):before {
     top: 100%;
     margin-top: -0.225rem;
     right: -0.225rem;
 }
-
 .part1 .main section:nth-child(3) {
     margin-top: 8.5rem;
     border-right: 0.025rem dashed #626262;
-    border-bottom: 1px dashed #626262;
+    border-bottom: 0.025rem dashed #626262;
 }
-
 .part1 .main section:nth-child(3) span {
     display: block;
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
 }
-
 .part1 .main section:nth-child(3):before {
     top: -0.225rem;
     left: 100%;
     margin-left: -0.225rem;
 }
-
 .part1 .main img {
     position: absolute;
     width: 8.0rem;
 }
-
 .part1 .main img:nth-child(5) {
     top: 6.25rem;
     right: 0;
 }
-
 .part1 .main img:nth-child(6) {
     left: 0;
     top: 12.95rem;
 }
-
 .part1 .bottom {
     width: 15.95rem;
     height: 2.25rem;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 3rem;
     border: 1px solid #000;
     background: #e4e2e2;
     display: flex;
     flex-direction: row;
 }
-
 .part1 .bottom h2 {
     font-size: 0.6rem;
     color: #3f3f3f;
 }
-
 .part1 .bottom p {
     font-size: 0.56rem;
 }
-
 .part1 .bottom p span {
     color: #fd3358;
 }
-
 .part1 .bottom .left {
     width: 4.25rem;
     text-align: right;
     position: relative;
 }
-
 .part1 .bottom .left p {
     font-size: 0.45rem;
     margin-top: 0.3rem;
     margin-right: 0.25rem;
 }
-
 .part1 .bottom .left p:first-child {
     color: #fff;
     font-size: 0.5rem;
@@ -222,24 +198,21 @@ img {
     top: 0.1rem;
     margin-top: 0;
 }
-
 .part1 .bottom .left h2 {
     margin-right: 0.25rem;
 }
-
 .part1 .bottom .left:before {
     content: '';
     position: absolute;
     top: 0.05rem;
     left: 0.05rem;
-    width: 0px;
-    height: 0px;
+    width: 0rem;
+    height: 0rem;
     border-left: 1.025rem solid #fd3358;
     border-right: 1.025rem solid transparent;
     border-top: 0.65rem solid #fd3358;
     border-bottom: 0.65rem solid transparent;
 }
-
 .part1 .bottom .left:after {
     position: absolute;
     content: '';
@@ -250,12 +223,10 @@ img {
     height: 1.0rem;
     background: #fd3358;
 }
-
 .part1 .bottom .right p {
     margin-top: 0.425rem;
     margin-left: 0.3rem;
 }
-
 .row1 {
     display: block;
     width: 100%;
@@ -263,69 +234,53 @@ img {
     background: #e8e7e8;
     margin-top: 0.925rem;
 }
-
 div.part2 {
     margin-top: 0.825rem;
 }
-
 div.part2 .main {
     margin-top: 0.825rem;
 }
-
 div.part2 .main .wrap {
     position: relative;
 }
-
-div.part2 .main .wrap .next,
-div.part2 .main .wrap .prev {
+div.part2 .main .wrap .next, div.part2 .main .wrap .prev {
     position: absolute;
     top: 50%;
     margin-top: -1.0rem;
 }
-
-div.part2 .main .wrap .next img,
-div.part2 .main .wrap .prev img {
+div.part2 .main .wrap .next img, div.part2 .main .wrap .prev img {
     width: 0.9rem;
 }
-
 div.part2 .main .wrap .next {
     right: 0;
 }
-
 div.part2 .main .wrap .imgwrap {
     width: 13.65rem;
     height: 8.05rem;
     overflow: hidden;
     margin: 0 auto;
 }
-
 div.part2 .main .wrap .imgwrap .slider {
     width: 27.3rem;
 }
-
 div.part2 .main .wrap .imgwrap img {
     width: 13.65rem;
 }
-
 .part3 {
     margin-top: 0.825rem;
 }
-
 .part3 .title {
     background-size: 100% 70%;
 }
-
 .part3 .main {
     margin-top: 0.825rem;
 }
-
 .part3 .main ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .part3 .main ul li {
     position: relative;
     width: 3.95rem;
@@ -333,13 +288,11 @@ div.part2 .main .wrap .imgwrap img {
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part3_li.jpg") no-repeat;
     background-size: 100% 100%;
 }
-
 .part3 .main ul li h3 {
     font-size: 0.6rem;
     color: #363636;
     margin-top: 1.325rem;
 }
-
 .part3 .main ul li img {
     position: absolute;
     top: 0;
@@ -349,7 +302,6 @@ div.part2 .main .wrap .imgwrap img {
     opacity: 0;
     filter: Alpha(opacity=0);
 }
-
 .part3 .main li:after {
     position: absolute;
     content: '';
@@ -361,24 +313,19 @@ div.part2 .main .wrap .imgwrap img {
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_li-after.jpg") center center no-repeat;
     background-size: 70% 70%;
 }
-
 .part3 .main .Ul2 {
     width: 12.0rem;
     margin-top: 0.3rem;
 }
-
 .part4 {
     margin-top: 0.825rem;
 }
-
 .part4 .title {
     background-size: 70% 70%;
 }
-
 .part4 .main .contain {
     margin-top: 0.825rem;
 }
-
 .part4 .main .contain h2 {
     position: relative;
     font-size: 0.5rem;
@@ -389,22 +336,18 @@ div.part2 .main .wrap .imgwrap img {
     line-height: 0.9rem;
     border-radius: 0.5rem;
 }
-
 .part4 .main .contain img {
     float: right;
     width: 5.9rem;
 }
-
 .part4 .main .contain img:nth-child(6) {
     margin-top: -4.5rem;
 }
-
 .part4 .main .contain img:nth-child(7) {
     margin-top: 0.25rem;
     width: 9.85rem;
     float: left;
 }
-
 .part4 .main .contain h3 {
     width: 6.9rem;
     float: left;
@@ -416,31 +359,27 @@ div.part2 .main .wrap .imgwrap img {
     text-align: left;
     font-weight: 400;
 }
-
 .part4 .main .contain p {
     font-size: 0.5rem;
     color: #6c6a6a;
-    width: 10rem;
+    width: 9.7rem;
     text-align: left;
     height: 0.7rem;
     line-height: 0.7rem;
     margin-top: 0.2rem;
 }
-
 .part4 .main .contain p span {
     color: #fffefe;
     background: #ff8a9f;
 }
-
 .part4 .main .contain p:nth-child(3) {
     margin-top: 1.0rem;
 }
-
 .part4 .main .contain h2::after {
     position: absolute;
     content: '';
-    width: 0px;
-    height: 0px;
+    width: 0rem;
+    height: 0rem;
     top: 100%;
     left: 15%;
     border-left: 0.15rem solid transparent;
@@ -448,149 +387,112 @@ div.part2 .main .wrap .imgwrap img {
     border-top: 0.2rem solid #fd3358;
     border-bottom: 0.2rem solid transparent;
 }
-
 .part4 .main .contain .contact {
     margin-top: 3.85rem;
 }
-
-.part4 .main .contain .contact .prise,
-.part4 .main .contain .contact .appointement {
+.part4 .main .contain .contact .prise, .part4 .main .contain .contact .appointement {
     display: block;
     width: 2.75rem;
     height: 0.9rem;
     margin: 0 auto;
 }
-
-.part4 .main .contain .contact .prise span,
-.part4 .main .contain .contact .appointement span {
+.part4 .main .contain .contact .prise p, .part4 .main .contain .contact .appointement p {
     text-align: center;
     width: 100%;
 }
-
 .part4 .main .contain .contact .prise {
     float: left;
     margin-left: 5.1rem;
 }
-
-.part4 .main .contain .contact .prise span {
-    font-size: 0.5rem;
+.part4 .main .contain .contact .prise p {
     color: #fd3358;
     border: 0.05rem solid #fd3358;
     line-height: 0.6rem;
 }
-
 .part4 .main .contain .contact .appointement {
     float: right;
     margin-right: 5.125rem;
 }
-
 .part4 .main .contain .contact .appointement p {
     background: #fd3358;
     color: #fff;
 }
-
 .part4 .main .contain:nth-child(2) img:first-child {
     width: 6.1rem;
 }
-
 .part4 .main .contain:nth-child(2) h2 {
     width: 5.35rem;
     margin-left: 6.2rem;
 }
-
 .part4 .main .contain:nth-child(2) h2::after {
     border-left: 0.3rem solid transparent;
     border-right: 0.3rem solid transparent;
     border-top: 0.175rem solid #fd3358;
     border-bottom: 0.175rem solid transparent;
 }
-
 .part4 .main .contain:nth-child(2) h3 {
     margin-left: 0.15rem;
 }
-
 .part4 .main .contain:nth-child(2) p {
     margin-top: 0.125rem;
     margin-left: 6.2rem;
 }
-
 .part4 .main .contain:nth-child(2) p:nth-child(4) {
     margin-top: 1.1rem;
 }
-
 .part4 .main .contain:nth-child(2) p:nth-child(5) {
     margin-top: 0.75rem;
 }
-
 .part4 .main .contain:nth-child(2) img {
     float: left;
 }
-
 .part4 .main .contain:nth-child(2) img:nth-child(7) {
     float: right;
 }
-
 .part4 .main .contain:nth-child(2) .contact p {
     margin-left: 0;
 }
-
 .part4 .contain:nth-child(3) h2 {
     width: 4.35rem;
 }
-
 .part4 .contain:nth-child(3) h3 {
     width: 8.5rem;
 }
-
 .part4 .contain:nth-child(3) p {
     margin-top: 0.1rem;
     width: 9.9rem;
 }
-
 .part4 .contain:nth-child(3) p:nth-child(3) {
     margin-top: 1.15rem;
 }
-
 .part4 .contain:nth-child(3) p:nth-child(4) {
     margin-top: 1.4rem;
 }
-
 .part4 .contain:nth-child(3) img:nth-child(6) {
     margin-top: -5.45rem;
 }
-
 .part5 {
     margin-top: 0.825rem;
 }
-
 .part5 .title {
     background-size: 100% 70%;
 }
-
 .part5 .main {
     margin-top: 0.825rem;
     display: flex;
     justify-content: space-between;
 }
-
-.part5 .main .left,
-.part5 .main .right {
+.part5 .main .left, .part5 .main .right {
     position: relative;
 }
-
-.part5 .main .left img,
-.part5 .main .right img {
+.part5 .main .left img, .part5 .main .right img {
     width: 7.6rem;
 }
-
-.part5 .main .left .change2,
-.part5 .main .right .change2 {
+.part5 .main .left .change2, .part5 .main .right .change2 {
     position: absolute;
     top: 0;
 }
-
-.part5 .main .left .change,
-.part5 .main .right .change {
+.part5 .main .left .change, .part5 .main .right .change {
     position: absolute;
     width: 0.35rem;
     height: 0.75rem;
@@ -599,12 +501,10 @@ div.part2 .main .wrap .imgwrap img {
     left: 50%;
     margin-left: -0.175rem;
 }
-
 .last {
     margin-top: 0.825rem;
     background-size: 50% 70%;
 }
-
 .part6 {
     max-width: 24.0rem;
     text-align: left;
@@ -612,13 +512,11 @@ div.part2 .main .wrap .imgwrap img {
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6.jpg") center top no-repeat;
     background-size: cover;
 }
-
 .part6 p {
     color: #fff;
     font-size: 0.5rem;
     line-height: 0.65rem;
 }
-
 .part6 .name {
     text-align: left;
     margin-top: 0.55rem;
@@ -628,31 +526,25 @@ div.part2 .main .wrap .imgwrap img {
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_name.png") no-repeat;
     background-size: 100% 100%;
 }
-
 .part6 .name h2 {
     font-size: 0.75rem;
     margin-left: 1.15rem;
 }
-
 .part6 .name p {
     margin-left: 0.25rem;
     font-size: 0.5rem;
     margin-top: -0.1rem;
     color: #4a4a4a;
 }
-
 .part6 .name p:last-child {
     font-size: 0.6rem;
     color: #fd3358;
     margin-left: 2.3rem;
     margin-top: 0.1rem;
 }
-
-.part6 p,
-.part6 h3 {
+.part6 p, .part6 h3 {
     margin-left: 7.4rem;
 }
-
 .part6 .summary p {
     position: relative;
     color: #fff;
@@ -660,11 +552,9 @@ div.part2 .main .wrap .imgwrap img {
     padding-left: 0.4rem;
     line-height: 0.65rem;
 }
-
 .part6 .summary p:nth-child(1) {
     margin-top: 0.3rem;
 }
-
 .part6 .summary p::before {
     position: absolute;
     content: '';
@@ -676,15 +566,12 @@ div.part2 .main .wrap .imgwrap img {
     left: 0;
     margin-top: -0.025rem;
 }
-
 .part6 .summary p:nth-child(2)::before {
     top: 16%;
 }
-
 .part6 .summary p:nth-child(3)::before {
     top: 16%;
 }
-
 .part6 h3 {
     font-size: 0.6rem;
     color: #fd3358;
@@ -695,64 +582,51 @@ div.part2 .main .wrap .imgwrap img {
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6-h3.png") no-repeat;
     background-size: 0.75rem 0.75rem;
 }
-
 .part6 .contact {
     display: block;
     margin-top: 1.0rem;
     margin-bottom: 0.3rem;
 }
-
-.part6 .contact .prise,
-.part6 .contact .appointement {
+.part6 .contact .prise, .part6 .contact .appointement {
     width: 3.15rem;
     height: 0.9rem;
     float: left;
 }
-
-.part6 .contact .prise span,
-.part6 .contact .appointement span {
-    font-size: 0.5rem;
-    display: block;
+.part6 .contact .prise p, .part6 .contact .appointement p {
     text-align: center;
     width: 3.15rem;
     line-height: 0.9rem;
 }
-
 .part6 .contact .prise {
     border: 0.05rem solid #fd3358;
     margin-left: 7.88rem;
 }
-
-.part6 .contact .prise span {
+.part6 .contact .prise p {
     color: #fd3358;
     margin-left: 0;
     line-height: 0.8rem;
 }
-
 .part6 .contact .appointement {
     background: #fd3358;
     margin-left: 11.3rem;
     margin-top: -0.9rem;
 }
-
 .part6 .contact .appointement p {
     color: #fff;
     margin-left: 0;
 }
-
-/*#dowebok {*/
-    /*animation-duration: 4s;*/
-    /*animation-direction: alternate;*/
-    /*animation-iteration-count: 999;*/
-/*}*/
-
-/*#dowebok2{*/
-    /*animation-duration: 8s; */
-    /*animation-direction: alternate;*/
-    /*animation-iteration-count: 999;*/
-/*}*/
-/*.swtFoot li input.telBtn{*/
-	/*margin-top:5px;*/
-	/*margin-left:5px;*/
-/*}*/
+#dowebok {
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 999;
+}
+#dowebok2{
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 999;
+}
+.swtFoot li input.telBtn{
+    margin-top:0.125rem;
+    margin-left:0.125rem;
+}
 /*# sourceMappingURL=style.css.map */
