@@ -45,7 +45,7 @@ img {
 .title {
     width: 16.0rem;
     margin: 0 auto;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_title.jpg") center bottom no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_title.jpg") center bottom no-repeat;
 }
 
 .title h2 {
@@ -338,7 +338,7 @@ div.part2 .main .wrap .imgwrap img {
     position: relative;
     width: 3.95rem;
     height: 4.0rem;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_part3_li.jpg") no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part3_li.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
@@ -366,7 +366,7 @@ div.part2 .main .wrap .imgwrap img {
     top: 65%;
     left: 50%;
     margin-left: -0.25rem;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_li-after.jpg") center center no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_li-after.jpg") center center no-repeat;
     background-size: 70% 70%;
 }
 
@@ -428,7 +428,7 @@ div.part2 .main .wrap .imgwrap img {
 .part4 .main .contain p {
     font-size: 0.5rem;
     color: #6c6a6a;
-    width: 9.7rem;
+    width: 10rem;
     text-align: left;
     height: 0.7rem;
     line-height: 0.7rem;
@@ -469,8 +469,8 @@ div.part2 .main .wrap .imgwrap img {
     margin: 0 auto;
 }
 
-.part4 .main .contain .contact .prise p,
-.part4 .main .contain .contact .appointement p {
+.part4 .main .contain .contact .prise span,
+.part4 .main .contain .contact .appointement span {
     text-align: center;
     width: 100%;
 }
@@ -480,7 +480,8 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 5.1rem;
 }
 
-.part4 .main .contain .contact .prise p {
+.part4 .main .contain .contact .prise span {
+    font-size: 0.5rem;
     color: #fd3358;
     border: 0.05rem solid #fd3358;
     line-height: 0.6rem;
@@ -616,7 +617,7 @@ div.part2 .main .wrap .imgwrap img {
     max-width: 24.0rem;
     text-align: left;
     margin: 0.825rem auto 0.825rem auto;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_part6.jpg") center top no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6.jpg") center top no-repeat;
     background-size: cover;
 }
 
@@ -632,7 +633,7 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 7.88rem;
     width: 5.0rem;
     height: 2.6rem;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_name.png") no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_name.png") no-repeat;
     background-size: 100% 100%;
 }
 
@@ -699,7 +700,7 @@ div.part2 .main .wrap .imgwrap img {
     margin-top: 0.45rem;
     margin-bottom: 0.3rem;
     padding-left: 1.05rem;
-    background: url("//img.hzshuangmei.com/m/sypjgjm/images/bg_part6-h3.png") no-repeat;
+    background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6-h3.png") no-repeat;
     background-size: 0.75rem 0.75rem;
 }
 
@@ -716,8 +717,10 @@ div.part2 .main .wrap .imgwrap img {
     float: left;
 }
 
-.part6 .contact .prise p,
-.part6 .contact .appointement p {
+.part6 .contact .prise span,
+.part6 .contact .appointement span {
+    font-size: 0.5rem;
+    display: block;
     text-align: center;
     width: 3.15rem;
     line-height: 0.9rem;
@@ -728,7 +731,7 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 7.88rem;
 }
 
-.part6 .contact .prise p {
+.part6 .contact .prise span {
     color: #fd3358;
     margin-left: 0;
     line-height: 0.8rem;
