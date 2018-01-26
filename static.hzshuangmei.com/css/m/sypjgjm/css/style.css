@@ -391,13 +391,15 @@ div.part2 .main .wrap .imgwrap img {
     margin-top: 3.85rem;
 }
 .part4 .main .contain .contact .prise, .part4 .main .contain .contact .appointement {
-    display: block;
     width: 2.75rem;
     height: 0.9rem;
     margin: 0 auto;
 }
 .part4 .main .contain .contact .prise span, .part4 .main .contain .contact .appointement span {
     text-align: center;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    display: block;
     width: 100%;
 }
 .part4 .main .contain .contact .prise {
@@ -405,18 +407,26 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 5.1rem;
 }
 .part4 .main .contain .contact .prise span {
+    display: block;
     font-size: 0.5rem;
     color: #fd3358;
     border: 0.05rem solid #fd3358;
-    line-height: 0.6rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+}
+.part4 .main .contain .contact::after{
+    display: block;
+    content: ' ';
+    clear: both;
 }
 .part4 .main .contain .contact .appointement {
     float: right;
     font-size: 0.5rem;
     margin-right: 5.125rem;
 }
-.part4 .main .contain .contact .appointement p {
+.part4 .main .contain .contact .appointement span {
     background: #fd3358;
+    display: block;
     color: #fff;
 }
 .part4 .main .contain:nth-child(2) img:first-child {
@@ -595,11 +605,12 @@ div.part2 .main .wrap .imgwrap img {
     float: left;
 }
 .part6 .contact .prise span, .part6 .contact .appointement span {
+    height: 0.9rem;
+    line-height: 0.9rem;
     display: block;
     font-size: 0.5rem;
     text-align: center;
     width: 3.15rem;
-    line-height: 0.9rem;
 }
 .part6 .contact .prise {
     border: 0.05rem solid #fd3358;
@@ -607,9 +618,10 @@ div.part2 .main .wrap .imgwrap img {
 }
 .part6 .contact .prise span {
     color: #fd3358;
+    height: 0.9rem;
+    line-height: 0.9rem;
     margin-left: 0;
     font-size: 0.5rem;
-    line-height: 0.8rem;
 }
 .part6 .contact .appointement {
     background: #fd3358;
@@ -617,6 +629,7 @@ div.part2 .main .wrap .imgwrap img {
     margin-top: -0.9rem;
 }
 .part6 .contact .appointement span {
+    display: block;
     font-size: 0.5rem;
     color: #fff;
     margin-left: 0;
