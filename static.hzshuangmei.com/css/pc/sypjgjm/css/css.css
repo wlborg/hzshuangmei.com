@@ -319,21 +319,22 @@ div.part2 {
         width: 153px;
         height: 50px;
         margin: 0 auto; }
-        .part4 .main .contain .contact .prise p,
-        .part4 .main .contain .contact .appointement p {
+        .part4 .main .contain .contact .prise span,
+        .part4 .main .contain .contact .appointement span {
+          display: block;
           text-align: center;
           width: 100%; }
       .part4 .main .contain .contact .prise {
         float: left;
         margin-left: 438px; }
-        .part4 .main .contain .contact .prise p {
+        .part4 .main .contain .contact .prise span {
           color: #fd3358;
           border: 2px solid #fd3358;
           line-height: 32px; }
       .part4 .main .contain .contact .appointement {
         float: right;
         margin-right: 438px; }
-        .part4 .main .contain .contact .appointement p {
+        .part4 .main .contain .contact .appointement span {
           background: #fd3358;
           color: #fff; }
   .part4 .main .contain_2 h2 {
