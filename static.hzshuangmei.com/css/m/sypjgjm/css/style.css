@@ -405,12 +405,14 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 5.1rem;
 }
 .part4 .main .contain .contact .prise span {
+    font-size: 0.5rem;
     color: #fd3358;
     border: 0.05rem solid #fd3358;
     line-height: 0.6rem;
 }
 .part4 .main .contain .contact .appointement {
     float: right;
+    font-size: 0.5rem;
     margin-right: 5.125rem;
 }
 .part4 .main .contain .contact .appointement p {
