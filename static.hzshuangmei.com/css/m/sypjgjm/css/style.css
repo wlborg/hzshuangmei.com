@@ -396,7 +396,7 @@ div.part2 .main .wrap .imgwrap img {
     height: 0.9rem;
     margin: 0 auto;
 }
-.part4 .main .contain .contact .prise p, .part4 .main .contain .contact .appointement p {
+.part4 .main .contain .contact .prise span, .part4 .main .contain .contact .appointement span {
     text-align: center;
     width: 100%;
 }
@@ -404,7 +404,7 @@ div.part2 .main .wrap .imgwrap img {
     float: left;
     margin-left: 5.1rem;
 }
-.part4 .main .contain .contact .prise p {
+.part4 .main .contain .contact .prise span {
     color: #fd3358;
     border: 0.05rem solid #fd3358;
     line-height: 0.6rem;
@@ -592,7 +592,9 @@ div.part2 .main .wrap .imgwrap img {
     height: 0.9rem;
     float: left;
 }
-.part6 .contact .prise p, .part6 .contact .appointement p {
+.part6 .contact .prise span, .part6 .contact .appointement span {
+    display: block;
+    font-size: 0.5rem;
     text-align: center;
     width: 3.15rem;
     line-height: 0.9rem;
@@ -601,9 +603,10 @@ div.part2 .main .wrap .imgwrap img {
     border: 0.05rem solid #fd3358;
     margin-left: 7.88rem;
 }
-.part6 .contact .prise p {
+.part6 .contact .prise span {
     color: #fd3358;
     margin-left: 0;
+    font-size: 0.5rem;
     line-height: 0.8rem;
 }
 .part6 .contact .appointement {
@@ -611,7 +614,8 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 11.3rem;
     margin-top: -0.9rem;
 }
-.part6 .contact .appointement p {
+.part6 .contact .appointement span {
+    font-size: 0.5rem;
     color: #fff;
     margin-left: 0;
 }
