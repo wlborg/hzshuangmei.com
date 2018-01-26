@@ -135,7 +135,8 @@ function preReady() {
 案例列表页，翻页定位优化
  */
 function paginationFixed() {
-    $('.pagination').find('li').on('click', 'a', function(event) {
+    $('.pagination').find('a').on('click', function(event) {
+        console.log($(this).attr('href'));
         var thisLink = $(this).attr('href')[0] + "#ca_01";
         $(this).attr('href', thisLink);
     });
