@@ -1,0 +1,711 @@
+﻿@charset "UTF-8";
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+.row {
+    min-width: 1200px;
+    text-align: center;
+    margin: 0;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_title.jpg") center bottom no-repeat;
+}
+
+.title h2 {
+    font-size: 60px;
+    color: #7d5613;
+    font-weight: 200;
+    text-align: center;
+}
+
+.title h2 span {
+    color: #ff0000;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.part1 {
+    margin-top: 62px;
+}
+
+.part1 .title {
+    background-size: 70% 50%;
+}
+
+.part1 .main {
+    position: relative;
+    margin-top: 62px;
+}
+
+.part1 .main section {
+    position: relative;
+    width: 350px;
+    float: left;
+}
+
+.part1 .main section h3 {
+    font-size: 36px;
+    color: #202020;
+    font-weight: 400;
+}
+
+.part1 .main section p {
+    font-size: 18px;
+    color: #363636;
+    font-weight: 500;
+}
+
+.part1 .main section span {
+    font-size: 16px;
+    color: #6c6a6a;
+}
+
+.part1 .main section:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fd3358;
+}
+
+.part1 .main section:nth-child(1) {
+    border-left: 1px dashed #626262;
+    border-bottom: 1px dashed #626262;
+    margin-top: 390px;
+}
+
+.part1 .main section:nth-child(1) span {
+    display: block;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.part1 .main section:nth-child(1):before {
+    top: -30px;
+    left: -15px;
+}
+
+.part1 .main section:nth-child(2) {
+    margin-top: 46px;
+    margin-left: 100px;
+    border-left: 1px dashed #626262;
+    border-top: 1px dashed #626262;
+}
+
+.part1 .main section:nth-child(2) h3 {
+    margin-top: 30px;
+}
+
+.part1 .main section:nth-child(2) span {
+    display: block;
+    margin-top: 10px;
+}
+
+.part1 .main section:nth-child(2):before {
+    top: 100%;
+    left: -15px;
+}
+
+.part1 .main section:nth-child(3) {
+    margin-top: 390px;
+    border-right: 1px dashed #626262;
+    border-bottom: 1px dashed #626262;
+}
+
+.part1 .main section:nth-child(3) span {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.part1 .main section:nth-child(3):before {
+    top: -30px;
+    left: 100%;
+    margin-left: -15px;
+}
+
+.part1 .main img {
+    position: absolute;
+}
+
+.part1 .main img:nth-child(5) {
+    top: 280px;
+    left: 376px;
+}
+
+.part1 .main img:nth-child(6) {
+    left: 760px;
+}
+
+.part1 .bottom {
+    width: 930px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border: 1px solid #000;
+    background: #e4e2e2;
+    display: flex;
+    flex-direction: row;
+}
+
+.part1 .bottom h2 {
+    font-size: 30px;
+    color: #3f3f3f;
+}
+
+.part1 .bottom p {
+    font-size: 24px;
+}
+
+.part1 .bottom p span {
+    color: #fd3358;
+}
+
+.part1 .bottom .left {
+    width: 273px;
+    text-align: right;
+    position: relative;
+}
+
+.part1 .bottom .left p {
+    font-size: 18px;
+    margin-top: 33px;
+    margin-right: 10px;
+}
+
+.part1 .bottom .left p:first-child {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    margin-top: 0;
+}
+
+.part1 .bottom .left h2 {
+    margin-right: 10px;
+}
+
+.part1 .bottom .left:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 0px;
+    height: 0px;
+    border-left: 53px solid #fd3358;
+    border-right: 53px solid transparent;
+    border-top: 35px solid #fd3358;
+    border-bottom: 35px solid transparent;
+}
+
+.part1 .bottom .left:after {
+    position: absolute;
+    content: '';
+    left: 100%;
+    top: 50%;
+    margin-top: -25px;
+    width: 4px;
+    height: 62px;
+    background: #fd3358;
+}
+
+.part1 .bottom .right p {
+    margin-top: 32px;
+    margin-left: 35px;
+}
+
+.row1 {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: #e8e7e8;
+    margin-top: 64px;
+}
+
+div.part2 {
+    margin-top: 60px;
+}
+
+div.part2 .main {
+    margin-top: 50px;
+}
+
+div.part2 .main .wrap {
+    position: relative;
+}
+
+div.part2 .main .wrap .next,
+div.part2 .main .wrap .prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+div.part2 .main .wrap .next {
+    right: 0;
+}
+
+div.part2 .main .wrap .imgwrap {
+    width: 930px;
+    height: 547px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+div.part2 .main .wrap .imgwrap .slider {
+    width: 1860px;
+}
+
+div.part2 .main .wrap .imgwrap img {
+    width: 930px;
+}
+
+.part3 {
+    margin-top: 62px;
+}
+
+.part3 .title {
+    background-size: 70% 50%;
+}
+
+.part3 .main {
+    margin-top: 50px;
+}
+
+.part3 .main ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.part3 .main ul li {
+    position: relative;
+    width: 254px;
+    height: 256px;
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_part3_li.jpg") no-repeat;
+}
+
+.part3 .main ul li h3 {
+    font-size: 24px;
+    color: #363636;
+    margin-top: 60px;
+}
+
+.part3 .main ul li p {
+    font-size: 18px;
+    color: #6c6a6a;
+    margin-top: 24px;
+}
+
+.part3 .main ul li img {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 256px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+.part3 .main ul li img:hover {
+    opacity: 1;
+    filter: Alpha(opacity=1);
+}
+
+.part3 .main li:after {
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 28px;
+    top: 75%;
+    left: 50%;
+    margin-left: -14px;
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_li-after.jpg") no-repeat;
+}
+
+.part3 .main .Ul2 {
+    width: 884px;
+    margin-top: 20px;
+}
+
+.part4 {
+    margin-top: 64px;
+}
+
+.part4 .main .contain {
+    margin-top: 64px;
+}
+
+.part4 .main .contain h2 {
+    position: relative;
+    font-size: 36px;
+    color: #fff;
+    background: #fd3358;
+    width: 226px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 20px;
+}
+
+.part4 .main .contain img {
+    float: right;
+}
+
+.part4 .main .contain img:nth-child(6) {
+    margin-top: -290px;
+}
+
+.part4 .main .contain img:nth-child(7) {
+    margin-top: 30px;
+    float: left;
+}
+
+.part4 .main .contain h3 {
+    width: 518px;
+    float: left;
+    color: #fd3358;
+    font-size: 30px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #6c6a6a;
+    margin-top: 30px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.part4 .main .contain p {
+    font-size: 24px;
+    color: #6c6a6a;
+    width: 694px;
+    text-align: left;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+}
+
+.part4 .main .contain p span {
+    color: #fffefe;
+    background: #ff8a9f;
+}
+
+.part4 .main .contain p:nth-child(3) {
+    margin-top: 98px;
+}
+
+.part4 .main .contain h2::after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 12%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 18px solid #fd3358;
+    border-bottom: 18px solid transparent;
+}
+
+.part4 .main .contain .contact {
+    margin-top: 294px;
+}
+
+.part4 .main .contain .contact .prise,
+.part4 .main .contain .contact .appointement {
+    display: block;
+    width: 153px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.part4 .main .contain .contact .prise p,
+.part4 .main .contain .contact .appointement p {
+    text-align: center;
+    width: 100%;
+}
+
+.part4 .main .contain .contact .prise {
+    float: left;
+    margin-left: 438px;
+}
+
+.part4 .main .contain .contact .prise p {
+    color: #fd3358;
+    border: 2px solid #fd3358;
+    line-height: 32px;
+}
+
+.part4 .main .contain .contact .appointement {
+    float: right;
+    margin-right: 438px;
+}
+
+.part4 .main .contain .contact .appointement p {
+    background: #fd3358;
+    color: #fff;
+}
+
+.part4 .main .contain:nth-child(2) h2 {
+    width: 374px;
+    margin-left: 458px;
+}
+
+.part4 .main .contain:nth-child(2) h2::after {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fd3358;
+    border-bottom: 15px solid transparent;
+}
+
+.part4 .main .contain:nth-child(2) h3 {
+    margin-left: 14px;
+}
+
+.part4 .main .contain:nth-child(2) p {
+    margin-left: 458px;
+}
+
+.part4 .main .contain:nth-child(2) p:nth-child(4) {
+    margin-top: 106px;
+}
+
+.part4 .main .contain:nth-child(2) img {
+    float: left;
+}
+
+.part4 .main .contain:nth-child(2) img:nth-child(7) {
+    float: right;
+}
+
+.part4 .main .contain:nth-child(2) .contact p {
+    margin-left: 0;
+}
+
+.part4 .contain:nth-child(3) h2 {
+    width: 303px;
+}
+
+.part4 .contain:nth-child(3) p:nth-child(3) {
+    margin-top: 108px;
+}
+
+.part4 .contain:nth-child(3) p:nth-child(4) {
+    margin-top: 40px;
+}
+
+.part4 .contain:nth-child(3) img:nth-child(6) {
+    margin-top: -322px;
+}
+
+.part5 {
+    margin-top: 68px;
+}
+
+.part5 .title {
+    background-size: 70% 50%;
+}
+
+.part5 .main {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.part5 .main .left,
+.part5 .main .right {
+    position: relative;
+    width: 570px;
+    height: 364px;
+}
+
+.part5 .main .left .change,
+.part5 .main .right .change {
+    position: absolute;
+    width: 26px;
+    height: 60px;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -13px;
+}
+
+.part5 .main .left .change2,
+.part5 .main .right .change2 {
+    display: none;
+}
+
+
+/* .part5 .main .left {
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_part5_1-1.jpg") no-repeat;
+}
+
+.part5 .main .right {
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_part5_2-1.jpg") no-repeat;
+} */
+
+.last {
+    margin-top: 62px;
+}
+
+.part6 {
+    text-align: left;
+    margin-top: 66px;
+    padding-bottom: 76px;
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_part6.jpg") top center no-repeat;
+}
+
+.part6 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.part6 .name {
+    text-align: left;
+    margin-top: 122px;
+    margin-left: 680px;
+    width: 200px;
+    height: 114px;
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_name.png") no-repeat;
+}
+
+.part6 .name h2 {
+    font-size: 36px;
+    margin-left: 40px;
+}
+
+.part6 .name p {
+    margin-left: 17px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.part6 .name p:last-child {
+    font-size: 30px;
+    color: #fd3358;
+    margin-left: 79px;
+    margin-top: 4px;
+}
+
+.part6 p,
+.part6 h3 {
+    margin-left: 680px;
+}
+
+.part6 .summary p {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 16px;
+    line-height: 26px;
+}
+
+.part6 .summary p:nth-child(1) {
+    margin-top: 40px;
+}
+
+.part6 .summary p::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+}
+
+.part6 h3 {
+    font-size: 24px;
+    color: #fd3358;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    background: url("//img.hzshuangmei.com/pc/sypjgjm/images/bg_part6-h3.png") no-repeat;
+}
+
+.part6 .contact {
+    display: block;
+    margin-top: 38px;
+}
+
+.part6 .contact .prise,
+.part6 .contact .appointement {
+    width: 153px;
+    height: 50px;
+    float: left;
+}
+
+.part6 .contact .prise p,
+.part6 .contact .appointement p {
+    text-align: center;
+    width: 153px;
+    line-height: 50px;
+}
+
+.part6 .contact .prise {
+    border: 2px solid #fd3358;
+    margin-left: 680px;
+}
+
+.part6 .contact .prise p {
+    color: #fd3358;
+    margin-left: 0;
+}
+
+.part6 .contact .appointement {
+    background: #fd3358;
+    margin-left: 854px;
+    margin-top: -50px;
+}
+
+.part6 .contact .appointement p {
+    color: #fff;
+    margin-left: 0;
+}
+.foot{
+    height: 350px;
+}
+
+/*# sourceMappingURL=style.css.map */
