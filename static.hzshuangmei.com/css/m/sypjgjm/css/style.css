@@ -1,16 +1,8 @@
 ﻿@charset "UTF-8";
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-padding-top:40px;
-    padding-left: 0.05rem;
-    padding-right: 0.05rem;
-margin-bottom:2rem;
-    font-family: "微软雅黑";
-}
+
 
 * {
+    font-family: "微软雅黑";
     padding: 0;
     margin: 0;
 }
@@ -748,19 +740,19 @@ div.part2 .main .wrap .imgwrap img {
     margin-left: 0;
 }
 
-#dowebok {
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-iteration-count: 999;
-}
+/*#dowebok {*/
+    /*animation-duration: 4s;*/
+    /*animation-direction: alternate;*/
+    /*animation-iteration-count: 999;*/
+/*}*/
 
-#dowebok2{
-    animation-duration: 8s; 
-    animation-direction: alternate;
-    animation-iteration-count: 999;
-}
-.swtFoot li input.telBtn{
-	margin-top:5px;
-	margin-left:5px;
-}
+/*#dowebok2{*/
+    /*animation-duration: 8s; */
+    /*animation-direction: alternate;*/
+    /*animation-iteration-count: 999;*/
+/*}*/
+/*.swtFoot li input.telBtn{*/
+	/*margin-top:5px;*/
+	/*margin-left:5px;*/
+/*}*/
 /*# sourceMappingURL=style.css.map */
