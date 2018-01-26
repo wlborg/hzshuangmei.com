@@ -139,6 +139,7 @@ function paginationFixed() {
         var thisLink = $(this).attr('href') + "#ca_01";
         $(this).attr('href', thisLink);
     });
+}
     // $('html,body').animate({scrollTop: '850px'}, 800);
 $(function() {
     //preReady();
