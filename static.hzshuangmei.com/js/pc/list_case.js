@@ -137,7 +137,7 @@ function preReady() {
 function paginationFixed() {
     $('.pagination').find('li').on('click', 'a', function(event) {
         var thisLink = $(this).attr('href')[0] + "#ca_01";
-        $(this).attr('href', 'thisLink');
+        $(this).attr('href', thisLink);
     });
 }
 $(function() {
