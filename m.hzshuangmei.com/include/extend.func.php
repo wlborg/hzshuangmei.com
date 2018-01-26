@@ -156,7 +156,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0 order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -240,7 +240,7 @@ $row = $dsql->GetOne("SELECT * FROM #@__archives
 where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' order by rand() limit 4 ");
+where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' and a.arcrank=0  order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -396,7 +396,7 @@ default:
 $relatetypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36' and a.arcrank=0 order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -516,7 +516,7 @@ default:
 $relatetypeid= 14 ;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid' order by rand() limit 4 ");
+where  a.typeid='$relatetypeid' and a.arcrank=0 order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -559,7 +559,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0  order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -658,7 +658,7 @@ default:
 $relatetypeid= '14';
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
+where  a.typeid in ( $relatetypeid ) and a.arcrank=0 order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -748,7 +748,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 4 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0  order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -898,7 +898,7 @@ default:
 $relatetypeid= 3;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36' and a.arcrank=0 order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -959,7 +959,7 @@ $row = $dsql->GetOne("SELECT * FROM #@__archives
 where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 4 ");
+where  a.typeid='$typeid' and a.id <> '$id'  and a.arcrank=0 order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
