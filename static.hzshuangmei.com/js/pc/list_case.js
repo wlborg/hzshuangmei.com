@@ -136,10 +136,11 @@ function preReady() {
  */
 function paginationFixed() {
     $('.pagination').find('a').on('click', function(event) {
-        console.log($(this).attr('href'));
+        alert($(this).attr('href'));
         var thisLink = $(this).attr('href')[0] + "#ca_01";
         $(this).attr('href', thisLink);
     });
+    $("html,body").animate({scrollTop: $("#ca_01")}, 1000);
 }
 $(function() {
     //preReady();
