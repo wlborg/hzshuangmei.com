@@ -506,11 +506,15 @@ div.part2 .main .wrap .imgwrap img {
     background-size: 50% 70%;
 }
 .part6 {
+    height: 13.875rem;
     max-width: 24.0rem;
     text-align: left;
     margin: 0.825rem auto 0;
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6.jpg") center top no-repeat;
     background-size: cover;
+}
+.part6 .main{
+    padding-top: 0.025rem;
 }
 .part6 p {
     color: #fff;
