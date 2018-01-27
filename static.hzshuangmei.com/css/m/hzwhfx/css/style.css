@@ -1,0 +1,603 @@
+﻿@charset "UTF-8";
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 100px;
+    font-family: "微软雅黑";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+.main {
+    width: 16.0rem;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.title {
+    padding-top: 0.75rem;
+    padding-bottom: 0.55rem;
+    background: #ff6d00;
+}
+
+.title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+.title p {
+    font-size: 0.8rem;
+}
+
+.button {
+    position: absolute;
+    background: #f13b5f;
+    float: left;
+    width: 2.8rem;
+    border-radius: 0.25rem;
+}
+
+.button p {
+    color: #fff;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.part1 .main {
+    margin-top: 0.4rem;
+}
+.part1 .title{
+padding-top:0.15rem;
+padding-bottom:0.15rem;}
+.part1 .main .top1,
+.part1 .main .top2 {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-bottom: 0.75rem;
+}
+
+.part1 .main .top1 li,
+.part1 .main .top2 li {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.part1 .main .top1 li img,
+.part1 .main .top2 li img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.part1 .main .top1 li p,
+.part1 .main .top2 li p {
+    margin-top: 0.4rem;
+    text-align: center;
+    font-size: 0.44rem;
+    color: #535353;
+}
+
+.part1 .main .top2 {
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part1 .main .bottom {
+    position: relative;
+    background: #14c9da;
+    overflow: hidden;
+}
+
+.part1 .main .bottom section {
+    float: left;
+    margin: 0.5rem 0.2rem;
+    color: #fff;
+    background: url("//img.hzshuangmei.com/m/images/bg_part1-bottom-section.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.part1 .main .bottom section h2 {
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 400;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.part1 .main .bottom section p {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    margin: 0 0.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.part1 .main .bottom img {
+    margin-top: 0.15rem;
+    width: 4rem;
+    float: left;
+    margin-right: 0.15rem;
+}
+
+.part1 .main .bottom .button {
+    top: 83%;
+    left: 2.0rem;
+}
+
+.part2 {
+    margin-top: 0.95rem;
+    background-color: #f6eee3;
+}
+
+.part2 .left {
+    float: left;
+    margin: 0.35rem auto 1.325rem 0;
+}
+
+.part2 .left img {
+    width: 6.4rem;
+}
+
+.part2 .right {
+    position: relative;
+    float: left;
+    padding: 0.45rem 0.25rem 0.55rem 0.25rem;
+    border: 0.05rem solid #e0dad2;
+    margin-top: 0.85rem;
+    margin-bottom: 1.6rem;
+}
+
+.part2 .right p {
+    font-size: 0.5rem;
+}
+
+.part2 .right .top-left,
+.part2 .right .bottom-right {
+    position: absolute;
+    width: 0.85rem;
+    height: 1.0rem;
+}
+
+.part2 .right .top-left {
+    border-top: 0.05rem solid #9a9a9a;
+    border-left: 0.05rem solid #9a9a9a;
+    left: 0;
+    top: 0;
+    margin-left: -0.025rem;
+    margin-top: -0.025rem;
+}
+
+.part2 .right .bottom-right {
+    border-right: 0.05rem solid #9a9a9a;
+    border-bottom: 0.05rem solid #9a9a9a;
+    right: 0;
+    bottom: 0;
+    margin-right: -0.025rem;
+    margin-bottom: -0.025rem;
+}
+
+.part2 .right .button {
+    margin-top: 1rem;
+    left: 50%;
+    margin-left: -1.4rem;
+}
+
+.part3 .main {
+    margin-top: 0.6rem;
+}
+
+.part3 .main img {
+    float: left;
+    width: 8.0rem;
+}
+
+.part3 .main p {
+    text-align: center;
+    font-size: 0.45rem;
+}
+
+.part3 .main ul {
+    margin-top: 1.05rem;
+    margin-left: 0.3rem;
+    width: 7.7rem;
+    height: 9.25rem;
+    float: right;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+}
+
+.part3 .main ul li {
+    -webkit-flex: 1 3.5rem;
+        -ms-flex: 1 3.5rem;
+            flex: 1 3.5rem;
+}
+
+.part3 .main ul li h2 {
+    font-size: 0.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: #000;
+    background: url("//img.hzshuangmei.com/m/images/bg_part3_h2.jpg") left center no-repeat;
+    background-size: contain;
+}
+
+.part3 .main ul li p {
+    text-align: left;
+    font-size: 0.4rem;
+    color: #535353;
+    margin-top: 0.5rem;
+}
+
+.part3 .main .button {
+    width: 5rem;
+    left: 60%;
+    margin-top: 8px;
+    border-radius: 0;
+}
+
+.part4 {
+    margin-top: 0.95rem;
+}
+.part4 .main{
+margin-top:0.6rem;}
+.part4 .picfont {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part4 .picfont li {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #fff;
+}
+
+.part4 .picfont li img {
+    width: 100%;
+}
+
+.part4 .picfont li h2 {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+
+.part4 .picfont li p {
+    margin: 0.1rem 0.15rem auto 0.15rem;
+    font-size: 0.5rem;
+}
+
+.part4 .picfont li:first-child {
+    background: #e9728a;
+}
+
+.part4 .picfont li:nth-child(2) {
+    background: #3cc4c2;
+}
+
+.part4 .picfont li:last-child {
+    background: #e69638;
+}
+
+.part4 .safe h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #090909;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.part4 .safe h2 span {
+    display: block;
+    height: 0.05rem;
+    background: #464646;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+
+.part4 .safe ul {
+    position: relative;
+    width: 11.9rem;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.part4 .safe ul li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part4 .safe ul li img {
+    width: 4.55rem;
+    height: 100%;
+}
+
+.part4 .safe ul li:nth-child(3),
+.part4 .safe ul li:nth-child(4) {
+    margin-top: 60px;
+}
+
+.part4 .safe ul .bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -3rem;
+    margin-left: -0.3rem;
+}
+
+.part4 .safe ul .bg .shu {
+    display: block;
+    height: 4.75rem;
+    width: 0.1rem;
+    margin-left: 0.3rem;
+    background: url("//img.hzshuangmei.com/m/images/bg_part4_bg_border.jpg") repeat-y;
+}
+
+.part4 .safe ul .bg .circle {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #636363;
+}
+
+.part5 {
+    margin-top: 1.6rem;
+}
+
+.part5 .title p {
+    font-size: 0.8rem;
+}
+
+.part5 .main {
+    margin-top: 0.95rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.part5 .main .font {
+    position: absolute;
+    background: #292928;
+    width: 100%;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    top: 100%;
+    height: 1.5rem;
+    margin-top: -1.5rem;
+}
+
+.part5 .main .font p {
+    color: #fff;
+    font-size: 0.45rem;
+    line-height: 1.5rem;
+}
+
+.part5 .main .font p span {
+    font-size: 0.6rem;
+}
+
+.part5 .main .par5_top {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part5 .main .par5_top .left {
+    position: relative;
+    width: 7.8rem;
+}
+
+.part5 .main .par5_top .left img {
+    width: 100%;
+}
+
+.part5 .main .par5_top .right {
+    width: 8.0rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part5 .main .par5_top .right img {
+    width: 100%;
+}
+
+.part5 .main .par5_top .right .top_left,
+.part5 .main .par5_top .right .top_right {
+    position: relative;
+}
+
+.part5 .main .bottompic {
+    position: relative;
+}
+
+.part5 .main .bottompic img {
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.part6 {
+    margin-top: 0.95rem;
+}
+
+.part6 .title p {
+    font-size: 0.9rem;
+}
+
+.part6 .main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+margin-top:0.6rem;
+}
+
+.part6 .main img {
+    width: 100%;
+}
+
+.part6 .main img:last-child {
+    margin-top: 0.2rem;
+}
+
+.part7 {
+    margin-top: 0.9rem;
+}
+
+.part7 .main {
+    margin-top: 0.95rem;
+}
+
+.part7 .main ul {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.part7 .main ul li h2 {
+    font-size: 0.6rem;
+    font-weight: 100;
+    color: #090909;
+}
+
+.part7 .main ul li p {
+    color: #535353;
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.part7 .main ul li p span {
+    color: #f13b5f;
+    font-size: 0.55rem;
+}
+
+.part7 .main ul:before,
+.part7 .main ul:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #a0a0a0;
+}
+
+.part7 .main ul:before {
+    left: 31%;
+}
+
+.part7 .main ul:after {
+    left: 66%;
+}
+.footer {
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    z-index: 9999
+}
