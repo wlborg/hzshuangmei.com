@@ -493,6 +493,9 @@ margin-top:0.6rem;}
 .part5 .main .par5_top .right .top_right {
     position: relative;
 }
+.part5 .main .par5_top .right .top_right{
+    margin-top: 0.25rem;
+}
 
 .part5 .main .bottompic {
     position: relative;
