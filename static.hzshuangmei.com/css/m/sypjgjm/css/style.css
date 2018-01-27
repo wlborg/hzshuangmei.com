@@ -1,20 +1,5 @@
 ﻿@charset "UTF-8";
-body {
-    /*width: 100%;
-     */
-    /*margin: 0;
-     */
-    /*padding: 0;
-     */
-    /*padding-top:1rem;
-     */
-    /*padding-left: 0.05rem;
-     */
-    /*padding-right: 0.05rem;
-     */
-    /*margin-bottom:2rem;
-     */
-}
+
 * {
     font-family: "微软雅黑";
     padding: 0;
@@ -493,6 +478,7 @@ div.part2 .main .wrap .imgwrap img {
 }
 .part5 .main {
     margin-top: 0.825rem;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
@@ -520,11 +506,15 @@ div.part2 .main .wrap .imgwrap img {
     background-size: 50% 70%;
 }
 .part6 {
+    height: 13.875rem;
     max-width: 24.0rem;
     text-align: left;
     margin: 0.825rem auto 0;
     background: url("//img.hzshuangmei.com/m/sypjgjm/image/bg_part6.jpg") center top no-repeat;
     background-size: cover;
+}
+.part6 .main{
+    padding-top: 0.025rem;
 }
 .part6 p {
     color: #fff;
