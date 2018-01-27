@@ -54,8 +54,9 @@ img {
   width: 146px;
   height: 36px;
   border-radius: 30px; }
-  .button p {
+  .button span {
     color: #fff;
+    display: block;
     font-size: 24px;
     line-height: 36px;
     text-align: center; }
