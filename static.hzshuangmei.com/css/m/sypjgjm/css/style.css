@@ -1,7 +1,5 @@
 ﻿@charset "UTF-8";
-body {
-overflow-x: hidden;
-}
+
 * {
     font-family: "微软雅黑";
     padding: 0;
@@ -480,6 +478,7 @@ div.part2 .main .wrap .imgwrap img {
 }
 .part5 .main {
     margin-top: 0.825rem;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
