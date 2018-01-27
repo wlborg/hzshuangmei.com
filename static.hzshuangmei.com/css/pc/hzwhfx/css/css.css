@@ -1,0 +1,362 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑"; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  display: block;
+  border: none; }
+
+.main {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.banner {
+  width: 100%; }
+  .banner img {
+    width: 100%; }
+
+.title {
+  padding-top: 42px;
+  padding-bottom: 38px;
+  background: #ff6d00; }
+  .title h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 48px; }
+
+.button {
+  position: absolute;
+  background: #f13b5f;
+  float: left;
+  width: 146px;
+  height: 36px;
+  border-radius: 30px; }
+  .button span {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center; }
+
+.part1 .main {
+  margin-top: 52px; }
+  .part1 .main .top {
+    width: 100%;
+    margin-bottom: 32px; }
+    .part1 .main .top li {
+      float: left;
+      margin-right: 11px; }
+      .part1 .main .top li p {
+        margin-top: 13px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px; }
+    .part1 .main .top .no-right {
+      margin-right: 0; }
+  .part1 .main .bottom {
+    position: relative;
+    background: #14c9da;
+    overflow: hidden; }
+    .part1 .main .bottom div {
+      float: left;
+      margin: 32px 12px 26px 15px;
+      color: #fff;
+      background: url("//img.hzshuangmei.com/pc/hzwhfx/images/bg_part1-bottom-section.jpg") no-repeat;
+      background-size: 100%; }
+      .part1 .main .bottom div h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 100;
+        margin-top: 44px;
+        margin-bottom: 16px; }
+      .part1 .main .bottom div p {
+        font-size: 22px;
+        margin-left: 8px;
+        line-height: 36px;
+        margin-bottom: 18px; }
+    .part1 .main .bottom img {
+      margin-top: 8px;
+      width: 776px;
+      float: right;
+      margin-right: 8px; }
+    .part1 .main .bottom .button {
+      top: 274px;
+      left: 130px; }
+
+.part2 {
+  margin-top: 50px;
+  background-color: #f6eee3; }
+  .part2 .left {
+    float: left;
+    margin: 58px auto 23px 142px; }
+  .part2 .right {
+    position: relative;
+    float: right;
+    margin-top: 112px;
+    padding: 34px;
+    border: 2px solid #e0dad2; }
+    .part2 .right p {
+      font-size: 22px;
+      line-height: 32px; }
+    .part2 .right .top-left,
+    .part2 .right .bottom-right {
+      position: absolute;
+      width: 40px;
+      height: 42px; }
+    .part2 .right .top-left {
+      border-top: 4px solid #9a9a9a;
+      border-left: 4px solid #9a9a9a;
+      left: 0;
+      top: 0;
+      margin-left: -4px;
+      margin-top: -4px; }
+    .part2 .right .bottom-right {
+      border-right: 4px solid #9a9a9a;
+      border-bottom: 4px solid #9a9a9a;
+      right: 0;
+      bottom: 0;
+      margin-right: -4px;
+      margin-bottom: -4px; }
+    .part2 .right .button {
+      margin-top: 80px;
+      left: 230px; }
+
+.part3 .main {
+  margin-top: 50px; }
+  .part3 .main img {
+    float: left; }
+  .part3 .main p {
+    text-align: center;
+    font-size: 18px; }
+  .part3 .main ul {
+    margin-top: 140px;
+    margin-left: 42px;
+    width: 556px;
+    height: 350px;
+    float: right;
+    margin-bottom: 90px; }
+    .part3 .main ul li {
+      float: left;
+      width: 278px; }
+      .part3 .main ul li h2 {
+        font-size: 30px;
+        font-weight: 100;
+        padding-left: 40px;
+        color: #000;
+        background: url("//img.hzshuangmei.com/pc/hzwhfx/images/bg_part3_h2.jpg") left center no-repeat; }
+      .part3 .main ul li p {
+        text-align: left;
+        font-size: 24px;
+        color: #535353;
+        margin-top: 15px; }
+  .part3 .main .button {
+    left: 64%;
+    margin-top: 8px;
+    border-radius: 0; }
+
+.part4 {
+  margin-top: 50px; }
+  .part4 .picfont li {
+    float: left;
+    width: 382px;
+    height: 748px;
+    color: #fff;
+    margin-right: 27px; }
+    .part4 .picfont li h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 100;
+      margin-top: 16px; }
+    .part4 .picfont li p {
+      margin: 20px 20px auto 20px;
+      font-size: 20px;
+      line-height: 28px; }
+  .part4 .picfont .first {
+    background: #e9728a; }
+  .part4 .picfont .second {
+    background: #3cc4c2; }
+  .part4 .picfont .third {
+    background: #e69638;
+    margin-right: 0; }
+  .part4 .safe h2 {
+    font-size: 36px;
+    font-weight: 100;
+    color: #090909;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 36px; }
+    .part4 .safe h2 span {
+      display: block;
+      height: 1px;
+      background: #464646;
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 12px; }
+  .part4 .safe ul {
+    position: relative;
+    height: 400px;
+    margin-bottom: 50px; }
+    .part4 .safe ul li {
+      float: left;
+      width: 546px;
+      margin-right: 100px; }
+      .part4 .safe ul li p {
+        font-size: 20px;
+        line-height: 34px;
+        float: left; }
+      .part4 .safe ul li img {
+        width: 175px;
+        height: 175px;
+        float: right; }
+    .part4 .safe ul .no-right {
+      margin-right: 0; }
+      .part4 .safe ul .no-right p {
+        float: right; }
+      .part4 .safe ul .no-right img {
+        float: left; }
+    .part4 .safe ul .bottom {
+      margin-bottom: 44px; }
+    .part4 .safe ul .bg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -116px;
+      margin-left: -12px; }
+      .part4 .safe ul .bg .shu {
+        display: block;
+        height: 184px;
+        width: 2px;
+        margin-left: 12px;
+        background: url("//img.hzshuangmei.com/pc/hzwhfx/images/bg_part4_bg_border.jpg") repeat-y; }
+      .part4 .safe ul .bg .circle {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #636363; }
+
+.part5 .title p {
+  font-size: 36px; }
+.part5 .main {
+  margin-top: 50px; }
+  .part5 .main .font {
+    position: absolute;
+    background: #292928;
+    width: 100%;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    top: 100%;
+    height: 90px;
+    margin-top: -90px; }
+    .part5 .main .font p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 16px;
+      margin-left: 16px; }
+      .part5 .main .font p span {
+        font-size: 22px; }
+  .part5 .main .left {
+    float: left;
+    width: 32.5%;
+    position: relative; }
+    .part5 .main .left img {
+      width: 100%; }
+  .part5 .main .right {
+    float: right;
+    width: 66.7%; }
+    .part5 .main .right .top {
+      position: relative; }
+      .part5 .main .right .top .top_left {
+        float: left;
+        position: relative; }
+      .part5 .main .right .top .top_right {
+        float: right;
+        position: relative; }
+    .part5 .main .right .bottompic {
+      position: relative; }
+      .part5 .main .right .bottompic .font {
+        height: 60px;
+        margin-top: -60px; }
+
+.part6 {
+  margin-top: 50px; }
+  .part6 .title p {
+    font-size: 36px; }
+  .part6 .main {
+    margin-top: 50px; }
+    .part6 .main img {
+      float: left;
+      margin-right: 12px; }
+    .part6 .main .no-right {
+      margin-right: 0; }
+
+.part7 {
+  margin-top: 50px; }
+  .part7 .main {
+    margin-top: 50px; }
+    .part7 .main ul {
+      position: relative;
+      height: 150px; }
+      .part7 .main ul li {
+        float: left;
+        width: 397px;
+        margin-right: 3px; }
+        .part7 .main ul li h2 {
+          font-size: 24px;
+          font-weight: 100;
+          color: #090909;
+          float: left; }
+        .part7 .main ul li p {
+          color: #535353;
+          font-size: 18px;
+          line-height: 32px;
+          margin-top: 40px; }
+          .part7 .main ul li p span {
+            color: #f13b5f;
+            font-size: 18px; }
+      .part7 .main ul .no-right {
+        margin-right: 0; }
+    .part7 .main ul::before,
+    .part7 .main ul::after {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      height: 140px;
+      width: 1px;
+      background: #a0a0a0;
+      top: 50%;
+      margin-top: -70px; }
+    .part7 .main ul::before {
+      left: 32%; }
+    .part7 .main ul::after {
+      left: 66%; }
+.foot{
+  height: 350px;
+}
+/*# sourceMappingURL=css.css.map */
