@@ -259,7 +259,10 @@ img {
         background: #636363; }
 
 .part5 .title p {
-  font-size: 36px; }
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+}
 .part5 .main {
   margin-top: 50px; }
   .part5 .main .font {
@@ -307,7 +310,10 @@ img {
 .part6 {
   margin-top: 50px; }
   .part6 .title p {
-    font-size: 36px; }
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+  }
   .part6 .main {
     margin-top: 50px; }
     .part6 .main img {
