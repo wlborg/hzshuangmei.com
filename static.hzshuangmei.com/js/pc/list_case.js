@@ -136,13 +136,12 @@ function preReady() {
  */
 function paginationFixed() {
     $('.pagination').find('a').on('click', function(event) {
-        alert($(this).attr('href'));
         var thisLink = $(this).attr('href') + "#ca_01";
         $(this).attr('href', thisLink);
     });
-    $("html,body").animate({scrollTop: $("#ca_01")}, 1000);
 }
+    // $('html,body').animate({scrollTop: '850px'}, 800);
 $(function() {
     //preReady();
-paginationFixed();
+    paginationFixed();
 });
