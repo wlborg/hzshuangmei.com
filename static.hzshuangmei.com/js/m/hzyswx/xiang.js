@@ -24,12 +24,12 @@ var timer=setInterval(autoplay,3000)
 		   };
  };
 
-$(".main7").hover(function(){
-  clearInterval(timer);
-  timer=null
-},function(){
-  clearInterval(timer);
-  timer=setInterval(autoplay,3000)
-})
+// $(".main7").hover(function(){
+//   clearInterval(timer);
+//   timer=null
+// },function(){
+//   clearInterval(timer);
+//   timer=setInterval(autoplay,3000)
+// })
 
 })

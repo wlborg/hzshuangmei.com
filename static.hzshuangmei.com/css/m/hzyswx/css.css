@@ -120,5 +120,5 @@ a { color: #fff; border: none; text-decoration: none; }
 .main9 ul li img { width: 100%; margin-bottom: 0.125rem; }
 .main9-l { width: 7rem; float: left; }
 .main9-r { width: 8rem; float: right; }
-.padfoot { height: 73px; }
-.footer { border: 1px #e1e1e1 solid; width: 100%; font-size: 16px; position: fixed; bottom: 0; left: 0; right: 0; background-color: #fafafa; z-index: 9999; }
+/*.padfoot { height: 73px; }*/
+/*.footer { border: 1px #e1e1e1 solid; width: 100%; font-size: 16px; position: fixed; bottom: 0; left: 0; right: 0; background-color: #fafafa; z-index: 9999; }*/
