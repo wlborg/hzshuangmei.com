@@ -47,6 +47,8 @@
 }
 .project_banner #ptab li {
     margin-bottom: 11px;
+    width:291px;
+    height:110px;
 }
 #ptabCon {
     clear: both;
