@@ -9,7 +9,7 @@ p, span { font-size: 0.5rem; }
 h3 { font-size: 0.6rem; }
 a { color: #fff; border: none; text-decoration: none; }
 .impor { width: 0; height: 0; overflow: hidden; text-indent: 2em; }
-.banner { width: 100%; margin: 0 auto; margin-top: 1.625rem; }
+.banner { width: 100%; margin: 0 auto;  }
 .hx { width: 100%; height: 1rem; background-color: #7497cd; display: block; }
 .tt01 { width: 11.075rem; height: 1.9rem; margin: 0 auto; padding: 2.25rem 0 1.575rem; }
 .main1 { width: 96%; height: auto; margin: 0 auto; }
