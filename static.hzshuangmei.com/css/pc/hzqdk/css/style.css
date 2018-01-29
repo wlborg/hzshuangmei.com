@@ -1,0 +1,505 @@
+body {
+    width: 100%;
+    background: #fff;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+span {
+    font-family: "微软雅黑";
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.title img {
+    width: 100%;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.button {
+    width: 134px;
+    margin: 0 auto;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_button.png') no-repeat;
+}
+
+.button a {
+    font-size: 24px;
+    line-height: 44px;
+    padding-left: 22px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.part1 {
+    margin-top: 50px;
+}
+
+.part1 .main {
+    margin-top: 84px;
+}
+
+.part1 .main ul {
+    overflow: hidden;
+}
+
+.part1 .main li {
+    float: left;
+    position: relative;
+    margin-left: 18px;
+}
+
+.part1 .main p {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    padding: 88px 80px 102px 80px;
+}
+
+.part1 .main .li_b p {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.part1 .main img {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    margin-left: -135px;
+}
+
+.part1 .main h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 38px;
+    color: #39800a;
+}
+
+.part1 .button {
+    margin-top: 42px;
+}
+
+
+/* .part1 end */
+
+.part2 {
+    margin-top: 70px;
+}
+
+.part2 .main {
+    margin-top: 65px;
+    position: relative;
+}
+
+.part2 .main .img_top {
+    display: block;
+    width: 935px;
+    margin: 0 auto;
+}
+
+.part2 .main ul {
+    width: 935px;
+    margin: 0 auto;
+    margin-top: 13px;
+    overflow: hidden;
+}
+
+.part2 .main li {
+    float: left;
+}
+
+.part2 .main li p {
+    font-size: 16px;
+    color: #7e7c7c;
+    line-height: 20px;
+}
+
+.part2 .main .li2 {
+    margin-left: 74px;
+}
+
+.part2 .main .li3 {
+    margin-left: 30px;
+}
+
+.part2 .main .li4 {
+    margin-left: 24px;
+}
+
+.part2 .main .li5 {
+    margin-left: 34px;
+}
+
+.part2 .main .li6 {
+    float: right;
+}
+
+.part2 .main h2 {
+    font-size: 24px;
+    color: #47851e;
+    margin-top: 50px;
+    margin-left: 230px;
+}
+
+.part2 .main h2 span {
+    font-size: 28px;
+}
+
+.part2 .main .font_block {
+    display: block;
+    font-size: 16px;
+    width: 424px;
+    line-height: 30px;
+    padding: 12px 50px 18px 24px;
+    margin-top: 22px;
+    margin-left: 185px;
+    color: #fff;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_part2-p.jpg') no-repeat;
+}
+
+.part2 .main .img_2 {
+    margin-left: 702px;
+    margin-top: -258px;
+}
+
+.part2 .button {
+    margin-left: 220px;
+    margin-top: -40px;
+}
+
+
+/* part2 end */
+
+.part3 {
+    margin-top: 50px;
+}
+
+.part3 .main {
+    position: relative;
+    margin-top: 84px;
+    overflow: hidden;
+}
+
+.part3 .main .img_1 {
+    margin-left: 20px;
+}
+
+.part3 .main .font_1,
+.part3 .main .img_2 {
+    float: right;
+}
+
+.part3 .main .font_1 h2 {
+    font-size: 36px;
+    color: #47851e;
+    line-height: 74px;
+    margin-top: 62px;
+}
+
+.part3 .main .font_1 h1 {
+    font-size: 20px;
+    color: #acd094;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.part3 .main .font_1 p {
+    font-size: 16px;
+    color: #a2a1a1;
+    line-height: 30px;
+}
+
+.part3 .main .img_1,
+.part3 .main .font_2 {
+    float: left;
+    display: block;
+}
+
+.part3 .main .font_2 {
+    margin-top: 554px;
+    margin-left: -536px;
+}
+
+.part3 .main .font_2 h2 {
+    font-size: 36px;
+    color: #47851e;
+    line-height: 74px;
+}
+
+.part3 .main .font_2 h1 {
+    font-size: 20px;
+    color: #acd094;
+    line-height: 30px;
+}
+
+.part3 .main .font_2 p {
+    font-size: 16px;
+    color: #a2a1a1;
+    line-height: 30px;
+}
+
+.part3 .main .img_2 {
+    margin-top: 168px;
+}
+
+.part3 .main .font_2 .fonttop {
+    margin-top: 18px;
+}
+
+.part3 .button {
+    position: absolute;
+    left: 48px;
+    margin-top: 860px;
+}
+
+
+/* part3 end*/
+
+.part4 {
+    margin-top: 48px;
+}
+
+.part4 .main {
+    margin-top: 92px;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_part4-main.jpg') center top no-repeat;
+}
+
+.part4 .main ul {
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.part4 .main li {
+    position: relative;
+    float: left;
+}
+
+.part4 .main li img {
+    position: absolute;
+}
+
+.part4 .main li h2 {
+    font-size: 20px;
+    color: #47851e;
+    padding-left: 80px;
+    line-height: 32px;
+}
+
+.part4 .main li p {
+    font-size: 15px;
+    color: #a3a3a3;
+    padding-left: 80px;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+
+.part4_li2,
+.part4_li4,
+.part4_li6 {
+    margin-top: -72px;
+    margin-left: 782px;
+}
+
+.part4_li3,
+.part4_li5 {
+    margin-top: 44px;
+}
+
+.part4_li3 h2,
+.part4_li4 h2 {
+    padding-top: 17px;
+}
+
+.part4_li4 {
+    margin-top: -89px;
+}
+
+.part4_li5 h2,
+.part4_li6 h2 {
+    padding-top: 24px;
+}
+
+.part4_li6 {
+    margin-top: -96px;
+}
+
+.part4 .button {
+    margin-top: 70px;
+}
+
+
+/* part4 end*/
+
+.part5 {
+    margin-top: 50px;
+}
+
+.part5 .main {
+    margin-top: 60px;
+}
+
+.part5 .main h2 {
+    font-size: 30px;
+    color: #47851e;
+    display: block;
+    width: 502px;
+    text-align: center;
+    margin: 0 auto;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_part5_h2.jpg') left center no-repeat;
+}
+
+.part5 .main h2 span {
+    display: block;
+    width: 502px;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_part5_h2_2.jpg') 420px center no-repeat;
+}
+.part5 .main p{
+    line-height: 24px;
+}
+.missh,
+.missl,
+.mrw {
+    margin-top: 52px;
+}
+
+.missh h1,
+.missl h1,
+.mrw h1 {
+    font-size: 36px;
+    color: #47851e;
+    line-height: 58px;
+    padding-bottom: 14px;
+    width: 418px;
+    background: url('//img.hzshuangmei.com/pc/hzqdk/images/bg_part5_h2_3.jpg') 25px bottom no-repeat;
+}
+
+.missh h1,
+.mrw h1,
+.missh p,
+.mrw p {
+    margin-left: 716px;
+}
+
+.missh h1 span,
+.missl h1 span,
+.mrw h1 span {
+    font-size: 22px;
+}
+.missl h1,
+.missl p{
+	margin-left: 80px;
+}
+.missh p,
+.missl p,
+.mrw p {
+    font-size: 16px;
+    color: #a3a3a3;
+    width: 418px;
+    margin-top: 14px;
+
+}
+.p{
+	padding-bottom: 30px;
+}
+.missh p span,
+.missl p span,
+.mrw p span {
+    font-size: 20px;
+    color: #47851e;
+    line-height: 26px;
+}
+.missh img,
+.missl img,
+.mrw img{
+	display: block;
+	width: 588px;
+	height: 250px;
+	padding: 10px;
+	border: 2px solid #cee1c1;
+}
+.missh img,
+.mrw img{
+	float: left;
+	margin-left: 80px;
+	margin-right: 50px;	
+    margin-top: 16px;
+}
+.missl img{
+	float: right;
+}
+.part5 .button{
+	margin-top: 32px;
+}
+/* part5 end */
+
+.part6{
+	margin-top: 50px;
+	padding-bottom: 84px;
+}
+.part6 .main{
+	margin-top: 40px;
+	position: relative;
+}
+.part6 .main h2{
+	font-size: 60px;
+	color: #47851e;
+	margin-left: 60px;
+	margin-top: -245px;
+	margin-bottom: 35px;
+}
+.part6 .main p{
+	font-size: 24px;
+	color: #363636;
+	margin-left: 16px;
+	line-height: 40px;
+	width: 550px;
+	padding-left: 44px;
+	background: #fff;
+}
+.part6 .main .describ{
+	font-size: 20px;
+	margin-top: 40px;
+	width: 420px;
+	padding-bottom: 20px;
+}
+.part6 .main img{
+	position: absolute;
+	z-index: 1;
+	left: 514px;
+}
+.part6 .main .bottom img{
+	left: 46px;
+	margin-top: 14px;
+}
+.bottom{
+	width: 1180px;
+	margin-top: 380px;
+	border: 10px solid #a8c892;
+}
+.part6 .button{
+	margin-left: 340px;
+	margin-bottom: 36px;
+}
+.part_ul li p{
+    visibility: hidden;
+}
+.part_ul li.show p{
+    visibility: visible;
+}

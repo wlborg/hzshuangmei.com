@@ -1,0 +1,19 @@
+ html {
+     font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+     -ms-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+     font-size: 62.5%;
+ }
+ 
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ li {
+     list-style: none;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
