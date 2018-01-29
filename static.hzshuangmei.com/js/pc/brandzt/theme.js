@@ -230,7 +230,7 @@ $(function() {
         container: $(".zt-m6 .slide-container"),
         itemCount: 4,
         itemWidth: 1218,
-        speed: 1000,
+        speed: 300,
         auto: true,
         nextBtn: $(".zt-m6 .slide-wrapper .prev"),
         prevBtn: $(".zt-m6 .slide-wrapper .next")
