@@ -50,6 +50,7 @@
     width:291px;
     height:110px;
     overflow: hidden;
+    cursor: pointer;
 }
 .project_banner #ptab li img {
     width: 100%;
