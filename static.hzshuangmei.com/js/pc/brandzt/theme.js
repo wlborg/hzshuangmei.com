@@ -222,6 +222,7 @@ $(function() {
         itemCount: 3,
         itemWidth: 1195,
         speed:300,
+        interval:5000,
         auto: true,
         indicator: $(".zt-m4 .slide-indecator")
     });
