@@ -221,7 +221,7 @@ $(function() {
         container: $(".zt-m4 .slide-container"),
         itemCount: 3,
         itemWidth: 1195,
-        speed: 300,
+        speed:300,
         auto: true,
         indicator: $(".zt-m4 .slide-indecator")
     });
@@ -231,6 +231,7 @@ $(function() {
         itemCount: 4,
         itemWidth: 1218,
         speed: 300,
+        interval:5000,
         auto: true,
         nextBtn: $(".zt-m6 .slide-wrapper .prev"),
         prevBtn: $(".zt-m6 .slide-wrapper .next")
