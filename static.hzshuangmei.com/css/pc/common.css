@@ -173,7 +173,7 @@ body .popup .layui-layer-btn .layui-layer-btn2{width:120px;margin:5px 15px 0;col
     width: 200px;
     left: 20px;
     bottom: 20px;
-    z-index:1000;
+    z-index:999999;
     -webkit-animation: tada2 10s -9s ease both infinite;
     -moz-animation: tada2 10s -9s ease both infinite;
 }
