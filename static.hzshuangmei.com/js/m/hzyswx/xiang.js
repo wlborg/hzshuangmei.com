@@ -23,13 +23,14 @@ var timer=setInterval(autoplay,3000)
              $(".main7-box li").eq($key).show().siblings().hide();
 		   };
  };
+    function aab(){
+        clearInterval(timer);
+        timer=setInterval(autoplay,3000)
+    }
 
-// $(".main7").hover(function(){
-//   clearInterval(timer);
-//   timer=null
-// },function(){
-//   clearInterval(timer);
-//   timer=setInterval(autoplay,3000)
-// })
+$(".main7").hover(function(){
+  clearInterval(timer);
+ setTimeout(aab,3000)
+},)
 
 })
