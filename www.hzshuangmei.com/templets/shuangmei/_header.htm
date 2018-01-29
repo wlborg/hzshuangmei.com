@@ -155,7 +155,7 @@
                             <i></i>
                         </a>
                     </li> {/dede:arclist} -->
-       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel="17"  and a.typeid="3"  order by  a.weight asc  limit  0,2"}
+       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and a.typeid=3  order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
@@ -178,7 +178,7 @@
                         </a>
                     </li>
                     {/dede:arclist} -->
-                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel="17"  and  a.typeid="4"  order by  a.weight asc  limit  0,2"}
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
@@ -201,7 +201,7 @@
                         </a>
                     </li>
                     {/dede:arclist} -->
-                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel="17"  and a.typeid="5"  order by  a.weight asc  limit  0,2"}
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17 and a.typeid=5  order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
