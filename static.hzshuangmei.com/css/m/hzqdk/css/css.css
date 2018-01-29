@@ -1,0 +1,473 @@
+@charset "UTF-8";
+body {
+    width: 100%;
+    padding-top: 40px;
+    font-family: "微软雅黑";
+    padding-bottom: 2.5rem;
+}
+
+#banner {
+    width: 98%;
+    margin: 0 auto;
+}
+
+#banner img {
+    width: 100%;
+}
+
+#contain {
+    width: 98%;
+    margin: 1.25rem auto;
+    margin-bottom: 0;
+}
+
+#buttom {
+    width: 3.35rem;
+    height: 1.1rem;
+    margin: 1rem auto 0 auto;
+    background: url(//img.hzshuangmei.com/m/hzqdk/images/bg_buttom.png) no-repeat;
+    background-size: contain;
+}
+
+#buttom a {
+    display: block;
+    width: 3.35rem;
+    height: 1.1rem;
+    font-size: 0.6rem;
+    line-height: 1.1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.title {
+    width: 100%;
+    margin-top: 0.25rem;
+}
+
+.title img {
+    width: 100%;
+}
+
+.main {
+    margin: 1rem auto 0 auto;
+    overflow: hidden;
+}
+
+.part1 {
+    width: 100%;
+}
+
+.part1_main img {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 6.775rem;
+    height: 5.125rem;
+}
+
+.part1_main .right img {
+    margin-left: 1.1rem;
+}
+
+.part1_main .font18px {
+    font-size: 0.45rem;
+    color: #fff;
+    padding-top: 2.1rem;
+    margin-left: 1.75rem;
+}
+
+.part1_main .font24px {
+    font-size: 0.6rem;
+    color: #39800a;
+    margin-top: 2.7rem;
+    margin-left: 2.25rem;
+}
+
+.part1_main .right .font24px {
+    margin-left: 3.1rem;
+}
+
+.part1_main .right .font18px {
+    margin-left: 3.1rem;
+}
+
+.part1_main .right .fonttop {
+    margin-left: 2.85rem;
+}
+
+.part1_main .right .fonttop_2 {
+    margin-left: 3.4rem;
+}
+
+.a .font18px {
+    margin-left: 2rem;
+}
+
+.a .font24px {
+    margin-left: 1.875rem;
+}
+
+.part2,
+.part3,
+.part4,
+.part5,
+.part6 {
+    margin-top: 1.25rem;
+}
+
+.part2_main .img-top img,
+.part2_main .img-bottom img {
+    display: block;
+    float: left;
+    width: 2.7rem;
+    height: 4.525rem;
+}
+
+.img-top,
+.img-bottom {
+    overflow: hidden;
+}
+
+.part2_main img {
+    width: 100%;
+}
+
+.part2_main .img-top img {
+    margin-right: 2.5rem;
+}
+
+.part2_main .img-bottom img {
+    margin-left: 2.5rem;
+}
+
+.part2_main li {
+    color: #666;
+    float: left;
+    width: 4.1rem;
+    font-size: 0.45rem;
+    margin-top: 0.3rem;
+}
+
+.part2_li_1 {
+    margin-left: 0.35rem;
+}
+
+.li_right {
+    margin-left: 1.3rem;
+}
+
+.li_left {
+    margin-left: 2.15rem;
+}
+
+.li_center {
+    margin-left: 1rem;
+}
+
+.img-bottom .li_right_b {
+    width: 2.7rem;
+    margin-left: 1.5rem;
+}
+
+.part2 .descri {
+    margin: 0 auto;
+    margin-top: 0.6rem;
+}
+
+.part2 .descri h2 {
+    color: #659a62;
+    font-size: 0.55rem;
+    line-height: 1.45rem;
+    width: 9.75rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.part2 .descri span {
+    font-size: 0.8rem;
+}
+
+.part2 .descri p {
+    display: block;
+    font-size: 0.45rem;
+    width: 11.6rem;
+    margin: 0 auto;
+    padding: 1.6rem 2.45rem 1rem 1rem;
+    line-height: 0.75rem;
+    color: #fff;
+    background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_part2_descri.jpg") center no-repeat;
+    background-size: contain;
+}
+
+.part3 .font {
+    padding-right: 0;
+}
+
+.part3 .main h2 {
+    color: #47851e;
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    padding-left: 0.5rem;
+}
+
+.part3 .main h1 {
+    color: #acd094;
+    font-size: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 0.6rem;
+}
+
+.part3 .main p {
+    font-size: 0.45rem;
+    color: #b6b4b4;
+    padding-left: 0.5rem;
+    padding-top: 0.35rem;
+    line-height: 0.75rem;
+}
+
+.part3 .main .under .font h2,
+.part3 .main .under .font h1,
+.part3 .main .under .font p {
+    padding-left: 0;
+    padding-right: 0.15rem;
+}
+
+.part3 .main .under .font h2 {
+    line-height: 1.25rem;
+}
+
+.part3 .main .under .font h1 {
+    line-height: 0.6rem;
+}
+
+.part3 .main img {
+    display: block;
+    width: 7.875rem;
+    height: 8.675rem;
+}
+
+.part3 .main .under {
+    margin-top: 1rem;
+}
+
+.part3 .main .under .img {
+    padding-right: 0;
+}
+
+.part4 li {
+    position: relative;
+    padding-top: 0.425rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.part4 li h1,
+.part4 li p {
+    padding-left: 4.5rem;
+}
+
+.part4 li h1 {
+    font-size: 0.55rem;
+    margin-top: 0.25rem;
+    color: #47851e;
+}
+
+.part4 li p {
+    font-size: 0.45rem;
+    color: #b6b2b2;
+    padding-bottom: 0.3rem;
+}
+
+.part4 .main img {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 2rem;
+}
+
+.part5 .main {
+    overflow: hidden;
+}
+
+.missh,
+.missl,
+.sirw {
+    float: left;
+    width: 7.8rem;
+}
+
+.missl img {
+    float: right;
+}
+
+.missl p,
+.missl h2 {
+    margin-left: 0.25rem;
+}
+
+.part5 .main h2 {
+    font-size: 0.7rem;
+    color: #47851e;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_part5-h2.jpg") left bottom no-repeat;
+}
+
+.part5 .main span {
+    font-size: 0.5rem;
+    color: #47851e;
+}
+
+.part5 .main p {
+    font-size: 0.45rem;
+    line-height: 0.75rem;
+    color: #a3a3a3;
+}
+
+.missl {
+    margin-top: 5rem;
+}
+
+.part5 .main img {
+    display: block;
+    width: 7rem;
+    border: 0.075rem solid #c8dbbb;
+    padding: 0.15rem;
+}
+
+.sirw {
+    margin-top: -1.25rem;
+}
+
+.part5 #buttom {
+    margin-top: 20.9rem;
+    width: 4.85rem;
+    height: 5.85rem;
+    overflow: hidden;
+    background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_buttom.png") 0.9rem bottom no-repeat;
+    background-size: 3.375rem 0.9rem;
+}
+
+.part5 #buttom a {
+    color: #000;
+}
+
+.part5 #buttom img {
+    display: block;
+    width: 4.65rem;
+    height: 4.775rem;
+    border: none;
+}
+
+.part5 #buttom a {
+    margin-top: -0.25rem;
+    padding-left: 0.85rem;
+    color: #fff;
+}
+
+.part6 {
+    margin-bottom: 0.9rem;
+}
+
+.part6 h2 {
+    float: left;
+    font-size: 0.7rem;
+    color: #47851e;
+    margin-top: 2rem;
+}
+
+.part6 .main {
+    position: relative;
+}
+
+.part6 .main p {
+    display: block;
+    font-size: 0.45rem;
+    color: #363636;
+}
+
+
+
+.shu {
+    float: left;
+    margin-right: 0.25rem;
+    padding-bottom: 1.25rem;
+    width: 0.1rem;
+    margin-left: 0.1rem;
+    margin-top: 2rem;
+    background: #94bc79;
+}
+
+.part6 .main img {
+    display: block;
+    float: left;
+    border-right: 0.1rem solid #94bc79;
+    margin-top: 2rem;
+    width: 1.15rem;
+}
+
+.top {
+    margin-top: 2rem;
+}
+
+.detail {
+    position: relative;
+    margin-top: 1.35rem;
+    padding-bottom: 0.34rem;
+    border: 0.25rem solid #a8c892;
+}
+
+.part6 .main .detail p {
+    display: block;
+    position: relative;
+    width: 99%;
+    font-size: 0.5rem;
+    color: #363636;
+    text-align: left;
+    margin-left: 0.1rem;
+    line-height: 0.9rem;
+    background: #fff;
+}
+
+.part6 .main .detail img {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border: none;
+    top: 34%;
+    left: -0.225rem;
+    width: 0.25rem;
+    margin-top: 0;
+}
+.part6 .main .detail .lijie {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    top: -5.46rem;
+    display: block;
+    width: 8.25rem;
+    margin-top:0;
+    left: 7.45rem;
+}
+
+/* .part6 #buttom{
+  margin-top: 
+  } */
+
+.part6 .main .detail .part6-font {
+    margin-top: -0.4rem;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    z-index: 9999;
+}

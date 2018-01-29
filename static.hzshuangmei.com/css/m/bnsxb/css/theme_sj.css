@@ -650,8 +650,14 @@ body {
     margin-bottom: 1.25rem
 }
 
-.m6 .content, .m6 .slideW .item h4, .m6 .slideW .item ul {
+.m6 .content, .m6 .slideW .item ul {
     margin-top: .5rem
+}
+.m6 .slideW .item ul{
+    margin-top: 0;
+}
+.m6 .slideW .item h4{
+    margin-top: 0.4rem;
 }
 
 .m5 .cat {
@@ -721,7 +727,7 @@ body {
 }
 
 .m6 .slideW .consult {
-    margin-top: .55rem;
+    margin-top: .45rem;
     padding: .3rem 1.25rem
 }
 
