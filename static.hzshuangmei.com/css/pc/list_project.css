@@ -49,6 +49,10 @@
     margin-bottom: 11px;
     width:291px;
     height:110px;
+    overflow: hidden;
+}
+.project_banner #ptab li img {
+    width: 100%;
 }
 #ptabCon {
     clear: both;
