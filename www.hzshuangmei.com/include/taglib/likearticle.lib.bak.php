@@ -8,7 +8,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
-
+ 
 /*>>dede>>
 <name>相关文档</name>
 <type>全局标记</type>
@@ -20,41 +20,41 @@
 {/dede:likearticle}
 </demo>
 <attributes>
-    <iterm>col:分多少列显示（默认为单列）</iterm>
+    <iterm>col:分多少列显示（默认为单列）</iterm> 
     <iterm>row:返回文档列表总数</iterm>
     <iterm>titlelen:标题长度 等同于titlelength</iterm>
     <iterm>infolen:表示内容简介长度 等同于infolength</iterm>
     <iterm>mytypeid:手工指定要限定的栏目id，用,分开表示多个</iterm>
     <iterm>innertext:单条记录样式(指标签中间的内容)</iterm>
-</attributes>
+</attributes> 
 >>dede>>*/
-
+ 
 function lib_likearticle(&$ctag,&$refObj)
 {
     global $dsql;
-
+    
     //属性处理
     $attlist="row|12,titlelen|28,infolen|150,col|1,tablewidth|100,mytypeid|0,byabs|0,imgwidth|120,imgheight|90";
     FillAttsDefault($ctag->CAttribute->Items,$attlist);
     extract($ctag->CAttribute->Items, EXTR_SKIP);
     $revalue = '';
-
+    
     if(empty($tablewidth)) $tablewidth = 100;
     if(empty($col)) $col = 1;
     $colWidth = ceil(100/$col);
     $tablewidth = $tablewidth."%";
     $colWidth = $colWidth."%";
-
+    
     $ids = array();
     $tids = array();
-
+    
     if(!empty($refObj->Fields['tags'])) {
         $keyword = $refObj->Fields['tags'];
     }
     else {
         $keyword = ( !empty($refObj->Fields['keywords']) ? $refObj->Fields['keywords'] : '' );
     }
-
+    
     $typeid = ( !empty($mytypeid) ? $mytypeid : 0 );
     if(empty($typeid))
     {
@@ -65,26 +65,25 @@ function lib_likearticle(&$ctag,&$refObj)
              if(!empty($refObj->Fields['typeid'])) $typeid = $refObj->Fields['typeid'];
         }
     }
-
+    
     if( !empty($typeid) && !preg_match('#,#', $typeid) ) {
         $typeid = GetSonIds($typeid);
     }
-
+    
     $limitRow = $row - count($ids);
     $keyword = '';
     if(!empty($refObj->Fields['keywords']))
     {
-        //    $keywords = explode(',' , trim($refObj->Fields['keywords']));
-                $keywords = explode(',' , trim($refObj->Fields['tags']));
+            $keywords = explode(',' , trim($refObj->Fields['keywords']));
             $keyword = '';
             $n = 1;
             foreach($keywords as $k)
             {
                 if($n > 3)  break;
-
+                 
                 if(trim($k)=='') continue;
                 else $k = addslashes($k);
-
+                 
                 $keyword .= ($keyword=='' ? " CONCAT(arc.keywords,' ',arc.title) LIKE '%$k%' " : " OR CONCAT(arc.keywords,' ',arc.title) LIKE '%$k%' ");
                 $n++;
             }
@@ -92,49 +91,32 @@ function lib_likearticle(&$ctag,&$refObj)
     $arcid = (!empty($refObj->Fields['id']) ? $refObj->Fields['aid'] : 0);
     if( empty($arcid) || $byabs==0 )
     {
-        $orderquery = " ORDER BY arc.id desc ";
+        $orderquery = " ORDER BY arc.id desc ";     
     }
     else {
         $orderquery = " ORDER BY ABS(arc.id - ".$arcid.") ";
     }
-    // if($keyword != '')
-    // {
-    //          if(!empty($typeid)) {
-    //                  $typeid = " AND arc.typeid IN($typeid) AND arc.id<>$arcid ";
-    //          }
-    //          $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
-    //               tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-    //               FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
-    //               where arc.arcrank>-1 AND ($keyword)  $typeid $orderquery limit 0, $row";
-    // }
-    // else
-    // {
-    //         if(!empty($typeid)) {
-    //                 $typeid = " arc.typeid IN($typeid) AND arc.id<>$arcid ";
-    //         }
-    //         $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
-    //               tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-    //               FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
-    //              WHERE arc.arcrank>-1 AND  $typeid $orderquery limit 0, $row";
-    // }
-
     if($keyword != '')
-{
-         $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
-              tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-              FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
-              where arc.arcrank>-1 AND ($keyword) limit 0, $row";
-}
-else
-{
-        $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
-              tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-              FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
-             WHERE arc.arcrank>-1 limit 0, $row";
-}
-
-
-
+    {
+             if(!empty($typeid)) {
+                     $typeid = " AND arc.typeid IN($typeid) AND arc.id<>$arcid ";
+             }
+             $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+                  tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+                  FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
+                  where arc.arcrank>-1 AND ($keyword)  $typeid $orderquery limit 0, $row";
+    }
+    else
+    {
+            if(!empty($typeid)) {
+                    $typeid = " arc.typeid IN($typeid) AND arc.id<>$arcid ";
+            }
+            $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+                  tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+                  FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
+                 WHERE arc.arcrank>-1 AND  $typeid $orderquery limit 0, $row";
+    }
+    
     $innertext = trim( $ctag->GetInnerText() );
     if($innertext=='') $innertext = GetSysTemplets('part_arclist.htm');
 
@@ -194,7 +176,7 @@ else
                 $row['plusurl'] = $row['phpurl'] = $GLOBALS['cfg_phpurl'];
                 $row['memberurl'] = $GLOBALS['cfg_memberurl'];
                 $row['templeturl'] = $GLOBALS['cfg_templeturl'];
-
+                
                 if(is_array($dtp2->CTags))
                 {
                     foreach($dtp2->CTags as $k=>$ctag)
