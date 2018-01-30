@@ -196,13 +196,14 @@ h3{
     border: 1px solid #ebebeb;
 }
 .article_case_content .main_content .note p {
-    margin-top: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 10px 0 10px 10px;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: justify;
     color: #a287a9;
     background: #f3f1f6;
+    width: 820px;
 }
 
 /********************* case_article  modal*********************/
