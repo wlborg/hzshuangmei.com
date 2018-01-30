@@ -9,6 +9,7 @@
 !*.php
 !*.css
 !*.js
+!static.hzshuangmei.com/img/pc/banner/news/
 *.mp4
 .txt
 .project
