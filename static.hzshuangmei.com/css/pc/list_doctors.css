@@ -176,8 +176,12 @@
 #doctors_tabCon ul li .doc_p2{
     font-size: 14px;
     color: #5c5c5c;
-    margin-top: 8px;
     height: 43px;
+    width: 248px;
+    margin: 8px auto 0;
+}
+#doctors_tabCon ul li .doc_p2 br {
+    display: none;
 }
 #doctors_tabCon ul li i {
     display: block;
