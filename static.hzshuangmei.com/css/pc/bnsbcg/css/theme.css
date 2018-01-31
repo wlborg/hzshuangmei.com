@@ -456,8 +456,8 @@ body {
 .m5 .btn, .m5 img, .m6 img {
     display: block
 }
-.m5 img{
-    margin-top: 11px;
+.m5 .cat img{
+    margin-top: 2px;
 }
 
 .m1 p {
