@@ -9,9 +9,6 @@
 !*.php
 !*.css
 !*.js
-!static.hzshuangmei.com/img/pc/banner/news/
-!static.hzshuangmei.com/img/pc/banner/doctors/
-!static.hzshuangmei.com/img/pc/banner/project/
 *.mp4
 .txt
 .project
@@ -33,9 +30,11 @@ honors/
 install/
 /www.hzshuangmei.com/m/
 /m.hzshuangmei.com/m/
-news/
+/www.hzshuangmei.com/news/
+/m.hzshuangmei.com/news/
 pma/
-projects/
+/www.hzshuangmei.com/projects/
+/m.hzshuangmei.com/projects/
 special/
 uploads/
 video/
