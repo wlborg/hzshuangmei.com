@@ -39,7 +39,7 @@
             <div class="clearFix" id="project">
                 <ul>
                     <li>
-                        <h5><a href="">医学纹绣</a></h5>
+                        <h5><a href="/projects" target="_blank">医学纹绣</a></h5>
                     </li>
                     {dede:arclist typeid=20 orderby='id' row='3'}
                     <li>
@@ -55,7 +55,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">眼部整形</a></h5>
+                        <h5><a href="/projects" target="_blank">眼部整形</a></h5>
                     </li>
                     {dede:arclist typeid=15 orderby='id' row='3'}
                     <li>
@@ -69,7 +69,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">鼻部整形</a></h5>
+                        <h5><a href="/projects" target="_blank">鼻部整形</a></h5>
                     </li>
                     {dede:arclist typeid=14 orderby='id' row='3'}
                     <li>
@@ -83,7 +83,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">面部整形</a></h5>
+                        <h5><a href="/projects" target="_blank">面部整形</a></h5>
                     </li>
                     {dede:arclist typeid=16 orderby='id' row='3'}
                     <li class="star">
@@ -97,7 +97,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">皮肤美容</a></h5>
+                        <h5><a href="/projects" target="_blank">皮肤美容</a></h5>
                     </li>
                     {dede:arclist typeid=21 orderby='id' row='3'}
                     <li>
@@ -111,7 +111,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">玻尿酸</a></h5>
+                        <h5><a href="/projects" target="_blank">玻尿酸</a></h5>
                     </li>
                     {dede:arclist typeid=22 orderby='id' row='3'}
                     <li>
@@ -125,7 +125,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">形体雕塑</a></h5> </li> {dede:arclist typeid=19 orderby='id' row='3'}
+                        <h5><a href="/projects" target="_blank">形体雕塑</a></h5> </li> {dede:arclist typeid=19 orderby='id' row='3'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
@@ -145,22 +145,31 @@
             <div id="expert">
                 <ul>
                     <li>
-                        <h5><a href="">整形美容专家</a></h5>
+                        <h5><a href="/doctors" target="_blank">整形美容专家</a></h5>
                     </li>
-                    {dede:arclist typeid=3  channelid="17"  isweight='y'  orderby='weight'  row='2' addfields="zhiwei,thumb"}
+<!--                     {dede:arclist typeid=3  channelid="17"  isweight='y'  orderby='weight'  row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
                             <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
-                    </li> {/dede:arclist}
+                    </li> {/dede:arclist} -->
+       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and a.typeid=3  order by  a.weight asc  limit  0,2"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
+                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <i></i>
+                        </a>
+                    </li>
+                     {/dede:sql}
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">激光美容专家</a></h5>
+                        <h5><a href="/doctors" target="_blank">激光美容专家</a></h5>
                     </li>
-                    {dede:arclist typeid=4   channelid="17" isweight='y' orderby='weight'  row='2' addfields="zhiwei,thumb"}
+        <!--             {dede:arclist typeid=4   channelid="17" isweight='y' orderby='weight'  row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
@@ -168,26 +177,43 @@
                             <i></i>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc  limit  0,2"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
+                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <i></i>
+                        </a>
+                    </li>
+                     {/dede:sql}
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">医学纹绣</a></h5>
+                        <h5><a href="/doctors" target="_blank">医学纹绣</a></h5>
                     </li>
-                    {dede:arclist typeid=5    channelid="17" isweight='y' orderby='weight'  row='2' addfields="zhiwei,thumb"}
+ <!--                    {dede:arclist typeid=5    channelid="17" isweight='y' orderby='weight'  row='2' addfields="zhiwei,thumb"}
                     <li>
                         <a href="[field:arcurl/]" target="_blank">
-                        <!--<a class="j-site-consult" href="javascript:void(0)" target="_blank">-->
                     <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
                             <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17 and a.typeid=5  order by  a.weight asc  limit  0,2"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
+                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <i></i>
+                        </a>
+                    </li>
+                     {/dede:sql}
                 </ul>
                 <ul>
                     <li>
-                        <h5><a href="">特邀专家</a></h5>
+                        <h5><a href="/doctors" target="_blank">特邀专家</a></h5>
                     </li>
                     {dede:arclist typeid=2   channelid="17" flag="h" orderby='id' row='2' addfields="zhiwei,thumb"}
                     <li>
@@ -201,7 +227,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h5 class="moon"><a href="">每月专家</a></h5>
+                        <h5 class="moon"><a href="/doctors" target="_blank">每月专家</a></h5>
                     </li>
                     <li class="last-one">
                         <a class="last-one" href="https://www.hzshuangmei.com/doctors/surgery/liudalie.html " target="_blank">
