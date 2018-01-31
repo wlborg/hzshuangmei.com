@@ -470,7 +470,7 @@ body {
 .m5 .btn, .m5 img, .m6 img {
     display: block
 }
-.m5 img{
+.m5 .cat img{
     margin-top: 11px;
 }
 
