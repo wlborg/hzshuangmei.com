@@ -387,7 +387,7 @@ default:
 $relatetypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid'  and b.aid  <> '36'  and b.aid <>'154' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid'  and b.aid not in(36,151,154) order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -1118,7 +1118,7 @@ default:
 $relatedoctortypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatedoctortypeid'  and b.aid  <> '36'  and b.aid <> '154' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatedoctortypeid'  and b.aid  not in (36,151,154) order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
