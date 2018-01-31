@@ -9,6 +9,9 @@
 !*.php
 !*.css
 !*.js
+!static.hzshuangmei.com/img/pc/banner/news/
+!static.hzshuangmei.com/img/pc/banner/doctors/
+!static.hzshuangmei.com/img/pc/banner/project/
 *.mp4
 .txt
 .project
