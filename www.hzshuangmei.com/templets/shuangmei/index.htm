@@ -23,7 +23,7 @@
             <h2>
                 <a href="/video/" target="_blank">
                     <span>视频中心</span><br/>
-                    <img src="{dede:global.cfg_imgpath/}/pc/n_video_center.png" alt="video center"/>
+                    <img data-src="{dede:global.cfg_imgpath/}/pc/n_video_center.png"  class="lazyload" alt="video center"/>
                 </a>
             </h2>
             <div class="swiper-button-next video-button-next"></div>
@@ -34,7 +34,7 @@
             <h2 class="news_h">
                 <a href="/news/" target="_blank">
                     <span>新闻中心</span><br/>
-                    <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png" alt="latest activity"/>
+                    <img data-src="{dede:global.cfg_imgpath/}/pc/latest_activity.png" class="lazyload" alt="latest activity"/>
                 </a>
             </h2>
 
@@ -45,7 +45,7 @@
                     <div class="swiper-wrapper">
                         {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]">
+                            <img data-src="[field:thumb function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]">
 
                             <div class="timu">[field:fulltitle/]</div>
                             <div class="date">
@@ -83,7 +83,7 @@
 </div>
 <div class="index_project">
     <div class="m1">
-        <h3><img src="{dede:global.cfg_imgpath/}/pc/title1.png" alt="主打项目 缔造完美"/></h3>
+        <h3><img  data-src="{dede:global.cfg_imgpath/}/pc/title1.png" class="lazyload" alt="主打项目 缔造完美"/></h3>
 
         <div id="tab2">
             <ul>
@@ -96,7 +96,7 @@
         <ul id="tabCon2">
             <li class="fdiv2">
                 <div class="clearFix">
-                    <div class="left"><a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_01.jpg" alt="红妆芭比大眼"/></a>
+                    <div class="left"><a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_01.jpg" class="lazyload" alt="红妆芭比大眼"/></a>
                     </div>
                     <div class="right clearFix">
                         <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_02.jpg" alt="红妆无痕祛眼袋"/></a>
@@ -111,44 +111,44 @@
             <li>
                 <div class="clearFix">
                     <div class="left">
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_08.jpg" alt="无创量子祛斑"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img data-src="{dede:global.cfg_imgpath/}/pc/p1_08.jpg" class="lazyload" alt="无创量子祛斑"/></a>
                     </div>
                     <div class="right clearFix">
                         <!--<a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_09.jpg" alt="超声刀"/></a>-->
-                        <a href="projects/quban/pimiao.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_11.jpg" alt="皮秒祛斑"/></a>
-                        <a href="projects/quban/queban.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_10.jpg" alt="祛雀斑"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_09_1.jpg" alt="光子嫩肤"/></a>
-                        <a href="projects/tuomao/tuomao2.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_12.jpg" alt="清凉脱毛"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_13.jpg" alt="毛孔收缩"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_14.jpg" alt="激光除皱"/></a>
+                        <a href="projects/quban/pimiao.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_11.jpg" class="lazyload" alt="皮秒祛斑"/></a>
+                        <a href="projects/quban/queban.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_10.jpg" class="lazyload" alt="祛雀斑"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_09_1.jpg" class="lazyload" alt="光子嫩肤"/></a>
+                        <a href="projects/tuomao/tuomao2.html" target="_blank"><img data-src="{dede:global.cfg_imgpath/}/pc/p1_12.jpg" class="lazyload" alt="清凉脱毛"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_13.jpg" class="lazyload" alt="毛孔收缩"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_14.jpg" class="lazyload" alt="激光除皱"/></a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="clearFix">
-                    <div class="left"><a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_15.jpg" alt="微针回春术"/></a>
+                    <div class="left"><a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_15.jpg" class="lazyload" alt="微针回春术"/></a>
                     </div>
                     <div class="right clearFix">
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_16.jpg" alt="法思丽玻尿酸"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_17.jpg" alt="瑞蓝玻尿酸"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_18.jpg" alt="逸美玻尿酸"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_16.jpg"  class="lazyload" alt="法思丽玻尿酸"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_17.jpg"  class="lazyload" alt="瑞蓝玻尿酸"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img s data-rc="{dede:global.cfg_imgpath/}/pc/p1_18.jpg"  class="lazyload" alt="逸美玻尿酸"/></a>
                         <a href="projects/ha/ifresh.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_19.jpg" alt="爱芙莱玻尿酸"/></a>
-                        <a href="projects/botox/shoulianzhen2.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_20.jpg" alt="瘦脸针"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_21.jpg" alt="BOTOX"/></a>
+                        <a href="projects/botox/shoulianzhen2.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_20.jpg"  class="lazyload" alt="瘦脸针"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_21.jpg"  class="lazyload" alt="BOTOX"/></a>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="clearFix">
-                    <div class="left"><a href="projects/tattoo/hzyswx.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_22.jpg" alt="艺术纹绣"/></a>
+                    <div class="left"><a href="projects/tattoo/hzyswx.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_22.jpg" alt="艺术纹绣"/></a>
                     </div>
                     <div class="right clearFix">
-                        <a href="projects/tattoo/byjwm.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_23.jpg" alt="韩式半永久纹眉"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_24.jpg" alt="韩式粉雾眉"/></a>
-                        <a href="projects/tattoo/yanxian.html" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_25.jpg" alt="美瞳线"/></a>
-                        <a  class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_26.jpg" alt="韩式丝雾眉"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_27.jpg" alt="艺术晶唇"/></a>
-                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img src="{dede:global.cfg_imgpath/}/pc/p1_28.jpg" alt="五度空间仿真眉"/></a>
+                        <a href="projects/tattoo/byjwm.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_23.jpg"  class="lazyload" alt="韩式半永久纹眉"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_24.jpg"  class="lazyload" alt="韩式粉雾眉"/></a>
+                        <a href="projects/tattoo/yanxian.html" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_25.jpg"  class="lazyload" alt="美瞳线"/></a>
+                        <a  class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_26.jpg"  class="lazyload" alt="韩式丝雾眉"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_27.jpg"  class="lazyload" alt="艺术晶唇"/></a>
+                        <a class="j-site-consult" href="javascript:void(0)" target="_blank"><img  data-src="{dede:global.cfg_imgpath/}/pc/p1_28.jpg"  class="lazyload" alt="五度空间仿真眉"/></a>
                     </div>
                 </div>
             </li>
@@ -183,7 +183,7 @@
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
                          <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                <img  data-src="[field:thumb2 function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -207,7 +207,7 @@
                {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc }
                          <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                <img data-src="[field:thumb2 function='replaceurl(@me)/]"  class="lazyload" alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -231,7 +231,7 @@
                                        {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=5  order by  a.weight asc }
                          <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                <img data-src="[field:thumb2 function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -247,7 +247,7 @@
 </div>
 <div class="index_clients">
     <div class="m1">
-        <h3><img src="{dede:global.cfg_imgpath/}/pc/title3.png" alt="真人代言 现身说法"/></h3>
+        <h3><img  data-src="{dede:global.cfg_imgpath/}/pc/title3.png" class="lazyload" alt="真人代言 现身说法"/></h3>
 
         <div id="tab4">
             <ul class="clearFix">
@@ -264,13 +264,13 @@
                 <li>
                     <div class="clients_t">
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:imgbefore function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:imgbefore function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术前</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
                         </a>
                         <a href="[field:arcurl/]" class="qiehuan">
-                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:imgafter function='replaceurl(@me)/]"  class="lazyload" alt="[field:title/]"/>
                             <span>术后</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
@@ -291,13 +291,13 @@
                 <li>
                     <div class="clients_t">
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:imgbefore function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:imgbefore function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术前</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
                         </a>
                         <a href="[field:arcurl/]" class="qiehuan" target="_blank">
-                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img data-src="[field:imgafter function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术后</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
@@ -318,13 +318,13 @@
                 <li>
                     <div class="clients_t">
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:imgbefore function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:imgbefore function='replaceurl(@me)/]"  class="lazyload" alt="[field:title/]"/>
                             <span>术前</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
                         </a>
                         <a href="[field:arcurl/]" class="qiehuan" target="_blank">
-                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img data-src="[field:imgafter function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术后</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
@@ -345,13 +345,13 @@
                 <li>
                     <div class="clients_t">
                         <a href="[field:arcurl/]" target="_blank">
-                            <img src="[field:imgbefore function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:imgbefore function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术前</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
                         </a>
                         <a href="[field:arcurl/]" class="qiehuan" target="_blank">
-                            <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img data-src="[field:imgafter function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
                             <span>术后</span>
 
                             <p>[美丽蜕变] [field:title/]</p>
@@ -383,7 +383,7 @@
                         {dede:arclist typeid=57 titlelen="120" flag="c" orderby='id' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img  data-src="[field:thumb function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
 
                             <p>[field:title/]</p>
                         </a>
@@ -401,7 +401,7 @@
                         {dede:arclist typeid=58 titlelen="120" flag="c" orderby='id' row='3' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img data-src="[field:thumb function='replaceurl(@me)/]"  class="lazyload" alt="[field:title/]"/>
 
                             <p>[field:title/]</p>
                         </a>
@@ -419,7 +419,7 @@
                         {dede:arclist typeid=59 titlelen="120" flag="c" orderby='id' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank">
-                            <img src="[field:thumb function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <img data-src="[field:thumb function='replaceurl(@me)/]" class="lazyload" alt="[field:title/]"/>
 
                             <p>[field:title/]</p>
                         </a>
