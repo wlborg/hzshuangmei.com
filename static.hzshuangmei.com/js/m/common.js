@@ -590,17 +590,21 @@
    })();
    /*滑动屏幕隐藏和现实导航栏*/
    // 手指在屏幕上滑动的时候顶部的导航栏自动隐藏，只保留离线宝
-   var touch = document.querySelector('#nav');
-   document.addEventListener("touchmove", function(e) {
-       // e.preventDefault();
-       navfadeout(touch, 0, 2000);
-       console.log('执行滑动');
-   }, false)
-   // 当手指离开屏幕的时候，显示导航栏
-   document.addEventListener("touchend", function(e) {
-       navfadein(touch, 1, 2000);
-       console.log('手离开屏幕');
-   }, false)
+   //
+   window.onload = function() {
+       var touch = document.querySelector('#menu');
+       document.addEventListener("touchmove", function(e) {
+           // e.preventDefault();
+           navfadeout(touch, 0, 2000);
+           console.log('执行滑动');
+       }, false)
+       // 当手指离开屏幕的时候，显示导航栏
+       document.addEventListener("touchend", function(e) {
+           navfadein(touch, 1, 2000);
+           console.log('手离开屏幕');
+       }, false)
+   }
+
    function navfadein(ele, opacity, speed) {
        if (ele) {
            var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity;
@@ -618,6 +622,7 @@
            }, 500);
        }
    }
+
    function navfadeout(ele, opacity, speed) {
        if (ele) {
            var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity || 100;
