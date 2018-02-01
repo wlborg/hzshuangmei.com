@@ -684,3 +684,15 @@
 var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2":"https://jspassport.ssl.qhimg.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2";
 document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
+
+
+// 手指在屏幕上滑动的时候顶部的导航栏自动隐藏，只保留离线宝
+document.addEventListener("touchmove", function(e) {
+    // e.preventDefault();
+    var touch = e.touches[0];
+    $("#nav").fadeOut("slow");
+}, false)
+// 当手指离开屏幕的时候，显示导航栏
+document.addEventListener("touchend", function(e) {
+        $("#nav").fadeIn("slow");
+}, false)
