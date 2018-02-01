@@ -691,8 +691,10 @@ document.addEventListener("touchmove", function(e) {
     // e.preventDefault();
     var touch = e.touches[0];
     $("#nav").fadeOut("slow");
+    console.log('执行滑动');
 }, false)
 // 当手指离开屏幕的时候，显示导航栏
 document.addEventListener("touchend", function(e) {
         $("#nav").fadeIn("slow");
+            console.log('手离开屏幕');
 }, false)
