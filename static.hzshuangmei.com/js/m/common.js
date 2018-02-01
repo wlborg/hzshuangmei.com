@@ -603,40 +603,40 @@
            navfadein(touch, 1, 2000);
            console.log('手离开屏幕');
        }, false)
-   }
 
-   function navfadein(ele, opacity, speed) {
-       if (ele) {
-           var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity;
-           v < 1 && (v = v * 100);
-           var count = speed / 1000;
-           var avg = count < 2 ? (opacity / count) : (opacity / count - 1);
-           var timer = null;
-           timer = setInterval(function() {
-               if (v < opacity) {
-                   v += avg;
-                   setOpacity(ele, v);
-               } else {
-                   clearInterval(timer);
-               }
-           }, 500);
+       function navfadein(ele, opacity, speed) {
+           if (ele) {
+               var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity;
+               v < 1 && (v = v * 100);
+               var count = speed / 1000;
+               var avg = count < 2 ? (opacity / count) : (opacity / count - 1);
+               var timer = null;
+               timer = setInterval(function() {
+                   if (v < opacity) {
+                       v += avg;
+                       setOpacity(ele, v);
+                   } else {
+                       clearInterval(timer);
+                   }
+               }, 500);
+           }
        }
-   }
 
-   function navfadeout(ele, opacity, speed) {
-       if (ele) {
-           var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity || 100;
-           v < 1 && (v = v * 100);
-           var count = speed / 1000;
-           var avg = (100 - opacity) / count;
-           var timer = null;
-           timer = setInterval(function() {
-               if (v - avg > opacity) {
-                   v -= avg;
-                   setOpacity(ele, v);
-               } else {
-                   clearInterval(timer);
-               }
-           }, 500);
+       function navfadeout(ele, opacity, speed) {
+           if (ele) {
+               var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity || 100;
+               v < 1 && (v = v * 100);
+               var count = speed / 1000;
+               var avg = (100 - opacity) / count;
+               var timer = null;
+               timer = setInterval(function() {
+                   if (v - avg > opacity) {
+                       v -= avg;
+                       setOpacity(ele, v);
+                   } else {
+                       clearInterval(timer);
+                   }
+               }, 500);
+           }
        }
    }
