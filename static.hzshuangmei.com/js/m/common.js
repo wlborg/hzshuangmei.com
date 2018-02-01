@@ -595,48 +595,40 @@
        var touch = document.querySelector('#menu');
        document.addEventListener("touchmove", function(e) {
            // e.preventDefault();
-           navfadeout(touch, 0, 2000);
+           navfadeout(touch);
            console.log('执行滑动');
        }, false)
        // 当手指离开屏幕的时候，显示导航栏
        document.addEventListener("touchend", function(e) {
-           navfadein(touch, 1, 2000);
+           navfadein(touch);
            console.log('手离开屏幕');
        }, false)
 
-       function navfadein(ele, opacity, speed) {
-           if (ele) {
-               var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity;
-               v < 1 && (v = v * 100);
-               var count = speed / 1000;
-               var avg = count < 2 ? (opacity / count) : (opacity / count - 1);
-               var timer = null;
-               timer = setInterval(function() {
-                   if (v < opacity) {
-                       v += avg;
-                       setOpacity(ele, v);
-                   } else {
-                       clearInterval(timer);
-                   }
-               }, 500);
-           }
+       function navfadein(el) {
+           el.style.opacity = 0;
+           el.style.display = "";
+           var last = +new Date();
+           var tick = function() {
+               el.style.opacity = +el.style.opacity + (new Date() - last) / 1000; //1000是可改的，数字越大，显示的速度越慢
+               last = +new Date();
+               if (+el.style.opacity < 1) {
+                   (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+               }
+           };
+           tick();
        }
 
-       function navfadeout(ele, opacity, speed) {
-           if (ele) {
-               var v = ele.style.filter.replace("alpha(opacity=", "").replace(")", "") || ele.style.opacity || 100;
-               v < 1 && (v = v * 100);
-               var count = speed / 1000;
-               var avg = (100 - opacity) / count;
-               var timer = null;
-               timer = setInterval(function() {
-                   if (v - avg > opacity) {
-                       v -= avg;
-                       setOpacity(ele, v);
-                   } else {
-                       clearInterval(timer);
-                   }
-               }, 500);
-           }
+       function navfadeout(el) {
+           el.style.opacity = 1;
+           el.style.display = "";
+           var last = +new Date();
+           var tick = function() {
+               el.style.opacity = +el.style.opacity - (new Date() - last) / 1000;
+               last = +new Date();
+               if (+el.style.opacity > 0) {
+                   (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+               }
+           };
+           tick();
        }
    }
