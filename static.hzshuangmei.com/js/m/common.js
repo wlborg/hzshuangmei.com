@@ -657,6 +657,7 @@
        }, false)
        // 当手指离开屏幕的时候，显示导航栏
        document.addEventListener("touchend", function(e) {
+            e.preventDefault();
            fadeIn(iBase.Id('menu'));
            console.log('手离开屏幕');
        }, false)
