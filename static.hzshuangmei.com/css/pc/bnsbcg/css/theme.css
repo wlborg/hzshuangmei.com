@@ -351,7 +351,8 @@ body {
 }
 
 .m3 .des {
-    margin-top: 30px
+    margin-top: 30px;
+    text-align: left;
 }
 
 .m3 .content {
@@ -454,6 +455,9 @@ body {
 
 .m5 .btn, .m5 img, .m6 img {
     display: block
+}
+.m5 .cat img{
+    margin-top: 2px;
 }
 
 .m1 p {
