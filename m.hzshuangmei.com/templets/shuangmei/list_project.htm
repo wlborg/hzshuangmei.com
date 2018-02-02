@@ -102,7 +102,7 @@
             </div>
             <div class="project-items">
                 <ul class="f-cb">
-                    {dede:list pagesize="10" titlelen="120" orderby="weight" orderway="desc" }
+                    {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc" }
                     <li class="pro-item">
                         <div class="pro-thum">
                           <a href="[field:arcurl/]" title="[field:title/]">
@@ -121,6 +121,11 @@
                 <div class="pro-more">
                     更多项目
                     <br> <span class="icon"></span>
+                </div>
+                 <div class="pagination">
+                  <ul>
+                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                  </ul>
                 </div>
             </div>
             <div class="relatecase">
