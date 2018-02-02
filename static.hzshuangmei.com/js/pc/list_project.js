@@ -19,8 +19,6 @@ function pchange1(obj){
 
 var ptabs2=document.getElementById("ptab2").getElementsByTagName("li");
 var pdivs2=document.getElementById("ptabCon2").getElementsByTagName("li");
-
-
 for(var k=0;k<ptabs2.length;k++){
     ptabs2[k].onclick=function(){pchange2(this);}
 }
@@ -37,6 +35,18 @@ function pchange2(obj){
         }
     }
 }
+
+$(function() {
+    $(".project_con").eq(0).show();
+    $(".btn li").click(function() {
+        var num = $(".btn li").index(this);
+        $(".project_con").hide();
+        $(".project_con").eq(num).show().slblings().hide();
+    })
+});
+
+
+
 
 //prerender
 function preReady() {
