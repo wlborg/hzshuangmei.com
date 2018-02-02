@@ -135,7 +135,7 @@
     background: url(//img.hzshuangmei.com/pc/project_i10.jpg) no-repeat center;
 }
 
-#ptab2 li:nth-child(12) {
+#ptab2 li:last-child{
     background: url(//img.hzshuangmei.com/pc/project_i11.jpg) no-repeat center;
 }
 /*#ptab2 .gengduo {*/
