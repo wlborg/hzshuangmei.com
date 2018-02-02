@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-01-13 17:02:22
+* @Last Modified time: 2018-02-01 18:24:27
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -82,7 +82,7 @@ popup();
             // desc: '{dede:field.description/}',
             // 如果是微信该link的域名必须要在微信后台配置的安全域名之内的。
             link: shareUrl,
-            icon: 'https://img.hzshuangmei.com/m/favicon.ico',
+            icon: 'https://img.hzshuangmei.com/m/kst_logo.png',
             // 不要过于依赖以下两个回调，很多浏览器是不支持的
             success: function() {
                 alert('success')
