@@ -20,16 +20,16 @@
             <div id="doctors_tab">
                 <ul class="clearFix" id="doctor_nav">
                     <li class="nav_list"><a href="/doctors" class="nav-link">全部专家</a></li>
-                    <li class="nav_list"><<a href="/doctors/surgery/" class="nav-link">整形美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/surgery/" class="nav-link">整形美容专家</a></li>
                     <li class="nav_list"><a href="/doctors/tattoo/" class="nav-link">皮肤美容专家</a></li>
                     <li class="nav_list"><a href="/doctors/tattoo/" class="nav-link">医学纹绣师</a></li>
                 </ul>
             </div>
             <div id="doctors_tabCon">
                 <ul class="doc_fdiv clearFix">
-                    <li>
-                        {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
 
+                        {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
+                    <li>
                         <div class="doctor1">
                             <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
                             <div class="clearFix">
@@ -39,8 +39,9 @@
                         </div>
                         <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
                         <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                        {/dede:list}
                     </li>
+                        {/dede:list}
+
 
                 </ul>
             </div>
