@@ -284,7 +284,7 @@ var effects = (
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.lightCurNav("#case_nav", "currnet1");
-    //effects.lightCurNav("#project_nav", "currnet1");
+    effects.lightCurNav("#project_nav", "currnet2");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     tools.addKSTScript();
     tools.addBaiduScript();
