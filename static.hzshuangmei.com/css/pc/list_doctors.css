@@ -193,3 +193,17 @@
     top: -1px;
 
 }
+.pagination{
+    width: 600px;
+    margin: 0 auto 50px
+}
+.pagination>li{
+    float:left;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 8px 14px;
+}
+.pagination .thisclass {
+    background-color: #8a59a7;
+    color: #fff;
+}
