@@ -92,6 +92,9 @@
 #ptab2 ul li img {
     display: none;
 }
+#ptab2 ul .currnet2 img{
+    display:block;
+}
 #ptab2 ul li a{
     height:50px
 }
