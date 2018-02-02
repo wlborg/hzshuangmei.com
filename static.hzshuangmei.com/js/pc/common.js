@@ -283,6 +283,7 @@ var effects = (
 )(window.effects || {});
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
+    effects.lightCurNav(".case_nav", "currnet");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     tools.addKSTScript();
     tools.addBaiduScript();
