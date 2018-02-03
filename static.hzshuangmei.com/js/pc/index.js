@@ -204,3 +204,57 @@ $(function() {
 //        });
 //    }, newOn);
 //});
+// 红妆历程
+//品牌历程
+function LcSlideLedt() {
+    $(".lc_list_box").append($(".lc_list_box .lc_list_con").eq(0).clone(true));
+    var SlideBox = $(".lc_list_box"),
+        SlideList = $(".lc_list_box .lc_list_con"),
+        NavList = $(".lc_con_b .lc_con_btn"),
+        SlideListWidth = SlideList.width(),
+        SlideListLegth = SlideList.length,
+        SlideBoxWidth = SlideBox.width(SlideListWidth * SlideListLegth),
+        $num = 0,
+        $slideNum = 0,
+        slideTimer = null;
+    //滑动开始
+    //点击切换
+    $(NavList).click(function () {
+        var index = $(this).index();
+        $(this).addClass("now").siblings().removeClass("now");
+        $num = index;
+        SlideBox.animate({
+            "left": -$num * SlideListWidth
+        });
+        $slideNum = index * SlideListWidth;
+    });
+    slideTimer = setInterval(autoSlide, 10);
+
+    function autoSlide() {
+        $slideNum++;
+        if ($slideNum > ($num * SlideListWidth + SlideListWidth)) {
+            $num++;
+        }
+        ;
+        if ($num == (SlideListLegth - 1)) {
+            SlideBox.css("left", 0);
+            $num = 0;
+            $slideNum = 0;
+        }
+        ;
+        SlideBox.css(
+            "left", -$slideNum);
+        NavList.eq($num).addClass('now').siblings().removeClass('now');
+    }
+
+    $(NavList).hover(function () {
+        clearInterval(slideTimer);
+    }, function () {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide, 10);
+    });
+}
+
+$(function () {
+    LcSlideLedt();
+})
