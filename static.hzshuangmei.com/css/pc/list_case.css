@@ -63,13 +63,13 @@
     color: #fff!important;
 }
 
-#case_tabCon li {
+/*#case_tabCon li {*/
     /*display: none;*/
-}
+/*}*/
 
-#case_tabCon .case_fdiv {
-    display: block;
-}
+/*#case_tabCon .case_fdiv {*/
+    /*display: block;*/
+/*}*/
 
 
 #case_tabCon .list {
