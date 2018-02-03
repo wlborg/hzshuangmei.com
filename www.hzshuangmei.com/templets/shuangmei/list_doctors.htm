@@ -1,76 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-<head> {dede:include filename="_meta.htm"/} <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
-    <meta name="keywords" content="{dede:field name='keywords'/}"/>
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
-    {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_doctors.css"/>
-  <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
-<link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
+
+<head> {dede:include filename="_meta.htm"/}
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" /> {dede:include filename="_link.htm"/}
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_doctors.css" />
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
 </head>
+
 <body>{dede:include filename="_header.htm"/}{dede:myad name='topbanner_pc'/}
-<div class="m1">
-    <div class="location"><i></i><span>当前位置：</span>{dede:field name='position'/}</div>
-    <div class="line"></div>
-    <h2 class="h2_tit"><img src="{dede:global.cfg_imgpath/}/pc/doctors_title.png" alt=""/></h2>
+    <div class="m1">
+        <div class="location"><i></i><span>当前位置：</span>{dede:field name='position'/}</div>
+        <div class="line"></div>
+        <h2 class="h2_tit"><img src="{dede:global.cfg_imgpath/}/pc/doctors_title.png" alt=""/></h2>
+        <div id="doctors_banner"> {dede:myad name='doctorpic_pc'/}</div>
+        <div class="doctors_content">
+            <div id="doctors_tab">
+                <ul class="clearFix btn" id="doctor_nav">
+                    <li class="nav_list"><a href="/doctors" class="nav_link">全部专家</a></li>
+                    <li class="nav_list"><a href="/doctors/surgery/" class="nav_link">整形美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/laser/" class="nav_link">皮肤美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/tattoo/" class="nav_link">医学纹绣师</a></li>
+                </ul>
+            </div>
+            <div id="doctors_tabCon">
+                <ul class="doc_fdiv doc_con clearFix">
 
-    <div id="doctors_banner"> {dede:myad name='doctorpic_pc'/}</div>
-    <div class="doctors_content">
-        <div id="doctors_tab">
-            <ul class="clearFix">
-                <li class="doc_fli">整形美容专家</li>
-                <li>皮肤美容专家</li>
-                <li>医学纹绣师</li>
-            </ul>
+                        {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
+                    <li>
+                        <div class="doctor1">
+                            <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
+                            <div class="clearFix">
+                                <a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>了解</span></a>
+                                <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
+                            </div>
+                        </div>
+                        <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
+                        <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
+                    </li>
+                        {/dede:list}
+
+
+                </ul>
+            </div>
         </div>
-        <div id="doctors_tabCon">
-            <ul class="doc_fdiv clearFix"> {dede:arclist typeid=3 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>了解</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                </li>
-                {/dede:arclist}
-            </ul>
-            <ul class="clearFix"> {dede:arclist typeid=4 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>                                   了解</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/>                                   预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                </li>
-                {/dede:arclist}
-            </ul>
-            <ul class="clearFix"> {dede:arclist typeid=5 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>                                   了解</span></a>
-                        <!--<div class="clearFix"><a href="javascript:void(0)" class="order j-site-consult" target="_blank"><span>详细<br/>                                   了解</span></a>-->
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/>                                   预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p> <i></i>
-                </li>
-                {/dede:arclist}
-            </ul>
-        </div>
+        <ul class="pagination clearFix">
+            {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
+        </ul>
     </div>
-</div>
-{dede:include filename="_footer.htm"/}
+    {dede:include filename="_footer.htm"/}
 </body>
 {dede:include filename="_script.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/list_doctors.js"></script>
+
 </html>
