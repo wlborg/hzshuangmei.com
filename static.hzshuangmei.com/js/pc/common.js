@@ -324,14 +324,14 @@ var protection = (function(win) {
     var data = {
         suffix: "com",
         main: "www.",
-        red: "bai",
-        beauty: "du",
+        red: "hz",
+        beauty: "shuangmei",
         dot: "."
     };
     var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
     var url = function() {
-        if (document.location.host != "www.baidu.com") {
-            location.href = location.href.replace(document.location.host, 'www.baidu.com');
+        if (document.location.host != "www.hzshuangmei.com") {
+            location.href = location.href.replace(document.location.host, 'www.hzshuangmei.com');
         }
         //return location.href;
     };
