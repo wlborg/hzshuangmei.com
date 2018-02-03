@@ -69,12 +69,10 @@
 }
 
 
-.project_content li {
+.project_content #ptab2 li {
     float: left;
 }
-#ptabCon2 {
-    clear: both;
-}
+
 #ptab2 {
     width: 1178px;
     margin: 85px auto 0;
@@ -164,13 +162,11 @@
 /*#ptab2 .gengduo:hover {*/
     /*color: #7e4d9f;*/
 /*}*/
-#ptabCon2 li {
+#ptabCon2>div {
     /*display: none;*/
     margin-top: 5px;
 }
-#ptabCon2 .pdiv2 {
-    display: block;
-}
+
 .project_content a {
     display: block;
 }
@@ -201,18 +197,14 @@
     color: #6e3693;
 }
 #ptabCon2 p span:last-child {
-    font-family: "CTFangSongSJ";
     font-size: 15px;
     line-height: 2.143;
-
     text-transform: uppercase;
-
     color: rgb( 221, 220, 220 );
 }
 #ptabCon2 .click i {
     position: relative;
     top: -9px;
-
     display: inline-block;
     width: 14px;
     height: 12px;
