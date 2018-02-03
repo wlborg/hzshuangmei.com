@@ -22,27 +22,25 @@
     <div class="project_banner clearFix">
         {dede:myad name='projectpic_pc'/}
     </div>
-    <div class="project_content">
+    <div class="project_content" id="pro_01">
         <div id="ptab2">
-            <ul id="project_nav" class="btn clearFix">
+            <ul id="project_nav" class="btn1 clearFix">
                 <li class="nav_list"><a href="/projects" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi0.jpg" alt="全部项目"/></a></li>
-                <li class="nav_list"><a href="/projects/eye/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi1.jpg" alt="眼部项目"/></a></li>
-                <li class="nav_list"><a href="/projects/nose/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi2.jpg" alt="鼻部项目"/></a></li>
-                <li class="nav_list"> <a href="/projects/face/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi3.jpg" alt="面部五官项目"/></a></li>
-                <li class="nav_list"><a href="/projects/tattoo/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi4.jpg" alt="纹绣项目"/></a></li>
-                <li class="nav_list"><a href="/projects/skin/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi5.jpg" alt="皮肤美容"/></a></li>
-                <li class="nav_list"><a href="/projects/chest/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi6.jpg" alt="胸部整形"/></a></li>
-                <li class="nav_list"><a href="/projects/private/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi7.jpg" alt="私密整形"/></a></li>
-                <li class="nav_list"><a href="/projects/body/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi8.jpg" alt="形体雕塑"/></a></li>
-                <li class="nav_list"> <a href="/projects/ha/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi9.jpg" alt="玻尿酸"/></a></li>
-                <li class="nav_list"><a href="/projects/botox/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi10.jpg" alt="botox"/></a></li>
-                <li class="nav_list"><a href="/projects/hengli/" class="nav-link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="衡力"/></a></li>
+                <li class="nav_list"><a href="/projects/eye" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi1.jpg" alt="眼部项目"/></a></li>
+                <li class="nav_list"><a href="/projects/nose" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi2.jpg" alt="鼻部项目"/></a></li>
+                <li class="nav_list"> <a href="/projects/face" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi3.jpg" alt="面部五官项目"/></a></li>
+                <li class="nav_list"><a href="/projects/tattoo" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi4.jpg" alt="纹绣项目"/></a></li>
+                <li class="nav_list"><a href="/projects/skin" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi5.jpg" alt="皮肤美容"/></a></li>
+                <li class="nav_list"><a href="/projects/chest" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi6.jpg" alt="胸部整形"/></a></li>
+                <li class="nav_list"><a href="/projects/private" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi7.jpg" alt="私密整形"/></a></li>
+                <li class="nav_list"><a href="/projects/body" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi8.jpg" alt="形体雕塑"/></a></li>
+                <li class="nav_list"> <a href="/projects/ha" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi9.jpg" alt="玻尿酸"/></a></li>
+                <li class="nav_list"><a href="/projects/botox" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi10.jpg" alt="botox"/></a></li>
+                <li class="nav_list"><a href="/projects/hengli" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="衡力"/></a></li>
             </ul>
-            <!--<div class="gengduo j-consult">更多</div>-->
         </div>
-
-        <ul id="ptabCon2" class="project_con clearFix">
-            <li>
+        <div id="ptabCon2" class="project_con">
+            <div class="clearFix">
                 {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
 
                 <a href="[field:arcurl/]" title="[field:title/]">
@@ -60,8 +58,8 @@
                     </div>
                 </a>
                 {/dede:list}
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     <ul class="pagination clearFix">
         {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}

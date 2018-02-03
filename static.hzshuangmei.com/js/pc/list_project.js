@@ -38,8 +38,8 @@ function pchange1(obj){
 
 $(function() {
     $(".project_con").eq(0).show();
-    $(".btn li").click(function() {
-        var num = $(".btn li").index(this);
+    $(".btn1 li").click(function() {
+        var num = $(".btn1 li").index(this);
         $(".project_con").hide();
         $(".project_con").eq(num).show().slblings().hide();
     })
