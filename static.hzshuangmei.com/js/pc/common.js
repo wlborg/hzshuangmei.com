@@ -348,33 +348,35 @@ var protection = (function(win) {
             e = window.event || e;
             var keycode = e.keyCode || e.which;
             //屏蔽Ctrl+s 保存页面
-            //
-            //
             var disableCopy = function() {
                 if (e.ctrlKey && keycode == 83) {
-                    e.preventDefault();
-                    window.event.returnValue = false;
+                      console.log('禁止ctrl+s');
+                 //   e.preventDefault();
+                  //  window.event.returnValue = false;
                 }
             };
             var disableSource = function() {
                 //屏蔽Ctrl+u  查看页面的源代码
                 if (e.ctrlKey && keycode == 85) {
-                    e.preventDefault();
-                    window.event.returnValue = false;
+                      console.log('禁止ctrl+u');
+                   // e.preventDefault();
+                  //  window.event.returnValue = false;
                 }
             };
             var disableF12 = function() {
                 //屏蔽F12
                 if (keycode == 123) {
-                    e.preventDefault();
-                    window.event.returnValue = false;
+                       console.log('禁止F12');
+                   // e.preventDefault();
+                   // window.event.returnValue = false;
                 }
             };
             var disbaleConsole = function() {
                 //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
                 if (e.ctrlKey && e.shiftKey && keycode == 73) {
-                    e.preventDefault();
-                    window.event.returnValue = false;
+                       console.log('禁止ctrl+shift+I');
+                   // e.preventDefault();
+                 //   window.event.returnValue = false;
                 }
             }
         });
