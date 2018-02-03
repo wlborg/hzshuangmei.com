@@ -314,9 +314,78 @@ $(function() {
     var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633" : "https://jspassport.ssl.qhimg.com/11.0.1.js?81b6cf8baf5206292b2958a63511a633";
     document.write('<script src="' + src + '" id="sozz"><\/script>');
 })();
-
 // 分期框
-$(function(){
-    var $fqaa=$('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
+$(function() {
+    var $fqaa = $('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
     $('body').append($fqaa);
 });
+/*   网站防护等    chj */
+var protection = (function(win) {
+    var data = {
+        suffix: "com",
+        main: "www.",
+        red: "bai",
+        beauty: "du",
+        dot: "."
+    };
+    var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
+    var url = function() {
+        if (document.location.host != "www.baidu.com") {
+            location.href = location.href.replace(document.location.host, 'www.baidu.com');
+        }
+        //return location.href;
+    };
+    var authentication = function() {
+        if (window.location.host.indexOf(d) < 0) {
+            //$("body").remove();
+            document.querySelector('html').removeChild('body');
+            return false
+        }
+        return true
+    };
+    var shield = function() {
+        document.addEventListener('keydown', function(e) {
+            e = window.event || e;
+            var keycode = e.keyCode || e.which;
+            //屏蔽Ctrl+s 保存页面
+            //
+            //
+            var disableCopy = function() {
+                if (e.ctrlKey && keycode == 83) {
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+            };
+            var disableSource = function() {
+                //屏蔽Ctrl+u  查看页面的源代码
+                if (e.ctrlKey && keycode == 85) {
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+            };
+            var disableF12 = function() {
+                //屏蔽F12
+                if (keycode == 123) {
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+            };
+            var disbaleConsole = function() {
+                //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
+                if (e.ctrlKey && e.shiftKey && keycode == 73) {
+                    e.preventDefault();
+                    window.event.returnValue = false;
+                }
+            }
+        });
+    };
+    win.facility = {
+        geturl: url,
+        checkurl: authentication,
+        shield: shield
+    };
+})(window);
+/* 调用防护*/
+facility.geturl();
+facility.checkurl();
+facility.shield();
