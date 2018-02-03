@@ -20,14 +20,13 @@
             <div id="doctors_tab">
                 <ul class="clearFix btn" id="doctor_nav">
                     <li class="nav_list"><a href="/doctors" class="nav_link">全部专家</a></li>
-                    <li class="nav_list"><a href="/doctors/surgery/" class="nav_link">整形美容专家</a></li>
-                    <li class="nav_list"><a href="/doctors/laser/" class="nav_link">皮肤美容专家</a></li>
-                    <li class="nav_list"><a href="/doctors/tattoo/" class="nav_link">医学纹绣师</a></li>
+                    <li class="nav_list"><a href="/doctors/surgery" class="nav_link">整形美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/laser" class="nav_link">皮肤美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/tattoo" class="nav_link">医学纹绣师</a></li>
                 </ul>
             </div>
             <div id="doctors_tabCon">
                 <ul class="doc_fdiv doc_con clearFix">
-
                         {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
                     <li>
                         <div class="doctor1">
@@ -41,8 +40,6 @@
                         <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
                     </li>
                         {/dede:list}
-
-
                 </ul>
             </div>
         </div>
