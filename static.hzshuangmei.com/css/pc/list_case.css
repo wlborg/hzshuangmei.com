@@ -63,13 +63,13 @@
     color: #fff!important;
 }
 
-#case_tabCon li {
+/*#case_tabCon li {*/
     /*display: none;*/
-}
+/*}*/
 
-#case_tabCon .case_fdiv {
-    display: block;
-}
+/*#case_tabCon .case_fdiv {*/
+    /*display: block;*/
+/*}*/
 
 
 #case_tabCon .list {
@@ -204,4 +204,7 @@
 .pagination .thisclass {
     background-color: #8a59a7;
     color: #fff;
+}
+.currnet1 {
+    background: #6e3593!important;
 }

@@ -380,9 +380,9 @@ margin-left:20%
     height:850px;
 }
 .part7 .m1 #tabCon ul{
-    display:inline-block;
-    width:521px;
-    margin:0 50px 0 35px;
+    display: inline-block;
+    width: 532px;
+    margin: 0 40px 0 35px;
     position: relative;
     top: -32px;
 }
@@ -409,7 +409,7 @@ margin-left:20%
     color: rgb( 255, 254, 254 );
 }
 .part7 .m1 #tabCon ul li span:last-child{
-  font-size:20px;
+  font-size:18px;
     color:#000;
 }
 .part7 .m1 #tabCon ul li:nth-child(2) p{
