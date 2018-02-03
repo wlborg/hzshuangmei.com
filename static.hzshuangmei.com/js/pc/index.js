@@ -228,7 +228,7 @@ function LcSlideLedt() {
         });
         $slideNum = index * SlideListWidth;
     });
-    slideTimer = setInterval(autoSlide, 10);
+    slideTimer = setInterval(autoSlide,25);
 
     function autoSlide() {
         $slideNum++;
@@ -251,7 +251,7 @@ function LcSlideLedt() {
         clearInterval(slideTimer);
     }, function () {
         clearInterval(slideTimer);
-        slideTimer = setInterval(autoSlide, 10);
+        slideTimer = setInterval(autoSlide,25);
     });
 }
 
