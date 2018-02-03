@@ -39,8 +39,8 @@
                 <li class="nav_list"><a href="/projects/hengli/#pro_01" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="衡力"/></a></li>
             </ul>
         </div>
-        <ul id="ptabCon2" class="project_con">
-            <li class="clearFix">
+        <div id="ptabCon2" class="project_con">
+            <div class="clearFix">
                 {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
 
                 <a href="[field:arcurl/]" title="[field:title/]">
@@ -58,8 +58,8 @@
                     </div>
                 </a>
                 {/dede:list}
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     <ul class="pagination clearFix">
         {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
