@@ -92,9 +92,11 @@
     cursor: pointer;
 }
 
-.doctors_content #doctors_tab ul .doc_fli{
-    color:#fff;
+.doctors_content #doctors_tab ul .currnet3{
     background:url(//img.hzshuangmei.com/pc/doctors_bg.jpg)no-repeat center;
+}
+.doctors_content #doctors_tab ul .currnet3 a{
+    color:#fff;
 }
 /*#doctors_tabCon ul {*/
     /*display:none;*/
