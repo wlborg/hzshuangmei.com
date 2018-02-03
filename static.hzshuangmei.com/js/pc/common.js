@@ -320,7 +320,7 @@ $(function() {
     $('body').append($fqaa);
 });
 /*   网站防护等    chj */
-var protection = (function () {
+var protection = (function() {
     var data = {
         suffix: "com",
         main: "www.",
@@ -329,13 +329,15 @@ var protection = (function () {
         dot: "."
     }
     var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
-    var url = function () {
+    // 如果当前URL不是设定的URL，则跳转
+    var url = function() {
         if (document.location.host != "www.hzshuangmei.com") {
             location.href = location.href.replace(document.location.host, 'www.hzshuangmei.com');
         }
         return location.href;
     }
-    var authentication = function () {
+    // 复制文件到本地，打开白屏
+    var authentication = function() {
         if (window.location.host.indexOf(d) < 0) {
             $("body").remove();
             //document.querySelector('html').removeChild('body');
@@ -343,11 +345,19 @@ var protection = (function () {
         }
         return true
     }
-
-    var shield = function (config) {
+    // 防止打开右键
+    var disableMouseRight = function() {
+        $(document).ready(function() {
+            $(document).on("contextmenu", function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    }
+    var shield = function(config) {
         shield.config = config;
         var disable = {
-            disableCopy: function (e, keycode) {
+            disableCopy: function(e, keycode) {
                 //屏蔽Ctrl+s 保存页面
                 if (e.ctrlKey && keycode == 83) {
                     console.log(shield.config)
@@ -355,21 +365,21 @@ var protection = (function () {
                     e.returnValue = false;
                 }
             },
-            disableSource: function (e, keycode) {
+            disableSource: function(e, keycode) {
                 //屏蔽Ctrl+u  查看页面的源代码
                 if (e.ctrlKey && keycode == 85) {
                     e.preventDefault();
                     e.returnValue = false;
                 }
             },
-            disableF12: function (e, keycode) {
+            disableF12: function(e, keycode) {
                 //屏蔽F12
                 if (keycode == 123) {
                     e.preventDefault();
                     e.returnValue = false;
                 }
             },
-            disableConsole: function (e, keycode) {
+            disableConsole: function(e, keycode) {
                 //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
                 if (e.ctrlKey && e.shiftKey && keycode == 73) {
                     e.preventDefault();
@@ -377,8 +387,7 @@ var protection = (function () {
                 }
             }
         }
-
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             e = window.event || e;
             var keycode = e.keyCode || e.which;
             for (var i = 0; i < shield.config.length; i++) {
@@ -389,6 +398,7 @@ var protection = (function () {
     var facility = {
         geturl: url,
         checkurl: authentication,
+        disableright:disableMouseRight,
         shield: shield
     }
     return facility;
@@ -396,4 +406,5 @@ var protection = (function () {
 /* 启动防护盾 */
 protection.geturl();
 protection.checkurl();
-protection.shield(["disableCopy", "disableConsole","disableSource","disableF12"]);
+protection.disableright();
+protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
