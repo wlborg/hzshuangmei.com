@@ -320,74 +320,80 @@ $(function() {
     $('body').append($fqaa);
 });
 /*   网站防护等    chj */
-var protection = (function(win) {
+var protection = (function () {
     var data = {
         suffix: "com",
         main: "www.",
         red: "hz",
         beauty: "shuangmei",
         dot: "."
-    };
+    }
     var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
-    var url = function() {
+    var url = function () {
         if (document.location.host != "www.hzshuangmei.com") {
             location.href = location.href.replace(document.location.host, 'www.hzshuangmei.com');
         }
-        //return location.href;
-    };
-    var authentication = function() {
+        return location.href;
+    }
+    var authentication = function () {
         if (window.location.host.indexOf(d) < 0) {
-            //$("body").remove();
-            document.querySelector('html').removeChild('body');
+            $("body").remove();
+            //document.querySelector('html').removeChild('body');
             return false
         }
         return true
-    };
-    var shield = function() {
-        document.addEventListener('keydown', function(e) {
-            e = window.event || e;
-            var keycode = e.keyCode || e.which;
-            //屏蔽Ctrl+s 保存页面
-            var disableCopy = function() {
+    }
+
+    var shield = function (config) {
+        shield.config = config;
+        var disable = {
+            disableCopy: function (e, keycode) {
+                //屏蔽Ctrl+s 保存页面
                 if (e.ctrlKey && keycode == 83) {
-                      console.log('禁止ctrl+s');
-                 //   e.preventDefault();
-                  //  window.event.returnValue = false;
+                    console.log(shield.config)
+                    e.preventDefault();
+                    e.returnValue = false;
                 }
-            };
-            var disableSource = function() {
+            },
+            disableSource: function (e, keycode) {
                 //屏蔽Ctrl+u  查看页面的源代码
                 if (e.ctrlKey && keycode == 85) {
-                      console.log('禁止ctrl+u');
-                   // e.preventDefault();
-                  //  window.event.returnValue = false;
+                    e.preventDefault();
+                    e.returnValue = false;
                 }
-            };
-            var disableF12 = function() {
+            },
+            disableF12: function (e, keycode) {
                 //屏蔽F12
                 if (keycode == 123) {
-                       console.log('禁止F12');
-                   // e.preventDefault();
-                   // window.event.returnValue = false;
+                    e.preventDefault();
+                    e.returnValue = false;
                 }
-            };
-            var disbaleConsole = function() {
+            },
+            disableConsole: function (e, keycode) {
                 //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
                 if (e.ctrlKey && e.shiftKey && keycode == 73) {
-                       console.log('禁止ctrl+shift+I');
-                   // e.preventDefault();
-                 //   window.event.returnValue = false;
+                    e.preventDefault();
+                    e.returnValue = false;
                 }
             }
+        }
+
+        document.addEventListener('keydown', function (e) {
+            e = window.event || e;
+            var keycode = e.keyCode || e.which;
+            for (var i = 0; i < shield.config.length; i++) {
+                disable[shield.config[i]](e, keycode);
+            }
         });
-    };
-    win.facility = {
+    }
+    var facility = {
         geturl: url,
         checkurl: authentication,
         shield: shield
-    };
-})(window);
-/* 调用防护*/
-facility.geturl();
-facility.checkurl();
-facility.shield();
+    }
+    return facility;
+})();
+/* 启动防护盾 */
+protection.geturl();
+protection.checkurl();
+protection.shield(["disableCopy", "disableConsole","disableSource","disableF12"]);
