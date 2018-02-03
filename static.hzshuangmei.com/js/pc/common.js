@@ -404,7 +404,11 @@ var protection = (function() {
     return facility;
 })();
 /* 启动防护盾 */
+//确保URL唯一正确
 protection.geturl();
+//防止本地打开
 protection.checkurl();
-protection.disableright();
-protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
+//禁止右键
+//protection.disableright();
+//禁止键盘快捷键
+//protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
