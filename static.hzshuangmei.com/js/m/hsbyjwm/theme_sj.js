@@ -1,5 +1,3 @@
-
-
 function XZSlide(options) {
     if (typeof options !== 'object') return false;
     this.speed = options.speed || 500;
@@ -15,6 +13,7 @@ function XZSlide(options) {
     this.auto = options.auto || false;
     this.resp = options.resp || false;
     this.timer = 0;
+    this.figure = options.figure || false;
     this.init();
 }
 XZSlide.prototype.init = function() {
@@ -28,7 +27,7 @@ XZSlide.prototype.init = function() {
         this.itemCount = this.slideCEle.find(".slide-item").length;
     }
     this.slideCEle.find(".slide-item:first").clone().appendTo(this.slideCEle);
-    this.slideCEle.css("width", (this.itemCount + 1) * this.step + "px");
+    this.slideCEle.css("width", (this.itemCount + 1) * this.step + 10 + "px");
     if (this.auto) {
         this.timer = setInterval($.proxy(this.prev, this), this.interval);
         this.timerControl(this.slideWEle);
@@ -52,6 +51,9 @@ XZSlide.prototype.init = function() {
             // $(this).addClass("active").siblings().removeClass("active");
             self.prev(index + 1); //传入参数为0的话，next函数接收的值为undefined,原因未知。
         });
+    }
+    if (this.figure) {
+        this.orient();
     }
 };
 XZSlide.prototype.timerControl = function(ele) {
@@ -120,17 +122,107 @@ XZSlide.prototype.indi = function() {
     } else {
         this.indicator.find("li").eq(this.num).addClass("active").siblings().removeClass("active");
     }
+};
+XZSlide.prototype.orient = function() {
+    var startX;
+    var startY;
+    var self = this;
+    this.slideWEle.on("touchstart", function(e) {
+        clearTimeout(self.timer);
+        startX = e.originalEvent.changedTouches[0].pageX,
+        startY = e.originalEvent.changedTouches[0].pageY;
+    });
+    this.slideWEle.on("touchend", function(e) {
+        var moveEndX = e.originalEvent.changedTouches[0].pageX,
+            moveEndY = e.originalEvent.changedTouches[0].pageY,
+            X = moveEndX - startX,
+            Y = moveEndY - startY;
+        //左滑
+        if (X > 0 && Math.abs(X)>Math.abs(Y)) {
+            self.next();
+        }
+        //右滑
+        else if (X < 0 && Math.abs(X)>Math.abs(Y)) {
+            self.prev();
+        }
+         self.timer = setInterval($.proxy(self.prev, self), self.interval);
+    });
+}
+function debounce(fn, delay) {
+    var timer = null;
+    return function() {
+        var that = this;
+        var args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(
+            function() {
+                fn.apply(that, arguments);
+            }, delay)
+    }
+}
+
+function ScrollToDo() {
+    this.targets = [];
+    this.scrollH = 0;
+    this.viewportH = $(window).height();
+    this.init();
+}
+ScrollToDo.prototype.add = function(classname, fn) {
+    var el = $(classname).eq(0);
+    if (!el) return;
+    var offset = el.offset().top;
+    var height=el.height();
+    var target = { 'offset': offset,"height":height, "fn": fn ,"state":0};
+    // console.log(height);
+    this.targets.push(target);
+    // console.log(this.targets);
+}
+ScrollToDo.prototype.init = function() {
+    var self = this;
+    this.scrollH = $(document).scrollTop();
+    $(window).scroll(function(){debounce(self.do(self), 200)});
+}
+
+ScrollToDo.prototype.do = function(self) {
+    var scrollH=self.scrollH = $(document).scrollTop();
+    var targets = self.targets;
+    if (targets.length) {
+        targets.forEach(function(el, i, a) {
+            if (scrollH > el.offset-el.height && scrollH < el.offset + self.viewportH) {
+                if(el.state==0){
+                    (el.fn)();
+                    el.state=1;
+                }
+            }
+            else{
+                el.state=0;
+                // console.log(el.state);
+            }
+        });
+    }
 }
 $(function() {
-
     var slide1 = new XZSlide({
-        cover: $(".zt-m5 .slide-wrapper"),
-        container: $(".zt-m5 .slide-container"),
+        cover: $(".zt-m1 .sliderWrapper"),
+        container: $(".zt-m1 .slideContainer"),
         itemCount: 3,
-        itemWidth: 1004,
+        itemWidth: 1108,
         speed: 300,
         auto: true,
-        prevBtn:$(".zt-m5 .btn-prev"),
-        nextBtn:$(".zt-m5 .btn-next")
+        resp: true,
+        figure: true,
+        indicator: $(".zt-m1 .indicators")
+    });
+
+        var scrolldo = new ScrollToDo();
+    scrolldo.add("#video1", function() {
+        var video=$("#video1")[0];
+        video.setAttribute("currentTime","0");
+        video.play();
+    });
+    scrolldo.add("#video2", function() {
+        var video=$("#video2")[0];
+        video.setAttribute("currentTime","0");
+        video.play();
     });
 });
