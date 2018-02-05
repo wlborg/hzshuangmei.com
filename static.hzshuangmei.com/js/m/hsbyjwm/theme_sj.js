@@ -148,59 +148,7 @@ XZSlide.prototype.orient = function() {
          self.timer = setInterval($.proxy(self.prev, self), self.interval);
     });
 }
-function debounce(fn, delay) {
-    var timer = null;
-    return function() {
-        var that = this;
-        var args = arguments;
-        clearTimeout(timer);
-        timer = setTimeout(
-            function() {
-                fn.apply(that, arguments);
-            }, delay)
-    }
-}
 
-function ScrollToDo() {
-    this.targets = [];
-    this.scrollH = 0;
-    this.viewportH = $(window).height();
-    this.init();
-}
-ScrollToDo.prototype.add = function(classname, fn) {
-    var el = $(classname).eq(0);
-    if (!el) return;
-    var offset = el.offset().top;
-    var height=el.height();
-    var target = { 'offset': offset,"height":height, "fn": fn ,"state":0};
-    // console.log(height);
-    this.targets.push(target);
-    // console.log(this.targets);
-}
-ScrollToDo.prototype.init = function() {
-    var self = this;
-    this.scrollH = $(document).scrollTop();
-    $(window).scroll(function(){debounce(self.do(self), 200)});
-}
-
-ScrollToDo.prototype.do = function(self) {
-    var scrollH=self.scrollH = $(document).scrollTop();
-    var targets = self.targets;
-    if (targets.length) {
-        targets.forEach(function(el, i, a) {
-            if (scrollH > el.offset-el.height && scrollH < el.offset + self.viewportH) {
-                if(el.state==0){
-                    (el.fn)();
-                    el.state=1;
-                }
-            }
-            else{
-                el.state=0;
-                // console.log(el.state);
-            }
-        });
-    }
-}
 $(function() {
     var slide1 = new XZSlide({
         cover: $(".zt-m1 .sliderWrapper"),
@@ -213,16 +161,17 @@ $(function() {
         figure: true,
         indicator: $(".zt-m1 .indicators")
     });
+       var video1=$("#video1");
+       var jsVideo1=video1[0];
+       video.click(function(event) {
+            jsVideo1.setAttribute("currentTime","0");
+            jsVideo1.play();
+       });
 
-        var scrolldo = new ScrollToDo();
-    scrolldo.add("#video1", function() {
-        var video=$("#video1")[0];
-        video.setAttribute("currentTime","0");
-        video.play();
-    });
-    scrolldo.add("#video2", function() {
-        var video=$("#video2")[0];
-        video.setAttribute("currentTime","0");
-        video.play();
-    });
+        var video2=$("#video2");
+       var jsVideo2=video2[0];
+       video.click(function(event) {
+            jsVideo2.setAttribute("currentTime","0");
+            jsVideo2.play();
+       });
 });
