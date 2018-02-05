@@ -49,8 +49,8 @@ XZSlide.prototype.init = function() {
         this.timerControl(this.indicator);
         this.indicator.find("li").click(function() {
             var index = $(this).index();
-            // $(this).addClass("active").siblings().removeClass("active");
-            self.next(index + 1); //传入参数为0的话，next函数接收的值为undefined,原因未知。
+            // $(this).addCla2ss("active").siblings().removeClass("active");
+            self.prev(index + 1); //传入参数为0的话，next函数接收的值为undefined,原因未知。
         });
     }
 };
