@@ -900,7 +900,6 @@ h3 img {
 }
 
 /*红妆发展*/
-
 .fzlc{
     font-size: 0;
 }
@@ -914,7 +913,7 @@ h3 img {
     position: relative;
     height:1008px;
     /*padding-top: 40px;*/
-    background: url('//img.hzshuangmei.com/pc/fzlc/slbg.jpg') no-repeat 50%;
+    background: url('./images/slbg.jpg') no-repeat 50%;
 }
 
 .lc_con_t {
@@ -934,16 +933,38 @@ h3 img {
 }
 
 .lc_list_con {
-    width: 1920px;
     height: 1980px;
     text-align: center;
     float: left;
     position: relative;
+    margin-right: 100px;
+}
+.lc_list_con img{
+    height: 562px;
+}
+.lc_list_n1{
+    width: 1772px;
+}
+.lc_list_n2{
+    width: 1920px;
+}
+.lc_list_n3{
+    width: 1878px;
+}
+.lc_list_n4{
+    width:1845px;
+}
+.lc_list_n5{
+    width: 1670px;
+}
+.lc_list_con div{
+    margin: auto;
 }
 
 /*历程——发展史*/
 .lc_list_box .lc_list_n1 div {
     position: absolute;
+    margin-top: 200px;
 }
 .lc_list_n1 div.lc_btext_con p {
     color: #fff;
@@ -962,17 +983,13 @@ h3 img {
         position: relative; /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
     }
 }
-
 /*发展历程——殊荣*/
-.lc_list_n2 {
-    width: 1920px;
-}
-
 .lc_list_n2 div {
     float: left;
+    text-align:center ;
+    margin-top: 200px;
     /*margin: 0 10px 38px 0;*/
 }
-
 .lc_con_b {
     height: 112px;
     width: 1200px;
@@ -993,24 +1010,20 @@ h3 img {
     text-align: center;
     cursor: pointer;
 }
-
 .lc_con_btn .p1 {
     font-size: 26px;
     line-height: 26px;
     margin: 8px 0;
     color: #fffdff;
 }
-
 .lc_con_btn .p2 {
     font-size: 16px;
     line-height: 16px;
     color: #fffdff;
 }
-
 .lc_con_btn.now {
     /*background: url(http://www.zxhongzhung.com/images/lc_nav_now.png) no-repeat center 7px;*/
 }
-
 .lc_con_btn.now p {
     color: #f464de
 }
@@ -1024,132 +1037,34 @@ h3 img {
 /*发展历程——连锁开业*/
 .lc_list_n3 div {
     position: absolute;
+    margin-top: 200px;
 }
 
 /*发展历程——证书*/
 .lc_list_n4 {
-    /*padding: 0 254px;*/
-    width: 1920px;
     height: 750px;
 }
 .lc_list_n5{
-    /*padding: 0 254px;*/
-    width: 1920px;
     height: 750px;
 }
-
+.lc_list_n5 div{
+    margin-top: 200px;
+}
 .lc_list_n4 div {
     float: left;
+    margin-top: 200px;
     /*margin: 0 66px 30px 0;*/
 }
 
 .sl1{
     position: relative;
 }
-.sl1 ul{
-    width: 1920px;
-    margin:185px auto 0;
-    text-align: center;
-}
-.sl1 ul li:first-child{
-    margin-bottom: 22px;
-}
 .sl1 img{
     vertical-align: top;
-    height: 285px;
-}
-.sl12{
-    z-index: 200;
-    width:100%;
-    position: absolute;
-    top: 470px;
-    background: url("//img.hzshuangmei.com/pc/fzlc/chang.png") no-repeat center;
-    height: 22px;
-}
-.jx1{
-    margin-left: 6px;
-}
-.jx2{
-    margin-left: 44px;
-}
-.jx3{
-    margin-left: 35px;
-}
-.jx4{
-    margin-left: 20px;
-}
-.jx5{
-    margin-left: 8px;
-}
-.jx6{
-    margin-left: 22px;
-}
-.sl2 ul{
-    width: 1920px;
-    text-align: center;
-    margin: 240px auto 0;
+    height: 564px;
 }
 .sl2 img {
-    height: 234px;
-}
-.sl2 ul li:first-child{
-    margin-bottom: 22px;
-}
-.sl2l1 img,.sl2l2 img{
-    margin-right: 7px;
-}
-.sl2l1 img:last-child,.sl2l2 img:last-child{
-    margin-right: 0;
-}
-.sl3 ul{
-    width: 1920px;
-    text-align: center;
-    margin: 185px auto 0;
-}
-.sl3 ul li:first-child{
-    margin-bottom: 22px;
-}
-.sl3l1 img,.sl3l2 img{
-    margin-right:55px;
-}
-.sl3l1 img:last-child,.sl3l2 img:last-child{
-    margin-right: 0;
-}
-.sl4 ul{
-    width: 1920px;
-    margin:240px auto 0;
-    text-align: center;
-}
-.sl4 ul img{
-    height: 232px;
-}
-.sl4l1{
-    margin-bottom: 24px;
-}
-.sl4l2 img,.sl4l1 img {
-    margin-right: 8px;
-}
-.sl4l1 img:last-child,.sl4l2 img:last-child{
-    margin-right: 0;
-}
-.sl5{
-    width:1920px;
-}
-.sl5 ul{
-    width:1920px;
-    margin:240px auto 0;
-    text-align: center;
-}
-.sl5l1{
-    margin-bottom: 25px;
-}
-.sl5l1 img, .sl5l2 img{
-    margin-right: 10px;
-    height: 247px;
-
-}
-.sl5l1 img:last-child,.sl5l2 img:last-child{
-    margin-right: 0;
+    height:564px;
 }
 .yk{
     width: 22px;
