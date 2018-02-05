@@ -145,9 +145,9 @@ ScrollToDo.prototype.add = function(classname, fn) {
     var offset = el.offset().top;
     var height=el.height();
     var target = { 'offset': offset,"height":height, "fn": fn ,"state":0};
-    console.log(height);
+    // console.log(height);
     this.targets.push(target);
-    console.log(this.targets);
+    // console.log(this.targets);
 }
 ScrollToDo.prototype.init = function() {
     var self = this;
@@ -168,7 +168,7 @@ ScrollToDo.prototype.do = function(self) {
             }
             else{
                 el.state=0;
-                console.log(el.state);
+                // console.log(el.state);
             }
         });
     }
