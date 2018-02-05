@@ -155,7 +155,7 @@ default:
 $relatetypeid= '35';
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( $relatetypeid ) order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -237,7 +237,7 @@ $row = $dsql->GetOne("SELECT * FROM #@__archives
 where id='$id'");
 $typeid=$row['typeid'];
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' order by rand() limit 4 ");
+where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' and a.arcrank=0  order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -387,7 +387,7 @@ default:
 $relatetypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid'  and b.aid not in(36,151,154) order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid'  and  a.ismake !=-1  and b.aid not in(36,151,154) order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -506,7 +506,7 @@ default:
 $relatetypeid= 14 ;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid' order by rand() limit 4 ");
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 4 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -558,7 +558,7 @@ $relatetypeid= '35';
 // a.id =b.aid  通过文档ID主表和附加表关联
 //  根据对应案例所属栏目ID 查询案例信息，随机获取3条案例信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
+where a.id =b.aid and   a.arcrank=0 and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -620,7 +620,7 @@ $relatetypeid= '14';
 }
 //随机查询  栏目其他项目专题信息4条
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid in ( $relatetypeid ) order by rand() limit 3 ");
+where  a.typeid in ( $relatetypeid ) and a.arcrank=0 order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -723,7 +723,7 @@ $relatetypeid= '35';
 // a.id =b.aid  通过文档ID主表和附加表关联
 //  根据对应案例所属栏目ID 查询案例信息，随机获取3条案例信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addoncase AS b
-where a.id =b.aid and a.typeid in ( $relatetypeid )  order by rand() limit 3 ");
+where a.id =b.aid and a.typeid in ( $relatetypeid )  and a.arcrank=0 order by rand() limit 3 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -835,7 +835,7 @@ $relatetypeid= 3;
 // a.id =b.aid  通过文档ID主表和附加表关联
 //  根据对应医生所属栏目ID 查询医生信息，随机获取2条医生信息记录
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatetypeid' and b.aid<>'36,151,154' order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatetypeid' and a.arcrank=0 and  b.aid<>'36,151,154' order by rand() limit 2 ");
 //执行查询
 $dsql->Execute();
 //获取记录数量
@@ -899,7 +899,7 @@ where id='$id'");
 $typeid=$row['typeid'];
 //随机查询同级栏目其他项目专题信息3条，并排除自身
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$typeid' and a.id <> '$id'  order by rand() limit 3 ");
+where  a.typeid='$typeid' and a.id <> '$id'  and a.arcrank=0 order by rand() limit 3 ");
 //执行查询
 $dsql->Execute();
 //获取记录数量
@@ -1007,7 +1007,7 @@ default:
 $relateprojecttypeid= 14 ;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relateprojecttypeid' order by rand() limit 5 ");
+where  a.typeid='$relateprojecttypeid'  and a.arcrank=0 order by rand() limit 5 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 
@@ -1029,7 +1029,7 @@ $relateproject.='<a href="'.$url.'" class="swiper-slide" target="_blank"><img sr
 else
  {
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid in (14,15,16,24,25,26,17,18,19,20,27,28,29,30,31,32,33,22,23,34,61) order by rand() limit 5 ");
+where  a.typeid in (14,15,16,24,25,26,17,18,19,20,27,28,29,30,31,32,33,22,23,34,61) and a.arcrank=0 order by rand() limit 5 ");
 $dsql->Execute();
 while($row=$dsql->GetArray())
 {
@@ -1118,7 +1118,7 @@ default:
 $relatedoctortypeid= 3 ;
 }
 $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
-where a.id =b.aid and a.typeid='$relatedoctortypeid'  and b.aid  not in (36,151,154) order by rand() limit 2 ");
+where a.id =b.aid and a.typeid='$relatedoctortypeid'  and  a.arcrank=0 and  b.aid  not in (36,151,154) order by rand() limit 2 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
