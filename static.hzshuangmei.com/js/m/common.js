@@ -761,6 +761,7 @@ protection.geturl();
 //防止本地打开
 protection.checkurl();
 //禁止右键
-//protection.disableright();
+protection.disableright();
 //禁止键盘快捷键
 //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
+protection.shield(["disableCopy", "disableSource", "disableF12"]);
