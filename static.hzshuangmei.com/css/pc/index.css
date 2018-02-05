@@ -420,7 +420,7 @@ h3 img {
     height: 477px;
 }
 
-/*���˰���*/
+/*���˰���*/
 .index_clients {
     height: 1006px;
 
@@ -897,4 +897,302 @@ h3 img {
 
 .index_news .video p {
     padding-top: 11px;
+}
+
+/*红妆发展*/
+
+.fzlc{
+    font-size: 0;
+}
+.fzlc_tt .tt_top p {
+    width: 226px;
+    margin: 0 auto;
+}
+
+.fzlc_content {
+    width: 100%;
+    position: relative;
+    height:1008px;
+    /*padding-top: 40px;*/
+    background: url('//img.hzshuangmei.com/pc/fzlc/slbg.jpg') no-repeat 50%;
+}
+
+.lc_con_t {
+    width: 100%;
+    height: 1008px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lc_list_box {
+    width:12100px !important;
+    height: 580px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lc_list_con {
+    width: 1920px;
+    height: 1980px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+/*历程——发展史*/
+.lc_list_box .lc_list_n1 div {
+    position: absolute;
+}
+.lc_list_n1 div.lc_btext_con p {
+    color: #fff;
+}
+
+@media \0screen\,screen\9 {
+    /* 只支持IE6、7、8 */
+    .lc_list_box .lc_list_n1 div.lc_btext_con {
+        background-color: #000;
+        filter: Alpha(opacity=30);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+
+    .lc_list_box .lc_list_n1 div.lc_btext_con p {
+        position: relative; /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+    }
+}
+
+/*发展历程——殊荣*/
+.lc_list_n2 {
+    width: 1920px;
+}
+
+.lc_list_n2 div {
+    float: left;
+    /*margin: 0 10px 38px 0;*/
+}
+
+.lc_con_b {
+    height: 112px;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+    text-align:center;
+    bottom: 85px;
+}
+
+.lc_con_btn {
+    width: 175px;
+    /*height: 70px;*/
+    /*padding-top: 47px;*/
+    /*margin-right: 118px;*/
+    /*background: url(http://www.zxhongzhung.com/images/lc_nav.png) no-repeat center 10px;*/
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lc_con_btn .p1 {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 8px 0;
+    color: #fffdff;
+}
+
+.lc_con_btn .p2 {
+    font-size: 16px;
+    line-height: 16px;
+    color: #fffdff;
+}
+
+.lc_con_btn.now {
+    /*background: url(http://www.zxhongzhung.com/images/lc_nav_now.png) no-repeat center 7px;*/
+}
+
+.lc_con_btn.now p {
+    color: #f464de
+}
+.lc_con_btn.now .yk{
+    border: solid 1px #f464de;
+}
+.lc_con_btn.now .yk::after{
+    background-color: #f464de;
+}
+
+/*发展历程——连锁开业*/
+.lc_list_n3 div {
+    position: absolute;
+}
+
+/*发展历程——证书*/
+.lc_list_n4 {
+    /*padding: 0 254px;*/
+    width: 1920px;
+    height: 750px;
+}
+.lc_list_n5{
+    /*padding: 0 254px;*/
+    width: 1920px;
+    height: 750px;
+}
+
+.lc_list_n4 div {
+    float: left;
+    /*margin: 0 66px 30px 0;*/
+}
+
+.sl1{
+    position: relative;
+}
+.sl1 ul{
+    width: 1920px;
+    margin:185px auto 0;
+    text-align: center;
+}
+.sl1 ul li:first-child{
+    margin-bottom: 22px;
+}
+.sl1 img{
+    vertical-align: top;
+    height: 285px;
+}
+.sl12{
+    z-index: 200;
+    width:100%;
+    position: absolute;
+    top: 470px;
+    background: url("//img.hzshuangmei.com/pc/fzlc/chang.png") no-repeat center;
+    height: 22px;
+}
+.jx1{
+    margin-left: 6px;
+}
+.jx2{
+    margin-left: 44px;
+}
+.jx3{
+    margin-left: 35px;
+}
+.jx4{
+    margin-left: 20px;
+}
+.jx5{
+    margin-left: 8px;
+}
+.jx6{
+    margin-left: 22px;
+}
+.sl2 ul{
+    width: 1920px;
+    text-align: center;
+    margin: 240px auto 0;
+}
+.sl2 img {
+    height: 234px;
+}
+.sl2 ul li:first-child{
+    margin-bottom: 22px;
+}
+.sl2l1 img,.sl2l2 img{
+    margin-right: 7px;
+}
+.sl2l1 img:last-child,.sl2l2 img:last-child{
+    margin-right: 0;
+}
+.sl3 ul{
+    width: 1920px;
+    text-align: center;
+    margin: 185px auto 0;
+}
+.sl3 ul li:first-child{
+    margin-bottom: 22px;
+}
+.sl3l1 img,.sl3l2 img{
+    margin-right:55px;
+}
+.sl3l1 img:last-child,.sl3l2 img:last-child{
+    margin-right: 0;
+}
+.sl4 ul{
+    width: 1920px;
+    margin:240px auto 0;
+    text-align: center;
+}
+.sl4 ul img{
+    height: 232px;
+}
+.sl4l1{
+    margin-bottom: 24px;
+}
+.sl4l2 img,.sl4l1 img {
+    margin-right: 8px;
+}
+.sl4l1 img:last-child,.sl4l2 img:last-child{
+    margin-right: 0;
+}
+.sl5{
+    width:1920px;
+}
+.sl5 ul{
+    width:1920px;
+    margin:240px auto 0;
+    text-align: center;
+}
+.sl5l1{
+    margin-bottom: 25px;
+}
+.sl5l1 img, .sl5l2 img{
+    margin-right: 10px;
+    height: 247px;
+
+}
+.sl5l1 img:last-child,.sl5l2 img:last-child{
+    margin-right: 0;
+}
+.yk{
+    width: 22px;
+    position: relative;
+    vertical-align: top;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid 1px #9a87b3;
+    margin:auto;
+    background-color:transparent;
+}
+.yk::after{
+    /*background-color: #f464de;*/
+    content: ' ';
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 253, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -7px;
+    left: 50%;
+}
+.lc_con_b>div:nth-child(1){
+    position: absolute;
+    left:74px;
+}
+.lc_con_b>div:nth-child(2){
+    position: absolute;
+    left:293px;
+}
+.lc_con_b>div:nth-child(3){
+    position: absolute;
+    left:512px;
+}
+.lc_con_b>div:nth-child(4){
+    position: absolute;
+    left:732px;
+}
+.lc_con_b>div:nth-child(5){
+    position: absolute;
+    left:951px;
 }

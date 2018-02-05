@@ -8,14 +8,14 @@
     <title>{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/index.css"/>
- <link rel="canonical" href="https://www.hzshuangmei.com/">
-<link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com/" >
+    <link rel="canonical" href="https://www.hzshuangmei.com/">
+    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com/" >
 </head>
 <body>
 {dede:include filename="_header.htm"/}
 <h1><span class="sr-only">{dede:global.cfg_webname/}</span></h1>
 <div class="banner">
-{dede:myad name='topbanner_pc'/}
+    {dede:myad name='topbanner_pc'/}
 </div>
 <div class="index_news">
     <div class="m1 clearFix">
@@ -172,16 +172,16 @@
                 <!-- Swiper -->
                 <div class="swiper-container swiper-container4">
                     <div class="swiper-wrapper">
-             <!--            {dede:arclist typeid=3 isweight='y' orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17"  row="20"}
-                        <div class="swiper-slide">
-                            <a href="[field:arcurl/]" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                <p>[[field:zhiwei/]] [field:title/]</p>
-                            </a>
-                        </div>
-                        {/dede:arclist} -->
+                        <!--            {dede:arclist typeid=3 isweight='y' orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17"  row="20"}
+                                   <div class="swiper-slide">
+                                       <a href="[field:arcurl/]" target="_blank">
+                                           <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                           <p>[[field:zhiwei/]] [field:title/]</p>
+                                       </a>
+                                   </div>
+                                   {/dede:arclist} -->
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
-                         <div class="swiper-slide">
+                        <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                                 <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
@@ -196,16 +196,16 @@
             <li>
                 <div class="swiper-container swiper-container4">
                     <div class="swiper-wrapper">
-        <!--                 {dede:arclist typeid=4  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
+                        <!--                 {dede:arclist typeid=4  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
+                                        <div class="swiper-slide">
+                                            <a href="[field:arcurl/]" target="_blank">
+                                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                                <p>[[field:zhiwei/]] [field:title/]</p>
+                                            </a>
+                                        </div>
+                                        {/dede:arclist} -->
+                        {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc }
                         <div class="swiper-slide">
-                            <a href="[field:arcurl/]" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                <p>[[field:zhiwei/]] [field:title/]</p>
-                            </a>
-                        </div>
-                        {/dede:arclist} -->
-               {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc }
-                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                                 <img src="[field:thumb2 function='replaceurl(@me)/]"   alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
@@ -220,16 +220,16 @@
             <li>
                 <div class="swiper-container swiper-container4">
                     <div class="swiper-wrapper">
-                 <!--        {dede:arclist typeid=5  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
+                        <!--        {dede:arclist typeid=5  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
+                               <div class="swiper-slide">
+                                   <a class="j-site-consult" href="javascript:void(0)" target="_blank">
+                                       <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
+                                       <p>[[field:zhiwei/]] [field:title/]</p>
+                                   </a>
+                               </div>
+                               {/dede:arclist} -->
+                        {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=5  order by  a.weight asc }
                         <div class="swiper-slide">
-                            <a class="j-site-consult" href="javascript:void(0)" target="_blank">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                <p>[[field:zhiwei/]] [field:title/]</p>
-                            </a>
-                        </div>
-                        {/dede:arclist} -->
-                                       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=5  order by  a.weight asc }
-                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank">
                                 <img src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
@@ -370,6 +370,9 @@
         <a href="/cases" class="ask" target="_blank" rel="nofollow">MORE+</a>
     </div>
 </div>
+<!--红妆历程-->
+<div class="lic">{dede:myad name='pc_hzslrz'/}</div>
+<!--红妆历程-->
 <div class="index_environment">
     <div class="m1">
         <ul class="clearFix">
