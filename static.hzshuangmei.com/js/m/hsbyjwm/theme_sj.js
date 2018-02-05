@@ -163,14 +163,14 @@ $(function() {
     });
        var video1=$("#video1");
        var jsVideo1=video1[0];
-       video.click(function(event) {
+       video1.click(function(event) {
             jsVideo1.setAttribute("currentTime","0");
             jsVideo1.play();
        });
 
         var video2=$("#video2");
        var jsVideo2=video2[0];
-       video.click(function(event) {
+       video2.click(function(event) {
             jsVideo2.setAttribute("currentTime","0");
             jsVideo2.play();
        });
