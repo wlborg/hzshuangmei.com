@@ -18,93 +18,34 @@
         <div id="doctors_banner"> {dede:myad name='doctorpic_pc'/}</div>
         <div class="doctors_content">
             <div id="doctors_tab">
-                <ul class="clearFix">
-                    <li class="doc_fli">整形美容专家</li>
-                    <li>皮肤美容专家</li>
-                    <li>医学纹绣师</li>
+                <ul class="clearFix btn" id="doctor_nav">
+                    <li class="nav_list"><a href="/doctors" class="nav_link">全部专家</a></li>
+                    <li class="nav_list"><a href="/doctors/surgery" class="nav_link">整形美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/laser" class="nav_link">皮肤美容专家</a></li>
+                    <li class="nav_list"><a href="/doctors/tattoo" class="nav_link">医学纹绣师</a></li>
                 </ul>
             </div>
             <div id="doctors_tabCon">
-                <ul class="doc_fdiv clearFix">
-                    <!--              {dede:arclist typeid=3 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>了解</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                </li>
-                {/dede:arclist} -->
-                    {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=3 and a.id not in(36,151,154) order by a.weight asc }
+                <ul class="doc_fdiv doc_con clearFix">
+                        {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
                     <li>
                         <div class="doctor1">
                             <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                            <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank"><span>详细<br/>了解</span></a>
+                            <div class="clearFix">
+                                <a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>了解</span></a>
                                 <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
                             </div>
                         </div>
                         <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
                         <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
                     </li>
-                    {/dede:sql}
-                </ul>
-                <ul class="clearFix">
-                    <!--              {dede:arclist typeid=4 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>                                   了解</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/>                                   预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                </li>
-                {/dede:arclist} -->
-                    {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=4 order by a.weight asc }
-                    <li>
-                        <div class="doctor1">
-                            <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                            <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank"><span>详细<br/>了解</span></a>
-                                <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
-                            </div>
-                        </div>
-                        <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                        <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                    </li>
-                    {/dede:sql}
-                </ul>
-                <ul class="clearFix">
-                    <!--          {dede:arclist typeid=5 isweight='y' orderby='weight' addfields="zhiwei,thumb,shanchang" channelid="17"}
-                <li>
-                    <div class="doctor1">
-                        <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>详细<br/>                                   了解</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/>                                   预约</span></a>
-                        </div>
-                    </div>
-                    <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">擅长项目：[field:shanchang/]</p> <i></i>
-                </li>
-                {/dede:arclist} -->
-                    {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=5 order by a.weight asc }
-                    <li>
-                        <div class="doctor1">
-                            <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                            <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank"><span>详细<br/>了解</span></a>
-                                <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>马上<br/> 预约</span></a>
-                            </div>
-                        </div>
-                        <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                        <p class="doc_p2">擅长项目：[field:shanchang/]</p><i></i>
-                    </li>
-                    {/dede:sql}
+                        {/dede:list}
                 </ul>
             </div>
         </div>
+        <ul class="pagination clearFix">
+            {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
+        </ul>
     </div>
     {dede:include filename="_footer.htm"/}
 </body>
