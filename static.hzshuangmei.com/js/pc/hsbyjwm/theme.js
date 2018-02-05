@@ -1,5 +1,3 @@
-
-
 function XZSlide(options) {
     if (typeof options !== 'object') return false;
     this.speed = options.speed || 500;
@@ -121,16 +119,82 @@ XZSlide.prototype.indi = function() {
         this.indicator.find("li").eq(this.num).addClass("active").siblings().removeClass("active");
     }
 }
+
+function debounce(fn, delay) {
+    var timer = null;
+    return function() {
+        var that = this;
+        var args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(
+            function() {
+                fn.apply(that, arguments);
+            }, delay)
+    }
+}
+
+function ScrollToDo() {
+    this.targets = [];
+    this.scrollH = 0;
+    this.viewportH = $(window).height();
+    this.init();
+}
+ScrollToDo.prototype.add = function(classname, fn) {
+    var el = $(classname).eq(0);
+    if (!el) return;
+    var offset = el.offset().top;
+    var height=el.height();
+    var target = { 'offset': offset,"height":height, "fn": fn ,"state":0};
+    console.log(height);
+    this.targets.push(target);
+    console.log(this.targets);
+}
+ScrollToDo.prototype.init = function() {
+    var self = this;
+    this.scrollH = $(document).scrollTop();
+    $(window).scroll(function(){debounce(self.do(self), 200)});
+}
+
+ScrollToDo.prototype.do = function(self) {
+    var scrollH=self.scrollH = $(document).scrollTop();
+    var targets = self.targets;
+    if (targets.length) {
+        targets.forEach(function(el, i, a) {
+            if (scrollH > el.offset-el.height && scrollH < el.offset + self.viewportH) {
+                if(el.state==0){
+                    (el.fn)();
+                    el.state=1;
+                }
+            }
+            else{
+                el.state=0;
+                console.log(el.state);
+            }
+        });
+    }
+}
 $(function() {
 
     var slide1 = new XZSlide({
-        cover: $(".zt-m5 .slide-wrapper"),
-        container: $(".zt-m5 .slide-container"),
+        cover: $(".zt-m1 .sliderWrapper"),
+        container: $(".zt-m1 .slideContainer"),
         itemCount: 3,
-        itemWidth: 1004,
+        itemWidth: 1108,
         speed: 300,
         auto: true,
-        prevBtn:$(".zt-m5 .btn-prev"),
-        nextBtn:$(".zt-m5 .btn-next")
+        indicator: $(".zt-m1 .indicators")
+    });
+
+    var scrolldo = new ScrollToDo();
+    scrolldo.add("#video1", function() {
+        var video=$("#video1")[0];
+        video.setAttribute("currentTime","0");
+        video.play();
+    });
+    scrolldo.add("#video2", function() {
+        var video=$("#video2")[0];
+        video.setAttribute("currentTime","0");
+        video.play();
     });
 });
+

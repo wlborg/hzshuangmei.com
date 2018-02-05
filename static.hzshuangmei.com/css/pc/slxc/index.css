@@ -1,0 +1,432 @@
+.wrap
+{
+	height:9684px;
+	width:100%;
+	background:url(https://img.hzshuangmei.com/pc/slxc/background.jpg) no-repeat top center;
+	background-size:cover;
+}
+
+.banner
+{
+	display:block;
+	height:750px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/banner.jpg) no-repeat top center;
+	background-size:cover;
+}
+
+.m1
+{
+	width:1200px;
+	margin:0 auto;
+}
+
+.part1
+{
+	margin-top:128px;
+}
+
+.part1 .tip
+{
+	border-radius:20px;
+	background-color:#fc6d72;
+	box-shadow:2.5px 4.33px 5px 0 #fc6d72;
+	width:764px;
+	height:49px;
+	font-size:30px;
+	font-family:"Microsoft YaHei";
+	color:#FFF;
+	line-height:.75;
+	text-align:center;
+	margin:105px auto 71px;
+}
+
+.part1 .tip span
+{
+	font-size:50px;
+	position:relative;
+	top:17px;
+}
+
+.box1
+{
+	color:#707070;
+	height:265px;
+	width:362px;
+	text-align:center;
+	float:left;
+	margin:0 19px;
+}
+
+.box1 h3
+{
+	margin-top:20px;
+	font-size:30px;
+}
+
+.ask
+{
+	display:block;
+	text-align:center;
+}
+
+.box2
+{
+	border-radius:10px;
+	background-color:#fdd6d5;
+	box-shadow:.5px .866px 13px 9px #ecf5f3;
+	width:574px;
+	height:274px;
+	text-align:center;
+	float:left;
+	margin:84px 13px 66px;
+}
+
+.box2 h2
+{
+	color:#ee6d72;
+	font-size:30px;
+	margin:27px 0 35px;
+}
+
+.box2 .standard
+{
+	background-color:#fff;
+	height:172px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+.standard .example
+{
+	position:relative;
+	top:-28px;
+}
+
+.standard .example .f_c
+{
+	color:#ee6d72;
+	-webkit-animation:scaleAC 2s linear 1s infinite;
+	-moz-animation:scaleAC 2s linear 1s infinite;
+	-ms-animation:scaleAC 2s linear 1s infinite;
+	-o-animation:scaleAC 2s linear 1s infinite;
+	animation:scaleAC 2s linear 1s infinite;
+}
+
+.standard .example>div
+{
+	float:left;
+	margin-left:22px;
+	font-size:18px;
+	color:#707070;
+}
+
+.standard .example>div p
+{
+	margin-top:8px;
+}
+
+.part2 .content3
+{
+	height:842px;
+	padding-top:95px;
+}
+
+.part2 .content3_1
+{
+	padding-top:62px;
+}
+
+.part2 .content3 .lun1
+{
+	margin-left:85px;
+}
+
+.part2 .content3 .lun1 img
+{
+	width:642px;
+	height:854px;
+}
+
+.part2 .content3 .lun2
+{
+	margin-left:20px;
+}
+
+.part2 .content3 .lun_font .lun_f
+{
+	margin-left:18px;
+}
+
+.part2 .content3 .lun_font>div h3
+{
+	font-size:24px;
+	color:#f66066;
+	margin:10px 0 5px;
+}
+
+.part2 .content3 .lun_font>div p
+{
+	font-size:20px;
+	color:#707070;
+}
+
+.part2 .content3 .lun_font>div .p1
+{
+	margin-bottom:35px;
+}
+
+.part2 .content3 .lun_font>div .p2
+{
+	margin-bottom:73px;
+}
+
+.part2 .content3 .lun_font>div .p3
+{
+	    margin-bottom: 42px;
+}
+
+.part2 .content3 .lun_font>div .p4
+{
+	margin-bottom:48px;
+}
+
+.part2 .content3 .lun_font>div .p5
+{
+	margin-bottom:65px;
+}
+
+.part2 .content3 .lun_font2
+{
+	margin-left:135px;
+}
+
+.part3 .advantage
+{
+	box-shadow:.5px .866px 13px 5px #b8dad8;
+	top:4088px;
+	width:279px;
+	height:504px;
+	border-radius:6%;
+	background-color:#fff;
+	float:left;
+	margin:110px 10px 60px;
+}
+
+.part3 .advantage img
+{
+	border-top-right-radius:6%;
+	border-top-left-radius:6%;
+}
+
+.part3 .advantage .yuan
+{
+	display:block;
+	width:105px;
+	height:105px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/p3_05.png) no-repeat;
+	position:relative;
+	top:-53px;
+	font-size:30px;
+	color:#FFF;
+	text-align:center;
+	padding-top:7px;
+	margin:0 auto;
+}
+
+.part3 .advantage p
+{
+	font-size:22px;
+	color:#707070;
+	text-align:center;
+	margin-top:-45px;
+}
+
+.part4 .content5
+{
+	margin-top:113px;
+}
+
+.part4 .content5_1
+{
+	margin-top:150px;
+}
+
+.part4 .content5>div:first-child
+{
+	margin-left:42px;
+}
+
+.part4 .p4_font
+{
+	width:586px;
+	height:535px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/p4_02.png) no-repeat;
+	margin:38px 0 0 32px;
+}
+
+.part4 .p4_f
+{
+	background:url(https://img.hzshuangmei.com/pc/slxc/p4_06.png) no-repeat;
+	margin-right:32px;
+}
+
+.part4 .p4_font1
+{
+	margin:24px 0 0 129px;
+}
+
+.part4 .p4_f1
+{
+	margin:24px 0 0 43px;
+}
+
+.part4 .p4_font a
+{
+	margin-top:315px;
+}
+
+.part4 .p4_pic
+{
+	margin:-90px 0 0 41px;
+}
+
+.part5
+{
+	margin-top:165px;
+}
+
+.part5 .content6
+{
+	height:857px;
+	width:1200px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/p5_01.png) no-repeat;
+	margin-top:80px;
+}
+
+.part5 .content6>div
+{
+	width:400px;
+	float:left;
+	text-align:center;
+	font-size:18px;
+	color: #565454;
+	margin-top:510px;
+}
+
+.part5 .content6 .sec
+{
+	margin-top:660px;
+}
+
+.part5 .content6 h4
+{
+	font-size:30px;
+	color:#4d4d4d;
+}
+
+.part5 .content6 h4 span
+{
+	font-size:22px;
+	color:#ee6d72;
+}
+
+.part5 .content6 p
+{
+	margin:15px 0 35px;
+}
+
+.part6
+{
+	margin-top:105px;
+}
+
+.part6 .content7
+{
+	width:1200px;
+	height:880px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/p6_01.png) no-repeat center center;
+	margin-top:25px;
+}
+
+.part6 .content7 .p6_02
+{
+	width:375px;
+	height:273px;
+	background:url(https://img.hzshuangmei.com/pc/slxc/p6_02.png) no-repeat;
+	font-size:36px;
+	color:#ee6d72;
+	text-align:center;
+	padding-top:60px;
+	position:relative;
+	left:780px;
+	animation:myfirstUP .8s linear 1s infinite;
+	-moz-animation:myfirstUP .8s linear 1s infinite;
+	-webkit-animation:myfirstUP .8s linear 1s infinite;
+	-o-animation:myfirstUP .8s linear 1s infinite;
+}
+
+
+.content7_font
+{
+	border-radius:20px;
+	background-color:rgba(52,189,164,0.8);
+	font-size:30px;
+	color:#fff;
+	width:1042px;
+	height:123px;
+	z-index:490;
+	text-align:center;
+	padding-top:40px;
+	line-height:43px;
+	margin:260px auto 0;
+}
+
+.ask img
+{
+	-webkit-animation:scaleAC 2s linear 1s infinite;
+	-moz-animation:scaleAC 2s linear 1s infinite;
+	-ms-animation:scaleAC 2s linear 1s infinite;
+	-o-animation:scaleAC 2s linear 1s infinite;
+	animation:scaleAC 2s linear 1s infinite;
+}
+
+.ask img:hover
+{
+	-webkit-animation:none;
+	-moz-animation:none;
+	-ms-animation:none;
+	-o-animation:none;
+	animation:none;
+}
+
+.part2,.part4
+{
+	margin-top:188px;
+}
+
+.part2 .content3>div,.part2 .content3 .lun_font>div,.part4 .content5>div
+{
+	float:left;
+}
+
+.part2 .content3 .lun_font,.part3
+{
+	margin-top:95px;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+background: url(https://img.hzshuangmei.com/pc/slxc/next.png) no-repeat;
+width: 35px;
+height: 96px;
+right: 10px;
+left: auto;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+background: url(https://img.hzshuangmei.com/pc/slxc/prev.png) no-repeat;
+width: 35px;
+height: 96px;
+left: 10px;
+right: auto;
+}
