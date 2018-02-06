@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-02-06 12:24:48
+* @Last Modified time: 2018-02-06 13:59:07
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -31,6 +31,9 @@ function popup() {
                 filename="default";
                 console.log('输出默认的图片:'+filename);
        }
+
+      var popimg = '<img  src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>';
+
 
     var timer = null;
     //不永远关闭弹窗
@@ -59,7 +62,7 @@ function popup() {
             layer.close(index);
         },
          // content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
-          content: '<img  src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
+          content: popimg,
         end: function() {
             if (flag == 1) {
                 // 永远关闭弹窗
