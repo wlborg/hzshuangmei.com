@@ -628,12 +628,10 @@
    //     }
    //     //淡出效果(含淡出到指定透明度)
    //     function fadeOut(elem, speed, opacity) {
-
    //          * 参数说明
    //          * elem==>需要淡出的元素
    //          * speed==>淡出速度,正整数(可选)
    //          * opacity==>淡出到指定的透明度,0~100(可选)
-
    //         speed = speed || 20;
    //         opacity = opacity || 0;
    //         //初始化透明度变化值为0
@@ -650,15 +648,11 @@
    //             }
    //         })();
    //     }
-
    //     document.addEventListener("touchstart", function(e) {
    //         // e.preventDefault();
    //         fadeOut(iBase.Id('menu'));
    //         console.log('执行滑动');
    //     }, false)
-
-
-
    //     document.addEventListener("touchmove", function(e) {
    //         // e.preventDefault();
    //         fadeOut(iBase.Id('menu'));
@@ -671,101 +665,101 @@
    //         console.log('手离开屏幕');
    //     }, false)
    // }
-/*   网站防护等    chj */
-var protection = (function() {
-    var data = {
-        suffix: "com",
-        main: "m.",
-        red: "hz",
-        beauty: "shuangmei",
-        dot: "."
-    }
-    var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
-    // 如果当前URL不是设定的URL，则跳转
-    var url = function() {
-        if (document.location.host != "m.hzshuangmei.com") {
-            location.href = location.href.replace(document.location.host, 'm.hzshuangmei.com');
-        }
-        return location.href;
-    }
-    // 复制文件到本地，打开白屏
-    var authentication = function() {
-        if (window.location.host.indexOf(d) < 0) {
-            $("body").remove();
-            //document.querySelector('html').removeChild('body');
-            return false
-        }
-        return true
-    }
-    // 防止打开右键
-    var disableMouseRight = function() {
-        $(document).ready(function() {
-            $(document).on("contextmenu", function(e) {
-                e.preventDefault();
-                return false;
-            });
-        });
-    }
-    var shield = function(config) {
-        shield.config = config;
-        var disable = {
-            disableCopy: function(e, keycode) {
-                //屏蔽Ctrl+s 保存页面
-                if (e.ctrlKey && keycode == 83) {
-                    console.log(shield.config)
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            },
-            disableSource: function(e, keycode) {
-                //屏蔽Ctrl+u  查看页面的源代码
-                if (e.ctrlKey && keycode == 85) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            },
-            disableF12: function(e, keycode) {
-                //屏蔽F12
-                if (keycode == 123) {
-                    e.preventDefault();
-                   e.returnValue = false;
-                 //  $("body").remove();
-                    window.location.href="about:blank";
-                    window.close();
-                }
-                }
-            },
-            disableConsole: function(e, keycode) {
-                //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
-                if (e.ctrlKey && e.shiftKey && keycode == 73) {
-                    e.preventDefault();
-                    e.returnValue = false;
-                }
-            }
-        }
-        document.addEventListener('keydown', function(e) {
-            e = window.event || e;
-            var keycode = e.keyCode || e.which;
-            for (var i = 0; i < shield.config.length; i++) {
-                disable[shield.config[i]](e, keycode);
-            }
-        });
-    }
-    var facility = {
-        geturl: url,
-        checkurl: authentication,
-        disableright:disableMouseRight,
-        shield: shield
-    }
-    return facility;
-})();
-/* 启动防护盾 */
-//确保URL唯一正确
-protection.geturl();
-//防止本地打开
-protection.checkurl();
-//禁止右键
-protection.disableright();
-//禁止键盘快捷键
-//protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
-protection.shield(["disableCopy", "disableSource", "disableF12"]);
+   /*   网站防护等    chj */
+   var protection = (function() {
+       var data = {
+           suffix: "com",
+           main: "m.",
+           red: "hz",
+           beauty: "shuangmei",
+           dot: "."
+       }
+       var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
+       // 如果当前URL不是设定的URL，则跳转
+       var url = function() {
+           if (document.location.host != "m.hzshuangmei.com") {
+               location.href = location.href.replace(document.location.host, 'm.hzshuangmei.com');
+           }
+           return location.href;
+       }
+       // 复制文件到本地，打开白屏
+       var authentication = function() {
+           if (window.location.host.indexOf(d) < 0) {
+               $("body").remove();
+               //document.querySelector('html').removeChild('body');
+               return false
+           }
+           return true
+       }
+       // 防止打开右键
+       var disableMouseRight = function() {
+           $(document).ready(function() {
+               $(document).on("contextmenu", function(e) {
+                   e.preventDefault();
+                   return false;
+               });
+           });
+       }
+       var shield = function(config) {
+           shield.config = config;
+           var disable = {
+               disableCopy: function(e, keycode) {
+                   //屏蔽Ctrl+s 保存页面
+                   if (e.ctrlKey && keycode == 83) {
+                       console.log(shield.config)
+                       e.preventDefault();
+                       e.returnValue = false;
+                   }
+               },
+               disableSource: function(e, keycode) {
+                   //屏蔽Ctrl+u  查看页面的源代码
+                   if (e.ctrlKey && keycode == 85) {
+                       e.preventDefault();
+                       e.returnValue = false;
+                   }
+               },
+               disableF12: function(e, keycode) {
+                   //屏蔽F12
+                   if (keycode == 123) {
+                       e.preventDefault();
+                       e.returnValue = false;
+                       //  $("body").remove();
+                       window.location.href = "about:blank";
+                       window.close();
+                   }
+               },
+               disableConsole: function(e, keycode) {
+                   //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
+                   if (e.ctrlKey && e.shiftKey && keycode == 73) {
+                       $("body").remove();
+                       e.preventDefault();
+                       e.returnValue = false;
+                   }
+               }
+           }
+           document.addEventListener('keydown', function(e) {
+               e = window.event || e;
+               var keycode = e.keyCode || e.which;
+               for (var i = 0; i < shield.config.length; i++) {
+                   disable[shield.config[i]](e, keycode);
+               }
+           });
+       }
+       var facility = {
+           geturl: url,
+           checkurl: authentication,
+           disableright: disableMouseRight,
+           shield: shield
+       }
+       return facility;
+   })();
+   /* 启动防护盾 */
+   //确保URL唯一正确
+   protection.geturl();
+   //防止本地打开
+   protection.checkurl();
+   //禁止右键
+   protection.disableright();
+   //禁止键盘快捷键
+   //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
+   protection.shield(["disableCopy", "disableSource", "disableF12"]);
