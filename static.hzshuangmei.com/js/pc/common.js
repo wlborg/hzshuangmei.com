@@ -375,11 +375,11 @@ var protection = (function() {
             disableF12: function(e, keycode) {
                 //屏蔽F12
                 if (keycode == 123) {
-                   e.preventDefault();
+                    e.preventDefault();
                     e.returnValue = false;
-                 //  $("body").remove();
-                  window.location.href="about:blank";
-                   window.close();
+                    //  $("body").remove();
+                    window.location.href = "about:blank";
+                    window.close();
                 }
             },
             disableConsole: function(e, keycode) {
@@ -402,7 +402,7 @@ var protection = (function() {
     var facility = {
         geturl: url,
         checkurl: authentication,
-        disableright:disableMouseRight,
+        disableright: disableMouseRight,
         shield: shield
     }
     return facility;
