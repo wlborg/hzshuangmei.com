@@ -375,9 +375,9 @@ var protection = (function() {
             disableF12: function(e, keycode) {
                 //屏蔽F12
                 if (keycode == 123) {
-                   // e.preventDefault();
-                   // e.returnValue = false;
-                   $("body").remove();
+                   e.preventDefault();
+                    e.returnValue = false;
+                 //  $("body").remove();
                   window.location.href="about:blank";
                    window.close();
                 }
