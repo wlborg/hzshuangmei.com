@@ -91,12 +91,15 @@ a {
   color: #2577b9;
   vertical-align: text-bottom;
 }
+.title3 strong{
+  margin-right: 6px;
+}
 .title {
   position: relative;
   width: 9.8rem;
   height: 1.5rem;
   margin: 0 auto;
-  line-height: 0.25rem;
+  /*line-height: 0.25rem;*/
 }
 .title em,
 .title9-bg em {
@@ -224,6 +227,7 @@ a {
   margin-top: 0;
 }
 .title2 strong {
+  margin-right: 10px;
   color: #fff;
   text-shadow: 0.125rem 0.125rem 0.125rem #1b6298;
 }
@@ -635,6 +639,7 @@ a {
   display: inline;
   width: 0.625rem;
   height: 0.975rem;
+  margin-right: 5px;
 }
 .seven-r ul {
   width: 100%;
@@ -729,7 +734,7 @@ a {
 .title9 .title {
   width: 100%;
   height: 2rem;
-  line-height: 0.875rem;
+  line-height: 2rem;
   background-color: #fff;
 }
 .title9-bg em {
@@ -937,7 +942,7 @@ a {
 /* 。。。。。。。。。。。 */
 .main-ten {
   width: 100%;
-  height: 10rem;
+  height: 9rem;
   margin: 0 auto;
 }
 .mainten-top {
