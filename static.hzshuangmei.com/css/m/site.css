@@ -404,6 +404,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .relateporject .heading .line { border-bottom: solid 1px #7e52a2; }
 .relateporject .contents { padding: .55rem 3.5% 1.65rem; font-size: 0; text-align: center; }
 .relateporject .contents .imgbox { padding: .1rem 0; font-size: 0; background: #865ba9; }
+.relateporject .contents .imgbox a{ display: inline-block; }
 .relateporject .contents img { display: inline-block; width: 47.5%; max-width: 7.6rem; margin: .125rem; }
 .articlerelatedoctor { height: 13.15rem; background: #76449e; }
 .articlerelatedoctor .heading .line { border-bottom: solid 1px #8a60ab; }
