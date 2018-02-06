@@ -867,7 +867,7 @@ $list.= '<li class="clearFix">
                         <p>'.$shanchang.' </p>
                     </div>
                     <div class="tjb_button">
-                        <a href="'.$url.'" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt="点击咨询"/></a>
+                        <a class="j-consult" href="javascript:void(0);" rel="nofollow" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt="点击咨询"/></a>
                     </div>
                 </div></li>';
 }
