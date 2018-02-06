@@ -279,7 +279,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .zhuanjia-info .zhiwei { margin-top: .2rem; font-size: .45rem; line-height: .625rem; color: #aaa; }
 .zhuanjia-info .shanchang { font-size: .375rem; line-height: .625rem; color: #aaa; }
 .zhuanjia-info .shanchang  br { display: none; }
-.zhuanjia-info a { color: #aaa; }
+.zhuanjia-info a { color: #aaa; display: inline-block;}
 .zhuanjia-info .zhuanjia-more { display: block; width: 3rem; height: .75rem; margin-top: .35rem; font-size: .45rem; line-height: .75rem; text-align: center; color: #fff; background: #a786bf; }
 
 /*************************** article_list ***************************/
