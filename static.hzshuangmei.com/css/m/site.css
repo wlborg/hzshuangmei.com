@@ -154,7 +154,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #diary .label { height: .8rem; padding: .4rem 0 .5rem; line-height: .8rem; }
 #diary .label br { display: none; }
 #diary .pro { padding-left: 1.05rem; font-size: .4rem; line-height: .8rem; color: #99c; background: url("https://img.hzshuangmei.com/m/icon_flag.png") left center no-repeat; background-size: auto 100%; }
-#diary .pro a { color: #99c; }
+#diary .pro a { color: #99c; display: inline-block;}
 #diary .right { float: right; line-height: .8rem; }
 #diary .show { width: .875rem; height: .425rem; background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat; background-size: auto 100%; }
 #diary .click { padding-left: .75rem; margin-left: .45rem; font-size: .45rem; color: #b292d2; background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat; background-size: auto 1em; }
@@ -279,7 +279,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .zhuanjia-info .zhiwei { margin-top: .2rem; font-size: .45rem; line-height: .625rem; color: #aaa; }
 .zhuanjia-info .shanchang { font-size: .375rem; line-height: .625rem; color: #aaa; }
 .zhuanjia-info .shanchang  br { display: none; }
-.zhuanjia-info a { color: #aaa; }
+.zhuanjia-info a { color: #aaa; display: inline-block;}
 .zhuanjia-info .zhuanjia-more { display: block; width: 3rem; height: .75rem; margin-top: .35rem; font-size: .45rem; line-height: .75rem; text-align: center; color: #fff; background: #a786bf; }
 
 /*************************** article_list ***************************/
@@ -404,6 +404,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .relateporject .heading .line { border-bottom: solid 1px #7e52a2; }
 .relateporject .contents { padding: .55rem 3.5% 1.65rem; font-size: 0; text-align: center; }
 .relateporject .contents .imgbox { padding: .1rem 0; font-size: 0; background: #865ba9; }
+.relateporject .contents .imgbox a{ display: inline; }
 .relateporject .contents img { display: inline-block; width: 47.5%; max-width: 7.6rem; margin: .125rem; }
 .articlerelatedoctor { height: 13.15rem; background: #76449e; }
 .articlerelatedoctor .heading .line { border-bottom: solid 1px #8a60ab; }
