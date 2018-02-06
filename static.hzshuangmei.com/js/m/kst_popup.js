@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-02-06 13:59:07
+* @Last Modified time: 2018-02-06 14:04:15
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -27,10 +27,9 @@ function popup() {
     var target = window.location.href;
     var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
 
-       if(filename==""||filename=="index"){
-                filename="default";
-                console.log('输出默认的图片:'+filename);
-       }
+
+                console.log('输出的图片名称是:'+filename);
+
 
       var popimg = '<img  src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>';
 
