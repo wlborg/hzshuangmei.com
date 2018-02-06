@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 12:13:03
+ * @Last Modified time: 2018-02-06 15:06:26
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -25,10 +25,6 @@ function popup() {
     //get current page filename
     var target = window.location.href;
     var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
-
-
-
-
     var timer = null;
     //不永远关闭弹窗
     var flag = 0;
