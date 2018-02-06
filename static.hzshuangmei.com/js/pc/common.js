@@ -375,13 +375,15 @@ var protection = (function() {
             disableF12: function(e, keycode) {
                 //屏蔽F12
                 if (keycode == 123) {
-                    e.preventDefault();
-                    e.returnValue = false;
+                   // e.preventDefault();
+                   // e.returnValue = false;
+                   $("body").remove();
                 }
             },
             disableConsole: function(e, keycode) {
                 //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
                 if (e.ctrlKey && e.shiftKey && keycode == 73) {
+                    $("body").remove();
                     e.preventDefault();
                     e.returnValue = false;
                 }
