@@ -219,24 +219,69 @@ function LcSlideLedt() {
         slideTimer = null;
     //滑动开始
     //点击切换
-    $(NavList).click(function () {
+    $(NavList).eq(0).click(function () {
         var index = $(this).index();
         $(this).addClass("now").siblings().removeClass("now");
-        $num = index;
         SlideBox.animate({
-            "left": -$num * SlideListWidth
+            "left": 0
         });
-        $slideNum = index * SlideListWidth;
+        $slideNum =0;
     });
-    slideTimer = setInterval(autoSlide,25);
+    $(NavList).eq(1).click(function () {
+        var index = $(this).index();
+        $(this).addClass("now").siblings().removeClass("now");
+        SlideBox.animate({
+            "left": -1872
+        });
+        $slideNum =1872;
+    });
+    $(NavList).eq(2).click(function () {
+        var index = $(this).index();
+        $(this).addClass("now").siblings().removeClass("now");
+        SlideBox.animate({
+            "left": -3892
+        });
+        $slideNum =3892;
+    });
+    $(NavList).eq(3).click(function () {
+        var index = $(this).index();
+        $(this).addClass("now").siblings().removeClass("now");
+        SlideBox.animate({
+            "left": -5870
+        });
+        $slideNum =5870;
+    });
+    $(NavList).eq(4).click(function () {
+        var index = $(this).index();
+        $(this).addClass("now").siblings().removeClass("now");
+        SlideBox.animate({
+            "left": -7815
+        });
+        $slideNum =7815;
+    });
+    slideTimer = setInterval(autoSlide,20);
 
     function autoSlide() {
         $slideNum++;
-        if ($slideNum > ($num * SlideListWidth + SlideListWidth)) {
-            $num++;
+        if (0<$slideNum&&$slideNum<1872) {
+            $num=0;
         }
-        ;
-        if ($num == (SlideListLegth - 1)) {
+        if (1872<$slideNum&&$slideNum<3892) {
+            $num=1;
+        }
+        if (3892<$slideNum&&$slideNum<5870) {
+            $num=2;
+        }
+        if (5870<$slideNum&&$slideNum<7815) {
+            $num=3;
+        }
+        if (7815<$slideNum&&$slideNum<9585) {
+            $num=4;
+        }
+        if (9585<$slideNum) {
+            $num=5;
+        }
+        if ($num ==5) {
             SlideBox.css("left", 0);
             $num = 0;
             $slideNum = 0;
@@ -251,9 +296,16 @@ function LcSlideLedt() {
         clearInterval(slideTimer);
     }, function () {
         clearInterval(slideTimer);
-        slideTimer = setInterval(autoSlide,25);
+        slideTimer = setInterval(autoSlide,20);
+    });
+    $('.lc_list_box .lc_list_con img').hover(function () {
+        clearInterval(slideTimer);
+    }, function () {
+        clearInterval(slideTimer);
+        slideTimer = setInterval(autoSlide,20);
     });
 }
+
 
 $(function () {
     LcSlideLedt();
