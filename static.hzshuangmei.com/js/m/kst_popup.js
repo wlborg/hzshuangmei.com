@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 14:22:02
+ * @Last Modified time: 2018-02-06 14:31:06
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -69,7 +69,6 @@ function popup() {
         layer.closeAll();
     });
 }
-
 function CheckStatus() {
     $.ajax({
         type: "GET",
@@ -84,16 +83,18 @@ function CheckStatus() {
         }
     });
 }
-//获取当前页面文件名
+$(document).ready(function(){
+    //获取当前页面文件名
 var target = window.location.href;
 var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
 //设置对应弹窗图片URL
 var popimgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
-// 首先检查对应的图片是否存在
-// 并作相对应的处理
-CheckStatus();
-//然后弹窗
-popup();
+    // 首先检查对应的图片是否存在
+    // 并作相对应的处理
+    CheckStatus();
+    //然后弹窗
+    popup();
+});
 /*  移动端分享  */
 //顶部分享按钮配置
 var nativeShare = new NativeShare();
@@ -114,7 +115,6 @@ var shareData = {
     }
 }
 nativeShare.setShareData(shareData)
-
 function call(command) {
     try {
         nativeShare.call(command)
