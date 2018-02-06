@@ -92,7 +92,7 @@ a {
   vertical-align: text-bottom;
 }
 .title3 strong{
-  margin-right: 6px;
+  margin-left: 6px;
 }
 .title {
   position: relative;
@@ -227,7 +227,7 @@ a {
   margin-top: 0;
 }
 .title2 strong {
-  margin-right: 10px;
+  margin-left: 10px;
   color: #fff;
   text-shadow: 0.125rem 0.125rem 0.125rem #1b6298;
 }
