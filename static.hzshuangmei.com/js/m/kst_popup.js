@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-02-06 12:20:27
+* @Last Modified time: 2018-02-06 12:24:48
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -29,6 +29,7 @@ function popup() {
 
        if(filename==""||filename=="index"){
                 filename="default";
+                console.log('输出默认的图片:'+filename);
        }
 
     var timer = null;
