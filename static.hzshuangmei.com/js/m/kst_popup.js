@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 14:31:06
+ * @Last Modified time: 2018-02-06 14:42:03
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -69,20 +69,9 @@ function popup() {
         layer.closeAll();
     });
 }
-function CheckStatus() {
-    $.ajax({
-        type: "GET",
-        cache: false,
-        url: popimgurl,
-        data: "",
-        success: function() {
-            return true;
-        },
-        error: function() {
-            filename = "default";
-        }
-    });
-}
+
+
+
 $(document).ready(function(){
     //获取当前页面文件名
 var target = window.location.href;
@@ -91,7 +80,18 @@ var filename = window.location.pathname.split("/")[window.location.pathname.spli
 var popimgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
     // 首先检查对应的图片是否存在
     // 并作相对应的处理
-    CheckStatus();
+       $.ajax({
+        type: "GET",
+        cache: false,
+        url: popimgurl,
+        data: "",
+        success: function() {
+            return;
+        },
+        error: function() {
+            filename = "default";
+        }
+    });
     //然后弹窗
     popup();
 });
