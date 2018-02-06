@@ -4,7 +4,7 @@
 * @Date:   2018-01-06 10:54:26
 * @Last Modified by:   chj
 
-* @Last Modified time: 2018-02-01 18:24:27
+* @Last Modified time: 2018-02-06 12:20:27
 
 */
 /*  移动版     自定义弹窗邀请框 */
@@ -16,16 +16,21 @@
 1. <script src="{dede:global.cfg_jspath/}/pc/layer/mobile/layer.js"></script> 引入
 2. 配置
  */
-function imgNotFound() {
-        var img = $(".popup img").get(0);
-        //默认图片
-        img.src = "//img.hzshuangmei.com/pc/kst/default.png";
-        img.onerror = null;
-    }
+// function imgNotFound() {
+//         var img = $(".popup img").get(0);
+//         //默认图片
+//         img.src = "//img.hzshuangmei.com/pc/kst/default.png";
+//         img.onerror = null;
+//     }
 function popup() {
     //get current page filename
     var target = window.location.href;
     var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
+
+       if(filename==""||filename=="index"){
+                filename="default";
+       }
+
     var timer = null;
     //不永远关闭弹窗
     var flag = 0;
@@ -52,7 +57,8 @@ function popup() {
             window.open("https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref=m_popup&" + target);
             layer.close(index);
         },
-         content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
+         // content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
+          content: '<img  src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
         end: function() {
             if (flag == 1) {
                 // 永远关闭弹窗
