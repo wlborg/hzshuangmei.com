@@ -368,9 +368,26 @@
     display:block;
     margin-top: 58px;
 }
-
-
-
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background: url(https://img.hzshuangmei.com/pc/facille/arrow.png);
+    left: 10px;
+    right: auto;
+    width: 78px;
+    height: 125px;
+    top: 246px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background: url(https://img.hzshuangmei.com/pc/facille/arrow.png)0 129px;
+    width: 78px;
+    height: 125px;
+    top: 246px;
+    right: 10px;
+    left: auto;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #d58f34;
+}
 
 
 
