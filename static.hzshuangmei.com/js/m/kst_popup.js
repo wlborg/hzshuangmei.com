@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 14:42:03
+ * @Last Modified time: 2018-02-06 14:47:58
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -20,9 +20,28 @@
 //         img.src = "//img.hzshuangmei.com/pc/kst/default.png";
 //         img.onerror = null;
 //     }
-function popup() {
-    //  console.log('输出的图片名称是:'+filename);
-    var popimg = '<img  src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>';
+$(document).ready(function(){
+    //获取当前页面文件名
+var target = window.location.href;
+var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
+//设置对应弹窗图片URL
+var popimgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
+    // 首先检查对应的图片是否存在
+    // 并作相对应的处理
+       $.ajax({
+        type: "GET",
+        cache: false,
+        url: popimgurl,
+        data: "",
+        success: function() {
+            return;
+        },
+        error: function() {
+            filename = "default";
+        }
+    });
+    //然后弹窗
+     var popimg = '<img  src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>';
     var timer = null;
     //不永远关闭弹窗
     var flag = 0;
@@ -68,32 +87,6 @@ function popup() {
         flag = 1;
         layer.closeAll();
     });
-}
-
-
-
-$(document).ready(function(){
-    //获取当前页面文件名
-var target = window.location.href;
-var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
-//设置对应弹窗图片URL
-var popimgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
-    // 首先检查对应的图片是否存在
-    // 并作相对应的处理
-       $.ajax({
-        type: "GET",
-        cache: false,
-        url: popimgurl,
-        data: "",
-        success: function() {
-            return;
-        },
-        error: function() {
-            filename = "default";
-        }
-    });
-    //然后弹窗
-    popup();
 });
 /*  移动端分享  */
 //顶部分享按钮配置
