@@ -1038,7 +1038,7 @@ a {
 .mainten-b h3 {
   font-size: 0.5rem;
   line-height: 0.825rem;
-  text-align: center;
+  /*text-align: center;*/
   color: #fff;
 }
 .main-t-t {
