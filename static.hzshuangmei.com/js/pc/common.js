@@ -377,11 +377,15 @@ var protection = (function() {
                 if (keycode == 123) {
                     e.preventDefault();
                     e.returnValue = false;
+                    //  $("body").remove();
+                    window.location.href = "about:blank";
+                    window.close();
                 }
             },
             disableConsole: function(e, keycode) {
                 //屏蔽Ctrl+shift+i   屏蔽调出控制台 和F12一样
                 if (e.ctrlKey && e.shiftKey && keycode == 73) {
+                    $("body").remove();
                     e.preventDefault();
                     e.returnValue = false;
                 }
@@ -398,7 +402,7 @@ var protection = (function() {
     var facility = {
         geturl: url,
         checkurl: authentication,
-        disableright:disableMouseRight,
+        disableright: disableMouseRight,
         shield: shield
     }
     return facility;

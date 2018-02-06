@@ -1,0 +1,393 @@
+
+.container{
+    margin-top:150px;
+}
+.container .part_1{
+    margin:0 auto;
+    width:1200px;
+}
+.container .part_1 .content_1{
+    height:576px;
+    width:1200px;
+    margin-top:20px;
+}
+.container .part_1 .content_1>div{
+    float:left;
+}
+.container .part_1 .content_1 .left{
+    background:url(https://img.hzshuangmei.com/pc/facille/arrow.png) 0 0 no-repeat;
+    width:100px;
+    height:125px;
+    margin-top:120px;
+}
+.container .part_1 .content_1 .right{
+     background:url(https://img.hzshuangmei.com/pc/facille/arrow.png)no-repeat 35px -130px;
+     width:100px;
+     height:125px;
+     margin-top:120px;
+     margin-left:20px;
+ }
+.container .part_1 .content_1 .middle{
+    height:410px;
+    width:974px;
+    display:block;
+}
+.container .part_1 .content_1 .middle>div{
+    float:left;
+}
+.container .part_1 .content_2{
+    height:475px;
+    margin-top:50px;
+    text-align:center;
+}
+.container .part_1 .content_2 p{
+    color:#fdac01;
+    font-size:30px;
+    font-weight:bold;
+}
+.container .part_1 .content_2>div{
+    width:991px;
+    height:378px;
+    margin-left:100px;
+    margin-top:25px;
+    background:#d9d9d9;
+}
+.container .part_1 .content_2>div>div{
+    float:left;
+    width:330px;
+    height:189px;
+}
+.container .part_1 .content_2>div>div p{
+    font-size:16px;
+    color:#737373;
+    margin-top:20px;
+}
+.container .part_1 .content_1 .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .part_1 .content_1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*02部分*/
+.container .part_2{
+    height:1500px;
+    margin: 150px auto 0;
+}
+.container .part_2 .content3{
+    height:395px;
+    width:100%;
+    margin-top:100px;
+}
+.container .part_2 .content3 .container_2_content1{
+    text-align:center;
+    background-color:#cccccc;
+    height:270px;
+    margin-top:60px;
+}
+.container .part_2 .content3 .container_2_content1 .container_2_content1_bg{
+    width:1200px;
+    margin:0 auto;
+    height:395px;
+    position:relative;
+    top:-65px
+
+}
+.container .part_2 .content3 .container_2_content1 .container_2_content1_bg>div{
+    float:left;
+    margin:0 auto;
+}
+.container .part_2 .content3 .container_2_content1 .container_2_content1_bg ul{
+    border:1px solid #d9d9d9;width:796px;height:395px;margin:0 auto
+}
+.container .part_2 .content3 .container_2_content1 .container_2_content1_bg ul>li{
+    float:left;
+    width:398px;
+}
+.container .part_2 .content3 .container_2_content1 .container_2_content1_bg ul>li p{
+    width:300px;
+    height:230px;
+    margin:80px auto;
+    font-size:18px;
+    text-align: left;
+    color: #666;
+}
+.container .part_2 .content3 .container_2_content3{
+   background-color:#e6e6e6;
+    height:220px;
+}
+.container .part_2 .content3 .container_2_content3{
+   width:100%;
+    color:#ffffff;
+    text-align:center;
+
+}
+.container .part_2 .content3 .container_2_content3>div{
+    width:605px;
+    height:100px;
+    margin:0 auto;
+}
+.container .part_2 .content3 .container_2_content3>div>div{
+    width:150px;
+    height:100px;
+    float:left;
+    border-left:1px solid white;
+    margin:0 auto;
+}
+.container .part_2 .content3 .container_2_content3 .n1{
+    background-color:#f69e11;
+}
+.container .part_2 .content3 .container_2_content3 .n2{
+    background-color:#fcb94c;
+}
+.container .part_2 .content3 .container_2_content3 h1{
+    font-size:22px;
+    margin-top:25px;
+}
+.container .part_2 .content3 .container_2_content3 h2{
+    font-size:16px;
+    margin-top:10px;
+}
+
+/*03部分*/
+.container .part_3{
+    margin:170px auto 0;
+    height:750px;
+}
+.container .part_3 .content4{
+    margin:0 auto;
+    width:1208px;
+}
+.container .part_3 .content4 ul{
+    width:560px;
+    height:180px;
+    float:left;
+    background-color:#e6e6e6;
+}
+.container .part_3 .content4 .m1{
+    margin-right:80px;
+}
+.container .part_3 .content4 .b1{
+    margin-bottom:90px;
+}
+.container .part_3 .content4 .b2{
+    margin-bottom:60px;
+}
+.container .part_3 .content4 ul>li{
+    float:left;
+
+}
+.container .part_3 .content4 ul li img{
+    margin:-10px 20px 0 13px;
+}
+.container .part_3 .content4 ul li:first-child{
+     width:260px;
+ }
+.container .part_3 .content4 ul li:last-child{
+    width:285px;
+}
+.container .part_3 .content4 ul li:last-child p:first-child{
+    font-size:22px;
+    font-weight:bold;
+    color:#fea414;
+    margin:20px 0;
+}
+.container .part_3 .content4 ul li:last-child p:last-child{
+    font-size:16px;
+    color:#666666;
+}
+
+/*04部分*/
+.container .part_4{
+    background:url(https://img.hzshuangmei.com/pc/facille/04_bg.jpg) no-repeat;
+    width:100%;
+    height:1748px;
+    margin:140px auto 0;
+}
+.container .part_4 .content5{
+    margin:0 auto;
+    height:1200px;
+    width:1208px;
+}
+.container .part_4 .content5>div{
+    width:835px;
+    height:235px;
+    border:2px solid #fdc040;
+}
+.container .part_4 .content5>div:nth-child(2n){
+    position:relative;
+    right:-371px;
+}
+.container .part_4 .content5>div>div{
+    float:left;
+}
+.container .part_4 .content5>div>div i{
+     display:block;
+     width:100px;
+     height:265px;
+ }
+.container .part_4 .content5>div>div .i1{
+    background:url(https://img.hzshuangmei.com/pc/facille/1.png)
+}
+.container .part_4 .content5>div>div .i2{
+    background:url(https://img.hzshuangmei.com/pc/facille/2.png)
+}
+.container .part_4 .content5>div>div .i3{
+    background:url(https://img.hzshuangmei.com/pc/facille/3.png)
+}
+.container .part_4 .content5>div>div p:first-child{
+    background:url(https://img.hzshuangmei.com/pc/facille/tixing3.png);
+    width:248px;
+    height:36px;
+    line-height: 36px;
+    margin:58px 0 18px 0;
+}
+.container .part_4 .content5>div>div p:first-child span{
+    color:#ffffff;
+    font-size:22px;
+    font-weight:bold;
+    margin-left:10px;
+}
+.container .part_4 .content5>div>div p:last-child{
+    color:#737373;
+    font-size:16px;
+    line-height:24px;
+}
+.container .part_4 .content5>div>div:last-child{
+    width:345px;
+}
+/*05部分*/
+.container .part_5{
+    margin:150px auto 0;
+    height:835px;
+}
+.container .part_5 .content6{
+    width:1000px;
+    margin:0 auto;
+    height: 643px;
+}
+.container .part_5 .content6>div{
+    float:left;
+    width:230px;
+    height:200px;
+    margin:50px;
+}
+.container .part_5 .content6 .p1{
+     background:url(https://img.hzshuangmei.com/pc/facille/type1.jpg)
+ }
+.container .part_5 .content6 .p2{
+    background:url(https://img.hzshuangmei.com/pc/facille/type2.png)
+}
+.container .part_5 .content6>div>p{
+    float:left;
+}
+.container .part_5 .content6>div p:first-child{
+    width: 100px;
+    height: 100px;
+    line-height: 70px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.container .part_5 .content6>div p:nth-child(2n){
+    width:118px;
+    height:70px;
+    color:#fea81e;
+    font-size:22px;
+    font-weight:bold;
+    margin-top:40px
+}
+.container .part_5 .content6>div p:last-child{
+    width:197px;
+    margin-left: 12px;
+    height:80px;
+    color:#737373;
+    font-size:16px;
+}
+
+/*06部分*/
+.container .part_6{
+    margin:150px auto 0;
+    width:100%;
+    height:921px;
+    background:url(https://img.hzshuangmei.com/pc/facille/06_bg.jpg)
+}
+.container .part_6 .content7{
+    width:840px;
+    margin:50px auto;
+}
+.container .part_6 .content7>div{
+    float:left;
+    margin-top:50px;
+}
+.container .part_6 .content7 div:last-child{
+    margin:120px 0 0 35px;
+}
+.container .part_6 .content7 div:last-child p{
+    font-size:18px;
+    color:#333;
+    margin-left:15px;
+    line-height: 35px;
+}
+.container .part_6 .content7 div:last-child p:first-child{
+    margin-top:50px;
+}
+.container .part_6 .content7 div:last-child div{
+    width:103px;
+    height:34px;
+    background:url(https://img.hzshuangmei.com/pc/facille/arrow3.png);
+    margin: 30px 0 0 15px;
+    font-size:20px;
+    color:#333;
+    line-height: 34px;
+    text-align: center;
+}
+.container .part_6 .content7 div:last-child h6{
+    margin: 20px 0 0 15px;
+    width:270px;
+    color:#595959;
+    font-size:16px;
+}
+.container .part_6 .content7 div:last-child a{
+    display:block;
+    margin-top: 58px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background: url(https://img.hzshuangmei.com/pc/facille/arrow.png);
+    left: 10px;
+    right: auto;
+    width: 78px;
+    height: 125px;
+    top: 246px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background: url(https://img.hzshuangmei.com/pc/facille/arrow.png)0 129px;
+    width: 78px;
+    height: 125px;
+    top: 246px;
+    right: 10px;
+    left: auto;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #d58f34;
+}
+
+
+
