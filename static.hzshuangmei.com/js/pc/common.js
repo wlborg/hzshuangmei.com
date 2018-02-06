@@ -378,6 +378,7 @@ var protection = (function() {
                    // e.preventDefault();
                    // e.returnValue = false;
                    $("body").remove();
+                  window.location.href="about:blank";
                    window.close();
                 }
             },
