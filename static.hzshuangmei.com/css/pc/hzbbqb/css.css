@@ -1,0 +1,895 @@
+*, blockquote, body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    min-width: 1250px;
+}
+
+.Mone-top, .Mrtop-in p, .Mrtop2-in, .Mrtop2-in p {
+    text-align: center
+}
+
+.different, .doctor-b, .ljzx, .medi, .meihu {
+    overflow: hidden
+}
+
+.main, .mainbg {
+    margin: 0 auto
+}
+
+body, button, input, select, textarea {
+    font-size: 20px;
+    color: #f9f9fc;
+    font-family: "微软雅黑"
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+.Mone-top .p1, .Mone-top .p2, .advantage h3, .anlitt .TTtop .p1, .goodat, .ljzx p a, .name p, .start a {
+    font-weight: 700
+}
+
+.ljzx p a:hover {
+    color: #F59B85
+}
+
+.start a:hover {
+    color: #FFECDD
+}
+
+address, cite, dfn, em, i, var {
+    font-style: normal
+}
+
+img {
+    display: block;
+    border: 0
+}
+
+ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+button, input, select, textarea {
+    font-size: 100%
+}
+
+.clearfix:after, .clearfix:before {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.mainbg {
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/bodybg.jpg) top center repeat-y;
+    width: 100%;
+    height: 6908px
+}
+
+.banner {
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/banner.jpg) top center no-repeat;
+    width: 100%;
+    height: 600px
+}
+
+.main {
+    width: 1100px;
+    height: 6908px;
+    box-shadow: 0 93px 20px #565655;
+    background-color: #bac79c
+}
+
+.main-top {
+    width: 100%;
+    height: 84px;
+    border-bottom: 2px dashed #E4E8DB
+}
+
+.Mone-top:after, .Mone-top:before {
+    border-bottom: 50px solid #bac79c;
+    bottom: 0
+}
+
+.Mone-top {
+    width: 750px;
+    height: 100px;
+    margin: 11px auto 95px;
+    background-color: #98b478;
+    position: relative
+}
+
+.Mone-top .p1 {
+    font-size: 48px;
+    color: #fff
+}
+
+.Mone-top .p2 {
+    font-family: Opima;
+    color: #d6e1c9;
+    font-size: 20px;
+    word-spacing: -7px
+}
+
+.Mone-top:after, .Mone-top:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0
+}
+
+.Mone-top:before {
+    border-right: 50px solid transparent;
+    left: 0
+}
+
+.Mone-top:after {
+    border-left: 50px solid transparent;
+    right: 0
+}
+
+.nose {
+    width: 101%;
+    height: 437px
+}
+
+.nose img {
+    float: left;
+    margin: 0 4px;
+    height: 100%
+}
+
+.name {
+    width: 1072px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 54px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/nosebg.png) left center repeat-x
+}
+
+.dwem, .name p {
+    background-color: #bac79c
+}
+
+.name em {
+    color: #fff;
+    font-size: 30px;
+    margin-left: -3px
+}
+
+.name p {
+    display: inline;
+    padding: 0 15px;
+    margin: 0 32px;
+    font-size: 36px;
+    color: #444343;
+    font-family: "黑体"
+}
+
+.name .sdb {
+    margin-left: 107px
+}
+
+.name .xlb {
+    margin-left: 80px
+}
+
+.name .xqb {
+    margin-left: 95px
+}
+
+.nosearc {
+    width: 100%;
+    height: 162px
+}
+
+.nosearc li {
+    width: 270px;
+    height: 162px;
+    float: left;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/yinying.png) bottom center no-repeat;
+    margin-right: 6px
+}
+
+.nosearc li p {
+    width: 220px;
+    height: 118px;
+    padding: 22px 25px 0
+}
+
+.nosearc .Narcp1 p {
+    background-color: #74a6a5
+}
+
+.nosearc .Narcp2 p {
+    background-color: #bdbedd
+}
+
+.nosearc .Narcp3 p {
+    background-color: #c7ad92
+}
+
+.nosearc .Narcp4 p {
+    background-color: #eda5b0
+}
+
+.nosearc .Narcp4 {
+    margin: 0
+}
+
+.standard {
+    width: 790px;
+    height: 55px;
+    margin: 74px auto 68px;
+    border: 1px solid #fff;
+    position: relative
+}
+
+.standard h2, .standard h3, .standard p {
+    font-weight: 700;
+    background-color: #bac79c;
+    position: absolute
+}
+
+.standard p {
+    font-size: 30px;
+    color: #648357;
+    width: 420px;
+    height: 34px;
+    left: 71px;
+    top: -22px
+}
+
+.standard h3 {
+    font-size: 40px;
+    color: #000;
+    width: 292px;
+    height: 40px;
+    left: 166px;
+    bottom: -13px;
+    padding-left: 30px
+}
+
+.standard h2 {
+    font-size: 65px;
+    color: #ed7c61;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/gantan.png) bottom right no-repeat #bac79c;
+    width: 285px;
+    height: 60px;
+    right: 23px;
+    bottom: -19px;
+    line-height: 64px
+}
+
+.meihubig {
+    width: 100%;
+    height: 607px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/mwihubg.png) left bottom no-repeat
+}
+
+.meihu {
+    width: 100%;
+    height: 568px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/bizi.jpg) left top no-repeat #fff
+}
+
+.meihu-l {
+    width: 103px;
+    height: 293px;
+    margin: 148px 0 0 465px;
+    color: #eeb766;
+    font-size: 21px;
+    float: left
+}
+
+.meihu-l p {
+    line-height: 63px
+}
+
+.bgd, .et {
+    margin-left: 20px
+}
+
+.bj {
+    margin-left: 57px
+}
+
+.xb {
+    margin-left: 11px
+}
+
+.meihu-r {
+    float: left;
+    width: 483px;
+    height: 402px;
+    margin: 85px 0 0 35px
+}
+
+.Mrtop {
+    width: 435px;
+    height: 80px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/qq.png) center bottom no-repeat
+}
+
+.Mrtop-in {
+    width: 100%;
+    height: 68px;
+    background-color: #bac79c;
+    border-radius: 15px
+}
+
+.Mrtop-in p {
+    width: 304px;
+    height: 64px;
+    background-color: #fff;
+    border: 2px solid #bac79c;
+    border-radius: 15px;
+    margin-left: 1px;
+    float: left
+}
+
+.Mrtop-in p img {
+    display: inline;
+    margin-top: 18px
+}
+
+.ertou {
+    float: left;
+    margin: 22px 0 0 8px
+}
+
+.Mrrac {
+    width: 430px;
+    height: 127px;
+    color: #a3a3a3;
+    line-height: 32px
+}
+
+.Mrtop2 {
+    width: 478px;
+    height: 80px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/qq.png) center bottom no-repeat
+}
+
+.Mrtop2-in {
+    width: 100%;
+    height: 68px;
+    background-color: #bac79c;
+    border-radius: 15px;
+    line-height: 68px
+}
+
+.Mrtop2-in p {
+    width: 304px;
+    height: 64px;
+    background-color: #fff;
+    border: 2px solid #bac79c;
+    border-radius: 15px;
+    margin-left: 1px;
+    float: left
+}
+
+.Mrtop2-in p img {
+    display: inline;
+    margin-top: 18px
+}
+
+.division {
+    width: 100%;
+    height: 118px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/nosebg.png) center bottom repeat-x
+}
+
+.advantage {
+    width: 1067px;
+    height: 806px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/youshibg.jpg) top center no-repeat;
+    margin: 0 auto
+}
+
+.Aone {
+    width: 1035px;
+    height: 166px;
+    margin-left: 32px
+}
+
+.advantage p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px
+}
+
+.advantage h3 {
+    color: #768556;
+    font-size: 32px;
+    line-height: 65px
+}
+
+.Aone .made {
+    width: 222px;
+    height: 166px;
+    float: left
+}
+
+.made h3 {
+    text-align: right
+}
+
+.Aone .careful {
+    width: 300px;
+    height: 166px;
+    float: right
+}
+
+.made p.two {
+    margin-left: 48px
+}
+
+.made p.three {
+    margin-left: 10px
+}
+
+.careful p.one {
+    margin-left: 54px;
+    width: 100%
+}
+
+.careful p.two {
+    margin-left: 76px
+}
+
+.careful p.three {
+    margin-left: 96px
+}
+
+.Atwo {
+    width: 99%;
+    height: 175px;
+    margin-top: 140px
+}
+
+.safety {
+    width: 216px;
+    height: 214px;
+    float: left
+}
+
+.recover h3, .safety h3 {
+    text-align: center
+}
+
+.recover {
+    width: 208px;
+    height: 177px;
+    float: right
+}
+
+.recover p {
+    text-align: left
+}
+
+.Athree {
+    width: 985px;
+    height: 180px;
+    margin: 150px 0 0 38px
+}
+
+.solve {
+    float: left;
+    width: 206px;
+    height: 100%;
+    text-align: right
+}
+
+.anlitt .TTtop, .issue-in li, .lasting h3, .ljzx p a, .start .Stcenter, .start .Sttop, .title p {
+    text-align: center
+}
+
+.lasting {
+    float: right;
+    width: 188px;
+    height: 100%
+}
+
+.anli div, .consult li, .doctorarc-t li, .imgdiv img, .imgtitle img, .issue-in li {
+    float: left
+}
+
+.line {
+    width: 100%;
+    height: 110px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/nosebg.png) bottom center repeat-x
+}
+
+.different .p1 {
+    font-size: 44px;
+    margin-top: 14px
+}
+
+.title {
+    width: 908px;
+    height: 84px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    position: relative
+}
+
+.consult li.stare, .starq, .starw {
+    border-bottom: 16px solid #bac79c
+}
+
+.title p {
+    width: 554px;
+    height: 107px;
+    background-color: #bac79c;
+    margin: -18px auto 5px;
+    color: #648357;
+    font-size: 28px
+}
+
+.title img {
+    position: absolute
+}
+
+.title .bbqb01 {
+    left: 13px;
+    top: 21px
+}
+
+.title .bbqb02 {
+    right: 6px;
+    top: 36px
+}
+
+.consult {
+    width: 100%;
+    height: 868px;
+    margin: 66px auto 0
+}
+
+.consult li {
+    width: 352px;
+    height: 426px
+}
+
+.starq, .starw {
+    border-right: 21px solid #bac79c
+}
+
+.consult li.starw {
+    border-right: 24px solid #bac79c
+}
+
+.consult li.stare {
+    width: 351px
+}
+
+.start {
+    background-color: #edb2bb
+}
+
+.starr {
+    border-right: 22px solid #edb2bb
+}
+
+.stary {
+    border-left: 21px solid #edb2bb
+}
+
+.issue, .start a {
+    border: 1px solid #fff
+}
+
+.start .Sttop {
+    font-size: 72px;
+    color: #fff;
+    margin: 87px auto 5px
+}
+
+.start .Stcenter {
+    width: 292px;
+    height: 67px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #000;
+    line-height: 36px
+}
+
+.start div {
+    margin: 80px auto 0;
+    width: 186px;
+    height: 52px
+}
+
+.start a {
+    padding: 9px 29px;
+    font-size: 28px;
+    color: #000
+}
+
+.medi {
+    margin-bottom: 0 !important
+}
+
+.medi .p1 {
+    font-size: 36px;
+    margin-top: 15px
+}
+
+.medi .p2 {
+    font-size: 16px
+}
+
+.issue {
+    width: 1038px;
+    height: 270px;
+    margin: 159px auto 0;
+    padding: 1px 0
+}
+
+.issue-in {
+    width: 946px;
+    height: 460px;
+    background-color: #bac79c;
+    margin: -90px auto 0
+}
+
+.issue-in li {
+    width: 236px;
+    height: 230px;
+    position: relative
+}
+
+.issue-in li img {
+    display: inline;
+    padding: 7px;
+    border: 1px dashed #eaeee1;
+    border-radius: 50%
+}
+
+.issue-in li span {
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    font-size: 24px;
+    color: #72572c;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0)
+}
+
+.boult {
+    width: 34px;
+    height: 38px;
+    background-color: #fff;
+    margin: 103px auto 0
+}
+
+.boult-b {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 40px solid #fff;
+    margin: 0 auto
+}
+
+.anli {
+    width: 963px;
+    height: 696px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/anlibg.png) top center no-repeat;
+    margin: 55px auto 0;
+    padding: 78px 0 0 23px;
+    position: relative
+}
+
+.imgdiv {
+    width: 473px;
+    height: 268px;
+    margin-left: 5px
+}
+
+.imgdiv img {
+    margin-left: 15px
+}
+
+.imgtitle {
+    width: 943px;
+    height: 38px;
+    margin: 0 auto
+}
+
+.imgtitle .qq {
+    width: 898px;
+    height: 38px;
+    float: left;
+    background-color: #98b478
+}
+
+.imgtitle .qq span {
+    padding: 0 112px 0 79px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 35px
+}
+
+.imgtitle .qq .shuhou {
+    padding-left: 60px
+}
+
+.imgtitle .qq .shuqian {
+    padding-left: 104px
+}
+
+.imgtitle .qq .nopadding {
+    padding-right: 0
+}
+
+.anlitt {
+    position: absolute;
+    width: 326px;
+    height: 88px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/anliyinying.png) bottom center no-repeat;
+    top: -39px;
+    left: 338px
+}
+
+.anlitt .TTtop {
+    width: 100%;
+    height: 75px;
+    background-color: #98b478
+}
+
+.anlitt .TTtop .p1 {
+    font-size: 42px;
+    line-height: 49px
+}
+
+.anlitt .TTtop .p2 {
+    font-size: 16px;
+    color: #ccdabc
+}
+
+.zhunjia {
+    margin-bottom: 0
+}
+
+.doctor-b {
+    width: 1052px;
+    height: 800px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/lzk.png) bottom left no-repeat
+}
+
+.doctorarc {
+    width: 670px;
+    height: 503px;
+    margin-top: 155px;
+    margin-left: auto
+}
+
+.doctorarc-t {
+    width: 562px;
+    height: 78px;
+    border-bottom: 1px solid #dde3ce
+}
+
+.dol {
+    width: 200px;
+    height: 79px;
+    margin-left: 132px
+}
+
+.dol p {
+    font-size: 30px;
+    color: #fff
+}
+
+.likee {
+    width: 197px;
+    height: auto
+}
+
+.likee img {
+    margin-left: auto;
+    margin-top: 11px
+}
+
+.likesj {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 18px solid #dde3ce;
+    margin-top: 56px
+}
+
+.abstract {
+    width: 420px;
+    height: 230px;
+    margin: 20px 0 0 130px
+}
+
+.abstract p {
+    width: 100%;
+    height: 34px;
+    padding-left: 34px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/xin3.png) left center no-repeat;
+    font-size: 22px;
+    color: #fff
+}
+
+.goodat {
+    width: 132px;
+    height: 53px;
+    background: url(//img.hzshuangmei.com/pc/hzbbqb/images/goodat.png) no-repeat;
+    margin-left: 139px;
+    line-height: 40px;
+    font-size: 22px;
+    color: #5c5b7e
+}
+
+.goodat em {
+    margin-right: 5px
+}
+
+.goodatarc {
+    width: 430px;
+    height: 90px;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 139px;
+    line-height: 43px
+}
+
+.ljzx {
+    width: 100%;
+    height: 70px;
+    background-color: #fffffc
+}
+
+.ljzx p {
+    width: 284px;
+    height: 45px;
+    border: 1px solid #ed7c61;
+    margin: 17px auto 0
+}
+
+.ljzx p a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    color: #ed7c61;
+    line-height: 45px
+}
+
+.foot {
+    min-width: 1250px
+}
+
+.head {
+    min-width: 1250px
+}
+
+.head .Tbody {
+    min-width: 1250px
+}
