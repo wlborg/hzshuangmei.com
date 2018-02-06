@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 14:16:47
+ * @Last Modified time: 2018-02-06 14:22:02
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -21,28 +21,6 @@
 //         img.onerror = null;
 //     }
 function popup() {
-    //获取当前页面文件名
-    var target = window.location.href;
-    var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
-    //设置对应弹窗图片URL
-    var imgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
-
-    function CheckStatus() {
-        $.ajax({
-            type: "GET",
-            cache: false,
-            url: imgurl,
-            data: "",
-            success: function() {
-                return true;
-            },
-            error: function() {
-                filename = "default";
-            }
-        });
-    }
-    //检查对应的图片是否存在
-    CheckStatus();
     //  console.log('输出的图片名称是:'+filename);
     var popimg = '<img  src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>';
     var timer = null;
@@ -91,6 +69,30 @@ function popup() {
         layer.closeAll();
     });
 }
+
+function CheckStatus() {
+    $.ajax({
+        type: "GET",
+        cache: false,
+        url: popimgurl,
+        data: "",
+        success: function() {
+            return true;
+        },
+        error: function() {
+            filename = "default";
+        }
+    });
+}
+//获取当前页面文件名
+var target = window.location.href;
+var filename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
+//设置对应弹窗图片URL
+var popimgurl = 'https://img.hzshuangmei.com/pc/kst/' + filename + '".png"';
+// 首先检查对应的图片是否存在
+// 并作相对应的处理
+CheckStatus();
+//然后弹窗
 popup();
 /*  移动端分享  */
 //顶部分享按钮配置
