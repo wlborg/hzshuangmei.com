@@ -24,7 +24,6 @@ em {
 }
 body {
     font-family: "微软雅黑";
-    font-size: 0.5rem;
     color: #fff;
     background-color: #bac79c;
 }
@@ -34,25 +33,24 @@ a {
 }
 .banner {
     width: 100%;
-    margin-top: 8%;
 }
 .main {
     width: 16rem;
     height: 161.05rem;
     margin: 0 auto;
-    box-shadow: 0 2.325rem 0.5rem #565655;
+    box-shadow: 0 2.325rem .5rem #565655;
 }
 .main-top {
     width: 100%;
-    height: 1.9rem;
-    border-bottom: 0.025rem dashed #fff;
+    height: 1rem;
+    border-bottom: .025rem dashed #fff;
 }
 .Mone-top {
     position: relative;
     width: 11.875rem;
     height: 1.625rem;
-    padding-top: 0.25rem;
-    margin: 0.175rem auto 1.375rem;
+    padding-top: .25rem;
+    margin: .175rem auto 1.375rem;
     text-align: center;
     background-color: #98b478;
 }
@@ -60,13 +58,13 @@ a {
     display: inline;
 }
 .Mone-top .p1 {
-    font-size: 0.75rem;
+    font-size: .75rem;
     font-weight: 700;
     color: #fff;
 }
 .Mone-top .p2 {
     font-family: "Opima";
-    font-size: 0.35rem;
+    font-size: .35rem;
     font-weight: 700;
     word-spacing: -0.125rem;
     color: #d6e1c9;
@@ -81,32 +79,32 @@ a {
 .Mone-top:before {
     bottom: -0.025rem;
     left: -0.025rem;
-    border-right: 0.75rem solid transparent;
-    border-bottom: 0.75rem solid #bac79c;
+    border-right: .75rem solid transparent;
+    border-bottom: .75rem solid #bac79c;
 }
 .Mone-top:after {
     right: -0.025rem;
     bottom: -0.025rem;
-    border-bottom: 0.75rem solid #bac79c;
-    border-left: 0.75rem solid transparent;
+    border-bottom: .75rem solid #bac79c;
+    border-left: .75rem solid transparent;
 }
 .main01,
 .main02 {
     position: relative;
     width: 15.725rem;
     height: 9.475rem;
-    padding-top: 0.25rem;
+    padding-top: .25rem;
     margin: 0 auto;
 }
 .main01 .MOnel {
     float: left;
     width: 10rem;
     height: 9.05rem;
-    margin-top: 0.125rem;
+    margin-top: .125rem;
 }
 .MOnel img {
     float: left;
-    margin-right: 0.125rem;
+    margin-right: .125rem;
 }
 .MOner {
     float: right;
@@ -121,7 +119,7 @@ a {
 .MOner-top p,
 .Mttop-in p {
     position: relative;
-    font-size: 0.7rem;
+    font-size: .7rem;
     font-weight: 700;
     line-height: 1.225rem;
     text-align: center;
@@ -131,40 +129,42 @@ a {
 .Mttop-in p em {
     position: absolute;
     left: 1.075rem;
-    font-size: 0.375rem;
+    font-size: .375rem;
     color: #fff;
 }
 .MOarc {
-    width: 4.625rem;
+    width: 4.4rem;
     height: 2.85rem;
-    padding: 0.25rem 0 0 0.625rem;
+    padding: .25rem 0 0 .625rem;
     background-color: #74a6a5;
 }
 .MOner-b {
     position: relative;
-    margin-top: 0.325rem;
+    margin-top: .325rem;
 }
 .MOner-b .MOarc {
     background-color: #bdbedd;
 }
 .main01 i {
     position: absolute;
-    top: 0.15rem;
+    top: .15rem;
     left: 2.625rem;
+    z-index: -1;
     width: 9.25rem;
-    height: 0.625rem;
-    border: 0.025rem solid #fff;
+    height: .625rem;
+    border: .025rem solid #fff;
     border-bottom: 0;
 }
 .main01 span {
+    /*z-index: -1;*/
     position: absolute;
-    top: 0.625rem;
+    top: .625rem;
     left: -1.775rem;
     width: 2.9rem;
-    border-top: 0.025rem solid #fff;
+    border-top: .025rem solid #fff;
 }
 .main02 {
-    margin-top: 0.75rem;
+    margin-top: .75rem;
 }
 .Mtleft {
     float: left;
@@ -178,7 +178,7 @@ a {
 }
 .Mtright img {
     float: left;
-    margin-left: 0.15rem;
+    margin-left: .15rem;
 }
 .Mttop {
     width: 100%;
@@ -193,16 +193,16 @@ a {
 .Mttop-in div {
     width: 100%;
     height: 3.075rem;
-    padding: 0.25rem 0.025rem 0 0.25rem;
+    padding: .25rem .025rem 0 .25rem;
     box-sizing: border-box;
-    font-size: 0.475rem;
+    font-size: .475rem;
     background-color: #c7ad92;
 }
 .Mttop-in p em {
     right: -1.4rem;
 }
 .Mtbottom {
-    margin-top: 0.25rem;
+    margin-top: .25rem;
 }
 .Mtbottom .Mttop-in div {
     background-color: #eda5b0;
@@ -211,24 +211,25 @@ a {
     position: absolute;
     top: -0.175rem;
     left: 3.725rem;
+    z-index: -1;
     width: 10.8rem;
     height: 1rem;
-    border: 0.025rem solid #fff;
+    border: .025rem solid #fff;
     border-bottom: 0;
 }
 .Mtbottom .Mttop-in span {
     position: absolute;
-    top: 0.625rem;
+    top: .625rem;
     right: -1.725rem;
     width: 2.9rem;
-    border-top: 0.025rem solid #fff;
+    border-top: .025rem solid #fff;
 }
 .standard {
     position: relative;
     width: 13.8rem;
-    height: 0.95rem;
+    height: .95rem;
     margin: 1.75rem auto 1.7rem;
-    border: 0.025rem solid #fff;
+    border: .025rem solid #fff;
 }
 .standard p,
 .standard h3,
@@ -241,8 +242,8 @@ a {
     top: -0.425rem;
     left: 1.15rem;
     width: 7.5rem;
-    height: 0.675rem;
-    font-size: 0.5rem;
+    height: .675rem;
+    font-size: .5rem;
     text-align: right;
     color: #648357;
 }
@@ -250,13 +251,13 @@ a {
     bottom: -0.325rem;
     left: 3.325rem;
     width: 5.375rem;
-    height: 0.825rem;
-    padding-left: 0.375rem;
-    font-size: 0.7rem;
+    height: .825rem;
+    padding-left: .375rem;
+    font-size: .7rem;
     color: #000;
 }
 .standard h2 {
-    right: 0.225rem;
+    right: .225rem;
     bottom: -0.475rem;
     width: 4.75rem;
     height: 1.25rem;
@@ -274,34 +275,34 @@ a {
     display: inline-block;
     width: 10.875rem;
     height: 2rem;
-    margin: 0.675rem 0 0 0.3rem;
+    margin: .675rem 0 0 .3rem;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/qq.png) no-repeat center bottom;
 }
 .Mrtop-in {
     width: 100%;
     height: 1.7rem;
-    border-radius: 0.375rem;
+    border-radius: .375rem;
     background-color: #fff;
 }
 .Mrtop-in p {
     float: left;
     width: 7.6rem;
     height: 1.6rem;
-    margin-left: 0.025rem;
+    margin-left: .025rem;
     text-align: center;
-    border: 0.05rem solid #fff;
-    border-radius: 0.375rem;
+    border: .05rem solid #fff;
+    border-radius: .375rem;
     background-color: #f4c778;
 }
 .Mrtop-in p img {
     display: inline;
-    margin-top: 0.325rem;
+    margin-top: .325rem;
 }
 .meihuyi {
     width: 14.75rem;
     height: 1.35rem;
     margin: 0 auto;
-    line-height: 0.75rem;
+    line-height: .75rem;
     color: #757e62;
 }
 .meihuer,
@@ -317,12 +318,12 @@ a {
     width: 15.25rem;
     height: 10rem;
     margin: 0 auto;
-    border: 0.05rem solid #98b478;
+    border: .05rem solid #98b478;
 }
 .youshiq-l {
     position: absolute;
-    top: 0.925rem;
-    left: 0.65rem;
+    top: .925rem;
+    left: .65rem;
     width: 4.925rem;
     height: 7.625rem;
 }
@@ -334,7 +335,7 @@ a {
 .ystitle {
     width: 100%;
     height: 1.2rem;
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 700;
     line-height: 1.2rem;
     text-align: center;
@@ -344,11 +345,11 @@ a {
 .ysarc {
     width: 100%;
     height: 2.25rem;
-    margin-top: 0.125rem;
-    line-height: 0.725rem;
+    margin-top: .125rem;
+    line-height: .725rem;
 }
 .ystitle-margin {
-    margin-top: 0.625rem;
+    margin-top: .625rem;
 }
 .youshiw {
     margin-top: 1.125rem;
@@ -367,20 +368,20 @@ a {
     width: 14.325rem;
 }
 .different .p1 {
-    font-size: 0.65rem;
+    font-size: .65rem;
 }
 .title {
     position: relative;
     width: 15.75rem;
     height: 1.45rem;
     margin: 0 auto;
-    border: 0.025rem solid #fff;
+    border: .025rem solid #fff;
 }
 .title p {
     width: 9.725rem;
     height: 2rem;
     margin: -0.4rem auto 0.125rem;
-    font-size: 0.5rem;
+    font-size: .5rem;
     text-align: center;
     color: #648357;
     background-color: #bac79c;
@@ -389,17 +390,19 @@ a {
     position: absolute;
 }
 .title .bbqb01 {
-    top: 0.425rem;
-    left: 0.175rem;
+    top: .425rem;
+    left: .175rem;
+    width: 3.225rem;
 }
 .title .bbqb02 {
-    top: 0.55rem;
-    right: 0.1rem;
+    top: .55rem;
+    right: .1rem;
+    width: 12.275rem;
 }
 .pug {
     width: 100%;
     height: 6.15rem;
-    margin-top: 0.75rem;
+    margin-top: .75rem;
 }
 .pug img {
     float: left;
@@ -407,7 +410,7 @@ a {
     height: 6.15rem;
 }
 .pug img.ee {
-    margin-right: 0.375rem;
+    margin-right: .375rem;
 }
 .pug .rr {
     float: right;
@@ -415,14 +418,14 @@ a {
 .pugtwo {
     width: 100%;
     height: 6.15rem;
-    margin-top: 0.3rem;
+    margin-top: .3rem;
     background-color: #edb2bb;
 }
 .pugtwo li {
     float: left;
     width: 5.075rem;
     height: 100%;
-    border-right: 0.375rem solid #edb2bb;
+    border-right: .375rem solid #edb2bb;
     background-color: #edb2bb;
 }
 .pugtwo li.uu {
@@ -437,21 +440,21 @@ a {
     font-size: 1rem;
 }
 .start .Stcenter {
-    margin-top: 0.5rem;
-    font-size: 0.45rem;
-    line-height: 0.65rem;
+    margin-top: .5rem;
+    font-size: .45rem;
+    line-height: .65rem;
     color: #000;
 }
 .zx {
     width: 2.575rem;
-    height: 0.7rem;
-    margin: 0.5rem auto 0;
-    border: 0.025rem solid #fff;
+    height: .7rem;
+    margin: .5rem auto 0;
+    border: .025rem solid #fff;
 }
 .zx a {
-    font-size: 0.425rem;
+    font-size: .425rem;
     font-weight: 700;
-    line-height: 0.7rem;
+    line-height: .7rem;
     color: #000;
 }
 .issue-in {
@@ -463,20 +466,20 @@ a {
     float: left;
     width: 5.275rem;
     height: 5.375rem;
-    margin: 0.125rem 0.025rem;
+    margin: .125rem .025rem;
     text-align: center;
 }
 .issue-in li img {
     display: inline;
-    padding: 0.125rem;
-    border: 0.025rem dashed #eaeee1;
+    padding: .125rem;
+    border: .025rem dashed #eaeee1;
     border-radius: 50%;
 }
 .issue-in li span {
     position: absolute;
-    bottom: 0.65rem;
+    bottom: .65rem;
     left: 50%;
-    font-size: 0.6rem;
+    font-size: .6rem;
     -webkit-transform: translate(-50%, 0);
     -moz-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
@@ -485,8 +488,8 @@ a {
     color: #72572c;
 }
 .boult {
-    width: 0.8rem;
-    height: 0.75rem;
+    width: .8rem;
+    height: .75rem;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -494,9 +497,9 @@ a {
     width: 0;
     height: 0;
     margin: 0 auto;
-    border-top: 0.875rem solid #fff;
-    border-right: 0.75rem solid transparent;
-    border-left: 0.75rem solid transparent;
+    border-top: .875rem solid #fff;
+    border-right: .75rem solid transparent;
+    border-left: .75rem solid transparent;
 }
 .anlitt {
     width: 5.825rem;
@@ -513,12 +516,12 @@ a {
     background-color: #98b478;
 }
 .anlitt .TTtop .p1 {
-    font-size: 0.725rem;
+    font-size: .725rem;
     font-weight: 700;
-    line-height: 0.875rem;
+    line-height: .925rem;
 }
 .anlitt .TTtop .p2 {
-    font-size: 0.25rem;
+    font-size: .25rem;
     color: #ccdabc;
 }
 .anli {
@@ -534,27 +537,27 @@ a {
 .imgdiv {
     width: 7.65rem;
     height: 4.8rem;
-    margin-left: 0.175rem;
+    margin-left: .175rem;
 }
 .imgdiv img {
     float: left;
-    margin-left: 0.2rem;
+    margin-left: .2rem;
 }
 .imgtitle {
     width: 100%;
-    height: 0.675rem;
+    height: .675rem;
     margin: 0 auto;
 }
 .imgtitle .qq {
     float: left;
     width: 15.25rem;
-    height: 0.675rem;
+    height: .675rem;
     background-color: #98b478;
 }
 .imgtitle .qq span {
     padding: 0 1.7rem 0 1.35rem;
-    font-size: 0.4rem;
-    line-height: 0.65rem;
+    font-size: .4rem;
+    line-height: .65rem;
     color: #fff;
 }
 .imgtitle .qq .shuhou {
@@ -565,23 +568,23 @@ a {
 }
 .imgtitle img {
     float: left;
-    width: 0.35rem;
-    height: 0.675rem;
+    width: .35rem;
+    height: .675rem;
 }
 .zj {
     width: 8.75rem;
     height: 1.125rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: .7rem;
 }
 .zj .p1 {
-    line-height: 0.625rem;
+    line-height: .625rem;
 }
 .doctor-b {
     width: 16rem;
     height: 13.375rem;
     margin: 0 auto;
     overflow: hidden;
-    background: url(//img.hzshuangmei.com/m/hzbbqb/images/like.png) no-repeat bottom left;
+    background: url(//img.hzshuangmei.com/m/hzbbqb/images/lzk.png) no-repeat bottom left;
 }
 .doctorarc {
     width: 10rem;
@@ -592,7 +595,7 @@ a {
 .doctorarc-t {
     width: 100%;
     height: 1.575rem;
-    border-bottom: 0.025rem solid #dde3ce;
+    border-bottom: .025rem solid #dde3ce;
 }
 .doctorarc-t li {
     float: left;
@@ -603,7 +606,7 @@ a {
     margin-left: 1.875rem;
 }
 .dol p {
-    font-size: 0.6rem;
+    font-size: .6rem;
     color: #fff;
 }
 .likee {
@@ -611,29 +614,29 @@ a {
     height: auto;
 }
 .likee img {
-    margin-top: 0.275rem;
+    margin-top: .275rem;
     margin-left: auto;
 }
 .likesj {
     width: 0;
     height: 0;
     margin-top: 1rem;
-    border-right: 0.325rem solid transparent;
-    border-bottom: 0.4rem solid #dde3ce;
-    border-left: 0.325rem solid transparent;
+    border-right: .325rem solid transparent;
+    border-bottom: .4rem solid #dde3ce;
+    border-left: .325rem solid transparent;
 }
 .abstract {
     width: 8.075rem;
     height: 4.325rem;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     margin-left: auto;
-    font-size: 0.45rem;
-    line-height: 0.75rem;
+    font-size: .45rem;
+    line-height: .75rem;
 }
 .abstract p {
     width: 100%;
-    height: 0.75rem;
-    padding-left: 0.7rem;
+    height: .75rem;
+    padding-left: .7rem;
     box-sizing: border-box;
     color: #fff;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/xin3.png) no-repeat left center;
@@ -641,38 +644,38 @@ a {
 .goodat {
     width: 2.575rem;
     height: 1.05rem;
-    margin: 0.5rem 0 0 2.55rem;
-    font-size: 0.4rem;
+    margin: .5rem 0 0 2.55rem;
+    font-size: .4rem;
     font-weight: 700;
-    line-height: 0.925rem;
+    line-height: .925rem;
     color: #5c5b7e;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/goodat.png) no-repeat;
 }
 .goodat em {
-    margin-right: 0.125rem;
+    margin-right: .125rem;
 }
 .goodatarc {
     width: 75%;
     height: 1.7rem;
     margin-left: auto;
-    font-size: 0.45rem;
-    line-height: 0.775rem;
+    font-size: .45rem;
+    line-height: .775rem;
     color: #fff;
 }
 .zixun {
     width: 100%;
     height: 1.625rem;
-    padding-top: 0.45rem;
+    padding-top: .45rem;
     text-align: center;
     background-color: #9ccfcc;
 }
 .zixun a {
-    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-    font-size: 0.6rem;
+    padding: .2rem 1.5rem .2rem 1.5rem;
+    font-size: .6rem;
     font-weight: 700;
     text-decoration: none;
     color: #fff;
-    border: 0.025rem solid #fff;
+    border: .025rem solid #fff;
 }
 .ljzx {
     width: 100%;
@@ -682,21 +685,78 @@ a {
 }
 .ljzx p {
     width: 5.175rem;
-    height: 0.875rem;
-    margin: 0.425rem auto 0;
-    border: 0.025rem solid #ed7c61;
-    border-radius: 0.125rem;
+    height: .875rem;
+    margin: .425rem auto 0;
+    border: .025rem solid #ed7c61;
+    border-radius: .125rem;
 }
 .ljzx p a {
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 0.5rem;
+    font-size: .5rem;
     font-weight: 700;
-    line-height: 0.875rem;
+    line-height: .875rem;
     text-align: center;
     color: #ed7c61;
 }
 .anliyw {
     display: inline;
+}
+.main {
+    font-size: 0.5rem;
+}
+.cc {
+    width: 6.7rem;
+}
+.MOnel img {
+    height: 9.05rem;
+}
+.Mtright img {
+    height: 9.075rem;
+}
+.we {
+    width: 6.55rem;
+}
+.rt {
+    width: 6.725rem;
+}
+.vv {
+    width: 5.225rem;
+}
+.ystu {
+    width: 9.875rem;
+}
+.ystu:nth-child(2) {
+    width: 9.9rem;
+}
+.ystu:nth-child(3) {
+    width: 10.45rem;
+}
+.bb {
+    width: 8.025rem;
+}
+.pug img {
+    width: 5.075rem;
+}
+.nn {
+    width: 10.675rem;
+}
+.issue-in li img {
+    width: 4.825rem;
+}
+.anliyw {
+    width: 1.1rem;
+}
+.anlitt {
+    font-size: 0;
+}
+.imgdiv img {
+    width: 3.625rem;
+}
+.imgtitle img {
+    width: 0.35rem;
+}
+.pugtow img {
+    width: 6.15rem;
 }
