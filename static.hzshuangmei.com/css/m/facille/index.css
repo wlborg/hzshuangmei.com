@@ -421,8 +421,7 @@ i
 
 .container .part6 {
     margin: 0 auto;
-    max-width: 16rem;
-    height: 14rem;
+    margin-bottom: 1rem;
 }
 
 .container .part6 .content6 > div:first-child {
@@ -443,11 +442,11 @@ i
 
 .container .part6 .content6 > div:last-child p {
     font-size: 0.45rem;
-    /*line-height: 0.9rem;*/
+    line-height: 0.7rem;
 }
 
 .container .part6 .content6 > div:last-child p:first-child {
-    margin-top: .15rem;
+    margin-top: .35rem;
 }
 
 .container .part6 .content6 > div:last-child > div:last-child {
@@ -548,5 +547,5 @@ i
 .container .part6 .content6 > div:first-child {
     margin-top: 0rem;
     width: 7.3rem;
-    height: 9.875rem;
+    height: 11.2rem;
 }
