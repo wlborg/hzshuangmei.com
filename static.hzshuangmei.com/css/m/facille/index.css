@@ -433,19 +433,21 @@ i
 
 .container .part6 .content6 > div:last-child {
     font-size: .3rem;
-    background: url(https://img.hzshuangmei.com/m/facille/like_bg.png) no-repeat center;
-    width: 8.5rem;
-    height: 11.5rem;
+    background: url(https://img.hzshuangmei.com/m/facille/lzk_bg.jpg) no-repeat center;
+    /*width: 8.5rem;*/
+    /*height: 11.5rem;*/
+    width: 7.9rem;
+    height: 10.85rem;
     background-size: cover;
 }
 
 .container .part6 .content6 > div:last-child p {
     font-size: 0.45rem;
-    line-height: 0.9rem;
+    /*line-height: 0.9rem;*/
 }
 
 .container .part6 .content6 > div:last-child p:first-child {
-    margin-top: .5rem;
+    margin-top: .15rem;
 }
 
 .container .part6 .content6 > div:last-child > div:last-child {
@@ -543,3 +545,8 @@ i
     height: 1.5rem;
 }
 
+.container .part6 .content6 > div:first-child {
+    margin-top: 0rem;
+    width: 7.3rem;
+    height: 9.875rem;
+}
