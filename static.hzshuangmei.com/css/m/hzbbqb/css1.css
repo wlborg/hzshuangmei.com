@@ -133,7 +133,7 @@ a {
     color: #fff;
 }
 .MOarc {
-    width: 4.625rem;
+    width: 4.4rem;
     height: 2.85rem;
     padding: .25rem 0 0 .625rem;
     background-color: #74a6a5;
@@ -149,12 +149,14 @@ a {
     position: absolute;
     top: .15rem;
     left: 2.625rem;
+    z-index: -1;
     width: 9.25rem;
     height: .625rem;
     border: .025rem solid #fff;
     border-bottom: 0;
 }
 .main01 span {
+    /*z-index: -1;*/
     position: absolute;
     top: .625rem;
     left: -1.775rem;
@@ -209,6 +211,7 @@ a {
     position: absolute;
     top: -0.175rem;
     left: 3.725rem;
+    z-index: -1;
     width: 10.8rem;
     height: 1rem;
     border: .025rem solid #fff;
@@ -389,10 +392,12 @@ a {
 .title .bbqb01 {
     top: .425rem;
     left: .175rem;
+    width: 3.225rem;
 }
 .title .bbqb02 {
     top: .55rem;
     right: .1rem;
+    width: 12.275rem;
 }
 .pug {
     width: 100%;
@@ -751,4 +756,7 @@ a {
 }
 .imgtitle img {
     width: 0.35rem;
+}
+.pugtow img {
+    width: 6.15rem;
 }
