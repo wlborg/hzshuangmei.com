@@ -24,8 +24,6 @@ em {
 }
 body {
     font-family: "微软雅黑";
-    font-size: 0.5rem;
-    color: #fff;
     background-color: #bac79c;
 }
 a {
@@ -34,7 +32,6 @@ a {
 }
 .banner {
     width: 100%;
-    margin-top: 8%;
 }
 .main {
     width: 16rem;
@@ -58,6 +55,7 @@ a {
 }
 .Mone-top img {
     display: inline;
+    width: 209px;
 }
 .Mone-top .p1 {
     font-size: 0.75rem;
@@ -107,6 +105,7 @@ a {
 .MOnel img {
     float: left;
     margin-right: 0.125rem;
+    height: 362px;
 }
 .MOner {
     float: right;
@@ -178,6 +177,7 @@ a {
 }
 .Mtright img {
     float: left;
+    height: 363px;
     margin-left: 0.15rem;
 }
 .Mttop {
@@ -293,9 +293,20 @@ a {
     border-radius: 0.375rem;
     background-color: #f4c778;
 }
-.Mrtop-in p img {
+.Mrtop-in p .img1{
     display: inline;
     margin-top: 0.325rem;
+    width: 262px;
+}
+.Mrtop-in p .img2{
+    display: inline;
+    margin-top: 0.325rem;
+    width: 269px;
+}
+.Mrtop-in p .img3{
+    display: inline;
+    margin-top: 0.325rem;
+    width: 262px;
 }
 .meihuyi {
     width: 14.75rem;
@@ -327,9 +338,13 @@ a {
     height: 7.625rem;
 }
 .ystu {
+    width: 395px;
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.ystu3{
+    width: 498px;
 }
 .ystitle {
     width: 100%;
@@ -355,6 +370,7 @@ a {
 }
 .youshiw img {
     left: 0;
+    width: 396px;
 }
 .youshiw .youshiq-l {
     top: 1.175rem;
@@ -395,6 +411,9 @@ a {
 .title .bbqb02 {
     top: 0.55rem;
     right: 0.1rem;
+}
+.bb{
+    height: 15px;
 }
 .pug {
     width: 100%;
@@ -469,8 +488,12 @@ a {
 .issue-in li img {
     display: inline;
     padding: 0.125rem;
+    width: 207px;
     border: 0.025rem dashed #eaeee1;
     border-radius: 50%;
+}
+.anliyw{
+    width: 44px;
 }
 .issue-in li span {
     position: absolute;
@@ -535,9 +558,11 @@ a {
     width: 7.65rem;
     height: 4.8rem;
     margin-left: 0.175rem;
+
 }
 .imgdiv img {
     float: left;
+    height: 192px;
     margin-left: 0.2rem;
 }
 .imgtitle {
