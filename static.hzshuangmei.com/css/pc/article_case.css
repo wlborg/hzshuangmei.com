@@ -209,7 +209,10 @@ h3{
     background: #f6f5f8;
     width: 820px;
 }
-
+.note{
+    position: relative;
+    top: -33px;
+}
 /********************* case_article  modal*********************/
 .article_case_content .main img{cursor:zoom-in;}
 .case-article-modal{position: fixed;top:0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, .6);z-index: -10;visibility: hidden;}
