@@ -384,7 +384,7 @@ img {
     border: 1px solid black;
 }
 
-.button p {
+.button a {
     color: #000;
     text-align: center;
     line-height: 60px;
