@@ -1010,7 +1010,6 @@ $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$relateprojecttypeid'  and a.arcrank=0 order by rand() limit 5 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
-
 //如果有调出对应的数据
 if ($ns>0){
 while($row=$dsql->GetArray())
@@ -1045,7 +1044,6 @@ $relateproject.='<a href="'.$url.'" class="swiper-slide" target="_blank"><img sr
 }
 return $relateproject;
 }
-
 /*
 日记热门项目项目项目 更多按钮
 @param   $typeid   当前文档所在的栏目ID
@@ -1099,11 +1097,9 @@ break;
 default:
 $relateprojecturl="https://www.hzshuangmei.com/projects/";
 }
-
-$relateprojecturl='<a href="'.$relateprojecturl.'" target="_blank">more+</a>';
+$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">热门项目</a><br/><a href="'.$relateprojecturl.'" target="_blank">popular project</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
 return $relateprojecturl;
 }
-
 /*
 获取案例对应的推荐专家
   $typeid  为当前案例日记所属的日记栏目ID
@@ -1191,7 +1187,6 @@ $relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt=
 }
 return $relatedoctor;
 }
-
 /*
 日记热门项目项目项目 更多按钮
 @param   $typeid   当前日记文档所在的栏目ID
@@ -1233,6 +1228,6 @@ break;
 default:
 $relatedoctorurl="https://www.hzshuangmei.com/doctors/";
 }
-$relatedoctorurl='<a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
+$relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
 return $relatedoctorurl;
 }
