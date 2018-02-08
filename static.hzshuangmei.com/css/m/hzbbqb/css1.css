@@ -115,6 +115,7 @@ a {
     width: 100%;
     height: 4.65rem;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/ysbyinying.png) no-repeat bottom center;
+    background-size: 180px 14px;
 }
 .MOner-top p,
 .Mttop-in p {
@@ -651,6 +652,7 @@ a {
     line-height: .55rem;
     color: #fff;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/xin3.png) no-repeat left 0.125rem;
+    background-size: 16px 12px;
 }
 .abstract>p:nth-child(4),.abstract>p:nth-child(5){
     width: 10rem;
@@ -777,4 +779,7 @@ a {
 }
 .pugtow img {
     width: 6.15rem;
+}
+.mm{
+    width:2.625rem;
 }
