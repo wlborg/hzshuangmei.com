@@ -1,0 +1,1259 @@
+﻿@charset "UTF-8";
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+.row {
+    min-width: 1200px;
+    text-align: center;
+    margin: 0;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.button {
+    position: relative;
+    display: block;
+    width: 324px;
+    height: 62px;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 55px;
+    background: #fd4d66;
+    -webkit-box-shadow: 0 0 4px 4px #dcc6c9;
+    box-shadow: 0 0 4px 4px #dcc6c9;
+}
+
+.button p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 62px;
+    padding-right: 70px;
+}
+
+.button span {
+    display: block;
+    position: absolute;
+    color: #fd4d66;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    top: 50%;
+    left: 64%;
+    margin-top: -21px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: 750px;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/banner.jpg") center top no-repeat;
+}
+
+.banner .main {
+    position: relative;
+}
+
+.banner .main a {
+    display: block;
+    position: absolute;
+    height: 38px;
+    width: 160px;
+    top: 598px;
+    left: 798px;
+}
+
+.part1 .title_part1 {
+    margin-top: 62px;
+}
+
+.part1 .title_part1 h2 {
+    width: 620px;
+    margin: 0 auto;
+    font-size: 60px;
+    color: #5b598b;
+    text-align: left;
+    border-bottom: 2px solid #b8b7c9;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part1_title-h2.jpg") right center no-repeat;
+}
+
+.part1 .main ul {
+    position: relative;
+    margin-top: 40px;
+    height: 387px;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part1.jpg") center top no-repeat;
+}
+
+.part1 .main ul li {
+    position: absolute;
+    float: left;
+    text-align: right;
+}
+
+.part1 .main ul li h2 {
+    font-size: 30px;
+    margin-top: 314px;
+    color: #5b598b;
+    padding-right: 165px;
+}
+
+.part1 .main ul li p {
+    font-size: 22px;
+    color: #535353;
+    margin-left: 210px;
+}
+
+.part1 .main ul .second {
+    left: 33.6%;
+}
+
+.part1 .main ul .second h2 {
+    padding-right: 172px;
+}
+
+.part1 .main ul .third {
+    left: 66.4%;
+}
+
+.part1 .main ul .third h2 {
+    padding-right: 76px;
+}
+
+.line {
+    width: 100%;
+    height: 8px;
+    background: #c1cfdc;
+    margin-top: 55px;
+}
+
+.title {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.title h2 {
+    font-size: 60px;
+    color: #5b598b;
+}
+
+.title h2 span {
+    font-size: 72px;
+    color: #ff0029;
+}
+
+.title p {
+    position: relative;
+    width: 304px;
+    margin: 0 auto;
+    font-size: 30px;
+    color: #fff;
+    background: #fe3551;
+}
+
+.title p:before {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 2px;
+    left: 100%;
+    background: #b8b7c9;
+    top: 50%;
+}
+
+.title p:after {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 2px;
+    right: 100%;
+    background: #b8b7c9;
+    top: 50%;
+}
+
+.part2 {
+    margin-top: 41px;
+}
+
+.part2 .main {
+    margin-top: 60px;
+}
+
+.part2 .main ul {
+    position: relative;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.part2 .main ul li {
+    float: left;
+    width: 270px;
+}
+
+.part2 .main ul li img {
+    width: 100%;
+}
+
+.part2 .main ul .li_odd {
+    margin-top: 155px;
+}
+
+.part3 {
+    margin-top: 41px;
+}
+
+.part3 .title p {
+    width: 426px;
+}
+
+.part3 .main {
+    margin-top: 62px;
+}
+
+.part3 .main img {
+    width: 594px;
+    float: left;
+    border: 2px solid #707070;
+}
+
+.part3 .main .right {
+    position: relative;
+    width: 573px;
+    float: right;
+    margin-top: 24px;
+    text-align: left;
+}
+
+.part3 .main .right p {
+    width: 500px;
+    font-size: 23px;
+    color: #7f7f7f;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.part3 .main .right p span {
+    color: #5b598b;
+}
+
+.part3 .main .right:before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 25px;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_dot.jpg") left top no-repeat;
+}
+
+.part3 .main .right:after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 25px;
+    right: 0;
+    top: 58%;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_dot.jpg") left -25px no-repeat;
+}
+
+.part3 .main .button {
+    margin-top: 94px;
+}
+
+.part3 .main .button p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 62px;
+    width: 72%;
+}
+
+.part3 .main .button span {
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.part4 {
+    margin-top: 61px;
+}
+
+.part4 .title p:before {
+    width: 60%;
+}
+
+.part4 .title p:after {
+    width: 60%;
+}
+
+.part4 .main {
+    margin-top: 40px;
+}
+
+.part4 .main .top li {
+    float: left;
+    width: 50%;
+    background: #e8e7ee;
+    border: 2px solid #bbbbbb;
+    border-radius: 8px;
+}
+
+.part4 .main .top li p {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.part4 .main .top .on {
+    position: relative;
+    color: #FFF;
+    background: #5b598b;
+    border: none;
+}
+
+.part4 .main .top .on:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -38px;
+    border-top: 34px solid #5b598b;
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    border-bottom: 34px solid transparent;
+}
+
+.part4 {
+    margin-top: 40px;
+}
+
+.part4 .main {
+    margin-top: 40px;
+}
+
+.part4 .main .box {
+    margin-top: 74px;
+}
+
+.part4 .main .box .bg_h2 {
+    font-size: 36px;
+    font-weight: 100;
+    height: 102px;
+    line-height: 80px;
+    width: 1132px;
+    color: #fff;
+    margin: 0 auto;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part4-h2.jpg") no-repeat;
+}
+
+.part4 .main .box .contain {
+    margin-top: 50px;
+    background-color: #eff1f5;
+}
+
+.part4 .main .box .contain .left {
+    float: left;
+    width: 624px;
+    text-align: right;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part4-1.jpg") no-repeat;
+}
+
+.part4 .main .box .contain .left p {
+    font-size: 26px;
+    color: #5b598b;
+    margin-top: 76px;
+    margin-right: 38px;
+}
+
+.part4 .main .box .contain .left h2 {
+    font-size: 30px;
+    color: #5b598b;
+    font-weight: 100;
+    margin-top: 116px;
+}
+
+.part4 .main .box .contain .left .p_2 {
+    margin-right: 22px;
+}
+
+.part4 .main .box .contain .left .p_3 {
+    margin-top: 45px;
+    margin-right: 20px;
+}
+
+.part4 .main .box .contain .left .p_4 {
+    margin-top: 22px;
+    margin-right: 47px;
+}
+
+.part4 .main .box .contain .left .p_5 {
+    margin-right: 10px;
+}
+
+.part4 .main .box .contain .right {
+    float: right;
+    width: 568px;
+    background: #eff1f5;
+}
+
+.part4 .main .box .contain .right .top,
+.part4 .main .box .contain .right .bottom {
+    position: relative;
+    float: right;
+    margin-top: 17px;
+    width: 502px;
+    background: #5b598b;
+    border-radius: 10px;
+}
+
+.part4 .main .box .contain .right .top p,
+.part4 .main .box .contain .right .bottom p {
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
+
+.part4 .main .box .contain .right .top h2,
+.part4 .main .box .contain .right .bottom h2 {
+    margin-left: 20px;
+    color: #fff;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.part4 .main .box .contain .right .top h2 p,
+.part4 .main .box .contain .right .bottom h2 p {
+    display: inline;
+    margin-left: 0;
+    background: #fff;
+    color: #5b598b;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 28px;
+}
+
+.part4 .main .box .contain .right .top a,
+.part4 .main .box .contain .right .bottom a {
+    display: block;
+    font-size: 22px;
+    color: #5b598b;
+    width: 142px;
+    height: 34px;
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.part4 .main .box .contain .right .top::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    z-index: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid #5b598b;
+    border-left: 50px solid transparent;
+    border-right: 50px solid #5b598b;
+    right: 95%;
+    top: 45%;
+    -webkit-transform: rotate(-37deg);
+    -ms-transform: rotate(-37deg);
+    transform: rotate(-37deg);
+}
+
+.part4 .main .box .contain .right .bottom::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    z-index: 0;
+    border-top: 20px solid #5b598b;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid #5b598b;
+    border-right: 40px solid transparent;
+    right: 95%;
+    top: 15%;
+    -webkit-transform: rotate(218deg);
+    -ms-transform: rotate(218deg);
+    transform: rotate(218deg);
+}
+
+.part4 .main .box .contain .button {
+    float: left;
+    width: 414px;
+    margin-left: 30px;
+}
+
+.part4 .main .box .contain .button span {
+    left: 80%;
+}
+
+.part4 .main .box1 {
+    margin-top: 74px;
+}
+
+.part4 .main .box1 .bg_h2 {
+    font-size: 36px;
+    font-weight: 100;
+    height: 102px;
+    line-height: 80px;
+    width: 1132px;
+    color: #fff;
+    margin: 0 auto;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part4-h2.jpg") no-repeat;
+}
+
+.part4 .main .box1 .contain .left {
+    position: relative;
+    float: left;
+    width: 58%;
+    margin-top: 46px;
+    text-align: left;
+}
+
+.part4 .main .box1 .contain .left p {
+    font-size: 30px;
+    color: #5b598b;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.part4 .main .box1 .contain .left .font {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 68px;
+    background: #5b598b;
+    border-radius: 8px;
+}
+
+.part4 .main .box1 .contain .left .font h2 {
+    margin-top: 30px;
+    margin-left: 32px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+
+.part4 .main .box1 .contain .left .font p {
+    text-align: left;
+    margin-left: 32px;
+    color: #fff;
+    font-size: 20px;
+    width: 465px;
+    margin-top: 22px;
+}
+
+.part4 .main .box1 .contain .left .font a {
+    display: block;
+    font-size: 22px;
+    color: #5b598b;
+    width: 142px;
+    height: 34px;
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.part4 .main .box1 .contain .left .button {
+    width: 416px;
+    margin-top: 30px;
+}
+
+.part4 .main .box1 .contain .left .button p {
+    color: #fff;
+    margin-top: 0;
+}
+
+.part4 .main .box1 .contain .left .button span {
+    left: 80%;
+    text-align: center;
+}
+
+.part4 .main .box1 .contain .left::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid #5b598b;
+    border-left: 50px solid transparent;
+    border-right: 50px solid #5b598b;
+    top: 36%;
+    left: 81%;
+    -webkit-transform: rotate(227deg);
+    -ms-transform: rotate(227deg);
+    transform: rotate(227deg);
+}
+
+.part4 .main .box1 .contain .right {
+    float: right;
+    margin-top: 46px;
+}
+
+.part4 .main .box1 .contain .right img {
+    width: 466px;
+    border: 1px solid #949494;
+}
+
+.part5 {
+    margin-top: 38px;
+}
+
+.part5 .main {
+    margin-top: 40px;
+}
+
+.part5 .main .top li {
+    float: left;
+    width: 50%;
+    background: #e8e7ee;
+    border: 2px solid #bbbbbb;
+    border-radius: 8px;
+}
+
+.part5 .main .top li p {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.part5 .main .top .on_2 {
+    position: relative;
+    color: #FFF;
+    background: #5b598b;
+    border: none;
+}
+
+.part5 .main .top .on_2:before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 50%;
+    margin-left: -38px;
+}
+
+.part5 .main .box2,
+.part5 .main .box3 {
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.part5 .main .box2 .left,
+.part5 .main .box3 .left {
+    float: left;
+}
+
+.part5 .main .box2 .right,
+.part5 .main .box3 .right {
+    float: right;
+}
+
+.part5 .main .box2:before,
+.part5 .main .box3:before {
+    position: absolute;
+    content: '';
+    width: 82px;
+    height: 82px;
+    left: 50%;
+    margin-left: -41px;
+    top: 50%;
+    margin-top: -41px;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_before.png") no-repeat;
+}
+
+.part6 {
+    margin-top: 38px;
+}
+
+.part6 .title p::before,
+.part6 .title p::after {
+    width: 60%;
+}
+
+.part6 .main {
+    margin-top: 50px;
+}
+
+.part6 .main ul li {
+    float: left;
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 10px solid #c5c5c5;
+    margin-left: 50px;
+}
+
+.part6 .main ul li .in {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 2px;
+    background: #fd4d66;
+}
+
+.part6 .main ul li .in span {
+    font-size: 66px;
+    color: #fff;
+}
+
+.part6 .main ul li .in h2 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: -30px;
+}
+
+.part6 .main ul li .in p {
+    font-size: 24px;
+    color: #FFF;
+}
+
+.part6 .main ul li .in:before,
+.part6 .main ul li .in:after {
+    position: absolute;
+    content: '';
+    width: 56px;
+    height: 2px;
+    background: #fff;
+    top: 50px;
+}
+
+.part6 .main ul li .in:before {
+    left: 130px;
+}
+
+.part6 .main ul li .in:after {
+    right: 130px;
+}
+
+.part6 .main .doctor {
+    text-align: left;
+    position: relative;
+    margin-top: 62px;
+}
+
+.part6 .main .doctor img {
+    position: absolute;
+}
+
+.part6 .main .doctor .img_2 {
+    right: 10px;
+    bottom: 50px;
+    border: 10px solid #e9e9e9;
+}
+
+.part6 .main .doctor .name {
+    width: 200px;
+    height: 133px;
+    margin-top: 98px;
+    margin-left: 510px;
+    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_doctor-name.png") left no-repeat;
+}
+
+.part6 .main .doctor .name h2 {
+    font-size: 36px;
+    color: #3f3f3f;
+    margin-left: 36px;
+}
+
+.part6 .main .doctor .name p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-left: 10px;
+}
+
+.part6 .main .doctor .name h3 {
+    font-size: 30px;
+    color: #fd3358;
+    margin-left: 78px;
+}
+
+.part6 .main .doctor .discrib {
+    float: right;
+    width: 1010px;
+    height: 390px;
+    margin-top: 10px;
+    background: #5b598b;
+}
+
+.part6 .main .doctor .discrib p {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 316px;
+    line-height: 30px;
+    padding-left: 28px;
+}
+
+.part6 .main .doctor .discrib h2 {
+    margin-left: 316px;
+    font-size: 24px;
+    color: #fd3358;
+    margin-top: 26px;
+    padding-left: 30px;
+    background: url('https://img.hzshuangmei.com/pc/longbijiage/bg_goodat.jpg') left center no-repeat;
+}
+
+.part6 .main .doctor .discrib p:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+}
+
+.part6 .main .doctor .discrib .p_1 {
+    margin-top: 28px;
+}
+
+.part6 .main .doctor .discrib .p_5 {
+    margin-top: 10px;
+    width: 406px;
+    padding-left: 0;
+}
+
+.part6 .main .doctor .discrib .p_5:before {
+    background: none;
+}
+
+.part6 .main .doctor .discrib a {
+    float: left;
+    width: 160px;
+    height: 46px;
+    margin-left: 36px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 0 4px 4px #4f456e;
+    box-shadow: 0 0 4px 4px #4f456e;
+}
+
+.part6 .main .doctor .discrib a p {
+    margin-left: 0;
+    padding: 0;
+    line-height: 46px;
+    padding-left: 16px;
+}
+
+.part6 .main .doctor .discrib a p:before {
+    background: none;
+}
+
+.part6 .main .doctor .discrib a span {
+    text-align: center;
+}
+
+.part6 .main .doctor .discrib .a_1 {
+    margin-left: 350px;
+}
+
+.part7 {
+    margin-top: 40px;
+}
+
+.part7 .title {
+    width: 696px;
+}
+
+.part7 .title p:before,
+.part7 .title p:after {
+    width: 54%;
+}
+
+.part7 .top {
+    position: relative;
+    width: 830px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.part7 .top li {
+    float: left;
+    width: 290px;
+    height: 290px;
+    border: 1px solid #a7a7a7;
+    border-radius: 50%;
+}
+
+.part7 .top li img {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.part7 .top .li_3 {
+    margin-left: 110px;
+}
+
+.part7 .top .li_4 {
+    margin-left: 32px;
+}
+
+.part7 .top .li_1,
+.part7 .top .li_2 {
+    position: absolute;
+    background: #5b598b;
+    width: 154px;
+    height: 154px;
+    border-radius: 50%;
+    border: none;
+    top: 92px;
+    z-index: 2;
+}
+
+.part7 .top .li_1 h2,
+.part7 .top .li_2 h2 {
+    position: relative;
+    margin-top: 22px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.part7 .top .li_1 h2:after,
+.part7 .top .li_2 h2:after {
+    position: absolute;
+    content: '';
+    width: 114px;
+    height: 2px;
+    background: #fff;
+    top: 120%;
+    left: 50%;
+    margin-left: -57px;
+}
+
+.part7 .top .li_1 p,
+.part7 .top .li_2 p {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.part7 .top .li_2 {
+    right: 2px;
+}
+
+.part7 .bottom {
+    margin-top: 44px;
+}
+
+.part7 .bottom li {
+    float: left;
+    width: 224px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.part7 .bottom li p {
+    font-size: 22px;
+    color: #5b598b;
+    margin-top: 24px;
+}
+
+.part8 {
+    margin-top: 56px;
+}
+
+.part8 .title p::before,
+.part8 .title p::after {
+    width: 50%;
+}
+
+.part8 .main {
+    margin-top: 40px;
+}
+
+.part8 .main ul {
+    position: relative;
+    overflow: hidden;
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.part8 .main ul li {
+    float: left;
+    width: 254px;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.part8 .main ul li h2 {
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+    padding-left: 14px;
+    margin-bottom: 28px;
+}
+
+.part8 .main ul li h2 p {
+    font-size: 30px;
+    margin-top: 32px;
+}
+
+.part8 .main .li_even {
+    background: url('https://img.hzshuangmei.com/pc/longbijiage/ba_part8_li_even.jpg') 168px 74px no-repeat;
+    background-color: #fd5a2e;
+}
+
+.part8 .main .li_odd {
+    background: url('https://img.hzshuangmei.com/pc/longbijiage/ba_part8_li_odd.jpg') 168px 74px no-repeat;
+    background-color: #5b598b;
+}
+
+.part8 .main .li_last {
+    margin-right: 0;
+}
+
+.part8 .main .contact {
+    margin-top: 26px;
+    border: 4px solid #bfbebe;
+    background: #fe3551;
+}
+
+.part8 .main .contact .net,
+.part8 .main .contact .phone {
+    width: 240px;
+    float: left;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    background: #fff;
+    height: 102px;
+}
+
+.part8 .main .contact .net h2,
+.part8 .main .contact .phone h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.part8 .main .contact .net {
+    margin-left: 344px;
+}
+
+.part8 .main .contact .net h2 {
+    color: #fe3551;
+}
+
+.part8 .main .contact .net p {
+    font-size: 22px;
+    color: #535353;
+    margin-top: 12px;
+}
+
+.part8 .main .contact .phone {
+    margin-left: 34px;
+}
+
+.part8 .main .contact .phone h3 {
+    font-size: 24px;
+    color: #fe3551;
+    margin-top: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+#button {
+    animation-iteration-count: 9999;
+    animation-direction: alternate;
+}
+
+
+/* .part1 li,.part1 .title_part1,.part1 h2,.part1 p,.part1 ul
+ */
+
+.part1 ul {
+}
+
+.part1 .first h2 {
+    animation-delay: 0.2s;
+}
+
+.part1 .first p {
+    animation-delay: 0.4s;
+}
+
+.part1 .second h2 {
+    animation-delay: 0.6s;
+}
+
+.part1 .second p {
+    animation-delay: 0.8s;
+}
+
+.part1 .third h2 {
+    animation-delay: 1s;
+}
+
+.part1 .third p {
+    animation-delay: 1.2s;
+}
+
+.line_1 {
+    animation-delay: 1.4s;
+}
+
+.part2 .li_3 {
+    animation-delay: 0.2s;
+}
+
+.part2 .li_1 {
+    animation-delay: 0.4s;
+}
+
+.part2 .li_2 {
+    animation-delay: 0.6s;
+}
+
+.part2 .li_4 {
+    animation-delay: 0.8s;
+}
+
+
+.part3 {
+    animation-delay: 1s;
+}
+
+.part6 .li_1 {
+    animation-delay: 0.1s;
+}
+
+.part6 .li_2 {
+    animation-delay: 0.2s;
+}
+
+.part6 .li_3 {
+    animation-delay: 0.3s;
+}
+
+.part6 .li_4 {
+    animation-delay: 0.4s;
+}
+
+.part6 .li_1 .in {
+    animation-delay: 0.5s;
+}
+
+.part6 .li_2 .in {
+    animation-delay: 0.6s;
+}
+
+.part6 .li_3 .in {
+    animation-delay: 0.7s;
+}
+
+.part6 .li_4 .in {
+    animation-delay: 0.8s;
+}
+
+.part6 .li_1 .in h2 {
+    animation-delay: 0.9s;
+}
+
+.part6 .li_2 .in h2 {
+    animation-delay: 1s;
+}
+
+.part6 .li_3 .in h2 {
+    animation-delay: 1.1s;
+}
+
+.part6 .li_4 .in h2 {
+    animation-delay: 1.2s;
+}
+
+.part6 .li_1 .in p {
+    animation-delay: 1.3s;
+}
+
+.part6 .li_2 .in p {
+    animation-delay: 1.4s;
+}
+
+.part6 .li_3 .in p {
+    animation-delay: 1.5s;
+}
+
+.part6 .li_4 .in p {
+    animation-delay: 1.6s;
+}
+
+.part7 .li_5 {
+    animation-delay: 0.6s;
+}
+
+.part7 .li_6 {
+    animation-delay: 0.8s;
+}
+
+.part7 .li_7 {
+    animation-delay: 1s;
+}
+
+.part7 .li_8 {
+    animation-delay: 1.2s;
+}
+
+.part7 .li_9 {
+    animation-delay: 1.4s;
+}
+.foot{
+height:350px;
+}
