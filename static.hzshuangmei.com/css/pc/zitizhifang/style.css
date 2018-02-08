@@ -377,14 +377,15 @@ img {
 
 .button {
     position: relative;
-    display: block;
+
     width: 262px;
     height: 60px;
     margin: 60px auto 0;
     border: 1px solid black;
 }
 
-.button p {
+.button a {
+    display: block;
     color: #000;
     text-align: center;
     line-height: 60px;

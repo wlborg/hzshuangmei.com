@@ -38,21 +38,21 @@ img {
   /* 触发 hasLayout */
   zoom: 1; }
 
-.title {
+.ztzf_tit {
   position: relative;
   width: 14.5rem;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 0.1rem;
   border-bottom: 0.05rem solid #b0b0b0; }
-  .title h2 {
+  .ztzf_tit h2 {
     font-size: 0.75rem;
     margin-bottom: 0.25rem;
     background-image: -webkit-linear-gradient(left, #2c2313, #c09d58, #2c2313);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.title:after {
+.ztzf_tit:after {
   content: '';
   position: absolute;
   height: 0.15rem;
@@ -63,9 +63,9 @@ img {
   margin-left: -2.675rem;
   margin-top: -0.05rem; }
 
-.banner {
+.ztzf_banner {
   width: 100%; }
-  .banner img {
+  .ztzf_banner img {
     width: 100%; }
 
 .about {
@@ -251,17 +251,18 @@ img {
 
 .button {
   position: relative;
-  display: block;
+
   width: 6.55rem;
   height: 1.25rem;
   margin: 1.5rem auto 0;
   border: 0.05rem solid black; }
-  .button p {
+  .button a {
     color: #000;
     text-align: center;
     line-height: 1.25rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
+    display: block;
     font-size: 0.45rem; }
 
 .button:after {
