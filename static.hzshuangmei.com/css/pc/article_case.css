@@ -116,6 +116,10 @@
 }
 .article_case_content p .fon3 a {
     color: #8c4a99;
+    margin-right: 14px;
+}
+.article_case_content p .fon3 br{
+    display:none
 }
 .article_case_content .data_b{
     /* width:707px; */
