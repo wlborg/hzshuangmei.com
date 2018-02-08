@@ -123,6 +123,9 @@
     position:relative;
     top:20px;
 }
+#case_tabCon .list .ltt .txt .t2 br{
+    display:none;
+}
 #case_tabCon .list .ltt .txt .t2 a{
     font-size: 18px;
     color: #6e3693;
