@@ -585,6 +585,7 @@ a {
     margin: 0 auto;
     overflow: hidden;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/lzk.png) no-repeat top left;
+    background-size: 7.05rem 11.025rem;
 }
 .doctorarc {
     width: 10rem;
@@ -611,7 +612,7 @@ a {
     margin-left: 0.8rem;
 }
 .dol p {
-    width: 5rem;
+    width: 5.2rem;
     font-size: .6rem;
     line-height: .6rem;
     color: #fff;
@@ -749,6 +750,9 @@ a {
 }
 .bb {
     width: 8.025rem;
+}
+.pugtwo img{
+    height:6.15rem;
 }
 .pug img {
     width: 5.075rem;
