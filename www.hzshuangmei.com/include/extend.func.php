@@ -1010,7 +1010,6 @@ $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$relateprojecttypeid'  and a.arcrank=0 order by rand() limit 5 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
-
 //如果有调出对应的数据
 if ($ns>0){
 while($row=$dsql->GetArray())
@@ -1044,6 +1043,62 @@ $relateproject.='<a href="'.$url.'" class="swiper-slide" target="_blank"><img sr
         }
 }
 return $relateproject;
+}
+/*
+日记热门项目项目项目 更多按钮
+@param   $typeid   当前文档所在的栏目ID
+ */
+function MoreHotProjectAboutCase($typeid)
+{
+global $dsql;
+//对应的栏目URL
+$relateprojecturl="";
+switch ($typeid)
+{
+case 35 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/nose/";
+break;
+case 36 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/eye/";
+break;
+case 46:
+case 47:
+case 48:
+$relateprojecturl="https://www.hzshuangmei.com/projects/face/";
+break;
+case 38 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/chest/";
+break;
+case 39 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/private/";
+break;
+case  40 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/body/";
+break;
+case 41 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/tattoo/";
+break;
+case 49 :
+case 50 :
+case 51 :
+case 52 :
+case 53 :
+case  54 :
+case  55 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/skin/";
+break;
+case 43 :
+$relateprojecturl="https://www.hzshuangmei.com/projects/ha/";
+break;
+case 44:
+case 45:
+$relateprojecturl="https://www.hzshuangmei.com/projects/botox/";
+break;
+default:
+$relateprojecturl="https://www.hzshuangmei.com/projects/";
+}
+$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">热门项目</a><br/><a href="'.$relateprojecturl.'" target="_blank">popular project</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
+return $relateprojecturl;
 }
 /*
 获取案例对应的推荐专家
@@ -1131,4 +1186,48 @@ $litpic =replaceurl($row["litpic"]);
 $relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'" width="281" height="193"/></a>';
 }
 return $relatedoctor;
+}
+/*
+日记热门项目项目项目 更多按钮
+@param   $typeid   当前日记文档所在的栏目ID
+ */
+function MoreCommendDoctorsAboutCase($typeid)
+{
+global $dsql;
+//对应的栏目URL
+$relatedoctorurl="";
+switch ($typeid)
+{
+case 35 :
+case 36 :
+case 46:
+case 47:
+case 48:
+case 38 :
+case 39 :
+case 40 :
+$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+break;
+case 41 :
+$relatedoctorurl="https://www.hzshuangmei.com/doctors/tattoo/";
+break;
+case 49 :
+case 50 :
+case 51 :
+case 52 :
+case 53 :
+case  54 :
+case  55 :
+$relatedoctorurl="https://www.hzshuangmei.com/doctors/laser/";
+break;
+case 43 :
+case 44:
+case 45:
+$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+break;
+default:
+$relatedoctorurl="https://www.hzshuangmei.com/doctors/";
+}
+$relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
+return $relatedoctorurl;
 }
