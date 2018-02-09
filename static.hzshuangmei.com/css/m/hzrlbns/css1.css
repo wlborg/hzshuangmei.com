@@ -23,8 +23,8 @@ em {
     font-style: normal;
 }
 .rlcon {
-    font-family: "微软雅黑";
     overflow-x: hidden;
+    font-family: "微软雅黑";
     font-size: 0;
     color: #cecdd6;
     background-color: #5c5b7e;
@@ -168,17 +168,17 @@ a {
     top: 1.275rem;
     left: -2.875rem;
     width: 3.475rem;
-    height: 0.05rem;
+    height: .05rem;
     -webkit-transform: rotate(-49deg);
     -ms-transform: rotate(-49deg);
     transform: rotate(-49deg);
     background-color: #c5c5d2;
 }
 .rlposithree em {
-    font-size: .5rem;
     position: absolute;
-    right: -0.275rem;
     top: -0.4rem;
+    right: -0.275rem;
+    font-size: .5rem;
 }
 .rlposithree .tooparc {
     font-size: .45rem;
@@ -360,8 +360,8 @@ a {
 .advantop {
     font-size: .65rem;
     font-weight: 700;
+    line-height: .95rem;
     color: #fff;
-    line-height: 0.95rem;
 }
 .advantage-one .advantop {
     margin: 1.95rem 0 0 .95rem;
@@ -384,7 +384,7 @@ a {
     background-size: 16rem 6.475rem;
 }
 .advantage-two .advantop {
-    margin: 2.1rem 1.075rem 0 0;
+    margin: 2.2rem 1.075rem 0 0;
 }
 .advantage-two .advanarc {
     width: 10.05rem;
@@ -600,7 +600,7 @@ a {
 .goodat {
     width: 2.575rem;
     height: 1.05rem;
-    margin: .5rem 0 0 2.55rem;
+    margin: 1.9rem 0 0 2.55rem;
     font-size: .45rem;
     font-weight: 700;
     line-height: .925rem;
@@ -612,11 +612,12 @@ a {
     margin-right: .125rem;
 }
 .goodatarc {
-    width: 70%;
+    width: 7.75rem;
     height: 1.7rem;
+    margin-top: 0.45rem;
     margin-left: auto;
     font-size: .55rem;
-    line-height: 1.075rem;
+    line-height: .875rem;
     color: #fff;
 }
 .zixun {
@@ -644,7 +645,7 @@ a {
     width: 7.6rem;
 }
 .poimg {
-    height: 0.65rem;
+    height: .65rem;
 }
 .sjimgr {
     width: 12.525rem;
