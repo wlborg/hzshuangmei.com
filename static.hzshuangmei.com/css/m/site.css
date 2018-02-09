@@ -388,7 +388,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .case .step .pic { font-size: 0; }
 .case .step .pic img { display: inline-block; width: 49%; margin: 0 1% 1% 0; }
 .case .step .note p { margin-top: .6rem; padding: .2rem .3rem; font-size: .5rem; line-height: 1.6; text-align: justify; color: #a287a9; background: #f3f1f6; }
-.relatemodule { overflow: hidden; background: #f4f4f4;box-sizing: content-box; }
+.relatemodule { overflow: hidden; background: #f4f4f4;}
 .relatemodule .heading { padding: .75rem 0; text-align: center; }
 .relatemodule .heading .title { display: inline-block; padding: 0; margin: 0;border: none; font-size: .7rem; font-weight: normal; line-height: .75rem; color: #fff; background: none; }
 .relatemodule .heading .title span { vertical-align: bottom; }
