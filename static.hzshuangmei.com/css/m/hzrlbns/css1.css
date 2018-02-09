@@ -24,6 +24,7 @@ em {
 }
 .rlcon {
     font-family: "微软雅黑";
+    overflow-x: hidden;
     font-size: 0;
     color: #cecdd6;
     background-color: #5c5b7e;
