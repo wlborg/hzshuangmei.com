@@ -115,7 +115,7 @@ a {
     width: 100%;
     height: 4.65rem;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/ysbyinying.png) no-repeat bottom center;
-    background-size: 4.5rem 0.35rem;
+    background-size: 4.5rem .35rem;
 }
 .MOner-top p,
 .Mttop-in p {
@@ -129,7 +129,7 @@ a {
 .MOner-top p em,
 .Mttop-in p em {
     position: absolute;
-    left: 1.075rem;
+    left: 1.03rem;
     font-size: .375rem;
     color: #fff;
 }
@@ -598,14 +598,14 @@ a {
 .doctorarc-t {
     width: 9.65rem;
     height: 1.575rem;
-    margin-left: .55rem;
+    margin-left: 0.25rem;
     border-bottom: .025rem solid #dde3ce;
 }
 .doctorarc-t li {
     float: left;
 }
 .dol {
-    width: 5rem;
+    width: 5.2rem;
     height: 100%;
     /*margin-left:0.575rem;*/
 }
@@ -652,7 +652,7 @@ a {
     line-height: .55rem;
     color: #fff;
     background: url(//img.hzshuangmei.com/m/hzbbqb/images/xin3.png) no-repeat left 0.125rem;
-    background-size: 0.4rem 0.3rem;
+    background-size: .4rem .3rem;
 }
 .abstract > p:nth-child(4),
 .abstract > p:nth-child(5) {
