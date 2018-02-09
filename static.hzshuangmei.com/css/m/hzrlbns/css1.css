@@ -22,8 +22,10 @@ img {
 em {
     font-style: normal;
 }
-body {
+.rlcon {
     font-family: "微软雅黑";
+    overflow-x: hidden;
+    font-size: 0;
     color: #cecdd6;
     background-color: #5c5b7e;
 }
@@ -32,7 +34,6 @@ a {
 }
 .banner {
     width: 100%;
-    margin-top: 8%;
 }
 .whattbo {
     width: 16rem;
@@ -247,7 +248,7 @@ a {
     margin-right: .325rem;
     background: url(//img.hzshuangmei.com/m/hzrlbns/images/bzyinying.png) no-repeat bottom center;
     background-color: #ccc;
-    background-size: 3.95rem 0.3rem;
+    background-size: 3.95rem .3rem;
 }
 .step ul li div {
     width: 100%;
@@ -256,6 +257,7 @@ a {
     background-color: #9ccfcc;
 }
 .step ul li div img {
+    width: 4.375rem;
     margin: .05rem auto 0;
     -webkit-border-radius: .25rem;
 }
@@ -305,6 +307,7 @@ a {
 }
 .advtitle img {
     display: inline;
+    width: 10.975rem;
     margin-top: .125rem;
 }
 .sjhr {
@@ -418,6 +421,7 @@ a {
 }
 .lovel {
     left: -0.7rem;
+    width: 7.975rem;
 }
 .lover {
     right: -0.7rem;
@@ -471,7 +475,7 @@ a {
     height: 1.3rem;
     margin: .4rem 0 0 1.4rem;
     background: url(//img.hzshuangmei.com/m/hzrlbns/images/yinying.png) no-repeat bottom center;
-    background-size: 4.475rem 0.375rem;
+    background-size: 4.475rem .375rem;
 }
 .matter-top h3 {
     width: 100%;
@@ -516,6 +520,7 @@ a {
 }
 .doctor img {
     display: inline;
+    width: 8.675rem;
     margin-top: .25rem;
 }
 .hrr {
@@ -585,7 +590,7 @@ a {
     box-sizing: border-box;
     color: #fff;
     background: url(//img.hzshuangmei.com/m/hzrlbns/images/xin3.png) no-repeat left center;
-    background-size: 0.4rem 0.3rem;
+    background-size: .4rem .3rem;
 }
 .goodat {
     width: 2.575rem;
@@ -623,4 +628,31 @@ a {
     text-decoration: none;
     color: #fff;
     border: .025rem solid #fff;
+}
+.sjimgq {
+    width: 5.425rem;
+}
+.sjimgw {
+    width: 9.125rem;
+}
+.sjimge {
+    width: 7.6rem;
+}
+.poimg {
+    height: 0.65rem;
+}
+.sjimgr {
+    width: 12.525rem;
+}
+.doctor .sjimgt {
+    width: 5.775rem;
+}
+.sjimgy {
+    width: 1.825rem;
+}
+.likee img {
+    width: 2.45rem;
+}
+.lover{
+    width:7.975rem;
 }
