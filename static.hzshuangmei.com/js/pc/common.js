@@ -310,10 +310,10 @@ $(function() {
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
-    effects.goToJump(project, project_nav);
-    effects.goToJump(expert, doctor_nav);
-    effects.goToJump(project_nav, project_nav);
-    effects.goToJump(doctor_nav, doctor_nav);
+    effects.goToJump("project","project_nav");
+    effects.goToJump("expert", "doctor_nav");
+    effects.goToJump("project_nav","project_nav");
+    effects.goToJump("doctor_nav", "doctor_nav");
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
