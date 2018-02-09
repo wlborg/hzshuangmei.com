@@ -390,7 +390,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .case .step .note p { margin-top: .6rem; padding: .2rem .3rem; font-size: .5rem; line-height: 1.6; text-align: justify; color: #a287a9; background: #f3f1f6; }
 .relatemodule { overflow: hidden; background: #f4f4f4;}
 .relatemodule .heading { padding: .75rem 0; text-align: center; }
-.relatemodule .heading .title { display: inline-block; padding: 0; margin: 0;border: none; font-size: .7rem; font-weight: normal; line-height: .75rem; color: #fff; background: none; }
+.relatemodule .heading .title { display: inline-block; padding: 0; margin: 0;border: none; font-size: .7rem; font-weight: normal;height: .75rem; line-height: .75rem; color: #fff; background: none; }
 .relatemodule .heading .title span { vertical-align: bottom; }
 .relatemodule .heading .lefticon { display: inline-block; width: .6rem; height: .5rem; padding-right: .5rem; background: url("https://img.hzshuangmei.com/m/icon_t_left.png") center center no-repeat; }
 .relatemodule .heading .righticon { display: inline-block; width: .6rem; height: .5rem; padding-left: .5rem; background: url("https://img.hzshuangmei.com/m/icon_t_right.png") center center no-repeat; }
