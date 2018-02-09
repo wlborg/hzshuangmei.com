@@ -564,6 +564,12 @@ img {
         font-size: 0.45rem;
         color: #fff;
         margin-top: 0.38rem; }
+.part9 .main ul li p a{
+  color:#fff;
+}
+.part9 .main ul li h2 a{
+  color:#fff;
+}
     .part9 .main ul .li_1 {
       background-image: radial-gradient(ellipse at center, #ff68b1, #d2247b);
       background-color: #d2247b; }
