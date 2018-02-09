@@ -136,10 +136,3 @@ function preReady() {
 $(function() {
     //preReady();
 });
-// 项目页点击项目导航直达定位
-$('#project_nav').find('a').each(function(index, el) {
-    $(this).on('click', function() {
-        var href = $(this).attr('href') + '#project_nav';
-        $(this).attr('href', href);
-    });
-});
