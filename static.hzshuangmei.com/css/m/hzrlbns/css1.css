@@ -157,14 +157,13 @@ a {
     font-weight: 700;
     color: #9ccfcc;
 }
-.posithree span {
+.posithree div {
     position: relative;
-    display: inline-block;
     width: 5.675rem;
     height: .15rem;
     border-top: .025rem solid #c5c5d2;
 }
-.posithree span i {
+.posithree div span {
     position: absolute;
     top: 1.275rem;
     left: -2.875rem;
