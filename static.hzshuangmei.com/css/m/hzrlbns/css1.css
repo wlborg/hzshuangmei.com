@@ -147,7 +147,7 @@ a {
 }
 .posithree {
     float: right;
-    width: 6.025rem;
+    width: 6.125rem;
     height: 6.375rem;
     margin-top: 2.125rem;
 }
@@ -357,6 +357,7 @@ a {
     font-size: .65rem;
     font-weight: 700;
     color: #fff;
+    line-height: 0.85rem;
 }
 .advantage-one .advantop {
     margin: 1.95rem 0 0 .95rem;
