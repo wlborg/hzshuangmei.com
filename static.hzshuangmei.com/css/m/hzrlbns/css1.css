@@ -569,7 +569,7 @@ a {
     height: auto;
 }
 .likee img {
-    width: 152px;
+    width: 3.8rem;
     margin-top: .275rem;
     margin-left: auto;
 }
@@ -615,7 +615,7 @@ a {
 .goodatarc {
     width: 7.75rem;
     height: 1.7rem;
-    margin-top: 0.45rem;
+    margin-top: .45rem;
     margin-left: auto;
     font-size: .55rem;
     line-height: .875rem;
@@ -656,9 +656,6 @@ a {
 }
 .sjimgy {
     width: 1.825rem;
-}
-.likee img {
-    width: 2.45rem;
 }
 .lover {
     width: 7.975rem;
