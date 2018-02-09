@@ -160,7 +160,7 @@ a {
 .posithree span {
     position: relative;
     display: inline-block;
-    width: 5.475rem;
+    width: 5.675rem;
     height: .15rem;
     border-top: .025rem solid #c5c5d2;
 }
@@ -171,11 +171,15 @@ a {
     width: 3.475rem;
     height: .025rem;
     -webkit-transform: rotate(-49deg);
+    -ms-transform: rotate(-49deg);
     transform: rotate(-49deg);
     background-color: #c5c5d2;
 }
 .posithree em {
     font-size: .5rem;
+    position: absolute;
+    right: -0.275rem;
+    top: -0.4rem;
 }
 .posithree .tooparc {
     font-size: .45rem;
@@ -655,6 +659,6 @@ a {
 .likee img {
     width: 2.45rem;
 }
-.lover{
-    width:7.975rem;
+.lover {
+    width: 7.975rem;
 }
