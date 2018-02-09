@@ -1,0 +1,626 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+ul,
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    border: 0;
+}
+em {
+    font-style: normal;
+}
+body {
+    font-family: "微软雅黑";
+    color: #cecdd6;
+    background-color: #5c5b7e;
+}
+a {
+    border: none;
+}
+.banner {
+    width: 100%;
+    margin-top: 8%;
+}
+.whattbo {
+    width: 16rem;
+    height: 4.05rem;
+    margin: 0 auto;
+    margin-top: 1.75rem;
+}
+.whatt {
+    width: 100%;
+    height: 1.125rem;
+    padding: .125rem 0 0 .375rem;
+    box-sizing: border-box;
+    background-color: #aeadbf;
+}
+.hrr {
+    width: 100%;
+    height: .175rem;
+    margin-top: .125rem;
+    background-color: #aeadbf;
+}
+.whattboarc {
+    width: 100%;
+    height: 1.575rem;
+    margin: .625rem auto 0;
+    font-family: "华文细黑";
+    font-size: .45rem;
+    line-height: .525rem;
+    text-align: center;
+}
+.contentt {
+    width: 16rem;
+    height: 15.5rem;
+    margin: 0 auto;
+}
+.con-t {
+    width: 9.125rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    border-bottom: .025rem solid #fff;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    margin: .2rem auto 0;
+    border-top: .725rem solid #ceced9;
+    border-right: .75rem solid transparent;
+    border-left: .75rem solid transparent;
+}
+.year {
+    width: 16rem;
+    height: 10.9rem;
+    margin-top: .675rem;
+    margin-left: auto;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/year.png) no-repeat;
+    background-size: 16rem 9.45rem;
+}
+.year ul {
+    width: 100%;
+    height: 1.1rem;
+}
+.year ul li {
+    float: left;
+    width: 3.675rem;
+    height: 100%;
+    margin-right: .4rem;
+    font-size: .5rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #32486c;
+}
+.year ul li.nomargin {
+    margin: 0;
+}
+.effect {
+    width: 100%;
+    height: 30.375rem;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/bodybg.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.effect-in {
+    width: 16rem;
+    height: 28.25rem;
+    margin: 0 auto;
+}
+.effect-one {
+    width: 14.6rem;
+    height: 10.225rem;
+}
+.effect-one .qleft {
+    float: left;
+    width: 7.425rem;
+    height: 100%;
+    text-align: center;
+}
+.effect-one .qleft img {
+    width: 5.95rem;
+    height: 8.325rem;
+    margin: 0 auto;
+}
+.effect-one .qleft p {
+    width: 100%;
+    height: 1rem;
+    background-color: #9ccfcc;
+}
+.effect-one .qleft div {
+    width: 100%;
+    height: .9rem;
+    background: linear-gradient(#68718d, transparent);
+}
+.posithree {
+    float: right;
+    width: 6.025rem;
+    height: 6.375rem;
+    margin-top: 2.125rem;
+}
+.posithree .posionep {
+    margin-top: .25rem;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #9ccfcc;
+}
+.posithree span {
+    position: relative;
+    display: inline-block;
+    width: 5.675rem;
+    height: .15rem;
+    border-top: .025rem solid #c5c5d2;
+}
+.posithree span i {
+    position: absolute;
+    top: 1.275rem;
+    left: -2.875rem;
+    width: 3.475rem;
+    height: .025rem;
+    -webkit-transform: rotate(-49deg);
+    background-color: #c5c5d2;
+}
+.posithree em {
+    font-size: .5rem;
+}
+.posithree .tooparc {
+    font-size: .45rem;
+    line-height: .65rem;
+    color: #e5e4e9;
+}
+.effect-two {
+    width: 15.2rem;
+    height: 8.85rem;
+    margin-left: auto;
+}
+.posithree2 {
+    float: left;
+}
+.effect-two .qleft2 {
+    float: right;
+}
+.effect-two .qleft2 img {
+    width: 7.825rem;
+    height: 6.6rem;
+}
+.effect-two .qleft2 p,
+.effect-two .qleft2 div {
+    width: 8rem;
+}
+.posithree .tooparc strong {
+    padding-right: .8rem;
+    font-size: .6rem;
+    line-height: 1rem;
+}
+.posithree2 {
+    margin-top: .5rem;
+}
+.posithree2 span i {
+    left: 5.05rem;
+    -webkit-transform: rotate(49deg);
+}
+.effect-three .qleft3 img {
+    width: 7.95rem;
+    height: 7.3rem;
+}
+.effect-three .qleft3 p,
+.effect-three .qleft3 div {
+    width: 8rem;
+}
+.effect-three .posie {
+    margin-top: .5rem;
+}
+.beauty {
+    width: 16rem;
+    height: 11.125rem;
+    margin: 0 auto;
+}
+.step {
+    position: relative;
+    width: 16rem;
+    height: 7.325rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ebebeb;
+}
+.step ul {
+    width: 14.625rem;
+    height: 5.425rem;
+    margin: 1.3rem 0 0 .625rem;
+}
+.step ul li {
+    float: left;
+    width: 4.55rem;
+    height: 5.275rem;
+    margin-right: .325rem;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/bzyinying.png) no-repeat bottom center;
+    background-color: #ccc;
+    background-size: 3.95rem 0.3rem;
+}
+.step ul li div {
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    background-color: #9ccfcc;
+}
+.step ul li div img {
+    margin: .05rem auto 0;
+    -webkit-border-radius: .25rem;
+}
+.step ul li div p {
+    margin: .05rem;
+    font-size: .475rem;
+    color: #54716f;
+}
+.zhushe {
+    position: absolute;
+    top: -0.6rem;
+    font-size: 3rem;
+    color: #ab739a;
+    text-shadow: .025rem .025rem .125rem #4c4c4c;
+    -mos-text-shadow: .025rem .025rem .125rem #4c4c4c;
+    -mz-text-shadow: .025rem .025rem .125rem #4c4c4c;
+    -webkit-text-shadow: .025rem .025rem .125rem #4c4c4c;
+    -o-text-shadow: .025rem .025rem .125rem #4c4c4c;
+}
+.zs {
+    left: -0.15rem;
+}
+.zsfont {
+    width: 1.75rem;
+    height: 3.9rem;
+    padding-top: 1.625rem;
+    padding-left: .1rem;
+    font-size: .375rem;
+    font-size: .45rem;
+    text-align: center;
+    color: #000;
+    color: #fff;
+    text-shadow: none;
+}
+.tc {
+    left: 4.8rem;
+}
+.zx {
+    left: 9.75rem;
+}
+.advtitle {
+    width: 12.1rem;
+    height: 1.425rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #aeadbf;
+}
+.advtitle img {
+    display: inline;
+    margin-top: .125rem;
+}
+.sjhr {
+    width: 12.1rem;
+    height: .125rem;
+    margin: 0 auto;
+    margin: .125rem auto .25rem;
+    background-color: #aeadbf;
+}
+.advantage {
+    width: 100%;
+    height: 19.375rem;
+    /*background: url(//img.hzshuangmei.com/m/hzrlbns/images/anli.png) no-repeat bottom center;*/
+    /*-webkit-background-size: contain;*/
+    /*background-size: contain;*/
+}
+.advantage-in {
+    width: 16rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.advantage-top {
+    width: 15.3rem;
+    height: 1.75rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #aeadbf;
+}
+.advantage-top img {
+    display: inline;
+    margin-top: .05rem;
+}
+.hhr {
+    width: 15.3rem;
+    height: .225rem;
+    margin: .125rem auto 1.1rem;
+    background-color: #aeadbf;
+}
+.advantage-one {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage01.png) no-repeat;
+    background-size: 16rem 6.4rem;
+}
+.advantop {
+    font-size: .65rem;
+    font-weight: 700;
+    color: #fff;
+}
+.advantage-one .advantop {
+    margin: 1.95rem 0 0 .95rem;
+}
+.advanarc {
+    font-size: .45rem !important;
+    line-height: .6rem;
+}
+.advantage-one .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin: .275rem 0 0 1rem;
+}
+.advantage-two {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    text-align: right;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage02.png) no-repeat bottom center;
+    background-size: 16rem 6.475rem;
+}
+.advantage-two .advantop {
+    margin: 2.1rem 1.075rem 0 0;
+}
+.advantage-two .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin-top: .35rem;
+    margin-right: 1.025rem;
+    margin-left: auto;
+}
+.advantage-three {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage03.png) no-repeat;
+    background-size: 16rem 6.5rem;
+}
+.advantage-three .advantop {
+    margin: 2.175rem 0 0 .95rem;
+}
+.advanarc {
+    font-size: .55rem;
+    line-height: .75rem;
+}
+.advantage-three .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin: .3rem 0 0 1.025rem;
+}
+.love {
+    position: relative;
+    width: 14.25rem;
+    height: 6.325rem;
+    margin: 1.4rem auto 0;
+    border: .025rem solid #aeadbf;
+    border-radius: .25rem;
+}
+.love img {
+    position: absolute;
+    top: 1.075rem;
+}
+.lovel {
+    left: -0.7rem;
+}
+.lover {
+    right: -0.7rem;
+}
+.love ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.2rem;
+}
+.love ul li {
+    float: left;
+    width: 3.05rem;
+    height: 100%;
+    font-size: .45rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #fff;
+}
+.love ul li.limargin01 {
+    margin-left: 1.2rem;
+}
+.love ul li.limargin02 {
+    margin-left: .55rem;
+}
+.love h3 {
+    position: absolute;
+    top: -0.75rem;
+    left: 4.475rem;
+    width: 5.2rem;
+    height: .95rem;
+    font-size: .5rem;
+    line-height: .95rem;
+    text-align: center;
+    letter-spacing: .025rem;
+    color: #fff;
+    border: .05rem solid #b7b7c6;
+    border-radius: .25rem;
+    background-color: #5c5b7d;
+}
+.matterr {
+    width: 16rem;
+    height: 8.475rem;
+    margin: .85rem auto 0;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/ban02.jpg) no-repeat top center;
+    background-size: 16rem 8.475rem;
+}
+.matter-top {
+    width: 4.575rem;
+    height: 1.3rem;
+    margin: .4rem 0 0 1.4rem;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/yinying.png) no-repeat bottom center;
+    background-size: 4.475rem 0.375rem;
+}
+.matter-top h3 {
+    width: 100%;
+    height: 1.075rem;
+    font-size: .75rem;
+    line-height: 1.075rem;
+    text-align: center;
+    letter-spacing: .025rem;
+    color: #fff;
+    border-radius: .25rem;
+    background-color: #e48295;
+}
+.matter-b {
+    width: 95%;
+    height: 7rem;
+    margin-left: 5%;
+}
+.matter-b li {
+    width: 100%;
+    height: 1rem;
+    line-height: 1.125rem;
+}
+.matter-b span {
+    padding-bottom: .1rem;
+    margin-left: .3rem;
+    font-size: .5rem;
+    color: #7f7f81;
+    border-bottom: .025rem dashed #fff;
+}
+.matter-b em {
+    padding: 0 .15rem;
+    font-size: .5rem;
+    color: #fff;
+    background-color: #e48295;
+}
+.doctor {
+    width: 16rem;
+    height: 1.3rem;
+    margin: 1.8rem auto 0;
+    text-align: center;
+    background-color: #a6a5b9;
+}
+.doctor img {
+    display: inline;
+    margin-top: .25rem;
+}
+.hrr {
+    width: 16rem;
+    height: .125rem;
+    margin: .1rem auto 0;
+}
+.doctor-b {
+    width: 16rem;
+    height: 13.375rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/like.png) no-repeat bottom left;
+    background-size: 8.175rem 13.275rem;
+}
+.doctorarc {
+    width: 10rem;
+    height: 9.825rem;
+    margin-top: 1.375rem;
+    margin-left: auto;
+}
+.doctorarc-t {
+    width: 100%;
+    height: 1.575rem;
+    border-bottom: .025rem solid #afaec0;
+}
+.doctorarc-t li {
+    float: left;
+}
+.dol {
+    width: 3.65rem;
+    height: 100%;
+    margin-left: 1.875rem;
+}
+.dol p {
+    font-size: .6rem;
+    color: #fff;
+}
+.likee {
+    width: 3.775rem;
+    height: auto;
+}
+.likee img {
+    margin-top: .275rem;
+    margin-left: auto;
+}
+.likesj {
+    width: 0;
+    height: 0;
+    margin-top: 1rem;
+    border-right: .325rem solid transparent;
+    border-bottom: .4rem solid #afaebe;
+    border-left: .325rem solid transparent;
+}
+.abstract {
+    width: 8.075rem;
+    height: 4.325rem;
+    margin-top: .5rem;
+    margin-left: auto;
+    font-size: .45rem;
+    line-height: .75rem;
+}
+.abstract p {
+    width: 100%;
+    height: .75rem;
+    padding-left: .7rem;
+    box-sizing: border-box;
+    color: #fff;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/xin3.png) no-repeat left center;
+    background-size: 0.4rem 0.3rem;
+}
+.goodat {
+    width: 2.575rem;
+    height: 1.05rem;
+    margin: .5rem 0 0 2.55rem;
+    font-size: .45rem;
+    font-weight: 700;
+    line-height: .925rem;
+    color: #5c5b7e;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/goodat.png) no-repeat;
+    background-size: 2.575rem 1.05rem;
+}
+.goodat em {
+    margin-right: .125rem;
+}
+.goodatarc {
+    width: 70%;
+    height: 1.7rem;
+    margin-left: auto;
+    font-size: .55rem;
+    line-height: 1.075rem;
+    color: #fff;
+}
+.zixun {
+    width: 100%;
+    height: 1.625rem;
+    padding-top: .45rem;
+    text-align: center;
+    background-color: #9ccfcc;
+}
+.zixun a {
+    padding: .2rem 1.5rem .2rem 1.5rem;
+    font-size: .6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    border: .025rem solid #fff;
+}
