@@ -293,9 +293,9 @@ effects.goToJump(project_nav,project_nav);
 effects.goToJump(doctor_nav,doctor_nav);
    */
         module.goToJump = function(typeid, position) {
-            $('"#"+typeid').find('a').each(function(index, el) {
+            $("#"+typeid).find('a').each(function(index, el) {
                 $(this).on('click', function() {
-                    var href = $(this).attr('href') + '"#"+position';
+                    var href = $(this).attr('href') + "#"+position;
                     $(this).attr('href', href);
                 });
             });
