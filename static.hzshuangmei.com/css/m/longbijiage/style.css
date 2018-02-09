@@ -44,12 +44,12 @@ img {
   margin-top: 0.55rem;
   background: #fd4d66;
   box-shadow: 0 0 0.1rem 0.1rem #dcc6c9; }
-  .button p {
+  .button .click_xq {
     color: #fff;
     font-size: 0.55rem;
     line-height: 1.05rem;
     padding-left: 0.4rem; }
-  .button span {
+  .button .go_xq {
     display: block;
     position: absolute;
     color: #fd4d66;
@@ -381,11 +381,11 @@ img {
         .part4 .main .box1 .contain .left .button {
           width: 6.05rem;
           margin-top: 0.25rem; }
-          .part4 .main .box1 .contain .left .button p {
+          .part4 .main .box1 .contain .left .button .click_xq {
             color: #fff;
             margin-top: 0;
             padding-left: 0.2rem; }
-          .part4 .main .box1 .contain .left .button span {
+          .part4 .main .box1 .contain .left .button .go_xq {
             left: 80%;
             text-align: center; }
       .part4 .main .box1 .contain .left::after {
@@ -584,14 +584,14 @@ img {
           margin-left: 0.625rem;
           margin-top: 0.6rem;
           box-shadow: 0 0 0.1rem 0.1rem #4f456e; }
-          .part6 .main .doctor .discrib a p {
+          .part6 .main .doctor .discrib a .click_xq {
             margin-left: 0;
             padding: 0;
             line-height: 0.75rem;
             padding-left: 0.2rem; }
-          .part6 .main .doctor .discrib a p:before {
+          .part6 .main .doctor .discrib a .click_xq:before {
             background: none; }
-          .part6 .main .doctor .discrib a span {
+          .part6 .main .doctor .discrib a .go_xq {
             text-align: center;
             width: 0.55rem;
             height: 0.55rem;
@@ -702,7 +702,7 @@ img {
           font-weight: 400;
           color: #fff;
           margin-left: 0.25rem; }
-          .part8 .main ul li h2 p {
+          .part8 .main ul li h2 i {display:block;
             font-size: 0.5rem; }
       .part8 .main ul li:first-child,
       .part8 .main ul li:nth-child(3) {
