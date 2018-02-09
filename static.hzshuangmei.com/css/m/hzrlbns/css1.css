@@ -145,42 +145,42 @@ a {
     height: .9rem;
     background: linear-gradient(#68718d, transparent);
 }
-.posithree {
+.rlposithree {
     float: right;
     width: 6.125rem;
     height: 6.375rem;
     margin-top: 2.125rem;
 }
-.posithree .posionep {
+.rlposithree .posionep {
     margin-top: .25rem;
     font-size: .9rem;
     font-weight: 700;
     color: #9ccfcc;
 }
-.posithree div {
+.rlposithree div {
     position: relative;
     width: 5.675rem;
     height: .15rem;
-    border-top: .025rem solid #c5c5d2;
+    border-top: .05rem solid #c5c5d2;
 }
-.posithree div span {
+.rlposithree div span {
     position: absolute;
     top: 1.275rem;
     left: -2.875rem;
     width: 3.475rem;
-    height: .025rem;
+    height: 0.05rem;
     -webkit-transform: rotate(-49deg);
     -ms-transform: rotate(-49deg);
     transform: rotate(-49deg);
     background-color: #c5c5d2;
 }
-.posithree em {
+.rlposithree em {
     font-size: .5rem;
     position: absolute;
     right: -0.275rem;
     top: -0.4rem;
 }
-.posithree .tooparc {
+.rlposithree .tooparc {
     font-size: .45rem;
     line-height: .65rem;
     color: #e5e4e9;
@@ -190,7 +190,7 @@ a {
     height: 8.85rem;
     margin-left: auto;
 }
-.posithree2 {
+.rlposithree2 {
     float: left;
 }
 .effect-two .qleft2 {
@@ -204,15 +204,15 @@ a {
 .effect-two .qleft2 div {
     width: 8rem;
 }
-.posithree .tooparc strong {
+.rlposithree .tooparc strong {
     padding-right: .8rem;
     font-size: .6rem;
     line-height: 1rem;
 }
-.posithree2 {
+.rlposithree2 {
     margin-top: .5rem;
 }
-.posithree2 span i {
+.rlposithree2 span i {
     left: 5.05rem;
     -webkit-transform: rotate(49deg);
 }
@@ -361,7 +361,7 @@ a {
     font-size: .65rem;
     font-weight: 700;
     color: #fff;
-    line-height: 0.85rem;
+    line-height: 0.95rem;
 }
 .advantage-one .advantop {
     margin: 1.95rem 0 0 .95rem;
