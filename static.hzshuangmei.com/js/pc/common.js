@@ -278,6 +278,15 @@ var effects = (
                 casemodalimg.attr('src', imgurl);
             }
         }
+        /*  点击顶部项目子导航 直接定位*/
+        module.goToProject = function() {
+            $('#project').find('a').each(function(index, el) {
+                $(this).on('click', function() {
+                    var href = $(this).attr('href')+'#project_nav';
+                    $(this).attr('href', href);
+                });
+            });
+        }
         return module;
     }
 )(window.effects || {});
@@ -287,6 +296,8 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
+    //点击顶部项目子导航直接定位
+    effects.goToProject();
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
