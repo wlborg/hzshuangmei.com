@@ -1,0 +1,775 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, div, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0
+}
+
+body, button, input, select, textarea {
+    font-size: 20px;
+    color: #cecdd6;
+    font-family: "微软雅黑"
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+address, cite, dfn, em, var, i {
+    font-style: normal
+}
+
+img {
+    display: block;
+    border: 0
+}
+
+body {
+    background-color: #5c5b7e;
+    min-width: 1250px
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+button, input, select, textarea {
+    font-size: 100%
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: ""
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.bannerx {
+    display: block;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/banner.jpg) no-repeat top center;
+    width: 100%;
+    height: 622px
+}
+
+.whattbo {
+    width: 1105px;
+    height: 232px;
+    margin: 0 auto;
+    margin-top: 53px
+}
+
+.whatt {
+    width: 1085px;
+    height: 53px;
+    background-color: #aeadbf;
+    padding: 16px 0 0 20px
+}
+
+.hrr {
+    width: 100%;
+    height: 7px;
+    background-color: #aeadbf;
+    margin-top: 5px
+}
+
+.whattboarc {
+    width: 987px;
+    height: 63px;
+    margin: 25px auto 0;
+    line-height: 34px;
+    text-align: center
+}
+
+.contentt {
+    width: 1105px;
+    height: 929px;
+    margin: 0 auto
+}
+
+.con-t {
+    width: 539px;
+    height: 72px;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 29px solid #ceced9;
+    margin: 8px auto 0
+}
+
+.year {
+    width: 1043px;
+    height: 576px;
+    margin-left: auto;
+    margin-top: 27px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/year.png) no-repeat
+}
+
+.year ul {
+    width: 100%;
+    height: 80px
+}
+
+.year ul li {
+    float: left;
+    width: 234px;
+    height: 100%;
+    margin-right: 17px;
+    text-align: center;
+    line-height: 80px;
+    color: #32486c;
+    font-size: 32px
+}
+
+.zshe {
+    margin-top: 75px
+}
+
+.injection {
+    width: 100%;
+    height: 1034px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/bodybg.png) no-repeat bottom center
+}
+
+.injection-in {
+    width: 1105px;
+    height: 100%;
+    margin: 0 auto
+}
+
+.toop {
+    width: 100%;
+    height: 766px
+}
+
+.toop-in {
+    width: 979px;
+    height: 100%;
+    margin-left: auto;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/stra01.png) no-repeat bottom center;
+    position: relative
+}
+
+.posione, .positwo, .posithree {
+    position: absolute
+}
+
+.posione {
+    width: 314px;
+    height: 252px;
+    left: -79px
+}
+
+.poimg {
+    margin-left: 25px;
+    margin-bottom: 5px
+}
+
+.posione em {
+    color: #c5c5d2;
+    font-size: 32px;
+    position: absolute;
+    top: 63px;
+    left: 0px
+}
+
+.posione span {
+    position: absolute;
+    width: 301px;
+    height: 1px;
+    background-color: #C5C5D2;
+    top: 86px;
+    right: -2px
+}
+
+.posionep {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #9ccfcc;
+    margin-left: 25px
+}
+
+.tooparc {
+    margin-top: 24px;
+    line-height: 32px;
+    margin-left: 25px
+}
+
+.positwo {
+    width: 286px;
+    height: 360px;
+    bottom: 67px;
+    left: -59px
+}
+
+.positwo-t {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 25px 0 0 25px
+}
+
+{
+    border: 1px solid #fff
+;
+    width: 286px
+;
+    height: 360px
+;
+    bottom: 67px
+;
+    left: -59px
+}
+.positwo .poimg {
+    margin-left: 15px
+}
+
+.positwo span {
+    width: 276px;
+    top: 91px
+}
+
+.positwo em {
+    top: 68px
+}
+
+.positwo .tooparc {
+    width: 239px;
+    height: 211px;
+    margin: 10px 0 0 25px
+}
+
+.posithree {
+    width: 308px;
+    height: 383px;
+    right: 47px;
+    top: 73px
+}
+
+.posithree em {
+    color: #c5c5d2;
+    font-size: 32px;
+    position: absolute;
+    top: 68px;
+    right: 0px
+}
+
+.posithree img {
+    margin-left: 67px
+}
+
+.posithree .posionep {
+    margin-left: 80px
+}
+
+.posithree span {
+    position: absolute;
+    width: 301px;
+    height: 1px;
+    background-color: #C5C5D2;
+    top: 91px;
+    left: -3px
+}
+
+.posithree .tooparc {
+    width: 217px;
+    height: 280px;
+    margin-left: 83px
+}
+
+.gongxiao {
+    width: 778px;
+    height: 193px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/effectyinying.png) no-repeat bottom center
+}
+
+.gongxiao-in {
+    background-color: #9ccfcc;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 105px
+}
+
+.gongxiao img {
+    display: inline;
+    margin-top: 20px
+}
+
+.tianchong {
+    width: 100%;
+    height: 70px;
+    background-color: #bebecc;
+    overflow: hidden
+}
+
+.tianchong img {
+    margin: 17px 0 0 15px
+}
+
+.step {
+    width: 1105px;
+    height: 361px;
+    position: relative;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/injectionstra.png) no-repeat right bottom;
+    background-color: #ebebeb;
+    overflow: hidden
+}
+
+.step ul {
+    width: 770px;
+    height: 261px;
+    margin: 65px 0 0 62px
+}
+
+.step ul li {
+    width: 221px;
+    height: 258px;
+    float: left;
+    background-color: #ccc;
+    margin-right: 30px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/bzyinying.png) no-repeat bottom center
+}
+
+.step ul li div {
+    width: 100%;
+    height: 247px;
+    background-color: #9ccfcc;
+    overflow: hidden
+}
+
+.step ul li div img {
+    margin: 2px auto 0;
+    -webkit-border-radius: 10px
+}
+
+.step ul li div p {
+    margin: 2px;
+    color: #54716f;
+    font-size: 19px
+}
+
+.zhushe {
+    position: absolute;
+    font-size: 120px;
+    top: -24px;
+    color: #ab739a;
+    text-shadow: 1px 1px 5px #4c4c4c;
+    -webkit-text-shadow: 1px 1px 5px #4c4c4c;
+    -mos-text-shadow: 1px 1px 5px #4c4c4c;
+    -mz-text-shadow: 1px 1px 5px #4c4c4c;
+    -o-text-shadow: 1px 1px 5px #4c4c4c
+}
+
+.zs {
+    left: 25px
+}
+
+.zsfont {
+    font-size: 15px;
+    color: #000;
+    width: 70px;
+    height: 156px;
+    text-align: center;
+    padding-top: 65px;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 4px;
+    text-shadow: none
+}
+
+.tc {
+    left: 282px
+}
+
+.zx {
+    left: 530px
+}
+
+.advantage {
+    width: 100%;
+    height: auto;
+    margin-top: 96px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/effectyinying02.png) no-repeat bottom center
+}
+
+.advantage-in {
+    margin: 0 auto;
+    width: 1105px;
+    height: 100%
+}
+
+.advantage-top {
+    width: 612px;
+    height: 70px;
+    background-color: #aeadbf;
+    margin: 0 auto;
+    text-align: center
+}
+
+.advantage-top img {
+    margin-top: 2px;
+    display: inline
+}
+
+.hhr {
+    width: 612px;
+    height: 9px;
+    background-color: #aeadbf;
+    margin: 5px auto 44px
+}
+
+.advantage-one {
+    width: 1007px;
+    height: 318px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/advantage01.png) no-repeat;
+    margin-left: auto;
+    overflow: hidden
+}
+
+.advantop {
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px
+}
+
+.advantage-one .advantop {
+    margin: 116px 0 0 38px
+}
+
+.advanarc {
+    font-size: 22px;
+    line-height: 30px
+}
+
+.advantage-one .advanarc {
+    width: 618px;
+    height: 88px;
+    margin: 35px 0 0 47px
+}
+
+.advantage-two {
+    width: 1013px;
+    height: 322px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/advantage02.png) no-repeat bottom center;
+    text-align: right;
+    overflow: hidden
+}
+
+.advantage-two .advantop {
+    margin: 112px 60px 0 0
+}
+
+.advantage-two .advanarc {
+    width: 627px;
+    height: 88px;
+    margin-left: auto;
+    margin-top: 35px;
+    margin-right: 45px
+}
+
+.advantage-three {
+    width: 1013px;
+    height: 317px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/advantage03.png) no-repeat;
+    overflow: hidden;
+    margin-left: auto
+}
+
+.advantage-three .advantop {
+    margin: 119px 0 0 38px
+}
+
+.advanarc {
+    font-size: 22px;
+    line-height: 30px
+}
+
+.advantage-three .advanarc {
+    width: 618px;
+    height: 88px;
+    margin: 35px 0 0 47px
+}
+
+.anlit {
+    margin-top: 126px
+}
+
+.love {
+    width: 1029px;
+    height: 379px;
+    border: 1px solid #aeadbf;
+    margin: 56px auto 0;
+    border-radius: 10px;
+    position: relative
+}
+
+.love img {
+    position: absolute;
+    top: 43px
+}
+
+.lovel {
+    left: -28px
+}
+
+.lover {
+    right: -28px
+}
+
+.love ul {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: 0
+}
+
+.love ul li {
+    width: 226px;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    float: left;
+    font-size: 22px;
+    color: #fff
+}
+
+.love ul li.limargin01 {
+    margin-left: 60px
+}
+
+.love ul li.limargin02 {
+    margin-left: 40px
+}
+
+.love h3 {
+    width: 348px;
+    height: 62px;
+    border: 2px solid #b7b7c6;
+    position: absolute;
+    left: 356px;
+    top: -50px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    background-color: #5c5b7d;
+    color: #fff;
+    letter-spacing: 1px
+}
+
+.matterr {
+    width: 1099px;
+    height: 433px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/ban02.jpg) no-repeat top center;
+    margin: 34px auto 0;
+    overflow: hidden
+}
+
+.matter-top {
+    width: 220px;
+    height: 68px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/yinying.png) no-repeat bottom center;
+    margin: 34px 0 0 56px
+}
+
+.matter-top h3 {
+    background-color: #e48295;
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 1px;
+    border-radius: 10px
+}
+
+.matter-b {
+    width: 645px;
+    height: 280px;
+    margin-left: 62px
+}
+
+.matter-b li {
+    width: 100%;
+    height: 47px;
+    line-height: 45px
+}
+
+.matter-b span {
+    color: #7f7f81;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+    margin-left: 12px
+}
+
+.matter-b em {
+    color: #fff;
+    padding: 0px 6px;
+    background-color: #e48295;
+    font-size: 22px
+}
+
+.doctor {
+    width: 1105px;
+    height: 70px;
+    background-color: #a6a5b9;
+    text-align: center;
+    margin: 58px auto 0
+}
+
+.dohrr {
+    width: 1105px;
+    height: 7px;
+    background-color: #a6a5b9;
+    margin: 5px auto 0
+}
+
+.doctor img {
+    display: inline;
+    margin-top: 14px
+}
+
+.doctor-b {
+    width: 1052px;
+    height: 800px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/ght.png) no-repeat bottom left;
+    overflow: hidden
+}
+
+.doctorarc {
+    width: 670px;
+    height: 503px;
+    margin-top: 155px;
+    margin-left: auto
+}
+
+.doctorarc-t {
+    width: 562px;
+    height: 78px;
+    border-bottom: 1px solid #afaec0
+}
+
+.doctorarc-t li {
+    float: left
+}
+
+.dol {
+    width: 200px;
+    height: 79px;
+    margin-left: 132px
+}
+
+.dol p {
+    font-size: 30px;
+    color: #fff
+}
+
+.likee {
+    width: 197px;
+    height: auto
+}
+
+.likee img {
+    margin-left: auto;
+    margin-top: 11px
+}
+
+.likesj {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 18px solid #afaebe;
+    margin-top: 56px
+}
+
+.abstract {
+    width: 389px;
+    height: 230px;
+    margin: 20px 0 0 130px
+}
+
+.abstract p {
+    width: 100%;
+    height: 34px;
+    padding-left: 34px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/xin3.png) no-repeat left center;
+    font-size: 22px;
+    color: #fff
+}
+
+.goodat {
+    width: 132px;
+    height: 53px;
+    background: url(//img.hzshuangmei.com/pc/hzrlbns/images/goodat.png) no-repeat;
+    margin-left: 139px;
+    line-height: 40px;
+    font-size: 22px;
+    color: #5c5b7e;
+    font-weight: 700
+}
+
+.goodat em {
+    margin-right: 5px
+}
+
+.goodatarc {
+    width: 430px;
+    height: 82px;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 139px;
+    line-height: 43px
+}
+
+.zixun {
+    width: 100%;
+    height: 70px;
+    background-color: #9ccfcc;
+    text-align: center;
+    padding-top: 18px
+}
+
+.zixun a {
+    padding: 5px 70px 8px 70px;
+    font-size: 26px;
+    border: 1px solid #fff
+}
+
+.foot {
+    min-width: 1250px
+}
+
+.head {
+    min-width: 1250px
+}
+
+.head .Tbody {
+    min-width: 1250px
+}
