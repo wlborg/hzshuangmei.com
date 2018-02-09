@@ -53,7 +53,7 @@ position: fixed; z-index: 20180110; height: 2.35rem; width: 16rem; overflow: hid
 .tab-content { padding-top: .25rem; padding-bottom: 1.25rem; background: #fff; }
 .tab-content.active { z-index: 1; }
 .tab-content .title { width: 4.7rem; margin-top: .5rem; margin-left: 0; font-weight: normal; background: url("https://img.hzshuangmei.com/m/bg_title.png") left center no-repeat; background-size: 100% 100%; }
-.tab-content .title span { display: block; width: 59%; padding-left: 15%; font-size: .55rem; line-height: 1.05rem; text-align: center; color: #fff; text-shadow: 1px 1px 1px #b96d9a; }
+.tab-content .title span {box-sizing: content-box; display: block; width: 59%; padding-left: 15%; font-size: .55rem; line-height: 1.05rem; text-align: center; color: #fff; text-shadow: 1px 1px 1px #b96d9a; }
 .menu-item-wrap { padding: 0 3%; margin-top: .65rem; }
 .menu-item { float: left; width: 29%; max-width: 4.575rem;    /* height: 244rem/@fb; */ margin: .125rem 2%; border-radius: .125rem; background: #f0f0f0; }
 .menu-item img { display: block; width: 100%; border-radius: .125rem; }
