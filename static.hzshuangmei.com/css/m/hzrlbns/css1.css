@@ -1,0 +1,616 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+ul,
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    border: 0;
+}
+em {
+    font-style: normal;
+}
+body {
+    font-family: "微软雅黑";
+    color: #cecdd6;
+    background-color: #5c5b7e;
+}
+a {
+    border: none;
+}
+.banner {
+    width: 100%;
+    margin-top: 8%;
+}
+.whattbo {
+    width: 16rem;
+    height: 4.05rem;
+    margin: 0 auto;
+    margin-top: 1.75rem;
+}
+.whatt {
+    width: 100%;
+    height: 1.125rem;
+    padding: 0.125rem 0 0 0.375rem;
+    box-sizing: border-box;
+    background-color: #aeadbf;
+}
+.hrr {
+    width: 100%;
+    height: 0.175rem;
+    margin-top: 0.125rem;
+    background-color: #aeadbf;
+}
+.whattboarc {
+    width: 100%;
+    height: 1.575rem;
+    margin: 0.625rem auto 0;
+    font-family: "华文细黑";
+    font-size: 0.45rem;
+    line-height: 0.525rem;
+    text-align: center;
+}
+.contentt {
+    width: 16rem;
+    height: 15.5rem;
+    margin: 0 auto;
+}
+.con-t {
+    width: 9.125rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    border-bottom: 0.025rem solid #fff;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    margin: 0.2rem auto 0;
+    border-top: 0.725rem solid #ceced9;
+    border-right: 0.75rem solid transparent;
+    border-left: 0.75rem solid transparent;
+}
+.year {
+    width: 16rem;
+    height: 10.9rem;
+    margin-top: 0.675rem;
+    margin-left: auto;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/year.png) no-repeat;
+}
+.year ul {
+    width: 100%;
+    height: 1.1rem;
+}
+.year ul li {
+    float: left;
+    width: 3.675rem;
+    height: 100%;
+    margin-right: 0.4rem;
+    font-size: 0.5rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #32486c;
+}
+.year ul li.nomargin {
+    margin: 0;
+}
+.effect {
+    width: 100%;
+    height: 30.375rem;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/bodybg.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.effect-in {
+    width: 16rem;
+    height: 28.25rem;
+    margin: 0 auto;
+}
+.effect-one {
+    width: 14.6rem;
+    height: 10.225rem;
+}
+.effect-one .qleft {
+    float: left;
+    width: 7.425rem;
+    height: 100%;
+    text-align: center;
+}
+.effect-one .qleft img {
+    width: 5.95rem;
+    height: 8.325rem;
+    margin: 0 auto;
+}
+.effect-one .qleft p {
+    width: 100%;
+    height: 1rem;
+    background-color: #9ccfcc;
+}
+.effect-one .qleft div {
+    width: 100%;
+    height: 0.9rem;
+    background: linear-gradient(#68718d, transparent);
+}
+.posithree {
+    float: right;
+    width: 6.025rem;
+    height: 6.375rem;
+    margin-top: 2.125rem;
+}
+.posithree .posionep {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #9ccfcc;
+}
+.posithree span {
+    position: relative;
+    display: inline-block;
+    width: 5.675rem;
+    height: 0.15rem;
+    border-top: 0.025rem solid #c5c5d2;
+}
+.posithree span i {
+    position: absolute;
+    top: 1.275rem;
+    left: -2.875rem;
+    width: 3.475rem;
+    height: 0.025rem;
+    -webkit-transform: rotate(-49deg);
+    background-color: #c5c5d2;
+}
+.posithree em {
+    font-size: 0.5rem;
+}
+.posithree .tooparc {
+    font-size: 0.45rem;
+    line-height: 0.65rem;
+    color: #e5e4e9;
+}
+.effect-two {
+    width: 15.2rem;
+    height: 8.85rem;
+    margin-left: auto;
+}
+.posithree2 {
+    float: left;
+}
+.effect-two .qleft2 {
+    float: right;
+}
+.effect-two .qleft2 img {
+    width: 7.825rem;
+    height: 6.6rem;
+}
+.effect-two .qleft2 p,
+.effect-two .qleft2 div {
+    width: 8rem;
+}
+.posithree .tooparc strong {
+    padding-right: 0.8rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+.posithree2 {
+    margin-top: 0.5rem;
+}
+.posithree2 span i {
+    left: 5.05rem;
+    -webkit-transform: rotate(49deg);
+}
+.effect-three .qleft3 img {
+    width: 7.95rem;
+    height: 7.3rem;
+}
+.effect-three .qleft3 p,
+.effect-three .qleft3 div {
+    width: 8rem;
+}
+.effect-three .posie {
+    margin-top: 0.5rem;
+}
+.beauty {
+    width: 16rem;
+    height: 11.125rem;
+    margin: 0 auto;
+}
+.step {
+    position: relative;
+    width: 16rem;
+    height: 7.325rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ebebeb;
+}
+.step ul {
+    width: 14.625rem;
+    height: 5.425rem;
+    margin: 1.3rem 0 0 0.625rem;
+}
+.step ul li {
+    float: left;
+    width: 4.55rem;
+    height: 5.275rem;
+    margin-right: 0.325rem;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/bzyinying.png) no-repeat bottom center;
+    background-color: #ccc;
+}
+.step ul li div {
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    background-color: #9ccfcc;
+}
+.step ul li div img {
+    margin: 0.05rem auto 0;
+    -webkit-border-radius: 0.25rem;
+}
+.step ul li div p {
+    margin: 0.05rem;
+    font-size: 0.475rem;
+    color: #54716f;
+}
+.zhushe {
+    position: absolute;
+    top: -0.6rem;
+    font-size: 3rem;
+    color: #ab739a;
+    text-shadow: 0.025rem 0.025rem 0.125rem #4c4c4c;
+    -mos-text-shadow: 0.025rem 0.025rem 0.125rem #4c4c4c;
+    -mz-text-shadow: 0.025rem 0.025rem 0.125rem #4c4c4c;
+    -webkit-text-shadow: 0.025rem 0.025rem 0.125rem #4c4c4c;
+    -o-text-shadow: 0.025rem 0.025rem 0.125rem #4c4c4c;
+}
+.zs {
+    left: -0.15rem;
+}
+.zsfont {
+    width: 1.75rem;
+    height: 3.9rem;
+    padding-top: 1.625rem;
+    padding-left: 0.1rem;
+    font-size: 0.375rem;
+    font-size: 0.45rem;
+    text-align: center;
+    color: #000;
+    color: #fff;
+    text-shadow: none;
+}
+.tc {
+    left: 4.8rem;
+}
+.zx {
+    left: 9.75rem;
+}
+.advtitle {
+    width: 12.1rem;
+    height: 1.425rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #aeadbf;
+}
+.advtitle img {
+    display: inline;
+    margin-top: 0.125rem;
+}
+.sjhr {
+    width: 12.1rem;
+    height: 0.125rem;
+    margin: 0 auto;
+    margin: 0.125rem auto 0.25rem;
+    background-color: #aeadbf;
+}
+.advantage {
+    width: 100%;
+    height: 19.375rem;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/anli.png) no-repeat bottom center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.advantage-in {
+    width: 16rem;
+    height: 100%;
+    margin: 0 auto;
+}
+.advantage-top {
+    width: 15.3rem;
+    height: 1.75rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #aeadbf;
+}
+.advantage-top img {
+    display: inline;
+    margin-top: 0.05rem;
+}
+.hhr {
+    width: 15.3rem;
+    height: 0.225rem;
+    margin: 0.125rem auto 1.1rem;
+    background-color: #aeadbf;
+}
+.advantage-one {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage01.png) no-repeat;
+}
+.advantop {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #fff;
+}
+.advantage-one .advantop {
+    margin: 1.95rem 0 0 0.95rem;
+}
+.advanarc {
+    font-size: 0.45rem !important;
+    line-height: 0.6rem;
+}
+.advantage-one .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin: 0.275rem 0 0 1rem;
+}
+.advantage-two {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    text-align: right;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage02.png) no-repeat bottom center;
+}
+.advantage-two .advantop {
+    margin: 2.1rem 1.075rem 0 0;
+}
+.advantage-two .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin-top: 0.35rem;
+    margin-right: 1.025rem;
+    margin-left: auto;
+}
+.advantage-three {
+    width: 16rem;
+    height: 6.5rem;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/advantage03.png) no-repeat;
+}
+.advantage-three .advantop {
+    margin: 2.175rem 0 0 0.95rem;
+}
+.advanarc {
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+}
+.advantage-three .advanarc {
+    width: 10.05rem;
+    height: 2.2rem;
+    margin: 0.3rem 0 0 1.025rem;
+}
+.love {
+    position: relative;
+    width: 14.25rem;
+    height: 6.325rem;
+    margin: 1.4rem auto 0;
+    border: 0.025rem solid #aeadbf;
+    border-radius: 0.25rem;
+}
+.love img {
+    position: absolute;
+    top: 1.075rem;
+}
+.lovel {
+    left: -0.7rem;
+}
+.lover {
+    right: -0.7rem;
+}
+.love ul {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.2rem;
+}
+.love ul li {
+    float: left;
+    width: 3.05rem;
+    height: 100%;
+    font-size: 0.45rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: #fff;
+}
+.love ul li.limargin01 {
+    margin-left: 1.2rem;
+}
+.love ul li.limargin02 {
+    margin-left: 0.55rem;
+}
+.love h3 {
+    position: absolute;
+    top: -0.75rem;
+    left: 4.475rem;
+    width: 5.2rem;
+    height: 0.95rem;
+    font-size: 0.5rem;
+    line-height: 0.95rem;
+    text-align: center;
+    letter-spacing: 0.025rem;
+    color: #fff;
+    border: 0.05rem solid #b7b7c6;
+    border-radius: 0.25rem;
+    background-color: #5c5b7d;
+}
+.matterr {
+    width: 16rem;
+    height: 8.475rem;
+    margin: 0.85rem auto 0;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/ban02.jpg) no-repeat top center;
+}
+.matter-top {
+    width: 4.575rem;
+    height: 1.3rem;
+    margin: 0.4rem 0 0 1.4rem;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/yinying.png) no-repeat bottom center;
+}
+.matter-top h3 {
+    width: 100%;
+    height: 1.075rem;
+    font-size: 0.75rem;
+    line-height: 1.075rem;
+    text-align: center;
+    letter-spacing: 0.025rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    background-color: #e48295;
+}
+.matter-b {
+    width: 95%;
+    height: 7rem;
+    margin-left: 5%;
+}
+.matter-b li {
+    width: 100%;
+    height: 1rem;
+    line-height: 1.125rem;
+}
+.matter-b span {
+    padding-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    font-size: 0.5rem;
+    color: #7f7f81;
+    border-bottom: 0.025rem dashed #fff;
+}
+.matter-b em {
+    padding: 0 0.15rem;
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: #e48295;
+}
+.doctor {
+    width: 16rem;
+    height: 1.3rem;
+    margin: 1.8rem auto 0;
+    text-align: center;
+    background-color: #a6a5b9;
+}
+.doctor img {
+    display: inline;
+    margin-top: 0.25rem;
+}
+.hrr {
+    width: 16rem;
+    height: 0.125rem;
+    margin: 0.1rem auto 0;
+}
+.doctor-b {
+    width: 16rem;
+    height: 13.375rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/like.png) no-repeat bottom left;
+}
+.doctorarc {
+    width: 10rem;
+    height: 9.825rem;
+    margin-top: 1.375rem;
+    margin-left: auto;
+}
+.doctorarc-t {
+    width: 100%;
+    height: 1.575rem;
+    border-bottom: 0.025rem solid #afaec0;
+}
+.doctorarc-t li {
+    float: left;
+}
+.dol {
+    width: 3.65rem;
+    height: 100%;
+    margin-left: 1.875rem;
+}
+.dol p {
+    font-size: 0.6rem;
+    color: #fff;
+}
+.likee {
+    width: 3.775rem;
+    height: auto;
+}
+.likee img {
+    margin-top: 0.275rem;
+    margin-left: auto;
+}
+.likesj {
+    width: 0;
+    height: 0;
+    margin-top: 1rem;
+    border-right: 0.325rem solid transparent;
+    border-bottom: 0.4rem solid #afaebe;
+    border-left: 0.325rem solid transparent;
+}
+.abstract {
+    width: 8.075rem;
+    height: 4.325rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    font-size: 0.45rem;
+    line-height: 0.75rem;
+}
+.abstract p {
+    width: 100%;
+    height: 0.75rem;
+    padding-left: 0.7rem;
+    box-sizing: border-box;
+    color: #fff;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/xin3.png) no-repeat left center;
+}
+.goodat {
+    width: 2.575rem;
+    height: 1.05rem;
+    margin: 0.5rem 0 0 2.55rem;
+    font-size: 0.45rem;
+    font-weight: 700;
+    line-height: 0.925rem;
+    color: #5c5b7e;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/goodat.png) no-repeat;
+}
+.goodat em {
+    margin-right: 0.125rem;
+}
+.goodatarc {
+    width: 70%;
+    height: 1.7rem;
+    margin-left: auto;
+    font-size: 0.55rem;
+    line-height: 1.075rem;
+    color: #fff;
+}
+.zixun {
+    width: 100%;
+    height: 1.625rem;
+    padding-top: 0.45rem;
+    text-align: center;
+    background-color: #9ccfcc;
+}
+.zixun a {
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    border: 0.025rem solid #fff;
+}
