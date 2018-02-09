@@ -726,13 +726,17 @@ img {
     color: #fff;
     margin-top: 10px;
 }
-
+.part9 .main ul li h2 a{
+    color:#fff;
+}
 .part9 .main ul li p {
     font-size: 16px;
     color: #fff;
     margin-top: 20px;
 }
-
+.part9 .main ul li p a{
+    color:#fff;
+}
 .part9 .main ul .li_1 {
     margin-left: 0;
     background-image: -webkit-radial-gradient(center, ellipse, #ff68b1, #d2247b);
