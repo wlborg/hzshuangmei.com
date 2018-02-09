@@ -293,9 +293,9 @@ effects.goToJump(project_nav,project_nav);
 effects.goToJump(doctor_nav,doctor_nav);
    */
         module.goToJump = function(typeid, position) {
-            $('"#"+typeid').find('a').each(function(index, el) {
+            $("#"+typeid).find('a').each(function(index, el) {
                 $(this).on('click', function() {
-                    var href = $(this).attr('href') + '"#"+position';
+                    var href = $(this).attr('href') + "#"+position;
                     $(this).attr('href', href);
                 });
             });
@@ -310,10 +310,10 @@ $(function() {
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
-    effects.goToJump(project, project_nav);
-    effects.goToJump(expert, doctor_nav);
-    effects.goToJump(project_nav, project_nav);
-    effects.goToJump(doctor_nav, doctor_nav);
+    effects.goToJump("project","project_nav");
+    effects.goToJump("expert", "doctor_nav");
+    effects.goToJump("project_nav","project_nav");
+    effects.goToJump("doctor_nav", "doctor_nav");
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
