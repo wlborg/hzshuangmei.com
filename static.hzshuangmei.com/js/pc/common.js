@@ -68,7 +68,6 @@ var tools = (
                 }, 500);
             });
         };
-
         function addScript(src) {
             var bldyE = document.getElementsByTagName("body");
             var scriptE = document.createElement("script");
@@ -272,7 +271,6 @@ var effects = (
                 casecurrentbigimgnum = num;
                 addimgurl(num);
             });
-
             function addimgurl(num) {
                 imgurl = baseimgurl + num + ".jpg";
                 casemodalimg.attr('src', imgurl);
@@ -295,8 +293,11 @@ effects.goToJump(doctor_nav,doctor_nav);
         module.goToJump = function(typeid, position) {
             $("#"+typeid).find('a').each(function(index, el) {
                 $(this).on('click', function() {
-                    var href = $(this).attr('href') + "#"+position;
+                        //过滤掉非栏目的链接
+                    if($(this).attr('href').indexOf('.')==-1){
+                                 var href = $(this).attr('href') + "#"+position;
                     $(this).attr('href', href);
+                    }
                 });
             });
         }
