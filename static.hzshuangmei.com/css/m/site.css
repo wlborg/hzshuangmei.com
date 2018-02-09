@@ -156,7 +156,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #diary .pro { padding-left: 1.05rem; font-size: .4rem; line-height: .8rem; color: #99c; background: url("https://img.hzshuangmei.com/m/icon_flag.png") left center no-repeat; background-size: auto 100%; }
 #diary .pro a { color: #99c; display: inline-block;}
 #diary .right { float: right; line-height: .8rem; }
-#diary .show { width: .875rem; height: .425rem; background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat; background-size: auto 100%; }
+#diary .show {display: inline-block!important; width: .875rem; height: .425rem; background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat; background-size: auto 100%; }
 #diary .click { padding-left: .75rem; margin-left: .45rem; font-size: .45rem; color: #b292d2; background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat; background-size: auto 1em; }
 #picinfo { display: -webkit-box;    /*old ios 6-,safari 3.1-6*/ display: -moz-box;    /*old firefox 19-*/ display: -ms-flexbox;    /*tweener ie10*/ display: -webkit-flex;    /*new  chrome*/ display: flex;    /*new ,spec -opera12.1,firefox 20+*/ padding: 1.35rem 3% 0; background: #eee; justify-content: space-between; }
 #picinfo .item-wrap { width: 4.925rem; overflow: hidden; }
