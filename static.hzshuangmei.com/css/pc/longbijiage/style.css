@@ -10,7 +10,7 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 ul li {
     list-style: none;
 }
@@ -52,14 +52,14 @@ img {
     box-shadow: 0 0 4px 4px #dcc6c9;
 }
 
-.button p {
+.button .click_xq {
     color: #fff;
     font-size: 30px;
     line-height: 62px;
     padding-right: 70px;
 }
 
-.button span {
+.button .go_xq {
     display: block;
     position: absolute;
     color: #fd4d66;
@@ -72,6 +72,7 @@ img {
     margin-top: -21px;
     border-radius: 50%;
     background: #fff;
+    text-align: center;
 }
 
 .banner {
@@ -286,6 +287,7 @@ img {
 
 .part3 .main .button {
     margin-top: 94px;
+    text-align: center;
 }
 
 .part3 .main .button p {
@@ -295,7 +297,7 @@ img {
     width: 72%;
 }
 
-.part3 .main .button span {
+.part3 .main .button .go_xq {
     font-size: 20px;
     line-height: 42px;
     text-align: center;
@@ -453,8 +455,8 @@ img {
     margin-top: 24px;
 }
 
-.part4 .main .box .contain .right .top h2 p,
-.part4 .main .box .contain .right .bottom h2 p {
+.part4 .main .box .contain .right .top h2 i,
+.part4 .main .box .contain .right .bottom h2 i {
     display: inline;
     margin-left: 0;
     background: #fff;
@@ -599,14 +601,15 @@ img {
 .part4 .main .box1 .contain .left .button {
     width: 416px;
     margin-top: 30px;
+    text-align: center;
 }
 
-.part4 .main .box1 .contain .left .button p {
+.part4 .main .box1 .contain .left .button .click_xq {
     color: #fff;
     margin-top: 0;
 }
 
-.part4 .main .box1 .contain .left .button span {
+.part4 .main .box1 .contain .left .button .go_xq {
     left: 80%;
     text-align: center;
 }
@@ -879,7 +882,9 @@ img {
     -webkit-box-shadow: 0 0 4px 4px #4f456e;
     box-shadow: 0 0 4px 4px #4f456e;
 }
-
+.part6 .main .doctor .discrib .a_a{
+    margin-left: 354px;
+}
 .part6 .main .doctor .discrib a p {
     margin-left: 0;
     padding: 0;
@@ -891,8 +896,12 @@ img {
     background: none;
 }
 
-.part6 .main .doctor .discrib a span {
+.part6 .main .doctor .discrib a .click_xq {
     text-align: center;
+    font-size: 21px;
+    line-height: 2.3;
+    display: inline-block;
+    margin-left: 6px;
 }
 
 .part6 .main .doctor .discrib .a_1 {
@@ -1036,7 +1045,8 @@ img {
     margin-bottom: 28px;
 }
 
-.part8 .main ul li h2 p {
+.part8 .main ul li h2 i {
+    display:block;
     font-size: 30px;
     margin-top: 32px;
 }
