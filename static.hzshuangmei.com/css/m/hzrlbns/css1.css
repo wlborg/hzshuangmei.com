@@ -285,7 +285,7 @@ a {
     left: -0.15rem;
 }
 .zsfont {
-    width: 1.75rem;
+    width: 2.75rem;
     height: 3.9rem;
     padding-top: 1.625rem;
     padding-left: .1rem;
@@ -569,6 +569,7 @@ a {
     height: auto;
 }
 .likee img {
+    width: 152px;
     margin-top: .275rem;
     margin-left: auto;
 }
@@ -609,7 +610,7 @@ a {
     background-size: 2.575rem 1.05rem;
 }
 .goodat em {
-    margin-right: .125rem;
+    margin-right: .05rem;
 }
 .goodatarc {
     width: 7.75rem;
