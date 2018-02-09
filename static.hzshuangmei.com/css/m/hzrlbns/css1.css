@@ -160,7 +160,7 @@ a {
 .posithree span {
     position: relative;
     display: inline-block;
-    width: 5.675rem;
+    width: 5.475rem;
     height: .15rem;
     border-top: .025rem solid #c5c5d2;
 }
@@ -171,6 +171,7 @@ a {
     width: 3.475rem;
     height: .025rem;
     -webkit-transform: rotate(-49deg);
+    transform: rotate(-49deg);
     background-color: #c5c5d2;
 }
 .posithree em {
