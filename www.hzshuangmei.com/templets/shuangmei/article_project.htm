@@ -4,6 +4,7 @@
     {dede:include filename="_meta.htm"/}
     <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
     <meta property="og:type" content="article"/>
+    <meta property="article:author" content="红妆双美"/>
     <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
