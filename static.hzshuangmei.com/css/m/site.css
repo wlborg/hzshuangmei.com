@@ -150,13 +150,13 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 #diary .before { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; /* outline: outset 1px #eaeaea;  */ }
 #diary .after { position: relative; float: left; width: 50%; max-width: 7.35rem; overflow: hidden; /* outline: outset 1px #eaeaea; */ }
 #diary .flag { position: absolute; bottom: -1rem; left: 0; width: 2rem; height: 2rem; padding-left: .5rem; font-size: .5rem; line-height: 1rem; color: #fff; border-top-right-radius: 1.25rem; border-bottom-right-radius: 1.25rem; background: rgba(154, 66, 172, .4); }
-#diary .label { height: .8rem; padding: .4rem 0 .5rem; line-height: .8rem; }
+#diary .label { height: .8rem; padding: .4rem 0 .5rem; line-height: .8rem; box-sizing: content-box;}
 #diary .label { height: .8rem; padding: .4rem 0 .5rem; line-height: .8rem; }
 #diary .label br { display: none; }
 #diary .pro { padding-left: 1.05rem; font-size: .4rem; line-height: .8rem; color: #99c; background: url("https://img.hzshuangmei.com/m/icon_flag.png") left center no-repeat; background-size: auto 100%; }
 #diary .pro a { color: #99c; display: inline-block;}
 #diary .right { float: right; line-height: .8rem; }
-#diary .show { width: .875rem; height: .425rem; background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat; background-size: auto 100%; }
+#diary .show {display: inline-block!important; width: .875rem; height: .425rem; background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat; background-size: auto 100%; }
 #diary .click { padding-left: .75rem; margin-left: .45rem; font-size: .45rem; color: #b292d2; background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat; background-size: auto 1em; }
 #picinfo { display: -webkit-box;    /*old ios 6-,safari 3.1-6*/ display: -moz-box;    /*old firefox 19-*/ display: -ms-flexbox;    /*tweener ie10*/ display: -webkit-flex;    /*new  chrome*/ display: flex;    /*new ,spec -opera12.1,firefox 20+*/ padding: 1.35rem 3% 0; background: #eee; justify-content: space-between; }
 #picinfo .item-wrap { width: 4.925rem; overflow: hidden; }
@@ -274,7 +274,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .zhuanjia-item { position: relative; min-height: 7.4rem; padding-left: 7.7rem; margin-bottom: .2rem; border: solid 1px #e3e3e3; }
 .zhuanjia-thum { position: absolute; top: 0; left: 0; width: 7.1rem; height: 7.25rem; overflow: hidden; border: solid .075rem #fff; }
 .zhuanjia-thum img { width: 100%; }
-.zhuanjia-title { width: 4.8rem; padding-left: .75rem; margin-top: 1.25rem; font-size: .65rem; line-height: 1.25rem; color: #282828; border-bottom: solid 1px #ccc; background: url("https://img.hzshuangmei.com/m/icon_people.png") left center no-repeat; background-size: .75rem .7rem; }
+.zhuanjia-title { width: 7rem; padding-left: .75rem; margin-top: 1.25rem; font-size: .65rem; line-height: 1.25rem; color: #282828; border-bottom: solid 1px #ccc; background: url("https://img.hzshuangmei.com/m/icon_people.png") left center no-repeat; background-size: .75rem .7rem; }
 .zhuanjia-info .zhuanjia-title a { color: #282828; }
 .zhuanjia-info .zhiwei { margin-top: .2rem; font-size: .45rem; line-height: .625rem; color: #aaa; }
 .zhuanjia-info .shanchang { font-size: .375rem; line-height: .625rem; color: #aaa; }
@@ -388,7 +388,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .case .step .pic { font-size: 0; }
 .case .step .pic img { display: inline-block; width: 49%; margin: 0 1% 1% 0; }
 .case .step .note p { margin-top: .6rem; padding: .2rem .3rem; font-size: .5rem; line-height: 1.6; text-align: justify; color: #a287a9; background: #f3f1f6; }
-.relatemodule { overflow: hidden; background: #f4f4f4; }
+.relatemodule { overflow: hidden; background: #f4f4f4;}
 .relatemodule .heading { padding: .75rem 0; text-align: center; }
 .relatemodule .heading .title { display: inline-block; padding: 0; margin: 0;border: none; font-size: .7rem; font-weight: normal; line-height: .75rem; color: #fff; background: none; }
 .relatemodule .heading .title span { vertical-align: bottom; }
@@ -397,7 +397,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .relatemodule .heading .lefticon2 { display: inline-block; width: .6rem; height: .5rem; padding-right: .5rem; background: url("https://img.hzshuangmei.com/m/icon_t_left2.png") center center no-repeat; }
 .relatemodule .heading .righticon2 { display: inline-block; width: .6rem; height: .5rem; padding-left: .5rem; background: url("https://img.hzshuangmei.com/m/icon_t_right2.png") center center no-repeat; }
 .relatemodule .carousel-indicators { bottom: -1.3rem; margin-top: 0; margin-bottom: 0; }
-.relatemodule .carousel-indicators li { width: 7px; height: 7px; padding: 3px; margin-right: .175rem; margin-left: .175rem; border: none; border: solid 1px transparent; background-color: #fff; background-clip: content-box; }
+.relatemodule .carousel-indicators li {box-sizing: content-box; width: 7px; height: 7px; padding: 3px; margin-right: .175rem; margin-left: .175rem; border: none; border: solid 1px transparent; background-color: #fff; background-clip: content-box; }
 .relatemodule .carousel-indicators li.active { border: solid 1px #ff96f9; background-color: #ff96f9; background-clip: content-box; }
 .relatemodule .heading .line { position: relative; float: none; width: 69%; margin: .2rem auto 0; border-bottom: solid 1px #9b7ab5; }
 .relatemodule .heading .line span { position: absolute; top: -.05rem; right: 0; left: 0; display: block; width: .1rem; height: .1rem; margin: auto; transform: rotateZ(45deg); background: #d8d0df; }
@@ -421,7 +421,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 /* .articlerelatecase{height: 15rem;} */
 #articleslidecase { height: 9.5rem; }
 .articlerelatecase .contents { padding-top: .55rem; padding-bottom: 1.9rem; }
-.articlerelatecase #diary .item { width: 14.4rem; height: 9.5rem; border: none; }
+.articlerelatecase #diary .item { width: 14.4rem; height: 9.5rem; border: none; box-sizing: content-box;}
 .articlerelatecase #diary .pic { margin-top: 0; }
 .articlerelatecase #diary .label span { color: #704096; }
 .articlerelatecase #diary .right { margin-right: .15rem; }

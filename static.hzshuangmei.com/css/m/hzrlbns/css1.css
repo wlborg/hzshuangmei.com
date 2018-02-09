@@ -147,7 +147,7 @@ a {
 }
 .posithree {
     float: right;
-    width: 6.025rem;
+    width: 6.125rem;
     height: 6.375rem;
     margin-top: 2.125rem;
 }
@@ -157,24 +157,28 @@ a {
     font-weight: 700;
     color: #9ccfcc;
 }
-.posithree span {
+.posithree div {
     position: relative;
-    display: inline-block;
     width: 5.675rem;
     height: .15rem;
     border-top: .025rem solid #c5c5d2;
 }
-.posithree span i {
+.posithree div span {
     position: absolute;
     top: 1.275rem;
     left: -2.875rem;
     width: 3.475rem;
     height: .025rem;
     -webkit-transform: rotate(-49deg);
+    -ms-transform: rotate(-49deg);
+    transform: rotate(-49deg);
     background-color: #c5c5d2;
 }
 .posithree em {
     font-size: .5rem;
+    position: absolute;
+    right: -0.275rem;
+    top: -0.4rem;
 }
 .posithree .tooparc {
     font-size: .45rem;
@@ -357,6 +361,7 @@ a {
     font-size: .65rem;
     font-weight: 700;
     color: #fff;
+    line-height: 0.85rem;
 }
 .advantage-one .advantop {
     margin: 1.95rem 0 0 .95rem;
@@ -653,6 +658,6 @@ a {
 .likee img {
     width: 2.45rem;
 }
-.lover{
-    width:7.975rem;
+.lover {
+    width: 7.975rem;
 }

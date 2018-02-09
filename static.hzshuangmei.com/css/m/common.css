@@ -37,6 +37,7 @@ body { max-width: 16rem; margin-right: auto !important; margin-left: auto !impor
 position: fixed; z-index: 20180110; height: 2.35rem; width: 16rem; overflow: hidden; }
 .contents { padding-top: 2.35rem; }
 .custom-wrapper.open { height: auto; }
+#menu{box-sizing: content-box;}
 .menu-head { position: relative; width: 100%; height: 2.35rem; text-align: center; background: url("https://img.hzshuangmei.com/m/bg_header.jpg") center center no-repeat #41046b; background-size: auto 100%; }
 #toggle { position: absolute; top: 0; bottom: 0; left: 0; margin: auto; display: block; width: .85rem; padding: 0 .75rem; height: 2.35rem; background: url("https://img.hzshuangmei.com/m/icon_menu.png") center center no-repeat; background-size: .85rem; }
 .open #toggle { background: url("https://img.hzshuangmei.com/m/icon_back.png") center center no-repeat; background-size: .85rem; }
