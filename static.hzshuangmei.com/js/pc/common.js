@@ -278,6 +278,28 @@ var effects = (
                 casemodalimg.attr('src', imgurl);
             }
         }
+        /*  点击顶部项目子导航 直接定位*/
+        /*
+ @param  typeid  可取的值为 project 或者  expert
+ 表示点击的是顶部导航为项目或者专家的子导航
+@param  postion 可选的值为 project_nav 或者 doctor_nav
+表示锚点定位的位置.
+******使用方法：
+effects.goToJump(project,project_nav);
+effects.goToJump(expert,doctor_nav);
+如果是在项目列表页。或者专家列表页。则直接说页面内定位
+*** 可以这样
+effects.goToJump(project_nav,project_nav);
+effects.goToJump(doctor_nav,doctor_nav);
+   */
+        module.goToJump = function(typeid, position) {
+            $('"#"+typeid').find('a').each(function(index, el) {
+                $(this).on('click', function() {
+                    var href = $(this).attr('href') + '"#"+position';
+                    $(this).attr('href', href);
+                });
+            });
+        }
         return module;
     }
 )(window.effects || {});
@@ -287,6 +309,11 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
+    //点击顶部项目子导航直接定位
+    effects.goToJump(project, project_nav);
+    effects.goToJump(expert, doctor_nav);
+    effects.goToJump(project_nav, project_nav);
+    effects.goToJump(doctor_nav, doctor_nav);
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
