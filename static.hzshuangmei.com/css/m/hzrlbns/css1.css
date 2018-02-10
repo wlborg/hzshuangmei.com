@@ -549,8 +549,9 @@ a {
     margin-left: auto;
 }
 .doctorarc-t {
-    width: 100%;
+    width: 8.25rem;
     height: 1.575rem;
+    margin-left: auto;
     border-bottom: .025rem solid #afaec0;
 }
 .doctorarc-t li {
@@ -562,6 +563,7 @@ a {
     margin-left: 1.875rem;
 }
 .dol p {
+    width: 10rem;
     font-size: .6rem;
     color: #fff;
 }
