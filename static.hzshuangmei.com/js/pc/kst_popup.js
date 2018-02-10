@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-10 17:51:54
+ * @Last Modified time: 2018-02-10 17:58:18
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -76,7 +76,8 @@
 //     });
 // }
 // popup();
-var popup = {
+var popup = (
+    function() {
         /*
           页面加载完，只执行一次，用于检测当前页面对应的弹窗图片资源是否存在,
          */
@@ -168,7 +169,6 @@ var popup = {
             showPopUp: showPopUp
         }
         return pop;
-    }
-
+    })();
 popup.checkimg();
 popup.showPopUp();
