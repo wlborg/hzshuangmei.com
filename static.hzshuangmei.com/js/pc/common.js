@@ -283,12 +283,12 @@ var effects = (
 @param  postion 可选的值为 project_nav 或者 doctor_nav
 表示锚点定位的位置.
 ******使用方法：
-effects.goToJump(project,project_nav);
-effects.goToJump(expert,doctor_nav);
+effects.goToJump("project","project_nav");
+effects.goToJump("expert","doctor_nav");
 如果是在项目列表页。或者专家列表页。则直接说页面内定位
 *** 可以这样
-effects.goToJump(project_nav,project_nav);
-effects.goToJump(doctor_nav,doctor_nav);
+effects.goToJump("project_nav","project_nav");
+effects.goToJump("doctor_nav","doctor_nav");
    */
         module.goToJump = function(typeid, position) {
             $("#"+typeid).find('a').each(function(index, el) {
@@ -298,6 +298,23 @@ effects.goToJump(doctor_nav,doctor_nav);
                                  var href = $(this).attr('href') + "#"+position;
                     $(this).attr('href', href);
                     }
+                });
+            });
+        }
+/*
+列表页翻页锚定位
+@param postion 可选值为 project_nav ，doctor_nav ，ca_01和news_nav
+** 使用方法：
+effects.goToPagination("project_nav");
+effects.goToPagination("doctor_nav");
+effects.goToPagination("ca_01");
+effects.goToPagination("news_nav");
+ */
+         module.goToPagination = function(position) {
+            $('.pagination').find('a').each(function(index, el) {
+                $(this).on('click', function() {
+                    var href = $(this).attr('href') + "#" + position;
+                    $(this).attr('href', href);
                 });
             });
         }
@@ -315,6 +332,12 @@ $(function() {
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav","project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
+    //项目，专家，日记，新闻列表页翻页锚定位
+effects.goToPagination("project_nav");
+effects.goToPagination("doctor_nav");
+effects.goToPagination("ca_01");
+effects.goToPagination("news_nav");
+
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
