@@ -238,7 +238,13 @@
 }
 .pagination{
     width: 600px;
-    margin: 0 auto 50px
+    margin: 0 auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .pagination>li{
     float:left;
