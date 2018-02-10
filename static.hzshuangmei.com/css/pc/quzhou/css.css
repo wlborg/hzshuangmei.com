@@ -1,0 +1,190 @@
+* {
+	padding: 0;
+	margin: 0
+}
+body{
+	font-family: "微软雅黑";
+	background-color: #fff;
+	min-width: 1250px;
+}
+.head .Tbody{min-width: 1250px;}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%; font-weight:normal;
+}
+img {
+	display: block;
+	border:0;
+}
+ul,li {
+	list-style: none
+}
+a {
+	text-decoration: none;
+}
+.bn{width: 100%; height: 828px;}
+.bn li{width: 100%; height:276px;}
+.bn li a{font-size: 0; display: block; width: 100%; height: 100%}
+.bn .li01{ background: url(https://img.hzshuangmei.com/pc/quzhou/bn_01.jpg) no-repeat top center;}
+.bn .li02{ background: url(https://img.hzshuangmei.com/pc/quzhou/bn_02.jpg) no-repeat top center;}
+.bn .li03{ background: url(https://img.hzshuangmei.com/pc/quzhou/bn_03.jpg) no-repeat top center;}
+/*各种皱纹*/
+.wrinkle{width: 100%; height: 1003px;padding-top: 150px;  background-color: #e3e8f8; }
+.wrink{width:1100px; height: 100%; margin:0 auto;}
+.title{width: 776px; height: 81px; border-bottom:1px solid #3e83d8; margin:0 auto; position: relative;}
+.tit1-bg{width:605px; height: 63px; margin:0 auto;}
+.title h3{ width: 465px; height: 46px; line-height: 46px; font-size:40px; position: absolute; bottom:5px; left: 50%; margin-left: -232px; color:#5390dc;}
+.title i{position: absolute; width: 314px; height: 13px; background-color: #e3e8f8; bottom: -8px; left: 50%; margin-left: -157px}
+.wrink ul{width: 100%; height: 730px; padding-top: 78px;}
+.wrink ul li{width:32%; height: 322px; background-color: #ffffff; overflow: hidden; float: left; margin:0 0.66% 44px;}
+.wrink ul li:hover p{color:#ffa722;}
+.wrink ul li p{width: 100%; height: 64px; line-height: 64px; font-size:24px; color:#3e83d8; text-align: center}
+.wrin-tu{width: 340px; height: 250px; margin:5px auto 0; border:1px solid #ffa722; background-color: #000000;}
+.wrin-tu img{width: 100%;}
+.wrin-tu img:hover{-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+-o-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70) !important;
+opacity: 0.7 !important;}
+.zixun{width:230px; height: 58px;  background-color: #3e83d8; padding-top: 7px}
+.zixun1{margin:0 auto;}
+.zixun-in{width: 216px; height: 47px; margin:0 auto 0; border:1px solid #9fc1ec; border-radius: 10px}
+.zixun-in p{width: 128px; height: 100%;  line-height: 47px; font-size: 28px; color:#ffffff; text-align: center; float: left;}
+.zixun-in .phone1{width:21px; height:37px; float: left;padding-top: 5px; margin-right:10px;}
+.zixun-in .phone{width:47px; height:47px; float: left; transition: all 0.5s}
+.zixun:hover .phone{transform: rotate(360deg);}
+.phone-yy{width:230px; height: 23px; }
+.phone-yy1{margin:0 auto;}
+.bg_01{width: 100%; height:75px;}
+/*如何变老*/
+.old{width:1160px; height: 993px;margin:0 auto; padding-top: 76px;}
+.one{width: 100%; height:64px; text-align: center; font-size:50px; color: #3e83d8; line-height: 64px;}
+.two{width: 100%; height:36px; text-align: center; font-size:26px; color: #ffa722; line-height: 36px;}
+.three{width: 100%; height:32px; text-align: center; font-size:22px; color: #8c8b8b; line-height: 32px;}
+.old-in{width: 100%; height: 620px; padding-top: 115px;}
+.we{width: 26px; height: 109px; float: left;}
+.we em{width: 100%; display: block;}
+.we .em1{ height:46px; background-color: #7eb0ed}
+.we .em2{ height:63px; background-color: #2e69b3}
+.old-l{width: 600px; height: 590px; float: left; padding-left: 16px;}
+.old-l h3{width: 100%; height: 70px; line-height: 44px; color:#ffa722; font-size: 50px;}
+.old-arc{width: 100%; height: 98px; font-size:16px; color:#7eb0ed; line-height:20px;}
+.square{width: 129px; height: 33px; background-color: #ffa722; line-height: 33px; text-align: center; color:#ffffff; font-size: 24px}
+.arc{width: 100%; height: auto; padding:7px 0 30px 0; font-size: 18px; line-height: 24px; color:#7eb0ed }
+.old-r{width:438px; height: 439px; float: right; padding-top: 20px;	position: relative; background: url(https://img.hzshuangmei.com/pc/quzhou/lunzi.png) no-repeat top center;}
+.old-r p{width:50px; height:38px; line-height: 38px; text-align: center; color:#3774aa; font-size:18px; position: absolute;}
+.p1{top: 12px; left:80px;}
+.p2{top: -10px; left:230px;}
+.p3{top:237px; right:-30px;}
+.p4{top:327px; right:10px;}
+.p5{top:390px; left:90px;}
+.p6{top:280px; left:-15px;}
+.bg_02{width: 100%; height:93px;}
+/*日常保养*/
+.day{width: 100%; height: 990px; background-color: #e3e8f8; }
+.error{width: 228px; height: 55px; margin:56px auto 0; background-color: #ffa722; text-align: center; line-height: 55px; font-size:34px; color: #ffffff}
+.yy{margin:0 auto; width: 224px; height: 9px;}
+.day-in{width: 1192px; height: 617px; overflow: hidden; margin:50px auto 0;}
+.day-in li{width:268px; height:355px; background-color: #ffffff; float: left; position: relative; }
+.li-a{margin:150px 12px 0;}
+.li-b{margin:20px 12px 0;}
+.li-tu{width:268px; height: 268px; position: absolute;}
+.li-a .li-tu{top: -134px; left: 0;}
+.li-b .li-tu{bottom: -158px; left: 0;}
+.li-tu img{width: 100%; border-radius: 50%}
+.li-ti{width: 100%; height: 100px; line-height: 100px; text-align: center; color:#ffa722; font-size: 24px; }
+.li-a .li-ti{padding-top: 130px}
+.li-arc{width: 240px; height: auto; font-size: 18px; color:#757575; margin:0 auto;}
+.sanj1, .sanj2{width:0; height: 0; position: absolute; }
+.sanj1{border-top:20px solid #ffffff; border-left:268px solid transparent; bottom: -20px; left: 0}
+.sanj2{border-bottom:20px solid #ffffff; border-left:268px solid transparent; top: -20px; left: 0}
+.zixun3{margin:0 auto; background-color: #ffa722}
+.zixun3 .zixun-in{border:1px solid #ffffff;}
+.phone-yy3{width:229px; height: 25px; margin:0 auto;}
+.bg-o{width: 100%; height:80px; background: url(https://img.hzshuangmei.com/pc/quzhou/bg_03.png) no-repeat top center; padding-top:97px}
+/*botox*/
+.botox{width: 1192px; height: 963px; margin:25px auto 0; background: url(https://img.hzshuangmei.com/pc/quzhou/botox-bg.png) no-repeat right center;}
+.botox-l{width: 530px; height: 763px; padding-top: 140px;}
+.bot-t{width: 100%; height: 248px;}
+.yao{width:209px; height: 233px; float: left;}
+.re{width: 297px; height: 187px; float: left; padding-top: 20px}
+.re-t{width: 131px; height: 92px;background: url(https://img.hzshuangmei.com/pc/quzhou/leng.png) no-repeat top center; text-align: center;
+    line-height: 113px; font-size:90px; color: #3e83d8; text-indent: 0.2em}
+.re-t1{margin:0 auto;}
+.re-b{width: 100%; height: 108px; line-height: 108px; font-size:82px; color:#3e83d8; text-transform: uppercase; text-align: center;}
+.bot-c{width: 100%; height:138px; line-height: 24px; font-size: 18px; color:#878383;}
+.aq, .kuai, .xiao{width: 484px; height: 80px;}
+.aq-tu{width:64px; height: 63px; float: left;}
+.aq-r, .k-r{width: 410px; height: 52px; background-color: #ffa722; float: left; margin-top:6px; line-height: 52px; color: #ffffff; } 
+.aq-r span{font-size: 18px; }
+.aq-r strong, .k-r strong {font-size: 28px; margin:0 64px 0 10px;}
+.k-tu{width:71px; height: 65px; float: left;}
+.kuai .aq-r{width: 402px; height: 51px}
+.k-r strong{float: left; margin:0 15px  0 10px;}  
+.k-r div{width: 250px; height: 46px; float: left; padding-top: 6px}
+.k-r div p{font-size: 16px; line-height: 20px}
+.k-r{width: 402px; height: 51px}
+.xiao .aq-r{margin-top: 4px; height: 53px}
+.xiao strong{margin:0 10px 0 10px;}
+.xiao .aq-r span{font-size: 16px}
+.xiao{height: 104px}
+.zixun4{background-color:#ffa722}
+.zixun4 .zixun-in{border:1px solid #ffffff;}
+.bg_04{width: 100%; height:89px; background: url(https://img.hzshuangmei.com/pc/quzhou/bg_04.png) no-repeat top center;}
+/*玻尿酸除皱*/
+.bos{width: 100%; height: 940px; background-color: #e3e8f8; }
+.bos-in{width: 1200px; height: 100%; margin:0 auto;}
+.mv{width:575px; height: 898px; float: left;}
+.bos-r{width: 602px; height: 837px; padding-top: 88px; float: right;}
+.leng2{width:127px; height: 91px; float:right; text-align: center;
+    line-height: 113px;
+    font-size: 90px;
+    color: #ffffff;
+    text-indent: 0.2em;
+background: url(https://img.hzshuangmei.com/pc/quzhou/leng2.png) no-repeat;}
+.bos-r h3{width: 352px; height: 113px; float: right; font-size: 70px; color: #3e83d8; line-height: 100px; white-space: nowrap;}
+.bos-arc{width: 100%; height: 133px; padding-top: 140px; line-height: 24px; font-size: 18px; color: #a5a8b3}
+.bos-r ul{width: 540px; height: 480px; margin-left: auto;}
+.bos-r ul li{position:relative; width: 264px; height: 216px; float:left; margin:0 3px 5px; overflow: hidden;}
+.bos-r ul img{width: 100%; }
+.bos-r ul li span{position: absolute; width: 100%; height: 100%; background-color:#083975; opacity: 0.65; filter: alpha(65); left: 0; top: 0;
+                transition: all 1s}
+.bos-r ul li:hover span{opacity: 0; filter: alpha(0);}
+.bos-r ul li:hover .sh{top:200px;}
+.sh{width: 100%; height: 100%; position: absolute; left: 0 ; top:0; transition: all 0.8s}
+.sh em{width:41px; height: 41px; border:2px solid #ffffff; font-size: 40px; line-height: 41px; text-align: center;
+          border-radius: 50%; display: block; margin:37px auto 0; font-style: normal; color: #ffffff}
+.fa{width: 100%; height: 50px; line-height:40px;font-size:28px; color: #ffffff; text-align: center;}
+.lt{width: 100%; height: 24px; line-height: 24px; color: #ffffff; font-size: 16px; text-align: center}
+.zixun5{margin-left: auto; background-color: #ffa722;}
+.zixun5 .zixun-in{border: 1px solid #ffffff;}
+.phone{margin-left: auto}
+/*手术除皱*/
+.ss{width: 1120px; height: 1020px; margin:0 auto; padding-top: 60px}
+.ss-top{width: 100%; height: 903px;}
+.ss-l{width: 552px; height: 100%; float: left;}
+.re-t2{margin-left: 75px}
+.ss-tit{line-height: 102px; color:#3e83d8; font-size: 70px;}
+.ss-arc{width: 100%; height: auto; font-size:18px; color:#9f9fa1; line-height: 26px; padding:10px 0 35px}
+.square2{width: 206px; height: 49px; text-align: center; line-height: 49px; color:#ffffff; font-size:28px; background-color:#ffa722}
+.hua{width:526px; height: 734px; float:right; margin-top:67px; border:2px solid #ffa722; } 
+/*美丽见证*/
+.anli{width: 100%; height: 1223px; background-color:#e3e8f8; padding-top: 50px}
+.anli-in{width: 1180px; height: 100%; margin:0 auto;}
+.anli-in ul{width:100%; height:850px; padding-top:63px;}
+.anli-in ul li{width: 272px; height: 373px; padding: 10px 0 0 10px; background-color: #ffffff; float: left; margin-bottom: 10px}
+.anli-in ul li img{width: 272px; height: 363px;}
+.anli-in ul li.ri{padding: 10px 10px 0 10px; margin-right:15px}
+.bg05{width: 100%; height:105px;  margin:0 auto;}
+/*专家*/
+.zj{width: 1030px; height: 964px; margin: 0 auto;  position: relative;}
+.yuan{width: 1030px; height: 764px; overflow: hidden; margin-top: 105px;}
+.yuan span{width: 992px; height: 992px; border-radius: 50%; background-color: #e3e8f8; display: block; box-shadow:10px 9px 39px #bac0d4}
+.lijie{width:547px; height: 822px; position: absolute; bottom:0; left: -90px}
+.zj-r{width: 440px; height: 575px; top: 340px; left: 500px;position: absolute; }
+.zj-r ul{width: 420px; height: 255px; border-bottom: 1px solid #454648; padding-left: 20px}
+.zj-r li{list-style: circle; font-size: 18px; color: #454648; line-height: 30px}
+.zj-arc{width: 100%; height: auto; padding-bottom:63px; font-size: 18px; line-height: 28px; color: #454648; padding-top: 20px;}
+.zj-yy{margin:0 auto; width: 200px;}
+.zi{width: 50px; height: 110px; font-size: 50px; color: #ffa722; position: absolute; top: 300px; left:420px; line-height: 56px}
+/*...........*/	
+.impor{width: 0; height: 0; font-size: 0; overflow: hidden;}
