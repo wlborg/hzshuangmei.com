@@ -560,7 +560,7 @@ a {
 .dol {
     width: 3.65rem;
     height: 100%;
-    margin-left: 1.875rem;
+    /*margin-left: 1.875rem;*/
 }
 .dol p {
     width: 10rem;
