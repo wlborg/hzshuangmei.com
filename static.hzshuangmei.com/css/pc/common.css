@@ -26,14 +26,13 @@ header .top .shuang_m1 .tel { background: url(//img.hzshuangmei.com/pc/h_phone.p
 header .top .shuang_m1 .wbo { background: url(//img.hzshuangmei.com/pc/h_weibo.png) no-repeat center; }
 header .top .shuang_m1 .wxin { background: url(//img.hzshuangmei.com/pc/h_weixin.png) no-repeat center; }
 header .top .shuang_m1 .qq { background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center; }
-header .sm_logo { height: 131px; text-align: center; background-color: #fff; -webkit-animation-name: dissappear; animation-name: dissappear; -webkit-animation-timing-function: ease; animation-timing-function: ease; -webkit-animation-duration: 5s; animation-duration: 5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; animation-delay: 5s; -webkit-animation-delay: 5s; }
+header .sm_logo { height: 131px; text-align: center; background-color: #fff; -webkit-animation-name: dissappear; animation-name: dissappear; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-duration: 5s; animation-duration: 5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; animation-delay: 3s; -webkit-animation-delay: 3s; }
 @-webkit-keyframes dissappear {
-    0% { height: 21px; }
-    50% { height: 10px; }
+    0% { height: 131px; }
     100% { height: 0; display: none; visibility: hidden; }
 }
 @keyframes dissappear {
-    0% { height: 21px; width: 100%; opacity: 1; }
+    0% { height: 131px; width: 100%; opacity: 1; }
     100% { height: 0; width: 100%; display: none; visibility: hidden; opacity: 0; }
 }
 header .sm_logo img { display: inline-block; padding-top: 7px; }

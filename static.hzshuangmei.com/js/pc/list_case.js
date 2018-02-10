@@ -132,16 +132,11 @@ function preReady() {
         });
 }
 /*
-案例列表页，翻页定位优化
+案例列表页，左侧锚定位优化
  */
-function paginationFixed() {
-    $('.pagination').find('a').on('click', function(event) {
-        var thisLink = $(this).attr('href') + "#ca_01";
-        $(this).attr('href', thisLink);
-    });
-}
-    // $('html,body').animate({scrollTop: '850px'}, 800);
-$(function() {
-    //preReady();
-    paginationFixed();
+$("#case_nav").find('a').each(function(index, el) {
+            $(this).on('click',function(){
+                      var href = $(this).attr('href') + "#ca_01";
+                    $(this).attr('href', href);
+            })
 });

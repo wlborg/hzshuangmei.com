@@ -68,6 +68,7 @@ var tools = (
                 }, 500);
             });
         };
+
         function addScript(src) {
             var bldyE = document.getElementsByTagName("body");
             var scriptE = document.createElement("script");
@@ -271,6 +272,7 @@ var effects = (
                 casecurrentbigimgnum = num;
                 addimgurl(num);
             });
+
             function addimgurl(num) {
                 imgurl = baseimgurl + num + ".jpg";
                 casemodalimg.attr('src', imgurl);
@@ -283,21 +285,43 @@ var effects = (
 @param  postion 可选的值为 project_nav 或者 doctor_nav
 表示锚点定位的位置.
 ******使用方法：
-effects.goToJump(project,project_nav);
-effects.goToJump(expert,doctor_nav);
+effects.goToJump("project","project_nav");
+effects.goToJump("expert","doctor_nav");
 如果是在项目列表页。或者专家列表页。则直接说页面内定位
 *** 可以这样
-effects.goToJump(project_nav,project_nav);
-effects.goToJump(doctor_nav,doctor_nav);
+effects.goToJump("project_nav","project_nav");
+effects.goToJump("doctor_nav","doctor_nav");
    */
         module.goToJump = function(typeid, position) {
-            $("#"+typeid).find('a').each(function(index, el) {
+            $("#" + typeid).find('a').each(function(index, el) {
                 $(this).on('click', function() {
-                        //过滤掉非栏目的链接
-                    if($(this).attr('href').indexOf('.')==-1){
-                                 var href = $(this).attr('href') + "#"+position;
-                    $(this).attr('href', href);
+                    //过滤掉非栏目的链接
+                    if ($(this).attr('href').indexOf('.') == -1) {
+                        var href = $(this).attr('href') + "#" + position;
+                        $(this).attr('href', href);
                     }
+                });
+            });
+        }
+        /*
+        列表页翻页锚定位
+        ** 使用方法：
+        effects.goToPagination();
+         */
+        module.goToPagination = function() {
+            $('.pagination').find('a').each(function(index, el) {
+                $(this).on('click', function() {
+                    //判断当前在哪个页面 项目？专家？日记？新闻?
+                    if (infos.href.indexOf('projects') > 0) {
+                        var href = $(this).attr('href') + "#project_nav";
+                    } else if (infos.href.indexOf('doctors') > 0) {
+                        var href = $(this).attr('href') + "#doctor_nav";
+                    } else if (infos.href.indexOf('cases') > 0) {
+                        var href = $(this).attr('href') + "#ca_01";
+                    } else {
+                        var href = $(this).attr('href') + "#news_nav";
+                    }
+                    $(this).attr('href', href);
                 });
             });
         }
@@ -311,10 +335,12 @@ $(function() {
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
-    effects.goToJump("project","project_nav");
+    effects.goToJump("project", "project_nav");
     effects.goToJump("expert", "doctor_nav");
-    effects.goToJump("project_nav","project_nav");
+    effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
+    //项目，专家，日记，新闻列表页翻页锚定位
+    effects.goToPagination();
     tools.addKSTScript();
     tools.addBaiduScript();
     tools.bindConsultHref();
