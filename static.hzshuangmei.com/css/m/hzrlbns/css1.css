@@ -288,7 +288,7 @@ a {
 .zsfont {
     width: 2.75rem;
     height: 3.9rem;
-    padding-top: 1.625rem;
+    padding-top: 1.425rem;
     padding-left: .1rem;
     font-size: .375rem;
     font-size: .45rem;
@@ -549,8 +549,9 @@ a {
     margin-left: auto;
 }
 .doctorarc-t {
-    width: 100%;
+    width: 8.25rem;
     height: 1.575rem;
+    margin-left: auto;
     border-bottom: .025rem solid #afaec0;
 }
 .doctorarc-t li {
@@ -559,9 +560,10 @@ a {
 .dol {
     width: 3.65rem;
     height: 100%;
-    margin-left: 1.875rem;
+    /*margin-left: 1.875rem;*/
 }
 .dol p {
+    width: 10rem;
     font-size: .6rem;
     color: #fff;
 }
