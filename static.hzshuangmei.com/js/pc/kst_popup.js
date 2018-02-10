@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-10 17:37:54
+ * @Last Modified time: 2018-02-10 17:45:29
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -76,22 +76,20 @@
 //     });
 // }
 // popup();
-
-
 var popup = {
     function() {
         /*
           页面加载完，只执行一次，用于检测当前页面对应的弹窗图片资源是否存在,
          */
-         var target = window.location.href;
+        var target = window.location.href;
         //当前URL的文件名
         var currentFilename = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1].split(".")[0];
         //对应的弹窗图片URL
         var currentPopupImg = 'https://img.hzshuangmei.com/pc/kst/' + currentFilename + '.png';
-          // 默认的弹窗图片URL
-      var defautlPopupImg = 'https://img.hzshuangmei.com/pc/kst/default.png';
+        // 默认的弹窗图片URL
+        var defautlPopupImg = 'https://img.hzshuangmei.com/pc/kst/default.png';
         // 图片变量
-      var  picContent="";
+        var picContent = "";
         var checkPopupImgOnce = function() {
             $.ajax({
                 url: currentPopupImg,
@@ -115,7 +113,7 @@ var popup = {
               如果不存在，则设置为默认的图
          */
         var changePopUpImgSrc = function() {
-                picContent=defautlPopupImg;
+            picContent = defautlPopupImg;
         }
         var showPopUp = function() {
             var flag = 0;
@@ -166,7 +164,12 @@ var popup = {
                 }
             });
         }
+        var pop = {
+            checkimg: checkPopupImgOnce,
+            showPopUp: showPopUp
+        }
+        return pop;
     }
 }
-popup.checkPopupImgOnce();
+popup.checkimg();
 popup.showPopUp();
