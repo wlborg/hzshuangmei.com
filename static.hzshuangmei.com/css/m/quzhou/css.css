@@ -1,1 +1,835 @@
-.year{width:.4rem;height:.2725rem;margin-top:.675rem;margin-left:auto;background:url(//img.hzshuangmei.com/m/hzrlbns/images/year.png) no-repeat;background-size:16rem 9.45rem}
+html {
+    height: 100%;
+    width: 100%;
+    font-size: 625rem
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+li,
+ul {
+    list-style: none
+}
+
+img {
+    display: block;
+    border: 0
+}
+
+body {
+    background-color: #fff
+}
+
+em {
+    font-style: normal
+}
+
+body {
+    font-family: "微软雅黑"
+}
+
+p,
+span {
+    font-size: .5rem
+}
+
+h3 {
+    font-size: .6rem
+}
+
+a {
+    color: #fff;
+    border: none;
+    text-decoration: none
+}
+
+.bn {
+    width: 100%;
+    margin-top: 1.625rem
+}
+
+.hx {
+    width: 100%;
+    height: 125rem;
+    background-color: #3e83d8;
+    display: block
+}
+
+.wrinkle {
+    width: 100%;
+    height: 17.5rem;
+    padding-top: 2rem;
+    background-color: #e3e8f8
+}
+
+.wrink {
+    width: 15rem;
+    height: 100%;
+    margin: 0 auto
+}
+
+.title {
+    width: 12.5rem;
+    height: 1.75rem;
+    margin: 0 auto;
+    position: relative
+}
+
+.tit1-bg {
+    width: 12.75rem;
+    margin: 0 auto
+}
+
+.title h3 {
+    width: 11rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    font-size: .85rem;
+    position: absolute;
+    bottom: 00;
+    left: 50%;
+    margin-left: -5.5rem;
+    color: #5390dc;
+    text-align: center
+}
+
+.title i {
+    position: absolute;
+    width: 4.25rem;
+    height: .25rem;
+    background-color: #e3e8f8;
+    bottom: -.25rem;
+    left: 50%;
+    margin-left: -2rem
+}
+
+.wrink ul {
+    width: 100%;
+    height: 10rem;
+    padding-top: 1rem
+}
+
+.wrink ul li {
+    width: 32%;
+    height: 4.5rem;
+    overflow: hidden;
+    float: left;
+    margin: 0 .66% .5rem
+}
+
+.wrink ul li:hover p {
+    color: #ffa722
+}
+
+.wrink ul li p {
+    width: 100%;
+    height: .875rem;
+    line-height: .875rem;
+    font-size: .6rem;
+    color: #3e83d8;
+    text-align: center
+}
+
+.wrink ul li img {
+    width: 100%;
+    border: 6.25rem solid #ffa722;
+    box-sizing: border-box
+}
+
+.zixun {
+    width: 6.25rem;
+    height: 1.75rem;
+    background-color: #3e83d8;
+    padding-top: .25rem
+}
+
+.zixun1 {
+    margin: 0 auto
+}
+
+.zixun-in {
+    width: 5.75rem;
+    height: 1.5rem;
+    margin: 0 auto 0;
+    border: 6.25rem solid #9fc1ec;
+    border-radius: 62.5rem
+}
+
+.zixun-in p {
+    width: 3.5rem;
+    height: 100%;
+    line-height: 1.5rem;
+    font-size: .75rem;
+    color: #fff;
+    text-align: center;
+    float: left
+}
+
+.zixun-in .phone1 {
+    width: .625rem;
+    float: left;
+    padding-top: .25rem;
+    margin-right: .25rem
+}
+
+.zixun-in .phone {
+    width: 1.25rem;
+    float: left;
+    padding-top: .125rem
+}
+
+.phone-yy {
+    width: 6.25rem
+}
+
+.phone-yy1 {
+    margin: 0 auto
+}
+
+.old {
+    width: 15.675rem;
+    height: 37.5rem;
+    margin: 0 auto;
+    padding-top: 1.025rem
+}
+
+.one {
+    width: 100%;
+    height: .875rem;
+    text-align: center;
+    font-size: .675rem;
+    color: #3e83d8;
+    line-height: .875rem
+}
+
+.two {
+    width: 100%;
+    height: .75rem;
+    text-align: center;
+    font-size: .55rem;
+    color: #ffa722;
+    line-height: .75rem
+}
+
+.three {
+    width: 100%;
+    height: .5rem;
+    text-align: center;
+    font-size: .5rem;
+    color: #8c8b8b;
+    line-height: .6rem
+}
+
+.old-in {
+    width: 90%;
+    height: 21.25rem;
+    padding-top: 1.75rem;
+    margin: 0 auto
+}
+
+.we {
+    width: .825rem;
+    height: 2.675rem;
+    float: left
+}
+
+.we em {
+    width: 100%;
+    display: block
+}
+
+.we .em1 {
+    height: 1.25rem;
+    background-color: #7eb0ed
+}
+
+.we .em2 {
+    height: 1.25rem;
+    background-color: #2e69b3
+}
+
+.old-l {
+    width: 90%;
+    height: auto;
+    float: left;
+    padding-left: 2%;
+    box-sizing: border-box
+}
+
+.old-l h3 {
+    width: 100%;
+    height: 1.75rem;
+    line-height: 1rem;
+    color: #ffa722;
+    font-size: 1.25rem
+}
+
+.old-arc {
+    width: 100%;
+    height: auto;
+    font-size: .55rem;
+    color: #7eb0ed;
+    line-height: .7rem;
+    padding-bottom: .75rem
+}
+
+.square {
+    width: 4rem;
+    height: 1rem;
+    background-color: #ffa722;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+    font-size: .75rem
+}
+
+.arc {
+    width: 100%;
+    height: auto;
+    font-size: .5rem;
+    line-height: .75rem;
+    color: #7eb0ed;
+    padding: .25rem 0 .5rem
+}
+
+.lunzi {
+    width: 11.5rem;
+    margin: 0 auto;
+    padding: 1.25rem 0 0
+}
+
+.baoy {
+    width: 90%;
+    height: 37.375rem;
+    margin: 0 auto;
+    padding: .75rem 5% 0;
+    background-color: #e3e8f8
+}
+
+.error {
+    width: 6.25rem;
+    height: 1.25rem;
+    margin: .75rem auto 0;
+    background-color: #ffa722;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: .75rem;
+    color: #fff
+}
+
+.yy {
+    margin: 0 auto;
+    width: 5rem;
+    height: .25rem
+}
+
+.baoy-t {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #fff;
+    padding-top: .025rem;
+    position: relative;
+    margin-top: 1.25rem;
+    box-shadow: 12.5rem 12.5rem 31.25rem #abb5d0
+}
+
+.by {
+    width: 6rem;
+    height: 4.3rem
+}
+
+.by1 {
+    margin: 1.4rem 0 0 7.9rem
+}
+
+.by2 {
+    margin: 1.4rem 0 0 1rem
+}
+
+.by h3 {
+    font-size: .75rem;
+    color: #ffa722;
+    line-height: 1.25rem;
+    width: 100%;
+    height: 1.25rem
+}
+
+.by p {
+    width: 100%;
+    height: auto;
+    font-size: .5rem;
+    color: #717171;
+    line-height: .7rem
+}
+
+.by2 h3,
+.by2 p {
+    text-align: right
+}
+
+.error1,
+.error2 {
+    width: 6.5rem;
+    border-radius: 50%;
+    position: absolute
+}
+
+.error1 {
+    top: -.5rem;
+    left: .25rem
+}
+
+.error2 {
+    bottom: -.5rem;
+    right: .25rem
+}
+
+.zixun3 {
+    margin: 1.5rem auto 0;
+    background-color: #ffa722
+}
+
+.zixun3 .zixun-in {
+    border: 6.25rem solid #fff
+}
+
+.phone-yy3 {
+    margin: 0 auto
+}
+
+.botox {
+    width: 90%;
+    height: 21.5rem;
+    margin: 0 auto;
+    padding-top: 1.4rem
+}
+
+.botox-l {
+    width: 100%;
+    height: 15rem;
+    padding-top: 1.5rem;
+    background: url(images/botox-bg.png) no-repeat top center;
+    background-size: contain
+}
+
+.bot-t {
+    width: 100%;
+    height: 3rem
+}
+
+.yao {
+    width: 2.8rem;
+    height: 3.125rem;
+    float: left
+}
+
+.re {
+    width: 4rem;
+    height: 2.5rem;
+    float: left;
+    padding-top: .25rem
+}
+
+.re-t {
+    width: 1.75rem;
+    height: 1.225rem;
+    background: url(images/leng.png) no-repeat top center;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: #3e83d8;
+    text-indent: .2em
+}
+
+.re-t1 {
+    margin: 0 auto
+}
+
+.re-b {
+    width: 100%;
+    height: 1.45rem;
+    line-height: 1.45rem;
+    font-size: 1.1rem;
+    color: #3e83d8;
+    text-transform: uppercase;
+    text-align: center
+}
+
+.bot-c {
+    width: 100%;
+    height: auto;
+    line-height: .8rem;
+    font-size: .55rem;
+    color: #656363;
+    padding-bottom: .75rem
+}
+
+.aq,
+.kuai,
+.xiao {
+    width: 100%;
+    height: 2.5rem
+}
+
+.aq-tu {
+    width: 1.9rem;
+    float: left
+}
+
+.aq-r,
+.k-r {
+    width: 12.5rem;
+    height: 1.5rem;
+    background-color: #ffa722;
+    float: right;
+    margin-top: .15rem;
+    line-height: 1.5rem;
+    color: #fff
+}
+
+.aq-r span {
+    font-size: .55rem;
+    float: right;
+    margin-right: .25rem
+}
+
+.aq-r strong,
+.k-r strong {
+    font-size: .65rem;
+    margin: 0 1.5rem 0 .25rem;
+    float: left
+}
+
+.k-tu {
+    width: 1.9rem;
+    float: left
+}
+
+.kuai .aq-r {
+    width: 5.425rem;
+    height: .675rem
+}
+
+.k-r strong {
+    float: left;
+    margin: 0 .25rem 0 .125rem
+}
+
+.k-r div {
+    float: right;
+    padding-top: .075rem;
+    margin-right: .25rem
+}
+
+.k-r div p {
+    font-size: .5rem;
+    line-height: .6rem
+}
+
+.k-r {
+    height: 1.375rem
+}
+
+.xiao .aq-r {
+    margin-top: .075rem;
+    height: 1.4rem
+}
+
+.xiao strong {
+    margin: 0 .125rem 0 .125rem
+}
+
+.xiao .aq-r span {
+    font-size: .55rem;
+    margin-right: 0
+}
+
+.leng2 {
+    width: 3.3rem;
+    float: left;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    text-indent: .2em;
+    background: url(images/leng2.png) no-repeat;
+    background-size: contain
+}
+
+.leng2 {
+    margin: 0 .5rem 0 1rem
+}
+
+.botox-l h3 {
+    float: left;
+    font-size: 2rem;
+    color: #3e83d8;
+    line-height: 2.5rem
+}
+
+.bos-r {
+    width: 14.5rem;
+    height: 23.75rem;
+    padding-top: 1.5rem;
+    margin: 0 auto
+}
+
+.bos-r h3,
+.ss-l h3 {
+    width: 8.8rem;
+    height: 2.825rem;
+    float: left;
+    font-size: 1.75rem;
+    color: #3e83d8;
+    line-height: 2.5rem;
+    white-space: nowrap
+}
+
+.bos-arc {
+    width: 100%;
+    height: auto;
+    padding: 3.5rem 0 .75rem 0;
+    line-height: .85rem;
+    font-size: .55rem;
+    color: #656363
+}
+
+.bos-r ul {
+    width: 13.5rem;
+    height: 12rem;
+    margin: 0 auto
+}
+
+.bos-r ul li {
+    position: relative;
+    width: 6.6rem;
+    height: 5.4rem;
+    float: left;
+    margin: 0 .075rem .125rem;
+    overflow: hidden
+}
+
+.bos-r ul img {
+    width: 100%
+}
+
+.bos-r ul li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #083975;
+    opacity: .65;
+    left: 0;
+    top: 0
+}
+
+.sh {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .8s
+}
+
+.sh em {
+    width: 1.025rem;
+    height: 1.025rem;
+    border: .05rem solid #fff;
+    font-size: 1rem;
+    line-height: 1.025rem;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    margin: .925rem auto 0;
+    font-style: normal;
+    color: #fff
+}
+
+.fa {
+    width: 100%;
+    height: 1.25rem;
+    line-height: 1rem;
+    font-size: .7rem;
+    color: #fff;
+    text-align: center
+}
+
+.lt {
+    width: 100%;
+    height: .6rem;
+    line-height: .75rem;
+    color: #fff;
+    font-size: .5rem;
+    text-align: center
+}
+
+.zixun5 {
+    margin: 0 auto;
+    background-color: #ffa722
+}
+
+.zixun5 .zixun-in {
+    border: 6.25rem solid #fff
+}
+
+.phone {
+    margin: 0 auto;
+    width: 6.25rem
+}
+
+.ss-l {
+    width: 14.5rem;
+    height: auto;
+    margin: 0 auto
+}
+
+.re-t2 {
+    margin-left: 2.075rem
+}
+
+.ss-tit {
+    line-height: 2.825rem;
+    color: #3e83d8;
+    font-size: 1.95rem
+}
+
+.ss-arc {
+    width: 100%;
+    height: auto;
+    font-size: .55rem;
+    color: #9f9fa1;
+    line-height: .75rem;
+    padding: .275rem 0 .95rem
+}
+
+.square2 {
+    width: 5.75rem;
+    height: 1.35rem;
+    text-align: center;
+    line-height: 1.35rem;
+    color: #fff;
+    font-size: .75rem;
+    background-color: #ffa722
+}
+
+.hs {
+    width: 100%;
+    height: 3.75rem
+}
+
+.phone-yya,
+.zixuna {
+    margin: 0 auto
+}
+
+.anli-in {
+    width: 86%;
+    height: 45rem;
+    margin: 0 auto;
+    padding: 1.25rem 5% 0;
+    background-color: #e3e8f8
+}
+
+.anli-in ul {
+    width: 100%;
+    height: 37.5rem;
+    padding-top: 1.25rem
+}
+
+.anli-in ul li {
+    width: 6.75rem;
+    height: auto;
+    padding: .25rem 0 0 .25rem;
+    background-color: #fff;
+    float: left
+}
+
+.anli-in ul li img {
+    width: 6.5rem
+}
+
+.bg05 {
+    width: 100%;
+    height: 1.34615385rem;
+    margin: 0 auto
+}
+
+.anli-in ul li.ri {
+    padding: .25rem 0 0 0
+}
+
+.zj {
+    width: 94%;
+    height: 13.75rem;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1rem
+}
+
+.lijie {
+    width: 6.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.zj-r {
+    width: 9rem;
+    height: auto;
+    top: 4.25rem;
+    right: 0;
+    position: absolute
+}
+
+.zj-r ul {
+    width: 100%;
+    height: 5.5rem;
+    border-bottom: 6.25rem solid #454648
+}
+
+.zj-r li {
+    font-size: .5rem;
+    color: #454648;
+    line-height: .6rem
+}
+
+.zj-arc {
+    width: 100%;
+    height: auto;
+    font-size: .5rem;
+    line-height: .65rem;
+    color: #454648;
+    padding-top: .25rem
+}
+
+.zj-yy {
+    margin: 0 auto;
+    width: 2.56410256rem
+}
+
+.zi {
+    width: 1.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    color: #ffa722;
+    position: absolute;
+    top: 3.75rem;
+    left: 4.25rem;
+    line-height: 1
+}
+
+
