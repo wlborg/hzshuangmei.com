@@ -179,6 +179,7 @@ a {
     top: -0.4rem;
     right: -0.275rem;
     font-size: .5rem;
+    margin-top: 0.05rem;
 }
 .rlposithree .tooparc {
     font-size: .45rem;
@@ -285,9 +286,9 @@ a {
     left: -0.15rem;
 }
 .zsfont {
-    width: 1.75rem;
+    width: 2.75rem;
     height: 3.9rem;
-    padding-top: 1.625rem;
+    padding-top: 1.425rem;
     padding-left: .1rem;
     font-size: .375rem;
     font-size: .45rem;
@@ -538,7 +539,7 @@ a {
     height: 13.375rem;
     margin: 0 auto;
     overflow: hidden;
-    background: url(//img.hzshuangmei.com/m/hzrlbns/images/like.png) no-repeat bottom left;
+    background: url(//img.hzshuangmei.com/m/hzrlbns/images/guan.png) no-repeat bottom left;
     background-size: 8.175rem 13.275rem;
 }
 .doctorarc {
@@ -548,8 +549,9 @@ a {
     margin-left: auto;
 }
 .doctorarc-t {
-    width: 100%;
+    width: 8.25rem;
     height: 1.575rem;
+    margin-left: auto;
     border-bottom: .025rem solid #afaec0;
 }
 .doctorarc-t li {
@@ -558,9 +560,10 @@ a {
 .dol {
     width: 3.65rem;
     height: 100%;
-    margin-left: 1.875rem;
+    /*margin-left: 1.875rem;*/
 }
 .dol p {
+    width: 10rem;
     font-size: .6rem;
     color: #fff;
 }
@@ -569,6 +572,7 @@ a {
     height: auto;
 }
 .likee img {
+    width: 3.8rem;
     margin-top: .275rem;
     margin-left: auto;
 }
@@ -609,12 +613,12 @@ a {
     background-size: 2.575rem 1.05rem;
 }
 .goodat em {
-    margin-right: .125rem;
+    margin-right: .05rem;
 }
 .goodatarc {
     width: 7.75rem;
     height: 1.7rem;
-    margin-top: 0.45rem;
+    margin-top: .45rem;
     margin-left: auto;
     font-size: .55rem;
     line-height: .875rem;
@@ -655,9 +659,6 @@ a {
 }
 .sjimgy {
     width: 1.825rem;
-}
-.likee img {
-    width: 2.45rem;
 }
 .lover {
     width: 7.975rem;
