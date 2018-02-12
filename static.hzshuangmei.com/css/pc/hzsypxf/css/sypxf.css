@@ -37,7 +37,7 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .m1_con1 h4{
     padding-top: 82px;
-    width: 476px;
+   text-align: center;
     height: 34px;
     font-size: 34px;
     line-height: 34px;
@@ -53,7 +53,6 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 .m1_con1 p{
     margin: auto;
-    width: 752px;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
@@ -438,7 +437,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .pagecont>.left>h5{
     margin-top: 50px;
     margin-bottom: 26px;
-    width: 232px;
+    /*width: 232px;*/
     height: 32px;
     font-size: 31px;
     line-height: 32px;
