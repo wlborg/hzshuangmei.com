@@ -437,7 +437,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .pagecont>.left>h5{
     margin-top: 50px;
     margin-bottom: 26px;
-    width: 232px;
+    /*width: 232px;*/
     height: 32px;
     font-size: 31px;
     line-height: 32px;
