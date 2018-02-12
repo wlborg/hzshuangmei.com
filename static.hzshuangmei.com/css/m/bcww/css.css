@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+ul,
+li {
+    list-style: none;
+}
+img {
+    display: block;
+    border: 0;
+}
+em {
+    font-style: normal;
+}
+body {
+    font-family: "微软雅黑";
+}
+p,
+span {
+    font-size: 0.5rem;
+}
+h3 {
+    font-size: 0.6rem;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.banner {
+    width: 100%;
+    margin-top: 1.625rem;
+}
+.lead {
+    width: 100%;
+    height: 4.75rem;
+    padding: 0.5rem 0.25rem 0;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    color: #fff;
+    border-bottom: 0.225rem solid #d9dfe3;
+    background-color: #9faeb9;
+}
+.xone {
+    width: 7.425rem;
+    height: 11.25rem;
+    padding-right: 0.625rem;
+    margin-top: 0.75rem;
+    margin-left: auto;
+}
+.xone p {
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    color: #595e5b;
+}
+.xone strong {
+    font-weight: 700;
+}
+.ptwo {
+    width: 100%;
+    height: auto;
+    padding-top: 0.375rem;
+}
+.str2 {
+    font-size: 0.7rem;
+}
+.xone-box {
+    position: relative;
+    width: 100%;
+    height: 12rem;
+}
+.main1-bg {
+    position: absolute;
+    bottom: -1.25rem;
+    left: 0;
+    z-index: 2;
+    width: 8rem;
+    height: 11.25rem;
+}
+.xtwo-box {
+    position: relative;
+    width: 100%;
+    height: 8.475rem;
+    overflow: hidden;
+    background-color: #dee7ee;
+}
+.xtwo-box img {
+    width: 15.825rem;
+    height: 6.625rem;
+    margin-top: 1.1rem;
+}
+.xtwo-box h3 {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.95rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 0.95rem;
+    text-align: center;
+    color: #9faeb9;
+    -webkit-box-reflect: below 0.025rem -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.3, transparent), to(rgba(3, 3, 3, 0.4)));
+    -moz-box-reflect: below 0.025rem -moz-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.3, transparent), to(rgba(3, 3, 3, 0.4)));
+    -ms-box-reflect: below 0.025rem -ms-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.3, transparent), to(rgba(3, 3, 3, 0.4)));
+    -o-box-reflect: below 0.025rem -o-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.3, transparent), to(rgba(3, 3, 3, 0.4)));
+}
+.xthree-box {
+    width: 100%;
+    height: 16.25rem;
+    padding-top: 1.75rem;
+    margin-top: 0.5rem;
+    background-color: #dee7ee;
+}
+.title {
+    width: 100%;
+    height: 3.75rem;
+}
+.title h3 {
+    width: 100%;
+    height: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #9faeb9;
+}
+.title h3 strong {
+    font-weight: 700;
+    color: #9faeb9;
+}
+.title h5 {
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.3rem;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    color: #9faeb9;
+}
+.gra {
+    position: relative;
+    width: 15rem;
+    height: 0.05rem;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(left, transparent, #f74c80, transparent);
+}
+.gra em {
+    position: absolute;
+    bottom: -0.05rem;
+    left: 50%;
+    width: 2.95rem;
+    height: 0.15rem;
+    margin-left: -1.4rem;
+    background-color: #f74c80;
+}
+.xthree-box ul {
+    width: 100%;
+    height: 8.225rem;
+}
+.xthree-box ul li {
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 6.7rem;
+    margin: 0 .5%;
+}
+.xthree-box ul li img {
+    width: 100%;
+}
+.toum {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.75rem;
+    padding: 1rem 0 0 0.15rem;
+    box-sizing: border-box;
+    background-color: rgba(177, 189, 198, 0.8);
+}
+.toum p {
+    font-size: 0.5rem;
+    color: #fff;
+}
+.btt {
+    width: 14rem;
+    height: 1.175rem;
+    margin: 0 auto;
+    font-size: 0.55rem;
+    line-height: 1.175rem;
+    text-align: center;
+    color: #5a605d;
+    border: 0.025rem solid #5a605d;
+}
+.determined {
+    width: 1.375rem;
+    height: 1.375rem;
+    margin: 0 auto;
+    margin: 0.9rem auto 0;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.determined img {
+    width: 0.575rem;
+    height: 0.475rem;
+    margin: 0.5rem auto 0;
+}
+.xfour-box {
+    width: 100%;
+    height: 22.5rem;
+    padding-top: 1.25rem;
+}
+.yuanli {
+    width: 100%;
+    height: 16rem;
+}
+.yuanli h3,
+.yuanli2 h3 {
+    height: 1.25rem;
+    font-size: 0.75rem;
+    text-indent: 0.25rem;
+    color: #8b9ba7;
+}
+.yuanli h3 strong,
+.yuanli2 h3 strong {
+    font-weight: 700;
+}
+.yuanli ul {
+    width: 98%;
+    height: 7.25rem;
+    margin: 0 auto;
+    background-color: #aeb8be;
+}
+.yuanli ul li {
+    float: left;
+    width: 27%;
+    height: 100%;
+    margin: 0 3%;
+}
+.yuanli ul li p {
+    font-size: 0.55rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4b5d60;
+}
+.yuanli ul li img {
+    width: 100%;
+    border: 0.05rem solid #fff;
+}
+.yuanliArc {
+    width: 98%;
+    padding: 0.4rem 0;
+    margin: 0 auto;
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+    text-indent: 1rem;
+    color: #748693;
+}
+.yuanli ol {
+    float: left;
+    width: 9.4rem;
+    height: 5.5rem;
+}
+.yuanli ol li {
+    float: left;
+    width: 4.6rem;
+    height: 100%;
+}
+.yuanli ol li img {
+    width: 100%;
+}
+.yuanli ol li p {
+    width: 100%;
+    height: auto;
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+    text-align: center;
+    color: #748694;
+}
+.zixun {
+    float: left;
+    width: 5rem;
+    height: 1.625rem;
+    margin: 2.5rem 0 0 0.75rem;
+    border: 0.025rem solid #595e5b;
+}
+.zixun a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: #595e5b;
+}
+.zixun a span {
+    float: left;
+    width: 1.075rem;
+    height: 1.075rem;
+    margin: 0.3rem 0 0 0.25rem;
+    font-size: 0.55rem;
+    border-radius: 50%;
+    background-color: #d2dbe2;
+}
+.zixun a span img {
+    width: 0.475rem;
+    height: 0.575rem;
+    margin: 0.25rem auto 0;
+}
+.zixun em {
+    float: left;
+    margin: 0.25rem 0 0 0.25rem;
+    font-style: normal;
+    line-height: 1.2rem;
+}
+.xfive-box {
+    width: 100%;
+    height: 13.5rem;
+    padding-top: 1rem;
+    background-color: #dee7ee;
+}
+.yuanli2 {
+    width: 89%;
+    height: 13.5rem;
+    margin: 0 auto;
+}
+.yuanli2-l {
+    float: left;
+    width: 9.475rem;
+    height: 11.35rem;
+}
+.yuanli2-l img {
+    width: 8.65rem;
+    height: 7.1rem;
+    border: 0.2rem solid #aeb8be;
+}
+.yuanli2-Arc {
+    width: 100%;
+    height: auto;
+    padding: 0.4rem 0;
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+    color: #748693;
+}
+.yuanli2-r {
+    float: left;
+    width: 4.6rem;
+    height: 10.65rem;
+}
+.yuanli2-r img {
+    width: 100%;
+}
+.yuanli2-r p {
+    width: 100%;
+    height: 0.95rem;
+    font-size: 0.6rem;
+    line-height: 0.95rem;
+    text-align: center;
+    color: #748694;
+}
+.xsix-box {
+    width: 100%;
+    height: 17.5rem;
+    padding-top: 0.75rem;
+}
+.xsix-box .yuanli ul li {
+    width: 23%;
+    margin: 0.25rem 1% 0;
+}
+.xsix-box .yuanli ul li p {
+    font-size: 0.5rem;
+    font-weight: normal;
+    line-height: 0.75rem;
+}
+.xsix-box .yuanli ul li img {
+    margin-bottom: 0.25rem;
+}
+.xseven-box {
+    width: 100%;
+    height: 21rem;
+    padding-top: 1.625rem;
+}
+.xseven-box li {
+    float: left;
+    width: 45%;
+    height: 8rem;
+    margin: 0 2.5%;
+}
+.xseven-box li .top {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+.xseven-box li .bottom {
+    width: 96%;
+    height: auto;
+    padding-top: 0.375rem;
+    margin: 0 auto;
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+    color: #434e57;
+}
+.sanjiao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: .6;
+    border-right: 4rem solid transparent;
+    border-bottom: 2rem solid #f05c8d;
+}
+.xseven-box li img {
+    width: 100%;
+}
+.xseven-box li .top p {
+    position: absolute;
+    top: 3.5rem;
+    left: 0.4rem;
+    font-size: 0.75rem;
+    color: #fff;
+}
+.xeight-box {
+    width: 100%;
+    height: 21.9rem;
+    padding-top: 0.5rem;
+    background-color: #dee7ee;
+}
+.mian6-content {
+    position: relative;
+    width: 12.75rem;
+    height: 14.25rem;
+    margin-top: 1.25rem;
+    margin-left: 2rem;
+    border: 0.025rem solid #91b1b3;
+}
+.m6-in {
+    position: absolute;
+    top: -0.95rem;
+    left: -1rem;
+    width: 13rem;
+    height: 14.5rem;
+    padding: 0.25rem 0 0 0.125rem;
+    background: radial-gradient(#fff, #e6eaec, #bfc8cf);
+    background: -webkit-radial-gradient(#fff, #e6eaec, #bfc8cf);
+    background: -moz-radial-gradient(#fff, #e6eaec, #bfc8cf);
+    background: -ms-radial-gradient(#fff, #e6eaec, #bfc8cf);
+    background: -o-radial-gradient(#fff, #e6eaec, #bfc8cf);
+}
+.lj {
+    width: 100%;
+    height: 2.075rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+.m6-in li {
+    width: 100%;
+    height: 0.75rem;
+    font-size: 0.5rem;
+    color: #454648;
+}
+.m6-in li img {
+    display: inline-block;
+    width: 0.225rem;
+    height: 0.225rem;
+    margin-right: 0.375rem;
+}
+.jpxm {
+    width: 100%;
+    height: 1.375rem;
+    margin-top: 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    border-top: 0.05rem solid #afb4b8;
+}
+.m6-arc {
+    font-size: 0.55rem;
+    line-height: 0.75rem;
+    color: #454648;
+}
+.lijietu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.zxzj {
+    position: absolute;
+    bottom: -0.575rem;
+    left: 2.175rem;
+    width: 8rem;
+    height: 1.8rem;
+    border-radius: 0.125rem;
+    background-color: #fd5588;
+}
+.zxzj a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0.85rem;
+    line-height: 1.8rem;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+.zxzj a em {
+    padding-left: 0.25rem;
+    margin-left: 0.25rem;
+    font-style: normal;
+    border-left: 0.1rem solid #fff;
+}
+.lijie {
+    position: absolute;
+    top: -0.75rem;
+    right: 0;
+    width: 5.15rem;
+    height: 8rem;
+}
+.padfoot {
+    height: 1.825rem;
+}
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    font-size: 0.4rem;
+    border: 0.025rem #e1e1e1 solid;
+    background-color: #fafafa;
+}
