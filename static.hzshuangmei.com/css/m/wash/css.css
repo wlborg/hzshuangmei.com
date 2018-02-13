@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    font-size: 100/40rem
+    font-size: 2.5rem
 }
 
 * {
@@ -9,18 +9,12 @@ html {
     padding: 0
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
-    font-weight: normal
+    font-weight: 400
 }
 
-ul,
-li {
+li, ul {
     list-style: none
 }
 
@@ -41,13 +35,12 @@ body {
     font-family: "微软雅黑"
 }
 
-p,
-span {
-    font-size: 0.2*100/40rem
+p, span {
+    font-size: .5rem
 }
 
 h3 {
-    font-size: 0.24*100/40rem
+    font-size: .6rem
 }
 
 a {
@@ -56,8 +49,7 @@ a {
     text-decoration: none
 }
 
-.clearfix:before,
-.clearfix:after {
+.clearfix:after, .clearfix:before {
     display: table;
     content: ""
 }
@@ -72,37 +64,37 @@ a {
 
 .banner {
     width: 100%;
-    margin-top: 0.7*100/40rem
+    margin-top: 1.75rem
 }
 
 .main-one {
     width: 100%;
-    height: 6*100/40rem;
+    height: 15rem;
     margin: 0 auto;
-    padding-top: 0.5*100/40rem
+    padding-top: 1.25rem
 }
 
 .title1 {
-    width: 4.1*100/40rem
+    width: 10.25rem
 }
 
 .title1 img {
-    width: 3.61*100/40rem;
-    height: 0.31*100/40rem
+    width: 9.025rem;
+    height: .775rem
 }
 
 .title {
-    height: 0.93*100/40rem;
+    height: 2.325rem;
     margin: 0 auto;
     position: relative
 }
 
 .title h3 {
-    font-size: 0.34*100/40rem;
+    font-size: .85rem;
     font-weight: 700;
     color: #a25084;
     text-align: center;
-    line-height: 0.5*100/40rem
+    line-height: 1.25rem
 }
 
 .title img {
@@ -110,46 +102,46 @@ a {
 }
 
 .title span {
-    width: 1.38*100/40rem;
-    height: 0.32*100/40rem;
+    width: 3.45rem;
+    height: .8rem;
     position: absolute
 }
 
 .title .xian1 {
-    border-top: 1/40rem solid #b393b3;
-    border-left: 1/40rem solid #b393b3;
+    border-top: .025rem solid #b393b3;
+    border-left: .025rem solid #b393b3;
     top: 0;
     left: 0
 }
 
 .title .xian2 {
-    border-bottom: 1/40rem solid #b393b3;
-    border-right: 1/40rem solid #b393b3;
+    border-bottom: .025rem solid #b393b3;
+    border-right: .025rem solid #b393b3;
     bottom: 0;
     right: 0
 }
 
 .title em {
     position: absolute;
-    width: 0.05*100/40rem;
-    height: 0.05*100/40rem;
+    width: .125rem;
+    height: .125rem;
     background-color: #b393b3;
     border-radius: 50%
 }
 
 .main1-center {
     width: 100%;
-    height: 4*100/40rem;
-    border: 0.02*100/40rem solid #D0B5D0;
-    margin-top: 0.575*100/40rem;
-    padding-top: 0.08125*100/40rem;
+    height: 10rem;
+    border: .05rem solid #D0B5D0;
+    margin-top: 1.4375rem;
+    padding-top: .203125rem;
     position: relative;
     box-sizing: border-box
 }
 
 .mian1Cin {
     width: 98%;
-    height: 3.8*100/40rem;
+    height: 9.5rem;
     background-color: #f4e8ed;
     margin: 0 auto;
     position: relative
@@ -157,15 +149,15 @@ a {
 
 .ximei {
     position: absolute;
-    height: 2.56*100/40rem;
-    width: 1.69*100/40rem;
-    top: 0.8*100/40rem;
-    left: 0.12*100/40rem
+    height: 6.4rem;
+    width: 4.225rem;
+    top: 2rem;
+    left: .3rem
 }
 
 .ximei img {
-    width: 1.69*100/40rem;
-    height: 1.6*100/40rem;
+    width: 4.225rem;
+    height: 4rem;
     margin: 0 auto
 }
 
@@ -174,46 +166,43 @@ a {
     height: 0;
     border-style: solid;
     border-color: #dec2d2 transparent transparent transparent;
-    border-width: 0.1*100/40rem;
+    border-width: .25rem;
     margin: 0 auto
 }
 
 .ximei h3 {
-    font-size: 0.2*100/40rem;
+    font-size: .5rem;
     color: #9d5f86;
-    line-height: 0.3*100/40rem;
+    line-height: .75rem;
     font-weight: 700;
     text-align: center
 }
 
 .ximei p {
-    font-size: 0.2*100/40rem;
+    font-size: .5rem;
     color: #ac6994;
     text-align: center
 }
 
 .ximei2 {
-    top: 0.3*100/40rem;
-    left: 1.35*100/40rem;
-    width: 2.2*100/40rem
+    top: .75rem;
+    left: 3.375rem;
+    width: 5.5rem
 }
 
-.ximei2 h3,
-.ximei2 p,
-.ximei3 h3,
-.ximei3 p {
+.ximei2 h3, .ximei2 p, .ximei3 h3, .ximei3 p {
     text-align: center;
     white-space: nowrap
 }
 
 .ximei2 .triangle {
     border-color: transparent transparent #dec2d2 transparent;
-    margin: 0.093*100/40rem auto 0
+    margin: .2325rem auto 0
 }
 
 .ximei3 {
-    left: 2.8*100/40rem;
-    width: 2.3*100/40rem
+    left: 7rem;
+    width: 5.75rem
 }
 
 .ximei3 .triangle {
@@ -221,8 +210,8 @@ a {
 }
 
 .ximei4 {
-    left: 4.6*100/40rem;
-    top: 0.3*100/40rem
+    left: 11.5rem;
+    top: .75rem
 }
 
 .ximei4 .triangle {
@@ -230,95 +219,90 @@ a {
     border-color: transparent transparent #dec2d2 transparent
 }
 
-.lt,
-.br {
-    width: 0.57*100/40rem;
-    height: 0.55*100/40rem
+.br, .lt {
+    width: 1.425rem;
+    height: 1.375rem
 }
 
 .lt {
     position: absolute;
-    top: -0.04*100/40rem;
-    left: -0.02*100/40rem;
+    top: -.1rem;
+    left: -.05rem;
     z-index: 2
 }
 
 .br {
     position: absolute;
-    bottom: -0.031*100/40rem;
-    right: -0.012*100/40rem;
+    bottom: -.0775rem;
+    right: -.03rem;
     z-index: 2
 }
 
 .main-two {
     width: 100%;
-    height: 6*100/40rem;
+    height: 15rem;
     background-color: #EFDDE8
 }
 
 .main2-in {
     width: 100%;
-    height: 5.8*100/40rem;
+    height: 14.5rem;
     margin: 0 auto;
-    padding-top: 0.25*100/40rem
+    padding-top: .625rem
 }
 
 .title2 {
-    width: 3.23*100/40rem
+    width: 8.075rem
 }
 
 .title2 img {
-    width: 2.99*100/40rem;
-    height: 0.33*100/40rem
+    width: 7.475rem;
+    height: .825rem
 }
 
-.title2 h3,
-.title3 h3,
-.title4 h3,
-.title5 h3 {
+.title2 h3, .title3 h3, .title4 h3, .title5 h3 {
     color: #80427c;
-    font-size: 0.26*100/40rem
+    font-size: .65rem
 }
 
 .main2-in ul {
     width: 100%;
-    height: 2.1*100/40rem;
-    padding-top: 0.31*100/40rem
+    height: 5.25rem;
+    padding-top: .775rem
 }
 
 .main2-in ul li {
     float: left;
     width: 32%;
-    height: 1.93*100/40rem;
+    height: 4.825rem;
     position: relative;
     margin-right: 2%
 }
 
 .main2-in ul li img {
-    border-radius: 10/40rem;
+    border-radius: .25rem;
     width: 100%
 }
 
 .main2-in ul li span {
     background-color: #fff;
-    opacity: 0.3;
-    filter: Alpha(opacity=30)
+    opacity: .3;
+    filter: alpha(opacity=30)
 }
 
-.main2-in ul li span,
-.main2-in ul li p {
+.main2-in ul li p, .main2-in ul li span {
     position: absolute;
     width: 100%;
-    height: 0.38*100/40rem;
-    top: 1.29*100/40rem;
+    height: .95rem;
+    top: 3.225rem;
     left: 0
 }
 
 .main2-in ul li p {
     text-align: center;
-    line-height: 0.38*100/40rem;
+    line-height: .95rem;
     color: #592e56;
-    font-size: 0.26*100/40rem;
+    font-size: .65rem;
     font-weight: 700
 }
 
@@ -328,25 +312,25 @@ a {
 
 .main2-arc {
     width: 96%;
-    height: 1.3*100/40rem;
-    border: 1/40rem solid #b393b3;
-    border-radius: 10/40rem;
-    font-size: 0.22*100/40rem;
+    height: 3.25rem;
+    border: .025rem solid #b393b3;
+    border-radius: .25rem;
+    font-size: .55rem;
     color: #592e56;
-    line-height: 0.28*100/40rem;
-    padding: 0.08*100/40rem 0.06*100/40rem 0;
+    line-height: .7rem;
+    padding: .2rem .15rem 0;
     margin: 0 auto
 }
 
 .main2-arc strong {
-    font-size: 0.22*100/40rem;
+    font-size: .55rem;
     font-weight: 700
 }
 
 .zx {
-    width: 2.2*100/40rem;
-    height: 0.6*100/40rem;
-    margin: 0.31*100/40rem auto 0;
+    width: 5.5rem;
+    height: 1.5rem;
+    margin: .775rem auto 0;
     background-color: #a25084;
     overflow: hidden;
     position: relative
@@ -361,138 +345,136 @@ a {
 
 .zx i {
     display: block;
-    width: 2*100/40rem;
-    height: 0.39*100/40rem;
+    width: 5rem;
+    height: .975rem;
     margin: 0 auto;
-    margin-top: 0.08*100/40rem;
-    line-height: 0.39*100/40rem;
+    margin-top: .2rem;
+    line-height: .975rem;
     color: #fff;
-    font-size: 0.34*100/40rem;
-    background: url(https://img.hzshuangmei.com/m/wash/jia.png) no-repeat right center;
+    font-size: .85rem;
+    background: url(images/jia.png) no-repeat right center;
     background-size: contain;
-    text-indent: 0.5em
+    text-indent: .5em
 }
 
-.sjtl,
-.sjbr {
+.sjbr, .sjtl {
     width: 0;
     height: 0;
     position: absolute
 }
 
 .sjtl {
-    border-top: 0.18*100/40rem solid #EFDDE8;
-    border-right: 0.18*100/40rem solid transparent;
+    border-top: .45rem solid #EFDDE8;
+    border-right: .45rem solid transparent;
     top: 0;
     left: 0
 }
 
 .sjbr {
-    border-bottom: 0.18*100/40rem solid #EFDDE8;
-    border-left: 0.18*100/40rem solid transparent;
+    border-bottom: .45rem solid #EFDDE8;
+    border-left: .45rem solid transparent;
     bottom: 0;
     right: 0
 }
 
 .main-three {
     width: 100%;
-    height: 8.6*100/40rem;
+    height: 21.5rem;
     margin: 0 auto;
-    padding-top: 0.37*100/40rem;
+    padding-top: .925rem;
     position: relative
 }
 
 .title3 {
-    width: 3.25*100/40rem
+    width: 8.125rem
 }
 
 .title3 img {
-    width: 1.53*100/40rem;
-    height: 0.35*100/40rem
+    width: 3.825rem;
+    height: .875rem
 }
 
 .liti1 {
     width: 100%;
-    height: 0.07*100/40rem;
+    height: .175rem;
     background-color: #bf83a9;
     position: relative
 }
 
-.main3Sj1,
-.main3Sj2 {
+.main3Sj1, .main3Sj2 {
     position: absolute;
     width: 0;
     height: 0
 }
 
 .main3Sj1 {
-    border-top: 0.07*100/40rem solid #fff;
-    border-right: 0.12*100/40rem solid transparent;
+    border-top: .175rem solid #fff;
+    border-right: .3rem solid transparent;
     top: 0;
     left: 0
 }
 
 .main3Sj2 {
-    border-top: 0.08*100/40rem solid #fff;
-    border-left: 0.12*100/40rem solid transparent;
+    border-top: .2rem solid #fff;
+    border-left: .3rem solid transparent;
     bottom: 0;
     right: 0
 }
 
 .liti2 {
     width: 100%;
-    height: 0.8*100/40rem;
+    height: 2rem;
     background-color: #a25084
 }
 
 .liti {
     width: 100%;
-    height: 0.96*100/40rem;
-    margin-top: 0.39*100/40rem
+    height: 2.4rem;
+    margin-top: .975rem
 }
 
 .litinum {
-    padding: 0.25*100/40rem 0 0 0.2*100/40rem;
+    padding: .625rem 0 0 .5rem;
     float: left;
-    width: 0.43*100/40rem;
-    height: 0.29*100/40rem
+    width: 1.075rem;
+    height: .725rem
 }
 
 .liti2 h3 {
-    font-size: 0.28*100/40rem;
+    font-size: .7rem;
     color: #fff;
     font-weight: 700;
-    line-height: 0.8*100/40rem;
+    line-height: 2rem;
     float: left;
-    width: 1.64*100/40rem;
+    width: 4.1rem;
     height: 100%;
     text-align: center
 }
 
 .youshi {
-    padding-top: 0.26*100/40rem;
+    padding-top: .65rem;
     float: left;
-    width: 0.55*100/40rem;
-    height: 0.27*100/40rem
+    width: 1.375rem;
+    height: .675rem
 }
 
 .zx2 {
     float: right;
-    margin: 0.1*100/40rem 0.23*100/40rem 0 0;
+    margin: .25rem .575rem 0 0;
     background-color: #bf83a9
 }
 
 .zx2 .sjtl {
-    border-top: 0.18*100/40rem solid #a25084
+    border-top: .45rem solid #a25084
 }
 
 .zx2 .sjbr {
-    border-bottom: 0.18*100/40rem solid #a25084
+    border-bottom: .45rem solid #a25084
 }
 
 .yinying {
     width: 100%;
-    height: 0.2*100/40rem;
+    height: .5rem;
     background: linear-gradient(#D4BECC, transparent);
     background: -webkit-linear-gradient(#D4BECC, transparent);
     background: -o-linear-gradient(#D4BECC, transparent);
@@ -502,103 +484,103 @@ a {
 
 .main3-center {
     width: 100%;
-    height: 5.89*100/40rem;
-    background: url(https://img.hzshuangmei.com/m/wash/main3-bg.png) no-repeat left center;
+    height: 14.725rem;
+    background: url(images/main3-bg.png) no-repeat left center;
     background-size: contain
 }
 
 .main3arc {
-    width: 4.5*100/40rem;
-    height: 4.08*100/40rem;
+    width: 11.25rem;
+    height: 10.2rem;
     margin-left: auto;
-    padding-top: 0.1*100/40rem
+    padding-top: .25rem
 }
 
 .main3arc div {
     width: 100%;
-    height: 0.8*100/40rem
+    height: 2rem
 }
 
 .main3arc div em {
-    width: 0.3*100/40rem;
-    height: 0.3*100/40rem;
-    border: 0.02*100/40rem solid #a25084;
+    width: .75rem;
+    height: .75rem;
+    border: .05rem solid #a25084;
     display: block;
     text-align: center;
-    line-height: 0.3*100/40rem;
+    line-height: .75rem;
     color: #928d90;
-    font-size: 0.26*100/40rem;
+    font-size: .65rem;
     border-radius: 50%;
     background-color: #fff;
     font-style: normal
 }
 
 .main3arc div p {
-    font-size: 0.2*100/40rem;
+    font-size: .5rem;
     color: #928d90;
-    line-height: 0.26*100/40rem;
+    line-height: .65rem;
     text-indent: 1em
 }
 
 .main3arc div p strong {
-    font-size: 0.2*100/40rem;
+    font-size: .5rem;
     font-weight: 700
 }
 
 div.distance1 em {
-    margin-left: 1.4*100/40rem
+    margin-left: 3.5rem
 }
 
 div.distance1 p {
-    text-indent: 1.8*100/40rem
+    text-indent: 4.5rem
 }
 
 div.distance2 em {
-    margin-left: 1.9*100/40rem
+    margin-left: 4.75rem
 }
 
 div.distance2 p {
-    text-indent: 2.3*100/40rem
+    text-indent: 5.75rem
 }
 
 div.distance3 em {
-    margin-left: 2.2*100/40rem
+    margin-left: 5.5rem
 }
 
 div.distance3 p {
-    text-indent: 2.4*100/40rem
+    text-indent: 6rem
 }
 
 div.distance4 em {
-    margin-left: 2.2*100/40rem
+    margin-left: 5.5rem
 }
 
 div.distance4 p {
-    text-indent: 2.4*100/40rem
+    text-indent: 6rem
 }
 
 div.distance5 em {
-    margin-left: 2*100/40rem
+    margin-left: 5rem
 }
 
 div.distance6 em {
-    margin-left: 1.5*100/40rem
+    margin-left: 3.75rem
 }
 
 div.distance5 p {
-    text-indent: 2.2*100/40rem
+    text-indent: 5.5rem
 }
 
 div.distance6 p {
-    text-indent: 1.8*100/40rem
+    text-indent: 4.5rem
 }
 
 .main3eng {
-    width: 2.2*100/40rem;
-    height: 0.36*100/40rem;
-    margin: 0.23*100/40rem auto 0;
-    border: 0.02*100/40rem solid #a25084;
-    border-radius: 10/40rem
+    width: 5.5rem;
+    height: .9rem;
+    margin: .575rem auto 0;
+    border: .05rem solid #a25084;
+    border-radius: .25rem
 }
 
 .main3eng a {
@@ -609,89 +591,87 @@ div.distance6 p {
 
 .main3eng img {
     margin: 0 auto;
-    padding-top: 0.1*100/40rem
+    padding-top: .25rem
 }
 
 .lititwo {
     position: absolute;
-    bottom: -0.53*100/40rem;
+    bottom: -1.325rem;
     z-index: 2
 }
 
-.litithree .main3Sj1,
-.litithree .main3Sj2 {
-    border-top: 0.07*100/40rem solid #F0E3EB
+.litithree .main3Sj1, .litithree .main3Sj2 {
+    border-top: .175rem solid #F0E3EB
 }
 
 .mian-four {
     width: 100%;
-    height: 5.8*100/40rem;
+    height: 14.5rem;
     background-color: #f0e3eb;
     position: relative
 }
 
 .main4-in {
     width: 100%;
-    height: 4.5*100/40rem;
+    height: 11.25rem;
     margin: 0 auto;
-    padding-top: 0.8*100/40rem
+    padding-top: 2rem
 }
 
 .mian4img {
     width: 100%;
-    height: 1.9*100/40rem;
-    background: url(https://img.hzshuangmei.com/m/wash/xian.png) no-repeat center center;
+    height: 4.75rem;
+    background: url(images/xian.png) no-repeat center center;
     background-size: contain
 }
 
 .mian4img img {
     float: left;
-    width: 1.38*100/40rem;
-    height: 1.38*100/40rem;
+    width: 3.45rem;
+    height: 3.45rem;
     border-radius: 50%;
-    margin: 0.2*100/40rem 0.03*100/40rem 0/40rem 0.16*100/40rem
+    margin: .5rem .075rem 0 .4rem
 }
 
 .main4-in ul {
     width: 100%;
-    height: 2*100/40rem;
-    padding-top: 0.18*100/40rem
+    height: 5rem;
+    padding-top: .45rem
 }
 
 .main4-in ul li {
     float: left;
     width: 24.2%;
-    height: 2.1*100/40rem;
+    height: 5.25rem;
     background-color: #e9d5e1;
-    border-radius: 10/40rem;
-    position: relative;
-    padding: 0.25*100/40rem 0.05*100/40rem 0;
-    font-size: 0.2*100/40rem;
+    border-radius: .25rem;
+    padding: .625rem .125rem 0;
+    font-size: .5rem;
     color: #6f5b68;
-    line-height: 0.24*100/40rem;
+    line-height: .6rem;
     position: relative;
     margin-right: 1%;
     box-sizing: border-box
 }
 
 .main4-in ul li.toppadding {
-    padding-top: 0.5*100/40rem
+    padding-top: 1.25rem
 }
 
 .main4-in ul li h3 {
     position: absolute;
-    border: 1/40rem solid #a25084;
-    width: 1.2*100/40rem;
-    height: 0.32*100/40rem;
-    top: -0.15*100/40rem;
+    border: .025rem solid #a25084;
+    width: 3rem;
+    height: .8rem;
+    top: -.375rem;
     left: 50%;
-    margin-left: -0.6*100/40rem;
-    border-radius: 10/40rem;
+    margin-left: -1.5rem;
+    border-radius: .25rem;
     text-align: center;
-    line-height: 0.32*100/40rem;
+    line-height: .8rem;
     color: #a25084;
     font-weight: 700;
-    font-size: 0.24*100/40rem
+    font-size: .6rem
 }
 
 .main4-in ul li.nomargin {
@@ -700,24 +680,24 @@ div.distance6 p {
 
 .litithree {
     position: absolute;
-    bottom: -0.5*100/40rem
+    bottom: -1.25rem
 }
 
 .main-five {
     width: 100%;
-    height: 5.5*100/40rem;
-    padding-top: 1.3*100/40rem;
+    height: 13.75rem;
+    padding-top: 3.25rem;
     margin: 0 auto
 }
 
 .main-five ul {
     width: 100%;
-    height: 4.5*100/40rem
+    height: 11.25rem
 }
 
 .main-five ul li {
     width: 31%;
-    height: 4*100/40rem;
+    height: 10rem;
     float: left;
     margin: 0 1%
 }
@@ -731,40 +711,40 @@ div.distance6 p {
 }
 
 .main-five .main4num1 {
-    width: 0.15*100/40rem;
-    height: 0.39*100/40rem
+    width: .375rem;
+    height: .975rem
 }
 
 .main-five .main4num2 {
-    width: 0.27*100/40rem;
-    height: 0.4*100/40rem
+    width: .675rem;
+    height: 1rem
 }
 
 .main-five .main4num3 {
-    width: 0.27*100/40rem;
-    height: 0.41*100/40rem
+    width: .675rem;
+    height: 1.025rem
 }
 
 .main-five ul li h3 {
-    font-size: 0.22*100/40rem;
+    font-size: .55rem;
     color: #a25084;
-    line-height: 0.4*100/40rem;
+    line-height: 1rem;
     font-weight: 700;
     text-align: center
 }
 
 .main4eng {
     width: 100%;
-    height: 0.275*100/40rem;
-    line-height: 0.275*100/40rem;
-    font-size: 0.15*100/40rem;
+    height: .6875rem;
+    line-height: .6875rem;
+    font-size: .375rem;
     text-transform: uppercase;
     text-align: center;
     color: #c4c3c4
 }
 
 .main4eng em {
-    font-size: 0.24*100/40rem;
+    font-size: .6rem;
     color: #c77cac;
     font-style: normal;
     float: left;
@@ -772,38 +752,38 @@ div.distance6 p {
 }
 
 .main4eng span {
-    line-height: 0.32*100/40rem;
+    line-height: .8rem;
     float: left;
     text-align: center;
-    font-size: 0.12*100/40rem;
+    font-size: .3rem;
     white-space: normal;
     width: 80%
 }
 
 .main-five ul li p {
-    font-size: 0.2*100/40rem;
-    line-height: 0.26*100/40rem;
+    font-size: .5rem;
+    line-height: .65rem;
     color: #454444;
-    padding-top: 0.1*100/40rem
+    padding-top: .25rem
 }
 
 .main4e {
-    width: 2.5*100/40rem;
-    height: 0.6*100/40rem;
+    width: 6.25rem;
+    height: 1.5rem;
     margin: 0 auto;
-    border: 0.02*100/40rem solid #a25084;
-    border-radius: 10/40rem;
+    border: .05rem solid #a25084;
+    border-radius: .25rem;
     position: relative
 }
 
 .main4e span {
-    width: 0.5*100/40rem;
-    height: 0.5*100/40rem;
+    width: 1.25rem;
+    height: 1.25rem;
     position: absolute;
-    background: url(https://img.hzshuangmei.com/m/wash/xiaoshou.png) no-repeat;
+    background: url(images/xiaoshou.png) no-repeat;
     background-size: contain;
-    right: -0.3*100/40rem;
-    bottom: -0.2*100/40rem
+    right: -.75rem;
+    bottom: -.5rem
 }
 
 .main4e a {
@@ -814,44 +794,44 @@ div.distance6 p {
 
 .main4e img {
     margin: 0 auto;
-    padding-top: 0.25*100/40rem;
-    width: 2.2*100/40rem;
-    height: 0.13*100/40rem
+    padding-top: .625rem;
+    width: 5.5rem;
+    height: .325rem
 }
 
 .main-six {
     width: 100%;
-    height: 6.3*100/40rem;
+    height: 15.75rem;
     background-color: #f0e3eb
 }
 
 .main6-in {
     width: 100%;
-    height: 8.2*100/40rem;
+    height: 20.5rem;
     margin: 0 auto;
-    padding-top: 0.33*100/40rem
+    padding-top: .825rem
 }
 
 .title4 {
-    width: 3.8*100/40rem
+    width: 9.5rem
 }
 
 .title4 img {
-    width: 3.02*100/40rem;
-    height: 0.33*100/40rem
+    width: 7.55rem;
+    height: .825rem
 }
 
 .mian6-in {
     width: 100%;
-    height: 3.2*100/40rem;
-    margin-top: 0.6*100/40rem;
+    height: 8rem;
+    margin-top: 1.5rem;
     position: relative
 }
 
 .mian6-in div {
-    height: 1.26*100/40rem;
+    height: 3.15rem;
     position: absolute;
-    width: 2.2*100/40rem
+    width: 5.5rem
 }
 
 .mian6-in div img {
@@ -859,71 +839,70 @@ div.distance6 p {
 }
 
 .mian6-in div p {
-    font-size: 0.24*100/40rem;
+    font-size: .6rem;
     color: #fff;
-    width: 1.85*100/40rem;
-    height: 0.37*100/40rem;
+    width: 4.625rem;
+    height: .925rem;
     position: absolute;
-    top: 0.85*100/40rem;
-    left: 0.2*100/40rem
+    top: 2.125rem;
+    left: .5rem
 }
 
 .main6Q1 {
-    left: 0.37*100/40rem;
+    left: .925rem;
     top: 0
 }
 
 .main6Q2 {
-    left: 2.3*100/40rem;
+    left: 5.75rem;
     top: 0
 }
 
 .main6Q3 {
-    left: 4.2*100/40rem;
+    left: 10.5rem;
     top: 0
 }
 
 .main6Q4 {
     left: 0;
-    top: 1.4*100/40rem
+    top: 3.5rem
 }
 
 .main6Q5 {
-    left: 1.94*100/40rem;
-    top: 1.4*100/40rem
+    left: 4.85rem;
+    top: 3.5rem
 }
 
-.mian6-in .main6Q4 p,
-.mian6-in .main6Q5 p {
-    top: 0.75*100/40rem
+.mian6-in .main6Q4 p, .mian6-in .main6Q5 p {
+    top: 1.875rem
 }
 
 .main-seven {
     width: 100%;
-    height: 6.32*100/40rem;
+    height: 15.8rem;
     margin: 0 auto;
-    padding-top: 0.53*100/40rem
+    padding-top: 1.325rem
 }
 
 .title5 {
-    width: 3.8*100/40rem
+    width: 9.5rem
 }
 
 .title5 img {
-    width: 1.42*100/40rem;
-    height: 0.32*100/40rem
+    width: 3.55rem;
+    height: .8rem
 }
 
 .main-seven ul {
     width: 100%;
-    height: 3.25*100/40rem;
-    padding-top: 0.83*100/40rem;
+    height: 8.125rem;
+    padding-top: 2.075rem;
     margin: 0 auto
 }
 
 .main-seven ul li {
     width: 23.2%;
-    height: 1.46*100/40rem;
+    height: 3.65rem;
     float: left;
     margin-right: 2%
 }
@@ -934,16 +913,16 @@ div.distance6 p {
 
 .main-seven ul li p {
     width: 100%;
-    height: 0.3*100/40rem;
+    height: .75rem;
     background-color: #bf83a9;
-    line-height: 0.3*100/40rem;
+    line-height: .75rem;
     text-align: center;
     color: #fff;
-    font-size: 0.22em
+    font-size: .22em
 }
 
 .leftmargin {
-    margin-left: 0.075*100/40rem
+    margin-left: .1875rem
 }
 
 .main-seven ul li.nomargin {
@@ -959,81 +938,61 @@ div.distance6 p {
 }
 
 @keyframes allitem_bounce {
-    0%,
-    80%,
-    84%,
-    90%,
-    96%,
-    100% {
+    0%, 100%, 80%, 84%, 90%, 96% {
         -webkit-transform: translateY(0)
     }
     88% {
-        -webkit-transform: translateY(-6/40rem)
+        -webkit-transform: translateY(-.15rem)
     }
     92% {
-        -webkit-transform: translateY(-3/40rem)
+        -webkit-transform: translateY(-.075rem)
     }
 }
 
 @-webkit-keyframes allitem_bounce {
-    0%,
-    80%,
-    84%,
-    90%,
-    96%,
-    100% {
+    0%, 100%, 80%, 84%, 90%, 96% {
         -webkit-transform: translateY(0)
     }
     88% {
-        -webkit-transform: translateY(-6/40rem)
+        -webkit-transform: translateY(-.15rem)
     }
     92% {
-        -webkit-transform: translateY(-3/40rem)
+        -webkit-transform: translateY(-.075rem)
     }
 }
 
 @-moz-keyframes allitem_bounce {
-    0%,
-    80%,
-    84%,
-    90%,
-    96%,
-    100% {
+    0%, 100%, 80%, 84%, 90%, 96% {
         -moz-transform: translateY(0)
     }
     88% {
-        -moz-transform: translateY(-6/40rem)
+        -moz-transform: translateY(-.15rem)
     }
     92% {
-        -moz-transform: translateY(-3/40rem)
+        -moz-transform: translateY(-.075rem)
     }
 }
 
 @-o-keyframes allitem_bounce {
-    0%,
-    80%,
-    84%,
-    90%,
-    96%,
-    100% {
+    0%, 100%, 80%, 84%, 90%, 96% {
         -o-transform: translateY(0)
     }
     88% {
-        -o-transform: translateY(-6/40rem)
+        -o-transform: translateY(-.15rem)
     }
     92% {
-        -o-transform: translateY(-3/40rem)
+        -o-transform: translateY(-.075rem)
     }
 }
 
 .padfoot {
-    height: 73/40rem
+    height: 1.825rem
 }
 
 .footer {
-    border: 1/40rem #e1e1e1 solid;
+    border: .025rem #e1e1e1 solid;
     width: 100%;
-    font-size: 16/40rem;
+    font-size: .4rem;
     position: fixed;
     bottom: 0;
     left: 0;
