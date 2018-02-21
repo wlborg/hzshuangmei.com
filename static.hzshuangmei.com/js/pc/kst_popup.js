@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 11:05:43
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-10 17:58:18
+ * @Last Modified time: 2018-02-21 08:30:59
  */
 /* PC版   自定义弹窗邀请框 */
 /*
@@ -93,6 +93,7 @@ var popup = (
         var checkPopupImgOnce = function() {
             $.ajax({
                 url: currentPopupImg,
+                dataType:"jsonp",
                 type: 'GET',
                 complete: function(response) {
                     if (response.status == 200) {
