@@ -54,6 +54,8 @@ header .sm_logo img { display: inline-block; padding-top: 7px; }
 #nav ul li:hover #project { display: block; }
 .currnet { font-weight: bold; background: #6a157d; }
 #nav > ul > li:hover { background: #6a157d; }
+/* 导航热门提醒 */
+/* #nav .nav_list:nth-child(3) span::before { content: ''; top: 5px; right: 68px; position: absolute; height: 10px; width: 10px; border-radius: 50%; background: rgb(239, 69, 80); } */
 #project ul { float: left; width: 158px; margin-top: -2px; margin-left: 12px; }
 #project img { width: 152px; height: 86px; padding: 1px; border: 1px solid #e7e7e7; }
 #expert { position: absolute; border: 1px solid #efebeb; z-index: 100; display: none; width: 1200px; height: 460px; margin: 0 auto 0; margin-left: -600px; background-color: #fff; }
