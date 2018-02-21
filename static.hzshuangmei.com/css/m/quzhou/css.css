@@ -58,12 +58,11 @@ a {
 
 .bn {
     width: 100%;
-    margin-top: 1.625rem
 }
 
 .hx {
     width: 100%;
-    height: 125rem;
+    height: 0.5rem;
     background-color: #3e83d8;
     display: block
 }
@@ -145,7 +144,7 @@ a {
 
 .wrink ul li img {
     width: 100%;
-    border: 6.25rem solid #ffa722;
+    border: 0.05rem solid #ffa722;
     box-sizing: border-box
 }
 
@@ -153,19 +152,19 @@ a {
     width: 6.25rem;
     height: 1.75rem;
     background-color: #3e83d8;
-    padding-top: .25rem
+    padding-top: .2rem;
 }
 
 .zixun1 {
-    margin: 0 auto
+    margin:  .25rem auto 0
 }
 
 .zixun-in {
     width: 5.75rem;
     height: 1.5rem;
     margin: 0 auto 0;
-    border: 6.25rem solid #9fc1ec;
-    border-radius: 62.5rem
+    border: 0.025rem solid #9fc1ec;
+    border-radius: 0.1rem;
 }
 
 .zixun-in p {
@@ -403,7 +402,7 @@ a {
 }
 
 .zixun3 .zixun-in {
-    border: 6.25rem solid #fff
+    border:0.025rem solid #fff
 }
 
 .phone-yy3 {
@@ -421,7 +420,7 @@ a {
     width: 100%;
     height: 15rem;
     padding-top: 1.5rem;
-    background: url(images/botox-bg.png) no-repeat top center;
+    background: url(https://img.hzshuangmei.com/m/quzhou/botox-bg.png) no-repeat top center;
     background-size: contain
 }
 
@@ -446,7 +445,7 @@ a {
 .re-t {
     width: 1.75rem;
     height: 1.225rem;
-    background: url(images/leng.png) no-repeat top center;
+    background: url(https://img.hzshuangmei.com/m/quzhou/leng.png) no-repeat top center;
     text-align: center;
     line-height: 1.5rem;
     font-size: 1.2rem;
@@ -565,7 +564,7 @@ a {
     font-size: 2rem;
     color: #fff;
     text-indent: .2em;
-    background: url(images/leng2.png) no-repeat;
+    background: url(https://img.hzshuangmei.com/m/quzhou/leng2.png) no-repeat;
     background-size: contain
 }
 
@@ -683,7 +682,7 @@ a {
 }
 
 .zixun5 .zixun-in {
-    border: 6.25rem solid #fff
+    border: 0.025rem solid #fff
 }
 
 .phone {
@@ -798,7 +797,7 @@ a {
 .zj-r ul {
     width: 100%;
     height: 5.5rem;
-    border-bottom: 6.25rem solid #454648
+    border-bottom: 0.15rem solid #454648
 }
 
 .zj-r li {
