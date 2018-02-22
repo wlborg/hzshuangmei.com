@@ -31,7 +31,7 @@ function preReadyCaseBigPics() {
     var BigImgsNum = $(".main").find("img").length;
     for (var i = 1; i < BigImgsNum + 1; i++) {
         $("head").append('<link rel="preconnect"  href="https://uploads.hzshuangmei.com/bigcaseimage/' + currentID + '/' + i + '.jpg">');
-        $("head").append('<link rel="preload" as="image" href="https://uploads.hzshuangmei.com/bigcaseimage/' + currentID + '/' + i + '.jpg">');
+        $("head").append('<link rel="preload" as="image" crossorigin  href="https://uploads.hzshuangmei.com/bigcaseimage/' + currentID + '/' + i + '.jpg">');
         $("head").append('<link rel="prerender" href="https://uploads.hzshuangmei.com/bigcaseimage/' + currentID + '/' + i + '.jpg">');
     }
 }
