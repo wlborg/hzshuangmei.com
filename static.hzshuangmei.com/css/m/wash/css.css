@@ -352,7 +352,7 @@ a {
     line-height: .975rem;
     color: #fff;
     font-size: .85rem;
-    background: url(images/jia.png) no-repeat right center;
+    background: url(https://img.hzshuangmei.com/m/wash/jia.png) no-repeat right center;
     background-size: contain;
     text-indent: .5em
 }
@@ -485,7 +485,7 @@ a {
 .main3-center {
     width: 100%;
     height: 14.725rem;
-    background: url(images/main3-bg.png) no-repeat left center;
+    background: url(https://img.hzshuangmei.com/m/wash/main3-bg.png) no-repeat left center;
     background-size: contain
 }
 
@@ -621,7 +621,7 @@ div.distance6 p {
 .mian4img {
     width: 100%;
     height: 4.75rem;
-    background: url(images/xian.png) no-repeat center center;
+    background: url(https://img.hzshuangmei.com/m/wash/xian.png) no-repeat center center;
     background-size: contain
 }
 
@@ -780,7 +780,7 @@ div.distance6 p {
     width: 1.25rem;
     height: 1.25rem;
     position: absolute;
-    background: url(images/xiaoshou.png) no-repeat;
+    background: url(https://img.hzshuangmei.com/m/wash/xiaoshou.png) no-repeat;
     background-size: contain;
     right: -.75rem;
     bottom: -.5rem
@@ -985,6 +985,6 @@ div.distance6 p {
     }
 }
 
-.padfoot {
-    height: 1.825rem
-}
+/*.padfoot {*/
+    /*height: 1.825rem*/
+/*}*/
