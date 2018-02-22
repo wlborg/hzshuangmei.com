@@ -76,12 +76,12 @@ body {
 .rowtitle h4 {
     margin-top: 2.7906974%;
     margin-bottom: 5.8914729%;
-    /*font-size: 0.2rem;*/
-    line-height: 1.35rem;
+    font-size: 0.45rem;
+    line-height: 2rem;
     font-weight: 400;
     color: #bff8fb;
     background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sub.png) center .1875rem no-repeat;
-    background-size: 8.0rem;
+    background-size: 13rem;
 }
 
 .row1, .row3, .row5, .row7 {
@@ -122,28 +122,28 @@ body {
 }
 
 .row3 .content .stage .stagetitle .attracttitle {
-    font-size: 1.25rem;
-    line-height: 3.625rem;
-    padding-right: 2.25rem;
-    padding-bottom: .75rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
     color: #fd707f;
     float: left;
-    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sprit.png) right -.625rem no-repeat
+    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sprit.png) right -.2rem no-repeat;
 }
 
 .row3 .content .stage .stagetitle .detailtitle {
-    padding-left: 6rem;
+    padding-left: 3rem;
     text-align: left
 }
 
 .row3 .content .stage .stagetitle .detailtitle h5 {
-    font-size: 0.45rem;
-    line-height: 2.4375rem;
-    font-weight: 400
+    font-size: 0.3rem;
+    line-height: 1rem;
+    font-weight: 500;
 }
 
 .row3 .content .stage .stagetitle .detailtitle p {
-    font-size: 1.0625rem;
+    font-size: 0.3rem;
     margin-right: -1.75rem;
     padding-right: 4%;
     padding-bottom: 2%
@@ -212,8 +212,8 @@ body {
 }
 
 .row5 .row .cure {
-    width: 9.4rem;
-    margin: 2.125rem auto 2.625rem;
+    width: 12.6rem;
+    margin:1.4rem auto 2.625rem;
 }
 
 .row5 .row .cure dl {
@@ -222,15 +222,15 @@ body {
 }
 
 .row5 .row .cure dt {
-    padding-left: 0.875rem;
+    padding-left: 1.5rem;
     font-size: 0.45rem;
     color: #3fa5aa;
     background: url(https://img.hzshuangmei.com/m/duoweiqd/icon_point.png) left center no-repeat;
-    background-size: 8.22368421%
+    background-size: 8%;
 }
 
 .row5 .row .cure .even {
-    margin-left: 5.3125rem
+    margin-left: 3.3125rem
 }
 
 .row5 .row .cure dd {
@@ -268,7 +268,7 @@ body {
     overflow: hidden;
     position: absolute;
     left: 0;
-    bottom: 10rem
+    bottom: 6rem
 }
 
 .row5 .person div {
@@ -290,18 +290,19 @@ body {
 .row5 .person span {
     display: block;
     margin: 0 auto;
-    padding-bottom: .3125rem;
-    width: 6.25rem;
-    font-size: 1.125rem;
+    padding-bottom: .3rem;
+    padding-top: 0.1rem;
+    width: 7.25rem;
+    font-size: 0.65rem;
     text-align: center;
     color: #fff;
-    line-height: 1.5rem;
-    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_icon_h.png) no-repeat;
-    background-size: 6.25rem
+    line-height: 1rem;
+    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_icon_h.png) no-repeat center;
+    background-size: 5.25rem;
 }
 
 .row5 .person .after span {
-    margin-left: 12.98701299%
+    margin-left: 1%;
 }
 
 .row6 .content img {
@@ -378,62 +379,62 @@ body {
     width: 100%
 }
 
-@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
-    body, html {
-        font-size: 15.88px
-    }
-}
+/*@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {*/
+    /*body, html {*/
+        /*font-size: 15.88px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
-    body, html {
-        font-size: 14.88px
-    }
-}
+/*@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {*/
+    /*body, html {*/
+        /*font-size: 14.88px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 540px), only screen and (max-device-width: 540px) {
-    body, html {
-        font-size: 13.4px
-    }
-}
+/*@media only screen and (max-width: 540px), only screen and (max-device-width: 540px) {*/
+    /*body, html {*/
+        /*font-size: 13.4px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-    body, html {
-        font-size: 11.91px
-    }
-}
+/*@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {*/
+    /*body, html {*/
+        /*font-size: 11.91px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
-    body, html {
-        font-size: 10.27px
-    }
-}
+/*@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {*/
+    /*body, html {*/
+        /*font-size: 10.27px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
-    body, html {
-        font-size: 9.92px
-    }
-}
+/*@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {*/
+    /*body, html {*/
+        /*font-size: 9.92px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {
-    body, html {
-        font-size: 9.3px
-    }
-}
+/*@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {*/
+    /*body, html {*/
+        /*font-size: 9.3px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
-    body, html {
-        font-size: 8.93px
-    }
-}
+/*@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {*/
+    /*body, html {*/
+        /*font-size: 8.93px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
-    body, html {
-        font-size: 7.94px
-    }
-}
+/*@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {*/
+    /*body, html {*/
+        /*font-size: 7.94px*/
+    /*}*/
+/*}*/
 
-@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {
-    body, html {
-        font-size: 5.95px
-    }
-}
+/*@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {*/
+    /*body, html {*/
+        /*font-size: 5.95px*/
+    /*}*/
+/*}*/
