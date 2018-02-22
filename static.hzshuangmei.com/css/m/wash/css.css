@@ -62,12 +62,12 @@ a {
     zoom: 1
 }
 
-.banner {
+.wash_banner {
     width: 100%;
     margin-top: 1.75rem
 }
 
-.main-one {
+.wash_main-one {
     width: 100%;
     height: 15rem;
     margin: 0 auto;
@@ -238,7 +238,7 @@ a {
     z-index: 2
 }
 
-.main-two {
+.wash_main-two {
     width: 100%;
     height: 15rem;
     background-color: #EFDDE8
@@ -377,7 +377,7 @@ a {
     right: 0
 }
 
-.main-three {
+.wash_main-three {
     width: 100%;
     height: 21.5rem;
     margin: 0 auto;
@@ -604,7 +604,7 @@ div.distance6 p {
     border-top: .175rem solid #F0E3EB
 }
 
-.mian-four {
+.wash_mian-four {
     width: 100%;
     height: 14.5rem;
     background-color: #f0e3eb;
@@ -683,49 +683,49 @@ div.distance6 p {
     bottom: -1.25rem
 }
 
-.main-five {
+.wash_main-five {
     width: 100%;
     height: 13.75rem;
     padding-top: 3.25rem;
     margin: 0 auto
 }
 
-.main-five ul {
+.wash_main-five ul {
     width: 100%;
     height: 11.25rem
 }
 
-.main-five ul li {
+.wash_main-five ul li {
     width: 31%;
     height: 10rem;
     float: left;
     margin: 0 1%
 }
 
-.main-five img {
+.wash_main-five img {
     width: 100%
 }
 
-.main-five .main4num {
+.wash_main-five .main4num {
     margin: 0 auto
 }
 
-.main-five .main4num1 {
+.wash_main-five .main4num1 {
     width: .375rem;
     height: .975rem
 }
 
-.main-five .main4num2 {
+.wash_main-five .main4num2 {
     width: .675rem;
     height: 1rem
 }
 
-.main-five .main4num3 {
+.wash_main-five .main4num3 {
     width: .675rem;
     height: 1.025rem
 }
 
-.main-five ul li h3 {
+.wash_main-five ul li h3 {
     font-size: .55rem;
     color: #a25084;
     line-height: 1rem;
@@ -760,7 +760,7 @@ div.distance6 p {
     width: 80%
 }
 
-.main-five ul li p {
+.wash_main-five ul li p {
     font-size: .5rem;
     line-height: .65rem;
     color: #454444;
@@ -799,7 +799,7 @@ div.distance6 p {
     height: .325rem
 }
 
-.main-six {
+.wash_main-six {
     width: 100%;
     height: 15.75rem;
     background-color: #f0e3eb
@@ -877,7 +877,7 @@ div.distance6 p {
     top: 1.875rem
 }
 
-.main-seven {
+.wash_main-seven {
     width: 100%;
     height: 15.8rem;
     margin: 0 auto;
@@ -893,25 +893,25 @@ div.distance6 p {
     height: .8rem
 }
 
-.main-seven ul {
+.wash_main-seven ul {
     width: 100%;
     height: 8.125rem;
     padding-top: 2.075rem;
     margin: 0 auto
 }
 
-.main-seven ul li {
+.wash_main-seven ul li {
     width: 23.2%;
     height: 3.65rem;
     float: left;
     margin-right: 2%
 }
 
-.main-seven ul li img {
+.wash_main-seven ul li img {
     width: 100%
 }
 
-.main-seven ul li p {
+.wash_main-seven ul li p {
     width: 100%;
     height: .75rem;
     background-color: #bf83a9;
@@ -925,7 +925,7 @@ div.distance6 p {
     margin-left: .1875rem
 }
 
-.main-seven ul li.nomargin {
+.wash_main-seven ul li.nomargin {
     margin-right: 0
 }
 
@@ -987,16 +987,4 @@ div.distance6 p {
 
 .padfoot {
     height: 1.825rem
-}
-
-.footer {
-    border: .025rem #e1e1e1 solid;
-    width: 100%;
-    font-size: .4rem;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #fafafa;
-    z-index: 9999
 }
