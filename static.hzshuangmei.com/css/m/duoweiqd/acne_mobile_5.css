@@ -80,8 +80,8 @@ body {
     line-height: 2rem;
     font-weight: 400;
     color: #bff8fb;
-    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sub.png) center .1875rem no-repeat;
-    background-size: 13rem;
+    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sub.png) center 0.51rem no-repeat;
+    background-size: 8rem;
 }
 
 .row1, .row3, .row5, .row7 {
@@ -222,11 +222,11 @@ body {
 }
 
 .row5 .row .cure dt {
-    padding-left: 1.5rem;
+    padding-left: 0.85rem;
     font-size: 0.45rem;
     color: #3fa5aa;
     background: url(https://img.hzshuangmei.com/m/duoweiqd/icon_point.png) left center no-repeat;
-    background-size: 8%;
+    background-size: 4%;
 }
 
 .row5 .row .cure .even {
