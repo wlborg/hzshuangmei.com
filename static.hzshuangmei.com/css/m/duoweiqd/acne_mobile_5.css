@@ -74,14 +74,14 @@ body {
 }
 
 .rowtitle h4 {
-    margin-top: 2.7906974%;
-    margin-bottom: 5.8914729%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 0.45rem;
     line-height: 2rem;
     font-weight: 400;
     color: #bff8fb;
-    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sub.png) center 0.51rem no-repeat;
-    background-size: 8rem;
+    background: url(https://img.hzshuangmei.com/m/duoweiqd/bg_title_sub.png) center 0.4rem no-repeat;
+    background-size: 10rem;
 }
 
 .row1, .row3, .row5, .row7 {
@@ -137,8 +137,8 @@ body {
 }
 
 .row3 .content .stage .stagetitle .detailtitle h5 {
-    font-size: 0.3rem;
-    line-height: 1rem;
+    font-size: 0.45rem;
+    line-height: 0.8rem;
     font-weight: 500;
 }
 
