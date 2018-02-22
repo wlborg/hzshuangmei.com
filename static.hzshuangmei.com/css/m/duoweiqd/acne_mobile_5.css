@@ -222,11 +222,11 @@ body {
 }
 
 .row5 .row .cure dt {
-    padding-left: 1.5rem;
+    padding-left: 0.85rem;
     font-size: 0.45rem;
     color: #3fa5aa;
     background: url(https://img.hzshuangmei.com/m/duoweiqd/icon_point.png) left center no-repeat;
-    background-size: 8%;
+    background-size: 4%;
 }
 
 .row5 .row .cure .even {
