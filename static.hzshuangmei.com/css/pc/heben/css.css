@@ -533,7 +533,8 @@ img {
   width: 420px;
   text-align: center; }
 .part6 .contain .main .wrap .slider .box ul li {
-  float: left; }
+  float: left;
+  margin-right: 16px;}
 .part6 .contain .main .wrap .slider .box ul li p {
   background: none;
   font-size: 16px;
