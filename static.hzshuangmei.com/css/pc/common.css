@@ -13,13 +13,15 @@ table { border-collapse: collapse; }
 .shuang_m1 { width: 1200px; margin: 0 auto; }
 header .top { height: 44px; font-size: 12px; background-color: #ececec; }
 header .top .shuang_m1 { padding-top: 12px; }
-header .top .shuang_m1 .top_l { float: left; padding-left: 16px; color: #999; }
-header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }
-header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }
+header .top .shuang_m1 .top_l {float: left;padding-left: 16px;color: #999; height: 31px;line-height: 31px;display: flex;  position: relative;  top: -5px;}
+/*header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }*/
+/*header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }*/
+header .top .shuang_m1 .top_l img{padding-right: 6px;}
+header .top .shuang_m1 .top_l span { padding-left: 9px; }
 header .top .shuang_m1 .top_r { float: right; padding-right: 41px; }
 header .top .shuang_m1 a { display: inline-block; }
 header .top .shuang_m1 .top_r span { position: relative; top: -4px; color: rgb(124, 124, 124); }
-header .top .shuang_m1 .top_r i { display: inline-block; width: 20px; height: 20px; }
+header .top .shuang_m1 .top_r i { display: inline-block; width: 20px; height: 20px;margin-right:6px }
 header .top .shuang_m1 .top_r .pad_r { padding-right: 9px; }
 header .top .shuang_m1 .top_r .pad_l { padding-left: 4px; }
 header .top .shuang_m1 .tel { background: url(//img.hzshuangmei.com/pc/h_phone.png) no-repeat center; }
