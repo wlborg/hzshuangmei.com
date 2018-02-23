@@ -36,7 +36,7 @@ overflow: hidden; left: 28%;    /* margin-left: -68px; */ top: -76px; border-rad
 .tjb_title3 { text-align: center; padding-top: 100px; }
 .tjb_xm { background-color: rgba(255, 255, 255, 0.102); width: 1200px; height: 527px; margin: 48px auto 0; }
 .tjb_img { height: 496px; overflow: hidden; margin: auto; padding-top: 16px; }
-.tjb_img>a img { width: 386px; height: 246px; }
+.tjb_img>a img { width: 386px; height: 246px;margin-bottom:4px }
 .tjb_img>a:first-child { float: left; margin: 0 6px 0 15px; }
 .tjb_img>a:first-child img { width: 780px; height: 496px; }
 .tjb_img>a:nth-child(2) { margin-bottom: 1px; }
