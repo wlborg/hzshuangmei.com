@@ -1,0 +1,244 @@
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05)
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse
+}
+
+.pulse {
+    animation: pulse 1s;
+    -webkit-animation: pulse 1s;
+    -moz-animation: pulse 1s;
+    -o-animation: pulse 1s;
+    -ms-animation: pulse 1s
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+.main2-in ul li:hover p {
+    -webkit-transform: translateY(12px)
+}
+
+.main2-in ul li p, .main2-in ul li span {
+    transition: all 0.5s
+}
+
+.main2-in ul li:hover span {
+    -webkit-transform: translateY(20px)
+}
+
+.fadeInDown {
+    animation: fadeInDown 1.5s;
+    -webkit-animation: fadeInDown 1.5s;
+    -moz-animation: fadeInDown 1.5s;
+    -o-animation: fadeInDown 1.5s;
+    -ms-animation: fadeInDown 1.5s
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+
+.fadeInUp {
+    animation: fadeInUp 1.5s;
+    -webkit-animation: fadeInUp 1.5s;
+    -moz-animation: fadeInUp 1.5s;
+    -o-animation: fadeInUp 1.5s;
+    -ms-animation: fadeInUp 1.5s
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+
+.main5-content li .sanjiao {
+    transition: all 0.5s
+}
+
+.main5-content li:hover .sanjiao {
+    border-bottom: 100px solid #f05c8d;
+    border-right: 100px solid transparent
+}
+
+.main5-content li:hover .bottom {
+    color: #CC3469
+}
+
+.flash {
+    animation: flash 1s;
+    -webkit-animation: flash 1s;
+    -moz-animation: flash 1s;
+    -o-animation: flash 1s;
+    -ms-animation: flash 1s
+}
+
+@-webkit-keyframes flash {
+    from, 50%, to {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@keyframes flash {
+    from, 50%, to {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+.flash {
+    -webkit-animation-name: flash;
+    animation-name: flash
+}
+
+.slideOutDown {
+    animation: slideOutDown 1s;
+    -webkit-animation: slideOutDown 1s;
+    -moz-animation: slideOutDown 1s;
+    -o-animation: slideOutDown 1s;
+    -ms-animation: slideOutDown 1s
+}
+
+@-webkit-keyframes slideOutDown {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 250%, 0);
+        transform: translate3d(0, 250%, 0)
+    }
+}
+
+@keyframes slideOutDown {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 250%, 0);
+        transform: translate3d(0, 250%, 0)
+    }
+}
+
+.slideOutDown {
+    -webkit-animation-name: slideOutDown;
+    animation-name: slideOutDown
+}
