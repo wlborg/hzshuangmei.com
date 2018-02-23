@@ -14,8 +14,10 @@ table { border-collapse: collapse; }
 header .top { height: 44px; font-size: 12px; background-color: #ececec; }
 header .top .shuang_m1 { padding-top: 12px; }
 header .top .shuang_m1 .top_l { float: left; padding-left: 16px; color: #999; }
-header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }
-header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }
+/*header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }*/
+/*header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }*/
+header .top .shuang_m1 .top_l img{padding-right: 3px;}
+header .top .shuang_m1 .top_l span { padding-left: 9px; }
 header .top .shuang_m1 .top_r { float: right; padding-right: 41px; }
 header .top .shuang_m1 a { display: inline-block; }
 header .top .shuang_m1 .top_r span { position: relative; top: -4px; color: rgb(124, 124, 124); }
