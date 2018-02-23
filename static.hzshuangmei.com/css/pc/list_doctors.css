@@ -41,15 +41,12 @@
     background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
 }
 #doctors_banner .doctors_pagination{
@@ -197,7 +194,13 @@
 }
 .pagination{
     width: 600px;
-    margin: 0 auto 50px
+    margin: 0 auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .pagination>li{
     float:left;
