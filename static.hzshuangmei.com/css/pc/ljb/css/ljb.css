@@ -63,7 +63,21 @@ html {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
 }
-
+.dianjizixun a{
+    display: block;
+    animation: xuanzhuan2 4s infinite;
+}
+@keyframes xuanzhuan2 {
+    0%{
+        transform:rotateY(0deg);;
+    }
+    50%{
+        transform:rotateY(-180deg);;
+    }
+    100%{
+        transform:rotateY(-360deg);;
+    }
+}
 .dianjizixun {
     cursor: pointer;
     position: absolute;
