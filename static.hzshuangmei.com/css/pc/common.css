@@ -13,7 +13,7 @@ table { border-collapse: collapse; }
 .shuang_m1 { width: 1200px; margin: 0 auto; }
 header .top { height: 44px; font-size: 12px; background-color: #ececec; }
 header .top .shuang_m1 { padding-top: 12px; }
-header .top .shuang_m1 .top_l { float: left; padding-left: 16px; color: #999; }
+header .top .shuang_m1 .top_l {float: left;padding-left: 16px;color: #999; height: 31px;line-height: 31px;display: flex;  position: relative;  top: -5px;}
 /*header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }*/
 /*header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }*/
 header .top .shuang_m1 .top_l img{padding-right: 3px;}
