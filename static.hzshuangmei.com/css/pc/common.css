@@ -13,20 +13,22 @@ table { border-collapse: collapse; }
 .shuang_m1 { width: 1200px; margin: 0 auto; }
 header .top { height: 44px; font-size: 12px; background-color: #ececec; }
 header .top .shuang_m1 { padding-top: 12px; }
-header .top .shuang_m1 .top_l { float: left; padding-left: 16px; color: #999; }
-header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }
-header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }
+header .top .shuang_m1 .top_l {float: left;padding-left: 16px;color: #999; height: 31px;line-height: 31px;display: flex;  position: relative;  top: -5px;}
+/*header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }*/
+/*header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }*/
+header .top .shuang_m1 .top_l img{padding-right: 6px;}
+header .top .shuang_m1 .top_l span { padding-left: 9px; }
 header .top .shuang_m1 .top_r { float: right; padding-right: 41px; }
 header .top .shuang_m1 a { display: inline-block; }
 header .top .shuang_m1 .top_r span { position: relative; top: -4px; color: rgb(124, 124, 124); }
-header .top .shuang_m1 .top_r i { display: inline-block; width: 20px; height: 20px; }
+header .top .shuang_m1 .top_r i { display: inline-block; width: 20px; height: 20px;margin-right:6px }
 header .top .shuang_m1 .top_r .pad_r { padding-right: 9px; }
 header .top .shuang_m1 .top_r .pad_l { padding-left: 4px; }
 header .top .shuang_m1 .tel { background: url(//img.hzshuangmei.com/pc/h_phone.png) no-repeat center; }
 header .top .shuang_m1 .wbo { background: url(//img.hzshuangmei.com/pc/h_weibo.png) no-repeat center; }
 header .top .shuang_m1 .wxin { background: url(//img.hzshuangmei.com/pc/h_weixin.png) no-repeat center; }
 header .top .shuang_m1 .qq { background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center; }
-header .sm_logo { height: 131px; text-align: center; background-color: #fff; -webkit-animation-name: dissappear; animation-name: dissappear; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-duration: 5s; animation-duration: 5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; animation-delay: 3s; -webkit-animation-delay: 3s; }
+header .sm_logo { height: 131px; text-align: center; background-color: #fff; -webkit-animation-name: dissappear; animation-name: dissappear; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-duration: 7s; animation-duration: 7s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; animation-delay: 7s; -webkit-animation-delay: 7s; }
 @-webkit-keyframes dissappear {
     0% { height: 131px; }
     100% { height: 0; display: none; visibility: hidden; }
@@ -55,7 +57,7 @@ header .sm_logo img { display: inline-block; padding-top: 7px; }
 .currnet { font-weight: bold; background: #6a157d; }
 #nav > ul > li:hover { background: #6a157d; }
 /* 导航 案例  热门提醒 */
-/* #nav .nav_list:nth-child(5) span::before { content: ''; top: 5px; right: 60px; position: absolute; height: 10px; width: 10px; border-radius: 50%; background: rgb(239, 69, 80); } */
+#nav .nav_list:nth-child(5) span::before { content: ''; top: 5px; right: 60px; position: absolute; height: 10px; width: 10px; border-radius: 50%; background: rgb(239, 69, 80); }
 #project ul { float: left; width: 158px; margin-top: -2px; margin-left: 12px; }
 #project img { width: 152px; height: 86px; padding: 1px; border: 1px solid #e7e7e7; }
 #expert { position: absolute; border: 1px solid #efebeb; z-index: 100; display: none; width: 1200px; height: 460px; margin: 0 auto 0; margin-left: -600px; background-color: #fff; }
