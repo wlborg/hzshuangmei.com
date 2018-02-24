@@ -318,23 +318,26 @@ a .span {
     text-align: center;
     vertical-align: middle;
     color: #5c4aa7;
-    background-size: 4.675rem 4.675rem;
+
 }
 .m3p1 {
     height: 3.05rem;
     padding-top: 1.625rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3p2 {
     height: 3.3rem;
     padding-top: 1.375rem;
     margin: .625rem .7375rem 0;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3p3 {
     height: 3.425rem;
     padding-top: 1.25rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3 a {
     width: 7.775rem;
