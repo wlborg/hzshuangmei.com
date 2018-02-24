@@ -318,12 +318,12 @@ a .span {
     text-align: center;
     vertical-align: middle;
     color: #5c4aa7;
+    background-size: 4.675rem 4.675rem;
 }
 .m3p1 {
     height: 3.05rem;
     padding-top: 1.625rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
-    background-size: 4.675rem 4.675rem;
 }
 .m3p2 {
     height: 3.3rem;
@@ -442,7 +442,7 @@ a .span {
     position: absolute;
     top: 9.15rem;
     left: 50%;
-    width: 4.2rem;
+    width: 4.25rem;
     margin-left: -2.1rem;
 }
 .m5qd p {
