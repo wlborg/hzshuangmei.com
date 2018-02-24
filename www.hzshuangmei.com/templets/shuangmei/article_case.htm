@@ -8,10 +8,13 @@
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
      <meta property="article:author" content="红妆双美"/>
      <meta property="article:published_time" content="{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}+08:00">
-        <meta property="article:tag" content="{dede:field name='keywords'/}">
+    <meta property="article:tag" content="{dede:field name='keywords'/}">
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_case.css" rel="preload"/>
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css" rel="preload"/>
+     <link rel="preload"  href="{dede:global.cfg_csspath/}/pc/article_case.css"  as="style" crossorigin/>
+     <link rel="preload"  href="{dede:global.cfg_csspath/}/pc/article_common.css"  as="style" crossorigin/>
+    <link rel="preload"  href="{dede:global.cfg_jspath/}/pc/article_common.js"  as="script" crossorigin/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_case.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css"/>
      <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}">
          <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:field.arcurl/}" >
 </head>
