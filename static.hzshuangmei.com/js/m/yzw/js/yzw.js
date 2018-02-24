@@ -1,7 +1,7 @@
 
 var swiper1 = new Swiper ('.swiper-container1', {
     loop: true,
-//        autoplay: 1,//自动轮播
+    autoplay: 1,//自动轮播
     speed:10000,
     slidesPerView: 2,
     autoplayDisableOnInteraction : false,
