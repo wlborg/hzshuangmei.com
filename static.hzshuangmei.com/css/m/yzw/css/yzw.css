@@ -20,8 +20,8 @@ body {
 }
 .yinshen {
     position: absolute;
-    width: 0.025rem;
-    height: 0.025rem;
+    width: .025rem;
+    height: .025rem;
     padding: 0;
     margin: -0.025rem;
     overflow: hidden;
@@ -63,15 +63,15 @@ body {
 }
 .m1 {
     height: 21.85rem;
-    font-size: 0.45rem;
-    line-height: 0.45rem;
+    font-size: .45rem;
+    line-height: .45rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m1bg.jpg") no-repeat 0 1.75rem;
     background-size: 16rem 15.125rem;
 }
 .m1con h3 {
-    margin-left: 0.875rem;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    margin-left: .875rem;
+    font-size: .75rem;
+    line-height: .75rem;
     color: #404040;
 }
 .m1con > div {
@@ -81,34 +81,34 @@ body {
 }
 .m1ry {
     top: 2.5rem;
-    font-size: 0.5rem;
-    line-height: 0.75rem;
+    font-size: .5rem;
+    line-height: .75rem;
 }
 .m1ry h3 {
-    margin-bottom: 0.25rem;
+    margin-bottom: .25rem;
 }
 .m1ry li {
     color: #858585;
 }
 .m1xm {
     top: 8.75rem;
-    line-height: 0.65rem;
+    line-height: .65rem;
     color: #858585;
 }
 .m1xm h3 {
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
 }
 .m1yl {
     top: 12.625rem;
-    line-height: 0.65rem;
+    line-height: .65rem;
     color: #8f8f8f;
 }
 .m1yl h3 {
-    margin-bottom: 0.325rem;
+    margin-bottom: .325rem;
 }
 .jt {
     width: 1.05rem;
-    margin-top: 0.575rem;
+    margin-top: .575rem;
     vertical-align: top;
 }
 .yzwcon a {
@@ -117,8 +117,8 @@ body {
     text-align: center;
 }
 a .span {
-    margin-right: 0.25rem;
-    font-size: 0.75rem;
+    margin-right: .25rem;
+    font-size: .75rem;
     line-height: 1.45rem;
     color: #fff;
 }
@@ -132,7 +132,7 @@ a .span {
     width: 7.75rem;
     height: 1.45rem;
     margin-left: -3.875rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: #7762f2;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(41, 32, 103, 0.2);
 }
@@ -146,31 +146,31 @@ a .span {
 .m2tit {
     width: 10.575rem;
     height: 4.55rem;
-    padding-top: 0.025rem;
+    padding-top: .025rem;
     margin: auto;
     background-color: #fe6cab;
 }
 .m2tit div {
     width: 10.1rem;
     height: 4.325rem;
-    margin: 0.075rem auto 0;
+    margin: .075rem auto 0;
     text-align: center;
     border: solid 0.025rem rgba(251, 252, 254, 0.6);
 }
 .m2tit div p {
-    height: 0.9rem;
-    margin-top: 0.85rem;
-    font-size: 0.9rem;
-    line-height: 0.9rem;
+    height: .9rem;
+    margin-top: .85rem;
+    font-size: .9rem;
+    line-height: .9rem;
     color: rgba(255, 255, 255, 0.75);
 }
 .m2tit div p span {
     display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
-    margin-left: 0.05rem;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    width: .875rem;
+    height: .875rem;
+    margin-left: .05rem;
+    font-size: .75rem;
+    line-height: .75rem;
     vertical-align: bottom;
     color: rgba(254, 108, 171, 0.95);
     border-radius: 50%;
@@ -178,32 +178,32 @@ a .span {
 }
 .m2tit img {
     width: 6.875rem;
-    margin: 0.425rem auto 0;
+    margin: .425rem auto 0;
 }
 .m2con > h3 {
     margin-top: 2.65rem;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    font-size: .75rem;
+    line-height: .75rem;
     text-align: center;
     color: #6053c2;
 }
 .m2con > h3 > span {
-    margin-left: -0.25rem;
-    font-size: 0.8rem;
+    /*margin-left: -0rem;*/
+    font-size: .8rem;
     font-weight: bold;
-    line-height: 0.8rem;
+    line-height: .8rem;
 }
 .m2con > p {
     width: 15.525rem;
-    margin: 0.25rem auto 0;
-    font-size: 0.55rem;
-    line-height: 0.8rem;
+    margin: .25rem auto 0;
+    font-size: .55rem;
+    line-height: .8rem;
     color: rgba(101, 87, 203, 0.9);
 }
 .m2page {
     position: relative;
     height: 6.1rem;
-    margin-top: 0.875rem;
+    margin-top: .875rem;
     text-align: center;
 }
 .m2page img {
@@ -212,14 +212,14 @@ a .span {
 }
 .m2page .or {
     width: 1.5rem;
-    margin: 0 0.45rem 0 0.525rem;
+    margin: 0 .45rem 0 .525rem;
 }
 .mwh,
 .mmx {
     position: absolute;
-    bottom: 0.925rem;
+    bottom: .925rem;
     width: 2.125rem;
-    height: 0.725rem;
+    height: .725rem;
     transform: skew(20deg);
     background-color: #554aa6;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(66, 113, 123, 0.3);
@@ -233,8 +233,8 @@ a .span {
 .mwh span,
 .mmx span {
     display: block;
-    font-size: 0.45rem;
-    line-height: 0.725rem;
+    font-size: .45rem;
+    line-height: .725rem;
     transform: skew(-20deg);
     color: #fff;
 }
@@ -244,34 +244,34 @@ a .span {
 }
 .m2ts > img {
     width: 3.95rem;
-    margin-top: 0.35rem;
-    margin-left: 0.45rem;
+    margin-top: .35rem;
+    margin-left: .45rem;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(148, 137, 205, 0.2);
 }
 .m2tswz {
     display: inline-block;
-    margin-left: 0.75rem;
+    margin-left: .75rem;
     vertical-align: top;
     color: rgba(255, 255, 255, 0.9);
 }
 .m2tswz > span {
     display: block;
     margin-top: 1.2rem;
-    margin-bottom: 0.25rem;
-    font-size: 0.65rem;
-    line-height: 0.65rem;
+    margin-bottom: .25rem;
+    font-size: .65rem;
+    line-height: .65rem;
 }
 .m2tswz p {
     width: 10.1rem;
-    margin-top: 0.075rem;
-    font-size: 0.55rem;
-    line-height: 0.7rem;
+    margin-top: .075rem;
+    font-size: .55rem;
+    line-height: .7rem;
 }
 .m2con a {
     width: 11.85rem;
     height: 1.45rem;
     margin: 1.45rem auto 0;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: #fe6cab;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(125, 47, 87, 0.2);
 }
@@ -282,39 +282,39 @@ a .span {
     background-size: 16rem 25.025rem;
 }
 .m3con {
-    padding-top: 0.025rem;
+    padding-top: .025rem;
 }
 .m3tit {
     width: 11.875rem;
     margin: 2.5rem auto 0;
 }
 .m3js {
-    margin-top: 0.9rem;
+    margin-top: .9rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3img1.jpg") no-repeat;
-    background-position: 0 0.35rem;
+    background-position: 0 .35rem;
     background-size: 7.05rem 7.275rem;
 }
 .m3jscon {
     width: 15.025rem;
     height: 7.9rem;
-    margin-left: 0.375rem;
+    margin-left: .375rem;
     border: solid 0.05rem rgba(148, 132, 253, 0.4);
 }
 .m3jscon > p {
     width: 7.3rem;
-    margin-top: 0.6rem;
+    margin-top: .6rem;
     margin-left: 7.175rem;
     /*height: 261/40rem;*/
-    font-size: 0.5rem;
-    line-height: 0.75rem;
+    font-size: .5rem;
+    line-height: .75rem;
     color: #e9e6ec;
 }
 .m3p {
     display: inline-block;
     width: 4.675rem;
-    margin-top: 0.625rem;
-    font-size: 0.45rem;
-    line-height: 0.65rem;
+    margin-top: .625rem;
+    font-size: .45rem;
+    line-height: .65rem;
     text-align: center;
     vertical-align: middle;
     color: #5c4aa7;
@@ -323,11 +323,12 @@ a .span {
     height: 3.05rem;
     padding-top: 1.625rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3p2 {
     height: 3.3rem;
     padding-top: 1.375rem;
-    margin: 0.625rem 0.7375rem 0;
+    margin: .625rem .7375rem 0;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
 }
 .m3p3 {
@@ -339,7 +340,7 @@ a .span {
     width: 7.775rem;
     height: 1.45rem;
     margin-top: 1.1rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: #fe6cab;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(125, 47, 87, 0.2);
 }
@@ -348,7 +349,7 @@ a .span {
     background-color: #f1f0fa;
 }
 .m4con {
-    padding-top: 0.025rem;
+    padding-top: .025rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m4bg.png") no-repeat top center;
     background-size: 15.5rem 19.175rem;
 }
@@ -359,13 +360,14 @@ a .span {
 .m4right {
     width: 10.75rem;
     height: 5.325rem;
-    margin-top: 0.425rem;
-    margin-left: 0.65rem;
+    margin-top: .425rem;
+    margin-left: .65rem;
     background-color: #e4f9ff;
 }
 .m4right > img {
-    margin-top: 0.475rem;
-    margin-left: 0.55rem;
+    width: 4.375rem;
+    margin-top: .475rem;
+    margin-left: .55rem;
 }
 .m4right1 {
     margin-top: 1.1rem;
@@ -373,27 +375,27 @@ a .span {
 .m4rightcont {
     position: relative;
     display: inline-block;
-    margin-left: 0.6rem;
+    margin-left: .6rem;
     vertical-align: top;
 }
 .m4rightcont h4 {
-    margin: 0.725rem 0 0.125rem;
-    font-size: 0.85rem;
+    margin: .725rem 0 .125rem;
+    font-size: .85rem;
     font-weight: bold;
-    line-height: 0.85rem;
+    line-height: .85rem;
     color: #846eff;
 }
 .m4rightcont span {
-    font-size: 0.35rem;
-    line-height: 0.35rem;
-    letter-spacing: 0.025rem;
+    font-size: .35rem;
+    line-height: .35rem;
+    letter-spacing: .025rem;
     color: rgba(132, 110, 255, 0.6);
 }
 .m4rightcont p {
     width: 4.825rem;
-    margin-top: 0.275rem;
-    font-size: 0.45rem;
-    line-height: 0.625rem;
+    margin-top: .275rem;
+    font-size: .45rem;
+    line-height: .625rem;
     color: #846eff;
 }
 .m4right .m4hen {
@@ -401,7 +403,7 @@ a .span {
     top: 1.9rem;
     left: 0;
     width: 4.5rem;
-    height: 0.025rem;
+    height: .025rem;
     background-color: rgba(132, 111, 255, 0.7);
 }
 .m4right2 .m4hen {
@@ -414,15 +416,15 @@ a .span {
     width: 6.075rem;
     height: 1.45rem;
     margin-top: 2.175rem;
-    margin-bottom: 0.25rem;
-    border-radius: 0.7rem;
+    margin-bottom: .25rem;
+    border-radius: .7rem;
     background-color: #fe6cab;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(125, 47, 87, 0.2);
 }
 .m5 {
     position: relative;
     height: 35.9rem;
-    padding-top: 0.025rem;
+    padding-top: .025rem;
     margin-top: -0.5rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m5bg.jpg") no-repeat center top;
     background-size: 16rem 35.9rem;
@@ -434,7 +436,7 @@ a .span {
 }
 .m5anli {
     width: 16rem;
-    margin: 0.625rem auto 0;
+    margin: .625rem auto 0;
 }
 .m5qd {
     position: absolute;
@@ -444,27 +446,27 @@ a .span {
     margin-left: -2.1rem;
 }
 .m5qd p {
-    font-size: 0.45rem;
-    line-height: 0.55rem;
+    font-size: .45rem;
+    line-height: .55rem;
     color: rgba(77, 77, 77, 0.75);
 }
 .m5qd p:first-child {
-    margin-bottom: 0.2rem;
-    line-height: 0.75rem;
+    margin-bottom: .2rem;
+    line-height: .75rem;
 }
 .m5qd .m5dz {
     width: 3.65rem;
     height: 1.1rem;
-    margin: 0.75rem auto 0.25rem;
-    font-size: 0.65rem;
+    margin: .75rem auto .25rem;
+    font-size: .65rem;
     line-height: 1.1rem;
     text-align: center;
     color: #fff;
     background: url("//img.hzshuangmei.com/m/yzw/images/m5img1.png") no-repeat center;
 }
 .m5qd :last-child {
-    font-size: 0.6rem;
-    line-height: 0.7rem;
+    font-size: .6rem;
+    line-height: .7rem;
     text-align: center;
     color: rgba(64, 64, 64, 0.85);
 }
@@ -475,7 +477,7 @@ a .span {
     left: 1.325rem;
     width: 3.325rem;
     height: 3.325rem;
-    padding-top: 0.025rem;
+    padding-top: .025rem;
     text-align: center;
     border-radius: 50%;
     background-color: #9484fd;
@@ -486,29 +488,29 @@ a .span {
 }
 .m5y1 p,
 .m5y2 p {
-    margin-top: 0.25rem;
-    font-size: 0.65rem;
-    line-height: 0.65rem;
+    margin-top: .25rem;
+    font-size: .65rem;
+    line-height: .65rem;
     color: rgba(255, 255, 255, 0.8);
 }
 .m5y1 p:nth-child(2) {
-    height: 0.025rem;
-    border-top: solid 0.025rem #9f91fd;
-    border-bottom: solid 0.025rem #9f91fd;
+    height: .025rem;
+    border-top: solid .025rem #9f91fd;
+    border-bottom: solid .025rem #9f91fd;
     background-color: #cac2fe;
 }
 .m5y2 p:nth-child(2) {
-    height: 0.025rem;
-    border-top: solid 0.025rem #fe76b1;
-    border-bottom: solid 0.025rem #fe76b1;
+    height: .025rem;
+    border-top: solid .025rem #fe76b1;
+    border-bottom: solid .025rem #fe76b1;
     background-color: #ffb6d5;
 }
 .m5y1 p:first-child,
 .m5y2 p:first-child {
-    margin: 0.6rem auto 0.25rem;
-    font-size: 0.85rem;
+    margin: .6rem auto .25rem;
+    font-size: .85rem;
     font-weight: bold;
-    line-height: 0.85rem;
+    line-height: .85rem;
     color: #fff;
 }
 .m5 .m5tit2 {
@@ -516,8 +518,8 @@ a .span {
     height: 1.4rem;
     margin: auto;
     margin-top: 1.95rem;
-    margin-bottom: 0.7rem;
-    font-size: 0.725rem;
+    margin-bottom: .7rem;
+    font-size: .725rem;
     font-weight: normal;
     line-height: 1.4rem;
     text-align: center;
@@ -540,7 +542,7 @@ a .span {
 }
 .swiper-container1 p {
     height: 1rem;
-    font-size: 0.55rem;
+    font-size: .55rem;
     line-height: 1rem;
     text-align: center;
     color: #4d47ac;
@@ -550,7 +552,7 @@ a .span {
     width: 9.4rem;
     height: 1.45rem;
     margin-top: 9.25rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: #7762f2;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(41, 32, 103, 0.2);
 }
@@ -564,9 +566,9 @@ a .span {
 }
 .m6con > p {
     width: 13.625rem;
-    margin: 0.75rem auto;
-    font-size: 0.55rem;
-    line-height: 0.75rem;
+    margin: .75rem auto;
+    font-size: .55rem;
+    line-height: .75rem;
     color: rgba(255, 255, 255, 0.9);
 }
 .m6tit2 {
@@ -575,10 +577,10 @@ a .span {
 }
 .m6 > p {
     width: 15.5rem;
-    margin: 0.875rem auto;
-    font-size: 0.55rem;
-    line-height: 0.75rem;
-    letter-spacing: 0.025rem;
+    margin: .875rem auto;
+    font-size: .55rem;
+    line-height: .75rem;
+    letter-spacing: .025rem;
     color: rgba(114, 98, 226, 0.9);
 }
 .m6page {
@@ -590,8 +592,8 @@ a .span {
     display: inline-block;
     width: 4.75rem;
     height: 10rem;
-    font-size: 0.45rem;
-    line-height: 0.6rem;
+    font-size: .45rem;
+    line-height: .6rem;
     vertical-align: top;
     color: rgba(255, 255, 255, 0.96);
     background: url("//img.hzshuangmei.com/m/yzw/images/m6bg3.jpg") no-repeat center;
@@ -599,33 +601,33 @@ a .span {
 }
 .m6pc img {
     width: 4.275rem;
-    margin-top: 0.175rem;
+    margin-top: .175rem;
     border-radius: 50%;
     box-shadow: 0.1rem 0.15rem 0.1rem 0 rgba(60, 51, 121, 0.4);
 }
 .m6pc2 {
-    margin: 0 0.625rem 0;
+    margin: 0 .625rem 0;
 }
 .m6pc p {
     width: 3.8rem;
-    margin: 0.4rem auto 0;
+    margin: .4rem auto 0;
     text-align: left;
 }
 .m6pc2 p {
-    padding-left: 0.2rem;
+    padding-left: .2rem;
 }
 .m6pc3 p {
     width: 3.8rem;
-    padding-left: 0.25rem;
-    margin: 0.4rem auto 0;
+    padding-left: .25rem;
+    margin: .4rem auto 0;
     text-align: left;
 }
 .m6 .m6a2 {
     width: 8.55rem;
     height: 1.45rem;
     margin-top: 1.05rem;
-    margin-bottom: 0.175rem;
-    border-radius: 0.7rem;
+    margin-bottom: .175rem;
+    border-radius: .7rem;
     background-color: #fe6cab;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(125, 47, 87, 0.3);
 }
@@ -645,16 +647,16 @@ a .span {
     width: 7.775rem;
     height: 1.45rem;
     margin-top: 1.05rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
     background-color: #fe6cab;
     box-shadow: 0.075rem 0.15rem 0.1rem 0 rgba(125, 47, 87, 0.2);
 }
 a .div {
     position: absolute;
-    top: 0.025rem;
-    left: 0.05rem;
+    top: .025rem;
+    left: .05rem;
     height: 1.45rem;
-    border-radius: 0.7rem;
+    border-radius: .7rem;
 }
 .m1 a .div {
     width: 7.675rem;
@@ -684,6 +686,12 @@ a .div {
 }
 .swiper-container1 .swiper-slide {
     height: 7.4rem;
-    margin-top: 0.25rem;
-    box-shadow: 0 0 0.7rem 0.125rem #e8e7f1;
+    margin-top: .25rem;
+    box-shadow: 0 0 .7rem .125rem #e8e7f1;
+}
+.swiper-container1 .swiper-slide img {
+    width: 11.025rem;
+}
+.swiper-container2 .swiper-slide img {
+    width: 15.5rem;
 }
