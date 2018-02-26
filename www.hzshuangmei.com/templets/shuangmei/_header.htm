@@ -42,14 +42,24 @@
                     <li>
                         <h5><a href="/projects/tattoo/" target="_blank" rel="noopener">医学纹绣</a></h5>
                     </li>
-                    {dede:arclist typeid=20 orderby='weight' row='3' orderway='desc' isweight='Y'}
+       <!--              {dede:arclist typeid=20 orderby='weight' row='3' orderway='desc' isweight='Y'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                            <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                   {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid=20  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
+
+
                     <!--<li class="n_button">-->
                         <!--<a href="/projects" target="_blank" rel="noopener">查看更多</a>-->
                     <!--</li>-->
@@ -58,83 +68,132 @@
                     <li>
                         <h5><a href="/projects/eye/" target="_blank" rel="noopener">眼部整形</a></h5>
                     </li>
-                    {dede:arclist typeid=15 orderby='weight' row='3' orderway='desc' isweight='Y'}
+                  <!--   {dede:arclist typeid=15 orderby='weight' row='3' orderway='desc' isweight='Y'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid=15  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
                 <ul>
                     <li>
                         <h5><a href="/projects/nose/" target="_blank" rel="noopener">鼻部整形</a></h5>
                     </li>
-                    {dede:arclist typeid=14 orderby='weight' row='3'  isweight='Y' orderway='desc'}
+       <!--              {dede:arclist typeid=14 orderby='weight' row='3'  isweight='Y' orderway='desc'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                         <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid=14  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
                 <ul>
                     <li>
                         <h5><a href="/projects/face/" target="_blank" rel="noopener">面部整形</a></h5>
                     </li>
-                    {dede:arclist typeid=16 orderby='weight' row='3'  orderway='desc' isweight='Y'}
+     <!--                {dede:arclist typeid=16 orderby='weight' row='3'  orderway='desc' isweight='Y'}
                     <li class="star">
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid in (16,24,25,26)  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
                 <ul>
                     <li>
                         <h5><a href="/projects/skin/" target="_blank" rel="noopener">皮肤美容</a></h5>
                     </li>
-                    {dede:arclist typeid=21 orderby='weight' row='3'  orderway='desc' isweight='Y'}
+    <!--                 {dede:arclist typeid=21 orderby='weight' row='3'  orderway='desc' isweight='Y'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid in (27,28,29,30,31,32,33)  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
                 <ul>
                     <li>
                         <h5><a href="/projects/ha/" target="_blank" rel="noopener">玻尿酸</a></h5>
                     </li>
-                    {dede:arclist typeid=22 orderby='weight' row='3'  orderway='desc' isweight='Y'}
+<!--                     {dede:arclist typeid=22 orderby='weight' row='3'  orderway='desc' isweight='Y'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                         </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid=22  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
                 <ul>
                     <li>
                         <h5><a href="/projects/body/" target="_blank" rel="noopener">形体雕塑</a></h5>
-                    </li> {dede:arclist typeid=19 orderby='desc' row='3' isweight='Y'}
+                    </li>
+                    <!-- {dede:arclist typeid=19 orderby='desc' row='3' isweight='Y'}
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                             <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
                             <p><i></i><span>[field:title/]</span></p>
                        </a>
                     </li>
-                    {/dede:arclist}
+                    {/dede:arclist} -->
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid=19  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                          <li>
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
+                            <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
+                            <p><i></i><span>[field:title/]</span></p>
+                        </a>
+                    </li>
+                     {/dede:sql}
                     <!--<li class="n_button"> <a href="/projects">查看更多</a> </li>-->
                 </ul>
             </div>
@@ -157,7 +216,7 @@
                             <i></i>
                         </a>
                     </li> {/dede:arclist} -->
-       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and a.typeid=3  order by  a.weight asc  limit  0,2"}
+       {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and a.typeid=3  and a.arcrank=0 order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
@@ -180,7 +239,7 @@
                         </a>
                     </li>
                     {/dede:arclist} -->
-                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc  limit  0,2"}
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  and a.arcrank=0 order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
@@ -203,7 +262,7 @@
                         </a>
                     </li>
                     {/dede:arclist} -->
-                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17 and a.typeid=5  order by  a.weight asc  limit  0,2"}
+                           {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17 and a.typeid=5  and a.arcrank=0 order by  a.weight asc  limit  0,2"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
