@@ -120,7 +120,7 @@
                         </a>
                     </li>
                     {/dede:arclist} -->
-                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid in (24,25,26)  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
+                            {dede:sql sql="select * from  sm_archives as a,sm_addonproject as b where a.id=b.aid and  a.channel=18  and a.typeid in (16,24,25,26)  and a.arcrank=0 order by  a.weight desc  limit  0,3"}
                           <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:litpic function='replaceurl(@me)/]" alt="[field:title/]"/>
