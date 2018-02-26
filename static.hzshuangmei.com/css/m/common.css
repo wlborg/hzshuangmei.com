@@ -74,7 +74,7 @@ body { padding-bottom: 2.4rem !important; }
 .footer a:nth-child(4) img { width: 1.125rem; }
 /* typographical */
 /*popup*/
-body .popup { width: 80% !important; background-color: transparent; }
+body .popup { width: 90% !important; background-color: transparent; }
 body .popup .layui-m-layerbtn { border: 0; }
 body .popup .layui-m-layerbtn .never { font-size: .8rem; color: #999; border: 1px solid #cecece; border: 0; border-top: 0; border-right: 1px solid #cecece; border-bottom-right-radius: 0; background-color: #fff; }
 body .popup .layui-m-layerbtn span[no] { font-size: .8rem; color: #7d64c3; border: 1px solid #cbbeef; border: 0; border-top: 0; border-right: 0; border-right: 1px solid #cecece; border-left: 0; border-bottom-left-radius: 0; background-color: #fff; }
