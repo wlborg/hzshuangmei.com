@@ -318,23 +318,25 @@ a .span {
     text-align: center;
     vertical-align: middle;
     color: #5c4aa7;
-    background-size: 4.675rem 4.675rem;
 }
 .m3p1 {
     height: 3.05rem;
     padding-top: 1.625rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3p2 {
     height: 3.3rem;
     padding-top: 1.375rem;
     margin: .625rem .7375rem 0;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3p3 {
     height: 3.425rem;
     padding-top: 1.25rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m3bg1.png");
+    background-size: 4.675rem 4.675rem;
 }
 .m3 a {
     width: 7.775rem;
@@ -442,8 +444,8 @@ a .span {
     position: absolute;
     top: 9.15rem;
     left: 50%;
-    width: 4.25rem;
-    margin-left: -2.1rem;
+    width: 4.5rem;
+    margin-left: -2.35rem;
 }
 .m5qd p {
     font-size: .45rem;
@@ -451,8 +453,13 @@ a .span {
     color: rgba(77, 77, 77, 0.75);
 }
 .m5qd p:first-child {
+    padding-left: 0.25rem;
     margin-bottom: .2rem;
     line-height: .75rem;
+}
+.m5qd p:nth-child(2),
+.m5qd p:nth-child(3) {
+    padding-left: 0.25rem;
 }
 .m5qd .m5dz {
     width: 3.65rem;
