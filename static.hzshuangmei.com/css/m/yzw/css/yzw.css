@@ -170,7 +170,7 @@ a .span {
     height: .875rem;
     margin-left: .05rem;
     font-size: .75rem;
-    line-height: .75rem;
+    line-height: .875rem;
     vertical-align: bottom;
     color: rgba(254, 108, 171, 0.95);
     border-radius: 50%;
@@ -241,6 +241,7 @@ a .span {
 .m2ts {
     height: 5.15rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m2bg2.jpg") no-repeat center;
+    background-size: 620px 206px;
 }
 .m2ts > img {
     width: 3.95rem;
