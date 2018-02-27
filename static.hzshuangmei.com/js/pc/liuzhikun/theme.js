@@ -216,4 +216,8 @@ $(function() {
         target: $(".zt-m5 .slider-container"),
         length: 3942
     });
+     var marquee2 = new XZmarquee({
+        target: $(".zt-m1 .marquee-container"),
+        length: 1784
+    });
 });
