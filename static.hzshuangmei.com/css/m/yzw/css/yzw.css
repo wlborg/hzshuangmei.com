@@ -551,6 +551,7 @@ a .span {
 }
 .swiper-container1 p {
     height: 1rem;
+    width: 11.025rem;
     font-size: .55rem;
     line-height: 1rem;
     text-align: center;
