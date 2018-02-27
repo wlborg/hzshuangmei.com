@@ -256,6 +256,7 @@ a .span {
     color: rgba(255, 255, 255, 0.9);
 }
 .m2tswz > span {
+    font-weight: bold;
     display: block;
     margin-top: 1.2rem;
     margin-bottom: .25rem;
@@ -550,6 +551,7 @@ a .span {
 }
 .swiper-container1 p {
     height: 1rem;
+    width: 11.025rem;
     font-size: .55rem;
     line-height: 1rem;
     text-align: center;
@@ -693,6 +695,7 @@ a .div {
     width: 8.5rem;
 }
 .swiper-container1 .swiper-slide {
+    width: 11.025rem;
     height: 7.4rem;
     margin-top: .25rem;
     box-shadow: 0 0 .7rem .125rem #e8e7f1;
