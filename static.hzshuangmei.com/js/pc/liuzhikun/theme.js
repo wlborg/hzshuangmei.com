@@ -218,6 +218,6 @@ $(function() {
     });
      var marquee2 = new XZmarquee({
         target: $(".zt-m1 .marquee-container"),
-        length: 1800
+        length: 1784
     });
 });
