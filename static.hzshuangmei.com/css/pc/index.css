@@ -125,12 +125,9 @@ video::-webkit-media-controls-panel {
 .index_news .news .date {
     position: absolute;
     top: 0;
-
-    width: 71px;
-    height: 74px;
-
+    width: 51px;
+    height: 51px;
     text-align: center;
-
     color: #fff;
     background-color: rgba(105, 50, 144, .9);
 }
@@ -144,11 +141,16 @@ video::-webkit-media-controls-panel {
 }
 
 .index_news .news .date span:first-child {
-    font-size: 37px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+
 }
 
 .index_news .news .date span:last-child {
-    font-size: 16px;
+    font-size: 12px;
+    position: relative;
+    top: 1px;
 }
 
 .index_news .news .timu {
