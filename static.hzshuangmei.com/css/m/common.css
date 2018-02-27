@@ -93,7 +93,9 @@ body #LXB_CONTAINER.lxb-container { position: fixed; z-index: 2147483647; font-s
 .lxb-mobile-pos-bottom { bottom: 0; }
 body #LXB_CONTAINER input.lxb-cb-input { position: absolute; border: 0; font-size: 0.6rem; outline: none; }
 body #LXB_CONTAINER .lxb-cb-input-clear, body #LXB_CONTAINER .lxb-cb-latest-call, body #LXB_CONTAINER .lxb-cb-input-feedback { position: absolute; overflow: hidden; cursor: pointer; }
-body #LXB_CONTAINER .lxb-cb-input-clear { width: 1.1rem; height: 1.1rem;  }
+
+body #LXB_CONTAINER .lxb-cb-input-clear { width: 1.1rem; height: 1.1rem; background: url(https://img.hzshuangmei.com/m/lxb/icon.png) 0 0 no-repeat; }
+
 body #LXB_CONTAINER .lxb-cb-input-btn, body #LXB_CONTAINER .lxb-container-btn-hide { position: absolute; overflow: hidden; cursor: pointer; }
 body #LXB_CONTAINER .lxb-cb-input-tip, body #LXB_CONTAINER .lxb-cb-input-feedback { position: absolute; font-size: 0.6rem; line-height: 0.7rem; }
 body #LXB_CONTAINER .lxb-cb-input-tip b { font-size: 0.6rem; }
