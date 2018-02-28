@@ -15,7 +15,7 @@ ul,
 li {
     list-style: none;
 }
-.ymbns img {
+.yimeibns img {
     display: block;
     border: 0;
 }
@@ -714,22 +714,22 @@ a {
 .bigtu2 {
     right: 0.075rem;
 }
-.ymbns .left,
-.ymbns.right {
+.yimeibns .left,
+.yimeibns.right {
     position: absolute;
     top: 6.25rem;
     z-index: 2;
     width: 1.5rem;
     height: 1.5rem;
 }
-.ymbns .left img,
-.ymbns .right img {
+.yimeibns .left img,
+.yimeibns .right img {
     width: 100%;
 }
-.ymbns.left {
+.yimeibns.left {
     left: 0;
 }
-.ymbns.right {
+.yimeibns.right {
     right: 0;
 }
 .zixunbox3 {
