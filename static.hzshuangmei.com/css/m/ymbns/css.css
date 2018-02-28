@@ -735,10 +735,10 @@ a {
     width: 100%;
 }
 .yimeibns .left {
-    left: .45rem;
+    left: 0;
 }
 .yimeibns .right {
-    right: .45rem;
+    right:0;
 }
 .zixunbox3 {
     padding-top: .6rem;
