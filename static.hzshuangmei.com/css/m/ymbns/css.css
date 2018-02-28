@@ -948,7 +948,8 @@ a {
 .main-four {
     height: 20.1rem;
 }
-.h5 p {
+.h5 span {
+    display: block;
     color: rgba(77, 40, 111, 0.6);
 }
 .yimeibns .smalltu {
