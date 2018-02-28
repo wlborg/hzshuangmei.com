@@ -27,10 +27,10 @@ body {
 }
 p,
 span {
-    font-size: 0.5rem;
+    font-size: .5rem;
 }
 h3 {
-    font-size: 0.6rem;
+    font-size: .6rem;
 }
 a {
     text-decoration: none;
@@ -60,62 +60,63 @@ a {
 .title {
     position: relative;
     width: 96%;
-    height: 2.2rem;
+    height: 2.875rem;
     margin: 0 auto;
-    border-bottom: 0.025rem solid #a493b4;
+    border-bottom: .025rem solid #a493b4;
 }
 .titleOne .titleTop img {
     width: 9.3rem;
-    height: 0.65rem;
+    margin-bottom: 0.125rem;
 }
 .titleOne .yingwen {
     width: 5.775rem;
-    height: 0.3rem;
+    height: .3rem;
 }
 .titleTop {
     position: relative;
     width: 100%;
-    height: 0.675rem;
-    padding-bottom: 0.05rem;
-    border-bottom: 0.025rem solid #684c83;
+    height: .675rem;
+    padding-bottom: 0.2rem;
+    border-bottom: .025rem solid #684c83;
 }
 .titleTop img {
     position: absolute;
 }
 .titleLeft {
     position: absolute;
-    top: 0.9rem;
+    top: 1.15rem;
     left: 0;
     width: 3.525rem;
-    height: 1.1rem;
-    font-size: 0.8rem;
-    line-height: 1.1rem;
+    height: 1.35rem;
+    font-size: .8rem;
+    line-height: 1.25rem;
     text-align: center;
     color: #4d286f;
-    border: 0.05rem solid #593b74;
-    border-radius: 0.0425rem;
+    border: 0.075rem solid #593b74;
+    border-radius: .0425rem;
 }
 .titleRight {
     position: absolute;
-    top: 0.95rem;
+    top: 1.375rem;
     left: 3.875rem;
     width: 8.75rem;
-    height: 0.875rem;
 }
 .titleRight h3 {
-    font-size: 0.5rem;
-    line-height: 0.575rem;
-    color: #89799c;
+    margin-bottom: 0.2rem;
+    font-size: 0.55rem;
+    line-height: 0.55rem;
+    /*color: #89799c;*/
+    color: rgba(81, 48, 112, 0.8);
 }
 .titleRight h3 img {
     display: inline;
-    width: 0.2rem;
-    height: 0.175rem;
-    padding-bottom: 0.1rem;
+    width: .2rem;
+    height: .175rem;
+    padding-bottom: .1rem;
 }
-.yingwen {
-    padding-top: 0.0725rem;
-}
+/*.yingwen {*/
+/*padding-top: .0725rem;*/
+/*}*/
 .problem {
     width: 98%;
     height: 5.5rem;
@@ -130,12 +131,12 @@ a {
 }
 .problem li p {
     position: absolute;
-    bottom: 0.475rem;
+    bottom: .475rem;
     left: 0;
     width: 100%;
-    height: 0.425rem;
-    font-size: 0.55rem;
-    line-height: 0.425rem;
+    height: .425rem;
+    font-size: .55rem;
+    line-height: .425rem;
     text-align: center;
     color: #fff;
 }
@@ -148,19 +149,18 @@ a {
 }
 .zixunbox {
     width: 100%;
-    height: 1.5rem;
-    padding-top: 0.145rem;
+    padding-top: .145rem;
 }
 .zixun {
     position: relative;
-    width: 6.25rem;
-    height: 1.5rem;
+    width: 3.95rem;
+    height: 1.05rem;
     margin: 0 auto;
 }
 .zixun-in {
     left: 50%;
-    width: 4.5rem;
-    height: 100%;
+    width: 3.975rem;
+    height: 1.05rem;
     margin-left: -2.25rem;
     background-color: #907aa4;
 }
@@ -168,8 +168,8 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
+    font-size: .75rem;
+    line-height: 1.05rem;
     text-align: center;
     color: #fff;
 }
@@ -179,28 +179,30 @@ a {
     height: 0;
 }
 .triangle01 {
-    top: 0.0725rem;
-    left: 0;
-    border-top: 1.25rem solid #d3cadb;
-    border-left: 0.75rem solid transparent;
+    top: 0;
+    left: -1.325rem;
+    border-top: 1.05rem solid #d3cadb;
+    border-left: .75rem solid transparent;
 }
 .triangle02 {
-    bottom: 0.0725rem;
-    left: 0;
-    border-bottom: 1.25rem solid #d3cadb;
-    border-left: 0.75rem solid transparent;
+    top: 0;
+    bottom: .0725rem;
+    left: -1.325rem;
+    border-bottom: 1.05rem solid #d3cadb;
+    border-left: .75rem solid transparent;
 }
 .triangle03 {
-    right: 0;
-    bottom: 0.0725rem;
-    border-right: 0.75rem solid transparent;
-    border-bottom: 1.25rem solid #d3cadb;
+    top: 0;
+    right: -0.8rem;
+    bottom: .0725rem;
+    border-right: .75rem solid transparent;
+    border-bottom: 1.05rem solid #d3cadb;
 }
 .triangle04 {
-    top: 0.0725rem;
-    right: 0;
-    border-top: 1.25rem solid #d3cadb;
-    border-right: 0.75rem solid transparent;
+    top: 0;
+    right: -0.8rem;
+    border-top: 1.05rem solid #d3cadb;
+    border-right: .75rem solid transparent;
 }
 .td {
     position: absolute;
@@ -300,16 +302,18 @@ a {
 .mainTwo-in {
     width: 100%;
     height: 15.075rem;
-    padding-top: 0.45rem;
+    padding-top: .45rem;
     margin: 0 auto;
 }
 .titletwo .titleTop img {
-    width: 10rem;
-    height: 0.65rem;
+    width: 10.075rem;
 }
 .titletwo .yingwen {
     width: 6.975rem;
-    height: 0.3rem;
+    /*height: 0.3rem;*/
+}
+.mian-one .zixunbox {
+    margin-top: 1rem;
 }
 .titletwo .titleLeft {
     width: 4.5rem;
@@ -328,15 +332,15 @@ a {
     position: relative;
     width: 15rem;
     height: 4.2rem;
-    border: 0.025rem solid #c6bbd1;
+    border: .025rem solid #c6bbd1;
 }
 .yaopin {
     position: absolute;
     bottom: -0.5rem;
-    left: 0.2rem;
+    left: .2rem;
     width: 7.5rem;
     height: 4.2rem;
-    border: 0.045rem solid #c6bbd1;
+    border: .045rem solid #c6bbd1;
 }
 .zhushe {
     position: absolute;
@@ -344,7 +348,7 @@ a {
     right: 1.15rem;
     width: 4.85rem;
     height: 3.1875rem;
-    border: 0.045rem solid #b3a4c0;
+    border: .045rem solid #b3a4c0;
 }
 .fda {
     position: absolute;
@@ -352,7 +356,7 @@ a {
     bottom: -0.75rem;
     width: 3.5rem;
     height: 1.4rem;
-    border-left: 0.15rem solid #efebf3;
+    border-left: .15rem solid #efebf3;
 }
 .fda img {
     width: 3.5rem;
@@ -366,12 +370,12 @@ a {
 }
 .twoarc-in {
     position: relative;
-    font-size: 0.5rem;
-    line-height: 0.65rem;
+    font-size: .5rem;
+    line-height: .65rem;
     color: #71558a;
 }
 .twoarc-in strong {
-    font-size: 0.45rem;
+    font-size: .45rem;
 }
 .main2-img {
     width: 15.7rem;
@@ -382,8 +386,8 @@ a {
     float: left;
     width: 4.5rem;
     height: 2.875rem;
-    margin: 0 0.35rem;
-    border-radius: 0.15rem;
+    margin: 0 .35rem;
+    border-radius: .15rem;
 }
 .main-three {
     width: 100%;
@@ -393,15 +397,14 @@ a {
 }
 .titlethree .titleRight {
     width: 10.8rem;
-    height: 0.8rem;
+    height: .8rem;
 }
 .titlethree .titleTop img {
-    width: 9.5rem;
-    height: 0.65rem;
+    width: 10.85rem;
 }
 .titlethree .yingwen {
     width: 6.975rem;
-    height: 0.3rem;
+    height: .3rem;
 }
 .ymbns {
     width: 100%;
@@ -411,14 +414,17 @@ a {
 .ymbns img {
     width: 5.3rem;
     height: 1.05rem;
-    margin: 0 auto;
+    margin: 0 auto .35rem;
+}
+.main-three .zixunbox {
+    margin-top: .375rem;
 }
 .natu {
     width: 100%;
     height: 1rem;
-    font-size: 0.3rem;
+    font-size: .3rem;
     text-align: center;
-    letter-spacing: 0.25rem;
+    letter-spacing: .25rem;
     color: #9684a7;
 }
 .trianglebox {
@@ -431,7 +437,7 @@ a {
 }
 .triangle2,
 .triangle3 {
-    border-width: 0.525rem;
+    border-width: .525rem;
     border-style: solid;
     border-color: #b9acc6 transparent transparent transparent;
 }
@@ -453,7 +459,7 @@ a {
     margin: 0 .5%;
     overflow: hidden;
     box-sizing: border-box;
-    border: 0.025rem solid #907aa4;
+    border: .025rem solid #907aa4;
 }
 .main3-star {
     width: 3.225rem;
@@ -471,28 +477,28 @@ a {
 }
 .main3-arc h3 {
     width: 3rem;
-    height: 0.8rem;
+    height: .8rem;
     margin: 0 auto;
     overflow: hidden;
-    font-size: 0.5rem;
+    font-size: .5rem;
     font-weight: 700;
-    line-height: 0.8rem;
+    line-height: .8rem;
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #fff;
-    border-bottom: 0.025rem solid #c8bdd2;
+    border-bottom: .025rem solid #c8bdd2;
 }
 .main3-arc h5 {
     width: 100%;
-    height: 0.7rem;
-    font-size: 0.5rem;
-    line-height: 0.7rem;
+    height: .7rem;
+    font-size: .5rem;
+    line-height: .7rem;
     text-align: center;
     color: #fff;
 }
 .zixunbox2 {
-    padding-top: 0.9rem;
+    padding-top: .9rem;
 }
 .main-four {
     height: 16.25rem;
@@ -500,13 +506,13 @@ a {
 .main4-in {
     width: 100%;
     height: 15.5rem;
-    padding-top: 0.725rem;
+    padding-top: .725rem;
     margin: 0 auto;
 }
 .main4-main {
     width: 100%;
     height: 10.75rem;
-    padding-bottom: 0.0025rem;
+    padding-bottom: .0025rem;
     margin-top: 2.5rem;
     background: url(//img.hzshuangmei.com/m/ymbns/images/main4-star.png) no-repeat center left;
     background-size: contain;
@@ -515,51 +521,50 @@ a {
     position: relative;
     width: 9.75rem;
     height: 9.05rem;
-    margin-top: 0.25rem;
+    margin-top: .25rem;
     margin-left: auto;
 }
 .titlefour .titleTop img {
     width: 12rem;
-    height: 0.65rem;
 }
 .titlefour .yingwen {
     width: 8.25rem;
-    height: 0.3rem;
+    height: .3rem;
 }
 .advantage {
     position: absolute;
     top: -2rem;
-    right: 0.25rem;
+    right: .25rem;
     width: 8.75rem;
     height: 11rem;
 }
 .advantage h3 {
     width: 100%;
-    height: 0.675rem;
-    padding-top: 0.25rem;
+    height: .675rem;
+    padding-top: .25rem;
     font-size: .24em;
     font-weight: 700;
-    line-height: 0.675rem;
+    line-height: .675rem;
 }
 .advantage h3 img {
     float: left;
-    height: 0.675rem;
+    height: .675rem;
 }
 .advantage h3 strong {
     float: left;
-    margin-left: 0.275rem;
+    margin-left: .275rem;
     color: #5d3c7c;
 }
 .advantage h5 {
     width: 100%;
     height: 1.25rem;
-    font-size: 0.5rem;
-    line-height: 0.625rem;
+    font-size: .5rem;
+    line-height: .625rem;
     color: #89799c;
 }
 .round {
     position: absolute;
-    border: 0.03rem solid #d9d1e5;
+    border: .03rem solid #d9d1e5;
     border-radius: 50%;
 }
 .round img {
@@ -568,22 +573,22 @@ a {
 .round01 {
     top: 0;
     right: 0;
-    width: 0.4rem;
-    height: 0.4rem;
+    width: .4rem;
+    height: .4rem;
     border: 0;
     background-color: #ece8f2;
 }
 .round02 {
     top: 1.15rem;
-    right: 0.025rem;
-    width: 0.65rem;
-    height: 0.65rem;
+    right: .025rem;
+    width: .65rem;
+    height: .65rem;
     border: 0;
     background-color: #e6e0ed;
 }
 .round03 {
     top: 2.55rem;
-    right: 0.03rem;
+    right: .03rem;
     width: 1.125rem;
     height: 1.125rem;
     border: 0;
@@ -591,7 +596,7 @@ a {
 }
 .round04 {
     top: 4.35rem;
-    right: 0.1rem;
+    right: .1rem;
     width: 1.75rem;
     height: 1.75rem;
     overflow: hidden;
@@ -635,7 +640,7 @@ a {
     position: relative;
     width: 100%;
     height: 11.925rem;
-    padding-top: 0.40625rem;
+    padding-top: .40625rem;
 }
 .box-in {
     position: relative;
@@ -657,43 +662,41 @@ a {
     height: 10rem;
     margin-top: 1.75rem;
     box-sizing: border-box;
-    border-top: 0.075rem solid #bbaec8;
-    border-bottom: 0.075rem solid #bbaec8;
-    border-radius: 0.125rem;
+    border: .075rem solid #bbaec8;
 }
 .introduce {
     width: 5.775rem;
     height: 9.25rem;
-    padding: 0.75rem 0 0 0.5rem;
-    font-size: 0.5rem;
-    line-height: 0.6rem;
+    padding: .75rem 0 0 .5rem;
+    font-size: .45rem;
+    line-height: .6rem;
     color: #777;
 }
 .main5-contrast {
     width: 7.375rem;
     height: 3.975rem;
-    padding-left: 0.75rem;
+    padding-left: .75rem;
 }
 .main5-contrast div {
     position: relative;
     float: left;
     width: 3.375rem;
     height: 3.975rem;
-    margin-right: 0.175rem;
+    margin-right: .175rem;
     background-color: #ccc;
     background-color: #efe8ef;
 }
 .main5-contrast div span {
     position: absolute;
-    bottom: 0.15rem;
-    left: 0.15rem;
-    font-size: 0.3rem;
+    bottom: .15rem;
+    left: .15rem;
+    font-size: .3rem;
     color: #74598d;
 }
 .case h3 {
     position: absolute;
     top: -0.85rem;
-    left: 0.875rem;
+    left: .875rem;
     width: 3.95rem;
     height: 1.4rem;
     font-size: 1.15rem;
@@ -711,7 +714,7 @@ a {
     color: #fff;
 }
 .bigtu2 {
-    right: 0.075rem;
+    right: .075rem;
 }
 .yimeibns .left,
 .yimeibns .right {
@@ -728,28 +731,28 @@ a {
 .yimeibns .left {
     left: 0;
 }
-.yimeibns.right {
+.yimeibns .right {
     right: 0;
 }
 .zixunbox3 {
-    padding-top: 0.6rem;
+    padding-top: .6rem;
 }
 .titlefive .titleTop img {
-    width: 11rem;
-    height: 0.675rem;
+    width: 11.55rem;
+    height: .675rem;
 }
 .titlefive .yingwen05 {
     width: 4.375rem;
-    height: 0.275rem;
+    height: .275rem;
 }
 .smalltu {
     position: absolute;
     right: 4.5rem;
-    bottom: 0.125rem;
+    bottom: .125rem;
     z-index: 2;
     width: 3.05rem;
     height: 3.675rem;
-    border: 0.05rem solid #bfb2ca;
+    border: .05rem solid #bfb2ca;
 }
 .bigtu1 {
     width: 7.625rem;
@@ -762,16 +765,16 @@ a {
 .main6 {
     width: 100%;
     height: 3.125rem;
-    padding-top: 0.453125rem;
+    padding-top: .453125rem;
     margin: 0 auto;
 }
 .titlesix .titleTop img {
     width: 9.3rem;
-    height: 0.65rem;
+    height: .65rem;
 }
 .titlesix .yingwen {
     width: 8.25rem;
-    height: 0.3rem;
+    height: .3rem;
 }
 .titlesix .titleRight {
     width: 11.25rem;
@@ -798,32 +801,33 @@ a {
     position: relative;
     width: 12.75rem;
     height: 17rem;
-    margin: 0 auto;
-    border: 0.025rem solid #68a4a1;
+    margin: .625rem auto 0;
+    border: .025rem solid #68a4a1;
 }
 .arc-in {
     position: absolute;
-    top: 0.225rem;
+    top: .225rem;
     right: 0;
     width: 12.75rem;
     height: 14.475rem;
-    padding: 0.525rem 0.8rem 0 0.5rem;
-    font-size: 0.5rem;
+    padding: .525rem .8rem 0 .5rem;
+    margin-top: .125rem;
+    font-size: .5rem;
     color: #454648;
     background: url(//img.hzshuangmei.com/m/ymbns/images/likebg.jpg) no-repeat top center;
 }
 .arc-in h3 {
     width: 100%;
     height: 1.125rem;
-    font-size: 0.75rem;
+    font-size: .75rem;
     color: #000;
 }
 .arc-in ul li {
     width: 100%;
-    height: 0.5rem;
-    padding-left: 0.625rem;
-    margin: 0.15rem 0;
-    line-height: 0.45rem;
+    height: .5rem;
+    padding-left: .625rem;
+    margin: .15rem 0;
+    line-height: .45rem;
     background: url(//img.hzshuangmei.com/m/ymbns/images/juhao.png) no-repeat left center;
     background-size: contain;
     --webkit-background-size: contain;
@@ -835,30 +839,30 @@ a {
 .abstract {
     width: 6.625rem;
     height: 7.5rem;
-    padding-top: 0.3rem;
-    line-height: 0.425rem;
-    line-height: 0.7rem;
-    border-top: 0.025rem solid #454648;
+    padding-top: .3rem;
+    line-height: .425rem;
+    line-height: .7rem;
+    border-top: .025rem solid #454648;
 }
 .consult-like {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: .35rem;
+    right: .65rem;
     width: 6.25rem;
     height: 1.5rem;
-    border-radius: 0.075rem;
+    border-radius: .075rem;
     background-color: #81c6ce;
 }
 .consult-like span {
-    padding-right: 0.15rem;
-    font-size: 0.7rem;
-    border-right: 0.03rem solid #fff;
+    padding-right: .15rem;
+    font-size: .7rem;
+    border-right: .03rem solid #fff;
 }
 .consult-like a {
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 0.7rem;
+    font-size: .7rem;
     line-height: 1.5rem;
     text-align: center;
     color: #fff;
@@ -866,13 +870,13 @@ a {
 .consult-like em {
     position: absolute;
     top: 0;
-    left: 0.075rem;
-    width: 0.075rem;
+    left: .075rem;
+    width: .075rem;
     height: 100%;
     background-color: #81c6ce;
 }
 .consult-like i {
-    margin-left: 0.225rem;
+    margin-left: .225rem;
     font-style: normal;
     -webkit-transition: transform ease-in 1s;
     -moz-transition: transform ease-in 1s;
@@ -899,11 +903,11 @@ a {
 }
 .titleseven .titleTop img {
     width: 5.5rem;
-    height: 0.55rem;
+    height: .55rem;
 }
 .titleseven .yingwen {
     width: 7rem;
-    height: 0.3rem;
+    height: .3rem;
 }
 .main7-in {
     width: 100%;
@@ -913,21 +917,21 @@ a {
 .main7-in li {
     float: left;
     width: 48%;
-    height: 0.75rem;
-    margin: 0.25rem 0;
+    height: .75rem;
+    margin: .25rem 0;
 }
 .main7-in li a {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 0 0.15625rem;
+    padding: 0 .15625rem;
     overflow: hidden;
-    font-size: 0.5rem;
+    font-size: .5rem;
     cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #625f5f;
-    border-radius: 0.15625rem;
+    border-radius: .15625rem;
 }
 .padfoot {
     height: 1.825rem;
