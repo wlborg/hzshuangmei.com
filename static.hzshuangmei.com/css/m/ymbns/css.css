@@ -714,7 +714,7 @@ a {
     right: 0.075rem;
 }
 .yimeibns .left,
-.yimeibns.right {
+.yimeibns .right {
     position: absolute;
     top: 6.25rem;
     z-index: 2;
@@ -725,7 +725,7 @@ a {
 .yimeibns .right img {
     width: 100%;
 }
-.yimeibns.left {
+.yimeibns .left {
     left: 0;
 }
 .yimeibns.right {
