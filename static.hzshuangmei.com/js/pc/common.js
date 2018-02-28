@@ -86,12 +86,6 @@ var tools = (
         module.addBaiduScript = function() {
             addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103");
         };
-
-             module.addCnzzScript = function() {
-            addScript("https://s13.cnzz.com/z_stat.php?id=1272981141&web_id=1272981141");
-        };
-
-
         module.bindConsultHref = function() {
             //专题快商通
             var consultEs = $('.j-consult');
@@ -349,7 +343,6 @@ $(function() {
     effects.goToPagination();
     tools.addKSTScript();
     tools.addBaiduScript();
-     tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
     //     tools.preReady();
