@@ -161,7 +161,7 @@ a {
     left: 50%;
     width: 3.975rem;
     height: 1.05rem;
-    margin-left: -2.25rem;
+    margin-left: -1.9785rem;
     background-color: #907aa4;
 }
 .zixun-in a {
@@ -439,6 +439,7 @@ a {
 }
 .triangle2,
 .triangle3 {
+    font-size: 0;
     border-width: .525rem;
     border-style: solid;
     border-color: #b9acc6 transparent transparent transparent;
@@ -446,8 +447,8 @@ a {
 .triangle3 {
     position: absolute;
     top: -0.325rem;
-    left: -0.525rem;
-    border-color: rgba(227, 222, 232, 0.6) transparent transparent transparent;
+    left: -0.5rem;
+    border-color: rgba(227,222,232,.6) transparent transparent transparent;
 }
 .main3-in {
     width: 100%;
@@ -950,7 +951,7 @@ a {
 }
 h5 span {
     display: block;
-    color: rgba(77, 40, 111, 0.6);
+
 }
 .yimeibns .smalltu {
     border: solid 0.075rem #cabfd3;
@@ -962,4 +963,7 @@ h5 span {
 .yimeibns {
     width: 16rem;
     overflow-x: hidden;
+}
+.main4-main span{
+    color: rgba(77, 40, 111, 0.6);
 }
