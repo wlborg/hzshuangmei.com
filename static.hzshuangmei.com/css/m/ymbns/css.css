@@ -441,8 +441,8 @@ a {
 /*}*/
 .triangle2,
 .triangle3 {
-    width: 1.075rem;
-    height: 1.35rem;
+    width:0;
+    height: 0;
     font-size: 0;
     border-width: .525rem;
     border-style: solid;
@@ -450,7 +450,7 @@ a {
 }
 .triangle3 {
     position: absolute;
-    top:0.5rem;
+    top:0.2rem;
     left: -0rem;
     border-color: rgba(227,222,232,.6) transparent transparent transparent;
 }
