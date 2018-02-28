@@ -601,7 +601,7 @@ button, input, select, textarea {
     background-color: #efe8ef
 }
 
-.bigtu, .case h3, .left, .right {
+.bigtu, .case h3,.ymbns .left,.ymbns .right {
     position: absolute
 }
 
@@ -638,18 +638,18 @@ button, input, select, textarea {
     right: 5px
 }
 
-.left, .right {
+.ymbns .left,.ymbns .right {
     width: 60px;
     height: 59px;
     top: 400px;
     z-index: 2
 }
 
-.left {
+.ymbns .left {
     left: 0
 }
 
-.right {
+.ymbns .right {
     right: 0
 }
 
