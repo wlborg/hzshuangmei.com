@@ -828,6 +828,7 @@ a {
     background: url(//img.hzshuangmei.com/m/ymbns/images/likebg.jpg) no-repeat top center;
 }
 .arc-in h3 {
+    margin-left: -0.45rem;
     width: 100%;
     height: 1.125rem;
     font-size: .75rem;
@@ -845,6 +846,7 @@ a {
 }
 .arc-in ul {
     width: 100%;
+    margin-left: -0.45rem;
     height: 5.5rem;
 }
 .abstract {
