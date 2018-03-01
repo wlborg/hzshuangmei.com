@@ -775,7 +775,7 @@ a {
 }
 .main6 {
     width: 100%;
-    height: 3.125rem;
+    /*height: 3.125rem;*/
     padding-top: .453125rem;
     margin: 0 auto;
 }
@@ -792,8 +792,8 @@ a {
 }
 .main6-in {
     position: relative;
-    width: 18.1rem;
-    height: 15.75rem;
+    width: 15.75rem ;
+    height: 18.1rem ;
     margin: 0 auto;
 }
 .main-six {
@@ -809,20 +809,20 @@ a {
     height: 14.575rem;
 }
 .like-arc {
-    position:relative;
-    margin: 1.425rem auto 0;
+    position: relative;
     width: 12.775rem;
     height: 17.1rem;
+    margin: 1.425rem auto 0;
     border: solid 0.025rem rgba(2, 85, 80, 0.45);
-    background-color: #454648;
+    /*background-color: #454648;*/
 }
 .arc-in {
     position: absolute;
-    top: 0.425rem;
+    top: .425rem;
     right: 1.3rem;
     width: 12.75rem;
     height: 16.2rem;
-    font-size: 0.45rem;
+    font-size: .45rem;
     color: #454648;
     background: url(//img.hzshuangmei.com/m/ymbns/images/likebg.jpg) no-repeat top center;
     background-size: 12.75rem 14.475rem;
@@ -830,7 +830,7 @@ a {
 .arc-in h3 {
     width: 100%;
     height: 1.125rem;
-    margin-left: -0.45rem;
+    margin-left: 0.8rem;
     font-size: 1.2rem;
     line-height: 1.125rem;
     color: #000;
@@ -847,29 +847,33 @@ a {
 }
 .arc-in ul li .yuan {
     display: inline-block;
-    width: 0.2rem;
-    height: 0.2rem;
-    vertical-align: text-bottom;
+    width: .2rem;
+    height: .2rem;
+    margin-top: 0.1rem;
+    margin-right: 0.2rem;
+    vertical-align: top;
+    border: .05rem solid #454648;
     border-radius: 50%;
-    background-color: #454648;
+    /*background-color: ;*/
 }
 .arc-in ul {
     width: 100%;
     height: 5.5rem;
-    margin-left: -0.45rem;
+    margin-left: 0.8rem;
 }
 .abstract {
-    width: 6.625rem;
+    width: 6.05rem;
     height: 7.5rem;
     padding-top: .3rem;
-    line-height: .425rem;
+    margin-left: 0.8rem;
+    /*line-height: .425rem;*/
     line-height: .7rem;
     border-top: .025rem solid #454648;
 }
 .consult-like {
     position: absolute;
-    top: .35rem;
-    right: 0;
+    top: 0.45rem;
+    right: 1.325rem;
     width: 6.25rem;
     height: 1.5rem;
     border-radius: .075rem;
@@ -972,6 +976,7 @@ h5 span {
 }
 .yimeibns .gp {
     margin-top: .15rem;
+    margin-left: .375rem;
     font-size: .5rem;
 }
 .yimeibns {
