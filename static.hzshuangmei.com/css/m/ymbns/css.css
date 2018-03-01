@@ -430,18 +430,18 @@ a {
     color: rgba(116, 89, 141, 0.8);
 }
 .trianglebox {
+    position: relative;
     width: 1.075rem;
     height: 1.35rem;
-    position: relative;
-    font-size: 0;
     margin: 0 auto;
+    font-size: 0;
 }
 /*.triangle2 {*/
-    /*position: relative;*/
+/*position: relative;*/
 /*}*/
 .triangle2,
 .triangle3 {
-    width:0;
+    width: 0;
     height: 0;
     font-size: 0;
     border-width: .525rem;
@@ -450,9 +450,9 @@ a {
 }
 .triangle3 {
     position: absolute;
-    top:0.2rem;
-    left: -0rem;
-    border-color: rgba(227,222,232,.6) transparent transparent transparent;
+    top: .2rem;
+    left: 0rem;
+    border-color: rgba(227, 222, 232, 0.6) transparent transparent transparent;
 }
 .main3-in {
     width: 100%;
@@ -743,7 +743,7 @@ a {
     left: 0;
 }
 .yimeibns .right {
-    right:0;
+    right: 0;
 }
 .zixunbox3 {
     padding-top: .6rem;
@@ -792,8 +792,8 @@ a {
 }
 .main6-in {
     position: relative;
-    width: 13.75rem;
-    height: 17.5rem;
+    width: 18.1rem;
+    height: 15.75rem;
     margin: 0 auto;
 }
 .main-six {
@@ -809,46 +809,54 @@ a {
     height: 14.575rem;
 }
 .like-arc {
-    position: relative;
-    width: 12.75rem;
-    height: 16.4rem;
-    margin: .85rem auto 0;
-    border: .025rem solid #68a4a1;
+    position:relative;
+    margin: 1.425rem auto 0;
+    width: 12.775rem;
+    height: 17.1rem;
+    border: solid 0.025rem rgba(2, 85, 80, 0.45);
+    background-color: #454648;
 }
 .arc-in {
     position: absolute;
-    top: .225rem;
-    right: 0;
+    top: 0.425rem;
+    right: 1.3rem;
     width: 12.75rem;
-    height: 14.475rem;
-    padding: .525rem .8rem 0 .5rem;
-    margin-top: .125rem;
-    font-size: .5rem;
+    height: 16.2rem;
+    font-size: 0.45rem;
     color: #454648;
     background: url(//img.hzshuangmei.com/m/ymbns/images/likebg.jpg) no-repeat top center;
     background-size: 12.75rem 14.475rem;
 }
 .arc-in h3 {
-    margin-left: -0.45rem;
     width: 100%;
     height: 1.125rem;
-    font-size: .75rem;
+    margin-left: -0.45rem;
+    font-size: 1.2rem;
+    line-height: 1.125rem;
     color: #000;
 }
 .arc-in ul li {
     width: 100%;
     height: .5rem;
-    padding-left: .625rem;
+    /*padding-left: .625rem;*/
     margin: .15rem 0;
     line-height: .45rem;
-    background: url(//img.hzshuangmei.com/m/ymbns/images/juhao.png) no-repeat left center;
-    background-size: contain;
-    --webkit-background-size: contain;
+    /*background: url(//img.hzshuangmei.com/m/ymbns/images/juhao.png) no-repeat left center;*/
+    /*background-size: contain;*/
+    /*--webkit-background-size: contain;*/
+}
+.arc-in ul li .yuan {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    vertical-align: text-bottom;
+    border-radius: 50%;
+    background-color: #454648;
 }
 .arc-in ul {
     width: 100%;
-    margin-left: -0.45rem;
     height: 5.5rem;
+    margin-left: -0.45rem;
 }
 .abstract {
     width: 6.625rem;
@@ -958,19 +966,18 @@ a {
 }
 h5 span {
     display: block;
-
 }
 .yimeibns .smalltu {
-    border: solid 0.075rem #cabfd3;
+    border: solid .075rem #cabfd3;
 }
 .yimeibns .gp {
     margin-top: .15rem;
-    font-size: 0.5rem;
+    font-size: .5rem;
 }
 .yimeibns {
     width: 16rem;
     overflow-x: hidden;
 }
-.main4-main span{
+.main4-main span {
     color: rgba(77, 40, 111, 0.6);
 }
