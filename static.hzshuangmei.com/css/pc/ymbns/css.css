@@ -286,6 +286,7 @@ button, input, select, textarea {
 }
 
 .point {
+    display: none;
     width: 515px;
     height: 58px;
     position: absolute;
