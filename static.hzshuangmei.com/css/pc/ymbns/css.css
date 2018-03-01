@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400
 }
 
-.ymbns img {
+.ymbnscon img {
     display: block;
     border: 0
 }
@@ -286,6 +286,7 @@ button, input, select, textarea {
 }
 
 .point {
+    display: none;
     width: 515px;
     height: 58px;
     position: absolute;
@@ -601,7 +602,7 @@ button, input, select, textarea {
     background-color: #efe8ef
 }
 
-.bigtu, .case h3,.ymbns .left,.ymbns .right {
+.bigtu, .case h3,.ymbnscon .left,.ymbnscon .right {
     position: absolute
 }
 
@@ -638,18 +639,18 @@ button, input, select, textarea {
     right: 5px
 }
 
-.ymbns .left,.ymbns .right {
+.ymbnscon .left,.ymbnscon .right {
     width: 60px;
     height: 59px;
     top: 400px;
     z-index: 2
 }
 
-.ymbns .left {
+.ymbnscon .left {
     left: 0
 }
 
-.ymbns .right {
+.ymbnscon .right {
     right: 0
 }
 
