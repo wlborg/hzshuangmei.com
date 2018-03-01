@@ -161,7 +161,7 @@ a {
     left: 50%;
     width: 3.975rem;
     height: 1.05rem;
-    margin-left: -2.25rem;
+    margin-left: -1.9785rem;
     background-color: #907aa4;
 }
 .zixun-in a {
@@ -180,27 +180,27 @@ a {
 }
 .triangle01 {
     top: 0;
-    left: -1.325rem;
+    left: -1rem;
     border-top: 1.05rem solid #d3cadb;
     border-left: .75rem solid transparent;
 }
 .triangle02 {
     top: 0;
     bottom: .0725rem;
-    left: -1.325rem;
+    left: -1rem;
     border-bottom: 1.05rem solid #d3cadb;
     border-left: .75rem solid transparent;
 }
 .triangle03 {
     top: 0;
-    right: -0.8rem;
+    right: -1rem;
     bottom: .0725rem;
     border-right: .75rem solid transparent;
     border-bottom: 1.05rem solid #d3cadb;
 }
 .triangle04 {
     top: 0;
-    right: -0.8rem;
+    right: -1rem;
     border-top: 1.05rem solid #d3cadb;
     border-right: .75rem solid transparent;
 }
@@ -306,7 +306,7 @@ a {
     margin: 0 auto;
 }
 .titletwo .titleTop img {
-    width: 5.3rem;
+    width: 10.075rem;
 }
 .titletwo .yingwen {
     width: 6.975rem;
@@ -430,23 +430,28 @@ a {
     color: rgba(116, 89, 141, 0.8);
 }
 .trianglebox {
+    position: relative;
     width: 1.075rem;
     height: 1.35rem;
     margin: 0 auto;
+    font-size: 0;
 }
-.triangle2 {
-    position: relative;
-}
+/*.triangle2 {*/
+/*position: relative;*/
+/*}*/
 .triangle2,
 .triangle3 {
+    width: 0;
+    height: 0;
+    font-size: 0;
     border-width: .525rem;
     border-style: solid;
     border-color: #b9acc6 transparent transparent transparent;
 }
 .triangle3 {
     position: absolute;
-    top: -0.325rem;
-    left: -0.525rem;
+    top: .2rem;
+    left: 0rem;
     border-color: rgba(227, 222, 232, 0.6) transparent transparent transparent;
 }
 .main3-in {
@@ -738,7 +743,7 @@ a {
     left: 0;
 }
 .yimeibns .right {
-    right:0;
+    right: 0;
 }
 .zixunbox3 {
     padding-top: .6rem;
@@ -770,7 +775,7 @@ a {
 }
 .main6 {
     width: 100%;
-    height: 3.125rem;
+    /*height: 3.125rem;*/
     padding-top: .453125rem;
     margin: 0 auto;
 }
@@ -787,8 +792,8 @@ a {
 }
 .main6-in {
     position: relative;
-    width: 13.75rem;
-    height: 17.5rem;
+    width: 15.75rem ;
+    height: 18.1rem ;
     margin: 0 auto;
 }
 .main-six {
@@ -805,55 +810,72 @@ a {
 }
 .like-arc {
     position: relative;
-    width: 12.75rem;
-    height: 16.4rem;
-    margin: .85rem auto 0;
-    border: .025rem solid #68a4a1;
+    width: 12.775rem;
+    height: 17.1rem;
+    margin: 1.425rem auto 0;
+    border: solid 0.025rem rgba(2, 85, 80, 0.45);
+    /*background-color: #454648;*/
 }
 .arc-in {
     position: absolute;
-    top: .225rem;
-    right: 0;
+    top: .425rem;
+    right: 1.3rem;
     width: 12.75rem;
-    height: 14.475rem;
-    padding: .525rem .8rem 0 .5rem;
-    margin-top: .125rem;
-    font-size: .5rem;
+    height: 16.2rem;
+    font-size: .45rem;
     color: #454648;
     background: url(//img.hzshuangmei.com/m/ymbns/images/likebg.jpg) no-repeat top center;
+    background-size: 12.75rem 14.475rem;
 }
 .arc-in h3 {
+    margin-top:0.725rem;
+    margin-bottom: 0.425rem;
     width: 100%;
     height: 1.125rem;
-    font-size: .75rem;
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.125rem;
     color: #000;
 }
 .arc-in ul li {
     width: 100%;
     height: .5rem;
-    padding-left: .625rem;
+    /*padding-left: .625rem;*/
     margin: .15rem 0;
     line-height: .45rem;
-    background: url(//img.hzshuangmei.com/m/ymbns/images/juhao.png) no-repeat left center;
-    background-size: contain;
-    --webkit-background-size: contain;
+    /*background: url(//img.hzshuangmei.com/m/ymbns/images/juhao.png) no-repeat left center;*/
+    /*background-size: contain;*/
+    /*--webkit-background-size: contain;*/
+}
+.arc-in ul li .yuan {
+    display: inline-block;
+    width: .2rem;
+    height: .2rem;
+    margin-top: 0.1rem;
+    margin-right: 0.2rem;
+    vertical-align: top;
+    border: .05rem solid #454648;
+    border-radius: 50%;
+    /*background-color: ;*/
 }
 .arc-in ul {
     width: 100%;
     height: 5.5rem;
+    margin-left: 0.8rem;
 }
 .abstract {
-    width: 6.625rem;
+    width: 6.05rem;
     height: 7.5rem;
     padding-top: .3rem;
-    line-height: .425rem;
+    margin-left: 0.8rem;
+    /*line-height: .425rem;*/
     line-height: .7rem;
     border-top: .025rem solid #454648;
 }
 .consult-like {
     position: absolute;
-    top: .35rem;
-    right: 0;
+    top: 0.45rem;
+    right: 1.325rem;
     width: 6.25rem;
     height: 1.5rem;
     border-radius: .075rem;
@@ -948,17 +970,21 @@ a {
 .main-four {
     height: 20.1rem;
 }
-.h5 p {
-    color: rgba(77, 40, 111, 0.6);
+h5 span {
+    display: block;
 }
 .yimeibns .smalltu {
-    border: solid 0.075rem #cabfd3;
+    border: solid .075rem #cabfd3;
 }
 .yimeibns .gp {
     margin-top: .15rem;
-    font-size: 0.5rem;
+    margin-left: .375rem;
+    font-size: .5rem;
 }
 .yimeibns {
     width: 16rem;
     overflow-x: hidden;
+}
+.main4-main span {
+    color: rgba(77, 40, 111, 0.6);
 }
