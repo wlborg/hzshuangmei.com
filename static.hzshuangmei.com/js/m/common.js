@@ -414,6 +414,9 @@
            module.addBaiduScript = function() {
                addScript("https://hm.baidu.com/hm.js?cdb0e6daab9a851a15e716817a452897");
            }
+           module.addCnzzScript = function() {
+               addScript("https://s19.cnzz.com/z_stat.php?id=1272981149&web_id=1272981149");
+           }
            module.bindConsultHref = function() {
                //专题快商通
                var consultEs = $('.j-consult');
@@ -566,6 +569,7 @@
        tools.addBaiduTuiSong();
        tools.addKSTScript();
        tools.addBaiduScript();
+       tools.addCnzzScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
        //禁止右键盗取案例图片
