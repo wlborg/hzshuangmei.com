@@ -84,7 +84,10 @@ var tools = (
             addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
         };
         module.addBaiduScript = function() {
-            addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103 ");
+            addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103");
+        };
+              module.addCnzzScript = function() {
+            addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
         };
         module.bindConsultHref = function() {
             //专题快商通
@@ -343,6 +346,7 @@ $(function() {
     effects.goToPagination();
     tools.addKSTScript();
     tools.addBaiduScript();
+    tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
     //     tools.preReady();

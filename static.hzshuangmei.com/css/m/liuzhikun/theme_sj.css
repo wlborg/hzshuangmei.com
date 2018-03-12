@@ -1,0 +1,775 @@
+@charset "utf-8";
+a,
+body {
+    color: #000
+}
+
+body,
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+form {
+    display: inline
+}
+
+img {
+    border: 0
+}
+
+td {
+    word-break: break-all
+}
+
+dd,
+dl,
+dt,
+li,
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    background: #fff;
+    font-family: "微软雅黑", sans-serif, Verdana, Arial
+}
+
+.f-fr {
+    float: right
+}
+
+.f-fl {
+    float: left
+}
+
+.f-cb:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    content: "."
+}
+
+.f-cb {
+    zoom: 1
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.img-respon {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.g-row {
+    font-size: 0
+}
+
+.g-row .g-item {
+    display: inline-block;
+    vertical-align: top
+}
+
+.consult:hover {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9)
+}
+
+* {}
+
+.zt-container {
+    margin: 0 auto;
+    min-width: 16rem;
+    overflow: hidden
+}
+
+.g-doc {
+    margin: 0 auto;
+    width: 16rem
+}
+
+.g-doc .title {
+    margin-bottom: 0.85rem
+}
+
+.g-doc .des {
+    margin-bottom: 0.85rem
+}
+
+.consult {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    color: #ffffff
+}
+
+.zt-m1 .g-doc,
+.zt-m3 .g-doc {
+    padding-top: 2rem
+}
+
+.zt-m2 .g-doc,
+.zt-m4 .g-doc,
+.zt-m5 .g-doc {
+    padding-top: 1.5rem
+}
+
+.consult {
+    width: 7.8rem;
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bg_consult.png") center top no-repeat;
+    height: 1.4rem;
+    background-size: auto 100%
+}
+
+.zt-banner .g-doc {
+    width: 100%;
+    padding-bottom: 50%;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/banner.jpg') center center no-repeat;
+    background-size: 100%
+}
+
+.zt-m1 {
+    height: 39rem
+}
+
+.zt-m1 .title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt1.png') center center no-repeat;
+    background-size: auto 100%
+}
+
+.zt-m1 .title1 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt1_1.png') center top no-repeat;
+    height: 1rem;
+    background-size: auto 100%
+}
+
+.zt-m1 .title2 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt1_2.png') center top no-repeat;
+    height: 1rem;
+    background-size: auto 100%
+}
+
+.zt-m1 .title3 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt1_3.png') center top no-repeat;
+    height: 1rem;
+    background-size: auto 100%
+}
+
+.zt-m2 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bg2.jpg') center top no-repeat;
+    height: 21.35rem;
+    background-size: auto 100%
+}
+
+.zt-m2 .title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.25rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt2.png') center center no-repeat;
+    background-size: auto 100%
+}
+
+.zt-m3 {
+    height: 32.15rem
+}
+
+.zt-m3 .title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt3.png') center center no-repeat;
+    background-size: auto 100%
+}
+
+.zt-m3 .row1 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgc3_1.jpg') center top no-repeat;
+    height: 8.75rem;
+    background-size: auto 100%
+}
+
+.zt-m3 .row2 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgc3_2.jpg') center top no-repeat;
+    height: 8.75rem;
+    background-size: auto 100%
+}
+
+.zt-m4 {
+    height: 27.25rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bg4.jpg') left top repeat-x;
+    background-size: 0.2rem 14.55rem
+}
+
+.zt-m4 .title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3.25rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt4.png') center center no-repeat;
+    background-size: auto 100%
+}
+
+.zt-m4 .des {
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bgc4.jpg") center top no-repeat;
+    height: 5.65rem;
+    background-size: auto 100%
+}
+
+.zt-m4 .content {
+    background: #fff
+}
+
+.zt-m4 .item1 {
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bg4_1.jpg") center top no-repeat;
+    height: 9.7rem;
+    background-size: auto 100%
+}
+
+.zt-m4 .item2 {
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bg4_2.jpg") center top no-repeat;
+    height: 9.7rem;
+    background-size: auto 100%
+}
+
+.zt-m4 .item3 {
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bg4_3.jpg") center top no-repeat;
+    height: 9.7rem;
+    background-size: auto 100%
+}
+
+.zt-m4 .consult {
+    width: 2.95rem;
+    background: url("https://img.hzshuangmei.com/m/liuzhikun/bg_consult4.png") center top no-repeat;
+    height: 2.95rem;
+    background-size: auto 100%
+}
+
+.zt-m5 {
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bg5.jpg') center top no-repeat;
+    height: 33.3rem;
+    background-size: auto 100%
+}
+
+.zt-m5 .title {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3rem;
+    background: url('https://img.hzshuangmei.com/m/liuzhikun/bgt5.png') center center no-repeat;
+    background-size: auto 100%
+}
+
+.zt-banner .g-doc {
+    position: relative
+}
+
+.zt-banner .g-doc .consult {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    background: none
+}
+
+.zt-m1 .content {
+    padding: 0 0.5rem
+}
+
+.zt-m1 .row1 {
+    position: relative;
+    width: 100%
+}
+
+.zt-m1 .row1 .g-left {
+    width: 100%
+}
+
+.zt-m1 .row1 .g-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5.35rem;
+    padding-top: 1.4rem
+}
+
+.zt-m1 .row1 .g-right img {
+    width: 5.35rem
+}
+
+.zt-m1 .row1 h3 {
+    margin-top: 0
+}
+
+.zt-m1 h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem
+}
+
+.zt-m1 ul {
+    padding-left: 0.375rem
+}
+
+.zt-m1 ul li {
+    position: relative;
+    font-size: 0.45rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.85rem;
+    letter-spacing: 0rem;
+    color: #666666
+}
+
+.zt-m1 ul li:before {
+    display: block;
+    position: absolute;
+    left: -0.375rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    width: 0.125rem;
+    height: 0.125rem;
+    background: #7f73df;
+    border-radius: 100%
+}
+
+.zt-m1 p {
+    font-size: 0.45rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.6rem;
+    letter-spacing: 0rem;
+    color: #666666
+}
+
+.zt-m1 .row3 img {
+    display: block;
+    width: 15.05rem;
+    margin: 0 auto
+}
+
+.zt-m2 .indicators {
+    padding-left: 0;
+    width: 15rem;
+    margin: 0 auto;
+    height: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.zt-m2 .indicators li {
+    display: inline-block;
+    width: 4.9rem;
+    height: 1rem;
+    background-color: rgba(118, 95, 250, 0.4);
+    font-size: 0.6rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1rem;
+    letter-spacing: 0rem;
+    color: #ffffff;
+    text-align: center
+}
+
+.zt-m2 .indicators li.active,
+.zt-m2 .indicators li:hover {
+    background-color: rgba(118, 95, 250, 0.8)
+}
+
+.zt-m2 .indicators li:hover {
+    cursor: pointer
+}
+
+.zt-m2 .indicators li:first-child {
+    margin-left: 0
+}
+
+.zt-m2 .slider-wrapper {
+    margin-top: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    height: 10.45rem;
+    overflow: hidden
+}
+
+.zt-m2 .slider-contaner {
+    width: 45rem;
+    height: 10.45rem
+}
+
+.zt-m2 .slider-item {
+    width: 15rem;
+    height: 10.45rem;
+    float: left
+}
+
+.zt-m2 .slider-item img {
+    width: 100%
+}
+
+.zt-m3 .des {
+    padding: 0 0.5rem;
+    font-size: 0.55rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.7rem;
+    letter-spacing: 0rem;
+    color: #6c5fd8;
+    text-indent: 0
+}
+
+.zt-m3 .g-item {
+    width: 8rem;
+    height: 8.75rem
+}
+
+.zt-m3 .g-item h3 {
+    margin: 2.75rem 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.7rem;
+    letter-spacing: 0.04rem;
+    color: #ffffff;
+    text-align: center
+}
+
+.zt-m3 .g-item p {
+    width: 4.7rem;
+    margin: 0 auto;
+    font-size: 0.45rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.6rem;
+    letter-spacing: 0rem;
+    color: #ffffff
+}
+
+.zt-m4 {
+    overflow: visible
+}
+
+.zt-m4 .des {
+    margin-top: 0.25rem
+}
+
+.zt-m4 .des p {
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 10rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.7rem;
+    letter-spacing: 0.015rem;
+    color: #6350c9;
+    text-indent: 0;
+    text-align: justify
+}
+
+.zt-m4 .des span {
+    margin-top: 0.5rem;
+    float: right
+}
+
+.zt-m4 .content {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 3;
+    padding: 0.5rem 0;
+    box-shadow: 0rem 0rem 0.5rem rgba(3, 3, 3, 0.2)
+}
+
+.zt-m4 .indicators {
+    height: 0.35rem;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.zt-m4 .indicators li {
+    display: inline-block;
+    margin: 0 0.15rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 100%;
+    border: solid 1px #2f2671;
+    background: #fff
+}
+
+.zt-m4 .indicators li.active,
+.zt-m4 .indicators li:hover {
+    background: #2f2671
+}
+
+.zt-m4 .slider-wrapper {
+    margin: 0 auto;
+    width: 15rem;
+    height: 15.1rem;
+    overflow: hidden
+}
+
+.zt-m4 .slider-container {
+    width: 45rem;
+    height: 15.1rem
+}
+
+.zt-m4 .slider-item {
+    float: left;
+    width: 15rem;
+    height: 15.1rem
+}
+
+.zt-m4 .slider-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0rem
+}
+
+.zt-m4 .slider-item .normal {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0rem
+}
+
+.zt-m4 .slider-item .special {
+    margin-top: 0.75rem;
+    width: 3.325rem;
+    height: 1rem;
+    background-color: #5e4bbf;
+    border-radius: 0.45rem 0.45rem 0.45rem 0.45rem;
+    font-size: 0.6rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1rem;
+    letter-spacing: 0rem;
+    color: #ffffff;
+    text-align: center
+}
+.zt-m4 .item1 .special { 
+    background-color: #5e4bbf;
+}
+
+.zt-m4 .item2 .special { 
+    background-color: #465db2;
+}
+.zt-m4 .item3 .special { 
+    background-color: #3949b3;
+}
+.zt-m4 .slider-item p {
+    margin-top: 0.25rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.65rem;
+    letter-spacing: 0rem;
+    text-indent: 0;
+    text-align: justify
+}
+
+.zt-m4 .item1 {
+    color: #5e4bbf;
+    text-align: right
+}
+
+.zt-m4 .item1 .content-box {
+    padding: 6rem 0.1rem 0 5rem
+}
+
+.zt-m4 .item1 p {
+    color: #857acc
+}
+
+.zt-m4 .item1 .g-row {
+    position: relative;
+    width: 6.5rem;
+    float: right
+}
+
+.zt-m4 .item1 .normal {
+    color: #6c5cc3
+}
+
+.zt-m4 .item1 .consult {
+    position: absolute;
+    left: -3.5rem;
+    top: 0.4rem;
+    margin-top: 0
+}
+
+.zt-m4 .item1 .special {
+    float: right
+}
+
+.zt-m4 .item1 .custom {
+    float: right;
+    width: 6.5rem
+}
+
+.zt-m4 .item2 {
+    color: #465db2
+}
+
+.zt-m4 .item2 .content-box {
+    padding: 1.5rem 0.1rem 0 6.5rem
+}
+
+.zt-m4 .item2 h3 {
+    margin-top: 0.85rem
+}
+
+.zt-m4 .item2 .g-left {
+    height: 9.7rem;
+    position: relative;
+    margin-left: 1.5rem;
+    width: 13.1rem
+}
+
+.zt-m4 .item2 .normal {
+    color: #5367b5
+}
+
+.zt-m4 .item2 .cusotm {
+    width: 9.5rem
+}
+
+.zt-m4 .item2 .consult {
+    position: relative;
+    margin: 0;
+    top: -0.25rem;
+    left: 4rem
+}
+
+.zt-m4 .item2 p {
+    color: #0a1131;
+    opacity: 0.5
+}
+
+.zt-m4 .item3 {
+    color: #3949b3
+}
+
+.zt-m4 .item3 .content-box {
+    padding: 1.5rem 0.5rem 0 5.25rem
+}
+
+.zt-m4 .item3 .g-right {
+    height: 9.7rem;
+    position: relative;
+    margin-left: 10rem;
+    width: 16.2rem
+}
+
+.zt-m4 .item3 .consult {
+    margin: 0;
+    position: relative;
+    bottom: 3rem;
+    left: 6.5rem
+}
+
+.zt-m4 .item3 p {
+    color: #5c6abf
+}
+
+.zt-m5 {
+    overflow: visible
+}
+
+.zt-m5 .g-doc {
+    padding-top: 3.5rem
+}
+
+.zt-m5 .des {
+    width: 15rem;
+    padding: 0 0.5rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.7rem;
+    letter-spacing: 0.015rem;
+    color: #e1e0e7;
+    text-align: justify
+}
+
+.zt-m5 img {
+    width: 7.25rem
+}
+
+.zt-m5 .g-row {
+    width: 15rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.45rem
+}
+
+.zt-m5 .consult {
+    margin-top: 1rem
+}

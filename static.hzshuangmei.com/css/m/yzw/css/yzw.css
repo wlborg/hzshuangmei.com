@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "MicrosoftYaHei";
+    font-family: "微软雅黑";
     font-weight: normal;
     list-style: none;
 }
@@ -170,7 +170,7 @@ a .span {
     height: .875rem;
     margin-left: .05rem;
     font-size: .75rem;
-    line-height: .75rem;
+    line-height: .875rem;
     vertical-align: bottom;
     color: rgba(254, 108, 171, 0.95);
     border-radius: 50%;
@@ -241,6 +241,7 @@ a .span {
 .m2ts {
     height: 5.15rem;
     background: url("//img.hzshuangmei.com/m/yzw/images/m2bg2.jpg") no-repeat center;
+    background-size: 15.5rem 5.15rem;
 }
 .m2ts > img {
     width: 3.95rem;
@@ -255,6 +256,7 @@ a .span {
     color: rgba(255, 255, 255, 0.9);
 }
 .m2tswz > span {
+    font-weight: bold;
     display: block;
     margin-top: 1.2rem;
     margin-bottom: .25rem;
@@ -318,7 +320,6 @@ a .span {
     text-align: center;
     vertical-align: middle;
     color: #5c4aa7;
-
 }
 .m3p1 {
     height: 3.05rem;
@@ -445,8 +446,8 @@ a .span {
     position: absolute;
     top: 9.15rem;
     left: 50%;
-    width: 4.25rem;
-    margin-left: -2.1rem;
+    width: 4.5rem;
+    margin-left: -2.35rem;
 }
 .m5qd p {
     font-size: .45rem;
@@ -454,8 +455,13 @@ a .span {
     color: rgba(77, 77, 77, 0.75);
 }
 .m5qd p:first-child {
+    padding-left: .25rem;
     margin-bottom: .2rem;
     line-height: .75rem;
+}
+.m5qd p:nth-child(2),
+.m5qd p:nth-child(3) {
+    padding-left: .25rem;
 }
 .m5qd .m5dz {
     width: 3.65rem;
@@ -545,6 +551,7 @@ a .span {
 }
 .swiper-container1 p {
     height: 1rem;
+    width: 11.025rem;
     font-size: .55rem;
     line-height: 1rem;
     text-align: center;
@@ -688,6 +695,7 @@ a .div {
     width: 8.5rem;
 }
 .swiper-container1 .swiper-slide {
+    width: 11.025rem;
     height: 7.4rem;
     margin-top: .25rem;
     box-shadow: 0 0 .7rem .125rem #e8e7f1;

@@ -1,7 +1,7 @@
 
 *{
     font-weight: normal;
-    font-family:"MicrosoftYaHei";
+    font-family:"微软雅黑";
     margin:0;
     padding: 0;
     list-style: none;
@@ -241,12 +241,13 @@ a .span{
 }
 .m2tswz>span{
     font-size: 30px;
+    font-weight: bold;
     line-height: 30px;
 
 }
 .m2tswz p{
     font-size: 22px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .m2con a{
     margin-top: 69px;
@@ -395,6 +396,7 @@ a .span{
     color: rgba(132, 110, 255, 0.6);
 }
 .m4right p{
+    margin-top: 5px;
     color: #846eff;
     line-height: 25px;
     /*font-weight: bold;*/
@@ -468,7 +470,7 @@ a .span{
     text-align: left;
     position: absolute;
     left: 50%;
-    margin-left: -65px;
+    margin-left: -84px;
     top: 108px;;
     font-size: 22px;
     line-height: 22px;
@@ -496,6 +498,7 @@ a .span{
 }
 .m5qd :nth-child(6){
     margin-left: -50px;
+    color: rgba(64, 64, 64, 0.85)
 }
 .m5y1,.m5y2{
     position: absolute;
