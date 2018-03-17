@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
+    {dede:include filename="_link.htm"/}
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+</head>
+<body>
+{dede:include filename="_header.htm"/}
+{dede:myad name='topbanner_pc'/}
+<div class="m1">
+    <div class="location">
+        <i></i><span>当前位置：</span>{dede:field name='position'/}
+    </div>
+    <div class="line"></div>
+    <h2 class="h2_tit"><img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/></h2>
+    <div id="news_banner">
+        {dede:myad name='newspic_pc'/}
+    </div>
+    <div class="news_content">
+        <h3 id="news_nav">搜索结果</h3>
+<div id="bdcs-frame-box"></div>
+<script type="text/javascript">
+var bdcsFrameSid="5257607230163915007";
+var bdcsFrameCharset= "utf-8";
+var bdcsFrameWidth = 100%; //宽度请自行调整
+var bdcsFrameHeight = 0;
+var bdcsFrameWt = 1;
+var bdcsFrameHt = 2;
+var bdcsFrameResultNum = 10;
+var bdcsFrameBgColor = "#fff";
+var bdcsRecommend = 0;
+var bdcsDefaultQuery = 0;
+var bdcsRemoveUrl = 0;
+</script>
+<!-- 按照实际情况修改下面js地址 -->
+<script type="text/javascript" src="{dede:global.cfg_jspath/}/pc/baidusearch.js"></script>
+    </div>
+</div>
+{dede:include filename="_footer.htm"/}
+</body>
+{dede:include filename="_script.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
+</html>
