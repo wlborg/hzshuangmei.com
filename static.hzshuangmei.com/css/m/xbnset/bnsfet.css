@@ -35,6 +35,7 @@ body {
     width: 16rem;
     margin: auto;
     font-size: 0;
+    overflow-x: hidden;
 }
 .mbnsetcon .banner img {
     width: 100%;
@@ -328,7 +329,7 @@ body {
     background-color: rgba(251, 244, 236, 0.2);
 }
 .m4td ul {
-    width: 15.05rem;
+    width: 15.15rem;
     height: 14.05rem;
     margin: auto;
     border-bottom: 0.025rem solid rgba(255, 255, 255, 0.33);
@@ -451,6 +452,9 @@ body {
     width: 8.425rem;
     height: 24.575rem;
     background-color: #fbf4ec;
+}
+.m5{
+    height:28.55rem;
 }
 .m5con {
     position: absolute;
