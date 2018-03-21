@@ -35,9 +35,11 @@ body {
     width: 16rem;
     margin: auto;
     font-size: 0;
+    overflow-x: hidden;
 }
-.banner img {
+.mbnsetcon.banner img {
     width: 100%;
+    margin-left: 0;
 }
 .m1,
 .m2,

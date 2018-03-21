@@ -41,6 +41,7 @@ body {
 }
 .bnsetcon .banner img {
     width: 100%;
+    margin-left: 0;
 }
 .m1con,
 .m2con,
