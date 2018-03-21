@@ -39,7 +39,7 @@ body {
 .bnsetcon {
     font-size: 0;
 }
-.banner img {
+.bnsetcon .banner img {
     width: 100%;
 }
 .m1con,
