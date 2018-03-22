@@ -39,7 +39,7 @@ body {
 .bnsetcon {
     font-size: 0;
 }
-.bnsetcon .banner img {
+.bnsetcon .banner img:last-child {
     width: 100%;
     margin-left: 0;
 }
