@@ -37,7 +37,7 @@ body {
     overflow-x: hidden;
     font-size: 0;
 }
-.mbnsetcon .banner img {
+.mbnsetcon .banner img:last-child{
     width: 100%;
     margin-left: 0;
 }
@@ -503,6 +503,7 @@ body {
     display: inline-block;
     width: 6.425rem;
     margin-bottom: 1rem;
+    vertical-align: text-top;
 }
 .m5ul :nth-child(1),
 .m5ul :nth-child(3) {
@@ -719,7 +720,7 @@ body {
     z-index: 1;
     width: 7.4rem;
     height: .9rem;
-    font-size: .45rem;
+    font-size: .50rem;
     line-height: .9rem;
     text-align: center;
     color: #875b2b;
