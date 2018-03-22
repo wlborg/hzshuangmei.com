@@ -986,7 +986,7 @@ body {
 
     border-bottom: 1px solid  rgba(221, 173, 151, .5);
 }
-a .m8j {
+.bnsetcon a .m8j:last-child {
     width: 17px;
     margin-left: 15px;
 }
