@@ -368,7 +368,7 @@ body {
     vertical-align: top;
 }
 .m4tdcon {
-    border: 1px solid rgba(255, 255, 255, .33);
+    border: 1px solid #edb993;
 }
 .m4tdcon1,
 .m4tdcon3,
@@ -929,7 +929,7 @@ body {
 
     color: #b27f57;
 }
-ul li {
+.m8js ul li {
     margin-left: 36px;
 
     font-size: 18px;
