@@ -211,7 +211,7 @@ body {
 
     color: #ca785e;
 }
-.bnsetcon a img {
+.bnsetcon a img:last-child{
     width: 24px;
     margin-left: 22px;
 }
@@ -594,7 +594,7 @@ body {
     background-color: #cd6a60;
 }
 .m5zx1 .a1 {
-    width: 212px;
+    width: 213px;
     height: 12px;
     padding-bottom: 7px;
     margin-top: 16px;
@@ -616,7 +616,7 @@ body {
     color: #ca785e;
 }
 .m5zx2 .a1 {
-    width: 212px;
+    width: 213px;
     height: 12px;
     padding-bottom: 7px;
     margin-top: 16px;
@@ -849,7 +849,7 @@ body {
     border: solid 1px rgba(249, 225, 215, .4);
 }
 .m7zx1 .a1 {
-    width: 212px;
+    width: 213px;
     height: 12px;
     padding-bottom: 7px;
     margin-top: 16px;
@@ -871,7 +871,7 @@ body {
     color: #cbc0b9;
 }
 .m7zx2 .a1 {
-    width: 212px;
+    width: 213px;
     height: 12px;
     padding-bottom: 7px;
     margin-top: 16px;
@@ -986,7 +986,7 @@ body {
 
     border-bottom: 1px solid  rgba(221, 173, 151, .5);
 }
-a .m8j {
+.bnsetcon a .m8j:last-child {
     width: 17px;
     margin-left: 15px;
 }
