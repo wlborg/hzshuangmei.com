@@ -20,8 +20,8 @@ body {
 }
 .yinshen {
     position: absolute;
-    width: 0.025rem;
-    height: 0.025rem;
+    width: .025rem;
+    height: .025rem;
     padding: 0;
     margin: -0.025rem;
     overflow: hidden;
@@ -47,7 +47,7 @@ body {
 .m8 {
     position: relative;
     width: 16rem;
-    padding-top: 0.025rem;
+    padding-top: .025rem;
     margin: auto;
 }
 .banner {
@@ -63,7 +63,7 @@ body {
 }
 .m1 img {
     width: 7.65rem;
-    margin: 1.1rem 0.5rem 0 0.125rem;
+    margin: 1.1rem .5rem 0 .125rem;
     vertical-align: top;
 }
 .m1r {
@@ -74,16 +74,16 @@ body {
 }
 .m1r h4 {
     width: 7.2rem;
-    height: 0.65rem;
-    margin-bottom: 0.3rem;
-    font-size: 0.65rem;
+    height: .65rem;
+    margin-bottom: .3rem;
+    font-size: .65rem;
     font-weight: bold;
-    line-height: 0.65rem;
+    line-height: .65rem;
     color: #776971;
 }
 .m1p {
-    font-size: 0.5rem;
-    line-height: 0.75rem;
+    font-size: .5rem;
+    line-height: .75rem;
     text-indent: 1rem;
     color: #949494;
 }
@@ -106,11 +106,11 @@ body {
 .m2tit {
     width: 10.8rem;
     margin-top: 1.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: .25rem;
 }
 .m2p {
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     text-align: center;
     color: #776971;
 }
@@ -140,8 +140,8 @@ body {
     z-index: 1;
     width: 2.475rem;
     height: 2.475rem;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     text-align: center;
     color: #fff;
     border-radius: 50%;
@@ -164,7 +164,7 @@ body {
     right: 1.4rem;
 }
 .m2y p {
-    margin-top: 0.725rem;
+    margin-top: .725rem;
     font-weight: bold;
 }
 .m2img2 {
@@ -173,25 +173,25 @@ body {
 }
 .m2js > p {
     position: absolute;
-    font-size: 0.45rem;
-    line-height: 0.6rem;
+    font-size: .45rem;
+    line-height: .6rem;
     color: #656565;
 }
 .m2js1 > p {
     top: 8.85rem;
-    left: 0.45rem;
+    left: .45rem;
 }
 .m2js2 > p {
     top: 8.775rem;
-    right: 0.25rem;
+    right: .25rem;
 }
 .m2js3 > p {
     top: 16.275rem;
-    left: 0.2rem;
+    left: .2rem;
 }
 .m2js4 > p {
     top: 16.275rem;
-    right: 0.375rem;
+    right: .375rem;
 }
 .m2zx {
     position: relative;
@@ -202,13 +202,13 @@ body {
 .m2zx img {
     width: 10.675rem;
     height: 1.075rem;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
 }
 .m2zx span {
     position: absolute;
-    top: 0.2rem;
-    left: 0.525rem;
-    font-size: 0.5rem;
+    top: 0.25rem;
+    left: .525rem;
+    font-size: .5rem;
     color: #776971;
 }
 .m3 {
@@ -217,19 +217,19 @@ body {
     background-size: 16rem 24.5rem;
 }
 .m3tit {
-    width: 14.525rem;
+    width: 14.675rem;
     margin-top: 1.25rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: .2rem;
 }
 .m3 > p {
     margin-bottom: 1.275rem;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     text-align: center;
     color: #776971;
 }
 .page {
-    margin-bottom: 0.375rem;
+    margin-bottom: .375rem;
     text-align: center;
 }
 .page div {
@@ -238,27 +238,27 @@ body {
     height: 5.425rem;
     overflow: hidden;
     vertical-align: top;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
     background-color: #e9d5d4;
 }
 .page div img {
     width: 5.125rem;
 }
 .page div:nth-child(2) {
-    margin: 0 0.2rem;
+    margin: 0 .2rem;
 }
 .page div p {
-    margin-top: 0.325rem;
-    margin-bottom: 0.075rem;
-    font-size: 0.55rem;
-    line-height: 0.55rem;
-    letter-spacing: 0.05rem;
+    margin-top: .325rem;
+    margin-bottom: .075rem;
+    font-size: .55rem;
+    line-height: .55rem;
+    letter-spacing: .05rem;
     color: #974d2f;
 }
 .page div span {
-    font-size: 0.3rem;
-    line-height: 0.3rem;
-    letter-spacing: 0.05rem;
+    font-size: .3rem;
+    line-height: .3rem;
+    letter-spacing: .05rem;
     color: #c7a597;
 }
 .m4 {
@@ -270,37 +270,37 @@ body {
 .m4tit {
     width: 12.025rem;
     margin-top: 1rem;
-    margin-bottom: 0.225rem;
+    margin-bottom: .225rem;
 }
 .m4 > p {
     margin-bottom: 1.25rem;
-    font-size: 0.5rem;
+    font-size: .5rem;
     text-align: center;
-    letter-spacing: 0.025rem;
+    letter-spacing: .025rem;
     color: #776971;
 }
 .m4 > div {
     display: inline-block;
     width: 7.8rem;
     height: 6.3rem;
-    margin: 0 0.075rem;
-    font-size: 0.475rem;
-    line-height: 0.475rem;
+    margin: 0 .075rem;
+    font-size: .475rem;
+    line-height: .475rem;
     vertical-align: top;
     color: #776971;
     background-color: transparent;
 }
 .m4 > div p {
-    margin-top: 0.4rem;
+    margin-top: .4rem;
 }
 .m5tit {
     width: 11.3rem;
     margin-top: 1.5rem;
-    margin-bottom: 0.325rem;
+    margin-bottom: .325rem;
 }
 .m5 > p {
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     text-align: center ;
     color: #776971;
 }
@@ -320,7 +320,7 @@ body {
 }
 .m4ys2 {
     top: 7.7rem;
-    right: 0.325rem;
+    right: .325rem;
 }
 .m4ys3 {
     top: 12.4rem;
@@ -332,30 +332,30 @@ body {
 }
 .m4ys span {
     position: absolute;
-    top: 0.675rem;
+    top: .675rem;
     left: 1.25rem;
     width: 2.5rem;
-    font-size: 0.6rem;
-    line-height: 0.75rem;
+    font-size: .6rem;
+    line-height: .75rem;
     color: #fff;
 }
 .m4ys4 span {
     left: 1.3rem;
-    font-size: 0.55rem;
+    font-size: .55rem;
 }
 .m4ys img {
     width: 2.65rem;
     border-radius: 50%;
 }
 .m4ys p {
-    margin-top: 0.1rem;
-    font-size: 0.5rem;
-    line-height: 0.6rem;
+    margin-top: .1rem;
+    font-size: .5rem;
+    line-height: .6rem;
     color: #f8707c;
 }
 .m4ys3 p,
 .m4ys4 p {
-    font-size: 0.45rem;
+    font-size: .45rem;
 }
 .m5zx {
     position: relative;
@@ -370,10 +370,10 @@ body {
 }
 .m5zx span {
     position: absolute;
-    top: 0.3rem;
-    left: 0.5rem;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    top: 0.325rem;
+    left: .5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     color: #776971;
 }
 .m6 {
@@ -387,10 +387,10 @@ body {
     margin-top: 1.25rem;
 }
 .m6 > p {
-    margin-top: 0.3rem;
+    margin-top: .3rem;
     margin-bottom: 1.05rem;
-    font-size: 0.45rem;
-    line-height: 0.45rem;
+    font-size: .45rem;
+    line-height: .45rem;
     color: #776971;
 }
 .m6img1 {
@@ -407,10 +407,10 @@ body {
 }
 .m6zx span {
     position: absolute;
-    top: 0.3rem;
-    left: 0.525rem;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    top: .3rem;
+    left: .525rem;
+    font-size: .5rem;
+    line-height: .5rem;
     color: #776971;
 }
 .m7tit {
@@ -418,10 +418,10 @@ body {
     margin-top: 1.55rem;
 }
 .m7 > p {
-    margin-top: 0.4rem;
-    margin-bottom: 0.575rem;
-    font-size: 0.45rem;
-    line-height: 0.45rem;
+    margin-top: .4rem;
+    margin-bottom: .575rem;
+    font-size: .45rem;
+    line-height: .45rem;
     text-align: center;
     color: #776971;
 }
@@ -435,52 +435,52 @@ body {
 }
 .m7right > :first-child {
     position: absolute;
-    top: 0.1rem;
+    top: .1rem;
     left: 0;
-    width: 0.15rem;
-    height: 0.8rem;
+    width: .15rem;
+    height: .8rem;
     background-color: #f8707c;
 }
 .m7right h4 {
-    margin-bottom: 0.75rem;
-    margin-left: 0.375rem;
-    font-size: 0.65rem;
-    line-height: 0.65rem;
-    letter-spacing: 0.05rem;
+    margin-bottom: .75rem;
+    margin-left: .375rem;
+    font-size: .65rem;
+    line-height: .65rem;
+    letter-spacing: .05rem;
     color: #354866;
 }
 .m7right h4 span {
-    font-size: 0.875rem;
-    line-height: 0.875rem;
-    letter-spacing: 0.075rem;
+    font-size: .875rem;
+    line-height: .875rem;
+    letter-spacing: .075rem;
     color: #354866;
 }
 .m7right li {
-    font-size: 0.45rem;
-    line-height: 0.625rem;
+    font-size: .45rem;
+    line-height: .625rem;
     color: #656565;
 }
 .m7right li img {
-    width: 0.25rem;
-    margin-right: 0.125rem;
+    width: .25rem;
+    margin-right: .125rem;
     vertical-align: middle;
 }
 .m7scxm {
     display: block;
     width: 3.55rem;
-    height: 0.95rem;
-    margin-top: 0.95rem;
-    font-size: 0.6rem;
-    line-height: 0.95rem;
+    height: .95rem;
+    margin-top: .95rem;
+    font-size: .6rem;
+    line-height: .95rem;
     text-align: center;
     color: #fff;
     background-color: #fd6370;
 }
 .m7right > p {
     width: 6.75rem;
-    margin-top: 0.45rem;
-    font-size: 0.45rem;
-    line-height: 0.65rem;
+    margin-top: .45rem;
+    font-size: .45rem;
+    line-height: .65rem;
     color: #656565;
 }
 .m8 {
@@ -489,11 +489,11 @@ body {
 .m8con {
     width: 16rem;
     height: 11.2rem;
-    padding: 0.45rem 0;
+    padding: .45rem 0;
     background-color: #d4bbbd;
 }
 .m8img {
-    margin-bottom: 0.375rem;
+    margin-bottom: .375rem;
     text-align: center;
 }
 .m8img img {
@@ -501,7 +501,7 @@ body {
     vertical-align: top;
 }
 .m8img :nth-child(2) {
-    margin: 0 0.15rem;
+    margin: 0 .15rem;
 }
 .m8zx {
     position: relative;
@@ -510,10 +510,10 @@ body {
 }
 .m8zx span {
     position: absolute;
-    top: 0.3rem;
-    left: 0.5rem;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
+    top: .3rem;
+    left: .5rem;
+    font-size: .5rem;
+    line-height: .5rem;
     color: #776971;
 }
 .m4al img {
