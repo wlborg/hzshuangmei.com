@@ -65,9 +65,10 @@ function change3(obj){
         }else{
             tabs3[i].className="";
             divs3[i].className="";
+            $('.swiper-button-prev').css("display",'block');
+            $('.swiper-button-next').css("display",'block');
         }
-        $('.swiper-button-prev').css("display",'block');
-        $('.swiper-button-next').css("display",'block');
+
     }
 }
 
