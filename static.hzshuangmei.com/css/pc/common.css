@@ -185,7 +185,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 { width: 120px; margin: 5px 15px 
     94%, 96%, 98% { -webkit-transform: scale(1.2) rotate(-3deg); }
     100% { -webkit-transform: scale(1) rotate(0); }
 }
-.fq { position: fixed; width: 200px; right: 20px; bottom: 20px; z-index: 999999; -webkit-animation: tada2 10s -9s ease both infinite; -moz-animation: tada2 10s -9s ease both infinite; }
+.fq { position: fixed; width: 200px; right: 20px; bottom: 20px; z-index: 998; -webkit-animation: tada2 10s -9s ease both infinite; -moz-animation: tada2 10s -9s ease both infinite; }
 /* lazysizes */
 .lazyload, .lazyloading { opacity: 0; }
 .lazyloaded { opacity: 1; transition: opacity 500ms; }
