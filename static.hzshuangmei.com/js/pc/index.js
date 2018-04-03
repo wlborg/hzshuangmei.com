@@ -56,6 +56,9 @@ function change3(obj){
             divs3[tabs3.length-1].className="fdiv3";
             $('.swiper-button-prev').css("display",'none');
             $('.swiper-button-next').css("display",'none');
+          tabs3[0].className='';
+            tabs3[1].className='';
+            tabs3[2].className='';
         }
        else if(tabs3[i]==obj){
             tabs3[i].className="fli3";
