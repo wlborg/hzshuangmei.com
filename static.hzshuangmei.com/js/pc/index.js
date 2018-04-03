@@ -54,20 +54,20 @@ function change3(obj){
         if(tabs3[tabs3.length-1]==obj){
             tabs3[tabs3.length-1].className="fli3";
             divs3[tabs3.length-1].className="fdiv3";
-            $('.swiper-button-prev').css("dispaly",'none');
-            $('.swiper-button-next').css("dispaly",'none');
+            $('.swiper-button-prev').css("disply",'none');
+            $('.swiper-button-next').css("disply",'none');
         }
        if(tabs3[i]==obj){
             tabs3[i].className="fli3";
             divs3[i].className="fdiv3";
-           $('.swiper-button-prev').css("dispaly",'block');
-           $('.swiper-button-next').css("dispaly",'block');
+           $('.swiper-button-prev').css("disply",'block');
+           $('.swiper-button-next').css("disply",'block');
         }else{
             tabs3[i].className="";
             divs3[i].className="";
         }
-        $('.swiper-button-prev').css("dispaly",'none');
-        $('.swiper-button-next').css("dispaly",'none');
+        $('.swiper-button-prev').css("disply",'block');
+        $('.swiper-button-next').css("disply",'block');
     }
 }
 
