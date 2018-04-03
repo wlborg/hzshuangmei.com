@@ -57,7 +57,7 @@ function change3(obj){
             $('.swiper-button-prev').css("display",'none');
             $('.swiper-button-next').css("display",'none');
         }
-       if(tabs3[i]==obj){
+       else if(tabs3[i]==obj){
             tabs3[i].className="fli3";
             divs3[i].className="fdiv3";
            $('.swiper-button-prev').css("display",'block');
