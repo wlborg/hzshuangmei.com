@@ -258,7 +258,7 @@ h3 img {
 
 .index_project #tab2 ul {
     /*width: 381px;*/
-    width: 510px;
+    width: 637px;
     height: 34px;
     margin: 17px auto 32px;
 }
@@ -358,7 +358,7 @@ h3 img {
 }
 
 .index_expert #tab3 ul {
-    width: 388px;
+    width: 516px;
     margin: 25px auto 0;
 }
 
@@ -1111,4 +1111,14 @@ h3 img {
 .lc_con_b>div:nth-child(5){
     position: absolute;
     left:951px;
+}
+body  li .hltd{
+width: 1321px;
+    height: 534px;
+    margin: auto;
+    text-align: center;
+}
+body  li .hltd img{
+    width: 1321px;
+    height: 577px;
 }
