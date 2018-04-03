@@ -1112,13 +1112,7 @@ h3 img {
     position: absolute;
     left:951px;
 }
-body  li .hltd{
-width: 1321px;
-    height: 534px;
-    margin: auto;
-    text-align: center;
-}
-body  li .hltd img{
-    width: 1321px;
-    height: 577px;
+body  #hltd .hltd img{
+    width: 1200px;
+    height: 478px;
 }
