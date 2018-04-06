@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-04-06 14:51:34
+ * @Last Modified time: 2018-04-06 15:08:57
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -58,8 +58,8 @@ function popup() {
             } else {
                 timer = setTimeout(popup, 15000);
             }
-        }
-    });
+            });}
+
     //创建第三个按钮 “不再提示”
     $(".layui-m-layerbtn").prepend('<span class="never" id="never">不再提醒</span>');
     // "不再提示"按钮绑定点击事件
@@ -70,7 +70,7 @@ function popup() {
     });
 }
 
-if(navigator.userAgent.indexOf("Baiduspider")){
+if(navigator.userAgent.indexOf("Baiduspider")==-1){
     //自定义弹窗
        popup();
 }
