@@ -71,6 +71,7 @@
 }
 .clear {
     clear: both;
+    height: 0.025rem;
 }
 .text02 p {
     margin: 0 .5rem;
@@ -249,6 +250,8 @@
 .m_013 img,
 .m_016 img {
     width: 14.4rem;
+    display: block;
+    margin: auto;
 }
 .content > div {
     width: 16rem;
