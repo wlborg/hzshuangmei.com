@@ -1,0 +1,511 @@
+@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#p1_bk {
+    background: #5ebae9;
+}
+
+img {
+    display: block;
+}
+
+#container {
+    width: 100%;
+    font-family: "Microsoft yahei";
+    font-size: 17px;
+}
+
+.clear {
+    clear: both;
+}
+
+#banner_bk {
+    background: #fff;
+}
+
+#banner {
+    width: 1006px;
+    height: 111px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 230px;
+    height: 111px;
+    float: left;
+}
+
+.index {
+    width: 97px;
+    height: 111px;
+    float: left;
+}
+
+.index img {
+    border: none;
+}
+
+.text {
+    width: 677px;
+    height: 111px;
+    float: left;
+}
+
+.text img {
+    border: none;
+}
+
+.text_1 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_2 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_3 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_4 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_5 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_6 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text_7 {
+    width: 96px;
+    height: 111px;
+    float: left;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+#p1_bk {
+    width: 100%;
+    background: #59bcef;
+}
+
+#p1 {
+    width: 1006px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#p1 img {
+    display: block;
+    float: none;
+}
+
+#p2 {
+    width: 1006px;
+    height: 156px;
+    margin: 0 auto;
+}
+
+#p3 {
+    width: 1006px;
+    height: 514px;
+    margin: 0 auto;
+}
+
+#p4 {
+    width: 1006px;
+    height: 236px;
+    margin: 0 auto;
+}
+
+#p5 {
+    width: 1006px;
+    height: 505px;
+    margin: 0 auto;
+    color: #958d89;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_10.png) no-repeat center;
+}
+
+#p5 .t1 {
+    width: 615px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-left: 80px;
+}
+
+#p5 .t2 {
+    width: 615px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-left: 80px;
+}
+
+#p06 {
+    width: 1006px;
+    height: 467px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_11.png) no-repeat center;
+}
+
+.p06_t {
+    width: 550px;
+    height: 390px;
+    padding-left: 90px;
+    padding-top: 68px;
+}
+
+.p06_t1 {
+    width: 480px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+#p06 h3 {
+    color: #4c80a9;
+    padding-left: 16px;
+    padding-bottom: 5px;
+}
+
+#p06 p {
+    color: #958d89;
+}
+
+.p06_t2 {
+    width: 480px;
+    height: 80px;
+    margin-top: 55px;
+}
+
+.p06_t3 {
+    width: 480px;
+    height: 80px;
+    margin-top: 60px;
+}
+
+#p6 {
+    width: 1006px;
+    height: 193px;
+    margin: 0 auto;
+}
+
+#p07 {
+    width: 1006px;
+    height: 412px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_14.png) no-repeat center;
+}
+
+#p07 p {
+    width: 400px;
+    height: 50px;
+    color: #958d89;
+    padding-top: 25px;
+    margin-left: 560px;
+}
+
+#p07 ul {
+    width: 400px;
+    height: 300px;
+    margin-left: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 65px;
+    padding-left: 92px;
+    padding-top: 5px;
+    color: #FFF;
+}
+
+#p7 {
+    width: 1006px;
+    height: 245px;
+    margin: 0 auto;
+}
+
+#p8 {
+    width: 1006px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+#p9 {
+    width: 1006px;
+    height: 139px;
+    margin: 0 auto;
+}
+
+#p10 {
+    width: 1006px;
+    height: 286px;
+    margin: 0 auto;
+    background: #F00;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_19.png) no-repeat left center;
+}
+
+.p10_t1 {
+    line-height: 28px;
+    padding-left: 280px;
+    padding-top: 45px;
+}
+
+.p10_t1 h3 {
+    margin-bottom: 5px;
+    color: #73c6ef;
+}
+
+.p10_t1 p {
+    color: #958d89;
+    font-size: 16px;
+}
+
+#p11 {
+    width: 1006px;
+    height: 139px;
+    margin: 0 auto;
+}
+
+#p12 {
+    width: 1006px;
+    height: 558px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_24.png) no-repeat left center;
+}
+
+.p12_h {
+    width: 450px;
+    height: 500px;
+    float: right;
+    margin-top: 36px;
+}
+
+.p12_t1 {
+    width: 450px;
+    height: 420px;
+    color: #958d89;
+}
+
+.p12_t1 h1 {
+    color: #958d89;
+}
+
+.p12_t1 span {
+    font-size: 19px;
+    padding-left: 13px;
+    color: #b6b6b6;
+}
+
+.p12_p {
+    width: 450px;
+    height: 80px;
+}
+
+.p12_t2 {
+    padding-left: 16px;
+    padding-top: 33px;
+    line-height: 24px;
+}
+
+.p12_t1 h2 {
+    color: #958d89;
+    padding-top: 20px;
+}
+
+.p12_t3 p {
+    padding-top: 10px;
+    padding-right: 20px;
+    line-height: 24px;
+}
+
+.p12_border {
+    width: 450px;
+    height: 60px;
+    margin-bottom: 5px;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/border.jpg) no-repeat left bottom;
+}
+
+#p14 {
+    width: 1006px;
+    height: 454px;
+    margin: 0 auto;
+}
+
+#p15 {
+    width: 1006px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#p16 {
+    width: 1006px;
+    height: 190px;
+    margin: 0 auto;
+    color: #958d89;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/shui_27.png) no-repeat center;
+}
+
+.p16_t1 ul {
+    width: 270px;
+    height: 120px;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-top: 23px;
+}
+
+.p16_t2 ul {
+    width: 280px;
+    height: 120px;
+    line-height: 40px;
+    padding-left: 60px;
+    padding-top: 23px;
+}
+
+.p16_t3 ul {
+    width: 270px;
+    height: 120px;
+    line-height: 40px;
+    padding-left: 55px;
+    padding-top: 23px;
+}
+
+.p16_t1 {
+    float: left;
+}
+
+.p16_t2 {
+    float: left;
+}
+
+.p16_t3 {
+    float: left;
+}
+
+#p16 ul li {
+    list-style: none;
+}
+
+#p16 a {
+    text-decoration: none;
+    color: #958d89;
+}
+
+#p16 a:hover {
+    color: #F30;
+}
+
+#p17 {
+    width: 1006px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#p18 {
+    width: 1006px;
+    height: 193px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 16px;
+}
+
+.p18_all {
+    width: 1006px;
+    height: 193px;
+    padding-top: 35px;
+    padding-left: 16px;
+}
+
+.p18_p1 {
+    float: left;
+    padding: 0 8px;
+}
+
+.p18_p2 {
+    float: left;
+    padding: 0 8px;
+}
+
+.p18_p3 {
+    float: left;
+    padding: 0 8px;
+}
+
+.p18_p4 {
+    float: left;
+    padding: 0 8px;
+}
+
+.p18_t1 {
+    width: 228px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.p18_t2 {
+    width: 228px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.p18_t3 {
+    width: 228px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.p18_t4 {
+    width: 228px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#p18 a {
+    text-decoration: none;
+    color: #666;
+}
+
+#p18 a:hover {
+    color: #F60;
+}
+
+#p19_bk {
+    background: #6cc2ed;
+}
+
+#p19 {
+    width: 1006px;
+    height: 153px;
+    margin: 0 auto;
+    background: url(//img.hzshuangmei.com/pc/sgz/images/erweima.png) no-repeat left center;
+}
+
+#p19 p {
+    color: #FFF;
+    padding-top: 22px;
+    padding-left: 210px;
+    font-size: 16px;
+    line-height: 24px;
+}
