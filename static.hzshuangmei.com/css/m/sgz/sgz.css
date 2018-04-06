@@ -198,7 +198,7 @@
     margin-top: .25rem;
 }
 .m_17 img {
-    width: 7.525rem;
+    width: 10rem;
 }
 .footer {
     position: fixed;
@@ -216,6 +216,7 @@
 .m_14_t5 img {
     width: 2.725rem;
 }
+.m_11_01 img,
 .m_11_02 img,
 .m_11_03 img,
 .m_11_04 img {
@@ -251,4 +252,7 @@
 }
 .content > div {
     width: 16rem;
+}
+.m_10_01 {
+    margin-right: 0.125rem;
 }
