@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-02-06 15:05:49
+ * @Last Modified time: 2018-04-06 15:28:34
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -51,7 +51,7 @@ function popup() {
             layer.close(index);
         },
          content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' +filename +'.png'+'"'+'/>',
-        end: function() {
+   end: function() {
             if (flag == 1) {
                 // 永远关闭弹窗
                 window.clearTimeout(timer);
@@ -69,7 +69,12 @@ function popup() {
         layer.closeAll();
     });
 }
-popup();
+
+if(navigator.userAgent.indexOf("Baiduspider")==-1){
+    //自定义弹窗
+       popup();
+}
+
 /*  移动端分享  */
 //顶部分享按钮配置
         var nativeShare = new NativeShare();
