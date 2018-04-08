@@ -1267,3 +1267,13 @@ img {
 .foot{
 height:350px;
 }
+.main{
+    position: relative;
+}
+.tda{
+    position: absolute;
+    width: 240px;
+    height: 102px;
+    left: 348px;
+    bottom: 24px;
+}
