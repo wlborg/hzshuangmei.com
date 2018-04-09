@@ -1,0 +1,391 @@
+
+*{
+    font-weight: normal;
+    font-family:"微软雅黑";
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+h3{
+    font-weight: normal;
+}
+body{
+    overflow-x: hidden;
+}
+.yinshen{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.bk{
+    margin: auto;
+    display: block;
+}
+.flwcon>div{
+    background-color: #def9ff;
+}
+.m1con,.m2con,.m3con,.m4con,.m5con,.m6con,.m7con{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    padding-top: 1px;
+}
+
+.banner img{
+    width: 100%;
+}
+.m1tit{
+    margin-top: 115px;
+    width: 814px;
+}
+.m1flw{
+    position: relative;
+    margin-top: 54px;
+}
+.m1flw>div{
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    position: relative;
+}
+/*.m1flw1 :nth-child(2),.m1flw1{*/
+    /*width: 322px;*/
+/*}*/
+/*.m1flw1 :nth-child(1){*/
+    /*width: 99px;*/
+    /*margin-bottom: 29px;*/
+/*}*/
+.m1flw2 :nth-child(2),.m1flw2{
+    width: 381px;
+}
+.m1flw2 :nth-child(1){
+    width:130px;
+    margin-bottom: 21px;
+}
+.m1flw3 :nth-child(2),.m1flw3{
+    width: 423px;
+}
+.m1flw3 :nth-child(1){
+    width: 309px;
+    margin-bottom: 16px;
+}
+.m1flw2{
+    margin: 0 30px;
+}
+.m1flw span{
+    color: #ffffff;
+    position: absolute;
+    font-size: 32px;
+}
+.m1flw p{
+    color: #fefefe;
+    font-size: 22px;
+    line-height: 30px;
+    position: absolute;
+}
+.m1flw1 span{
+    top: 329px;
+    left: 62px;
+}
+.m1flw1 p{
+    top: 373px;
+    left: 28px;
+}
+.m1flw2 span{
+    top: 391px;
+    left: 86px;
+}
+.m1flw2 p{
+    top: 435px;
+    left: 52px;
+}
+.m1flw3 span{
+    top: 450px;
+    left:107px;
+}
+.m1flw3 p{
+    top: 495px;
+    left: 73px;
+}
+.m1con2{
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/m1bg.jpg") no-repeat center;
+    height: 1803px;
+    padding-top: 1px;
+}
+.m1con2 p{
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    color: #4182c4;
+    margin-top: 555px;
+}
+.m8img1{
+    width: 941px;
+    margin-top: 46px;
+}
+.m1a{
+    margin-top: 115px;
+}
+.m1a img,.m1a{
+    width: 798px;
+}
+.m2tit{
+    width: 814px;
+    margin-top: 84px;
+}
+.m2{
+    padding-bottom: 90px;
+}
+.m2con>p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    color: #2a2742;
+    margin-top: 12px;
+}
+.m2con2{
+    width: 1238px;
+    height: 1022px;
+    background-color: #7edfff;
+    border-radius: 10px;
+    margin:86px auto 0;
+    padding-top: 41px;
+    text-align: center;
+    position: relative;
+}
+.m2al{
+    width:589px ;
+    margin: 0 11px 22px;
+}
+.m3{
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/m3bg.jpg") no-repeat center;
+    height: 1500px;
+}
+.m2zx{
+    width: 399px;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    z-index: 2;
+}
+.m2zx img{
+    width: 399px;
+}
+.m2img5{
+    position: absolute;
+    width: 1005px;
+    bottom: -82px;
+    right: -214px;
+    z-index: 1;
+}
+.m3con{
+    height: 1509px;
+}
+.m3tit{
+    width: 879px;
+    margin-top: 108px;
+}
+.bnsqcflw{
+    width: 1198px;
+    height: 220px;
+    border-radius: 30px;
+    padding-top: 1px;
+    margin-top: 114px;
+
+}
+.bnsqcflw p{
+    width: 860px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0089b4;
+    text-indent:  48px;
+    margin:61px 0 0 324px;
+}
+.m3img1,.m3img2,.m3img3,.m3img4,.m3img5{
+    position: absolute;
+    width: 293px;
+    z-index: 2;
+    top: 675px;
+    left: 300px;
+}
+.m3img2,.m3img4{
+    z-index:1;
+    top:828px;
+}
+.m3img2{
+    left: 454px;
+}
+.m3img3{
+    left: 609px;
+}
+.m3img4{
+    left: 762px;
+    top:829px;
+}
+.m3img5{
+    left: 917px;
+}
+.m3zx{
+    position: absolute;
+    top: 1175px;
+    left: 410px;
+}
+.m3zx,.m3zx img{
+    width: 702px;
+    height: 128px;
+}
+.m4{
+    padding-bottom: 70px;
+}
+.m4tit{
+    width: 913px;
+    margin-top: 140px;
+}
+.m4xg{
+    text-align: center;
+    margin-top: 104px;
+}
+.m4xg1{
+    display:inline-block;
+    margin-right: 13px;
+    width: 286px;
+    height: 436px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+.m4xg1:last-child{
+    margin-right: 0;
+}
+.m4xg1 div{
+    position: absolute;
+    width: 286px;
+    height: 165px;
+    background-color: rgba(78, 190, 226, 0.85);
+    bottom: 0;
+    left: 0;
+}
+.m4xg1 span{
+    display: block;
+    margin-top: 21px;
+    line-height: 30px;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.m4xg1 p{
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.m4zx{
+    margin-top: 5px;
+}
+.m4zx,.m4zx img {
+    width: 538px;
+}
+.m5{
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/m5bg.jpg") no-repeat center;
+    height: 1828px;
+}
+.m5tit{
+    width: 912px;
+    margin-top: 153px;
+}
+.m5lzk,.m5zhz,.m5ght{
+    width: 1181px;
+    height: 902px;
+    display: none;
+    margin:25px auto 0;
+    padding-top: 1px;
+    position: relative;
+}
+.m5zj>div a{
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    right: 202px;
+    bottom: 10px;
+}
+.m5active{
+    display: block;
+}
+.m5lzk{
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/lzk.png") no-repeat center;
+}
+.m5ght{
+    background: url("images/ght.png") no-repeat center;
+}
+.m5zhz{
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/zzh.png") no-repeat center;
+}
+.m5zj>div h4{
+    color: #0089b4;
+    font-size: 46px;
+    margin: 360px 0 0 605px;
+    line-height: 46px;
+}
+.m5zj>div span{
+    width: 50px;
+    height: 4px;;
+    display: block;
+    background-color: #0089b4;
+    margin: 14px 0 32px 605px;
+}
+.m5zj>div li{
+    font-size: 24px;
+    line-height: 36px;
+    color: #0089b4;
+    margin-left: 605px;
+}
+.m5zj>.m5zhz li{
+    margin-left: 660px;
+}
+.m5zj>.m5zhz h4{
+    margin-left: 650px;
+}
+.m5zj>.m5zhz span{
+    margin-left: 650px;
+}
+.m5jh{
+    text-align: center;
+    margin-top: 92px;
+}
+.m5jh>div{
+    display: inline-block;
+    width: 296px;
+    height: 88px; ;
+    position: relative;
+    background-color: #72d2ec;
+    transform: skewX(-25deg);
+}
+.m5jh>div:first-child{
+    background-color: #e9b33e;
+}
+.m5jh>div img{
+    transform: skewX(25deg);
+    position: absolute;
+    bottom: 0;
+    left:-15px;
+}
+.m5jh>div:nth-child(2){
+    margin: 0 3px;
+}
+.m1flw1img1{
+    width: 99px;
+    margin-bottom: 29px;
+}
+.m1flw1img2.m1flw1{
+    width: 322px;
+}
