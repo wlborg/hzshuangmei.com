@@ -26,7 +26,7 @@ if ( ! function_exists('PutCookie'))
       //  setcookie($key, $value, time()+$kptime, $pa,$cfg_domain_cookie);
              setcookie($key, $value, time()+$kptime, $pa,"m.hzshuangmei.com");
       //  setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,$cfg_domain_cookie);
-             setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,"www.hzshuangmei.com");
+             setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,"m.hzshuangmei.com");
     }
 }
 
