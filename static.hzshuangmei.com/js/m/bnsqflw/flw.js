@@ -11,7 +11,7 @@ $(".m5jh div").click(function () {
 function zjqh() {
     $('.m5zj div').eq(zjindex).show().siblings().hide();
     var qh2=zjindex+1;
-    $(".m5qh").attr("src",'//img.hzshuangmei.com/pc/bnsqflw/images/m5qh'+qh+'.png');
+    $(".m5qh").attr("src",'//img.hzshuangmei.com/pc/bnsqflw/images/m5qh'+qh2+'.png');
     zjindex++;
     if (zjindex>2){
         zjindex=0
