@@ -178,7 +178,7 @@ body {
 }
 .m2al > :last-child {
     width: 9.83466667rem;
-    margin-top: 1.55733333rem;
+    margin-top: 1.6rem;
     margin-left: 6.016rem;
 }
 .m2 a {
@@ -260,6 +260,9 @@ body {
     font-size: .384rem;
     line-height: .512rem;
     color: #fff;
+}
+.m4ys img {
+    width: 3.81866667rem;
 }
 .m4zx img {
     width: 7.168rem;
@@ -356,6 +359,7 @@ body {
     position: absolute;
     bottom: 0;
     left: -0.32rem;
+    width: 4.20266667rem;
     transform: skewX(25deg);
 }
 .m5jh > div:nth-child(2) {
