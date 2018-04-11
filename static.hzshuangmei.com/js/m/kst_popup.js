@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-04-06 15:28:34
+ * @Last Modified time: 2018-04-11 12:16:37
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -20,6 +20,7 @@ function imgNotFound() {
         img.src = "//img.hzshuangmei.com/pc/kst/default.png";
         img.onerror = null;
     }
+    //自定义弹窗
 function popup() {
     //get current page filename
     var target = window.location.href;
@@ -70,9 +71,23 @@ function popup() {
     });
 }
 
+//弹窗调用
 if(navigator.userAgent.indexOf("Baiduspider")==-1){
     //自定义弹窗
-       popup();
+    //只有项目，专家，案例详情页弹窗
+ if (isNaN(parseInt(document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0]))) {
+     //如果不是数字，说明是项目和专家详情页
+     console.log(document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0]);
+     popup();
+ } else {
+     //如果是数字
+     //但如果是案例日记则弹窗
+     if (document.location.pathname.split("/").indexOf("cases") > -1) {
+         console.log(document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0]);
+         popup();
+     }
+      console.log(document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0]);
+ }
 }
 
 /*  移动端分享  */
