@@ -130,7 +130,7 @@ body {
     width: 5.78133333rem;
 }
 .m1p1 {
-    width: 13.44rem;
+    width: 12.74rem;
     margin: 6.93333333rem auto 0;
     font-size: .42666667rem;
     line-height: .64rem;
@@ -257,7 +257,7 @@ body {
 .m4ys div p {
     width: 3.456rem;
     margin: auto;
-    font-size: 0.36266667rem;
+    font-size: .36266667rem;
     line-height: .512rem;
     color: #fff;
 }
@@ -341,29 +341,18 @@ body {
     margin-left: 8.42666667rem;
 }
 .m5jh {
-    margin-top: 1.96266667rem;
+    position: relative;
+    width: 13.52533333rem;
+    margin: 1.96266667rem auto 0;
     text-align: center;
 }
 .m5jh > div {
     position: relative;
+    z-index: 2;
     display: inline-block;
     width: 4.37333333rem;
     height: 1.42933333rem;
     transform: skewX(-25deg);
-    background-color: #72d2ec;
-}
-.m5jh > div:first-child {
-    background-color: #e9b33e;
-}
-.m5jh > div img {
-    position: absolute;
-    bottom: 0;
-    left: -0.32rem;
-    width: 4.20266667rem;
-    transform: skewX(25deg);
-}
-.m5jh > div:nth-child(2) {
-    margin: 0 .08533333rem;
 }
 .m5zj > div:nth-child(2) h4 {
     margin: 4.26666667rem 0 0 7.68rem;
@@ -371,4 +360,10 @@ body {
 .m5zj > div:nth-child(2) li,
 .m5zj > div:nth-child(2) span {
     margin-left: 7.72266667rem;
+}
+.m5qh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.52533333rem;
 }
