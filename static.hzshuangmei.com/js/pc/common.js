@@ -349,7 +349,7 @@ $(function() {
     tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
-    //     tools.preReady();
+    tools.preReady();
     //禁止盗案例图
     tools.anti_Stealing_Images();
     //禁用鼠标右键
