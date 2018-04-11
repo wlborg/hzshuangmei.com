@@ -360,32 +360,26 @@ body{
 }
 .m5jh{
     text-align: center;
-    margin-top: 92px;
+    width: 840px;
+    position: relative;
+    height: 127px;
+    margin:92px auto 0;
+}
+.m5qh{
+    width: 840px;
+    height: 127px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .m5jh>div{
+    transform: skewX(-19deg);
     display: inline-block;
-    width: 296px;
-    height: 88px; ;
+    width: 270px;
+    height: 127px; ;
     position: relative;
-    background-color: #72d2ec;
-    transform: skewX(-25deg);
+    z-index: 2;
 }
 .m5jh>div:first-child{
-    background-color: #e9b33e;
-}
-.m5jh>div img{
-    transform: skewX(25deg);
-    position: absolute;
-    bottom: 0;
-    left:-15px;
-}
-.m5jh>div:nth-child(2){
-    margin: 0 3px;
-}
-.m1flw1img1{
-    width: 99px;
-    margin-bottom: 29px;
-}
-.m1flw1img2,.m1flw1{
-    width: 322px;
+    margin-left: 6px
 }
