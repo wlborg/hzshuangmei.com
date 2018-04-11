@@ -81,7 +81,7 @@ body{
     margin-bottom: 16px;
 }
 .m1flw2{
-    margin: 0 30px;
+    margin: 0 26px;
 }
 .m1flw span{
     color: #ffffff;
@@ -388,4 +388,8 @@ body{
 }
 .m5jh>div{
     cursor:pointer;
+}
+.m1flw1img1{
+    width: 99px;
+    margin-bottom: 29px;
 }
