@@ -8,7 +8,7 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: 2500,
+    autoplay: 25000,
     autoplayDisableOnInteraction: false
 });
 $(document).ready(
@@ -25,7 +25,7 @@ $(document).ready(
 var time=setInterval(auto,3000);
 var num=0;
 var res=0;
-$(".part_Six_Auto").eq(1).show();
+$(".part_Six_Auto").eq(0).show();
 function auto() {
     // 0,1,2   0,1,2
     res=(++num)%3;
@@ -65,7 +65,7 @@ function fade(num) {
             '      <span>眼部</span>'+
             '      <span>综合整形</span>'+
             '      </p>'+
-            '      <img src="//img.hzshuangmei.com/pc/rlbls/images/part_Six_Left_Icon2.png" alt="眼部综合整形">'+
+            '      <img src="//img.hzshuangmei.com/pc/rlbls/images/part_Six_Left_Icon2.png" alt="眼部综合整形" class="part_Six_yb_Sime">'+
             '      </li>'+
             '      <li>'+
             '      <p>'+
@@ -90,7 +90,7 @@ function fade(num) {
             '      <span>赫本</span>'+
             '      <span>软骨鼻</span>'+
             '      </p>'+
-            '      <img src="//img.hzshuangmei.com/pc/rlbls/images/part_Six_Left_Icon_Two_2.jpg" alt="赫本软骨鼻" style="width: 115px;">'+
+            '      <img src="//img.hzshuangmei.com/pc/rlbls/images/part_Six_Left_Icon_Two_2.jpg" alt="赫本软骨鼻" class="part_Six_yb_BT">'+
             '      </li>'+
             '      <li>'+
             '      <p>'+
