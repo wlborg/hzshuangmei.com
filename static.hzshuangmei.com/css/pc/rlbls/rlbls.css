@@ -996,3 +996,28 @@ a{
         .swiper-slide{
             width: 1300px!important;
         }
+ .swiper-slide {
+            text-align: center!important;
+            font-size: 18px!important;
+            background: #fff!important;
+
+            /* Center slide text vertically */
+            /*display: -webkit-box;*/
+            /*display: -ms-flexbox;*/
+            /*display: -webkit-flex;*/
+            /*display: flex;*/
+            -webkit-box-pack: center!important;
+            -ms-flex-pack: center!important;
+            -webkit-justify-content: center!important;
+            justify-content: center!important;
+            -webkit-box-align: center!important;
+            -ms-flex-align: center!important;
+            -webkit-align-items: center!important;
+            align-items: center!important;
+            /*margin-left: 106px;*/
+        }
+
+        .swiper-container {
+        
+            z-index: -1!important;
+        }
