@@ -78,10 +78,11 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     font-size: 0.384rem;
     color: #958c95;
     list-style: none;
-    width: 1.92rem;
+    width: 3rem;
+    /* border: 1px solid red; */
     text-align: center;
-    margin-left:  0.85333rem;
-    margin-right: 1.06667rem;
+    margin-left: 0.3rem;
+    margin-right: 0.5rem;
     margin-top: 0.61867rem;
 }
 .part_One_Age>ul:nth-of-type(1)>li>span{
@@ -1132,8 +1133,6 @@ a {
     left: 10.77333rem;
     /* bottom: 49px; */
     bottom: 0.93867rem;
-    width: 0.26rem;
-    height: 0.26rem;
 }
 .part_Five_Go {
     width: 8.96rem;
@@ -1282,6 +1281,17 @@ ul{
     z-index: 2;
 }
 .part_Five_Ul_One_SH{
-
     left: 13.824rem;
+}
+.swiper-slide>img{
+    width: 15.46667rem;
+    height: 9.344rem;
+}
+.part_Six_yb_Sime{
+    width: 1.984rem;
+    height: 0.29867rem;
+}
+.part_Six_yb_BT{
+    width: 2.45333rem;
+    height: 0.29867rem;
 }
