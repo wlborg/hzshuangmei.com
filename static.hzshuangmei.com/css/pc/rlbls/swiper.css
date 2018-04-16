@@ -218,12 +218,6 @@ button.swiper-pagination-bullet {
   opacity: 1;
   background: #007aff;
 }
-.swiper-pagination-bullet-active:after{
-  width:0;
-  border-width:40px;
-  border-style:solid;
-  border-color:red transparent transparent transparent; /* transparent 设置边框颜色透明 */
-}
 .swiper-pagination-white .swiper-pagination-bullet-active {
   background: #fff;
 }
