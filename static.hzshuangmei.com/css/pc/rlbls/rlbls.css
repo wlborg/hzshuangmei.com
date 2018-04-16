@@ -942,57 +942,57 @@ a{
         }
         /*覆盖操作*/
         .swiper-pagination-bullet{
-            width: 118px;
-            height: 118px;
+            width: 118px!important;
+            height: 118px!important;
             /*background:rgba(131,128,146,0.15);*/
         }
         .swiper-pagination-bullets>span:nth-of-type(1){
-            position: absolute;
-            left: -164px;
-            top: 22px;
+            position: absolute!important;
+            left: -164px!important;
+            top: 22px!important;
         }
         .swiper-pagination-bullets>span:nth-of-type(2){
-            position: absolute;
-            left: -164px;
-            top:164px;
+            position: absolute!important;
+            left: -164px!important;
+            top:164px!important;
         }
         .swiper-pagination-bullets>span:nth-of-type(3){
-            position: absolute;
-            left: -164px;
-            top: 306px;
+            position: absolute!important;
+            left: -164px!important;
+            top: 306px!important;
         }
         .swiper-pagination-bullets>span:nth-of-type(4){
-            position: absolute;
-            left: -164px;
-            top: 448px;
+            position: absolute!important;
+            left: -164px!important;
+            top: 448px!important;
         }
 
         .swiper-pagination-bullet{
-            background: rgb(216,216,226);
-            color: rgb(122,120,130);
-            font-size: 24px;
-            opacity: 1;
+            background: rgb(216,216,226)!important;
+            color: rgb(122,120,130)!important;
+            font-size: 24px!important;
+            opacity: 1!important;
         }
         .swiper-pagination-bullet>p{
-            margin-top: 26px;
+            margin-top: 26px!important;
         }
         .swiper-pagination-bullet-active{
             background:rgb(131,128,146)!important;
             color: #ffffff!important;
         }
         .swiper-pagination-bullet-active:after{
-            display: block;
+            display: block!important;
             /*content: "";*/
-            width: 2px;
-            height: 5px;
-            position: absolute;
-            left: 123px;
-            top: 44px;
-            content: url(rlbls/images/part_Three_right.png);
+            width: 2px!important;
+            height: 5px!important;
+            position: absolute!important;
+            left: 123px!important;
+            top: 44px!important;
+            content: url(rlbls/images/part_Three_right.png)!important;
         }
         .swiper-container,.swiper-wrapper{
-            width: 1300px;
+            width: 1300px!important;
         }
         .swiper-slide{
-            width: 1300px;
+            width: 1300px!important;
         }
