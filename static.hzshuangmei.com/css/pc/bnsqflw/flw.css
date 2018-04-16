@@ -81,7 +81,7 @@ body{
     margin-bottom: 16px;
 }
 .m1flw2{
-    margin: 0 30px;
+    margin: 0 26px;
 }
 .m1flw span{
     color: #ffffff;
@@ -175,7 +175,7 @@ body{
 .m2zx{
     width: 399px;
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 75px;
     z-index: 2;
 }
@@ -325,7 +325,7 @@ body{
     background: url("//img.hzshuangmei.com/pc/bnsqflw/images/lzk.png") no-repeat center;
 }
 .m5ght{
-    background: url("images/ght.png") no-repeat center;
+    background: url("//img.hzshuangmei.com/pc/bnsqflw/images/ght.png") no-repeat center;
 }
 .m5zhz{
     background: url("//img.hzshuangmei.com/pc/bnsqflw/images/zzh.png") no-repeat center;
@@ -360,32 +360,36 @@ body{
 }
 .m5jh{
     text-align: center;
-    margin-top: 92px;
+    width: 840px;
+    position: relative;
+    height: 127px;
+    margin:92px auto 0;
+}
+.m5qh{
+    width: 840px;
+    height: 127px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .m5jh>div{
+    transform: skewX(-19deg);
     display: inline-block;
-    width: 296px;
-    height: 88px; ;
+    width: 270px;
+    height: 127px; ;
     position: relative;
-    background-color: #72d2ec;
-    transform: skewX(-25deg);
+    z-index: 2;
 }
 .m5jh>div:first-child{
-    background-color: #e9b33e;
+    margin-left: 6px
 }
-.m5jh>div img{
-    transform: skewX(25deg);
-    position: absolute;
-    bottom: 0;
-    left:-15px;
+.m1flw1{
+    width: 332px;
 }
-.m5jh>div:nth-child(2){
-    margin: 0 3px;
+.m5jh>div{
+    cursor:pointer;
 }
 .m1flw1img1{
     width: 99px;
     margin-bottom: 29px;
-}
-.m1flw1img2.m1flw1{
-    width: 322px;
 }
