@@ -1,6 +1,5 @@
 
 
-
 var swiper = new Swiper('.swiper-container', {
     loop:true,
     pagination: '.swiper-pagination',
@@ -26,7 +25,7 @@ $(document).ready(
 var time=setInterval(auto,3000);
 var num=0;
 var res=0;
-$(".part_Six_Auto").eq(0).show();
+$(".part_Six_Auto").eq(1).show();
 function auto() {
     // 0,1,2   0,1,2
     res=(++num)%3;
@@ -106,22 +105,22 @@ function fade(num) {
     if(res==0){
         $(".part_Six_dean").html("刘志坤/院长");
         var str=
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>红妆双美整形外科院长</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中国整形美容协会海峡两岸分会委员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中西医结合医学美容专业委员会脂肪整形分会委员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中国整形美容协会眼整形美容理事会青年理事</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>湖南省医疗美容协会鼻整形专业委员会委员</li>\n";
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>红妆双美整形外科院长</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>中国整形美容协会海峡两岸分会委员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>中西医结合医学美容专业委员会脂肪整形分会委员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>中国整形美容协会眼整形美容理事会青年理事</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>湖南省医疗美容协会鼻整形专业委员会委员</li>\n";
 
         $(".part_Six_Ul").html(str);
         ul_Two();
     }
     if(res==1){
         $(".part_Six_dean").html("关海涛/院长");
-        var str=" <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 达拉斯隆鼻海南技术带头人 </li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>国际医疗美容整形协会会员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>大韩整形美容外科协会荣誉会员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中国医师协会整形与美容分会会会员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 第31、39界中韩国际整形美容交流会专家组核心成员</li>\n" ;
+        var str=" <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span> 达拉斯隆鼻海南技术带头人 </li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>国际医疗美容整形协会会员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>大韩整形美容外科协会荣誉会员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>中国医师协会整形与美容分会会会员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span> 第31、39界中韩国际整形美容交流会专家组核心成员</li>\n" ;
 
         $(".part_Six_Ul").html(str);
         ul_Two();
@@ -130,12 +129,12 @@ function fade(num) {
     if(res==2){
         $(".part_Six_dean").html("朱振红/院长");
         var str=
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 全鼻整形技术集大成者 </li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中韩整形技术交流峰会中方代表</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>大型整形真人秀《美丽新约》评审委员</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>韩国心美眼鼻医院客座专家</li>\n" +
-            "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 大韩整形美容外科协会会员</li>\n" +
-            "                <li class=\"c_relative part_Six_Ul_Li_Six c_part_absolute\"><span class=\"c_part_absolute\">&nbsp;</span> 国际医疗整形美容协会会员</li>\n" ;
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span> 全鼻整形技术集大成者 </li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>中韩整形技术交流峰会中方代表</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>大型整形真人秀《美丽新约》评审委员</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span>韩国心美眼鼻医院客座专家</li>\n" +
+            "                <li class=\"c_relative\"><span class=\"c_absolute\">&nbsp;</span> 大韩整形美容外科协会会员</li>\n" +
+            "                <li class=\"c_relative part_Six_Ul_Li_Six c_absolute\"><span class=\"c_absolute\">&nbsp;</span> 国际医疗整形美容协会会员</li>\n" ;
         $(".part_Six_Ul").html(str);
         ul_Two2();
     }
