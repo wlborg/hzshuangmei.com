@@ -861,6 +861,8 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     margin-left: 1.04533rem;
     line-height: 0.64rem;
     margin-top: 1.06667rem;
+    position:relative;
+    z-index:5;
 }
 .part_Six>section>p:nth-of-type(1)>span{
     display: inline-block;
@@ -1133,6 +1135,8 @@ a {
     left: 10.77333rem;
     /* bottom: 49px; */
     bottom: 0.93867rem;
+    width: 26px;
+    height: 26px;
 }
 .part_Five_Go {
     width: 8.96rem;
