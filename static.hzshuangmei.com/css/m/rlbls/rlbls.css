@@ -586,7 +586,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     position: absolute;
     left: 2.624rem;
     top: 0.93867rem;
-    content: url(rlbls///img.hzshuangmei.com/m/rlbls/part_Three_right.png);
+    content: url(//img.hzshuangmei.com/m/rlbls/part_Three_right.png);
 }
 .swiper-container,.swiper-wrapper{
     width: 27.73333rem;
@@ -1135,8 +1135,9 @@ a {
     left: 10.77333rem;
     /* bottom: 49px; */
     bottom: 0.93867rem;
-    width: 26px;
-    height: 26px;
+    width: 0.55467rem;
+    height: 0.55467rem;
+
 }
 .part_Five_Go {
     width: 8.96rem;
@@ -1148,7 +1149,7 @@ a {
 .part_Four_Authentication{
     color: rgb(199,179,199);
     font-size: 0.59733rem;
-    width: 5.07733rem;
+    /* width: 5.07733rem; */
     top: 5.696rem;
     left:  50%;
     margin-left: -2.53867rem;
@@ -1196,14 +1197,26 @@ a {
     color: #ffffff!important;
 }
 .swiper-pagination-bullet-active:after{
+    /*display: block!important;*/
+    /*content: '';*/
+    /*width: 0.04267rem!important;*/
+    /*height: 0.10667rem!important;*/
+    /*position: absolute!important;*/
+    /*left: 0.896rem!important;*/
+    /*top: 2.56rem!important;*/
+    /*background-image: url('//img.hzshuangmei.com/m/rlbls/part_Three_right.jpg')!important;*/
+    /*background-size: 0.72533rem 0.42667rem;*/
+
     display: block!important;
-    /*content: "";*/
-    width: 0.04267rem!important;
-    height: 0.10667rem!important;
-    position: absolute!important;
+    content: '';
+    background: url('//img.hzshuangmei.com/m/rlbls/part_Three_right.jpg') no-repeat top left;/*兼容没测*/
+    position: absolute;
     left: 0.896rem!important;
     top: 2.56rem!important;
-    content: url(//img.hzshuangmei.com/m/rlbls/part_Three_right.jpg)!important;
+    z-index: 2;
+    width: 0.72533rem;
+    height: 0.42667rem;
+
 }
 .swiper-container,.swiper-wrapper{
     width: 15.424rem!important;
@@ -1297,5 +1310,9 @@ ul{
 }
 .part_Six_yb_BT{
     width: 2.45333rem;
+    height: 0.29867rem;
+}
+.part_Six_Ul_TWO>li:nth-of-type(3)>img{
+    width: 1.472rem;
     height: 0.29867rem;
 }
