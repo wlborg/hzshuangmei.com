@@ -1216,6 +1216,7 @@ a {
     z-index: 2;
     width: 0.72533rem;
     height: 0.42667rem;
+    background-size: 0.72533rem 0.42667rem;
 
 }
 .swiper-container,.swiper-wrapper{
