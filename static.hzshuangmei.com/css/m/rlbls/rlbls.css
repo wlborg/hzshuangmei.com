@@ -81,7 +81,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     width: 3rem;
     /* border: 1px solid red; */
     text-align: center;
-    margin-left: 0.3rem;
+    margin-left: 0.42rem;
     margin-right: 0.5rem;
     margin-top: 0.61867rem;
 }
@@ -90,8 +90,11 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     text-align: center;
     width: 100%;
 }
-.part_One_Age>ul:nth-of-type(1)>li:nth-of-type(1){
-    /* margin-left: 0px; */
+.part_One_Age>ul:nth-of-type(1)>li:nth-of-type(3){
+    margin-left: 0.48rem;
+}
+.part_One_Age>ul:nth-of-type(1)>li:nth-of-type(4){
+    margin-left: 0.48rem;
 }
 .part_One_Age>ul:nth-of-type(1)>li:nth-of-type(4){
     margin-right: 0px;
