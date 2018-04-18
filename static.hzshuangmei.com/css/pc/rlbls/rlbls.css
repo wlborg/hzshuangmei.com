@@ -983,12 +983,12 @@ a{
         .swiper-pagination-bullet-active:after{
             display: block!important;
             /*content: "";*/
-            width: 2px!important;
-            height: 5px!important;
+            width: 20px!important;
+            height:33px!important;
             position: absolute!important;
             left: 123px!important;
             top: 44px!important;
-            content: url(//img.hzshuangmei.com/pc/rlbls/part_Three_right.png)!important;
+            content: url(//img.hzshuangmei.com/pc/rlbls/images/part_Three_right.png)!important;
         }
         .swiper-container,.swiper-wrapper{
             width: 1300px!important;
