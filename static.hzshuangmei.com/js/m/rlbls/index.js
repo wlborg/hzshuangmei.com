@@ -10,7 +10,7 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: 25000,
+    autoplay: 2500,
     autoplayDisableOnInteraction: false,
     paginationBulletRender: function (swiper, index, className) {
        return '<span class="' + className + '">' + content[index] + '</span>';
