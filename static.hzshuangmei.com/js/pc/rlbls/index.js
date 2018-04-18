@@ -8,6 +8,7 @@ var wow = new WOW({
 });
 wow.init();
 
+var content=['<p>减龄<br/>除皱</p>','<p>填充<br/>凹陷</p>','<p>微雕<br/>塑型</p>','<p>补水<br/>保湿</p>'];
 var swiper = new Swiper('.swiper-container', {
     loop:true,
     pagination: '.swiper-pagination',
@@ -16,20 +17,13 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: 2500,
-    autoplayDisableOnInteraction: false
-});
-$(document).ready(
-    function(){
-        setTimeout(function () {
-            $(".swiper-pagination-bullet").eq(0).html("<p>减龄<br/>除皱</p>");
-            $(".swiper-pagination-bullet").eq(1).html("<p>填充<br/>凹陷</p>");
-            $(".swiper-pagination-bullet").eq(2).html("<p>微雕<br/>塑型</p>");
-            $(".swiper-pagination-bullet").eq(3).html("<p>补水<br/>保湿</p>");
-        },1500)
-
+    autoplay: 25000,
+    autoplayDisableOnInteraction: false,
+    paginationBulletRender: function (swiper, index, className) {
+       return '<span class="' + className + '">' + content[index] + '</span>';
     }
-)
+});
+
 var time=setInterval(auto,3000);
 var num=0;
 var res=0;
