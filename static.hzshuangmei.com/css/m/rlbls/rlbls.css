@@ -1127,7 +1127,7 @@ a {
     color: rgb(152,143,160);
     font-size: 0.59733rem;
     line-height: 0.59733rem;
-    width: 5.97333rem;
+    /* width: 5.97333rem; */
     bottom: 0.93867rem;
     left: 4.65067rem;
 }
@@ -1232,7 +1232,7 @@ ul{
 .swiper-slide>ul>li:nth-of-type(1) {
     color: rgb(207,149,165);
     font-size: 0.87467rem;
-    width: 5.67467rem;
+    /*width: 5.67467rem;*/
     line-height: 1.45067rem;
     margin-right: 0.93867rem;
     margin-top: 0.27733rem;
