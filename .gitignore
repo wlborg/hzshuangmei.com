@@ -9,6 +9,8 @@
 !*.php
 !*.css
 !*.js
+!*.webm
+!tc.txt
 !www.hzshuangmei.com/data/
 !m.hzshuangmei.com/data/
 !www.hongzhuangmr.cn/data/
