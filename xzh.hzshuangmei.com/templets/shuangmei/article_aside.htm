@@ -1,0 +1,56 @@
+<div class="ar_aside" id="ar_aside">
+    <div class="aside">
+        <div class="aside_tit center1 clearFix">
+<!--             <h2>
+                <a href="/projects/" target="_blank" rel="noopener">热门项目</a><br/>
+                <a href="/projects/" target="_blank" rel="noopener">popular project</a>
+            </h2>
+            <a href="/projects/" target="_blank" rel="noopener">more+</a> -->
+              {dede:FIELD.typeid function='MoreHotProjectAboutCase(@me)'/}
+        </div>
+        <div class="swiper-container center1 aside_swiper">
+            <div class="swiper-wrapper">
+ <!--                {dede:arclist typeid=6 orderby='pubdate' flag = 'a' row='5'}
+                <a href="[field:arcurl/]" class="swiper-slide">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"/>
+                    <div class="timu">[field:title/]</div>
+                </a>
+                {/dede:arclist} -->
+                   {dede:FIELD.typeid function='hotProjectAboutCase(@me)'/}
+            </div>
+            <div class="swiper-pagination aside-pagination"></div>
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside_tit center1 clearFix">
+          <!--   <h2>
+                <a href="/doctors/" target="_blank" rel="noopener">推荐专家</a><br/>
+                <a href="/doctors/" target="_blank" rel="noopener">popular expert</a>
+            </h2>
+             <a href="/doctors/" target="_blank" rel="noopener">more+</a>  -->
+              {dede:FIELD.typeid function='MoreCommendDoctorsAboutCase(@me)'/}
+        </div>
+        <div class="aside_ex center1">
+            <!-- <a href="doctors/surgery/guanhaitao.html" target="_blank" rel="noopener"><img src="{dede:global.cfg_imgpath/}/pc/ar_case_04.jpg" alt="关海涛"/></a>
+            <a href="doctors/surgery/liudalie.html" target="_blank" rel="noopener"><img src="{dede:global.cfg_imgpath/}/pc/ar_case_05.jpg" alt="柳大烈"/></a> -->
+               {dede:FIELD.typeid function='commendDoctorsAboutCase(@me)'/}
+        </div>
+    </div>
+    <div class="aside">
+        <div class="aside_tit center1 clearFix">
+            <h2>
+                <a href="/cases/" target="_blank" rel="noopener">热门日记</a><br/>
+                <a href="/cases/" target="_blank" rel="noopener">popular jounal</a>
+            </h2>
+            <a href="/cases/" target="_blank" rel="noopener">more+</a>
+
+        </div>
+        <div class="aside_jou center1">
+            <div>
+                {dede:arclist typeid=10 orderby='pubdate' flag = 'a' row='5'}
+                <a href="[field:arcurl/]" target="_blank" rel="noopener"><img src="[field:id function='getcaseimgafter(@me)'/]"></a>
+                {/dede:arclist}
+            </div>
+        </div>
+    </div>
+</div>
