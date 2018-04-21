@@ -1,0 +1,76 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+body
+{
+	/* Font */
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+
+	/* Text color */
+	color: #222;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right:0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+    padding:0 40px;
+}
+p {
+    text-indent: 2em;
+}
+.main_content h4 {
+    height: 32px;
+	font-weight:normal;
+}
+
+ .main_content h4 span {
+    background-color: #7d5599;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    padding: 6px 9px;
+}
+
+.main_content h4 i {
+    display: inline-block;
+    width: 19px;
+    height: 32px;
+    background: url(//img.hzshuangmei.com/pc/ar_case_sjx.png) no-repeat center;
+    overflow: hidden;
+    font-size: 14px;
+}
+ .main_content p {
+    font-size: 16px;
+    color: #575757;
+    margin: 12px 0 19px 28px;
+    line-height: 1.5em;
+	text-indent:0;
+}
+
+.main_content div {
+    margin: 0 0 52px 28px
+}
+
+.main_content div>img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 32%;
+    box-shadow: 0 0 1px 2px rgba(0,0,0,.2)
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
