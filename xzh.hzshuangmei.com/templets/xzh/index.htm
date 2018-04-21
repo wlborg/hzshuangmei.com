@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="{dede:global.cfg_soft_lang/}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="cache-control" content="no-siteapp">
+<title>{dede:global.cfg_webname/}</title>
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='main-css'  href='{dede:global.cfg_templets_skin/}/css/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/jquery.js'></script>
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
+</head>
+<body class="home blog list-thumb-hover-action nav-fixed-top">
+     {dede:include filename="_head.htm"/}
+	 <div class="focusbox">
+		 <div class="container">
+			 <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
+			 <div class="focusbox-text">{dede:field name='description'  function='html2text(@me)'/}</div>
+		 </div>
+	 </div>
+<section class="container">
+	<div class="excerpts-wrapper">
+		<div class="excerpts">
+			<!--{dede:sql sql="select * from  dede_archives as a order by  a.click desc  LIMIT 5}-->
+				<!--<article class="excerpt excerpt-c5">-->
+					<!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
+						<!--<img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb">-->
+					<!--</a>-->
+					<!--<h2>-->
+						<!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
+					<!--</h2>-->
+					<!--<footer>-->
+						<!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
+							<!--<i class="fa"></i><span>794</span></a>-->
+						<!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span><span class="post-comm">评论(9)</span>-->
+					<!--</footer>-->
+				<!--</article>-->
+			<!--{/dede:sql}-->
+			{dede:list orderby='click'  channelid='1' pagesize='10' typeid='1,2,3,4,5,6,7,11,16'}
+			<article class="excerpt excerpt-c5">
+				<a class="thumbnail" href="[field:arcurl/]"  target="_blank">
+					<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
+				</a>
+				<h2>
+					<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
+				</h2>
+				<footer>
+					<a href="javascript:;" class="post-like" data-pid="135" etap="like">
+						<i class="fa"></i><span>794</span></a>
+					<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span><span class="post-comm">评论(9)</span>
+				</footer>
+			</article>
+			{/dede:list}
+		</div>
+	</div>
+	<div class="pagination">
+		<ul class="pagelist">{dede:pagelist listitem="pre,next,pageno,listsize=3"/}</ul>
+	</div>
+</section>
+{dede:include filename="_footer.htm"/}
+<script>
+		window.TBUI = {
+		uri             : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob',
+		ajaxpager       : '10',
+		pagenum         : '20',
+		shareimage      : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob/img/qrcode.png',
+		shareimagethumb : '1',
+		fullgallery     : '0',
+		fullimage       : '0'
+	}
+</script>
+<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/main.js'></script>
+</body>
+</html>
