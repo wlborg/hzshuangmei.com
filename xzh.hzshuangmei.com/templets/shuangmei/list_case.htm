@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head> {dede:include filename="_meta.htm"/}
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <meta name="author" content="设计：于涛，前端：王苗" />
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_case.css" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_case.js" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_case.css" />
+<link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
+</head>
+<body>{dede:include filename="_header.htm"/}{dede:myad name='topbanner_pc'/}
+    <div class="m1">
+        <div class="location"><i></i><span>当前位置：</span>{dede:field name='position'/}</div>
+        <div class="line"></div>
+        <h2 class="h2_tit" id="ca_01"><img src="{dede:global.cfg_imgpath/}/pc/case_title.png" alt="红妆双美整形日记"/></h2>
+        <div class="case_content">
+            <div id="case_tab">
+                <ul class="btn" id="case_nav">
+                    <li class="nav_list"><a href="/cases" class="nav_link">全部案例 ></a></li>
+                    <li class="nav_list"><a href="/cases/eye/" class="nav_link">眼部 ></a></li>
+                    <li class="nav_list"><a href="/cases/nose/" class="nav_link">鼻部 ></a></li>
+                    <li class="nav_list"><a href="/cases/face/" class="nav_link">面部 ></a></li>
+                    <li class="nav_list"><a href="/cases/tattoo/" class="nav_link">纹绣 ></a></li>
+                    <li class="nav_list"><a href="/cases/skin/" class="nav_link">皮肤 ></a></li>
+                    <li class="nav_list"><a href="/cases/chest/" class="nav_link">胸部 ></a></li>
+                    <li class="nav_list"><a href="/cases/private/" class="nav_link">私密 ></a></li>
+                    <li class="nav_list"><a href="/cases/body/" class="nav_link">形体 ></a></li>
+                    <li class="nav_list"><a href="/cases/ha/" class="nav_link">玻尿酸 ></a></li>
+                    <li class="nav_list"><a href="/cases/botox/" class="nav_link">botox ></a></li>
+                    <li class="nav_list"><a href="/cases/hengli/" class="nav_link">衡力 ></a></li>
+                </ul>
+            </div>
+            <div id="case_tabCon">
+                <div class="case_con">
+                    <div class="clearFix">
+                {dede:list pagesize="9" orderby="weight" addfields="imgbefore,imgafter,job,doctor,project"}
+                        <div class="list">
+                            <a class="t0" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
+                            </a>
+                            <div class="ltt">
+                                <a class="l_ico" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                    <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
+                                </a>
+                                <div class="txt">
+                                    <a class="t1" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                        <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
+                                    </a>
+                                    <div class="t2">塑美项目： [field:project/]</div>
+                                    <div class="t3">塑美专家：[field:doctor/]</div>
+                                </div>
+                            </div>
+                            <a class="t4" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
+                            </a>
+                        </div>
+                    {/dede:list}
+                    </div>
+                    <ul class="pagination clearFix">
+                        {dede:pagelist listitem='pre,next,pageno,index,end' listsize='3'/}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>{dede:include filename="_footer.htm"/}</body>{dede:include filename="_script.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/list_case.js"></script>
+
+</html>

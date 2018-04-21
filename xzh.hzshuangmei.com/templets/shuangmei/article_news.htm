@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head> {dede:include filename="_meta.htm"/}
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <!-- published time -->
+     <meta property="article:author" content="红妆双美"/>
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00">
+    <meta property="article:tag" content="{dede:field name='keywords'/}"> {dede:include filename="_link.htm"/}
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/article_common.css" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/article_common.js" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css" /> </head>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:field.arcurl/}" >
+<body> {dede:include filename="_header.htm"/} {dede:myad name='topbanner_pc'/}
+    <div class="m1">
+        <div class="location"> <i></i><span>当前位置：</span>{dede:field name='position'/} </div>
+        <div class="line"></div>
+        <div class="article_case_content clearFix">
+            <div class="center">
+                  <h1>{dede:field.title/}</h1>
+                <p class="tit"><span>来源 : 红妆双美</span> <span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /} </span> <span>点击量：{dede:field.click /}  </span><a href="javascript:void(0)" class="j-consult" rel="nofollow"></a></p>
+                <div class="ar_ar  ar_ar1"> {dede:field.body /} </div>
+                <div class="page clearFix">
+                    <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
+                    <p><span>下一篇：</span>{dede:prenext get='pre'/}</p>
+                </div> {dede:include filename="article_bottom.htm"/} </div>
+            <div class="gdyb"> {dede:include filename="article_aside.htm"/} </div>
+        </div>
+    </div> {dede:include filename="_footer.htm"/} </body> {dede:include filename="_script.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/article_common.js"></script>
+
+</html>
