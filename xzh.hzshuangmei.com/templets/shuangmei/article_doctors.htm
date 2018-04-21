@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <meta property="og:type" content="article"/>
+     <meta property="article:author" content="红妆双美"/>
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate(
+    'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
+     <!-- published time-->
+    <meta property="article:published_time" content="{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}+08:00" />
+	 <meta property="article:tag" content="{dede:field name='keywords'/}">
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)"   href="https://m.hzshuangmei.com{dede:field.arcurl/}" >
+    {dede:include filename="_link.htm"/}
+     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/tjb.css" as="style" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/tjb.css"/>
+    {dede:field.ztmeta/}
+<body>
+{dede:include filename="_header.htm"/}
+{dede:field.body/}
+{dede:field.body_more/}
+<div  class="tjb">
+    <div class="m_rj">
+        <!--<div class="tjb_title1">-->
+            <!--<img src="https://img.hzshuangmei.com/pc/tjb_title1.png" alt=""/>-->
+        <!--</div>-->
+         {dede:FIELD.typeid function='getDoctorArticleRelateCase(@me)'/}
+    </div>
+
+    <div class="m_xm">
+        <!--<div class="tjb_title3">-->
+            <!--<img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="tjb_xm">-->
+            {dede:FIELD.typeid function='getDoctorArticleRelateProject(@me)'/}
+        <!--</div>-->
+    </div>
+</div>
+{dede:include filename="_footer.htm"/}
+</body>
+{dede:include filename="_script.htm"/}
+{dede:field.ztscript/}
+</html>
