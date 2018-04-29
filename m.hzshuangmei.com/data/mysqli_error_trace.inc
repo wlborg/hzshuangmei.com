@@ -22421,3 +22421,275 @@ where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand()
 Time2018-04-26 09:58:42
 */
 ?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:10:37
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:10:37
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524982243&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 14:10:45
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:10:52
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:10:53
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:27:21
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:27:21
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524983247&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 14:27:29
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:27:36
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:27:37
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524983386&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 14:29:48
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:29:50
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:29:50
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524983403&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 14:30:05
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:30:12
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 14:30:13
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:11:03
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:11:03
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524993072&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 17:11:13
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:11:15
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:11:16
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:20:49
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:20:49
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524993656&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 17:20:57
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:20:59
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:21:00
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=0&pageno=24&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:22:22
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=0&pageno=25&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:22:22
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 17:22:31
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:23:54
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:23:54
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1524993841&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 17:24:03
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=6&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:24:06
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=&uppage=0&maxpagesize=50&typeid=6&pageno=7&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-29 17:24:06
+*/
+?>
