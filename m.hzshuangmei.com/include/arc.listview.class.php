@@ -43,7 +43,7 @@ class ListView
     var $IsReplace;
     var $ftp;
     var $remoteDir;
-    
+
     /**
      *  php5构造函数
      *
@@ -70,7 +70,7 @@ class ListView
         $this->ftp = &$ftp;
         $this->remoteDir = '';
         $this->TotalResult = is_numeric($this->TotalResult)? $this->TotalResult : "";
-        
+
         if(!is_array($this->TypeLink->TypeInfos))
         {
             $this->IsError = true;
@@ -81,8 +81,9 @@ class ListView
             $this->Fields = $this->TypeLink->TypeInfos;
             $this->Fields['id'] = $typeid;
             $this->Fields['position'] = $this->TypeLink->GetPositionLink(true);
-            $this->Fields['title'] = preg_replace("/[<>]/", " / ", $this->TypeLink->GetPositionLink(false));
-
+            // 优化标题分隔符
+            $this->Fields['title'] = str_replace("/[<>]/", " / ", $this->TypeLink->GetPositionLink(false));
+            $this->Fields['title'] = str_replace("/[<>]/", "_", $this->TypeLink->GetPositionLink(false));
             //设置一些全局参数的值
             foreach($GLOBALS['PubFields'] as $k=>$v) $this->Fields[$k] = $v;
             $this->Fields['rsslink'] = $GLOBALS['cfg_cmsurl']."/data/rss/".$this->TypeID.".xml";
@@ -101,7 +102,7 @@ class ListView
                 }
                 else
                 {
-                    $this->Fields['crossid'] = preg_replace('/[^0-9,]/', '', trim($this->Fields['crossid']));
+                    $this->Fields['crossid'] = str_replace('/[^0-9,]/', '', trim($this->Fields['crossid']));
                     if($this->Fields['crossid']!='')
                     {
                         $selquery = "SELECT id,topid FROM `#@__arctype` WHERE id in({$this->Fields['crossid']}) AND id<>{$this->TypeID} AND topid<>{$this->TypeID}  ";
@@ -126,7 +127,7 @@ class ListView
     function ListView($typeid,$uppage=0){
         $this->__construct($typeid,$uppage);
     }
-    
+
     //关闭相关资源
     function Close()
     {
@@ -144,18 +145,18 @@ class ListView
     {
         global $cfg_list_son,$cfg_need_typeid2,$cfg_cross_sectypeid;
         if(empty($cfg_need_typeid2)) $cfg_need_typeid2 = 'N';
-        
+
         //统计数据库记录
         $this->TotalResult = -1;
         if(isset($GLOBALS['TotalResult'])) $this->TotalResult = $GLOBALS['TotalResult'];
         if(isset($GLOBALS['PageNo'])) $this->PageNo = $GLOBALS['PageNo'];
         else $this->PageNo = 1;
         $this->addSql  = " arc.arcrank > -1 ";
-        
+
         $typeid2like = " '%,{$this->TypeID},%' ";
         if($cfg_list_son=='N')
         {
-            
+
             if($cfg_need_typeid2=='N')
             {
                 if($this->CrossID=='') $this->addSql .= " AND (arc.typeid='".$this->TypeID."') ";
@@ -163,18 +164,18 @@ class ListView
             }
             else
             {
-                if($this->CrossID=='') 
-				{
-					$this->addSql .= " AND ( (arc.typeid='".$this->TypeID."') OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like) ";
-				} else {
-					if($cfg_cross_sectypeid == 'Y')
-					{
-						$typeid2Clike = " '%,{$this->CrossID},%' ";
-						$this->addSql .= " AND ( arc.typeid IN({$this->CrossID},{$this->TypeID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2Clike)";
-					} else {
-						$this->addSql .= " AND ( arc.typeid IN({$this->CrossID},{$this->TypeID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like)";
-					}
-				}
+                if($this->CrossID=='')
+                {
+                    $this->addSql .= " AND ( (arc.typeid='".$this->TypeID."') OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like) ";
+                } else {
+                    if($cfg_cross_sectypeid == 'Y')
+                    {
+                        $typeid2Clike = " '%,{$this->CrossID},%' ";
+                        $this->addSql .= " AND ( arc.typeid IN({$this->CrossID},{$this->TypeID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2Clike)";
+                    } else {
+                        $this->addSql .= " AND ( arc.typeid IN({$this->CrossID},{$this->TypeID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like)";
+                    }
+                }
             }
         }
         else
@@ -193,19 +194,19 @@ class ListView
             }
             else
             {
-                if($this->CrossID=='') 
-				{
-					$this->addSql .= " AND ( $sonidsCon OR CONCAT(',', arc.typeid2, ',') like $typeid2like  ) ";
-				} else {
-					if($cfg_cross_sectypeid == 'Y')
-					{
-						$typeid2Clike = " '%,{$this->CrossID},%' ";
-						$this->addSql .= " AND ( arc.typeid IN ({$sonids},{$this->CrossID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2Clike) ";
-					} else {
-						$this->addSql .= " AND ( arc.typeid IN ({$sonids},{$this->CrossID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like) ";
-					}
-					
-				}
+                if($this->CrossID=='')
+                {
+                    $this->addSql .= " AND ( $sonidsCon OR CONCAT(',', arc.typeid2, ',') like $typeid2like  ) ";
+                } else {
+                    if($cfg_cross_sectypeid == 'Y')
+                    {
+                        $typeid2Clike = " '%,{$this->CrossID},%' ";
+                        $this->addSql .= " AND ( arc.typeid IN ({$sonids},{$this->CrossID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2Clike) ";
+                    } else {
+                        $this->addSql .= " AND ( arc.typeid IN ({$sonids},{$this->CrossID}) OR CONCAT(',', arc.typeid2, ',') LIKE $typeid2like) ";
+                    }
+
+                }
             }
         }
         if($this->TotalResult==-1)
@@ -238,7 +239,7 @@ class ListView
                 $tempfile =str_replace('.htm','_m.htm',$tempfile);
             }
         }
-        
+
         if(!file_exists($tempfile)||!is_file($tempfile))
         {
             echo "模板文件不存在，无法解析文档！";
@@ -336,7 +337,7 @@ class ListView
                 $makeFile = "/".$makeFile;
             }
             $makeFile = $this->GetTruePath().$makeFile;
-            $makeFile = preg_replace("/\/{1,}/", "/", $makeFile);
+            $makeFile = str_replace("/\/{1,}/", "/", $makeFile);
             $murl = $this->GetTrueUrl($murl);
             $this->dtp->SaveTo($makeFile);
             //如果启用远程发布则需要进行判断
@@ -345,7 +346,7 @@ class ListView
                 //分析远程文件路径
                 $remotefile = str_replace(DEDEROOT, '',$makeFile);
                 $localfile = '..'.$remotefile;
-                $remotedir = preg_replace('/[^\/]*\.html/', '',$remotefile);
+                $remotedir = str_replace('/[^\/]*\.html/', '',$remotefile);
                 //不相等则说明已经切换目录则可以创建镜像
                 $this->ftp->rmkdir($remotedir);
                 $this->ftp->upload($localfile, $remotefile, 'acii');
@@ -367,7 +368,7 @@ class ListView
                     //分析远程文件路径
                     $remotefile = $murl;
                     $localfile = '..'.$remotefile;
-                    $remotedir = preg_replace('/[^\/]*\.html/', '',$remotefile);
+                    $remotedir = str_replace('/[^\/]*\.html/', '',$remotefile);
                     //不相等则说明已经切换目录则可以创建镜像
                     $this->ftp->rmkdir($remotedir);
                     $this->ftp->upload($localfile, $remotefile, 'acii');
@@ -457,7 +458,7 @@ class ListView
         }
         CreateDir(MfTypedir($this->Fields['typedir']));
         $makeUrl = $this->GetMakeFileRule($this->Fields['id'],"index",MfTypedir($this->Fields['typedir']),$this->Fields['defaultname'],$this->Fields['namerule2']);
-        $makeUrl = preg_replace("/\/{1,}/", "/", $makeUrl);
+        $makeUrl = str_replace("/\/{1,}/", "/", $makeUrl);
         $makeFile = $this->GetTruePath().$makeUrl;
         if($nmfa==0)
         {
@@ -468,7 +469,7 @@ class ListView
                 //分析远程文件路径
                 $remotefile = str_replace(DEDEROOT, '',$makeFile);
                 $localfile = '..'.$remotefile;
-                $remotedir = preg_replace('/[^\/]*\.html/', '',$remotefile);
+                $remotedir = str_replace('/[^\/]*\.html/', '',$remotefile);
                 //不相等则说明已经切换目录则可以创建镜像
                 $this->ftp->rmkdir($remotedir);
                 $this->ftp->upload($localfile, $remotefile, 'acii');
@@ -485,7 +486,7 @@ class ListView
                     //分析远程文件路径
                     $remotefile = str_replace(DEDEROOT, '',$makeFile);
                     $localfile = '..'.$remotefile;
-                    $remotedir = preg_replace('/[^\/]*\.html/', '',$remotefile);
+                    $remotedir = str_replace('/[^\/]*\.html/', '',$remotefile);
                     //不相等则说明已经切换目录则可以创建镜像
                     $this->ftp->rmkdir($remotedir);
                     $this->ftp->upload($localfile, $remotefile, 'acii');
@@ -580,7 +581,7 @@ class ListView
         {
             if($this->Fields['sitepath']!='')
             {
-                $nurl = preg_replace("/^".$this->Fields['sitepath']."/", '', $nurl);
+                $nurl = str_replace("/^".$this->Fields['sitepath']."/", '', $nurl);
             }
             $nurl = $this->Fields['siteurl'].$nurl;
         }
@@ -707,8 +708,8 @@ class ListView
      *  获得一个单列的文档列表
      *
      * @access    public
-     * @param     int  $limitstart  限制开始  
-     * @param     int  $row  行数 
+     * @param     int  $limitstart  限制开始
+     * @param     int  $row  行数
      * @param     int  $col  列数
      * @param     int  $titlelen  标题长度
      * @param     int  $infolen  描述长度
@@ -726,9 +727,9 @@ class ListView
     $imgwidth=120,$imgheight=90,$listtype="all",$orderby="default",$innertext="",$tablewidth="100",$ismake=1,$orderWay='desc')
     {
         global $cfg_list_son,$cfg_digg_update;
-        
+
         $typeid=$this->TypeID;
-        
+
         if($row=='') $row = 10;
         if($limitstart=='') $limitstart = 0;
         if($titlelen=='') $titlelen = 100;
@@ -737,21 +738,21 @@ class ListView
         if($imgheight=='') $imgheight = 120;
         if($listtype=='') $listtype = 'all';
         if($orderWay=='') $orderWay = 'desc';
-        
+
         if($orderby=='') {
             $orderby='default';
         }
         else {
             $orderby=strtolower($orderby);
         }
-        
+
         $tablewidth = str_replace('%','',$tablewidth);
         if($tablewidth=='') $tablewidth=100;
         if($col=='') $col=1;
         $colWidth = ceil(100/$col);
         $tablewidth = $tablewidth.'%';
         $colWidth = $colWidth.'%';
-        
+
         $innertext = trim($innertext);
         if($innertext=='') {
             $innertext = GetSysTemplets('list_fulllist.htm');
@@ -768,9 +769,12 @@ class ListView
         else if($orderby=="lastpost") {
             $ordersql = "  ORDER BY arc.lastpost $orderWay";
         }
-        else if($orderby=="weight") {
+
+            else if($orderby=="weight") {
             $ordersql = "  ORDER BY arc.weight $orderWay";
         }
+
+
         else {
             $ordersql=" ORDER BY arc.sortrank $orderWay";
         }
@@ -873,15 +877,15 @@ class ListView
                     //处理一些特殊字段
                     $row['infos'] = cn_substr($row['description'],$infolen);
                     $row['id'] =  $row['id'];
-					if($cfg_digg_update > 0)
-					{
-						$prefix = 'diggCache';
-						$key = 'aid-'.$row['id'];
-						$cacherow = GetCache($prefix, $key);
-						$row['goodpost'] = $cacherow['goodpost'];
-						$row['badpost'] = $cacherow['badpost'];
-						$row['scores'] = $cacherow['scores'];
-					}
+                    if($cfg_digg_update > 0)
+                    {
+                        $prefix = 'diggCache';
+                        $key = 'aid-'.$row['id'];
+                        $cacherow = GetCache($prefix, $key);
+                        $row['goodpost'] = $cacherow['goodpost'];
+                        $row['badpost'] = $cacherow['badpost'];
+                        $row['scores'] = $cacherow['scores'];
+                    }
 
                     if($row['corank'] > 0 && $row['arcrank']==0)
                     {
@@ -903,7 +907,7 @@ class ListView
                     $row['picname'] = $row['litpic'];
                     $row['stime'] = GetDateMK($row['pubdate']);
                     $row['typelink'] = "<a href='".$row['typeurl']."'>".$row['typename']."</a>";
-                    $row['image'] = "<img src='".$row['picname']."' border='0' width='$imgwidth' height='$imgheight' alt='".preg_replace("/['><]/", "", $row['title'])."'>";
+                    $row['image'] = "<img src='".$row['picname']."' border='0' width='$imgwidth' height='$imgheight' alt='".str_replace("/['><]/", "", $row['title'])."'>";
                     $row['imglink'] = "<a href='".$row['filename']."'>".$row['image']."</a>";
                     $row['fulltitle'] = $row['title'];
                     $row['title'] = cn_substr($row['title'],$titlelen);
@@ -913,8 +917,8 @@ class ListView
                     }
                     if(preg_match('/c/', $row['flag']))
                     {
-                        // $row['title'] = "<b>".$row['title']."</b>";
-                        $row['title'] = $row['title'];
+                       // $row['title'] = "<b>".$row['title']."</b>";
+                          $row['title'] = $row['title'];
                     }
                     $row['textlink'] = "<a href='".$row['filename']."'>".$row['title']."</a>";
                     $row['plusurl'] = $row['phpurl'] = $GLOBALS['cfg_phpurl'];
@@ -994,29 +998,49 @@ class ListView
         $totalpage = ceil($this->TotalResult/$this->PageSize);
         if($totalpage<=1 && $this->TotalResult>0)
         {
-
-            return "<li><span class=\"pageinfo\">共 <strong>1</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+            return;
+          //  return "<li><span class=\"pageinfo\">共 <strong>1</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
         }
         if($this->TotalResult == 0)
         {
-            return "<li><span class=\"pageinfo\">共 <strong>0</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+             return;
+             //return "<li><span class=\"pageinfo\">共 <strong>0</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
         }
         $purl = $this->GetCurUrl();
         $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
         $tnamerule = $this->GetMakeFileRule($this->Fields['id'],"list",$this->Fields['typedir'],$this->Fields['defaultname'],$this->Fields['namerule2']);
-        $tnamerule = preg_replace("/^(.*)\//", '', $tnamerule);
+        $tnamerule = str_replace("/^(.*)\//", '', $tnamerule);
+
+         //修正列表页重复的首页地址
+        $typedir= str_replace('{cmspath}',$GLOBALS['cfg_cmspath'],$this->Fields['typedir']);
+
 
         //获得上一页和主页的链接
-        if($this->PageNo != 1)
+        // if($this->PageNo != 1)
+        // {
+        //     $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页</a></li>\r\n";
+        //     $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'>首页</a></li>\r\n";
+        // }
+        // else
+        // {
+        //     $indexpage="<li>首页</li>\r\n";
+        // }
+       if($this->PageNo != 1)
         {
-            $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页</a></li>\r\n";
-            $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'>首页</a></li>\r\n";
+            if($prepagenum==1)
+            {
+        $prepage.="<li><a href=\"".$typedir."/\">前一页</a></li>\r\n";
         }
         else
         {
-            // $indexpage="<li>首页</li>\r\n";
-            $indexpage="\r\n";
+        $prepage.="<li><a href=\"".str_replace("{page}",$prepagenum,$tnamerule)."\">前一页</a></li>\r\n";
         }
+        $indexpage="<li><a href=\"".$typedir."/\">首页</a></li>\r\n";
+        }
+
+
+
+
 
         //下一页,未页的链接
         if($this->PageNo!=$totalpage && $totalpage>1)
@@ -1026,8 +1050,7 @@ class ListView
         }
         else
         {
-            // $endpage="<li>末页</li>\r\n";
-            $endpage="\r\n";
+            $endpage="<li><a>末页</a></li>\r\n";
         }
 
         //option链接
@@ -1079,7 +1102,16 @@ class ListView
             }
             else
             {
-                $listdd.="<li><a href='".str_replace("{page}",$j,$tnamerule)."'>".$j."</a></li>\r\n";
+                // 修正列表页首页地址重复
+                // $listdd.="<li><a href='".str_replace("{page}",$j,$tnamerule)."'>".$j."</a></li>\r\n";
+                     if($j==1)
+               {
+                                  $listdd.="<li><a href=\"".$typedir."/\">".$j."</a></li>\r\n";
+                                          }
+                         else
+                                             {
+                                            $listdd.="<li><a href=\"".str_replace("{page}",$j,$tnamerule)."\">".$j."</a></li>\r\n";
+                                    }
             }
         }
         $plist = '';
@@ -1090,7 +1122,7 @@ class ListView
         if(preg_match('/end/i', $listitem)) $plist .= $endpage;
         if(preg_match('/option/i', $listitem)) $plist .= $optionlist;
         if(preg_match('/info/i', $listitem)) $plist .= $maininfo;
-        
+
         return $plist;
     }
 
@@ -1115,26 +1147,28 @@ class ListView
         $totalpage = ceil($this->TotalResult/$this->PageSize);
         if($totalpage<=1 && $this->TotalResult>0)
         {
-            return "<li><span class=\"pageinfo\">共 1 页/".$this->TotalResult." 条记录</span></li>\r\n";
+           // return "<li><span class=\"pageinfo\">共 1 页/".$this->TotalResult." 条记录</span></li>\r\n";
+           return  ;
         }
         if($this->TotalResult == 0)
         {
-            return "<li><span class=\"pageinfo\">共 0 页/".$this->TotalResult." 条记录</span></li>\r\n";
+         //   return "<li><span class=\"pageinfo\">共 0 页/".$this->TotalResult." 条记录</span></li>\r\n";
+         return  ;
         }
-        $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
-        
+       // $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
+             $maininfo ="";
         $purl = $this->GetCurUrl();
         // 如果开启为静态,则对规则进行替换
         if($cfg_rewrite == 'Y')
         {
-            $nowurls = preg_replace("/\-/", ".php?", $purl);
+            $nowurls = str_replace("/\-/", ".php?", $purl);
             $nowurls = explode("?", $nowurls);
             $purl = $nowurls[0];
         }
 
         $geturl = "tid=".$this->TypeID."&TotalResult=".$this->TotalResult."&";
         $purl .= '?'.$geturl;
-        
+
         $optionlist = '';
         //$hidenform = "<input type='hidden' name='tid' value='".$this->TypeID."'>\r\n";
         //$hidenform .= "<input type='hidden' name='TotalResult' value='".$this->TotalResult."'>\r\n";
@@ -1200,12 +1234,12 @@ class ListView
         if(preg_match('/end/i', $listitem)) $plist .= $endpage;
         if(preg_match('/option/i', $listitem)) $plist .= $optionlist;
         if(preg_match('/info/i', $listitem)) $plist .= $maininfo;
-        
+
         if($cfg_rewrite == 'Y')
         {
             $plist = str_replace('.php?tid=', '-', $plist);
             $plist = str_replace('&TotalResult=', '-', $plist);
-            $plist = preg_replace("/&PageNo=(\d+)/i",'-\\1.html',$plist);
+            $plist = str_replace("/&PageNo=(\d+)/i",'-\\1.html',$plist);
         }
         return $plist;
     }
