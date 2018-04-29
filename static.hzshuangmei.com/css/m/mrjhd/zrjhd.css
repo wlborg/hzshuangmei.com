@@ -1,12 +1,28 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
-.mrjnr{
-    font-size: 0;
-    width: 16rem;
+.mrjnr {
+    width: 13.653rem;
     margin: auto;
+
+    font-size: 0;
 }
-.mrjnr img{
-    width: 16rem;
+.mrjnr div {
+    position: relative;
+}
+.mrjnr div a {
+    position: absolute;
+}
+.m2 a {
+    top: 15.68rem;
+    left: 4.16rem;
+    width: 5.333rem;
+    height: 1.706rem;
+}
+.m3 a {
+    top: 2.56rem;
+    left: 8.64rem;
+    width: 3.413rem;
+    height: 3.413rem;
 }
