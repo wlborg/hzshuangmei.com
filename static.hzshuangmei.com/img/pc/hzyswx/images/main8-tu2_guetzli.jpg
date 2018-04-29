@@ -1,0 +1,31 @@
+<?php
+$z[0]=Array("tagname","@me=\"Make \".GetDateTimeMk(time());",167,243);
+$z[0][4]=array();
+$z[0][4]['runphp']="yes";
+$z[1]=Array("type","\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n",249,358);
+$z[1][4]=array();
+$z[1][4]['typeid']="10";
+$z[2]=Array("channel","\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n",362,488);
+$z[2][4]=array();
+$z[2][4]['typeid']="10";
+$z[2][4]['type']="son";
+$z[3]=Array("channelartlist","\r\n{dede:channel  type='son'}\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n{/dede:channel}\r\n",496,682);
+$z[3][4]=array();
+$z[3][4]['typeid']="10";
+$z[3][4]['type']="son";
+$z[4]=Array("channel","\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n",688,814);
+$z[4][4]=array();
+$z[4][4]['typeid']="37";
+$z[4][4]['type']="son";
+$z[5]=Array("channel","\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n",820,946);
+$z[5][4]=array();
+$z[5][4]['typeid']="42";
+$z[5][4]['type']="son";
+$z[6]=Array("arclist","\r\n<url>\r\n<loc>[field:aid runphp='yes']if(\$GLOBALS['cfg_multi_site']='N'){@me='https://www.hzshuangmei.com';}[/field:aid][field:arcurl /]</loc>\r\n<lastmod>[field:stime /]</lastmod>\r\n</url>\r\n   ",955,1227);
+$z[6][4]=array();
+$z[6][4]['row']="50000";
+$z[6][4]['typeid']="10";
+$z[6][4]['channelid']="19";
+$z[6][4]['orderby']="pubdate";
+
+?>

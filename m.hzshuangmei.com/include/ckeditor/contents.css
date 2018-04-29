@@ -26,55 +26,51 @@ ol,ul,dl
 p {
     text-indent: 2em;
 }
-
- .step {
-    border-bottom: solid 1px #f0f0f0;
-    padding: 30px 5%
+.main_content h4 {
+    height: 32px;
+	font-weight:normal;
 }
 
- .step .title {
-    position: relative;
-    display: inline-block;
-    background: #cbbfe3;
-    padding: 0 20px;
-    font-weight: normal;
-    font-size: 24px;
-    line-height:28px;
+ .main_content h4 span {
+    background-color: #7d5599;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    padding: 6px 9px;
 }
 
-.step .title strong {
-    color: #cf35ba;
-    font-weight: normal
-}
-
-.step .title i {
-    position: absolute;
-    right: -20px;
-    top: 0;
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent transparent transparent #cbbfe3;
-    border-width: 14px 10px
-}
-
- .step .des {
-    margin-top: 6px;
-    margin-bottom: 24px;
-    font-size: 20px;;
-    line-height: 1.6;
-    color: #9b71a5;
-    text-indent:0;
-}
-
-.step .pic {
-    font-size: 0
-}
-
- .step .pic img {
+.main_content h4 i {
     display: inline-block;
-    width: 49%;
-    margin: 0 1% 1% 0
+    width: 19px;
+    height: 32px;
+    background: url(//img.hzshuangmei.com/pc/ar_case_sjx.png) no-repeat center;
+    overflow: hidden;
+    font-size: 14px;
+}
+ .main_content p {
+    font-size: 16px;
+    color: #575757;
+    margin: 12px 0 19px 28px;
+    line-height: 1.5em;
+	text-indent:0;
+}
+
+.main_content div {
+    margin: 0 0 52px 28px
+}
+
+.main_content div>img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 32%;
+    box-shadow: 0 0 1px 2px rgba(0,0,0,.2)
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
 }

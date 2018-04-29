@@ -3,7 +3,7 @@
 /node_modules/
 *.7z
 *.html
-*.xml
+!admin/*.xml
 *.tar.gz
 *.tar
 !*.php
