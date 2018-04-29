@@ -3,10 +3,12 @@
     margin: 0;
 }
 .mrjnr {
-    width: 13.653rem;
+    width: 16rem;
     margin: auto;
-
     font-size: 0;
+}
+.mrjnr img{
+    width: 16rem;
 }
 .mrjnr div {
     position: relative;
@@ -15,14 +17,14 @@
     position: absolute;
 }
 .m2 a {
-    top: 15.68rem;
-    left: 4.16rem;
-    width: 5.333rem;
-    height: 1.706rem;
+    top: 18.375rem;
+    left: 4.875rem;
+    width: 6.25rem;
+    height: 2rem;
 }
 .m3 a {
-    top: 2.56rem;
-    left: 8.64rem;
-    width: 3.413rem;
-    height: 3.413rem;
+    top: 3rem;
+    left: 10.125rem;
+    width: 4rem;
+    height: 4rem;
 }
