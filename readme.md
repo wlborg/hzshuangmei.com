@@ -17,3 +17,6 @@ PS：编辑后台上传的文件依然存放在网站根目录的`uploads`目录
 `vhost` 各网站配置主文件
 `anti_spam_bots.conf` 防止垃圾蜘蛛爬取配置
 `guard_dedecms.conf` 针对dedecms系统的防护配置
+
+
+`xzh.hzshuangmei.com` 是熊掌号网站（一体化响应式）
