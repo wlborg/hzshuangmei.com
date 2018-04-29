@@ -1,0 +1,7 @@
+{dede:arclist row=50}
+<li>
+
+[field:title/][field:arcurl/]
+</li>
+
+{/dede:arclist}
