@@ -24,9 +24,9 @@ if ( ! function_exists('PutCookie'))
     {
         global $cfg_cookie_encode,$cfg_domain_cookie;
       //  setcookie($key, $value, time()+$kptime, $pa,$cfg_domain_cookie);
-             setcookie($key, $value, time()+$kptime, $pa,"m.hzshuangmei.com");
-      //  setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,$cfg_domain_cookie);
-             setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,"m.hzshuangmei.com");
+        setcookie($key, $value, time()+$kptime, $pa,"www.hzshuangmei.com");
+      // setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,$cfg_domain_cookie);
+        setcookie($key.'__ckMd5', substr(md5($cfg_cookie_encode.$value),0,16), time()+$kptime, $pa,"www.hzshuangmei.com");
     }
 }
 
@@ -42,10 +42,10 @@ if ( ! function_exists('DropCookie'))
     function DropCookie($key)
     {
         global $cfg_domain_cookie;
-        //setcookie($key, '', time()-360000, "/",$cfg_domain_cookie);
-          setcookie($key, '', time()-360000, "/","m.hzshuangmei.com");
-        //setcookie($key.'__ckMd5', '', time()-360000, "/",$cfg_domain_cookie);
-        setcookie($key.'__ckMd5', '', time()-360000, "/","m.hzshuangmei.com");
+      //  setcookie($key, '', time()-360000, "/",$cfg_domain_cookie);
+             setcookie($key, '', time()-360000, "/","www.hzshuangmei.com");
+       // setcookie($key.'__ckMd5', '', time()-360000, "/",$cfg_domain_cookie);
+             setcookie($key.'__ckMd5', '', time()-360000, "/","www.hzshuangmei.com");
     }
 }
 

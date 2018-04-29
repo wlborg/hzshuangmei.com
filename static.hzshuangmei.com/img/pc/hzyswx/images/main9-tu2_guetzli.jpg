@@ -1,0 +1,6 @@
+<?php
+$z[0]=Array("tagname","@me=\"Make \".GetDateTimeMk(time());",59,135);
+$z[0][4]=array();
+$z[0][4]['runphp']="yes";
+
+?>
