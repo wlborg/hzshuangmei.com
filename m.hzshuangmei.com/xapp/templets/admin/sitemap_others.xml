@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"><!-- {dede:tagname runphp='yes'}@me="Make ".GetDateTimeMk(time());{/dede:tagname} -->
+
+
+<url>
+<loc>https://m.hzshuangmei.com/</loc>
+<lastmod>{dede:field name='shownowtime' runphp='yes'}@me=date("Y-m-d");{/dede:field}</lastmod>
+</url>
+
+ {dede:channel typeid='56' type='son'}
+<url>
+<loc>https://m.hzshuangmei.com[field:typelink/]</loc>
+</url>
+{/dede:channel}
+
+
+
+ {dede:arclist row='50000' typeid=56 channelid=1  orderby=pubdate}
+<url>
+<loc>[field:aid runphp='yes']if($GLOBALS['cfg_multi_site']='N'){@me='https://m.hzshuangmei.com';}[/field:aid][field:arcurl /]</loc>
+<lastmod>[field:stime /]</lastmod>
+</url>
+   {/dede:arclist}
+
+
+</urlset>
