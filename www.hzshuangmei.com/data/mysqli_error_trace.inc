@@ -22429,3 +22429,19 @@ where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand()
 Time2018-04-29 17:29:06
 */
 ?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 18:16:25
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?typeid=0&startid=&endid=&pagesize=20
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-29 18:28:53
+*/
+?>
