@@ -32,7 +32,7 @@
             <div id="news">
                 <h2><span class="sr-only">新闻中心</span></h2>
                 <div class="item">
-                    {dede:arclist typeid='1' row='1' titlelen="120"}
+                    {dede:arclist typeid='1'  channelid='20'  row='1' titlelen="120"}
                     <h3><a href="[field:arcurl/]" title="[field:title/] ">[field:title/] </a></h3>
                     <!--
                        <p>时间[field:pubdate function='strftime("%Y-%m-%d %H:%M","@me")' /]</p> -->
@@ -42,7 +42,7 @@
             <div id="video">
                 <h2>视频中心 <span class="icon-show"></span></h2>
                 <div class="item">
-                    {dede:arclist typeid='60' row='1' titlelen="120"}
+                    {dede:arclist typeid='60'  channelid='1' row='1' titlelen="120"}
                     <h3><a href="[field:arcurl/]" title="[field:title/] ">[field:title/] </a></h3>
                     <a href="/video/" title="more" class="more">more</a> {/dede:arclist}
                 </div>
