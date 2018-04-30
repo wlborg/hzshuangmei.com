@@ -1,14 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="{dede:global.cfg_soft_lang/}">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>list{dede:global.cfg_webname/}</title>
-<meta name='robots' content='noindex,follow' />
-<link rel='dns-prefetch' href='//s.w.org' />
+<title>{dede:global.cfg_webname/}科技整形美容资讯</title>
 <link rel='stylesheet' id='main-css'  href='{dede:global.cfg_templets_skin/}/css/style.css' type='text/css' media='all' />
 <script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/jquery.js'></script>
 <meta name="keywords" content="{dede:global.cfg_keywords/}">
@@ -99,9 +97,9 @@
              var taget_obj = document.getElementById(tagid);
              var taget_obj_page = document.getElementById("page_"+tagid);
              myajax = new DedeAjax(taget_obj,false,false,'','','');
-             myajax.SendGet2("/plus/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
+             myajax.SendGet2("/plugin/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
              myajax = new DedeAjax(taget_obj_page,false,false,'','','');
-             myajax.SendGet2("/plus/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
+             myajax.SendGet2("/plugin/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
              DedeXHTTP = null;
          }
 	 </script>
