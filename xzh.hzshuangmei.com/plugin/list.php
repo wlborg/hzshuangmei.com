@@ -13,7 +13,7 @@ require_once(dirname(__FILE__)."/../include/common.inc.php");
 
 //无限加载
 if(isset($_GET['ajax'])){
-  $typeid = isset($_GET['typeid']) ? intval($_GET['typeid']): 76;//传递过来的分类ID
+  $typeid = isset($_GET['typeid']) ? intval($_GET['typeid']): 6;//传递过来的分类ID
   $page = isset($_GET['page']) ? intval($_GET['page']): 0;//页码
   $pagesize = isset($_GET['pagesize']) ? intval($_GET['pagesize']): 20;//每页多少条，也就是一次加载多少条数据
   $start = $page>0 ? ($page-1)*$pagesize : 0;//数据获取的起始位置。即limit条件的第一个参数。
@@ -48,7 +48,7 @@ while($row = $dsql->GetArray("list")){
    if($row['litpic'] == '-' || $row['litpic'] == ''){
     $row['litpic'] = $GLOBALS['cfg_cmspath'].'/images/defaultpic.gif';
    }
-   if(!preg_match("#^http:\/\/#i", $row['litpic']) &&$GLOBALS['cfg_multi_site'] == 'Y'){
+   if(!preg_match("#^https:\/\/#i", $row['litpic']) &&$GLOBALS['cfg_multi_site'] == 'Y'){
     $row['litpic'] = $GLOBALS['cfg_mainsite'].$row['litpic'];
    }
    $row['picname'] = $row['litpic'];//缩略图
