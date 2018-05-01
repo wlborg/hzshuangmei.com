@@ -1,113 +1,191 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
-<title>海南红妆双美整形美容资讯</title>
-<!-- favicon.ico -->
-<link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
 
-<link rel='stylesheet' id='main-css'  href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
-<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" ></script>
-<meta name="keywords" content="{dede:global.cfg_keywords/}">
-<meta name="description" content="{dede:global.cfg_description/}">
-<!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
-	<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>海南红妆双美整形美容资讯</title>
+    <!-- favicon.ico -->
+    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}">
+    <meta name="description" content="{dede:global.cfg_description/}">
+    <!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
+    <!-- <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> -->
+    <!-- 无限加载 -->
+    <script type="text/javascript">
+    var loadConfig = {
+        url_api: '{dede:global.cfg_cmspath/}/plugin/list.php', //修正plus目录
+        typeid: { dede: field name = 'typeid' / }, //首页此处是typeid:0,
+        page: 2,
+        pagesize: 3,
+        loading: 0,
+    }
+
+    function loadMoreApply() {
+        if (loadConfig.loading == 0) {
+            var typeid = loadConfig.typeid;
+            var page = loadConfig.page;
+            var pagesize = loadConfig.pagesize;
+            var url = loadConfig.url_api,
+                data = { ajax: 'pullload', typeid: typeid, page: page, pagesize: pagesize };
+            var sTop = document.body.scrollTop || document.documentElement.scrollTop,
+                dHeight = $(document).height(),
+                cHeight = document.documentElement.clientHeight;
+            console.log(dHeight);
+            if (sTop + cHeight >= dHeight - cHeight) {
+                loadConfig.loading = 1;
+
+                function ajax(url, data) {
+                    $.ajax({
+                        url: url,
+                        data: data,
+                        async: false,
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            addContent(data);
+                        }
+                    });
+                }
+                ajax(url, data);
+            }
+        }
+    }
+
+    function addContent(rs) {
+        if (rs.statu == 1) {
+            var data = rs.list;
+            var total = rs.total;
+            var arr = [];
+            var length = data.length;
+            for (var i = 0; i < length; i++) {
+                arr.push('<article class="excerpt excerpt-c5">');
+                arr.push('<a href="' + data[i].arcurl + '" class="thumbnail"  target="_blank">');
+                arr.push('<img class="thumb" alt="data[i].title" src="' + data[i].picname + '" />');
+                arr.push('</a>');
+                arr.push('<h2>');
+                arr.push('<a href="' + data[i].arcurl + '"  target="_blank">');
+                arr.push(data[i].title);
+                arr.push('</a>');
+                arr.push('</h2>');
+                arr.push('<footer>');
+                arr.push('<time class="hot">热门</time>');
+                arr.push('<span class="post-view">阅读(');
+                arr.push(data[i].click + ')');
+                arr.push('</span></footer>')
+                arr.push('</article>');
+            }
+            $('.data-list').append(arr.join(''));
+            loadConfig.load_num = rs.load_num;
+            if (total < loadConfig.page * loadConfig.pagesize || loadConfig.page > loadConfig.load_num) {
+                window.removeEventListener('srcoll', loadMoreApply, false);
+            }
+            loadConfig.page++;
+            loadConfig.loading = 0;
+        }
+    }
+
+    function pullLoad() {
+        window.addEventListener('scroll', loadMoreApply, false);
+    }
+    pullLoad();
+    </script>
 </head>
+
 <body class="home blog list-thumb-hover-action nav-fixed-top">
-     {dede:include filename="_head.htm"/}
-	 <div class="focusbox">
-		 <div class="container">
-			 <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
-			 <div class="focusbox-text">{dede:field name='description'  function='html2text(@me)'/}</div>
-		 </div>
-	 </div>
-<section class="container">
-	<div class="excerpts-wrapper">
-		<div class="excerpts">
-			<!--{dede:sql sql="select * from  dede_archives as a order by  a.click desc  LIMIT 5}-->
-				<!--<article class="excerpt excerpt-c5">-->
-					<!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
-						<!--<img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb">-->
-					<!--</a>-->
-					<!--<h2>-->
-						<!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
-					<!--</h2>-->
-					<!--<footer>-->
-						<!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
-							<!--<i class="fa"></i><span>794</span></a>-->
-						<!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span><span class="post-comm">评论(9)</span>-->
-					<!--</footer>-->
-				<!--</article>-->
-			<!--{/dede:sql}-->
-			{dede:list orderby='click'  channelid='1' pagesize='2' typeid='1,2,3,4,5,6,7,11,17'}
-			<article class="excerpt excerpt-c5">
-				<a class="thumbnail" href="[field:arcurl/]"  target="_blank">
+    {dede:include filename="_head.htm"/}
+    <div class="focusbox">
+        <div class="container">
+            <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
+            <div class="focusbox-text">{dede:field name='description' function='html2text(@me)'/}</div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="excerpts-wrapper">
+            <div class="excerpts data-list">
+                <!--{dede:sql sql="select * from  dede_archives as a order by  a.click desc  LIMIT 5}-->
+                <!--<article class="excerpt excerpt-c5">-->
+                <!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
+                <!--<img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb">-->
+                <!--</a>-->
+                <!--<h2>-->
+                <!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
+                <!--</h2>-->
+                <!--<footer>-->
+                <!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
+                <!--<i class="fa"></i><span>794</span></a>-->
+                <!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span><span class="post-comm">评论(9)</span>-->
+                <!--</footer>-->
+                <!--</article>-->
+                <!--{/dede:sql}-->
+                {dede:list orderby='click' channelid='18' pagesize='3' }
+                <article class="excerpt excerpt-c5">
+                    <a class="thumbnail" href="[field:arcurl/]" target="_blank">
 					<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
 				</a>
-				<h2>
+                    <h2>
 					<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
 				</h2>
-				<footer>
-					<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
-				</footer>
-			</article>
-			{/dede:list}
-			<!--{dede:list pagesize="2" titlelen="120"  orderby ='pubdate' orderway="desc"}-->
-			<!--<article class="excerpt excerpt-c5">-->
-				<!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
-					<!--<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">-->
-				<!--</a>-->
-				<!--<h2>-->
-					<!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
-				<!--</h2>-->
-				<!--<footer>-->
-					<!--&lt;!&ndash;<a href="javascript:;" class="post-like" data-pid="135" etap="like">&ndash;&gt;-->
-					<!--&lt;!&ndash;<i class="fa"></i><span>794</span></a>&ndash;&gt;-->
-					<!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>-->
-				<!--</footer>-->
-			<!--</article>-->
-			<!--{/dede:list}-->
-		</div>
-	</div>
-	<div class="pagination">
-		<ul class="pagelist">{dede:pagelist listitem="pre,next,pageno,listsize=2"/}</ul>
-	</div>
-</section>
-	 {dede:arclist tagid='list_index' pagesize='20' orderby='click'}
-	 <li><a href="[field:arcurl/]" >[field:title/]</a></li>
-	 {/dede:arclist}
-	 {dede:arcpagelist tagid='list_index'/}
-{dede:include filename="_footer.htm"/}
-<!--<script>-->
-		<!--window.TBUI = {-->
-		<!--uri             : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob',-->
-		<!--ajaxpager       : '10',-->
-		<!--pagenum         : '20',-->
-		<!--shareimage      : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob/img/qrcode.png',-->
-		<!--shareimagethumb : '1',-->
-		<!--fullgallery     : '0',-->
-		<!--fullimage       : '0'-->
-	<!--}-->
-<!--</script>-->
+                    <footer>
+                        <time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
+                    </footer>
+                </article>
+                {/dede:list}
+                <!--{dede:list pagesize="2" titlelen="120"  orderby ='pubdate' orderway="desc"}-->
+                <!--<article class="excerpt excerpt-c5">-->
+                <!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
+                <!--<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">-->
+                <!--</a>-->
+                <!--<h2>-->
+                <!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
+                <!--</h2>-->
+                <!--<footer>-->
+                <!--&lt;!&ndash;<a href="javascript:;" class="post-like" data-pid="135" etap="like">&ndash;&gt;-->
+                <!--&lt;!&ndash;<i class="fa"></i><span>794</span></a>&ndash;&gt;-->
+                <!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>-->
+                <!--</footer>-->
+                <!--</article>-->
+                <!--{/dede:list}-->
+            </div>
+        </div>
+        <div class="pagination">
+            <ul class="pagelist">{dede:pagelist listitem="pre,next,pageno,listsize=2"/}</ul>
+        </div>
+    </section>
+    {dede:arclist tagid='list_index' pagesize='20' orderby='click'}
+    <li><a href="[field:arcurl/]">[field:title/]</a></li>
+    {/dede:arclist} {dede:arcpagelist tagid='list_index'/} {dede:include filename="_footer.htm"/}
+    <!--<script>-->
+    <!--window.TBUI = {-->
+    <!--uri             : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob',-->
+    <!--ajaxpager       : '10',-->
+    <!--pagenum         : '20',-->
+    <!--shareimage      : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob/img/qrcode.png',-->
+    <!--shareimagethumb : '1',-->
+    <!--fullgallery     : '0',-->
+    <!--fullimage       : '0'-->
+    <!--}-->
+    <!--</script>-->
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
-	 <script>
-         function multi(pagenum,tagid)
-         {
-             var taget_obj = document.getElementById(tagid);
-             var taget_obj_page = document.getElementById("page_"+tagid);
-             myajax = new DedeAjax(taget_obj,false,false,'','','');
-             myajax.SendGet2("/plugin/arcmulti.php?mtype=0&pnum="+pagenum+'&tagid='+tagid);
-             myajax = new DedeAjax(taget_obj_page,false,false,'','','');
-             myajax.SendGet2("/plugin/arcmulti.php?mtype=1&pnum="+pagenum+'&tagid='+tagid);
-             DedeXHTTP = null;
-         }
-	 </script>
-<!--<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/share.js'></script>-->
+    <script>
+    function multi(pagenum, tagid) {
+        var taget_obj = document.getElementById(tagid);
+        var taget_obj_page = document.getElementById("page_" + tagid);
+        myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+        myajax.SendGet2("/plugin/arcmulti.php?mtype=0&pnum=" + pagenum + '&tagid=' + tagid);
+        myajax = new DedeAjax(taget_obj_page, false, false, '', '', '');
+        myajax.SendGet2("/plugin/arcmulti.php?mtype=1&pnum=" + pagenum + '&tagid=' + tagid);
+        DedeXHTTP = null;
+    }
+    </script>
+    <!--<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/share.js'></script>-->
 </body>
+
 </html>
