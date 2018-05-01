@@ -18,86 +18,6 @@
     <meta name="description" content="{dede:global.cfg_description/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
     <!-- <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> -->
-    <!-- 无限加载 -->
-    <script type="text/javascript">
-    var loadConfig = {
-        url_api: 'https://xzh.hzshuangmei.com/plugin/list.php', //修正plus目录
-        //typeid: { dede: field name = 'typeid' / }, //首页此处是typeid:0,
-        typeid: 6,
-        page: 2,
-        pagesize: 3,
-        loading: 0,
-    }
-
-    function loadMoreApply() {
-        if (loadConfig.loading == 0) {
-            var typeid = loadConfig.typeid;
-            var page = loadConfig.page;
-            var pagesize = loadConfig.pagesize;
-            var url = loadConfig.url_api,
-                data = { ajax: 'pullload', typeid: typeid, page: page, pagesize: pagesize };
-            var sTop = document.body.scrollTop || document.documentElement.scrollTop,
-                dHeight = $(document).height(),
-                cHeight = document.documentElement.clientHeight;
-            console.log(dHeight);
-            if (sTop + cHeight >= dHeight - cHeight) {
-                loadConfig.loading = 1;
-
-                function ajax(url, data) {
-                    $.ajax({
-                        url: url,
-                        data: data,
-                        async: false,
-                        type: 'GET',
-                        dataType: 'json',
-                        success: function(data) {
-                            addContent(data);
-                        }
-                    });
-                }
-                ajax(url, data);
-            }
-        }
-    }
-
-    function addContent(rs) {
-        if (rs.statu == 1) {
-            var data = rs.list;
-            var total = rs.total;
-            var arr = [];
-            var length = data.length;
-            for (var i = 0; i < length; i++) {
-                arr.push('<article class="excerpt excerpt-c5">');
-                arr.push('<a href="' + data[i].arcurl + '" class="thumbnail"  target="_blank">');
-                arr.push('<img class="thumb" alt="data[i].title" src="' + data[i].picname + '" />');
-                arr.push('</a>');
-                arr.push('<h2>');
-                arr.push('<a href="' + data[i].arcurl + '"  target="_blank">');
-                arr.push(data[i].title);
-                arr.push('</a>');
-                arr.push('</h2>');
-                arr.push('<footer>');
-                arr.push('<time class="hot">热门</time>');
-                arr.push('<span class="post-view">阅读(');
-                arr.push(data[i].click + ')');
-                arr.push('</span></footer>')
-                arr.push('</article>');
-            }
-            $('.data-list').append(arr.join(''));
-            loadConfig.load_num = rs.load_num;
-            if (total < loadConfig.page * loadConfig.pagesize || loadConfig.page > loadConfig.load_num) {
-                window.removeEventListener('srcoll', loadMoreApply, false);
-            }
-            loadConfig.page++;
-            loadConfig.loading = 0;
-        }
-    }
-
-    function pullLoad() {
-        window.addEventListener('scroll', loadMoreApply, false);
-    }
-    pullLoad();
-    </script>
 </head>
 
 <body class="home blog list-thumb-hover-action nav-fixed-top">
@@ -126,7 +46,7 @@
                 <!--</footer>-->
                 <!--</article>-->
                 <!--{/dede:sql}-->
-                {dede:list orderby='click' channelid='18' pagesize='3' }
+                {dede:list orderby='click' channelid='18'  typeid=6 pagesize='3'  }
                 <article class="excerpt excerpt-c5">
                     <a class="thumbnail" href="[field:arcurl/]" target="_blank">
 					<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
