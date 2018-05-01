@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +18,6 @@
     <!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
     <!-- <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> -->
 </head>
-
 <body class="home blog list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
     <div class="focusbox">
@@ -30,83 +28,26 @@
     </div>
     <section class="container">
         <div class="excerpts-wrapper">
-            <div class="excerpts data-list">
-                <!--{dede:sql sql="select * from  dede_archives as a order by  a.click desc  LIMIT 5}-->
-                <!--<article class="excerpt excerpt-c5">-->
-                <!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
-                <!--<img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb">-->
-                <!--</a>-->
-                <!--<h2>-->
-                <!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
-                <!--</h2>-->
-                <!--<footer>-->
-                <!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
-                <!--<i class="fa"></i><span>794</span></a>-->
-                <!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span><span class="post-comm">评论(9)</span>-->
-                <!--</footer>-->
-                <!--</article>-->
-                <!--{/dede:sql}-->
-                {dede:list channelid='18'  pagesize='10' orderby='id'  }
+            <div class="excerpts">
+                {dede:list channelid='21'   pagesize='10' orderby='id'  }
                 <article class="excerpt excerpt-c5">
                     <a class="thumbnail" href="[field:arcurl/]" target="_blank">
-					<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
-				</a>
+                    <img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
+                </a>
                     <h2>
-					<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
-				</h2>
+                    <a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
+                </h2>
                     <footer>
                         <time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
                     </footer>
                 </article>
                 {/dede:list}
-                <!--{dede:list pagesize="2" titlelen="120"  orderby ='pubdate' orderway="desc"}-->
-                <!--<article class="excerpt excerpt-c5">-->
-                <!--<a class="thumbnail" href="[field:arcurl/]"  target="_blank">-->
-                <!--<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">-->
-                <!--</a>-->
-                <!--<h2>-->
-                <!--<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>-->
-                <!--</h2>-->
-                <!--<footer>-->
-                <!--&lt;!&ndash;<a href="javascript:;" class="post-like" data-pid="135" etap="like">&ndash;&gt;-->
-                <!--&lt;!&ndash;<i class="fa"></i><span>794</span></a>&ndash;&gt;-->
-                <!--<time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>-->
-                <!--</footer>-->
-                <!--</article>-->
-                <!--{/dede:list}-->
             </div>
         </div>
         <div class="pagination">
-            <ul class="pagelist">{dede:pagelist listitem="pre,next,pageno,listsize=2"/}</ul>
+            <ul class="pagelist">{dede:pagelist listitem="index,end,pre,next,pageno,listsize=2"/}</ul>
         </div>
     </section>
-<!--     {dede:arclist tagid='list_index' pagesize='20' orderby='click'}
-    <li><a href="[field:arcurl/]">[field:title/]</a></li>
-    {/dede:arclist} {dede:arcpagelist tagid='list_index'/} {dede:include filename="_footer.htm"/} -->
-    <!--<script>-->
-    <!--window.TBUI = {-->
-    <!--uri             : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob',-->
-    <!--ajaxpager       : '10',-->
-    <!--pagenum         : '20',-->
-    <!--shareimage      : 'http://demo.themebetter.com/tob/wp-{dede:global.cfg_templets_skin/}/themes/tob/img/qrcode.png',-->
-    <!--shareimagethumb : '1',-->
-    <!--fullgallery     : '0',-->
-    <!--fullimage       : '0'-->
-    <!--}-->
-    <!--</script>-->
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
-    <script>
-    function multi(pagenum, tagid) {
-        var taget_obj = document.getElementById(tagid);
-        var taget_obj_page = document.getElementById("page_" + tagid);
-        myajax = new DedeAjax(taget_obj, false, false, '', '', '');
-        myajax.SendGet2("/plugin/arcmulti.php?mtype=0&pnum=" + pagenum + '&tagid=' + tagid);
-        myajax = new DedeAjax(taget_obj_page, false, false, '', '', '');
-        myajax.SendGet2("/plugin/arcmulti.php?mtype=1&pnum=" + pagenum + '&tagid=' + tagid);
-        DedeXHTTP = null;
-    }
-    </script>
-    <!--<script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/share.js'></script>-->
 </body>
-
 </html>
