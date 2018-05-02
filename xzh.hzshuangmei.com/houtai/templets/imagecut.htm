@@ -173,17 +173,17 @@ function ReturnImg(reimg)
     <input type="hidden" name="file" value="<?php echo $file;?>" />
     <input type="hidden" name="isupload" value="<?php echo (empty($isupload) ? '' : $isupload); ?>" />
    <div id="imgBox">
-        <!-- <img id="faceImg" src="<?php echo $file;?>" /> -->
+        <img id="faceImg" src="<?php echo $file;?>" />
        <!--  文档上传缩略图预览 -->
-        <img id="faceImg" src="<?php echo str_replace('/uploads','//uploads.hzshuangmei.com',$file);?>" />
+    <!--     <img id="faceImg" src="<?php echo str_replace('/uploads','//uploads.hzshuangmei.com',$file);?>" /> -->
         <div id="imgCut"></div>
    </div>
    <div>
         <div id="imgBox_pre">
         <strong>预览</strong>
-       <!--  <div class='boximg'><img id="faceImg_pre" src="<?php echo $file;?>" /></div> -->
+        <div class='boximg'><img id="faceImg_pre" src="<?php echo $file;?>" /></div>
           <!--  文档上传缩略图预览 -->
-        <div class='boximg'><img id="faceImg_pre" src="<?php echo str_replace('/uploads','//uploads.hzshuangmei.com',$file);?>" /></div>
+        <!-- <div class='boximg'><img id="faceImg_pre" src="<?php echo str_replace('/uploads','//uploads.hzshuangmei.com',$file);?>" /></div> -->
         <p align="center">
             <button type="submit" name="sb1" id="sb1">裁剪</button> &nbsp;
             <button type="button" name="useold" onClick="ReturnImg('<?php echo $file; ?>')">使用原图</button>

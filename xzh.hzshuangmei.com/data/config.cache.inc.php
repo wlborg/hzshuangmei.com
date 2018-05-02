@@ -162,4 +162,5 @@ $cfg_uploadspath = 'https://uploads.hzshuangmei.com';
 $cfg_baidutoken = 'Gbdb10GHA8NxrioW';
 $cfg_baiduhost = 'https://www.hzshuangmei.com';
 $cfg_baiduhost_m = 'https://m.hzshuangmei.com';
+$cfg_xzh = 'https://xzh.hzshuangmei.com';
 ?>

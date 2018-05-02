@@ -135,8 +135,8 @@ else if($dopost=="uploadLitpic")
          if(!empty($cfg_uplitpic_cut) && $cfg_uplitpic_cut=='N')
          {
                 //文档上传缩略图预览
-               $upfile=str_replace('/uploads', '//uploads.hzshuangmei.com', $upfile);
-                 
+              //  $upfile=str_replace('/uploads', '//uploads.hzshuangmei.com', $upfile);
+
                  $msg = "<script language='javascript'>
                     parent.document.getElementById('uploadwait').style.display = 'none';
                     parent.document.getElementById('picname').value = '{$upfile}';
@@ -150,7 +150,7 @@ else if($dopost=="uploadLitpic")
          }
          else
          {
-            
+
                $msg = "<script language='javascript'>
                     parent.document.getElementById('uploadwait').style.display = 'none';
                     window.open('imagecut.php?f=picname&isupload=yes&file={$upfile}', 'popUpImagesWin', 'scrollbars=yes,resizable=yes,statebar=no,width=800,height=600,left=150, top=50');
@@ -213,7 +213,7 @@ else if($dopost=="makeArchives")
 {
     CheckPurview('sys_MakeHtml,sys_ArcBatch');
     if( !empty($aid) && empty($qstr) ) $qstr = $aid;
-    
+
     if($qstr=='')
     {
         ShowMsg('参数无效！',$ENV_GOBACK_URL);
@@ -264,7 +264,7 @@ else if($dopost=="checkArchives")
         {
             $dsql->ExecuteNoneQuery("UPDATE `$maintable` SET arcrank='0', dutyadmin='".$cuserLogin->getUserID()."' WHERE id='$aid' ");
         }
-        $dsql->ExecuteNoneQuery("UPDATE `#@__taglist` SET arcrank='0' WHERE aid='$aid' "); 
+        $dsql->ExecuteNoneQuery("UPDATE `#@__taglist` SET arcrank='0' WHERE aid='$aid' ");
         $pageurl = MakeArt($aid,false);
     }
     ShowMsg("成功审核指定的文档！",$ENV_GOBACK_URL);
@@ -334,7 +334,7 @@ else if($dopost=='moveArchives')
     {
         require_once(DEDEINC.'/typelink.class.php');
         if( !empty($aid) && empty($qstr) ) $qstr = $aid;
- 
+
         AjaxHead();
         $channelid = empty($channelid) ? 0 : $channelid;
         $tl = new TypeLink($aid);
@@ -343,7 +343,7 @@ else if($dopost=='moveArchives')
         <option value='0'>请选择移动到的位置...</option>\r\n
         $typeOptions
         </select>";
-        
+
         //输出AJAX可移动窗体
         $divname = 'moveArchives';
         echo "<div class='title' onmousemove=\"DropMoveHand('{$divname}', 225);\" onmousedown=\"DropStartHand();\" onmouseup=\"DropStopHand();\">\r\n";
@@ -706,7 +706,7 @@ else if($dopost=='quickEditSave')
     if(!TestPurview('a_Check,a_AccCheck,a_MyCheck')) $arcrank = -1;
 
     $adminid = $cuserLogin->getUserID();
-    
+
     //属性处理
     $flag = isset($flags) ? join(',', $flags) : '';
     if(!empty($flag))
@@ -720,13 +720,13 @@ else if($dopost=='quickEditSave')
         $flag = $oldflag;
     }
     */
-    
+
     $query = "UPDATE `#@__archives` SET
     typeid = '$typeid',
     flag = '$flag',
     arcrank = '$arcrank',
     money = '$money',
-    title = '$title', 
+    title = '$title',
     shorttitle = '$shorttitle',
     keywords = '$keywords',
     dutyadmin = '$adminid'
@@ -774,7 +774,7 @@ else if($dopost=="makekw")
     {
         //跳过已经有关键字的内容
         if(trim($row['keywords']) !='' ) continue;
-        
+
         $aid = $row['id'];
         $keywords = '';
         $title = $row['title'];
@@ -786,7 +786,7 @@ else if($dopost=="makekw")
         $sp->SetSource(Html2Text($body), $cfg_soft_lang, $cfg_soft_lang);
         $sp->StartAnalysis();
         $allindexs = preg_replace("/#p#|#e#/",'',$sp->GetFinallyIndex());
-        
+
         if(is_array($allindexs) && is_array($titleindexs))
         {
             foreach($titleindexs as $k => $v)
