@@ -69,7 +69,7 @@ elseif($action == 'cut')
     imagecopy($thumba, $thumb, 0, 0, $left, $top, $newwidth, $newheight);
 
     $ddn = substr($srcFile, -3);
-    
+
     $ddpicok = $reObjJs = '';
     if( empty($isupload) )
     {
@@ -83,7 +83,7 @@ elseif($action == 'cut')
         $reObjJs = "        var backObj = window.opener.parent.document.form1.picname;
         var prvObj = window.opener.parent.document.getElementById('divpicview');\r\n";
     }
-    
+
     $ddpicokurl = $cfg_basedir.$ddpicok;
 
     switch($imginfo['mime'])
@@ -101,13 +101,13 @@ elseif($action == 'cut')
             ShowMsg("对不起，裁剪图片类型不支持请选择其他类型图片！", "-1");
             break;
     }
-    
+
     //对任意裁剪方式再次缩小图片至限定大小
     if($newwidth > $cfg_ddimg_width || $newheight > $cfg_ddimg_height)
     {
         ImageResize($ddpicokurl, $cfg_ddimg_width, $cfg_ddimg_height);
     }
-    
+
     //如果从其它图中剪出， 保存附件信息
     if( empty($isupload) )
     {
@@ -117,7 +117,7 @@ elseif($action == 'cut')
          $fid = $dsql->GetLastID();
          AddMyAddon($fid, $ddpicok);
     }
-    
+
 ?>
 <SCRIPT language=JavaScript>
 function ReturnImg(reimg)
@@ -126,7 +126,7 @@ function ReturnImg(reimg)
     backObj.value = reimg;
 
  // 文档上传缩略图预览
-   reimg= reimg.replace('/uploads','//uploads.hzshuangmei.com');
+   //reimg= reimg.replace('/uploads','//uploads.hzshuangmei.com');
 
     if(prvObj)
     {
