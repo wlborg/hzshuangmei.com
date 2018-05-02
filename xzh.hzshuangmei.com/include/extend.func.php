@@ -16,11 +16,11 @@ $lit_imglist = $ChannelUnit->GetlitImgLinks($row['imgurls']);
 return $lit_imglist;
 }
 //后台上传图片链接处理
-function replaceurl($newurl)
-{
-$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
-return $newurl;
-}
+// function replaceurl($newurl)
+// {
+// $newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
+// return $newurl;
+// }
 //获取医生的缩略图
 function getdoctorthumb($id)
 {
