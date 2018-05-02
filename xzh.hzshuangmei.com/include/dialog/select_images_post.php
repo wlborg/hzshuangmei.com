@@ -105,12 +105,12 @@ AddMyAddon($fid, $activepath.'/'.$filename);
 $CKUpload = isset($CKUpload)? $CKUpload : FALSE;
 if ($GLOBALS['cfg_html_editor']=='ckeditor' && $CKUpload)
 {
-    
+
     $fileurl = $activepath.'/'.$filename;
-    $fileurl=str_replace('/uploads/','//uploads.hzshuangmei.com/',$fileurl);
+    //$fileurl=str_replace('/uploads/','//uploads.hzshuangmei.com/',$fileurl);
 
     $message = '';
-    
+
     $str='<script type="text/javascript">window.parent.CKEDITOR.tools.callFunction('.$CKEditorFuncNum.', \''.$fileurl.'\', \''.$message.'\');</script>';
     exit($str);
 }
