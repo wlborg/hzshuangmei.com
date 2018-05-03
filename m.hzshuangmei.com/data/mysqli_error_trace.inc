@@ -22805,3 +22805,27 @@ where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand(
 Time2018-04-29 18:35:48
 */
 ?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_all.php?action=make&step=2&uptype=mkall&mkvalue=0
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-30 13:58:34
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=mkallct&uppage=0&maxpagesize=50&typeid=0&pageno=24&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-30 13:58:50
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_list_action.php?gotype=mkallct&uppage=0&maxpagesize=50&typeid=0&pageno=25&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') order by rand() limit 4' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and  a.arcrank=0  and a.typeid in ( 46,47,48, ) order by rand() limit 4 </font>
+Time2018-04-30 13:58:50
+*/
+?>

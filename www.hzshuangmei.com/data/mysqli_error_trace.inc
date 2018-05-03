@@ -22445,3 +22445,38 @@ where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand()
 Time2018-04-29 18:28:53
 */
 ?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_all.php?action=make&step=2&uptype=mkall&mkvalue=0
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-04-30 13:57:29
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/task_do.php?f=0&typeid=78&aid=236&dopost=makeparenttype
+Error: Unknown column 'arc.arcrank' in 'where clause' <br />Error sql: <font color='red'>SELECT tp.typedir,tp.typename,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,
+                tp.ispart,tp.moresite,tp.siteurl,tp.sitepath,arc.aid,arc.aid AS id,arc.typeid,
+                       arc.body
+                       FROM `sm_xzh` arc LEFT JOIN `sm_arctype` tp ON arc.typeid=tp.id
+                       WHERE arc.aid IN(236) AND arc.arcrank >-1  ORDER BY arc.aid desc </font>
+Time2018-05-01 16:55:18
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_all.php?action=make&step=2&uptype=mkall&mkvalue=0
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-05-02 11:22:57
+*/
+?>
+<?php  exit();
+/*
+Page: /houtai/makehtml_archives_action.php?endid=0&startid=-1&typeid=6&totalnum=59&startdd=40&pagesize=20&seltime=0&sstime=1525231413&stime=&etime=&uptype=&mkvalue=0&isremote=0&serviterm=
+Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')  and a.arcrank=0 order by rand() limit 3' at line 2 <br />Error sql: <font color='red'>SELECT * FROM sm_archives AS a,sm_addoncase AS b
+where a.id =b.aid and a.typeid in ( 46,47,48, )  and a.arcrank=0 order by rand() limit 3 </font>
+Time2018-05-02 11:23:36
+*/
+?>
