@@ -1,0 +1,15 @@
+<?php
+$z[0]=Array("tagname","@me=\"Make \".GetDateTimeMk(time());",167,243);
+$z[0][4]=array();
+$z[0][4]['runphp']="yes";
+$z[1]=Array("type","\r\n<url>\r\n<loc>https://www.hzshuangmei.com[field:typelink/]</loc>\r\n</url>\r\n",251,359);
+$z[1][4]=array();
+$z[1][4]['typeid']="1";
+$z[2]=Array("arclist","\r\n<url>\r\n<loc>[field:aid runphp='yes']if(\$GLOBALS['cfg_multi_site']='N'){@me='https://www.hzshuangmei.com';}[/field:aid][field:arcurl /]</loc>\r\n<lastmod>[field:stime /]</lastmod>\r\n</url>\r\n   ",364,635);
+$z[2][4]=array();
+$z[2][4]['row']="50000";
+$z[2][4]['typeid']="1";
+$z[2][4]['channelid']="20";
+$z[2][4]['orderby']="pubdate";
+
+?>
