@@ -1,3 +1,0 @@
-<!--
-document.write("  <div class=\"swiper-container doctors_banner \">\r\n            <div class=\"swiper-wrapper\">\r\n                <a href=\"/doctors/surgery/guanhaitao.html\" class=\"swiper-slide\"><img src=\"//img.hzshuangmei.com/pc/banner/doctors/guanhaitao.jpg\" alt=\"关海涛\"/></a>\r\n                <a href=\"/doctors/laser/lijie.html\" class=\"swiper-slide\"><img src=\"//img.hzshuangmei.com/pc/banner/doctors/lijie.jpg\" alt=\"李杰\"/></a>\r\n                <a href=\"javascript:void(0)\" target=\"_blank\" class=\"swiper-slide j-site-consult\"><img src=\"//img.hzshuangmei.com/pc/banner/doctors/liuzhikun.jpg\" alt=\"刘志坤\"/></a>\r\n            </div>\r\n        </div>\r\n        <div class=\"swiper-pagination doctors_pagination\"></div>");
--->

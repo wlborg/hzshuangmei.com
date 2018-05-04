@@ -1,6 +1,0 @@
-<?php
-$z[0]=Array("arclist","\r\n<li><a href=[field:arcurl/]>\r\n\r\n[field:title/]\r\n</a></li>\r\n\r\n",0,99);
-$z[0][4]=array();
-$z[0][4]['row']="50";
-
-?>
