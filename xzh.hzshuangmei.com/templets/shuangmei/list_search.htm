@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-
 <head>
-    {dede:include filename="_meta.htm"/}
     <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     <meta name="keywords" content="{dede:field name='keywords'/}" />
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" /> {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="canonical" href="https://xzh.hzshuangmei.com{dede:field name='arcurl'/}">
+    <!-- favicon.ico -->
+    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <title>{dede:field.title/}_红妆双美整形与美容宝典</title>
+    <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
+    <link href='{dede:global.cfg_csspath/}/xzh/artilec.css' rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 768px)" />
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" ></script>
+
+    <meta name="description" content="{dede:field.description  function='html2text(@me)'/}">
+    <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
 </head>
 
 <body>
@@ -37,10 +49,8 @@
             <script type="text/javascript" src="https://xzh.hzshuangmei.com/baidusearch.js"></script>
         </div>
     </div>
-    {dede:include filename="_footer.htm"/}
+{dede:include filename="_footer.htm"/}
 </body>
-{dede:include filename="_script.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
 
 </html>
 
