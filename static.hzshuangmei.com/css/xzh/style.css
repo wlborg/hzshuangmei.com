@@ -4468,3 +4468,28 @@ body {
     color: #FF6651;
     border-bottom-color: #FF6651;
 }
+/*调整搜索页样式*/
+.location {
+    margin: 19px 8px 6px 29px;
+}
+.location i {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(//img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
+    background-position: 0 0;
+}
+.location span {
+    font-size: 14px;
+    color: #9d85c1;
+}
+.location a {
+    font-size: 12px;
+    color: #696969;
+}
+.line {
+    width: 1199px;
+    height: 7px;
+    background: url(//img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
+    background-position: 0 -16px;
+}
