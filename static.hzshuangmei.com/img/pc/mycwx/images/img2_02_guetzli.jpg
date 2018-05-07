@@ -1,0 +1,7 @@
+<?php
+$z[0]=Array("title","",8,22);
+$z[0][4]=array();
+$z[1]=Array("arcurl","",50,65);
+$z[1][4]=array();
+
+?>
