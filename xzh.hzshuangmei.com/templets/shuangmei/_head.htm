@@ -32,8 +32,11 @@
         <span class="sitenav-mask"></span>
         <span class="searchstart-on"><i class="fa">&#xe600;</i></span>
         <span class="searchstart-off"><i class="fa">&#xe606;</i></span>
-        <form method="get" class="searchform" action="{dede:global.cfg_cmsurl/}/plugin/search.php" target="_blank" autocomplete="off"  >
-            <button tabindex="3" class="sbtn" type="submit"><i class="fa">&#xe600;</i></button><input tabindex="2" class="sinput" name="q" type="text" placeholder="输入关键字" value="">
+        <form  action="/search/" class="site-search-form searchform" id="bdcs-search-form" target="_blank" autocomplete="off"  >
+            <input type="hidden" name="s" value="5257607230163915007">
+            <input type="hidden" name="entry" value="1">
+            <button tabindex="3" class="sbtn" type="submit" id="bdcs-search-form-submit"><i class="fa">&#xe600;</i></button>
+            <input tabindex="2" class="sinput" id="bdcsMain" name="q" type="text" placeholder="输入关键字" value="">
         </form>
     </div>
 </header>
