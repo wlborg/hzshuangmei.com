@@ -136,5 +136,20 @@
         <span class="rewards-popover-close" etap="rewards-close"><i class="fa">&#xe606;</i></span>
     </div>
         <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
+    <script>
+        // document.domain = "caibaojian.com";
+        function setIframeHeight(iframe) {
+            if (iframe) {
+                var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                if (iframeWin.document.body) {
+                    iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                }
+            }
+        };
+
+        window.onload = function () {
+            setIframeHeight(document.getElementById('bdcsFrame'));
+        };
+    </script>
 </body>
 </html>
