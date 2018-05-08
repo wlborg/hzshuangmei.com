@@ -21,6 +21,7 @@
 
     <meta name="description" content="{dede:field.description  function='html2text(@me)'/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
+
 </head>
 
 <body>
@@ -39,7 +40,7 @@
             var bdcsFrameHeight = 0;
             var bdcsFrameWt = 1;
             var bdcsFrameHt = 1;  //隐藏搜索框
-            var bdcsFrameResultNum = 10;
+            var bdcsFrameResultNum =3;
             var bdcsFrameBgColor = "#fff";
             var bdcsRecommend = 0;
             var bdcsDefaultQuery = 0;
@@ -57,7 +58,6 @@
                         }
                     }
                 };
-
                 window.onload = function () {
                     setIframeHeight(document.getElementById('bdcsFrame'));
                 };
@@ -65,7 +65,8 @@
         </div>
     </div>
 {dede:include filename="_footer.htm"/}
+<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Tail.js"></script>
 </body>
-
+<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Head.js"></script>
 </html>
 
