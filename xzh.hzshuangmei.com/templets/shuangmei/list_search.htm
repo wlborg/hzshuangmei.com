@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>长春_深能丝网站内搜索</title>
+    <title>搜索</title>
     <link href="{dede:global.cfg_jspath/}/xzh/test/default.css" rel="stylesheet" type="text/css"/>
     <script src="{dede:global.cfg_jspath/}/xzh/test/jquery-1.7.2.min.js"></script>
     <script src="{dede:global.cfg_jspath/}/xzh/test/baidu-ajax.js"></script>
@@ -22,7 +22,7 @@
     <script>
         //搜全网功能
         function baidusearch(id){
-            var url = "http://www.baidu.com/s?ie=utf-8&cus_sid=12871400707129123307&tn=SE_pscse_053x7tyx&wd=" + encodeURIComponent(document.getElementById(id).value);
+            var url = "http://www.baidu.com/s?ie=utf-8&cus_sid=5257607230163915007&tn=SE_pscse_053x7tyx&wd=" + encodeURIComponent(document.getElementById(id).value);
             window.open(url,"_blank");
             var bpos;
             if (id === "kw") {
@@ -32,8 +32,8 @@
                 bpos = "bottom";
             }
             var pageLog = {};
-            pageLog["q"] = "长春";
-            pageLog["s"] = "12871400707129123307";
+            pageLog["q"] = "隆鼻";
+            pageLog["s"] = "5257607230163915007";
             pageLog["isNeedCheckDomain"] = "";
             log.send("/api/customsearch/click", pageLog, {
                 bpos: bpos,
@@ -111,7 +111,7 @@
 
     </style>
     <script src="Scripts/flyjsonp.js" type="text/javascript"></script>
-    <script src="Scripts/sug-bdcs-result.js" type="text/javascript"></script>
+    <script src="{dede:global.cfg_jspath/}/xzh/test/sug-bdcs-result.js"></script>
     <script type="text/javascript">
         function _getStyle(elem, name) {
             var inlineName = name;
@@ -139,7 +139,7 @@
             data: {
                 ch: "normal",
                 rn: 10,
-                sid: "12871400707129123307"
+                sid: "5257607230163915007"
 
             },
             sugListItemLimit: 10,
@@ -178,72 +178,6 @@
 
 
 
-                <div class="result f s0" >
-                    <h3 class="c-title">
-                        <a rpos="" cpos="title" href="http://15315.cn.com/5003119"  target="_blank"><em>长春</em>仁川食品有限公司_中国人民征信系统-人民信用评价有限公司</a>
-                    </h3>
-                    <div>
-                        <div class="c-content">
-                            <div class="c-abstract" >
-                                5003119 信用档案 单位名称<em>长春</em>仁川食品有限公司 法定代表 杨美宏注册资金 50万元行业 副食品加工所在地 吉林省 -- <em>长春市</em> -- 农安县商务网址 详细地址 农安县工...            </div>
-                            <div>
-                                <span class="c-showurl" >15315.cn.com/5003119 2017-6-19</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-                <div class="result f s0" >
-                    <h3 class="c-title">
-                        <a rpos="" cpos="title" href="http://langsong.cn.com/"  target="_blank">中国朗诵联盟</a>
-                    </h3>
-                    <div>
-                        <div class="c-content">
-                            <div class="c-abstract" >
-                                联盟文件  磊明 中国朗诵联盟副主席,山西广播电视台主任播音员、综合广播业务指导…… 宋春霞 中国朗诵联盟副秘书长,<em>长春市</em>作协会员,吉林省全民阅读协会……...            </div>
-                            <div>
-                                <span class="c-showurl" >langsong.cn.com/ 2017-12-22</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-                <div class="result f s0" >
-                    <h3 class="c-title">
-                        <a rpos="" cpos="title" href="http://www.15315.cn.com/"  target="_blank">中国人民征信系统-人民征信有限公司</a>
-                    </h3>
-                    <div>
-                        <div class="c-content">
-                            <div class="c-abstract" >
-                                上海申意汽车零部件有限公司 山东哈鲁轴承股份有限公司  <em>长春市</em>金仑工业有限公司  武汉重冶汽车零部件有限公司 营口匡晟机械制造有限公司 电力电气更多发电...            </div>
-                            <div>
-                                <span class="c-showurl" >www.15315.cn.com/ 2018-2-20</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
@@ -252,8 +186,6 @@
 
 
             <div id="right">
-
-
 
 
 
