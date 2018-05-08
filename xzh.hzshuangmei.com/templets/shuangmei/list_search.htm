@@ -1,404 +1,88 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh-cmn-Hans">-->
+<!--<head>-->
+    <!--<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>-->
+    <!--<meta name="keywords" content="{dede:field name='keywords'/}" />-->
+    <!--<meta charset="UTF-8">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">-->
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">-->
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+    <!--<meta http-equiv="Access-Control-Allow-Origin" content="*">-->
+    <!--<meta http-equiv="cache-control" content="no-siteapp">-->
+    <!--<link rel="canonical" href="https://xzh.hzshuangmei.com{dede:field name='arcurl'/}">-->
+    <!--&lt;!&ndash; favicon.ico &ndash;&gt;-->
+    <!--<link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>-->
+    <!--<link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>-->
+    <!--<title>{dede:field.title/}_红妆双美整形与美容宝典</title>-->
+    <!--<link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />-->
+    <!--<link href='{dede:global.cfg_csspath/}/xzh/artilec.css' rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 768px)" />-->
+    <!--<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" ></script>-->
 
+    <!--<meta name="description" content="{dede:field.description  function='html2text(@me)'/}">-->
+    <!--&lt;!&ndash;[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]&ndash;&gt;-->
 
+<!--</head>-->
 
+<!--<body>-->
+<!--{dede:include filename="_head.htm"/}-->
+    <!--<div class="m1">-->
+        <!--<div class="location">-->
+            <!--<i></i><span>当前位置：</span>{dede:field name='position'/}-->
+        <!--</div>-->
+        <!--<div class="line"></div>-->
+        <!--<div class="news_content">-->
+            <!--<div id="bdcs-frame-box"></div>-->
+            <!--<script type="text/javascript">-->
+            <!--var bdcsFrameSid = "5257607230163915007";-->
+            <!--var bdcsFrameCharset = "utf-8";-->
+            <!--var bdcsFrameWidth = 552 ; //宽度请自行调整-->
+            <!--var bdcsFrameHeight = 0;-->
+            <!--var bdcsFrameWt = 1;-->
+            <!--var bdcsFrameHt = 1;  //隐藏搜索框-->
+            <!--var bdcsFrameResultNum =1;-->
+            <!--var bdcsFrameBgColor = "#fff";-->
+            <!--var bdcsRecommend = 0;-->
+            <!--var bdcsDefaultQuery = 0;-->
+            <!--var bdcsRemoveUrl = 0;-->
+            <!--</script>-->
+            <!--&lt;!&ndash; 按照实际情况修改下面js地址 &ndash;&gt;-->
+            <!--<script type="text/javascript" src="https://xzh.hzshuangmei.com/baidusearch.js"></script>-->
+            <!--<script>-->
+                <!--// document.domain = "caibaojian.com";-->
+                <!--function setIframeHeight(iframe) {-->
+                    <!--if (iframe) {-->
+                        <!--var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;-->
+                        <!--if (iframeWin.document.body) {-->
+                            <!--iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;-->
+                        <!--}-->
+                    <!--}-->
+                <!--};-->
+                <!--window.onload = function () {-->
+                    <!--setIframeHeight(document.getElementById('bdcsFrame'));-->
+                <!--};-->
+            <!--</script>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--&lt;!&ndash;{dede:include filename="_footer.htm"/}&ndash;&gt;-->
+<!--<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Tail.js"></script>-->
+<!--</body>-->
+<!--<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Head.js"></script>-->
+<!--</html>-->
 
-
-
-
-<!doctype html>
-<!--STATUS OK-->
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>搜索</title>
-    <link href="{dede:global.cfg_jspath/}/xzh/test/default.css" rel="stylesheet" type="text/css"/>
-    <script src="{dede:global.cfg_jspath/}/xzh/test/jquery-1.7.2.min.js"></script>
-    <script src="{dede:global.cfg_jspath/}/xzh/test/baidu-ajax.js"></script>
-    <script src="{dede:global.cfg_jspath/}/xzh/test/statistic.js"></script>
-    <script type="text/javascript">
-        //联盟广告全局变量
-        window.union_set_client=function(a){var c,b;for(b in a){b&&a[b]&&a.hasOwnProperty(b)&&(c=a[b]);break}a=c._html.split("|");a=/cpro_client=([a-zA-Z0-9_]+)/gi.exec(a);window.union_client=a[1]};
-    </script>
-    <script>
-        //搜全网功能
-        function baidusearch(id){
-            var url = "http://www.baidu.com/s?ie=utf-8&cus_sid=5257607230163915007&tn=SE_pscse_053x7tyx&wd=" + encodeURIComponent(document.getElementById(id).value);
-            window.open(url,"_blank");
-            var bpos;
-            if (id === "kw") {
-                bpos = "top";
-            }
-            else {
-                bpos = "bottom";
-            }
-            var pageLog = {};
-            pageLog["q"] = "隆鼻";
-            pageLog["s"] = "5257607230163915007";
-            pageLog["isNeedCheckDomain"] = "";
-            log.send("/api/customsearch/click", pageLog, {
-                bpos: bpos,
-                tid: "0",
-                cc: 'cn.com',
-                rt: 1
-            });
-        }
-    </script>
-</head>
-<body>
-
-<div id="wrap" style="position: relative;">
-
-
-    <div id="head" style="" class="clearfix">
-        <div class="s_nav" style="">
-        </div>
-        <div class='fl mt45'>
-            <form name="f" action="search" class="fm" id="bdcs-search-form" >
-                <span class="s_ipt_wr_pre"  id="search_input_container">
-                    <input name="q" id="kw" class="s_ipt" value="长春" maxlength="100"
-                           autocomplete="off" style="">
-                    <input name="click" value="1" type="hidden">
-                                                                                                                                        </span>
-                <span class="s_btn_wr_pre" style="">
-                    <input name="s" value="12871400707129123307" type="hidden">
-                    <input name="nsid" value="" type="hidden">
-                                                                                                                        <input type="submit" id="su" value="搜本站"  class="s_btn_pre" onmousedown="this.className = 's_btn_pre s_btn_h'"
-                                                                                                                               onmouseout="this.className = 's_btn_pre'">
-                </span>
-                <span class="s_btn_wr_after" >
-                        <input type="button" id="baidusu" value="搜全网" class="s_btn_after"  onmousedown="this.className = 's_btn_after s_btn_h'"
-                               onmouseout="this.className = 's_btn_after'" onclick="baidusearch('kw');"> 
-                    </span>
-            </form>
-
-            <ul id="bdcs-search-sug-list" class="bdcs-search-sug-list"></ul>
-
-        </div>
-    </div>
-    <script type="text/javascript">
-    </script>
-    <script type="text/template" id="sugTpl">
-        <% for ( var i = 0; i < limit; i++ ) { %>
-        <li data-index="<%=i%>" class="bdcs-search-sug-list-item <%= (i == selectedIndex) ? "bdcs-search-sug-list-item-current" : "" %>">
-        <span class="bdcs-search-sug-list-item-value"><%=data[i].title%></span>
-        </li>
-        <% } %>
-    </script>
-    <style type="text/css">
-        .bdcs-search-sug-list {
-            display: none;
-            border: 1px solid #DDD;
-            position: absolute;
-            z-index: 2147483647;
-            background-color: #FFF;
-        }
-        .bdcs-search-sug-list-item {
-            display: block;
-            list-style: none;
-            cursor: pointer;
-            padding: 0 5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            height: 25px;
-            line-height: 25px;
-            font-family: arial;
-            font-size: 14px;
-        }
-        .bdcs-search-sug-list-item-current {
-            background-color: #EBEBEB;
-        }
-
-    </style>
-    <script src="Scripts/flyjsonp.js" type="text/javascript"></script>
-    <script src="{dede:global.cfg_jspath/}/xzh/test/sug-bdcs-result.js"></script>
-    <script type="text/javascript">
-        function _getStyle(elem, name) {
-            var inlineName = name;
-            if (elem.style.inlineName) {
-                return elem.style[inlineName];
-            } else if (window.getComputedStyle) {
-                return window.getComputedStyle(elem)[inlineName] ? window.getComputedStyle(elem)[inlineName] : document.defaultView.getComputedStyle(elem, null).getPropertyValue(inlineName);
-            } else if (elem.currentStyle) {
-                return elem.currentStyle[inlineName];
-            } else {
-                return null;
-            }
-        }
-        new Sug({
-            formElem: document.getElementById('bdcs-search-form'),
-            inputElem: document.getElementById('kw'),
-            sugListElem: document.getElementById('bdcs-search-sug-list'),
-            submitElem: document.getElementById('su'),
-            offset: {
-                top: parseInt(_getStyle(document.getElementById("kw"), "marginTop")),
-                left: -(parseInt(_getStyle(document.getElementById("kw"), "marginLeft")))
-            },
-            url: "http://rp.baidu.com/customer_search/api/sug",
-            param: 'wd',
-            data: {
-                ch: "normal",
-                rn: 10,
-                sid: "5257607230163915007"
-
-            },
-            sugListItemLimit: 10,
-            sugListWidth: parseInt(_getStyle(document.getElementById("search_input_container"), "width")),
-            tmplString: document.getElementById("sugTpl").innerHTML,
-            itemClassName: 'bdcs-search-sug-list-item',
-            currentClassName: 'bdcs-search-sug-list-item-current',
-            valueClassName: 'bdcs-search-sug-list-item-value',
-            type: 'interval',
-            completeWhenKeyUpDown: false
-        });
-    </script>
-
-
-    <div id="container" class="clearfix" style="">
-        <div id="aside" class="aside" style="">
-
-
-
-        </div>
-        <div id="center" class="content" style="">
-            <div id="results" class="content-main" style="">
-                <span class="support-text-top">为您找到相关结果3个</span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-        </div>
-        <div class="extra">
-
-
-
-            <div id="right">
-
-
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
-</div>
-<i clear="all"></i>
-
-<div id="footer" class="clearfix" style="">
-    <div class="pager clearfix" id="pageFooter">
-    </div>
-
-    <div id="BottomBox" style="">
-        <form name="f2" action="search" class="fm" >
-            <span class="s_ipt_wr_pre floatLeft" >  
-            <input name="q" id="kw2" class="s_ipt" value="长春" maxlength="100" autocomplete="off" style="">
-                                                                                                                                    </span>
-            <span class="s_btn_wr_pre floatLeft" style="">
-                <input name="s" value="12871400707129123307" type="hidden">							
-                <input name="nsid" value="" type="hidden">
-                                <input type="submit" id="su" value="搜本站"  class="s_btn_pre" onmousedown="this.className='s_btn_pre s_btn_h'"
-                                       onmouseout="this.className='s_btn_pre'">
-            </span>
-            <span class="s_btn_wr_after floatLeft" >
-                <input type="button" id="baidusu" value="搜全网"  class="s_btn_after" onmousedown="this.className='s_btn_after s_btn_h'"
-                       onmouseout="this.className='s_btn_after'" onclick="baidusearch('kw2');">
-            </span>
-            <span class="support-text leftSpan">搜索技术由</span>
-            <a href="http://zn.baidu.com" target="_blank"><span class="support-logo" ></span></a>
-            <span class="support-text">提供</span>
-        </form>
-        <form id="f3" name="f3" action="search">
-            <input type="hidden" name="q" value="长春">
-            <input type="hidden" name="s" value="12871400707129123307">
-
-        </form>
-    </div>
-</div>
+<div id="bdcs-frame-box"></div>
 <script type="text/javascript">
-    (function () {
-        $("#kw2").focus(function () {
-            $(".bottom-box-tips").hide();
-        });
-        $("#kw2").blur(function () {
-            $(".bottom-box-tips").show();
-        });
-    })();
+    var bdcsFrameSid = "5257607230163915007";
+    var bdcsFrameCharset = "utf-8";
+    var bdcsFrameWidth = 552 ; //宽度请自行调整
+    var bdcsFrameHeight = 0;
+    var bdcsFrameWt = 1;
+    var bdcsFrameHt = 1;  //隐藏搜索框
+    var bdcsFrameResultNum =1;
+    var bdcsFrameBgColor = "#fff";
+    var bdcsRecommend = 0;
+    var bdcsDefaultQuery = 0;
+    var bdcsRemoveUrl = 0;
 </script>
-
-<!-- 百度反馈入口 -->
-<div class="feedback-icon" id="bd-feedback"></div>
-<script type="text/javascript" src="Scripts/feedback.js"></script>
-</body>
-
-<script>
-    var cse = cse || {};
-    cse.param = {
-        'filters' : [] || {},
-        'sorts' : "" || "",
-        'searchType' : 0 || "",
-        'searchTimeRange' : 0 || "",
-        'nsid': "0",
-        'inurl':null || "",
-        'cid':null || "",
-        'wt': null || "",
-        'ht': null || "",
-        'pn': null || ""
-    };
-    cse.util = {
-        'makeParam' : function(arr){
-            var sb = [];
-            for(var key in arr){
-                if (arr[key] && typeof(arr[key])!="function"){
-                    sb.push(key+"="+encodeURIComponent(arr[key]));
-                }
-            }
-            return sb.join("&");
-        },
-        'addParam' : function(dom,key,value){
-            if(dom && key && value){
-                var ipt = document.createElement("input");
-                ipt.type = "hidden";
-                ipt.name = key;
-                ipt.value = value;
-                dom.appendChild(ipt);
-            }
-        },
-        'select' : function(k,v,action){
-            if (action == "filter") {
-                cse.param.filters[k] = v;
-            }else if(action == "sort") {
-                cse.param.sorts = v;
-            }else if(action == "type") {
-                cse.param.searchType = v;
-            }else if(action == "time") {
-                cse.param.searchTimeRange = v;
-            }
-            var filterValue = cse.util.makeParam(cse.param.filters);
-            var f3 = document.getElementById("f3");
-            cse.util.addParam(f3,"flt",filterValue);
-            cse.util.addParam(f3,"srt",cse.param.sorts);
-            cse.util.addParam(f3,"stp",cse.param.searchType);
-            cse.util.addParam(f3,"sti",cse.param.searchTimeRange);
-            cse.util.addParam(f3,"nsid",cse.param.nsid);
-            cse.util.addParam(f3,"inurl",cse.param.inurl);
-            cse.util.addParam(f3,"cid",cse.param.cid);
-            cse.util.addParam(f3,"wt",cse.param.wt);
-            cse.util.addParam(f3,"ht",cse.param.ht);
-            cse.util.addParam(f3,"pn",cse.param.pn);
-            f3.submit();
-        },
-        'switchFilter':function(obj){
-            var id = obj.getAttribute("data-for"),
-                exp = (obj.getAttribute("data-exp")=="0"),
-                con = document.getElementById("flt-"+id),
-                flts = con.getElementsByTagName("DD");
-            for (var i=0,len=flts.length;i<len;i++){
-                var flt = flts[i];
-                if (exp) {
-                    flt.style.display = "block";
-                }else {
-                    if (flt.getAttribute("data-limit")=="1"){
-                        flt.style.display = "none";
-                    }
-                }
-            }
-            obj.setAttribute("data-exp",exp?"1":"0");
-            obj.className = exp?"filterLimitExp":"filterLimit";
-        }
-    };
-
-    function calcPageHeight(doc) {
-        var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
-        var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-        var height  = Math.max(cHeight, sHeight);
-        return height.toString();
-    };
-
-    window.onload = function(){
-        document.forms[0].reset();
-        document.forms[document.forms.length-1].reset();
-        if (top && top.location !== self.location) {
-            if ((navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE7.0") ||
-                (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion .split(";")[1].replace(/[ ]/g,"")=="MSIE6.0")) {
-                if (top.name) {
-                    top.name = calcPageHeight(document);
-                }
-            }
-            else {
-                if (top.postMessage) {
-                    window.attachEvent ? window.attachEvent('onmessage', function (event) {
-                        top.postMessage(calcPageHeight(document), '*');
-                    }) : window.addEventListener('message', function (event) {
-                        top.postMessage(calcPageHeight(document), '*');
-                    }, false);
-                    top.postMessage(0, '*');
-                }
-                else if (top.name) {
-                    top.name = calcPageHeight(document);
-                }
-            }
-        }
-
-        if ($('.iframe-result').length > 0) {
-            var pageLog = {};
-            log.send("/api/customsearch/click", pageLog, {
-                logType: 'framerec-show',
-                queryType: '',
-                resultNum: $('.iframe-result').length,
-                imgNum: $('.iframe-image').length,
-                q: '长春'
-            });
-        }
-    };
-    $('.iframe-result a').on('click', function () {
-        var pageLog = {};
-        log.send("/api/customsearch/click", pageLog, {
-            logType: 'framerec-click',
-            queryType: '',
-            hasImg: $(this).parents('.iframe-result').find('.iframe-image').length > 0 ? 1 : 0,
-            q: '长春'
-        });
-    });
-    $('.iframe-container').ready(function () {
-        if ($('.iframe-content-image').length > 0) {
-            $('.iframe-content-image').width($('.iframe-container').width() - 122);
-        }
-    });
-    $(".result a").click(function () {
-        var pageLog = {};
-        pageLog["q"] = "长春";
-        pageLog["s"] = "12871400707129123307";
-        pageLog["isNeedCheckDomain"] = "";
-        log.send("/api/customsearch/click", pageLog, {
-            rpos: parseInt($(this).parents(".result").index(".result"))+1,
-            uid: encodeURIComponent($(this).attr("href")),
-            tid: "0",
-            cpos: $(this).attr("cpos"),
-            cc: 'cn.com',
-            from: 'normal'
-        });
-    });
-</script>
-
-
-<script>
-</script>
-
-</html>
-                        
+<!-- 按照实际情况修改下面js地址 -->
+<script type="text/javascript" src="https://xzh.hzshuangmei.com/baidusearch.js"></script>
