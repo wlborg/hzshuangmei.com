@@ -47,6 +47,21 @@
             </script>
             <!-- 按照实际情况修改下面js地址 -->
             <script type="text/javascript" src="https://xzh.hzshuangmei.com/baidusearch.js"></script>
+            <script>
+                // document.domain = "caibaojian.com";
+                function setIframeHeight(iframe) {
+                    if (iframe) {
+                        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                        if (iframeWin.document.body) {
+                            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                        }
+                    }
+                };
+
+                window.onload = function () {
+                    setIframeHeight(document.getElementById('bdcsFrame'));
+                };
+            </script>
         </div>
     </div>
 {dede:include filename="_footer.htm"/}
