@@ -15,6 +15,12 @@ $lit_imglist = $ChannelUnit->GetlitImgLinks($row['imgurls']);
 //返回结果
 return $lit_imglist;
 }
+//后台上传图片链接处理
+function replaceurl($newurl)
+{
+$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
+return $newurl;
+}
 /*
 熊掌号文章页获取推荐数据
 @param   $typeid   当前日记文档所在的栏目ID
