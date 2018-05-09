@@ -1,3 +1,5 @@
+<!--<script src="//msite.baidu.com/sdk/c.js?appid=这里是你的熊掌ID"></script>-->
+<!--<link rel="canonical" href="https://xzh.hzshuangmei.com"/>-->
 <header class="header">
     <div class="container">
         <h1 class="logo"><a href="https://xzh.hzshuangmei.com" title="LOGO图标"><img src="{dede:global.cfg_imgpath/}/xzh/logo.png"><span>红妆双美整形与美容宝典</span></a></h1>		<div class="sitenav" id="sitenav">
@@ -24,7 +26,7 @@
 
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="/laser/">美肤</a></li>
 
-            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="/injection/">注射美容</a></li>
+           <li class="menu-item menu-item-type-taxonomy  menu-item-object-category menu-item-12"><a href="/injection/">注射美容</a></li>
 
         </ul>
     </div>
@@ -32,8 +34,11 @@
         <span class="sitenav-mask"></span>
         <span class="searchstart-on"><i class="fa">&#xe600;</i></span>
         <span class="searchstart-off"><i class="fa">&#xe606;</i></span>
-        <form method="get" class="searchform" action="{dede:global.cfg_cmsurl/}/plugin/search.php" target="_blank" autocomplete="off"  >
-            <button tabindex="3" class="sbtn" type="submit"><i class="fa">&#xe600;</i></button><input tabindex="2" class="sinput" name="q" type="text" placeholder="输入关键字" value="">
+        <form  action="/search/" class="bdcs-search-form site-search-form searchform" id="sliding-search-form bdcs-search-form" target="_blank" autocomplete="off"  >
+            <input type="hidden" name="s" value="5257607230163915007">
+            <input type="hidden" name="entry" value="1">
+            <button tabindex="3" class="bdcs-search-form-submit sbtn" type="submit" id="sliding-search-form-submit bdcs-search-form-submit"><i class="fa">&#xe600;</i></button>
+            <input tabindex="2" class="bdcs-search-form-input sinput" id="sliding-search-form-input bdcsMain" name="q" type="text" placeholder="输入关键字" value="">
         </form>
     </div>
 </header>

@@ -735,6 +735,13 @@ $(document).ready(function(){
             wait = 15
         }
     }
-
-
 })
+var obj=null;
+var As=document.getElementById('sitenav').getElementsByTagName('a');
+for(i=0;i<As.length;i++){
+    if(window.location.href.indexOf(As[i].href)>=0){
+        console.log(window.location.href.indexOf(As[1].href));
+        obj=As[i];
+    }
+}
+obj.className='current-menu-item';

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="canonical" href="https://xzh.hzshuangmei.com{dede:field name='arcurl'/}">
+    <!-- favicon.ico -->
+    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <title>{dede:field.title/}_红妆双美整形与美容宝典</title>
+    <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
+    <link href='{dede:global.cfg_csspath/}/xzh/artilec.css' rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 768px)" />
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" ></script>
+
+    <meta name="description" content="{dede:field.description  function='html2text(@me)'/}">
+    <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
+
+</head>
+<body>
+{dede:include filename="_head.htm"/}
+    <div class="m1">
+        <div class="location">
+            <i></i><span>当前位置：</span>{dede:field name='position'/}
+        </div>
+        <div class="line"></div>
+        <div class="news_content">
+            <div id="bdcs-frame-box"></div>
+            <script type="text/javascript">
+            var bdcsFrameSid = "5257607230163915007";
+            var bdcsFrameCharset = "utf-8";
+            var bdcsFrameWidth = 552 ; //宽度请自行调整
+            // var bdcsFrameHeight = 0;
+            var bdcsFrameWt = 1;
+            var bdcsFrameHt = 1;  //隐藏搜索框
+            var bdcsFrameResultNum =2;
+            var bdcsFrameBgColor = "#fff";
+            var bdcsRecommend = 0;
+            var bdcsDefaultQuery = 0;
+            var bdcsRemoveUrl = 0;
+            </script>
+            <!-- 按照实际情况修改下面js地址 -->
+            <script type="text/javascript" src="https://xzh.hzshuangmei.com/baidusearch.js"></script>
+            <script>
+                // document.domain = "caibaojian.com";
+                function setIframeHeight(iframe) {
+                    if (iframe) {
+                        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+                        if (iframeWin.document.body) {
+                            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                        }
+                    }
+                };
+                window.onload = function () {
+                    setIframeHeight(document.getElementById('bdcsFrame'));
+                };
+            </script>
+        </div>
+    </div>
+<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Tail.js"></script>
+</body>
+<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Head.js"></script>
+</html>
