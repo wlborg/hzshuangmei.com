@@ -78,10 +78,10 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'">'.$title.'</a>';
 }
 if($ns>0){
-$relateproject= ' <div class="imgbox">
-  '.$relateproject.'
+$relateproject= .$relateproject.;
 </div> ';
 }
 return $relateproject;

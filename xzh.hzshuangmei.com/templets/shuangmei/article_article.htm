@@ -81,16 +81,17 @@
                 <div class="postitems">
                     <h3>相关推荐</h3>
                     <ul>
+
+                        {dede:FIELD.typeid function='getCaseArticleRelateProjectXZH(@me)'/}
                         {dede:arclist titlelen="120" row='4' flag='c' orderby ='pubdate' orderway="desc" }
                         <li>
                             <a href="field:arcurl/]">
 						<span class="thumbnail">
 						<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
 					    </span>[field:title/]
-						</a>
+                            </a>
                         </li>
                         {/dede:arclist}
-                        {dede:FIELD.typeid function='getCaseArticleRelateProjectXZH(@me)'/}
                     </ul>
                 </div>
                 <!--<div class="asst asst-single-comment">-->
