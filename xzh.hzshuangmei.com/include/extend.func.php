@@ -438,6 +438,7 @@ $relatedoctor.= '<div id="articleslidedoctor" class="carousel slide" data-ride="
 }
 return $relatedoctor;
 }
+
 function getCaseArticleRelateProject($typeid)
 {
 global $dsql;
@@ -525,6 +526,7 @@ $relateproject= ' <div class="imgbox">
 }
 return $relateproject;
 }
+
 /**
 *  获取医生相关的案例信息
 *  根据当前医生专题所属的栏目ID，获取相关的案例信息
@@ -1230,4 +1232,63 @@ $relatedoctorurl="https://www.hzshuangmei.com/doctors/";
 }
 $relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
 return $relatedoctorurl;
+}
+
+
+/*
+熊掌号文章页获取推荐数据
+@param   $typeid   当前日记文档所在的栏目ID
+ */
+function getCaseArticleRelateProjectXZH($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 78 :
+$relatetypeid= 14;
+break;
+case 77 :
+$relatetypeid=15 ;
+break;
+case 79:
+$relatetypeid=  25;
+break;
+case 80:
+$relatetypeid=  17;
+break;
+case 81:
+$relatetypeid=  18;
+break;
+case 82 :
+$relatetypeid= 19;
+break;
+case 83 :
+$relatetypeid= 20;
+break;
+case  86 :
+$relatetypeid= 21;
+break;
+default:
+$relatetypeid= 14 ;
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic = replaceurl($row["litpic"]);
+}
+if($ns>0){
+$relateproject= ' <div class="imgbox">
+  '.$relateproject.'
+</div> ';
+}
+return $relateproject;
 }
