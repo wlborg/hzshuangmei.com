@@ -16,7 +16,7 @@ $(".m5_tab1 li,.m5_tab2 li").hover(
     function () {
         clearInterval(bb);
     },function () {
-        bb = setInterval(lblb, 3000);
+        bb = setInterval(lblb, 2000);
     }
 );
-var bb=setInterval(lblb,3000)
+var bb=setInterval(lblb,2000)
