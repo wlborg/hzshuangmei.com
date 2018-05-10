@@ -180,6 +180,9 @@ body {
     margin-top: 1.408rem;
     margin-bottom: 0.448rem;
 }
+.m3tit img{
+    width: 6.80533333rem;
+}
 .m3p1 {
     margin-bottom: 1.13066667rem;
     font-size: 0.384rem;
@@ -256,6 +259,7 @@ body {
     width: 7.27466667rem;
 }
 .m3con a {
+
     position: absolute;
     display: block;
     height: 0.74666667rem;
@@ -277,18 +281,18 @@ body {
     line-height: 0.74666667rem;
 }
 .m3lba1 {
-    right: 0;
+    right: 0.533333rem;
     bottom: 1.17333333rem;
     width: 4.88533333rem;
 }
 .m3lba2 {
-    right: 0;
+    right: 0.533333rem;
     bottom: 0;
     width: 4.90666667rem;
 }
 .m3lba3 {
     bottom: 0;
-    left: 0;
+    left: 0.42666666rem;
     width: 5.14133333rem;
 }
 .m3con .m3lba2 span {
@@ -302,7 +306,7 @@ body {
 }
 .m3lba4 {
     bottom: 1.25866667rem;
-    left: 0;
+    left: 0.42666666rem;
     width: 6.10133333rem;
 }
 .m3con .m3lba3::after,
@@ -475,7 +479,7 @@ body {
 }
 .m6ys div {
     position: absolute;
-    height: 2.45333333rem;
+    height: 2.88rem;
     color: #f6e2c3;
     background-color: rgba(156, 57, 33, 0.85);
 }
