@@ -6,70 +6,86 @@ class seo_index extends Base{
         $this->LoadTemplate($templet);
         $this->Display();
     }
-    
+
     function ac_xml()
     {
         global $cfg_basedir,$cfg_cmspath;
         require_once(DEDEINC."/arc.partview.class.php");
-       
-       //各个栏目的sitemap索引 
-       // 首页 荣誉 环境 设备 视频 索引
-       $murl_others=$cfg_cmspath."/sitemap_others.xml";
-       //  活动新闻 索引
-       $murl_news=$cfg_cmspath."/sitemap_news.xml"; 
-       //专家医生 索引
-       $murl_experts=$cfg_cmspath."/sitemap_experts.xml";
-       // 项目 索引
-        $murl_projects=$cfg_cmspath."/sitemap_projects.xml";
-       // 日记 索引
-       $murl_cases=$cfg_cmspath."/sitemap_cases.xml";
-         //总 索引
-        $murl = $cfg_cmspath."/sitemap.xml";
-        
-      // 各个栏目的sitemap索引模板 
-      // 首页 荣誉 环境 设备 视频 索引模板
-       $tmpfile_others = SEOTEMPLETS."/admin/sitemap_others.xml"; 
-      //  活动新闻 索引模板
-        $tmpfile_news = SEOTEMPLETS."/admin/sitemap_news.xml"; 
-      //专家医生 索引模板   
-        $tmpfile_experts = SEOTEMPLETS."/admin/sitemap_experts.xml";
-     // 项目索引模板    
-      $tmpfile_projects = SEOTEMPLETS."/admin/sitemap_projects.xml";  
-     // 日记 索引模板
-     $tmpfile_cases = SEOTEMPLETS."/admin/sitemap_cases.xml";  
-      //总 所以模板
-        $tmpfile = SEOTEMPLETS."/admin/sitemap.xml";
-       
+
+       //各个栏目的sitemap索引
+       $murl_nose=$cfg_cmspath."/sitemap_nose.xml";
+       $murl_eye=$cfg_cmspath."/sitemap_eye.xml";
+       $murl_axunge=$cfg_cmspath."/sitemap_axunge.xml";
+       $murl_breast=$cfg_cmspath."/sitemap_breast.xml";
+       $murl_genitalia=$cfg_cmspath."/sitemap_genitalia.xml";
+       $murl_liposculpture=$cfg_cmspath."/sitemap_liposculpture.xml";
+       $murl_embroidery=$cfg_cmspath."/sitemap_embroidery.xml";
+       $murl_laser=$cfg_cmspath."/sitemap_laser.xml";
+       $murl_injection=$cfg_cmspath."/sitemap_injection.xml";
+       $murl_beauty=$cfg_cmspath."/sitemap_beauty.xml";
+
+       $murl = $cfg_cmspath."/sitemap.xml";
+
+      // 各个栏目的sitemap索引模板
+
+       $tmpfile_nose = SEOTEMPLETS."/admin/sitemap_nose.xml";
+       $tmpfile_eye = SEOTEMPLETS."/admin/sitemap_eye.xml";
+       $tmpfile_axunge = SEOTEMPLETS."/admin/sitemap_axunge.xml";
+       $tmpfile_breast = SEOTEMPLETS."/admin/sitemap_breast.xml";
+       $tmpfile_genitalia = SEOTEMPLETS."/admin/sitemap_genitalia.xml";
+       $tmpfile_liposculpture = SEOTEMPLETS."/admin/sitemap_liposculpture.xml";
+       $tmpfile_embroidery = SEOTEMPLETS."/admin/sitemap_embroidery.xml";
+       $tmpfile_laser = SEOTEMPLETS."/admin/sitemap_laser.xml";
+       $tmpfile_injection = SEOTEMPLETS."/admin/sitemap_injection.xml";
+       $tmpfile_beauty = SEOTEMPLETS."/admin/sitemap_beauty.xml";
+
+       $tmpfile = SEOTEMPLETS."/admin/sitemap.xml";
+
         $pv = new PartView();
-        
-      //加载 others 模板
-       $pv->SetTemplet($tmpfile_others); 
-        $pv->SaveToHtml($cfg_basedir.$murl_others);
-        
-         //加载 news 模板
-       $pv->SetTemplet($tmpfile_news); 
-        $pv->SaveToHtml($cfg_basedir.$murl_news);   
-        
-          //加载 experts 模板
-       $pv->SetTemplet($tmpfile_experts); 
-        $pv->SaveToHtml($cfg_basedir.$murl_experts);    
-        
-            //加载 projects 模板
-       $pv->SetTemplet($tmpfile_projects); 
-        $pv->SaveToHtml($cfg_basedir.$murl_projects);   
-        
-             //加载 cases 模板
-       $pv->SetTemplet($tmpfile_cases); 
-        $pv->SaveToHtml($cfg_basedir.$murl_cases); 
-        
-        
-        
+
+      //加载 模板
+       $pv->SetTemplet($tmpfile_nose);
+        $pv->SaveToHtml($cfg_basedir.$murl_nose);
+
+
+       $pv->SetTemplet($tmpfile_eye);
+        $pv->SaveToHtml($cfg_basedir.$murl_eye);
+
+       $pv->SetTemplet($tmpfile_axunge);
+        $pv->SaveToHtml($cfg_basedir.$murl_axunge);
+
+
+       $pv->SetTemplet($tmpfile_breast);
+        $pv->SaveToHtml($cfg_basedir.$murl_breast);
+
+
+        $pv->SetTemplet($tmpfile_genitalia);
+        $pv->SaveToHtml($cfg_basedir.$murl_genitalia);
+
+
+        $pv->SetTemplet($tmpfile_liposculpture);
+        $pv->SaveToHtml($cfg_basedir.$murl_liposculpture);
+
+        $pv->SetTemplet($tmpfile_embroidery);
+        $pv->SaveToHtml($cfg_basedir.$murl_embroidery);
+
+        $pv->SetTemplet($tmpfile_laser);
+        $pv->SaveToHtml($cfg_basedir.$murl_laser);
+
+        $pv->SetTemplet($tmpfile_injection);
+        $pv->SaveToHtml($cfg_basedir.$murl_injection);
+
+        $pv->SetTemplet($tmpfile_beauty);
+        $pv->SaveToHtml($cfg_basedir.$murl_beauty);
+
+
         $pv->SetTemplet($tmpfile);
         $pv->SaveToHtml($cfg_basedir.$murl);
+
         echo "<a href='$murl' target='_blank'>成功更新文件: $murl 浏览...</a>";
         exit();
     }
-    
+
     function ac_txt()
     {
         global $cfg_basehost,$cfg_basedir,$cfg_cmspath,$cfg_multi_site,$dsql;
@@ -80,7 +96,7 @@ class seo_index extends Base{
         {
             $typeurl = GetTypeUrl($arcRow['id'],$arcRow['typedir'],$arcRow['isdefault'],$arcRow['defaultname'],
                         $arcRow['ispart'],$arcRow['namerule2'],$arcRow['moresite'],$arcRow['siteurl'],$arcRow['sitepath']);
-             
+
             if($cfg_multi_site == 'N' && $arcRow['ispart'] != 2)
             {
                 $str .= $cfg_basehost.$typeurl."\r\n";
@@ -107,5 +123,5 @@ class seo_index extends Base{
         echo "<a href='/sitemap.txt' target='_blank'>成功更新文件: /sitemap.txt 浏览...</a>";
         exit();
     }
-    
+
 }
