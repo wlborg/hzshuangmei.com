@@ -72,4 +72,5 @@ laser/
 liposculpture/
 .well-know/
 mysqli_error_trace.inc
+pma/
 
