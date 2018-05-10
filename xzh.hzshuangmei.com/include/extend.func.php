@@ -33,7 +33,7 @@ case 77 :
 $relatetypeid=15 ;
 break;
 case 79:
-$relatetypeid=  25;
+$relatetypeid=25;
 break;
 case 80:
 $relatetypeid=  17;
@@ -67,17 +67,12 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-$litpic = replaceurl($row["litpic"]);
+$litpic =$row["litpic"];
 $relateproject.='<a href="'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a>';
 }
 if($ns>0){
-$relateproject= .$relateproject.;
+$relateproject=$relateproject;
 }
 return $relateproject;
 }
-//后台上传图片链接处理
-function replaceurl($newurl)
-{
-$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
-return $newurl;
-}
+
