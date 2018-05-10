@@ -221,7 +221,7 @@ color,writer,source,litpic,pubdate,senddate,mid,voteid,notpost,description,keywo
 if($push_xzh==1) {
     //PC端URL推送
 $urls[]=$cfg_xzh.'/'.$artUrl;
-$api = 'http://data.zz.baidu.com/urls?site='.cfg_xzh.'&token='.$cfg_baidutoken;
+$api = 'http://data.zz.baidu.com/urls?site='.cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
