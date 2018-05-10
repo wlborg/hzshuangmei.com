@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"><!-- {dede:tagname runphp='yes'}@me="Make ".GetDateTimeMk(time());{/dede:tagname} -->
+<url>
+<loc>https://xzh.hzshuangmei.com/genitalia/</loc>
+</url>
+ {dede:arclist row='50000' typeid=81 channelid=21  orderby=pubdate}
+<url>
+<loc>[field:aid runphp='yes']if($GLOBALS['cfg_multi_site']='N'){@me='https://xzh.hzshuangmei.com';}[/field:aid][field:arcurl /]</loc>
+<mobile:mobile type="pc,mobile"/>
+<lastmod>[field:stime /]</lastmod>
+</url>
+   {/dede:arclist}
+</urlset>

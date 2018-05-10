@@ -185,7 +185,7 @@ else if($dopost=='save')
     filename='$filename',
     dutyadmin='$adminid',
     weight='$weight',
-    push='$push'
+    push_xzh='$push_xzh'
     WHERE id='$id'; ";
     if(!$dsql->ExecuteNoneQuery($inQuery))
     {
@@ -227,10 +227,10 @@ else if($dopost=='save')
 
 
  /*    百度推送   */
-if($push==1) {
+if($push_xzh==1) {
     //PC端URL推送
-$urls[]=$cfg_baiduhost.'/'.$artUrl;
-$api = 'http://data.zz.baidu.com/update?site='.$cfg_baiduhost.'&token='.$cfg_baidutoken;
+$urls[]=$cfg_xzh.'/'.$artUrl;
+$api = 'http://data.zz.baidu.com/update?site='.$cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
@@ -241,21 +241,7 @@ $options =  array(
 );
 curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
-//手机版URL推送
-$urls_m[]=$cfg_baiduhost_m.'/'.$artUrl;
-$api = 'http://data.zz.baidu.com/urls?site='.$cfg_baiduhost_m.'&token='.$cfg_baidutoken;
-$ch = curl_init();
-$options =  array(
-    CURLOPT_URL => $api,
-    CURLOPT_POST => true,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POSTFIELDS => implode("\n", $urls_m),
-    CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
-);
-curl_setopt_array($ch, $options);
-$result_m = curl_exec($ch);
-
-    ClearMyAddon($arcID, $title);
+ClearMyAddon($arcID, $title);
     //返回成功信息
     $msg = "    　　请选择你的后续操作：
     <a href='article_add.php?cid=$typeid'><u>继续发布文章</u></a>
@@ -265,7 +251,7 @@ $result_m = curl_exec($ch);
     <a href='archives_do.php?aid=".$arcID."&dopost=editArchives'><u>更改文章</u></a>
     &nbsp;&nbsp;
     <a href='catalog_do.php?cid=$typeid&dopost=listArchives'><u>已发布文章管理</u></a>
-    <a href=''><u>百度提交返回，PC版:".$result."手机版:".$result_m."</u></a>
+    <a href=''><u>百度提交返回，熊掌号:".$result."</u></a>
     &nbsp;&nbsp;
     $backurl
   ";
