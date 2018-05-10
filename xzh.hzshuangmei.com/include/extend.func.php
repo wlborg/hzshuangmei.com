@@ -67,7 +67,7 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-$litpic =$row["litpic"];
+$litpic =replaceurl($row["litpic"]);
 $relateproject.='<li><a href="'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a></li>';
 }
 if($ns>0){
