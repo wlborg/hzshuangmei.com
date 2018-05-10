@@ -68,7 +68,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =$row["litpic"];
-$relateproject.='<a href="'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a>';
+$relateproject.='<li><a href="'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
@@ -76,3 +76,9 @@ $relateproject=$relateproject;
 return $relateproject;
 }
 
+//后台上传图片链接处理
+function replaceurl($newurl)
+{
+$newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
+return $newurl;
+}
