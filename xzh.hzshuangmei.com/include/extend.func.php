@@ -90,7 +90,7 @@ return $newurl;
 }
 /**
 *  博客文章页(最新文章模块)
-*  根据当前栏目的ID，获取相关的专家
+*  根据当前栏目的ID，获取相关最新的专家
 * @param     $typeid    所在栏目ID
 */
 function getCaseArticleDoctorXZH($typeid)
@@ -129,6 +129,68 @@ $relatetypeid=7;
 break;
 default:
 $relatetypeid=3 ;
+
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 2");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+
+$litpic =replaceurl($row["litpic"]);
+$relateproject.='<li><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a></li>';
+}
+if($ns>0){
+$relateproject=$relateproject;
+}
+return $relateproject;
+}
+/**
+*  博客文章页(最新文章模块)
+*  根据当前栏目的ID，获取相关最新的案例日记
+* @param     $typeid    所在栏目ID
+*/
+function getCaseArticleCaseXZH($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 78 :
+$relatetypeid= 35;
+break;
+case 77 :
+$relatetypeid=36;
+break;
+case 79:
+$relatetypeid=47;
+break;
+case 80:
+$relatetypeid=36;
+break;
+case 81:
+$relatetypeid=39;
+break;
+case 82 :
+$relatetypeid=40;
+break;
+case 83 :
+$relatetypeid=41;
+break;
+case 85 :
+$relatetypeid= 43,44,45;
+break;
+case  86 :
+$relatetypeid=49,50,51,52,53,54,55;
+break;
+default:
+$relatetypeid=35 ;
 
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
