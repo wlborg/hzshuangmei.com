@@ -89,7 +89,7 @@ $newurl=str_replace('/uploads/','https://uploads.hzshuangmei.com/',$newurl);
 return $newurl;
 }
 /**
-*  获取博客文章页最新文章
+*  博客文章页(最新文章模块)
 *  根据当前栏目的ID，获取相关的专家
 * @param     $typeid    所在栏目ID
 */
@@ -132,7 +132,7 @@ $relatetypeid=3 ;
 
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by desc limit 2 ");
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
