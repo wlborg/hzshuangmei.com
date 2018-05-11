@@ -184,10 +184,10 @@ case 83 :
 $relatetypeid=41;
 break;
 case 85 :
-$relatetypeid= 43,44,45;
+$relatetypeid='43,44,45';
 break;
 case  86 :
-$relatetypeid=49,50,51,52,53,54,55;
+$relatetypeid='49,50,51,52,53,54,55';
 break;
 default:
 $relatetypeid=35 ;
