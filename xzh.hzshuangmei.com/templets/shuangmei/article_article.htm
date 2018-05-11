@@ -112,6 +112,8 @@
             <div class="widget widget-postlist">
                 <h3>最新文章</h3>
                 <ul>
+                    {dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/}
+                    <!--{dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/}-->
                     {dede:arclist titlelen="120" row='4' orderby ='pubdate' orderway="desc"}
                     <li><a href="[field:arcurl/]">
 				<span class="thumbnail">
