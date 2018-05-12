@@ -193,8 +193,8 @@ default:
 $relatetypeid=35 ;
 
 }
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 2");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addoncase as b
+                  where  a.typeid='$relatetypeid' and a.id=b.aid  and a.arcrank=0 order by id desc limit 2");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -203,9 +203,9 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-
+$imgafter = replaceurl($row["imgafter"]);
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a></li>';
+$relateproject.='<li><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$imgafter.'" alt="'.$title.'"></span>'.$title.'</a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
