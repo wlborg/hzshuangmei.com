@@ -68,7 +68,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 }
 .part_One_Age>ul:nth-of-type(1){
     height: 3.43467rem;
-    background: rgba(229,226,227);
+    background: rgb(229,226,227);
     width: 100%;
 }
 .part_One_Age>ul:nth-of-type(1)>li{
