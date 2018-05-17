@@ -4497,3 +4497,17 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+.article-content p {
+    margin: 1em 0;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 2em;
+    color: #727272;
+}
+.article-content p img {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
+    border-radius: 4px;
+}
