@@ -143,7 +143,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span>'.$title.'</a></li>';
+$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
@@ -205,7 +205,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $imgafter = replaceurl($row["imgafter"]);
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$imgafter.'" alt="'.$title.'"></span>'.$title.'</a></li>';
+$relateproject.='<li class="diary"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank"><span class="thumbnail"><img src="'.$imgafter.'" alt="'.$title.'"></span><span class="diarySpan">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
