@@ -44,13 +44,8 @@
                 </article>
                 <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}<a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
                 <div class="article-tags">
-                    <!--{dede:tag sort='new' getall='0'}<a href='[field:link/]'>[field:tag /]</a>{/dede:tag}-->
-                    <!--<a href="http://demo.themebetter.com/tob/tag/%e8%ae%be%e8%ae%a1" rel="tag">设计</a>-->
-                    <!--{dede:field.art_tag/}-->
-                    {dede:sql sql="SELECT t.aid,t.tag,a.id,a.title FROM dede_taglist as t left join dede_archives a on t.aid = a.id where t.tag=~tags~ LIMIT 0 , 18"}
-                    <dd>[field:global.autoindex/]、<a target="_blank" href="[field:id runphp='yes'] $id=@me;@me='';$url=GetOneArchive($id);@me=$url['arcurl'];[/field:id]" title="[field:title /]">[field:title function='cn_substr(@me,55)' /]</a>
-                    </dd>
-                    {/dede:sql}
+                    <!--[field:id function=GetTags_list(@me)/]-->
+                    {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">[field:tag /]</a>{/dede:tag}
                 </div>
                 <div class="article-wechats">
                     <div class="article-wechatitem">
@@ -67,12 +62,12 @@
                     </div>
                     <script>
                     var config = {
-                        url: 'http://blog.wangjunfeng.com', // 分享的网页链接
-                        title: '博客', // 标题
-                        desc: '博客', // 描述
-                        img: 'http://www.wangjunfeng.com/img/face.jpg', // 图片
-                        img_title: '王俊锋的个人博客', // 图片标题
-                        from: '王俊锋的' // 来源
+                        url: 'https://xzh.hzshuangmei.com', // 分享的网页链接
+                        title: '护肤', // 标题
+                        desc: '护肤美容', // 描述
+                        img: '', // 图片
+                        img_title: '', // 图片标题
+                        from: 'https://xzh.hzshuangmei.com' // 来源
                     };
                     var share_obj = new nativeShare('nativeShare', config);
                     </script>
@@ -81,7 +76,6 @@
                     <span class="article-nav-prev">上一篇<br>{dede:prenext get='next'/}</span>
                     <span class="article-nav-next">下一篇<br>{dede:prenext get='pre'/}</span>
                 </nav>
-                <!--<div class="asst asst-single-footer">测试测试这是文章内容下的PC端广告位，你可以设置文字、图片和任何广告联盟代码</div>-->
                 <div class="postitems">
                     <h3>相关推荐</h3>
                     <ul>
@@ -97,22 +91,11 @@
                         {/dede:arclist}
                     </ul>
                 </div>
-                <!--<div class="asst asst-single-comment">-->
-                    <!--{dede:myad name='projectpic_pc'/}-->
-                <!--</div>-->
             </div>
         </div>
         <div class="sidebar">
             <div class="widget widget-textasst" style="width: 100%;height: 125px">
-                <!--<a class="style01" href="http://themebetter.com" target="_blank">-->
-                <!--<strong>themebetter</strong>-->
-                <!--<h2>更好的Worarticle-tagsdPress主题</h2>-->
-                <!--<p>扁平化、简洁风、多功能配置，优秀的电脑、平板、手机支持，响应式布局，不同设备不同展示效果...</p></a>-->
             </div>
-            <!--<div class="widget widget-asst">-->
-            <!--<a href="http://themebetter.com/theme/dux" target="_blank">-->
-            <!--<img src="{dede:global.cfg_templets_skin/}/images/1e62dd8d607767a-240x180.jpg"></a>-->
-            <!--</div>-->
             <div class="widget widget-postlist">
                 <h3>最新文章</h3>
                 <ul>
@@ -129,20 +112,7 @@
         </div>
     </section>
     {dede:include filename="_footer.htm"/}
-    <div class="rewards-popover-mask" etap="rewards-close"></div>
-    <div class="rewards-popover">
-        <h3>觉得文章有用就打赏一下文章作者</h3>
-        <div class="rewards-popover-item">
-            <h4>支付宝扫一扫打赏</h4>
-            <img src="{dede:global.cfg_templets_skin/}/images/qrcode.png">
-        </div>
-        <div class="rewards-popover-item">
-            <h4>微信扫一扫打赏</h4>
-            <img src="{dede:global.cfg_templets_skin/}/images/qrcode.png">
-        </div>
-        <span class="rewards-popover-close" etap="rewards-close"><i class="fa">&#xe606;</i></span>
-    </div>
-        <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
+    <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 
 </body>
 </html>
