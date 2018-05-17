@@ -4497,6 +4497,7 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+
 .article-content p {
     margin: 1em 0;
     line-height: 30px;
@@ -4504,7 +4505,7 @@ body {
     text-indent: 2em;
     color: #727272;
 }
-.article-content p img {
+.article-content p img,.article-content img{
     display: block;
     width: 100%;
     margin: 1em auto;
