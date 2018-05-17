@@ -1,23 +1,4 @@
-<script>
-    var ss=function (a) {
-        function async_load() {
-            for (var i=0;i<a.length;i++){
-                var s=document.createElement("script");
-                s.type="text/javascript";
-                s.async=true;
-                s.src=a[i];
-                var x=document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s,x);
-            }
 
-        }
-        if(window.attachEvent){
-            window.attachEvent('onload',async_load);
-        }else {
-            window.addEventListener('load',async_load)
-        }
-    };
-</script>
 <header>
     <div class="top">
         <div class="shuang_m1 clearFix">
