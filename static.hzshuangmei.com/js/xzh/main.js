@@ -735,13 +735,25 @@ $(document).ready(function(){
             wait = 15
         }
     }
-})
+    // 文章页最新文章模块专家加标题内容
+	var expert=['医生','医生'];
+    var expertLen=$(".expert").length;
+    for(var i=0;i<expertLen;i++){
+        $(".expert").eq(i).find(".expertSpan").append(expert[i]);
+	}
+    // 文章页最新文章模块案例日记加标题内容
+    var diary=['的美丽之路','的美丽之路'];
+    var diaryLen=$(".diary").length;
+    for(var i=0;i<diaryLen;i++){
+        $(".diary").eq(i).find(".diarySpan").append(diary[i]);
+    }
+});
 var obj=null;
 var As=document.getElementById('sitenav').getElementsByTagName('a');
 for(i=0;i<As.length;i++){
     if(window.location.href.indexOf(As[i].href)>=0){
-        console.log(window.location.href.indexOf(As[1].href));
         obj=As[i];
     }
 }
 obj.className='current-menu-item';
+
