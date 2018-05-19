@@ -748,9 +748,11 @@ $(document).ready(function(){
         $(".diary").eq(i).find(".diarySpan").append(diary[i]);
     }
     // 去掉首页双//
-    var pagelistLen=$(".pagelist a").length;
+    var pagelistLen=$(".pagelist li").length;
+    console.log(pagelistLen+"----");
     for(var i=0;i<pagelistLen;i++){
         if($(".pagelist a").eq(i).attr("href")=="//"){
+            console.log($(".pagelist a").eq(i).attr("href"));
             $(this).attr("href","/");
         }
     }
