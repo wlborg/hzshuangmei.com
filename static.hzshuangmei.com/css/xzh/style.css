@@ -2558,7 +2558,8 @@ body {
 .article-copyright {
     margin-bottom: 30px;
     overflow: hidden;
-    clear: both
+    clear: both;
+    margin-top: 1rem;
 }
 
 .article-paging {
