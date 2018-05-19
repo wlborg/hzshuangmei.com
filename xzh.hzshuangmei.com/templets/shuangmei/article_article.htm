@@ -21,6 +21,19 @@
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
     <!--<link rel='stylesheet' href='{dede:global.cfg_csspath/}/xzh/nativeShare.css' type='text/css' media='all' />-->
     <!--<script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/nativeShare.js'></script>-->
+    <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
+     <script type="application/ld+json">
+        {
+            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+            "@id": "https://xzh.hzshuangmei.com{dede:field.arcurl/}",
+            "appid": "1598778411605158",
+            "title": "{dede:field.title/}",
+            "images": [
+                "https://xzh.hzshuangmei.com{dede:field.litpic/}"
+                ],
+            "pubDate": "{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}"
+        }
+    </script>
 </head>
 <body class="post-template-default single single-post postid-738 single-format-standard comment-open list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
@@ -115,4 +128,7 @@
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 
 </body>
+<div style="padding-left: 17px; padding-right: 17px;">
+    <script>cambrian.render('head')</script>
+</div>
 </html>

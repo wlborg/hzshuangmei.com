@@ -217,12 +217,14 @@ color,writer,source,litpic,pubdate,senddate,mid,voteid,notpost,description,keywo
     }
 
 
-/*    百度推送   */
+/*   百度推送 和 熊掌号推送   */
 if($push_xzh==1) {
-    //PC端URL推送
+    //提交数据链接 和熊掌号
 $urls[]=$cfg_xzh.'/'.$artUrl;
-$api = 'http://data.zz.baidu.com/urls?site='.cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
+    $api = 'http://data.zz.baidu.com/urls?site='.cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
+$api_xzh = 'http://data.zz.baidu.com/urls?appid=1598778411605158&token=XTxmEMgkDdGu03M1&type=realtime';
 $ch = curl_init();
+$ch_xzh = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
     CURLOPT_POST => true,
@@ -230,8 +232,17 @@ $options =  array(
     CURLOPT_POSTFIELDS => implode("\n", $urls),
     CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
 );
+$options_xzh =  array(
+    CURLOPT_URL => $api_xzh,
+    CURLOPT_POST => true,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POSTFIELDS => implode("\n", $urls),
+    CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
+);
 curl_setopt_array($ch, $options);
+curl_setopt_array($ch_xzh, $options_xzh);
 $result = curl_exec($ch);
+$result_xzh = curl_exec($ch_xzh);
     ClearMyAddon($arcID, $title);
     //返回成功信息
     $msg = "    　　请选择你的后续操作：
@@ -242,7 +253,7 @@ $result = curl_exec($ch);
     <a href='archives_do.php?aid=".$arcID."&dopost=editArchives'><u>更改文章</u></a>
     &nbsp;&nbsp;
     <a href='catalog_do.php?cid=$typeid&dopost=listArchives'><u>已发布文章管理</u></a>
-    <a href=''><u>百度提交返回，熊掌号:".$result."</u></a>
+    <a href=''><u>百度提交和熊掌号:".$result.".$result_xzh."</u></a>
     &nbsp;&nbsp;
     $backurl
   ";
