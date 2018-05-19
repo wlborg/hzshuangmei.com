@@ -2174,11 +2174,11 @@ $(document).ready(function () {
     }
     // 去掉首页双//
     var pagelistLen = $(".pagelist a").length;
-    console.log(pagelistLen + "----");
     for (var i = 0; i < pagelistLen; i++) {
-        if ($(".pagelist a").eq(i).attr("href") == "//") {
-            console.log($(".pagelist a").eq(i).attr("href"));
-            $(this).attr("href", "/");
+        if ($(".pagelist a").eq(i).attr("href").search("////")) {
+            // console.log($(this).html());
+            var res=$(".pagelist a").eq(i).prop("href").replace("//","/");
+            $(".pagelist a").eq(i).prop("href",res);
         }
     }
 });
