@@ -748,7 +748,7 @@ $(document).ready(function(){
         $(".diary").eq(i).find(".diarySpan").append(diary[i]);
     }
     // 去掉首页双//
-    var pagelistLen=$(".pagelist a").length();
+    var pagelistLen=$(".pagelist a").length;
     for(var i=0;i<pagelistLen;i++){
         if($(".pagelist a").eq(i).attr("href")=="//"){
             $(this).attr("href","/");
