@@ -55,7 +55,7 @@ function lib_tag(&$ctag,&$refObj)
         }
         if($ids != '')
         {
-            $addsql = " WHERE id IN($ids) ";
+            $addsql = " WHERE id IN($ids) and typeid in(77,78,79,80,81,82,83,84,85,86) ";
         }
         if($addsql=='') return '';
     }
@@ -63,7 +63,7 @@ function lib_tag(&$ctag,&$refObj)
     {
         if(!empty($typeid))
         {
-            $addsql = " WHERE typeid='$typeid' ";
+            $addsql = " WHERE typeid='$typeid' and typeid in(77,78,79,80,81,82,83,84,85,86) ";
         }
   }
 
@@ -74,9 +74,8 @@ function lib_tag(&$ctag,&$refObj)
     else if($ltype=='total') $orderby=' total DESC ';
     else $orderby = 'addtime DESC  ';
 
-    //$dsql->SetQuery("SELECT * FROM `#@__tagindex` $addsql ORDER BY $orderby LIMIT 0,$num");
-    //限制只查询熊掌号的内容
-    $dsql->SetQuery("SELECT * FROM `#@__tagindex` $addsql ORDER BY $orderby LIMIT 0,$num where typeid in(77,78,79,80,81,82,83,84,85,86)");
+    $dsql->SetQuery("SELECT * FROM `#@__tagindex` $addsql ORDER BY $orderby LIMIT 0,$num");
+
     $dsql->Execute();
 
     $ctp = new DedeTagParse();
