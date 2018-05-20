@@ -9,7 +9,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 /*>>dede>>
 <name>TAG调用</name>
 <type>全局标记</type>
@@ -21,12 +21,12 @@
 {/dede:tag}
 </demo>
 <attributes>
-    <iterm>row:调用条数</iterm> 
+    <iterm>row:调用条数</iterm>
     <iterm>sort:排序方式 month，rand，week</iterm>
     <iterm>getall:获取类型 0 为当前内容页TAG标记，1为获取全部TAG标记</iterm>
-</attributes> 
+</attributes>
 >>dede>>*/
- 
+
 function lib_tag(&$ctag,&$refObj)
 {
     global $dsql,$envs,$cfg_cmsurl;
@@ -55,7 +55,7 @@ function lib_tag(&$ctag,&$refObj)
         }
         if($ids != '')
         {
-            $addsql = " WHERE id IN($ids) ";
+            $addsql = " WHERE id IN($ids) and typeid in(77,78,79,80,81,82,83,84,85,86) ";
         }
         if($addsql=='') return '';
     }
@@ -63,10 +63,10 @@ function lib_tag(&$ctag,&$refObj)
     {
         if(!empty($typeid))
         {
-            $addsql = " WHERE typeid='$typeid' ";
+            $addsql = " WHERE typeid='$typeid' and typeid in(77,78,79,80,81,82,83,84,85,86) ";
         }
   }
-  
+
     if($ltype=='rand') $orderby = 'rand() ';
     else if($ltype=='week') $orderby=' weekcc DESC ';
     else if($ltype=='month') $orderby=' monthcc DESC ';
@@ -75,6 +75,7 @@ function lib_tag(&$ctag,&$refObj)
     else $orderby = 'addtime DESC  ';
 
     $dsql->SetQuery("SELECT * FROM `#@__tagindex` $addsql ORDER BY $orderby LIMIT 0,$num");
+
     $dsql->Execute();
 
     $ctp = new DedeTagParse();
@@ -85,6 +86,7 @@ function lib_tag(&$ctag,&$refObj)
         $row['keyword'] = $row['tag'];
         $row['tag'] = dede_htmlspecialchars($row['tag']);
         $row['link'] = $cfg_cmsurl."/tags.php?/".urlencode($row['keyword'])."/";
+       // $row['link'] = "https://xzh.hzshuangmei.com/tags.php?/".urlencode($row['keyword'])."/";
         $row['highlight'] = 0;
         if($row['monthcc']>1000 || $row['weekcc']>300 )
         {

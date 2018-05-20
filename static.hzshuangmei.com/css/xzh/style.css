@@ -2558,7 +2558,8 @@ body {
 .article-copyright {
     margin-bottom: 30px;
     overflow: hidden;
-    clear: both
+    clear: both;
+    margin-top: 1rem;
 }
 
 .article-paging {
@@ -4496,4 +4497,19 @@ body {
 .m1 {
     width: 1200px;
     margin: 0 auto;
+}
+
+.article-content p {
+    margin: 1em 0;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 2em;
+    color: #727272;
+}
+.article-content p img,.article-content img{
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    text-align: center;
+    border-radius: 4px;
 }

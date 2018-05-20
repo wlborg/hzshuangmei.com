@@ -20,6 +20,7 @@
     <meta name="keywords" content="{dede:field name='keywords'/}">
     <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
+    <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
 </head>
 
 <body class="home blog list-thumb-hover-action nav-fixed-top">
@@ -33,7 +34,7 @@
     <section class="container">
         <div class="excerpts-wrapper">
             <div class="excerpts">
-                {dede:list pagesize="2" titlelen="120" orderby ='pubdate' orderway="desc"}
+                {dede:list pagesize="15" titlelen="120" orderby ='pubdate' orderway="desc"}
                 <article class="excerpt excerpt-c5">
                     <a class="thumbnail" href="[field:arcurl/]" target="_blank">
 	<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
