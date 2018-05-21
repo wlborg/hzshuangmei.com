@@ -160,7 +160,7 @@ $(function() {
         indicator: $(".zt-m1 .sliderIndicator")
     });
      
-    $('.tab-indicator').find('div').hover(function(e){
+    $('.tab-indicator').find('div').click(function(e){
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
          $('.zt-m8 .zt-content .item').eq(index).addClass('active').siblings().removeClass('active');
