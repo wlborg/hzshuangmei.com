@@ -2177,7 +2177,7 @@ $(document).ready(function () {
     for (var i = 0; i < pagelistLen; i++) {
         if ($(".pagelist a").eq(i).attr("href").search("////")) {
             // console.log($(this).html());
-            var res=$(".pagelist a").eq(i).prop("href").replace("//","/");
+            var res=$(".pagelist a").eq(i).attr("href").replace("//","/");
             $(".pagelist a").eq(i).prop("href",res);
         }
     }
