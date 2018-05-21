@@ -253,7 +253,7 @@ $result_xzh = curl_exec($ch_xzh);
     <a href='archives_do.php?aid=".$arcID."&dopost=editArchives'><u>更改文章</u></a>
     &nbsp;&nbsp;
     <a href='catalog_do.php?cid=$typeid&dopost=listArchives'><u>已发布文章管理</u></a>
-    <a href=''><u>百度提交和熊掌号:".$result.".$result_xzh."</u></a>
+    <a href=''><u>百度提交和熊掌号:".$result.";".$result_xzh."</u></a>
     &nbsp;&nbsp;
     $backurl
   ";
