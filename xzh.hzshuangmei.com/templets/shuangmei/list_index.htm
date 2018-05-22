@@ -1,57 +1,61 @@
+
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="{dede:global.cfg_soft_lang/}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <title>红妆双美整形与美容宝典2</title>
+    <meta http-equiv="cache-control" content="no-siteapp">
     <!-- favicon.ico -->
-    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <title>{dede:field.title/}_红妆双美整形与美容宝典</title>
     <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
-    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
-    <meta name="keywords" content="{dede:global.cfg_keywords/}">
-    <meta name="description" content="{dede:global.cfg_description/}">
-    <!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
-    <!-- <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> -->
+    <link rel='stylesheet' href='{dede:global.cfg_csspath/}/xzh/page.css' type='text/css' media='all' />
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" crossorigin></script>
+    <meta name="keywords" content="{dede:field name='keywords'/}">
+    <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
+    <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
     <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
 </head>
+
 <body class="home blog list-thumb-hover-action nav-fixed-top">
-    {dede:include filename="_head.htm"/}
-    <div class="focusbox">
-        <div class="container">
-            <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
-            <div class="focusbox-text">{dede:field name='description' function='html2text(@me)'/}</div>
-        </div>
+{dede:include filename="_head.htm"/}
+<div class="focusbox">
+    <div class="container">
+        <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
+        <div class="focusbox-text">{dede:field name='description' function='html2text(@me)'/}</div>
     </div>
-    <section class="container">
-        <div class="excerpts-wrapper">
-            <div class="excerpts">
-                {dede:list pagesize="6" titlelen="120" orderby ='pubdate' orderway="desc"}
-                <article class="excerpt excerpt-c5">
-                    <a class="thumbnail" href="[field:arcurl/]" target="_blank">
-                    <img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb" alt="[field:title/]">
+</div>
+<section class="container">
+    <div class="excerpts-wrapper">
+        <div class="excerpts">
+            {dede:list channelid='84,86'   pagesize='15' orderby='id'}
+            <article class="excerpt excerpt-c5">
+                <a class="thumbnail" href="[field:arcurl/]" target="_blank">
+                    <img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
                 </a>
-                    <h2>
+                <h2>
                     <a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
                 </h2>
-                    <footer>
-                        <time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
-                    </footer>
-                </article>
-                {/dede:list}
-            </div>
+                <footer>
+                    <!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
+                    <!--<i class="fa"></i><span>794</span></a>-->
+                    <time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
+                </footer>
+            </article>
+            {/dede:list}
         </div>
-        <div class="pagination">
-            <ul class="pagelist">{dede:pagelist listitem="index,end,pre,next,pageno,listsize=2"/}</ul>
-        </div>
-    </section>
-    <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
-<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Tail.js"></script>
+    </div>
+    <div class="dede_pages">
+        <ul class="pagelist">{dede:pagelist listitem="pre,next,pageno,listsize=3"/}</ul>
+    </div>
+</section>
+{dede:include filename="_footer.htm"/}
+<script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 </body>
-<script src="{dede:global.cfg_jspath/}/xzh/cambrian_Head.js"></script>
-
 </html>
