@@ -115,12 +115,12 @@ opacity: 0.7 !important;}
 .bot-c{width: 100%; height:138px; line-height: 24px; font-size: 18px; color:#878383;}
 .aq, .kuai, .xiao{width: 484px; height: 80px;}
 .aq-tu{width:64px; height: 63px; float: left;}
-.aq-r, .k-r{width: 410px; height: 52px; background-color: #ffa722; float: left; margin-top:6px; line-height: 52px; color: #ffffff; } 
+.aq-r, .k-r{width: 410px; height: 52px; background-color: #ffa722; float: left; margin-top:6px; line-height: 52px; color: #ffffff; }
 .aq-r span{font-size: 18px; }
 .aq-r strong, .k-r strong {font-size: 28px; margin:0 64px 0 10px;}
 .k-tu{width:71px; height: 65px; float: left;}
 .kuai .aq-r{width: 402px; height: 51px}
-.k-r strong{float: left; margin:0 15px  0 10px;}  
+.k-r strong{float: left; margin:0 15px  0 10px;}
 .k-r div{width: 250px; height: 46px; float: left; padding-top: 6px}
 .k-r div p{font-size: 16px; line-height: 20px}
 .k-r{width: 402px; height: 51px}
