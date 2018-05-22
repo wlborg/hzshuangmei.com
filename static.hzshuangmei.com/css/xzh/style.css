@@ -2558,7 +2558,8 @@ body {
 .article-copyright {
     margin-bottom: 30px;
     overflow: hidden;
-    clear: both
+    clear: both;
+    margin-top: 1rem;
 }
 
 .article-paging {
@@ -2898,7 +2899,8 @@ body {
     width: calc(25% - 15px);
     margin-right: 15px;
     margin-bottom: 22.5px;
-    display: inline-block;
+    float: left;
+    /*display: inline-block;*/
     vertical-align: top
 }
 

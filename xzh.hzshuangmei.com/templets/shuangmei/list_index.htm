@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
-    <title>红妆双美整形与美容宝典</title>
+    <title>红妆双美整形与美容宝典2</title>
     <!-- favicon.ico -->
     <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
@@ -17,6 +17,7 @@
     <meta name="description" content="{dede:global.cfg_description/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_templets_skin/}/js/html5.js"></script><![endif]-->
     <!-- <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script> -->
+    <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
 </head>
 <body class="home blog list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
@@ -29,10 +30,10 @@
     <section class="container">
         <div class="excerpts-wrapper">
             <div class="excerpts">
-                {dede:list channelid='21'   pagesize='10' orderby='id'  }
+                {dede:list pagesize="6" titlelen="120" orderby ='pubdate' orderway="desc"}
                 <article class="excerpt excerpt-c5">
                     <a class="thumbnail" href="[field:arcurl/]" target="_blank">
-                    <img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb">
+                    <img src="[field:litpic/]" data-src="[field:litpic/]" class="thumb" alt="[field:title/]">
                 </a>
                     <h2>
                     <a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
@@ -52,4 +53,5 @@
 <script src="{dede:global.cfg_jspath/}/xzh/cambrian_Tail.js"></script>
 </body>
 <script src="{dede:global.cfg_jspath/}/xzh/cambrian_Head.js"></script>
+
 </html>

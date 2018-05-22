@@ -21,6 +21,19 @@
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
     <!--<link rel='stylesheet' href='{dede:global.cfg_csspath/}/xzh/nativeShare.css' type='text/css' media='all' />-->
     <!--<script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/nativeShare.js'></script>-->
+    <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
+     <script type="application/ld+json">
+        {
+            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+            "@id": "https://xzh.hzshuangmei.com{dede:field.arcurl/}",
+            "appid": "1598778411605158",
+            "title": "{dede:field.title/}",
+            "images": [
+                "https://xzh.hzshuangmei.com{dede:field.litpic/}"
+                ],
+            "pubDate": "{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}"
+        }
+    </script>
 </head>
 <body class="post-template-default single single-post postid-738 single-format-standard comment-open list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
@@ -31,18 +44,18 @@
                     <h1 class="article-title">{dede:field.title/}</h1>
                     <div class="article-meta">
                         <span class="item item-1">{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
-                        <span class="item item-6"></span>
+                        <!-- <span class="item item-6"></span> -->
                         <span class="item item-2">作者：{dede:field.writer/}</span>
                         <span class="item item-3">分类：<a href="{dede:type row=1}[field:typelink /]{/dede:type}" rel="category tag">{dede:field.typename/}</a></span>
-                        <span class="item item-4">阅读({dede:field.click /} )</span>
-                        <span class="item item-5"></span>
+                        <span class="item item-4">阅读({dede:field.click /})</span>
+                        <!-- <span class="item item-5"></span> -->
                     </div>
                 </header>
                 <!--<div class="asst asst-single-header">这是文章内容上的PC端广告位，你可以设置文字、图片和任何广告联盟代码</div>-->
                 <article class="article-content">
                     {dede:field.body/}
                 </article>
-                <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}<a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
+                <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}><a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
                 <div class="article-tags">
                     <!--[field:id function=GetTags_list(@me)/]-->
                     {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">[field:tag /]</a>{/dede:tag}
@@ -84,7 +97,7 @@
                         <li>
                             <a href="[field:arcurl/]">
 						<span class="thumbnail">
-						<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
+						<img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
 					    </span>[field:title/]
                             </a>
                         </li>
@@ -103,7 +116,7 @@
                     {dede:arclist titlelen="120" row='4' orderby ='pubdate' orderway="desc"}
                     <li><a href="[field:arcurl/]">
 				<span class="thumbnail">
-				<img src="[field:picname/]" data-src="[field:picname/]" class="thumb">
+				<img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
 			</span>[field:title/]</a></li>
                     {/dede:arclist}
                     {dede:FIELD.typeid function='getCaseArticleCaseXZH(@me)'/}
@@ -115,4 +128,21 @@
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 
 </body>
+<div style="padding-left: 17px; padding-right: 17px;">
+    <script>cambrian.render('head')</script>
+</div>
 </html>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
