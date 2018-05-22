@@ -55,6 +55,9 @@
                 <article class="article-content">
                     {dede:field.body/}
                 </article>
+                <div style="padding-left: 17px; padding-right: 17px;">
+    <script>cambrian.render('tail')</script>
+      </div>
                 <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}><a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
                 <div class="article-tags">
                     <!--[field:id function=GetTags_list(@me)/]-->
@@ -128,9 +131,9 @@
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 
 </body>
-<div style="padding-left: 17px; padding-right: 17px;">
+<!-- <div style="padding-left: 17px; padding-right: 17px;">
     <script>cambrian.render('head')</script>
-</div>
+</div> -->
 </html>
 <script>
 (function(){
