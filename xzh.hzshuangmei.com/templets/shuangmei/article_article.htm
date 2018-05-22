@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +11,36 @@
     <meta http-equiv="cache-control" content="no-siteapp">
     <link rel="canonical" href="https://xzh.hzshuangmei.com{dede:field name='arcurl'/}">
     <!-- favicon.ico -->
-<link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
     <title>{dede:field.title/}_红妆双美整形与美容宝典</title>
     <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
     <link href='{dede:global.cfg_csspath/}/xzh/artilec.css' rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 768px)" />
-    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" ></script>
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
     <meta name="keywords" content="{dede:field.keywords/}">
     <meta name="description" content="{dede:field.description  function='html2text(@me)'/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
     <!--<link rel='stylesheet' href='{dede:global.cfg_csspath/}/xzh/nativeShare.css' type='text/css' media='all' />-->
     <!--<script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/nativeShare.js'></script>-->
     <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
-     <script type="application/ld+json">
-        {
-            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-            "@id": "https://xzh.hzshuangmei.com{dede:field.arcurl/}",
-            "appid": "1598778411605158",
-            "title": "{dede:field.title/}",
-            "images": [
-                "https://xzh.hzshuangmei.com{dede:field.litpic/}"
-                ],
-            "pubDate": "{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}"
-        }
+    <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://xzh.hzshuangmei.com{dede:field.arcurl/}",
+        "appid": "1598778411605158",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://xzh.hzshuangmei.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
     </script>
 </head>
+
 <body class="post-template-default single single-post postid-738 single-format-standard comment-open list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
     <section class="container">
@@ -51,10 +57,17 @@
                         <!-- <span class="item item-5"></span> -->
                     </div>
                 </header>
-                <!--<div class="asst asst-single-header">这是文章内容上的PC端广告位，你可以设置文字、图片和任何广告联盟代码</div>-->
+                <div class="asst asst-single-header">
+                    <script>
+                    cambrian.render('body')
+                    </script>
+                </div>
                 <article class="article-content">
                     {dede:field.body/}
                 </article>
+                <script>
+                cambrian.render('tail')
+                </script>
                 <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}><a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
                 <div class="article-tags">
                     <!--[field:id function=GetTags_list(@me)/]-->
@@ -75,12 +88,12 @@
                     </div>
                     <!--<script>-->
                     <!--var config = {-->
-                        <!--url: 'https://xzh.hzshuangmei.com', // 分享的网页链接-->
-                        <!--title: '护肤', // 标题-->
-                        <!--desc: '护肤美容', // 描述-->
-                        <!--img: '', // 图片-->
-                        <!--img_title: '', // 图片标题-->
-                        <!--from: 'https://xzh.hzshuangmei.com' // 来源-->
+                    <!--url: 'https://xzh.hzshuangmei.com', // 分享的网页链接-->
+                    <!--title: '护肤', // 标题-->
+                    <!--desc: '护肤美容', // 描述-->
+                    <!--img: '', // 图片-->
+                    <!--img_title: '', // 图片标题-->
+                    <!--from: 'https://xzh.hzshuangmei.com' // 来源-->
                     <!--};-->
                     <!--var share_obj = new nativeShare('nativeShare', config);-->
                     <!--</script>-->
@@ -92,13 +105,12 @@
                 <div class="postitems">
                     <h3>相关推荐</h3>
                     <ul>
-                        {dede:FIELD.typeid function='getCaseArticleRelateProjectXZH(@me)'/}
-                        {dede:arclist titlelen="120" row='4' flag='c' orderby ='pubdate' orderway="desc" }
+                        {dede:FIELD.typeid function='getCaseArticleRelateProjectXZH(@me)'/} {dede:arclist titlelen="120" row='4' flag='c' orderby ='pubdate' orderway="desc" }
                         <li>
                             <a href="[field:arcurl/]">
-						<span class="thumbnail">
-						<img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
-					    </span>[field:title/]
+                        <span class="thumbnail">
+                        <img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
+                        </span>[field:title/]
                             </a>
                         </li>
                         {/dede:arclist}
@@ -112,37 +124,31 @@
             <div class="widget widget-postlist">
                 <h3>最新文章</h3>
                 <ul>
-                    {dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/}
-                    {dede:arclist titlelen="120" row='4' orderby ='pubdate' orderway="desc"}
+                    {dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/} {dede:arclist titlelen="120" row='4' orderby ='pubdate' orderway="desc"}
                     <li><a href="[field:arcurl/]">
-				<span class="thumbnail">
-				<img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
-			</span>[field:title/]</a></li>
-                    {/dede:arclist}
-                    {dede:FIELD.typeid function='getCaseArticleCaseXZH(@me)'/}
+                <span class="thumbnail">
+                <img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
+            </span>[field:title/]</a></li>
+                    {/dede:arclist} {dede:FIELD.typeid function='getCaseArticleCaseXZH(@me)'/}
                 </ul>
             </div>
         </div>
     </section>
     {dede:include filename="_footer.htm"/}
     <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
-
 </body>
-<div style="padding-left: 17px; padding-right: 17px;">
-    <script>cambrian.render('head')</script>
-</div>
+
 </html>
 <script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
+(function() {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
