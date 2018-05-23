@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"><!-- {dede:tagname runphp='yes'}@me="Make ".GetDateTimeMk(time());{/dede:tagname} -->
 <url>
 <loc>https://xzh.hzshuangmei.com/breast/</loc>
+<mobile:mobile type="pc,mobile"/>
 </url>
  {dede:arclist row='50000' typeid=80 channelid=21  orderby=pubdate}
 <url>
