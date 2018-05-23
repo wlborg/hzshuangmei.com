@@ -231,9 +231,9 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-$imgafter = replaceurl($row["imgafter"]);
+
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li class="diary"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$imgafter.'" alt="'.$title.'"></span><span class="diarySpan">'.$title.'</span></a></li>';
+$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
