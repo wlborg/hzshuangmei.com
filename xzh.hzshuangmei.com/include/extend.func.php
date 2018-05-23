@@ -233,7 +233,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
+$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
