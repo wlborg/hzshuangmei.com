@@ -232,7 +232,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
-$litpic =replaceurl($row["litpic"]);
+$litpic =$row["litpic"];
 $relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
 }
 if($ns>0){
