@@ -222,7 +222,7 @@ if($push_xzh==1) {
 
 $urls[]=$cfg_xzh.'/'.$artUrl;
   //提交数据链接
-$api = 'http://data.zz.baidu.com/urls?site='.cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
+$api = 'http://data.zz.baidu.com/urls?site='.$cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
