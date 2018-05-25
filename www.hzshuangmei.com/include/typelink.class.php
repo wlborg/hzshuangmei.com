@@ -49,11 +49,8 @@ class TypeLink
         $this->OptionArrayList = '';
 
         //载入类目信息
-        //排除熊掌号栏目显示
-        // $query = "SELECT tp.*,ch.typename as ctypename,ch.addtable,ch.issystem FROM `#@__arctype` tp left join `#@__channeltype` ch
-        // on ch.id=tp.channeltype  WHERE tp.id='$typeid' ";
-        $query = "SELECT tp.*,ch.typename as ctypename,ch.addtable,ch.issystem FROM `#@__arctype` tp left join `#@__channeltype` ch
-        on ch.id=tp.channeltype  WHERE tp.id='$typeid' AND tp.id not in 76";
+         $query = "SELECT tp.*,ch.typename as ctypename,ch.addtable,ch.issystem FROM `#@__arctype` tp left join `#@__channeltype` ch
+         on ch.id=tp.channeltype  WHERE tp.id='$typeid' ";
         if($typeid > 0)
         {
             $this->TypeInfos = $this->dsql->GetOne($query);
@@ -313,8 +310,8 @@ class TypeLink
     {
         global $cfg_admin_channel;
         if(empty($cfg_admin_channel)) $cfg_admin_channel = 'all';
-
-        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC");
+       //排除熊掌号栏目 AND id not in 76
+        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC AND id not in 76");
         $this->dsql->Execute($id);
         while($row=$this->dsql->GetObject($id))
         {
