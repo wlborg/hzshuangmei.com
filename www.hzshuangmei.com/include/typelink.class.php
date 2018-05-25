@@ -235,7 +235,7 @@ class TypeLink
 
         if($hid>0)
         {
-            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid'");
+            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid' AND id !=76");
             $channeltype = $row['channeltype'];
             if($row['ispart']==1) {
                 $this->OptionArrayList .= "<option value='".$row['id']."' style='background-color:#DFDFDB;color:#888888' selected>".$row['typename']."</option>\r\n";
@@ -311,7 +311,7 @@ class TypeLink
         global $cfg_admin_channel;
         if(empty($cfg_admin_channel)) $cfg_admin_channel = 'all';
        //排除熊掌号栏目 AND id not in 76
-        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC AND id !=76");
+        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC");
         $this->dsql->Execute($id);
         while($row=$this->dsql->GetObject($id))
         {
