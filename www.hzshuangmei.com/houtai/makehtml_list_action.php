@@ -31,9 +31,7 @@ if($gotype=='' || $gotype=='mkallct')
 {
     if($upnext==1 || $typeid==0)
     {
-        //if($typeid>0)
-        //排除熊掌号栏目id=76
-        if(($typeid>0)&&($typeid!=76))
+        if($typeid>0)
         {
             $tidss = GetSonIds($typeid,0);
             $idArray = explode(',',$tidss);
