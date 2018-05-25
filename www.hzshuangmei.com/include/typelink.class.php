@@ -233,9 +233,9 @@ class TypeLink
         if(!$this->dsql) $this->dsql = $GLOBALS['dsql'];
         $this->OptionArrayList = '';
 
-        if($hid>0)
+        if($hid>0&&$hid!=76)
         {
-            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid' AND id !=76");
+            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid' ");
             $channeltype = $row['channeltype'];
             if($row['ispart']==1) {
                 $this->OptionArrayList .= "<option value='".$row['id']."' style='background-color:#DFDFDB;color:#888888' selected>".$row['typename']."</option>\r\n";
@@ -243,6 +243,7 @@ class TypeLink
             else {
                 $this->OptionArrayList .= "<option value='".$row['id']."' selected>".$row['typename']."</option>\r\n";
             }
+
         }
 
         if($channeltype==0) $ctsql = '';
