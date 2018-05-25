@@ -41,9 +41,8 @@ else
 
 //获取条件
 $idsql = '';
-//排除熊掌号栏目的文档更新
-$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 AND typeid not in 76");
-//$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 ");
+
+$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 ");
 if($endid > $startid && $startid > 0) $gwhere .= " AND id <= $endid ";
 
 if($typeid!=0) {
