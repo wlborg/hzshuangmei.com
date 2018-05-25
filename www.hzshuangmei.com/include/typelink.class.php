@@ -311,7 +311,7 @@ class TypeLink
         global $cfg_admin_channel;
         if(empty($cfg_admin_channel)) $cfg_admin_channel = 'all';
        //排除熊掌号栏目 AND id not in 76
-        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC AND id not in 76");
+        $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC AND id !=76");
         $this->dsql->Execute($id);
         while($row=$this->dsql->GetObject($id))
         {
