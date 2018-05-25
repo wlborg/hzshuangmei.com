@@ -22,7 +22,7 @@ $typeid   = (empty($typeid)   ? 0  : $typeid);
 $seltime  = (empty($seltime)  ? 0  : $seltime);
 $stime    = (empty($stime)    ? '' : $stime );
 $etime    = (empty($etime)    ? '' : $etime);
-$sstime   = (empty($sstime)   ? 0  : $sstime); 
+$sstime   = (empty($sstime)   ? 0  : $sstime);
 $mkvalue  = (empty($mkvalue)  ? 0  : $mkvalue);
 
 $isremote  = (empty($isremote)? 0  : $isremote);
@@ -41,7 +41,9 @@ else
 
 //获取条件
 $idsql = '';
-$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 ");
+//排除熊掌号栏目的文档更新
+$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 AND typeid not in 76");
+//$gwhere = ($startid==-1 ? " WHERE arcrank=0 " : " WHERE id>=$startid AND arcrank=0 ");
 if($endid > $startid && $startid > 0) $gwhere .= " AND id <= $endid ";
 
 if($typeid!=0) {
@@ -72,7 +74,7 @@ if($totalnum==0)
 }
 
 //获取记录，并生成HTML
-if($totalnum > $startdd+$pagesize) 
+if($totalnum > $startdd+$pagesize)
 {
     $limitSql = " LIMIT $startdd,$pagesize";
 }
@@ -84,18 +86,18 @@ $tjnum = $startdd;
 if(empty($sstime)) $sstime = time();
 
 //如果生成数量大于500，并且没选栏目，按栏目排序生成
-if($totalnum > 500 && empty($typeid)) 
+if($totalnum > 500 && empty($typeid))
 {
     $dsql->Execute('out',"SELECT id FROM `#@__arctiny` $idsql ORDER BY typeid ASC $limitSql");
 } else {
     $dsql->Execute('out',"SELECT id FROM `#@__arctiny` $idsql $limitSql");
 }
 if($cfg_remote_site=='Y' && $isremote=="1")
-{    
+{
     if($serviterm!="")
     {
         list($servurl, $servuser, $servpwd) = explode(',', $serviterm);
-        $config = array( 'hostname' => $servurl, 'username' => $servuser, 
+        $config = array( 'hostname' => $servurl, 'username' => $servuser,
                          'password' => $servpwd,'debug' => 'TRUE');
     } else {
         $config=array();
@@ -149,7 +151,7 @@ else
     }
     else
     {
-        if($uptype=='') 
+        if($uptype=='')
         {
             ShowMsg("完成所有创建任务！，生成文件：$totalnum 总用时：{$ttime} 分钟。","javascript:;");
         } else {
