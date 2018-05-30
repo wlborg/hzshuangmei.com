@@ -124,12 +124,9 @@
             <div class="widget widget-postlist">
                 <h3>最新文章</h3>
                 <ul>
-                    {dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/} {dede:arclist titlelen="120" row='4' orderby ='pubdate' orderway="desc"}
-                    <li><a href="[field:arcurl/]">
-                <span class="thumbnail">
-                <img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
-            </span>[field:title/]</a></li>
-                    {/dede:arclist} {dede:FIELD.typeid function='getCaseArticleCaseXZH(@me)'/}
+                    {dede:FIELD.typeid function='getCaseArticleDoctorXZH(@me)'/}
+                    {dede:FIELD.typeid function='getAllDateAriticXZH()'/}
+					{dede:FIELD.typeid function='getCaseArticleCaseXZH(@me)'/}
                 </ul>
             </div>
         </div>
@@ -149,6 +146,6 @@
             bp.src = 'http://push.zhanzhang.baidu.com/push.js';
         }
         var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
+        s.parentNode.insertBefore(bp, s);
 })();
 </script>
