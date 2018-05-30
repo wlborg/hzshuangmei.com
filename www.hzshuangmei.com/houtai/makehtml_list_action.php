@@ -31,7 +31,7 @@ if($gotype=='' || $gotype=='mkallct')
 {
     if($upnext==1 || $typeid==0)
     {
-        if($typeid>0) 
+        if($typeid>0)
         {
             $tidss = GetSonIds($typeid,0);
             $idArray = explode(',',$tidss);
@@ -96,7 +96,7 @@ if(!empty($tid))
     else
     {
         require_once(DEDEINC."/arc.sglistview.class.php");
-        $lv = new SgListView($tid);        
+        $lv = new SgListView($tid);
     }
 	// 这里统一统计
     $lv->CountRecord();
@@ -107,7 +107,7 @@ if(!empty($tid))
         if($serviterm!="")
         {
             list($servurl, $servuser, $servpwd) = explode(',',$serviterm);
-            $config = array( 'hostname' => $servurl, 'username' => $servuser, 
+            $config = array( 'hostname' => $servurl, 'username' => $servuser,
                              'password' => $servpwd,'debug' => 'TRUE');
         } else {
             $config=array();
