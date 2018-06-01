@@ -16,31 +16,7 @@
         <link rel="preload" href="{dede:global.cfg_csspath/}/pc/article_common.css" as="style" crossorigin />
         <link rel="preload" href="{dede:global.cfg_jspath/}/pc/article_common.js" as="script" crossorigin />
         <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css"/>
-        <script type="application/ld+json">
-    {
-        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-        "@id": "https://www.hzshuangmei.com{dede:field.arcurl/}",
-        "title": "{dede:field.title/}",
-        "images": [
-            "https://www.hzshuangmei.com{dede:field.litpic/}"
-        ],
-        "description":"{dede:field.description  function='html2text(@me)'/}",
-        "pubDate": "{dede:field.pubdate function="
-        MyDate('Y-m-d', @me)
-        "/}T{dede:field.pubdate function="
-        MyDate('H:i:s', @me)
-        "/}"
-        ,
-        "upDate":"{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}",
-        "data":{
-             "WebPage":{
-                "headline":"{dede:field.title/}",
-                "pcUrl":"https//:www.hzshuangmei.com",
-                "wapUrl":"https//:m.hzshuangmei.com"
-             }
-        }
-    }
-    </script>
+
     </head>
     <body>
         {dede:include filename="_header.htm"/}
@@ -74,4 +50,5 @@
     </body>
     {dede:include filename="_script.htm"/}
     <script src="{dede:global.cfg_jspath/}/pc/article_common.js"></script>
+    {dede:include filename="_article_Factor.htm"/}
 </html>
