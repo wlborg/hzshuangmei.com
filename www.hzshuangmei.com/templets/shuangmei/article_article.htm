@@ -3,7 +3,7 @@
     <head>
         <!--   {dede:field.filename/}   -->
         {dede:include filename="_meta.htm"/}
-        <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+        <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}_{dede:tagname  runphp='yes'}@me = date("Y-m-d H:i:s", time());{/dede:tagname}</title>
         <meta name="keywords" content="{dede:field name='keywords'/}" />
         <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
         <!-- published time -->
@@ -16,6 +16,31 @@
         <link rel="preload" href="{dede:global.cfg_csspath/}/pc/article_common.css" as="style" crossorigin />
         <link rel="preload" href="{dede:global.cfg_jspath/}/pc/article_common.js" as="script" crossorigin />
         <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css"/>
+        <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://www.hzshuangmei.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://www.hzshuangmei.com{dede:field.litpic/}"
+        ],
+        "description":"{dede:field.description  function='html2text(@me)'/}",
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+        ,
+        "upDate":"{dede:tagname  runphp='yes'}@me = date("Y-m-d", time());{/dede:tagname}T{dede:tagname  runphp='yes'}@me = date("H:i:s", time());{/dede:tagname}",
+        "data":{
+             "WebPage":{
+                "headline":"{dede:field.title/}",
+                "pcUrl":"https//:www.hzshuangmei.com",
+                "wapUrl":"https//:m.hzshuangmei.com",
+             }
+        }
+    }
+    </script>
     </head>
     <body>
         {dede:include filename="_header.htm"/}
