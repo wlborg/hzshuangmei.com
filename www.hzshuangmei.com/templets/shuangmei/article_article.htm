@@ -3,7 +3,7 @@
     <head>
         <!--   {dede:field.filename/}   -->
         {dede:include filename="_meta.htm"/}
-        <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}_{dede:tagname  runphp='yes'}@me = date("Y-m-d H:i:s", time());{/dede:tagname}</title>
+        <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
         <meta name="keywords" content="{dede:field name='keywords'/}" />
         <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
         <!-- published time -->
@@ -31,7 +31,7 @@
         MyDate('H:i:s', @me)
         "/}"
         ,
-        "upDate":"{dede:tagname  runphp='yes'}@me = date("Y-m-d", time());{/dede:tagname}T{dede:tagname  runphp='yes'}@me = date("H:i:s", time());{/dede:tagname}",
+        "upDate":"{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}T{dede:field.pubdate function="MyDate('H:i:s',@me)"/}",
         "data":{
              "WebPage":{
                 "headline":"{dede:field.title/}",
