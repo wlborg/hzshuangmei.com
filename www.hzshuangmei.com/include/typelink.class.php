@@ -49,8 +49,8 @@ class TypeLink
         $this->OptionArrayList = '';
 
         //载入类目信息
-        $query = "SELECT tp.*,ch.typename as ctypename,ch.addtable,ch.issystem FROM `#@__arctype` tp left join `#@__channeltype` ch
-        on ch.id=tp.channeltype  WHERE tp.id='$typeid' ";
+         $query = "SELECT tp.*,ch.typename as ctypename,ch.addtable,ch.issystem FROM `#@__arctype` tp left join `#@__channeltype` ch
+         on ch.id=tp.channeltype  WHERE tp.id='$typeid' ";
         if($typeid > 0)
         {
             $this->TypeInfos = $this->dsql->GetOne($query);
@@ -116,7 +116,7 @@ class TypeLink
         } else{
             $indexpage = "<a href='".$this->indexUrl."'>".$this->indexName."</a>";
         }
-        
+
         if($this->valuePosition!="" && $islink)
         {
             return $this->valuePosition;
@@ -213,7 +213,7 @@ class TypeLink
             return GetTypeUrl($typeinfos['id'],MfTypedir($typeinfos['typedir']),$typeinfos['isdefault'],$typeinfos['defaultname'],
         $typeinfos['ispart'],$typeinfos['namerule2'],$typeinfos['moresite'],$typeinfos['siteurl'],$typeinfos['sitepath']);
         }
-            
+
     }
 
     //获得类别列表
@@ -229,13 +229,13 @@ class TypeLink
     {
         global $cfg_admin_channel;
         if(empty($cfg_admin_channel)) $cfg_admin_channel = 'all';
-        
+
         if(!$this->dsql) $this->dsql = $GLOBALS['dsql'];
         $this->OptionArrayList = '';
-        
-        if($hid>0)
+
+        if($hid>0&&$hid!=76)
         {
-            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid'");
+            $row = $this->dsql->GetOne("SELECT id,typename,ispart,channeltype FROM #@__arctype WHERE id='$hid' ");
             $channeltype = $row['channeltype'];
             if($row['ispart']==1) {
                 $this->OptionArrayList .= "<option value='".$row['id']."' style='background-color:#DFDFDB;color:#888888' selected>".$row['typename']."</option>\r\n";
@@ -243,12 +243,13 @@ class TypeLink
             else {
                 $this->OptionArrayList .= "<option value='".$row['id']."' selected>".$row['typename']."</option>\r\n";
             }
+
         }
-        
+
         if($channeltype==0) $ctsql = '';
         else $ctsql=" AND channeltype='$channeltype' ";
-        
-        
+
+
         if(is_array($oper) && $cfg_admin_channel != 'all')
         {
             if( count($oper) == 0 )
@@ -310,7 +311,7 @@ class TypeLink
     {
         global $cfg_admin_channel;
         if(empty($cfg_admin_channel)) $cfg_admin_channel = 'all';
-        
+       //排除熊掌号栏目 AND id not in 76
         $this->dsql->SetQuery("SELECT id,typename,ispart FROM #@__arctype WHERE reid='".$id."' AND ispart<>2 ORDER BY sortrank ASC");
         $this->dsql->Execute($id);
         while($row=$this->dsql->GetObject($id))
