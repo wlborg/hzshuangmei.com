@@ -222,7 +222,7 @@ function getAllDateAriticXZH()
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.arcrank=0 order by id desc limit 4");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid='77,78,79,80,81,82,83,84,85,86' and a.arcrank=0 order by id desc limit 4");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
