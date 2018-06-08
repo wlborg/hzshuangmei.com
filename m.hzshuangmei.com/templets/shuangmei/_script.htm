@@ -20,3 +20,10 @@
         	FastClick.attach(document.body);
         })
     </script>
+
+<!--  service worker -->
+<script>
+if ('serviceWorker' in navigator) {
+ navigator.serviceWorker.register('/serviceworker.js');
+}
+</script>
