@@ -18,7 +18,7 @@ const ignoreFetch = [
   /https?:\/\/jspassport.ssl.qhimg.com\//,
   /https?:\/\/lxbjs.baidu.com\//,
   /https?:\/\/zz.bdstatic.com\//,
-  /https?:\/\/*.kuaishang.cn\//,
+  /https?:\/\/ryak66.kuaishang.cn\//,
   /https?:\/\/s.360.cn\//,
   /https?:\/\/s.ssl.qhres.com\//,
   /https?:\/\/hm.baidu.com\//,
