@@ -311,7 +311,7 @@ body {
 }
 .m5zj > div h4 {
     width: 4.26666667rem;
-    margin: 4.56533333rem 0 0 7.14666667rem;
+    margin: 4.56533333rem 0 0 7.04666667rem;
     font-size: .64rem;
     line-height: .64rem;
     color: #0089b4;
@@ -319,8 +319,8 @@ body {
 .m5zj > div span {
     display: block;
     width: .68266667rem;
-    height: .04266667rem;
-    margin: .192rem 0 .256rem 7.552rem;
+    height: 2px;
+    margin: .20rem 0 .256rem 7.552rem;
     background-color: #0089b4;
 }
 .m5zj > div li {
@@ -335,7 +335,7 @@ body {
     margin-left: 8.42666667rem;
 }
 .m5zj > .m5zhz h4 {
-    margin-left: 8rem;
+    margin-left: 7.9rem;
 }
 .m5zj > .m5zhz span {
     margin-left: 8.42666667rem;
