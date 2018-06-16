@@ -598,7 +598,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     width: 27.73333rem;
 }
 .part_Four {
-    height: 32.96rem;
+    /* height: 32.96rem; */
     background: url(//img.hzshuangmei.com/m/rlbls/part_Four_banner.jpg) no-repeat center;
 }
 .part_Four>section>img:nth-of-type(1) {
