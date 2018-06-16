@@ -57,7 +57,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     background: #edb7ce;
 }
 .part_Three{
-    height: 1387px;
+     height: 1387px;
 }
 .part_Three_Top{
     left: -360px;
@@ -84,7 +84,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     /* border: 1px solid red; */
 }
 .part_Four_Top{
-    left: -360px;
+    left: -361px;
     top:0px;
 }
 .part_Four_Mid{
