@@ -11,10 +11,6 @@ const offlineResources = [
 
 const ignoreFetch = [
   /https?:\/\/cdn.bootcss.com\//,
-  /https?:\/\/css.hzshuangmei.com\//,
-  /https?:\/\/js.hzshuangmei.com\//,
-  /https?:\/\/img.hzshuangmei.com\//,
-  /https?:\/\/uploads.hzshuangmei.com\//,
   /https?:\/\/jspassport.ssl.qhimg.com\//,
   /https?:\/\/lxbjs.baidu.com\//,
   /https?:\/\/zz.bdstatic.com\//,
