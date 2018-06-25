@@ -86,22 +86,23 @@ var index_expert = new Swiper('.swiper-container4', {
     //spaceBetween: 40
 });
 
-var tabs4=document.getElementById("tab4").getElementsByTagName("li");
-var divs4=document.getElementById("tabCon4").getElementsByTagName("ul");
-for(var i=0;i<tabs4.length;i++){
-    tabs4[i].onmouseover=function(){change4(this);}
-}
-function change4(obj){
-    for(var i=0;i<tabs4.length;i++){
-        if(tabs4[i]==obj){
-            tabs4[i].className="fli4";
-            divs4[i].className="fdiv4 clearFix";
-        }else{
-            tabs4[i].className="";
-            divs4[i].className="clearFix";
-        }
-    }
-}
+// 日记切换
+// var tabs4=document.getElementById("tab4").getElementsByTagName("li");
+// var divs4=document.getElementById("tabCon4").getElementsByTagName("ul");
+// for(var i=0;i<tabs4.length;i++){
+//     tabs4[i].onmouseover=function(){change4(this);}
+// }
+// function change4(obj){
+//     for(var i=0;i<tabs4.length;i++){
+//         if(tabs4[i]==obj){
+//             tabs4[i].className="fli4";
+//             divs4[i].className="fdiv4 clearFix";
+//         }else{
+//             tabs4[i].className="";
+//             divs4[i].className="clearFix";
+//         }
+//     }
+// }
 
 var swiper5 = new Swiper('.swiper-container5_1', {
     loop:true,
