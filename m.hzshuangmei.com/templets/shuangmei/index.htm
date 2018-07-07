@@ -50,7 +50,7 @@
             <!-- 医生 -->
             {dede:include filename="_sj_index_doctor.htm"/}
             <!-- 医生 -->
-            <div id="diary" style="display: none">
+            <div id="diary">
                 <div class="heading">
                     <h2>美丽日记</h2>
                     <a href="/cases/" class="more"> more/更多</a>
@@ -61,24 +61,24 @@
                     <div class="item">
                         <div class="title">
                             <div class="thum">
-                                <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:imgafter function='replaceurl(@me)/]" class=""></a>
+                                <a href="javascript:void(0)" title="[field:title/]" class="j-consult"><img src="[field:imgafter function='replaceurl(@me)/]" class=""></a>
                             </div>
-                            <h3 class="name"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+                            <h3 class="name"><a href="javascript:void(0)" title="[field:title/]" class="j-consult">[field:title/]</a></h3>
                         </div>
                         <div class="info">
-                            <p class="des">[field:note function='cn_substr(@me,120)'/]...</p>
+                            <!-- <p class="des">[field:note function='cn_substr(@me,120)'/]...</p> -->
                             <div class="pic f-cb">
                                 <div class="before ">
-                                    <a href="[field:arcurl/]"><img src="[field:imgbefore function='replaceurl(@me)'/]" alt="术前"></a>
-                                    <div class="flag">
+                                    <a href="javascript:void(0)" class="j-consult"><img src="[field:imgbefore function='replaceurl(@me)'/]" alt="前"></a>
+                                   <!--  <div class="flag">
                                         术前
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="after">
-                                    <a href="[field:arcurl/]"><img src="[field:imgafter function='replaceurl(@me)/]" alt="术后"></a>
-                                    <div class="flag">
+                                    <a href="javascript:void(0)" class="j-consult"><img src="[field:imgafter function='replaceurl(@me)/]" alt="后"></a>
+                                   <!--  <div class="flag">
                                         术后
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="label f-cb">
