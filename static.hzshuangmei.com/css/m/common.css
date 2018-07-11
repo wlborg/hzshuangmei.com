@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -131,6 +131,7 @@ body {
 .custom-wrapper {
     /* fixed navbar */
     position: fixed;
+    top: 0rem;
     z-index: 20180110;
 
     width: 16rem;
