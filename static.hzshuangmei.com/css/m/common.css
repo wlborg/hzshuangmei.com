@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -137,10 +137,13 @@ body {
     height: 2.35rem;
     overflow: hidden;
 }
-/* .contents { padding-top: 2.35rem; } */
 .contents {
+    padding-top: 2.35rem;
+}
+/* .contents {
     padding-top: 0rem;
 }
+ */
 .custom-wrapper.open {
     height: auto;
 }
