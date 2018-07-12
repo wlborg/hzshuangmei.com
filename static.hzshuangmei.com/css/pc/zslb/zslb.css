@@ -87,8 +87,11 @@ body {
 /*.m1zx::after{*/
 /*}*/
 .zszx span {
-    /* margin-left: 27px;*/
-    margin-left: 109px;
+    margin-left: 27px;
+    /* margin-left: 109px; */
+}
+.m5zx {
+    margin-left: 109px!important;
 }
 .m2 {
     height: 975px;
