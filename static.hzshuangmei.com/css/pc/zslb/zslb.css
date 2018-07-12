@@ -431,11 +431,12 @@ body {
     text-align: center;
 }
 .m5tit img {
-    width: 644px;
+    /* width: 644px; */
+    width: 309px;
 }
 .m5_tab1 {
     width: 258px;
-    margin-top: 182px;
+    margin-top: 185px;
 }
 .m5_tab1 li {
     width: 220px;
