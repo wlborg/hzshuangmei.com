@@ -311,14 +311,16 @@ body {
     width: 268px;
 }
 .m3lba2 {
-    width: 268px;
+    /* width: 268px; */
+    width: 217px;
 }
 .m3lba3 {
     width: 285px;
     margin-left: 551px;
 }
 .m3con .m3lba2  span {
-    margin-left: 18px;
+    /* margin-left: 18px; */
+    margin-left: 27px;
 }
 .m3con .m3lba3 span {
     margin-left: 26px;
