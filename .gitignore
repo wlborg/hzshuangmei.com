@@ -1,11 +1,10 @@
-!www.hzshuangmei.com/contactUs
-!www.hzshuangmei.com/contactUs.html
 .idea/
 /components/
 /default*/
 /node_modules/
 *.7z
 *.html
+!www.hzshuangmei.com/contactUs.html
 !admin/*.xml
 *.tar.gz
 *.tar
