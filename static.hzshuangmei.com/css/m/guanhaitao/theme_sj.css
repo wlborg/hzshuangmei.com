@@ -1,2 +1,736 @@
 @charset "utf-8";
-.sr-only,img{border:0}.m2 .tabs>li,.m3 .flag{top:0;left:0}.m2 .indicator li:hover,.m6 .slideW:hover{cursor:pointer}.consult,.flag h3,.m2 .indicator li,.m3 h5,.m4 p,.m5 .item h5,.m6 h3{text-align:center}a,body{color:#000}body,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,html,input,label,li,p,textarea,ul{margin:0;padding:0}form{display:inline}.consult,.f-cb:after,.img-respon,img{display:block}td{word-break:break-all}dd,dl,dt,li,ul{list-style:none}a{text-decoration:none}body{background:#fff;}.img-respon{width:100%;height:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0)}.f-fr{float:right}.f-fl{float:left}.f-cb:after{visibility:hidden;clear:both;height:0;overflow:hidden;content:'.'}.f-cb{zoom:1}.banner{background:url(https://img.hzshuangmei.com/m/guanhaitao/banner.jpg) center top no-repeat;height:12.05rem;background-size:auto 100%}.m1 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt1.jpg) center center no-repeat;height:2.6rem;width:9.1rem;background-size:auto 100%}.m1 .content{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgc1.jpg) center center no-repeat;height:11.35rem;width:16rem;background-size:auto 100%}.m2{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg2.jpg) center top no-repeat;height:17.4rem;background-size:auto 100%}.m2 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt2.jpg) center center no-repeat;height:2.575rem;width:12.625rem;background-size:auto 100%}.m3-0 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt3.jpg) center center no-repeat;height:3.2rem;width:11.25rem;background-size:auto 100%}.m3{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg3.jpg) center top no-repeat;height:28.125rem;background-size:auto 100%}.m3 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt3_2.jpg) center center no-repeat;height:1.7rem;width:12.275rem;background-size:auto 100%}.m3 .box{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgc3.jpg) center bottom no-repeat;background-size:14.875rem 13.625rem}.m4{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg4.jpg) center top no-repeat;height:25.075rem;background-size:auto 100%}.m4 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt4.jpg) center center no-repeat;height:2.225rem;width:12.85rem;background-size:auto 100%}.m4 .content{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgc4.jpg) center center no-repeat;height:13.25rem;width:15.3rem;background-size:auto 100%}.m5{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg5.jpg) center top no-repeat;height:30.95rem;background-size:auto 100%}.m5 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt5.jpg) center center no-repeat;height:1.5rem;width:11rem;background-size:auto 100%}.m6{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg6.jpg) center top no-repeat;height:23.6rem;background-size:auto 100%}.m6 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt6.jpg) center center no-repeat;height:2.575rem;width:11.65rem;background-size:auto 100%}.m7{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg7.jpg) center top no-repeat;height:24.025rem;background-size:auto 100%}.m7 .title{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt7.jpg) center center no-repeat;height:3.175rem;width:11.5rem;background-size:auto 100%}.g-doc{width:16rem;margin:0 auto}.consult,.m1 .content{margin-left:auto;margin-right:auto}.consult{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg_consult.png) center center no-repeat;background-size:5.5rem 1.425rem;width:5.5rem;height:1.425rem;padding-right:.175rem;font-size:.65rem;line-height:1.25rem;color:#fff}.consult:hover{transform:scale(.9,.9)}.m4 .consult,.m6 .consult{background:url(https://img.hzshuangmei.com/m/guanhaitao/bg_consult2.png) center center no-repeat;background-size:5.5rem 1.425rem}.m1 .maincontent{margin-left:1rem;margin-right:1rem;margin-top:.5rem;width:10.75rem}.m1 .maincontent p{width:8.35rem}.m1 .consult{margin-top:.65rem}.m1 .title{margin-bottom:.6rem}.m1 .g-doc{padding-top:2.5rem;padding-bottom:1.5rem}.m1 p{font-size:.45rem;line-height:.7rem;color:#666}.m2 .g-doc{padding-top:1.25rem}.m2 .title{margin-left:2.5rem}.m2 .content{margin-top:2rem;margin-left:6.75rem}.m2 .indicator{padding:0;width:8.575rem;height:1.05rem;font-size:0;background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_1.jpg) center center no-repeat;background-size:8.575rem 1.05rem}.m2 .indicator li{display:inline-block;width:33.3%;height:1.05rem}.m2 .indicator li.active{color:#fff}.m2 .indicator1{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_1.jpg) center center no-repeat;background-size:8.575rem 1.05rem}.m2 .indicator2{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_2.jpg) center center no-repeat;background-size:8.575rem 1.05rem}.m2 .indicator3{background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_3.jpg) center center no-repeat;background-size:8.575rem 1.05rem}.m2 .tabs{position:relative;margin-top:1rem;height:6rem}.m2 .tabs>li{position:absolute;visibility:hidden;height:6rem}.m2 .tabs>li img{margin-top:.4rem;width:8.675rem;height:3.525rem}.m2 .tabs>li.active{visibility:visible}.m2 .consult{margin-left:7.75rem}.m2 .indicator li{font-size:.575rem;line-height:1.05rem;color:#37507c}.m2 .tabs>li{font-size:.5rem;line-height:.75rem;color:#1c4faa}.m2 .tabs>li span{font-size:.65rem;color:#0242b6;font-weight:700}.m3-0 .g-doc{padding-top:1.75rem;padding-bottom:1.25rem}.m3-0 .title{margin:0 auto}.flag{position:absolute;background:url(https://img.hzshuangmei.com/m/guanhaitao/bg_flag.png) center center no-repeat;background-size:4.55rem 2.55rem;height:2.55rem;width:4.55rem}.flag h3{font-size:.65rem;line-height:1.05rem;color:#fff}.flag span{font-size:.55rem;color:#285bb2;font-weight:400}.m3 .g-doc{position:relative;padding-top:3.75rem}.m3 .title{margin-left:auto;margin-right:auto}.m3 .des{margin-top:.75rem;padding:0 .4rem}.m3 .box{margin:1.25rem auto 0;width:14.875rem;height:13.625rem}.m3 .row{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between}.m3 .row1{margin-bottom:.85rem}.m3 .item{display:inline-block;vertical-align:top;position:relative;font-size:0;width:6.75rem;height:6.4rem}.m3 .item p{margin-top:.2rem;padding:0 .5rem}.m4 .g-doc,.m5 .g-doc{padding-top:4.75rem}.m3 .item:last-child{margin-left:1rem}.m3 .des{font-size:.5rem;line-height:.8rem;color:grey}.m3 h5{position:absolute;top:4.75rem;left:.55rem;width:5.65rem;height:.9rem;font-size:.6rem;line-height:.9rem;color:#fff;font-weight:400}.m4 .g-doc,.m5 .g-doc,.m6 .content,.m6 .slideC{position:relative}.m4 .item,.m4 .item p{width:1.3rem;height:6.05rem}.m3 p{font-size:.4rem;line-height:.55rem;color:#325a9e}.m3 .custom h5{color:#3a61a5}.m3 .consult{margin-top:1.25rem}.m4 .flag{top:.4rem;left:0}.m4 .title{margin:0 auto}.m4 .content{margin-top:1.4rem;margin-left:.5rem}.m4 .row1{margin-bottom:.55rem}.m4 .row{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:space-between}.m4 .item{padding-left:6.05rem}.m4 .item p{-webkit-writing-mode:vertical-rl;writing-mode:vertical-rl}.m4 .item:first-child{margin-left:0}.m4 .item:last-child{margin-left:.55rem}.m4 .consult{margin-top:1rem}.m4 p{font-size:.5rem;line-height:1.2rem;color:#fff}.m5 .item p,.m6 p,.m7 p{line-height:.6rem}.m5 .flag{top:.5rem;left:0}.m6 .fh,.m6 li{top:0;left:0}.m5 .line{margin-left:.5rem;height:.05rem;width:.75rem;background-color:#fff}.m5 .title{margin:0 auto}.m5 .content{margin:.95rem auto 0}.m5 .item{margin-bottom:.75rem;margin-left:.75rem;width:10.25rem;height:4.25rem}.m6 .slideC,.m6 .slideW{width:9.4rem;height:13.25rem}.m5 .item h5{padding-top:.65rem;font-size:.7rem;color:#285bb2}.m5 .item p{margin-top:.45rem;padding-left:.25rem;padding-right:.25rem;font-size:.45rem;color:#416cb7}.m5 .even h5,.m5 .even p,.m6 h3,.m6 p{color:#fff}.m5 .odd{padding-left:4.25rem}.m5 .even{padding-right:4.25rem}.m5 .custom p{padding-left:.75rem}.m5 .consult{margin-top:1.35rem}.m6 .g-doc{padding-top:1rem}.m6 .title{margin:0 auto}.m6 .content{margin-top:1.75rem}.m6 .slideW{margin:0 auto}.m6 .box,.m6 .box img,.m6 .btn,.m6 .fh,.m6 li{position:absolute}.m6 li{opacity:0;width:8.95rem;height:11.8rem;padding-top:1px;transition:all 1s linear}.m6 li>img{width:9.3rem;height:11.825rem}.m6 li.active{opacity:1}.m6 .box{top:6.4rem;left:0;margin-top:1.75rem;width:8.95rem}.m6 .box img{top:0;right:-1.8rem;border-radius:50%;border:.1rem solid #5775a9;width:4rem;height:4rem}.m6 .box h3{padding-top:4.35rem}.m6 .box p{margin-top:.6rem;padding:0 .75rem}.m6 .btn{display:block;width:1.25rem;height:2.3rem}.m6 .prev{top:4.5rem;left:0;background:url(https://img.hzshuangmei.com/m/guanhaitao/bg_prev.png) center center no-repeat;background-size:1.25rem 2.3rem}.m6 .next{top:4.5rem;right:0;background:url(https://img.hzshuangmei.com/m/guanhaitao/bg_next.png) center center no-repeat;background-size:1.25rem 2.3rem}.m6 .consult{margin-top:1.75rem}.m6 h3{font-size:.6rem;background:url(https://img.hzshuangmei.com/m/guanhaitao/bgt6_2.png) center bottom no-repeat;background-size:6.35rem .625rem}.m6 p{font-size:.4rem;text-align:justify}.m7 .title{margin-left:0;position:relative;top:1.5rem}.m7 .content{padding-top:1px}.m7 .box{position:relative;margin-top:2.5rem;width:10.35rem;height:14.5rem}.m7 p{position:absolute;width:4.35rem;font-size:.45rem;color:#f5f8fe;text-align:center}.m7 .p1{top:3.4rem;left:4.05rem}.m7 .p2{top:12.65rem;left:2.05rem}.m7 .p3{top:7.35rem;left:.2rem}.m7 .p4{top:8.75rem;left:5.9rem}.m7 .consult{margin-top:1.25rem;margin-left:3rem}
+.sr-only,
+img {
+    border: 0;
+}.m2 .tabs > li,
+
+.m3 .flag {
+    top: 0;
+    left: 0;
+}.m2 .indicator li:hover,
+
+.m6 .slideW:hover {
+    cursor: pointer;
+}.consult,
+
+.flag h3,
+.m2 .indicator li,
+.m3 h5,
+.m4 p,
+.m5 .item h5,
+.m6 h3 {
+    text-align: center;
+}a,
+
+body {
+    color: #000;
+}body,
+
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+    padding: 0;
+    margin: 0;
+}form {
+
+    display: inline;
+}.consult,
+
+.f-cb:after,
+.img-respon,
+img {
+    display: block;
+}td {
+
+    word-break: break-all;
+}dd,
+
+dl,
+dt,
+li,
+ul {
+    list-style: none;
+}a {
+
+    text-decoration: none;
+}body {
+
+    background: #fff;
+}.img-respon {
+
+    width: 100%;
+    height: auto;
+}.sr-only {
+
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}.f-fr {
+
+    float: right;
+}.f-fl {
+
+    float: left;
+}.f-cb:after {
+
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+
+    content: ".";
+}.f-cb {
+
+    zoom: 1;
+}.banner {
+
+    height: 12.05rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/banner.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m1 .title {
+
+    width: 9.1rem;
+    height: 2.6rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt1.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m1 .content {
+
+    width: 16rem;
+    height: 11.35rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgc1.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m2 {
+
+    height: 17.4rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg2.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m2 .title {
+
+    width: 12.625rem;
+    height: 2.575rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt2.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m3-0 .title {
+
+    width: 11.25rem;
+    height: 3.2rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt3.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m3 {
+
+    height: 28.125rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg3.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m3 .title {
+
+    width: 12.275rem;
+    height: 1.7rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt3_2.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m3 .box {
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgc3.jpg) center bottom no-repeat;
+    background-size: 14.875rem 13.625rem;
+}.m4 {
+
+    height: 25.075rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg4.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m4 .title {
+
+    width: 12.85rem;
+    height: 2.225rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt4.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m4 .content {
+
+    width: 15.3rem;
+    height: 13.25rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgc4.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m5 {
+
+    height: 30.95rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg5.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m5 .title {
+
+    width: 11rem;
+    height: 1.5rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt5.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.m6 {
+
+    /* height: 23.6rem; */
+    height: 21rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg6.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m6 .title {
+
+    width: 11.65rem;
+    height: 2.575rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt6.png) center center no-repeat;
+    background-size: auto 100%;
+}.m7 {
+
+    height: 24.025rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg7.jpg) center top no-repeat;
+    background-size: auto 100%;
+}.m7 .title {
+
+    width: 11.5rem;
+    height: 3.175rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt7.jpg) center center no-repeat;
+    background-size: auto 100%;
+}.g-doc {
+
+    width: 16rem;
+    margin: 0 auto;
+}.consult,
+
+.m1 .content {
+    margin-right: auto;
+    margin-left: auto;
+}.consult {
+
+    width: 5.5rem;
+    height: 1.425rem;
+    padding-right: .175rem;
+
+    font-size: .65rem;
+    line-height: 1.25rem;
+
+    color: #fff;
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg_consult.png) center center no-repeat;
+    background-size: 5.5rem 1.425rem;
+}.consult:hover {
+
+    transform: scale(.9,.9);
+}.m4 .consult,
+
+.m6 .consult {
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg_consult2.png) center center no-repeat;
+    background-size: 5.5rem 1.425rem;
+}.m1 .maincontent {
+
+    width: 10.75rem;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}.m1 .maincontent p {
+
+    width: 8.35rem;
+}.m1 .consult {
+
+    margin-top: .65rem;
+}.m1 .title {
+
+    margin-bottom: .6rem;
+}.m1 .g-doc {
+
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}.m1 p {
+
+    font-size: .45rem;
+    line-height: .7rem;
+
+    color: #666;
+}.m2 .g-doc {
+
+    padding-top: 1.25rem;
+}.m2 .title {
+
+    margin-left: 2.5rem;
+}.m2 .content {
+
+    margin-top: 2rem;
+    margin-left: 6.75rem;
+}.m2 .indicator {
+
+    width: 8.575rem;
+    height: 1.05rem;
+    padding: 0;
+
+    font-size: 0;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_1.jpg) center center no-repeat;
+    background-size: 8.575rem 1.05rem;
+}.m2 .indicator li {
+
+    display: inline-block;
+    width: 33.3%;
+    height: 1.05rem;
+}.m2 .indicator li.active {
+
+    color: #fff;
+}.m2 .indicator1 {
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_1.jpg) center center no-repeat;
+    background-size: 8.575rem 1.05rem;
+}.m2 .indicator2 {
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_2.jpg) center center no-repeat;
+    background-size: 8.575rem 1.05rem;
+}.m2 .indicator3 {
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt2_3.jpg) center center no-repeat;
+    background-size: 8.575rem 1.05rem;
+}.m2 .tabs {
+
+    position: relative;
+
+    height: 6rem;
+    margin-top: 1rem;
+}.m2 .tabs > li {
+
+    position: absolute;
+
+    visibility: hidden;
+    height: 6rem;
+}.m2 .tabs > li img {
+
+    width: 8.675rem;
+    height: 3.525rem;
+    margin-top: .4rem;
+}.m2 .tabs > li.active {
+
+    visibility: visible;
+}.m2 .consult {
+
+    margin-left: 7.75rem;
+}.m2 .indicator li {
+
+    font-size: .575rem;
+    line-height: 1.05rem;
+
+    color: #37507c;
+}.m2 .tabs > li {
+
+    font-size: .5rem;
+    line-height: .75rem;
+
+    color: #1c4faa;
+}.m2 .tabs > li span {
+
+    font-size: .65rem;
+    font-weight: 700;
+
+    color: #0242b6;
+}.m3-0 .g-doc {
+
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+}.m3-0 .title {
+
+    margin: 0 auto;
+}.flag {
+
+    position: absolute;
+
+    width: 4.55rem;
+    height: 2.55rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg_flag.png) center center no-repeat;
+    background-size: 4.55rem 2.55rem;
+}.flag h3 {
+
+    font-size: .65rem;
+    line-height: 1.05rem;
+
+    color: #fff;
+}.flag span {
+
+    font-size: .55rem;
+    font-weight: 400;
+
+    color: #285bb2;
+}.m3 .g-doc {
+
+    position: relative;
+
+    padding-top: 3.75rem;
+}.m3 .title {
+
+    margin-right: auto;
+    margin-left: auto;
+}.m3 .des {
+
+    padding: 0 .4rem;
+    margin-top: .75rem;
+}.m3 .box {
+
+    width: 14.875rem;
+    height: 13.625rem;
+    margin: 1.25rem auto 0;
+}.m3 .row {
+
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    justify-content: space-between;
+}.m3 .row1 {
+
+    margin-bottom: .85rem;
+}.m3 .item {
+
+    position: relative;
+
+    display: inline-block;
+    width: 6.75rem;
+    height: 6.4rem;
+
+    font-size: 0;
+
+    vertical-align: top;
+}.m3 .item p {
+
+    padding: 0 .5rem;
+    margin-top: .2rem;
+}.m4 .g-doc,
+
+.m5 .g-doc {
+    padding-top: 4.75rem;
+}.m3 .item:last-child {
+
+    margin-left: 1rem;
+}.m3 .des {
+
+    font-size: .5rem;
+    line-height: .8rem;
+
+    color: grey;
+}.m3 h5 {
+
+    position: absolute;
+    top: 4.75rem;
+    left: .55rem;
+
+    width: 5.65rem;
+    height: .9rem;
+
+    font-size: .6rem;
+    font-weight: 400;
+    line-height: .9rem;
+
+    color: #fff;
+}.m4 .g-doc,
+
+.m5 .g-doc,
+.m6 .content,
+.m6 .slideC {
+    position: relative;
+}.m4 .item,
+
+.m4 .item p {
+    width: 1.3rem;
+    height: 6.05rem;
+}.m3 p {
+
+    font-size: .4rem;
+    line-height: .55rem;
+
+    color: #325a9e;
+}.m3 .custom h5 {
+
+    color: #3a61a5;
+}.m3 .consult {
+
+    margin-top: 1.25rem;
+}.m4 .flag {
+
+    top: .4rem;
+    left: 0;
+}.m4 .title {
+
+    margin: 0 auto;
+}.m4 .content {
+
+    margin-top: 1.4rem;
+    margin-left: .5rem;
+}.m4 .row1 {
+
+    margin-bottom: .55rem;
+}.m4 .row {
+
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    justify-content: space-between;
+}.m4 .item {
+
+    padding-left: 6.05rem;
+}.m4 .item p {
+
+    -webkit-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+}.m4 .item:first-child {
+
+    margin-left: 0;
+}.m4 .item:last-child {
+
+    margin-left: .55rem;
+}.m4 .consult {
+
+    margin-top: 1rem;
+}.m4 p {
+
+    font-size: .5rem;
+    line-height: 1.2rem;
+
+    color: #fff;
+}.m5 .item p,
+
+.m6 p,
+.m7 p {
+    line-height: .6rem;
+}.m5 .flag {
+
+    top: .5rem;
+    left: 0;
+}.m6 .fh,
+
+.m6 li {
+    top: 0;
+    left: 0;
+}.m5 .line {
+
+    width: .75rem;
+    height: .05rem;
+    margin-left: .5rem;
+
+    background-color: #fff;
+}.m5 .title {
+
+    margin: 0 auto;
+}.m5 .content {
+
+    margin: .95rem auto 0;
+}.m5 .item {
+
+    width: 10.25rem;
+    height: 4.25rem;
+    margin-bottom: .75rem;
+    margin-left: .75rem;
+}.m6 .slideC,
+
+.m6 .slideW {
+    width: 9.4rem;
+    height: 13.25rem;
+}.m5 .item h5 {
+
+    padding-top: .65rem;
+
+    font-size: .7rem;
+
+    color: #285bb2;
+}.m5 .item p {
+
+    padding-right: .25rem;
+    padding-left: .25rem;
+    margin-top: .45rem;
+
+    font-size: .45rem;
+
+    color: #416cb7;
+}.m5 .even h5,
+
+.m5 .even p,
+.m6 h3,
+.m6 p {
+    color: #fff;
+}.m5 .odd {
+
+    padding-left: 4.25rem;
+}.m5 .even {
+
+    padding-right: 4.25rem;
+}.m5 .custom p {
+
+    padding-left: .75rem;
+}.m5 .consult {
+
+    margin-top: 1.35rem;
+}.m6 .g-doc {
+
+    padding-top: 1rem;
+}.m6 .title {
+
+    margin: 0 auto;
+}.m6 .content {
+
+    margin-top: 1.75rem;
+}.m6 .slideW {
+
+    margin: 0 auto;
+}.m6 .box,
+
+.m6 .box img,
+.m6 .btn,
+.m6 .fh,
+.m6 li {
+    position: absolute;
+}.m6 li {
+
+    width: 8.95rem;
+    height: 11.8rem;
+    padding-top: 1px;
+
+    transition: all 1s linear;
+
+    opacity: 0;
+}.m6 li > img {
+
+    width: 9.3rem;
+    height: 11.825rem;
+}.m6 li.active {
+
+    opacity: 1;
+}.m6 .box {
+
+    top: 6.4rem;
+    left: 0;
+
+    width: 8.95rem;
+    margin-top: 1.75rem;
+}.m6 .box img {
+
+    top: 0;
+    right: -1.8rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    border: .1rem solid #5775a9;
+    border-radius: 50%;
+}.m6 .box h3 {
+
+    padding-top: 4.35rem;
+}.m6 .box p {
+
+    padding: 0 .75rem;
+    margin-top: .6rem;
+}.m6 .btn {
+
+    display: block;
+    width: 1.25rem;
+    height: 2.3rem;
+}.m6 .prev {
+
+    top: 4.5rem;
+    left: 0;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg_prev.png) center center no-repeat;
+    background-size: 1.25rem 2.3rem;
+}.m6 .next {
+
+    top: 4.5rem;
+    right: 0;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bg_next.png) center center no-repeat;
+    background-size: 1.25rem 2.3rem;
+}.m6 .consult {
+
+    /* margin-top: 1.75rem; */
+    margin-top: 0rem;
+}.m6 h3 {
+
+    font-size: .6rem;
+
+    background: url(https://img.hzshuangmei.com/m/guanhaitao/bgt6_2.png) center bottom no-repeat;
+    background-size: 6.35rem .625rem;
+}.m6 p {
+
+    font-size: .4rem;
+
+    text-align: justify;
+}.m7 .title {
+
+    position: relative;
+    top: 1.5rem;
+
+    margin-left: 0;
+}.m7 .content {
+
+    padding-top: 1px;
+}.m7 .box {
+
+    position: relative;
+
+    width: 10.35rem;
+    height: 14.5rem;
+    margin-top: 2.5rem;
+}.m7 p {
+
+    position: absolute;
+
+    width: 4.35rem;
+
+    font-size: .45rem;
+
+    text-align: center;
+
+    color: #f5f8fe;
+}.m7 .p1 {
+
+    top: 3.4rem;
+    left: 4.05rem;
+}.m7 .p2 {
+
+    top: 12.65rem;
+    left: 2.05rem;
+}.m7 .p3 {
+
+    top: 7.35rem;
+    left: .2rem;
+}.m7 .p4 {
+
+    top: 8.75rem;
+    left: 5.9rem;
+}.m7 .consult {
+
+    margin-top: 1.25rem;
+    margin-left: 3rem;
+}
