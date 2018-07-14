@@ -1,3 +1,4 @@
+
 .idea/
 /components/
 /default*/
@@ -5,6 +6,7 @@
 *.7z
 *.html
 !www.hzshuangmei.com/contactUs.html
+!m.hzshuangmei.com/contactUs.html
 !admin/*.xml
 *.tar.gz
 *.tar
@@ -74,4 +76,3 @@ liposculpture/
 .well-know/
 mysqli_error_trace.inc
 pma/
-
