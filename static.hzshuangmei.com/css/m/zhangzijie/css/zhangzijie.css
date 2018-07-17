@@ -1178,7 +1178,8 @@ img {
 }
 .part_Eight_Top_Div {
     width: 13.29067rem;
-    height: 11.11467rem;
+    /* height: 11.11467rem; */
+    height: 8.31467rem;
     margin: .78933rem auto 0;
 
     background: #fff;
