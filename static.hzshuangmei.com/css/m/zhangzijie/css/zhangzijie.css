@@ -1277,7 +1277,8 @@ img {
 .sw_Pa {
     display: block;
     width: auto;
-    width: 8.10667rem;
+    /* width: 8.10667rem; */
+    width: 5.80667rem;
     margin: auto;
     margin-top: .68267rem;
     overflow: hidden;
