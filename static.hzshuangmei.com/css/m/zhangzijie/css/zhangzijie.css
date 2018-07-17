@@ -525,7 +525,7 @@ img {
 }
 .swiper-container {
     width: 12.096rem;
-    height: 8.11467rem;
+    height: 8.11467rem!important;
 }
 .swiper-slide {
     /* Center slide text vertically */
