@@ -822,6 +822,9 @@ img {
 }
 
 .part_One_Go {
+    z-index: 20;
+    z-index: 20;
+
     width: 6.72rem;
     margin: .64rem auto 2.06933rem;
 }
