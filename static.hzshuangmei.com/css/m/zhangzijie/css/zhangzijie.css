@@ -605,7 +605,7 @@ img {
 .sw_Pa {
     display: block;
     /* width: 8.10667rem; */
-    width: 5.9rem;
+    width: 5.9rem!important;
     margin: auto;
     margin-top: .68267rem;
     overflow: hidden;
