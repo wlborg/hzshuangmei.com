@@ -525,7 +525,7 @@ img {
 }
 .swiper-container {
     width: 12.096rem;
-    height: 8.11467rem!important;
+    height: 8.11467rem;
 }
 .swiper-slide {
     /* Center slide text vertically */
@@ -1178,8 +1178,7 @@ img {
 }
 .part_Eight_Top_Div {
     width: 13.29067rem;
-    /* height: 11.11467rem; */
-    height: 8.31467rem;
+    height: 11.11467rem;
     margin: .78933rem auto 0;
 
     background: #fff;
@@ -1277,8 +1276,7 @@ img {
 .sw_Pa {
     display: block;
     width: auto;
-    /* width: 8.10667rem; */
-    width: 5.80667rem;
+    width: 8.10667rem;
     margin: auto;
     margin-top: .68267rem;
     overflow: hidden;
@@ -1385,4 +1383,7 @@ img {
     width: 6.656rem;
     margin-top: .53333rem;
     margin-bottom: .98133rem;
+}
+.part_Fourt_sw_Pa {
+    width: 8.10667rem!important;
 }
