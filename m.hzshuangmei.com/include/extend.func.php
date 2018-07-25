@@ -569,22 +569,18 @@ $list.= '
 <div class="item active" >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgbefore.'" alt="术前"></a>
+
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgafter.'" alt="术后"></a>
+
     </div>
   </div>
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="javascript:void(0)" class="j-consult"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -595,22 +591,18 @@ $list.= '
 <div class="item " >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgbefore.'" alt="术前"></a>
+
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgafter.'" alt="术后"></a>
+
     </div>
   </div>
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="javascript:void(0)" class="j-consult"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
