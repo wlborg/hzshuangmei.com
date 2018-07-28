@@ -384,7 +384,7 @@
                    }, 500);
                })
            }
-
+           //增加外部脚本
            function addScript(src) {
                var bldyE = document.getElementsByTagName("body");
                var scriptE = document.createElement("script");
