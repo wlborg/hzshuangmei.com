@@ -68,7 +68,7 @@ var tools = (
                 }, 500);
             });
         };
-
+        //增加外部脚本
         function addScript(src) {
             var bldyE = document.getElementsByTagName("body");
             var scriptE = document.createElement("script");
@@ -80,11 +80,13 @@ var tools = (
                 document.documentElement.appendChild(scriptE);
             }
         }
+        //添加快商通
         module.addKSTScript = function() {
             addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
         };
+        //添加百度统计代码
         module.addBaiduScript = function() {
-            addScript("https://hm.baidu.com/hm.js?6188cc7a9315dbe7155a5b2c9ecc1103");
+            addScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
         };
               module.addCnzzScript = function() {
             addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
