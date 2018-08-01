@@ -131,20 +131,21 @@ body {
 .custom-wrapper {
     /* fixed navbar */
     position: fixed;
-    top: 0rem;
+    /* top: 0rem; */
+    top: 2.05rem;
     z-index: 20180110;
 
     width: 16rem;
     height: 2.35rem;
     overflow: hidden;
 }
-/* .contents {
-    padding-top: 2.35rem;
-}
- */
 .contents {
-    padding-top: 0rem;
+    padding-top: 2.05rem;
 }
+
+/* .contents {
+    padding-top: 0rem;
+} */
 
 .custom-wrapper.open {
     height: auto;
