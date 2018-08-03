@@ -211,7 +211,7 @@ body {
 
     color: #ca785e;
 }
-.bnsetcon a img:last-child{
+.bnsetcon a img:last-child {
     width: 24px;
     margin-left: 22px;
 }
@@ -766,9 +766,9 @@ body {
     background: url("//img.hzshuangmei.com/pc/xbnset/images/m7bg.jpg") no-repeat center;
 }
 .m7tit {
+    display: block;
     width: 411px;
-    margin-top: 82px;
-    margin-bottom: 58px;
+    margin: 82px auto 58px;
 }
 .m7page div {
     position: relative;
