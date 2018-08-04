@@ -2913,6 +2913,14 @@ body {
     display: block
 }
 
+/* 文本不换行，这样超出一行的部分被截取，显示... */
+
+.line-limit-length {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
 @media (max-width: 544px) {
     .postitems ul {
         margin-right: -15px
