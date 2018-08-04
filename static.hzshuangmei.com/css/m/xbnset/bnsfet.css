@@ -1011,3 +1011,13 @@ body {
 .m5l4 p {
     margin-left: .325rem;
 }
+.m7Go {
+    position: absolute!important;
+    top: 50%;
+    left: 50%;
+
+    width: 1.475rem!important;
+    height: 1.475rem!important;
+    margin-top: -.7375rem!important;
+    margin-left: -.7375rem!important;
+}
