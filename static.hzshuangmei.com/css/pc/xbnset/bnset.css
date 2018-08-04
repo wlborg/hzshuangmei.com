@@ -990,3 +990,13 @@ body {
     width: 17px;
     margin-left: 15px;
 }
+.m7conGo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 59px!important;
+    height: 59px!important;
+    margin-top: -29.5px;
+    margin-left: -29.5px;
+}
