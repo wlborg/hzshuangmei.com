@@ -1241,7 +1241,7 @@ function getProjectArticleFormXZ($typeid)
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(77,78,79,80,81,82,83,84,85,86) and a.arcrank=0 order by id desc limit 4");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(77,78,79,80,81,82,83,84,85,86) and a.arcrank=0 order by id desc limit 6");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
