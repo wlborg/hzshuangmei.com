@@ -169,7 +169,7 @@ class DedeTagParse
         $this->CTags = array();
         $this->Count=-1;
     }
-    
+
     /**
      *  强制引用
      *
@@ -193,7 +193,7 @@ class DedeTagParse
     }
 
     // ------------------------------------------------------------------------
-    
+
     /**
      * CheckDisabledFunctions
      *
@@ -215,7 +215,7 @@ class DedeTagParse
             {
                 if (is_array($token))
                 {
-                    if ($token[0] = '306' && in_array($token[1], $disabled_functions)) 
+                    if ($token[0] = '306' && in_array($token[1], $disabled_functions))
                     {
                        $errmsg = 'DedeCMS Error:function disabled "'.$token[1].'" <a href="http://help.dedecms.com/install-use/apply/2013/0711/2324.html" target="_blank">more...</a>';
                        return FALSE;
@@ -357,7 +357,7 @@ class DedeTagParse
         fwrite($fp,"\n".'?'.'>');
         fclose($fp);
     }
-    
+
     /**
      *  载入模板文件
      *
@@ -772,7 +772,7 @@ class DedeTagParse
      */
     function SaveTo($filename)
     {
-        $fp = @fopen($filename,"w") or die("DedeTag Engine Create File False");
+        $fp = @fopen($filename,"w") or die("DedeTag Engine Create File False:$filename");
         fwrite($fp,$this->GetResult());
         fclose($fp);
     }
@@ -793,7 +793,7 @@ class DedeTagParse
         $eTagEndWord = "/".$TagEndWord;
         $tsLen = strlen($FullTagStartWord);
         $sourceLen=strlen($this->SourceString);
-        
+
         if( $sourceLen <= ($tsLen + 3) )
         {
             return;
@@ -856,25 +856,25 @@ class DedeTagParse
                 $i = $sPos+$tsLen;
                 $endPos = -1;
                 $fullTagEndWordThis = $sTagEndWord.$tTagName.$TagEndWord;
-                
+
                 $e1 = strpos($this->SourceString,$eTagEndWord, $i);
                 $e2 = strpos($this->SourceString,$FullTagStartWord, $i);
                 $e3 = strpos($this->SourceString,$fullTagEndWordThis,$i);
-                
+
                 //$eTagEndWord = /} $FullTagStartWord = {tag: $fullTagEndWordThis = {/tag:xxx]
-                
+
                 $e1 = trim($e1); $e2 = trim($e2); $e3 = trim($e3);
                 $e1 = ($e1=='' ? '-1' : $e1);
                 $e2 = ($e2=='' ? '-1' : $e2);
                 $e3 = ($e3=='' ? '-1' : $e3);
                 //not found '{/tag:'
-                if($e3==-1) 
+                if($e3==-1)
                 {
                     $endPos = $e1;
                     $elen = $endPos + strlen($eTagEndWord);
                 }
                 //not found '/}'
-                else if($e1==-1) 
+                else if($e1==-1)
                 {
                     $endPos = $e3;
                     $elen = $endPos + strlen($fullTagEndWordThis);
@@ -1123,7 +1123,7 @@ class DedeAttributeParse
         $this->cAttributes = new DedeAttribute();
         $strLen = 0;
         $this->sourceString = trim(preg_replace("/[ \r\n\t]{1,}/"," ",$str));
-        
+
         //为了在function内能使用数组，这里允许对[ ]进行转义使用
         $this->sourceString = str_replace('\]',']',$this->sourceString);
         $this->sourceString = str_replace('[','[',$this->sourceString);
@@ -1133,7 +1133,7 @@ class DedeAttributeParse
         $this->sourceString = str_replace('{','{',$this->sourceString);
         $this->sourceString = str_replace('\}','}',$this->sourceString);
         */
-        
+
         $strLen = strlen($this->sourceString);
         if($strLen>0 && $strLen <= $this->sourceMaxSize)
         {
