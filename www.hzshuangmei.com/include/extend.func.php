@@ -1270,7 +1270,25 @@ break;
 case  20 :
 $relatetypeid=83;
 break;
-case  21 :
+case  27 :
+$relatetypeid=78;
+break;
+case  28 :
+$relatetypeid=78;
+break;
+case  29 :
+$relatetypeid=78;
+break;
+case  30 :
+$relatetypeid=78;
+break;
+case  31 :
+$relatetypeid=78;
+break;
+case  32 :
+$relatetypeid=78;
+break;
+case  33 :
 $relatetypeid=78;
 break;
 case  22 :
@@ -1297,7 +1315,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=".$typeid."><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
