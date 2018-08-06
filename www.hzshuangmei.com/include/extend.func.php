@@ -1283,11 +1283,11 @@ case  34 :
 $relatetypeid=78;
 break;
 default:
-$relatetypeid=35 ;
+$relatetypeid=78 ;
 
 }
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addoncase as b
-                  where  a.typeid='$relatetypeid' and a.id=b.aid  and a.arcrank=0 order by id desc limit 6");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 6 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
