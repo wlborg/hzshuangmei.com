@@ -1241,7 +1241,53 @@ function getProjectArticleFormXZ($typeid)
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(77,78,79,80,81,82,83,84,85,86) and a.arcrank=0 order by id desc limit 6");
+switch ($typeid)
+{
+case 14 :
+$relatetypeid= 78;
+break;
+case 15 :
+$relatetypeid=77;
+break;
+case 24:
+$relatetypeid=79;
+break;
+case 25:
+$relatetypeid=79;
+break;
+case 26:
+$relatetypeid=79;
+break;
+case 17 :
+$relatetypeid=80;
+break;
+case 18 :
+$relatetypeid=81;
+break;
+case 19 :
+$relatetypeid=82;
+break;
+case  20 :
+$relatetypeid=83;
+break;
+case  21 :
+$relatetypeid=78;
+break;
+case  22 :
+$relatetypeid=78;
+break;
+case  23 :
+$relatetypeid=78;
+break;
+case  34 :
+$relatetypeid=78;
+break;
+default:
+$relatetypeid=35 ;
+
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a,#@__addoncase as b
+                  where  a.typeid='$relatetypeid' and a.id=b.aid  and a.arcrank=0 order by id desc limit 6");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
