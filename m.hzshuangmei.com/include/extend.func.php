@@ -1046,7 +1046,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= ' <div class="imgbox">
