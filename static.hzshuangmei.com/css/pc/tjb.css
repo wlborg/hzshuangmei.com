@@ -248,8 +248,10 @@
     text-align: center;
 }
 .tjb_xz {
-    width: 1200px;
-    height: 527px;
+    width: 1189px;
+    height: 545px;
+    padding-top: 11px;
+    padding-left: 12px;
     margin: 48px auto 0;
 
     font-size: 0;
