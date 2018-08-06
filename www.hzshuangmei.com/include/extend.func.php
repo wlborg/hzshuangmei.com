@@ -1320,10 +1320,10 @@ $litpic =$row["litpic"];
 $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
-    // if($ns<6){
-    //   // $res2=getProjectArticleFormXZToSix($ns);
-    // }
-    $relateproject=$relateproject;
+    if($ns<6){
+      $res2=getProjectArticleFormXZToSix($ns);
+    }
+    $relateproject=$relateproject.$res2;
   }
   return $relateproject;
 }
@@ -1336,24 +1336,24 @@ if($ns>0){
 function getProjectArticleFormXZToSix($typeNum)
 {
 
-// global $dsql;
+global $dsql;
 $repairRes="";
-// $repair=6-$typeNum;
-// $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-// where  a.typeid=78 and a.arcrank=0 order by rand() limit '$repair' ");
-// $dsql->Execute();
-// $ns = $dsql->GetTotalRow();
-// while($row=$dsql->GetArray())
-// {
-// $id = $row["id"];
-// $title = cn_substr($row["title"],80,0);
-// $urlarray = GetOneArchive($id);
-// $url = $urlarray['arcurl'];
-// $litpic =$row["litpic"];
-// $repairRes.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
-// }
-// if($ns>0){
-// $repairRes=$repairRes;
-// }
+$repair=6-$typeNum;
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid=78 and a.arcrank=0 order by rand() limit '$repair' ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$repairRes.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
 return $repairRes;
 }
