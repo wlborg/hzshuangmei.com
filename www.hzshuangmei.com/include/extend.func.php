@@ -1231,3 +1231,31 @@ $relatedoctorurl="https://www.hzshuangmei.com/doctors/";
 $relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
 return $relatedoctorurl;
 }
+/**
+*  专题增加获取熊掌号文章(最新)
+*  获取全站最新文章6条
+*
+*/
+function getProjectArticleFormXZ($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(77,78,79,80,81,82,83,84,85,86) and a.arcrank=0 order by id desc limit 6");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+
+$litpic =$row["litpic"];
+$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+}
+if($ns>0){
+$relateproject=$relateproject;
+}
+return $relateproject;
+}
