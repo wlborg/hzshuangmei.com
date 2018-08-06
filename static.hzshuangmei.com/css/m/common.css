@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -901,8 +901,15 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 
     line-height: 0 !important;
 }
+.relateporject .contents {
+    padding: .55rem 3.5% 0rem;
+
+    font-size: 0;
+
+    text-align: center;
+}
 .xzhporject .contents {
-    padding: 0rem 3.5% 1.65rem;
+    padding: .55rem 3.5% 1.65rem;
 
     font-size: 0;
 
