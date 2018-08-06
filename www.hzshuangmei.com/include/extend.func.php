@@ -1283,8 +1283,7 @@ case  34 :
 $relatetypeid=78;
 break;
 default:
-$relatetypeid=78 ;
-
+$relatetypeid=78;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 6 ");
@@ -1298,7 +1297,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title. .$typeid.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
