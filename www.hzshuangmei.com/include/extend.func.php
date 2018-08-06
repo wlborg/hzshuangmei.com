@@ -1323,7 +1323,7 @@ if($ns>0){
     // if($ns<6){
     //   // $res2=getProjectArticleFormXZToSix($ns);
     // }
-    $relateproject=$relateproject+$res2;
+    $relateproject=$relateproject;
   }
   return $relateproject;
 }
