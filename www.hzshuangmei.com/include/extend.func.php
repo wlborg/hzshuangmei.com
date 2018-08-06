@@ -1233,7 +1233,8 @@ return $relatedoctorurl;
 }
 /**
 *  专题增加获取熊掌号文章(最新)
-*  获取全站最新文章6条
+*  获取相关最新文章6条
+*  $res2补缺少数据
 *
 */
 function getProjectArticleFormXZ($typeid)
@@ -1241,7 +1242,7 @@ function getProjectArticleFormXZ($typeid)
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$ttypeid=$typeid;
+$res2="";
 switch ($typeid)
 {
 case 14 :
@@ -1319,7 +1320,36 @@ $litpic =$row["litpic"];
 $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
-$relateproject=$relateproject;
+  if($ns<6){
+    $res2=getProjectArticleFormXZToSix($ns);
+  }
+  $relateproject=$relateproject+$res2;
 }
 return $relateproject;
+}
+/**
+ *
+*  专题增加获取熊掌号文章(最新)
+*  如果不足够六条，补到六条
+*
+*/
+function getProjectArticleFormXZToSix($typeNum)
+{
+global $dsql;
+$relatetypeid = 0;
+$repair=6-$typeNum;
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid=78 and a.arcrank=0 order by rand() limit '$repair' ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+}
+if($ns>0){
+}
 }
