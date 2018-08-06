@@ -961,3 +961,97 @@ $relateproject= ' <div class="imgbox">
 }
 return $relateproject;
 }
+/**
+*  专题增加获取熊掌号文章(最新)
+*  获取全站最新文章6条
+*
+*/
+function getProjectArticleFromXZ($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$ttypeid=$typeid;
+switch ($typeid)
+{
+case 14 :
+$relatetypeid= 78;
+break;
+case 15 :
+$relatetypeid=77;
+break;
+case 24:
+$relatetypeid=79;
+break;
+case 25:
+$relatetypeid=79;
+break;
+case 26:
+$relatetypeid=79;
+break;
+case 17 :
+$relatetypeid=80;
+break;
+case 18 :
+$relatetypeid=81;
+break;
+case 19 :
+$relatetypeid=82;
+break;
+case  20 :
+$relatetypeid=83;
+break;
+case  27 :
+$relatetypeid=78;
+break;
+case  28 :
+$relatetypeid=78;
+break;
+case  29 :
+$relatetypeid=78;
+break;
+case  30 :
+$relatetypeid=78;
+break;
+case  31 :
+$relatetypeid=78;
+break;
+case  32 :
+$relatetypeid=78;
+break;
+case  33 :
+$relatetypeid=78;
+break;
+case  22 :
+$relatetypeid=78;
+break;
+case  23 :
+$relatetypeid=78;
+break;
+case  34 :
+$relatetypeid=78;
+break;
+default:
+$relatetypeid=78;
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+
+$litpic =$row["litpic"];
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$relateproject= ' <div class="imgbox">
+  '.$relateproject.'
+</div> ';
+}
+return $relateproject;
+}
