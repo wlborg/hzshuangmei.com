@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chj
- * @Last Modified time: 2018-04-11 16:26:42
+ * @Last Modified time: 2018-08-07 15:32:17
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -84,6 +84,7 @@ if (navigator.userAgent.indexOf("Baiduspider") == -1) {
             popup();
         } else {
             console.log("文件名:" + document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0] + ",不弹窗");
+            popup();
         }
     }
     //如果是字母和数字混合的类型
@@ -92,6 +93,7 @@ if (navigator.userAgent.indexOf("Baiduspider") == -1) {
         popup();
     } else {
         console.log("文件名:" + document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].split(".")[0] + ",不弹窗");
+        popup();
     }
 }
 /*  移动端分享  */
