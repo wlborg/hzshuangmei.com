@@ -1333,18 +1333,6 @@ if($ns>0){
 *  如果不足够六条，补到六条
 *
 */
-function getProjectArticleFormXZToSixs($typeNum)
-{
-global $dsql;
-$repair=0;
-$repairRes="";
-$repair=6-$typeNum;
-if($ns>0){
-$repair=$repair;
-}
-return $repair;
-}
-
 function getProjectArticleFormXZToSix($typeNum)
 {
 global $dsql;
