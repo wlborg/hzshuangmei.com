@@ -1321,7 +1321,7 @@ $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'
 }
 if($ns>0){
     if($ns<6){
-      $res2=getProjectArticleFormXZToSix($ns);
+      $res2.=getProjectArticleFormXZToSix($ns);
     }
     $relateproject=$relateproject.$res2;
   }
@@ -1335,7 +1335,6 @@ if($ns>0){
 */
 function getProjectArticleFormXZToSix($typeNum)
 {
-
 global $dsql;
 $repairRes="";
 $repair=6-$typeNum;
