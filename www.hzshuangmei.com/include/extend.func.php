@@ -1242,7 +1242,7 @@ function getProjectArticleFormXZ($typeid)
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$res2="";
+$res2="-";
 switch ($typeid)
 {
 case 14 :
@@ -1320,10 +1320,10 @@ $litpic =$row["litpic"];
 $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
-    if($ns<6){
-      $res2.=getProjectArticleFormXZToSix($ns);
-    }
-    $relateproject=$relateproject.$res2;
+    // if($ns<6){
+    //   $res2.=getProjectArticleFormXZToSix($ns);
+    // }
+    $relateproject=$relateproject.$res2.$ns;
   }
   return $relateproject;
 }
