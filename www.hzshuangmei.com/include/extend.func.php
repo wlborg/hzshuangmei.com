@@ -1350,7 +1350,7 @@ global $dsql;
 $repairRes="";
 $repair=6-$typeNum;
 $dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=78 and a.arcrank=0 order by rand() limit
-  '$repair'");
+  5");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
