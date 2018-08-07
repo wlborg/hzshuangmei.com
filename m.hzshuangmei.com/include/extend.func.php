@@ -1053,7 +1053,9 @@ if($ns>0){
     if($ns<4){
       $res2.=getProjectArticleFormXZToSix($ns);
     }
-    $relateproject=$relateproject.$res2;
+   $relateproject= ' <div class="imgbox">
+  '.$relateproject.'. $res2;
+</div> ';
   }
   return $relateproject;
 }
