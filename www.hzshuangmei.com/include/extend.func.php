@@ -1321,7 +1321,7 @@ $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'
 }
 if($ns>0){
     if($ns<6){
-      $res2.=getProjectArticleFormXZToSixs($ns);
+      $res2.=getProjectArticleFormXZToSix($ns);
     }
     $relateproject=$relateproject.$res2;
   }
