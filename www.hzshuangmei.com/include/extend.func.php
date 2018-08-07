@@ -1321,8 +1321,7 @@ $relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'
 }
 if($ns>0){
     if($ns<6){
-      $res2.='2';
-      // $res2.=getProjectArticleFormXZToSix($ns);
+      $res2.=getProjectArticleFormXZToSixs($ns);
     }
     $relateproject=$relateproject.$res2;
   }
@@ -1334,6 +1333,17 @@ if($ns>0){
 *  如果不足够六条，补到六条
 *
 */
+function getProjectArticleFormXZToSixs($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=6-$typeNum;
+if($ns>0){
+$repair=$repair;
+}
+return $repair;
+}
+
 function getProjectArticleFormXZToSix($typeNum)
 {
 global $dsql;
