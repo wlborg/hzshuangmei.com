@@ -963,15 +963,16 @@ return $relateproject;
 }
 /**
 *  专题增加获取熊掌号文章(最新)
-*  获取全站最新文章6条
+*  获取相关最新文章6条
+*  $res2补缺少数据
 *
 */
-function getProjectArticleFromXZ($typeid)
+function getProjectArticleFormXZ($typeid)
 {
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$ttypeid=$typeid;
+$res2="-";
 switch ($typeid)
 {
 case 14 :
@@ -1035,7 +1036,7 @@ default:
 $relatetypeid=78;
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
-where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 4 ");
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 6 ");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -1046,12 +1047,43 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
 }
 if($ns>0){
-$relateproject= ' <div class="imgbox">
-  '.$relateproject.'
-</div> ';
+    if($ns<4){
+      $res2.=getProjectArticleFormXZToSix($ns);
+    }
+    $relateproject=$relateproject.$res2;
+  }
+  return $relateproject;
 }
-return $relateproject;
+/**
+ *
+*  专题增加获取熊掌号文章(最新)
+*  如果不足够六条，补到六条
+*
+*/
+function getProjectArticleFormXZToSix($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=4-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=78 and a.arcrank=0 order by rand() limit
+  $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
 }
