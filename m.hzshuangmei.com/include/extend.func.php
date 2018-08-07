@@ -1053,9 +1053,8 @@ if($ns>0){
     if($ns<4){
       $res2.=getProjectArticleFormXZToSix($ns);
     }
-   $relateproject= ' <div class="imgbox">
-  '.$relateproject.'. $res2;
-</div> ';
+   $relateproject= '<div class="imgbox">
+  '.$relateproject.$res2.'</div>';
   }
   return $relateproject;
 }
@@ -1085,7 +1084,9 @@ $litpic =$row["litpic"];
 $relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
 }
 if($ns>0){
-$repairRes=$repairRes;
+$repairRes='<div class="imgbox">
+  '.$repairRes.'
+</div> ';
 }
 return $repairRes;
 }
