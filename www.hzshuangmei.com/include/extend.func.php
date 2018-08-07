@@ -1336,6 +1336,7 @@ if($ns>0){
 function getProjectArticleFormXZToSixs($typeNum)
 {
 global $dsql;
+$repair=0;
 $repairRes="";
 $repair=6-$typeNum;
 if($ns>0){
@@ -1350,7 +1351,7 @@ global $dsql;
 $repairRes="";
 $repair=6-$typeNum;
 $dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=78 and a.arcrank=0 order by rand() limit
-  5");
+  '$repair'");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
