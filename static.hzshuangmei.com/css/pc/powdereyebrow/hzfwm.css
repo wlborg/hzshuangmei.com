@@ -530,3 +530,6 @@
     width: 100%;
 }
 /*part6结束*/
+img {
+    display: block;
+}
