@@ -1046,7 +1046,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
 }
 if($ns>0){
     if($ns<4){
@@ -1080,7 +1080,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =$row["litpic"];
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
 }
 if($ns>0){
 $repairRes=$repairRes;
