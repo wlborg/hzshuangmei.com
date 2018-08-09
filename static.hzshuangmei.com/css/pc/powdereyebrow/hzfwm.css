@@ -536,3 +536,9 @@ body {
 img {
     display: block;
 }
+.consult {
+    display: block;
+}
+swiper-slide swiper-slide-duplicate-active {
+    margin-top: -.23rem;
+}
