@@ -1,0 +1,522 @@
+body {
+    overflow-x: hidden;
+}
+/*banner开始*/
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+/*banner结束*/
+
+/*part1开始*/
+.part1 {
+    position: relative;
+
+    background: #fff;
+}
+.bg-wrap {
+    width: 100%;
+}
+.bg-wrap img {
+    width: 100%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title-wrap {
+    width: 100%;
+}
+.title-wrap img {
+    width: 100%;
+}
+.part1 .con-detail {
+    position: relative;
+    top: .83rem;
+
+    width: 100%;
+    height: 11.95rem;
+}
+.part1 .con-detail .left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 9.92rem;
+    height: 11.95rem;
+}
+.part1 .left img {
+    width: 100%;
+    height: 100%;
+}
+.part1 .con-detail .right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 7.573rem;
+    height: 11.8rem;
+
+    background: url("//img.hzshuangmei.com/m/silteyebrow/part1-pic-6.png") no-repeat;
+    background-size: 100% 100%;
+}
+.part1 .right .txt-item {
+    margin-top: 1.476rem;
+    margin-left: 3.1rem;
+}
+.part1 .right .txt-item-1 {
+    margin-top: .6rem;
+    margin-left: 2.5rem;
+}
+.part1 .right .txt-item-2 {
+    margin-top: .45rem;
+    margin-left: 3.1rem;
+}
+.part1 .right .txt-item-3 {
+    margin-left: 2.5rem;
+}
+.part1 .txt-item .title {
+    font-size: .683rem;
+    line-height: .768rem;
+
+    color: #fff;
+}
+.part1 .txt-item .title span {
+    color: #ffb57d;
+}
+.part1 .txt-item .title-chl {
+    margin-top: .4rem;
+
+    font-size: .469rem;
+    line-height: .768rem;
+
+    color: #c3fcfa;
+}
+.btn-wrap {
+    position: absolute;
+    bottom: 1.3rem;
+    left: 50%;
+
+    width: 6.4rem;
+    height: 1.813rem;
+    margin-left: -3.2rem;
+
+    background: url("//img.hzshuangmei.com/m/silteyebrow/btn-pic.png") no-repeat;
+    background-size: 100% 100%;
+}
+.btn-wrap a {
+    display: inline-block;
+    width: 100%;
+    height: 66%;
+}
+/*part1结束*/
+
+/*part2开始*/
+.part2 {
+    position: relative;
+
+    padding-top: 1.8773rem;
+    padding-bottom: 3.67rem;
+
+    background: #c3fcfa;
+}
+.part2 .tabble-pic {
+    width: 100%;
+}
+.part2 .tabble-pic img {
+    width: 100%;
+}
+/*part2结束*/
+
+/*part3开始*/
+.part3 {
+    position: relative;
+
+    padding-top: 1.4507rem;
+    padding-bottom: 1.1rem;
+
+    background: #fff;
+}
+.part3 .swiper {
+    padding-bottom: 2rem;
+}
+.part3 .swiper .item {
+    width: 15.7077rem;
+    margin: 0 auto;
+}
+.part3 .swiper .pic {
+    float: left;
+    width: 7.8112rem;
+    height: 5.163rem;
+    margin-bottom: .0853rem;
+}
+.part3 .swiper .pic:nth-child(2n-1) {
+    margin-right: .0853rem;
+}
+.part3 .swiper .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/*swiper样式修改开始*/
+.swiper-pagination {
+    position: static;
+
+    margin-top: 1rem;
+}
+.swiper-pagination .bullet {
+    display: inline-block;
+    width: .256rem;
+    height: .256rem;
+    margin-right: .299rem;
+
+    border-radius: .256rem;
+}
+.swiper-pagination .active {
+    width: .853rem;
+    height: .256rem;
+
+    border-radius: .128rem;
+    background-color: #5ebcb5;
+}
+.swiper-container {
+    overflow-x: hidden;
+    /*overflow-y: inherit;*/
+}
+.btn-wrap-1 {
+    bottom: 0rem;
+}
+/*swiper样式修改结束*/
+/*part3结束
+
+/*part4开始*/
+.part4 {
+    position: relative;
+
+    padding-bottom: 4.5rem;
+
+    background: #fff;
+}
+.part4 .part4-content {
+    position: relative;
+
+    height: 5.995rem;
+}
+.part4-content .left {
+    position: absolute;
+    top: 0;
+    left: .363rem;
+
+    width: 8.491rem;
+    height: 5.995rem;
+}
+.part4-content .left img {
+    width: 100%;
+    height: 100%;
+}
+.part4-content .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 6.3rem;
+    height: 5.995rem;
+    /*background: url('//img.hzshuangmei.com/m/silteyebrow/part4-pic-2.png') no-repeat;
+	background-size: 86% 100%;*/
+}
+.part4 .title {
+    margin-top: -.15rem;
+
+    font-size: .64rem;
+    line-height: .8rem;
+
+    color: #5ebcb5;
+}
+.part4 .txt-item {
+    position: relative;
+
+    padding-bottom: .2rem;
+    margin-top: .37rem;
+
+    font-size: .512rem;
+
+    color: #5ebcb5;
+}
+.part4 .txt-item  .bot-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 6.144rem;
+    height: .043rem;
+}
+.part4 .txt-item  .bot-line img {
+    width: 100%;
+    height: 100%;
+}
+.part4 .txt-item span {
+    color: #ffb57d;
+}
+.part4 .txt-item-1 {
+    margin-top: .46rem;
+}
+.part4 .txt-item-2 {
+    margin-top: .46rem;
+}
+.part4-content-1 {
+    position: relative;
+    /*left: .64rem;*/
+}
+/*@media screen and (min-width: 360px) {
+	.part4 .txt-item-2 {
+		margin-top: .3rem;
+	}
+	.part4 .txt-item-1 {
+		margin-top: .4rem;
+	}
+}*/
+.part4-content-1 div {
+    float: left;
+}
+.part4-content-1 .left {
+    width: 6.3rem;
+    height: 5.12rem;
+    margin-top: 1.39rem;
+    margin-right: .4267rem;
+    margin-left: .64rem;
+
+    font-size: .512rem;
+    line-height: .768rem;
+
+    text-align: justify;
+    text-indent: 2em;
+    letter-spacing: .013rem;
+
+    color: #5ebcb5;
+}
+.part4-content-1 .right {
+    width: 8.3rem;
+    height: 5.973px;
+}
+.part4-content-1 .right img {
+    width: 100%;
+    margin-top: .3413rem;
+}
+/*part4结束*/
+
+/*part5开始*/
+.part5 {
+    background: #c3fcfa;
+}
+.part5 .part5-content {
+    width: 100%;
+    height: 11.563rem;
+
+    background: url("//img.hzshuangmei.com/m/silteyebrow/part5-pic-7.png") no-repeat;
+    background-size: 100% 100%;
+}
+.part5 .btn-con {
+    position: relative;
+
+    width: 100%;
+    height: 2.895rem;
+}
+.part5 .pic-wrap .item {
+    float: left;
+    width: 7.573rem;
+    height: 5.33rem;
+    margin-top: .043rem;
+}
+.part5 .pic-wrap {
+    width: 15.4447rem;
+    margin: 0 auto;
+}
+.part5 .pic-wrap .item img {
+    width: 100%;
+    height: 100%;
+}
+.part5 .pic-wrap .item:nth-child(2n-1) {
+    margin-right: .2987rem;
+}
+.part5 .txt-wrap {
+    margin-top: 1.2rem;
+    margin-left: .448rem;
+}
+.part5 .txt-wrap .txt-item {
+    font-size: .469rem;
+    line-height: .768rem;
+
+    letter-spacing: -.004rem;
+
+    color: #fff;
+}
+.swiper-pagination-1 .bullet-item {
+    display: inline-block;
+    width: .256rem;
+    height: .256rem;
+
+    vertical-align: middle;
+
+    background: url("//img.hzshuangmei.com/m/silteyebrow/bullet.png") no-repeat;
+    background-size: 100%;
+}
+.swiper-pagination-1 .bullet-item:nth-child(2) {
+    margin-right: .3413rem;
+    margin-left: .3413rem;
+}
+.bullet-1 {
+    position: absolute;
+
+    width: 100%;
+    margin-top: 1.3rem;
+
+    text-align: center;
+}
+.bullet-1 .active {
+    width: .427rem;
+    height: .427rem;
+
+    background: url("//img.hzshuangmei.com/m/silteyebrow/bullet-active.png") no-repeat;
+    background-size: 100%;
+}
+.btn-wrap-2 {
+    bottom: .2rem;
+}
+.part5-bottom img {
+    width: 100%;
+}
+.swiper-container-fade .swiper-slide {
+    opacity: 0!important;
+}
+.swiper-container-fade .swiper-slide-active {
+    opacity: 1!important;
+}
+/*swiper修改开始*/
+
+/*swiper修改结束*/
+/*part5结束*/
+
+/*part6开始*/
+.part6 {
+    background: #fff;
+}
+.part6 .content-1 {
+    width: 100%;
+}
+.part6 .content-1 img {
+    width: 100%;
+}
+.part6 .content-2 {
+    position: relative;
+
+    margin-top: .3413rem;
+    margin-bottom: .3413rem;
+}
+.part6 .content-2 img {
+    width: 9.6rem;
+}
+.part6 .content-3 {
+    width: 100%;
+}
+.part6 .left-txt {
+    position: absolute;
+    top: 1.941rem;
+    right: .896rem;
+
+    width: 4.395rem;
+    height: 2.048rem;
+}
+.part6 .content-3 img {
+    width: 100%;
+}
+.part6 .left-txt .title {
+    font-size: .853rem;
+    line-height: .64rem;
+
+    letter-spacing: 0rem;
+
+    color: #5ebcb5;
+}
+.part6 .left-txt .line {
+    top: .5rem;
+
+    width: .853rem;
+    margin-bottom: .768rem;
+}
+.part6 .left-txt .e-txt {
+    font-size: .341rem;
+    line-height: .64rem;
+
+    letter-spacing: 0rem;
+
+    color: #5ebcb5;
+}
+/*part6结束*/
+
+
+img {
+    display: block;
+}
+/*1px 4边框*/
+.scale-1px-4,
+.scale-1px-4-1 {
+    position: relative;
+
+    border: none;
+}
+.scale-1px-4:after,
+.scale-1px-4-1:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 200%;
+    height: 200%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    content: "";
+    -webkit-transform: scale(.5);
+            transform: scale(.5);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+
+    border-radius: .256rem;
+}
+.scale-1px-4:after {
+    border: 1px solid #5ebcb5;
+}
+.scale-1px-4-1:after {
+    border: 1px solid #fff;
+}
+
+/*2px线*/
+.scale-2px,
+.scale-2px-1,
+.scale-2px-2 {
+    position: relative;
+
+    border: none;
+}
+.scale-2px:after,
+.scale-2px-1:after,
+.scale-2px-2:after {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: "";
+    -webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+}
+.scale-2px:after {
+    background-color: #5ebcb5;
+}
