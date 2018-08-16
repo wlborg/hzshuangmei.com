@@ -197,6 +197,7 @@ body {
 .part4 {
     position: relative;
 
+    height: 18rem;
     padding-bottom: 4.5rem;
 
     background: #fff;
@@ -343,7 +344,9 @@ body {
     margin-right: .2987rem;
 }
 .part5 .txt-wrap {
-    margin-top: 1.2rem;
+    position: relative;
+    top: 1rem;
+
     margin-left: .448rem;
 }
 .part5 .txt-wrap .txt-item {
