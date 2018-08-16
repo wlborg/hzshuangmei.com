@@ -103,7 +103,8 @@ var tools = (
                         var num = index + 1;
                         var linkInfo = "porjectConsultLinksCountIs" + linkCount + "----visitedLinkNumberIs" + num;
                         var href = "https://ryak66.kuaishang.cn/bs/im/68948/58194/765150.htm?ref=" + infos.href + "&infos=" + linkInfo;
-                        window.location.href = href;
+                        // window.location.href = href;
+                        window.open(href,"_blank");
                     })
                 });
             } else {
