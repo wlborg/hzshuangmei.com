@@ -1,0 +1,343 @@
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+/*banner 开始*/
+.banner {
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+/*banner 结束*/
+
+/*part开始*/
+.part1 {
+	height: auto;
+	padding-top: 2.24rem;
+	padding-bottom: 1rem;
+	background: #fff;
+}
+.title-pic {
+	width: 100%;
+}
+.title-pic img {
+	width: 100%;
+}
+.part1 .content {
+	margin-top: 1.899rem;
+}
+.part1 .panel-wrap {
+	width: 15.359rem;
+	margin: 0 auto;
+}
+.part1 .panel-wrap .pic-item {
+	position: relative;
+	width: 7.509rem;
+	height: 10.496rem;
+	float: left;
+	margin-bottom: .128rem;
+}
+.part1 .panel-wrap .pic-item:nth-child(2n-1) {
+	margin-right: .341rem;
+}
+.part1 .panel-wrap .pic-item img {
+	width: 100%;
+	height: 100%;
+}
+.part1 .pic-item .detail {
+	position: absolute;
+	top: 6.187rem;
+	left:0;
+	width: 100%;
+	text-align: center;
+}
+.part1 .pic-item .title {
+	font-size: 0.576rem;
+	letter-spacing: 0.03rem;
+	color: #5b350e;
+	margin-top: .64rem;
+}
+.part1 .pic-item .txt {
+	font-size: 0.448rem;
+	letter-spacing: 0.023rem;
+	color: #737373;
+	margin-top: .299rem;
+	margin-bottom: .256rem;
+	height: 1.024rem;
+}
+.part1 .pic-item .txt p {
+	line-height: 0.576rem;
+}
+.part1 .pic-item .btn {
+	width: 3.029rem;
+	height: 0.725rem;
+	background-color: #9a5a1a;
+	border-radius: 0. 	;
+	margin: 0 auto;
+}
+.part1 .btn a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	/*background: url("../images/jian-btn.png") no-repeat 2.4rem 0.23rem;
+	background-size: .192rem .32rem;
+	vertical-align: top;
+	line-height: .9rem;  
+	font-size: 0.448rem;
+	letter-spacing: 0.023rem;
+	color: #ffffff; 
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: .4rem;*/
+}
+.part1 .btn a img {
+	width: 100%;
+	height: 100%;
+}
+/*part1结束*/
+
+
+/*part2 开始*/
+.part2 {
+	position: relative;
+}
+.bg-wrap {
+	width: 100%;
+}
+.bg-wrap img {
+	width: 100%;
+}
+.part2 .content {
+	position: absolute;
+    top: 5.96rem;
+    width: 100%;
+}
+.swiper {
+	width: 15.616rem;
+	height: 13.845rem;
+	margin: 0 auto;
+}
+.swiper .swiper-detail {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.swiper .swiper-detail > img {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper .con-detail {
+	position: absolute;
+	right: 0;
+	top: 1.2rem;
+	width: 8.27rem;
+	padding-left: .8rem;
+}
+.swiper .con-detail .top {
+
+}
+.swiper .con-detail .top .title {
+	font-size: 0.64rem;
+	letter-spacing: 0.02rem;
+	color: #5b350e;
+	margin-bottom: .64rem;
+}
+.swiper .con-detail .top .txt {
+	width: 8rem;
+	font-size: 0.384rem;
+	line-height: 0.652rem;
+	letter-spacing: 0.021rem;
+	color: #737373;
+	text-align: justify;
+}
+.swiper .con-detail .mid {
+	margin-top: .5rem;
+	position: relative;
+	top: .2rem;
+	padding-left: .449rem;
+} 
+.swiper .con-detail .mid h4 {
+	font-size: 0.384rem;
+	line-height: 0.576rem;
+	letter-spacing: 0.019rem;
+	color: #9a5a1a;
+	margin-bottom: .299rem;
+	margin-top: -.1rem;
+	font-weight: 700;
+}
+.swiper .con-detail .mid .txt-2 {
+	margin-top: 1rem;
+}
+.swiper .con-detail .mid .txt {
+	font-size: 0.384rem;
+	line-height: 0.57rem;
+	letter-spacing: 0.021rem;
+	color: #737373;
+}
+.swiper .line-pic {
+	position: absolute;
+	left: -.02rem;
+	top: .05rem;
+}
+.swiper-line {
+	height: 5.85rem;;
+}
+.swiper-line-1 {
+	height: 5.1rem;
+}
+.line-pic .circle {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	left: -.0596rem;
+	width: 0.192rem;
+}
+.line-pic .circle-1 {
+	height: 0.196rem;
+}
+.line-pic .circle img {
+	width: 100%;
+	height: 100%;
+}
+.line-pic .circle-2 {
+	top: 3.95rem;
+	height: .22rem;
+}
+.line-pic .circle-3 {
+	top: 3.42rem;
+}
+
+.btn-wrap {
+	position: absolute;
+	bottom: 1.6rem;
+	left: 50%;
+	margin-left: -3.95rem;
+	width: 6.19rem;
+	height: 1.024rem;
+	background: url('//img.hzshuangmei.com/m/freckle/btn-2.jpg') no-repeat;
+	background-size: 100%; 
+}
+.btn-wrap .lf-btn {
+	width: 50%;
+	height: 100%;
+	border-radius: 0.107rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.btn-wrap .rt-btn {
+	width: 50%;
+	height: 100%;
+	border-radius: 0.107rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.btn-wrap a {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+.btn-wrap .rt-btn a {
+	padding-left: .6rem;
+	background-position: 2.78rem .38rem;
+}
+/*swiper 样式修改开始*/
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	 background-image: url('//img.hzshuangmei.com/m/freckle/swiper-right.png');
+	 background-size: 1.045rem 2.027rem;
+	 width: 1.045rem;
+	 height: 2.027rem;
+	 right: 0;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	 background-image: url('//img.hzshuangmei.com/m/freckle/swiper-left.png');
+	 background-size: 1.045rem 2.027rem;
+	 width: 1.045rem;
+	 height: 2.027rem;
+	 left: 0;
+}
+/*swiper 样式修改结束*/
+
+/*part2 結束*/
+
+
+
+/*part3开始*/
+.part3 {
+	position: relative;
+	padding-top: 2.1rem;
+	padding-bottom: 4.181rem;
+}
+.part3 .panel-wrap {
+	width: 15.445rem;
+	margin: 0 auto;
+	margin-top: 2.112rem;
+}
+.part3 .panel-wrap .item {
+	float: left;
+	width: 7.381rem;
+	height: 4.309rem;
+	margin-bottom: .299rem;
+}
+.part3 .panel-wrap .item:nth-child(2n-1) {
+	margin-right: .683rem;
+}
+.part3 .panel-wrap .item img {
+	width: 100%;
+	height: 100%;
+}
+/*part3结束*/
+
+
+/*bottom banner 开始*/
+.bottom-banner {
+	position: relative;
+	width: 100%;
+}
+.bottom-banner img {
+	width: 100%;
+}
+.bot-btn {
+	position: absolute;
+	top: 7.2rem;
+    left: 5.8rem;
+	width: 3.371rem;
+	height: 1.024rem;
+	z-index: 10;
+}
+.bot-btn a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+/*bottom banner 结束*/
+
+
+/*1px 边框开始*/
+.scale-1px{
+    position: relative;
+    border:none;
+}
+.scale-1px:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.scale-1px:after {
+	background-color: #9a5a1a;
+	opacity: 0.4;
+}
+/*1px 边框结束*/
+
