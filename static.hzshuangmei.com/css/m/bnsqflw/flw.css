@@ -310,8 +310,8 @@ body {
     background-size: 15.65866667rem 11.94666667rem;
 }
 .m5zj > div h4 {
-    width: 3.41333333rem;
-    margin: 4.56533333rem 0 0 7.57333333rem;
+    width: 4.26666667rem;
+    margin: 4.56533333rem 0 0 7.04666667rem;
     font-size: .64rem;
     line-height: .64rem;
     color: #0089b4;
@@ -319,8 +319,8 @@ body {
 .m5zj > div span {
     display: block;
     width: .68266667rem;
-    height: .04266667rem;
-    margin: .192rem 0 .256rem 7.552rem;
+    height: 2px;
+    margin: .20rem 0 .256rem 7.552rem;
     background-color: #0089b4;
 }
 .m5zj > div li {
@@ -335,7 +335,7 @@ body {
     margin-left: 8.42666667rem;
 }
 .m5zj > .m5zhz h4 {
-    margin-left: 8.42666667rem;
+    margin-left: 7.9rem;
 }
 .m5zj > .m5zhz span {
     margin-left: 8.42666667rem;
@@ -355,7 +355,7 @@ body {
     transform: skewX(-25deg);
 }
 .m5zj > div:nth-child(2) h4 {
-    margin: 4.26666667rem 0 0 7.68rem;
+    margin: 4.26666667rem 0 0 7.25333333rem;
 }
 .m5zj > div:nth-child(2) li,
 .m5zj > div:nth-child(2) span {

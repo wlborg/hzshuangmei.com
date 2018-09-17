@@ -20,7 +20,7 @@
         <div class="case_content">
             <div id="case_tab">
                 <ul class="btn" id="case_nav">
-                    <li class="nav_list"><a href="/cases" class="nav_link">全部案例 ></a></li>
+                    <li class="nav_list"><a href="/cases" class="nav_link">美丽回顾 ></a></li>
                     <li class="nav_list"><a href="/cases/eye/" class="nav_link">眼部 ></a></li>
                     <li class="nav_list"><a href="/cases/nose/" class="nav_link">鼻部 ></a></li>
                     <li class="nav_list"><a href="/cases/face/" class="nav_link">面部 ></a></li>
@@ -39,23 +39,23 @@
                     <div class="clearFix">
                 {dede:list pagesize="9" orderby="weight" addfields="imgbefore,imgafter,job,doctor,project"}
                         <div class="list">
-                            <a class="t0" href="[field:arcurl/]" target="_blank" rel="noopener">
+                            <a class="j-consult t0" href="javascript:void(0)" target="_blank" rel="noopener">
                                 <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
                             </a>
                             <div class="ltt">
-                                <a class="l_ico" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                <a class="j-consult l_ico" href="javascript:void(0)" target="_blank" rel="noopener">
                                     <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
                                 </a>
                                 <div class="txt">
-                                    <a class="t1" href="[field:arcurl/]" target="_blank" rel="noopener">
+                                    <a class="j-consult t1" href="javascript:void(0)"  target="_blank" rel="noopener">
                                         <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
                                     </a>
                                     <div class="t2">塑美项目： [field:project/]</div>
                                     <div class="t3">塑美专家：[field:doctor/]</div>
                                 </div>
                             </div>
-                            <a class="t4" href="[field:arcurl/]" target="_blank" rel="noopener">
-                                <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="案例视频图标"/>
+                            <a class="j-consult t4" href="javascript:void(0)" target="_blank" rel="noopener">
+                                <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="视频图标"/>
                             </a>
                         </div>
                     {/dede:list}

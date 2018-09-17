@@ -1,15 +1,15 @@
 <script type="application/ld+json">
     {
         "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-        "@id": "https://www.hzshuangmei.com{dede:field.arcurl/}",
-        "title": "{dede:field.title/}",
+        "@id": "https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}",
+        "title": "{dede:field.seotitle/}_{dede:global.cfg_webname/}",
         "description":"{dede:field.description  function='html2text(@me)'/}",
         "upDate": "{dede:tagname runphp='yes'}@me = date("Y-m-d", time());{/dede:tagname}T{dede:tagname runphp='yes'}@me = date("H:i:s", time());{/dede:tagname}",
         "data":{
              "WebPage":{
-                "headline":"{dede:field.title/}",
-                "pcUrl":"https//:www.hzshuangmei.com",
-                "wapUrl":"https//:m.hzshuangmei.com"
+                "headline":"{dede:field.seotitle/}_{dede:global.cfg_webname/}",
+                 "pcUrl":"https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}",
+              "wapUrl":"https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}"
              }
         }
     }

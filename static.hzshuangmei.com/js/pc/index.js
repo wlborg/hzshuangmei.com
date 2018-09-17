@@ -86,6 +86,7 @@ var index_expert = new Swiper('.swiper-container4', {
     //spaceBetween: 40
 });
 
+// 日记切换
 var tabs4=document.getElementById("tab4").getElementsByTagName("li");
 var divs4=document.getElementById("tabCon4").getElementsByTagName("ul");
 for(var i=0;i<tabs4.length;i++){

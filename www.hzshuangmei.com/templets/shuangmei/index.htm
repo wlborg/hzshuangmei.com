@@ -8,7 +8,7 @@
     <title>{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/index.css" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/index.js" as="script" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/index.js" as="script" crossorigin async="true"/>
     <link rel="preload" href="https://img.hzshuangmei.com/pc/brand2.webm" as="video"  type="video/webm" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/index.css"/>
     <link rel="canonical" href="https://www.hzshuangmei.com/">
@@ -23,7 +23,8 @@
 <div class="index_news">
     <div class="m1 clearFix">
         <div class="video">
-            <h2>
+             <!-- <img src="{dede:global.cfg_imgpath/}/pc/band_N.jpg"  alt="品牌介绍" class="band_N"/> -->
+                <h2>
                 <a href="/video/" target="_blank" rel="noopener">
                     <span>视频中心</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/n_video_center.png"   alt="video center"/>
@@ -32,6 +33,7 @@
             <div class="swiper-button-next video-button-next"></div>
             <div class="swiper-button-prev video-button-prev"></div>
             {dede:myad name='videopic_pc'/}
+
         </div>
         <div class="news">
             <h2 class="news_h">
@@ -274,130 +276,132 @@
         <a href="/doctors" class="ask" target="_blank" rel="noopener" rel="nofollow">MORE+</a>
     </div>
 </div>
+<!-- 恢复过来开始 -->
 <div class="index_clients">
     <div class="m1">
         <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="真人代言 现身说法"/></h3>
         <div id="tab4">
             <ul class="clearFix">
-                <li class="fli4">整形美容案例</li>
-                <li>皮肤激光案例</li>
-                <li>注射微整案例</li>
-                <li>医学纹绣案例</li>
+                <li class="fli4">整形美容</li>
+                <li>皮肤激光</li>
+                <li>注射微整</li>
+                <li>医学纹绣</li>
             </ul>
         </div>
         <div id="tabCon4">
-            <ul class="fdiv4 clearFix">
-                {dede:arclist typeid=11 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
-                channelid="19"}
-                <li>
-                    <div class="clients_t">
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术前</span>
+           <ul class="fdiv4 clearFix">
+               {dede:arclist typeid=11 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+               channelid="19"}
+               <li>
+                   <div class="clients_t">
+                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                        <a href="[field:arcurl/]" class="qiehuan">
-                            <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:title/]"/>
-                            <span>术后</span>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                       <a href="javascript:void(0)" class="j-consult qiehuan">
+                           <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                           <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                    </div>
-                    <div class="clients_b">
-                        <p>塑美方案：[field:project/]</p>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                   </div>
+                   <div class="clients_b">
+                       <p>塑美方案：[field:project/]</p>
 
-                        <p>塑美专家：[field:doctor/]</p>
-                        <a href="[field:arcurl/]" class="xiangqing" target="_blank" rel="noopener">案例详情</a>
-                    </div>
-                </li>
-                {/dede:arclist}
-            </ul>
-            <ul class="clearFix">
-                {dede:arclist typeid=42 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
-                channelid="19"}
-                <li>
-                    <div class="clients_t">
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术前</span>
+                       <p>塑美专家：[field:doctor/]</p>
+                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                   </div>
+               </li>
+               {/dede:arclist}
+           </ul>
+           <ul class="clearFix">
+               {dede:arclist typeid=42 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+               channelid="19"}
+               <li>
+                   <div class="clients_t">
+                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                            <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                        <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
-                            <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术后</span>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                       <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener">
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                             <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                    </div>
-                    <div class="clients_b">
-                        <p>塑美方案：[field:project/]</p>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                   </div>
+                   <div class="clients_b">
+                       <p>塑美方案：[field:project/]</p>
 
-                        <p>塑美专家：[field:doctor/]</p>
-                        <a href="[field:arcurl/]" class="xiangqing" target="_blank" rel="noopener">案例详情</a>
-                    </div>
-                </li>
-                {/dede:arclist}
-            </ul>
-            <ul class="clearFix">
-                {dede:arclist typeid=13 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
-                channelid="19"}
-                <li>
-                    <div class="clients_t">
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:title/]"/>
-                            <span>术前</span>
+                       <p>塑美专家：[field:doctor/]</p>
+                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                   </div>
+               </li>
+               {/dede:arclist}
+           </ul>
+           <ul class="clearFix">
+               {dede:arclist typeid=13 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+               channelid="19"}
+               <li>
+                   <div class="clients_t">
+                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                             <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                        <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
-                            <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术后</span>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                       <a href="javascript:void(0)" class=" j-consult qiehuan" target="_blank" rel="noopener">
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                            <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                    </div>
-                    <div class="clients_b">
-                        <p>塑美方案：[field:project/]</p>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                   </div>
+                   <div class="clients_b">
+                       <p>塑美方案：[field:project/]</p>
 
-                        <p>塑美专家：[field:doctor/]</p>
-                        <a href="[field:arcurl/]" class="xiangqing">案例详情</a>
-                    </div>
-                </li>
-                {/dede:arclist}
-            </ul>
-            <ul class="clearFix">
-                {dede:arclist typeid=41 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
-                channelid="19"}
-                <li>
-                    <div class="clients_t">
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术前</span>
+                       <p>塑美专家：[field:doctor/]</p>
+                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                   </div>
+               </li>
+               {/dede:arclist}
+           </ul>
+           <ul class="clearFix">
+               {dede:arclist typeid=41 orderby='id' row='4' addfields="imgafter,imgbefore,job,doctor,project"
+               channelid="19"}
+               <li>
+                   <div class="clients_t">
+                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                             <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                        <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
-                            <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
-                            <span>术后</span>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                       <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener">
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                             <span>&nbsp;</span>
 
-                            <p>[美丽蜕变] [field:title/]</p>
-                        </a>
-                    </div>
-                    <div class="clients_b">
-                        <p>塑美方案：[field:project/]</p>
+                           <p>[美丽蜕变] [field:title/]</p>
+                       </a>
+                   </div>
+                   <div class="clients_b">
+                       <p>塑美方案：[field:project/]</p>
 
-                        <p>塑美专家：[field:doctor/]</p>
-                        <a href="[field:arcurl/]" class="xiangqing">案例详情</a>
-                    </div>
-                </li>
-                {/dede:arclist}
-            </ul>
-        </div>
-        <a href="/cases" class="ask" target="_blank" rel="noopener" rel="nofollow">MORE+</a>
-    </div>
-</div>
+                       <p>塑美专家：[field:doctor/]</p>
+                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                   </div>
+               </li>
+               {/dede:arclist}
+           </ul>
+       </div>
+       <a href="/cases" class="ask" target="_blank" rel="noopener" rel="nofollow">MORE+</a>
+           </div>
+       </div>
+<!--  恢复过来结束  -->
 <!--红妆历程-->
 <div class="lic">{dede:myad name='pc_hzslrz'/}</div>
 <!--红妆历程-->
@@ -441,7 +445,7 @@
                 </div>
             </li>
             <li>
-                <h2><a href="/equipment/" target="_blank" rel="noopener">尖端设备<span>sophisticated equipment</span></a></h2>
+                <h2><a href="/equipment/" target="_blank" rel="noopener">医院设备<span>sophisticated equipment</span></a></h2>
 
                 <div class="swiper-button-next swiper-button-next5 swiper-button-next5_3"></div>
                 <div class="swiper-button-prev swiper-button-prev5 swiper-button-prev5_3"></div>

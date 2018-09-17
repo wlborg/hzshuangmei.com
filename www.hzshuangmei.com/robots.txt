@@ -1,4 +1,5 @@
 User-agent: * 
+Disallow: /search/
 Disallow: /incl*
 Disallow: /*?*
 User-Agent:YandexBot/3.0

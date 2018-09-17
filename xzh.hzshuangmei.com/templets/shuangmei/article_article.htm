@@ -41,7 +41,7 @@
     </script>
 </head>
 
-<body class="post-template-default single single-post postid-738 single-format-standard comment-open list-thumb-hover-action nav-fixed-top">
+<body class="post-template-default single single-post single-format-standard comment-open list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
     <section class="container">
         <div class="content-wrap">
@@ -65,9 +65,9 @@
                 <article class="article-content">
                     {dede:field.body/}
                 </article>
-                <script>
+            <!--     <script>
                 cambrian.render('tail')
-                </script>
+                </script> -->
                 <div class="article-copyright">未经允许不得转载：{dede:field name='position'/}><a href="{dede:field name='arcurl'/}">{dede:field.title/}</a></div>
                 <div class="article-tags">
                     <!--[field:id function=GetTags_list(@me)/]-->
@@ -106,7 +106,7 @@
                     <h3>相关推荐</h3>
                     <ul>
                         {dede:FIELD.typeid function='getCaseArticleRelateProjectXZH(@me)'/} {dede:arclist titlelen="120" row='4' flag='c' orderby ='pubdate' orderway="desc" }
-                        <li>
+                        <li class="line-limit-length">
                             <a href="[field:arcurl/]">
                         <span class="thumbnail">
                         <img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">

@@ -143,7 +143,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
+$relateproject.='<li class="expert"><a href="https://www.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;
@@ -222,7 +222,7 @@ function getAllDateAriticXZH()
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
-$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.arcrank=0 order by id desc limit 4");
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where a.typeid in(77,78,79,80,81,82,83,84,85,86) and a.arcrank=0 order by id desc limit 4");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
@@ -233,7 +233,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan">'.$title.'</span></a></li>';
+$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span></a></li>';
 }
 if($ns>0){
 $relateproject=$relateproject;

@@ -569,22 +569,18 @@ $list.= '
 <div class="item active" >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgbefore.'" alt="术前"></a>
+
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgafter.'" alt="术后"></a>
+
     </div>
   </div>
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="javascript:void(0)" class="j-consult"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -595,22 +591,18 @@ $list.= '
 <div class="item " >
   <div class="pic f-cb">
     <div class="before ">
-      <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgbefore.'" alt="术前"></a>
+
     </div>
     <div class="after">
-      <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+      <a href="javascript:void(0)" class="j-consult"><img src="'.$imgafter.'" alt="术后"></a>
+
     </div>
   </div>
   <div class="label f-cb">
     <span class="pro">'.$project.'</span>
     <div class="right">
-      <a href="'.$url.'"><span class="show"></span></a>
+      <a href="javascript:void(0)" class="j-consult"><span class="show"></span></a>
       <span class="click">'.$click.'</span>
     </div>
   </div>
@@ -968,4 +960,130 @@ $relateproject= ' <div class="imgbox">
 </div> ';
 }
 return $relateproject;
+}
+/**
+*  专题增加获取熊掌号文章(最新)
+*  获取相关最新文章6条
+*  $res2补缺少数据
+*/
+function getProjectArticleFormXZ($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$res2="";
+switch ($typeid)
+{
+case 14 :
+$relatetypeid= 78;
+break;
+case 15 :
+$relatetypeid=77;
+break;
+case 24:
+$relatetypeid=79;
+break;
+case 25:
+$relatetypeid=79;
+break;
+case 26:
+$relatetypeid=79;
+break;
+case 17 :
+$relatetypeid=80;
+break;
+case 18 :
+$relatetypeid=81;
+break;
+case 19 :
+$relatetypeid=82;
+break;
+case  20 :
+$relatetypeid=83;
+break;
+case  27 :
+$relatetypeid=78;
+break;
+case  28 :
+$relatetypeid=78;
+break;
+case  29 :
+$relatetypeid=78;
+break;
+case  30 :
+$relatetypeid=78;
+break;
+case  31 :
+$relatetypeid=78;
+break;
+case  32 :
+$relatetypeid=78;
+break;
+case  33 :
+$relatetypeid=78;
+break;
+case  22 :
+$relatetypeid=78;
+break;
+case  23 :
+$relatetypeid=78;
+break;
+case  34 :
+$relatetypeid=78;
+break;
+default:
+$relatetypeid=78;
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+
+$litpic =$row["litpic"];
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+}
+if($ns>0){
+    if($ns<4){
+      $res2.=getProjectArticleFormXZToSix($ns);
+    }
+   $relateproject= '<div class="imgbox">
+  '.$relateproject.$res2.'</div>';
+  }
+  return $relateproject;
+}
+/**
+ *
+*  专题增加获取熊掌号文章(最新)
+*  如果不足够六条，补到六条
+*
+*/
+function getProjectArticleFormXZToSix($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=4-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=78 and a.arcrank=0 order by rand() limit
+  $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
 }

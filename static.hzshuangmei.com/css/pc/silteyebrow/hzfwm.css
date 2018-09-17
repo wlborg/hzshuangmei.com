@@ -1,0 +1,575 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.po {
+    position: relative;
+}
+/*banner开始*/
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+/*banner结束*/
+
+.consult {
+    display: block;
+}
+/*part1开始*/
+.part1 {
+    position: relative;
+
+    width: 100%;
+    padding-bottom: 248px;
+
+    background: #fff;
+}
+.part1 .content .title-pic {
+    width: 100%;
+}
+.part1 .content .title-pic img {
+    width: 100%;
+}
+.part1 .pic-wrap {
+    width: 1196px;
+    margin: 0 auto;
+}
+.part1 .pic-wrap .pic-item {
+    position: relative;
+
+    float: left;
+    width: 299px;
+    height: 221px;
+
+    line-height: 36px;
+
+    text-align: center;
+}
+.part1 .pic-wrap .pic-item img {
+    width: 100%;
+    height: 100%;
+}
+.part1 .pic-item .txt-wrap {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+}
+.part1 .pic-item .img-bg-wrap {
+    position: absolute;
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-2.jpg") no-repeat;
+    background-size: 100%;
+}
+.part1 .txt-wrap .title {
+    margin-bottom: 8px;
+
+    font-size: 30px;
+
+    color: #333;
+}
+.part1 .txt-wrap .title-1 {
+    color: #fff;
+}
+.part1 .txt-wrap .title-chl {
+    font-size: 22px;
+
+    color: #666;
+}
+.part1 .pic-item .active {
+    width: 299px;
+    height: 234px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-1-acive.png") no-repeat;
+    background-size: 100%;
+}
+.part1 .pic-item .active-1 {
+    top: -12px;
+
+    width: 299px;
+    height: 234px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part1-pic-2-active.png") no-repeat;
+}
+.part1 .pic-item .active-1 .txt-wrap {
+    top: 82px;
+}
+.part1 .txt-wrap .title-chl-1 {
+    color: #fff;
+}
+.part1 .btn-wrap,
+.part2 .btn-wrap,
+.part3 .btn-wrap,
+.part4 .btn-wrap {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+
+    width: 311px;
+    height: 82px;
+    margin-left: -155px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/btn-pic.png");
+    background-size: 100%;
+}
+.part1 .btn-wrap a,
+.part2 .btn-wrap a,
+.part3 .btn-wrap a,
+.part4 .btn-wrap a {
+    width: 100%;
+    height: 100%;
+}
+.part1 .btn-wrap a img {
+    width: 50px;
+    height: 41px;
+}
+.part1 .btn-wrap .line-wrap {
+    position: absolute;
+    right: 0;
+}
+.modifier-2 {
+    position: absolute;
+    bottom: -77px;
+    left: 0;
+    z-index: 10;
+
+    width: 95px;
+    height: 146px;
+}
+.modifier-2 img {
+    width: 100%;
+    height: 100%;
+}
+/*part1结束*/
+
+.part2 {
+    position: relative;
+
+    height: 1092px;
+    padding-bottom: 100px;
+
+    background: #c3fcfa;
+}
+.part2 .title-pic {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+}
+.part2 .title-pic img {
+    width: 100%;
+}
+.part2 .content .left {
+    position: absolute;
+    top: -146px;
+    left: -69px;
+    z-index: 2;
+
+    width: 528px;
+}
+.part2 .content .left img {
+    width: 100%;
+}
+.part2 .content .right {
+    position: absolute;
+    top: -49px;
+    right: 28px;
+    z-index: 1;
+
+    width: 805px;
+}
+.part2 .content .right img {
+    width: 100%;
+}
+.part2 .content .modifier {
+    position: absolute;
+    bottom: -875px;
+    left: -226px;
+
+    width: 801px;
+}
+.part2 .content .modifier img {
+    width: 100%;
+}
+.modifier-1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 212px;
+}
+.modifier-1 img {
+    z-index: 4;
+
+    width: 100%;
+}
+.part2 .btn-wrap {
+    bottom: -841px;
+    left: 63.5%;
+}
+
+/*part3开始*/
+.part3 {
+    position: relative;
+
+    padding-bottom: 155px;
+
+    background: #fff;
+}
+.part3 .title-wrap {
+    width: 100%;
+}
+.part3 .title-wrap img {
+    width: 100%;
+}
+
+.part3 .pic-panel .item {
+    float: left;
+    width: 298px;
+    height: 201px;
+    margin-right: 2px;
+}
+.part3 .pic-panel .item:nth-child(4n) {
+    margin-right: 0;
+}
+.part3 .pic-panel .item img {
+    width: 100%;
+    height: 100%;
+}
+.part3 .btn-wrap {
+    bottom: 0;
+}
+.modifier-3,
+.modifier-4 {
+    position: absolute;
+}
+.modifier-3 {
+    top: 199px;
+    right: 0;
+
+    width: 67px;
+    height: 160px;
+}
+.modifier-3 img,
+.modifier-4 img {
+    width: 100%;
+    height: 100%;
+}
+.modifier-4 {
+    bottom: -135px;
+    left: 0;
+
+    width: 100px;
+    height: 186px;
+}
+/*part3结束*/
+
+/*part4开始*/
+.part4 {
+    position: relative;
+
+    height: 1410px;
+    padding-bottom: 253px;
+}
+.part4 .title-wrap {
+    width: 100%;
+}
+.part4 .title-wrap img {
+    width: 100%;
+}
+.part4 .content-1 {
+    position: absolute;
+    top: 301px;
+    left: 0;
+
+    width: 1239px;
+}
+.part4 .content-1 img {
+    width: 100%;
+}
+.part4 .content-1 .txt-wrap {
+    position: absolute;
+    top: 37px;
+    right: 0;
+
+    width: 470px;
+    height: 444px;
+}
+.part4 .content-1 .txt-con {
+    padding-top: 38px;
+    padding-left: 97px;
+
+    text-align: left;
+
+    color: #5ebcb5;
+}
+.part4 .txt-wrap .title {
+    font-size: 48px;
+}
+.part4 .txt-wrap .title p:nth-child(1) {
+    margin-bottom: -5px;
+}
+.part4 .txt-con .txt-item {
+    margin-top: 26px;
+
+    font-size: 30px;
+
+    color: #5ebcb5;
+}
+.part4 .txt-con .txt-item span {
+    color: #ffb57d;
+}
+.part4 .txt-con .txt-item-1 {
+    margin-top: 24px;
+}
+.part4 .content-2 {
+    position: absolute;
+    top: 889px;
+    right: 0;
+}
+.part4 .content-2 .pic-wrap {
+    width: 1239px;
+}
+.part4 .content-2 .pic-wrap img {
+    width: 100%;
+}
+.part4 .content-2 .txt-wrap {
+    position: absolute;
+    top: 38px;
+    left: 0;
+
+    width: 470px;
+    height: 444px;
+}
+.part4 .content-2 .txt-con {
+    width: 350px;
+    height: 312px;
+    padding-top: 56px;
+    padding-left: 33px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    text-align: justify;
+    text-indent: 2em;
+    letter-spacing: 1px;
+
+    color: #5ebcb5;
+}
+.modifier-5,
+.modifier-6,
+.modifier-7,
+.modifier-8 {
+    position: absolute;
+}
+.modifier-5 {
+    top: 655px;
+    right: 0;
+
+    width: 85px;
+    height: 171px;
+}
+.modifier-5 img,
+.modifier-6 img,
+.modifier-7 img,
+.modifier-8 img {
+    width: 100%;
+    height: 100%;
+}
+.modifier-6 {
+    bottom: 0;
+    left: 0;
+
+    width: 98px;
+    height: 221px;
+}
+.modifier-7 {
+    top: 74px;
+    right: 0;
+
+    width: 131px;
+    height: 135px;
+}
+.modifier-8 {
+    bottom: 0;
+    left: 0;
+
+    width: 124px;
+    height: 61px;
+}
+/*part4结束*/
+
+/*part5开始*/
+.part5 {
+    position: relative;
+
+    height: 1264px;
+
+    background: #5ebcb5;
+}
+.part5 .title-wrap {
+    width: 100%;
+}
+.part5 .title-wrap img {
+    width: 100%;
+}
+.part5 .content-1 {
+    position: absolute;
+    top: 264px;
+    left: -15px;
+}
+.part5 .content-1 .pic-wrap {
+    width: 1228px;
+}
+.part5 .content-1 .item {
+    float: left;
+    width: 298px;
+    height: 212px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+.part5 .content-1 .item:nth-child(4n) {
+    margin-right: 0;
+}
+.part5 .content-1 .item img {
+    width: 100%;
+    height: 100%;
+}
+.part5 .content-2 {
+    position: absolute;
+    bottom: -831px;
+    left: 0;
+}
+.part5 .content-2 .txt-item {
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #fff;
+}
+.part5 .btn-wrap {
+    position: absolute;
+    bottom: 31px;
+    left: 50%;
+
+    width: 311px;
+    height: 89px;
+    margin-left: -155px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part5-btn.png") no-repeat;
+    background-size: 100%;
+}
+.part5 .btn-wrap a {
+    width: 100%;
+    height: 100%;
+}
+/*part5结束*/
+
+/*part6开始*/
+.part6 {
+    position: relative;
+}
+.part6 .title-wrap {
+    width: 100%;
+}
+.part6 .title-wrap img {
+    width: 100%;
+}
+.swiper .bg-wrap {
+    width: 100%;
+    height: 1108px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper .bg-wrap-1 {
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper .bg-wrap-2 {
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/part6-pic-3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-container {
+    top: -272px;
+    z-index: -1;
+}
+.swiper .bg-wrap .item {
+    position: relative;
+    top: 259px;
+}
+/*part6结束*/
+
+
+
+/*swiper样式修改*/
+.part6 .bullet-wrap {
+    position: absolute;
+    bottom: 128px;
+    left: 50%;
+    z-index: 100;
+
+    margin-left: -47px;
+}
+.part6 .title-wrap {
+    z-index: 2;
+}
+.part6 .bullet-wrap .item {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 20px;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    border: 1px solid #fff;
+    border-radius: 14px;
+}
+.part6 .bullet-wrap .item:nth-child(3) {
+    margin-right: 0;
+}
+.part6 .bullet-wrap .active {
+    border: 5px solid rgba(255, 255, 255, .43);
+}
+.part6 .bullet-wrap .active i {
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    border-radius: 14px;
+    background: #fff;
+}
+.swiper-container {
+    z-index: auto;
+}
+.part6 .swiper {
+    height: 835px;
+}
+.part6 .btn-wrap {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    z-index: 100;
+
+    width: 251px;
+    height: 86px;
+    margin-left: -126px;
+
+    background: url("//img.hzshuangmei.com/pc/silteyebrow/btn-pic-1.png") top center;
+    background-size: 100% 100%;
+}
+.part6 .btn-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*swiper样式修改*/
