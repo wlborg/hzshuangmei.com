@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 	var mySwiper = new Swiper('.swiper-container', {
 	autoplay: 2500,//可选选项，自动滑动
 	loop: true,
@@ -19,4 +19,3 @@
 	    mySwiper.slideTo(index + 1);
 	    mySwiper.startAutoplay();
 	})
-</script>
