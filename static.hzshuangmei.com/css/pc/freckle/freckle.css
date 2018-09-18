@@ -18,7 +18,7 @@ img {
 .banner {
 	width: 100%;
 }
-a {
+.banner a {
 	width: 100%;
 }
 .banner img {
@@ -104,7 +104,7 @@ a {
     color: #ffffff;
     margin: 0 auto;
     text-align: left;
-    background: url("../images/left-jian.png") no-repeat right 12px;
+    background: url("//img.hzshuangmei.com/pc/freckle/left-jian.png") no-repeat right 12px;
     background-size: 5px 9px;
 }
 /*part1	结束*/
@@ -177,7 +177,7 @@ a {
 .left-btn .btn-item {
 	width: 171px;
 	height: 21px;
-	background: url("../images/left-btn.png") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn.png") no-repeat;
 	background-size: 100%;
 	text-align: center;
 	font-size: 18px;
@@ -188,13 +188,13 @@ a {
 	margin-bottom: 28px;
 }
 .left-btn .btn-item-1 {
-	background: url("../images/left-btn-1.png") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn-1.png") no-repeat;
 	background-size: 100%;
 }
 .left-btn .active {
 	width: 171px;
 	height: 28px;
-	background: url("../images/left-btn-active.jpg") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn-active.jpg") no-repeat;
 	background-size: 100%;
 	text-align: center;
 	line-height: 28px;
@@ -309,20 +309,20 @@ a {
     letter-spacing: 1px;
     color: #ffffff;
     text-align: left;
-    background: url(../images/right-jian.png) no-repeat right 22px;
+    background: url(//img.hzshuangmei.com/pc/freckle/right-jian.png) no-repeat right 22px;
     background-size: 12px 19px;
 }
 /*swiper 样式修改开始*/
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-	background-image:url("../images/swiper-right.png");
+	background-image:url("//img.hzshuangmei.com/pc/freckle/swiper-right.png");
 	width: 55px;
 	height: 107px;
 	background-size: 100%;
 	right: 0;
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-	background-image:url("../images/swiper-left.png");
+	background-image:url("//img.hzshuangmei.com/pc/freckle/swiper-left.png");
 	width: 55px;
 	height: 107px;
 	background-size: 100%;
