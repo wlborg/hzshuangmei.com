@@ -209,7 +209,14 @@ a:hover {
 }
 
 .m2 .zt-content .row .item p {
-	width: 6.99733333rem;
+	position: absolute;
+	width: 100%;
+	height: 2.005rem;
+	background-color: rgba(172,142,119,0.75);
+	left: 0;
+	bottom: 0;
+	line-height: 0.65rem;
+	/*width: 6.99733333rem;
 	height: 1.28rem;
 	padding: 0.42666667rem 0.21333333rem;
 	position: absolute;
@@ -221,9 +228,23 @@ a:hover {
 	font-stretch: normal;
 	line-height: 0.59733333rem;
 	letter-spacing: 1px;
-	color: #e7e0dd
+	color: #e7e0dd*/
 }
-
+.m2 .zt-content .row .item p i {
+	font-style: normal;
+	display: inline-block;
+	position: absolute;
+	height: 1.152rem;
+	font-size: 0.46933333rem;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #e7e0dd;
+	left: .3rem;
+	top: 50%;
+	margin-top: -.5526rem;
+	width: 7.2rem;
+}
 .m2 .zt-content .row .item p span {
 	font-size: 0.46933333rem;
 	font-weight: normal;
@@ -234,7 +255,8 @@ a:hover {
 	background: #9d341a;
 	border-radius: 0.29866667rem;
 	opacity: 1;
-	display: inline-block
+	margin-right: .192rem;
+	display: inline-block;
 }
 
 .m2 .consult {
@@ -441,13 +463,19 @@ a:hover {
 .m4 .zt-content {
 	margin-top: 1.36533333rem
 }
-
+.m4 .zt-content .table-pic {
+	width: 15.19rem;
+	margin: 0 auto;
+}
+.m4 .zt-content .table-pic img {
+	width: 100%;
+}
 .m4 .zt-content table {
 	table-layout: fixed;
 	border-collapse: collapse;
 	width: 15.57333333rem;
 	margin: 0 auto;
-	background: #f2e4dc
+	background: #f2e4dc;
 }
 
 .m4 .zt-content table tr {
