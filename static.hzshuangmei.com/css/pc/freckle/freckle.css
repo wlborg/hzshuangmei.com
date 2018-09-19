@@ -1,0 +1,391 @@
+/*公共样式开始*/
+body {
+	overflow-x: hidden;
+}
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*公共样式结束*/
+
+/*banner 开始*/
+.banner {
+	width: 100%;
+}
+.banner a {
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+/*banner 结束*/
+
+/*part1	开始*/
+.part1 {
+	position: relative;
+}
+.title-wrap {
+	width: 100%;
+}
+.title-wrap img {
+	width: 100%;
+}
+.part1 .part1-panel {
+
+} 
+.part1 .part1-panel .item {
+	position: relative;
+	float: left;
+	width: 390px;
+	height: 455px;
+	margin-bottom: 15px;
+}
+.part1 .part1-panel .item:hover{
+	box-shadow:0 4px 15px #ccc;
+	top: -2px;
+	left: -1px;
+}
+.part1 .part1-panel .item:nth-child(3n-1) {
+	margin-left: 14px;
+	margin-right: 14px;
+}
+.part1 .part1-panel .item img {
+	width: 100%;
+	height: 100%;
+}
+.part1 .part1-panel .title {
+	font-size: 24px;
+	letter-spacing: 1px;
+	color: #5b350e;
+	margin-top: 18px;
+    margin-bottom: 9px;
+}
+.part1 .part1-panel .detail {
+	position: absolute;
+	top: 286px;
+	left: 0;
+	height: 46px;
+	width: 100%;
+	text-align: center;
+}
+.part1 .part1-panel .txt {
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 1px;
+	color: #737373;
+	height: 46px;
+}	
+.part1 .part1-panel .btn {
+	width: 142px;
+	height: 30px;
+	background-color: #9a5a1a;
+	border-radius: 5px;
+	line-height: 30px;
+	margin: 0 auto;
+	margin-top: 17px;
+}
+.part1 .part1-panel .btn a {
+	width: 100%;
+	height: 100%;
+}
+.part1 .part1-panel .btn span {
+	display: inline-block;
+    width: 85px;
+    height: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: left;
+    background: url("//img.hzshuangmei.com/pc/freckle/left-jian.png") no-repeat right 12px;
+    background-size: 5px 9px;
+}
+/*part1	结束*/
+
+
+/*part2开始*/
+.part2 {
+	position: relative;
+	height: auto;
+	overflow-x: hidden;
+}
+.bg-wrap {
+	width: 100%;
+}
+.part2 .bg-wrap {
+	height: 1164px;
+	width: 1920px;
+}
+.part2 .bg-wrap img {
+	width: 100%;
+	height: 100%;
+}
+.content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.part2 .title-wrap {
+	margin-top: 140px;
+}
+.swiper {
+	width: 100%;
+	height: 572px;
+	box-shadow: 3px 4px 21px 0px rgba(208, 169, 128, 0.19);
+	margin-top: 92px;
+	position: relative;
+}
+.swiper .left, .swiper .right {
+	position: absolute;
+}
+.swiper .swiper-detail {
+	height: 100%;
+
+}
+.swiper .left {
+	left: 0;
+	width: 202px;
+	height: 100%;
+}
+.swiper .left img {
+	width: 100%;
+	height: 100%;
+}
+.swiper .right {
+	right: 0;
+    height: 100%;
+    width: 998px;
+}
+.swiper .right img {
+	width: 100%;
+	height: 100%;
+}
+.left-btn {
+	position: absolute;
+	top: 145px;
+	left: 14px;
+	width: 100%;
+}
+.left-btn .btn-item {
+	width: 171px;
+	height: 21px;
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn.png") no-repeat;
+	background-size: 100%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 1px;
+	color: #5b350e;
+	cursor: pointer;
+	margin-bottom: 28px;
+}
+.left-btn .btn-item-1 {
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn-1.png") no-repeat;
+	background-size: 100%;
+}
+.left-btn .active {
+	width: 171px;
+	height: 28px;
+	background: url("//img.hzshuangmei.com/pc/freckle/left-btn-active.jpg") no-repeat;
+	background-size: 100%;
+	text-align: center;
+	line-height: 28px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.right-detail .txt-detail {
+	position: absolute;
+	top: 0;
+	right: 33px;
+	width: 491px;
+}
+.right-detail .txt-detail .title-txt {
+	font-size: 36px;
+	letter-spacing: 2px;
+	color: #5b350e;
+	margin-top: 45px;
+	margin-bottom: 15px;
+}
+.right-detail .txt-detail .title-txt-top {
+	margin-top: 80px;
+}
+.right-detail .txt-detail .txt-content {
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 1px;
+	color: #737373;
+	text-align: justify;
+}
+.right-detail .txt-detail .detail-item {
+	position: relative;
+	margin-top: 20px;
+	padding-left: 18px;
+}
+.right-detail .txt-detail .detail-top {
+	margin-top: 55px;
+}
+.right-detail .detail-item .top {
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #9a5a1a;
+	font-weight: 600;
+}
+.right-detail .detail-item .mid {
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 1px;
+	color: #737373;
+	margin-top: 17px;
+}
+.right-detail .detail-item .left-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.6;
+}
+.right-detail .left-content .left-circle {
+	width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #9a5a1a;
+    margin-top: 7px;
+}
+.right-detail .left-content .left-line {
+	height: 105px;
+    width: 1px;
+    margin-left: 2px;
+    background: #9a5a1a;
+    margin-top: 13px;
+}
+.right-detail .left-content .left-line-1 {
+	height: 73px;
+}
+.part2-btn {
+	position: absolute;
+	bottom: 108px;
+	left: 50%;
+	width: 355px;
+	margin-left: -177px;
+	height: 59px;
+	line-height: 59px;
+}
+.part2-btn .btn-left, .part2-btn .btn-right {
+	position: absolute;
+	height: 100%;
+	border-radius: 5px;
+}
+.part2-btn .btn-left {
+	left:0;
+	width: 184px;
+	z-index: 10;
+	background-color: #9a5a1a;
+}
+.part2-btn .btn-right {
+	width: 184px;
+	right: 0;
+	background-color: #e46e2e;
+}
+.part2-btn a {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.part2-btn a span {
+	display: inline-block;
+    width: 130px;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: left;
+    background: url(//img.hzshuangmei.com/pc/freckle/right-jian.png) no-repeat right 22px;
+    background-size: 12px 19px;
+}
+/*swiper 样式修改开始*/
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	background-image:url("//img.hzshuangmei.com/pc/freckle/swiper-right.png");
+	width: 55px;
+	height: 107px;
+	background-size: 100%;
+	right: 0;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	background-image:url("//img.hzshuangmei.com/pc/freckle/swiper-left.png");
+	width: 55px;
+	height: 107px;
+	background-size: 100%;
+	left: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	top: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+	margin-top: -53px;
+}
+/*swiper 样式修改结束*/
+/*part2结束
+
+/*part3开始*/
+.part3 {
+	padding-top: 138px;
+	position: relative;
+	height: auto;
+	padding-bottom: 244px;
+}
+.part3 .part3-panel {
+	margin-top: 117px;
+} 
+.part3 .part3-panel .item {
+	width: 574px;
+	height: 335px;
+	float: left;
+	margin-bottom: 25px;
+}
+.part3 .part3-panel .item img {
+	width: 100%;
+	height: 100%;
+}
+.part3 .part3-panel .item:nth-child(2n-1) {
+	margin-right: 52px;
+}
+.part3 .part2-btn {
+	bottom: 120px;
+}
+/*part3结束*/
+
+
+/*part4开始*/
+.part4 {
+	position: absolute;
+}
+.part4 .bg-wrap {
+	width: 100%;
+}
+.part4 .bg-wrap img {
+	width: 100%;
+}
+.part4-btn {
+	position: absolute;
+	width: 250px;
+	height: 90px;
+	left: 0;
+	top: 0;
+	border: 1px solid red;
+}
+.part4-btn a {
+	width: 100%;
+	height: 100%;
+}
+/*part4结束*/
