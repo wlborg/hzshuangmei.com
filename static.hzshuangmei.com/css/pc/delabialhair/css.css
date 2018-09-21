@@ -75,15 +75,18 @@
 .part2-panel {
     position: absolute;
     left: -31px;
+
     width: 1300px;
 }
 .part2-panel .panel-item {
+    position: relative;
+
     float: left;
     width: 305px;
     height: 381px;
-    position: relative;
     margin-right: 15px;
-    box-shadow: -2px 8px 13px 0px rgba(172, 142, 119, 0.41);
+
+    box-shadow: -2px 8px 13px 0 rgba(172, 142, 119, .41);
 }
 .part2-panel .panel-item img {
     width: 100%;
@@ -91,59 +94,70 @@
 }
 .part2-panel .bottom-txt {
     position: absolute;
-    left: 0;
     bottom: 0;
-    height: 89px;
+    left: 0;
+
     width: 100%;
-    background-color: rgba(116, 85, 64, 0.8);
+    height: 89px;
+
+    background-color: rgba(116, 85, 64, .8);
 }
 .part2-panel .bottom-txt span {
     display: block;
-    height: 58px;
     width: 252px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: 1px;
-    color: #faf7f5;
+    height: 58px;
     margin: 0 auto;
     margin-top: 9px;
+
+    font-size: 24px;
+    line-height: 33px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #faf7f5;
 }
 .part2-panel .bottom-txt i {
     display: block;
     margin-left: -23px;
+
     font-style: normal;
 }
 .part2-panel .bottom-txt .bot-only {
     margin-left: 37px;
 }
 .btn-wrap {
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+
     width: 336px;
     height: 80px;
-    background: url('//img.hzshuangmei.com/pc/delabialhair/btn.png') no-repeat;
-    background-size: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 67px;
     margin-left: -168px;
+
+    background: url("//img.hzshuangmei.com/pc/delabialhair/btn.png") no-repeat;
+    background-size: 100%;
 }
 .btn-wrap a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
-.btn-wrap a span  {
+.btn-wrap a span {
     display: block;
     width: 263px;
-    margin: 0 auto;
     height: 100%;
-    line-height: 80px;
+    margin: 0 auto;
+    margin-top: -7px;
+
     font-size: 28px;
-    letter-spacing: 1px;
-    color: #f7d5bf;
+    line-height: 80px;
+
     text-align: left;
     vertical-align: top;
-    margin-top: -7px;
+    letter-spacing: 1px;
+
+    color: #f7d5bf;
     background: url("//img.hzshuangmei.com/pc/delabialhair/btn-jian.png") no-repeat right 29px;
     background-size: 24px 24px;
 }
@@ -166,6 +180,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
 }
 .part3 .title-wrap {
@@ -174,59 +189,75 @@
 }
 .part3 .pic-wrap {
     position: relative;
-    width: 1197px;
     left: 3px;
+
+    width: 1197px;
     margin-bottom: 26px;
 }
 .part3 .pic-wrap-1 {
     position: relative;
-    width: 1189px;
     left: 6px;
+
+    width: 1189px;
 }
-.part3 .pic-wrap img, .part3 .pic-wrap-1 img {
+.part3 .pic-wrap img,
+.part3 .pic-wrap-1 img {
     width: 100%;
 }
 .part3 .txt-wrap {
     position: absolute;
-    left: 80px;
     top: 130px;
+    left: 80px;
+
     width: 503px;
     height: 314px;
 }
 .part3 .txt-wrap .title {
     font-size: 36px;
+
     letter-spacing: 2px;
+
     color: #52351f;
 }
 .part3 .txt-wrap .txt-con {
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: #684d3a;
-    opacity: 0.9;
     margin-top: 27px;
     margin-bottom: 45px;
+
+    font-size: 24px;
+
+    letter-spacing: 1px;
+
+    opacity: .9;
+    color: #684d3a;
 }
 .part3 .btn-wrap {
-    left: 155px;
     bottom: 39px;
+    left: 155px;
+
     width: 282px;
     height: 68px;
+
     background: url(//img.hzshuangmei.com/pc/delabialhair/btn-1.png) no-repeat;
     background-size: 100%;
 }
 .part3 .btn-wrap a span {
-    font-size: 23px;
     width: 220px;
-    background-size: 20px;
     margin-top: -14px;
+
+    font-size: 23px;
+
     background-position: right 30px;
+    background-size: 20px;
 }
 .part3 .pic-wrap-1 .bot-txt {
     position: absolute;
     bottom: 20px;
     left: 108px;
+
     font-size: 30px;
+
     letter-spacing: 1px;
+
     color: #684d3a;
 }
 .part3 .pic-wrap-1 .bot-txt-1 {
@@ -240,8 +271,9 @@
 /*part4开始*/
 .part4 {
     position: relative;
-    overflow-y: hidden;
+
     height: 1230px;
+    overflow-y: hidden;
 }
 .part4 .bg-wrap {
     width: 100%;
@@ -253,8 +285,9 @@
 }
 .part4 .person-wrap {
     position: absolute;
-    left: -44px;
     top: 70px;
+    left: -44px;
+
     width: 602px;
     height: 1156px;
 }
@@ -264,8 +297,9 @@
 }
 .part4 .right {
     position: absolute;
-    right: 0;
     top: 134px;
+    right: 0;
+
     width: 639px;
     height: 761px;
 }
@@ -275,29 +309,37 @@
 }
 .part4 .right .right-con {
     position: absolute;
-    left: 21px;
     top: 62px;
+    left: 21px;
+
     width: 100%;
     height: 100%;
 }
 .part4 .right-con .title {
-    font-size: 36px;
-    letter-spacing: 1px;
-    color: #52351f;
     margin-bottom: 25px;
+
+    font-size: 36px;
+
+    letter-spacing: 1px;
+
+    color: #52351f;
 }
 .part4 .right-con .txt {
     font-size: 24px;
+
     letter-spacing: 1px;
+
+    opacity: .9;
     color: #684d3a;
-    opacity: 0.9;
 }
 .part4 .txt-item {
     position: absolute;
-    left: 5px;
     bottom: 172px;
+    left: 5px;
+
     width: 202px;
     height: 247px;
+
     text-align: center;
 }
 .part4 .txt-item-1 {
@@ -308,30 +350,38 @@
 }
 .part4 .txt-item .title-txt {
     font-size: 26px;
-    letter-spacing: 1px;
-    color: #52351f;
     font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #52351f;
 }
 .part4 .txt-item .title-txt span {
-    font-size: 22px;
     display: block;
-    letter-spacing: 1px;
-    color: #52351f;
+
+    font-size: 22px;
     font-weight: normal;
+
+    letter-spacing: 1px;
+
+    color: #52351f;
 }
 .part4 .txt-item .txt-con {
-    font-size: 16px;
-    line-height: 26px;
-    color: #684d3a;
     width: 151px;
     margin: 0 auto;
-    text-align: justify;
     margin-top: 16px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: justify;
+
+    color: #684d3a;
 }
 .part4 .btn-wrap {
-    left: inherit;
     right: 0;
     bottom: 30px;
+    left: inherit;
 }
 .part4 .btn-wrap a span {
     width: 261px;
@@ -340,6 +390,7 @@
     position: absolute;
     top: 887px;
     left: 2px;
+
     width: 1195px;
 }
 .part4 .bottom-pic img {
@@ -350,6 +401,7 @@
 /*part5开始*/
 .part5 {
     position: relative;
+
     height: 1110px;
 }
 .part5 .bg-wrap {
@@ -379,8 +431,9 @@
 /*part6开始*/
 .part6 {
     position: relative;
-    height: 10.51rem;
+
     width: 100%;
+    height: 10.51rem;
     overflow-x: hidden;
 }
 .part6 .bg-wrap {
@@ -388,64 +441,72 @@
     height: 100%;
 }
 .part6 .bg-wrap img {
+    display: block;
     width: 100%;
     height: 100%;
 }
 .part6 .panel-wrap {
     position: absolute;
-    width: 9.87rem;
-    height: 4.69rem;
     top: 2.58rem;
     left: 0;
+
+    width: 9.87rem;
+    height: 4.69rem;
 }
 .part6 .panel-wrap img {
     width: 100%;
     height: 100%;
-}  
+}
 .part6 .title-wrap {
     margin-top: 1.33rem;
 }
 .part6 .btn-div {
     position: absolute;
-    left: 553px;
     top: 199px;
+    left: 553px;
+
     width: 3.2rem;
     height: 2.23rem;
 }
 .part6 .btn-div .txt-wrap {
     width: 1.6rem;
-    font-size: .3rem;
-    line-height: .42rem;
-    letter-spacing: 1px;
-    color: #f7d5bf;
     margin: 0 auto;
     /*margin-top: .7rem;*/
+    margin-top: .5rem;
+
+    font-size: .3rem;
+    line-height: .42rem;
+
+    letter-spacing: 1px;
+
+    color: #f7d5bf;
 }
 .part6 .btn-div a {
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
+    padding-top: .1rem;
     box-sizing: border-box;
-    padding-top: .7rem;
 }
 .part6 .btn-div .txt-wrap p:nth-child(2) {
-    background: url('//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png') no-repeat right 7px;
+    background: url("//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png") no-repeat right 7px;
     background-size: .23rem;
 }
 /*part6结束*/
 
 /*part7 开始*/
 .part7 {
-    background: #b49d8c;
     height: auto;
     padding-top: 1.63rem;
     padding-bottom: 2.31rem;
+
+    background: #b49d8c;
 }
-.part7 .title-wrap {
-}
+
 .part7 .pic-item-1 {
-    width: 100%;
     position: relative;
+
+    width: 100%;
     margin-top: 1.11rem;
 }
 .part7 .pic-item-1 img {
@@ -456,13 +517,13 @@
 }
 .part7 .pic-item-1 .left {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
 }
 .part7 .pic-item-1 .right {
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
 }
 .part7 .pic-item-1 .detail {
     width: 8rem;
@@ -482,17 +543,21 @@
 }
 .part7 .detail .con-txt {
     width: 4.67rem;
+    margin: .69rem   0;
+
     font-size: .22rem;
     line-height: .31rem;
-    letter-spacing: 1px;
-    color: #f2e0ce;
+
     text-align: justify;
-    margin: .69rem   0;
+    letter-spacing: 1px;
+
+    color: #f2e0ce;
 }
 .part7 .detail .btn {
     width: 2.49rem;
     height: .64rem;
-    box-shadow: -1px 2px 5px 0px rgba(105, 80, 66, 0.75);
+
+    box-shadow: -1px 2px 5px 0 rgba(105, 80, 66, .75);
 }
 .part7 .detail .btn a {
     display: block;
@@ -505,13 +570,15 @@
 }
 .part7 .pic-item-3 {
     position: relative;
+
     height: 7.37rem;
     margin-top: .41rem;
 }
 .part7 .pic-item-3 .swiper-left {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+
     width: 7.88rem;
     height: 100%;
 }
@@ -521,10 +588,11 @@
 }
 .part7 .pic-item-3 .swiper-right {
     position: absolute;
-    right: 0;
     top: 0;
-    width: 11.32rem;
+    right: 0;
     z-index: 2;
+
+    width: 11.32rem;
 }
 .part7 .pic-item-3 .swiper-right img {
     width: 100%;
@@ -532,15 +600,18 @@
 }
 .pic-item-3 .left {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
 }
 
 .part7 .pic-item-3 .con-txt {
-    font-size: .28rem;
-    letter-spacing: 1px;
-    color: #f2e0ce;
     height: 1rem;
+
+    font-size: .28rem;
+
+    letter-spacing: 1px;
+
+    color: #f2e0ce;
 }
 .part7 .pic-item-3 ul {
     /*width: 3.5rem;*/
@@ -556,31 +627,38 @@
 .part7 .pic-item-3 .con-txt span {
     position: relative;
     top: -.07rem;
+
     display: inline-block;
     width: 6px;
     height: 6px;
-    background-color: #f2e0ce;
+
     border-radius: 6px;
+    background-color: #f2e0ce;
 }
 /*swiper样式修改*/
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    left: 0;
+
     background: url(//img.hzshuangmei.com/pc/delabialhair/swiper-left.png) no-repeat;
     background-size: 100%;
-    left: 0;
 }
 /*.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background: url(img/swiper-right.png) no-repeat;
     background-size: 100%;
 }*/
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    right: 0;
+
     background: url(//img.hzshuangmei.com/pc/delabialhair/swiper-right.png) no-repeat;
     background-size: 100%;
-    right: 0;
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     width: .73rem;
     height: 1.35rem;
-    margin-top: -.5175rem;   
+    margin-top: -.5175rem;
 }
 /*swiper样式修改*/
 
