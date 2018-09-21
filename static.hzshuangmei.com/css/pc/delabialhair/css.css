@@ -421,6 +421,7 @@
     margin-top: 72px;
 }
 .part5 .table-wrap img {
+    display: block;
     width: 100%;
 }
 .part5 .btn-wrap a span {
@@ -487,6 +488,8 @@
     height: 100%;
     padding-top: .1rem;
     box-sizing: border-box;
+
+    color: #f7d5bf;
 }
 .part6 .btn-div .txt-wrap p:nth-child(2) {
     background: url("//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png") no-repeat right 7px;
