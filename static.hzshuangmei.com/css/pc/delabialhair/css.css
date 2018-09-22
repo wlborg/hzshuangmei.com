@@ -407,8 +407,8 @@
 }
 .part6 .btn-div {
     position: absolute;
-    left: 553px;
-    top: 199px;
+    left: 2.4rem;
+    top: 6.65rem;
     width: 3.2rem;
     height: 2.23rem;
 }
@@ -427,11 +427,24 @@
     display: block;
     box-sizing: border-box;
     padding-top: .7rem;
+    text-align: center;
+    font-size: .3rem;
+    line-height: .42rem;
+    letter-spacing: 1px;
+    color: #f7d5bf;
 }
-.part6 .btn-div .txt-wrap p:nth-child(2) {
-    background: url('//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png') no-repeat right 7px;
+.part6 .btn-div a span {
+    display: inline-block;
+    width: 1.55rem;
+    margin-left: -.1rem;
+    text-align: left;
+    background: url(//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png) no-repeat right 7px;
     background-size: .23rem;
 }
+/*.part6 .btn-div .txt-wrap p:nth-child(2) {
+    background: url('//img.hzshuangmei.com/pc/delabialhair/btn-jian-1.png') no-repeat right 7px;
+    background-size: .23rem;
+}*/
 /*part6结束*/
 
 /*part7 开始*/
