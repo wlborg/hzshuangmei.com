@@ -581,10 +581,6 @@
     background-size: 100%;
     left: 0;
 }
-/*.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    background: url(img/swiper-right.png) no-repeat;
-    background-size: 100%;
-}*/
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background: url(//img.hzshuangmei.com/pc/delabialhair/swiper-right.png) no-repeat;
     background-size: 100%;
