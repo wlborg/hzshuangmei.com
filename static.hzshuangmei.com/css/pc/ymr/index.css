@@ -1,0 +1,498 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    color: #555;
+    background: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+
+    color: #555;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+input,
+textarea,
+select,
+button {
+    font: 14px Verdana,Helvetica,Arial,sans-serif;
+
+    border: 1px solid #999;
+}
+table {
+    border-collapse: collapse;
+}
+.clearFix:after {
+    display: block;
+    clear: both;
+
+    content: "";
+}
+body {
+    overflow-x: hidden;
+
+    background-color: #eaf7ff;
+}
+.banner {
+    height: 1167px;
+    /*height:1225px;*/
+    /*width:100%;*/
+    /*background:url(//img.hzshuangmei.com/pc/ymr/banner_bg.png) no-repeat top center;*/
+
+    background: url(//img.hzshuangmei.com/pc/ymr/banner.jpg) no-repeat top center;
+    background-size: cover;
+}
+.banner .ba1 {
+    position: relative;
+    top: 470px;
+
+    margin-left: 30%;
+}
+.banner .ba2 {
+    position: relative;
+    top: 115px;
+    left: -35px;
+}
+.banner .ba3 {
+    position: relative;
+    top: 380px;
+
+    display: block;
+    width: 124px;
+    height: 147px;
+    margin-left: 88%;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/water0.png) no-repeat center;
+}
+.banner .ba4 {
+    position: relative;
+    top: 360px;
+
+    display: block;
+    width: 79px;
+    height: 94px;
+    margin-left: 82%;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/water1.png) no-repeat center;
+}
+.m1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.part1 {
+    height: 1116px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part1_bg.png) no-repeat center;
+    background-size: cover;
+}
+h3 {
+    text-align: center;
+}
+.part1 ul {
+    margin-top: 62px;
+}
+.part1 ul li {
+    float: left;
+    width: 358px;
+    height: 551px;
+    margin: 0 21px;
+
+    background-color: #fff;
+}
+.part1 ul li p {
+    width: 309px;
+    height: 78px;
+    margin: 25px auto 0;
+
+    font-size: 20px;
+    line-height: 1.499;
+
+    text-align: center;
+
+    color: rgb( 125, 122, 122 );
+}
+.part1 ul li a {
+    display: block;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+.part1 ul li i {
+    display: block;
+    width: 123px;
+    height: 46px;
+    margin: 27px auto 0;
+
+    font-size: 20px;
+    line-height: 53px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(//img.hzshuangmei.com/pc/ymr/ask.jpg) no-repeat center;
+}
+.part2 .p2_1 {
+    height: 906px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part2_bg1.jpg) no-repeat center;
+    background-size: cover;
+}
+.part2 .p2_1 .p2_font1 {
+    width: 654px;
+    height: 584px;
+    margin: 53px 0 0 120px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/p2_font_bg.png) no-repeat center;
+}
+.p2_font1 h4 {
+    width: 310px;
+    padding-top: 66px;
+    margin: 70px auto 0;
+}
+.p2_font1 h4 img {
+    float: left;
+    padding-top: 7px;
+}
+.p2_font1 h4 i {
+    display: block;
+    float: left;
+    width: 59px;
+    height: 66px;
+    margin-left: 10px;
+
+    font-size: 22px;
+    line-height: 55px;
+
+    text-align: center;
+
+    color: #fff;
+    background: url(//img.hzshuangmei.com/pc/ymr/p2_font2.png) no-repeat center;
+}
+.p2_font1 p {
+    width: 540px;
+    height: 236px;
+    margin: 23px auto 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: rgb( 91, 91, 91 );
+}
+.ask {
+    display: block;
+
+    -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
+       -moz-animation: scaleAC 1.5s linear 1.5s infinite;
+        -ms-animation: scaleAC 1.5s linear 1.5s infinite;
+         -o-animation: scaleAC 1.5s linear 1.5s infinite;
+            animation: scaleAC 1.5s linear 1.5s infinite;
+    text-align: center;
+}
+.part2 .p2_2 {
+    height: 908px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part2_bg2.jpg) no-repeat center;
+    background-size: cover;
+}
+.p2_2 .m1 > img {
+    float: left;
+    margin: 190px 40px 0 147px;
+}
+.p2_2 .m1 > div {
+    float: left;
+    width: 680px;
+    margin-top: 190px;
+
+    text-align: center;
+}
+.p2_2 .m1 h4 {
+    margin: 40px 0 25px 0;
+
+    font-size: 45px;
+
+    color: #fff;
+}
+.p2_2 .m1 p {
+    width: 678px;
+    height: 80px;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: rgb( 255, 255, 255 );
+}
+.part3 .p3_1 {
+    height: 1204px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part3_bg1.png) no-repeat center;
+    background-size: cover;
+}
+.part3 .p3_2 {
+    height: 1000px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part3_bg2.png) no-repeat center;
+    background-size: cover;
+}
+#tags li {
+    float: left;
+    width: 100%;
+}
+#tags li a {
+    font-size: 35px;
+
+    color: #093e6a;
+}
+#tags li.selectTag {
+    BACKGROUND-POSITION: left top;
+    HEIGHT: 25px;
+    MARGIN-BOTTOM: -2px;
+    POSITION: relative;
+}
+#tags li.selectTag a {
+    color: #ea7662;
+}
+#tags li.selectTag a i {
+    background: #f04624!important;
+}
+#tagContent {
+    width: 753px;
+    height: 770px;
+    margin: 30px auto 0;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/p3_01.png) no-repeat center;
+}
+.tagContent {
+    display: none;
+    width: 480px;
+    height: 210px;
+}
+#tagContent div.selectTag {
+    display: block;
+}
+#tagContent li {
+    float: left;
+    padding-bottom: 7px;
+    padding-left: 1px;
+}
+#tagContent li span {
+    float: right;
+
+    font-size: 10px;
+
+    color: #ccc;
+}
+#tagContent > div {
+    position: relative;
+
+    width: 480px;
+    height: 184px;
+    padding-top: 41px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 1.556;
+
+    text-align: center;
+
+    color: rgb( 9, 62, 106 );
+}
+.part3 #tags li:first-child {
+    position: relative;
+    top: -388px;
+    left: 106px;
+}
+.part3 .ask3 {
+    padding-top: 320px;
+    margin-left: 360px;
+}
+.part3 #tags li i {
+    display: inline-block;
+
+    border-radius: 50%;
+    background: #093e6a;
+}
+.part3 #tags li:first-child i {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+}
+.part3 #tags li:nth-child(2) {
+    position: absolute;
+    /* position: relative; */
+    top: -245px;
+    left: 135px;
+    /* left: 2px; */
+}
+.part3 #tags li:nth-child(2) i {
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+}
+.part3 #tags li:nth-child(3) {
+    position: absolute;
+    /* position: relative; */
+    /*  top: -43px;
+    left: 267px; */
+    top: 8px;
+    left: 550px;
+}
+.part3 #tags li:nth-child(3) i {
+    display: block;
+    width: 43px;
+    height: 43px;
+    margin: 0 auto 8px;
+}
+.part3 #tags li:nth-child(4) {
+    position: absolute;
+    /* position: relative; */
+    top: -245px;
+    left: 958px;
+}
+.part3 #tags li:nth-child(4) i {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
+.part3 #tags li:last-child {
+    position: absolute;
+    /* position: relative; */
+    top: -395px;
+    left: 995px;
+    /* left: 425px; */
+}
+.part3 #tags li:last-child i {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.part3 .p3_2 .m2 {
+    width: 618px;
+    margin: 0 0 0 41%;
+}
+.part3 .p3_2 .m2 p {
+    margin: 34px 0 43px 0;
+
+    font-size: 25px;
+    line-height: 1.433;
+
+    color: rgb( 140, 140, 140 );
+}
+.part3 .p3_2 .m2 p span {
+    color: #6798bf;
+}
+.part3 .p3_2 .m2 p .deep {
+    color: #074a7f;
+}
+.part4 {
+    height: 1100px;
+
+    background: url(//img.hzshuangmei.com/pc/ymr/part4_bg.png) no-repeat center;
+    background-size: cover;
+}
+.part4 .m1 {
+    width: 1116px;
+}
+#con ul {
+    position: absolute;
+}
