@@ -262,7 +262,9 @@ a:hover {
     /* height: 441px; */
     margin-left: 20px;
 
-    border: 1px solid #b0c4e4;
+    cursor: pointer;
+
+    /* border: 1px solid #cedcf1; */
 }
 .m1 .clearFix {
     /* border:  1px solid red; */
