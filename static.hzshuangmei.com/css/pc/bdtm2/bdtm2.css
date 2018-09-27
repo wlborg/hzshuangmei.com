@@ -93,6 +93,7 @@ a:hover {
 }
 .m1 {
     height: 1850px;
+    padding-bottom: 10px;
 }
 .m1 .zt-doc {
     padding-top: 100px;
@@ -272,11 +273,9 @@ a:hover {
     overflow: hidden;
 }
 .m1 .item :hover {
-    /*   position: relative;
-    top: 0;
-    left: 1px; */
-    box-shadow: 0 4px 15px #8fa2c1;
+    box-shadow: 0 4px 15px rgba(143,162,193,.29);
 }
+
 .m1 .item a {
     display: block;
     width: 100%;
