@@ -249,27 +249,33 @@ a:hover {
     width: 160px;
     height: 50px;
 }
+/* ÃƒÆ’Ã‚Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â°ÃƒÆ’Ã‚Â§Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ */
 .m1 .item {
     position: relative;
 
     float: left;
-    width: 363px;
-    height: 483px;
-    margin-right: 25px;
+    /* width: 340px; */
+    /* height: 441px; */
     margin-bottom: 15px;
+    margin-bottom: 20px;
+    /* height: 441px; */
+    margin-left: 20px;
+
+    border: 1px solid #b0c4e4;
 }
 .m1 .clearFix {
     /* border:  1px solid red; */
     width: 1164px;
+    padding-top: 10px;
+    padding-left: 15px;
     margin: AUTO;
     overflow: hidden;
 }
 .m1 .item :hover {
-    position: ABSOLUTE;
-    top: -1px;
-    left: -1px;
-
-    box-shadow: 5px 5px 8px #ccc;
+    /*   position: relative;
+    top: 0;
+    left: 1px; */
+    box-shadow: 0 4px 15px #8fa2c1;
 }
 .m1 .item a {
     display: block;
