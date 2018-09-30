@@ -7,7 +7,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 /**
  *  获得一个附加表单(发布时用)
  *
@@ -27,7 +27,7 @@ function GetFormItem($ctag, $admintype='admin')
     {
         $formitem = $innertext;
     }
-    
+
     if($fieldType=='select')
     {
         $myformItem = '';
@@ -94,7 +94,7 @@ function GetFormItem($ctag, $admintype='admin')
                 } else {
           $myformItem .= "<input type='checkbox' name='{$fieldname}[]' class='np' value='$v'>$v\r\n";
                 }
-                
+
             }
         }
         $innertext = $myformItem;
@@ -354,7 +354,7 @@ function GetFieldValue($dvalue, $dtype, $aid=0, $job='add', $addvar='', $adminty
         }
         return addslashes($imgurl);
     }
-    else if($dtype=='addon' && $admintype=='diy') 
+    else if($dtype=='addon' && $admintype=='diy')
     {
         if(preg_match("#[\\|/]uploads[\\|/]userup#", $dvalue)) return $dvalue;
         $dvalue = MemberUploads($fieldname,'', 0, 'addon', '', -1, -1, false);
