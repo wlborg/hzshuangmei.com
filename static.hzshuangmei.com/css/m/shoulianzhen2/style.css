@@ -1,2 +1,778 @@
 ﻿@charset "UTF-8";
-body{width:100%;margin:0;padding:0;background:#e2dcfb;font-family:"微软雅黑"}*{padding:0;margin:0}ul li{list-style:none}a{text-decoration:none}a:hover{text-decoration:none}img{display:block;border:none}.main{width:16.0rem;margin:0 auto;text-align:center;position:relative}.clearfix:after{content:'';display:block;height:0;clear:both;visibility:hidden}.clearfix{zoom:1}.banner{width:100%}.banner img{width:100%}.sr-only{font-size:0}.title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_1.png") center top no-repeat;background-size:12.25rem 1.35rem;padding:1px}.title h3{font-size:0.65rem;color:#9786c1;margin-top:1.5rem;text-align:center;font-weight:100}.part1{margin-top:3.0rem}.part1 .main .foreword{position:relative;margin-top:1.25rem;font-size:0.5rem;color:#4c4c4c;line-height:0.75rem}.part1 .main ul{width:100%;margin:0 auto;margin-top:1.25rem;display:flex;justify-content:space-around;flex-wrap:wrap}.part1 .main ul li{width:4.15rem}.part1 .main ul li p{text-align:left;font-size:0.45rem;color:#666666;margin-top:0.4rem}.part1 .main ul li h2{position:relative;font-size:0.6rem;color:#8774b4;font-weight:100;width:3.25rem;margin:0 auto;margin-top:0.35rem;border-bottom:0.05rem solid #9582c6}.part1 .main ul li h2:after{position:absolute;content:'';height:0;width:0;top:100%;left:50%;margin-left:-0.075rem;border-top:0.225rem solid #9582c6;border-bottom:0.225rem solid transparent;border-left:0.15rem solid transparent;border-right:0.15rem solid transparent}.part1 .main ul li img{margin:0 auto;width:3.75rem;padding:0.2rem;margin-top:0.15rem;border-radius:0.25rem;border:0.025rem dashed #7f6dac}.part1 .main ul li:nth-child(4),.part1 .main ul li:nth-child(5),.part1 .main ul li:nth-child(6){margin-top:1.05rem}.button{position:relative;display:block;width:6.0rem;margin:0 auto;margin-top:0.75rem;border-radius:0.25rem;background:-webkit-linear-gradient(top,#b2a4d8,#ece8fb,#b2a4d8)}.button span{display:block;position:relative;font-size:0.6rem;color:#404040;height:1.15rem;line-height:1.15rem;text-align:center}.button span:after{position:absolute;content:'';width:5.75rem;height:0.05rem;bottom:0.025rem;left:50%;margin-left:-2.875rem;background:-webkit-linear-gradient(left,#b4a7d5,#fff,#b4a7d5)}.button:before{position:absolute;content:'';z-index:2;width:5.75rem;height:0.05rem;top:105%;left:50%;margin-left:-2.875rem;background:-webkit-linear-gradient(left,#d6cef4,#fff,#d6cef4)}.button:after{position:absolute;content:'';width:6.5rem;height:0.75rem;top:100%;left:50%;border-radius:1.25rem;margin-left:-3.25rem;background-image:-webkit-gradient(linear,0 0,0 40%,from(#cbc2e9),to(#e4defb))}.part2{margin-top:2.0rem;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part2.jpg") center 4.25rem no-repeat;background-size:24.0rem}.part2 .top{padding-top:1.5rem;background:-webkit-gradient(linear,0 0,0 100%,from(#b5a8dc),to(#e2dcfb))}.part2 .top .title{margin:0 auto;width:12.25rem;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_2.png") center top no-repeat;background-size:100%}.part2 .top .title h2{font-size:0}.part2 .main{position:relative}.part2 .main .contain{text-align:left;float:right;width:7.75rem;margin-top:2.0rem}.part2 .main .contain h2{color:#8774b4;font-size:0.75rem;font-weight:100}.part2 .main .contain h2:nth-child(4){margin-top:1.1rem}.part2 .main .contain p{width:100%;line-height:0.75rem;margin-top:0.45rem;font-size:0.45rem;color:#4c4c4c}.part2 .main .before{position:absolute;border:0.05rem dashed #897ca9;border-radius:50%;width:5.0rem;height:5.0rem;top:68%;left:16%}.part2 .main .before img{width:96%;margin:0 auto;margin-top:0.1rem}.part2 .down{float:left;width:100%;background:#9582c6}.part2 .down .main{position:relative}.part2 .down .main ul{margin-top:1.55rem;display:flex;justify-content:space-between}.part2 .down .main ul li{width:2.6rem}.part2 .down .main ul li img{width:2.55rem;margin:0 auto}.part2 .down .main ul li p{font-size:0.45rem;color:#fff;margin-top:0.25rem}.part2 .down .main .tip{width:15.0rem;height:1.05rem;margin:0 auto;margin-top:1.05rem;margin-bottom:1.25rem;color:#fff;font-size:0.45rem;border:0.05rem dashed #fff;border-radius:1.05rem;line-height:1.0rem}.part2 .down .main .tip span{color:#f9ec19}.part2 .down .main .button{position:absolute;top:100%;left:50%;margin-left:-3rem}.part2 .down .main .button span{text-align:center}.part3{margin-top:3.0rem}.part3 .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_3.png") center top no-repeat;background-size:13.2rem}.part3 .main{margin-top:1.25rem}.part3 .main p:first-child{font-size:0.55rem;color:#666666;line-height:0.9rem;text-align:left}.part3 .main .top_part3,.part3 .main .down_part3{margin-top:0.5rem}.part3 .main .top_part3 h2,.part3 .main .top_part3 p,.part3 .main .down_part3 h2,.part3 .main .down_part3 p{float:left;margin-left:1.1rem}.part3 .main .top_part3 p,.part3 .main .down_part3 p{font-size:0.5rem;line-height:0.6rem}.part3 .main .top_part3 p:nth-child(3),.part3 .main .down_part3 p:nth-child(3){margin-top:0.75rem}.part3 .main .top_part3 h2,.part3 .main .down_part3 h2{position:relative;margin-top:1.9rem;color:#8774b4;font-size:0.75rem;font-weight:100}.part3 .main .top_part3 h2:before,.part3 .main .down_part3 h2:before{position:absolute;top:50%;margin-top:-0.15rem;content:'';left:-0.5rem;border-right:0.15rem solid #b0a4d8;border-left:0.15rem solid transparent;border-top:0.15rem solid transparent;border-bottom:0.15rem solid transparent}.part3 .main .top_part3 h2:after,.part3 .main .down_part3 h2:after{position:absolute;content:'';top:50%;margin-top:-0.15rem;right:-0.5rem;border-right:0.15rem solid transparent;border-left:0.15rem solid #b0a4d8;border-top:0.15rem solid transparent;border-bottom:0.15rem solid transparent}.part3 .main .top_part3 img{float:left;width:10.0rem}.part3 .main .down_part3 img{float:right;width:10.0rem}.part3 .main .down_part3 h2,.part3 .main .down_part3 p{float:right;margin-right:0.65rem}.part3 .main .down_part3 p{width:4.0rem;text-align:left}.part3 .main .down_part3 h2{margin-top:1.0rem}.part4{margin-top:2.0rem;background:#a792de}.part4 .main{position:relative;background:#a792de;padding-top:2.25rem;padding-bottom:1.75rem}.part4 .main .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_4.png") center top no-repeat;background-size:100%}.part4 .main .title h3{color:#fff}.part4 .main .p_1{color:#333;font-size:0.5rem;width:100%;margin:0 auto;line-height:0.7rem;margin-top:1.0rem;text-align:left}.part4 .main .p_1 span{color:#f9ec19}.part4 .main .contain{width:100%;background:#e2dcfb;margin-top:0.75rem;display:flex;justify-content:space-between;flex-direction:column}.part4 .main .contain .top_part4{position:relative;display:flex;justify-content:space-between}.part4 .main .contain .top_part4 h2{font-size:0.75rem;color:#8774b4;font-weight:100;line-height:1.2rem;display:inline-block;border-bottom:0.025rem solid #8774b4}.part4 .main .contain .top_part4 p{font-size:0.45rem;color:#4c4c4c;margin-top:0.25rem}.part4 .main .contain .top_part4 img{position:absolute;width:5.0rem;top:1.8rem;left:48%;margin-left:-2.5rem}.part4 .main .contain .top_part4 .contain_left{width:4.4rem;margin-top:1.4rem;text-align:right}.part4 .main .contain .top_part4 .contain_left .h2_2{margin-top:2.25rem}.part4 .main .contain .top_part4 .contain_right{text-align:left;width:5.375rem;margin-top:1.4rem}.part4 .main .contain .top_part4 .contain_right .h2_2{margin-top:1rem}.part4 .main .contain .promise{font-size:0.4rem;width:90%;margin:0 auto;margin-top:1.15rem;margin-bottom:1.25rem}.part4 .main .button{position:absolute;margin-top:-0.6rem;left:50%;margin-left:-3rem;top:100%}.part5{margin-top:3.0rem}.part5 .main .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_5.png") center top no-repeat;background-size:90%}.part5 .main ul{margin-top:1.25rem;display:flex;justify-content:space-between}.part5 .main ul li{width:4.8rem}.part5 .main ul li img{width:100%}.part5 .main ul li h2{font-size:0.65rem;color:#725ba6;font-weight:100;margin-top:0.45rem}.part5 .main ul li p{text-align:left;font-size:0.45rem;color:#4c4c4c;margin-top:0.45rem}.part5 .main ul .li_last{margin-right:0}.part6{margin-top:3.0rem;background:#9582c6}.part6 .main{padding-top:2.0rem;padding-bottom:1.5rem;background:-webkit-radial-gradient(circle,#c3b6e7,#9582c6 90%)}.part6 .main .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_6.png") center top no-repeat;background-size:100%}.part6 .main .title h3{color:#fff}.part6 .main ul{margin-top:1.25rem;display:flex;justify-content:space-around}.part6 .main ul li{width:5.5rem;text-align:left}.part6 .main ul li h2{margin-left:2.25rem;font-size:0.55rem;color:#fff;margin-top:3.5rem;font-weight:100}.part6 .main ul li p{font-size:0.45rem;color:#fff;margin-top:0.5rem}.part6 .main ul .li1{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-1.png") center top no-repeat;background-size:4.25rem 4.5rem}.part6 .main ul .li2{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-2.png") center top no-repeat;background-size:4.25rem 4.5rem}.part6 .main ul .li3{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-3.png") center top no-repeat;background-size:4.25rem 4.5rem}.part6 .main ul .li4{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-4.png") center top no-repeat;background-size:5.4rem 4.55rem}.part6 .main ul .li4 h2{margin-left:1.75rem}.part6_it{margin-top:-0.625rem}.part7{margin-top:3.0rem}.part7 .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_7.png") center top no-repeat;background-size:64%}.part7 .slider img{width:14.0rem;margin:0 auto}.part7 .slider img:first-child{margin-top:1.0rem}.part7 .slider img:nth-child(2),.part7 .slider img:nth-child(5){margin-top:0.4rem}.part7 .slider .next{width:1.25rem;height:1.25rem;margin:0 auto;margin-top:0.4rem;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part7_next.jpg") no-repeat;background-size:100%}.part8{height:20.75rem;margin-top:3.0rem;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8.jpg") center top no-repeat;background-size:24.0rem;background-color:#9582c6}.part8 .main{padding-top:2.0rem}.part8 .main .title{background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_8.png") center top no-repeat;background-size:100%}.part8 .main .title h3{color:#fff}.part8 .main .slider_part8 .name{width:6rem;margin-top:1.75rem;margin-left:5.9rem;font-size:1.1rem;color:#4d3d70;font-weight:100}.part8 .main .slider_part8 .name span{margin-left:0.3rem;font-size:0.5rem;color:#4c4c4c}.part8 .main .slider_part8 .box1 h2,.part8 .main .slider_part8 .box2 h2{font-size:0.5rem;background-size:0.75rem 0.925rem;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8_h2.png") left center no-repeat;background-size:0.75rem;color:#1a1a1a}.part8 .main .slider_part8 .box1 h2 span,.part8 .main .slider_part8 .box2 h2 span{display:block;margin-left:1rem;padding-left:0.25rem;height:1.025rem;line-height:1.025rem;border:0.05rem solid #7866a7;background:none;color:#1a1a1a;text-align:left;font-size:0.45rem}.part8 .main .slider_part8 .box1 p,.part8 .main .slider_part8 .box2 p{text-align:left;font-size:0.45rem;color:#1a1a1a;padding-left:1.4rem;margin-top:0.5rem;line-height:0.75rem;color:#fff;background:url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8_p.png") left top no-repeat;background-size:0.9rem 0.9rem}.part8 .main .slider_part8 .box1{margin-top:0.75rem;margin-left:5.9rem}.part8 .main .slider_part8 .box1 h2{width:10rem}.part8 .main .slider_part8 .box1 h2 span{width:8.2rem}.part8 .main .slider_part8 .box1 p{width:8.55rem}.part8 .main .slider_part8 .box2{width:8rem;margin-top:0.85rem;margin-left:7.8rem}.part8 .main .slider_part8 .box2 h2 span{width:6.2rem}.part8_1{margin-top:-0.5rem}
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    font-family: "微软雅黑";
+
+    background: #e2dcfb;
+}* {
+
+    padding: 0;
+    margin: 0;
+}ul li {
+
+    list-style: none;
+}a {
+
+    text-decoration: none;
+}a:hover {
+
+    text-decoration: none;
+}img {
+
+    display: block;
+
+    border: none;
+}.main {
+
+    position: relative;
+
+    width: 16.0rem;
+    margin: 0 auto;
+
+    text-align: center;
+}.clearfix:after {
+
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+
+    content: "";
+}.clearfix {
+
+    zoom: 1;
+}.banner {
+
+    width: 100%;
+}.banner img {
+
+    width: 100%;
+}.sr-only {
+
+    font-size: 0;
+}.title {
+
+    padding: 1px;
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_1.png") center top no-repeat;
+    background-size: 12.25rem 1.35rem;
+}.title h3 {
+
+    margin-top: 1.5rem;
+
+    font-size: .65rem;
+    font-weight: 100;
+
+    text-align: center;
+
+    color: #9786c1;
+}.part1 {
+
+    margin-top: 3.0rem;
+}.part1 .main .foreword {
+
+    position: relative;
+
+    margin-top: 1.25rem;
+
+    font-size: .5rem;
+    line-height: .75rem;
+
+    color: #4c4c4c;
+}.part1 .main ul {
+
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}.part1 .main ul li {
+
+    width: 4.15rem;
+}.part1 .main ul li p {
+
+    margin-top: .4rem;
+
+    font-size: .45rem;
+
+    text-align: left;
+
+    color: #666;
+}.part1 .main ul li h2 {
+
+    position: relative;
+
+    width: 3.25rem;
+    margin: 0 auto;
+    margin-top: .35rem;
+
+    font-size: .6rem;
+    font-weight: 100;
+
+    color: #8774b4;
+    border-bottom: .05rem solid #9582c6;
+}.part1 .main ul li h2:after {
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+    margin-left: -.075rem;
+
+    content: "";
+
+    border-top: .225rem solid #9582c6;
+    border-right: .15rem solid transparent;
+    border-bottom: .225rem solid transparent;
+    border-left: .15rem solid transparent;
+}.part1 .main ul li img {
+
+    width: 3.75rem;
+    padding: .2rem;
+    margin: 0 auto;
+    margin-top: .15rem;
+
+    border: .025rem dashed #7f6dac;
+    border-radius: .25rem;
+}.part1 .main ul li:nth-child(4),
+
+.part1 .main ul li:nth-child(5),
+.part1 .main ul li:nth-child(6) {
+    margin-top: 1.05rem;
+}.button {
+
+    position: relative;
+
+    display: block;
+    width: 6.0rem;
+    margin: 0 auto;
+    margin-top: .75rem;
+
+    border-radius: .25rem;
+    background: -webkit-linear-gradient(top,#b2a4d8,#ece8fb,#b2a4d8);
+}.button span {
+
+    position: relative;
+
+    display: block;
+    height: 1.15rem;
+
+    font-size: .6rem;
+    line-height: 1.15rem;
+
+    text-align: center;
+
+    color: #404040;
+}.button span:after {
+
+    position: absolute;
+    bottom: .025rem;
+    left: 50%;
+
+    width: 5.75rem;
+    height: .05rem;
+    margin-left: -2.875rem;
+
+    content: "";
+
+    background: -webkit-linear-gradient(left,#b4a7d5,#fff,#b4a7d5);
+}.button:before {
+
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    z-index: 2;
+
+    width: 5.75rem;
+    height: .05rem;
+    margin-left: -2.875rem;
+
+    content: "";
+
+    background: -webkit-linear-gradient(left,#d6cef4,#fff,#d6cef4);
+}.button:after {
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    width: 6.5rem;
+    height: .75rem;
+    margin-left: -3.25rem;
+
+    content: "";
+
+    border-radius: 1.25rem;
+    background-image: -webkit-gradient(linear,0 0,0 40%,from(#cbc2e9),to(#e4defb));
+}.part2 {
+
+    margin-top: 2.0rem;
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part2.jpg") center 4.25rem no-repeat;
+    background-size: 24.0rem;
+}.part2 .top {
+
+    padding-top: 1.5rem;
+
+    background: -webkit-gradient(linear,0 0,0 100%,from(#b5a8dc),to(#e2dcfb));
+}.part2 .top .title {
+
+    width: 12.25rem;
+    margin: 0 auto;
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_2.png") center top no-repeat;
+    background-size: 100%;
+}.part2 .top .title h2 {
+
+    font-size: 0;
+}.part2 .main {
+
+    position: relative;
+}.part2 .main .contain {
+
+    float: right;
+    width: 7.75rem;
+    margin-top: 2.0rem;
+
+    text-align: left;
+}.part2 .main .contain h2 {
+
+    font-size: .75rem;
+    font-weight: 100;
+
+    color: #8774b4;
+}.part2 .main .contain h2:nth-child(4) {
+
+    margin-top: 1.1rem;
+}.part2 .main .contain p {
+
+    width: 100%;
+    margin-top: .45rem;
+
+    font-size: .45rem;
+    line-height: .75rem;
+
+    color: #4c4c4c;
+}.part2 .main .before {
+
+    position: absolute;
+    top: 68%;
+    left: 16%;
+
+    width: 5.0rem;
+    height: 5.0rem;
+
+    border: .05rem dashed #897ca9;
+    border-radius: 50%;
+}.part2 .main .before img {
+
+    width: 96%;
+    margin: 0 auto;
+    margin-top: .1rem;
+}.part2 .down {
+
+    float: left;
+    width: 100%;
+
+    background: #9582c6;
+}.part2 .down .main {
+
+    position: relative;
+}.part2 .down .main ul {
+
+    display: flex;
+    margin-top: 1.55rem;
+
+    justify-content: space-between;
+}.part2 .down .main ul li {
+
+    width: 2.6rem;
+}.part2 .down .main ul li img {
+
+    width: 2.55rem;
+    margin: 0 auto;
+}.part2 .down .main ul li p {
+
+    margin-top: .25rem;
+
+    font-size: .45rem;
+
+    color: #fff;
+}.part2 .down .main .tip {
+
+    width: 15.0rem;
+    height: 1.05rem;
+    margin: 0 auto;
+    margin-top: 1.05rem;
+    margin-bottom: 1.25rem;
+
+    font-size: .45rem;
+    line-height: 1.0rem;
+
+    color: #fff;
+    border: .05rem dashed #fff;
+    border-radius: 1.05rem;
+}.part2 .down .main .tip span {
+
+    color: #f9ec19;
+}.part2 .down .main .button {
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    margin-left: -3rem;
+}.part2 .down .main .button span {
+
+    text-align: center;
+}.part3 {
+
+    margin-top: 3.0rem;
+}.part3 .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_3.png") center top no-repeat;
+    background-size: 13.2rem;
+}.part3 .main {
+
+    margin-top: 1.25rem;
+}.part3 .main p:first-child {
+
+    font-size: .55rem;
+    line-height: .9rem;
+
+    text-align: left;
+
+    color: #666;
+}.part3 .main .top_part3,
+
+.part3 .main .down_part3 {
+    margin-top: .5rem;
+}.part3 .main .top_part3 h2,
+
+.part3 .main .top_part3 p,
+.part3 .main .down_part3 h2,
+.part3 .main .down_part3 p {
+    float: left;
+    margin-left: 1.1rem;
+}.part3 .main .top_part3 p,
+
+.part3 .main .down_part3 p {
+    font-size: .5rem;
+    line-height: .6rem;
+}.part3 .main .top_part3 p:nth-child(3),
+
+.part3 .main .down_part3 p:nth-child(3) {
+    margin-top: .75rem;
+}.part3 .main .top_part3 h2,
+
+.part3 .main .down_part3 h2 {
+    position: relative;
+
+    margin-top: 1.9rem;
+
+    font-size: .75rem;
+    font-weight: 100;
+
+    color: #8774b4;
+}.part3 .main .top_part3 h2:before,
+
+.part3 .main .down_part3 h2:before {
+    position: absolute;
+    top: 50%;
+    left: -.5rem;
+
+    margin-top: -.15rem;
+
+    content: "";
+
+    border-top: .15rem solid transparent;
+    border-right: .15rem solid #b0a4d8;
+    border-bottom: .15rem solid transparent;
+    border-left: .15rem solid transparent;
+}.part3 .main .top_part3 h2:after,
+
+.part3 .main .down_part3 h2:after {
+    position: absolute;
+    top: 50%;
+    right: -.5rem;
+
+    margin-top: -.15rem;
+
+    content: "";
+
+    border-top: .15rem solid transparent;
+    border-right: .15rem solid transparent;
+    border-bottom: .15rem solid transparent;
+    border-left: .15rem solid #b0a4d8;
+}.part3 .main .top_part3 img {
+
+    float: left;
+    width: 10.0rem;
+}.part3 .main .down_part3 img {
+
+    float: right;
+    width: 10.0rem;
+}.part3 .main .down_part3 h2,
+
+.part3 .main .down_part3 p {
+    float: right;
+    margin-right: .65rem;
+}.part3 .main .down_part3 p {
+
+    width: 4.0rem;
+
+    text-align: left;
+}.part3 .main .down_part3 h2 {
+
+    margin-top: 1.0rem;
+}.part4 {
+
+    margin-top: 2.0rem;
+
+    background: #a792de;
+}.part4 .main {
+
+    position: relative;
+
+    padding-top: 2.25rem;
+    padding-bottom: 1.75rem;
+
+    background: #a792de;
+}.part4 .main .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_4.png?v=0.1") center top no-repeat;
+    background-size: 100%;
+}.part4 .main .title h3 {
+
+    color: #fff;
+}.part4 .main .p_1 {
+
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.0rem;
+
+    font-size: .5rem;
+    line-height: .7rem;
+
+    text-align: left;
+
+    color: #333;
+}.part4 .main .p_1 span {
+
+    color: #f9ec19;
+}.part4 .main .contain {
+
+    display: flex;
+    width: 100%;
+    margin-top: .75rem;
+    flex-direction: column;
+
+    background: #e2dcfb;
+
+    justify-content: space-between;
+}.part4 .main .contain .top_part4 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: space-between;
+}.part4 .main .contain .top_part4 h2 {
+
+    display: inline-block;
+
+    font-size: .75rem;
+    font-weight: 100;
+    line-height: 1.2rem;
+
+    color: #8774b4;
+    border-bottom: .025rem solid #8774b4;
+}.part4 .main .contain .top_part4 p {
+
+    margin-top: .25rem;
+
+    font-size: .45rem;
+
+    color: #4c4c4c;
+}.part4 .main .contain .top_part4 img {
+
+    position: absolute;
+    top: 1.8rem;
+    left: 48%;
+
+    width: 5.0rem;
+    margin-left: -2.5rem;
+}.part4 .main .contain .top_part4 .contain_left {
+
+    width: 4.4rem;
+    margin-top: 1.4rem;
+
+    text-align: right;
+}.part4 .main .contain .top_part4 .contain_left .h2_2 {
+
+    margin-top: 2.25rem;
+}.part4 .main .contain .top_part4 .contain_right {
+
+    width: 5.375rem;
+    margin-top: 1.4rem;
+
+    text-align: left;
+}.part4 .main .contain .top_part4 .contain_right .h2_2 {
+
+    margin-top: 1rem;
+}.part4 .main .contain .promise {
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.15rem;
+    margin-bottom: 1.25rem;
+
+    font-size: .4rem;
+}.part4 .main .button {
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    margin-top: -.6rem;
+    margin-left: -3rem;
+}.part5 {
+
+    margin-top: 3.0rem;
+}.part5 .main .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_5.png?v=0.1") center top no-repeat;
+    background-size: 90%;
+}.part5 .main ul {
+
+    display: flex;
+    margin-top: 1.25rem;
+
+    justify-content: space-between;
+}.part5 .main ul li {
+
+    width: 4.8rem;
+}.part5 .main ul li img {
+
+    width: 100%;
+}.part5 .main ul li h2 {
+
+    margin-top: .45rem;
+
+    font-size: .65rem;
+    font-weight: 100;
+
+    color: #725ba6;
+}.part5 .main ul li p {
+
+    margin-top: .45rem;
+
+    font-size: .45rem;
+
+    text-align: left;
+
+    color: #4c4c4c;
+}.part5 .main ul .li_last {
+
+    margin-right: 0;
+}.part6 {
+
+    margin-top: 3.0rem;
+
+    background: #9582c6;
+}.part6 .main {
+
+    padding-top: 2.0rem;
+    padding-bottom: 1.5rem;
+
+    background: -webkit-radial-gradient(circle,#c3b6e7,#9582c6 90%);
+}.part6 .main .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_6.png") center top no-repeat;
+    background-size: 100%;
+}.part6 .main .title h3 {
+
+    color: #fff;
+}.part6 .main ul {
+
+    display: flex;
+    margin-top: 1.25rem;
+
+    justify-content: space-around;
+}.part6 .main ul li {
+
+    width: 5.5rem;
+
+    text-align: left;
+}.part6 .main ul li h2 {
+
+    margin-top: 3.5rem;
+    margin-left: 2.25rem;
+
+    font-size: .55rem;
+    font-weight: 100;
+
+    color: #fff;
+}.part6 .main ul li p {
+
+    margin-top: .5rem;
+
+    font-size: .45rem;
+
+    color: #fff;
+}.part6 .main ul .li1 {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-1.png") center top no-repeat;
+    background-size: 4.25rem 4.5rem;
+}.part6 .main ul .li2 {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-2.png") center top no-repeat;
+    background-size: 4.25rem 4.5rem;
+}.part6 .main ul .li3 {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-3.png") center top no-repeat;
+    background-size: 4.25rem 4.5rem;
+}.part6 .main ul .li4 {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part6-4.png") center top no-repeat;
+    background-size: 5.4rem 4.55rem;
+}.part6 .main ul .li4 h2 {
+
+    margin-left: 1.75rem;
+}.part6_it {
+
+    margin-top: -.625rem;
+}.part7 {
+
+    margin-top: 3.0rem;
+}.part7 .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_7.png") center top no-repeat;
+    background-size: 64%;
+}.part7 .slider img {
+
+    width: 14.0rem;
+    margin: 0 auto;
+}.part7 .slider img:first-child {
+
+    margin-top: 1.0rem;
+}.part7 .slider img:nth-child(2),
+
+.part7 .slider img:nth-child(5) {
+    margin-top: .4rem;
+}.part7 .slider .next {
+
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 auto;
+    margin-top: .4rem;
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part7_next.jpg") no-repeat;
+    background-size: 100%;
+}.part8 {
+
+    height: 20.75rem;
+    margin-top: 3.0rem;
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8.jpg") center top no-repeat;
+    background-color: #9582c6;
+    background-size: 24.0rem;
+}.part8 .main {
+
+    padding-top: 2.0rem;
+}.part8 .main .title {
+
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_title_8.png") center top no-repeat;
+    background-size: 100%;
+}.part8 .main .title h3 {
+
+    color: #fff;
+}.part8 .main .slider_part8 .name {
+
+    width: 6rem;
+    margin-top: 1.75rem;
+    margin-left: 5.9rem;
+
+    font-size: 1.1rem;
+    font-weight: 100;
+
+    color: #4d3d70;
+}.part8 .main .slider_part8 .name span {
+
+    margin-left: .3rem;
+
+    font-size: .5rem;
+
+    color: #4c4c4c;
+}.part8 .main .slider_part8 .box1 h2,
+
+.part8 .main .slider_part8 .box2 h2 {
+    font-size: .5rem;
+
+    color: #1a1a1a;
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8_h2.png") left center no-repeat;
+    background-size: .75rem .925rem;
+    background-size: .75rem;
+}.part8 .main .slider_part8 .box1 h2 span,
+
+.part8 .main .slider_part8 .box2 h2 span {
+    display: block;
+    height: 1.025rem;
+    padding-left: .25rem;
+    margin-left: 1rem;
+
+    font-size: .45rem;
+    line-height: 1.025rem;
+
+    text-align: left;
+
+    color: #1a1a1a;
+    border: .05rem solid #7866a7;
+    background: none;
+}.part8 .main .slider_part8 .box1 p,
+
+.part8 .main .slider_part8 .box2 p {
+    padding-left: 1.4rem;
+    margin-top: .5rem;
+
+    font-size: .45rem;
+    line-height: .75rem;
+
+    text-align: left;
+
+    color: #1a1a1a;
+    color: #fff;
+    background: url("https://img.hzshuangmei.com/m/shoulianzhen2/bg_part8_p.png") left top no-repeat;
+    background-size: .9rem .9rem;
+}.part8 .main .slider_part8 .box1 {
+
+    margin-top: .75rem;
+    margin-left: 5.9rem;
+}.part8 .main .slider_part8 .box1 h2 {
+
+    width: 10rem;
+}.part8 .main .slider_part8 .box1 h2 span {
+
+    width: 8.2rem;
+}.part8 .main .slider_part8 .box1 p {
+
+    width: 8.55rem;
+}.part8 .main .slider_part8 .box2 {
+
+    width: 8rem;
+    margin-top: .85rem;
+    margin-left: 7.8rem;
+}.part8 .main .slider_part8 .box2 h2 span {
+
+    width: 6.2rem;
+}.part8_1 {
+
+    margin-top: -.5rem;
+}
