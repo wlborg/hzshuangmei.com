@@ -1011,6 +1011,13 @@ class ListView
         $tnamerule = $this->GetMakeFileRule($this->Fields['id'],"list",$this->Fields['typedir'],$this->Fields['defaultname'],$this->Fields['namerule2']);
         $tnamerule = str_replace("/^(.*)\//", '', $tnamerule);
 
+         //分页URL实现绝对路径
+        global $cfg_xzh;
+        $cfg_xzh = str_replace('#/$#','',$cfg_xzh);
+        $tnamerule = $cfg_xzh.MfTypedir($this->Fields['typedir']).'/'.$tnamerule;
+        //分页URL实现绝对路径
+
+
          //修正列表页重复的首页地址
         $typedir= str_replace('{cmspath}',$GLOBALS['cfg_cmspath'],$this->Fields['typedir']);
 
