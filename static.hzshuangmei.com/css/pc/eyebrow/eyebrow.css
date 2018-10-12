@@ -1,0 +1,425 @@
+/*公共样式开始*/
+body {
+	overflow-x: hidden;
+}
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+.po {
+	position: relative;
+}
+/*公共样式结束*/
+
+/*banner开始*/
+.banner {
+	position: relative;
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+.banner-btn {
+	position: absolute;
+    top: 4.5rem;
+    left: 5.64rem;
+    width: 2.02rem;
+    height: .5rem;
+    /*border: 1px solid red;*/
+}
+.banner-btn a {
+	width: 100%;
+	height: 100%;
+}
+/*banner结束*/
+
+/*part1 开始*/
+.part1 {
+	background: #e6f0f8;
+	height: 1216px;
+}
+.part1 .title-wrap {
+	padding-top: 145px;
+}
+.title-wrap {
+	width: 100%;
+}
+.title-wrap img {
+	width: 100%;
+}
+.part1 .part1-panel {
+	width: 1116px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+.part1 .part1-panel .item {
+	width: 360px;
+	height: 460px;
+	float: left;
+	position: relative;
+}
+.part1 .part1-panel .item:nth-child(2) {
+	margin: 0 18px;
+}
+.part1 .part1-panel .item img {
+	width: 100%;
+	height: 100%;
+}
+.part1-mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(51, 51, 51, .5);
+}
+.part1-mask .top-s, .part1-mask .bot-s {
+    transform: rotate(135deg);
+    position: absolute;
+    width: 94px;
+    height: 66px;
+    z-index: 10;
+    background: #e6f0f8;
+}
+.part1-mask .top-s {
+	top: -34px;
+}
+.part1-mask .left {
+	left: -44px;
+}
+.part1-mask .bot-s {
+	bottom: -28px;
+}
+.part1-mask .right {
+	right: -45px;
+}
+.part1-mask .right-1 {
+	right: -45px;
+}
+.part1-mask .left-1 {
+	left: -46px;
+}
+.part1-mask .top-s-1 {
+	transform: rotate(45deg);
+}
+.part1-mask .center-pic {
+	position: absolute;
+	width: 245px;
+	height: 245px;
+	top: 50%;
+	left: 50%;
+	margin-top: -122px;
+	margin-left: -122px;
+}
+.part1-mask .center-pic img {
+	width: 100%;
+	height: 100%;
+}
+.part1 .pic-txt {
+	width: 336px;
+	height: 37px;
+	margin: 0 auto;
+	margin-top: 54px;
+}
+.part1 .pic-txt img {
+	width: 100%;
+	height: 100%;
+}
+.part1 .btn-wrap {
+	margin-top: 90px;
+}
+.btn-wrap {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 40px;
+}
+.btn-detail {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px;
+	width: 200px;
+}
+.btn-detail a {
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	line-height: 40px;
+	text-align: center;
+}
+/*part1 结束*/
+
+/*part2 开始*/
+.part2 {
+	overflow-x: hidden;
+	position: relative;
+}
+.bg-wrap {
+	width: 100%;
+}
+.bg-wrap img {
+	width: 100%;
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.part2 .content .item {
+	position: absolute;
+    width: 6.6rem;
+    box-sizing: border-box;
+    height: 2.3rem;
+    /*border: 1px solid red;*/
+    font-size: .26rem;
+    line-height: .36rem;
+	letter-spacing: .011rem;
+	color: #ffffff;
+	text-align: justify;
+}
+.part2 .content .item-1 {
+	top: 4.5rem;
+    left: 8.14rem;
+    padding: .5rem .5rem .39rem .4rem;
+}
+.part2 .content .item-2 {
+	/*border: 1px solid red;*/
+	padding-top: .62rem;
+	padding-left: .41rem;
+	padding-right: .5rem;
+    top: 8.67rem;
+    left: 4.27rem;
+}
+.part2 .content .item-3 {
+	top: 14.95rem;
+    left: 8.4rem;
+    width: 6.74rem;
+    height: 1.58rem;
+    padding-left: .3rem;
+    padding-top: .45rem;
+    padding-right: .47rem;
+}
+.part2 .btn-wrap {
+	bottom: 2.4rem;
+	margin-left: -1rem;
+	width: 2rem;
+	height: .4rem;
+}
+.part2 .btn-wrap img {
+	width: 100%;
+	height: 100%;
+}
+.part2 .btn-detail {
+	width: 100%;
+	height: 100%;
+}
+.part2 .btn-detail a {
+	width: 100%;
+	height: 100%;
+	font-size: .24rem;
+	letter-spacing: .02rem;
+	color: #ffffff;
+	line-height: .4rem;
+	text-align: center;
+}
+/*part2 结束*/
+
+/*part3 开始*/
+.part3 {
+	position: relative;
+	background: #e6f0f8; 
+}
+.part3 .part3-panel {
+    margin-top: 100px;
+}
+.part3 .part3-panel .pic-item {
+	position: relative;
+	width: 385px;
+	height: 500px;
+	float: left;
+	margin-bottom: 31px;
+	text-align: center;
+}
+.part3 .part3-panel .pic-item:nth-child(3n-1) {
+	margin: 0 22px;
+}
+.part3 .part3-panel .pic-item img {
+	width: 100%;
+	height: 100%;
+}
+.part3 .part3-panel .pic-detail {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 166px;
+	/*border: 1px solid red;*/
+}
+.part3 .pic-detail .txt {
+	margin-top: 34px;
+    margin-bottom: 32px;
+	font-size: 30px;
+	line-height: 32px;
+	color: #152f65;
+}
+.part3 .part3-panel .pic-item:hover {
+	box-shadow: 0px 4px 10px 0px 
+		rgba(38, 58, 98, 0.15);
+}
+/*part3 结束*/
+
+/*part4 开始*/
+.part4 {
+	position: relative;
+	height: 843px;
+	background: #e6f0f8;
+}
+.part4 .title-wrap {
+	padding-top: 157px;
+}
+.part4 .l-bg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 484px;
+	width: 100%;
+	background-color: #5377be;
+}
+.part4 .left-person {
+	width: 603px;
+	height: 843px;
+	position: absolute;
+	left: -120px;
+	top: 0;
+	z-index: 100;
+}
+.left-person img {
+	width: 100%;
+	height: 100%;
+}
+.part4 .left-txt {
+	position: absolute;
+	width: 688px;
+	top: 105px;	
+	right: -32px;
+
+}
+.part4 .left-txt .left-title {
+	font-size: 36px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	margin-left: 120px;
+	margin-bottom: 30px;
+}
+.part4 .left-txt .left-title span {
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	border-radius: 55px;
+	background: #2d4f99;
+}
+.part4 .left-txt .left-con {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-indent: 2em;
+	text-align: justify;
+}
+.part4 .swiper-btn {
+	position: absolute;
+    right: 76px;
+    bottom: -501px;
+}
+.part4 .swiper-btn .swiper-btn-item {
+	float: left;
+	width: 90px;
+	height: 90px;
+	border-radius: 90px;
+    text-align: center;
+    /*line-height: 90px;*/
+    border: solid 1px #2d4f99;
+    font-size: 24px;
+    line-height: 32px;
+	letter-spacing: 1px;
+	color: #2d4f99;
+	cursor: pointer;
+}
+.part4 .swiper-btn-item p:first-child {
+	margin-top: 11px;
+}
+.part4 .swiper-btn-item:nth-child(2) {
+	margin-left: 26px;
+	margin-right: 26px;
+}
+.part4 .swiper-btn  .active {
+	color: #fff;
+	background: #2d4f99;
+}
+
+
+
+/*swiper 开始*/
+.swiper {
+	height: 714px;
+	width: 100%;
+	background: #e6f0f8; 
+}
+.swiper .swiper-wrap {
+	width: 1184px;
+	height: 567px;
+	margin: 0 auto;
+	position: relative;
+	top: 60px;
+	border: 1px solid transparent;
+}
+.swiper .letf-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 47px;
+	height: 47px;
+}
+.swiper .right-icon {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 47px;
+	height: 47px;
+}
+.swiper .letf-icon img, .swiper .right-icon img {
+	width: 100%;
+	height: 100%;
+}
+.swiper .swiper-pic {
+	position: relative;
+	z-index: 10;
+	width: 1108px;
+	height: 476px;
+	margin: 0 auto;
+	margin-top: 44px;
+} 
+.swiper .swiper-pic img {
+	width: 100%;
+	height: 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: inherit;
+}
+/*swiper 结束*/
+/*part4 结束*/
+
