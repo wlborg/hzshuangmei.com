@@ -43,3 +43,5 @@
 			}).mouseout(function(){
 				mySwiper.startAutoplay();
 			})
+
+new WOW().init();
