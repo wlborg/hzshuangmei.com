@@ -1,0 +1,534 @@
+.sr-only,
+img {
+    border: 0;
+}
+
+a,
+body {
+    color: #000;
+}
+
+body,
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: inline;
+}
+
+td {
+    word-break: break-all;
+}
+
+dd,
+dl,
+dt,
+li,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #428bca;
+}
+
+.consult:hover {
+    transform: scale(.9,.9);
+
+    color: #fff;
+}
+
+.sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+.zt-container {
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.zt-container .zt-doc {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.zt-container img {
+    display: block;
+    /* border: 1px solid red; */
+}
+
+.zt-container .zt-title {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.zt-container .consult {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.banner {
+    width: 100%;
+    height: 700px;
+
+    background: url("//img.hzshuangmei.com/pc/bdtm2/banner.jpg") center center no-repeat;
+}
+
+.banner .consult {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.m1 {
+    height: 1869px;
+    padding-bottom: 15px;
+}
+
+.m1 .zt-doc {
+    padding-top: 100px;
+}
+
+.m1 .zt-doc .zt-title {
+    width: 490px;
+    height: 200px;
+
+    background: url("//img.hzshuangmei.com/pc/bdtm2/bgt1.jpg") center center no-repeat;
+}
+
+.m1 .zt-doc .zt-content {
+    margin-top: 50px;
+}
+
+.m1 .zt-doc .zt-content .row {
+    position: relative;
+
+    width: 1200px;
+    height: 510px;
+}
+
+.m1 .zt-doc .zt-content .row1 {
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/img1_1.jpg") center center no-repeat;
+}
+
+.m1 .zt-doc .zt-content .row2 {
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/img1_2.jpg") center center no-repeat;
+}
+
+.m1 .zt-doc .zt-content .row3 {
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/img1_3.jpg") center center no-repeat;
+}
+
+.m1 .zt-doc .zt-content .consult {
+    position: absolute;
+
+    width: 160px;
+    height: 40px;
+}
+
+.m1 .zt-doc .zt-content .item1 .consult,
+.m1 .zt-doc .zt-content .item4 .consult,
+.m1 .zt-doc .zt-content .item7 .consult {
+    top: 430px;
+    left: 134px;
+}
+
+.m1 .zt-doc .zt-content .item2 .consult,
+.m1 .zt-doc .zt-content .item5 .consult,
+.m1 .zt-doc .zt-content .item8 .consult {
+    top: 430px;
+    left: 520px;
+}
+
+.m1 .zt-doc .zt-content .item3 .consult,
+.m1 .zt-doc .zt-content .item6 .consult,
+.m1 .zt-doc .zt-content .item9 .consult {
+    top: 430px;
+    left: 904px;
+}
+
+.m2 {
+    height: 1200px;
+
+    /* background: url(https://img.hzshuangmei.com/pc/bdtm2/xbg2.jpg.pagespeed.ic.dLMFM3nQFq.jpg) center bottom no-repeat; */
+}
+
+.m2 .zt-doc {
+    padding-top: 60px;
+}
+
+.m2 .zt-doc .zt-title {
+    width: 700px;
+    height: 230px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bgt2.jpg") center center no-repeat;
+}
+
+.m2 .zt-doc .zt-content {
+    position: relative;
+
+    height: 892px;
+    margin-top: 20px;
+    /* background: url(./bg2.png) center center no-repeat;
+    background-size: 1193px 862px; */
+}
+
+.m2 .zt-doc .zt-content .consult {
+    position: absolute;
+    top: 626px;
+    left: 416px;
+
+    width: 264px;
+    height: 50px;
+}
+
+.m3 {
+    height: 1046px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bg2_2.jpg") center center no-repeat;
+}
+
+.m3 .zt-doc .zt-title {
+    width: 0;
+    height: 0;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bgt1.jpg") center center no-repeat;
+}
+
+.m3 .zt-doc .zt-content {
+    position: relative;
+
+    height: 1046px;
+}
+
+.m3 .zt-doc .zt-content .consult {
+    position: absolute;
+    top: 750px;
+    left: 818px;
+    z-index: 1;
+
+    width: 180px;
+    height: 180px;
+
+    text-align: center;
+}
+
+.m4 {
+    height: 1140px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bg4.jpg") center center no-repeat;
+}
+
+.m4 .zt-doc {
+    padding-top: 120px;
+}
+
+.m4 .zt-doc .zt-title {
+    width: 450px;
+    height: 190px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bgt4.jpg") center center no-repeat;
+}
+
+.m4 .zt-doc .zt-content {
+    width: 1200px;
+    height: 550px;
+    margin-top: 60px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/img4.jpg") center center no-repeat;
+}
+
+.m4 .zt-doc .consult {
+    width: 242px;
+    height: 104px;
+    margin: 54px auto 0;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bg_consult4.png") center center no-repeat;
+    /* background: url(https://img.hzshuangmei.com/pc/bdtm2/xbg_consult4.png.pagespeed.ic.Uy7sJCeYW2.png) center center no-repeat; */
+}
+
+.m5 {
+    height: 920px;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bg5.jpg") center center no-repeat;
+}
+
+.m5 .zt-doc .zt-title {
+    width: 0;
+    height: 0;
+
+    background: url("https://img.hzshuangmei.com/pc/bdtm2/bgt1.jpg") center center no-repeat;
+}
+
+.m5 .zt-doc .zt-content {
+    position: relative;
+
+    height: 920px;
+}
+
+.m5 .zt-doc .zt-content .consult {
+    position: absolute;
+    top: 630px;
+    left: 22px;
+
+    width: 160px;
+    height: 50px;
+}
+
+.m1 .item {
+    position: relative;
+
+    float: left;
+    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    cursor: pointer;
+}
+
+.m1 .clearFix {
+    width: 1164px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.m1 .item:hover {
+    box-shadow: 0 4px 15px rgba(143,162,193,.29);
+}
+
+.m1 .item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.m2Info {
+    top: 140px;
+    left: 189px;
+
+    font-size: 60px;
+
+    color: rgb(95,191,234);
+    border-radius: 50%;
+}
+._pa {
+    position: absolute;
+}
+.m2Title {
+    top: 183px;
+    left: 217px;
+
+    font-size: 36px;
+    line-height: 30px;
+
+    color: rgb(95,191,234);
+}
+.m2Con {
+    top: 279px;
+    left: 192px;
+
+    width: 458px;
+    height: 348px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    text-align: justify;
+    text-indent: 2em;
+
+    color: rgb(106,188,246);
+}
+.m2Go {
+    width: 268px;
+    height: 50px;
+
+    font-size: 24px;
+    line-height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    color: #fff;
+    background: rgb(106,188,246);
+}
+.m2Instrument {
+    right: 197px;
+    bottom: 195px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #fff;
+}
+.m2Order {
+    top: 28px;
+    left: -2px;
+
+    font-size: 24px;
+
+    color: #fff;
+}
+.m2Con span {
+    color: rgb(255,139,0);
+}
+.m2Shape {
+    top: 75px;
+    left: -33px;
+
+    display: block;
+}
+.m3Shape {
+    left: -32px;
+
+    width: 1px;
+    height: 57px;
+
+    background: rgba(106,188,246,.4);
+}
+.m3Shape2 {
+    top: 95px;
+    left: -32px;
+
+    width: 1px;
+    height: 596px;
+
+    background: rgba(106,188,246,.5);
+}
+.m3order {
+    font-size: 24px;
+
+    color: #fff;
+}
+.m3order {
+    top: 58px;
+
+    font-size: 24px;
+
+    color: #fff;
+}
+.m3order2 {
+    top: 694px;
+
+    font-size: 24px;
+
+    color: #fff;
+}
+.m3Go {
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #fff;
+}
+.m4 .consult  span {
+    /* left: 0px; */
+    position: relative;
+    z-index: 9999;
+
+    display: block;
+    width: 100%;
+    /* text-align: center; */
+    height: 55px;
+    /* text-align: center; */
+    margin-left: 42px;
+
+    font-size: 20px;
+    line-height: 55px;
+
+    color: #fff;
+}
+.m3 {
+    height: 1046px;
+
+    background: url("//img.hzshuangmei.com/pc/bdtm2/bg2_2.jpg") center center no-repeat;
+}
+.m1 .item {
+    height: 480px;
+    padding: 9px 10px 0 10px;
+
+    border: 1px solid rgb(223,236,255);
+}
+.m1 .item a span:nth-of-type(1) {
+    display: block;
+    margin-top: 23px;
+
+    font-size: 26px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: rgb(72,161,224);
+}
+.m1 .item a span:nth-of-type(2) {
+    display: block;
+    margin-top: 11px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: rgb(153,153,153);
+}
+.m1 .item a span:nth-of-type(3) {
+    display: block;
+    width: 160px;
+    margin: auto;
+    margin-top: 30px;
+
+    font-size: 20px;
+    line-height: 36px;
+
+    text-align: center;
+    text-align: center;
+
+    color: #fff;
+    background: rgb(106,188,246);
+}
+.item2Span2 {
+    width: 160px;
+    margin: 11px auto 0;
+
+    line-height: 24px;
+}
+.item2Span3 {
+    margin-top: 10px!important;
+}
+.bg2 {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
