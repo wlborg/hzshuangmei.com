@@ -1,626 +1,761 @@
 @charset "utf-8";
-.sr-only, img {
-    border: 0
+.sr-only,
+img {
+    border: 0;
 }
 
-.container .row, .m1 .content, .m3 .content, .m4 .content, .m7 .content ul, .sr-only {
-    overflow: hidden
+.container .row,
+.m1 .content,
+.m3 .content,
+.m4 .content,
+.m7 .content ul,
+.sr-only {
+    overflow: hidden;
 }
 
-a, body {
-    color: #000
+a,
+body {
+    color: #000;
 }
 
-body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, html, input, label, li, p, textarea, ul {
+body,
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+input,
+label,
+li,
+p,
+textarea,
+ul {
+    padding: 0;
     margin: 0;
-    padding: 0
 }
 
 form {
-    display: inline
+    display: inline;
 }
 
 td {
-    word-break: break-all
+    word-break: break-all;
 }
 
-dd, dl, dt, li, ul {
-    list-style: none
+dd,
+dl,
+dt,
+li,
+ul {
+    list-style: none;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
-    color: #428bca
+    color: #428bca;
 }
 
 body {
-    font: '微软雅黑', 'Microsoft Yahei', Verdana, Arial, sans-serif;
-    background: #fff
+    font: "微软雅黑", "Microsoft Yahei", Verdana, Arial, sans-serif;
+
+    background: #fff;
 }
 
 .img-respon {
     display: block;
     width: 100%;
-    height: auto
+    height: auto;
 }
 
 .fr {
-    float: right
+    float: right;
 }
 
 .fl {
-    float: left
+    float: left;
 }
 
 .container {
-    text-align: center;
     position: relative;
-    min-width: 1200px
+
+    min-width: 1200px;
+
+    text-align: center;
 }
 
 .container .row {
     width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
-.m1 .row, .m2-2 .row, .m3 .row, .m4-2 .row, .m5 .row, .m6-2 .row, .m7 .row {
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg_ctn.jpg) top center repeat-y
+.m1 .row,
+.m2-2 .row,
+.m3 .row,
+.m4-2 .row,
+.m5 .row,
+.m6-2 .row,
+.m7 .row {
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg_ctn.jpg) top center repeat-y;
 }
 
 .bg_top {
+    height: 82px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bg_top.jpg) bottom center no-repeat;
-    height: 82px
 }
 
 .bg_btm {
+    height: 207px;
     margin-top: -30px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bg_btm.jpg) bottom center no-repeat;
-    height: 207px
 }
 
 .bg_btm2 {
+    height: 150px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bg_btm2.jpg) top center no-repeat #92afdf;
-    height: 150px
 }
 
 .sr-only {
     position: absolute;
+
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
-    clip: rect(0, 0, 0, 0)
+    clip: rect(0, 0, 0, 0);
 }
 
 .banner {
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/banner.jpg) center center no-repeat;
     height: 600px;
-    min-width: 1200px
+    min-width: 1200px;
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/banner.jpg) center center no-repeat;
 }
 
 .m1 h2 {
+    height: 107px;
     margin: 100px 0 78px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt1.jpg) center center no-repeat;
-    height: 107px
 }
 
 .m1 .content {
-    height: 533px
+    height: 533px;
 }
 
 .m1 .content div {
+    position: relative;
+
     float: left;
-    margin-left: 92px;
-    padding-bottom: 30px;
     width: 220px;
-    position: relative
+    padding-bottom: 30px;
+    margin-left: 92px;
 }
 
 .m1 .content div h3 {
     margin: 12px 0;
+
     font-size: 26px;
+    font-weight: 400;
+
     color: #6f7ca9;
-    font-weight: 400
 }
 
 .m1 .content div p {
     padding: 30px 12px;
+
     font-size: 18px;
+
+    transition: all .5s;
+
     color: #fff;
     background: #6f7ca9;
-    transition: all .5s
 }
 
 .m1 .content div p .down {
     position: absolute;
     bottom: 0;
     left: 45%;
+
     display: none;
-    height: 16px;
     width: 21px;
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg1_icon.jpg) center center no-repeat
+    height: 16px;
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg1_icon.jpg) center center no-repeat;
 }
 
 .m1 .content div:first-child {
-    margin-left: 12px
+    margin-left: 12px;
 }
 
 .m1 .content div.two {
-    width: 240px
+    width: 240px;
 }
 
-.m1 .content div.four, .m1 .content div.two {
-    margin-top: 60px
+.m1 .content div.four,
+.m1 .content div.two {
+    margin-top: 60px;
 }
 
-.m1 .consult, .m2-2 .consult, .m3 .consult, .m4-2 .consult, .m5 .consult, .m6-2 .consult, .m7 .consult {
+.m1 .consult,
+.m2-2 .consult,
+.m3 .consult,
+.m4-2 .consult,
+.m5 .consult,
+.m6-2 .consult,
+.m7 .consult {
     display: inline-block;
     margin-top: 40px;
-    border: 1px solid #d7deed
+
+    border: 1px solid #d7deed;
 }
 
-.m1 .consult a, .m2-2 .consult a, .m3 .consult a, .m4-2 .consult a, .m5 .consult a, .m6-2 .consult a, .m7 .consult a {
+.m1 .consult a,
+.m2-2 .consult a,
+.m3 .consult a,
+.m4-2 .consult a,
+.m5 .consult a,
+.m6-2 .consult a,
+.m7 .consult a {
     position: relative;
     right: 10px;
     bottom: 10px;
+
     display: block;
+    padding: 12px 24px;
+
+    font-size: 24px;
+
+    color: #fff;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 12px 24px;
-    font-size: 24px;
-    color: #fff;
-    background: #8ea2c8
+    background: #8ea2c8;
 }
 
-.m1 .content div.notcurr p .down, .m8 .consult a {
-    display: inline-block
+.m1 .content div.notcurr p .down,
+.m8 .consult a {
+    display: inline-block;
 }
 
 .container .consult:hover a {
     border-top-left-radius: 0;
-    border-bottom-right-radius: 0
+    border-bottom-right-radius: 0;
 }
 
 .m1 .content div.notcurr p {
-    padding: 12px 12px 0;
     height: 0;
+    padding: 12px 12px 0;
+
     font-size: 18px;
+
     color: #fff;
-    background: #6f7ca9
+    background: #6f7ca9;
 }
 
 .m2 {
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg2.jpg) center bottom no-repeat #daeefe
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/bg2.jpg) center bottom no-repeat #daeefe;
 }
 
 .m2 h2 {
+    height: 97px;
     margin-bottom: 66px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt2.jpg) center center no-repeat;
-    height: 96px
 }
 
-.m2 .des, .m3 .des {
-    margin: 0 auto 50px;
+.m2 .des,
+.m3 .des {
     width: 1040px;
+    margin: 0 auto 50px;
+
     font-size: 20px;
-    color: #7c8dca
+
+    color: #7c8dca;
 }
 
 .m2 .content {
     position: relative;
+
     height: 650px;
-    color: #fff
+
+    color: #fff;
 }
 
 .m2 .content div {
     position: absolute;
-    padding: 16px;
+
     width: 150px;
-    height: 138px
+    height: 138px;
+    padding: 16px;
 }
 
 .m2 .content div h3 {
     margin: 10px 0;
-    font-size: 20px
+
+    font-size: 20px;
 }
 
 .m2 .content div p {
     font-size: 16px;
-    text-align: left
+
+    text-align: left;
 }
 
 .m2 .content .one {
     top: 85px;
-    left: 190px
+    left: 190px;
 }
 
 .m2 .content .two {
     top: 340px;
-    left: 80px
+    left: 80px;
 }
 
 .m2 .content .three {
     top: 118px;
-    right: 158px
+    right: 158px;
 }
 
 .m2 .content .four {
     top: 380px;
-    right: 80px
+    right: 80px;
 }
 
 .m2-2 .consult {
-    margin: 30px 0 100px
+    margin: 30px 0 100px;
 }
 
 .m3 h2 {
+    height: 106px;
     margin-bottom: 50px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt3.jpg) center center no-repeat;
-    height: 106px
 }
 
 .m3 .des {
-    margin-bottom: 35px
+    margin-bottom: 35px;
 }
 
 .m3 .content div {
     float: left;
-    margin-left: 20px;
-    padding: 18px 8px;
     width: 260px;
-    border: 1px solid #b2bde0
+    padding: 18px 8px;
+    margin-left: 20px;
+
+    border: 1px solid #b2bde0;
 }
 
 .m3 .content div h3 {
-    margin: 0 auto 8px;
-    border-bottom: solid 1px #808dbc;
     width: 90px;
+    margin: 0 auto 8px;
+
     font-size: 26px;
-    color: #6173b4
+
+    color: #6173b4;
+    border-bottom: solid 1px #808dbc;
 }
 
 .m3 .content div .sub {
     font-size: 22px;
+
+    text-align: center;
+
     color: #7c8dca;
-    text-align: center
 }
 
 .m3 .content div p {
-    text-align: justify;
     font-size: 18px;
+
+    text-align: justify;
+    letter-spacing: 2px;
+
     color: #808dbc;
-    letter-spacing: 2px
 }
 
 .m3 .content div img {
-    margin: 16px 0
+    margin: 16px 0;
 }
 
 .m3 .content .one {
-    margin-left: 14px
+    margin-left: 14px;
 }
 
 .m3 .content .two {
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .m3 .content .three {
-    margin-top: 90px
+    margin-top: 90px;
 }
 
 .m3 .content .four {
-    margin-top: 130px
+    margin-top: 130px;
 }
 
 .m3 .consult {
-    margin: 50px 0 0
+    margin: 50px 0 0;
 }
 
 .m4 {
-    background: #daeefe
+    background: #daeefe;
 }
 
 .m4 h2 {
+    height: 102px;
     margin-bottom: 76px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt4.jpg) center center no-repeat;
-    height: 102px
 }
 
 .m4 .content .box {
-    margin-bottom: 40px;
+    width: 562px;
     height: 258px;
-    width: 562px
+    margin-bottom: 40px;
 }
 
 .m4 .content .box > div {
     float: left;
+    width: 208px;
     padding: 60px 8px 8px;
-    width: 208px
 }
 
 .m4 .content .box > div h3 {
     margin-bottom: 20px;
+
     font-size: 30px;
-    color: #7c8dca
+
+    color: #7c8dca;
 }
 
 .m4 .content .box > div p {
     font-size: 16px;
-    color: #6b7bb3
+
+    color: #6b7bb3;
 }
 
 .m4 .content .box .method {
     float: right;
-    padding: 6px 14px 8px 8px;
     width: 310px;
-    text-align: left
+    padding: 6px 14px 8px 8px;
+
+    text-align: left;
 }
 
 .m4 .content .box .method h4 {
     display: inline-block;
+    padding: 0 8px;
     margin-bottom: 14px;
+
+    font-size: 20px;
+
+    color: #fff;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 0 8px;
-    font-size: 20px;
-    color: #fff;
-    background: #8ea2c8
+    background: #8ea2c8;
 }
 
-.m4 .content .box3 > div, .m4 .content .box4 div {
-    padding-top: 40px
+.m4 .content .box3 > div,
+.m4 .content .box4 div {
+    padding-top: 40px;
 }
 
 .m4 .content .box1 {
     float: left;
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_01.jpg) center center no-repeat
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_01.jpg) center center no-repeat;
 }
 
 .m4 .content .box2 {
     float: right;
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_02.jpg) right center no-repeat
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_02.jpg) right center no-repeat;
 }
 
 .m4 .content .box3 {
     float: left;
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_03.jpg) right center no-repeat
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_03.jpg) right center no-repeat;
 }
 
 .m4 .content .box4 {
     float: right;
-    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_04.jpg) right center no-repeat
+
+    background: url(//img.hzshuangmei.com/pc/dlslb/images/img4_04.jpg) right center no-repeat;
 }
 
 .m4-2 .consult {
-    margin: 10px 0 100px
+    margin: 10px 0 100px;
 }
 
 .m5 h2 {
+    height: 102px;
     margin-bottom: 60px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt5.jpg) center center no-repeat;
-    height: 102px
 }
 
 .m5 .content div {
+    position: relative;
+
     padding-top: 20px;
-    position: relative
 }
 
 .m5 .content div span {
     position: absolute;
+
     font-size: 16px;
-    color: #6b7bb3
+
+    color: #6b7bb3;
 }
 
 .m5 .content div .step1 {
     top: 54px;
-    left: 215px
+    left: 215px;
 }
 
 .m5 .content div .step2 {
     bottom: 42px;
-    left: 400px
+    left: 400px;
 }
 
 .m5 .content div .step3 {
     top: 0;
-    right: 586px
+    right: 586px;
 }
 
 .m5 .content div .step4 {
+    right: 403px;
     bottom: 95px;
-    right: 403px
 }
 
 .m5 .content div .step5 {
     top: 213px;
-    right: 210px
+    right: 210px;
 }
 
 .m5 .content div h3 {
+    height: 38px;
     margin: 30px 0;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt5_2.jpg) center center no-repeat;
-    height: 38px
 }
 
 .m5 .consult {
-    margin: 80px 0 0
+    margin: 80px 0 0;
 }
 
 .m6 {
     margin-top: -20px;
-    background: #daeefe
+
+    background: #daeefe;
 }
 
 .m6 h2 {
+    height: 100px;
     margin-bottom: 60px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt6.jpg) center center no-repeat;
-    height: 100px
 }
 
 .m6 .content {
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 
 .m6 .content table {
     margin: 0 auto;
-    background: #c7e3fa;
-    color: #7c8dca;
+
     border-collapse: collapse;
-    text-align: left
+
+    text-align: left;
+
+    color: #7c8dca;
+    background: #c7e3fa;
 }
 
 .m6 .content table tr th {
     padding: 36px 0;
+
     font-size: 24px;
+
+    text-align: center;
+
     border: 1px solid #8190c4;
-    text-align: center
 }
 
 .m6 .content table tr td {
     padding: 11px;
+
     font-size: 20px;
+    line-height: 72px;
+
     border: 1px solid #8190c4;
-    line-height: 72px
 }
 
 .m6 .content table tr td img {
     margin-right: 24px;
-    vertical-align: middle
+
+    vertical-align: middle;
 }
 
 .m6 .content table tr td:nth-child(2) {
+    font-size: 22px;
+
     text-align: center;
-    font-size: 22px
 }
 
 .m6-2 .consult {
-    margin: 10px 0 90px
+    margin: 10px 0 90px;
 }
 
 .m7 h2 {
+    height: 110px;
     margin-bottom: 60px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt7.jpg) center center no-repeat;
-    height: 110px
 }
 
 .m7 .content ul {
     margin-bottom: 24px;
-    margin-left: 15px
+    margin-left: 15px;
 }
 
 .m7 .content ul li {
     float: left;
-    margin-left: 45px
+    margin-left: 45px;
 }
 
 .m7 .content ul li:first-child {
-    margin-left: 0
+    margin-left: 0;
 }
 
 .m7 .content .show {
-    margin-left: 0;
-    height: 526px;
+    position: relative;
+
     width: 1200px;
-    position: relative
+    height: 526px;
+    margin-left: 0;
 }
 
 .m7 .content .show li {
-    margin-left: 0;
     position: absolute;
     top: 0;
     left: 0;
+
+    margin-left: 0;
+
+    transition: all .5s;
+
     opacity: 1;
-    transition: all .5s
 }
 
 .m7 .content .show li.notcurr {
-    opacity: 0
+    opacity: 0;
 }
 
 .m7 .content .index li:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .m7 .consult {
-    margin: 36px 0 0
+    margin: 36px 0 0;
 }
 
 .m8 {
-    background: #daeefe
+    background: #daeefe;
 }
 
 .m8 h2 {
+    height: 111px;
     margin-bottom: 60px;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bgt8.jpg) center center no-repeat;
-    height: 111px
 }
 
 .m8 .content {
-    padding: 146px 510px 60px 190px;
     width: 410px;
+    padding: 146px 510px 60px 190px;
+
     text-align: left;
+
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bg8.jpg) 554px bottom no-repeat;
 }
 
 .m8 .content h3 span {
+    padding-right: 16px;
+
     font-size: 30px;
-    padding-right: 16px
 }
 
 .m8 .content ul {
+    padding: 0;
     margin: 30px 0;
-    padding: 0
 }
 
 .m8 .content ul li {
     padding-left: 14px;
+
     font-size: 18px;
+    line-height: 30px;
+
     color: #6b7bb3;
     background: url(//img.hzshuangmei.com/pc/dlslb/images/bg8_icon1.jpg) left center no-repeat;
-    line-height: 30px
 }
 
 .m8 .content h3 {
-    font-weight: 400;
     margin-bottom: 12px;
+
     font-size: 20px;
-    color: #6b7bb3
+    font-weight: 400;
+
+    color: #6b7bb3;
 }
 
 .m8 .content ul.two {
     margin: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .m8 .content ul.two li {
-    padding-left: 0;
-    padding-right: 14px;
     float: left;
+    padding-right: 14px;
+    padding-left: 0;
+
     font-size: 16px;
-    color: #6274b3
+
+    color: #6274b3;
 }
 
 .m8 .consult {
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .m8 .consult a {
     padding: 8px 12px;
-    border: 1px solid #95a7c2;
+
     font-size: 16px;
-    color: #6274b3
+
+    color: #6274b3;
+    border: 1px solid #95a7c2;
 }
 
 .scpage {
-    color: #6274b3;
     font-size: 16px;
     line-height: 24px;
+
+    color: #6274b3;
 }
 
 .scpage2 {
-    margin-bottom: -15px
+    margin-bottom: -15px;
 }
