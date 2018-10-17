@@ -1,0 +1,66 @@
+223.199.168.251||/index.php?upcache=1||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+        tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+        
+        FROM `sm_archives` arc LEFT JOIN `sm_arctype` tp on arc.typeid=tp.id
+        
+         WHERE  arc.typeid IN (20) And  arc.arcrank > -1    ORDER BY arc.sortrank desc’isweight="Y"  LIMIT 0,3 ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/index.php?upcache=1||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+        tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+        
+        FROM `sm_archives` arc LEFT JOIN `sm_arctype` tp on arc.typeid=tp.id
+        
+         WHERE  arc.typeid IN (20) And  arc.arcrank > -1    ORDER BY arc.sortrank desc’isweight="Y"  LIMIT 0,3 ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/index.php?upcache=1||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+        tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+        
+        FROM `sm_archives` arc LEFT JOIN `sm_arctype` tp on arc.typeid=tp.id
+        
+         WHERE  arc.typeid IN (20) And  arc.arcrank > -1    ORDER BY arc.sortrank desc’isweight="Y"  LIMIT 0,3 ||unusual character
+223.199.168.251||/index.php?upcache=1||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+        tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+        
+        FROM `sm_archives` arc LEFT JOIN `sm_arctype` tp on arc.typeid=tp.id
+        
+         WHERE  arc.typeid IN (20) And  arc.arcrank > -1    ORDER BY arc.sortrank desc’isweight="Y"  LIMIT 0,3 ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/plugin/view.php?aid=195||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,
+            tp.moresite,tp.siteurl,tp.sitepath
+            
+             FROM `sm_archives` arc left join `sm_arctype` tp on arc.typeid=tp.id
+             
+          WHERE arc.id in(0)  ORDER BY arc.sortrank desc’isweight="Y" ||unusual character
+223.199.168.251||/index.php?upcache=1||SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
+        tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
+        
+        FROM `sm_archives` arc LEFT JOIN `sm_arctype` tp on arc.typeid=tp.id
+        
+         WHERE  arc.typeid IN (20) And  arc.arcrank > -1    ORDER BY arc.sortrank desc’isweight="Y"  LIMIT 0,3 ||unusual character

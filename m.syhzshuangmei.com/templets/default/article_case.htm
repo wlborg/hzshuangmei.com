@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_case.css"/>
+</head>
+<body>
+{dede:include filename="_header.htm"/}
+<div class="m1">
+    <div class="location">
+        <i></i><span>当前位置：</span><a href="">红妆双美</a> > <a href="">整形案例</a> > <a href="">案例对比 </a>
+        {dede:field name='position'runphp='yes'}@me=substr(@me,0,-4){/dede:field}
+    </div>
+    <div class="line"></div>
+    <div class="article_case_content clearFix">
+        <div class="center">
+            <h2>{dede:field.title/}</h2>
+            <p class="tit">
+                <span>来源 : {dede:field.source/}</span>
+                <span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>
+                <span>点击量：1440  </span>
+                <i></i>
+            </p>
+            <div class="data">
+                <div class="data_t clearFix">
+                    <div class="data_after">
+                        <img src="{dede:field.imgafter function='replaceurl(@me)'/}" alt="{dede:field.title/}">
+                    </div>
+                    <div>
+                        <p>
+                            <i></i><span class="fon1">求美者：</span><span>{dede:field.title/}</span>
+                        </p>
+
+                        <p>
+                            <i></i><span class="fon1">项&nbsp;&nbsp;&nbsp;&nbsp;目：</span><span>{dede:field.project/}</span>
+                        </p>
+                    </div>
+                    <div>
+                        <p><i></i><span class="fon1">专  家：</span><span>{dede:field.doctor/}</span></p>
+                    </div>
+                </div>
+                <p class="data_b"><i></i><span class="fon1">评&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                    <span class="fon2">{dede:field.note/}
+                    </span>
+                </p>
+            </div>
+            <div class="main">
+                <h3>美丽蜕变过程</h3>
+                <div class="line3"></div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title1/}</span><i></i></h4>
+                    <p>{dede:field.des1/}</p>
+                    <div class="clearFix">
+                        {dede:field.imgs1/}
+                    </div>
+                </div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title2/}</span><i></i></h4>
+                    <p>{dede:field.des2/}</p>
+                    <div class="clearFix">
+                        {dede:field.imgs2/}
+                    </div>
+                </div>
+                <div class="main_content">
+                    <h4><span>{dede:field.title3/}</span><i></i></h4>
+                    <p>{dede:field.des3/}</p>
+                    <div class="clearFix">
+                        {dede:field.imgs3/}
+                    </div>
+                </div>
+            </div>
+            <div class="page clearFix">
+                <!--<p><span>上一篇：</span>影响纹眉价格的因素有哪些？</p>-->
+                <p>{dede:prenext get='pre'/}</p>
+
+                <!--<p><span>下一篇：</span>海南酒窝成形手术大概多少钱呢？</p>-->
+                <p>{dede:prenext get='next'/}</p>
+            </div>
+            <div class="share clearFix">
+                <p><i class="share_01"></i><span>分享到：</span></p>
+                <a href=""><i class="share_02"></i></a>
+                <a href=""><i class="share_03"></i></a>
+                <a href=""><i class="share_04"></i></a>
+                <a href=""><i class="share_05"></i></a>
+
+                <div class="share_ewm">
+                    <img src="{dede:global.cfg_imgpath/}/pc/share_ewm.jpg" alt=""/>
+
+                    <p>（扫一扫）<br/>把红妆双美<br/>加为好友
+                    </p>
+                </div>
+                <div class="zixun">
+                    <a><i class="share_07"></i>在线咨询</a>
+                    <a><i class="share_08"></i>预约专家</a>
+                </div>
+            </div>
+            <div class="correlation">
+                <div class="cor_tit"><img src="{dede:global.cfg_imgpath/}/pc/share_09.png" alt=""/></div>
+                <div class="cor_content">
+                    <div>
+                        <a href="">陈女士：芭比大眼</a>
+                        <a href="">严小姐：双眼皮-开内眼角</a>
+                        <a href="">小梅：双眼皮手术</a>
+                        <a href="">李女士：芭比大眼术-假体隆鼻术-面部吸脂术</a>
+                    </div>
+                    <div>
+                        <a href="">陈女士：芭比大眼</a>
+                        <a href="">严小姐：双眼皮-开内眼角</a>
+                        <a href="">小梅：双眼皮手术</a>
+                        <a href="">李女士：芭比大眼术-假体隆鼻术-面部吸脂术</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="aside_tit center1 clearFix">
+                <p>
+                    <span>热门项目</span><br/>
+                    <span>popular project</span>
+                </p>
+                <a href="">more+</a>
+            </div>
+            <div class="swiper-container center1 aside_swiper">
+                <div class="swiper-wrapper">
+                    {dede:FIELD.typeid function='getrelateproject(@me)'/}
+                    <a href="" class="swiper-slide"><img src="{dede:global.cfg_imgpath/}/pc/ar_case_03.jpg" alt=""/></a>
+                    <a href="" class="swiper-slide"><img src="{dede:global.cfg_imgpath/}/pc/ar_case_03.jpg" alt=""/></a>
+                    <a href="" class="swiper-slide"><img src="{dede:global.cfg_imgpath/}/pc/ar_case_03.jpg" alt=""/></a>
+                </div>
+                <div class="swiper-pagination aside-pagination"></div>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="aside_tit center1 clearFix">
+                <p>
+                    <span>推荐专家</span><br/>
+                    <span>popular expert</span>
+                </p>
+                <a href="">more+</a>
+            </div>
+            <div class="aside_ex center1">
+                <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_04.jpg" alt=""/></a>
+                <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_04.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="aside_tit center1 clearFix">
+                <p>
+                    <span>热门日记</span><br/>
+                    <span>popular jounal</span>
+                </p>
+                <a href="">more+</a>
+            </div>
+            <div class="aside_jou center1">
+                <div>
+                    <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_01.jpg" alt=""/></a>
+                    <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_01.jpg" alt=""/></a>
+                    <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_01.jpg" alt=""/></a>
+                    <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_01.jpg" alt=""/></a>
+                    <a href=""><img src="{dede:global.cfg_imgpath/}/pc/ar_case_01.jpg" alt=""/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{dede:include filename="_footer.htm"/}
+</body>
+{dede:include filename="_script.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/article_case.js"></script>
+</html>

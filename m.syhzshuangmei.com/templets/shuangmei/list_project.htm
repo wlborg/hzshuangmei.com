@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="设计：观彩恒，前端：陈晓珍" />
+     <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- menu -->
+        {dede:include filename="_header.htm"/}
+        <!-- /menu -->
+        <div class="contents">
+            <h1><span class="sr-only">{dede:field.seotitle/}_{dede:global.cfg_webname/}</span></h1>
+             <!-- 顶部banner -->
+            {dede:myad name='topbanner_sj'/}
+            <!-- /顶部banner -->
+            <div class="project-nav">
+                <ul class="f-cb nav-wrap" id="projectnav">
+
+                    <li class="nav-item ">
+                        <a href="/projects/eye/" class="nav-link">
+                               <span class="item_icons item_yan nav-icon" ></span>
+                               <span class="nav-info">眼部</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/nose/" class="nav-link">
+                               <span class="item_icons item_bi nav-icon" ></span>
+                               <span class="nav-info">鼻部</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/face/" class="nav-link">
+                               <span class="item_icons item_mian nav-icon" ></span>
+                               <span class="nav-info">面部</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/tattoo/" class="nav-link">
+                               <span class="item_icons item_wen nav-icon" ></span>
+                               <span class="nav-info">纹绣</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/skin/" class="nav-link">
+                               <span class="item_icons item_pi nav-icon" ></span>
+                               <span class="nav-info">皮肤</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/chest/" class="nav-link">
+                               <span class="item_icons item_xiong nav-icon" ></span>
+                               <span class="nav-info">胸部</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/private/" class="nav-link">
+                               <span class="item_icons item_simi nav-icon" ></span>
+                               <span class="nav-info">私密</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/body/" class="nav-link">
+                               <span class="item_icons item_xing nav-icon" ></span>
+                               <span class="nav-info">形体</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/ha/" class="nav-link">
+                               <span class="item_icons item_bo nav-icon" ></span>
+                               <span class="nav-info">玻尿酸</span>
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/projects/botox/" class="nav-link">
+                               <span class="item_icons item_botox nav-icon" ></span>
+                               <span class="nav-info">botox</span>
+                           </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="/projects/hengli/" class="nav-link">
+                               <span class="item_icons item_hengli nav-icon" ></span>
+                               <span class="nav-info">衡力</span>
+                           </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="javascript:void(0)" class="nav-link j-consult" rel="nofollow">
+                               <span class="item_icons item_more nav-icon" ></span>
+                               <span class="nav-info">更多</span>
+                           </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-items">
+                <ul class="f-cb">
+                    {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc" }
+                    <li class="pro-item">
+                        <div class="pro-thum">
+                          <a href="[field:arcurl/]" title="[field:title/]">
+                            <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]" ></a>
+                        </div>
+
+                        <div class="pro-info">
+                            <h2 class="pro-title"><a href="[field:arcurl/]" class="pro-link">[field:title/]</a></h2>
+                            <p class="pro-subtitle">[field:shorttitle function='@me=@me==""?"RED MAKEUP":"@me"'/]</p>
+                            <div class="pro-line"></div>
+                            <a href="[field:arcurl/]" class="pro-dianji">点击</a>
+                        </div>
+                    </li>
+                    {/dede:list}
+                </ul>
+                <div class="pro-more">
+                    更多项目
+                    <br> <span class="icon"></span>
+                </div>
+                 <div class="pagination">
+                  <ul>
+                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                  </ul>
+                </div>
+            </div>
+            <!--<div class="relatecase">-->
+                <!--<div class="heading">-->
+                    <!--<h2 class="title">相关案例</h2>-->
+                    <!--<img src="{dede:global.cfg_imgpath/}/m/bg_txt_tuijian.png" alt="recommend">-->
+                <!--</div>-->
+                <!--<div class="content">-->
+
+                        <!--{dede:FIELD.typeid function='getProjectListRelateCase(@me)'/}-->
+
+
+                    <!--<div class="more">-->
+                        <!--<a href="/cases/"> 更多 <span>></span></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            {dede:include filename="_sj_copyright.htm"/}
+        </div>
+    </div>
+    <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+    {dede:include filename="_list_Factor.htm"/}
+</body>
+
+</html>

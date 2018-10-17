@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
+    {dede:include filename="_link.htm"/}
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_project.css"/>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
+</head>
+<body>
+{dede:include filename="_header.htm"/}
+{dede:myad name='topbanner_pc'/}
+<div class="m1">
+    <div class="location">
+        <i></i><span>��ǰλ�ã�</span>{dede:field name='position'/}
+    </div>
+    <div class="line"></div>
+    <h2 class="tit_h2"><img src="{dede:global.cfg_imgpath/}/pc/project_title.png" alt="��ױ˫�����������Ƽ���Ŀ"/></h2>
+    <div class="project_banner clearFix">
+        {dede:myad name='projectpic_pc'/}
+    </div>
+    <div class="project_content">
+        <div id="ptab2">
+            <ul>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi0.jpg" alt="�۲���Ŀ"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi2.jpg" alt="�ǲ���Ŀ"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi3.jpg" alt="�沿�����Ŀ"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi4.jpg" alt="������Ŀ"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi5.jpg" alt="Ƥ������"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi6.jpg" alt="�ز�����"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi7.jpg" alt="˽������"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi8.jpg" alt="�������"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi9.jpg" alt="������"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi10.jpg" alt="botox"/></li>
+                <li><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="����"/></li>
+            </ul>
+            <div class="gengduo j-consult">����</div>
+        </div>
+
+        <ul id="ptabCon2" class="clearFix">
+            <li class="pdiv2">
+                {dede:arclist typeid=15 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=14 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=16 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>red makeup refined grain lip</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=20 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=21 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=17 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=18 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=19 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=22 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+            <li>
+                {dede:arclist typeid=23 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+
+            </li>
+            <li>
+                {dede:arclist typeid=34 titlelen="120" orderby='id'}
+                <a href="[field:arcurl/]">
+                    <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
+                    <div>
+                        <p>
+                            <span>[field:title/]</span><br/>
+                            <span>[field:shorttitle/]</span>
+                        </p>
+                        <div class="click">
+                            <i></i>
+                            <span>���</span>
+                        </div>
+                        <div class="line1"></div>
+                    </div>
+                </a>
+                {/dede:arclist}
+            </li>
+        </ul>
+    </div>
+    <!--<a href="" class="ask">������Ŀ<i></i></a>-->
+</div>
+{dede:include filename="_footer.htm"/}
+</body>
+{dede:include filename="_script.htm"/}
+{dede:include filename="_list_Factor.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/list_project.js"></script>
+</html>

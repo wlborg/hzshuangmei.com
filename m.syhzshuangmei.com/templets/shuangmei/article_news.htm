@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="设计：观彩恒，前端：陈晓珍" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.title/}_{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}">
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- menu -->
+        {dede:include filename="_header.htm"/}
+        <!-- /menu -->
+        <div class="contents">
+            <div id="banner" class="carousel slide" data-ride="carousel">
+                <!-- 顶部banner -->
+                {dede:myad name='topbanner_sj'/}
+                <!-- /顶部banner -->
+            </div>
+            <div class="article">
+                  <div class="heading">
+                      <h1 class="title">{dede:field.title/}</h1>
+                      <div class="line">
+                          <span></span>
+                      </div>
+                      <p class="info"><span class="date">时间{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /} </span><span class="source">来源:红妆双美</span> <span class="click">点击量:{dede:field.click /}</span><span class="consult j-consult"><span class="sr-only">QQ咨询</span></span></p>
+                  </div>
+                  <div class="article-main">
+                      {dede:field.body /}
+
+                  </div>
+                 <div class="relate-link f-cb">
+                    <div class="prev"> {dede:prenext get='pre'/}</div>
+                    <div class="next">{dede:prenext get='next'/}</div>
+                 </div>
+            </div>
+            {dede:include filename="_sj_copyright.htm"/}
+        </div>
+    </div>
+    <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+    {dede:include filename="_article_Factor.htm"/}
+</body>
+
+</html>
