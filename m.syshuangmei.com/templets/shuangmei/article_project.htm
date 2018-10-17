@@ -11,6 +11,7 @@
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}">
      {dede:include filename="_link.htm"/}
      {dede:field.ztmeta_sj/}
+
     <body>
         <div class="wrapper">
             <!-- menu -->
@@ -35,18 +36,8 @@
                     <!--{dede:FIELD.typeid function='getProjectArticleRelateCase(@me)'/}-->
                 <!--</div>-->
             <!--</div>-->
-            <div class=" relatemodule articlerelatedoctor">
-                <div class="heading">
-                    <h2 class="title"><span class="lefticon2"></span>推荐医师<span class="righticon2"></span></h2>
-                    <div class="line">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="contents">
-                    {dede:FIELD.typeid function='getProjectArticleRelateDoctor(@me)'/}
-                </div>
-            </div>
-            <div class="relatemodule relateporject">
+
+            <div class="relatemodule relateporject sy_relateporject">
                 <div class="heading">
                     <h2 class="title"><span class="lefticon"></span>推荐项目<span class="righticon"></span></h2>
                     <div class="line">
@@ -55,6 +46,17 @@
                 </div>
                 <div class="contents">
                     {dede:FIELD.id function='getProjectArticleRelateProject(@me)'/}
+                </div>
+            </div>
+             <div class=" relatemodule articlerelatedoctor sy_articlerelatedoctor">
+                <div class="heading">
+                    <h2 class="title"><span class="lefticon2"></span>推荐医师<span class="righticon2"></span></h2>
+                    <div class="line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contents">
+                    {dede:FIELD.typeid function='getProjectArticleRelateDoctor(@me)'/}
                 </div>
             </div>
             <div class="relatemodule relateporject xzhporject">

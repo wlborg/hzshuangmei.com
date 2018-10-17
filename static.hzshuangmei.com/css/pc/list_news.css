@@ -1,205 +1,237 @@
-.m1{
-width:1200px;
-margin:0 auto;
+.m1 {
+    width: 1200px;
+    margin: 0 auto;
 }
-.location{
-margin:19px 8px 6px 29px;
+.location {
+    margin: 19px 8px 6px 29px;
 }
-.location i{
-display:inline-block;
-width:17px;
-height:16px;
-background:url(//img.hzshuangmei.com/pc/home.png) no-repeat center;
+.location i {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+
+    background: url(//img.hzshuangmei.com/pc/home.png) no-repeat center;
 }
-.location span{
-font-size:14px;
-color:#9d85c1;
+.location span {
+    font-size: 14px;
+
+    color: #9d85c1;
 }
-.location a{
-font-size:12px;
-color:#696969
+.location a {
+    font-size: 12px;
+
+    color: #696969;
 }
-.line{
-width:1199px;
-height:7px;
-background:url(//img.hzshuangmei.com/pc/line.png) no-repeat center;
+.line {
+    width: 1199px;
+    height: 7px;
+
+    background: url(//img.hzshuangmei.com/pc/line.png) no-repeat center;
 }
-.h2_tit{
-text-align: center;
-margin:25px 0 30px;
+.h2_tit {
+    margin: 25px 0 30px;
+
+    text-align: center;
 }
 #news_banner .swiper-container {
-width: 100%;
-height: 100%;
-margin-left: auto;
-margin-right: auto;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 #news_banner .swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    background: #fff;
+
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
 }
-#news_banner .swiper-slide img{
-width:100%;
+#news_banner .swiper-slide img {
+    width: 100%;
 }
-#news_banner .swiper-slide p{
-width:1200px;
+#news_banner .swiper-slide p {
+    width: 1200px;
 }
-#news_banner .news_pagination{
-margin: 35px auto 0;
-position:relative;
+#news_banner .news_pagination {
+    position: relative;
+
+    margin: 35px auto 0;
 }
 #news_banner .news_pagination .swiper-pagination-bullet {
-width: 13px;
-height: 13px;
-display: inline-block;
-border-radius: 0;
-background: #e3e3e3;
-opacity:1;
-margin:0 7px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 7px;
+
+    opacity: 1;
+    border-radius: 0;
+    background: #e3e3e3;
 }
-#news_banner .news_pagination .swiper-pagination-bullet:hover{
-background: #c0a9d5;
+#news_banner .news_pagination .swiper-pagination-bullet:hover {
+    background: #c0a9d5;
 }
 #news_banner .news_pagination .swiper-pagination-bullet-active {
-opacity: 1;
-background: #6e3693;
+    opacity: 1;
+    background: #6e3693;
 }
-.news_content h3{
-border-bottom:1px solid #ebebeb;
-margin:30px 0 1px;
+.news_content h3 {
+    margin: 30px 0 1px;
+
+    border-bottom: 1px solid #ebebeb;
 }
-.news_content h3 img{
-padding-bottom:25px;
+.news_content h3 img {
+    padding-bottom: 25px;
 }
-.news_content .news_main{
-border-top:1px solid #ebebeb;
+.news_content .news_main {
+    border-top: 1px solid #ebebeb;
 }
-.news_content ul li>div{
-float:left;
-}
-.news_content .news_main .ns_pic{
-display:block;
-max-width:313px;
-max-height:183px;
-}
-.news_content .news_main .ns_pic img{
-max-width: 313px;
-}
-.news_content ul li>div:first-child{
-margin-right:30px;
-padding-bottom:30px;
-}
-.news_content ul li>div:nth-child(2){
-height: 182px;
-width: 762px;
-}
-.news_content .news_main .i1{
-display: inline-block;
-width:14px;
-height:14px;
-background:url(//img.hzshuangmei.com/pc/ns_02.png) no-repeat center;
-margin-right:20px;
-}
-.news_content ul li{
-border-bottom:1px dashed #e5e5e5;
-margin:28px 0
-}
-.news_content ul li h4{
-font-size:30px;
-margin-bottom:10px;
-}
-.news_content ul li h4 a{
-color:#000;
-}
-.news_content ul li p{
-width:810px;
-font-size:16px;
-margin-left:42px;
-line-height: 30px;
-}
-.news_content ul li p span{
-color:#8c64a0
-}
-.news_content .news_main .i2{
-display: inline-block;
-width: 14px;
-height: 14px;
-background: url(//img.hzshuangmei.com/pc/ns_03.png) no-repeat center;
-margin-right: 5px;
-position: relative;
-top: 2px;
-}
-.news_content .news_main .date{
-color:#bdbdbd;
-font-size:14px;
-float:right;
-}
-.news_content .news_main .date span{
-margin-right:25px;
-}
-.news_content .pagination>li {
-float:left;
-margin:5px;
-border:1px solid #e6e6e6;
-padding: 8px 14px;
+.news_content ul li > div {
+    float: left;
 }
 
-.news_content .pagination li:hover{
-background-color: #8a59a7;
+.news_content .news_main .ns_pic {
+    display: block;
+    max-width: 313px;
+    max-height: 183px;
+}
+.news_content .news_main .ns_pic img {
+    max-width: 313px;
+}
+.news_content ul li > div:first-child {
+    padding-bottom: 30px;
+    margin-right: 30px;
+}
+/* 三亚双美 */
+.sy_ImgBox {
+    float: right:!important;
+}
+.news_content ul li > div:nth-child(2) {
+    width: 762px;
+    height: 182px;
+}
+.news_content .news_main .i1 {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 20px;
+
+    background: url(//img.hzshuangmei.com/pc/ns_02.png) no-repeat center;
+}
+.news_content ul li {
+    margin: 28px 0;
+
+    border-bottom: 1px dashed #e5e5e5;
+}
+.news_content ul li h4 {
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+.news_content ul li h4 a {
+    color: #000;
+}
+.news_content ul li p {
+    width: 810px;
+    margin-left: 42px;
+
+    font-size: 16px;
+    line-height: 30px;
+}
+.news_content ul li p span {
+    color: #8c64a0;
+}
+.news_content .news_main .i2 {
+    position: relative;
+    top: 2px;
+
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+
+    background: url(//img.hzshuangmei.com/pc/ns_03.png) no-repeat center;
+}
+.news_content .news_main .date {
+    float: right;
+
+    font-size: 14px;
+
+    color: #bdbdbd;
+}
+/* 三亚 */
+.sy_date {
+    float: left!important;
+}
+.news_content .news_main .date span {
+    margin-right: 25px;
+}
+.news_content .pagination > li {
+    float: left;
+    padding: 8px 14px;
+    margin: 5px;
+
+    border: 1px solid #e6e6e6;
 }
 
-.pagination li:hover a{
- color:#fff;
+.news_content .pagination li:hover {
+    background-color: #8a59a7;
+}
+
+.pagination li:hover a {
+    color: #fff;
 }
 
 
 
 
-.thisclass{
-background-color:#8a59a7;
-color:#fff;
+.thisclass {
+    color: #fff;
+    background-color: #8a59a7;
 }
-.ns_pa{
-margin:50px auto;
+.ns_pa {
+    margin: 50px auto;
 }
-.news_content .share_01{
-width:20px;
-height:15px;
-display:inline-block;
-background:url(//img.hzshuangmei.com/pc/share_011.png) no-repeat center;
-margin-right: 10px;
-position: relative;
-top: 0;
+.news_content .share_01 {
+    position: relative;
+    top: 0;
+
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+
+    background: url(//img.hzshuangmei.com/pc/share_011.png) no-repeat center;
 }
-.news_content .share>a{
-display:block;
-float:left;
-margin:40px 9px 0 0;
+.news_content .share > a {
+    display: block;
+    float: left;
+    margin: 40px 9px 0 0;
 }
-.ns_pa>ul{
-float:left;
-margin-left: 302px;
+.ns_pa > ul {
+    float: left;
+    margin-left: 302px;
 }
-.ns_pa>div{
-float:right
+.ns_pa > div {
+    float: right;
 }
-.ns_pa>div>p{
-float:left;
-margin-top: 10px;
+.ns_pa > div > p {
+    float: left;
+    margin-top: 10px;
 }
-.ns_pa>div>div{
-float:left
+.ns_pa > div > div {
+    float: left;
 }
