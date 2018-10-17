@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
+     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
+     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+</head>
+<body>
+{dede:include filename="_header.htm"/}
+<h1><span class="sr-only">{dede:global.cfg_webname/}</span></h1>
+<!-- {dede:myad name='topbanner_pc'/} -->
+<img src="{dede:global.cfg_imgpath/}/pc/shenhe.jpg" alt="" style="width:100%"/>
+<div class="m1">
+<!--     <div class="location">
+        <i></i><span>当前位置：</span>{dede:field name='position'/}
+    </div>
+    <div class="line"></div> -->
+    <!-- <div> -->
+
+    <!-- </div> -->
+    <div style="text-align: center;margin-top:100px;margin-bottom:190px">
+        <img src="{dede:global.cfg_imgpath/}/pc/shenhe1.jpg" alt=""/>
+    </div>
+</div>
+{dede:include filename="_footer.htm"/}
+</body>
+{dede:include filename="_script.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
+</html>

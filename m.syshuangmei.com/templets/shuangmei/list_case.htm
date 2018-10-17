@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="设计：观彩恒，前端：陈晓珍" />
+      <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- menu -->
+        {dede:include filename="_header.htm"/}
+        <!-- /menu -->
+        <div class="contents">
+            <h1><span class="sr-only">{dede:field.seotitle/}_{dede:global.cfg_webname/}</span></h1>
+            <!-- 顶部banner -->
+            {dede:myad name='casepic_sj'/}
+            <!-- /顶部banner -->
+            <div class="case-nav">
+                <ul class="f-cb nav-wrap" id="casenav">
+                    <li class="nav-item ">
+                        <a href="/cases/eye/" class="nav-link">
+                               眼部
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/nose/" class="nav-link">
+                              鼻部
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/face/" class="nav-link">
+                               面部
+                        </a>
+                    </li>
+
+
+                     <li class="nav-item ">
+                        <a href="/cases/chest/" class="nav-link">
+                               胸部
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/skin/" class="nav-link">
+                               皮肤
+                        </a>
+                    </li>
+                     <li class="nav-item ">
+                        <a href="/cases/tattoo/" class="nav-link">
+                               纹绣
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/private/" class="nav-link">
+                               私密
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="/cases/body/" class="nav-link">
+                               形体
+                        </a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a href="/cases/ha/" class="nav-link">
+                               玻尿酸
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/botox/" class="nav-link">
+                               botox
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/cases/hengli/" class="nav-link">
+                               衡力
+                        </a>
+                    </li>
+                     <li class="nav-item more">
+                        <a href="javascript:void(0);" class="nav-link  j-consult" rel="nofollow">
+                               更多<!-- <span>+</span> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="case-items " id="diary">
+            {dede:list pagesize="9" orderby="weight" orderway="asc"}
+
+                   <div class="item">
+                        <div class="title">
+                            <div class="thum">
+                                <a href="[field:arcurl/]" title="[field:title/]">
+                                <img src="[field:imgafter function='replaceurl(@me)'/]" class="">
+                                </a>
+                            </div>
+                            <h3 class="name"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+                        </div>
+                        <div class="info">
+                            <p class="des">[field:note/]</p>
+                            <div class="pic f-cb">
+                                <div class="before ">
+                                    <a href="[field:arcurl/]"><img src="[field:imgbefore function='replaceurl(@me)'/]" alt="术前"></a>
+                                    <div class="flag">
+                                        术前
+                                    </div>
+                                </div>
+                                <div class="after">
+                                    <a href="[field:arcurl/]"><img src="[field:imgafter function='replaceurl(@me)'/]" alt="术后"></a>
+                                    <div class="flag">
+                                        术后
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="label f-cb">
+                                <span class="pro">[field:id function='getcaseproject(@me)'/]</span>
+                                <div class="right">
+                                    <a href="[field:arcurl/]"><span class="show"></span></a>
+                                    <span class="click">[field:click/]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               {/dede:list}
+                <div class="pagination">
+                  <ul>
+                    {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                  </ul>
+                </div>
+            </div>
+
+           {dede:include filename="_sj_copyright.htm"/}
+        </div>
+    </div>
+     <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+    {dede:include filename="_list_Factor.htm"/}
+</body>
+
+</html>
