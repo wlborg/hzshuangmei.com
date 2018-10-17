@@ -392,7 +392,7 @@ var protection = (function() {
     var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
     // 如果当前URL不是设定的URL，则跳转
     var url = function() {
-        if (document.location.host != "www.hzshuangmei.com") {
+        if (document.location.host != "www.hzshuangmei.com"||document.location.host != "www.syshuangmei.com") {
             location.href = location.href.replace(document.location.host, 'www.hzshuangmei.com');
         }
         return location.href;
