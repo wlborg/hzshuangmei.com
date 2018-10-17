@@ -1,0 +1,17 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}",
+        "title": "{dede:field.title/}",
+        "description":"{dede:field.description  function='html2text(@me)'/}",
+        "pubDate":"{dede:field.senddate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.senddate function="MyDate( 'H:i:s',@me) "/}",
+        "upDate": "{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}",
+        "data":{
+             "WebPage":{
+                "headline":"{dede:field.title/}",
+               "pcUrl":"https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}",
+              "wapUrl":"https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}"
+             }
+        }
+    }
+    </script>

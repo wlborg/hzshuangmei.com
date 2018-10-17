@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    {dede:include filename="_meta.htm"/}
+    <meta name="author" content="设计：观彩恒，前端：陈晓珍" />
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    {dede:include filename="_link.htm"/}
+</head>
+
+<body>
+    <div class="wrapper">
+         <!-- menu -->
+        {dede:include filename="_header.htm"/}
+        <!-- /menu -->
+        <div class="contents">
+            <h1><span class="sr-only">{dede:field.seotitle/}_{dede:global.cfg_webname/}</span></h1>
+            <!-- 顶部banner -->
+            {dede:myad name='doctorpic_sj'/}
+            <!-- /顶部banner -->
+            <div class="zhuanjia-nav">
+                <ul class="f-cb nav-wrap" id="doctornav">
+                    <li class="nav-item ">
+                        <a href="/doctors/surgery/" class="nav-link">
+                               整形美容医师
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/doctors/laser/" class="nav-link">
+                              皮肤美容医师
+                           </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="/doctors/tattoo/" class="nav-link">
+                               纹绣师
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="zhuanjia-items">
+                <ul class="f-cb">
+                   {dede:list pagesize="8"  titlelen="120" orderby="weight" orderway="asc" }
+
+                    <li class="zhuanjia-item">
+                            <div class="zhuanjia-thum">
+                                 <a href="[field:arcurl/]" title="[field:title/]""><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]" ></a>
+                            </div>
+
+                        <div class="zhuanjia-info">
+                            <h2 class="zhuanjia-title"><a href="[field:arcurl/]" class="pro-link">[field:title/]</a></h2>
+                            <p class="zhiwei">[field:zhiwei  /]</p>
+                            <p class="shanchang">擅长项目:[field:shanchang/]</p>
+
+                            <a href="[field:arcurl/]" class="zhuanjia-more">了解更多 &nbsp;》</a>
+                        </div>
+                    </li>
+                    {/dede:list}
+
+                </ul>
+                <div class="pagination">
+                  <ul>
+                    {dede:pagelist listsize='1' listitem='pre,next,pageno,index,end'  /}
+                  </ul>
+                </div>
+            </div>
+           {dede:include filename="_sj_copyright.htm"/}
+        </div>
+    </div>
+    <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+    {dede:include filename="_list_Factor.htm"/}
+</body>
+
+</html>
