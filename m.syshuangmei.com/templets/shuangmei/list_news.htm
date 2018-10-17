@@ -42,14 +42,14 @@
                 {dede:list pagesize='10' orderby="id" orderway="desc"}
                     <li class="article-item">
                         <div class="item-wrap">
-                            <div class="item-thum">
-                                 <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]" ></a>
-                            </div>
                             <div class="item-info">
-                                <h2 class="item-title"><a href="[field:arcurl/]" class="pro-link">[field:title/]</a></h2>
+                                <h2 class="item-title"><a href="[field:arcurl/]" class="pro-link">[field:title function='cn_substr(@me,100)'/]</a></h2>
                                 <p class="item-des"><a href="[field:arcurl/]">[field:description function='cn_substr(@me,100)'/]...</a></p>
                                 <a href="[field:arcurl/]" class="item-more">查看详情</a>
                                 <span class="item-date "><span class="click">点击：[field:click/]</span><span class="date">[field:pubdate function="GetDateTimeMK(@me)"/]</span></span>
+                            </div>
+                             <div class="item-thum">
+                                 <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]" ></a>
                             </div>
                         </div>
                     </li>
