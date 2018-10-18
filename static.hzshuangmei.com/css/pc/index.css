@@ -293,7 +293,7 @@ h3 img {
     color: #6a157d;
     background-color: #eae8ea;
 }
-.index_project .sy-tab2 li {
+.index_project .sy-tab2 li, .index_clients .sy-tab2 li {
     color: #fff !important;
     background-color: #64b1e6 !important;
 }
@@ -302,6 +302,9 @@ h3 img {
 }
 .index_project #tab2  .sy-fli2:hover {
     background: #5d819a !important;
+}
+.index_clients #tab4 .sy-fli4 {
+     background: #5d819a !important;
 }
 .index_project #tab2 .fli2 {
     color: #fff;
