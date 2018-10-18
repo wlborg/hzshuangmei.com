@@ -343,10 +343,10 @@ header .sm_logo img {
 #nav .bor_l {
     border-left: 1px solid #580d95;
 }
-.sy_nav .bor_r {
+#sy_nav_ul .bor_r {
     border-right: 1px solid #5792bb!important;
 }
-.sy_nav .bor_l {
+#sy_nav_ul .bor_l {
     border-right: 1px solid #5792bb!important;
 }
 #nav > ul > li #project {
