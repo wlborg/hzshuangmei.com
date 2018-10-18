@@ -13,7 +13,7 @@
 .index_news .m1 {
     padding-top: 61px;
 }
-
+/* 三亚双美 */
 .index_news .video {
     float: left;
     width: 400px;
@@ -54,7 +54,10 @@ video::-webkit-media-controls-panel {
 
     color: #693290;
 }
-
+/* 三亚双美 */
+.sy_index_news .video p {
+    color: #64b1e6;
+}
 .index_news .news {
     float: left;
     width: 780px;
@@ -134,7 +137,10 @@ video::-webkit-media-controls-panel {
     color: #fff;
     background-color: rgba(105, 50, 144, .9);
 }
-
+/* 三亚双美 */
+.sy_index_news .news .date {
+    background-color: #64b1e6;
+}
 .index_news .news a {
     display: block;
 }
@@ -189,6 +195,10 @@ video::-webkit-media-controls-panel {
 
     text-align: center;
 
+    color: #693290;
+}
+/* 三亚双美的 */
+.sy_index_news .news .inform {
     color: #693290;
 }
 
@@ -915,6 +925,7 @@ h3 img {
 .index_news .video p {
     padding-top: 11px;
 }
+/* 三亚双美的 */
 
 /*红妆发展*/
 .fzlc {
