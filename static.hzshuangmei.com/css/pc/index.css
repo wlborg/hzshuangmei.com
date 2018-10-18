@@ -293,11 +293,16 @@ h3 img {
     color: #6a157d;
     background-color: #eae8ea;
 }
-
+.index_project .sy-tab2 li {
+    color: #fff !important;
+    background-color: #64b1e6 !important;
+}
 .index_project #tabCon2 {
     clear: both;
 }
-
+.index_project #tab2  .sy-fli2 {
+    background: #5d819a !important;
+}
 .index_project #tab2 .fli2 {
     color: #fff;
     background-color: #6a157d;
