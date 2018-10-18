@@ -273,6 +273,10 @@
 }
 .tjb_xz li a {
     position: relative;
+
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .tjb_xz .thumbnail {
     position: relative;
