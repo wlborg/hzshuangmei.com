@@ -344,10 +344,10 @@ header .sm_logo img {
     border-left: 1px solid #580d95;
 }
 .sy_nav .bor_r {
-    border-right: 1px solid #64b1e6!important;
+    border-right: 1px solid #5792bb!important;
 }
 .sy_nav .bor_l {
-    border-left: 1px solid #64b1e6!important;
+    border-right: 1px solid #5792bb!important;
 }
 #nav > ul > li #project {
     position: absolute;
