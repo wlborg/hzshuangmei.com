@@ -343,6 +343,12 @@ header .sm_logo img {
 #nav .bor_l {
     border-left: 1px solid #580d95;
 }
+.sy_nav .bor_r {
+    border-right: 1px solid #64b1e6!important;
+}
+.sy_nav .bor_l {
+    border-left: 1px solid #64b1e6!important;
+}
 #nav > ul > li #project {
     position: absolute;
     z-index: 100;
@@ -364,8 +370,8 @@ header .sm_logo img {
     background: #6a157d;
 }
 /* 三亚双美 */
-.sy_currnet {
-    background: #177ec5;
+.sy_nav .currnet {
+    background: #2685c7!important;
 }
 .sy_currnet  .currnet {
     font-weight: bold;
