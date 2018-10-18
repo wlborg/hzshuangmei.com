@@ -675,17 +675,17 @@
    // }
    /*   网站防护等    chj */
    var protection = (function() {
-       var data = {
-           suffix: "com",
-           main: "m.",
-           red: "hz",
-           beauty: "shuangmei",
-           dot: "."
-       }
-       var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
+       // var data = {
+       //     suffix: "com",
+       //     main: "m.",
+       //     red: "hz",
+       //     beauty: "shuangmei",
+       //     dot: "."
+       // }
+       // var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
        // 如果当前URL不是设定的URL，则跳转
        var url = function() {
-           if (document.location.host != "m.hzshuangmei.com") {
+           if (document.location.host != "m.hzshuangmei.com" && document.location.host != "m.syshuangmei.com") {
                location.href = location.href.replace(document.location.host, 'm.hzshuangmei.com');
            }
            return location.href;
