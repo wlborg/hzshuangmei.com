@@ -2631,6 +2631,12 @@ hr {
 .sy_relateporject {
     background: rgb(118, 68, 158)!important;
 }
+.sy_articlerelatecase {
+    background: rgb(104, 50, 147)!important;
+}
+.sy_article_relateporject {
+    background: rgb(140, 100, 171)!important;
+}
 .sy_articlerelatedoctor {
     background: #683293!important;
 }
