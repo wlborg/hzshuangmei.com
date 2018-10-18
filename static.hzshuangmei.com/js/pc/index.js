@@ -36,7 +36,7 @@ for(var i=0;i<tabs2.length;i++){
 function change2(obj){
     for(var i=0;i<tabs2.length;i++){
         if(tabs2[i]==obj){
-            tabs2[i].className="fli2";
+            tabs2[i].className="fli2 sy-fli2";
             divs2[i].className="fdiv2";
         }else{
             tabs2[i].className="";
