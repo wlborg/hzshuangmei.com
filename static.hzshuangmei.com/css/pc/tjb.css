@@ -271,6 +271,9 @@
 
     vertical-align: top;
 }
+.tjb_xz li a {
+    position: relative;
+}
 .tjb_xz .thumbnail {
     position: relative;
 

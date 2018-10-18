@@ -12,16 +12,16 @@
 
 <body>{dede:include filename="_header.htm"/}{dede:myad name='topbanner_pc'/}
 <div class="m1">
-    <div class="location"><i></i><span>��ǰλ�ã�</span>{dede:field name='position'/}</div>
+    <div class="location"><i></i><span>锟斤拷前位锟矫ｏ拷</span>{dede:field name='position'/}</div>
     <div class="line"></div>
     <h2 class="h2_tit"><img src="{dede:global.cfg_imgpath/}/pc/doctors_title.png" alt=""/></h2>
     <div id="doctors_banner"> {dede:myad name='doctorpic_pc'/}</div>
     <div class="doctors_content">
         <div id="doctors_tab">
             <ul class="clearFix">
-                <li class="doc_fli">��������ר��</li>
-                <li>Ƥ������ר��</li>
-                <li>ҽѧ����ʦ</li>
+                <li class="doc_fli">锟斤拷锟斤拷锟斤拷锟斤拷专锟斤拷</li>
+                <li>皮锟斤拷锟斤拷锟斤拷专锟斤拷</li>
+                <li>医学锟斤拷锟斤拷师</li>
             </ul>
         </div>
         <div id="doctors_tabCon">
@@ -30,24 +30,24 @@
             <li>
                 <div class="doctor1">
                     <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>��ϸ<br/>�˽�</span></a>
-                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/> ԤԼ</span></a>
+                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>锟斤拷细<br/>锟剿斤拷</span></a>
+                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/> 预约</span></a>
                     </div>
                 </div>
                 <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p><i></i>
+                <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p><i></i>
             </li>
             {/dede:arclist} -->
                 {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=3 and a.id not in(36,151,154) order by a.weight asc }
                 <li>
                     <div class="doctor1">
                         <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>��ϸ<br/>�˽�</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/> ԤԼ</span></a>
+                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>锟斤拷细<br/>锟剿斤拷</span></a>
+                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/> 预约</span></a>
                         </div>
                     </div>
                     <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p><i></i>
+                    <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p><i></i>
                 </li>
                 {/dede:sql}
             </ul>
@@ -56,24 +56,24 @@
             <li>
                 <div class="doctor1">
                     <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>��ϸ<br/>                                   �˽�</span></a>
-                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/>                                   ԤԼ</span></a>
+                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>锟斤拷细<br/>                                   锟剿斤拷</span></a>
+                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/>                                   预约</span></a>
                     </div>
                 </div>
                 <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p><i></i>
+                <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p><i></i>
             </li>
             {/dede:arclist} -->
                 {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=4 order by a.weight asc }
                 <li>
                     <div class="doctor1">
                         <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>��ϸ<br/>�˽�</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/> ԤԼ</span></a>
+                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>锟斤拷细<br/>锟剿斤拷</span></a>
+                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/> 预约</span></a>
                         </div>
                     </div>
                     <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p><i></i>
+                    <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p><i></i>
                 </li>
                 {/dede:sql}
             </ul>
@@ -82,24 +82,24 @@
             <li>
                 <div class="doctor1">
                     <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>��ϸ<br/>                                   �˽�</span></a>
-                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/>                                   ԤԼ</span></a>
+                    <div class="clearFix"><a href="[field:arcurl/]" class="order" target="_blank"><span>锟斤拷细<br/>                                   锟剿斤拷</span></a>
+                        <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/>                                   预约</span></a>
                     </div>
                 </div>
                 <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p> <i></i>
+                <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p> <i></i>
             </li>
             {/dede:arclist} -->
                 {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=5 order by a.weight asc }
                 <li>
                     <div class="doctor1">
                         <div><img src="[field:thumb function='replaceurl(@me)' /]" alt="[field:title/]"></div>
-                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>��ϸ<br/>�˽�</span></a>
-                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>����<br/> ԤԼ</span></a>
+                        <div class="clearFix"><a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" class="order" target="_blank" rel="noopener"><span>锟斤拷细<br/>锟剿斤拷</span></a>
+                            <a class="consult j-site-consult" href="javascript:void(0)" target="_blank"><span>锟斤拷锟斤拷<br/> 预约</span></a>
                         </div>
                     </div>
                     <p class="doc_p1"><span>[field:title/]</span>[field:zhiwei/]</p>
-                    <p class="doc_p2">�ó���Ŀ��[field:shanchang/]</p><i></i>
+                    <p class="doc_p2">锟矫筹拷锟斤拷目锟斤拷[field:shanchang/]</p><i></i>
                 </li>
                 {/dede:sql}
             </ul>

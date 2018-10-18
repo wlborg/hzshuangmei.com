@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
     {dede:include filename="_meta.htm"/}
-    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+     <title>{dede:field.typename/}_{dede:global.cfg_sy_webname/}</title>
       <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
@@ -41,7 +41,7 @@
                 <li class="nav_list"><a href="/projects/hengli" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="衡力"/></a></li>
             </ul>
         </div>
-		
+
         <div id="ptabCon2" class="project_con">
             <div class="clearFix">
                 {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
