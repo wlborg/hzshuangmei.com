@@ -300,7 +300,7 @@ h3 img {
 .index_project #tabCon2 {
     clear: both;
 }
-.index_project #tab2  .sy-fli2 {
+.index_project #tab2  .sy-fli2:hover {
     background: #5d819a !important;
 }
 .index_project #tab2 .fli2 {
