@@ -626,7 +626,7 @@ $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
 {
 $id = $row["id"];
-$title = cn_substr($row["title"],80,0);
+$title = cn_substr($row["title"],28,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
