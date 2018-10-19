@@ -567,9 +567,6 @@ h3 img {
     color: #551f7f;
     background-color: rgba(255, 255, 255, .502);
 }
-.index_clients #tabCon4 ul li .clients_t p {
-    color: #64b1e6!important;
-}
 .index_clients #tabCon4 ul li .clients_b {
     height: 138px;
     overflow: hidden;
@@ -611,9 +608,6 @@ h3 img {
     color: #fff;
     border-radius: 5px;
     background-color: rgb(111, 54, 146);
-}
-.index_clients #tabCon4 ul li .clients_b .xiangqing {
-    background-color: #64b1e6;
 }
 
 .index_clients #tabCon4 ul {
