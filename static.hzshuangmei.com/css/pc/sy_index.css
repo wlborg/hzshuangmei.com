@@ -371,9 +371,10 @@ h3 img {
     line-height: 29px;
 
     text-align: center;
-
-    color: #875aa6;
-    border: 1px solid #875aa6;
+    color: #64b1e6;
+    border: 1px solid #64b1e6;
+    /*color: #875aa6;
+    border: 1px solid #875aa6;*/
 }
 /* 三亚双美 */
 .sy_index_clients .ask {
@@ -405,13 +406,13 @@ h3 img {
     text-align: center;
 
     color: #fff;
-    border: 1px solid #560995;
+    border: 1px solid #64b1e6;
 }
 
 .index_expert #tab3 .fli3 {
     cursor: pointer;
-
-    background-color: #672a9a;
+    background-color: #5d819a;
+    border: 1px solid #5d819a;
 }
 
 .index_expert #tabCon3 {
@@ -451,7 +452,7 @@ h3 img {
     display: block;
     height: 478px;
 
-    background-color: #390c5f;
+    background-color: #4897cd;
 }
 
 .index_expert #tabCon3 img {
