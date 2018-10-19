@@ -119,7 +119,7 @@ video::-webkit-media-controls-panel {
 }
 /* 三亚双美 */
 .sy_banner .index_news h2 a {
-    color: #64b1e6;
+    color: #5792bb;
 }
 /*.index_news .news h5{*/
 /*height:39px;*/
@@ -1197,4 +1197,11 @@ body  #hltd .hltd img {
 }
 .index_items .shuang_m1 > div ul a {
     color: #5792bb;
+}
+#footer {
+        background-color: #5792bb;
+}
+#footer .middle {
+    border-right: 1px solid #5d819a;
+    border-left: 1px solid #5d819a;
 }
