@@ -115,11 +115,11 @@ video::-webkit-media-controls-panel {
 }
 
 .index_news h2 a {
-    color: #693290;
+    color: #5792bb;
 }
 /* 三亚双美 */
 .sy_banner .index_news h2 a {
-    color: #64b1e6;
+    color: #5792bb;
 }
 /*.index_news .news h5{*/
 /*height:39px;*/
@@ -128,6 +128,9 @@ video::-webkit-media-controls-panel {
 /*line-height: 18px;*/
 /*padding-left:15px;*/
 /*}*/
+.sy_banner .banner-pagination .swiper-pagination-bullet-active {
+    background: #5792bb!important;
+}
 .index_news .news .date {
     position: absolute;
     top: 0;
@@ -178,7 +181,7 @@ video::-webkit-media-controls-panel {
 
     text-align: center;
 
-    color: #551f7f;
+    color: #5792bb;
     background-color: rgba(240, 240, 240, .74);
 }
 
@@ -202,7 +205,7 @@ video::-webkit-media-controls-panel {
 }
 /* 三亚双美的 */
 .sy_index_news .news .inform {
-    color: #693290;
+    color: #5792bb;
 }
 
 .index_news .news .inform .tj_tit {
@@ -381,11 +384,18 @@ h3 img {
     color: #64b1e6;
     border: 1px solid  #64b1e6;
 }
-.index_expert {
+/*.index_expert {
     width: 100%;
     height: 899px;
 
     background: url(//img.hzshuangmei.com/pc/sy/p2_bg.jpg) no-repeat center;
+}*/
+
+.index_expert {
+    width: 100%;
+    height: 899px;
+
+    background:#eaebeb;
 }
 
 .index_expert #tab3 ul {
@@ -434,7 +444,7 @@ h3 img {
 
     text-align: center;
 
-    color: #551f7f;
+    color: #5792bb;
     background-color: rgba(255, 255, 255, .502);
 }
 
@@ -461,10 +471,15 @@ h3 img {
 }
 
 /*���˰���*/
-.index_clients {
+/*.index_clients {
     height: 908px;
 
     background-color: #eaebeb;
+}*/
+.index_clients {
+    height: 908px;
+
+    background: url(//img.hzshuangmei.com/pc/sy/p2_bg.jpg) no-repeat center;
 }
 
 .index_clients #tab4 ul {
@@ -690,7 +705,7 @@ h3 img {
     text-align: center;
 
     color: #fff;
-    background-color: rgba(113, 64, 149, .6);
+    background-color: rgba(87,146,187,.6);
 }
 
 /*video*/
@@ -786,7 +801,7 @@ h3 img {
 
 .news .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #59277d;
+    background: #5792bb;
 }
 
 .index_news .news .swiper-container-horizontal > .swiper-pagination-bullets,
@@ -1091,13 +1106,13 @@ h3 img {
     /*background: url(http://www.zxhongzhung.com/images/lc_nav_now.png) no-repeat center 7px;*/
 }
 .lc_con_btn.now p {
-    color: #f464de;
+    color: #5792bb;
 }
 .lc_con_btn.now .yk {
-    border: solid 1px #f464de;
+    border: solid 1px #5792bb;
 }
 .lc_con_btn.now .yk::after {
-    background-color: #f464de;
+    background-color: #5792bb;
 }
 
 /*发展历程——连锁开业*/
@@ -1188,4 +1203,23 @@ h3 img {
 body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
+}
+.index_items .shuang_m1 > div span {
+    color: #5792bb;
+}
+.index_items .shuang_m1 > div ul a {
+    color: #5792bb;
+}
+#footer {
+        background-color: #5792bb;
+}
+#footer .middle {
+    border-right: 1px solid #5d819a;
+    border-left: 1px solid #5d819a;
+}
+#footer .copyright a {
+    color: #ddf1ff;
+}
+#footer .copyright {
+    color: #ddf1ff;
 }
