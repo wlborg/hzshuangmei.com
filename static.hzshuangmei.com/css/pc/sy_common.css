@@ -608,7 +608,7 @@ nav > ul > li ul .n_button a {
 .index_items .shuang_m1 > div span {
     font-size: 18px;
 
-    color: #4f3d79;
+    color: #3c5e75;
 }
 .index_items .shuang_m1 > div i {
     display: block;
@@ -617,16 +617,16 @@ nav > ul > li ul .n_button a {
     margin-top: 24px;
 }
 .index_items .shuang_m1 > div:first-child i {
-    background: url(//img.hzshuangmei.com/pc/p5_01.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/p5_01.png) no-repeat center;
 }
 .index_items .shuang_m1 > div:nth-child(2) i {
-    background: url(//img.hzshuangmei.com/pc/p5_02.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/p5_02.png) no-repeat center;
 }
 .index_items .shuang_m1 > div:nth-child(3) i {
-    background: url(//img.hzshuangmei.com/pc/p5_03.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/p5_03.png) no-repeat center;
 }
 .index_items .shuang_m1 > div:last-child i {
-    background: url(//img.hzshuangmei.com/pc/p5_04.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/p5_04.png) no-repeat center;
 }
 .index_items .shuang_m1 > div .icon {
     float: left;
@@ -641,7 +641,7 @@ nav > ul > li ul .n_button a {
     line-height: 24px;
 }
 .index_items .shuang_m1 > div ul a {
-    color: #593d79;
+     color: #3c5e75;
 }
 .index_items .shuang_m1 > div:first-child ul {
     margin-top: 42px;
@@ -672,7 +672,7 @@ footer {
     height: 398px;
 
     color: #fff;
-    background-color: #300a4e;
+    background-color: #5792bb;
 }
 footer .left {
     float: left;
@@ -709,8 +709,8 @@ footer .middle {
     height: 206px;
     margin-top: 120px;
 
-    border-right: 1px solid #55128d;
-    border-left: 1px solid #300a4e;
+    border-right: 1px solid #5d819a;
+    border-left: 1px solid #5d819a;
 }
 footer .right {
     float: left;
@@ -783,10 +783,10 @@ footer .left a {
 footer .copyright {
     padding-top: 22px;
 
-    color: #c1b6ca;
+    color: #ddf1ff;
 }
 footer .copyright a {
-    color: #c1b6ca;
+    color: #ddf1ff;
 }
 footer .copyright a:hover {
     color: #ceb3e0;
