@@ -229,7 +229,7 @@ video::-webkit-media-controls-panel {
     width: 13px;
     height: 14px;
 
-    background: url(//img.hzshuangmei.com/pc/n_inform.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/n_inform.png) no-repeat center;
 }
 
 .index_news .news .recommend a {
@@ -464,7 +464,7 @@ h3 img {
     display: block;
     height: 478px;
 
-    background-color: #4897cd;
+    background-color: #eaebeb;
 }
 
 .index_expert #tabCon3 img {
@@ -485,7 +485,7 @@ h3 img {
 }
 
 .index_clients #tab4 ul {
-    width: 508px;
+    width: 516px;
     margin: 24px auto 50px;
 }
 
@@ -1206,28 +1206,11 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-.index_items .shuang_m1 > div span {
-    color: #3c5e75;
-}
-.index_items .shuang_m1 > div ul a {
-    color: #3c5e75;
-}
-#footer {
-        background-color: #5792bb;
-}
-#footer .middle {
-    border-right: 1px solid #5d819a;
-    border-left: 1px solid #5d819a;
-}
-#footer .copyright a {
-    color: #ddf1ff;
-}
-#footer .copyright {
-    color: #ddf1ff;
-}
 .index_expert #tabCon3 .swiper-button-prev4, .swiper-container-rtl .swiper-button-next4 {
     top: 257px;
+    background-image: url(//img.hzshuangmei.com/pc/sy/p2_arrow_l.png);
 }
 .index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {
     top: 257px !important;
+    background-image: url(//img.hzshuangmei.com/pc/sy/p2_arrow_r.png);
 }
