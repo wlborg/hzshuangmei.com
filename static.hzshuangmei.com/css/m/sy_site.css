@@ -429,8 +429,9 @@ hr {
     line-height: 1rem;
 
     text-align: center;
+    /* color: #695e73; */
 
-    color: #695e73;
+    color: #64b1e6;
 }
 .row1 .nav-item:nth-child(1) .nav-icon {
     background-color: #eb675b;
@@ -565,7 +566,8 @@ hr {
     color: #32306a;
 }
 #news h3 a {
-    color: #32306a;
+    color: #64b1e6;
+    /* color: #32306a; */
 }
 #news p {
     padding-right: 1.125rem;
@@ -597,8 +599,10 @@ hr {
     text-align: center;
     text-transform: uppercase;
 
-    color: #8276ab;
-    border: solid 1px #a69ec4;
+    color: #64b1e6;
+    border: solid 1px #64b1e6;
+    /*  color: #8276ab;
+    border: solid 1px #a69ec4; */
 }
 #video {
     position: relative;
@@ -666,7 +670,8 @@ hr {
     font-size: .725rem;
     font-weight: normal;
 
-    color: #704096;
+    color: #64b1e6;
+    /* color: #704096; */
 }
 #doctor .heading .more {
     position: relative;
@@ -681,8 +686,10 @@ hr {
 
     text-transform: uppercase;
 
-    color: #8276ab;
-    border: solid 1px #a69ec4;    /* width: 2rem; */
+    color: #64b1e6;
+    border: solid 1px #64b1e6;
+    /*   color: #8276ab;
+    border: solid 1px #a69ec4; */
     background: #f6f6fd;
 }
 #doctor .heading .line {
@@ -786,7 +793,8 @@ hr {
     font-weight: normal;
     line-height: 1em;
 
-    color: #704096;
+    color: #64b1e6;
+    /* color: #704096; */
     background: #fff;
 }
 #diary .heading .more {
@@ -850,7 +858,8 @@ hr {
     color: #99c;
 }
 #diary .name a {
-    color: #99c;
+    color: #64b1e6;
+    /* color: #99c; */
 }
 #diary .des {
     margin-top: .3rem;
@@ -929,7 +938,8 @@ hr {
 #diary .pro a {
     display: inline-block;
 
-    color: #99c;
+    color: #64b1e6;
+    /* color: #99c; */
 }
 #diary .right {
     float: right;
