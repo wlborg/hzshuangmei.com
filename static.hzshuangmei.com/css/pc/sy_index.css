@@ -115,11 +115,11 @@ video::-webkit-media-controls-panel {
 }
 
 .index_news h2 a {
-    color: #5792bb;
+    color: #64b1e6;
 }
 /* 三亚双美 */
 .sy_banner .index_news h2 a {
-    color: #5792bb;
+    color: #64b1e6;
 }
 /*.index_news .news h5{*/
 /*height:39px;*/
@@ -446,7 +446,7 @@ h3 img {
 
     text-align: center;
 
-    color: #5792bb;
+    color: #64b1e6;
     background-color: rgba(255, 255, 255, .502);
 }
 
@@ -760,7 +760,7 @@ h3 img {
     right: auto;
     left: 684px;
 
-    background-image: url("//img.hzshuangmei.com/pc/sy/arrow_l.png");
+    background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
 
 .index_news .news .news-button-next,
