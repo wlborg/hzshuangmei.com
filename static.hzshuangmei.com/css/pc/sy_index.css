@@ -307,18 +307,17 @@ h3 img {
 .index_project #tabCon2 {
     clear: both;
 }
-.index_project #tab2  .sy-fli2:hover {
-    background: #5d819a !important;
-}
 .index_clients #tab4 .sy-fli4 {
     background: #5d819a !important;
     border: 1px solid #5d819a;
 }
 .index_project #tab2 .fli2 {
     color: #fff;
-    /*background-color: #5d819a;*/
+    background-color: #5d819a;
 }
-
+.index_project #tab2  .sy-fli2:hover {
+    background: #5d819a !important;
+}
 .index_project #tabCon2 li {
     display: none;
 }
