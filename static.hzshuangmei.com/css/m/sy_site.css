@@ -703,7 +703,7 @@ hr {
     height: 1px;
     margin: auto;
 
-    background: #a69ec4;
+    background: rgb(100, 177, 230);
 }
 #doctor .content {
     display: -webkit-box;    /*old ios 6-,safari 3.1-6*/
@@ -1057,8 +1057,7 @@ hr {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #77718f; */
+    color: #6e9ab8;
 }
 .copyright p span {
     font-size: .45rem;
