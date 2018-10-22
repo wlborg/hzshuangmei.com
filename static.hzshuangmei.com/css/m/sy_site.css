@@ -431,7 +431,7 @@ hr {
     text-align: center;
     /* color: #695e73; */
 
-    color: #64b1e6;
+    color: #333;
 }
 .row1 .nav-item:nth-child(1) .nav-icon {
     background-color: #eb675b;
@@ -566,7 +566,7 @@ hr {
     color: #32306a;
 }
 #news h3 a {
-    color: #64b1e6;
+    color: #054d7f;
     /* color: #32306a; */
 }
 #news p {
@@ -599,8 +599,8 @@ hr {
     text-align: center;
     text-transform: uppercase;
 
-    color: #64b1e6;
-    border: solid 1px #64b1e6;
+    color: #054d7f;
+    border: solid 1px #054d7f;
     /*  color: #8276ab;
     border: solid 1px #a69ec4; */
 }
@@ -652,10 +652,11 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    color: #32306a;
+    color: rgb(100, 177, 230);
+    /* color: #32306a; */
 }
 #video h3 a {
-    color: #32306a;
+    color: #054d7f;
 }
 #doctor .heading {
     position: relative;
@@ -807,8 +808,8 @@ hr {
 
     text-transform: uppercase;
 
-    color: #8276ab;
-    border: solid 1px #a69ec4;    /* width: 2.2rem;  */
+    color: #64b1e6;
+    border: solid 1px #64b1e6;
 }
 #diary .heading .line {
     position: absolute;
@@ -858,8 +859,7 @@ hr {
     color: #99c;
 }
 #diary .name a {
-    color: #64b1e6;
-    /* color: #99c; */
+    color: #8dbdde ;
 }
 #diary .des {
     margin-top: .3rem;
@@ -940,8 +940,7 @@ hr {
 #diary .pro a {
     display: inline-block;
 
-    color: #64b1e6;
-    /* color: #99c; */
+    color: #8dbdde ;
 }
 #diary .right {
     float: right;
@@ -962,7 +961,7 @@ hr {
 
     font-size: .45rem;
 
-    color: #b292d2;
+    color: #64b1e6;
     background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat;
     background-size: auto 1em;
 }
@@ -1070,7 +1069,8 @@ hr {
 
     text-align: center;
 
-    color: #77718f;
+    color: #64b1e6;
+    /* color: #77718f; */
 }
 
 /*********************** project_list ***********************/
