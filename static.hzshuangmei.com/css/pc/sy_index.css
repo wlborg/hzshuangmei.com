@@ -255,7 +255,7 @@ video::-webkit-media-controls-panel {
     height: 19px;
     margin-right: 6px;
 
-    background: url(//img.hzshuangmei.com/pc/n_clock.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/n_clock.jpg) no-repeat center;
 }
 
 .index_news .news .clock span {
@@ -316,7 +316,7 @@ h3 img {
 }
 .index_project #tab2 .fli2 {
     color: #fff;
-    background-color: #6a157d;
+    background-color: #5d819a;
 }
 
 .index_project #tabCon2 li {
@@ -397,6 +397,7 @@ h3 img {
     height: 899px;
 
     background:#eaebeb;
+    margin-top: -5px;
 }
 
 .index_expert #tab3 ul {
@@ -722,7 +723,7 @@ h3 img {
     right: auto;
     left: 323px;
 
-    background-image: url("//img.hzshuangmei.com/pc/sy/arrow_l.png");
+    background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
 
 .index_news .video .video-button-next,
