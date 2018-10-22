@@ -7,20 +7,20 @@
     <meta name="author" content="设计：于涛，前端：王苗"/>
     <title>{dede:global.cfg_sy_webname/}</title>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/index.css" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/sy_index.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/index.js" as="script" crossorigin async="true"/>
     <link rel="preload" href="https://img.hzshuangmei.com/pc/brand2.webm" as="video"  type="video/webm" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/index.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/sy_index.css"/>
     <link rel="canonical" href="https://www.hzshuangmei.com/">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com/" >
 </head>
 <body>
 {dede:include filename="_header.htm"/}
 <h1><span class="sr-only">{dede:global.cfg_webname/}</span></h1>
-<div class="banner">
+<div class="banner sy_banner">
     {dede:myad name='topbanner_pc'/}
 </div>
-<div class="index_news">
+<div class="index_news sy_index_news">
     <div class="m1 clearFix">
         <div class="video">
              <!-- <img src="{dede:global.cfg_imgpath/}/pc/band_N.jpg"  alt="品牌介绍" class="band_N"/> -->
@@ -88,11 +88,11 @@
 </div>
 <div class="index_project">
     <div class="m1">
-        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title1.png"  alt="主打项目 缔造完美"/></h3>
+        <h3><img  src="{dede:global.cfg_imgpath/}/pc/sy/title1.png"  alt="主打项目 缔造完美"/></h3>
 
-        <div id="tab2">
+        <div id="tab2" class="sy-tab2">
             <ul>
-                <li class="fli2">整形美容</li>
+                <li class="fli2 sy-fli2">整形美容</li>
                 <li>皮肤激光</li>
                 <li>注射微整</li>
                 <li>艺术纹绣</li>
@@ -181,12 +181,12 @@
 </div>
 
 <!-- 恢复过来开始 -->
-<div class="index_clients">
+<div class="index_clients sy_index_clients">
     <div class="m1">
-        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="真人代言 现身说法"/></h3>
-        <div id="tab4">
+        <h3><img  src="{dede:global.cfg_imgpath/}/pc/sy/title3.png"  alt="真人代言 现身说法"/></h3>
+        <div id="tab4" class="sy-tab2">
             <ul class="clearFix">
-                <li class="fli4">整形美容</li>
+                <li class="fli4 sy-fli4">整形美容</li>
                 <li>皮肤激光</li>
                 <li>注射微整</li>
                 <li>医学纹绣</li>
@@ -308,7 +308,7 @@
 <!--  恢复过来结束  -->
 <div class="index_expert">
     <div class="m1">
-        <h3><img src="{dede:global.cfg_imgpath/}/pc/title2.png" alt="仁医仁术 匠心手品"/></h3>
+        <h3><img src="{dede:global.cfg_imgpath/}/pc/sy/title2.png" alt="仁医仁术 匠心手品"/></h3>
 
         <div id="tab3">
             <ul class="clearFix">
@@ -395,7 +395,8 @@
             </li>
             <li id="hltd"><div class="hltd" >
                 <a  class="j-site-consult" href="javascript:void(0)" target="_blank" rel="noopener">
-                    <img  src="{dede:global.cfg_imgpath/}/pc/xmk/zyhl.jpg"   alt="护理团队"/>
+                    <!-- <img  src="{dede:global.cfg_imgpath/}/pc/xmk/zyhl.jpg"   alt="护理团队"/> -->
+                    <img  src="{dede:global.cfg_imgpath/}/pc/sy/zyhl.jpg"   alt="护理团队"/>
                 </a>
             </div>
             </li>

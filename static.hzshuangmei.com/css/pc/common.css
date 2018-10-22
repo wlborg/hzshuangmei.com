@@ -104,7 +104,7 @@ header .top .shuang_m1 {
 }
 header .top .shuang_m1 .top_l {
     position: relative;
-    top: -5px; 
+    top: -5px;
 
     display: flex;
     float: left;
@@ -125,7 +125,7 @@ header .top .shuang_m1 .top_l span {
 }
 /* 增加百度搜索框*/
 header .top .top_c {
-    top: -5px; 
+    top: -5px;
 
     float: left;
     height: 31px;
@@ -140,7 +140,7 @@ header .top .top_c form {
     position: relative;
 
     width: 300px;
-    height: 30px; 
+    height: 30px;
     margin: 0 auto;
 }
 header .top .top_c input,
@@ -154,7 +154,7 @@ header .top .top_c input {
     padding-left: 13px;
 }
 header .top .top_c button {
-    position: absolute; 
+    position: absolute;
 
     width: 42px;
     height: 31px;
@@ -165,7 +165,7 @@ header .top .top_c .search_box form {
     height: 31px;
 }
 header .top .top_c .search_box input {
-    float: right; 
+    float: right;
     width: 250px;
     height: 31px;
 
@@ -179,7 +179,7 @@ header .top .top_c .search_box input:focus {
 }
 header .top .top_c .search_box button {
     top: -2px;
-    right: 0; 
+    right: 0;
 
     background: none;
 }
@@ -237,7 +237,7 @@ header .sm_logo {
             animation-duration: 7s;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 7s; 
+    -webkit-animation-delay: 7s;
             animation-delay: 7s;
     text-align: center;
 
@@ -252,7 +252,7 @@ header .sm_logo {
     }
     100% {
         display: none;
-        visibility: hidden; 
+        visibility: hidden;
         height: 0;
     }
 }
@@ -281,6 +281,9 @@ header .sm_logo img {
     height: 59px;
 
     background-color: #410e6b;
+}
+.sy_nav {
+    background-color: #64b1e6!important;
 }
 .fixed {
     position: fixed;
@@ -340,6 +343,12 @@ header .sm_logo img {
 #nav .bor_l {
     border-left: 1px solid #580d95;
 }
+#sy_nav_ul .bor_r {
+    border-right: 1px solid #5792bb!important;
+}
+#sy_nav_ul .bor_l {
+    border-right: 1px solid #5792bb!important;
+}
 #nav > ul > li #project {
     position: absolute;
     z-index: 100;
@@ -360,8 +369,21 @@ header .sm_logo img {
 
     background: #6a157d;
 }
+/* 三亚双美 */
+.sy_nav .currnet {
+    background: #5d819a!important;
+}
+.sy_currnet  .currnet {
+    font-weight: bold;
+
+    background: #6a157d!important;
+}
 #nav > ul > li:hover {
     background: #6a157d;
+}
+/* 三亚双美 */
+.sy_nav > ul > li:hover {
+    background: #5d819a !important;
 }
 /* 导航 案例  热门提醒 */
 #nav .nav_list:nth-child(5) span::before {
@@ -561,6 +583,9 @@ nav > ul > li ul .n_button a {
 .banner .banner-pagination .swiper-pagination-bullet-active {
     opacity: 1;
     background: #59277d;
+}
+.sy_banner .banner-pagination .swiper-pagination-bullet-active {
+    background: #59277d!important;
 }
 /*项目*/
 .index_items {
@@ -931,7 +956,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     opacity: 0;
 }
 .lazyloaded {
-    transition: opacity 500ms; 
+    transition: opacity 500ms;
 
     opacity: 1;
 }

@@ -36,7 +36,7 @@ for(var i=0;i<tabs2.length;i++){
 function change2(obj){
     for(var i=0;i<tabs2.length;i++){
         if(tabs2[i]==obj){
-            tabs2[i].className="fli2";
+            tabs2[i].className="fli2 sy-fli2";
             divs2[i].className="fdiv2";
         }else{
             tabs2[i].className="";
@@ -95,7 +95,7 @@ for(var i=0;i<tabs4.length;i++){
 function change4(obj){
     for(var i=0;i<tabs4.length;i++){
         if(tabs4[i]==obj){
-            tabs4[i].className="fli4";
+            tabs4[i].className="fli4 sy-fli4";
             divs4[i].className="fdiv4 clearFix";
         }else{
             tabs4[i].className="";
