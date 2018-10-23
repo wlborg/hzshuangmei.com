@@ -190,7 +190,8 @@
 }
 
 .news_content .pagination li:hover {
-    background-color: #8a59a7;
+    /*background-color: #8a59a7;*/
+    background-color: #64b1e6
 }
 
 .pagination li:hover a {
