@@ -10,12 +10,12 @@
     width: 17px;
     height: 16px;
 
-    background: url(//img.hzshuangmei.com/pc/home.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/home.png) no-repeat center;
 }
 .location span {
     font-size: 14px;
 
-    color: #9d85c1;
+    color: #64b1e6;
 }
 .location a {
     font-size: 12px;
@@ -86,7 +86,7 @@
 }
 #news_banner .news_pagination .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #6e3693;
+    background: #64b1e6;
 }
 .news_content h3 {
     margin: 30px 0 1px;
@@ -129,7 +129,7 @@
     height: 14px;
     margin-right: 20px;
 
-    background: url(//img.hzshuangmei.com/pc/ns_02.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/news/ns_02.png) no-repeat center;
 }
 .news_content ul li {
     margin: 28px 0;
@@ -152,7 +152,8 @@
     line-height: 30px;
 }
 .news_content ul li p span {
-    color: #8c64a0;
+    /*color: #8c64a0;*/
+    color: #64b1e6;
 }
 .news_content .news_main .i2 {
     position: relative;
@@ -163,14 +164,15 @@
     height: 14px;
     margin-right: 5px;
 
-    background: url(//img.hzshuangmei.com/pc/ns_03.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/news/ns_03.png) no-repeat center;
 }
 .news_content .news_main .date {
     float: right;
 
     font-size: 14px;
 
-    color: #bdbdbd;
+    /*color: #bdbdbd;*/
+    color: #64b1e6;
 }
 /* 三亚 */
 .sy_date {
@@ -188,7 +190,8 @@
 }
 
 .news_content .pagination li:hover {
-    background-color: #8a59a7;
+    /*background-color: #8a59a7;*/
+    background-color: #64b1e6
 }
 
 .pagination li:hover a {
@@ -200,7 +203,8 @@
 
 .thisclass {
     color: #fff;
-    background-color: #8a59a7;
+    background-color: #64b1e6;
+    /*background-color: #8a59a7;*/
 }
 .ns_pa {
     margin: 50px auto;
