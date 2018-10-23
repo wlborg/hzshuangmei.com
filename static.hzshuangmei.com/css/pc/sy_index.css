@@ -115,11 +115,11 @@ video::-webkit-media-controls-panel {
 }
 
 .index_news h2 a {
-    color: #5792bb;
+    color: #64b1e6;
 }
 /* 三亚双美 */
 .sy_banner .index_news h2 a {
-    color: #5792bb;
+    color: #64b1e6;
 }
 /*.index_news .news h5{*/
 /*height:39px;*/
@@ -255,7 +255,7 @@ video::-webkit-media-controls-panel {
     height: 19px;
     margin-right: 6px;
 
-    background: url(//img.hzshuangmei.com/pc/sy/n_clock.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/n_clock.png) no-repeat center;
 }
 
 .index_news .news .clock span {
@@ -313,7 +313,7 @@ h3 img {
 }
 .index_project #tab2 .fli2 {
     color: #fff;
-    background-color: #5d819a;
+    /*background-color: #5d819a;*/
 }
 .index_project #tab2  .sy-fli2:hover {
     background: #5d819a !important;
@@ -446,7 +446,7 @@ h3 img {
 
     text-align: center;
 
-    color: #5792bb;
+    color: #64b1e6;
     background-color: rgba(255, 255, 255, .502);
 }
 
@@ -720,7 +720,7 @@ h3 img {
 .swiper-container-rtl .video-button-prev {
     top: -35px;
     right: auto;
-    left: 323px;
+    /*left: 323px;*/
 
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
@@ -760,7 +760,7 @@ h3 img {
     right: auto;
     left: 684px;
 
-    background-image: url("//img.hzshuangmei.com/pc/sy/arrow_l.png");
+    background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
 
 .index_news .news .news-button-next,
