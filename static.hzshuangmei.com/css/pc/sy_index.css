@@ -720,7 +720,7 @@ h3 img {
 .swiper-container-rtl .video-button-prev {
     top: -35px;
     right: auto;
-    /*left: 323px;*/
+    left: 323px;
 
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
@@ -1108,13 +1108,13 @@ h3 img {
     /*background: url(http://www.zxhongzhung.com/images/lc_nav_now.png) no-repeat center 7px;*/
 }
 .lc_con_btn.now p {
-    color: #5792bb;
+    color: #64b1e6;
 }
 .lc_con_btn.now .yk {
-    border: solid 1px #5792bb;
+    border: solid 1px #64b1e6;
 }
 .lc_con_btn.now .yk::after {
-    background-color: #5792bb;
+    background-color: #64b1e6;
 }
 
 /*发展历程——连锁开业*/
