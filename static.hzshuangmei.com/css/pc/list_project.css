@@ -10,7 +10,7 @@
     width: 17px;
     height: 16px;
 
-    background: url({dede:global.cfg_imgpath/}/pc/sy/home.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/home.png) no-repeat center;
 }
 .location span {
     font-size: 14px;
@@ -26,7 +26,7 @@
     width: 1199px;
     height: 7px;
 
-    background: url({dede:global.cfg_imgpath/}/pc/sy/line.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/line.png) no-repeat center;
 }
 .tit_h2 {
     margin: 25px 0 30px;
@@ -83,7 +83,7 @@
     overflow: hidden;
 
     cursor: pointer;
-    /*background:url({dede:global.cfg_imgpath/}/pc/sy/project/project_bg2.jpg) no-repeat center;*/
+    /*background:url(//img.hzshuangmei.com/pc/sy/project/project_bg2.jpg) no-repeat center;*/
 
     border: 1px solid #e7e7e7;
 }
@@ -102,45 +102,45 @@
 
 
 #ptab2 ul li:first-child {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i0.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i0.jpg) no-repeat center;
 }
 #ptab2 ul li:nth-child(2) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i1.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i1.jpg) no-repeat center;
 }
 
 #ptab2 li:nth-child(3) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i2.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i2.jpg) no-repeat center;
 }
 
 #ptab2 li:nth-child(4) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i3.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i3.jpg) no-repeat center;
 }
 #ptab2 li:nth-child(5) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i4.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i4.jpg) no-repeat center;
 }
 
 #ptab2 li:nth-child(6) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i5.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i5.jpg) no-repeat center;
 }
 #ptab2 li:nth-child(7) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i6.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i6.jpg) no-repeat center;
 }
 
 #ptab2 li:nth-child(8) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i7.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i7.jpg) no-repeat center;
 }
 #ptab2 li:nth-child(9) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i8.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i8.jpg) no-repeat center;
 }
 #ptab2 li:nth-child(10) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i9.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i9.jpg) no-repeat center;
 }
 #ptab2 li:nth-child(11) {
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i10.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i10.jpg) no-repeat center;
 }
 
 #ptab2 li:last-child{
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_i11.jpg) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_i11.jpg) no-repeat center;
 }
 
 
@@ -157,7 +157,7 @@
 
     /*color: #b28acd;*/
     /*border: 1px solid #e7e7e7;*/
-    /*background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_bg2.jpg) no-repeat center;*/
+    /*background: url(//img.hzshuangmei.com/pc/sy/project/project_bg2.jpg) no-repeat center;*/
 /*}*/
 /*#ptab2 .gengduo:hover {*/
     /*color: #7e4d9f;*/
@@ -209,7 +209,7 @@
     width: 14px;
     height: 12px;
 
-    background: url({dede:global.cfg_imgpath/}/pc/sy/project/project_xin.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/sy/project/project_xin.png) no-repeat center;
 }
 #ptabCon2 .click span {
     position: relative;
@@ -272,7 +272,7 @@
 /*display:block;*/
 /*width:19px;*/
 /*height:16px;*/
-/*background:url({dede:global.cfg_imgpath/}/pc/sy/project/doctors_ask.png) no-repeat center;*/
+/*background:url(//img.hzshuangmei.com/pc/sy/project/doctors_ask.png) no-repeat center;*/
 /*margin:-6px auto 0;*/
 
 /*}*/
