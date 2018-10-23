@@ -1069,7 +1069,7 @@ h3 img {
 }
 .lc_con_b {
     position: absolute;
-    bottom: 85px;
+    bottom: 83px;
     left: 50%;
 
     width: 1200px;
@@ -1184,23 +1184,23 @@ h3 img {
 }
 .lc_con_b > div:nth-child(1) {
     position: absolute;
-    left: 74px;
+    left: 77px;
 }
 .lc_con_b > div:nth-child(2) {
     position: absolute;
-    left: 293px;
+    left: 297px;
 }
 .lc_con_b > div:nth-child(3) {
     position: absolute;
-    left: 512px;
+    left: 517px;
 }
 .lc_con_b > div:nth-child(4) {
     position: absolute;
-    left: 732px;
+    left: 736px;
 }
 .lc_con_b > div:nth-child(5) {
     position: absolute;
-    left: 951px;
+    left: 955px;
 }
 body  #hltd .hltd img {
     width: 1200px;
