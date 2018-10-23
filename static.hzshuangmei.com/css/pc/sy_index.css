@@ -720,7 +720,7 @@ h3 img {
 .swiper-container-rtl .video-button-prev {
     top: -35px;
     right: auto;
-    left: 323px;
+    /*left: 323px;*/
 
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
