@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -161,7 +161,7 @@ body {
 
     text-align: center;
 
-    background: url("https://img.hzshuangmei.com/m/bg_header.jpg") center center no-repeat #41046b;
+    background: url("https://img.hzshuangmei.com/m/bg_sy_header.jpg") center center no-repeat #41046b;
     background-size: auto 100%;
 }
 #toggle {
@@ -356,7 +356,7 @@ body {
     max-width: 16rem;
     margin: auto;
 
-    background: #f7f7f7;
+    background: #fff;
 }
 .footer a {
     position: relative;
@@ -743,7 +743,7 @@ body #LXB_CONTAINER.lxb-container-mobile-5 .lxb-cb-input-btn {
 
     color: #fff;
     border-radius: 5px;
-    background: #2590e2;
+    background: #d4edfd!important;
 }
 body #LXB_CONTAINER.lxb-container-mobile-5 .lxb-cb-input-tip-content {
     font-size: .6rem;
