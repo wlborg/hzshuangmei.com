@@ -60,13 +60,14 @@
     height: 13px;
     display: inline-block;
     border-radius: 100%;
-    /*background: #e3e3e3;*/
-    background: #64b1e6;
+    background: #e3e3e3;
+    /*background: #64b1e6;*/
     opacity:1;
     margin:0 7px;
 }
 #doctors_banner .doctors_pagination .swiper-pagination-bullet:hover{
-    background: #c0a9d5;
+    /*background: #c0a9d5;*/
+    background: #64b1e6;
 }
 #doctors_banner .doctors_pagination .swiper-pagination-bullet-active {
     opacity: 1;
@@ -212,9 +213,13 @@
     border: 1px solid #e6e6e6;
     padding: 8px 14px;
 }
-.pagination>li:hover a {
-    
+.pagination>li:hover {
+    background-color: #64b1e6;
 }
+.pagination>li:hover a {
+    color: #fff;
+}
+
 .pagination .thisclass {
     /*background-color: #8a59a7;*/
     background-color: #64b1e6;
