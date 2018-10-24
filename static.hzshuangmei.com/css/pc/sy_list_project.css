@@ -254,7 +254,7 @@
     border: 1px solid #e6e6e6;
     padding: 8px 14px;
 }
-.pagination>li:hover {
+.pagination>li:hover a {
     background-color: #64b1e6;
     color: #fff;
 }
