@@ -1,0 +1,222 @@
+.m1{
+    width:1200px;
+    margin:0 auto;
+}
+.location{
+    margin:19px 8px 6px 29px;
+}
+.location i{
+    display:inline-block;
+    width:17px;
+    height:16px;
+    background:url(//img.hzshuangmei.com/pc/sy/home.png) no-repeat center;
+}
+.location span{
+    font-size:14px;
+    /*color:#9d85c1;*/
+    /*color: #5792bb;*/
+    color: #5792bb;
+}
+.location a{
+    font-size:12px;
+    color:#696969
+}
+.line{
+    width:1199px;
+    height:7px;
+    background:url(//img.hzshuangmei.com/pc/sy/line.png) no-repeat center;
+}
+.h2_tit{
+    text-align: center;
+    margin:25px 0 30px;
+}
+
+#doctors_banner .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#doctors_banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#doctors_banner .doctors_pagination{
+    margin: 35px auto 0;
+    position:relative;
+}
+#doctors_banner .doctors_pagination .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 100%;
+    /*background: #e3e3e3;*/
+    background: #64b1e6;
+    opacity:1;
+    margin:0 7px;
+}
+#doctors_banner .doctors_pagination .swiper-pagination-bullet:hover{
+    background: #c0a9d5;
+}
+#doctors_banner .doctors_pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #6e3693;
+}
+
+
+
+.doctors_content #doctors_tab ul{
+    margin:40px auto;
+    width: 588px;
+}
+.doctors_content #doctors_tab ul li{
+    float:left;
+    font-size:16px;
+    text-align: center;
+    width:145px;
+    height:39px;
+    line-height:39px;
+    border:1px solid #e7e7e7;
+    color:#434343;
+    background:url(//img.hzshuangmei.com/pc/doctors_bg2.jpg)no-repeat center;
+    cursor: pointer;
+}
+
+.doctors_content #doctors_tab ul .currnet3{
+    background:url(//img.hzshuangmei.com/pc/sy/doctors/doctors_bg.jpg)no-repeat center;
+}
+.doctors_content #doctors_tab ul .currnet3 a{
+    color:#fff;
+}
+/*#doctors_tabCon ul {*/
+    /*display:none;*/
+/*}*/
+/*#doctors_tabCon .doc_fdiv {*/
+    /*display:block;*/
+/*}*/
+#doctors_tabCon ul li{
+    border:1px solid #e8e8e8;
+    width: 290px;
+    height: 446px;
+    text-align: center;
+    float:left;
+    margin:0 3px 52px;
+}
+#doctors_tabCon ul li .doctor1{
+    display:block;
+    width: 290px;
+    height:347px;
+    position:relative;
+}
+#doctors_tabCon ul li .doctor1>div:first-child{
+    max-width:288px;
+    max-height:347px;
+    overflow: hidden;
+    text-align: center;
+}
+#doctors_tabCon ul li .doctor1>div:first-child img{
+    max-width: 300px;
+    padding: 2px;
+}
+#doctors_tabCon ul li .doctor1>div:last-child{
+    background-color: rgba( 181, 181, 182, 0.2 );
+    width: 292px;
+    height: 347px;
+    display:none;
+    position: absolute;
+    top: -1px;
+}
+#doctors_tabCon ul li .doctor1:hover>div:last-child{
+    display: block;
+}
+#doctors_tabCon ul li .doctor1>div>a{
+    display:block;
+    border-radius: 50%;
+    width: 91px;
+    height: 91px;
+    float:left;
+    font-size:20px;
+
+}
+#doctors_tabCon ul li .doctor1>div .order{
+    background-color: rgba( 255, 255, 255, 0.6 );
+    margin-top:80%;
+    margin-left:45px;
+    color:#000;
+}
+#doctors_tabCon ul li .doctor1>div .consult{
+    background-color: rgba( 110, 54, 147, 0.6 );
+    margin-top:80%;
+    margin-left: 12px;
+    color:#fff;
+}
+#doctors_tabCon ul li .doctor1>div>a span{
+    position: relative;
+    top: 20px;
+}
+
+#doctors_tabCon ul li .doc_p1{
+    font-size:12px;
+    color:#5c5c5c;
+    margin-top:14px;
+}
+#doctors_tabCon ul li .doc_p1 span{
+    font-size:25px;
+    color:#262626;
+    margin-right:7px;
+}
+#doctors_tabCon ul li .doc_p2{
+    font-size: 14px;
+    color: #5c5c5c;
+    height: 43px;
+    width: 248px;
+    margin: 8px auto 0;
+}
+#doctors_tabCon ul li .doc_p2 br {
+    display: none;
+}
+#doctors_tabCon ul li i {
+    display: block;
+    /*background-color: #6e3693;*/
+    background: #64b1e6;
+    width: 46px;
+    height: 3px;
+    margin: 0 auto;
+    position: relative;
+    top: -1px;
+
+}
+.pagination{
+    width: 600px;
+    margin: 0 auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.pagination>li{
+    float:left;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 8px 14px;
+}
+.pagination>li:hover a {
+    
+}
+.pagination .thisclass {
+    /*background-color: #8a59a7;*/
+    background-color: #64b1e6;
+    color: #fff;
+}
