@@ -194,7 +194,8 @@
 #ptabCon2 p span:first-child {
     font-size: 20px;
 
-    color: #6e3693;
+    /*color: #6e3693;*/
+    color: #64b1e6;
 }
 #ptabCon2 p span:last-child {
     font-size: 15px;
@@ -234,7 +235,7 @@
     margin-top: 10px;
     margin-left: 9px;
 
-    background-color: #6e3693;
+    background-color: #64b1e6;
 }
 .pagination{
     width: 600px;
@@ -252,8 +253,12 @@
     border: 1px solid #e6e6e6;
     padding: 8px 14px;
 }
+.pagination>li:hover {
+    background-color: #64b1e6;
+}
 .pagination .thisclass {
-    background-color: #8a59a7;
+    background-color: #64b1e6;
+    /*background-color: #8a59a7;*/
     color: #fff;
 }
 /*.m1 .ask{*/
