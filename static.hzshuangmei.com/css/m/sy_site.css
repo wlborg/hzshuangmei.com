@@ -387,7 +387,7 @@ hr {
     justify-content: space-between;
 }
 .nav-more .nav-info {
-    color: #63576f;
+    color: #3c5e75;
 }
 .nav-more .close {
     position: absolute;
@@ -549,7 +549,7 @@ hr {
     font-size: 1em;
 
     border-right: dotted .05rem #cfcdcd;
-    background: url("https://img.hzshuangmei.com/m/bg_txt_xinwen.jpg") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/bg_txt_xinwen.png") left center no-repeat;
     background-size: 2.625rem auto;
 }
 #news h3 {
@@ -566,8 +566,7 @@ hr {
     color: #32306a;
 }
 #news h3 a {
-    color: #054d7f;
-    /* color: #32306a; */
+    color: #3c5e75;
 }
 #news p {
     padding-right: 1.125rem;
@@ -599,10 +598,8 @@ hr {
     text-align: center;
     text-transform: uppercase;
 
-    color: #054d7f;
-    border: solid 1px #054d7f;
-    /*  color: #8276ab;
-    border: solid 1px #a69ec4; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
 }
 #video {
     position: relative;
@@ -628,7 +625,7 @@ hr {
     font-size: .65rem;
     line-height: .65rem;
 
-    color: #9464b4;    /* width: 105rem/@fb; */
+    color: #64b1e6;    /* width: 105rem/@fb; */
     border-right: dotted .05rem #cfcdcd;    /* padding-right: 18rem/@fb; */
 }
 #video .icon-show {
@@ -652,8 +649,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    color: rgb(100, 177, 230);
-    /* color: #32306a; */
+    color: #3c5e75;
 }
 #video h3 a {
     color: #054d7f;
@@ -672,7 +668,6 @@ hr {
     font-weight: normal;
 
     color: #64b1e6;
-    /* color: #704096; */
 }
 #doctor .heading .more {
     position: relative;
@@ -687,10 +682,8 @@ hr {
 
     text-transform: uppercase;
 
-    color: #64b1e6;
-    border: solid 1px #64b1e6;
-    /*   color: #8276ab;
-    border: solid 1px #a69ec4; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
     background: #f6f6fd;
 }
 #doctor .heading .line {
@@ -703,7 +696,7 @@ hr {
     height: 1px;
     margin: auto;
 
-    background: rgb(100, 177, 230);
+    background: #a5cde7;
 }
 #doctor .content {
     display: -webkit-box;    /*old ios 6-,safari 3.1-6*/
@@ -859,7 +852,7 @@ hr {
     color: #99c;
 }
 #diary .name a {
-    color: #8dbdde ;
+    color: #64b1e6 ;
 }
 #diary .des {
     margin-top: .3rem;
@@ -934,13 +927,13 @@ hr {
     line-height: .8rem;
 
     color: #99c;
-    background: url("https://img.hzshuangmei.com/m/icon_flag.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_flag.png") left center no-repeat;
     background-size: auto 100%;
 }
 #diary .pro a {
     display: inline-block;
 
-    color: #8dbdde ;
+    color: #a5cde7 ;
 }
 #diary .right {
     float: right;
@@ -952,7 +945,7 @@ hr {
     width: .875rem;
     height: .425rem;
 
-    background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_show2.png") center center no-repeat;
     background-size: auto 100%;
 }
 #diary .click {
@@ -962,7 +955,7 @@ hr {
     font-size: .45rem;
 
     color: #64b1e6;
-    background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_eye.png") left center no-repeat;
     background-size: auto 1em;
 }
 #picinfo {
@@ -1057,10 +1050,12 @@ hr {
 
     text-align: center;
 
-    color: #6e9ab8;
+    color: #3c5e75;
 }
 .copyright p span {
     font-size: .45rem;
+
+    /* color: #3c5e75; */
 }
 .copyright p a {
     font-size: .35rem;
@@ -1068,8 +1063,7 @@ hr {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #77718f; */
+    color: #3c5e75;
 }
 
 /*********************** project_list ***********************/
