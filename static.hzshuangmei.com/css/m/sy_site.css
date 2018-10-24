@@ -1071,7 +1071,7 @@ hr {
     display: inline-block;
     overflow: hidden;
 
-    background-image: url("https://img.hzshuangmei.com/m/items.png");
+    background-image: url("https://img.hzshuangmei.com/m/sy/items.png");
     background-repeat: no-repeat;
     background-size: 2.4rem 9.55rem;
 }
@@ -1234,7 +1234,6 @@ hr {
 .project-nav .nav-item:hover,
 .project-nav .nav-item.active {
     background: #64b1e6;
-    /* background: #591983; */
 }
 .project-nav .nav-item:hover .nav-info,
 .project-nav .nav-item.active .nav-info {
@@ -1353,8 +1352,7 @@ hr {
     font-size: .45rem;
     line-height: .75rem;
 
-    color: #64b1e6;
-    /* color: #6e3693; */
+    color: #3c5e75;
 }
 .pro-subtitle {
     height: .4rem;
@@ -1373,8 +1371,7 @@ hr {
     height: .1rem;
     margin-top: .35rem;
 
-    background: #64b1e6;
-    /* background: #6e3693; */
+    background: #a5cde7;
 }
 .pro-dianji {
     position: absolute;
@@ -1406,10 +1403,8 @@ hr {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #918bbc; */
-    border: solid 1px #64b1e6;
-    /* border: solid 1px #ada5d5; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
 }
 .pro-more:hover {
     cursor: pointer;
@@ -1420,7 +1415,7 @@ hr {
     height: .375rem;
     margin: 0 auto;
 
-    background: url("https://img.hzshuangmei.com/m/icon_more_down.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_more_down.png") center center no-repeat;
     background-size: 100%;
 }
 

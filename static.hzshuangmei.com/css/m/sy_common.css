@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -231,7 +231,8 @@ body {
 
     text-align: center;
 
-    color: #715d81;
+    opacity: .9;
+    color: #3c5e75;
 }
 .tab-nav.active p,
 .tab-nav:hover p {
@@ -264,7 +265,7 @@ body {
 
     font-weight: normal;
 
-    background: url("https://img.hzshuangmei.com/m/bg_title.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/bg_title.png") left center no-repeat;
     background-size: 100% 100%;
 }
 .tab-content .title span {
@@ -316,15 +317,15 @@ body {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #6e5a7f; */
+    opacity: .9;
+    color: #3c5e75;
 }
 .menu-item .line {
     width: 60%;
     height: 0;
     margin: 2px auto;
 
-    border-top: solid 1px #cec7d3;
+    border-top: solid 1px #a6b0b9;
 }
 .menu-item p {
     padding-bottom: .25rem;
@@ -341,7 +342,8 @@ body {
 
     text-transform: uppercase;
 
-    color: #afa7b6;
+    opacity: .5;
+    color: #3c5e75;
 }
 body {
     padding-bottom: 2.4rem !important;
