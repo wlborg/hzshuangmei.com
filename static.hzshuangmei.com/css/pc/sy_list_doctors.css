@@ -66,12 +66,13 @@
     margin:0 7px;
 }
 #doctors_banner .doctors_pagination .swiper-pagination-bullet:hover{
-    /*background: #c0a9d5;*/
-    background: #64b1e6;
+    background: #c0a9d5;
+
 }
 #doctors_banner .doctors_pagination .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #6e3693;
+    /*background: #6e3693;*/
+    background: #64b1e6;
 }
 
 
