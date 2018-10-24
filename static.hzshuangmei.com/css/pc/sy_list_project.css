@@ -15,7 +15,8 @@
 .location span {
     font-size: 14px;
 
-    color: #9d85c1;
+    /*color: #9d85c1;*/
+    color: #5792bb;
 }
 .location a {
     font-size: 12px;
@@ -255,6 +256,7 @@
 }
 .pagination>li:hover {
     background-color: #64b1e6;
+    color: #fff;
 }
 .pagination .thisclass {
     background-color: #64b1e6;
