@@ -819,7 +819,7 @@ hr {
 #diary .item {
     padding: 0 5%;
 
-    border-top: solid .125rem #f6f4f7;
+    border-top: solid .125rem #eaf4fb;
 }
 #diary .item:first-child {
     border: none;
