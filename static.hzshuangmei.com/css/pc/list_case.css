@@ -16,7 +16,8 @@
 
 .location span {
     font-size: 14px;
-    color: #9d85c1;
+    /*color: #9d85c1;*/
+    color: #64b1e6;
 }
 
 .location a {
