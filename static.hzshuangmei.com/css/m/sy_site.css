@@ -2157,7 +2157,7 @@ hr {
 
     vertical-align: middle;
 
-    background: url("https://img.hzshuangmei.com/m/icon_qq.jpg") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_qq.jpg") center center no-repeat;
     background-size: 1.75rem .5rem;
 }
 .article .article-main {
@@ -2587,7 +2587,7 @@ hr {
 .articlerelatedoctor .zhuanjia-info .zhuanjia-more {
     margin-top: 1rem;
 
-    background: #rgba(60, 94, 117, .6);
+    background: rgba(60, 94, 117, .6);
 }
 .articlerelatecase {
     background: #8c64ab;
