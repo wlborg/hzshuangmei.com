@@ -2120,7 +2120,7 @@ hr {
     width: 60%;
     margin: .35rem auto 0;
 
-    border-bottom: solid .05rem #e7e6e6;
+    border-bottom: solid .05rem rgba(217, 216, 216, .8);
 }
 .article .heading .line span {
     display: block;
@@ -2128,8 +2128,7 @@ hr {
     height: .075rem;
     margin: 0 auto;
 
-    background: #64b1e6;
-    /* background: #9479ba; */
+    background: #rgba(165, 205, 231, .8);
 }
 .article .heading .info {
     margin-top: .15rem;
@@ -2137,7 +2136,7 @@ hr {
     font-size: .35rem;
     line-height: .85rem;
 
-    color: #b998ca;
+    color: #a5cde7;
 }
 .article .heading .info span {
     display: inline-block;
@@ -2157,7 +2156,7 @@ hr {
 
     vertical-align: middle;
 
-    background: url("https://img.hzshuangmei.com/m/sy/icon_qq.jpg") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_qq.png") center center no-repeat;
     background-size: 1.75rem .5rem;
 }
 .article .article-main {
@@ -2256,7 +2255,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    border: solid 1px #e0d3ed;
+    border: solid 1px #afafaf;
 }
 .relate-link .next {
     float: right;
