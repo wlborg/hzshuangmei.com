@@ -429,9 +429,8 @@ hr {
     line-height: 1rem;
 
     text-align: center;
-    /* color: #695e73; */
 
-    color: #333;
+    color: #3c5e75;
 }
 .row1 .nav-item:nth-child(1) .nav-icon {
     background-color: #eb675b;
