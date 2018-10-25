@@ -1726,7 +1726,7 @@ hr {
 .zhuanjia-info a {
     display: inline-block;
 
-    color: rgba(0,0,0,.85);
+    color: rgba(255,255,255,.85);
 }
 .zhuanjia-info .zhuanjia-more {
     display: block;
@@ -2562,7 +2562,7 @@ hr {
 .articlerelatedoctor .zhuanjia-title {
     font-size: .8rem;
 
-    border-bottom: solid 1px #5e367e;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
     background: url(//img.hzshuangmei.com/m/icon_people2.png) left center no-repeat;
     background-size: .75rem .7rem;
 }
@@ -2588,7 +2588,7 @@ hr {
 .articlerelatedoctor .zhuanjia-info .zhuanjia-more {
     margin-top: 1rem;
 
-    background: #3c5e75;
+    background: #rgba(60, 94, 117, .6);
 }
 .articlerelatecase {
     background: #8c64ab;
