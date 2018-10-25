@@ -387,7 +387,7 @@ hr {
     justify-content: space-between;
 }
 .nav-more .nav-info {
-    color: #3c5e75;
+    color: #3c5e75!important;
 }
 .nav-more .close {
     position: absolute;
