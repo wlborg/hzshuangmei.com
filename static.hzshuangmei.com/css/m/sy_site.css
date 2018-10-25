@@ -397,7 +397,7 @@ hr {
     width: 1.1rem;
     height: 1.1rem;
 
-    background: url("https://img.hzshuangmei.com/m/btn_close.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/btn_close.png") center center no-repeat;
     background-size: 100%;
 }
 .nav-more .close:hover {
@@ -1726,7 +1726,7 @@ hr {
 .zhuanjia-info a {
     display: inline-block;
 
-    color: #aaa;
+    color: rgba(0,0,0,.85);
 }
 .zhuanjia-info .zhuanjia-more {
     display: block;
@@ -2482,12 +2482,12 @@ hr {
 
     border: none;
     border: solid 1px transparent;
-    background-color: #fff;
+    background-color: #a5cde7;
     background-clip: content-box;
 }
 .relatemodule .carousel-indicators li.active {
-    border: solid 1px #ff96f9;
-    background-color: #ff96f9;
+    border: solid 1px #fff;
+    background-color: #fff;
     background-clip: content-box;
 }
 .relatemodule .heading .line {
@@ -2515,7 +2515,7 @@ hr {
     background: #d8d0df;
 }
 .relateporject .heading .line {
-    border-bottom: solid 1px #7e52a2;
+    border-bottom: 1px solid rgba(216,208,233,.3);
 }
 .relateporject .contents {
     padding: .55rem 3.5% 1.65rem;
@@ -2529,7 +2529,7 @@ hr {
 
     font-size: 0;
 
-    background: #865ba9;
+    background: rgba(255,255,255,.2)!important;
 }
 .relateporject .contents .imgbox a {
     display: inline;
@@ -2546,7 +2546,7 @@ hr {
     background: #76449e;
 }
 .articlerelatedoctor .heading .line {
-    border-bottom: solid 1px #8a60ab;
+    border-bottom: solid 1px #d8d0df;
 }
 .articlerelatedoctor .contents {
     padding: .55rem 2% 1.9rem;
@@ -2554,10 +2554,10 @@ hr {
 .articlerelatedoctor .zhuanjia-item {
     overflow: hidden;
 
-    border: solid 1px #906aaf;
+    border: solid 1px rgba(0,0,0,.3);
 }
 .articlerelatedoctor .zhuanjia-thum {
-    border: solid 3px #76449e;
+    border: solid 3px #64b1e6;
 }
 .articlerelatedoctor .zhuanjia-title {
     font-size: .8rem;
@@ -2588,7 +2588,7 @@ hr {
 .articlerelatedoctor .zhuanjia-info .zhuanjia-more {
     margin-top: 1rem;
 
-    background: #c058d8;
+    background: #3c5e75;
 }
 .articlerelatecase {
     background: #8c64ab;
@@ -2638,11 +2638,11 @@ hr {
     background: #ddd1e6;
 }
 .relateporject {
-    background: #683293;
+    background: #4da2dd;
 }
 /* 三亚双美 */
 .sy_relateporject {
-    background: rgb(118, 68, 158)!important;
+    background: #74bcee!important;
 }
 .sy_articlerelatecase {
     background: rgb(104, 50, 147)!important;
@@ -2651,7 +2651,7 @@ hr {
     background: rgb(140, 100, 171)!important;
 }
 .sy_articlerelatedoctor {
-    background: #683293!important;
+    background: #64b1e6!important;
 }
 /********************* case_article  modal*********************/
 .wrapper {
