@@ -387,7 +387,7 @@ hr {
     justify-content: space-between;
 }
 .nav-more .nav-info {
-    color: #3c5e75;
+    color: #3c5e75!important;
 }
 .nav-more .close {
     position: absolute;
@@ -429,9 +429,8 @@ hr {
     line-height: 1rem;
 
     text-align: center;
-    /* color: #695e73; */
 
-    color: #333;
+    color: #3c5e75;
 }
 .row1 .nav-item:nth-child(1) .nav-icon {
     background-color: #eb675b;
@@ -635,7 +634,7 @@ hr {
 
     vertical-align: middle;
 
-    background: url("https://img.hzshuangmei.com/m/icon_show.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_show.png") center center no-repeat;
     background-size: 100%;
 }
 #video h3 {
@@ -2089,7 +2088,7 @@ hr {
     font-size: .45rem;
     line-height: 1.4rem;
 
-    color: #e66cea;
+    color: #a5cde7!important;
 }
 .case-nav .more .nav-link span {
     display: inline-block;

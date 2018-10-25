@@ -161,7 +161,7 @@ body {
 
     text-align: center;
 
-    background: url("https://img.hzshuangmei.com/m/bg_sy_header.jpg") center center no-repeat #41046b;
+    background: url("https://img.hzshuangmei.com/m/bg_sy_header.jpg") center center no-repeat #64b1e6;
     background-size: auto 100%;
 }
 #toggle {
@@ -236,7 +236,7 @@ body {
 }
 .tab-nav.active p,
 .tab-nav:hover p {
-    border-bottom: solid 3px #e596c5;
+    border-bottom: solid 3px #64b1e6;
 }
 .tab-content-wrap {
     position: relative;
@@ -280,7 +280,7 @@ body {
     text-align: center;
 
     color: #fff;
-    text-shadow: 1px 1px 1px #b96d9a;
+    /* text-shadow: 1px 1px 1px #b96d9a; */
 }
 .menu-item-wrap {
     padding: 0 3%;
@@ -369,8 +369,8 @@ body {
 
     text-align: center;
 
-    outline: solid 1px #e6e6e6;
-    background: #f7f7f7;
+    /* outline: solid 1px #e6e6e6; */
+    /* background: #f7f7f7; */
 }
 .footer img {
     position: absolute;
@@ -393,8 +393,8 @@ body {
 .footer a:nth-child(3) {
     width: 41%;
 
-    outline: solid 1px #866cd1;
-    background: #866cd1;
+    outline: solid 1px #64b1e6;
+    background: #64b1e6;
 }
 .footer a:nth-child(3) img {
     width: 4.6rem;
@@ -743,7 +743,7 @@ body #LXB_CONTAINER.lxb-container-mobile-5 .lxb-cb-input-btn {
     text-align: center;
     vertical-align: middle;
 
-    color: #fff;
+    color: #3c5e75!important;
     border-radius: 5px;
     background: #d4edfd!important;
 }
