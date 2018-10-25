@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -369,8 +369,8 @@ body {
 
     text-align: center;
 
-    outline: solid 1px #e6e6e6;
-    background: #f7f7f7;
+    /* outline: solid 1px #e6e6e6; */
+    /* background: #f7f7f7; */
 }
 .footer img {
     position: absolute;
