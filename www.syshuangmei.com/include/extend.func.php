@@ -634,7 +634,7 @@ $relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title3.png" alt="相关项目"/>
+            <img src="https://img.hzshuangmei.com/pc/sy/tjb/tjb_title3.png" alt="相关项目"/>
         </div> <div class="tjb_xm"><div class="tjb_img clearFix">
   '.$relateproject.'
 </div>        </div>
@@ -867,13 +867,13 @@ $list.= '<li class="clearFix">
                         <p>'.$shanchang.' </p>
                     </div>
                     <div class="tjb_button">
-                        <a class="j-consult" href="javascript:void(0);" rel="nofollow" target="_blank"><img src="//img.hzshuangmei.com/pc/tjb_button.png" alt="点击咨询"/></a>
+                        <a class="j-consult" href="javascript:void(0);" rel="nofollow" target="_blank"><img src="//img.hzshuangmei.com/pc/sy/tjj/tjb_button.png" alt="点击咨询"/></a>
                     </div>
                 </div></li>';
 }
 if($ns>0){
 $relatedoctor.= ' <div class="tjb_title2">
-            <img src="https://img.hzshuangmei.com/pc/tjb_title2.png" alt="推荐专家"/>
+            <img src="https://img.hzshuangmei.com/pc/sy/tjb/tjb_title2.png" alt="推荐专家"/>
         </div><ul class="tjb_zj clearFix"> '
     . $list
   .'</ul>';
