@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -280,7 +280,7 @@ body {
     text-align: center;
 
     color: #fff;
-    text-shadow: 1px 1px 1px #b96d9a;
+    /* text-shadow: 1px 1px 1px #b96d9a; */
 }
 .menu-item-wrap {
     padding: 0 3%;
