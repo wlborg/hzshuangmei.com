@@ -254,8 +254,10 @@
     border: 1px solid #e6e6e6;
     padding: 8px 14px;
 }
-.pagination>li:hover a {
+.pagination>li:hover {
     background-color: #64b1e6;
+}
+.pagination>li:hover a {
     color: #fff;
 }
 .pagination .thisclass {
