@@ -2611,7 +2611,7 @@ hr {
     margin-top: 0;
 }
 .articlerelatecase #diary .label span {
-    color: #704096;
+    color: #64b1e6;
 }
 .articlerelatecase #diary .right {
     margin-right: .15rem;
@@ -2619,21 +2619,21 @@ hr {
 .articlerelatecase  #diary .pro {
     margin-left: 4px;
 
-    background: url(//img.hzshuangmei.com/m/icon_flag2.png) left center no-repeat;
+    background: url(//img.hzshuangmei.com/m/sy/icon_flag2.png) left center no-repeat;
     background-size: auto 100%;
 }
 .articlerelatecase  #diary .pro a {
-    color: #704096;
+    color: #a5cde7;
 }
 .articlerelatecase  #diary .click {
     padding-left: .9rem;
     margin-left: .15rem;
 
-    background: url(//img.hzshuangmei.com/m/icon_eye2.png) left center no-repeat;
+    background: url(//img.hzshuangmei.com/m/sy/icon_eye2.png) left center no-repeat;
     background-size: auto 1em;
 }
 .articlerelatecase .label {
-    background: #ddd1e6;
+    background: #fff;
 }
 .relateporject {
     background: #4da2dd;
@@ -2643,10 +2643,10 @@ hr {
     background: #74bcee!important;
 }
 .sy_articlerelatecase {
-    background: rgb(104, 50, 147)!important;
+    background: #74bcee!important;
 }
 .sy_article_relateporject {
-    background: rgb(140, 100, 171)!important;
+    background: #4da2dd!important;
 }
 .sy_articlerelatedoctor {
     background: #64b1e6!important;
