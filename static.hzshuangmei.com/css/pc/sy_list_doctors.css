@@ -165,7 +165,7 @@
 }
 #doctors_tabCon ul li .doctor1>div>a span{
     position: relative;
-    /*top: 20px;*/
+    top: 20px;
 }
 
 #doctors_tabCon ul li .doc_p1{
