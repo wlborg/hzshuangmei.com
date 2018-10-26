@@ -937,12 +937,12 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 /* 顶部轮播图双十一按钮样式 */
 .Double_Eleven_Button {
     position: absolute;
-    bottom: 14.5%;
+    bottom: 7.5%;
     left: 50%;
 
     display: block;
-    width: 10%!important;
-    height: 7%;
+    width: 20%!important;
+    height: 10.5%!important;
 }
 .Double_Eleven_Button_anima {
     -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
