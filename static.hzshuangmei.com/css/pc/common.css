@@ -963,6 +963,8 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 /* 顶部轮播图双十一按钮样式 */
 .Double_Eleven_Button {
     position: absolute;
+    bottom: 100px;
+    left: 947px;
 
     display: block;
 }
