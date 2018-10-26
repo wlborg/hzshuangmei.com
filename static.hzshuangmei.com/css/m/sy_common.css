@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -936,4 +936,73 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 .xzhporject a {
     position: relative;
+}
+/* 顶部轮播图双十一按钮样式 */
+.Double_Eleven_Button {
+    position: absolute;
+    bottom: 7.5%;
+    left: 50%;
+
+    display: block;
+    width: 20%!important;
+    height: 10.5%!important;
+}
+.Double_Eleven_Button_anima {
+    -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
+       -moz-animation: scaleAC 1.5s linear 1.5s infinite;
+        -ms-animation: scaleAC 1.5s linear 1.5s infinite;
+         -o-animation: scaleAC 1.5s linear 1.5s infinite;
+            animation: scaleAC 1.5s linear 1.5s infinite;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
 }
