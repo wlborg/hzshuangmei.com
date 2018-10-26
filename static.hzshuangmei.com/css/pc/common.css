@@ -960,3 +960,16 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
     opacity: 1;
 }
+/* 顶部轮播图双十一按钮样式 */
+.Double_Eleven_Button {
+    position: absolute;
+
+    display: block;
+}
+.Double_Eleven_Button_anima {
+    -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
+       -moz-animation: scaleAC 1.5s linear 1.5s infinite;
+        -ms-animation: scaleAC 1.5s linear 1.5s infinite;
+         -o-animation: scaleAC 1.5s linear 1.5s infinite;
+            animation: scaleAC 1.5s linear 1.5s infinite;
+}
