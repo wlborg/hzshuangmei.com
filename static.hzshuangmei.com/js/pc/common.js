@@ -460,6 +460,14 @@ var protection = (function() {
             }
         });
     }
+    // 顶部轮播图双十一按钮鼠标经过处理
+    var Eleven=function(){
+        $(".Double_Eleven_Button").bind({mouseenter:function(){
+          $(this).removeClass("Double_Eleven_Button_anima");
+          },mouseleave :function(){
+          $(this).addClass("Double_Eleven_Button_anima");
+         }});
+    }
     var facility = {
         geturl: url,
         checkurl: authentication,
@@ -478,3 +486,4 @@ protection.disableright();
 //禁止键盘快捷键
 //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
 protection.shield(["disableCopy", "disableSource", "disableF12"]);
+protection.Eleven();
