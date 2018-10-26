@@ -8,6 +8,13 @@ $(function($) {
         }
         // console.log($("#nav").offset().top);
     });
+   // 顶部轮播图双十一按钮鼠标经过处理
+      $(".Double_Eleven_Button").bind(
+            {mouseenter:function(){
+          $(this).removeClass("Double_Eleven_Button_anima");
+          },mouseleave :function(){
+          $(this).addClass("Double_Eleven_Button_anima");
+         }});
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
@@ -460,15 +467,7 @@ var protection = (function() {
             }
         });
     }
-    // 顶部轮播图双十一按钮鼠标经过处理
-    var eleven=function(){
-        $(".Double_Eleven_Button").bind(
-            {mouseenter:function(){
-          $(this).removeClass("Double_Eleven_Button_anima");
-          },mouseleave :function(){
-          $(this).addClass("Double_Eleven_Button_anima");
-         }});
-    };
+
     var facility = {
         geturl: url,
         checkurl: authentication,
@@ -487,4 +486,4 @@ protection.disableright();
 //禁止键盘快捷键
 //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
 protection.shield(["disableCopy", "disableSource", "disableF12"]);
-protection.eleven();
+
