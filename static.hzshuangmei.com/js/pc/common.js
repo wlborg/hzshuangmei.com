@@ -389,14 +389,14 @@ $(function() {
 });
 /*   网站防护等    chj */
 var protection = (function() {
-    var data = {
-        suffix: "com",
-        main: "www.",
-        red: "hz",
-        beauty: "shuangmei",
-        dot: "."
-    }
-    var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
+    // var data = {
+    //     suffix: "com",
+    //     main: "www.",
+    //     red: "hz",
+    //     beauty: "shuangmei",
+    //     dot: "."
+    // }
+    // var d = (data.main + data.red + data.beauty).toString() + data.dot + data.suffix;
     // 如果当前URL不是设定的URL，则跳转
     var url = function() {
         if (document.location.host != "www.hzshuangmei.com" && document.location.host != "www.syshuangmei.com") {
@@ -406,7 +406,7 @@ var protection = (function() {
     }
     // 复制文件到本地，打开白屏
     var authentication = function() {
-        if (window.location.host.indexOf(d) < 0) {
+        if (window.location.host.indexOf("www.hzshuangmei.com") < 0 || window.location.host.indexOf("www.syshuangmei.com") < 0){
             $("body").remove();
             //document.querySelector('html').removeChild('body');
             return false
@@ -480,7 +480,7 @@ var protection = (function() {
 //确保URL唯一正确
 protection.geturl();
 //防止本地打开
-protection.checkurl();
+// protection.checkurl();
 //禁止右键
 protection.disableright();
 //禁止键盘快捷键
