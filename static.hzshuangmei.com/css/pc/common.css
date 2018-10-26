@@ -971,11 +971,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     height: 7%;
 }
 .Double_Eleven_Button_anima {
-    -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
-       -moz-animation: scaleAC 1.5s linear 1.5s infinite;
-        -ms-animation: scaleAC 1.5s linear 1.5s infinite;
-         -o-animation: scaleAC 1.5s linear 1.5s infinite;
-            animation: scaleAC 1.5s linear 1.5s infinite;
+    -webkit-animation: scaleAC 1.5s linear .3s infinite;
+       -moz-animation: scaleAC 1.5s linear .3s infinite;
+        -ms-animation: scaleAC 1.5s linear .3s infinite;
+         -o-animation: scaleAC 1.5s linear .3s infinite;
+            animation: scaleAC 1.5s linear .3s infinite;
 }
 @-webkit-keyframes scaleAC {
     0%,
