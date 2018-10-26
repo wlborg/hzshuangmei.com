@@ -462,7 +462,8 @@ var protection = (function() {
     }
     // 顶部轮播图双十一按钮鼠标经过处理
     var Eleven=function(){
-        $(".Double_Eleven_Button").bind({mouseenter:function(){
+        $(".Double_Eleven_Button").bind(
+            {mouseenter:function(){
           $(this).removeClass("Double_Eleven_Button_anima");
           },mouseleave :function(){
           $(this).addClass("Double_Eleven_Button_anima");

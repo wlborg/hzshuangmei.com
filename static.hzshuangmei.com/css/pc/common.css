@@ -967,7 +967,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     left: 50%;
 
     display: block;
-    width: 10%;
+    width: 10%!important;
     height: 7%;
 }
 .Double_Eleven_Button_anima {
@@ -976,4 +976,56 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
         -ms-animation: scaleAC 1.5s linear 1.5s infinite;
          -o-animation: scaleAC 1.5s linear 1.5s infinite;
             animation: scaleAC 1.5s linear 1.5s infinite;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
 }
