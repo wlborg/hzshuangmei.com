@@ -564,7 +564,7 @@ nav > ul > li ul .n_button a {
 .banner a {
     display: block;
 }
-.banner img {
+.banner > img {
     vertical-align: bottom;
 }
 .swiper-slide img {
