@@ -2063,7 +2063,7 @@ hr {
 }
 .case-nav .nav-item:hover,
 .case-nav .nav-item.active {
-    background-color: #9065b7;
+    background-color: #64b1e6;
 }
 .case-nav .nav-item:hover .nav-link,
 .case-nav .nav-item.active .nav-link {
@@ -2541,7 +2541,7 @@ hr {
 .articlerelatedoctor {
     height: 13.15rem;
 
-    background: #76449e;
+    background: #64b1e6;
 }
 .articlerelatedoctor .heading .line {
     border-bottom: solid 1px #d8d0df;
@@ -2589,7 +2589,7 @@ hr {
     background: rgba(60, 94, 117, .6);
 }
 .articlerelatecase {
-    background: #8c64ab;
+    background: #74bcee;
 }
 
 /* .articlerelatecase{height: 15rem;} */
