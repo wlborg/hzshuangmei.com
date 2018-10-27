@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -161,7 +161,7 @@ body {
 
     text-align: center;
 
-    background: url("https://img.hzshuangmei.com/m/bg_header.jpg") center center no-repeat #41046b;
+    background: url("https://img.hzshuangmei.com/m/bg_sy_header.jpg") center center no-repeat #64b1e6;
     background-size: auto 100%;
 }
 #toggle {
@@ -231,11 +231,12 @@ body {
 
     text-align: center;
 
-    color: #715d81;
+    opacity: .9;
+    color: #3c5e75;
 }
 .tab-nav.active p,
 .tab-nav:hover p {
-    border-bottom: solid 3px #e596c5;
+    border-bottom: solid 3px #64b1e6;
 }
 .tab-content-wrap {
     position: relative;
@@ -264,7 +265,7 @@ body {
 
     font-weight: normal;
 
-    background: url("https://img.hzshuangmei.com/m/bg_title.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/bg_title.png") left center no-repeat;
     background-size: 100% 100%;
 }
 .tab-content .title span {
@@ -279,7 +280,7 @@ body {
     text-align: center;
 
     color: #fff;
-    text-shadow: 1px 1px 1px #b96d9a;
+    /* text-shadow: 1px 1px 1px #b96d9a; */
 }
 .menu-item-wrap {
     padding: 0 3%;
@@ -316,15 +317,15 @@ body {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #6e5a7f; */
+    opacity: .9;
+    color: #3c5e75;
 }
 .menu-item .line {
     width: 60%;
     height: 0;
     margin: 2px auto;
 
-    border-top: solid 1px #cec7d3;
+    border-top: solid 1px #a6b0b9;
 }
 .menu-item p {
     padding-bottom: .25rem;
@@ -341,7 +342,8 @@ body {
 
     text-transform: uppercase;
 
-    color: #afa7b6;
+    opacity: .5;
+    color: #3c5e75;
 }
 body {
     padding-bottom: 2.4rem !important;
@@ -356,7 +358,7 @@ body {
     max-width: 16rem;
     margin: auto;
 
-    background: #f7f7f7;
+    background: #fff;
 }
 .footer a {
     position: relative;
@@ -367,8 +369,8 @@ body {
 
     text-align: center;
 
-    outline: solid 1px #e6e6e6;
-    background: #f7f7f7;
+    /* outline: solid 1px #e6e6e6; */
+    /* background: #f7f7f7; */
 }
 .footer img {
     position: absolute;
@@ -391,8 +393,8 @@ body {
 .footer a:nth-child(3) {
     width: 41%;
 
-    outline: solid 1px #866cd1;
-    background: #866cd1;
+    outline: solid 1px #64b1e6;
+    background: #64b1e6;
 }
 .footer a:nth-child(3) img {
     width: 4.6rem;
@@ -741,9 +743,9 @@ body #LXB_CONTAINER.lxb-container-mobile-5 .lxb-cb-input-btn {
     text-align: center;
     vertical-align: middle;
 
-    color: #fff;
+    color: #3c5e75!important;
     border-radius: 5px;
-    background: #2590e2;
+    background: #d4edfd!important;
 }
 body #LXB_CONTAINER.lxb-container-mobile-5 .lxb-cb-input-tip-content {
     font-size: .6rem;
@@ -934,4 +936,73 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 .xzhporject a {
     position: relative;
+}
+/* 顶部轮播图双十一按钮样式 */
+.Double_Eleven_Button {
+    position: absolute;
+    bottom: 7.5%;
+    left: 50%;
+
+    display: block;
+    width: 20%!important;
+    height: 10.5%!important;
+}
+.Double_Eleven_Button_anima {
+    -webkit-animation: scaleAC 1.5s linear 1.5s infinite;
+       -moz-animation: scaleAC 1.5s linear 1.5s infinite;
+        -ms-animation: scaleAC 1.5s linear 1.5s infinite;
+         -o-animation: scaleAC 1.5s linear 1.5s infinite;
+            animation: scaleAC 1.5s linear 1.5s infinite;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
 }

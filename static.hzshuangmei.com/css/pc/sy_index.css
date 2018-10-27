@@ -314,6 +314,7 @@ h3 img {
 .index_project #tab2 .fli2 {
     color: #fff;
     /*background-color: #5d819a;*/
+    background: #5d819a !important;
 }
 .index_project #tab2  .sy-fli2:hover {
     background: #5d819a !important;
@@ -509,7 +510,9 @@ h3 img {
     cursor: pointer;
 
     color: #fff;
-    background-color: rgb(106, 21, 125);
+    /*background-color: rgb(106, 21, 125);*/
+    background: #5d819a !important;
+    border: 1px solid #5d819a;
 }
 
 .index_clients #tabCon4 ul li {
@@ -1161,7 +1164,7 @@ h3 img {
 
     vertical-align: top;
 
-    border: solid 1px #9a87b3;
+    border: solid 1px #64b1e6;
     border-radius: 50%;
     background-color: transparent;
 }

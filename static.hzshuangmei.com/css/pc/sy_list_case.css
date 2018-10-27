@@ -1,0 +1,237 @@
+.m1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.location {
+    margin: 19px 8px 6px 29px;
+}
+
+.location i {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(//img.hzshuangmei.com/pc/sy/home.png) no-repeat center;
+}
+
+.location span {
+    font-size: 14px;
+    /*color: #9d85c1;*/
+    color: #64b1e6;
+}
+
+.location a {
+    font-size: 12px;
+    color: #696969
+}
+
+.line {
+    width: 1199px;
+    height: 7px;
+    background: url(//img.hzshuangmei.com/pc/sy/line.png) no-repeat center;
+}
+
+.h2_tit{
+    text-align: center;
+    margin: 25px 0 30px;
+}
+#case_tab {
+    position: fixed;
+    left: 0;
+    top: 130px;
+    z-index: 99999;
+    display:none
+}
+.case_tab{
+    display:block!important;
+}
+#case_tab li {
+    border: 1px solid rgb(255, 255, 255);
+    /*background-color: #7a5195;*/
+    background-color: #64b1e6;
+    width:110px;
+    height: 54px;
+    font-size: 22px;
+    color: #6b6b6b;
+    text-align: center;
+    line-height: 54px;
+    cursor: pointer;
+}
+#case_tab .case_fli{
+    background-color: #380d5b;
+    font-size: 24px;
+}
+#case_tab li a{
+    color: #fff!important;
+}
+
+/*#case_tabCon li {*/
+    /*display: none;*/
+/*}*/
+
+/*#case_tabCon .case_fdiv {*/
+    /*display: block;*/
+/*}*/
+
+
+#case_tabCon .list {
+    display: block;
+    float: left;
+    width: 377px;
+    padding-bottom: 213px;
+    position: relative;
+    border:1px solid #ededed;
+    margin:0 10px;
+    margin-bottom: 55px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+}
+#case_tabCon .t0{
+    margin-top:2px;
+    display: block;
+}
+#case_tabCon .list .ltt {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    left: 0;
+    display: table;
+    bottom:37px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 36px;
+    background: #FFFFFF;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+#case_tabCon .list .ltt .txt {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    top: 30px;
+}
+
+#case_tabCon .list .ltt .txt .t1 {
+    font-size: 14px;
+    line-height: 29px;
+    margin-top: 39px;
+    color:#8b8b8b;
+}
+
+#case_tabCon .list .ltt .txt .t2 {
+    font-size: 18px;
+    /*color: #6e3693;*/
+    color: #64b1e6;
+    line-height: 28px;
+    padding-left: 22px;
+    position:relative;
+    top:20px;
+}
+#case_tabCon .list .ltt .txt .t2 br{
+    display:none;
+}
+#case_tabCon .list .ltt .txt .t2 a{
+    font-size: 18px;
+    /*color: #6e3693;*/
+     color: #64b1e6;
+}
+#case_tabCon .list .ltt .txt .t3 {
+    font-size: 16px;
+    color: #8b8b8b;
+    line-height: 24px;
+    padding-left: 22px;
+}
+#case_tabCon .list .ltt .txt .t3 a{
+    font-size: 14px;
+    color: #8b8b8b;
+}
+#case_tabCon .list .t4 {
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+    position:absolute;
+    right: 0;
+    bottom: -4px;
+}
+#case_tabCon .list .ltt .txt .t1 span:first-child{
+    margin-right: 30px;
+}
+#case_tabCon .list .ltt .l_ico {
+    max-width: 152px;
+    max-height: 152px;
+    width: 152px;
+    height: 152px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -68px;
+    top: -76px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    display: block
+}
+#case_tabCon .list .ltt .l_ico img{
+    max-width: 152px;
+}
+#case_tabCon .list .ltt .txt .t1, #case_tabCon .list .ltt .txt .t3, #case_tabCon .list .ltt .txt .t4 {
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity:0)
+}
+
+#case_tabCon .list:hover {
+    -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+    color: #666666
+}
+
+#case_tabCon .list:hover .ltt {
+    height:234px;
+}
+
+#case_tabCon .list:hover .ltt .txt .t1, #case_tabCon .list:hover .ltt .txt .t3, #case_tabCon .list:hover .ltt .txt .t4 {
+    display: block;
+    opacity: 1;
+    filter: alpha(opacity:100)
+}
+#case_tabCon .list:hover .ltt .txt .t2{
+    font-size:16px;
+    position:relative;
+    top:-1px;
+}
+.pagination{
+    width: 600px;
+    margin: 0 auto 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.pagination>li{
+    float:left;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 8px 14px;
+}
+.pagination>li:hover {
+    background-color: #64b1e6;
+}
+.pagination>li:hover a {
+    color: #fff;
+}
+.pagination .thisclass {
+    /*background-color: #8a59a7;*/
+    background-color: #64b1e6;
+    color: #fff;
+}
+.currnet1 {
+    /*background: #6e3593!important;*/
+    background: #5792bb!important;
+}

@@ -195,6 +195,7 @@
     font-size: 20px;
 
     color: #6e3693;
+    /*color: #64b1e6;*/
 }
 #ptabCon2 p span:last-child {
     font-size: 15px;
@@ -253,6 +254,7 @@
     padding: 8px 14px;
 }
 .pagination .thisclass {
+    /*background-color: #64b1e6;*/
     background-color: #8a59a7;
     color: #fff;
 }

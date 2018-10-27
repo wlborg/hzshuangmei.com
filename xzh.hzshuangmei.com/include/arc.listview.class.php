@@ -1007,7 +1007,7 @@ class ListView
         //分页URL实现绝对路径
         global $cfg_xzh;
         $cfg_xzh = str_replace('#/$#','',$cfg_xzh);
-        $tnamerule = $cfg_xzh.MfTypedir($this->Fields['typedir']).'/'.$tnamerule;
+        $tnamerule =MfTypedir($this->Fields['typedir']).'/'.$tnamerule;
         //分页URL实现绝对路径
 
 
