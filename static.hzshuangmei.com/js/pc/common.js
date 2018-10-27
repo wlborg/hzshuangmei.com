@@ -8,6 +8,13 @@ $(function($) {
         }
         // console.log($("#nav").offset().top);
     });
+   // 顶部轮播图双十一按钮鼠标经过处理
+      $(".Double_Eleven_Button").bind(
+            {mouseenter:function(){
+          $(this).removeClass("Double_Eleven_Button_anima");
+          },mouseleave :function(){
+          $(this).addClass("Double_Eleven_Button_anima");
+         }});
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
@@ -399,7 +406,7 @@ var protection = (function() {
     }
     // 复制文件到本地，打开白屏
     var authentication = function() {
-        if (window.location.host.indexOf(d) < 0) {
+        if (window.location.host.indexOf("www.hzshuangmei.com") < 0 || window.location.host.indexOf("www.syshuangmei.com") < 0){
             $("body").remove();
             //document.querySelector('html').removeChild('body');
             return false
@@ -460,6 +467,7 @@ var protection = (function() {
             }
         });
     }
+
     var facility = {
         geturl: url,
         checkurl: authentication,
@@ -472,9 +480,10 @@ var protection = (function() {
 //确保URL唯一正确
 protection.geturl();
 //防止本地打开
-protection.checkurl();
+// protection.checkurl();
 //禁止右键
 protection.disableright();
 //禁止键盘快捷键
 //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
 protection.shield(["disableCopy", "disableSource", "disableF12"]);
+
