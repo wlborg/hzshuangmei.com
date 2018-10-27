@@ -1056,27 +1056,27 @@ $relateprojecturl="";
 switch ($typeid)
 {
 case 35 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/nose/";
+$relateprojecturl="https://www.syshuangmei.com/projects/nose/";
 break;
 case 36 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/eye/";
+$relateprojecturl="https://www.syshuangmei.com/projects/eye/";
 break;
 case 46:
 case 47:
 case 48:
-$relateprojecturl="https://www.hzshuangmei.com/projects/face/";
+$relateprojecturl="https://www.syshuangmei.com/projects/face/";
 break;
 case 38 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/chest/";
+$relateprojecturl="https://www.syshuangmei.com/projects/chest/";
 break;
 case 39 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/private/";
+$relateprojecturl="https://www.syshuangmei.com/projects/private/";
 break;
 case  40 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/body/";
+$relateprojecturl="https://www.syshuangmei.com/projects/body/";
 break;
 case 41 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/tattoo/";
+$relateprojecturl="https://www.syshuangmei.com/projects/tattoo/";
 break;
 case 49 :
 case 50 :
