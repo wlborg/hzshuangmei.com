@@ -692,7 +692,7 @@
        }
        // 复制文件到本地，打开白屏
        var authentication = function() {
-           if (window.location.host.indexOf("m.hzshuangmei.com") < 0 || window.location.host.indexOf("m.syshuangmei.com") < 0) {
+           if (window.location.host.indexOf("m.hzshuangmei.com") < 0 && window.location.host.indexOf("m.syshuangmei.com") < 0) {
                $("body").remove();
                //document.querySelector('html').removeChild('body');
                return false
