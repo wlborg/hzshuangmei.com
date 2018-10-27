@@ -258,7 +258,8 @@
 
     color: #fff;
     border-radius: 5px;
-    background-color: #4d1b6b;
+    /*background-color: #4d1b6b;*/
+    background-color: #64b1e6;
 }
 .article_case_content .share .zixun .share_08 {
     display: inline-block;
