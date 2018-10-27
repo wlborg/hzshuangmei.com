@@ -1085,17 +1085,17 @@ case 52 :
 case 53 :
 case  54 :
 case  55 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/skin/";
+$relateprojecturl="https://www.syshuangmei.com/projects/skin/";
 break;
 case 43 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/ha/";
+$relateprojecturl="https://www.syshuangmei.com/projects/ha/";
 break;
 case 44:
 case 45:
-$relateprojecturl="https://www.hzshuangmei.com/projects/botox/";
+$relateprojecturl="https://www.syshuangmei.com/projects/botox/";
 break;
 default:
-$relateprojecturl="https://www.hzshuangmei.com/projects/";
+$relateprojecturl="https://www.syshuangmei.com/projects/";
 }
 $relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">热门项目</a><br/><a href="'.$relateprojecturl.'" target="_blank">popular project</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
 return $relateprojecturl;
