@@ -1206,10 +1206,10 @@ case 48:
 case 38 :
 case 39 :
 case 40 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/surgery/";
 break;
 case 41 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/tattoo/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/tattoo/";
 break;
 case 49 :
 case 50 :
@@ -1218,15 +1218,15 @@ case 52 :
 case 53 :
 case  54 :
 case  55 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/laser/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/laser/";
 break;
 case 43 :
 case 44:
 case 45:
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/surgery/";
 break;
 default:
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/";
 }
 $relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
 return $relatedoctorurl;
