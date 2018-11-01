@@ -1056,27 +1056,27 @@ $relateprojecturl="";
 switch ($typeid)
 {
 case 35 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/nose/";
+$relateprojecturl="https://www.syshuangmei.com/projects/nose/";
 break;
 case 36 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/eye/";
+$relateprojecturl="https://www.syshuangmei.com/projects/eye/";
 break;
 case 46:
 case 47:
 case 48:
-$relateprojecturl="https://www.hzshuangmei.com/projects/face/";
+$relateprojecturl="https://www.syshuangmei.com/projects/face/";
 break;
 case 38 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/chest/";
+$relateprojecturl="https://www.syshuangmei.com/projects/chest/";
 break;
 case 39 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/private/";
+$relateprojecturl="https://www.syshuangmei.com/projects/private/";
 break;
 case  40 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/body/";
+$relateprojecturl="https://www.syshuangmei.com/projects/body/";
 break;
 case 41 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/tattoo/";
+$relateprojecturl="https://www.syshuangmei.com/projects/tattoo/";
 break;
 case 49 :
 case 50 :
@@ -1085,17 +1085,17 @@ case 52 :
 case 53 :
 case  54 :
 case  55 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/skin/";
+$relateprojecturl="https://www.syshuangmei.com/projects/skin/";
 break;
 case 43 :
-$relateprojecturl="https://www.hzshuangmei.com/projects/ha/";
+$relateprojecturl="https://www.syshuangmei.com/projects/ha/";
 break;
 case 44:
 case 45:
-$relateprojecturl="https://www.hzshuangmei.com/projects/botox/";
+$relateprojecturl="https://www.syshuangmei.com/projects/botox/";
 break;
 default:
-$relateprojecturl="https://www.hzshuangmei.com/projects/";
+$relateprojecturl="https://www.syshuangmei.com/projects/";
 }
 $relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">热门项目</a><br/><a href="'.$relateprojecturl.'" target="_blank">popular project</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
 return $relateprojecturl;
@@ -1206,10 +1206,10 @@ case 48:
 case 38 :
 case 39 :
 case 40 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/surgery/";
 break;
 case 41 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/tattoo/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/tattoo/";
 break;
 case 49 :
 case 50 :
@@ -1218,15 +1218,15 @@ case 52 :
 case 53 :
 case  54 :
 case  55 :
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/laser/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/laser/";
 break;
 case 43 :
 case 44:
 case 45:
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/surgery/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/surgery/";
 break;
 default:
-$relatedoctorurl="https://www.hzshuangmei.com/doctors/";
+$relatedoctorurl="https://www.syshuangmei.com/doctors/";
 }
 $relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专家</a><br/><a href="'.$relatedoctorurl.'" target="_blank">popular expert</a></h2><a href="'.$relatedoctorurl.'" target="_blank">more+</a>';
 return $relatedoctorurl;
