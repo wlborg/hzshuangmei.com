@@ -3,7 +3,7 @@
         var timer = null
             //  检查dom是否执行完成
         function check() {
-            let dom = document.getElementById('div3')
+            let dom = document.getElementById('div23')
             if(dom) {
                    $("#_ks_ol_inviteWin").css("margin-left","6.21rem");
                   // 点击稍后咨询按钮隐藏，12秒后出现
