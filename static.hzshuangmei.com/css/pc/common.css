@@ -1029,3 +1029,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
         opacity: 1;
     }
 }
+/* 快商通默认显示 */
+#k_s_ol_inviteWin {
+    display: block!important;
+}
