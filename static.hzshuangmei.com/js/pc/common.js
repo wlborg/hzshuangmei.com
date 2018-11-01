@@ -16,7 +16,7 @@ $(function($) {
           $(this).addClass("Double_Eleven_Button_anima");
          }});
      // 点击稍后咨询按钮隐藏，12秒后出现
-     $("#div3").bind("click",function(){
+     $("body").bind("click","#div3",function(){
         $("#k_s_ol_inviteWin").css("display","none!important");
      });
 });
