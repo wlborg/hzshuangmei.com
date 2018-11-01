@@ -15,6 +15,10 @@ $(function($) {
           },mouseleave :function(){
           $(this).addClass("Double_Eleven_Button_anima");
          }});
+     // 点击稍后咨询按钮隐藏，12秒后出现
+     $("#div3").bind("click",function(){
+        $("#k_s_ol_inviteWin").css("display","none!important");
+     });
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
