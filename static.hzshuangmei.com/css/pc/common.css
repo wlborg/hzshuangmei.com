@@ -1032,4 +1032,5 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 /* 快商通默认显示 */
 #k_s_ol_inviteWin {
     display: block!important;
+    margin-left: -300px !important;
 }
