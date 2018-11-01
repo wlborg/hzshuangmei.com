@@ -16,7 +16,16 @@ $(function($) {
           $(this).addClass("Double_Eleven_Button_anima");
          }});
      // 点击稍后咨询按钮隐藏，12秒后出现
-     $("body").bind("click","#div3",function(){
+     $(document).bind("click","#div3",function(){
+        $("#k_s_ol_inviteWin").css("display","none!important");
+     });
+      $(body).bind("click","#div3",function(){
+        $("#k_s_ol_inviteWin").css("display","none!important");
+     });
+       $("document").bind("click","#div3",function(){
+        $("#k_s_ol_inviteWin").css("display","none!important");
+     });
+      $("body").bind("click","#div3",function(){
         $("#k_s_ol_inviteWin").css("display","none!important");
      });
 });
