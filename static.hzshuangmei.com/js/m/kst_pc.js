@@ -5,7 +5,8 @@
         function check() {
             let dom = document.getElementById('div23')
             if(dom) {
-                   $("#_ks_ol_inviteWin").css("margin-left","6.21rem");
+                   $("#_ks_ol_inviteWin").css("margin-left","-6.5rem");
+                   $("#_ks_ol_inviteWin").css("margin-top","-6.21rem");
                   // 点击稍后咨询按钮隐藏，12秒后出现
                  $(document).on("click","#div23",function(){
                     $("#_ks_ol_inviteWin").attr("id","kReomve");
