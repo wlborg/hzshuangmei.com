@@ -12,13 +12,10 @@
                     $("#_ks_ol_inviteWin").attr("id","kReomve");
 
                  });
-                    $(document).on("click","#div39",function(){
-                    $("#_ks_ol_inviteWin").attr("id","kReomve");
-
-                 });
                 //  清除定时器
                 if(!timer) {
-                    clearTimeout(timer)
+                    clearTimeout(timer);
+                     TwShow();
                 }
             } else {
                 //  自我调用
@@ -35,19 +32,15 @@
         function check2() {
             var dom = document.getElementById('div1')
             if(dom) {
-
                   // 点击稍后咨询按钮隐藏，12秒后出现
                  $(document).on("click","#div1",function(){
                     $("#_ks_ol_inviteWin").attr("id","kReomve");
 
                  });
-                    $(document).on("click","#div1",function(){
-                    $("#_ks_ol_inviteWin").attr("id","kReomve");
-
-                 });
                 //  清除定时器
                 if(!timer2) {
-                    clearTimeout(timer2)
+                    clearTimeout(timer2);
+                    TwShow();
                 }
             } else {
                 //  自我调用
@@ -56,4 +49,8 @@
         }
         //  首次执行
         check2();
-
+          function TwShow(){
+          setTimeout(function(){
+            $("#id").attr("id","k_s_ol_inviteWin");
+          },12000)
+        }
