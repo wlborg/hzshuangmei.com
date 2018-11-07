@@ -14,7 +14,8 @@
                  });
                 //  清除定时器
                 if(!timer) {
-                    clearTimeout(timer)
+                    clearTimeout(timer);
+                     TwShow();
                 }
             } else {
                 //  自我调用
@@ -35,7 +36,8 @@
                  });
                 //  清除定时器
                 if(!timer2) {
-                    clearTimeout(timer2)
+                    clearTimeout(timer2);
+                    TwShow();
                 }
             } else {
                 //  自我调用
@@ -44,4 +46,9 @@
         }
         //  首次执行
         check2();
+        function TwShow(){
+          setTimeout(function(){
+            $("#id").attr("id","k_s_ol_inviteWin");
+          },12000)
+        }
 
