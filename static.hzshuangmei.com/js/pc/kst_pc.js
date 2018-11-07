@@ -48,7 +48,7 @@
         check2();
         function TwShow(){
           setTimeout(function(){
-            $("#id").attr("id","k_s_ol_inviteWin");
+            $("#kReomve").attr("id","k_s_ol_inviteWin");
           },12000)
         }
 
