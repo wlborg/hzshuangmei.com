@@ -12,6 +12,10 @@
                     $("#_ks_ol_inviteWin").attr("id","kReomve");
 
                  });
+                    $(document).on("click","#div39",function(){
+                    $("#_ks_ol_inviteWin").attr("id","kReomve");
+
+                 });
                 //  清除定时器
                 if(!timer) {
                     clearTimeout(timer)
