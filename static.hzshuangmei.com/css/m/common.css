@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -893,7 +893,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     font-size: .78rem !important;
     line-height: 1.13rem !important;
 }
-#div23 {
+#div1 {
     top: 10.86rem !important;
     left: 1.4rem !important;
 
@@ -901,6 +901,15 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     height: .99rem !important;
 
     line-height: 0 !important;
+}
+#div23 {
+    top: .4px!important;
+    left: 11.8rem!important;
+
+    width: 1rem!important;
+    height: .99rem!important;
+
+    line-height: 0!important;
 }
 .relateporject .contents {
     padding: .55rem 3.5% 0rem;
