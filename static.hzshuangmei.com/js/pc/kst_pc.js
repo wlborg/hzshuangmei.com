@@ -10,12 +10,13 @@
                   // 点击稍后咨询按钮隐藏，12秒后出现
                  $(document).on("click","#div3",function(){
                     $("#k_s_ol_inviteWin").attr("id","kReomve");
+                     TwShow();
 
                  });
                 //  清除定时器
                 if(!timer) {
                     clearTimeout(timer);
-                     TwShow();
+
                 }
             } else {
                 //  自我调用
@@ -33,11 +34,11 @@
                   // 点击稍后咨询按钮隐藏，12秒后出现
                  $(document).on("click","#div39",function(){
                     $("#k_s_ol_inviteWin").attr("id","kReomve");
+                     TwShow();
                  });
                 //  清除定时器
                 if(!timer2) {
                     clearTimeout(timer2);
-                    TwShow();
                 }
             } else {
                 //  自我调用
