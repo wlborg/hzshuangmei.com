@@ -3,7 +3,7 @@
         var timer = null
             //  检查dom是否执行完成
         function check() {
-            let dom = document.getElementById('div3')
+            var dom = document.getElementById('div3')
             if(dom) {
                   $("#k_s_ol_inviteWin").css("margin-left","-300px");
                    $("#k_s_ol_inviteWin").css("margin-top","-192.5px");
