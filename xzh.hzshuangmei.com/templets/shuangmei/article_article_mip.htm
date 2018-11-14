@@ -60,6 +60,37 @@ mip-gototop{float:right;margin-right:-15px;}
 .kefu{background: #774db5;}
 .youh{background: #7355c9;background-size: contain;}
 </style>
+<script type="application/ld+json">
+		{
+		"@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+		"@id": "https://xzh.hzshuangmei.com{dede:field name='arcurl'/}",
+		"appid": "1598778411605158",
+		"title": "{dede:field.title/}",
+		"images": [
+{dede:field.body runphp='yes'}
+$str=strip_tags("@me","<img><mip-img>");
+preg_match_all("/src=\"\/?(.*?)\"/",$str,$ereg);
+@me="";
+if($ereg[1][0]){
+	if(strpos($ereg[1][0],'http')===false){
+		@me.='"https://xzh.hzshuangmei.com/'.$ereg[1][0].'"';//第一张图
+	}else{
+		@me.='"'.$ereg[1][0].'"';//第一张图
+	}
+}
+if(count($ereg[1])!=2){
+	if($ereg[1][1]){
+	@me.=',"https://xzh.hzshuangmei.com/'.$ereg[1][1].'"';//第二张图
+	}
+	if($ereg[1][2]){
+	@me.=',"https://xzh.hzshuangmei.com/'.$ereg[1][2].'"';//第三张图
+	}
+}
+{/dede:field.body}
+		], 
+		"pubDate": "{dede:field.pubdate function="str_replace('GMT','T',MyDate('Y-m-dTH:i:s',@me))"/}"
+		}
+</script>
 </head>
 
 
@@ -77,8 +108,8 @@ mip-gototop{float:right;margin-right:-15px;}
 </div>
 <article>
     <h1>{dede:field.title/}</h1>
-    <span class="span">{dede:field.pubdate function="MyDate('Y-m-d H:i:s',@me)"/} 来源：成都恒博医院</span>
-    <div class="zix"><a href="https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948&ism=1" target="_blank"><mip-img src="https://xzh.hzshuangmei.com/templets/sink/images/arc_bt.gif">"></mip-img></a></div>
+    <span class="span">{dede:field.pubdate function="MyDate('Y-m-d H:i:s',@me)"/} 来源：红妆双美</span>
+    <div class="zix"><a href="https://ryak66.kuaishang.cn/bs/im.htm?cas=58194___765150&fi=68948&ism=1" target="_blank"><mip-img src="https://img.hzshuangmei.com/pc/xbrand.jpg.pagespeed.ic.OSyvnESYsP.webp">"></mip-img></a></div>
 
     <div class="content">
     <div class="ArtCon">{dede:field.body function='preg_replace("/<img(.+?>)/is","<mip-img$1</mip-img>",preg_replace("/style=\".+?\"/is","",@me))/}</div>
@@ -115,37 +146,7 @@ mip-gototop{float:right;margin-right:-15px;}
 <mip-fixed type="gototop">
     <mip-gototop></mip-gototop>
 </mip-fixed>
-<script type="application/ld+json">
-		{
-		"@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-		"@id": "https://xzh.hzshuangmei.com{dede:field name='arcurl'/}",
-		"appid": "1598778411605158",
-		"title": "{dede:field.title/}",
-		"images": [
-{dede:field.body runphp='yes'}
-$str=strip_tags("@me","<img><mip-img>");
-preg_match_all("/src=\"\/?(.*?)\"/",$str,$ereg);
-@me="";
-if($ereg[1][0]){
-	if(strpos($ereg[1][0],'http')===false){
-		@me.='"https://xzh.hzshuangmei.com/'.$ereg[1][0].'"';//第一张图
-	}else{
-		@me.='"'.$ereg[1][0].'"';//第一张图
-	}
-}
-if(count($ereg[1])!=2){
-	if($ereg[1][1]){
-	@me.=',"https://xzh.hzshuangmei.com/'.$ereg[1][1].'"';//第二张图
-	}
-	if($ereg[1][2]){
-	@me.=',"https://xzh.hzshuangmei.com/'.$ereg[1][2].'"';//第三张图
-	}
-}
-{/dede:field.body}
-		], 
-		"pubDate": "{dede:field.pubdate function="str_replace('GMT','T',MyDate('Y-m-dTH:i:s',@me))"/}"
-		}
-</script>
+
 
 </div>
 <script src="https://mipcache.bdstatic.com/static/v1/mip.js" ></script>
