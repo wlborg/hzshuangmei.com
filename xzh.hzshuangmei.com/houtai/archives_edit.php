@@ -229,7 +229,8 @@ else if($dopost=='save')
  /*    百度推送   */
 if($push_xzh==1) {
     //PC端URL推送
-$urls[]=$cfg_xzh.'/'.$artUrl;
+//$urls[]=$cfg_xzh.'/'.$artUrl;
+$urls[]=$cfg_xzh.$artUrl;
 $api = 'http://data.zz.baidu.com/update?site='.$cfg_xzh.'&token=KNgFhqqlsXEvFVcY';
 $ch = curl_init();
 $options =  array(
