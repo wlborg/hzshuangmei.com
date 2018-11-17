@@ -511,19 +511,23 @@ button, input, select, textarea {
     float: left
 }
 .anli .jian {
-
+    position: absolute;
 }
 .anli .jian:first-child {
-
+    top: 350px;
+    left: 213px;
 }
 .anli .jian:nth-child(2) {
-
+    top: 350px;
+    left: 686px;
 }
 .anli .jian:nth-child(3) {
-
+    bottom: 91px;
+    left: 215px;
 }
 .anli .jian:nth-child(4) {
-
+    bottom: 91px;
+    left: 698px;
 }
 .line {
     width: 100%;
