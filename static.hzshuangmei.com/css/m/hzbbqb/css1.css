@@ -57,6 +57,9 @@ a {
 .anli .jian {
     position: absolute;
 }
+.anli .jian img {
+    width: 1.5rem;
+}
 .Mone-top img {
     display: inline;
 }
