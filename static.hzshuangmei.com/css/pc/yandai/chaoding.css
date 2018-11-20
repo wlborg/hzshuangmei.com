@@ -829,12 +829,22 @@ table {
 }
 
 .part6 .top-ul {
+    position: relative;
     width: 1050px;
     height: 384px;
-    border-bottom: solid 1px #9c7899;
+    /*border-bottom: solid 1px #9c7899;*/
     margin: 383px auto 0
 }
-
+.part6 .top-ul .jian img {
+    position: absolute;
+    bottom: 16px;
+    left: 239px;
+}
+.part6 .top-ul .jian-1 img {
+    position: absolute;
+    bottom: 16px;
+    right: 230px;
+}
 .part6 .top-ul li {
     width: 483px;
     height: 383px;
