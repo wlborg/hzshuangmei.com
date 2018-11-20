@@ -1,0 +1,407 @@
+/*banner开始*/
+.banner {
+    width: 100%;
+    padding-top: .61rem;
+}
+.banner img {
+    width: 100%;
+}
+/*banner结束*/
+
+/*part1开始*/
+.part1 {
+    position: relative;
+
+    width: 100%;
+    padding-bottom: 3.2rem;
+
+    background-color: #cedadf;
+}
+.header-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
+.header-bg img {
+    width: 100%;
+}
+.header-bg .txt-wrap {
+    position: absolute;
+    top: 1.152rem;
+
+    width: 100%;
+
+    font-family: "SimSun";
+    font-size: .9813rem;
+    line-height: 1.835rem;
+
+    color: #461a1a;
+}
+.header-bg .txt-wrap span {
+    color: #9a3939;
+}
+.part1 .content {
+    position: relative;
+}
+.part1 .content-bg .bg-wrap {
+    width: 100%;
+}
+.part1 .left-content {
+    position: absolute;
+    top: 1.493rem;
+    right: 1.6rem;
+}
+.part1 .left-content .item {
+    width: 6.23rem;
+    height: 2.368rem;
+    padding-top: .384rem;
+    margin-bottom: .43rem;
+
+    text-align: center;
+    letter-spacing: .0213rem;
+
+    color: #6f5457;
+    background: url("/statics/zt/powdereyebrow/images/panel-pic-1.jpg") no-repeat;
+    background-size: 100%;
+}
+.part1 .left-content .item-1 {
+    background: url("/statics/zt/powdereyebrow/images/panel-pic-2.jpg") no-repeat;
+    background-size: 100%;
+}
+.part1 .left-content .item-2 {
+    background: url("/statics/zt/powdereyebrow/images/panel-pic-3.jpg") no-repeat;
+    background-size: 100%;
+}
+.part1 .left-content .item-3 {
+    background: url("/statics/zt/powdereyebrow/images/panel-pic-4.jpg") no-repeat;
+    background-size: 100%;
+}
+.left-content .item .title {
+    font-size: .768rem;
+}
+.left-content .item .line {
+    top: .107rem;
+    left: -.853rem;
+
+    width: 4.01rem;
+}
+.left-content .item .title-chl {
+    margin-top: .2133rem;
+
+    font-size: .4693rem;
+}
+
+.part1 .part1-footer .btn,
+.part2 .content .btn,
+.part3 .btn,
+.part4 .btn {
+    position: absolute;
+    bottom: 1.067rem;
+    left: 50%;
+
+    width: 7.424rem;
+    height: 1.408rem;
+    margin-left: -3.712rem;
+
+    background: url("/statics/zt/powdereyebrow/images/part1-btn.png") no-repeat;
+    background-size: 100%;
+}
+.part1 .part1-footer .btn a,
+.part2 .content .btn a,
+.part3 .btn a,
+.part4 .btn a,
+.part5 .btn a {
+    display: block;
+    width: 100%;
+    height: 81%;
+    margin-top: .05rem;
+}
+/*part1结束*/
+
+/*part2开始*/
+
+.header-bg-2 .txt-wrap {
+    top: 1.28rem;
+}
+.part2 .content {
+    position: relative;
+}
+.part2 .pic-wrap {
+    position: absolute;
+    top: 0;
+    left: .107rem;
+}
+.part2 .bg-wrap {
+    width: 100%;
+}
+.part2 .bg-wrap img {
+    width: 100%;
+}
+
+.pic-wrap .pic-item .item {
+    float: left;
+    width: 5.163rem;
+    height: 4.693rem;
+    /*background-color: #ff4444;*/
+    margin-bottom: .1493rem;
+}
+.pic-wrap .pic-item .item:nth-child(3n-1) {
+    margin-right: .107rem;
+    margin-left: .107rem;
+}
+.pic-wrap .pic-item .item img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: .128rem;
+}
+.part2 .content .btn {
+    bottom: -3.413rem;
+}
+/*part2结束*/
+
+/*part3 开始*/
+.part3 {
+    position: relative;
+
+    background: #bbccd2;
+    /*padding-bottom: 1.84rem;*/
+}
+.header-bg-3 .txt-wrap {
+    top: 1.28rem;
+}
+.part3 .content .content-bg {
+    width: 100%;
+}
+.content .content-bg img {
+    width: 100%;
+}
+/*part3 结束*/
+
+/*part4开始*/
+.part4 {
+    position: relative;
+}
+.header-bg-4 .txt-wrap {
+    top: 1.301rem;
+}
+.part4 .content {
+    position: relative;
+}
+.part4 .content .bg-wrap {
+    width: 100%;
+}
+.part4 .content .bg-wrap img {
+    width: 100%;
+}
+.part4 .content .pic-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+.part4 .content .item {
+    width: 14.955rem;
+    height: 7.019rem;
+    margin: 0 auto;
+    margin-bottom: .299rem;
+}
+.part4 .content .item-1 {
+    width: 15.04rem;
+    height: 6.699rem;
+}
+.part4 .content .item-2 {
+    width: 15.061rem;
+    height: 6.314rem;
+}
+.part4 .content .item img {
+    width: 100%;
+    height: 100%;
+}
+.part4 .btn {
+    bottom: 1.39rem;
+}
+/*part4结束*/
+
+/*part5开始*/
+.part5 {
+    position: relative;
+
+    padding-bottom: 1.3rem;
+
+    background: #cedadf;
+}
+.header-bg-1 .txt-wrap {
+    top: 1.792rem;
+}
+.part5 .content-1 img {
+    width: 100%;
+}
+.part5 .content-1 {
+    position: relative;
+}
+.part5 .content-1 .left-txt {
+    position: absolute;
+    top: 0;
+    right: .576rem;
+
+    width: 5.248rem;
+    height: 5.952rem;
+
+    text-align: center;
+}
+.content-1 .left-txt .title {
+    margin-top: .9813rem;
+}
+.content-1 .left-txt .title p {
+    font-size: .4693rem;
+    line-height: .64rem;
+
+    letter-spacing: .0213rem;
+
+    color: #461a1a;
+}
+.content-1 .left-txt .line {
+    /* margin-bottom: .18rem; */
+    top: -.363rem;
+    left: -1.835rem;
+
+    width: 4.395rem;
+    margin-top: .75rem;
+}
+.content-1 .left-txt .txt {
+    padding-left: .213rem;
+    margin: 0 auto;
+}
+.content-1 .left-txt .txt p {
+    font-size: .384rem;
+    line-height: .576rem;
+
+    letter-spacing: .0213rem;
+
+    color: #461a1a;
+}
+.part5 .content-2 .pic-wrap {
+    width: 15.02rem;
+    margin: 0 auto;
+    margin-top: 1.152rem;
+
+    background: #b5c6cd;
+}
+.content-2 .pic-wrap ul {
+    padding-left: .0853rem;
+}
+.content-2 .pic-wrap .item {
+    float: left;
+    width: 3.648rem;
+    height: 4.693rem;
+    margin-top: .0853rem;
+    margin-right: .0853rem;
+    margin-bottom: .0853rem;
+}
+.content-2 .pic-wrap .item img {
+    width: 100%;
+    height: 100%;
+}
+.part5 .content-3 {
+    position: relative;
+
+    margin-top: 1.152rem;
+}
+
+.part5 .content-3 .bg-wrap img {
+    width: 100%;
+}
+.part5 .content-3 .txt {
+    width: 13.12rem;
+    margin: 0 auto;
+
+    font-size: .4267rem;
+    line-height: .64rem;
+
+    text-align: justify;
+    letter-spacing: .0213rem;
+
+    color: #8e7e7e;
+}
+.part5 .content-3 .txt-wrap {
+    position: absolute;
+    bottom: 2.13rem;
+    left: 0;
+
+    width: 100%;
+}
+.part5 .content-3 .txt span {
+    color: #461a1a;
+}
+.part5 .btn {
+    position: absolute;
+    bottom: 1.067rem;
+    left: 50%;
+
+    width: 7.403rem;
+    height: .9173rem;
+    margin-left: -3.691rem;
+
+    background: url(/statics/zt/powdereyebrow/images/part5-btn.png) no-repeat;
+    background-size: 100%;
+}
+/*part5结束*/
+
+/*part6开始*/
+.part6 {
+    position: relative;
+
+    text-align: center;
+
+    background: #fff;
+}
+.header-bg-5 .txt-wrap {
+    top: 1.3867rem;
+}
+.part6 .pic-panel {
+    width: 100%;
+    margin-top: .2133rem;
+}
+.part6 .pic-panel ul {
+    width: 15.104rem;
+    margin: 0 auto;
+}
+.part6 .pic-panel .pic-item {
+    float: left;
+    width: 3.6693rem;
+    height: 2.411rem;
+    margin-right: .1067rem;
+    margin-bottom: .1067rem;
+}
+.part6 .pic-panel .pic-item img {
+    width: 100%;
+    height: 100%;
+}
+.part6 .pic-panel .txt {
+    width: 100%;
+    padding-right: .32rem;
+    margin-top: .1rem;
+
+    font-size: .3413rem;
+
+    text-align: right;
+
+    color: #461a1a;
+}
+.part6 .content-1 {
+    margin-top: .4627rem;
+}
+.part6 .content-2 {
+    padding-bottom: 1.4933rem;
+}
+.part6 .content-1 .img,
+.part6 .content-2 .img {
+    width: 100%;
+}
+/*part6结束*/
