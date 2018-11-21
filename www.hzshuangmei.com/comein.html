@@ -8,7 +8,8 @@
     <meta name="renderer" content="webkit">
     <meta name="*" content="noindex,nofollow">
     <!--引入JS-->
-    <script src="https://pv.sohu.com/cityjson?ie=utf-8" charset="utf-8"></script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+
     <title>IP合规</title>
 </head>
 
@@ -17,6 +18,8 @@
     <script>
     // 合法IP库
     var arr_Ip = [];
+
+    window.arr_Ip=arr_Ip;
     // 获取当前IP
     var user_Ip = returnCitySN.cip;
     //将当前IP放入合法IP库内
