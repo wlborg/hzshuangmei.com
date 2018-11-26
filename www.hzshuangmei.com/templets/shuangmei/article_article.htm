@@ -16,20 +16,6 @@
         <link rel="preload" href="{dede:global.cfg_csspath/}/pc/article_common.css" as="style" crossorigin />
         <link rel="preload" href="{dede:global.cfg_jspath/}/pc/article_common.js" as="script" crossorigin />
         <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css"/>
-        <style type="text/css">
-            .btn-gif {
-                width: 396px;
-                height: 60;
-                background: url("//img.hzshuangmei.com/pc/btn-gif.png") no-repeat;
-                margin: 0 auto;
-                background-size: 100%;
-            }
-            .btn-gif a {
-                display: block;
-                width: 100%;
-                /*height: 100%;*/
-            }
-        </style>
     </head>
     <body>
         {dede:include filename="_header.htm"/}
@@ -47,9 +33,6 @@
                     <span>点击量：{dede:field.click /}</span><a href="javascript:void(0)" class="j-consult" rel="nofollow"></a></p>
                     <div class="ar_ar">
                         {dede:field.body /}
-                    </div>
-                    <div class="btn-gif">
-                        <a class="j-consult" href="javascript:void(0)">&nbsp;</a>
                     </div>
                     <div class="page clearFix">
                         <p><span>上一篇：</span>{dede:prenext get='pre'/}</p>
