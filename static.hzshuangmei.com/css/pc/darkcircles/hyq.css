@@ -121,13 +121,13 @@ img {
     top: -27px;
     left: 9px;
 
-    background: url("/static/zt/img/darkcircles/part1-icon-1.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part1-icon-1.png") no-repeat;
 }
 .tit_header .title-top span i.icon-right {
     top: 14px;
     left: -6px;
 
-    background: url("/static/zt/img/darkcircles/part1-icon-2.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part1-icon-2.png") no-repeat;
 }
 .tit_header .title-mid {
     font-size: 51px;
@@ -307,7 +307,7 @@ img {
 
     text-align: center;
 
-    background: url("/static/zt/img/darkcircles/part1-icon.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part1-icon.png") no-repeat;
     background-size: 100%;
 }
 .left-content .con-top .top .txt-bot {
@@ -393,13 +393,13 @@ img {
     background: #f8f5f2;
 }
 .item .circle .icon {
-    background: url("/static/zt/img/darkcircles/ml-icon.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/ml-icon.png") no-repeat;
 }
 .item .circle .icon-1 {
-    background: url("/static/zt/img/darkcircles/ml-icon-2.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/ml-icon-2.png") no-repeat;
 }
 .item .circle .icon-2 {
-    background: url("/static/zt/img/darkcircles/ml-icon-3.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/ml-icon-3.png") no-repeat;
 }
 .item .circle .icon,
 .item .circle .icon-1,
@@ -440,7 +440,7 @@ img {
     font-size: 36px;
 
     color: #f9e7d3;
-    background: url("/static/zt/img/darkcircles/btn-wrap.png") no-repeat 234px 16px;
+    background: url("//img.hzshuangmei.com/pc/btn-wrap.png") no-repeat 234px 16px;
     background-size: 36px;
 }
 /*part1结束*/
@@ -503,7 +503,7 @@ img {
 .part2 .middle .con-left {
     width: 523px;
 
-    background: url("/static/zt/img/darkcircles/part2-pic-1.jpg") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part2-pic-1.jpg") no-repeat;
     background-size: 100%;
 }
 .part2 .middle {
@@ -557,7 +557,7 @@ img {
     height: 59px;
     margin-top: 70px;
 
-    background: url("/static/zt/img/darkcircles/btn-bg.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/btn-bg.png") no-repeat;
     box-shadow: 2px 2px 5px 0
     rgba(0, 0, 0, .2);
 }
@@ -571,7 +571,7 @@ img {
     text-align: left;
 
     color: #f2e0ce;
-    background: url("/static/zt/img/darkcircles/btn-wrap-1.png") no-repeat 174px 15px;
+    background: url("//img.hzshuangmei.com/pc/btn-wrap-1.png") no-repeat 174px 15px;
     background-size: 33px;
 }
 .part2 .content-middle {
@@ -720,13 +720,13 @@ img {
 .title-top h2 span i:first-child {
     top: 2px;
 
-    background: url("/static/zt/img/darkcircles/part2-icon-1.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part2-icon-1.png") no-repeat;
     background-size: 100%;
 }
 .title-top h2 span i:nth-child(2) {
     top: 45px;
 
-    background: url("/static/zt/img/darkcircles/part2-icon-2.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/part2-icon-2.png") no-repeat;
     background-size: 100%;
 }
 .bg-wrap .left-main .title-middle {
@@ -915,7 +915,7 @@ img {
 
     text-align: left;
 
-    background: url("/static/zt/img/darkcircles/btn-wrap.png") no-repeat 1.94rem .16rem;
+    background: url("//img.hzshuangmei.com/pc/btn-wrap.png") no-repeat 1.94rem .16rem;
     background-position: 1.93rem .16rem;
     background-size: .36rem;
 }
@@ -977,7 +977,7 @@ img {
     letter-spacing: 1px;
 
     color: #f2e0ce;
-    background: url("/static/zt/img/darkcircles/btn-wrap-1.png") no-repeat 1.77rem;
+    background: url("//img.hzshuangmei.com/pc/btn-wrap-1.png") no-repeat 1.77rem;
     background-size: .33rem;
 }
 .part3 .content-bottom {
@@ -1105,7 +1105,7 @@ img {
     width: .3rem;
     height: .7rem;
 
-    background-image: url("/static/zt/img/darkcircles/left-btn.png");
+    background-image: url("//img.hzshuangmei.com/pc/left-btn.png");
     background-repeat: no-repeat;
     background-position: 0 .07rem;
     background-size: 100%;
@@ -1122,7 +1122,7 @@ img {
     width: .3rem;
     height: .7rem;
 
-    background-image: url("/static/zt/img/darkcircles/right-btn.png");
+    background-image: url("//img.hzshuangmei.com/pc/right-btn.png");
     background-position: 0 .07rem;
     background-size: 100%;
 }
