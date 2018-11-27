@@ -1,0 +1,408 @@
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+
+/*banner 开始*/
+
+
+.banner {
+	position: relative;
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+.banner-btn {
+	position: absolute;
+    top: 5.5rem;
+    left: 3.75rem;
+    width: 2.453rem;
+    height: 0.555rem;
+    background: url(//img.hzshuangmei.com/m/faceneedle/banner-btn.jpg) no-repeat;
+    background-size: 100%;
+}
+.banner-btn a {
+	width: 100%;
+	height: 100%;
+}
+/*banner 结束*/
+
+/*part1开始*/
+.part1 {
+	position: relative;
+}
+.bg-wrap {
+	width: 100%;
+}
+.bg-wrap img {
+	width: 100%;
+}
+.part1 .panel-wrap {
+	position: absolute;
+	width: 14.741rem;
+	left: 50%;
+	margin-left: -7.375rem;
+	top: -2.8rem;
+}
+.part1 .list-item {
+	position: absolute;
+	top: 3rem;
+	width: 14.099rem;
+	margin-left: -7.0495rem;
+	left: 50%;
+}
+.part1 .panel-wrap img {
+	width: 100%;
+}
+.part1 .item-pic {
+	float: left;
+	width: 3.413rem;
+	margin-left: .149rem;
+}
+.part1 .item-pic:first-child {
+	margin-left: 0;
+}
+.part1 .item-pic img {
+	width: 100%;
+}
+.btn-wrap {
+	position: absolute;
+	left: 50%;
+}
+.part1 .btn-wrap {
+	width: 6.485rem;
+	bottom: 5.2rem;
+	height: 0.981rem;
+	background: url("//img.hzshuangmei.com/m/faceneedle/part1-btn.jpg") no-repeat;
+	background-size: 100%;
+	margin-left: -3.242rem;
+}
+.btn-wrap a {
+	width: 100%;
+	height: 100%;
+}
+/*part1结束*/
+
+/*part2 开始*/
+.part2 {
+	position: relative;
+}
+
+.part2 .item-wrap {
+	
+	
+}
+.part2 .item-wrap .item {
+	position: absolute;
+}
+.part2 .item-wrap .item:nth-child(1) {
+	top: 4rem;
+    right: 1.557rem;
+}
+.part2 .item-wrap .item:nth-child(2) {
+	top: 6.67rem;
+    left: 2.56rem;
+}
+.part2 .item-wrap .item:nth-child(3) {
+	top: 15.9rem;
+    left: 2.603rem;
+}
+.part2 .item-wrap .item:nth-child(4) {
+	top: 12.9rem;
+    right: 1rem;
+}
+.part2 .item-wrap .item .txt {
+	font-size: 0.469rem;
+	color: #333333;
+}
+.part2 .item-wrap .item:nth-child(1) .txt {
+	margin-top: 1.2rem;
+	width: 3.797rem;
+	text-align: center;
+}
+.part2 .item-wrap .item:nth-child(2) .txt {
+	margin-top: 1.2rem;
+	width: 4.907rem;
+	text-align: center;
+}
+.part2 .item-wrap .item:nth-child(3) .txt {
+	margin-top: 1.6rem;
+	width: 5.968rem;
+	text-align: left;
+}
+.part2 .item-wrap .item:nth-child(4) .txt {
+	box-sizing: border-box;
+    margin-top: 1.4rem;
+    width: 5.968rem;
+    text-align: left;
+    padding-left: 1.17rem;
+}
+.part2 .item:nth-child(1) .img-pic {
+	width: 3.797rem;
+}
+.part2 .item:nth-child(2) .img-pic {
+	width: 4.907rem;
+}
+.part2 .item:nth-child(3) .img-pic {
+	width: 5.968rem;
+}
+.part2 .item:nth-child(4) .img-pic {
+	width: 4.608rem;
+}
+.part2 .item .img-pic img {
+	width: 100%;
+}
+
+.circle-item {
+	position: absolute;
+	width: 0.469rem;
+	height: 0.469rem;
+	background: url("//img.hzshuangmei.com/m/faceneedle/circle.png");
+	background-size: 100%;
+}
+.circle-item:nth-child(1) {
+	top: 9.327rem;
+    right: 3.1rem;
+}
+.circle-item:nth-child(2) {
+	top: 12.3rem;
+    left: 4.6rem;
+}
+.circle-item:nth-child(3) {
+	top: 17.65rem;
+    right: 3.5rem;
+}
+.circle-item:nth-child(4) {
+	top: 22.85rem;
+    left: 4rem;
+}
+.circle-pic .active {
+	background: url("//img.hzshuangmei.com/m/faceneedle/circle-active.png");
+	background-size: 100%;
+}
+.part2 .btn-wrap {
+	background: url("//img.hzshuangmei.com/m/faceneedle/part2-btn.png") no-repeat;
+    background-size: 100%;
+    width: 4.437rem;
+    height: 0.981rem;
+    bottom: 3.36rem;
+    margin-left: 1.3rem;
+}
+/*part2 结束*/
+
+
+/*part3 开始*/
+.part3 {
+	position: relative;
+}
+.part3 .txt {
+	text-indent: 2em;
+	position: absolute;
+	top: 8rem;
+	left: 50%;
+	margin-left: -7.349rem;
+	width: 14.699rem;
+	font-size: 0.427rem;
+	line-height: 0.64rem;
+	color: #666666;
+}
+/*part3 结束*/
+
+/*part4 开始*/
+.part4 {
+	position: relative;
+}
+.part4-list {
+	position: absolute;
+	top: 11rem;
+	width: 15.66rem;
+	left: 50%;
+	margin-left: -7.83rem;
+}
+.part4-list .pic-show {
+	position: relative;
+	float: left;
+	width: 5.12rem;
+}
+.part4-list .pic-show:nth-child(2) {
+	margin-left: .15rem;
+	margin-right: .15rem;
+}
+.part4-list .pic-show img {
+	width: 100%;
+}
+.part4-list .pic-show .txt {
+	font-size: 0.427rem;
+    line-height: 0.597rem;
+    color: #ffffff;
+    text-align: center;
+    width: 4.7rem;
+    margin: 0 auto;
+    margin-top: .3rem;
+}
+.part4 .btn-wrap {
+	width: 5.269rem;
+    height: 0.981rem;
+    background: url("//img.hzshuangmei.com/m/faceneedle/part4-btn.png") no-repeat;
+    background-size: 100%;
+    bottom: 2.24rem;
+    margin-left: -2.634rem;
+}
+
+/*part4 结束*/
+
+
+/*part5 开始*/
+.part5 {
+	position: relative;
+}
+.part5-list {
+	position: absolute;
+	top:8.6rem;
+	width: 15.444rem;
+	left: 50%;
+	margin-left: -7.722rem;
+}
+.part5-list .part5-item {
+	width: 5.056rem;
+	position: relative;
+	float: left;
+}
+.part5-list .part5-item:nth-child(2) {
+	margin: 0 .138rem 0 .138rem;
+}
+.part5-list .part5-item img {
+	width: 100%;
+}
+.part5-list .title {
+	box-sizing: border-box;
+    position: absolute;
+    height: .981rem;
+    width: 100%;
+    background: url("//img.hzshuangmei.com/m/faceneedle/part5-icon-1.png") no-repeat 3.33rem 0rem;
+    background-size: .981rem .981rem;
+    top: 5.92rem;
+    font-size: 0.64rem;
+    color: #47b2fa;
+    padding-left: 0.53rem;
+    /*line-height: .981rem;*/
+    vertical-align: bottom;
+}
+.part5-list .title-1 {
+	background: url("//img.hzshuangmei.com/m/faceneedle/part5-icon-2.png") no-repeat 3.33rem 0rem;
+    background-size: .981rem .981rem;
+    top: 5.89rem;
+}
+.part5-list .title-2 {
+	background: url("//img.hzshuangmei.com/m/faceneedle/part5-icon-3.png") no-repeat 3.33rem 0rem;
+    background-size: .981rem .981rem;
+    top: 5.78rem;
+}
+.part5-list .txt {
+	font-size: 0.427rem;
+    color: #333333;
+    width: 3.85rem;
+    margin-left: .49rem;
+    margin-top: .277rem;
+}
+.part5 .btn-wrap {
+	width: 5.76rem;
+	height: 0.981rem;
+	margin-left: -2.88rem;
+	background: url("//img.hzshuangmei.com/m/faceneedle/part5-btn.png");
+	background-size: 100%;
+	bottom: 2.453rem;
+}
+/*part5 结束*/
+
+/*part6 开始*/
+.part6 {
+	position: relative;
+}
+.part6 .txt{
+	text-indent: 2em;
+    position: absolute;
+    top: 4.67rem;
+    right: 1.9rem;
+    width: 5.7604rem;
+    font-size: 0.384rem;
+     line-height: 0.512rem; 
+    color: #4eb4fa;
+    text-align: justify;
+}
+.part6 .txt p {
+	width: 100%;
+	text-align: center;
+}
+.swiper {
+	position: absolute;
+	top: 13.013rem;
+	left: 1.301rem;
+	width: 6.293rem;
+	height: 4.032rem;
+}
+.swiper-pic {
+	width: 6.293rem;
+	height: 4.032rem;
+}
+.swiper-pic img {
+	width: 100%;
+	height: 100%;
+}
+.swiper-button-next, .swiper-button-prev {
+	width: .299rem;
+    height: .789rem;
+    margin-top: -.394rem;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background: url("//img.hzshuangmei.com/m/faceneedle/swiper-right.png") no-repeat;
+    right: -.43rem;
+    z-index: 1000;
+    background-size: 100% 100%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	background: url("//img.hzshuangmei.com/m/faceneedle/swiper-left.png") no-repeat;
+	background-size: 100% 100%;
+	left: -.4rem;
+}
+
+
+/*part7 开始*/
+.part7 {
+	position: relative;
+}
+.part7-btns {
+	position: absolute;
+    bottom: 2.176rem;
+    right: .661rem;
+    height: 0.981rem;
+    width: 9rem;
+}
+.part7-btns .btn {
+	position: absolute;
+	width: 4.416rem;
+	height: 100%;
+}
+.part7-btns .btn a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.part7-btns .btn-1 {
+	left: 0;
+	background: url("//img.hzshuangmei.com/m/faceneedle/part7-btn-1.jpg");
+	background-size: 100%;
+}
+.part7-btns .btn-2 {
+	right: 0;
+	background: url("//img.hzshuangmei.com/m/faceneedle/part7-btn-2.jpg");
+	background-size: 100%;
+}
+/*part7 结束*/
+/*swiper 开始*/
+
+/*swiper 结束*/
+/*part6 结束*/
