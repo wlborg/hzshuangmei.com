@@ -570,7 +570,10 @@ nav > ul > li ul .n_button a {
 .swiper-slide img {
     width: 100%;
 }
-/*banner*/
+.banner .banner_swiper .swiper-slide img{
+    display: block;
+}
+    /*banner*/
 .banner .banner-pagination .swiper-pagination-bullet {
     display: inline-block;
     width: 16px;
