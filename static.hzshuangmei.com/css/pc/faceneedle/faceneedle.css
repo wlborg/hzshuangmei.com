@@ -46,7 +46,7 @@ img {
 	height: .21rem;
 	background: url("//img.hzshuangmei.com/pc/faceneedle/btn-jian.png") no-repeat;
 	background-size: 100%;
-	top
+	vertical-align: middle;
 }
 /*part1 开始*/
 .part1 {
