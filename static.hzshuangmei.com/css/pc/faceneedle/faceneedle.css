@@ -44,9 +44,9 @@ img {
 .go-img {
 	width: .12rem;
 	height: .21rem;
-	background: url("../images/btn-jian.png") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/faceneedle/btn-jian.png") no-repeat;
 	background-size: 100%;
-	top
+	vertical-align: middle;
 }
 /*part1 开始*/
 .part1 {
@@ -205,12 +205,12 @@ img {
 	position: absolute;
     width: 0.21rem;
     height: 0.21rem;
-    background: url(../images/circle.png) no-repeat top center;
+    background: url(//img.hzshuangmei.com/pc/faceneedle/circle.png) no-repeat top center;
     background-size: 100%;
 
 }
 .part2 .circle .active {
-	background: url(../images/circle-active.png) no-repeat top center;
+	background: url(//img.hzshuangmei.com/pc/faceneedle/circle-active.png) no-repeat top center;
     background-size: 100%;
 }
 .nor-circle:nth-child(1) {
@@ -478,7 +478,7 @@ img {
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-	background: url("../images/right-btn.png") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/faceneedle/right-btn.png") no-repeat;
 	width: .21rem;
 	height: .55rem;
 	background-size: 100%;
@@ -486,7 +486,7 @@ img {
     left: auto;
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-	background: url("../images/left-btn.png") no-repeat;
+	background: url("//img.hzshuangmei.com/pc/faceneedle/left-btn.png") no-repeat;
 	width: .21rem;
 	height: .55rem;
 	background-size: 100%;
