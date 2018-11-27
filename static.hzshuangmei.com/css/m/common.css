@@ -131,22 +131,24 @@ body {
 .custom-wrapper {
     /* fixed navbar */
     position: fixed;
-    /* top: 0rem; */
-    top: 2.05rem;
+    top: 0rem;
+    /* top: 2.05rem; */
     z-index: 20180110;
 
     width: 16rem;
     height: 2.35rem;
     overflow: hidden;
 }
-.contents {
+/* .contents {
     padding-top: 2.05rem;
 }
-
-/* .contents {
+ */
+.contents {
     padding-top: 0rem;
-} */
-
+}
+#LXB_CONTAINER {
+    bottom: 2.4rem!important;
+}
 .custom-wrapper.open {
     height: auto;
 }
