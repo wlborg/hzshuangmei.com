@@ -128,7 +128,7 @@ img {
 }
 .part2 .txt-box .box {
 	position: absolute;
-    top: -.44rem;
+    top: .12rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -164,7 +164,7 @@ img {
 	width: 1.61rem;
 	vertical-align: middle;
 	text-align: left;
-	margin-left: -.1rem
+	/*margin-left: -.1rem*/
 }
 .part2 .btn-wrap {
 	left: 50%;
@@ -258,6 +258,7 @@ img {
 	height: 1.21rem;
 	background: url("//img.hzshuangmei.com/pc/yzwc/hand.png") no-repeat;
 	background-size: 100%;
+	margin-top: .6rem;
 }
 .part4 .btn-wrap span.btn-span {
 	width: 100%;
