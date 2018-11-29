@@ -142,7 +142,9 @@ body {
 .contents {
     padding-top: 0rem;
 }
-
+#LXB_CONTAINER {
+    bottom: 2.4rem!important;
+}
 /* .contents {
     padding-top: 0rem;
 } */
