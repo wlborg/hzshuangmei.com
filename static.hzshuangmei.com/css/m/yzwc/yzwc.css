@@ -1,0 +1,178 @@
+a {
+	display: inline-block;
+}
+img {
+	display: block;
+}
+
+/*banner 开始*/
+.banner a {
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+/*banner结束*/
+
+/*part1 开始*/
+.part1 {
+	position: relative;
+}
+.bg-wrap {
+	width: 100%;
+}
+.bg-wrap img {
+	width: 100%;
+}
+.part1 .txt-item {
+	position: absolute;
+    top: 8.2rem;
+    left: 7.4rem;
+    width: 2.3rem;
+    font-size: 0.291rem;
+    line-height: 0.427rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.part1-btn {
+	position: absolute;
+    bottom: .3rem;
+    left: 4.3rem;
+    width: 2.901rem;
+    height: 2.901rem;
+    background: url("https://img.hzshuangmei.com/m/yzwc/part1-btn.png") no-repeat;
+    background-size: 100%;
+}
+.part1-btn a {
+	width: 100%;
+	height: 100%;
+}
+
+/*part1 结束*/
+
+/*part2 开始*/
+.part2 {
+	position: relative;
+	overflow: hidden;
+}
+
+.part2-list {
+	position: absolute;
+	top: 3.2rem;
+	left: 0;
+	width: 100%;
+}
+.part2-list ul {
+	width: 9.44rem;
+	margin: 0 auto;
+}
+.part2-list .item {
+	width: 4.4rem;
+	/*height: 9.13rem;*/
+	float: left;
+	margin-bottom: .853rem;
+}
+.part2-list .item:nth-child(2n-1) {
+	margin-right: .64rem;
+}
+.part2-list .item img {
+	width: 100%;
+	/*height: 100%;*/
+}
+.part2-btn {
+	position: absolute;
+	bottom: -.9rem;
+	left: 50%;
+	margin-left: -2.4425rem;
+	width: 4.885rem;
+	height: 3.755rem;
+	background: url("https://img.hzshuangmei.com/m/yzwc/part2-btn.png") no-repeat;
+	background-size: 100%;
+}
+.part2-btn a {
+	width: 100%;
+	height: 100%;
+}
+/*part2 结束*/
+
+
+/*part3 开始*/
+.part3 {
+	position: relative;
+}
+.part3-list {
+	position: absolute;
+	top: 4rem;
+	left:0;
+	width: 100%;
+	margin: 0 auto;
+}
+.part3-list .list-wrap {
+	width: 11.6rem;
+    margin: 0 auto;
+}
+.part3-list .list-item {
+	width: 3.4rem;
+	position: relative;
+	display: inline-block;
+}
+.list-wrap .list-item:nth-child(1) {
+	margin-right: .4rem;
+}
+.list-wrap .list-item:nth-child(2) {
+	margin-right: .4rem;
+}
+.part3-list .list-item img {
+	width: 100%;
+}
+.part3-list .list-item .txt {
+	width: 3.904rem;
+	position: absolute;
+	bottom: -2.32rem;
+	left: 0;
+	font-size: 0.384rem;
+	line-height: 0.491rem;
+	color: #d5d7e0;
+	opacity: 0.8;
+	text-align: left;
+}
+.list-wrap .list-item:nth-child(2) .txt {
+	bottom: -1.9rem;
+}
+.part3-list .list-wrap-1 {
+	width: 8.51rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+.list-wrap-1 .list-item:nth-child(1) {
+	margin-right: .4rem;
+}
+.list-wrap-1 .list-item .txt {
+	bottom: -2.7rem;
+}
+.list-wrap-1 .list-item:nth-child(2) .txt {
+	bottom: -2.24rem;
+}
+/*part3 结束*/
+
+/*part4 开始*/
+.part4 {
+	position: relative;
+}
+.part4-btn {
+	position: absolute;
+	bottom: 1.3rem;
+	left: 50%;
+	width: 3.157rem;
+	margin-left: -1.578rem;
+	height: 0.768rem;
+	background: url("https://img.hzshuangmei.com/m/yzwc/part4-btn.png") no-repeat;
+	background-size: 100%;
+}
+.part4-btn a {
+	width: 100%;
+	height: 100%;
+}
+/*part4 结束*/
+
