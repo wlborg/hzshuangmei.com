@@ -87,10 +87,19 @@ var tools = (
                 document.documentElement.appendChild(scriptE);
             }
         }
-        //添加快商通
-        module.addKSTScript = function() {
-            addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
-        };
+        if (window.location.host.indexOf("www.hzshuangmei.com")>0){
+            //添加快商通
+                module.addKSTScript = function() {
+                    addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+                };
+        }
+        if (window.location.host.indexOf("www.syshuangmei.com")>0){
+              //添加快商通
+                module.addKSTScript = function() {
+                    addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
+                };
+        }
+
         //添加百度统计代码
         module.addBaiduScript = function() {
             addScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
