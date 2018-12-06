@@ -407,32 +407,15 @@
                var s = document.getElementsByTagName("script")[0];
                s.parentNode.insertBefore(bp, s);
            }
-             if (window.location.host.indexOf("m.hzshuangmei.com")>0){
+
             //添加快商通
-                module.addKSTScript = function() {
-                    addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+                module.addKSTScript = function(value) {
+                    addScript(value);
                 };
                  //添加百度统计代码
-                 module.addBaiduScript = function() {
-                     addScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
-                 }
-              }
-              if (window.location.host.indexOf("m.syshuangmei.com")>0){
-                    //添加快商通
-                      module.addKSTScript = function() {
-                          addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
-                      };
-                         //添加百度统计代码
-           module.addBaiduScript = function() {
-               addScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
-           }
-              }
-
-
-             module.addCnzzScript = function() {
-               addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
-           }
-
+                 module.addBaiduScript = function(value) {
+                     addScript(value);
+                 };
            module.bindConsultHref = function() {
                //专题快商通
                var consultEs = $('.j-consult');
@@ -583,8 +566,14 @@
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
-       tools.addKSTScript();
-       tools.addBaiduScript();
+       if (window.location.host.indexOf("m.hzshuangmei.com")>0){
+           tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+           tools.addBaiduScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
+       }
+       if (window.location.host.indexOf("m.syshuangmei.com")>0){
+           tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
+           tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
+       }
        tools.addCnzzScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
