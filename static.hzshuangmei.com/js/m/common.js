@@ -407,11 +407,18 @@
                var s = document.getElementsByTagName("script")[0];
                s.parentNode.insertBefore(bp, s);
            }
+             if (window.location.host.indexOf("www.hzshuangmei.com")>0){
             //添加快商通
-           module.addKSTScript = function() {
-               //to be changed
-               addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1&ref=''");
-           }
+                module.addKSTScript = function() {
+                    addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+                };
+                }
+              if (window.location.host.indexOf("www.syshuangmei.com")>0){
+                    //添加快商通
+                      module.addKSTScript = function() {
+                          addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
+                      };
+              }
             //添加百度统计代码
            module.addBaiduScript = function() {
                addScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
