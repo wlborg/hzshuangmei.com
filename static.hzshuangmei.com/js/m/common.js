@@ -412,6 +412,9 @@
                 module.addKSTScript = function(value) {
                     addScript(value);
                 };
+                   module.addCnzzScript = function() {
+                       addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
+                   }
                  //添加百度统计代码
                  module.addBaiduScript = function(value) {
                      addScript(value);
