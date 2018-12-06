@@ -407,13 +407,13 @@
                var s = document.getElementsByTagName("script")[0];
                s.parentNode.insertBefore(bp, s);
            }
-             if (window.location.host.indexOf("www.hzshuangmei.com")>0){
+             if (window.location.host.indexOf("m.hzshuangmei.com")>0){
             //添加快商通
                 module.addKSTScript = function() {
                     addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
                 };
                 }
-              if (window.location.host.indexOf("www.syshuangmei.com")>0){
+              if (window.location.host.indexOf("m.syshuangmei.com")>0){
                     //添加快商通
                       module.addKSTScript = function() {
                           addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
