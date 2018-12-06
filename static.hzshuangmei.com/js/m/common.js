@@ -569,11 +569,11 @@
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
-       if (window.location.host.indexOf("m.hzshuangmei.com")>0){
+       if (window.location.host.indexOf("m.hzshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
        }
-       if (window.location.host.indexOf("m.syshuangmei.com")>0){
+       if (window.location.host.indexOf("m.syshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
        }
