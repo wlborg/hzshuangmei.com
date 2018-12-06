@@ -416,7 +416,7 @@
               if (window.location.host.indexOf("www.syshuangmei.com")>0){
                     //添加快商通
                       module.addKSTScript = function() {
-                          addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
+                          addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
                       };
               }
             //添加百度统计代码
