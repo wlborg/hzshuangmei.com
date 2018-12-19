@@ -811,7 +811,7 @@ $relatecase.= '  <div id="articleslidecase" class="carousel slide" data-ride="ca
 }
 return $relatecase;
 }
-function getProjectArticleRelateDoctor($typeid)
+function getProjectArticleRelateDoctor($typeid,name)
 {
 global $dsql;
 $relatedoctor="";
@@ -903,7 +903,7 @@ $list.= '
     <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'?name" class="zhuanjia-more">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }else{
