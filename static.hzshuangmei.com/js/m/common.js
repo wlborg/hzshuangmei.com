@@ -583,9 +583,9 @@
        //禁止右键盗取案例图片
        tools.anti_Stealing_Images();
 
-      
+
            $(document).on("click",".clickParameter",function(){
-               var url=$(this).attr("href")+"?"+$("#art_title").val();
+               var url=$(this).attr("href")+"?"+$("#art_title").html();
                location.href=url;
                event.preventDefault();
            });

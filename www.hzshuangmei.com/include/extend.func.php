@@ -860,8 +860,8 @@ $shanchang = $row["shanchang"];
 $list.= '<li class="clearFix">
                 <a href="'.$url.'" class="tjb_l" target="_blank"><img src="'.$thumb.'" alt="'.$title.'"/></a>
                 <div class="tjb_r">
-                    <p class="p3"><a href="'.$url.'" class="tjb_name" target="_blank">'.$title.'</a></p>
-                    <p class="p4"><a href="'.$url.'" target="_blank">'.$zhiwei.'</a></p>
+                    <p class="p3"><a href="'.$url.'" class="tjb_name clickParameter" target="_blank">'.$title.'</a></p>
+                    <p class="p4"><a href="'.$url.'" target="_blank" class="clickParameter">'.$zhiwei.'</a></p>
                     <div class="tjb_sc clearFix">
                         <p>擅长项目：</p>
                         <p>'.$shanchang.' </p>
@@ -919,7 +919,7 @@ $url = $urlarray['arcurl'];
 //缩略图处理
 $litpic = replaceurl($row["litpic"]);
 //项目项目处理
-$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" target="_blank" class="clickParameter"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= '   <div class="tjb_title3">
@@ -1317,7 +1317,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
     if($ns<6){
