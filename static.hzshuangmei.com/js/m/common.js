@@ -583,14 +583,13 @@
        //禁止右键盗取案例图片
        tools.anti_Stealing_Images();
 
-       articleProject();
-       var articleProject=function(){
+      
            $(document).on("click",".clickParameter",function(){
                var url=$(this).attr("href")+"?"+$("#art_title").val();
                location.href=url;
                event.preventDefault();
            });
-       };
+
    });
    //Baidu自动推送
    (function() {
