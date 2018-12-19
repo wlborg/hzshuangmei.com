@@ -582,6 +582,14 @@
        tools.activeGoTopTool(".j-gotop");
        //禁止右键盗取案例图片
        tools.anti_Stealing_Images();
+
+      
+           $(document).on("click",".clickParameter",function(){
+               var url=$(this).attr("href")+"?"+$("#art_title").val();
+               location.href=url;
+               event.preventDefault();
+           });
+
    });
    //Baidu自动推送
    (function() {
@@ -679,6 +687,8 @@
    // }
    /*   网站防护等    chj */
    var protection = (function() {
+        // 专题详情页点击链接调整传当前页面文章标题过去
+
        // var data = {
        //     suffix: "com",
        //     main: "m.",

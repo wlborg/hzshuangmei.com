@@ -898,12 +898,12 @@ if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" class="clickParameter"><img src="'.$thumb.'" alt="" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link clickParameter">'.$title.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
-    <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
+    <a href="'.$url.'" class="zhuanjia-more clickParameter">了解更多 &nbsp;》</a>
   </div>
 </div>';
 }else{
@@ -952,7 +952,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic = replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'" class="clickParameter"><img src="'.$litpic.'" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $relateproject= ' <div class="imgbox">
@@ -1046,7 +1046,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
+$relateproject.='<a href="https://xzh.hzshuangmei.com'.$url.'" class="clickParameter"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$title.'</span></a>';
 }
 if($ns>0){
     if($ns<4){
