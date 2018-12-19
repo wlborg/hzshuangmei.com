@@ -15,6 +15,12 @@ $(function($) {
           },mouseleave :function(){
           $(this).addClass("Double_Eleven_Button_anima");
          }});
+    //点击推荐栏目传当前文章标题过去
+    $(document).on("click",".clickParameter",function(){
+        var url=$(this).attr("href")+"?"+$("#art_title").html();
+        location.href=url;
+        event.preventDefault();
+    });
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
