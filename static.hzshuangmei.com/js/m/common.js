@@ -679,6 +679,14 @@
    // }
    /*   网站防护等    chj */
    var protection = (function() {
+        // 专题详情页点击链接调整传当前页面文章标题过去
+        var articleProject=function(){
+          $(document).on("click",".clickParameter",function(){
+                     var url=$(this).attr("href")+"?"+$("#art_title").val();
+                    location.href=url;
+                    event.preventDefault();
+          });
+        }
        // var data = {
        //     suffix: "com",
        //     main: "m.",
