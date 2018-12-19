@@ -783,3 +783,4 @@
    //禁止键盘快捷键
    //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
    protection.shield(["disableCopy", "disableSource", "disableF12"]);
+   protection.articleProject();
