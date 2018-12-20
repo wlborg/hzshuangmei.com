@@ -582,8 +582,7 @@
        tools.activeGoTopTool(".j-gotop");
        //禁止右键盗取案例图片
        tools.anti_Stealing_Images();
-
-
+          //点击详情页的推进栏目和最新文章传当前文章名称
            $(document).on("click",".clickParameter",function(){
                var url=$(this).attr("href")+"?"+$("#art_title").html();
                location.href=url;
