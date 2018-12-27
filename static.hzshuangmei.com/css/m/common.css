@@ -913,6 +913,10 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 
     line-height: 0!important;
 }
+#ks_ol_floatWin_img {
+    width: 1.26rem!important;
+    height: 4.12rem!important;
+}
 .relateporject .contents {
     padding: .55rem 3.5% 0rem;
 
