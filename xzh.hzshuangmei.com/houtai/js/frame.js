@@ -177,38 +177,33 @@ window.onload == function() {
     let xmlmenus = window.frames["menu"].document.querySelector("#items3_100").querySelectorAll("li");
     if (url.indexOf("www.hzshuangmei.com") > -1) {
         //www.hzshuangmei.com
-        for (let
-            var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             xmlmenus[i].style = "display:none;"
         }
         xmlmenus[0].style = "display:block;"
     } else if (url.indexOf("m.hzshuangmei.com") > -1) {
         //m.hzshuangmei.com
-        for (let
-            var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             xmlmenus[i].style = "display:none;"
         }
         xmlmenus[1].style = "display:block;"
     } else if (url.indexOf("xzh.hzshuangmei.com") > -1) {
         //xzh.hzshuangmei.com
-        for (let
-            var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             xmlmenus[i].style = "display:none;"
         }
         xmlmenus[2].style = "display:block;"
     } else if (url.indexOf("www.syshuangmei.com") > -1) {
         //www.syshuangmei.com
-        for (let
-            var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             xmlmenus[i].style = "display:none;"
         }
         xmlmenus[3].style = "display:block;"
     } else {
         //m.syshuangmei.com
-        for (let
-            var i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) {
             xmlmenus[i].style = "display:none;"
         }
-        xmlmenus[5].style = "display:block;"
+        xmlmenus[4].style = "display:block;"
     }
 }
