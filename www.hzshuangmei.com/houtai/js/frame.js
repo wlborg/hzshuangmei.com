@@ -4,20 +4,20 @@ var thespeed = 5;
 var navIE = document.all && navigator.userAgent.indexOf("Firefox")==-1;
 var myspeed=0;
 $(function(){
-		
+
 		//快捷菜单
 		bindQuickMenu();
-		
+
 		//左侧菜单开关
 		LeftMenuToggle();
-		
+
 		//全部功能开关
 		AllMenuToggle();
 
 		//取消菜单链接虚线
 		$(".head").find("a").click(function(){$(this).blur()});
 		$(".menu").find("a").click(function(){$(this).blur()});
-		
+
 		/*
 		//载入滚动消息
 		$.get('getdedesysmsg.php',function(data){
@@ -31,19 +31,19 @@ $(function(){
 			}
 		});
 		*/
-		
-		
+
+
 	}).keydown(function(event){//快捷键
 		if(event.keyCode ==116 ){
 			//url = $("#main").attr("src");
 			//main.location.href = url;
-			//return false;	
+			//return false;
 		}
 		if(event.keyCode ==27 ){
 			$("#qucikmenu").slideToggle("fast")
 		}
 });
-	
+
 function bindQuickMenu(){//快捷菜单
 		$("#ac_qucikmenu").bind("mouseenter",function(){
 			$("#qucikmenu").slideDown("fast");
@@ -62,7 +62,7 @@ function bindQuickMenu(){//快捷菜单
 			//$("#ac_qucikmenu").text($(this).text());
 		});
 }
-	
+
 function LeftMenuToggle(){//左侧菜单开关
 		$("#togglemenu").click(function(){
 			if($("body").attr("class")=="showmenu"){
@@ -74,8 +74,8 @@ function LeftMenuToggle(){//左侧菜单开关
 			}
 		});
 	}
-	
-	
+
+
 function AllMenuToggle(){//全部功能开关
 		mask = $(".pagemask,.iframemask,.allmenu");
 		$("#allmenu").click(function(){
@@ -84,10 +84,10 @@ function AllMenuToggle(){//全部功能开关
 		//mask.mousedown(function(){alert("123");});
 		mask.click(function(){mask.hide();});
 }
-	
-function AC(act){	
+
+function AC(act){
 		//alert(act);
-		mlink = $("a[id='"+act+"']");	
+		mlink = $("a[id='"+act+"']");
 		if(mlink.size()>0){
 			box = mlink.parents("div[id^='menu_']");
 			boxid = box.attr("id").substring(5,128);
@@ -153,7 +153,7 @@ function initializeIT()
 				var timerID;
 				timerID=setInterval("scrollUp()",timer);
 				_this.mouseover(function(){
-					clearInterval(timerID);			 
+					clearInterval(timerID);
 				}).mouseout(function(){
 					timerID=setInterval("scrollUp()",timer);
 				});
@@ -163,10 +163,53 @@ function initializeIT()
 */
 
 -->
-	
+
 (function($){
 
 $("a[href='content_s_list.php']").parent().hide();
 
 
 })(jQuery);
+
+//设置XML生成用
+window.onload == function() {
+    let url = window.location.hostname
+    let xmlmenus = window.frames["menu"].document.querySelector("#items3_100").querySelectorAll("li");
+    if (url.indexOf("www.hzshuangmei.com") > -1) {
+        //www.hzshuangmei.com
+        for (let
+            var i = 0; i < 5; i++) {
+            xmlmenus[i].style = "display:none;"
+        }
+        xmlmenus[0].style = "display:block;"
+    } else if (url.indexOf("m.hzshuangmei.com") > -1) {
+        //m.hzshuangmei.com
+        for (let
+            var i = 0; i < 5; i++) {
+            xmlmenus[i].style = "display:none;"
+        }
+        xmlmenus[1].style = "display:block;"
+    } else if (url.indexOf("xzh.hzshuangmei.com") > -1) {
+        //xzh.hzshuangmei.com
+        for (let
+            var i = 0; i < 5; i++) {
+            xmlmenus[i].style = "display:none;"
+        }
+        xmlmenus[2].style = "display:block;"
+    } else if (url.indexOf("www.syshuangmei.com") > -1) {
+        //www.syshuangmei.com
+        for (let
+            var i = 0; i < 5; i++) {
+            xmlmenus[i].style = "display:none;"
+        }
+        xmlmenus[3].style = "display:block;"
+    } else {
+        //m.syshuangmei.com
+        for (let
+            var i = 0; i < 5; i++) {
+            xmlmenus[i].style = "display:none;"
+        }
+        xmlmenus[5].style = "display:block;"
+    }
+}
+
