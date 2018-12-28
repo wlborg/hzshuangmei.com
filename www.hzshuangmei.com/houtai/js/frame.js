@@ -174,7 +174,7 @@ $("a[href='content_s_list.php']").parent().hide();
 //设置XML生成用
 window.onload = function() {
     let url = window.location.hostname
-    let xmlmenus = window.frames["menu"].document.querySelector("#items3_100").querySelectorAll("li");
+    let xmlmenus = window.frames["menu"].document.querySelector("#sunitems3_100").querySelectorAll("li")
     if (url.indexOf("www.hzshuangmei.com") > -1) {
         //www.hzshuangmei.com
         for (let i = 0; i < 5; i++) {
