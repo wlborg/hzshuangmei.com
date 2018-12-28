@@ -172,7 +172,7 @@ $("a[href='content_s_list.php']").parent().hide();
 })(jQuery);
 
 //设置XML生成用
-window.onload == function() {
+window.onload = function() {
     let url = window.location.hostname
     let xmlmenus = window.frames["menu"].document.querySelector("#items3_100").querySelectorAll("li");
     if (url.indexOf("www.hzshuangmei.com") > -1) {
