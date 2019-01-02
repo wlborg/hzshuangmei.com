@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!--可选  如果不想被搜索引擎抓取收录 -->
+    <title>本地IP检测,你懂的！</title>
+    <script type="text/javascript" src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+    window.addEventListener("load", function() {
+        // 获取合法IP
+        var legalIP = returnCitySN.cip;
+        // 后台登陆地址
+        var login = window.location.protocol + "//" + window.location.hostname + "/houtai/login.php"
+        // 3秒后跳转到登录页面，并带合法IP
+        var jump = setTimeout(function() {
+            window.location.href = login + "?ip=" + legalIP
+        }, 3000, legalIP)
+    })
+    clearTimeout(jump)
+    </script>
+</head>
+
+<body>
+    <p>本页面3秒钟之后跳转到登录页</p>
+</body>
+
+</html>
