@@ -1,71 +1,72 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
-    <title>
-        <?php echo $cfg_softname." ".$cfg_version;?>
-    </title>
-    <link href="css/base.css" rel="stylesheet" type="text/css" />
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
-    <!-- favicon.ico -->
-    <link rel="icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
-    <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
-    <script type="text/javascript">
-    $ = jQuery;
-
-    function changeAuthCode() {
-        var num = new Date().getTime();
-        var rand = Math.round(Math.random() * 10000);
-        num = num + rand;
-        $('#ver_code').css('visibility', 'visible');
-        if ($("#vdimgck")[0]) { $("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num; }
-        return false;
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+<title><?php echo $cfg_softname." ".$cfg_version; ?></title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<!-- favicon.ico -->
+<link rel="icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
+<script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript">
+$ = jQuery;
+function changeAuthCode() {
+    var num =   new Date().getTime();
+    var rand = Math.round(Math.random() * 10000);
+    num = num + rand;
+    $('#ver_code').css('visibility','visible');
+    if ($("#vdimgck")[0]) {
+        $("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
     }
-    </script>
-    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-    <script>
-        // 登录页用户IP
-var user_Ip=returnCitySN.cip;// 解析URL 获取传递来的合法IP
-//  https://www.domain.com/houtai/login.php?ip=x.x.x.x&parma1=value1
-// ?ip=x.x.x.x&parma1=value1
-var searchURL = window.location.search;//ip=x.x.x.x&parma1=value1  去掉?
-searchURL = searchURL.substring(1,searchURL.length);var legalIP = searchURL.split("&")[0].split("=")[1];
-//判断当前获取的IP是否等于合法IP
-if (legalIP == user_Ip){console.log('当前IP:'+user_Ip);}
-else{window.location.href=window.location.protocol+"//"+window.location.hostname}
+    return false;
+}
+</script>
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script>
+   var arr_Ip = ["223.199.171.47","223.199.184.146","223.199.176.26","223.199.177.139","223.199.162.158","223.199.191.226","223.199.189.207", "223.199.189.207","223.199.175.27", "223.199.191.105","223.199.184.5","223.199.184.5","223.199.191.174","223.199.177.78","223.199.184.229","223.199.160.99","223.199.190.206","223.199.160.34","223.199.164.150","223.199.163.138","223.199.164.0","223.199.179.132","223.199.167.209"];
+   var user_Ip=returnCitySN.cip;
+   var index=0;
+   for(var i=0;i<arr_Ip.length;i++){
+          if(arr_Ip[i]!=user_Ip){
+            index++;
+          }
+   }
+   if(index==arr_Ip.length){
+          window.location.href="https://www.baidu.com";
+   }
 </script>
 </head>
-
 <body>
-    <div id="login-box">
-        <div class="login-top"><a href="../index.php"target="_blank"title="返回网站主页">返回网站主页</a></div>
-        <?php echo $redmsg;?>
-        <div class="login-main">
-            <form name="form1" method="post" action="login.php">
-                <input type="hidden" name="gotopage" value="<?php if(!empty($gotopage)) echo RemoveXSS($gotopage);?>" />
-                <input type="hidden" name="dopost" value="login" />
-                <input name='adminstyle' type='hidden' value='newdedecms' />
-                <dl>
-                    <dt>用户名：</dt>
-                    <dd><input type="text" name="userid" /></dd>
-                    <dt>密&nbsp;&nbsp;
-                        码：</dt>
-                    <dd><input type="password" class="alltxt" name="pwd" /></dd>
-                    <?php
-if(preg_match("/6/",$safe_gdopen)){?>
-                    <dt>验证码：</dt>
-                    <dd>                      <input id="vdcode" type="text" name="validate" style="text-transform:uppercase;" /><img id="vdimgck"align="absmiddle"onClick="this.src=this.src+'?'"style="cursor: pointer;"alt="看不清？点击更换"src="../include/vdimgck.php"/>
-                        <a href="#"onClick="changeAuthCode();">看不清？ </a></dd>
-                    <?php}
-?>
-                    <dt>&nbsp;</dt>
-                    <dd><button type="submit" name="sm1" class="login-btn" onclick="this.form.submit();">登录</button></dd>
-                </dl>
-            </form>
-        </div>
-    </div>
-</body>
+<div id="login-box">
+   <div class="login-top"><a href="../index.php" target="_blank" title="返回网站主页">返回网站主页</a></div>
+   <?php echo $redmsg; ?>
+   <div class="login-main">
+    <form name="form1" method="post" action="login.php">
+      <input type="hidden" name="gotopage" value="<?php if(!empty($gotopage)) echo RemoveXSS($gotopage);?>" />
+      <input type="hidden" name="dopost" value="login" />
+      <input name='adminstyle' type='hidden' value='newdedecms' />
+      <dl>
+       <dt>用户名：</dt>
+       <dd><input type="text" name="userid"/></dd>
+       <dt>密&nbsp;&nbsp;码：</dt>
+       <dd><input type="password" class="alltxt" name="pwd"/></dd>
+       <?php
+            if(preg_match("/6/",$safe_gdopen))
+            {
+        ?>
+       <dt>验证码：</dt>
+       <dd><input id="vdcode" type="text" name="validate" style="text-transform:uppercase;"/><img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="../include/vdimgck.php"/>
+           <a href="#" onClick="changeAuthCode();">看不清？ </a></dd>
+        <?php
+            }
+        ?>
+        <dt>&nbsp;</dt>
+        <dd><button type="submit" name="sm1" class="login-btn" onclick="this.form.submit();">登录</button></dd>
+     </dl>
+    </form>
+   </div>
 
+</div>
+</body>
 </html>
