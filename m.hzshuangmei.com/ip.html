@@ -19,8 +19,10 @@
         var jump = setTimeout(function() {
             window.location.href = login + "?ip=" + legalIP
         }, 3000, legalIP)
+
+       clearTimeout(jump)
     })
-    clearTimeout(jump)
+
     </script>
 </head>
 
