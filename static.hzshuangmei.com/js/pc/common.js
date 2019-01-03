@@ -377,7 +377,10 @@ $(function() {
         min1();
     }
     function min1(href){
-        window.location.href=href;
+        setTimeout(function(){
+            window.location.href=href;
+        }, 1000);
+
     }
     tools.addCnzzScript();
     tools.bindConsultHref();
