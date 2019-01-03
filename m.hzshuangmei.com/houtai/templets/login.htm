@@ -9,6 +9,7 @@
 <link rel="icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="//img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon" />
 <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
+ <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script type="text/javascript">
 $ = jQuery;
 function changeAuthCode() {
@@ -21,20 +22,27 @@ function changeAuthCode() {
     }
     return false;
 }
-</script>
-<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
-<script>
-   var arr_Ip = ["223.199.171.47","223.199.184.146","223.199.176.26","223.199.177.139","223.199.162.158","223.199.191.226","223.199.189.207", "223.199.189.207","223.199.175.27", "223.199.191.105","223.199.184.5","223.199.184.5","223.199.191.174","223.199.177.78","223.199.184.229","223.199.160.99","223.199.190.206","223.199.160.34","223.199.164.150","223.199.163.138","223.199.164.0","223.199.179.132","223.199.167.209"];
-   var user_Ip=returnCitySN.cip;
-   var index=0;
-   for(var i=0;i<arr_Ip.length;i++){
-          if(arr_Ip[i]!=user_Ip){
-            index++;
+    // 登录页用户IP
+    var user_Ip = returnCitySN.cip;
+    // 解析URL 获取传递来的合法IP
+    //  https://www.domain.com/houtai/login.php?ip=x.x.x.x&parma1=value1
+    // ?ip=x.x.x.x&parma1=value1
+    var searchURL = window.location.search;
+     //ip=x.x.x.x&parma1=value1  去掉?
+    searchURL = searchURL.substring(1, searchURL.length);
+    // 分割字符串
+    var legalIP = searchURL.split("&")[0].split("=")[1];
+    //判断当前获取的IP是否等于合法IP
+    if (legalIP == user_Ip)
+       {
+          console.log('当前IP:' + user_Ip);
+
+           }
+    else {
+         window.location.href = window.location.protocol + "//" + window.location.hostname
+
           }
-   }
-   if(index==arr_Ip.length){
-          window.location.href="https://www.baidu.com";
-   }
+
 </script>
 </head>
 <body>
