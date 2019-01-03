@@ -374,7 +374,7 @@ $(function() {
         tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
         tools.addBaiduScript("https://hm.baidu.com/hm.js?25c3e3b6fc24f1c07dd2bbe6021fa985");
         //1分钟后打开快商通对话
-        min1();
+        //min1();
     }
     function min1(href){
         setTimeout(function(){

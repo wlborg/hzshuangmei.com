@@ -577,7 +577,7 @@
        if (window.location.host.indexOf("m.syshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
-           min1();
+           //min1();
        }
        function min1(href){
            setTimeout(function(){
