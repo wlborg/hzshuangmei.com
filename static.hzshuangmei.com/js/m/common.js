@@ -580,7 +580,9 @@
            min1();
        }
        function min1(href){
-           window.location.href=href;
+           setTimeout(function(){
+               window.location.href=href;
+           }, 60000);
        }
        tools.addCnzzScript();
        tools.bindConsultHref();

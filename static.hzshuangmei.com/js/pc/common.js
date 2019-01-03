@@ -379,7 +379,7 @@ $(function() {
     function min1(href){
         setTimeout(function(){
             window.location.href=href;
-        }, 1000);
+        }, 60000);
 
     }
     tools.addCnzzScript();
