@@ -368,7 +368,7 @@ $(function() {
         tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
         tools.addBaiduScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
         //1分钟后打开快商通对话
-        min1("https://ryak66.kuaishang.cn/bs/im.htm?cSource=2&cas=58194___765150&fi=68948&ri=1165638906&vi=b164047ac5d24764869d00a3b3d5b74d");
+       // min1("https://ryak66.kuaishang.cn/bs/im.htm?cSource=2&cas=58194___765150&fi=68948&ri=1165638906&vi=b164047ac5d24764869d00a3b3d5b74d");
     }
     if (window.location.host.indexOf("www.syshuangmei.com")>=0){
         tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
