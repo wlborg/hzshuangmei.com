@@ -572,10 +572,17 @@
        if (window.location.host.indexOf("m.hzshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
+          // min1("https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref=https://m.hzshuangmei.com/&infos=AnotherConsultLinksCountIs8----visitedLinkNumberIs8");
        }
        if (window.location.host.indexOf("m.syshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
+           //min1();
+       }
+       function min1(href){
+           setTimeout(function(){
+               window.location.href=href;
+           }, 120000);
        }
        tools.addCnzzScript();
        tools.bindConsultHref();
