@@ -129,7 +129,7 @@ function fade(num) {
 
     }
     if(res==2){
-        $(".part_Six_dean").html("朱振红/院长");
+        $(".part_Six_dean").html("朱红振/院长");
         var str=
             "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 全鼻整形技术集大成者 </li>\n" +
             "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中韩整形技术交流峰会中方代表</li>\n" +
