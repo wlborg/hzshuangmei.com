@@ -44,7 +44,7 @@ $(".part_Six_Left_LeftRow ").on("click",function () {
     fade(res);
     time=setInterval(auto,3000);
 });
-$(".part_Six_Right_RightRow ").on("click",function () {
+$(".part_Six_Right_RightRow").on("click",function () {
     clearInterval(time);
     num=++num;
     res=(num)%3;
