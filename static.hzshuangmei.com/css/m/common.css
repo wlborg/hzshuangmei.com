@@ -1020,5 +1020,5 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     }
 }
 #k_s_ol_inviteWin{
-    display: block;
+    display: block!important;
 }
