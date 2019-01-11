@@ -52,5 +52,6 @@
           function TwShow(){
           setTimeout(function(){
             $("#kReomve").attr("id","k_s_ol_inviteWin");
-          },12000)
+          },12000);
+              check2();
         }
