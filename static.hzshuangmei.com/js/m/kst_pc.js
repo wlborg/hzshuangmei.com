@@ -5,6 +5,7 @@
         function check() {
             var dom = document.getElementById('div23')
             if(dom) {
+                
                    $("#_ks_ol_inviteWin").css("margin-left","-6.5rem");
                    $("#_ks_ol_inviteWin").css("margin-top","-6.21rem");
                   // 点击稍后咨询按钮隐藏，12秒后出现
@@ -51,7 +52,7 @@
         check2();
           function TwShow(){
           setTimeout(function(){
-            $("#kReomve").attr("id","k_s_ol_inviteWin");
+            $("#kReomve").attr("id","_ks_ol_inviteWin");
           },12000);
               check2();
         }
