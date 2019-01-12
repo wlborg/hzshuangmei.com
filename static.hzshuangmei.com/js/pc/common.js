@@ -521,7 +521,7 @@ $(document).ready( function(){
         effect      : 'slide',
         easing      : 'easeInOutExpo',
         duration    : 600,
-        openAnchor  : '<img src="{dede:global.cfg_imgpath/}/pc/down-arr-16x16.png" border=0 />',
-        closeAnchor : '<img src="{dede:global.cfg_imgpath/}/close-16x16.png" border=0 />'
+        openAnchor  : '<img src="//img.hzshuangmei.com/pc/down-arr-16x16.png" border=0 />',
+        closeAnchor : '<img src="//img.hzshuangmei.com/pc/close-16x16.png" border=0 />'
     });
 });
