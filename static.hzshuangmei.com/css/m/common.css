@@ -896,12 +896,10 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 1.13rem !important;
 }
 #div1 {
-    top: 10.86rem !important;
+    top: 10rem !important;
     left: 1.4rem !important;
-
     width: 4.13rem !important;
-    height: .99rem !important;
-
+    height: 1.2rem !important;
     line-height: 0 !important;
 }
 #div23 {
@@ -1018,4 +1016,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 
         opacity: 1;
     }
+}
+#k_s_ol_inviteWin{
+    display: block!important;
 }
