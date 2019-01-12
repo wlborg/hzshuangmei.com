@@ -1084,7 +1084,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
 #howdydo-wrapper {
     Z-INDEX: 1000;
-    POSITION: fixed;
+    POSITION: relative;
     PADDING-BOTTOM: 0px;
     PADDING-LEFT: 0px;
     WIDTH: 100%;
