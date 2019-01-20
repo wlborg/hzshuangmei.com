@@ -641,7 +641,7 @@ nav > ul > li ul .n_button a {
     line-height: 24px;
 }
 .index_items .shuang_m1 > div ul a {
-     color: #3c5e75;
+    color: #3c5e75;
 }
 .index_items .shuang_m1 > div:first-child ul {
     margin-top: 42px;
@@ -664,7 +664,7 @@ nav > ul > li ul .n_button a {
     width: 26px;
     height: 2px;
 
-    background-color: #8a5ea8;
+    background-color: #64b1e6;
 }
 /*footer*/
 footer {
@@ -959,4 +959,73 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     transition: opacity 500ms;
 
     opacity: 1;
+}
+/* 顶部轮播图双十一按钮样式 */
+.Double_Eleven_Button {
+    position: absolute;
+    bottom: 14.5%;
+    left: 50%;
+
+    display: block;
+    width: 10%!important;
+    height: 7%;
+}
+.Double_Eleven_Button_anima {
+    -webkit-animation: scaleAC 1.5s linear .3s infinite;
+       -moz-animation: scaleAC 1.5s linear .3s infinite;
+        -ms-animation: scaleAC 1.5s linear .3s infinite;
+         -o-animation: scaleAC 1.5s linear .3s infinite;
+            animation: scaleAC 1.5s linear .3s infinite;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
 }

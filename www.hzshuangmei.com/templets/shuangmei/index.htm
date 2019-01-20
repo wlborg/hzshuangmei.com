@@ -142,7 +142,7 @@
                         <a href="/projects/ha/hzrlbns.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_17.jpg"   alt="瑞蓝玻尿酸"/></a>
                         <a href="/projects/ha/ymbns.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_18.jpg"   alt="逸美玻尿酸"/></a>
                         <a href="/projects/ha/ifresh.html" target="_blank" rel="noopener"><img src="{dede:global.cfg_imgpath/}/pc/p1_19.jpg" alt="爱芙莱玻尿酸"/></a>
-                        <a href="/projects/botox/shoulianzhen2.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_20.jpg"   alt="瘦脸针"/></a>
+                        <a href="/projects/botox/shoulianzhen.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_20.jpg"   alt="瘦脸针"/></a>
                         <a class="j-site-consult" href="javascript:void(0)" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_21.jpg"   alt="BOTOX"/></a>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                                        </a>
                                    </div>
                                    {/dede:arclist} -->
-                        {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
+                        {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.arcrank=0 and a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                                 <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>

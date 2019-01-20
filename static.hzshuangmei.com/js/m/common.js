@@ -407,20 +407,18 @@
                var s = document.getElementsByTagName("script")[0];
                s.parentNode.insertBefore(bp, s);
            }
+
             //添加快商通
-           module.addKSTScript = function() {
-               //to be changed
-               addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948&ism=1&ref=''");
-           }
-            //添加百度统计代码
-           module.addBaiduScript = function() {
-               addScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
-           }
-
-             module.addCnzzScript = function() {
-               addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
-           }
-
+                module.addKSTScript = function(value) {
+                    addScript(value);
+                };
+                   module.addCnzzScript = function() {
+                       addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
+                   }
+                 //添加百度统计代码
+                 module.addBaiduScript = function(value) {
+                     addScript(value);
+                 };
            module.bindConsultHref = function() {
                //专题快商通
                var consultEs = $('.j-consult');
@@ -571,13 +569,33 @@
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
        tools.addBaiduTuiSong();
-       tools.addKSTScript();
-       tools.addBaiduScript();
+       if (window.location.host.indexOf("m.hzshuangmei.com")>=0){
+           tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+           tools.addBaiduScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
+          // min1("https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref=https://m.hzshuangmei.com/&infos=AnotherConsultLinksCountIs8----visitedLinkNumberIs8");
+       }
+       if (window.location.host.indexOf("m.syshuangmei.com")>=0){
+           tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009&ism=1");
+           tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
+           //min1();
+       }
+       function min1(href){
+           setTimeout(function(){
+               window.location.href=href;
+           }, 120000);
+       }
        tools.addCnzzScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
        //禁止右键盗取案例图片
        tools.anti_Stealing_Images();
+          //点击详情页的推进栏目和最新文章传当前文章名称
+           $(document).on("click",".clickParameter",function(){
+               var url=$(this).attr("href")+"?"+$("#art_title").html();
+               location.href=url;
+               event.preventDefault();
+           });
+
    });
    //Baidu自动推送
    (function() {
@@ -675,6 +693,8 @@
    // }
    /*   网站防护等    chj */
    var protection = (function() {
+        // 专题详情页点击链接调整传当前页面文章标题过去
+
        // var data = {
        //     suffix: "com",
        //     main: "m.",
@@ -692,7 +712,7 @@
        }
        // 复制文件到本地，打开白屏
        var authentication = function() {
-           if (window.location.host.indexOf(d) < 0) {
+           if (window.location.host.indexOf("m.hzshuangmei.com") < 0 && window.location.host.indexOf("m.syshuangmei.com") < 0) {
                $("body").remove();
                //document.querySelector('html').removeChild('body');
                return false

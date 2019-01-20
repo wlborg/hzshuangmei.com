@@ -8,7 +8,7 @@ var wow = new WOW({
 });
 wow.init();
 
-var content=['<p>减龄<br/>除皱</p>','<p>填充<br/>凹陷</p>','<p>微雕<br/>塑型</p>','<p>补水<br/>保湿</p>'];
+var content=['<p>减龄<br/>除皱</p>','<p>填充<br/>凹陷</p>','<p>面雕<br/>塑型</p>','<p>补水<br/>保湿</p>'];
 var swiper = new Swiper('.swiper-container', {
     loop:true,
     pagination: '.swiper-pagination',
@@ -44,7 +44,7 @@ $(".part_Six_Left_LeftRow ").on("click",function () {
     fade(res);
     time=setInterval(auto,3000);
 });
-$(".part_Six_Right_RightRow ").on("click",function () {
+$(".part_Six_Right_RightRow").on("click",function () {
     clearInterval(time);
     num=++num;
     res=(num)%3;
@@ -129,7 +129,7 @@ function fade(num) {
 
     }
     if(res==2){
-        $(".part_Six_dean").html("朱振红/院长");
+        $(".part_Six_dean").html("朱红振/院长");
         var str=
             "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span> 全鼻整形技术集大成者 </li>\n" +
             "                <li class=\"c_relative\"><span class=\"c_part_absolute\">&nbsp;</span>中韩整形技术交流峰会中方代表</li>\n" +

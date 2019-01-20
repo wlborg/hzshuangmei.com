@@ -2,8 +2,8 @@
  * @Author: chj
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
- * @Last Modified by:   chj
- * @Last Modified time: 2018-08-07 15:32:17
+ * @Last Modified by:   chaihongjun.me
+ * @Last Modified time: 2018-10-23 14:43:39
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -51,7 +51,7 @@ function popup() {
             window.open("https://ryak66.kuaishang.cn/bs/mim/68948/58194/765150.htm?ref=m_popup&" + target);
             layer.close(index);
         },
-        content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>',
+       content: '<img onerror="imgNotFound();" src="//img.hzshuangmei.com/pc/kst/' + filename + '.png' + '"' + '/>',
         end: function() {
             if (flag == 1) {
                 // 永远关闭弹窗

@@ -564,13 +564,16 @@ nav > ul > li ul .n_button a {
 .banner a {
     display: block;
 }
-.banner img {
+.banner > img {
     vertical-align: bottom;
 }
 .swiper-slide img {
     width: 100%;
 }
-/*banner*/
+.banner .banner_swiper .swiper-slide img{
+    display: block;
+}
+    /*banner*/
 .banner .banner-pagination .swiper-pagination-bullet {
     display: inline-block;
     width: 16px;
@@ -960,3 +963,178 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
     opacity: 1;
 }
+/* 顶部轮播图双十一按钮样式 */
+.Double_Eleven_Button {
+    position: absolute;
+    bottom: 14.5%;
+    left: 50%;
+
+    display: block;
+    width: 10%!important;
+    height: 7%;
+}
+.Double_Eleven_Button_anima {
+    -webkit-animation: scaleAC 1.5s linear .3s infinite;
+       -moz-animation: scaleAC 1.5s linear .3s infinite;
+        -ms-animation: scaleAC 1.5s linear .3s infinite;
+         -o-animation: scaleAC 1.5s linear .3s infinite;
+            animation: scaleAC 1.5s linear .3s infinite;
+}
+@-webkit-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-moz-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@-o-keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+@keyframes scaleAC {
+    0%,
+    100% {
+        transform: scale(.9);
+
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+}
+/* 快商通默认显示 */
+#k_s_ol_inviteWin {
+    display: block!important;
+    margin-top: -192.5px !important;
+    margin-left: -300px !important;
+}
+
+
+/*公告样式*/
+
+#howdy {
+    COLOR: #f8e7db;
+    FONT-SIZE: 17px
+}
+
+#howdy SPAN#heading {
+    COLOR: #fff;
+    FONT-SIZE: 18px;
+    FONT-WEIGHT: bold
+}
+
+#howdy SMALL {
+    COLOR: #f8e7db;
+    FONT-SIZE: 12px
+}
+
+#howdy A {
+    COLOR: #fff
+}
+
+#howdy A:link {
+    COLOR: #fff
+}
+
+#howdy A:visited {
+    COLOR: #fff
+}
+
+#howdy A:hover {
+}
+
+#howdy A:unknown {
+}
+
+.howdydo-style {
+    BORDER-BOTTOM: #999 0px solid;
+    TEXT-ALIGN: center;
+    BACKGROUND-COLOR: #ea3333;
+}
+
+#howdydo-wrapper {
+    Z-INDEX: 1000;
+    POSITION: relative;
+    PADDING-BOTTOM: 0px;
+    PADDING-LEFT: 0px;
+    WIDTH: 100%;
+    PADDING-RIGHT: 0px;
+    OVERFLOW: visible;
+    PADDING-TOP: 0px
+}
+
+.howdydo-box {
+    Z-INDEX: 9999;
+    PADDING-BOTTOM: 15px;
+    PADDING-LEFT: 0px;
+    WIDTH: 100%;
+    PADDING-RIGHT: 0px;
+    DISPLAY: none;
+    PADDING-TOP: 10px
+}
+
+#howdydo-close {
+    POSITION: absolute;
+    BOTTOM: 10px;
+    RIGHT: 30px
+}
+
+#howdydo-open {
+    POSITION: absolute;
+    PADDING-BOTTOM: 10px;
+    PADDING-LEFT: 10px;
+    PADDING-RIGHT: 10px;
+    TOP: 0px;
+    RIGHT: 20px;
+    PADDING-TOP: 10px
+}
+
+.howdydo-hover {
+    POSITION: absolute;
+    TOP: 0px;
+    LEFT: 0px
+}
+
+.howdydo-scroll {
+    POSITION: fixed;
+    TOP: 0px;
+    LEFT: 0px
+}
+
+.howdydo-push {
+    POSITION: relative;
+    MARGIN-BOTTOM: 1px;
+    FLOAT: left;
+    CLEAR: both
+}
+

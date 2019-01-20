@@ -361,7 +361,7 @@ hr {
     z-index: -1;
 
     width: 90%;
-    padding: 1.95rem 0 2.7rem;    /* background-color: #f0ecf3; */
+    padding: 1.95rem 0 2.7rem;
     margin: 0 auto;
 
     transition: transform .3s linear;
@@ -369,7 +369,7 @@ hr {
     transform-origin: right bottom;
 
     border-radius: 2rem;
-    background-color: rgba(240, 236, 243, .76);
+    background-color: rgba(100,177,230,.3);
 }
 .nav-more.show {
     z-index: 1;
@@ -387,7 +387,7 @@ hr {
     justify-content: space-between;
 }
 .nav-more .nav-info {
-    color: #63576f;
+    color: #3c5e75!important;
 }
 .nav-more .close {
     position: absolute;
@@ -397,7 +397,7 @@ hr {
     width: 1.1rem;
     height: 1.1rem;
 
-    background: url("https://img.hzshuangmei.com/m/btn_close.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/btn_close.png") center center no-repeat;
     background-size: 100%;
 }
 .nav-more .close:hover {
@@ -429,9 +429,8 @@ hr {
     line-height: 1rem;
 
     text-align: center;
-    /* color: #695e73; */
 
-    color: #333;
+    color: #3c5e75;
 }
 .row1 .nav-item:nth-child(1) .nav-icon {
     background-color: #eb675b;
@@ -489,7 +488,7 @@ hr {
 #project {
     padding-bottom: .95rem;
 
-    border-bottom: solid .175rem #ececf6;
+    border-bottom: solid .175rem #eaf4fb;
 }
 .project-wrap {
     position: relative;
@@ -549,7 +548,7 @@ hr {
     font-size: 1em;
 
     border-right: dotted .05rem #cfcdcd;
-    background: url("https://img.hzshuangmei.com/m/bg_txt_xinwen.jpg") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/bg_txt_xinwen.png") left center no-repeat;
     background-size: 2.625rem auto;
 }
 #news h3 {
@@ -566,8 +565,7 @@ hr {
     color: #32306a;
 }
 #news h3 a {
-    color: #054d7f;
-    /* color: #32306a; */
+    color: #3c5e75;
 }
 #news p {
     padding-right: 1.125rem;
@@ -599,10 +597,8 @@ hr {
     text-align: center;
     text-transform: uppercase;
 
-    color: #054d7f;
-    border: solid 1px #054d7f;
-    /*  color: #8276ab;
-    border: solid 1px #a69ec4; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
 }
 #video {
     position: relative;
@@ -628,7 +624,7 @@ hr {
     font-size: .65rem;
     line-height: .65rem;
 
-    color: #9464b4;    /* width: 105rem/@fb; */
+    color: #64b1e6;    /* width: 105rem/@fb; */
     border-right: dotted .05rem #cfcdcd;    /* padding-right: 18rem/@fb; */
 }
 #video .icon-show {
@@ -638,7 +634,7 @@ hr {
 
     vertical-align: middle;
 
-    background: url("https://img.hzshuangmei.com/m/icon_show.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_show.png") center center no-repeat;
     background-size: 100%;
 }
 #video h3 {
@@ -652,8 +648,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    color: rgb(100, 177, 230);
-    /* color: #32306a; */
+    color: #3c5e75;
 }
 #video h3 a {
     color: #054d7f;
@@ -672,7 +667,6 @@ hr {
     font-weight: normal;
 
     color: #64b1e6;
-    /* color: #704096; */
 }
 #doctor .heading .more {
     position: relative;
@@ -687,10 +681,8 @@ hr {
 
     text-transform: uppercase;
 
-    color: #64b1e6;
-    border: solid 1px #64b1e6;
-    /*   color: #8276ab;
-    border: solid 1px #a69ec4; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
     background: #f6f6fd;
 }
 #doctor .heading .line {
@@ -703,7 +695,7 @@ hr {
     height: 1px;
     margin: auto;
 
-    background: rgb(100, 177, 230);
+    background: #a5cde7;
 }
 #doctor .content {
     display: -webkit-box;    /*old ios 6-,safari 3.1-6*/
@@ -827,7 +819,7 @@ hr {
 #diary .item {
     padding: 0 5%;
 
-    border-top: solid .125rem #f6f4f7;
+    border-top: solid .125rem #eaf4fb;
 }
 #diary .item:first-child {
     border: none;
@@ -859,7 +851,7 @@ hr {
     color: #99c;
 }
 #diary .name a {
-    color: #8dbdde ;
+    color: #64b1e6 ;
 }
 #diary .des {
     margin-top: .3rem;
@@ -934,13 +926,13 @@ hr {
     line-height: .8rem;
 
     color: #99c;
-    background: url("https://img.hzshuangmei.com/m/icon_flag.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_flag.png") left center no-repeat;
     background-size: auto 100%;
 }
 #diary .pro a {
     display: inline-block;
 
-    color: #8dbdde ;
+    color: #a5cde7 ;
 }
 #diary .right {
     float: right;
@@ -952,7 +944,7 @@ hr {
     width: .875rem;
     height: .425rem;
 
-    background: url("https://img.hzshuangmei.com/m/icon_show2.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_show2.png") center center no-repeat;
     background-size: auto 100%;
 }
 #diary .click {
@@ -962,7 +954,7 @@ hr {
     font-size: .45rem;
 
     color: #64b1e6;
-    background: url("https://img.hzshuangmei.com/m/icon_eye.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_eye.png") left center no-repeat;
     background-size: auto 1em;
 }
 #picinfo {
@@ -1057,10 +1049,12 @@ hr {
 
     text-align: center;
 
-    color: #6e9ab8;
+    color: #3c5e75;
 }
 .copyright p span {
     font-size: .45rem;
+
+    /* color: #3c5e75; */
 }
 .copyright p a {
     font-size: .35rem;
@@ -1068,8 +1062,7 @@ hr {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #77718f; */
+    color: #3c5e75;
 }
 
 /*********************** project_list ***********************/
@@ -1077,7 +1070,7 @@ hr {
     display: inline-block;
     overflow: hidden;
 
-    background-image: url("https://img.hzshuangmei.com/m/items.png");
+    background-image: url("https://img.hzshuangmei.com/m/sy/items.png");
     background-repeat: no-repeat;
     background-size: 2.4rem 9.55rem;
 }
@@ -1240,7 +1233,6 @@ hr {
 .project-nav .nav-item:hover,
 .project-nav .nav-item.active {
     background: #64b1e6;
-    /* background: #591983; */
 }
 .project-nav .nav-item:hover .nav-info,
 .project-nav .nav-item.active .nav-info {
@@ -1359,8 +1351,7 @@ hr {
     font-size: .45rem;
     line-height: .75rem;
 
-    color: #64b1e6;
-    /* color: #6e3693; */
+    color: #3c5e75;
 }
 .pro-subtitle {
     height: .4rem;
@@ -1379,8 +1370,7 @@ hr {
     height: .1rem;
     margin-top: .35rem;
 
-    background: #64b1e6;
-    /* background: #6e3693; */
+    background: #a5cde7;
 }
 .pro-dianji {
     position: absolute;
@@ -1412,10 +1402,8 @@ hr {
 
     text-align: center;
 
-    color: #64b1e6;
-    /* color: #918bbc; */
-    border: solid 1px #64b1e6;
-    /* border: solid 1px #ada5d5; */
+    color: #a5cde7;
+    border: solid 1px #a5cde7;
 }
 .pro-more:hover {
     cursor: pointer;
@@ -1426,7 +1414,7 @@ hr {
     height: .375rem;
     margin: 0 auto;
 
-    background: url("https://img.hzshuangmei.com/m/icon_more_down.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_more_down.png") center center no-repeat;
     background-size: 100%;
 }
 
@@ -1656,7 +1644,7 @@ hr {
 }
 .zhuanjia-nav .nav-item:hover,
 .zhuanjia-nav .nav-item.active {
-    background: #6d3694;
+    background: #64b1e6;
 }
 .zhuanjia-nav .nav-item:hover .nav-link,
 .zhuanjia-nav .nav-item.active .nav-link {
@@ -1738,7 +1726,7 @@ hr {
 .zhuanjia-info a {
     display: inline-block;
 
-    color: #aaa;
+    color: rgba(255,255,255,.85);
 }
 .zhuanjia-info .zhuanjia-more {
     display: block;
@@ -1752,8 +1740,7 @@ hr {
     text-align: center;
 
     color: #fff;
-    background: #64b1e6;
-    /* background: #a786bf; */
+    background: #a5cde7;
 }
 
 /*************************** article_list ***************************/
@@ -1772,8 +1759,7 @@ hr {
     line-height: .55rem;
 
     color: #64b1e6;
-    /* color: #774db5; */
-    border-bottom: solid .05rem #a87ebd;
+    border-bottom: solid .05rem #a5cde7;
 }
 .article-list .heading img {
     display: block;
@@ -1815,7 +1801,7 @@ hr {
     text-overflow: ellipsis;
 
     color: #fff;
-    background: rgba(70, 39, 78, .4);
+    background: rgba(255, 255, 255, .3);
 }
 .article-list .recommend .item .info a {
     color: #fff;
@@ -1871,7 +1857,7 @@ hr {
     color: #333;
 }
 .article-list .item-title a {
-    color: #333;
+    color: rgba(0,0,0,.8);
 }
 .article-list .item-des {
     margin-top: .1rem;
@@ -1882,7 +1868,7 @@ hr {
     color: #b2b2b2;
 }
 .article-list .item-des a {
-    color: #b2b2b2;
+    color: rgba(0,0,0,.3);
 }
 .article-list .item-more {
     display: block;
@@ -1987,7 +1973,7 @@ hr {
 .pagination ul > .active > a,
 .pagination ul > .active > span {
     color: #fff;
-    background-color: #8a59a8;
+    background-color: #64b1e6;
 }
 .pagination ul > .active > a,
 .pagination ul > .active > span {
@@ -2007,7 +1993,7 @@ hr {
 .pagination ul > li.thisclass > a,
 .pagination ul > li > a:hover {
     color: #fff;
-    background-color: #8a59a8;
+    background-color: #64b1e6;
 }
 .ias_trigger {
     margin: 20px 0;
@@ -2077,7 +2063,7 @@ hr {
 }
 .case-nav .nav-item:hover,
 .case-nav .nav-item.active {
-    background-color: #9065b7;
+    background-color: #64b1e6;
 }
 .case-nav .nav-item:hover .nav-link,
 .case-nav .nav-item.active .nav-link {
@@ -2100,7 +2086,7 @@ hr {
     font-size: .45rem;
     line-height: 1.4rem;
 
-    color: #e66cea;
+    color: #a5cde7!important;
 }
 .case-nav .more .nav-link span {
     display: inline-block;
@@ -2134,7 +2120,7 @@ hr {
     width: 60%;
     margin: .35rem auto 0;
 
-    border-bottom: solid .05rem #e7e6e6;
+    border-bottom: solid .05rem rgba(217, 216, 216, .8);
 }
 .article .heading .line span {
     display: block;
@@ -2142,8 +2128,7 @@ hr {
     height: .075rem;
     margin: 0 auto;
 
-    background: #64b1e6;
-    /* background: #9479ba; */
+    background: #rgba(165, 205, 231, .8);
 }
 .article .heading .info {
     margin-top: .15rem;
@@ -2151,7 +2136,7 @@ hr {
     font-size: .35rem;
     line-height: .85rem;
 
-    color: #b998ca;
+    color: #a5cde7;
 }
 .article .heading .info span {
     display: inline-block;
@@ -2171,7 +2156,7 @@ hr {
 
     vertical-align: middle;
 
-    background: url("https://img.hzshuangmei.com/m/icon_qq.jpg") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/sy/icon_qq.png") center center no-repeat;
     background-size: 1.75rem .5rem;
 }
 .article .article-main {
@@ -2270,7 +2255,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    border: solid 1px #e0d3ed;
+    border: solid 1px #afafaf;
 }
 .relate-link .next {
     float: right;
@@ -2281,7 +2266,7 @@ hr {
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    border: solid 1px #e0d3ed;
+    border: solid 1px #afafaf;
 }
 
 /********************* case_article *********************/
@@ -2453,7 +2438,7 @@ hr {
     height: .5rem;
     padding-right: .5rem;
 
-    background: url("https://img.hzshuangmei.com/m/icon_t_left.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/icon_t_left2.png") center center no-repeat;
 }
 .relatemodule .heading .righticon {
     display: inline-block;
@@ -2461,7 +2446,7 @@ hr {
     height: .5rem;
     padding-left: .5rem;
 
-    background: url("https://img.hzshuangmei.com/m/icon_t_right.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/icon_t_right2.png") center center no-repeat;
 }
 .relatemodule .heading .lefticon2 {
     display: inline-block;
@@ -2495,12 +2480,12 @@ hr {
 
     border: none;
     border: solid 1px transparent;
-    background-color: #fff;
+    background-color: #a5cde7;
     background-clip: content-box;
 }
 .relatemodule .carousel-indicators li.active {
-    border: solid 1px #ff96f9;
-    background-color: #ff96f9;
+    border: solid 1px #fff;
+    background-color: #fff;
     background-clip: content-box;
 }
 .relatemodule .heading .line {
@@ -2510,7 +2495,7 @@ hr {
     width: 69%;
     margin: .2rem auto 0;
 
-    border-bottom: solid 1px #9b7ab5;
+    border-bottom: solid 1px #74bcee;
 }
 .relatemodule .heading .line span {
     position: absolute;
@@ -2528,7 +2513,7 @@ hr {
     background: #d8d0df;
 }
 .relateporject .heading .line {
-    border-bottom: solid 1px #7e52a2;
+    border-bottom: 1px solid rgba(216,208,233,.3);
 }
 .relateporject .contents {
     padding: .55rem 3.5% 1.65rem;
@@ -2542,7 +2527,7 @@ hr {
 
     font-size: 0;
 
-    background: #865ba9;
+    background: rgba(255,255,255,.2)!important;
 }
 .relateporject .contents .imgbox a {
     display: inline;
@@ -2556,10 +2541,10 @@ hr {
 .articlerelatedoctor {
     height: 13.15rem;
 
-    background: #76449e;
+    background: #64b1e6;
 }
 .articlerelatedoctor .heading .line {
-    border-bottom: solid 1px #8a60ab;
+    border-bottom: solid 1px #d8d0df;
 }
 .articlerelatedoctor .contents {
     padding: .55rem 2% 1.9rem;
@@ -2567,15 +2552,15 @@ hr {
 .articlerelatedoctor .zhuanjia-item {
     overflow: hidden;
 
-    border: solid 1px #906aaf;
+    border-color: rgba(227,227,227,.3);
 }
 .articlerelatedoctor .zhuanjia-thum {
-    border: solid 3px #76449e;
+    border: solid 3px #64b1e6;
 }
 .articlerelatedoctor .zhuanjia-title {
     font-size: .8rem;
 
-    border-bottom: solid 1px #5e367e;
+    border-bottom: solid 1px rgba(0, 0, 0, .2);
     background: url(//img.hzshuangmei.com/m/icon_people2.png) left center no-repeat;
     background-size: .75rem .7rem;
 }
@@ -2601,10 +2586,10 @@ hr {
 .articlerelatedoctor .zhuanjia-info .zhuanjia-more {
     margin-top: 1rem;
 
-    background: #c058d8;
+    background: rgba(60, 94, 117, .6);
 }
 .articlerelatecase {
-    background: #8c64ab;
+    background: #74bcee;
 }
 
 /* .articlerelatecase{height: 15rem;} */
@@ -2626,7 +2611,7 @@ hr {
     margin-top: 0;
 }
 .articlerelatecase #diary .label span {
-    color: #704096;
+    color: #64b1e6;
 }
 .articlerelatecase #diary .right {
     margin-right: .15rem;
@@ -2634,37 +2619,37 @@ hr {
 .articlerelatecase  #diary .pro {
     margin-left: 4px;
 
-    background: url(//img.hzshuangmei.com/m/icon_flag2.png) left center no-repeat;
+    background: url(//img.hzshuangmei.com/m/sy/icon_flag2.png) left center no-repeat;
     background-size: auto 100%;
 }
 .articlerelatecase  #diary .pro a {
-    color: #704096;
+    color: #a5cde7;
 }
 .articlerelatecase  #diary .click {
     padding-left: .9rem;
     margin-left: .15rem;
 
-    background: url(//img.hzshuangmei.com/m/icon_eye2.png) left center no-repeat;
+    background: url(//img.hzshuangmei.com/m/sy/icon_eye2.png) left center no-repeat;
     background-size: auto 1em;
 }
 .articlerelatecase .label {
-    background: #ddd1e6;
+    background: #fff;
 }
 .relateporject {
-    background: #683293;
+    background: #4da2dd;
 }
 /* 三亚双美 */
 .sy_relateporject {
-    background: rgb(118, 68, 158)!important;
+    background: #74bcee!important;
 }
 .sy_articlerelatecase {
-    background: rgb(104, 50, 147)!important;
+    background: #74bcee!important;
 }
 .sy_article_relateporject {
-    background: rgb(140, 100, 171)!important;
+    background: #4da2dd!important;
 }
 .sy_articlerelatedoctor {
-    background: #683293!important;
+    background: #64b1e6!important;
 }
 /********************* case_article  modal*********************/
 .wrapper {

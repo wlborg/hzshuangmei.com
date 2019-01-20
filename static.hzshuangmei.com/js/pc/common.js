@@ -8,6 +8,19 @@ $(function($) {
         }
         // console.log($("#nav").offset().top);
     });
+   // 顶部轮播图双十一按钮鼠标经过处理
+      $(".Double_Eleven_Button").bind(
+            {mouseenter:function(){
+          $(this).removeClass("Double_Eleven_Button_anima");
+          },mouseleave :function(){
+          $(this).addClass("Double_Eleven_Button_anima");
+         }});
+    //点击推荐栏目传当前文章标题过去
+    $(document).on("click",".clickParameter",function(){
+        var url=$(this).attr("href")+"?"+$("#art_title").html();
+        location.href=url;
+        event.preventDefault();
+    });
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
@@ -80,13 +93,17 @@ var tools = (
                 document.documentElement.appendChild(scriptE);
             }
         }
-        //添加快商通
-        module.addKSTScript = function() {
-            addScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
-        };
+
+
+              //添加快商通
+                module.addKSTScript = function(value) {
+                    addScript(value);
+                };
+
+
         //添加百度统计代码
-        module.addBaiduScript = function() {
-            addScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
+        module.addBaiduScript = function(value) {
+            addScript(value);
         };
               module.addCnzzScript = function() {
             addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
@@ -347,8 +364,24 @@ $(function() {
     effects.goToJump("doctor_nav", "doctor_nav");
     //项目，专家，日记，新闻列表页翻页锚定位
     effects.goToPagination();
-    tools.addKSTScript();
-    tools.addBaiduScript();
+    if (window.location.host.indexOf("www.hzshuangmei.com")>=0){
+        tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
+        tools.addBaiduScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
+        //1分钟后打开快商通对话
+       // min1("https://ryak66.kuaishang.cn/bs/im.htm?cSource=2&cas=58194___765150&fi=68948&ri=1165638906&vi=b164047ac5d24764869d00a3b3d5b74d");
+    }
+    if (window.location.host.indexOf("www.syshuangmei.com")>=0){
+        tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
+        tools.addBaiduScript("https://hm.baidu.com/hm.js?25c3e3b6fc24f1c07dd2bbe6021fa985");
+        //1分钟后打开快商通对话
+        //min1();
+    }
+    function min1(href){
+        setTimeout(function(){
+            window.location.href=href;
+        }, 120000);
+
+    }
     tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
@@ -399,7 +432,7 @@ var protection = (function() {
     }
     // 复制文件到本地，打开白屏
     var authentication = function() {
-        if (window.location.host.indexOf(d) < 0) {
+        if (window.location.host.indexOf("www.hzshuangmei.com") < 0 || window.location.host.indexOf("www.syshuangmei.com") < 0){
             $("body").remove();
             //document.querySelector('html').removeChild('body');
             return false
@@ -460,6 +493,7 @@ var protection = (function() {
             }
         });
     }
+
     var facility = {
         geturl: url,
         checkurl: authentication,
@@ -472,9 +506,22 @@ var protection = (function() {
 //确保URL唯一正确
 protection.geturl();
 //防止本地打开
-protection.checkurl();
+// protection.checkurl();
 //禁止右键
-protection.disableright();
+ protection.disableright();
 //禁止键盘快捷键
 //protection.shield(["disableCopy", "disableConsole", "disableSource", "disableF12"]);
 protection.shield(["disableCopy", "disableSource", "disableF12"]);
+
+// 增加PC端公告
+
+$(document).ready( function(){
+    $( '#howdy' ).howdyDo({
+        action      : 'hover',
+        effect      : 'slide',
+        easing      : 'easeInOutExpo',
+        duration    : 600,
+        openAnchor  : '<img src="//img.hzshuangmei.com/pc/down-arr-16x16.png" border=0 />',
+        closeAnchor : '<img src="//img.hzshuangmei.com/pc/close-16x16.png" border=0 />'
+    });
+});

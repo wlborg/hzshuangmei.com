@@ -1,5 +1,12 @@
 // Infinite Ajax Scroll, a jQuery plugin 1.0.2
 (function (e) {
+    //点击详情页的推进栏目和最新文章传当前文章名称
+    $(document).on("click",".clickParameter",function(){
+        var url=$(this).attr("href")+"?"+$("#art_title").html();
+        location.href=url;
+        event.preventDefault();
+    });
+
     "use strict";
     Date.now = Date.now || function () {
         return +(new Date)
