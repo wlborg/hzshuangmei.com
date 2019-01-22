@@ -106,7 +106,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m6 .zt-doc .zt-content .tab-indicator li {  /*display: inline-block;*/
 float: left; position: relative; width: 3.09333333rem; height: 0.896rem; background-color: #69318f; border-radius: 0.064rem; padding-left: 0.21333333rem; margin-right: 0.21333333rem; cursor: pointer; font-size: 0.512rem; font-weight: normal; font-stretch: normal; line-height: 0.896rem; letter-spacing: 0rem; color: #ffffff; }
 .m6 .zt-doc .zt-content .tab-indicator li img { display: block; position: absolute; bottom: 0; right: 0; height: 1.92rem; }
-.m6 .zt-doc .zt-content .tab-indicator li:hover, .m6 .zt-doc .zt-content .tab-indicator li.active { background-color: #faa8c3; }
+.m6 .zt-doc .zt-content .tab-indicator li.active { background-color: #faa8c3; }
 .m6 .zt-doc .zt-content .tab-content { z-index:1;background:none;position: relative; height: 19.84rem; margin-top: 1.06666667rem; width: 48.21333333rem; }
 .m6 .zt-doc .zt-content .tab-content .item { background: url('//img.hzshuangmei.com/m/bkdqyd/bg6_border.png') 0.72533333rem 4.48rem no-repeat; background-size: 15.36rem; position: relative; padding-top: 4.096rem; width: 16rem; height: 14.72rem;  /*visibility: hidden;*/ float: left; }
 .m6 .zt-doc .zt-content .tab-content .item .item-box { height: 14.72rem; padding-left: 5.97333333rem; }
@@ -122,7 +122,6 @@ float: left; position: relative; width: 3.09333333rem; height: 0.896rem; backgro
 .m6 .zt-doc .zt-content .tab-content .item1 img { width: 6.48533333rem; height: 19.28533333rem; }
 .m6 .zt-doc .zt-content .tab-content .item2 img { width: 8.53333333rem; height: 19.62666667rem; }
 .m6 .zt-doc .zt-content .tab-content .item3 img { width: 9.344rem; height: 19.37066667rem; }
-.m6 .zt-doc .zt-content .tab-content .item.active { visibility: visible; }
 .m6 .zt-doc .zt-content .tab-content .item3 ul { margin-left: 0.42666667rem; }
 .m6 .zt-doc .consult { width: 2.90133333rem; height: 2.90133333rem; position: absolute; bottom: 1.83466667rem; }
 .m6 .zt-doc .consult1 { right: 4.90666667rem; background: url('//img.hzshuangmei.com/m/bkdqyd/bg_consult6_1.png') center center no-repeat; background-size: 100%; }
