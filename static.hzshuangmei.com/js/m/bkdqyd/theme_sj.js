@@ -38,6 +38,7 @@ XZSlide.prototype.init = function() {
     this.slideCEle.find(this.itemselector + ":first").clone().appendTo(this.slideCEle);
     this.slideCEle.css("width", (this.itemCount + 1) * this.step + 10 + "px");
     if (this.auto) {
+    	clearTimeout(self.timer);
         this.timer = setInterval($.proxy(this.prev, this), this.interval);
         this.timerControl(this.slideWEle);
     }
@@ -73,6 +74,7 @@ XZSlide.prototype.timerControl = function(ele) {
     }).mouseout(function(e) {
         var event = window.event || e;
         event.stopPropagation();
+        clearTimeout(self.timer);
         self.timer = setInterval($.proxy(self.prev, self), self.interval);
     });
 };
@@ -155,6 +157,7 @@ XZSlide.prototype.orient = function() {
         else if (X < 0 && Math.abs(X) > Math.abs(Y)) {
             self.prev();
         }
+        clearTimeout(self.timer);
         self.timer = setInterval($.proxy(self.prev, self), self.interval);
     });
 }
