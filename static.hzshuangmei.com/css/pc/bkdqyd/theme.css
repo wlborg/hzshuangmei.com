@@ -19,7 +19,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .f-cb:after { display: block; visibility: hidden; height: 0; overflow: hidden; clear: both; content: "."; }
 .f-cb { zoom: 1; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-.zt-container { overflow: hidden; }
+.zt-container { overflow: hidden; min-width: 1400px; }
 .zt-container .zt-doc { width: 1400px; margin: 0 auto; }
 .g-row { font-size: 0; }
 .g-row .g-item { display: inline-block; vertical-align: top; }
@@ -47,7 +47,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m2 .zt-doc .zt-title { height: 130px; }
 .m2 .zt-doc .zt-content { margin-top: 130px; }
 .m2 .zt-doc .zt-content .row { height: 250px; width: 1140px; margin: 0 auto; }
-.m2 .zt-doc .zt-content .row .item-wrapper { float: left; width: 379px; height: 250px; position: relative; cursor: pointer; }
+.m2 .zt-doc .zt-content .row .item-wrapper { float: left; margin-left: 1px; width: 378px; height: 250px; position: relative; cursor: pointer; }
 .m2 .zt-doc .zt-content .row .item-wrapper .front { padding-top: 50px; }
 .m2 .zt-doc .zt-content .row .item-wrapper .front h3 { font-size: 36px; font-weight: normal; font-stretch: normal; line-height: 42px; letter-spacing: 0px; color: #ffffff; text-align: center; }
 .m2 .zt-doc .zt-content .row .item-wrapper .front h3 span { margin-right: 6px; font-size: 24px; width: 42px; height: 42px; display: inline-block; line-height: 42px; vertical-align: top; color: #f98aaf; background: url('//img.hzshuangmei.com/pc/bkdqyd/bg_num.png') center center no-repeat; }
@@ -55,6 +55,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m2 .zt-doc .zt-content .row .item-wrapper .back { width: 380px; height: 250px; position: absolute; top: 0; left: 0; visibility: hidden; }
 .m2 .zt-doc .zt-content .row .item-wrapper .back img { display: block; width: 100%; height: 100%; }
 .m2 .zt-doc .zt-content .row .item-wrapper:hover .back { visibility: visible; }
+.m2 .zt-doc .zt-content .row .item-wrapper:first-child { margin-left: 0; }
 .m2 .zt-doc .consult-wrapper { width: 390px; margin: 90px auto 0; }
 .m2 .zt-doc .consult-wrapper .consult { float: left; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 44px; letter-spacing: 0px; color: #ffffff; width: 195px; height: 44px; background-color: #f86997; border-radius: 3px 0px 0px 3px; text-align: center; }
 .m2 .zt-doc .consult-wrapper .consult2 { background: #69318f; }
@@ -97,26 +98,26 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m6 { background: url('//img.hzshuangmei.com/pc/bkdqyd/bg6.jpg') center top no-repeat; height: 1190px; }
 .m6 .zt-doc { padding-top: 100px; position: relative; }
 .m6 .zt-doc .zt-title { height: 140px; }
-.m6 .zt-doc .zt-content { position: relative; height: 950px; }
-.m6 .zt-doc .zt-content .tab-indicator { padding-left: 612px; padding-top: 130px; position: relative; z-index: 2; }
+.m6 .zt-doc .zt-content { position: relative; height: 950px; width: 1400px; overflow: hidden; }
+.m6 .zt-doc .zt-content .tab-indicator { padding-left: 612px; padding-top: 130px; position: absolute; z-index: 2; top: 0; left: 0; }
 .m6 .zt-doc .zt-content .tab-indicator li { display: inline-block; position: relative; width: 146px; height: 42px; background-color: #69318f; border-radius: 3px; padding-left: 10px; margin-right: 20px; cursor: pointer; }
 .m6 .zt-doc .zt-content .tab-indicator li img { display: block; position: absolute; bottom: 0; right: 0; }
 .m6 .zt-doc .zt-content .tab-indicator li span { font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 42px; letter-spacing: 0px; color: #ffffff; }
 .m6 .zt-doc .zt-content .tab-indicator li:hover, .m6 .zt-doc .zt-content .tab-indicator li.active { background-color: #faa8c3; }
-.m6 .zt-doc .zt-content .tab-content { margin-top: 90px; position: relative; height: 778px; }
-.m6 .zt-doc .zt-content .tab-content .item { background: url('//img.hzshuangmei.com/pc/bkdqyd/bg6_border.png') 410px 20px no-repeat;  /*position: relative;*/ padding-left: 660px; width: 740px; position: absolute; top: 0; left: 0; height: 778px; visibility: hidden; }
+.m6 .zt-doc .zt-content .tab-content { margin-top: 90px;  /*position: relative;*/ height: 778px; width: 4200px; }
+.m6 .zt-doc .zt-content .tab-content .item { cursor:pointer; background: url('//img.hzshuangmei.com/pc/bkdqyd/bg6_border.png') 410px 192px no-repeat;  /*position: relative;*/ width: 1400px; padding-top: 172px; float: left; position: relative;  /*top: 0;*/  /*left: 0;*/
+height: 778px;  /*visibility: hidden;*/ }
+.m6 .zt-doc .zt-content .tab-content .item .item-box { padding-left: 660px; width: 740px; height: 100%; }
 .m6 .zt-doc .zt-content .tab-content .item h3 { font-size: 30px; font-weight: normal; letter-spacing: 0px; color: #732b8f; padding-left: 140px; }
 .m6 .zt-doc .zt-content .tab-content .item h3 span { font-size: 48px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #732b8f; }
-.m6 .zt-doc .zt-content .tab-content .item div { padding-left: 100px; position: relative; width: 400px; margin-top: 40px; }
-.m6 .zt-doc .zt-content .tab-content .item div h4 { position: absolute; left: 0; top: 0; font-size: 30px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #732b8f; }
-.m6 .zt-doc .zt-content .tab-content .item div span { display: inline-block; margin-bottom: 16px; margin-right: 10px; padding: 0 10px; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #ffffff; background-color: #69318f; }
+.m6 .zt-doc .zt-content .tab-content .item .shanchang { padding-left: 100px; position: relative; width: 400px; margin-top: 40px; }
+.m6 .zt-doc .zt-content .tab-content .item .shanchang h4 { position: absolute; left: 0; top: 0; font-size: 30px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #732b8f; }
+.m6 .zt-doc .zt-content .tab-content .item .shanchang span { display: inline-block; margin-bottom: 16px; margin-right: 10px; padding: 0 10px; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #ffffff; background-color: #69318f; }
 .m6 .zt-doc .zt-content .tab-content .item ul { margin-top: 30px; margin-left: 80px; }
 .m6 .zt-doc .zt-content .tab-content .item ul li { position: relative; padding-left: 20px; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 36px; letter-spacing: 0px; color: #69318f; }
 .m6 .zt-doc .zt-content .tab-content .item ul li:after { display: block; content: ''; width: 8px; height: 8px; background-color: #69318f; border-radius: 100%; position: absolute; left: 0; top: 0; bottom: 0; margin: auto; }
 .m6 .zt-doc .zt-content .tab-content .item img { display: block; position: absolute; left: 60px; bottom: 0; }
-.m6 .zt-doc .zt-content .tab-content .item.active { visibility: visible; }
 .m6 .zt-doc .zt-content .tab-content .item1 img { left: 160px; }
 .m6 .zt-doc .consult { width: 144px; height: 144px; position: absolute; bottom: 80px; }
 .m6 .zt-doc .consult1 { right: 496px; background: url('//img.hzshuangmei.com/pc/bkdqyd/bg_consult6_1.png') center center no-repeat; }
 .m6 .zt-doc .consult2 { right: 332px; background: url('//img.hzshuangmei.com/pc/bkdqyd/bg_consult6_2.png') center center no-repeat; }
-
