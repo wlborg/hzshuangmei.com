@@ -52,7 +52,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m2 .zt-doc .zt-content .row .item-wrapper .front h3 { font-size: 36px; font-weight: normal; font-stretch: normal; line-height: 42px; letter-spacing: 0px; color: #ffffff; text-align: center; }
 .m2 .zt-doc .zt-content .row .item-wrapper .front h3 span { margin-right: 6px; font-size: 24px; width: 42px; height: 42px; display: inline-block; line-height: 42px; vertical-align: top; color: #f98aaf; background: url('//img.hzshuangmei.com/pc/bkdqyd/bg_num.png') center center no-repeat; }
 .m2 .zt-doc .zt-content .row .item-wrapper .front p { width: 280px; margin: 20px auto 0; font-size: 18px; font-weight: normal; font-stretch: normal; line-height: 24px; letter-spacing: 0px; color: #ffffff; }
-.m2 .zt-doc .zt-content .row .item-wrapper .back { width: 380px; height: 250px; position: absolute; top: 0; left: 0; visibility: hidden; }
+.m2 .zt-doc .zt-content .row .item-wrapper .back { width: 379px; height: 249px; position: absolute; top: 0; left: 0; visibility: hidden; }
 .m2 .zt-doc .zt-content .row .item-wrapper .back img { display: block; width: 100%; height: 100%; }
 .m2 .zt-doc .zt-content .row .item-wrapper:hover .back { visibility: visible; }
 .m2 .zt-doc .zt-content .row .item-wrapper:first-child { margin-left: 0; }
