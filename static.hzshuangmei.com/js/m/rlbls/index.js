@@ -1,7 +1,7 @@
 
 
 
-var content=['<p>减龄<br/>除皱</p>','<p>填充<br/>凹陷</p>','<p>微雕<br/>塑型</p>','<p>补水<br/>保湿</p>'];
+var content=['<p>减龄<br/>除皱</p>','<p>填充<br/>凹陷</p>','<p>面雕<br/>塑型</p>','<p>补水<br/>保湿</p>'];
 var swiper = new Swiper('.swiper-container', {
     loop:true,
     pagination: '.swiper-pagination',
