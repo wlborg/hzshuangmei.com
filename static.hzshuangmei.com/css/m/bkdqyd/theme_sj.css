@@ -83,16 +83,17 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 .m3 .zt-doc .zt-content dl dd { width: 8.96rem; margin-top: 0.85333333rem; font-size: 0.512rem; font-weight: normal; font-stretch: normal; line-height: 0.768rem; letter-spacing: 0rem; color: #69318f; }
 .m3 .zt-doc .zt-content dl dd span { color: #fe83ac; }
 .m3 .zt-doc .consult { margin-top: 1.28rem; width: 5.184rem; height: 0.93866667rem; background-color: #69318f; border-radius: 0.064rem; font-size: 0.512rem; font-weight: normal; font-stretch: normal; line-height: 0.93866667rem; letter-spacing: 0rem; color: #ffffff; text-align: center; }
-.m4 { background: url('//img.hzshuangmei.com/m/bkdqyd/bg4.jpg') center top no-repeat; background-size: 16rem; height: 18.51733333rem; }
-.m4 .zt-doc { padding-top: 2.56rem; }
-.m4 .zt-doc .zt-title { height: 3.41333333rem; }
-.m4 .zt-doc .zt-content { margin-top: 1.70666667rem; padding-left: 7.46666667rem; }
-.m4 .zt-doc .zt-content .item { height: 2.34666667rem; }
-.m4 .zt-doc .zt-content .item h3 { font-size: 0.64rem; font-weight: normal; font-stretch: normal; line-height: 0.896rem; letter-spacing: 0rem; color: #ffffff; padding-left: 0.85333333rem; }
-.m4 .zt-doc .zt-content .item1 { padding-left: 2.34666667rem; }
-.m4 .zt-doc .zt-content .item2 { padding-left: 2.98666667rem; height: 2.56rem; }
-.m4 .zt-doc .zt-content .item3 { height: 2.34666667rem; padding-left: 1.70666667rem; }
-.m4 .zt-doc .zt-content .item4 { padding-left: 0.29866667rem; }
+.m4 { background: url('//img.hzshuangmei.com/m/bkdqyd/bg4.jpg') center top no-repeat; background-size: 750/46.875rem; height: 928/46.875rem; }
+.m4 .zt-doc { padding-top: 120/46.875rem; }
+.m4 .zt-doc .zt-title { height: 160/46.875rem; }
+.m4 .zt-doc .zt-content { margin-top: 60/46.875rem; padding-left: 320/46.875rem; }
+.m4 .zt-doc .zt-content .item { height: 110/46.875rem; }
+.m4 .zt-doc .zt-content .item h3 { font-size: 30/46.875rem; font-weight: normal; font-stretch: normal; line-height: 42/46.875rem; letter-spacing: 0/46.875rem; color: #ffffff; padding-left: 60/46.875rem; }
+.m4 .zt-doc .zt-content .item p { margin-top: 14/46.875rem;    /*width:300/46.875rem;*/ font-size: 20/46.875rem; font-weight: normal; font-stretch: normal; line-height: 30/46.875rem; letter-spacing: 0px; color: #f1f1f1; }
+.m4 .zt-doc .zt-content .item1 { padding-left: 82/46.875rem; height: 126/46.875rem; width: 290/46.875rem; }
+.m4 .zt-doc .zt-content .item2 { padding-left: 120/46.875rem; height: 134/46.875rem; width: 290/46.875rem; }
+.m4 .zt-doc .zt-content .item3 { height: 130/46.875rem; padding-left: 100/46.875rem; }
+.m4 .zt-doc .zt-content .item4 { padding-left: 14/46.875rem; width: 330/46.875rem; }
 .m5 { height: 20.69333333rem; position: relative; }
 .m5 .zt-doc { padding-top: 2.13333333rem; }
 .m5 .zt-doc .zt-title { height: 3.84rem; width: 11.94666667rem; background: url('//img.hzshuangmei.com/m/bkdqyd/bgt5.jpg') center center no-repeat; background-size: 100%; }
@@ -107,7 +108,7 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
 float: left; position: relative; width: 3.09333333rem; height: 0.896rem; background-color: #69318f; border-radius: 0.064rem; padding-left: 0.21333333rem; margin-right: 0.21333333rem; cursor: pointer; font-size: 0.512rem; font-weight: normal; font-stretch: normal; line-height: 0.896rem; letter-spacing: 0rem; color: #ffffff; }
 .m6 .zt-doc .zt-content .tab-indicator li img { display: block; position: absolute; bottom: 0; right: 0; height: 1.92rem; }
 .m6 .zt-doc .zt-content .tab-indicator li.active { background-color: #faa8c3; }
-.m6 .zt-doc .zt-content .tab-content { z-index:1;background:none;position: relative; height: 19.84rem; margin-top: 1.06666667rem; width: 48.21333333rem; }
+.m6 .zt-doc .zt-content .tab-content { z-index: 1; background: none; position: relative; height: 19.84rem; margin-top: 1.06666667rem; width: 48.21333333rem; }
 .m6 .zt-doc .zt-content .tab-content .item { background: url('//img.hzshuangmei.com/m/bkdqyd/bg6_border.png') 0.72533333rem 4.48rem no-repeat; background-size: 15.36rem; position: relative; padding-top: 4.096rem; width: 16rem; height: 14.72rem;  /*visibility: hidden;*/ float: left; }
 .m6 .zt-doc .zt-content .tab-content .item .item-box { height: 14.72rem; padding-left: 5.97333333rem; }
 .m6 .zt-doc .zt-content .tab-content .item h3 { font-size: 0.64rem; font-weight: normal; letter-spacing: 0rem; color: #732b8f; padding-left: 2.13333333rem; }
