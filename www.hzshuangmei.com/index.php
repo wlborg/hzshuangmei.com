@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * @version        $Id: index.php 1 9:23 2010-11-11 tianya $
@@ -27,7 +29,7 @@ if(isset($_GET['upcache']) || !file_exists('index.html'))
         $pv->SaveToHtml(dirname(__FILE__).'/index.html');
         include(dirname(__FILE__).'/index.html');
         exit();
-    } else { 
+    } else {
         $pv->Display();
         exit();
     }
