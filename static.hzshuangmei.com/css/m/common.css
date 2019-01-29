@@ -881,12 +881,12 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #divbg {
     width: 13rem !important;
-    height: 12.43rem !important;
+    height: 12.9rem !important;
 
     background-size: 100%;
 }
 #div19 {
-    top: 10.7rem !important;
+    top: 11.4rem !important;
     left: 6.24rem !important;
 
     width: 5.63rem !important;
@@ -896,14 +896,16 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 1.13rem !important;
 }
 #div1 {
-    top: 10rem !important;
+    top: 11.6rem !important;
     left: 1.4rem !important;
+
     width: 4.13rem !important;
     height: 1.2rem !important;
+
     line-height: 0 !important;
 }
 #div23 {
-    top: .9rem!important;
+    top: .1rem!important;
     left: 11.8rem!important;
 
     width: 1rem!important;
@@ -1017,6 +1019,6 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
         opacity: 1;
     }
 }
-#k_s_ol_inviteWin{
+#k_s_ol_inviteWin {
     display: block!important;
 }
