@@ -95,9 +95,9 @@ var tools = (
         module.addBaiduScript = function() {
             addScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
         };
-              module.addCnzzScript = function() {
-            addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
-        };
+        //       module.addCnzzScript = function() {
+        //     addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
+        // };
         module.bindConsultHref = function() {
             //专题快商通
             var consultEs = $('.j-consult');
@@ -356,7 +356,7 @@ $(function() {
     effects.goToPagination();
     tools.addKSTScript();
     tools.addBaiduScript();
-    tools.addCnzzScript();
+   // tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
     tools.preReady();

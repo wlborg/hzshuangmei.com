@@ -105,9 +105,9 @@ var tools = (
         module.addBaiduScript = function(value) {
             addScript(value);
         };
-              module.addCnzzScript = function() {
-            addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
-        };
+        //       module.addCnzzScript = function() {
+        //     addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
+        // };
         module.bindConsultHref = function() {
             //专题快商通
             var consultEs = $('.j-consult');
@@ -382,7 +382,7 @@ $(function() {
         }, 120000);
 
     }
-    tools.addCnzzScript();
+    //tools.addCnzzScript();
     tools.bindConsultHref();
     //资源预加载
     tools.preReady();
