@@ -22,6 +22,10 @@
         $(function  () {
         	FastClick.attach(document.body);
         })
+        //注册 serviceworker
+        if ('serviceWorker' in navigator) {
+             navigator.serviceWorker.register('/serviceworker.js');
+        }
     </script>
 
 <!--  service worker -->
