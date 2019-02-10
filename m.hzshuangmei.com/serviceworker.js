@@ -1,7 +1,7 @@
 'use strict';
 const version = 'v20190210';
-const __DEVELOPMENT__ = false;
-const __DEBUG__ = false;
+const __DEVELOPMENT__ = true;
+const __DEBUG__ = true;
 const offlineResources = [
     '/',
     '/offline.html',
