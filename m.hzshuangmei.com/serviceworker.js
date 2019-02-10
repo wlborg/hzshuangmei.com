@@ -9,10 +9,15 @@ const offlineResources = [
 ];
 const ignoreFetch = [
     /https?:\/\/cdn.bootcss.com\//,
+    /https?:\/\/file.kuaishang.cn\//,
     /https?:\/\/pv.kuaishang.cn\//,
     /https?:\/\/ryak66.kuaishang.cn\//,
     /https?:\/\/zz.bdstatic.com\//,
     /https?:\/\/static.ws.126.net\//,
+    /https?:\/\/hm.baidu.com\//,
+    /https?:\/\/sp0.baidu.com\//,
+    /.php$/,
+    /houtai/,
 ];
 //////////
 // Install
