@@ -87,7 +87,7 @@
 /*}*/
 .ar_ar p img {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     margin: 1em auto;
 
     text-align: center;
@@ -466,4 +466,3 @@ tr {
 
     float: left;
 }
-
