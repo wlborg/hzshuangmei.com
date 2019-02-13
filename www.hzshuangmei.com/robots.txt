@@ -1,4 +1,5 @@
 User-agent: * 
+Disallow: /mip/
 Disallow: /search/
 Disallow: /incl*
 Disallow: /*?*
