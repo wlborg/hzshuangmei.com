@@ -412,9 +412,9 @@
                 module.addKSTScript = function(value) {
                     addScript(value);
                 };
-                   module.addCnzzScript = function() {
-                       addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
-                   }
+                   // module.addCnzzScript = function() {
+                   //     addScript("https://s19.cnzz.com/z_stat.php?id=1273015059&web_id=1273015059");
+                   // }
                  //添加百度统计代码
                  module.addBaiduScript = function(value) {
                      addScript(value);
@@ -584,7 +584,7 @@
                window.location.href=href;
            }, 120000);
        }
-       tools.addCnzzScript();
+      // tools.addCnzzScript();
        tools.bindConsultHref();
        tools.activeGoTopTool(".j-gotop");
        //禁止右键盗取案例图片
