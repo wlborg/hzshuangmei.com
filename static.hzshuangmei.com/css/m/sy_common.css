@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -888,32 +888,54 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     background-size: 100%;
 }
 #div19 {
-    top: 9.91rem !important;
+    top: 11.4rem!important;
+    left: 6.24rem!important;
+
+    width: 5.63rem!important;
+    height: 1.43rem!important;
+
+    font-size: .78rem!important;
+    line-height: 1.13rem!important;
+    /* top: 9.91rem !important;
     left: 6.24rem !important;
 
     width: 5.63rem !important;
     height: 1.73rem !important;
 
     font-size: .78rem !important;
-    line-height: 1.13rem !important;
+    line-height: 1.13rem !important; */
 }
 #div1 {
-    top: 10.56rem !important;
+    top: 11.6rem!important;
+    left: 1.4rem!important;
+
+    width: 4.13rem!important;
+    height: 1.2rem!important;
+
+    line-height: 0!important;
+    /*  top: 10.56rem !important;
     left: 1.4rem !important;
 
     width: 4.13rem !important;
     height: .99rem !important;
 
-    line-height: 0 !important;
+    line-height: 0 !important; */
 }
 #div23 {
-    top: .9rem!important;
+    top: .1rem!important;
     left: 11.8rem!important;
 
     width: 1rem!important;
     height: .99rem!important;
 
     line-height: 0!important;
+    /*  top: .9rem!important;
+    left: 11.8rem!important;
+
+    width: 1rem!important;
+    height: .99rem!important;
+
+    line-height: 0!important; */
 }
 .relateporject .contents {
     padding: .55rem 3.5% 0rem;
