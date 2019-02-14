@@ -906,6 +906,9 @@ hr {
 #diary .after .flag {
     background: #8864aa;
 }
+#diary .pic {
+    position: relative;
+}
 #diary .label {
     height: .8rem;
     padding: .4rem 0 .5rem;
