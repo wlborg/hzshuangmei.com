@@ -2090,7 +2090,17 @@ hr {
     border: solid 1px #e66cea;
     border-radius: 50%;
 }
+.index_case_more_a {
+    position: absolute;
 
+    width: 4.821333rem;
+    height: 1.792rem;
+}
+.index_case_more_a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /*********************** article_article ***********************/
 .article .heading {
     padding-top: 1.5rem;
