@@ -892,15 +892,18 @@ hr {
     height: .789333rem;
     /* padding-left: .5rem; */
 
-    font-size: .5rem;
+    font-size: .341333rem;
     line-height: .789333rem;
 
     text-align: center;
 
     color: #fff;
     /* border-top-right-radius: 1.25rem; */
-    /* border-bottom-right-radius: 1.25rem; */
+    border-bottom-right-radius: .15rem;
     background: #8863a8;
+}
+#diary .after .flag {
+    background: #8864aa;
 }
 #diary .label {
     height: .8rem;
@@ -2102,8 +2105,8 @@ hr {
     z-index: 111;
 
     display: block;
-    width: 4.821333rem;
-    height: 1.792rem;
+    width: 3.84rem;
+    height: 1.410133rem;
     margin-left: -2.410667rem;
 }
 .index_case_more_a img {
