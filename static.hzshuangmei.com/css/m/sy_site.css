@@ -886,22 +886,25 @@ hr {
 }
 #diary .flag {
     position: absolute;
-    bottom: -1rem;
+    top: 0rem;
     left: 0;
 
-    width: 2rem;
-    height: 2rem;
-    padding-left: .5rem;
+    width: 1.898667rem;
+    height: .789333rem;
+    /* padding-left: .5rem; */
 
-    font-size: .5rem;
-    line-height: 1rem;
+    font-size: .341333rem;
+    line-height: .789333rem;
 
-    opacity: .8;
+    text-align: center;
+
     color: #fff;
-    border-top-right-radius: 1.25rem;
-    border-bottom-right-radius: 1.25rem;
-    background: #64b1e6;
-    /* background: rgba(154, 66, 172, .4); */
+    /* border-top-right-radius: 1.25rem; */
+    border-bottom-right-radius: .15rem;
+    background: #8863a8;
+}
+#diary .after .flag {
+    background: #8864aa;
 }
 #diary .label {
     height: .8rem;
@@ -2100,7 +2103,22 @@ hr {
     border: solid 1px #e66cea;
     border-radius: 50%;
 }
+.index_case_more_a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 111;
 
+    display: block;
+    width: 3.84rem;
+    height: 1.410133rem;
+    margin-left: -2.410667rem;
+}
+.index_case_more_a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /*********************** article_article ***********************/
 .article .heading {
     padding-top: 1.5rem;
