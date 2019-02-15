@@ -229,7 +229,7 @@
     margin: 0 auto;
 }
 .m_rj {
-    display: none;
+    /*  display: none; 放出案例日志 */
     width: 1200px;
     margin: 0 auto;
 }
