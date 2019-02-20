@@ -1694,7 +1694,7 @@ hr {
 }
 .zhuanjia-title {
     width: 7rem;
-    padding-left: .75rem;
+    /* padding-left: .75rem; */
     margin-top: 1.25rem;
 
     font-size: .65rem;
@@ -1702,7 +1702,7 @@ hr {
 
     color: #282828;
     border-bottom: solid 1px #ccc;
-    background: url("https://img.hzshuangmei.com/m/icon_people.png") left center no-repeat;
+   /*  background: url("https://img.hzshuangmei.com/m/icon_people.png") left center no-repeat; */
     background-size: .75rem .7rem;
 }
 .zhuanjia-info .zhuanjia-title a {
