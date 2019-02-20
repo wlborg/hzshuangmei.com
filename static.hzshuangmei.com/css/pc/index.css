@@ -555,14 +555,17 @@ h3 img {
 
 .index_clients #tabCon4 ul li .clients_t p {
     position: relative;
-    top: -123px;
+    /* top: -123px; */
+    top: -132px;
 
     width: 291px;
-    height: 53px;
+    /*  height: 53px; */
+    height: 70px;
 
     font-size: 20px;
     /*text-align: center;*/
-    line-height: 53px;
+    /* line-height: 53px; */
+    line-height: 30px;
 
     color: #551f7f;
     background-color: rgba(255, 255, 255, .502);
