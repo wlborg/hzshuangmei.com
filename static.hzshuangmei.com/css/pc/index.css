@@ -497,8 +497,9 @@ h3 img {
     width: 291px;
     /*  height: 53px; */
     height: 60px;
+    /* font-size: 20px; */
 
-    font-size: 20px;
+    font-size: 18px;
     /*text-align: center;*/
     /* line-height: 53px; */
     line-height: 30px;
@@ -1065,4 +1066,3 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-
