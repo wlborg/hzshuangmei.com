@@ -373,14 +373,17 @@ h3 img {
 }
 .index_expert #tabCon3 p {
     position: relative;
-    top: -56px;
+    /* top: -56px; */
+    top: -60px;
 
     width: 290px;
-    height: 53px;
+    /*  height: 53px; */
+    height: 56px;
     margin: 0 auto;
 
     font-size: 20px;
-    line-height: 53px;
+    /* line-height: 53px; */
+    line-height: 28px;
 
     text-align: center;
 
@@ -1066,3 +1069,4 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
+
