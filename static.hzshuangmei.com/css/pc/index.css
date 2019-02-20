@@ -492,16 +492,16 @@ h3 img {
 .index_clients #tabCon4 ul li .clients_t p {
     position: relative;
     /* top: -123px; */
-    top: -107px;
+    top: -130px;
 
     width: 291px;
     /*  height: 53px; */
-    height: 36px;
+    height: 60px;
 
     font-size: 20px;
     /*text-align: center;*/
     /* line-height: 53px; */
-    line-height: 36px;
+    line-height: 30px;
 
     color: #551f7f;
     background-color: rgba(255, 255, 255, .502);
@@ -1065,3 +1065,4 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
+
