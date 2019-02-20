@@ -2580,7 +2580,7 @@ hr {
     font-size: .8rem;
 
     border-bottom: solid 1px #5e367e;
-    background: url(//img.hzshuangmei.com/m/icon_people2.png) left center no-repeat;
+    /* background: url(//img.hzshuangmei.com/m/icon_people2.png) left center no-repeat; */
     background-size: .75rem .7rem;
 }
 .articlerelatedoctor .zhuanjia-info .zhuanjia-title a {
