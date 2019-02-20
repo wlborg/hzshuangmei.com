@@ -208,7 +208,7 @@
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.arcrank=0 and a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                                <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:shorttitle/]</p>
                             </a>
                         </div>
@@ -233,7 +233,7 @@
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                                <img src="[field:thumb2 function='replaceurl(@me)/]"   alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:shorttitle/]</p>
                             </a>
                         </div>
@@ -257,7 +257,7 @@
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=5  order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                                <img src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:shorttitle/]</p>
                             </a>
                         </div>
@@ -280,7 +280,7 @@
 <!-- 恢复过来开始 -->
 <div class="index_clients">
     <div class="m1">
-        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="真人代言 现身说法"/></h3>
+        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="整形案例 真人代言 现身说法"/></h3>
         <div id="tab4">
             <ul class="clearFix">
                 <li class="fli4">整形美容</li>
@@ -297,17 +297,17 @@
                    <div class="clients_t">
                             <a href="[field:arcurl/]" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">  -->
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                            <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                          <a href="[field:arcurl/]" class="qiehuan">
                       <!--  <a href="javascript:void(0)" class="j-consult qiehuan"> -->
-                           <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                           <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:title/]" title="[field:title/]"/>
                            <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
@@ -327,17 +327,17 @@
                    <div class="clients_t">
                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                             <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                         <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener"> -->
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
@@ -357,17 +357,17 @@
                    <div class="clients_t">
                      <a href="[field:arcurl/]" target="_blank" rel="noopener">
                       <!--  <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:title/]" title="[field:title/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                        <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" class=" j-consult qiehuan" target="_blank" rel="noopener"> -->
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                             <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
@@ -387,17 +387,17 @@
                    <div class="clients_t">
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                          <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
                        <!-- <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener"> -->
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:title/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
