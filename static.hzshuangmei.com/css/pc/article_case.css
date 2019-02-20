@@ -4,8 +4,8 @@
 .article_case_content .data_t {    /* padding-top:20px; */
 width: 700px;    /* border: 1px solid red; */ margin-left: 15px; }
 .article_case_content .data_t>div { margin: 13px 0 20px; }
-.article_case_content .data_t>div p { float: left; }
-.article_case_content .data_t>div p:last-child { margin-left: 195px; }
+.article_case_content .data_t>div p { /* float: left; */ height: 42px; }
+.article_case_content .data_t>div p:last-child {/*  margin-left: 195px; */ }
 
 /* .article_case_content .data_t>div:first-child{
     margin-left:40px;
