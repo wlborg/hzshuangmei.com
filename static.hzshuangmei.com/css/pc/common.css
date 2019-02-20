@@ -570,10 +570,10 @@ nav > ul > li ul .n_button a {
 .swiper-slide img {
     width: 100%;
 }
-.banner .banner_swiper .swiper-slide img{
+.banner .banner_swiper .swiper-slide img {
     display: block;
 }
-    /*banner*/
+/*banner*/
 .banner .banner-pagination .swiper-pagination-bullet {
     display: inline-block;
     width: 16px;
@@ -1044,97 +1044,101 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
 #howdy {
     COLOR: #f8e7db;
-    FONT-SIZE: 17px
+    FONT-SIZE: 17px;
 }
 
-#howdy SPAN#heading {
+#howdy span#heading {
     COLOR: #fff;
     FONT-SIZE: 18px;
-    FONT-WEIGHT: bold
+    FONT-WEIGHT: bold;
 }
 
-#howdy SMALL {
+#howdy small {
     COLOR: #f8e7db;
-    FONT-SIZE: 12px
+    FONT-SIZE: 12px;
 }
 
-#howdy A {
-    COLOR: #fff
+#howdy a {
+    COLOR: #fff;
 }
 
-#howdy A:link {
-    COLOR: #fff
+#howdy a:link {
+    COLOR: #fff;
 }
 
-#howdy A:visited {
-    COLOR: #fff
+#howdy a:visited {
+    COLOR: #fff;
 }
 
-#howdy A:hover {
-}
 
-#howdy A:unknown {
-}
+
+
 
 .howdydo-style {
-    BORDER-BOTTOM: #999 0px solid;
-    TEXT-ALIGN: center;
     BACKGROUND-COLOR: #ea3333;
+    BORDER-BOTTOM: #999 0 solid;
+    TEXT-ALIGN: center;
 }
 
 #howdydo-wrapper {
-    Z-INDEX: 1000;
-    POSITION: relative;
-    PADDING-BOTTOM: 0px;
-    PADDING-LEFT: 0px;
-    WIDTH: 100%;
-    PADDING-RIGHT: 0px;
     OVERFLOW: visible;
-    PADDING-TOP: 0px
+    PADDING-BOTTOM: 0;
+    PADDING-LEFT: 0;
+    PADDING-RIGHT: 0;
+    PADDING-TOP: 0;
+    POSITION: relative;
+    WIDTH: 100%;
+    Z-INDEX: 1000;
 }
 
 .howdydo-box {
-    Z-INDEX: 9999;
-    PADDING-BOTTOM: 15px;
-    PADDING-LEFT: 0px;
-    WIDTH: 100%;
-    PADDING-RIGHT: 0px;
     DISPLAY: none;
-    PADDING-TOP: 10px
+    PADDING-BOTTOM: 15px;
+    PADDING-LEFT: 0;
+    PADDING-RIGHT: 0;
+    PADDING-TOP: 10px;
+    WIDTH: 100%;
+    Z-INDEX: 9999;
 }
 
 #howdydo-close {
-    POSITION: absolute;
     BOTTOM: 10px;
-    RIGHT: 30px
+    POSITION: absolute;
+    RIGHT: 30px;
 }
 
 #howdydo-open {
-    POSITION: absolute;
     PADDING-BOTTOM: 10px;
     PADDING-LEFT: 10px;
     PADDING-RIGHT: 10px;
-    TOP: 0px;
+    PADDING-TOP: 10px;
+    POSITION: absolute;
     RIGHT: 20px;
-    PADDING-TOP: 10px
+    TOP: 0;
 }
 
 .howdydo-hover {
+    LEFT: 0;
     POSITION: absolute;
-    TOP: 0px;
-    LEFT: 0px
+    TOP: 0;
 }
 
 .howdydo-scroll {
+    LEFT: 0;
     POSITION: fixed;
-    TOP: 0px;
-    LEFT: 0px
+    TOP: 0;
 }
 
 .howdydo-push {
-    POSITION: relative;
-    MARGIN-BOTTOM: 1px;
+    CLEAR: both;
     FLOAT: left;
-    CLEAR: both
+    MARGIN-BOTTOM: 1px;
+    POSITION: relative;
 }
-
+#div3 {
+    top: 333px;
+    left: 58px!important;
+}
+#div36 {
+    left: 229px!important;
+}
