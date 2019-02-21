@@ -123,7 +123,7 @@ $adminMenu1
 </m:top>
 
 <m:top item='5_' name='自动任务' notshowall='1'  display='block' rank='sys_MakeHtml'>
-  <m:item name='一键更新网站' link='alert("禁止一键更新，请使用文档更新!")' rank='sys_MakeHtml' target='main' />
+
   <m:item name='更新系统缓存' link='sys_cache_up.php' rank='sys_ArcBatch' target='main' />
   {$remoteMenu}
 </m:top>
