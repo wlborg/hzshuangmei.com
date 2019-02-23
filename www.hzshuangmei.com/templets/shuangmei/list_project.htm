@@ -2,7 +2,13 @@
 <html lang="cmn-hans">
 <head>
     {dede:include filename="_meta.htm"/}
-    <title>2019{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <title>{dede:php runphp='yes'}
+
+$ntime = time();
+
+ @me=MyDate('Y',$ntime);
+
+ {/dede:php}{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
       <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
@@ -47,11 +53,11 @@
                 {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
 
                 <a href="[field:arcurl/]" title="[field:title/]">
-                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]"/>
+                    <img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"/>
                     <div>
                         <p>
-                            <span>[field:title/]</span><br/>
-                            <span>[field:shorttitle function='@me=@me==""?"RED MAKEUP":"@me"'/]</span>
+                            <span>[field:shorttitle/]</span><br/>
+                            <span>[field:title function='@me=@me==""?"RED MAKEUP":"@me"'/]</span>
                         </p>
                         <div class="click">
                             <i></i>

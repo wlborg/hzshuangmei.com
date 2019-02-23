@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Theme Name: tob
  * Theme URL: https://themebetter.com/theme/tob
  * Description: Theme tob by <a href="https://themebetter.com">themebetter.com</a>
@@ -381,8 +381,8 @@ input[type="search"] {
 @font-face {
     font-family: "iconfont";
 
-    src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");
     src: url("fonts/iconfont.eot");
+    src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");
 }
 
 .fa {
@@ -1945,7 +1945,8 @@ body {
 }
 
 .focusbox {
-    padding: 45px 0;
+    /*  padding: 45px 0; */
+    padding: 0;
 
     -webkit-transition: all .3s ease-in-out;
        -moz-transition: all .3s ease-in-out;
@@ -1954,6 +1955,16 @@ body {
 
     color: #eee;
     background-color: #384047;
+}
+
+.focusbox a {
+    display: block;
+}
+
+.focusbox img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
 }
 
 .focusbox .container {
@@ -1991,7 +2002,8 @@ body {
 
 @media (max-width: 544px) {
     .focusbox {
-        padding: 18px 0;
+        /*  padding: 18px 0; */
+        padding: 0;
     }
 
     .focusbox .focusbox-title {
