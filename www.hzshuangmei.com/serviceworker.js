@@ -16,6 +16,7 @@ const ignoreFetch = [
     /https?:\/\/static.ws.126.net\//,
     /https?:\/\/hm.baidu.com\//,
     /https?:\/\/sp0.baidu.com\//,
+    /pma/,
     /.php$/,
     /houtai/,
 ];
