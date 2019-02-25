@@ -2,7 +2,11 @@
 <html lang="zh-cmn-Hans">
 <head>
     {dede:include filename="_meta.htm"/}
-     <title>{dede:field.typename/}_{dede:global.cfg_sy_webname/}</title>
+     <title>{dede:php runphp='yes'}
+
+$ntime = time();
+
+ @me=MyDate('Y',$ntime);{/dede:php}{dede:field.typename/}_{dede:global.cfg_sy_webname/}</title>
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
