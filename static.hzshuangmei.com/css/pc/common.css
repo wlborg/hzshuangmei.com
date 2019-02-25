@@ -118,7 +118,15 @@ header .top .shuang_m1 .top_l {
 /*header .top .shuang_m1 .top_l span:first-child { padding-right: 3px; color: rgb(69, 25, 103); }*/
 /*header .top .shuang_m1 .top_l span:last-child { padding-left: 9px; }*/
 header .top .shuang_m1 .top_l img {
+    position: relative;
+
+    display: block;
+    width: 361px;
+    height: 56px;
     padding-right: 6px;
+    margin: 12px 0 0 176px;
+
+    text-align: center;
 }
 header .top .shuang_m1 .top_l span {
     /* padding-left: 9px; */
