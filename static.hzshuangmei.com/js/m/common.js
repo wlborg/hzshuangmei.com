@@ -572,7 +572,7 @@
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
-       tools.addBaiduTuiSong();
+      // tools.addBaiduTuiSong();
        if (window.location.host.indexOf("m.hzshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
            tools.addBaiduScript("https://hm.baidu.com/hm.js?15ebca203caa17b82e19afb88696f5de");
@@ -602,22 +602,65 @@
 
    });
    //Baidu自动推送
-   (function() {
-       var bp = document.createElement('script');
-       var curProtocol = window.location.protocol.split(':')[0];
-       if (curProtocol === 'https') {
-           bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-       } else {
-           bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-       }
-       var s = document.getElementsByTagName("script")[0];
-       s.parentNode.insertBefore(bp, s);
-   })();
+   // (function() {
+   //     var bp = document.createElement('script');
+   //     var curProtocol = window.location.protocol.split(':')[0];
+   //     if (curProtocol === 'https') {
+   //         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+   //     } else {
+   //         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+   //     }
+   //     var s = document.getElementsByTagName("script")[0];
+   //     s.parentNode.insertBefore(bp, s);
+   // })();
+   //改良版本的百度索引自动推送脚本
+  (function(){
+    var canonicalURL, curProtocol;
+    //Get the  tag
+    var x=document.getElementsByTagName("link");
+    //Find the last canonical URL
+    if(x.length > 0){
+      for (i=0;i<x.length;i++){
+        if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+          canonicalURL=x[i].href;
+        }
+      }
+    }
+    //Get protocol
+      if (!canonicalURL){
+        curProtocol = window.location.protocol.split(':')[0];
+      }
+      else{
+        curProtocol = canonicalURL.split(':')[0];
+      }
+      //Get current URL if the canonical URL does not exist
+      if (!canonicalURL) canonicalURL = window.location.href;
+      //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
    //360自动收录
-   (function() {
-       var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2" : "https://jspassport.ssl.qhimg.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2";
-       document.write('<script src="' + src + '" id="sozz"><\/script>');
-   })();
+(function(e) {
+    function t(e) {
+      var t = location.href,
+      n = t.split("").reverse(),
+      r = e.split(""),
+      i = [];
+      for (var s = 0,
+      o = 16; s < o; s++) i.push(r[s] + (n[s] || ""));
+      return i.join("")
+    }
+    var n = /([http|https]:\/\/[a-zA-Z0-9\_\.]+\.so\.com)/gi,
+    r = e.location.href;
+    if (r && !n.test(r) && window.navigator.appName) {
+      var i = "//s.360.cn/so/zz.gif",
+      o = "9a2fee064c0366479d1f4add3636d9e2",
+      u = t(o),
+      a = new Image;
+      r && (i += "?url=" + encodeURIComponent(r)),
+      o && (i += "&sid=" + o),
+      u && (i += "&token=" + u),
+      o && (a.src = i)
+    }
+  })(window);
    /*滑动屏幕隐藏和现实导航栏*/
    // 手指在屏幕上滑动的时候顶部的导航栏自动隐藏，只保留离线宝
    //
