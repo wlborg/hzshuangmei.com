@@ -1,81 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="cmn-hans">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
-<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
-<meta name="keywords" content="{dede:field name='keywords'/}" />
-<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
-<link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
-<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+    {dede:include filename="_meta.htm"/}
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}"/>
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
+    {dede:include filename="_link.htm"/}
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+    <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
+    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
-<body class="articlelist">
-{dede:include filename="head.htm"/}
-<!-- /header -->
-
-
-<div class="w960 center clear mt1">
-	<div class="pleft">
-		<div class="place">
-			<strong>当前位置:</strong>：<a href="{dede:global.cfg_cmsurl/}/">主页</a> &gt; <a href='tags.php'>TAG标签</a> &gt; {dede:field.title /}
-		</div><!-- /place -->
-		<div class="listbox">
-			<ul class="e2">
-{dede:list orderby='sortrank' pagesize='10'}
-				<li>
-      				[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}' class='preview'><img src='{@me['litpic']}'/></a>"); [/field:array]
-					<a href="[field:arcurl/]" class="title">[field:title/]</a>
-					<span class="info">
-						<small>日期：</small>[field:pubdate function="GetDateTimeMK(@me)"/]
-						<small>点击：</small>[field:click/]
-						<small>好评：</small>[field:scores/]
-					</span>
-					<p class="intro">
-						[field:description/]...
-					</p>
-				</li>
-{/dede:list}
-			</ul>
-		</div><!-- /listbox -->
-		<div class="dede_pages">
-			<ul class="pagelist">
-             {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
-			</ul>
-		</div><!-- /pages -->
-	</div><!-- /pleft -->
-	
-	<div class="pright">
-		<div class="commend">
-			<dl class="tbox">
-				<dt><strong>推荐内容</strong></dt>
-				<dd>
-					<ul class="d4">
-           {dede:arclist flag='c' titlelen=42 row=6}
-          	<li><a href="[field:arcurl/]">[field:title/]</a>
-            	<p>[field:description function='cn_substr(@me,80)'/]...</p>
-            </li>{/dede:arclist}
-					</ul>
-				</dd>
-			</dl>
-		</div><!-- /commend -->
-		<div id="conrightAD" style="margin:10px auto">{dede:mda name='250x250_SSP'/}</div>
-		<div class="hot mt1">
-			<dl class="tbox">
-				<dt><strong>热点内容</strong></dt>
-				<dd>
-					<ul class="c1 ico2">
-                    {dede:arclist row=10 orderby=click}
-                    	<li><a href="[field:arcurl/]">[field:title/]</a></li>
-                    {/dede:arclist}
-					</ul>
-				</dd>
-			</dl>
-		</div>
-        <div id="listRtPicAD2" style="margin:10px auto">{dede:mda name='250x250'/}</div>
-	</div><!-- /pright -->
+<body>
+{dede:include filename="_header.htm"/}
+{dede:myad name='topbanner_pc'/}
+<div class="m1">
+    <div class="location">
+        <i></i><span>当前位置：</span>{dede:field name='position'/}
+    </div>
+    <div class="line"></div>
+    <div class="news_content">
+        <h3 id="news_nav">
+         <!--     <img src="{dede:global.cfg_imgpath/}/pc/ns_01.png" alt="红妆双美新闻"/></h3> -->
+        <ul class="news_main">
+            {dede:list pagesize='10' orderby='id'}
+            <li class="clearFix">
+                <div>
+                    <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]" ></a>
+                </div>
+                <div>
+                    <h4><i class="i1"></i><a href="[field:arcurl/]">[field:fulltitle/]</a></h4>
+                    <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,200)'/]...<span>[详细]</span></a></p>
+                </div>
+                <div class="date"><i class="i2"></i><span>点击：[field:click/] </span><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></div>
+            </li>
+            {/dede:list}
+        </ul>
+        <div class="ns_pa clearFix">
+            <ul class="pagination clearFix">
+                {dede:pagelist istitem="pre,next,pageno,index,end" listsize="3"/}
+            </ul>
+            <div class="clearFix">
+                <p><i class="share_01"></i><span>分享到：</span></p>
+                <div class="bdsharebuttonbox">
+                    <!--     <a href="#" class="bds_more" data-cmd="more"></a> -->
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                    <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div id="footAD" style="margin:10px auto; width:726px">{dede:mda name='728x90'/}</div>
-{dede:include filename="footer.htm"/}
-<!-- /footer -->
-
+{dede:include filename="_footer.htm"/}
 </body>
+{dede:include filename="_script.htm"/}
+{dede:include filename="_list_Factor.htm"/}
+<script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
 </html>
