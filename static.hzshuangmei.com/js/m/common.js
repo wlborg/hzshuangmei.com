@@ -614,10 +614,29 @@
        s.parentNode.insertBefore(bp, s);
    })();
    //360自动收录
-   (function() {
-       var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2" : "https://jspassport.ssl.qhimg.com/11.0.1.js?9a2fee064c0366479d1f4add3636d9e2";
-       document.write('<script src="' + src + '" id="sozz"><\/script>');
-   })();
+(function(e) {
+    function t(e) {
+      var t = location.href,
+      n = t.split("").reverse(),
+      r = e.split(""),
+      i = [];
+      for (var s = 0,
+      o = 16; s < o; s++) i.push(r[s] + (n[s] || ""));
+      return i.join("")
+    }
+    var n = /([http|https]:\/\/[a-zA-Z0-9\_\.]+\.so\.com)/gi,
+    r = e.location.href;
+    if (r && !n.test(r) && window.navigator.appName) {
+      var i = "//s.360.cn/so/zz.gif",
+      o = "9a2fee064c0366479d1f4add3636d9e2",
+      u = t(o),
+      a = new Image;
+      r && (i += "?url=" + encodeURIComponent(r)),
+      o && (i += "&sid=" + o),
+      u && (i += "&token=" + u),
+      o && (a.src = i)
+    }
+  })(window);
    /*滑动屏幕隐藏和现实导航栏*/
    // 手指在屏幕上滑动的时候顶部的导航栏自动隐藏，只保留离线宝
    //
