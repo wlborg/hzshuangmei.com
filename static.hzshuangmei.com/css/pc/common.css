@@ -121,7 +121,9 @@ header .top .shuang_m1 .top_l img {
     padding-right: 6px;
 }
 header .top .shuang_m1 .top_l span {
-    padding-left: 9px;
+    /* padding-left: 9px; */
+    padding-left: 0;
+    margin-top: 45px;
 }
 /* 增加百度搜索框*/
 header .top .top_c {
