@@ -5,7 +5,7 @@
 * @File name: webhook.php
 * @Date:   2019-02-26 15:02:48
 * @Last Modified by:   chaihongjun
-* @Last Modified time: 2019-02-26 15:07:34
+* @Last Modified time: 2019-02-26 16:17:28
 * @Description: 从github自动拉取更新到服务器，完成自动部署.
  */
 //本地路径
@@ -30,7 +30,8 @@ $payloadHash = hash_hmac($algo, $request, $secret);
 if ($hash != $payloadHash) {
     die('secret is error');
 }
-echo shell_exec("cd {$local} && /usr/bin/git pull {$remote} 2>&1");
+// echo shell_exec("cd {$local} && /usr/bin/git pull {$remote} 2>&1");
+echo shell_exec("/root/hzshuangmei.com_github_synch.sh");
 die('done ' . date('Y-m-d H:i:s', time()));
 /**
  * @todo 获取头信息
