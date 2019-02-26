@@ -8,7 +8,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 require_once(DEDEINC.'/channelunit.class.php');
 require_once(DEDEINC.'/typelink.class.php');
 
@@ -58,7 +58,15 @@ class TagList
         $this->dtp2->SetNameSpace("field","[","]");
         $this->TypeLink = new TypeLink(0);
         $this->Fields['tag'] = $keyword;
-        $this->Fields['title'] = $keyword;
+       // $this->Fields['title'] = $keyword;
+    if (strlen($keyword) == 0)
+           {
+              $this->Fields['title'] = "Tags";
+           }
+    else
+        {
+            $this->Fields['title'] = $keyword;
+        }
         $this->TempletsFile = '';
 
         //设置一些全局参数的值
@@ -274,8 +282,8 @@ class TagList
      *  获得一个单列的文档列表
      *
      * @access    public
-     * @param     int  $limitstart  限制开始  
-     * @param     int  $row  行数 
+     * @param     int  $limitstart  限制开始
+     * @param     int  $row  行数
      * @param     int  $col  列数
      * @param     int  $titlelen  标题长度
      * @param     int  $infolen  描述长度
