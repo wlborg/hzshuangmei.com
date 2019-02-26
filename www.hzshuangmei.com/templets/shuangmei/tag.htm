@@ -13,48 +13,92 @@
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_project.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_project.js" as="script" crossorigin>
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_project.css" />
+    <style>
+    .tbox {
+        padding: 10px;
+    }
+
+    h6 {
+        text-align: center;
+        font-weight: bolder;
+        padding: 20px;
+        font-size: 24px;
+        color: #6e4292;
+    }
+
+    .project_content ul {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        word-break: break-all;
+        padding: 1px;
+    }
+
+    .project_content li {
+        float: left;
+        font-size: 16px;
+        word-break: break-all;
+        padding: 8px 6px;
+        line-height: 16px;
+        display: block;
+    }
+
+    .project_content li:hover {
+        border: 1px solid #8865a5;
+        margin: -1px;
+    }
+
+    .project_content a {
+        display: block;
+        height: 16px;
+    }
+    </style>
 </head>
 
 <body>
     {dede:include filename="_header.htm"/}
     {dede:myad name='topbanner_pc'/}
     <div class="m1">
-        <div class="location">
+        <!--        <div class="location">
             <i></i><span>当前位置：</span>{dede:field name='position'/}
-        </div>
-        <div class="line"></div>
+        </div> -->
+        <!--   <div class="line"></div> -->
         <!-- <h2 class="tit_h2"><img src="{dede:global.cfg_imgpath/}/pc/project_title.png" alt="红妆双美整形美容推荐项目"/></h2> -->
         <div class="project_content" id="pro_01">
-            <div id="ptab2">
-                <div class="tags_list">
-                    <dl class="tbox">
-                        <dt><strong>最新标签</strong></dt>
-                        <dd>
-                            {dede:tag row='60' sort='new'}
+            <div class="tags_list">
+                <div class="tbox">
+                    <h6>最新标签</h6>
+                    <ul>
+                        {dede:tag row='300' sort='new'}
+                        <li>
                             <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
-                            {/dede:tag}
-                        </dd>
-                    </dl>
+                        </li>
+                        {/dede:tag}
+                    </ul>
                 </div>
-                <div class="tags_list mt1">
-                    <dl class="tbox">
-                        <dt><strong>当月热门标签</strong></dt>
-                        <dd>
-                            {dede:tag row='60' sort='month'}
+            </div>
+            <div class="tags_list">
+                <div class="tbox">
+                    <h6>当月热门标签</h6>
+                    <ul>
+                        {dede:tag row='300' sort='month'}
+                        <li>
                             <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
-                            {/dede:tag}
-                        </dd>
-                    </dl>
+                        </li>
+                        {/dede:tag}
+                    </ul>
                 </div>
-                <div class="tags_list mt1">
-                    <dl class="tbox">
-                        <dt><strong>随机标签</strong></dt>
-                        <dd>
-                            {dede:tag row='100' sort='rand'}
+            </div>
+            <div class="tags_list mt1">
+                <div class="tbox">
+                    <h6>随机标签</h6>
+                    <ul>
+                        {dede:tag row='300' sort='rand'}
+                        <li>
                             <a href='[field:link/]' class='tagc[field:highlight /]'>[field:tag /]</a>
-                            {/dede:tag}
-                        </dd>
-                    </dl>
+                        </li>
+                        {/dede:tag}
+                    </ul>
                 </div>
             </div>
         </div>
