@@ -239,7 +239,7 @@ header .top .shuang_m1 .wxin {
 header .top .shuang_m1 .qq {
     background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center;
 }
-header .sm_logo {
+/* header .sm_logo {
     height: 131px;
 
     -webkit-animation-name: dissappear;
@@ -256,8 +256,8 @@ header .sm_logo {
 
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-}
-@-webkit-keyframes dissappear {
+} */
+/* @-webkit-keyframes dissappear {
     0% {
         height: 131px;
     }
@@ -266,8 +266,8 @@ header .sm_logo {
         visibility: hidden;
         height: 0;
     }
-}
-@keyframes dissappear {
+} */
+/* @keyframes dissappear {
     0% {
         width: 100%;
         height: 131px;
@@ -282,11 +282,12 @@ header .sm_logo {
 
         opacity: 0;
     }
-}
-header .sm_logo img {
+} */
+/* header .sm_logo img {
     display: inline-block;
     padding-top: 7px;
 }
+ */
 #nav {
     width: 100%;
     height: 59px;
