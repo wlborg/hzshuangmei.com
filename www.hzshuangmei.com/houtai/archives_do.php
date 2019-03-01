@@ -578,7 +578,7 @@ else if($dopost=='del')
           //判断文档是否提交过
         //如果提交过的就有删除提交，如果没有提交，则没有
          global $dsql;
-         $this->IsError = FALSE;
+         //$this->IsError = FALSE;
          $query = "select push from `#@__archives` where  id='$aid'";
          $arr = $this->dsql->GetOne($query);
            if(!is_array($arr))
