@@ -136,7 +136,7 @@ else if($dopost=="uploadLitpic")
          {
                 //文档上传缩略图预览
                $upfile=str_replace('/uploads', '//uploads.hzshuangmei.com', $upfile);
-                 
+
                  $msg = "<script language='javascript'>
                     parent.document.getElementById('uploadwait').style.display = 'none';
                     parent.document.getElementById('picname').value = '{$upfile}';
@@ -150,7 +150,7 @@ else if($dopost=="uploadLitpic")
          }
          else
          {
-            
+
                $msg = "<script language='javascript'>
                     parent.document.getElementById('uploadwait').style.display = 'none';
                     window.open('imagecut.php?f=picname&isupload=yes&file={$upfile}', 'popUpImagesWin', 'scrollbars=yes,resizable=yes,statebar=no,width=800,height=600,left=150, top=50');
@@ -213,7 +213,7 @@ else if($dopost=="makeArchives")
 {
     CheckPurview('sys_MakeHtml,sys_ArcBatch');
     if( !empty($aid) && empty($qstr) ) $qstr = $aid;
-    
+
     if($qstr=='')
     {
         ShowMsg('参数无效！',$ENV_GOBACK_URL);
@@ -264,7 +264,7 @@ else if($dopost=="checkArchives")
         {
             $dsql->ExecuteNoneQuery("UPDATE `$maintable` SET arcrank='0', dutyadmin='".$cuserLogin->getUserID()."' WHERE id='$aid' ");
         }
-        $dsql->ExecuteNoneQuery("UPDATE `#@__taglist` SET arcrank='0' WHERE aid='$aid' "); 
+        $dsql->ExecuteNoneQuery("UPDATE `#@__taglist` SET arcrank='0' WHERE aid='$aid' ");
         $pageurl = MakeArt($aid,false);
     }
     ShowMsg("成功审核指定的文档！",$ENV_GOBACK_URL);
@@ -334,7 +334,7 @@ else if($dopost=='moveArchives')
     {
         require_once(DEDEINC.'/typelink.class.php');
         if( !empty($aid) && empty($qstr) ) $qstr = $aid;
- 
+
         AjaxHead();
         $channelid = empty($channelid) ? 0 : $channelid;
         $tl = new TypeLink($aid);
@@ -343,7 +343,7 @@ else if($dopost=='moveArchives')
         <option value='0'>请选择移动到的位置...</option>\r\n
         $typeOptions
         </select>";
-        
+
         //输出AJAX可移动窗体
         $divname = 'moveArchives';
         echo "<div class='title' onmousemove=\"DropMoveHand('{$divname}', 225);\" onmousedown=\"DropStartHand();\" onmouseup=\"DropStopHand();\">\r\n";
@@ -575,6 +575,49 @@ else if($dopost=='del')
         $win->AddHidden("recycle",$recycle);
         $win->AddTitle("你确实要永久删除“ $qstr 和 $aid ”这些文档？");
         $winform = $win->GetWindow("ok");
+          //判断文档是否提交过
+        //如果提交过的就有删除提交，如果没有提交，则没有
+         global $dsql;
+         $this->IsError = FALSE;
+         $query = "select push from `#@__archives` where  id='$aid'";
+         $arr = $this->dsql->GetOne($query);
+           if(!is_array($arr))
+        {
+            $this->IsError = TRUE;
+        }else{
+                if($arr['push']==1){
+                        //表示提交过,则删除这个提交过的文档
+                    $url_pc='https://www.hzshuangmei.com/'.$artUrl;
+                     $url_m='https://m.hzshuangmei.com/'.$artUrl;
+            //提交数据链接/*
+            $api_pc = 'http://data.zz.baidu.com/del?site=https://www.hzshuangmei.com&token=Gbdb10GHA8NxrioW';
+            $api_m = 'http://data.zz.baidu.com/del?site=https://m.hzshuangmei.com&token=Gbdb10GHA8NxrioW';
+            $ch_pc = curl_init();
+            $ch_m = curl_init();
+            $options_pc =  array(
+                CURLOPT_URL => $api_pc,
+                CURLOPT_POST => true,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_POSTFIELDS => implode("\n", $url_pc),
+                CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
+                );
+               $options_m =  array(
+                CURLOPT_URL => $api_m,
+                CURLOPT_POST => true,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_POSTFIELDS => implode("\n", $url_m),
+                CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
+                );
+            curl_setopt_array($ch_pc, $options_pc);
+            curl_setopt_array($cm, $options_m);
+            $result_pc = curl_exec($ch_pc);
+            $result_m = curl_exec($ch_m);
+                 echo  $result_pc;
+                 echo $result_m;
+                }else{
+                    return;
+                }
+        }
         $win->Display();
     }
 }
@@ -706,7 +749,7 @@ else if($dopost=='quickEditSave')
     if(!TestPurview('a_Check,a_AccCheck,a_MyCheck')) $arcrank = -1;
 
     $adminid = $cuserLogin->getUserID();
-    
+
     //属性处理
     $flag = isset($flags) ? join(',', $flags) : '';
     if(!empty($flag))
@@ -720,13 +763,13 @@ else if($dopost=='quickEditSave')
         $flag = $oldflag;
     }
     */
-    
+
     $query = "UPDATE `#@__archives` SET
     typeid = '$typeid',
     flag = '$flag',
     arcrank = '$arcrank',
     money = '$money',
-    title = '$title', 
+    title = '$title',
     shorttitle = '$shorttitle',
     keywords = '$keywords',
     dutyadmin = '$adminid'
@@ -774,7 +817,7 @@ else if($dopost=="makekw")
     {
         //跳过已经有关键字的内容
         if(trim($row['keywords']) !='' ) continue;
-        
+
         $aid = $row['id'];
         $keywords = '';
         $title = $row['title'];
@@ -786,7 +829,7 @@ else if($dopost=="makekw")
         $sp->SetSource(Html2Text($body), $cfg_soft_lang, $cfg_soft_lang);
         $sp->StartAnalysis();
         $allindexs = preg_replace("/#p#|#e#/",'',$sp->GetFinallyIndex());
-        
+
         if(is_array($allindexs) && is_array($titleindexs))
         {
             foreach($titleindexs as $k => $v)
