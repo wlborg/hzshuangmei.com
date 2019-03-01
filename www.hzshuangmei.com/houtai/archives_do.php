@@ -575,49 +575,6 @@ else if($dopost=='del')
         $win->AddHidden("recycle",$recycle);
         $win->AddTitle("你确实要永久删除“ $qstr 和 $aid ”这些文档？");
         $winform = $win->GetWindow("ok");
-          //判断文档是否提交过
-        //如果提交过的就有删除提交，如果没有提交，则没有
-         global $dsql;
-         //$this->IsError = FALSE;
-         $query = "select push from `#@__archives` where  id='$aid'";
-         $arr = $this->dsql->GetOne($query);
-           if(!is_array($arr))
-        {
-            $this->IsError = TRUE;
-        }else{
-                if($arr['push']==1){
-                        //表示提交过,则删除这个提交过的文档
-                    $url_pc='https://www.hzshuangmei.com/'.$artUrl;
-                     $url_m='https://m.hzshuangmei.com/'.$artUrl;
-            //提交数据链接/*
-            $api_pc = 'http://data.zz.baidu.com/del?site=https://www.hzshuangmei.com&token=Gbdb10GHA8NxrioW';
-            $api_m = 'http://data.zz.baidu.com/del?site=https://m.hzshuangmei.com&token=Gbdb10GHA8NxrioW';
-            $ch_pc = curl_init();
-            $ch_m = curl_init();
-            $options_pc =  array(
-                CURLOPT_URL => $api_pc,
-                CURLOPT_POST => true,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_POSTFIELDS => implode("\n", $url_pc),
-                CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
-                );
-               $options_m =  array(
-                CURLOPT_URL => $api_m,
-                CURLOPT_POST => true,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_POSTFIELDS => implode("\n", $url_m),
-                CURLOPT_HTTPHEADER => array('Content-Type: text/plain'),
-                );
-            curl_setopt_array($ch_pc, $options_pc);
-            curl_setopt_array($cm, $options_m);
-            $result_pc = curl_exec($ch_pc);
-            $result_m = curl_exec($ch_m);
-                 echo  $result_pc;
-                 echo $result_m;
-                }else{
-                    return;
-                }
-        }
         $win->Display();
     }
 }
