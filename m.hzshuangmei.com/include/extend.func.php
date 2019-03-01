@@ -391,6 +391,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $thumb = replaceurl($row["thumb"]);
@@ -400,9 +401,9 @@ if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="'.$title.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
@@ -412,9 +413,9 @@ $list.= '
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
 $list.= '
 <div class="item zhuanjia-item">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="'.$title.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
@@ -889,6 +890,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $thumb = replaceurl($row["thumb"]);
@@ -898,9 +900,9 @@ if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'" class="clickParameter"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" class="clickParameter"><img src="'.$thumb.'" alt="'.$title.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link clickParameter">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link clickParameter">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more clickParameter">了解更多 &nbsp;》</a>
@@ -910,9 +912,9 @@ $list.= '
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
 $list.= '
 <div class="item zhuanjia-item">
-  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'"><img src="'.$thumb.'" alt="'.$title.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more">了解更多 &nbsp;》</a>
