@@ -394,6 +394,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $thumb = replaceurl($row["thumb"]);
@@ -403,9 +404,9 @@ if($counter == 0){
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" class="active"></li>' ;
 $list.= '
 <div class="item zhuanjia-item active">
-  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="'.$shorttitle.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
@@ -415,9 +416,9 @@ $list.= '
 $indicators.='<li data-target="#articleslidedoctor" data-slide-to="'.$counter.'" ></li>' ;
 $list.= '
 <div class="item zhuanjia-item">
-  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="" class=""></a></div>
+  <div class="zhuanjia-thum"> <a href="'.$url.'" target="_blank"><img src="'.$thumb.'" alt="'.$shorttitle.'" class=""></a></div>
   <div class="zhuanjia-info">
-    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$title.'</a></h2>
+    <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link" target="_blank">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
     <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more" target="_blank">了解更多 &nbsp;》</a>
@@ -847,6 +848,7 @@ while($row=$dsql->GetArray())
 $id = $row["id"];
 //医生文档标题
 $title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
 //该医生的文档信息
 $urlarray = GetOneArchive($id);
 //医生URL
@@ -858,9 +860,9 @@ $zhiwei = $row["zhiwei"];
 //医生擅长项目
 $shanchang = $row["shanchang"];
 $list.= '<li class="clearFix">
-                <a href="'.$url.'" class="tjb_l" target="_blank"><img src="'.$thumb.'" alt="'.$title.'"/></a>
+                <a href="'.$url.'" class="tjb_l" target="_blank"><img src="'.$thumb.'" alt="'.$shorttitle.'"/></a>
                 <div class="tjb_r">
-                    <p class="p3"><a href="'.$url.'" class="tjb_name clickParameter" target="_blank">'.$title.'</a></p>
+                    <p class="p3"><a href="'.$url.'" class="tjb_name clickParameter" target="_blank">'.$shorttitle.'</a></p>
                     <p class="p4"><a href="'.$url.'" target="_blank" class="clickParameter">'.$zhiwei.'</a></p>
                     <div class="tjb_sc clearFix">
                         <p>擅长项目：</p>
@@ -1180,6 +1182,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
