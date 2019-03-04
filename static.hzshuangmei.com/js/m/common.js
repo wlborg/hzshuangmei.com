@@ -848,5 +848,5 @@
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink();
+   quicklink({ priority:true });
 });
