@@ -29,7 +29,10 @@ var banner_swiper = new Swiper('.banner_swiper', {
     autoplay: 8000,
     pagination: '.banner-pagination',
     paginationClickable: true,
-    spaceBetween: 30
+    spaceBetween: 30,
+      lazy: {
+            loadPrevNext: true,
+        },
 });
 //右边固定
 $(function() {
@@ -582,5 +585,5 @@ $(document).ready( function(){
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink();
+   quicklink({ priority:true });
 });
