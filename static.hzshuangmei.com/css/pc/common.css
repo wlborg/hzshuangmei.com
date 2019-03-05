@@ -1148,9 +1148,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     POSITION: relative;
 }
 #div3 {
-    top: 333px;
+    top: 333px!important;
     left: 58px!important;
 }
 #div36 {
-    left: 229px!important;
+    left: 198px!important;
 }
