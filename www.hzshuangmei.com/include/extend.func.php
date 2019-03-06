@@ -1360,3 +1360,287 @@ $repairRes=$repairRes;
 }
 return $repairRes;
 }
+/*
+资讯栏目对应的项目栏目
+@param   $typeid   当前资讯文档所在的栏目ID最前1条
+ */
+function MoreHotProjectAboutInfo($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 222 :
+$relatetypeid= '14,15,24,25,26,17,18,19';
+break;
+case 90 :
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 91:
+$relatetypeid=14;
+break;
+case 92:
+$relatetypeid=14;
+break;
+case 93:
+$relatetypeid=14;
+case 94:
+$relatetypeid=14;
+break;
+case 95:
+$relatetypeid=14;
+break;
+case 96:
+$relatetypeid=14;
+break;
+case 97:
+$relatetypeid=14;
+break;
+case 98:
+$relatetypeid=9;
+break;
+case 99:
+$relatetypeid=9;
+break;
+case 100:
+$relatetypeid=9;
+break;
+case 101:
+$relatetypeid=9;
+break;
+case 102:
+$relatetypeid=9;
+break;
+case 103:
+$relatetypeid=9;
+break;
+case 104:
+$relatetypeid=9;
+break;
+case 105:
+$relatetypeid=9;
+break;
+case 106:
+$relatetypeid=9;
+break;
+case 107:
+$relatetypeid=9;
+break;
+case 108:
+$relatetypeid='24,25,26';
+break;
+case 109:
+$relatetypeid='24,25,26';
+break;
+case 110:
+$relatetypeid='24,25,26';
+break;
+case 111:
+$relatetypeid=25;
+break;
+case 112:
+$relatetypeid=24;
+break;
+case 113:
+$relatetypeid=25;
+break;
+case 114:
+$relatetypeid=25;
+break;
+case 115:
+$relatetypeid=17;
+break;
+case 116:
+$relatetypeid=17;
+break;
+case 117:
+$relatetypeid=17;
+break;
+case 118:
+$relatetypeid=17;
+break;
+case 119:
+$relatetypeid=17;
+break;
+case 120:
+$relatetypeid=17;
+break;
+case 121:
+$relatetypeid=17;
+break;
+case 122:
+$relatetypeid=18;
+break;
+case 123:
+$relatetypeid=18;
+break;
+case 124:
+$relatetypeid=18;
+break;
+case 125:
+$relatetypeid=18;
+break;
+case 126:
+$relatetypeid=19;
+break;
+case 127:
+$relatetypeid=19;
+break;
+case 128:
+$relatetypeid=19;
+break;
+case 129:
+$relatetypeid=19;
+break;
+case 130:
+$relatetypeid=19;
+break;
+case 131:
+$relatetypeid=19;
+break;
+case 132:
+$relatetypeid=19;
+break;
+case 133:
+$relatetypeid=19;
+break;
+case 134:
+$relatetypeid=19;
+break;
+case 135:
+$relatetypeid=19;
+break;
+case 136:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 137:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 138:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 139:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 140:
+$relatetypeid='20,27,28,29,30,31,32,33';
+break;
+case 141:
+$relatetypeid='27';
+break;
+case 142:
+$relatetypeid='27';
+break;
+case 143:
+$relatetypeid='27';
+break;
+case 144:
+$relatetypeid='27';
+break;
+case 145:
+$relatetypeid='27';
+break;
+case 146  :
+$relatetypeid='27';
+break;
+case 147  :
+$relatetypeid='27,28,29,30,31,32,33';
+break;
+case 148  :
+$relatetypeid='30,29';
+break;
+case 149  :
+$relatetypeid='30,29';
+break;
+case 150  :
+$relatetypeid='29';
+break;
+case 150  :
+$relatetypeid='29';
+break;
+case 151  :
+$relatetypeid='30,31';
+break;
+case 152  :
+$relatetypeid='28,29,30,31,32,33';
+break;
+case 153  :
+$relatetypeid='32,31';
+break;
+case 154  :
+$relatetypeid='32,31';
+break;
+case 155  :
+$relatetypeid='32,31';
+break;
+case 156  :
+$relatetypeid='32,31';
+break;
+default:
+$relatetypeid='14,15,24,25,26,17,18,19';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 1 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$relateproject.='<img src="'.$litpic.'" class="pro1" alt="'.$title.'">';
+
+}
+ return $relateproject;
+}
+/*
+资讯栏目对应的项目栏目
+@param   $typeid   当前资讯文档所在的栏目ID最前2-4条
+ */
+// function MoreHotProjectAboutInfoTF($typeid)
+// {
+// global $dsql;
+// $relateproject="";
+// $relatetypeid = 0;
+// switch ($typeid)
+// {
+// case 214 :
+// $relatetypeid= '14,15,16,17,18,19,88';
+// break;
+// case 103 :
+// $relatetypeid=7;
+// break;
+// case 104:
+// $relatetypeid=14;
+// break;
+// case 105:
+// $relatetypeid=7;
+// break;
+// case 106:
+// $relatetypeid=7;
+// case 107:
+// $relatetypeid=7;
+// break;
+// default:
+// $relatetypeid=78;
+// }
+// $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+// where  a.typeid='14'  and a.arcrank=0 order by id desc limit 1,3 ");
+// $dsql->Execute();
+// $ns = $dsql->GetTotalRow();
+// while($row=$dsql->GetArray())
+// {
+// $id = $row["id"];
+// $title = cn_substr($row["title"],80,0);
+// $shorttitle = cn_substr($row["shorttitle"],80,0);
+// $urlarray = GetOneArchive($id);
+// $url = $urlarray['arcurl'];
+// $litpic =$row["litpic"];
+// $relateproject.='<li><a><img src="'.$litpic.'" alt="'.$title.'"><span></span><span>'.$shorttitle.'</span></a></li>';
+
+// }
+//  return $relateproject;
+// }
