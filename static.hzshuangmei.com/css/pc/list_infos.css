@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-06 14:11:38
+* @Last Modified time: 2019-03-06 16:32:53
 */
 #information {
     position: absolute;
@@ -151,7 +151,7 @@ nav ul li:hover #information {
     margin: auto;
     margin-bottom: 13px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .information_right > ul > li > img {
     display: block;
@@ -427,8 +427,8 @@ nav ul li:hover #information {
     width: 281px;
     height: 164px;
     margin: 10px auto 0!important;
+    /* border: 1px solid red; */
 
-    border: 1px solid red;
     border-bottom: none!important;
 }
 .pro3 > li > a {
