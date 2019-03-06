@@ -1,0 +1,463 @@
+/*
+* @Author: Administrator
+* @FileName:list_infos.css
+* @Date:   2019-03-06 14:10:58
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-03-06 14:11:38
+*/
+#information {
+    position: absolute;
+    z-index: 100;
+    /*display: none;*/
+
+    width: 1200px;
+    height: 503px;
+    margin-left: -1000px;
+
+    border: 1px solid #efebeb;
+    background-color: #fff;
+}
+nav ul li:hover #information {
+    display: block;
+}
+.information_con1 {
+    width: 810px;
+    height: 376px;
+    margin-top: 58px;
+    margin-left: 47px;
+}
+.information_con1 > ul > li {
+    float: left;
+}
+.information_zx {
+    margin-right: 0!important;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: rgb(77,77,77);
+}
+.information_zx span {
+    margin: 0 34px 0 13px;
+
+    color: rgb(153,153,153);
+}
+.information_zx {
+    width: auto!important;
+}
+.information_con1 li {
+    height: 17px;
+    min-width: 64px;
+    margin-right: 27px;
+
+    line-height: 17px;
+
+    text-align: center;
+}
+.information_con1 li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.information_con1 li a:hover {
+    color: rgb(65,14,107);
+}
+.information_con1 {
+    overflow: hidden;
+}
+.information_con1 > ul {
+    margin-bottom: 38px;
+}
+.list_information {
+    margin-top: 30px;
+}
+.list_information_nav {
+    width: 1072px;
+    height: 40px;
+    margin: auto;
+
+    line-height: 40px;
+}
+.list_information_nav li {
+    float: left;
+    width: 150px;
+    height: 100%;
+    margin-left: 3px!important;
+
+    background: rgb(234,232,234);
+}
+.list_information_nav li:nth-of-type(1) {
+    margin-left: 0!important;
+}
+.list_information_nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    color: rgb(106,21,125);
+}
+.active_infor_List {
+    color: rgb(255,255,255)!important;
+    background: rgb(106,21,125);
+}
+.list_information_nav li:hover {
+    background: rgb(106,21,125);
+}
+.list_information_nav li > a:hover {
+    color: rgb(255,255,255)!important;
+}
+.information_tag span {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 20px;
+
+    cursor: pointer;
+
+    color: rgb(255,255,255);
+    border-radius: 6px;
+    background: rgb(194,199,245);
+}
+.information_tag span > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+}
+.information_tag {
+    margin-top: 20px;
+    margin-left: 43px;
+}
+.information_right {
+    position: absolute;
+    top: 34px;
+    right: 23px;
+
+    width: 226px;
+    height: 439px;
+
+    border: 1px solid rgb(242,242,242);
+    box-shadow: 3px 4px 13px rgba(224,224,224,.24);
+}
+.information_right > ul > li {
+    position: relative;
+
+    width: 201px;
+    height: 118px;
+    margin: auto;
+    margin-bottom: 13px;
+
+    border: 1px solid red;
+}
+.information_right > ul > li > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.information_right > ul > li > a > span {
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 22px;
+    overflow: hidden;
+
+    line-height: 22px;
+
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    background: rgb(65,14,107,.7);
+}
+.information_right > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: rgb(255,255,255);
+}
+.information_right > ul > li:nth-of-type(1) {
+    margin-top: 20px;
+}
+.list_information {
+    width: 1200px;
+    height: 200px;
+}
+.information_content ul li > div:first-child {
+    width: 312px;
+    height: 182px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+
+    border: 1px solid red;
+}
+.information_content ul li > div:nth-child(2) {
+    width: 470px!important;
+    height: 216px!important;
+}
+.information_content ul li p {
+    width: 433px!important;
+}
+.list_information_nav li {
+    margin: 0 0!important;
+
+    border-bottom: none!important;
+}
+.information_content h3 {
+    margin: 30px 0 1px;
+
+    border-bottom: none!important;
+}
+.information_content .news_main {
+    position: relative;
+
+    width: 856px;
+    padding-left: 21px;
+    margin-top: 50px!important;
+    margin-top: 50px!important;
+    margin-bottom: 150px;
+
+    border: 1px solid rgb(242,242,242);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.news_content .news_main .i3T {
+    position: relative;
+    top: 2px;
+
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+
+    background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
+    background-position: 0 -37px;
+}
+.information_content {
+    position: relative;
+}
+.information_content ul li {
+    position: relative;
+}
+.information_content .date {
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+.information_content ul li h4 {
+    width: 385px!important;
+}
+.list_infor_tag a {
+    display: inline-block;
+    padding: 1px 6px;
+    margin-right: 16px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    color: rgb(189,189,189)!important;
+    border-radius: 6px;
+}
+.list_infor_tag a:hover {
+    color: rgb(255,255,255)!important;
+    background: rgb(194,199,245);
+}
+.news_content > .news_main > p {
+    width: 1px;
+    height: 36px;
+    margin-top: 29px;
+
+    background: rgb(213,207,229);
+}
+.infor_Btitle {
+    position: absolute;
+    top: 24px;
+    left: 31px;
+
+    font-size: 24px;
+
+    color: rgb(105,50,144);
+}
+.infor_infotitle {
+    position: absolute;
+
+    font-size: 10px;
+
+    color: rgb(213,207,229);
+}
+.infor_infotitle {
+    position: absolute;
+    top: 53px;
+    left: 32px;
+
+    font-size: 10px;
+
+    color: rgb(213,207,229);
+}
+.list_infor_tag {
+    margin-top: 20px;
+}
+.information_content .ns_pa {
+    position: relative;
+
+    margin: 55px auto 59px!important;
+}
+.infor_right {
+    width: 306px;
+}
+.pro1 {
+    position: absolute;
+    top: 90px;
+    right: 0;
+
+    display: block;
+    width: 282px;
+    height: 164px;
+    padding: 12px 13px;
+
+    border: 1px solid rgb(242,242,242);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.pro2 {
+    position: absolute;
+    top: 288px;
+    right: 0;
+
+    width: 306px;
+    height: 544px;
+
+    border: 1px solid rgb(242,242,242);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.pro2Line {
+    width: 1px;
+    height: 31px;
+    margin-top: 31px;
+    margin-left: 18px;
+
+    background: rgb(213,207,229);
+}
+.pro2 > span {
+    position: absolute;
+    /* color: black; */
+    top: 27px;
+    left: 0;
+    left: 24px;
+
+    font-size: 18px;
+
+    color: rgb(105,50,144);
+}
+.pro2_info {
+    position: absolute;
+    top: 49px;
+    left: 25px;
+
+    font-size: 10px;
+
+    color: rgb(213,207,229);
+}
+.typeIdRight {
+    display: none;
+}
+.pro2_tag {
+    margin-top: 27px;
+    margin-left: 18px;
+    overflow: hidden;
+}
+.pro2_tag li {
+    float: left;
+    width: 104px;
+    margin: 0 40px 17px 0!important;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border-bottom: none!important;
+}
+.pro2_tag li > a {
+    color: rgb(102,102,102)!important;
+}
+.pro2_tag li > a:hover {
+    text-decoration: underline;
+
+    color: rgb(105,50,144)!important;
+}
+.pro2_tag li > a > span:hover {
+    text-decoration: underline;
+}
+.pro2_tag li > a > span:nth-of-type(1) {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+
+    font-size: 12px;
+    line-height: 10px;
+
+    text-align: center;
+
+    color: #fff;
+    background: rgb(213,207,229);
+}
+.pro3 {
+    position: absolute;
+    top: 842px;
+    right: 0;
+
+    width: 306px;
+    height: 537px;
+
+    border: 1px solid rgb(242,242,242);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.pro3 li:nth-of-type(1) {
+    margin-top: 14px!important;
+}
+.pro3 > li {
+    position: relative;
+
+    width: 281px;
+    height: 164px;
+    margin: 10px auto 0!important;
+
+    border: 1px solid red;
+    border-bottom: none!important;
+}
+.pro3 > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pro3 > li > a > span:nth-of-type(1) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 30px;
+
+    opacity: .4;
+    background: #2d014c;
+}
+.pro3 > li > a > span:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    text-align: center;
+
+    color: rgb(255,255,255);
+}
