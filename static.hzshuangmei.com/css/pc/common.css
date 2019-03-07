@@ -1195,6 +1195,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     margin-top: 58px;
     margin-left: 47px;
 }
+.information_con1 > ul {
+    overflow: hidden;
+}
 .information_con1 > ul > li {
     float: left;
 }
