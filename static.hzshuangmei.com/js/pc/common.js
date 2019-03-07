@@ -590,7 +590,13 @@ $(document).ready( function(){
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink({ priority:true });
+   quicklink({ priority:true,
+         ignores:[
+             /baidu/,
+             /kuaishang/,
+              uri => uri.includes('.php'),
+            ]
+      });
 });
 
 
