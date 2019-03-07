@@ -1322,8 +1322,6 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     height: 118px;
     margin: auto;
     margin-bottom: 13px;
-
-    border: 1px solid red;
 }
 .information_right > ul > li > img {
     display: block;
@@ -1360,21 +1358,6 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .list_information {
     width: 1200px;
     height: 200px;
-}
-.information_content ul li > div:first-child {
-    width: 312px;
-    height: 182px;
-    padding-bottom: 30px;
-    margin-right: 30px;
-
-    border: 1px solid red;
-}
-.information_content ul li > div:nth-child(2) {
-    width: 470px!important;
-    height: 216px!important;
-}
-.information_content ul li p {
-    width: 433px!important;
 }
 .list_information_nav li {
     margin: 0 0!important;

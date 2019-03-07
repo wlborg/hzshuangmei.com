@@ -2,8 +2,8 @@
 * @Author: Administrator
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
-* @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-06 17:11:29
+* @Last Modified by:   August1Rush
+* @Last Modified time: 2019-03-07 15:44:31
 */
 #information {
     position: absolute;
@@ -142,16 +142,6 @@ nav ul li:hover #information {
 
     border: 1px solid rgb(242,242,242);
     box-shadow: 3px 4px 13px rgba(224,224,224,.24);
-}
-.information_right > ul > li {
-    position: relative;
-
-    width: 201px;
-    height: 118px;
-    margin: auto;
-    margin-bottom: 13px;
-
-    /* border: 1px solid red; */
 }
 .information_right > ul > li > img {
     display: block;
