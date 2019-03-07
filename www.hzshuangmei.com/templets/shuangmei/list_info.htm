@@ -30,7 +30,7 @@ $ntime = time();
     <h2 class="h2_tit">
         <!-- <img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/> -->
     </h2>
-    <div id="list_information news_banner" style="width: 1200px;height: 200px;">
+    <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
         {dede:myad name='infospic_pc'/}
     </div>
     <div class="news_content information_content">
@@ -38,7 +38,7 @@ $ntime = time();
             <!-- <img src="{dede:global.cfg_imgpath/}/pc/ns_01.png" alt="红妆双美新闻"/> -->
         </h3>
         <ul class="list_information_nav" id="info_nav">
-           {dede:channel type='self'}<li><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:channel}
+           {dede:channel type='self'}<li class="nav_list"><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:channel}
         </ul>
         <ul class="news_main infors_main">
              <p>&nbsp;</p>
