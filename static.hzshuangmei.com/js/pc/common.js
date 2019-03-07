@@ -349,7 +349,10 @@ effects.goToJump("doctor_nav","doctor_nav");
                         var href = $(this).attr('href') + "#doctor_nav";
                     } else if (infos.href.indexOf('cases') > 0) {
                         var href = $(this).attr('href') + "#ca_01";
-                    } else {
+                    }else if (infos.href.indexOf('info') > 0) {
+                        var href = $(this).attr('href') + "#info_nav";
+                    }
+                    else {
                         var href = $(this).attr('href') + "#news_nav";
                     }
                     $(this).attr('href', href);
@@ -364,12 +367,14 @@ $(function() {
     effects.lightCurNav("#case_nav", "currnet1");
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
+    effects.lightCurNav(".list_information_nav", "currnet4");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
+    effects.goToJump("info_nav", "info_nav");
     //项目，专家，日记，新闻列表页翻页锚定位
     effects.goToPagination();
     if (window.location.host.indexOf("www.hzshuangmei.com")>=0){
