@@ -1591,8 +1591,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<img src="'.$litpic.'" class="pro1" alt="'.$title.'">';
-
+$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
  return $relateproject;
 }
@@ -1828,7 +1827,7 @@ $shorttitle = cn_substr($row["shorttitle"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a><img src="'.$litpic.'" alt="'.$title.'"><span></span><span>'.$shorttitle.'</span></a></li>';
+$relateproject.='<li><a href="'.$url.'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'"><span></span><span>'.$shorttitle.'</span></a></li>';
 
 }
  return $relateproject;
