@@ -379,10 +379,20 @@ $(function() {
      if(window.location.pathname.indexOf("Tinfo")!=-1){
              $(".currnet4").css("background","#F6A7B6");
      }
+     $("#info_nav>li").hover(function(){
+          if(window.location.pathname.indexOf("Tinfo")!=-1){
+             $(this).css("background","#F6A7B6");
+          }
+     });
       //资讯如果是二级,重定义激活状态颜色
      if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(".currnet4").css("background","#B17E6B");
      }
+      $("#info_nav>li").hover(function(){
+          if(window.location.pathname.indexOf("Tinfo")!=-1){
+             $(this).css("background","#F6A7B6");
+          }
+     });
     //项目，专家，日记，新闻列表页翻页锚定位
     effects.goToPagination();
     if (window.location.host.indexOf("www.hzshuangmei.com")>=0){
