@@ -381,17 +381,21 @@ $(function() {
      }
      $("#info_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Tinfo")!=-1){
-             $(this).css("background","#F6A7B6");
+            $(this).addClass("actvie_T");
           }
+     },function(){
+         $(this).removeClass('actvie_T');
      });
-      //资讯如果是二级,重定义激活状态颜色
+      //资讯如果是3级,重定义激活状态颜色
      if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(".currnet4").css("background","#B17E6B");
      }
       $("#info_nav>li").hover(function(){
-          if(window.location.pathname.indexOf("Tinfo")!=-1){
-             $(this).css("background","#F6A7B6");
+          if(window.location.pathname.indexOf("Thinfo")!=-1){
+             $(this).addClass("actvie_Th");
           }
+     },function(){
+         $(this).removeClass('actvie_Th');
      });
     //项目，专家，日记，新闻列表页翻页锚定位
     effects.goToPagination();

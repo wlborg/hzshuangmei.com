@@ -1592,3 +1592,15 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
     color: rgb(255,255,255);
 }
+.actvie_T {
+    background: #f6a7b6!important;
+}
+.actvie_T a {
+    color: #fff!important;
+}
+.actvie_Th {
+    background: rgb(177,126,107)!important;
+}
+.actvie_Th a {
+    color: #fff!important;
+}
