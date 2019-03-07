@@ -1186,7 +1186,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     border: 1px solid #efebeb;
     background-color: #fff;
 }
-nav ul li:hover #information {
+#nav ul li:hover #information {
     display: block;
 }
 .information_con1 {
