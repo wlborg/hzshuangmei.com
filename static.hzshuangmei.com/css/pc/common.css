@@ -1562,30 +1562,6 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     color: #fff;
     background: rgb(213,207,229);
 }
-.pro3 {
-    position: absolute;
-    top: 842px;
-    right: 0;
-
-    width: 306px;
-    height: 537px;
-
-    border: 1px solid rgb(242,242,242);
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
-}
-.pro3 li:nth-of-type(1) {
-    margin-top: 14px!important;
-}
-.pro3 > li {
-    position: relative;
-
-    width: 281px;
-    height: 164px;
-    margin: 10px auto 0!important;
-
-    border: 1px solid red;
-    border-bottom: none!important;
-}
 .pro3 > li > a {
     display: block;
     width: 100%;
