@@ -1154,7 +1154,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 #div36 {
     left: 198px!important;
 }
-.currnet4 {
-    color: rgb(255,255,255)!important;
+.list_information_nav li.currnet4 {
     background: rgb(106,21,125);
+}
+.list_information_nav li.currnet4 a {
+    color: rgb(255,255,255);
 }
