@@ -329,5 +329,123 @@
                 <span>News</span>
             </a>
         </li>
+         <li class="nav_list">
+            <a href="http://www.demo.com/new_info" class="nav_link bor_l" target="_blank" rel="noopener">
+            <span>资 讯</span><br/>
+                <span>INFORMATION</span>
+            </a>
+            <div class="clearFix" id="information">
+                 <div class="information_con1">
+                             <ul>
+                                 <li class="information_zx">
+                                    {dede:type typeid='90'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]<span>&gt;</span>
+                                      </a>
+                                      {/dede:type}
+                                 </li>
+                               {dede:channel typeid='90'}<li><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                             <ul>
+                                 <li class="information_zx">
+                                      {dede:type typeid='140'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]<span>&gt;</span>
+                                      </a>
+                                      {/dede:type}
+                                 </li>
+
+                               {dede:channel typeid='140'}<li><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                              <ul>
+                                 <li class="information_zx">
+                                  {dede:type typeid='173'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]<span>&gt;</span>
+                                      </a>
+                                      {/dede:type}
+                                 </li>
+
+                                 {dede:channel typeid='173'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                             <ul>
+
+                                 <li class="information_zx">
+                                       {dede:type typeid='200'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]<span>&gt;</span>
+                                      </a>
+                                        {/dede:type}
+                                 </li>
+
+                               {dede:channel typeid='200'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                               <ul>
+
+                                 <li class="information_zx">
+                                       {dede:type typeid='219'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]<span>&gt;</span>
+                                      </a>
+                                        {/dede:type}
+                                 </li>
+
+                                 {dede:channel typeid='219'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                               <ul>
+                                 <li class="information_zx">
+                                    {dede:type typeid='186'}
+                                    <a href="[field:typeurl/]">
+                                       &nbsp;&nbsp;&nbsp;[field:typename/]nbsp;&nbsp;&nbsp;<span>&gt;</span>
+                                      </a>
+                                        {/dede:type}
+                                 </li>
+
+                                  {dede:channel typeid='186'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+                              <ul>
+                                 <li class="information_zx">
+                                        {dede:type typeid='222'}
+                                      <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      <!-- <span>&gt;</span> -->
+                                      </a>
+                                        {/dede:type}
+                                 </li>
+                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                             </ul>
+
+                 </div>
+                 <div class="information_tag">
+                     {dede:FIELD.typeid function='GetTags_nav_typeid6(@me)'/}
+                 </div>
+                 <div class="information_right">
+                 <ul>
+                 {dede:arclist typeid='214' orderby='id' flag="c" row='3' addfields="picname" channelid="22"}
+                     <li>
+                        <a href="[field:arcurl/]">
+                         <img src="[field:picname function='replaceurl(@me)/]" title="[field:title/]" alt="">
+                         <span>[field:shorttitle/]</span>
+                         </a>
+                     </li>
+         {/dede:arclist}
+                 </ul>
+                 </div>
+            </div>
+        </li>
     </ul>
 </nav>
