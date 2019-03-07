@@ -15,6 +15,7 @@ $ntime = time();
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -73,7 +74,7 @@ $ntime = time();
         </div>
         </ul>
         <!-- 左边导航栏开始 -->
-               <!-- {dede:FIELD.typeid function='MoreHotProjectAboutInfo(@me)'/} -->
+               {dede:FIELD.typeid function='MoreHotProjectAboutInfo(@me)'/}
               <!-- <img src="" class="pro1" alt=""> -->
               <div class="pro2">
                     <p class="pro2Line">&nbsp;</p>
@@ -84,7 +85,7 @@ $ntime = time();
                     </ul>
               </div>
              <ul class="pro3">
-                <!-- {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/} -->
+                {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
              </ul>
     </div>
 </div>
@@ -97,6 +98,16 @@ $ntime = time();
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
+<script>
+    $(function(){
+           var pro1=$(".pro1").height();
+           var pro2=$(".pro2").height();
+           var pro3=$(".pro3").height();
+           var proH=pro1+pro2+pro3;//
+           $(".infors_main").height(proH+"px");
+
+    })
+</script>
 <!-- <script>
   $(function(){
           var tagHtml="";
