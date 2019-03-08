@@ -34,14 +34,14 @@ $ntime = time();
     </div>
     <div class="news_content information_content">
         <h3 id="news_nav">
-            <!-- <img src="{dede:global.cfg_imgpath/}/pc/ns_01.png" alt="红妆双美新闻"/> -->
+
         </h3>
         <ul class="list_information_nav">
-             <!-- <li><a href="" class="active_infor_List">红妆新闻</a></li> -->
-      <a href="{dede:field name='typeurl'/} ">{dede:field name='typename'/} </a>
-            <!-- <a href="[field:typeurl/]">{dede:field name="typename"/}</a> -->
-  <div class="sonHref">{dede:channel type='son'}<a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel}</div>
-        </ul>
+       <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/} </a></li>
+        {dede:channel type='son'}<li><a href="[field:typeurl/]">[field:typename/]</a>
+        </li>
+         {/dede:channel}
+      </ul>
         <ul class="news_main infors_main">
              <p>&nbsp;</p>
              <span class="infor_Btitle">{dede:field name="typename"/}资讯</span>
