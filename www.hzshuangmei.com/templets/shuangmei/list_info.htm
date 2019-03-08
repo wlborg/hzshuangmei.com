@@ -38,7 +38,7 @@ $ntime = time();
         </h3>
         <ul class="list_information_nav">
              <!-- <li><a href="" class="active_infor_List">红妆新闻</a></li> -->
-      {dede:field name='typename' function="GetTypeName(@me)"/}
+      <a href="{dede:field name='typeurl'/} ">{dede:field name='typename'/} </a>
             <!-- <a href="[field:typeurl/]">{dede:field name="typename"/}</a> -->
   <div class="sonHref">{dede:channel type='son'}<a href="[field:typeurl/]">[field:typename/]</a> {/dede:channel}</div>
         </ul>
