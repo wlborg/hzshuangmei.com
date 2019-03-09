@@ -100,5 +100,14 @@
           $(".pro2 ul").html(tagHtml);
   })
 </script> -->
+<script>
+    $(function(){
+           var pro1=$(".pro1").height();
+           var pro2=$(".pro2").height();
+           var pro3=$(".pro3").height();
+           var proH=pro1+pro2+pro3;//
+           $(".infors_main").height(proH+"px");
 
+    })
+</script>
 </html>
