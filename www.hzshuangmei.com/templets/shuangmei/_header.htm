@@ -357,7 +357,7 @@
                                  </li>
 
                                {dede:channel typeid='140'}<li><a href="[field:typeurl/]">[field:typename/]</a></li>{/dede:channel}
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                                <span>&nbsp;</span>
                              </ul>
                               <ul>
                                  <li class="information_zx">
@@ -371,7 +371,7 @@
                                  {dede:channel typeid='173'}
                                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
                                  {/dede:channel}
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                               <span>&nbsp;</span>
                              </ul>
                              <ul>
 
@@ -386,7 +386,7 @@
                                {dede:channel typeid='200'}
                                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
                                  {/dede:channel}
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                                 <span>&nbsp;</span>
                              </ul>
                                <ul>
 
@@ -401,7 +401,7 @@
                                  {dede:channel typeid='219'}
                                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
                                  {/dede:channel}
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                                 <span>&nbsp;</span>
                              </ul>
                                <ul>
                                  <li class="information_zx">
@@ -415,7 +415,7 @@
                                   {dede:channel typeid='186'}
                                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
                                  {/dede:channel}
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                                 <span>&nbsp;</span>
                              </ul>
                               <ul>
                                  <li class="information_zx">
@@ -426,7 +426,7 @@
                                       </a>
                                         {/dede:type}
                                  </li>
-                                 <!-- <img src="http://www.dem.com/images/update/information_line.png" class="information_line" alt=""> -->
+                                 <span>&nbsp;</span>
                              </ul>
 
                  </div>
@@ -437,7 +437,7 @@
                  <ul>
                   {dede:sql sql="select * from sm_archives as a,sm_addinfo as b where a.id=b.aid and a.channel=22 and a.typeid in(222,92,93,94,95,96,97,99,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,139,142,143,144,145,146,148,149,150,151,152,154,155,156) and a.arcrank=0 order by a.weight asc limit 0,3"}
                      <li>
-                        <a href="[field:arcurl/]">
+                        <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                          <img src="[field:picname function='replaceurl(@me)/]" title="[field:title/]" alt="">
                          <span>[field:shorttitle/]</span>
                          </a>
