@@ -8,27 +8,27 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 /*>>dede>>
 <name>频道标签</name>
 <type>全局标记</type>
 <for>V55,V56,V57</for>
 <description>用于获取栏目列表</description>
 <demo>
-{dede:channel type='top' row='8' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>"} 
- <li><a href='[field:typelink/]'>[field:typename/]</a> </li> 
+{dede:channel type='top' row='8' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>"}
+ <li><a href='[field:typelink/]'>[field:typename/]</a> </li>
 {/dede:channel}
 </demo>
 <attributes>
-    <iterm>typeid:栏目ID</iterm> 
+    <iterm>typeid:栏目ID</iterm>
     <iterm>reid:上级栏目ID</iterm>
     <iterm>row:调用栏目数</iterm>
     <iterm>col:分多少列显示（默认为单列）</iterm>
     <iterm>type:son表示下级栏目,self表示同级栏目,top顶级栏目</iterm>
     <iterm>currentstyle:应用样式</iterm>
-</attributes> 
+</attributes>
 >>dede>>*/
- 
+
 function lib_channel(&$ctag,&$refObj)
 {
     global $dsql;
@@ -38,7 +38,7 @@ function lib_channel(&$ctag,&$refObj)
     extract($ctag->CAttribute->Items, EXTR_SKIP);
     $innertext = $ctag->GetInnerText();
     $line = empty($row) ? 100 : $row;
-    
+
     $likeType = '';
     //读取固定的缓存块
     $cacheid = trim($cacheid);
@@ -71,7 +71,7 @@ function lib_channel(&$ctag,&$refObj)
         $topid = $row2['topid'];
         $issetInfos = true;
     }
-    
+
     if($type=='' || $type=='sun') $type='son';
     if($innertext=='') $innertext = GetSysTemplets("channel_list.htm");
 
@@ -99,14 +99,14 @@ function lib_channel(&$ctag,&$refObj)
     $dtp2->LoadSource($innertext);
     //检查是否有子栏目，并返回rel提示（用于二级菜单）
     if(preg_match('#:rel#', $innertext)) $needRel = true;
-    
+
     if(empty($sql)) return '';
     $dsql->SetQuery($sql);
     $dsql->Execute();
-    
+
     $totalRow = $dsql->GetTotalRow();
     //如果用子栏目模式，当没有子栏目时显示同级栏目
-    if($type=='son' && $reid!=0 && $totalRow==0)
+    if($type=='son' && $reid!=0 && $totalRow==0 && $noself=='')
     {
         $sql = "SELECT id,typename,typedir,isdefault,ispart,defaultname,namerule2,moresite,siteurl,sitepath
             FROM `#@__arctype` WHERE reid='$reid' And ishidden<>1 order by sortrank asc limit 0, $line ";

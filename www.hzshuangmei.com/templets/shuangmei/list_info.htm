@@ -2,19 +2,14 @@
 <html lang="cmn-hans">
 <head>
     {dede:include filename="_meta.htm"/}
-    <title>{dede:php runphp='yes'}
-
-$ntime = time();
-
- @me=MyDate('Y',$ntime);
-
- {/dede:php}{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -30,15 +25,15 @@ $ntime = time();
         <!-- <img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/> -->
     </h2>
     <div id="list_information news_banner" style="width: 1200px;height: 200px;">
-        {dede:myad name='informationpic_pc'/}
+        {dede:myad name='infospic_pc'/}
     </div>
     <div class="news_content information_content">
         <h3 id="news_nav">
-
+                <!-- {dede:myad name='infospic_pc'/} -->
         </h3>
         <ul class="list_information_nav">
        <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/} </a></li>
-        {dede:channel type='son'}<li><a href="[field:typeurl/]">[field:typename/]</a>
+        {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
         </li>
          {/dede:channel}
       </ul>
@@ -105,5 +100,14 @@ $ntime = time();
           $(".pro2 ul").html(tagHtml);
   })
 </script> -->
+<script>
+    $(function(){
+           var pro1=$(".pro1").height();
+           var pro2=$(".pro2").height();
+           var pro3=$(".pro3").height();
+           var proH=pro1+pro2+pro3;//
+           $(".infors_main").height(proH+"px");
 
+    })
+</script>
 </html>

@@ -379,7 +379,7 @@ $(function() {
      if(window.location.pathname.indexOf("Tinfo")!=-1){
              $(".currnet4").css("background","#F6A7B6");
      }
-     $("#info_nav>li").hover(function(){
+     $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Tinfo")!=-1){
             $(this).addClass("actvie_T");
           }
@@ -390,7 +390,7 @@ $(function() {
      if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(".currnet4").css("background","#B17E6B");
      }
-      $("#info_nav>li").hover(function(){
+      $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(this).addClass("actvie_Th");
           }

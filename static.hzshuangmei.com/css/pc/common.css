@@ -1196,7 +1196,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     margin-left: 47px;
 }
 .information_con1 > ul {
-    overflow: hidden;
+    position: relative;
+
+    height: 18px;
 }
 .information_con1 > ul > li {
     float: left;
@@ -1603,4 +1605,15 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 .actvie_Th a {
     color: #fff!important;
+}
+.information_con1 > ul > span {
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    z-index: 112;
+
+    display: block;
+    width: 674px;
+
+    border-bottom: 1px dashed #e5e5e5;
 }
