@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-09 09:29:37
+* @Last Modified time: 2019-03-11 12:39:38
 */
 #information {
     position: absolute;
@@ -72,7 +72,7 @@ nav ul li:hover #information {
     margin-top: 30px;
 }
 .list_information_nav {
-    width: 1072px;
+    width: 1200px;
     height: 40px;
     margin: auto;
 

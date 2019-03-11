@@ -24,7 +24,7 @@
     <h2 class="h2_tit">
         <!-- <img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/> -->
     </h2>
-    <div id="list_information news_banner" style="width: 1200px;height: 200px;">
+    <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
         {dede:myad name='infospic_pc'/}
     </div>
     <div class="news_content information_content">
@@ -41,7 +41,7 @@
              <p>&nbsp;</p>
              <span class="infor_Btitle">{dede:field name="typename"/}资讯</span>
              <span class="infor_infotitle">POPULAR PROJECT</span>
-            {dede:list pagesize='1' orderby='id' addfields="pc_list"}
+            {dede:list pagesize='10' orderby='id' addfields="pc_list"}
             <li class="clearFix">
                 <div>
                     <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]" ></a>
