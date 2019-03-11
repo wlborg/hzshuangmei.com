@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="cmn-hans">
 <head>
+    <title>海南红妆时尚双美整形美容连锁机构-生活美容医学美容【海南红妆双美官网】</title>
     {dede:include filename="_meta.htm"/}
     <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
     <meta name="description" content="{dede:global.cfg_description/}"/>
     <meta name="author" content="设计：于涛，前端：王苗"/>
-    <title>{dede:global.cfg_webname/}</title>
+
     {dede:include filename="_link.htm"/}
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/index.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/index.js" as="script" crossorigin async="true"/>
@@ -50,7 +51,7 @@
                     <div class="swiper-wrapper">
                         {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
-                            <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:title/]">
+                            <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:fulltitle/]">
 
                             <div class="timu">[field:fulltitle/]</div>
                             <div class="date">
@@ -124,7 +125,7 @@
                     </div>
                     <div class="right clearFix">
                         <!--<a class="j-site-consult" href="javascript:void(0)" target="_blank" rel="noopener"><img src="{dede:global.cfg_imgpath/}/pc/p1_09.jpg" alt="超声刀"/></a>-->
-                        <a href="/projects/quban/pimiao.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_11.jpg"  alt="皮秒祛斑"/></a>
+                        <a href="https://www.hzshuangmei.com/projects/quban/xpmqb.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_11.jpg"  alt="皮秒祛斑"/></a>
                         <a href="/projects/quban/queban.html" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_10.jpg"  alt="祛雀斑"/></a>
                         <a class="j-site-consult" href="javascript:void(0)" target="_blank" rel="noopener"><img  src="{dede:global.cfg_imgpath/}/pc/p1_09_1.jpg"  alt="光子嫩肤"/></a>
                         <a href="/projects/tuomao/tuomao2.html" target="_blank" rel="noopener"><img src="{dede:global.cfg_imgpath/}/pc/p1_12.jpg"  alt="清凉脱毛"/></a>
@@ -199,15 +200,15 @@
                         <!--            {dede:arclist typeid=3 isweight='y' orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17"  row="20"}
                                    <div class="swiper-slide">
                                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                                           <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                           <p>[[field:zhiwei/]] [field:title/]</p>
+                                           <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:fulltitle/]"/>
+                                           <p>[[field:zhiwei/]] [field:fulltitle/]</p>
                                        </a>
                                    </div>
                                    {/dede:arclist} -->
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.arcrank=0 and a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                                <img  src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -224,15 +225,15 @@
                         <!--                 {dede:arclist typeid=4  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
                                         <div class="swiper-slide">
                                             <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                                <p>[[field:zhiwei/]] [field:title/]</p>
+                                                <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:fulltitle/]"/>
+                                                <p>[[field:zhiwei/]] [field:fulltitle/]</p>
                                             </a>
                                         </div>
                                         {/dede:arclist} -->
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=4  order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                                <img src="[field:thumb2 function='replaceurl(@me)/]"   alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -248,15 +249,15 @@
                         <!--        {dede:arclist typeid=5  isweight='y'  orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17" row="20"}
                                <div class="swiper-slide">
                                    <a class="j-site-consult" href="javascript:void(0)" target="_blank" rel="noopener">
-                                       <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                       <p>[[field:zhiwei/]] [field:title/]</p>
+                                       <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:fulltitle/]"/>
+                                       <p>[[field:zhiwei/]] [field:fulltitle/]</p>
                                    </a>
                                </div>
                                {/dede:arclist} -->
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=5  order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
-                                <img src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                                <img src="[field:thumb2 function='replaceurl(@me)/]"  alt="[field:title/]" title="[field:title/]"/>
                                 <p>[[field:zhiwei/]] [field:title/]</p>
                             </a>
                         </div>
@@ -279,7 +280,7 @@
 <!-- 恢复过来开始 -->
 <div class="index_clients">
     <div class="m1">
-        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="真人代言 现身说法"/></h3>
+        <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="整形案例 真人代言 现身说法"/></h3>
         <div id="tab4">
             <ul class="clearFix">
                 <li class="fli4">整形美容</li>
@@ -294,24 +295,27 @@
                channelid="19"}
                <li>
                    <div class="clients_t">
-                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                            <a href="[field:arcurl/]" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">  -->
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                            <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
-                       <a href="javascript:void(0)" class="j-consult qiehuan">
-                           <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                         <a href="[field:arcurl/]" class="qiehuan">
+                      <!--  <a href="javascript:void(0)" class="j-consult qiehuan"> -->
+                           <img  src="[field:imgafter function='replaceurl(@me)/]"   alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                            <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                         <a href="[field:arcurl/]" class="xiangqing" target="_blank" rel="noopener">查看详情</a>
+                     <!--   <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a> -->
                    </div>
                </li>
                {/dede:arclist}
@@ -321,24 +325,27 @@
                channelid="19"}
                <li>
                    <div class="clients_t">
-                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                       <a href="[field:arcurl/]" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                             <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
-                       <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener">
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                        <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener"> -->
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                        <a href="[field:arcurl/]" class="xiangqing" target="_blank" rel="noopener">查看详情</a>
+                      <!--  <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a> -->
                    </div>
                </li>
                {/dede:arclist}
@@ -348,24 +355,27 @@
                channelid="19"}
                <li>
                    <div class="clients_t">
-                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                     <a href="[field:arcurl/]" target="_blank" rel="noopener">
+                      <!--  <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"   alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
-                       <a href="javascript:void(0)" class=" j-consult qiehuan" target="_blank" rel="noopener">
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                       <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" class=" j-consult qiehuan" target="_blank" rel="noopener"> -->
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                             <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                       <a href="[field:arcurl/]" class="xiangqing">查看详情</a>
+                       <!-- <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a> -->
                    </div>
                </li>
                {/dede:arclist}
@@ -375,24 +385,27 @@
                channelid="19"}
                <li>
                    <div class="clients_t">
-                       <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult">
-                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" target="_blank" rel="noopener" class="j-consult"> -->
+                           <img  src="[field:imgbefore function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
-                       <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener">
-                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                         <a href="[field:arcurl/]" class="qiehuan" target="_blank" rel="noopener">
+                       <!-- <a href="javascript:void(0)" class="j-consult qiehuan" target="_blank" rel="noopener"> -->
+                           <img src="[field:imgafter function='replaceurl(@me)/]"  alt="[field:fulltitle/]" title="[field:fulltitle/]"/>
                              <span>&nbsp;</span>
 
-                           <p>[美丽蜕变] [field:title/]</p>
+                           <p>[field:fulltitle/]</p>
                        </a>
                    </div>
                    <div class="clients_b">
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                       <a href="[field:arcurl/]" class="xiangqing">查看详情</a>
+                      <!--  <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a> -->
                    </div>
                </li>
                {/dede:arclist}
@@ -418,9 +431,9 @@
                         {dede:arclist typeid=57 titlelen="120" flag="c" orderby='id' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
-                            <img  src="[field:thumb function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                            <img  src="[field:thumb function='replaceurl(@me)/]"  alt="[field:fulltitle/]"/>
 
-                            <p>[field:title/]</p>
+                            <p>[field:fulltitle/]</p>
                         </a>
                         {/dede:arclist}
                     </div>
@@ -436,9 +449,9 @@
                         {dede:arclist typeid=58 titlelen="120" flag="c" orderby='id' row='3' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
-                            <img src="[field:thumb function='replaceurl(@me)/]"   alt="[field:title/]"/>
+                            <img src="[field:thumb function='replaceurl(@me)/]"   alt="[field:fulltitle/]"/>
 
-                            <p>[field:title/]</p>
+                            <p>[field:fulltitle/]</p>
                         </a>
                         {/dede:arclist}
                     </div>
@@ -454,9 +467,9 @@
                         {dede:arclist typeid=59 titlelen="120" flag="c" orderby='id' addfields="thumb"
                         channelid="1"}
                         <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
-                            <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:title/]"/>
+                            <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:fulltitle/]"/>
 
-                            <p>[field:title/]</p>
+                            <p>[field:fulltitle/]</p>
                         </a>
                         {/dede:arclist}
                     </div>

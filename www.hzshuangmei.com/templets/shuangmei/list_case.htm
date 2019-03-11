@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="cmn-hans">
 <head> {dede:include filename="_meta.htm"/}
     <meta name="keywords" content="{dede:field name='keywords'/}" />
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
@@ -39,22 +39,27 @@
                     <div class="clearFix">
                 {dede:list pagesize="9" orderby="weight" addfields="imgbefore,imgafter,job,doctor,project"}
                         <div class="list">
-                            <a class="j-consult t0" href="javascript:void(0)" target="_blank" rel="noopener">
+                              <a class="t0" href="[field:arcurl/]" target="_blank" rel="noopener">
+                            <!-- <a class="j-consult t0" href="javascript:void(0)" target="_blank" rel="noopener"> -->
                                 <img src="[field:imgafter function='replaceurl(@me)/]" alt="[field:title/]整形后">
                             </a>
                             <div class="ltt">
-                                <a class="j-consult l_ico" href="javascript:void(0)" target="_blank" rel="noopener">
+                                 <a class="l_ico" href="[field:arcurl/]" target="_blank" rel="noopener">
+                               <!--  <a class="j-consult l_ico" href="javascript:void(0)" target="_blank" rel="noopener"> -->
                                     <img src="[field:imgbefore function='replaceurl(@me)/] " alt="[field:title/]整形前">
                                 </a>
                                 <div class="txt">
-                                    <a class="j-consult t1" href="javascript:void(0)"  target="_blank" rel="noopener">
-                                        <span>姓名：[field:title/]</span><span>职业：[field:job/]</span>
+                                     <a class="t1" href="[field:arcurl/]"  target="_blank" rel="noopener">
+                                    <!-- <a class="j-consult t1" href="javascript:void(0)"  target="_blank" rel="noopener"> -->
+                                         <span>[field:shorttitle/]</span>
+                                         <!-- <span>职业：[field:job/]</span> -->
                                     </a>
-                                    <div class="t2">塑美项目： [field:project/]</div>
-                                    <div class="t3">塑美医师：[field:doctor/]</div>
+                                    <div class="t2">整形项目: [field:project/]</div>
+                                    <div class="t3">整形医师:[field:doctor/]</div>
                                 </div>
                             </div>
-                            <a class="j-consult t4" href="javascript:void(0)" target="_blank" rel="noopener">
+                                <a class="t4" href="[field:arcurl/]" target="_blank" rel="noopener">
+                            <!-- <a class="j-consult t4" href="javascript:void(0)" target="_blank" rel="noopener"> -->
                                 <img src="//img.hzshuangmei.com/pc/case_video.jpg" alt="视频图标"/>
                             </a>
                         </div>

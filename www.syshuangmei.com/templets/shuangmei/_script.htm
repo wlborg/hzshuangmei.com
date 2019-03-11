@@ -1,10 +1,10 @@
 <link rel="preload" href="{dede:global.cfg_jspath/}/pc/sy_common.js" as="script">
-<link rel="preload" href="{dede:global.cfg_jspath/}/pc/layer/layer.js" as="script">
-<link rel="preload" href="{dede:global.cfg_jspath/}/pc/kst_popup.js" as="script">
+<!-- <link rel="preload" href="{dede:global.cfg_jspath/}/pc/layer/layer.js" as="script">
+<link rel="preload" href="{dede:global.cfg_jspath/}/pc/kst_popup.js" as="script"> -->
 <script src="{dede:global.cfg_jspath/}/pc/jquery.min.js"></script>
 <script src="{dede:global.cfg_jspath/}/pc/swiper.min.js"></script>
 <script src="{dede:global.cfg_jspath/}/pc/sy_common.js"></script>
-<script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script>
+<!-- <script src="{dede:global.cfg_jspath/}/pc/layer/layer.js"></script> -->
 <!-- 百度统计代码 -->
 <script>
 var _hmt = _hmt || [];
@@ -14,6 +14,11 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
+
+//注册 serviceworker
+        if ('serviceWorker' in navigator) {
+             navigator.serviceWorker.register('/serviceworker.js');
+        }
 </script>
 <!-- 快商通 -->
 <script type="text/javascript" src="https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009" charset="utf-8"></script>
