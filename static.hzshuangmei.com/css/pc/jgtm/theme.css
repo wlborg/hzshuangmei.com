@@ -97,10 +97,13 @@ background: url('//img.hzshuangmei.com/pc/jgtm/bg3_consult.png') center center n
     .m7 .g-doc { padding-top: 126px; }
     .m7 .g-doc .g-title { background: url('//img.hzshuangmei.com/pc/jgtm/bgt7.png') center center no-repeat; height: 62px; width: 534px; }
     .m7 .g-doc .g-content { margin-top: 70px; }
-    .m7 .g-doc .g-content a { display: block; float: left; width: 630px; position: relative; margin-bottom: 34px; padding-left: 20px; }
-    .m7 .g-doc .g-content a .title { font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 24px; letter-spacing: 0px; color: #996435; }
-    .m7 .g-doc .g-content a .line { display: inline-block; margin-left: 10px; border-bottom: dotted 2px #996435; }
-    .m7 .g-doc .g-content a .btn { display: inline-block; float: right; width: 109px; height: 30px; border: solid 1px #996435; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 30px; letter-spacing: 0px; color: #996435; text-align: center; }
+    .m7 .g-doc .g-content a { height: 32px;display: block; float: left; width: 630px; position: relative; margin-bottom: 34px; padding-left: 20px; }
+    .m7 .g-doc .g-content a .title { font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 24px; letter-spacing: 0px; color: #996435;  vertical-align: top;}
+    .m7 .g-doc .g-content a .line {height:10px; display: inline-block; margin-left: 10px; border-bottom: dotted 2px #996435; }
+    .m7 .g-doc .g-content a .btn { display: inline-block; /*float: right;*/position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff; width: 109px; height: 30px; border: solid 1px #996435; font-size: 24px; font-weight: normal; font-stretch: normal; line-height: 30px; letter-spacing: 0px; color: #996435; text-align: center; }
     .m7 .g-doc a:nth-child(2n) { margin-left: 80px; }
     .m7 .g-doc a:before { position: absolute; left: 0; top: 6px; display: block; content: '?'; width: 15px; height: 15px; background-color: #e67d6c; font-size: 13px; font-weight: normal; font-stretch: normal; line-height: 15px; letter-spacing: 0px; color: #fff; text-align: center; }
     .m7 .g-doc .item1 .line { width: 266px; }
