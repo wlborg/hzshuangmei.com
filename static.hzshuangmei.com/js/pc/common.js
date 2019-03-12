@@ -407,7 +407,7 @@ $(function() {
     }
     if (window.location.host.indexOf("www.syshuangmei.com")>=0){
         tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=70009");
-        tools.addBaiduScript("https://hm.baidu.com/hm.js?25c3e3b6fc24f1c07dd2bbe6021fa985");
+        tools.addBaiduScript("https://hm.baidu.com/hm.js?f645e32a0c17c6569cfe9c11fe44a3c4");
         //1分钟后打开快商通对话
         //min1();
     }
