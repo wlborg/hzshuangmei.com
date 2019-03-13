@@ -531,7 +531,7 @@ body {
     height: 76px;
 
     outline: medium;
-    background: url("//img.hzshuangmei.com/pc/jgtm/bg6_next.png") center center no-repeat;
+    background: url("//img.hzshuangmei.com/pc/jgtm/bg6_next.png") center center no-repeat!important;
 }
 .m6 .g-doc .consult {
     height: 82px;
