@@ -382,6 +382,7 @@ $(function() {
      $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Tinfo")!=-1){
             $(this).addClass("actvie_T");
+            $(".infors_main").addClass("infors_main_T");
           }
      },function(){
          $(this).removeClass('actvie_T');
@@ -393,6 +394,7 @@ $(function() {
       $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(this).addClass("actvie_Th");
+             $(".infors_main").addClass("infors_main_Th");
           }
      },function(){
          $(this).removeClass('actvie_Th');
