@@ -88,11 +88,11 @@ width: 8.31911263rem; height: 3.62627986rem; margin-bottom: 0.34129693rem; margi
 .m7 .g-doc .g-content { margin-top: 1.49317406rem; }
 .m7 .g-doc .g-content a { display: block;  /*float: left;*/ margin: 0 auto; width: 13.43856655rem; height: 1rem; position: relative; margin-bottom: 0.72525597rem; padding-left: 0.42662116rem; vertical-align: top; }
 .m7 .g-doc .g-content a .title { font-size: 0.51194539rem; font-weight: normal; font-stretch: normal; line-height: 0.51194539rem; letter-spacing: 0rem; color: #996435; vertical-align: top; }
-.m7 .g-doc .g-content a .line { display: inline-block; margin-left: 0.21331058rem; border-bottom: dotted 0.04266212rem #996435; vertical-align: 0.75rem; }
+.m7 .g-doc .g-content a .line { height:0.21rem; display: inline-block; margin-left: 0.21331058rem; border-bottom: dotted 0.04266212rem #996435; }
 .m7 .g-doc .g-content a .btn {  /*display: inline-block;*/
 
 	/*float: right;*/
-display: block; position: absolute; top: 0; right: 0; width: 2.32508532rem; height: 0.63993174rem; border: solid 1px #996435; font-size: 0.51194539rem; font-weight: normal; font-stretch: normal; line-height: 0.63993174rem; letter-spacing: 0rem; color: #996435; text-align: center; }
+display: block; position: absolute; top: -0.1rem; right: 0; width: 2.32508532rem; height: 0.63993174rem; border: solid 1px #996435; font-size: 0.51194539rem; font-weight: normal; font-stretch: normal; line-height: 0.63993174rem; letter-spacing: 0rem; color: #996435; text-align: center; }
 .m7 .g-doc a:nth-child(2n) {  /*margin-left: 80rem/@fb;*/ }
 .m7 .g-doc a:before { position: absolute; left: 0; top: 0.12798635rem; display: block; content: '?'; width: 0.31996587rem; height: 0.31996587rem; background-color: #e67d6c; font-size: 0.27730375rem; font-weight: normal; font-stretch: normal; line-height: 0.31996587rem; letter-spacing: 0rem; color: #fff; text-align: center; }
 .m7 .g-doc .item1 .line { width: 5.67406143rem; }
@@ -102,3 +102,4 @@ display: block; position: absolute; top: 0; right: 0; width: 2.32508532rem; heig
 .m7 .g-doc .item5 .line { width: 6.14334471rem; }
 .m7 .g-doc .item6 .line { width: 3.15699659rem; }
 .m7 .g-doc .item7 .line { width: 5.11945392rem; }
+
