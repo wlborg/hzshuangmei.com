@@ -1330,6 +1330,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 100%;
     height: 100%;
 }
+.information_right > ul > li > a > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .information_right > ul > li > a > span {
     position: absolute;
     bottom: 0;
