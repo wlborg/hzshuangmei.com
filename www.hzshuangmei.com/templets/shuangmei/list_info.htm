@@ -102,12 +102,15 @@
 </script> -->
 <script>
     $(function(){
+         //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
            var pro1=$(".pro1").height();
            var pro2=$(".pro2").height();
            var pro3=$(".pro3").height();
            var proH=pro1+pro2+pro3;//
-           $(".infors_main").height(proH+"px");
-
+           var inforHg=$(".infors_main").height();
+           if(inforHg<proH){
+             $(".infors_main").height(proH+"px");
+           }
     })
 </script>
 </html>

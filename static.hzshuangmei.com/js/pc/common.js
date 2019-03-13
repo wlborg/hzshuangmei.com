@@ -488,10 +488,10 @@ $(function() {
     }
   })(window);
 // 分期框
-$(function() {
-    var $fqaa = $('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank" rel="noopener"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
-    $('body').append($fqaa);
-});
+// $(function() {
+//     var $fqaa = $('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank" rel="noopener"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
+//     $('body').append($fqaa);
+// });
 /*   网站防护等    chj */
 var protection = (function() {
     // var data = {
