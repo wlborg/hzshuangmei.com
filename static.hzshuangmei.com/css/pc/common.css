@@ -1609,7 +1609,14 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: rgb(177,126,107)!important;
 }
 .actvie_Th a {
-    color: #fff!important;
+    color: rgb(246,167,182)!important;
+}
+
+.infors_main_T ul li p span {
+    color: #8c64a0!important;
+}
+.infors_main_Th ul li p span {
+    color: #8c64a0!important;
 }
 .information_con1 > ul > span {
     position: absolute;

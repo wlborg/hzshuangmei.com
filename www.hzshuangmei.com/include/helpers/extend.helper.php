@@ -76,17 +76,69 @@ if ( ! function_exists('AjaxHead'))
  */
 if ( ! function_exists('dede_strip_tags'))
 {
-	function dede_strip_tags($str) { 
-	    $strs=explode('<',$str); 
-	    $res=$strs[0]; 
-	    for($i=1;$i<count($strs);$i++) 
-	    { 
-	        if(!strpos($strs[$i],'>')) 
-	            $res = $res.'&lt;'.$strs[$i]; 
-	        else 
-	            $res = $res.'<'.$strs[$i]; 
-	    } 
-	    return strip_tags($res);    
-	} 
+	function dede_strip_tags($str) {
+	    $strs=explode('<',$str);
+	    $res=$strs[0];
+	    for($i=1;$i<count($strs);$i++)
+	    {
+	        if(!strpos($strs[$i],'>'))
+	            $res = $res.'&lt;'.$strs[$i];
+	        else
+	            $res = $res.'<'.$strs[$i];
+	    }
+	    return strip_tags($res);
+	}
 }
 
+ //资讯列表页读取每条资讯的tag
+function GetTags_list_typeid($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid='$id' limit 24";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<li><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'><span>?</span><span>".$row['tag']."</span></a></li>" : ' '."<li><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'><span>?</span><span>".$row['tag']."</span></a></li>");
+
+
+
+        }
+
+        return $tags;
+
+    }
+ //资讯列表导航顶部tag
+function GetTags_nav_typeid6($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid=214 limit 6";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+
+
+
+        }
+
+        return $tags;
+
+    }
