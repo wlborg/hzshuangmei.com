@@ -382,6 +382,7 @@ $(function() {
      $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Tinfo")!=-1){
             $(this).addClass("actvie_T");
+            $(".infors_main").addClass("infors_main_T");
           }
      },function(){
          $(this).removeClass('actvie_T');
@@ -393,6 +394,7 @@ $(function() {
       $(".list_information_nav>li").hover(function(){
           if(window.location.pathname.indexOf("Thinfo")!=-1){
              $(this).addClass("actvie_Th");
+             $(".infors_main").addClass("infors_main_Th");
           }
      },function(){
          $(this).removeClass('actvie_Th');
@@ -488,10 +490,10 @@ $(function() {
     }
   })(window);
 // 分期框
-$(function() {
-    var $fqaa = $('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank" rel="noopener"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
-    $('body').append($fqaa);
-});
+// $(function() {
+//     var $fqaa = $('<a href="https://www.hzshuangmei.com/activity/fqfk.html" class="fqfk" target="_blank" rel="noopener"><img src=\'//img.hzshuangmei.com/pc/fqfk/images/fq.png\' class=\'fq\'></a>')
+//     $('body').append($fqaa);
+// });
 /*   网站防护等    chj */
 var protection = (function() {
     // var data = {
