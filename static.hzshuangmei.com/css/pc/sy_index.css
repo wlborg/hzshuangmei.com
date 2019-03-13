@@ -308,8 +308,8 @@ h3 img {
     clear: both;
 }
 .index_clients #tab4 .sy-fli4 {
-    background: #5d819a !important;
     border: 1px solid #5d819a;
+    background: #5d819a !important;
 }
 .index_project #tab2 .fli2 {
     color: #fff;
@@ -375,6 +375,7 @@ h3 img {
     line-height: 29px;
 
     text-align: center;
+
     color: #64b1e6;
     border: 1px solid #64b1e6;
     /*color: #875aa6;
@@ -395,9 +396,9 @@ h3 img {
 .index_expert {
     width: 100%;
     height: 899px;
-
-    background:#eaebeb;
     margin-top: -5px;
+
+    background: #eaebeb;
 }
 
 .index_expert #tab3 ul {
@@ -424,8 +425,9 @@ h3 img {
 
 .index_expert #tab3 .fli3 {
     cursor: pointer;
-    background-color: #5d819a;
+
     border: 1px solid #5d819a;
+    background-color: #5d819a;
 }
 
 .index_expert #tabCon3 {
@@ -443,7 +445,8 @@ h3 img {
     margin: 0 auto;
 
     font-size: 20px;
-    line-height: 53px;
+    /* line-height: 53px; */
+    line-height: 28px;
 
     text-align: center;
 
@@ -501,8 +504,9 @@ h3 img {
     line-height: 34px;
 
     text-align: center;
-    border: 1px solid #64b1e6;
+
     color: #6a157d;
+    border: 1px solid #64b1e6;
     /*background-color: #e3dee3;*/
 }
 
@@ -510,9 +514,9 @@ h3 img {
     cursor: pointer;
 
     color: #fff;
+    border: 1px solid #5d819a;
     /*background-color: rgb(106, 21, 125);*/
     background: #5d819a !important;
-    border: 1px solid #5d819a;
 }
 
 .index_clients #tabCon4 ul li {
@@ -1209,11 +1213,15 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-.index_expert #tabCon3 .swiper-button-prev4, .swiper-container-rtl .swiper-button-next4 {
+.index_expert #tabCon3 .swiper-button-prev4,
+.swiper-container-rtl .swiper-button-next4 {
     top: 257px;
+
     background-image: url(//img.hzshuangmei.com/pc/sy/p2_arrow_l.png);
 }
-.index_expert #tabCon3 .swiper-button-next4, .swiper-container-rtl .swiper-button-prev4 {
+.index_expert #tabCon3 .swiper-button-next4,
+.swiper-container-rtl .swiper-button-prev4 {
     top: 257px !important;
+
     background-image: url(//img.hzshuangmei.com/pc/sy/p2_arrow_r.png);
 }
