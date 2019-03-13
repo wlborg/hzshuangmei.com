@@ -125,7 +125,7 @@ function GetTags_nav_typeid6($id)
 
         $tags = '';
 
-        $query = "SELECT tag FROM `sm_taglist` WHERE typeid=214 limit 6";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid='$id' limit 6";
 
         $dsql->Execute('tag',$query);
 
