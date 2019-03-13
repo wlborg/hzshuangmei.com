@@ -117,28 +117,28 @@ function GetTags_list_typeid($id)
 
     }
  //资讯列表导航顶部tag
-// function GetTags_nav_typeid6($id)
+function GetTags_nav_typeid6($id)
 
-//     {
+    {
 
-//         global $dsql;
+        global $dsql;
 
-//         $tags = '';
+        $tags = '';
 
-//         $query = "SELECT tag FROM `sm_taglist` WHERE typeid="$id" limit 6";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid="$id" limit 6";
 
-//         $dsql->Execute('tag',$query);
+        $dsql->Execute('tag',$query);
 
-//         while($row = $dsql->GetArray('tag'))
+        while($row = $dsql->GetArray('tag'))
 
-//         {
+        {
 
-//             $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
 
 
 
-//         }
+        }
 
-//         return $tags;
+        return $tags;
 
-//     }
+    }
