@@ -425,9 +425,8 @@ function GetTags_list_typeid($typeid)
         default:
         $relatetypeid= '92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138';
         }
-
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in ($relatetypeid) limit 24";
         $dsql->Execute('tag',$query);
-
         while($row = $dsql->GetArray('tag'))
 
         {
