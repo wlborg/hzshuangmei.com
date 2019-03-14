@@ -21,16 +21,14 @@
              <!-- 顶部banner -->
             {dede:myad name='topbanner_sj'/}
               <div class="news_list">
-        <div class="g-container nav">
+        <div class="g-container nav" id="infonav">
             <div class="g-doc">
                 <ul class="f-cb">
-                    <li class="active"><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
-                    <li><a href="">红妆新闻</a></li>
+                   <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/} </a></li>
+        {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
+        </li>
+         {/dede:channel}
+
                 </ul>
             </div>
         </div>

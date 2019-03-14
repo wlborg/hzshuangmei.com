@@ -569,6 +569,7 @@
        effects.lightCurNav("#doctornav", "active");
        effects.lightCurNav("#projectnav", "active");
        effects.lightCurNav("#casenav", "active");
+       effects.lightCurNav("#infonav", "active");
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
