@@ -1022,3 +1022,15 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 #k_s_ol_inviteWin {
     display: block!important;
 }
+#div4 {
+    position: absolute!important;
+    top: 3px!important;
+    left: 4px!important;
+
+    width: 35px!important;
+    height: 35px!important;
+
+    line-height: 0!important;
+
+    cursor: pointer!important;
+}
