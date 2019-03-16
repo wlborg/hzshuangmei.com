@@ -39,12 +39,13 @@
                 </div>
                 <div class="g-content">
                             {dede:list pagesize='4' orderby='id' addfields="pc_list"}
+                             {dede:list pagesize='4' orderby='id' addfields="pc_list"}
                     <div class="item">
                         <div class="content">
-                            <a href="" class="pic"><img src="images/img1.jpg" alt="" alt=""></a>
+                            <a href="[field:arcurl/]" class="pic">img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"></a>
                             <div class="des">
                                 <h3>红妆医美 优雅女之养成记</h3>
-                                <p>9月19日，红妆医学美容整形琼海门诊部优美生活 雅致人生活.....</p>
+                                <p>[field:description function='cn_substr(@me,140)'/].....</p>
                                 <div class="des-footer">
                                     <span>
                                         <i class="icon_time"></i>2014-09-23
