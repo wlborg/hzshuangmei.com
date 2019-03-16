@@ -35,9 +35,10 @@
         <div class="g-container news">
             <div class="g-doc">
                 <div class="g-title">
-                    <h2><span class="sr-only">news/</span>综合整形资讯</h2>
+                    <h2><span class="sr-only">news/</span>{dede:field name="typename"/}资讯</h2>
                 </div>
                 <div class="g-content">
+                            {dede:list pagesize='4' orderby='id' addfields="pc_list"}
                     <div class="item">
                         <div class="content">
                             <a href="" class="pic"><img src="images/img1.jpg" alt="" alt=""></a>
@@ -58,74 +59,11 @@
                             <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="content">
-                            <a href="" class="pic"><img src="images/img1.jpg" alt="" alt=""></a>
-                            <div class="des">
-                                <h3>红妆医美 优雅女之养成记</h3>
-                                <p>9月19日，红妆医学美容整形琼海门诊部优美生活 雅致人生活.....</p>
-                                <div class="des-footer">
-                                    <span>
-                                        <i class="icon_time"></i>2014-09-23
-                                    </span>
-                                    <a href="">
-                                        查看详情
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tag">
-                            <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <a href="" class="pic"><img src="images/img1.jpg" alt="" alt=""></a>
-                            <div class="des">
-                                <h3>红妆医美 优雅女之养成记</h3>
-                                <p>9月19日，红妆医学美容整形琼海门诊部优美生活 雅致人生活.....</p>
-                                <div class="des-footer">
-                                    <span>
-                                        <i class="icon_time"></i>2014-09-23
-                                    </span>
-                                    <a href="">
-                                        查看详情
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tag">
-                            <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="content">
-                            <a href="" class="pic"><img src="images/img1.jpg" alt="" alt=""></a>
-                            <div class="des">
-                                <h3>红妆医美 优雅女之养成记</h3>
-                                <p>9月19日，红妆医学美容整形琼海门诊部优美生活 雅致人生活.....</p>
-                                <div class="des-footer">
-                                    <span>
-                                        <i class="icon_time"></i>2014-09-23
-                                    </span>
-                                    <a href="">
-                                        查看详情
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tag">
-                            <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span>
-                        </div>
-                    </div>
+                               {/dede:list}
                 </div>
                 <div class="pageindex">
                     <ul>
-                        <li class="thisclass">1</li>
-                        <li><a href="list_2.html">2</a></li>
-                        <li><a href="list_3.html">3</a></li>
-                        <li><a href="list_2.html">下一页</a></li>
-                        <li><a href="list_4.html">末页</a></li>
+                       {dede:pagelist istitem="pre,next,pageno,index,end" listsize="3"/}
                     </ul>
                 </div>
             </div>
