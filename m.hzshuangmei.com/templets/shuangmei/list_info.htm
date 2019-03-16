@@ -38,7 +38,7 @@
                     <h2><span class="sr-only">news/</span>{dede:field name="typename"/}资讯</h2>
                 </div>
                 <div class="g-content">
-                            {dede:list pagesize='4' orderby='id' addfields="pc_list"}
+                            {dede:list pagesize='10' orderby='id' addfields="pc_list"}
                     <div class="item">
                         <div class="content">
                             <a href="[field:arcurl/]" class="pic"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"></a>
@@ -61,6 +61,7 @@
                         </div>
                     </div>
                                {/dede:list}
+                                {dede:include filename="_info_aside.htm"/}
                 </div>
                 <div class="pageindex">
                     <ul>
@@ -69,65 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="g-container project">
-            <div class="g-doc">
-                <div class="g-title">
-                    <h2><span class="sr-only">project/</span>项目推荐</h2>
-                    <a href="" class="more">
-                        更多项目
-                    </a>
-                </div>
-                <div class="g-content ">
-                    <a href=""><img src="images/img2.jpg" alt=""></a>
-                    <a href=""><img src="images/img2.jpg" alt=""></a>
-                </div>
-            </div>
-        </div>
-         <div class="g-container price">
-            <div class="g-doc">
-                <div class="g-title">
-                    <h2><span class="sr-only">price/</span>整形美容价格</h2>
-                    <a href="javascript:void(0)" class="consult j-consult">
-                        价格在线咨询<i class="icon_consult"></i>
-                    </a>
-                </div>
-                <div class="g-content f-cb">
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                     <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
 
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-
-                    <div class="link">
-                        <a href=""><span><i class="icon_quesion"></i></span>鼻部整形价格</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
             {dede:include filename="_sj_copyright.htm"/}
         </div>
