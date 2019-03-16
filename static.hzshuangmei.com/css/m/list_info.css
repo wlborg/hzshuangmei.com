@@ -24,7 +24,7 @@ li,
 p,
 textarea,
 ul {
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
 form {
@@ -51,7 +51,7 @@ a {
     color:black;
 } */
 body {
-    font-family: "微软雅黑", sans-serif, Verdana, Arial; 
+    font-family: "微软雅黑", sans-serif, Verdana, Arial;
 
     background: #fff;
 }
@@ -97,7 +97,7 @@ body {
 }
 .news_list .nav ul li {
     display: inline-block;
-    margin: 0 .05rem .1rem; 
+    margin: 0 .05rem .1rem;
 
     line-height: 1.6rem;
 }
@@ -113,17 +113,17 @@ body {
 
     letter-spacing: 0rem;
 
-    color: #6a157d; 
+    color: #6a157d;
     background-color: #f3f3f3;
 }
 .news_list .nav ul li.active a,
 .news_list .nav ul li:hover a {
-    color: #fff; 
+    color: #fff;
     background-color: #6a157d;
 }
 .news_list .news {
     width: 15.65rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
     margin: 0 auto;
 
     border: solid 1px #f2f2f2;
@@ -132,9 +132,9 @@ body {
 .news_list .news .g-title {
     padding-left: 3.3rem;
     margin-bottom: .7rem;
-    margin-left: .25rem; 
+    margin-left: .25rem;
 
-    background: url("../images/news_t1bg.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/news_t1bg.png") left center no-repeat;
     background-size: 3.3rem .75rem;
 }
 .news_list .news .g-title h2 {
@@ -149,7 +149,7 @@ body {
 }
 .news_list .news .g-content .item {
     padding: 0 .25rem;
-    margin-bottom: .5rem; 
+    margin-bottom: .5rem;
 
     border-bottom: dotted .05rem #f3f3f3;
 }
@@ -207,7 +207,7 @@ body {
     font-size: .3rem;
     line-height: .6rem;
 
-    vertical-align: middle; 
+    vertical-align: middle;
 
     color: #dfdfdf;
 }
@@ -233,7 +233,7 @@ body {
     line-height: .55rem;
 
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
     letter-spacing: 0rem;
 
     color: #8c64a0;
@@ -243,8 +243,9 @@ body {
     height: .4rem;
     padding: .5rem 0;
 }
-.news_list .news .g-content .item .tag span {
-    margin-left: .4rem; 
+.news_list .news .g-content .item .tag span,
+.news_list .news .g-content .item .tag a {
+    margin-left: .4rem;
 
     font-size: .35rem;
     font-weight: normal;
@@ -256,7 +257,7 @@ body {
 }
 .news_list .news .g-content .item .tag .special {
     padding: 0 .15rem;
-    margin-left: 0; 
+    margin-left: 0;
 
     font-size: .3rem;
     font-weight: normal;
@@ -269,7 +270,7 @@ body {
     background-color: #c2c7f5;
 }
 .news_list .news .pageindex {
-    padding: 1.25rem .25rem; 
+    padding: 1.25rem .25rem;
 
     background-color: #fff;
     box-shadow: .075rem .125rem .15rem 0rem rgba(255, 245, 245, .55);
@@ -283,7 +284,8 @@ body {
 }
 .news_list .news .pageindex ul li {
     display: inline-block;
-    margin-left: .25rem; 
+    float: left;
+    margin-left: .25rem;
 
     font-size: .4rem;
     line-height: 1.05rem;
@@ -307,7 +309,7 @@ body {
     color: #333;
 }
 .news_list .news .pageindex ul li:hover {
-    border: solid 1px #e6e6e6; 
+    border: solid 1px #e6e6e6;
     background-color: #8a59a7;
 }
 .news_list .news .pageindex ul li:hover a {
@@ -319,12 +321,12 @@ body {
     font-size: .4rem;
 
     color: #fff;
-    border: solid 1px #e6e6e6; 
+    border: solid 1px #e6e6e6;
     background-color: #8a59a7;
 }
 .news_list .project {
     width: 15.65rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
     margin: .35rem auto;
 
     border: solid 1px #f2f2f2;
@@ -334,11 +336,11 @@ body {
     position: relative;
 
     padding-left: 4.75rem;
-    margin-right: .25rem; 
+    margin-right: .25rem;
     margin-bottom: .7rem;
     margin-left: .25rem;
 
-    background: url("../images/news_t2bg.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/news_t2bg.png") left center no-repeat;
     background-size: 4.75rem .8rem;
 }
 .news_list .project .g-title h2 {
@@ -367,7 +369,7 @@ body {
     font-stretch: normal;
     line-height: .55rem;
 
-    text-align: center; 
+    text-align: center;
     letter-spacing: 0rem;
 
     color: #8c64a0;
@@ -395,7 +397,7 @@ body {
 }
 .news_list .price {
     width: 15.65rem;
-    padding-top: 1rem; 
+    padding-top: 1rem;
     margin: .35rem auto;
 
     border: solid 1px #f2f2f2;
@@ -405,7 +407,7 @@ body {
     position: relative;
 
     padding-left: 3.3rem;
-    margin-right: .25rem; 
+    margin-right: .25rem;
     margin-bottom: .7rem;
     margin-left: .25rem;
 
@@ -441,7 +443,7 @@ body {
     text-align: center;
     letter-spacing: 0rem;
 
-    color: #fff; 
+    color: #fff;
     border-radius: .125rem;
     background-color: #8a59a7;
 }
@@ -454,17 +456,22 @@ body {
 
     vertical-align: top;
 
-    background: url("../images/icon_consult.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/icon_consult.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
 .news_list .price .g-content {
     padding: .5rem .25rem;  /*display: flex;*/  /*height: 186rem/@fb;*/
 
 
+
+
+
+
+
     /*justify-content: space-between;*/
 }
 .news_list .price .g-content .link {
-    position: relative; 
+    position: relative;
 
     display: block;
     float: left;
@@ -497,7 +504,7 @@ body {
     height: .5rem;
     margin: auto;
 
-    line-height: .5rem; 
+    line-height: .5rem;
 
     background-color: #f5c2cc;
 }
@@ -506,14 +513,14 @@ body {
     width: .5rem;
     height: .5rem;
 
-    background: url("../images/icon_question.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
 .news_list .price .g-content .link:nth-child(1) {
     color: #693290;
 }
 .news_list .price .g-content .link:nth-child(1) a {
-    color: #693290; 
+    color: #693290;
     border-bottom: solid .05rem #693290;
 }
 .news_list .price .g-content .link:nth-child(1) span {
