@@ -73,8 +73,8 @@ if ( ! function_exists('GetOneArchive'))
         $reArr['topid']  = $arcRow['topid'];
         $reArr['arctitle'] = $arcRow['title'];
         $reArr['arcurl'] = GetFileUrl($aid, $arcRow['typeid'], $arcRow['senddate'], $reArr['title'],
-                          $arcRow['ismake'], $arcRow['arcrank'], $arcRow['namerule'], $arcRow['typedir'], 
-                          $arcRow['money'], $arcRow['filename'], $arcRow['moresite'], $arcRow['siteurl'], 
+                          $arcRow['ismake'], $arcRow['arcrank'], $arcRow['namerule'], $arcRow['typedir'],
+                          $arcRow['money'], $arcRow['filename'], $arcRow['moresite'], $arcRow['siteurl'],
                           $arcRow['sitepath']);
         return $reArr;
 
@@ -294,3 +294,29 @@ if ( ! function_exists('InsertOneTag'))
         }
     }
 }
+//资讯列表页读取每条资讯的tag
+function GetTags_list($aid)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE aid='$aid' limit 6";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a>" : ' '."<a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a>");
+
+
+
+        }
+
+        return $tags;
+
+    }
