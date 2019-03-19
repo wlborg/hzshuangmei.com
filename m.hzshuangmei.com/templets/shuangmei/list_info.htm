@@ -23,11 +23,10 @@
         <div class="g-container nav" id="infonav">
             <div class="g-doc">
                 <ul class="f-cb">
-                   <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/} </a></li>
+                   <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/}</a></li>
         {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
         </li>
          {/dede:channel}
-
                 </ul>
             </div>
         </div>
@@ -56,6 +55,7 @@
                         </div>
                         <div class="tag">
                             [field:id function='GetTags_list(@me)' /]
+                            <!-- 更新 -->
                           <!--   <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span> -->
                         </div>
                     </div>
@@ -70,6 +70,7 @@
             </div>
         </div>
     </div>
+
             {dede:include filename="_sj_copyright.htm"/}
         </div>
     </div>
@@ -79,5 +80,4 @@
     {dede:include filename="_script.htm"/}
     {dede:include filename="_list_Factor.htm"/}
 </body>
-
 </html>
