@@ -24,7 +24,7 @@
             <div class="g-doc">
                 <ul class="f-cb">
                    <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/}</a></li>
-        {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
+        {dede:channel type='son' noself='yes'}<li class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a>
                    </li>
          {/dede:channel}
                 </ul>
@@ -41,7 +41,7 @@
                         <div class="content">
                             <a href="[field:arcurl/]" class="pic"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"></a>
                             <div class="des">
-                                <h3>[field:fulltitle function='cn_substr(@me,20)'/]</h3>
+                                <h3>[field:fulltitle function='cn_substr(@me,30)'/]</h3>
                                 <p>[field:description function='cn_substr(@me,70)'/].....</p>
                                 <div class="des-footer">
                                     <span>

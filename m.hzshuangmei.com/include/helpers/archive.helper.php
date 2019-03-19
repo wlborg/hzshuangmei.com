@@ -311,7 +311,7 @@ function GetTags_list($aid)
 
         {
 
-            $tags .= ($tags=='' ? "<a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a>" : ' '."<a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a>");
+            $tags .= ($tags=='' ? "<a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>#".$row['tag']."</a>" : ' '."<a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>#".$row['tag']."</a>");
 
 
 
