@@ -18,6 +18,21 @@
      <link rel="preload" href="{dede:global.cfg_csspath/}/pc/tjb.css" as="style" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/tjb.css"/>
     {dede:field.ztmeta/}
+     <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://www.hzshuangmei.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://www.hzshuangmei.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
 <body>
 {dede:include filename="_header.htm"/}
 {dede:field.body/}

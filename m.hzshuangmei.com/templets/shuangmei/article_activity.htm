@@ -12,6 +12,21 @@
 
     {dede:include filename="_link.htm"/}
     {dede:field.ztmeta_sj/}
+     <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://m.hzshuangmei.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://m.hzshuangmei.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
     <body>
     <div class="wrapper">
         <!-- menu -->
