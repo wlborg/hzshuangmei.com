@@ -9,7 +9,7 @@
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
-       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css"/>
+       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css?v=0.1"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -48,7 +48,7 @@
                 </div>
                 <div>
                     <h4><i class="i1"></i><a href="[field:arcurl/]">[field:fulltitle function='cn_substr(@me,50)'/]</a></h4>
-                    <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,140)'/]...<span>[详细]</span></a></p>
+                    <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,130)'/]...<span>[详细]</span></a></p>
                     <p class="list_infor_tag">
                         <!-- <span class="list_infor_tag_active">红妆纹绣</span> -->
                          [field:id function='GetTags_list(@me)' /]
@@ -102,12 +102,15 @@
 </script> -->
 <script>
     $(function(){
+         //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
            var pro1=$(".pro1").height();
            var pro2=$(".pro2").height();
            var pro3=$(".pro3").height();
            var proH=pro1+pro2+pro3;//
-           $(".infors_main").height(proH+"px");
-
+           var inforHg=$(".infors_main").height();
+           if(inforHg<proH){
+             $(".infors_main").height(proH+"px");
+           }
     })
 </script>
 </html>

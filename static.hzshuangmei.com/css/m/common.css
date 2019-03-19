@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -875,13 +875,13 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 /*系统快商通样式更改 图片尺寸520px*/
 #_ks_ol_inviteWin {
-    display: block!important;
+    /* display: block!important; */
     margin-top: -6.21rem !important;
     margin-left: -6.5rem !important;
 }
 #divbg {
     width: 13rem !important;
-    height: 12.9rem !important;
+    height: 12.4rem !important;
 
     background-size: 100%;
 }
@@ -896,7 +896,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 1.13rem !important;
 }
 #div1 {
-    top: 10rem !important;
+    top: 10.2rem !important;
     left: 1.4rem !important;
 
     width: 4.13rem !important;
@@ -905,8 +905,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 0 !important;
 }
 #div23 {
-    top: .9rem!important;
-    left: 11.8rem!important;
+    top: 0rem!important;
+    left: 0rem!important;
 
     width: 1rem!important;
     height: .99rem!important;
@@ -1021,4 +1021,16 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #k_s_ol_inviteWin {
     display: block!important;
+}
+#div4 {
+    position: absolute!important;
+    top: 3px!important;
+    left: 4px!important;
+
+    width: 35px!important;
+    height: 35px!important;
+
+    line-height: 0!important;
+
+    cursor: pointer!important;
 }

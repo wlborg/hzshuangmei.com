@@ -76,17 +76,16 @@ if ( ! function_exists('AjaxHead'))
  */
 if ( ! function_exists('dede_strip_tags'))
 {
-	function dede_strip_tags($str) { 
-	    $strs=explode('<',$str); 
-	    $res=$strs[0]; 
-	    for($i=1;$i<count($strs);$i++) 
-	    { 
-	        if(!strpos($strs[$i],'>')) 
-	            $res = $res.'&lt;'.$strs[$i]; 
-	        else 
-	            $res = $res.'<'.$strs[$i]; 
-	    } 
-	    return strip_tags($res);    
-	} 
+	function dede_strip_tags($str) {
+	    $strs=explode('<',$str);
+	    $res=$strs[0];
+	    for($i=1;$i<count($strs);$i++)
+	    {
+	        if(!strpos($strs[$i],'>'))
+	            $res = $res.'&lt;'.$strs[$i];
+	        else
+	            $res = $res.'<'.$strs[$i];
+	    }
+	    return strip_tags($res);
+	}
 }
-

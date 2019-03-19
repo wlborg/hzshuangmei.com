@@ -1149,10 +1149,12 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 #div3 {
     top: 333px!important;
-    left: 58px!important;
+    left: 331px!important;
 }
 #div36 {
-    left: 198px!important;
+    left: 448px!important;
+
+    width: 122px!important;
 }
 /* 资讯模块样式 */
 .list_information_nav li.currnet4 {
@@ -1326,6 +1328,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     margin-bottom: 13px;
 }
 .information_right > ul > li > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.information_right > ul > li > a > img {
     display: block;
     width: 100%;
     height: 100%;
@@ -1604,7 +1611,14 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: rgb(177,126,107)!important;
 }
 .actvie_Th a {
-    color: #fff!important;
+    color: rgb(246,167,182)!important;
+}
+
+.infors_main_T ul li p span {
+    color: #8c64a0!important;
+}
+.infors_main_Th ul li p span {
+    color: #8c64a0!important;
 }
 .information_con1 > ul > span {
     position: absolute;
