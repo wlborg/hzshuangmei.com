@@ -470,6 +470,13 @@ body {
 
 
 
+
+
+
+
+
+
+
     /*justify-content: space-between;*/
 }
 .news_list .price .g-content .link {
@@ -534,4 +541,7 @@ body {
 .news_list .price .g-content .link:nth-child(5) span,
 .news_list .price .g-content .link:nth-child(6) span {
     background-color: #d5cfe5;
+}
+.info_list .g-doc {
+    width: auto!important;
 }
