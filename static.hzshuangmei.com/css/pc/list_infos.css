@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-19 09:51:26
+* @Last Modified time: 2019-03-19 10:14:34
 */
 #information {
     position: absolute;
@@ -458,7 +458,7 @@ nav ul li:hover #information {
 }
 .infors_main .ns_pa > ul {
     width: 600px!important;
-    margin: 0 auto 0!important;
+    margin: 0 0 0 100px!important;
     overflow: hidden!important;
 
     text-align: center!important;

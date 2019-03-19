@@ -90,6 +90,7 @@ body {
     margin: 0 auto;
 }
 .news_list .nav .g-doc {
+    width: auto;
     padding: .65rem .2rem 1rem;
 }
 .news_list .nav ul {
@@ -461,6 +462,7 @@ body {
 }
 .news_list .price .g-content {
     padding: .5rem .25rem;  /*display: flex;*/  /*height: 186rem/@fb;*/
+
 
 
 
