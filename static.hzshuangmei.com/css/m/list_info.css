@@ -533,6 +533,9 @@ body {
 .info_list .g-doc .g-content > a:nth-of-type(1) {
     margin-right: .15rem!important;
 }
-#infonav .g-doc {
+.info_list .g-doc {
     width: auto!important;
+}
+.info_list .nav ul li a {
+    padding: 0 .9rem!important;
 }
