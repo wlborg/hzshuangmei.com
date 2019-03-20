@@ -540,3 +540,6 @@ body {
 .info_list .nav ul li a {
     padding: 0 .9rem!important;
 }
+.article .article-main img {
+    margin: auto;
+}

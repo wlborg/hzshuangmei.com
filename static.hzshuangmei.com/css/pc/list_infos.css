@@ -2,8 +2,8 @@
 * @Author: Administrator
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
-* @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-19 10:14:34
+* @Last Modified by:   August1Rush
+* @Last Modified time: 2019-03-20 14:13:28
 */
 #information {
     position: absolute;
@@ -462,4 +462,7 @@ nav ul li:hover #information {
     overflow: hidden!important;
 
     text-align: center!important;
+}
+.info_kst {
+    cursor: pointer;
 }
