@@ -68,7 +68,7 @@
         <!-- 左边导航栏开始 -->
                {dede:FIELD.typeid function='MoreHotProjectAboutInfo(@me)'/}
               <!-- <img src="" class="pro1" alt=""> -->
-              <div class="pro2">
+              <div class="pro2 pro2N">
                     <p class="pro2Line">&nbsp;</p>
                     <span>美容手术价格</span>
                     <p class="pro2_info">POPULAR PROJECT</p>
@@ -138,6 +138,7 @@
 </script> -->
 <script>
     $(function(){
+         new WOW().init();
          //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
            var pro1=$(".pro1").height();
            var pro2=$(".pro2").height();
