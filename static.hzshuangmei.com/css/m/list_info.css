@@ -512,8 +512,8 @@ body {
     display: inline-block;
     width: .5rem;
     height: .5rem;
+    /* background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat; */
 
-    background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
 /* .news_list .price .g-content .link:nth-child(1) {
