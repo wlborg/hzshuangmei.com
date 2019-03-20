@@ -9,6 +9,7 @@
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css"/>
        <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css?v=0.2"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
@@ -98,7 +99,7 @@
                       <!-- 生活美容分类 -->
                       <li><a href="/5_1/a" target="_blank"><span>?</span><span>皮肤美白价格</span></a></li>
                       <li><a href="/5_2/a" target="_blank"><span>?</span><span>去黑头价格</span></a></li>
-                      <img src="{dede:global.cfg_imgpath/}/pc/info_kst.png" class="j-consult info_kst" alt="快商通" />
+                      <img src="{dede:global.cfg_imgpath/}/pc/info_kst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
                     </ul>
               </div>
              <ul class="pro3">
@@ -122,8 +123,9 @@
 </body>
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
-
+<script src="{dede:global.cfg_jspath/}/pc/wow.min.js"></script>
 <script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
+
 <!-- <script>
   $(function(){
           var tagHtml="";
@@ -140,7 +142,7 @@
            var pro1=$(".pro1").height();
            var pro2=$(".pro2").height();
            var pro3=$(".pro3").height();
-           var pro3=$(".pro4").height();
+           var pro4=$(".pro4").height();
            var proH=pro1+pro2+pro3+pro4;//
            var inforHg=$(".infors_main").height();
            if(inforHg<proH){
