@@ -9,7 +9,7 @@
     <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
-       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css?v=0.1"/>
+       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css?v=0.2"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -104,7 +104,7 @@
              <ul class="pro3">
                 {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
              </ul>
-              <div class="pro2">
+              <div class="pro2 pro4">
                     <p class="pro2Line">&nbsp;</p>
                     <span>{dede:field name="typename"/}</span>
                     <p class="pro2_info">POPULAR PROJECT</p>
@@ -140,7 +140,8 @@
            var pro1=$(".pro1").height();
            var pro2=$(".pro2").height();
            var pro3=$(".pro3").height();
-           var proH=pro1+pro2+pro3;//
+           var pro3=$(".pro4").height();
+           var proH=pro1+pro2+pro3+pro4;//
            var inforHg=$(".infors_main").height();
            if(inforHg<proH){
              $(".infors_main").height(proH+"px");
