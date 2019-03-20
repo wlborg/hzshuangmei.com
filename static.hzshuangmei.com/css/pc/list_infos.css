@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   August1Rush
-* @Last Modified time: 2019-03-20 14:26:21
+* @Last Modified time: 2019-03-20 15:04:42
 */
 #information {
     position: absolute;
@@ -401,7 +401,7 @@ nav ul li:hover #information {
 }
 .pro3 {
     position: absolute;
-    top: 842px;
+    top: 858px;
     right: 0;
 
     width: 306px;
@@ -470,8 +470,9 @@ nav ul li:hover #information {
 
     cursor: pointer;
 }
-
+.pro2N {
+    height: 559px;
+}
 .pro4 {
-
-    top: 1391px!important;
+    top: 1406px!important;
 }
