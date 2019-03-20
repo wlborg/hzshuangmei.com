@@ -12,8 +12,11 @@
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:field.arcurl/}">
     {dede:include filename="_link.htm"/}
     <style>
-         .info_kst {
+         .info_kst{
           cursor: pointer;
+        }
+        .article .article-main img{
+          margin: auto;
         }
     </style>
     <script type="application/ld+json">
@@ -54,8 +57,10 @@
                   </div>
                   <div class="article-main">
                       {dede:field.body /}
-
                   </div>
+                    <div class="art_info_tag">
+                      {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">#[field:tag /]</a>{/dede:tag}
+                </div>
                  <div class="relate-link f-cb">
                     <div class="prev"> {dede:prenext get='pre'/}</div>
                     <div class="next">{dede:prenext get='next'/}</div>

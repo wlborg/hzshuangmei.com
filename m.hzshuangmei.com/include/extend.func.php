@@ -1338,6 +1338,9 @@ switch ($typeid)
 case 89 :
 $relateprojecturl="/projects";
 break;
+case 90 :
+$relateprojecturl="/projects/surgery";
+break;
 case 91 :
 case 92 :
 case 93 :
