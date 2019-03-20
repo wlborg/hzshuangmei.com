@@ -216,7 +216,8 @@ body {
     display: inline-block;
     width: .3rem;
     height: .3rem;
-    margin-right: .25rem;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
 
     vertical-align: middle;
 
@@ -505,7 +506,7 @@ body {
 
     line-height: .5rem;
 
-    background-color: #f5c2cc;
+    background-color: #d5cfe5;
 }
 .news_list .price .g-content .link .icon_quesion {
     display: inline-block;
