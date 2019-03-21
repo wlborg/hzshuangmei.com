@@ -625,7 +625,20 @@ window.addEventListener('load', () =>{
 
 
 //注册  serviceWorker
-if('serviceWorker'in navigator){navigator.serviceWorker.register('/serviceworker.js');}
+//if('serviceWorker'in navigator){navigator.serviceWorker.register('/serviceworker.js');}
+// 延迟注册serviceWorker
+window.addEventListener('load', function() {
+  if('serviceWorker' in navigator){
+     navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+      console.log('Service Worker Registered,register script: serviceworker.js.');
+    }).catch(function (error) {
+      // registration failed
+      console.log('Registration failed with ' + error);
+    });
+  }
+});
+
+
 
 //显示service worker缓存占用情况
 if ('storage' in navigator && 'estimate' in navigator.storage) {
@@ -633,3 +646,21 @@ if ('storage' in navigator && 'estimate' in navigator.storage) {
     console.log(`Using ${estimate.usage/1024/1024} out of ${estimate.quota/1024/1024} MB.And the proportion is ${estimate.usage/estimate.quota*100}%`);
   });
 }
+
+//PWA 用户端监测
+self.addEventListener('error', function (event) {
+  var msg = {
+    message: event.message,
+    filename: event.filename,
+    lineno: event.lineno,
+    stack: event.error && event.error.stack
+  };
+  // report error msg
+});
+
+self.addEventListener('unhandledrejection', function (event) {
+  // event.reason
+  if (/Quota exceeded/i.test(event.reason)) {
+    // maybe clean some cache here
+  }
+});
