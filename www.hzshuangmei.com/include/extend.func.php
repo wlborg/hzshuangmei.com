@@ -1359,8 +1359,7 @@ $title = cn_substr($row["title"],80,0);
 $shorttitle = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-
-$litpic =$row["litpic"];
+$litpic =replaceurl($row["litpic"]);
 $relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$shorttitle.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
@@ -1393,7 +1392,7 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-$litpic =$row["litpic"];
+$litpic =replaceurl($row["litpic"]);
 $shorttitle = cn_substr($row["title"],80,0);
 $repairRes.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$shorttitle.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
