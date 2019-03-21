@@ -1360,15 +1360,45 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
     if($ns<6){
-      $res2.=getProjectArticleFormXZToSix($ns);
+      $res2.=getProjectArticleFormInfoToSix($ns);
     }
     $relateproject=$relateproject.$res2;
   }
   return $relateproject;
+}
+/**
+ *
+*  专题增加获取熊掌号文章(最新)
+*  如果不足够六条，补到六条
+*
+*/
+function getProjectArticleFormInfoToSix($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=6-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid in(93,95) and a.arcrank=0 order by rand() limit
+  $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$repairRes.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
 }
 /**
 *  专题增加获取熊掌号文章(最新)
