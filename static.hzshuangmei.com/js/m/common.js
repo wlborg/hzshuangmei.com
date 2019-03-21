@@ -584,6 +584,15 @@
        //     tools.addBaiduScript("https://hm.baidu.com/hm.js?e54e63908fd614d270231443c6a57edd");
        //     //min1();
        // }
+       //  effects.goToJump("info_nav", "info_nav");
+    //资讯如果是二级,重定义激活状态颜色
+     if(window.location.pathname.indexOf("Tinfo")!=-1){
+             $(".active").css("background","#F6A7B6");
+     }
+      //资讯如果是3级,重定义激活状态颜色
+     if(window.location.pathname.indexOf("Thinfo")!=-1){
+             $(".active").css("background","#B17E6B");
+     }
        function min1(href){
            setTimeout(function(){
                window.location.href=href;

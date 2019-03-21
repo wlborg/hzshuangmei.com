@@ -15,6 +15,22 @@
 <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:field.arcurl/}" >
      {dede:include filename="_link.htm"/} {dede:field.ztmeta/}
 
+         <script type="application/ld+json">
+    {
+        "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+        "@id": "https://www.hzshuangmei.com{dede:field.arcurl/}",
+        "title": "{dede:field.title/}",
+        "images": [
+            "https://www.hzshuangmei.com{dede:field.litpic/}"
+        ],
+        "pubDate": "{dede:field.pubdate function="
+        MyDate('Y-m-d', @me)
+        "/}T{dede:field.pubdate function="
+        MyDate('H:i:s', @me)
+        "/}"
+    }
+    </script>
+
 <body>
 {dede:include filename="_header.htm"/} {dede:field.body/} {dede:include filename="_footer.htm"/}
 </body>

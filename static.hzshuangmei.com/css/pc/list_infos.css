@@ -2,8 +2,8 @@
 * @Author: Administrator
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
-* @Last Modified by:   Administrator
-* @Last Modified time: 2019-03-11 12:39:38
+* @Last Modified by:   August1Rush
+* @Last Modified time: 2019-03-20 15:04:42
 */
 #information {
     position: absolute;
@@ -401,7 +401,7 @@ nav ul li:hover #information {
 }
 .pro3 {
     position: absolute;
-    top: 842px;
+    top: 858px;
     right: 0;
 
     width: 306px;
@@ -455,4 +455,24 @@ nav ul li:hover #information {
     text-align: center;
 
     color: rgb(255,255,255);
+}
+.infors_main .ns_pa > ul {
+    width: 600px!important;
+    margin: 0 0 0 100px!important;
+    overflow: hidden!important;
+
+    text-align: center!important;
+}
+.info_kst {
+    display: block;
+    padding-top: 18px;
+    margin: auto;
+
+    cursor: pointer;
+}
+.pro2N {
+    height: 559px;
+}
+.pro4 {
+    top: 1406px!important;
 }

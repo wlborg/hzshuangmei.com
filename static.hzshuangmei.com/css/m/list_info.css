@@ -90,6 +90,7 @@ body {
     margin: 0 auto;
 }
 .news_list .nav .g-doc {
+    width: auto;
     padding: .65rem .2rem 1rem;
 }
 .news_list .nav ul {
@@ -215,17 +216,19 @@ body {
     display: inline-block;
     width: .3rem;
     height: .3rem;
-    margin-right: .25rem;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
 
     vertical-align: middle;
 
-    background: url("../images/icon_time.png") center center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/icon_time.png") center center no-repeat;
 }
 .news_list .news .g-content .item .content .des .des-footer a {
     display: inline-block;
     float: right;
     width: 2.05rem;
     height: .55rem;
+    margin-top: .5rem;
 
     font-size: .35rem;
     font-weight: normal;
@@ -245,6 +248,7 @@ body {
 }
 .news_list .news .g-content .item .tag span,
 .news_list .news .g-content .item .tag a {
+    float: left;
     margin-left: .4rem;
 
     font-size: .35rem;
@@ -411,7 +415,7 @@ body {
     margin-bottom: .7rem;
     margin-left: .25rem;
 
-    background: url("../images/news_t3bg.png") left center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/news_t3bg.png") left center no-repeat;
     background-size: 3.3rem .8rem;
 }
 .news_list .price .g-title h2 {
@@ -460,13 +464,7 @@ body {
     background-size: .5rem .5rem;
 }
 .news_list .price .g-content {
-    padding: .5rem .25rem;  /*display: flex;*/  /*height: 186rem/@fb;*/
-
-
-
-
-
-
+    padding: .5rem .25rem;  /*display: flex;*/  /*height: 186rem/@fb;*
 
     /*justify-content: space-between;*/
 }
@@ -492,6 +490,8 @@ body {
 .news_list .price .g-content .link a {
     display: inline-block;
     padding-left: 1rem;
+
+    color: rgb(102,102,102);
 }
 .news_list .price .g-content .link span {
     position: absolute;
@@ -506,17 +506,17 @@ body {
 
     line-height: .5rem;
 
-    background-color: #f5c2cc;
+    background-color: #d5cfe5;
 }
 .news_list .price .g-content .link .icon_quesion {
     display: inline-block;
     width: .5rem;
     height: .5rem;
+    /* background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat; */
 
-    background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
-.news_list .price .g-content .link:nth-child(1) {
+/* .news_list .price .g-content .link:nth-child(1) {
     color: #693290;
 }
 .news_list .price .g-content .link:nth-child(1) a {
@@ -526,10 +526,24 @@ body {
 .news_list .price .g-content .link:nth-child(1) span {
     background: #693290;
 }
+ */
 .news_list .price .g-content .link:nth-child(2) span,
 .news_list .price .g-content .link:nth-child(3) span,
 .news_list .price .g-content .link:nth-child(4) span,
 .news_list .price .g-content .link:nth-child(5) span,
 .news_list .price .g-content .link:nth-child(6) span {
     background-color: #d5cfe5;
+}
+.info_list .g-doc .g-content > a:nth-of-type(1) {
+    margin-right: .15rem!important;
+}
+.g-doc,
+.info_list .g-doc {
+    width: auto!important;
+}
+.info_list .nav ul li a {
+    padding: 0 .9rem!important;
+}
+.article .article-main img {
+    margin: auto;
 }

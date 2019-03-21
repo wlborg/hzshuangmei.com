@@ -1324,3 +1324,227 @@ $relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class
 }
  return $relateproject;
 }
+/*
+资讯列表页和详情页底部 更多项目按钮
+@param   $typeid   当前文档所在的栏目ID
+ */
+function MoreHotProjectAboutInfo($typeid)
+{
+global $dsql;
+//对应的栏目URL
+$relateprojecturl="";
+switch ($typeid)
+{
+case 89 :
+$relateprojecturl="/projects";
+break;
+case 90 :
+$relateprojecturl="/projects/surgery";
+break;
+case 91 :
+case 92 :
+case 93 :
+case 94 :
+case 95 :
+case 96 :
+case 97 :
+$relateprojecturl="/projects/nose";
+break;
+case 98:
+case 99:
+case 100:
+case 101:
+case 102:
+case 103:
+case 104:
+case 105:
+case 106:
+case 107:
+$relateprojecturl="/projects/eye";
+break;
+case 108 :
+case 109 :
+case 113 :
+case 114 :
+$relateprojecturl="/projects/face";
+break;
+case 110 :
+case 111 :
+$relateprojecturl="/projects/zhifang";
+break;
+case  112 :
+$relateprojecturl="/projects/xiaba";
+break;
+case 115 :
+case 116 :
+case 117 :
+case 118 :
+case 119 :
+case 120 :
+case 121 :
+$relateprojecturl="/projects/chest";
+break;
+case 122 :
+case 123 :
+case 124 :
+case 125 :
+$relateprojecturl="/projects/private";
+break;
+case 126 :
+case 127 :
+case 128 :
+case 129 :
+case 130 :
+case 131 :
+case 132 :
+case 133 :
+case 134 :
+case 135 :
+$relateprojecturl="/projects/body";
+break;
+case 136:
+case 137:
+case 138:
+$relateprojecturl="/projects/lip";
+break;
+case 140:
+$relateprojecturl="/projects/laser/";
+break;
+case 141:
+case 142:
+case 143:
+case 144:
+case 145:
+case 146:
+case 152:
+$relateprojecturl="/projects/skin";
+break;
+case 147:
+$relateprojecturl="/projects/skin";
+break;
+case 148:
+$relateprojecturl="/projects/skin";
+break;
+case 149:
+case 150:
+$relateprojecturl="/projects/meibai";
+break;
+case 151:
+$relateprojecturl="/projects/tuomao";
+break;
+case 153:
+case 154:
+case 155:
+case 156:
+$relateprojecturl="/projects/racne";
+break;
+case 157:
+case 158:
+case 159:
+case 160:
+case 161:
+case 162:
+$relateprojecturl="/projects/rebev";
+break;
+case 163:
+case 164:
+case 165:
+$relateprojecturl="/projects/rhyt";
+break;
+case 166:
+case 167:
+case 168:
+case 224:
+case 225:
+$relateprojecturl="/projects/scar";
+break;
+case 169:
+case 170:
+case 171:
+case 172:
+$relateprojecturl="/projects/shed";
+break;
+case 173:
+$relateprojecturl="/projects/mini";
+break;
+case 174:
+$relateprojecturl="/projects/ha";
+break;
+case 181:
+$relateprojecturl="/projects/botox";
+break;
+case 186:
+$relateprojecturl="/projects/tattoo";
+break;
+case 187:
+case 188:
+case 189:
+$relateprojecturl="/projects/tatt";
+break;
+case 190:
+case 191:
+case 192:
+case 193:
+case 226:
+$relateprojecturl="/projects/brow";
+break;
+case 194:
+case 195:
+case 196:
+case 227:
+$relateprojecturl="/projects/embr";
+break;
+case 197:
+case 198:
+case 199:
+case 228:
+$relateprojecturl="/projects/tattoo/projects/poli";
+break;
+case 200:
+$relateprojecturl="/projects/liv";
+break;
+case 201:
+case 202:
+case 203:
+case 204:
+case 205:
+case 229:
+$relateprojecturl="/projects/whi";
+break;
+case 206:
+case 207:
+case 208:
+case 209:
+$relateprojecturl="/projects/black";
+break;
+case 206:
+case 207:
+case 208:
+case 209:
+$relateprojecturl="/projects/black";
+break;
+case 210:
+case 211:
+case 212:
+case 213:
+$relateprojecturl="/projects/liv/projects/hydr";
+break;
+case 214:
+case 215:
+case 216:
+case 217:
+case 218:
+$relateprojecturl="/projects/beaut";
+break;
+case 219:
+case 220:
+case 221:
+$relateprojecturl="/projects/nose";
+break;
+default:
+$relateprojecturl="/projects/";
+}
+$relateprojecturl='<a href="'.$relateprojecturl.'" class="more">更多项目</a>';
+return $relateprojecturl;
+}
+/*
