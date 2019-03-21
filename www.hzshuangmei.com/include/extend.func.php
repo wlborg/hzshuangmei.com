@@ -1235,6 +1235,142 @@ $relatedoctorurl='<h2><a href="'.$relatedoctorurl.'" target="_blank">推荐专�
 return $relatedoctorurl;
 }
 /**
+*  专题增加获取熊双美资讯文章(最新)
+*  获取相关最新文章6条
+*  $res2补缺少数据
+*
+*/
+function getProjectArticleFormInfo($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$res2="-";
+switch ($typeid)
+{
+case 6 :
+case 7 :
+$relatetypeid= '78,92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+break;
+case 14 :
+$relatetypeid='92,93,94,95,96,97';
+break;
+case 15:
+$relatetypeid='99,100,101,102,103,104,105,106,107';
+break;
+case 16:
+$relatetypeid='109,110,111,112,113,114';
+break;
+case 17:
+$relatetypeid='116,117,118,119,120,121';
+break;
+case 18 :
+$relatetypeid='123,124,125';
+break;
+case 19 :
+$relatetypeid='127,128,129,130,131,132,133,134,135';
+break;
+case 230 :
+$relatetypeid='137,138';
+break;
+case  8 :
+$relatetypeid='142,143,144,145,146,147,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172';
+break;
+case  21 :
+$relatetypeid=147;
+break;
+case  231 :
+$relatetypeid='142,143,144,145,146';
+break;
+case  232 :
+$relatetypeid='154,155,156';
+break;
+case  233 :
+$relatetypeid='158,159,160,161,162';
+break;
+case  234 :
+$relatetypeid=166;
+break;
+case  235 :
+$relatetypeid='170,171,172';
+break;
+case  262 :
+$relatetypeid='164,165';
+break;
+case  9 :
+$relatetypeid='175,176,177,178,179,180,182,183,184,185';
+break;
+case  22 :
+$relatetypeid='175,176,177,178,179,180';
+break;
+case  23 :
+$relatetypeid='182,183,184,185';
+break;
+case  20 :
+$relatetypeid='188,189,223,226,191,192,193,195,196,227,198,199,228';
+break;
+case  236 :
+$relatetypeid='188,189,223';
+break;
+case  237 :
+$relatetypeid='236,191,192,193';
+break;
+case  238 :
+$relatetypeid='195,196,227';
+break;
+case  239 :
+$relatetypeid='198,199,228';
+break;
+case  61 :
+$relatetypeid='220,221';
+break;
+case  245 :
+$relatetypeid='221';
+break;
+case  246 :
+$relatetypeid='220';
+break;
+case  240 :
+$relatetypeid='202,203,204,205,229,207,208,209,211,212,213,215,216,217,218';
+break;
+case  241 :
+$relatetypeid='202,203,204,205,229';
+break;
+case  242 :
+$relatetypeid='207,208,209';
+break;
+case  243 :
+$relatetypeid='211';
+break;
+case  244 :
+$relatetypeid='215,216,217,218';
+break;
+default:
+$relatetypeid='78,92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by rand() limit 6 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+
+$litpic =$row["litpic"];
+$relateproject.='<li class="expert"><a href="https://xzh.hzshuangmei.com'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="https://xzh.hzshuangmei.com'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+}
+if($ns>0){
+    if($ns<6){
+      $res2.=getProjectArticleFormXZToSix($ns);
+    }
+    $relateproject=$relateproject.$res2;
+  }
+  return $relateproject;
+}
+/**
 *  专题增加获取熊掌号文章(最新)
 *  获取相关最新文章6条
 *  $res2补缺少数据
