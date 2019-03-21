@@ -1250,7 +1250,7 @@ switch ($typeid)
 {
 case 6 :
 case 7 :
-$relatetypeid= '78,92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+$relatetypeid= '92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
 break;
 case 14 :
 $relatetypeid='92,93,94,95,96,97';
@@ -1346,7 +1346,7 @@ case  244 :
 $relatetypeid='215,216,217,218';
 break;
 default:
-$relatetypeid='78,92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+$relatetypeid='92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
 }
 $dsql->SetQuery( "SELECT  * FROM #@__archives AS a
 where  a.typeid in($relatetypeid) and a.arcrank=0 order by rand() limit 6 ");
@@ -1356,11 +1356,12 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
+$shorttitle = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 
 $litpic =$row["litpic"];
-$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$relateproject.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title="" class="clickParameter"><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$shorttitle.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
     if($ns<6){
@@ -1393,7 +1394,8 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =$row["litpic"];
-$repairRes.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$title.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
+$shorttitle = cn_substr($row["title"],80,0);
+$repairRes.='<li class="expert"><a href="'.$url.'" target="_blank" rel="nofollow" title=""><span class="thumbnail"><img src="'.$litpic.'" alt="'.$title.'"></span><span class="expertSpan line-limit-length">'.$shorttitle.'</span><img  src="//img.hzshuangmei.com/pc/project_option.png" alt="'.$title.'" class="thumbnailOp"></span></a></li>';
 }
 if($ns>0){
 $repairRes=$repairRes;
