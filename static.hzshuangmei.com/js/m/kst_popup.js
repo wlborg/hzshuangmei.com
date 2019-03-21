@@ -3,7 +3,7 @@
  * @FileName:kst_popup.js
  * @Date:   2018-01-06 10:54:26
  * @Last Modified by:   chaihongjun.me
- * @Last Modified time: 2019-03-08 17:54:35
+ * @Last Modified time: 2019-03-21 15:00:43
  */
 /*  移动版     自定义弹窗邀请框 */
 /*
@@ -131,7 +131,7 @@ function callshare(command) {
         //         document.execCommand("copy");
         // }
         //      manualCopy();
-        alert("非常抱歉，暂不支持分享");
+        alert("非常抱歉，当前浏览器暂不支持分享,请在UC或QQ浏览器中打开分享。");
     }
 }
 // function setTitle(title) {

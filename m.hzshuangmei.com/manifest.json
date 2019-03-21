@@ -1,6 +1,7 @@
 {
     "name": "海南红妆时尚双美整形美容连锁",
     "short_name": "红妆双美",
+    "lang":"zh",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#333",
