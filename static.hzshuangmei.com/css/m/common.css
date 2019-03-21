@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none；;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -875,6 +875,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 /*系统快商通样式更改 图片尺寸520px*/
 #_ks_ol_inviteWin {
+    display: block!important;
     /* display: block!important; */
     margin-top: -6.21rem !important;
     margin-left: -6.5rem !important;
