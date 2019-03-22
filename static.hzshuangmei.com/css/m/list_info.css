@@ -547,3 +547,26 @@ body {
 .article .article-main img {
     margin: auto;
 }
+.art_info_tag {
+    width: 12.970667rem;
+    margin: auto;
+}
+.art_info_tag a {
+    margin-right: .853333rem;
+}
+.relate-link .prev {
+    border: solid 1px rgb(138,89,167)!important;
+    border-radius: 5px;
+}
+.relate-link a {
+    display: inline-block;
+
+    font-size: .384rem;
+    line-height: .512rem;
+
+    color: rgb(102,102,102)!important;
+}
+.relate-link .next {
+    border: solid 1px rgb(102,102,102)!important;
+    border-radius: 5px;
+}
