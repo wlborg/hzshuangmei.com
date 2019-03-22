@@ -67,7 +67,7 @@ function networkedAndCache(request) {
                 .then((cache) => {
                     cache.put(request, copy);
                 });
-            log("(network: cache write)", request.method, request.url);
+            log("(network: cache write)", request.method, request.url,request.mode);
             return response;
         });
 }
@@ -75,7 +75,7 @@ function networkedAndCache(request) {
 function cachedOrNetworked(request) {
     return caches.match(request)
         .then((response) => {
-            log(response ? '(cached)' : '(network: cache miss)', request.method, request.url);
+            log(response ? '(cached)' : '(network: cache miss)', request.method, request.url,request.mode);
             return response ||
                 networkedAndCache(request)
                 .catch(() => { return offlineResponse(request) });
@@ -85,7 +85,7 @@ function cachedOrNetworked(request) {
 function networkedOrOffline(request) {
     return fetch(request)
         .then((response) => {
-            log('(network)', request.method, request.url);
+            log('(network)', request.method, request.url,request.mode);
             return response;
         })
         .catch(() => {
@@ -102,7 +102,7 @@ function cachedOrOffline(request) {
 }
 
 function offlineResponse(request) {
-    log('(offline)', request.method, request.url);
+    log('(offline)', request.method, request.url,request.mode);
     if (request.url.match(/\.(jpg|png|gif|svg|jpeg)(\?.*)?$/)) {
         return caches.match('/offline.svg');
     } else {
@@ -141,7 +141,7 @@ function cacheKey() {
 }
 
 function log() {
-    if (developmentMode()) {
+    if (!developmentMode()) {
         console.log("SW:", ...arguments);
     }
 }
