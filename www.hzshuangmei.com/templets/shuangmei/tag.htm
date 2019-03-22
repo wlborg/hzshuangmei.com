@@ -76,7 +76,7 @@
                         {/dede:tag}
                     </ul> -->
                     <ul>
-                        {dede:sql sql="select distinct tag from sm_archives a left join sm_taglist t on a.id=t.aid where a.typeid in(14,15,16,24,25,26,17,18,19,20,21,27,28,29,30,31,32,33,22,23,34,61) order by a.id desc limit 1000"}
+                        {dede:sql sql="select distinct tag from sm_archives a left join sm_taglist t on a.id=t.aid where a.typeid not in(78,77,79,80,81,82,83,84,85,86,87,88) order by a.id desc limit 3000"}
                         <li>
                          <a href='/tags.php?[field:tag/]' target="_blank" title="[field:tag /]" class="tagc">[field:tag /]</a>
                         </li>
