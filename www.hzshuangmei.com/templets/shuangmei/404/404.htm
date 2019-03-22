@@ -14,6 +14,8 @@
 <meta name="theme-color" content="#6a157d"/>
 <meta http-equiv="x-dns-prefetch-control" content="on">
 	<title>双美404</title>
+       {dede:include filename="_meta.htm"/}
+    {dede:include filename="_link.htm"/}
   <style>
 /* ***reset*** */
 a, body { color: #000; }
@@ -45,6 +47,8 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
   </style>
 </head>
 <body>
+
+    {dede:include filename="_header.htm"/}
 	<div class="notfind">
 
    <div class="g-container banner">
@@ -61,32 +65,20 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
    	  <div class="g-doc">
    	  	<div class="heading f-cb">
    	  	  <h2>更多精彩专题</h2>
-          <a class="more"  href="">
+          <a class="more"  href="https://www.hzshuangmei.com/projects/">
           	更多+
           </a>
    	  	</div>
    	  	<div class="g-content moreproject f-cb">
-   	  		<a href="">
-   	  			<img src="images/img2.jpg" alt="">
+ {dede:arclist typeid='10' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='pic_before,pic_after1,project1,doctor' channelid='18'}
+   	  		<a href="[field:arcurl/]">
+   	  			<img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
    	  		</a>
-          <a href="">
-            <img src="images/img2.jpg" alt="">
-          </a>
-          <a href="">
-            <img src="images/img2.jpg" alt="">
-          </a>
-          <a href="">
-            <img src="images/img2.jpg" alt="">
-          </a>
-          <a href="">
-            <img src="images/img2.jpg" alt="">
-          </a>
-          <a href="">
-            <img src="images/img2.jpg" alt="">
-          </a>
+         {/dede:arclist}
    	  	</div>
    	  </div>
    </div>
 	</div>
+      {dede:include filename="_footer.htm"/}
 </body>
 </html>
