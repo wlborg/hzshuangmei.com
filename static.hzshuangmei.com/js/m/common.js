@@ -490,6 +490,7 @@
    // 提供效果api
    // effects.lightCurNav:导航绑定单击高亮显示当前；
    // effects.showMoreProject:项目列表页显示隐藏的项目
+   // 分页为空时隐藏分页dom
    var effects = (
        function(module) {
            var that = this;
@@ -562,6 +563,11 @@
                    $('.relateporject').css("display", "none");
                }
            };
+           module.hidePageindex=function(obj){
+              if($(obj).text()==""){
+                 $(obj).addClass('hidePadeindex');
+              }
+           };
            return module;
        }
    )(window.effects || {});
@@ -573,6 +579,7 @@
        effects.showMoreProject(6);
        effects.showBigCasePic(".case-article-modal", '#modal-img');
        effects.hiddeEmptyRelate();
+       effects.hidePageindex(".pageindex");
       // tools.addBaiduTuiSong();
        if (window.location.host.indexOf("m.hzshuangmei.com")>=0){
            tools.addKSTScript("https://ryak66.kuaishang.cn/bs/ks.j?cI=765150&fI=68948");
