@@ -1322,6 +1322,12 @@ $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
+if($ns>0){
+  if($ns<2){
+     $relateproject.=getProjectArticleFormProToOne($ns);
+  }
+  $relateproject.=$relateproject;
+}
  return $relateproject;
 }
 /*
@@ -1548,3 +1554,30 @@ $relateprojecturl='<a href="'.$relateprojecturl.'" class="more">更多项目</a>
 return $relateprojecturl;
 }
 /*
+/*
+资讯栏目对应的项目栏目,不足2条补到2条
+@param   $typeid   当前资讯文档所在的栏目ID
+ */
+function getProjectArticleFormProToOne($typeid)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=2-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=14  and a.arcrank=0 order by id desc limit $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =$row["litpic"];
+$repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
+}

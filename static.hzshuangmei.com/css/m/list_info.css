@@ -389,6 +389,7 @@ body {
     display: flex;
     height: 4.65rem;
     padding: 0 .2rem;
+    padding-bottom: .6rem;
 
     -ms-flex-pack: justify;
     justify-content: space-between;
