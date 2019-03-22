@@ -1193,7 +1193,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 .information_con1 {
     width: 810px;
-    height: 376px;
+    /* height: 376px; */
     margin-top: 58px;
     margin-left: 47px;
 }
