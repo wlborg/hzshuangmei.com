@@ -57,23 +57,22 @@ body { background: #fff; font-family: "微软雅黑", sans-serif, Verdana, Arial
           	更多项目
           </a>
    	  	</div>
-   	  	<div class="g-content moreproject f-cb">
-
+   	          <div class="g-content moreproject f-cb">
+ {dede:arclist typeid='6' row='6' flag='c' orderby='id' orderway='desc' infolen='30' addfields='' channelid='18'}
           <div class="item">
-            <a href="" class="pic">
-              <img src="images/img1.jpg" alt="">
+            <a href="[field:arcurl/]" class="pic">
+              <img src="[field:picname function='replaceurl(@me)/]" alt="[field:title/]">
             </a>
             <div class="des">
-              <h2>双眼皮修复</h2>
-              <p>红妆医学美容整形琼海 门诊部优美生活 </p>
-              <a href="">
+              <h2>[field:title/]</h2>
+              <p>[field:description function='cn_substr(@me,50)'/]...</p>
+              <a href="[field:arcurl/]">
                 查看详情
               </a>
             </div>
           </div>
-
-
-   	  	</div>
+         {/dede:arclist}
+        </div>
    	  </div>
    </div>
 	</div>
