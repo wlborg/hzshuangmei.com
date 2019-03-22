@@ -328,7 +328,8 @@ body {
     border: solid 1px #e6e6e6;
     background-color: #8a59a7;
 }
-.news_list .project {
+.news_list .project,
+.art_info .project {
     width: 15.65rem;
     padding-top: 1rem;
     margin: .35rem auto;
@@ -336,7 +337,8 @@ body {
     border: solid 1px #f2f2f2;
     box-shadow: .075rem .1rem .325rem 0rem rgba(224, 224, 224, .31);
 }
-.news_list .project .g-title {
+.news_list .project .g-title,
+.art_info .project .g-title {
     position: relative;
 
     padding-left: 4.75rem;
@@ -347,7 +349,8 @@ body {
     background: url("https://img.hzshuangmei.com/m/news_t2bg.png") left center no-repeat;
     background-size: 4.75rem .8rem;
 }
-.news_list .project .g-title h2 {
+.news_list .project .g-title h2,
+.art_info .project .g-title h2 {
     width: 3.75rem;
 
     font-size: .6rem;
@@ -359,7 +362,8 @@ body {
 
     color: #693290;
 }
-.news_list .project .g-title .more {
+.news_list .project .g-title .more,
+.art_info .project .g-title .more {
     /*float: right;*/
     position: absolute;
     top: .25rem;
@@ -379,6 +383,7 @@ body {
     color: #8c64a0;
     border: solid 1px #8c64a0;
 }
+.art_info .project .g-content,
 .news_list .project .g-content {
     display: -ms-flexbox;
     display: flex;
@@ -388,18 +393,21 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.news_list .project .g-content a {
+.news_list .project .g-content a,
+.art_info .project .g-content a {
     display: block;
     float: left;
     width: 7.6rem;
     height: 4.65rem;
 }
-.news_list .project .g-content a img {
+.news_list .project .g-content a img,
+.art_info .project .g-content a img {
     display: block;
     width: 7.6rem;
     height: 4.65rem;
 }
-.news_list .price {
+.news_list .price,
+.art_info .price {
     width: 15.65rem;
     padding-top: 1rem;
     margin: .35rem auto;
@@ -407,7 +415,8 @@ body {
     border: solid 1px #f2f2f2;
     box-shadow: .075rem .1rem .325rem 0rem rgba(224, 224, 224, .31);
 }
-.news_list .price .g-title {
+.news_list .price .g-title,
+.art_info .price .g-title {
     position: relative;
 
     padding-left: 3.3rem;
@@ -418,7 +427,8 @@ body {
     background: url("https://img.hzshuangmei.com/m/news_t3bg.png") left center no-repeat;
     background-size: 3.3rem .8rem;
 }
-.news_list .price .g-title h2 {
+.news_list .price .g-title h2,
+.art_info .price .g-title h2 {
     width: 3.75rem;
 
     font-size: .6rem;
@@ -430,7 +440,8 @@ body {
 
     color: #693290;
 }
-.news_list .price .g-title .consult {
+.news_list .price .g-title .consult,
+.art_info .price .g-title .consult {
     /*float: right;*/
     position: absolute;
     top: 0;
@@ -451,7 +462,8 @@ body {
     border-radius: .125rem;
     background-color: #8a59a7;
 }
-.news_list .price .g-title .consult .icon_consult {
+.news_list .price .g-title .consult .icon_consult,
+.art_info .price .g-title .consult .icon_consult {
     /*margin-right: 10rem/@fb;*/
     display: inline-block;
     width: .5rem;
@@ -463,12 +475,14 @@ body {
     background: url("https://img.hzshuangmei.com/m/icon_consult.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
-.news_list .price .g-content {
+.news_list .price .g-content,
+.art_info .price .g-content {
     padding: .5rem .25rem;  /*display: flex;*/  /*height: 186rem/@fb;*
 
     /*justify-content: space-between;*/
 }
-.news_list .price .g-content .link {
+.news_list .price .g-content .link,
+.art_info .price .g-content .link {
     position: relative;
 
     display: block;
@@ -487,13 +501,15 @@ body {
 
     color: #666;
 }
-.news_list .price .g-content .link a {
+.news_list .price .g-content .link a,
+.art_info .price .g-content .link a {
     display: inline-block;
     padding-left: 1rem;
 
     color: rgb(102,102,102);
 }
-.news_list .price .g-content .link span {
+.news_list .price .g-content .link span,
+.art_info .price .g-content .link span {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -508,7 +524,8 @@ body {
 
     background-color: #d5cfe5;
 }
-.news_list .price .g-content .link .icon_quesion {
+.news_list .price .g-content .link .icon_quesion,
+.art_info .price .g-content .link .icon_quesion {
     display: inline-block;
     width: .5rem;
     height: .5rem;
@@ -527,23 +544,54 @@ body {
     background: #693290;
 }
  */
-.news_list .price .g-content .link:nth-child(2) span,
+/* .news_list .price .g-content .link:nth-child(2) span,
 .news_list .price .g-content .link:nth-child(3) span,
 .news_list .price .g-content .link:nth-child(4) span,
 .news_list .price .g-content .link:nth-child(5) span,
 .news_list .price .g-content .link:nth-child(6) span {
     background-color: #d5cfe5;
 }
-.info_list .g-doc .g-content > a:nth-of-type(1) {
+ */
+.info_list .g-doc .g-content > a:nth-of-type(1),
+.art_info .g-doc .g-content > a:nth-of-type(1) {
     margin-right: .15rem!important;
 }
 .g-doc,
-.info_list .g-doc {
+.info_list .g-doc,
+.art_info .g-doc {
     width: auto!important;
 }
-.info_list .nav ul li a {
+.info_list .nav ul li a,
+.art_info .nav ul li a {
     padding: 0 .9rem!important;
 }
 .article .article-main img {
     margin: auto;
+}
+.art_info_tag {
+    width: 12.970667rem;
+    margin: auto;
+}
+.art_info_tag a {
+    margin-right: .853333rem;
+
+    font-size: .384rem;
+
+    color: rgb(194,199,245);
+}
+.relate-link .prev {
+    border: solid 1px rgb(102,102,102)!important;
+    border-radius: 5px;
+}
+.relate-link a {
+    display: inline-block;
+
+    font-size: .384rem;
+    line-height: .512rem;
+
+    color: rgb(102,102,102)!important;
+}
+.relate-link .next {
+    border: solid 1px rgb(102,102,102)!important;
+    border-radius: 5px;
 }
