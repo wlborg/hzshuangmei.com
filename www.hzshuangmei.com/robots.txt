@@ -5,7 +5,6 @@ Disallow: /3/
 Disallow: /4/   
 Disallow: /5/   
 Disallow: /6/   
-Disallow: /7/   
 Disallow: /1_1/   
 Disallow: /1_2/   
 Disallow: /1_3/   
