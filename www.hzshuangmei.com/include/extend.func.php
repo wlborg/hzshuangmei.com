@@ -1761,7 +1761,7 @@ $litpic =replaceurl($row["litpic"]);
 $relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns<=0){
-    $res2.=getProjectArticleFormIPrOToO(1);
+    $relateproject.=getProjectArticleFormIPrOToO(1);
 }
  return $relateproject;
 }
@@ -2028,7 +2028,7 @@ $shorttitle = cn_substr($row["title"],80,0);
 $repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
-$repairRes=$repairRes;
+$repairRes.=$repairRes;
 }
 return $repairRes;
 }
