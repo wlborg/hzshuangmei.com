@@ -60,13 +60,14 @@
                         </div>
                     </div>
                                {/dede:list}
+                                 <div class="pageindex">
+                                    <ul>
+                                       {dede:pagelist istitem="pre,next,pageno,index,end" listsize="1"/}
+                                    </ul>
+                                  </div>
                                 {dede:include filename="_info_aside.htm"/}
                 </div>
-                <div class="pageindex">
-                    <ul>
-                       {dede:pagelist istitem="pre,next,pageno,index,end" listsize="1"/}
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div>
