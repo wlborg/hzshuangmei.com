@@ -592,6 +592,7 @@ body {
 }
 .relate-link a {
     display: inline-block;
+    margin-left: .405333rem;
 
     font-size: .384rem;
     line-height: .512rem;
@@ -601,6 +602,7 @@ body {
 .relate-link .next {
     height: .618667rem;
 
+    font-size: .384rem;
     line-height: .618667rem;
 
     border: solid 1px rgb(102,102,102)!important;
