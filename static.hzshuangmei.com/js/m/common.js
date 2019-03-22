@@ -863,6 +863,14 @@ window.addEventListener('load', () =>{
              /baidu/,
              /kuaishang/,
               uri => uri.includes('.php'),
+       ],
+       origins:[
+       'm.hzshuangmei.com',
+       'www.hzshuangmei.com',
+       'uploads.hzshuangmei.com',
+       'js.hzshuangmei.com',
+        'css.hzshuangmei.com',
+         'img.hzshuangmei.com'
        ]
     });
 });
