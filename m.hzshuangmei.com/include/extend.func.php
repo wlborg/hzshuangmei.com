@@ -1573,7 +1573,7 @@ $id = $row["id"];
 $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
-$litpic =$row["litpic"];
+$litpic =replaceurl($row["litpic"]);
 $repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
