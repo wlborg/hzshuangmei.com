@@ -529,8 +529,8 @@ body {
     display: inline-block;
     width: .5rem;
     height: .5rem;
-    /* background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat; */
 
+    background: url("https://img.hzshuangmei.com/m/icon_question.png") center center no-repeat;
     background-size: .5rem .5rem;
 }
 /* .news_list .price .g-content .link:nth-child(1) {
@@ -569,8 +569,9 @@ body {
     margin: auto;
 }
 .art_info_tag {
-    width: 12.970667rem;
-    margin: auto;
+    width: 16rem;
+    margin: 0rem auto 1rem;
+    overflow: hidden;
 }
 .art_info_tag a {
     margin-right: .853333rem;
@@ -580,6 +581,11 @@ body {
     color: rgb(194,199,245);
 }
 .relate-link .prev {
+    height: .618667rem;
+
+    font-size: .384rem;
+    line-height: .618667rem;
+
     border: solid 1px rgb(102,102,102)!important;
     border-radius: 5px;
 }
@@ -592,6 +598,13 @@ body {
     color: rgb(102,102,102)!important;
 }
 .relate-link .next {
+    height: .618667rem;
+
+    line-height: .618667rem;
+
     border: solid 1px rgb(102,102,102)!important;
     border-radius: 5px;
+}
+.article .article-main {
+    padding: 1.25rem 2% .203333rem;
 }
