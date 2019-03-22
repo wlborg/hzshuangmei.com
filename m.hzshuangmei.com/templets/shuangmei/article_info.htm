@@ -3,7 +3,7 @@
 
 <head>
     {dede:include filename="_meta.htm"/}
-    <meta name="author" content="设计：观彩恒，前端：陈晓珍" />
+    <meta name="author" content="设计：姚俊，前端：陈庭奋" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00" />
     <meta name="keywords" content="{dede:field name='keywords'/}" />
@@ -65,7 +65,10 @@
                     <div class="prev"> {dede:prenext get='pre'/}</div>
                     <div class="next">{dede:prenext get='next'/}</div>
                  </div>
+                 <!-- 推荐项目 -->
+                 {dede:include filename="_info_aside.htm"/}
             </div>
+
             {dede:include filename="_sj_copyright.htm"/}
         </div>
     </div>
