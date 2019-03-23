@@ -94,13 +94,22 @@ body {
     padding: .65rem .2rem 1rem;
 }
 .news_list .nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
     font-size: 0;
+
+    align-items: center;
+    flex-wrap: wrap;
 }
 .news_list .nav ul li {
     display: inline-block;
-    margin: 0 .05rem .1rem;
+    width: 32%;
+    /* height: 40%; */
+    margin: 0 auto .2rem;
 
-    line-height: 1.6rem;
+    /* line-height: 1.6rem; */
 }
 .news_list .nav ul li a {
     display: block;
@@ -112,6 +121,7 @@ body {
     font-stretch: normal;
     line-height: 1.6rem;
 
+    text-align: center;
     letter-spacing: 0rem;
 
     color: #6a157d;
