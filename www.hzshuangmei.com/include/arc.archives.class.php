@@ -1167,7 +1167,7 @@ while($row = $this->dsql->GetArray())
 $key = trim($row['keyword']);
 $key_url=trim($row['rpurl']);
 $karr[] = $key;
-$kaarr[] = "<a href='$key_url' target='_blank'><u>$key</u></a>";
+$kaarr[] = "<a href='$key_url' target='_blank'>$key</a>";
 }
 // 这里可能会有错误
 if (version_compare(PHP_VERSION, '5.5.0', '>='))
