@@ -1238,10 +1238,10 @@ $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>"
     // {
     // continue;
     // }
-    $string = preg_replace("#".preg_quote($word)."#", $result[$key], $string, $cfg_replace_num);
-    if(strpos($string, $word) !== FALSE)
+    $string = preg_replace("#".preg_quote($words)."#", $result, $string, $cfg_replace_num);
+    if(strpos($string, $words) !== FALSE)
     {
-    $GLOBALS['replaced'][$word] = 1;
+    $GLOBALS['replaced'][$words] = 1;
     }
     }
    // }
