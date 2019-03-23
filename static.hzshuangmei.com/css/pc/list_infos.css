@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   August1Rush
-* @Last Modified time: 2019-03-20 15:04:42
+* @Last Modified time: 2019-03-23 08:16:26
 */
 #information {
     position: absolute;
@@ -365,8 +365,8 @@ nav ul li:hover #information {
 }
 .pro2_tag li {
     float: left;
-    width: 104px;
-    margin: 0 40px 17px 0!important;
+    width: 124px;
+    margin: 0 20px 17px 0!important;
     overflow: hidden;
 
     white-space: nowrap;
