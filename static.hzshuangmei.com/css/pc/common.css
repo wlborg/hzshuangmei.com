@@ -736,6 +736,7 @@ footer .right .right_t > div {
     float: left;
 }
 footer .right .right_t .ewm {
+    display: block;
     width: 105px;
     height: 107px;
     margin-right: 10px;
