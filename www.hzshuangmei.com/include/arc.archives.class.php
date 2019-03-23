@@ -1151,7 +1151,7 @@ function ReplaceKeyword($kw,&$body)
      $karr[] = $key;
      $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>";
    }
-   foreach ($karr as $key => $word)
+   foreach ($karr as $key => $words)
    {
 
     $body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
