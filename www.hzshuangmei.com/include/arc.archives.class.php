@@ -1234,10 +1234,10 @@ $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>"
     {
     foreach ($words as $key => $word)
     {
-    if($GLOBALS['replaced'][$word] == 1)
-    {
-    continue;
-    }
+    // if($GLOBALS['replaced'][$word] == 1)
+    // {
+    // continue;
+    // }
     $string = preg_replace("#".preg_quote($word)."#", $result[$key], $string, $cfg_replace_num);
     if(strpos($string, $word) !== FALSE)
     {
