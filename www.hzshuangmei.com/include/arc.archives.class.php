@@ -1140,32 +1140,20 @@ function ReplaceKeyword($kw,&$body)
    //暂时屏蔽超链接
    $body = preg_replace("#(<a(.*))(>)(.*)(<)(\/a>)#isU", '\\1-]-\\4-[-\\6', $body);
 
-   global $dsql;
-   $query="SELECT * FROM #@__keywords WHERE rpurl<>'' ORDER BY rank DESC";
-   $dsql->SetQuery($query);
-   $dsql->Execute();
-   while($row = $dsql->GetArray())
-   {
-     $key = trim($row['keyword']);
-     $key_url=trim($row['rpurl']);
-     $karr[] = $key;
-     $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>";
-   }
-   foreach ($karr as $key => $words)
-   {
 
-    $body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
-//echo $body."<br/>";
-
-//恢复超链接
-    $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
-//暂时屏蔽超链接
-    $body = preg_replace("#(<a(.*))(>)(.*)(<)(\/a>)#isU", '\\1-]-\\4-[-\\6', $body);
-
-   }
+$query = "SELECT * FROM #@__keywords WHERE rpurl<>'' ORDER BY rank DESC";
+$this->dsql->SetQuery($query);
+$this->dsql->Execute();
+while($row = $this->dsql->GetArray())
+{
+$key = trim($row['keyword']);
+$key_url=trim($row['rpurl']);
+$karr[] = $key;
+$kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>";
+}
 
    //恢复超链接
-    $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
+ $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
    return $body;
 }
 
