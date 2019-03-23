@@ -1232,8 +1232,8 @@ $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>"
     $string = str_replace('\"', '"', $string);
     if($cfg_replace_num > 0)
     {
-    foreach ($words as $key => $word)
-    {
+    // foreach ($words as $key => $word)
+    // {
     // if($GLOBALS['replaced'][$word] == 1)
     // {
     // continue;
@@ -1244,7 +1244,7 @@ $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>"
     $GLOBALS['replaced'][$word] = 1;
     }
     }
-    }
+   // }
     else
     {
     $string = str_replace($words, $result, $string);
