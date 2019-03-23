@@ -1138,7 +1138,7 @@ function ReplaceKeyword($kw,&$body)
    $karr = $kaarr = $GLOBALS['replaced'] = array();
 
    //暂时屏蔽超链接
-   $body = preg_replace("/(<a(.*))(>)(.*)(<)(\/a>)/isU", '\\1-]-\\4-[-\\6', $body);
+   $body = preg_replace("#(<a(.*))(>)(.*)(<)(\/a>)#isU", '\\1-]-\\4-[-\\6', $body);
 
    global $dsql;
    $query="SELECT * FROM #@__keywords WHERE rpurl<>'' ORDER BY rank DESC";
@@ -1154,19 +1154,18 @@ function ReplaceKeyword($kw,&$body)
    foreach ($karr as $key => $word)
    {
 
-    $body = preg_replace("/(^|>)([^<]+)(?=<|$)/sUe", "_highlight('\\2',
-    \$karr[$key], \$kaarr[$key], '\\1')", $body);
+    $body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
 //echo $body."<br/>";
 
 //恢复超链接
-    $body = preg_replace("/(<a(.*))-\]-(.*)-\[-(\/a>)/isU", '\\1>\\3<\\4', $body);
+    $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
 //暂时屏蔽超链接
-    $body = preg_replace("/(<a(.*))(>)(.*)(<)(\/a>)/isU", '\\1-]-\\4-[-\\6', $body);
+    $body = preg_replace("#(<a(.*))(>)(.*)(<)(\/a>)#isU", '\\1-]-\\4-[-\\6', $body);
 
    }
 
    //恢复超链接
-   $body = preg_replace("/(<a(.*))-\]-(.*)-\[-(\/a>)/isU", '\\1>\\3<\\4', $body);
+    $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
    return $body;
 }
 
@@ -1185,7 +1184,7 @@ if($GLOBALS['replaced'][$words] == 1)
 
 if($cfg_replace_num > 0)
 {
-   $string = preg_replace("/".preg_quote($words)."/",$result, $string, $cfg_replace_num);
+   $string = preg_replace("#".preg_quote($words)."#", $result, $string, $cfg_replace_num);
    if(strpos($string, $words) !== false)
    {
     $GLOBALS['replaced'][$words] = 1;
