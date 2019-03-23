@@ -1170,17 +1170,56 @@ $karr[] = $key;
 $kaarr[] = "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>";
 }
 // 这里可能会有错误
-if (version_compare(PHP_VERSION, '5.5.0', '>='))
-{
-$body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
-} else {
-$body = @preg_replace("#(^|>)([^<]+)(?=<|$)#sUe", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
-}
-//恢复超链接
-$body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
-    return $body;
+// if (version_compare(PHP_VERSION, '5.5.0', '>='))
+// {
+// $body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
+// } else {
+// $body = @preg_replace("#(^|>)([^<]+)(?=<|$)#sUe", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
+// }
+// //恢复超链接
+// $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
+//     return $body;
+//     }
+//     }
+    if (version_compare(PHP_VERSION, '5.5.0', '>='))
+        {
+            //$body = @preg_replace_callback("#(^|>)([^<]+)(?=<|$)#sU", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
+            if($cfg_replace_num > 0)
+            {
+                $query = "SELECT * FROM #@__keywords WHERE rpurl<>'' ORDER BY rank DESC";
+                $this->dsql->SetQuery($query);
+                $this->dsql->Execute();
+                while($row = $this->dsql->GetArray())
+                {
+                    $key = trim($row['keyword']);
+                    $key_url=trim($row['rpurl']);
+                    $body = str_replace_limit($key, "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>", $body, $cfg_replace_num);
+                }
+
+            }
+            else
+            {
+                $query = "SELECT * FROM #@__keywords WHERE rpurl<>'' ORDER BY rank DESC";
+                $this->dsql->SetQuery($query);
+                $this->dsql->Execute();
+                while($row = $this->dsql->GetArray())
+                {
+                    $key = trim($row['keyword']);
+                    $key_url=trim($row['rpurl']);
+                    $body = str_replace($key, "<a href='$key_url' target='_blank' class='inline_keywords'>$key</a>", $body);
+                }
+            }
+
+        } else {
+            $body = @preg_replace("#(^|>)([^<]+)(?=<|$)#sUe", "_highlight('\\2', \$karr, \$kaarr, '\\1')", $body);
+        }
+
+        //恢复超链接
+        $body = preg_replace("#(<a(.*))-\]-(.*)-\[-(\/a>)#isU", '\\1>\\3<\\4', $body);
+        return $body;
     }
-    }//End Archives
+}
+    //End Archives
     //高亮专用, 替换多次是可能不能达到最多次
     function _highlight($string, $words, $result, $pre)
     {
