@@ -3,7 +3,7 @@
 * @FileName:list_infos.css
 * @Date:   2019-03-06 14:10:58
 * @Last Modified by:   August1Rush
-* @Last Modified time: 2019-03-23 08:16:26
+* @Last Modified time: 2019-03-23 16:21:55
 */
 #information {
     position: absolute;
@@ -251,13 +251,15 @@ nav ul li:hover #information {
 
     cursor: pointer;
 
-    color: rgb(189,189,189)!important;
+    color: #fff;
+    /* color: rgb(189,189,189)!important; */
     border-radius: 6px;
+    background: #c2c7f5;
 }
-.list_infor_tag a:hover {
+/* .list_infor_tag a:hover {
     color: rgb(255,255,255)!important;
     background: rgb(194,199,245);
-}
+} */
 .news_content > .news_main > p {
     width: 1px;
     height: 36px;
