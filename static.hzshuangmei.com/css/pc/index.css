@@ -263,6 +263,9 @@ h3 img {
     color: #6a157d;
     background-color: #eae8ea;
 }
+.index_project #tab2 li a {
+    color: #6a157d;
+}
 .index_project .sy-tab2 li,
 .index_clients .sy-tab2 li {
     color: #fff !important;
@@ -280,6 +283,9 @@ h3 img {
 .index_project #tab2 .fli2 {
     color: #fff;
     background-color: #6a157d;
+}
+.index_project #tab2 .fli2 a {
+    color: #fff;
 }
 .index_project #tabCon2 li {
     display: none;
@@ -361,7 +367,15 @@ h3 img {
     color: #fff;
     border: 1px solid #560995;
 }
+.index_expert #tab3 li a {
+    color: #fff;
+}
 .index_expert #tab3 .fli3 {
+    cursor: pointer;
+
+    background-color: #672a9a;
+}
+.index_expert #tab3 .fli3 a {
     cursor: pointer;
 
     background-color: #672a9a;
