@@ -416,12 +416,14 @@ h3 img {
     background-color: #eaebeb;
 }
 .index_clients #tab4 ul {
-    width: 508px;
+    width: 670px;
+    /* width: 508px; */
     margin: 24px auto 50px;
 }
 .index_clients #tab4 ul li {
     float: left;
-    width: 123px;
+    width: 130px;
+    /* width: 123px; */
     height: 34px;
     margin: 0 2px;
 
@@ -1069,4 +1071,3 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-
