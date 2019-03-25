@@ -79,6 +79,13 @@
 
     color: #727272;
 }
+/* 内链关键词颜色 */
+.ar_ar .inline_keywords {
+    text-decoration: dotted underline;
+
+    color: #fc4679;
+}
+
 /*.ar_ar h3,*/
 /*.ar_ar h4,*/
 /*.ar_ar h5,*/

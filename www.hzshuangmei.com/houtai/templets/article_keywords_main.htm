@@ -24,6 +24,19 @@ function selAll()
 		else celements[i].checked = false;
 	}
 }
+
+function seletAll()
+{
+    var relements = document.querySelectorAll(".remove");
+    for(i=0;i<relements.length;i++)
+    {
+        if(!relements[i].checked) relements[i].checked = true;
+        else relements[i].checked = false;
+    }
+}
+
+
+
 </script>
 </head>
 <body background='images/allbg.gif' leftmargin='8' topmargin='8'>
@@ -93,7 +106,7 @@ function selAll()
       	<input type='checkbox' name='isnouse_{dede:field.aid/}' class='np' value='1'{dede:field.sta function="GetSta(@me)"/} />
       	禁用
       	&nbsp;
-      	<input type='checkbox' name='isdel_{dede:field.aid/}' class='np' value='1' />
+      	<input type='checkbox' name='isdel_{dede:field.aid/}' class='np remove' value='1' />
       	删除
       </td>
     </tr>
@@ -104,6 +117,8 @@ function selAll()
 	    <input type="button" name="dl1" class="coolbg np" value="反选" onClick="selAll()" />
 	    &nbsp;
 	    <input type="button" name="dl2" class="coolbg np" value="保存更改" onClick="this.form.submit();" />
+         &nbsp;
+        <input type="button" name="dl3" class="coolbg np" value="勾选全部删除选项" onClick="seletAll()" />
 	  </td>
     </tr>
 	</form>

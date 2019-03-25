@@ -2,9 +2,16 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+.article_case_content .center .inline_keywords {
+    text-decoration: dotted underline;
+
+    color: #fc4679;
+}
+
 .article_case_content .data {
     width: 877px;    /* height: 190px; */
-    padding-top: 20px; 
+    padding-top: 20px;
     margin: 25px 0 45px;
 
     font-size: 16px;
@@ -42,13 +49,13 @@
     width: 83px;
     height: 82px;
     margin-left: 40px;
-    overflow: hidden; 
+    overflow: hidden;
 
     border-radius: 5px;
 }
 .article_case_content .data_after img {
     width: 100%;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 
     border-radius: 5px;
 }
@@ -59,7 +66,7 @@
     margin-bottom:10px;
 } */
 .article_case_content .data_t > div:nth-child(2) {
-    width: 710px; 
+    width: 710px;
     margin-left: 16px;
 }
 .article_case_content .data_t > div:last-child {
@@ -122,7 +129,7 @@
 
 /*}*/
 .article_case_content p .fon1 {
-    width: 485px; 
+    width: 485px;
 
     font-size: 16px;
 
@@ -131,7 +138,7 @@
 .article_case_content p .fon2 {
     position: relative;
     top: -20px;
-    left: 92px; 
+    left: 92px;
 
     display: inline-block;
     width: 610px;
@@ -151,7 +158,7 @@
     color: #8c4a99;
 }
 .article_case_content p .fon3 a {
-    margin-right: 14px; 
+    margin-right: 14px;
 
     color: #8c4a99;
 }
@@ -180,14 +187,14 @@
 h3 {
     font-size: 30px;
 
-    text-align: center; 
+    text-align: center;
 
     color: #7d5599;
 }
 .article_case_content .main .line3 {
     width: 806px;
     height: 4px;
-    margin: 30px auto 35px; 
+    margin: 30px auto 35px;
 
     background: url(//img.hzshuangmei.com/pc/ar_case_line.jpg) no-repeat center;
 }
@@ -195,7 +202,7 @@ h3 {
     position: relative;    /* top: -9px; */
 
     display: inline-block;    /*height: 32px;*/
-    padding: 0 10px 0 15px; 
+    padding: 0 10px 0 15px;
 
     font-size: 18px;
     line-height: 32px;
@@ -227,7 +234,7 @@ h3 {
 /*}*/
 .article_case_content .main .main_content h4 i {
     position: absolute;
-    right: -19px; 
+    right: -19px;
 
     display: inline-block;
     width: 19px;
@@ -243,7 +250,7 @@ h3 {
     font-size: 16px;
     line-height: 1.5em;
 
-    text-align: justify; 
+    text-align: justify;
 
     color: #575757;
 }
@@ -259,7 +266,7 @@ h3 {
     border: 1px solid #ebebeb;
 }
 .article_case_content .main_content .note p {
-    width: 820px; 
+    width: 820px;
     padding: 10px 10px 10px 10px;
     margin: 0;
 
@@ -288,7 +295,7 @@ h3 {
     left: 0;
     z-index: -10;
 
-    visibility: hidden; 
+    visibility: hidden;
 
     background: rgba(0, 0, 0, .6);
 }
