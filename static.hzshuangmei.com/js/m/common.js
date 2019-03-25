@@ -906,6 +906,13 @@ if ('storage' in navigator && 'estimate' in navigator.storage) {
   });
 }
 
+// 让 PWA 安装提示在首次访问时弹出
+window.addEventListener('beforeinstallprompt', event => {
+  event.userChoice.then(result => {console.log(result.outcome)
+  })
+})
+
+
 //PWA 用户端监测
 self.addEventListener('error', function (event) {
   var msg = {
