@@ -263,6 +263,9 @@ h3 img {
     color: #6a157d;
     background-color: #eae8ea;
 }
+.index_project #tab2 li a {
+    color: #6a157d;
+}
 .index_project .sy-tab2 li,
 .index_clients .sy-tab2 li {
     color: #fff !important;
@@ -280,6 +283,9 @@ h3 img {
 .index_project #tab2 .fli2 {
     color: #fff;
     background-color: #6a157d;
+}
+.index_project #tab2 .fli2 a {
+    color: #fff;
 }
 .index_project #tabCon2 li {
     display: none;
@@ -361,7 +367,23 @@ h3 img {
     color: #fff;
     border: 1px solid #560995;
 }
+.index_expert #tab3 li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+}
 .index_expert #tab3 .fli3 {
+    cursor: pointer;
+
+    background-color: #672a9a;
+}
+.index_expert #tab3 .fli3 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
     cursor: pointer;
 
     background-color: #672a9a;
@@ -416,12 +438,14 @@ h3 img {
     background-color: #eaebeb;
 }
 .index_clients #tab4 ul {
-    width: 508px;
+    width: 670px;
+    /* width: 508px; */
     margin: 24px auto 50px;
 }
 .index_clients #tab4 ul li {
     float: left;
-    width: 123px;
+    width: 130px;
+    /* width: 123px; */
     height: 34px;
     margin: 0 2px;
 
@@ -1069,4 +1093,3 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-
