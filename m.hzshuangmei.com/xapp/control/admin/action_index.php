@@ -39,11 +39,11 @@ class seo_index extends Base{
      // 项目索引模板
       $tmpfile_projects = SEOTEMPLETS."/admin/sitemap_projects.xml";
      // 日记 索引模板
-     $tmpfile_cases = SEOTEMPLETS."/admin/sitemap_cases.xml";
+      $tmpfile_cases = SEOTEMPLETS."/admin/sitemap_cases.xml";
        //  资讯 索引模板
       $tmpfile_infos = SEOTEMPLETS."/admin/sitemap_infos.xml";
       //总 所以模板
-        $tmpfile = SEOTEMPLETS."/admin/sitemap.xml";
+      $tmpfile = SEOTEMPLETS."/admin/sitemap.xml";
 
         $pv = new PartView();
 
@@ -68,9 +68,8 @@ class seo_index extends Base{
         $pv->SaveToHtml($cfg_basedir.$murl_cases);
 
                 //加载 infos 模板
-       $pv->SetTemplet($tmpfile_infos);
+        $pv->SetTemplet($tmpfile_infos);
         $pv->SaveToHtml($cfg_basedir.$murl_infos);
-
 
 
         $pv->SetTemplet($tmpfile);
