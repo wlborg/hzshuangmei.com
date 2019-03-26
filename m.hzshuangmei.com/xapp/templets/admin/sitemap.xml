@@ -15,4 +15,7 @@
 <sitemap>
 <loc>https://m.hzshuangmei.com/sitemap_cases.xml</loc>
 </sitemap>
+<sitemap>
+<loc>https://m.hzshuangmei.com/sitemap_info.xml</loc>
+</sitemap>
 </sitemapindex>
