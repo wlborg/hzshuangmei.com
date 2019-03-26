@@ -76,7 +76,7 @@ class TagList
         if($this->Tag!='')
         {
             // $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
-            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' and typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' and typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             if(!is_array($this->TagInfos))
             {
                 $fullsearch = $GLOBALS['cfg_phpurl']."/search.php?keyword=".$this->Tag."&searchtype=titlekeyword";
@@ -136,7 +136,7 @@ class TagList
         if($this->TotalResult==-1)
         {
             // $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
-            $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) ";
+            $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) ";
             $row = $this->dsql->GetOne($cquery);
             $this->TotalResult = $row['dd'];
 
@@ -145,20 +145,20 @@ class TagList
 
             //更新浏览量和记录数
             //$upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
-            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)";
+            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
             $this->dsql->ExecuteNoneQuery($upquery);
             $oneday = 24 * 3600;
 
             //周统计
             if(ceil( ($ntime - $this->TagInfos['weekup'])/$oneday ) > 7)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             }
 
             //月统计
             if(ceil( ($ntime - $this->TagInfos['monthup'])/$oneday ) > 30)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             }
         }
         $ctag = $this->dtp->GetTag("page");
@@ -322,7 +322,7 @@ class TagList
         if($innertext=='') $innertext = GetSysTemplets("list_fulllist.htm");
         $idlists = $ordersql = '';
         // $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
-        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) LIMIT $limitstart,$getrow");
+        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) LIMIT $limitstart,$getrow");
         $this->dsql->Execute();
         while($row=$this->dsql->GetArray())
         {
@@ -343,7 +343,7 @@ class TagList
             $ordersql=" ORDER BY se.id $orderWay";
         }
         $query = "SELECT se.*,tp.typedir,tp.typename,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql ";
+            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql AND se.typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
 
         $this->dsql->SetQuery($query);
         $this->dsql->Execute('al');
