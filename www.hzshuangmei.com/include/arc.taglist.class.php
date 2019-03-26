@@ -75,8 +75,8 @@ class TagList
         //读取Tag信息
         if($this->Tag!='')
         {
-            // $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
-            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
+             $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
+            // $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             if(!is_array($this->TagInfos))
             {
                 $fullsearch = $GLOBALS['cfg_phpurl']."/search.php?keyword=".$this->Tag."&searchtype=titlekeyword";
@@ -321,8 +321,8 @@ class TagList
         $innertext = trim($innertext);
         if($innertext=='') $innertext = GetSysTemplets("list_fulllist.htm");
         $idlists = $ordersql = '';
-        // $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
-        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) LIMIT $limitstart,$getrow");
+        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
+        //$this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) LIMIT $limitstart,$getrow");
         $this->dsql->Execute();
         while($row=$this->dsql->GetArray())
         {
