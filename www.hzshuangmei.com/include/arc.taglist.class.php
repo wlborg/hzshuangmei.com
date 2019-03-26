@@ -75,7 +75,8 @@ class TagList
         //读取Tag信息
         if($this->Tag!='')
         {
-            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
+            // $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
+            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' and typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
             if(!is_array($this->TagInfos))
             {
                 $fullsearch = $GLOBALS['cfg_phpurl']."/search.php?keyword=".$this->Tag."&searchtype=titlekeyword";
@@ -134,7 +135,8 @@ class TagList
         }
         if($this->TotalResult==-1)
         {
-            $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
+            // $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
+            $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) ";
             $row = $this->dsql->GetOne($cquery);
             $this->TotalResult = $row['dd'];
 
@@ -142,20 +144,21 @@ class TagList
             $ntime = time();
 
             //更新浏览量和记录数
-            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
+            //$upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
+            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)";
             $this->dsql->ExecuteNoneQuery($upquery);
             $oneday = 24 * 3600;
 
             //周统计
             if(ceil( ($ntime - $this->TagInfos['weekup'])/$oneday ) > 7)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' ");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
             }
 
             //月统计
             if(ceil( ($ntime - $this->TagInfos['monthup'])/$oneday ) > 30)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' ");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
             }
         }
         $ctag = $this->dtp->GetTag("page");
@@ -318,7 +321,8 @@ class TagList
         $innertext = trim($innertext);
         if($innertext=='') $innertext = GetSysTemplets("list_fulllist.htm");
         $idlists = $ordersql = '';
-        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
+        // $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
+        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) LIMIT $limitstart,$getrow");
         $this->dsql->Execute();
         while($row=$this->dsql->GetArray())
         {
