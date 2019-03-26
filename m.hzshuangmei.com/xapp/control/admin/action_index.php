@@ -6,70 +6,79 @@ class seo_index extends Base{
         $this->LoadTemplate($templet);
         $this->Display();
     }
-    
+
     function ac_xml()
     {
         global $cfg_basedir,$cfg_cmspath;
         require_once(DEDEINC."/arc.partview.class.php");
-       
-       //各个栏目的sitemap索引 
+
+       //各个栏目的sitemap索引
        // 首页 荣誉 环境 设备 视频 索引
        $murl_others=$cfg_cmspath."/sitemap_others.xml";
        //  活动新闻 索引
-       $murl_news=$cfg_cmspath."/sitemap_news.xml"; 
+       $murl_news=$cfg_cmspath."/sitemap_news.xml";
        //专家医生 索引
        $murl_experts=$cfg_cmspath."/sitemap_experts.xml";
        // 项目 索引
         $murl_projects=$cfg_cmspath."/sitemap_projects.xml";
        // 日记 索引
        $murl_cases=$cfg_cmspath."/sitemap_cases.xml";
+          // 资讯 索引
+       $murl_infos=$cfg_cmspath."/sitemap_infos.xml";
+
          //总 索引
         $murl = $cfg_cmspath."/sitemap.xml";
-        
-      // 各个栏目的sitemap索引模板 
+
+      // 各个栏目的sitemap索引模板
       // 首页 荣誉 环境 设备 视频 索引模板
-       $tmpfile_others = SEOTEMPLETS."/admin/sitemap_others.xml"; 
+       $tmpfile_others = SEOTEMPLETS."/admin/sitemap_others.xml";
       //  活动新闻 索引模板
-        $tmpfile_news = SEOTEMPLETS."/admin/sitemap_news.xml"; 
-      //专家医生 索引模板   
+        $tmpfile_news = SEOTEMPLETS."/admin/sitemap_news.xml";
+      //专家医生 索引模板
         $tmpfile_experts = SEOTEMPLETS."/admin/sitemap_experts.xml";
-     // 项目索引模板    
-      $tmpfile_projects = SEOTEMPLETS."/admin/sitemap_projects.xml";  
+     // 项目索引模板
+      $tmpfile_projects = SEOTEMPLETS."/admin/sitemap_projects.xml";
      // 日记 索引模板
-     $tmpfile_cases = SEOTEMPLETS."/admin/sitemap_cases.xml";  
+     $tmpfile_cases = SEOTEMPLETS."/admin/sitemap_cases.xml";
+       //  资讯 索引模板
+      $tmpfile_infos = SEOTEMPLETS."/admin/sitemap_infos.xml";
       //总 所以模板
         $tmpfile = SEOTEMPLETS."/admin/sitemap.xml";
-       
+
         $pv = new PartView();
-        
+
       //加载 others 模板
-       $pv->SetTemplet($tmpfile_others); 
+       $pv->SetTemplet($tmpfile_others);
         $pv->SaveToHtml($cfg_basedir.$murl_others);
-        
+
          //加载 news 模板
-       $pv->SetTemplet($tmpfile_news); 
-        $pv->SaveToHtml($cfg_basedir.$murl_news);   
-        
+       $pv->SetTemplet($tmpfile_news);
+        $pv->SaveToHtml($cfg_basedir.$murl_news);
+
           //加载 experts 模板
-       $pv->SetTemplet($tmpfile_experts); 
-        $pv->SaveToHtml($cfg_basedir.$murl_experts);    
-        
+       $pv->SetTemplet($tmpfile_experts);
+        $pv->SaveToHtml($cfg_basedir.$murl_experts);
+
             //加载 projects 模板
-       $pv->SetTemplet($tmpfile_projects); 
-        $pv->SaveToHtml($cfg_basedir.$murl_projects);   
-        
+       $pv->SetTemplet($tmpfile_projects);
+        $pv->SaveToHtml($cfg_basedir.$murl_projects);
+
              //加载 cases 模板
-       $pv->SetTemplet($tmpfile_cases); 
-        $pv->SaveToHtml($cfg_basedir.$murl_cases); 
-        
-        
-        
+       $pv->SetTemplet($tmpfile_cases);
+        $pv->SaveToHtml($cfg_basedir.$murl_cases);
+
+                //加载 infos 模板
+       $pv->SetTemplet($tmpfile_infos);
+        $pv->SaveToHtml($cfg_basedir.$murl_infos);
+
+
+
         $pv->SetTemplet($tmpfile);
         $pv->SaveToHtml($cfg_basedir.$murl);
         echo "<a href='$murl' target='_blank'>成功更新文件: $murl 浏览...</a>";
         exit();
     }
-    
+
     function ac_txt()
     {
         global $cfg_basehost,$cfg_basedir,$cfg_cmspath,$cfg_multi_site,$dsql;
@@ -80,7 +89,7 @@ class seo_index extends Base{
         {
             $typeurl = GetTypeUrl($arcRow['id'],$arcRow['typedir'],$arcRow['isdefault'],$arcRow['defaultname'],
                         $arcRow['ispart'],$arcRow['namerule2'],$arcRow['moresite'],$arcRow['siteurl'],$arcRow['sitepath']);
-             
+
             if($cfg_multi_site == 'N' && $arcRow['ispart'] != 2)
             {
                 $str .= $cfg_basehost.$typeurl."\r\n";
@@ -107,5 +116,5 @@ class seo_index extends Base{
         echo "<a href='/sitemap.txt' target='_blank'>成功更新文件: /sitemap.txt 浏览...</a>";
         exit();
     }
-    
+
 }
