@@ -343,7 +343,7 @@ class TagList
             $ordersql=" ORDER BY se.id $orderWay";
         }
         $query = "SELECT se.*,tp.typedir,tp.typename,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
+            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql AND se.typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
 
         $this->dsql->SetQuery($query);
         $this->dsql->Execute('al');
