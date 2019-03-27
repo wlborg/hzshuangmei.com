@@ -135,8 +135,8 @@ class TagList
         }
         if($this->TotalResult==-1)
         {
-             $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
-           // $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) ";
+            // $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
+           $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) ";
             $row = $this->dsql->GetOne($cquery);
             $this->TotalResult = $row['dd'];
 
@@ -144,8 +144,8 @@ class TagList
             $ntime = time();
 
             //更新浏览量和记录数
-            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
-            //$upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
+           // $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
+            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
             $this->dsql->ExecuteNoneQuery($upquery);
             $oneday = 24 * 3600;
 
@@ -343,7 +343,7 @@ class TagList
             $ordersql=" ORDER BY se.id $orderWay";
         }
         $query = "SELECT se.*,tp.typedir,tp.typename,tp.isdefault,tp.defaultname,tp.namerule,tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
-            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql";
+            FROM `#@__archives` se LEFT JOIN `#@__arctype` tp ON se.typeid=tp.id WHERE $orwhere $ordersql AND se.typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
 
         $this->dsql->SetQuery($query);
         $this->dsql->Execute('al');
