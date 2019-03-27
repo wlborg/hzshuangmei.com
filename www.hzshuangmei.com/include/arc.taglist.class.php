@@ -75,8 +75,8 @@ class TagList
         //读取Tag信息
         if($this->Tag!='')
         {
-            // $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
-            $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' and typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+              $this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' ");
+             //$this->TagInfos = $this->dsql->GetOne("Select * From `#@__tagindex` where tag like '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             if(!is_array($this->TagInfos))
             {
                 $fullsearch = $GLOBALS['cfg_phpurl']."/search.php?keyword=".$this->Tag."&searchtype=titlekeyword";
@@ -136,7 +136,7 @@ class TagList
         if($this->TotalResult==-1)
         {
             // $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 ";
-            $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) ";
+           $cquery = "SELECT COUNT(*) AS dd FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank >-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) ";
             $row = $this->dsql->GetOne($cquery);
             $this->TotalResult = $row['dd'];
 
@@ -144,21 +144,21 @@ class TagList
             $ntime = time();
 
             //更新浏览量和记录数
-            //$upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
-            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)";
+           // $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' ";
+            $upquery = "UPDATE `#@__tagindex` SET total='{$row['dd']}',count=count+1,weekcc=weekcc+1,monthcc=monthcc+1 WHERE tag LIKE '{$this->Tag}' AND typeid not in (78,77,79,80,81,82,83,84,85,86,87)";
             $this->dsql->ExecuteNoneQuery($upquery);
             $oneday = 24 * 3600;
 
             //周统计
             if(ceil( ($ntime - $this->TagInfos['weekup'])/$oneday ) > 7)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET weekcc=0,weekup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             }
 
             //月统计
             if(ceil( ($ntime - $this->TagInfos['monthup'])/$oneday ) > 30)
             {
-                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87,88)");
+                $this->dsql->ExecuteNoneQuery("UPDATE `#@__tagindex` SET monthcc=0,monthup='{$ntime}' WHERE tag LIKE '{$this->Tag}' typeid not in (78,77,79,80,81,82,83,84,85,86,87)");
             }
         }
         $ctag = $this->dtp->GetTag("page");
@@ -321,8 +321,8 @@ class TagList
         $innertext = trim($innertext);
         if($innertext=='') $innertext = GetSysTemplets("list_fulllist.htm");
         $idlists = $ordersql = '';
-        // $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
-        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87,88) LIMIT $limitstart,$getrow");
+        //$this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 LIMIT $limitstart,$getrow");
+        $this->dsql->SetQuery("SELECT aid FROM `#@__taglist` WHERE tid = '{$this->TagInfos['id']}' AND arcrank>-1 AND typeid not in (78,77,79,80,81,82,83,84,85,86,87) LIMIT $limitstart,$getrow");
         $this->dsql->Execute();
         while($row=$this->dsql->GetArray())
         {
@@ -547,6 +547,171 @@ class TagList
         }
         return $plist;
     }
+
+
+     /**
+     *  获取静态的分页列表
+     *
+     * @access    public
+     * @param     string  $list_len  列表宽度
+     * @param     string  $list_len  列表样式
+     * @return    string
+     */
+    function GetPageListST($list_len,$listitem="index,end,pre,next,pageno")
+    {
+        $prepage = $nextpage = '';
+        $prepagenum = $this->PageNo-1;
+        $nextpagenum = $this->PageNo+1;
+        if($list_len=='' || preg_match("/[^0-9]/", $list_len))
+        {
+            $list_len=3;
+        }
+        $totalpage = ceil($this->TotalResult/$this->PageSize);
+        if($totalpage<=1 && $this->TotalResult>0)
+        {
+            return;
+          //  return "<li><span class=\"pageinfo\">共 <strong>1</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+        }
+        if($this->TotalResult == 0)
+        {
+             return;
+             //return "<li><span class=\"pageinfo\">共 <strong>0</strong>页<strong>".$this->TotalResult."</strong>条记录</span></li>\r\n";
+        }
+        $purl = $this->GetCurUrl();
+        $maininfo = "<li><span class=\"pageinfo\">共 <strong>{$totalpage}</strong>页<strong>".$this->TotalResult."</strong>条</span></li>\r\n";
+        $tnamerule = $this->GetMakeFileRule($this->Fields['id'],"list",$this->Fields['typedir'],$this->Fields['defaultname'],$this->Fields['namerule2']);
+        $tnamerule = str_replace("/^(.*)\//", '', $tnamerule);
+
+         //修正列表页重复的首页地址
+        $typedir= str_replace('{cmspath}',$GLOBALS['cfg_cmspath'],$this->Fields['typedir']);
+
+
+        //获得上一页和主页的链接
+        // if($this->PageNo != 1)
+        // {
+        //     $prepage.="<li><a href='".str_replace("{page}",$prepagenum,$tnamerule)."'>上一页</a></li>\r\n";
+        //     $indexpage="<li><a href='".str_replace("{page}",1,$tnamerule)."'>首页</a></li>\r\n";
+        // }
+        // else
+        // {
+        //     $indexpage="<li>首页</li>\r\n";
+        // }
+       if($this->PageNo != 1)
+        {
+            if($prepagenum==1)
+            {
+        $prepage.="<li><a href=\"".$typedir."/\">前一页</a></li>\r\n";
+        }
+        else
+        {
+        $prepage.="<li><a href=\"".str_replace("{page}",$prepagenum,$tnamerule)."\">前一页</a></li>\r\n";
+        }
+        $indexpage="<li><a href=\"".$typedir."/\">首页</a></li>\r\n";
+        }
+
+
+
+
+
+        //下一页,未页的链接
+        if($this->PageNo!=$totalpage && $totalpage>1)
+        {
+            $nextpage.="<li><a href='".str_replace("{page}",$nextpagenum,$tnamerule)."'>下一页</a></li>\r\n";
+            $endpage="<li><a href='".str_replace("{page}",$totalpage,$tnamerule)."'>末页</a></li>\r\n";
+        }
+        else
+        {
+            $endpage="<li><a>末页</a></li>\r\n";
+        }
+
+        //option链接
+        $optionlist = '';
+
+        $optionlen = strlen($totalpage);
+        $optionlen = $optionlen*12 + 18;
+        if($optionlen < 36) $optionlen = 36;
+        if($optionlen > 100) $optionlen = 100;
+        $optionlist = "<li><select name='sldd' style='width:{$optionlen}px' onchange='location.href=this.options[this.selectedIndex].value;'>\r\n";
+        for($mjj=1;$mjj<=$totalpage;$mjj++)
+        {
+            if($mjj==$this->PageNo)
+            {
+                $optionlist .= "<option value='".str_replace("{page}",$mjj,$tnamerule)."' selected>$mjj</option>\r\n";
+            }
+            else
+            {
+                $optionlist .= "<option value='".str_replace("{page}",$mjj,$tnamerule)."'>$mjj</option>\r\n";
+            }
+        }
+        $optionlist .= "</select></li>\r\n";
+
+        //获得数字链接
+        $listdd="";
+        $total_list = $list_len * 2 + 1;
+        if($this->PageNo >= $total_list)
+        {
+            $j = $this->PageNo-$list_len;
+            $total_list = $this->PageNo+$list_len;
+            if($total_list>$totalpage)
+            {
+                $total_list=$totalpage;
+            }
+        }
+        else
+        {
+            $j=1;
+            if($total_list>$totalpage)
+            {
+                $total_list=$totalpage;
+            }
+        }
+        for($j;$j<=$total_list;$j++)
+        {
+            if($j==$this->PageNo)
+            {
+                $listdd.= "<li class=\"thisclass\">$j</li>\r\n";
+            }
+            else
+            {
+                // 修正列表页首页地址重复
+                // $listdd.="<li><a href='".str_replace("{page}",$j,$tnamerule)."'>".$j."</a></li>\r\n";
+                     if($j==1)
+               {
+                                  $listdd.="<li><a href=\"".$typedir."/\">".$j."</a></li>\r\n";
+                                          }
+                         else
+                                             {
+                                            $listdd.="<li><a href=\"".str_replace("{page}",$j,$tnamerule)."\">".$j."</a></li>\r\n";
+                                    }
+            }
+        }
+        $plist = '';
+        if(preg_match('/index/i', $listitem)) $plist .= $indexpage;
+        if(preg_match('/pre/i', $listitem)) $plist .= $prepage;
+        if(preg_match('/pageno/i', $listitem)) $plist .= $listdd;
+        if(preg_match('/next/i', $listitem)) $plist .= $nextpage;
+        if(preg_match('/end/i', $listitem)) $plist .= $endpage;
+        if(preg_match('/option/i', $listitem)) $plist .= $optionlist;
+        if(preg_match('/info/i', $listitem)) $plist .= $maininfo;
+
+        return $plist;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      *  获得一个指定的频道的链接
