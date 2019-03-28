@@ -190,10 +190,18 @@ $(function() {
                  var index=parseInt($(".news_h.active").index());
                    newsAc(index);
      });
-       $(".news_h").hover(function(){
-                 var index=parseInt($(".news_h.active").index());
-                   newsAc(index);
-        });
+      $(".news_h").hover(function(){
+                 var indexs=parseInt($(this).index());
+                  if(indexs==1){
+                         $(".news_content").removeClass('active');
+                         $(".inform").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                  }else if(indexs==0){
+                         $(".news_content").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                        $(".inform").addClass('active');
+                  }
+          })
                function newsAc(indexs){
                     if(indexs==0){
                          indexs=1;
