@@ -263,8 +263,6 @@ video::-webkit-media-controls-panel {
 .news-button-prev {
     position: absolute;
     top: 33px!important;
-
-    border: 1px solid red;
 }
 /* 三亚双美的 */
 .sy_index_news .news .inform {
@@ -747,7 +745,7 @@ h3 img {
 }
 .index_news .video .video-button-next,
 .video-button-prev {
-    position: relative;
+    position: absolute;
     top: -23px;
     left: 353px;
     z-index: 10;
