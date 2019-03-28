@@ -12,9 +12,7 @@ var video = new Swiper('.video_swiper', {
 var news = new Swiper('.news_swiper', {
     pagination: '.news-pagination',
     paginationClickable: true,
-    spaceBetween: 30,
-    nextButton: '.news-button-next',
-    prevButton: '.news-button-prev'
+    spaceBetween: 30
 });
 
 var news_tuijian = new Swiper('.news_tuijian', {
@@ -187,6 +185,50 @@ function(event) {
 
 $(function() {
     //preReady();
+    // 首页新闻和资讯切换
+     $(".news_infos").click(function(){
+                 var index=parseInt($(".news_h.active").index());
+                   newsAc(index);
+     });
+      $(".news_h").hover(function(){
+                 var indexs=parseInt($(this).index());
+                  $(".news_h").removeClass('active');
+                  if(indexs==1){
+                       // 导航切换样式
+                         $(".news_h").eq(indexs).addClass('active');
+                         // 导航对应内容切换
+                         $(".news_content").removeClass('active');
+                         $(".inform").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                  }else if(indexs==0){
+                         $(".news_content").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                        $(".inform").addClass('active');
+                         $(".news_h").eq(indexs).addClass('active');
+                  }
+          })
+               function newsAc(indexs){
+                    if(indexs==0){
+                         indexs=1;
+                    }else if(indexs==1){
+                         indexs=0;
+                    }
+                   $(".news_h").removeClass('active');
+                   $(".news_h").eq(indexs).addClass('active');
+                   infoAC(indexs);
+                }
+             function infoAC(indexs){
+                   if(indexs==0){
+                         $(".news_content").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                        $(".inform").addClass('active');
+                    }else if(indexs==1){
+                         $(".news_content").removeClass('active');
+                         $(".inform").removeClass('active');
+                         $(".news_content").eq(indexs).addClass('active');
+                    }
+
+             }
 });
 
 

@@ -48,11 +48,70 @@ video::-webkit-media-controls-panel {
 
     color: #693290;
 }
+.infos_content {
+    border: 1px solid rgb(234,234,234);
+}
+.infos_content li {
+    position: relative;
+
+    margin-left: 36px;
+}
+.infos_content li a {
+    font-size: 13px;
+    line-height: 44px;
+
+    text-indent: 21px;
+
+    color: rgb(102,102,102);
+    border-bottom: 1px dashed rgb(230,230,230);
+}
+.infos_content li a span.cire {
+    position: absolute;
+    /* float: left; */
+    top: 18px;
+
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background: rgb(153,153,153);
+}
+.infos_content li a:hover {
+    color: rgb(105,50,144);
+}
+.infos_content li a:hover span {
+    background: rgb(105,50,144);
+}
+.infos_content li:last-of-type a {
+    border-bottom: none;
+}
+.infos_content {
+    height: 270px;
+}
+.infos_content .time {
+    position: absolute;
+    top: 22px;
+    /* border: 1px solid red; */
+    right: 6px;
+
+    display: inherit;
+    height: auto;
+
+    font-size: 12px;
+    line-height: 0;
+
+    text-indent: 0;
+
+    color: rgb(155,155,155);
+}
 /* 三亚双美 */
 .sy_index_news .video p {
     color: #64b1e6;
 }
 .index_news .news {
+    position: relative;
+
     float: left;
     width: 780px;
     height: 383px;
@@ -82,10 +141,15 @@ video::-webkit-media-controls-panel {
     display: block;
 }
 .index_news .news .news_h {
+    /*border-left: 1px solid #dadada;*/
+    /*margin-left: 22px;*/
+    /*color: #693290;*/
+    float: left;
     width: 100px;
     height: 39px;
     padding-left: 15px;
     margin-top: 19px;
+    margin-bottom: 31px;
     margin-left: 22px;
 
     font-size: 22px;
@@ -96,11 +160,19 @@ video::-webkit-media-controls-panel {
     /*margin-left:22px;*/
     /*color:#693290;*/
     border-left: 1px solid #dadada;
-    /*border-left: 1px solid #dadada;*/
-    /*margin-left: 22px;*/
-    /*color: #693290;*/
+}
+.index_news .news .news_content {
+    display: none;
+    clear: both;
+}
+.index_news .news .news_content.active {
+    display: block;
+    clear: both;
 }
 .index_news h2 a {
+    color: rgb(153,153,153);
+}
+.index_news h2.active a {
     color: #693290;
 }
 /* 三亚双美 */
@@ -168,8 +240,9 @@ video::-webkit-media-controls-panel {
 }
 .index_news .news .inform {
     position: relative;
-    top: 22px;
+    top: -15px;
 
+    display: none;
     height: 23px;
     padding-top: 15px;
     overflow: hidden;
@@ -179,6 +252,17 @@ video::-webkit-media-controls-panel {
     text-align: center;
 
     color: #693290;
+}
+.index_news .news .inform.active {
+    display: block;
+}
+.news-button-next {
+    position: absolute!important;
+    top: 33px!important;
+}
+.news-button-prev {
+    position: absolute;
+    top: 33px!important;
 }
 /* 三亚双美的 */
 .sy_index_news .news .inform {
@@ -683,7 +767,7 @@ h3 img {
 .swiper-container-rtl .news-button-next {
     top: -35px;
     right: auto;
-    left: 684px;
+    left: 703px;
 
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
@@ -696,9 +780,9 @@ h3 img {
 }
 .index_news .news .news-button-next,
 .news-button-prev {
-    position: relative;
+    position: absolute;
     top: -23px;
-    left: 713px;
+    left: 733px;
     z-index: 10;
 
     width: 23px;
