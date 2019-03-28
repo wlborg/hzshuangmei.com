@@ -259,8 +259,6 @@ video::-webkit-media-controls-panel {
 .news-button-next {
     position: absolute!important;
     top: 33px!important;
-
-    border: 1px solid red;
 }
 .news-button-prev {
     position: absolute;
