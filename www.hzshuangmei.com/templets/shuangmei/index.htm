@@ -37,7 +37,7 @@
 
         </div>
         <div class="news">
-            <h2 class="news_h">
+            <h2 class="news_h active">
                 <a href="/news/" target="_blank" rel="noopener">
                     <span>新闻中心</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png"  alt="latest activity"/>
@@ -72,16 +72,12 @@
             <div class="news_content infos_content">
 
                 <ul class="swiper-container">
-                       <li><a href=""><span class="cire">&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约
-                        <span>
-                              <img src="top.png" alt="">
+                    {dede:arclist typeid=89 orderby='id' flag="c" row='6'  channelid="22"}
+                       <li><a href="[field:arcurl/]"><span class="cire">&nbsp;</span>[field:fulltitle/]
+                        <span class="infos_time">
                        </span>
-                       <span class="time">2017-09-21</span></a></li>
-                       <li><a href=""><span>&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约</a></li>
-                       <li><a href=""><span>&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约</a></li>
-                       <li><a href=""><span>&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约</a></li>
-                       <li><a href=""><span>&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约</a></li>
-                       <li><a href=""><span>&nbsp;</span>考辛斯：早知浓眉会离开鹈鹕 因为他们没续约我们没续约</a></li>
+                       <span class="time">[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></a></li>
+                        {/dede:arclist}
                 </ul>
             </div>
 
