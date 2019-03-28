@@ -189,7 +189,11 @@ $(function() {
      $(".news_infos").click(function(){
                  var index=parseInt($(".news_h.active").index());
                    newsAc(index);
-     })
+     });
+       $(".news_h").hover(function(){
+                 var index=parseInt($(".news_h.active").index());
+                   newsAc(index);
+        });
                function newsAc(indexs){
                     if(indexs==0){
                          indexs=1;
