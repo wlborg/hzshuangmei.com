@@ -192,7 +192,11 @@ $(function() {
      });
       $(".news_h").hover(function(){
                  var indexs=parseInt($(this).index());
+                  $(".news_h").removeClass('active');
                   if(indexs==1){
+                       // 导航切换样式
+                         $(".news_h").eq(indexs).addClass('active');
+                         // 导航对应内容切换
                          $(".news_content").removeClass('active');
                          $(".inform").removeClass('active');
                          $(".news_content").eq(indexs).addClass('active');
@@ -200,6 +204,7 @@ $(function() {
                          $(".news_content").removeClass('active');
                          $(".news_content").eq(indexs).addClass('active');
                         $(".inform").addClass('active');
+                         $(".news_h").eq(indexs).addClass('active');
                   }
           })
                function newsAc(indexs){
