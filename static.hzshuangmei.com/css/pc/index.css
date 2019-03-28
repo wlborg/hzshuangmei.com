@@ -745,7 +745,7 @@ h3 img {
 }
 .index_news .video .video-button-next,
 .video-button-prev {
-    position: absolute;
+    position: relative;
     top: -23px;
     left: 353px;
     z-index: 10;
@@ -780,7 +780,7 @@ h3 img {
 }
 .index_news .news .news-button-next,
 .news-button-prev {
-    position: relative;
+    position: absolute;
     top: -23px;
     left: 713px;
     z-index: 10;
