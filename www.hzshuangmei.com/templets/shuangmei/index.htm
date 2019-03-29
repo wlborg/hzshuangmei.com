@@ -8,10 +8,10 @@
     <meta name="author" content="设计：于涛，前端：王苗"/>
 
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/index.css?v=20190325160351" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/index.css?v=20190328155631" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/index.js" as="script" crossorigin async="true"/>
     <link rel="preload" href="https://img.hzshuangmei.com/pc/brand2.webm" as="video"  type="video/webm" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/index.css?v=20190325160351"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/index.css?v=20190329090003"/>
     <link rel="canonical" href="https://www.hzshuangmei.com/">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com/" >
 </head>
@@ -37,16 +37,21 @@
 
         </div>
         <div class="news">
-            <h2 class="news_h">
+            <h2 class="news_h active">
                 <a href="/news/" target="_blank" rel="noopener">
-                    <span>新闻中心</span><br/>
+                    <span>红妆新闻</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png"  alt="latest activity"/>
                 </a>
             </h2>
-
-            <div class="news_content">
-                <div class="swiper-button-next news-button-next"></div>
-                <div class="swiper-button-prev news-button-prev"></div>
+             <h2 class="news_h">
+                <a href="/info/" target="_blank" rel="noopener">
+                    <span>双美资讯</span><br/>
+                    <img src="{dede:global.cfg_imgpath/}/pc/latest_activity_infos.png"  alt="latest activity"/>
+                </a>
+            </h2>
+             <img src="" class="news-button-next news_infos" alt="">
+             <img src="" class="news-button-prev news_infos" alt="">
+            <div class="news_content active">
                 <div class="swiper-container news_swiper">
                     <div class="swiper-wrapper">
                         {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
@@ -64,7 +69,19 @@
                     <div class="swiper-pagination news-pagination"></div>
                 </div>
             </div>
-            <div class="inform">
+            <div class="news_content infos_content">
+
+                <ul class="swiper-container">
+                    {dede:arclist typeid=89 orderby='id' flag="c" row='6'  channelid="22"}
+                       <li><a href="[field:arcurl/]"><span class="cire">&nbsp;</span>[field:fulltitle/]
+                        <span class="infos_time">
+                       </span>
+                       <span class="time">[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></a></li>
+                        {/dede:arclist}
+                </ul>
+            </div>
+
+            <div class="inform active">
                 <span class="tj_tit">最新推荐：</span>
 
                 <div class="swiper-container news_tuijian">
@@ -512,7 +529,7 @@
 {dede:include filename="index_footer.htm"/}
 </body>
 {dede:include filename="_script.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/index.js"></script>
+<script src="{dede:global.cfg_jspath/}/pc/index.js?v=20190328162417"></script>
 {dede:include filename="_index_Factor.htm"/}
 <!--<script>-->
     <!--ss(['https://js.hzshuangmei.com/pc/layer/layer.js',"https://js.hzshuangmei.com/pc/common.js","https://js.hzshuangmei.com/pc/kst_popup.js","https://js.hzshuangmei.com/pc/index.js"])-->

@@ -1,3 +1,25 @@
+.infos_content li a .infos_time {
+    position: absolute;
+    top: 15px;
+    right: 76px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    background: url("//img.hzshuangmei.com/pc/time.png");
+}
+.infos_content li a:hover .infos_time {
+    position: absolute;
+    top: 14px;
+    right: 76px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    background: url("//img.hzshuangmei.com/pc/time_act.png");
+}
 .m1 {
     width: 1200px;
     margin: 0 auto;
@@ -11,7 +33,7 @@
 .index_news .m1 {
     padding-top: 61px;
 }
-/* 三亚双美 */
+/* ä¸‰äºšåŒç¾Ž */
 .index_news .video {
     float: left;
     width: 400px;
@@ -48,11 +70,71 @@ video::-webkit-media-controls-panel {
 
     color: #693290;
 }
-/* 三亚双美 */
+.infos_content {
+    border: 1px solid rgb(234,234,234);
+}
+.infos_content li {
+    position: relative;
+
+    margin-right: 23px;
+    margin-left: 36px;
+}
+.infos_content li a {
+    font-size: 13px;
+    line-height: 44px;
+
+    text-indent: 21px;
+
+    color: rgb(102,102,102);
+    border-bottom: 1px dashed rgb(230,230,230);
+}
+.infos_content li a span.cire {
+    position: absolute;
+    /* float: left; */
+    top: 18px;
+
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background: rgb(153,153,153);
+}
+.infos_content li a:hover {
+    color: rgb(105,50,144);
+}
+.infos_content li a:hover span {
+    background: rgb(105,50,144);
+}
+.infos_content li:last-of-type a {
+    border-bottom: none;
+}
+.infos_content {
+    height: 270px;
+}
+.infos_content .time {
+    position: absolute;
+    top: 22px;
+    /* border: 1px solid red; */
+    right: 1px;
+
+    display: inherit;
+    height: auto;
+
+    font-size: 12px;
+    line-height: 0;
+
+    text-indent: 0;
+
+    color: rgb(155,155,155);
+}
+/* ä¸‰äºšåŒç¾Ž */
 .sy_index_news .video p {
     color: #64b1e6;
 }
 .index_news .news {
+    position: relative;
+
     float: left;
     width: 780px;
     height: 383px;
@@ -82,10 +164,15 @@ video::-webkit-media-controls-panel {
     display: block;
 }
 .index_news .news .news_h {
+    /*border-left: 1px solid #dadada;*/
+    /*margin-left: 22px;*/
+    /*color: #693290;*/
+    float: left;
     width: 100px;
     height: 39px;
     padding-left: 15px;
     margin-top: 19px;
+    margin-bottom: 31px;
     margin-left: 22px;
 
     font-size: 22px;
@@ -96,14 +183,22 @@ video::-webkit-media-controls-panel {
     /*margin-left:22px;*/
     /*color:#693290;*/
     border-left: 1px solid #dadada;
-    /*border-left: 1px solid #dadada;*/
-    /*margin-left: 22px;*/
-    /*color: #693290;*/
+}
+.index_news .news .news_content {
+    display: none;
+    clear: both;
+}
+.index_news .news .news_content.active {
+    display: block;
+    clear: both;
 }
 .index_news h2 a {
+    color: rgb(153,153,153);
+}
+.index_news h2.active a {
     color: #693290;
 }
-/* 三亚双美 */
+/* ä¸‰äºšåŒç¾Ž */
 .sy_banner .index_news h2 a {
     color: #64b1e6;
 }
@@ -126,7 +221,7 @@ video::-webkit-media-controls-panel {
     color: #fff;
     background-color: rgba(105, 50, 144, .9);
 }
-/* 三亚双美 */
+/* ä¸‰äºšåŒç¾Ž */
 .sy_index_news .news .date {
     background-color: #64b1e6;
 }
@@ -168,8 +263,9 @@ video::-webkit-media-controls-panel {
 }
 .index_news .news .inform {
     position: relative;
-    top: 22px;
+    top: -15px;
 
+    display: none;
     height: 23px;
     padding-top: 15px;
     overflow: hidden;
@@ -180,7 +276,18 @@ video::-webkit-media-controls-panel {
 
     color: #693290;
 }
-/* 三亚双美的 */
+.index_news .news .inform.active {
+    display: block;
+}
+.news-button-next {
+    position: absolute!important;
+    top: 33px!important;
+}
+.news-button-prev {
+    position: absolute;
+    top: 33px!important;
+}
+/* ä¸‰äºšåŒç¾Žçš„ */
 .sy_index_news .news .inform {
     color: #693290;
 }
@@ -337,7 +444,7 @@ h3 img {
     color: #875aa6;
     border: 1px solid #875aa6;
 }
-/* 三亚双美 */
+/* ä¸‰äºšåŒç¾Ž */
 .sy_index_clients .ask {
     color: #64b1e6;
     border: 1px solid  #64b1e6;
@@ -431,7 +538,7 @@ h3 img {
     width: 290px;
     height: 477px;
 }
-/*���˰���*/
+/*ï¿½ï¿½ï¿½Ë°ï¿½ï¿½ï¿½*/
 .index_clients {
     height: 908px;
 
@@ -683,7 +790,7 @@ h3 img {
 .swiper-container-rtl .news-button-next {
     top: -35px;
     right: auto;
-    left: 684px;
+    left: 703px;
 
     background-image: url("//img.hzshuangmei.com/pc/arrow_l.png");
 }
@@ -696,9 +803,9 @@ h3 img {
 }
 .index_news .news .news-button-next,
 .news-button-prev {
-    position: relative;
+    position: absolute;
     top: -23px;
-    left: 713px;
+    left: 733px;
     z-index: 10;
 
     width: 23px;
@@ -863,8 +970,8 @@ h3 img {
 .index_news .video p {
     padding-top: 11px;
 }
-/* 三亚双美的 */
-/*红妆发展*/
+/* ä¸‰äºšåŒç¾Žçš„ */
+/*çº¢å¦†å‘å±•*/
 .fzlc {
     font-size: 0;
 }
@@ -927,7 +1034,7 @@ h3 img {
 .lc_list_con div {
     margin: auto;
 }
-/*历程——发展史*/
+/*åŽ†ç¨‹â€”â€”å‘å±•å²*/
 .lc_list_box .lc_list_n1 div {
     position: absolute;
 
@@ -937,20 +1044,20 @@ h3 img {
     color: #fff;
 }
 @media \0screen\,screen\9 {
-    /* 只支持IE6、7、8 */
+    /* åªæ”¯æŒIE6ã€7ã€8 */
     .lc_list_box .lc_list_n1 div.lc_btext_con {
-        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        position: static; /* IE6ã€7ã€8åªèƒ½è®¾ç½®position:static(é»˜è®¤å±žæ€§) ï¼Œå¦åˆ™ä¼šå¯¼è‡´å­å…ƒç´ ç»§æ‰¿Alphaå€¼ */
 
         background-color: #000;
 
-        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+        *zoom: 1; /* æ¿€æ´»IE6ã€7çš„haslayoutå±žæ€§ï¼Œè®©å®ƒè¯»æ‡‚Alpha */
         filter: Alpha(opacity=30);
     }
     .lc_list_box .lc_list_n1 div.lc_btext_con p {
-        position: relative; /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+        position: relative; /* è®¾ç½®å­å…ƒç´ ä¸ºç›¸å¯¹å®šä½ï¼Œå¯è®©å­å…ƒç´ ä¸ç»§æ‰¿Alphaå€¼ */
     }
 }
-/*发展历程——殊荣*/
+/*å‘å±•åŽ†ç¨‹â€”â€”æ®Šè£*/
 .lc_list_n2 div {
     float: left;
     margin-top: 200px;
@@ -1006,13 +1113,13 @@ h3 img {
 .lc_con_btn.now .yk::after {
     background-color: #f464de;
 }
-/*发展历程——连锁开业*/
+/*å‘å±•åŽ†ç¨‹â€”â€”è¿žé”å¼€ä¸š*/
 .lc_list_n3 div {
     position: absolute;
 
     margin-top: 200px;
 }
-/*发展历程——证书*/
+/*å‘å±•åŽ†ç¨‹â€”â€”è¯ä¹¦*/
 .lc_list_n4 {
     height: 750px;
 }
