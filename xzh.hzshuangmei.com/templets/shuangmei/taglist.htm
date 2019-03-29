@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 
@@ -13,36 +12,43 @@
     <!-- favicon.ico -->
 <link rel="icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="https://img.hzshuangmei.com/pc/favicon.ico" type="image/x-icon"/>
-    <title>{dede:field.title/}_红妆双美整形与美容宝典</title>
+    <title>{dede:field.title /}_整形知识_【海南红妆双美官网】</title>
+    <!--<title>{dede:field.title/}_【海南红妆双美官网】</title>-->
     <link rel='stylesheet' id='main-css' href='{dede:global.cfg_csspath/}/xzh/style.css' type='text/css' media='all' />
     <link rel='stylesheet' href='{dede:global.cfg_csspath/}/xzh/page.css' type='text/css' media='all' />
-    <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/jquery.min.js'></script>
+      <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/jquery.min.js'></script>
     <!-- <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js" crossorigin></script> -->
     <meta name="keywords" content="{dede:field name='keywords'/}">
     <meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}">
     <!--[if lt IE 9]><script src="{dede:global.cfg_jspath/}/xzh/html5.js"></script><![endif]-->
-    <script src="//msite.baidu.com/sdk/c.js?appid=1598778411605158"></script>
 </head>
 
 <body class="home blog list-thumb-hover-action nav-fixed-top">
     {dede:include filename="_head.htm"/}
     <div class="focusbox">
-        <div class="container">
-            <h3 class="focusbox-title">{dede:field.title /}</h3>
-        </div>
+       <!--  <div class="container">
+            <h3 class="focusbox-title">{dede:field.seotitle /}</h3>
+            <div class="focusbox-text">{dede:field name='description' function='html2text(@me)'/}</div>
+        </div> -->
+    <a href="https://www.hzshuangmei.com/brand/" target="_blank">
+        <img src="https://img.hzshuangmei.com/pc/brandzt/banner.jpg" alt="红妆双美品牌">
+    </a>
     </div>
+
     <section class="container">
         <div class="excerpts-wrapper">
             <div class="excerpts">
-                {dede:list orderby='sortrank' pagesize='10'}
+                {dede:list pagesize='10' orderby='id'}
                 <article class="excerpt excerpt-c5">
                     <a class="thumbnail" href="[field:arcurl/]" target="_blank">
-	<img src="[field:picname/]" data-src="[field:picname/]" class="thumb" alt="[field:title/]">
-	</a>
+    <img src="https://xzh.hzshuangmei.com[field:picname/]" data-src="https://xzh.hzshuangmei.com[field:picname/]" class="thumb" alt="[field:title/]">
+    </a>
                     <h2>
-	<a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
-	</h2>
+    <a href="[field:arcurl/]"  target="_blank">[field:title/]</a>
+    </h2>
                     <footer>
+                        <!--<a href="javascript:;" class="post-like" data-pid="135" etap="like">-->
+                        <!--<i class="fa"></i><span>794</span></a>-->
                         <time class="hot">热门</time><span class="post-view">阅读([field:click/])</span>
                     </footer>
                 </article>
@@ -54,6 +60,6 @@
         </div>
     </section>
     {dede:include filename="_footer.htm"/}
-    <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
 </body>
 </html>
+ <script type='text/javascript' src='{dede:global.cfg_jspath/}/xzh/main.js'></script>
