@@ -1320,7 +1320,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
   if($ns<2){
@@ -1574,7 +1574,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
+$repairRes.='<a href="'.$url.'"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
 $repairRes=$repairRes;
