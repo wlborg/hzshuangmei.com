@@ -2718,6 +2718,8 @@ hr {
     justify-content: space-around;
 }
 .article .article-main .tags li {
+    margin: .1rem .2rem;
+
     list-style-type: none;
 }
 
