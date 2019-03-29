@@ -2705,21 +2705,3 @@ hr {
 }
 
 /*# sourceMappingURL=site.css.map */
-.article .article-main .tags ul {
-    display: block;
-    width: 100%;
-    padding: 1px;
-    overflow: hidden;
-
-    word-break: break-all;
-}
-.article .article-main .tags ul  li {
-    display: block;
-    float: left;
-    padding: 8px 6px;
-
-    font-size: .6rem;
-    line-height: .6rem;
-
-    word-break: break-all;
-}
