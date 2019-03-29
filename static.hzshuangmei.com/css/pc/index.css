@@ -54,6 +54,7 @@ video::-webkit-media-controls-panel {
 .infos_content li {
     position: relative;
 
+    margin-right: 23px;
     margin-left: 36px;
 }
 .infos_content li a {
