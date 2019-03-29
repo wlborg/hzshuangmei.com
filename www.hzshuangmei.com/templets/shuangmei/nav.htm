@@ -14,10 +14,62 @@
 </head>
 <body>
 {dede:include filename="_header.htm"/}
-{dede:channel typeid='10' type='son'} 
-<a href="[field:typelink/]">[field:typename/]</a> 
-{/dede:channel}
-</div>
+  <div class="location"> <i></i><span>当前位置：</span>{dede:field name='position'/}</div>
+
+    <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
+        {dede:myad name='infospic_pc'/}
+    </div>
+	
+    <div class="news_content information_content">
+        <dt><strong>栏目列表</strong></dt>
+		<ul class="list_information_nav">
+		 <li class="nav_list"> 
+		 {dede:channel typeid='1' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		 <li class="nav_list"> 
+		 {dede:channel typeid='2' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		  <li class="nav_list"> 
+		 {dede:channel typeid='6' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		  <li class="nav_list"> 
+		 {dede:channel typeid='10' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		  <li class="nav_list"> 
+		 {dede:channel typeid='54' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		 <li class="nav_list"> 
+		 {dede:channel typeid='56' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		 <li class="nav_list"> 
+		 {dede:channel typeid='75' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		 <li class="nav_list"> 
+		 {dede:channel typeid='76' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+		  <li class="nav_list"> 
+		 {dede:channel typeid='89' type='son'} 
+         <a href="[field:typelink/]"  class="nav_link" >[field:typename/]</a> 
+         {/dede:channel}
+		 </li>
+      </ul>
+	    
 {dede:include filename="_footer.htm"/}
 </body>
 {dede:include filename="_script.htm"/}
