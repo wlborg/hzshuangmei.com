@@ -2705,7 +2705,7 @@ hr {
 }
 
 /*# sourceMappingURL=site.css.map */
-.article-main .tags ul {
+.article .article-main .tags ul {
     display: block;
     width: 100%;
     padding: 1px;
@@ -2713,7 +2713,7 @@ hr {
 
     word-break: break-all;
 }
-.article-main .tags ul  li {
+.article .article-main .tags ul  li {
     display: block;
     float: left;
     padding: 8px 6px;
