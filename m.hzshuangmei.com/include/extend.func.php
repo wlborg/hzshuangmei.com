@@ -1558,7 +1558,7 @@ return $relateprojecturl;
 资讯栏目对应的项目栏目,不足2条补到2条
 @param   $typeid   当前资讯文档所在的栏目ID
  */
-function getProjectArticleFormProToOne($typeid)
+function getProjectArticleFormProToOne($typeNum)
 {
 global $dsql;
 $repairRes="";

@@ -2705,23 +2705,3 @@ hr {
 }
 
 /*# sourceMappingURL=site.css.map */
-.article .article-main .tags {
-    display: flex;
-    flex-direction: row;
-
-    list-style: none;
-
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.article .article-main .tags li {
-    list-style-type: none;
-}
-
-a.tagc {
-    display: block;
-    width: 100%;
-
-    text-decoration: none;
-}
