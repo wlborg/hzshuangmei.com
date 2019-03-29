@@ -431,7 +431,7 @@ function GetTags_list_typeid($typeid)
 
         {
 
-            $tags .= ($tags=='' ? "<li class='link'><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'><span>?</span>".$row['tag']."</a></li>" : ' '."<li class='link'><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'><span>?</span>".$row['tag']."</a></li>");
+            $tags .= ($tags=='' ? "<li class='link'><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'><span><i class='icon_quesion'>&nbsp;</i></span>".$row['tag']."</a></li>" : ' '."<li class='link'><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'><span><i class='icon_quesion'>&nbsp;</i></span>".$row['tag']."</a></li>");
         }
 
         return $tags;
