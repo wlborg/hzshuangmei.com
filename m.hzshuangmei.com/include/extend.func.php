@@ -1325,10 +1325,10 @@ $relateproject.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class
 if($ns>0){
   if($ns<2){
      $relateproject.=getProjectArticleFormProToOne($ns);
+      $relateproject.=$relateproject;
   }
-  $relateproject.=$relateproject;
+  return $relateproject;
 }
- return $relateproject;
 }
 /*
 资讯列表页和详情页底部 更多项目按钮
