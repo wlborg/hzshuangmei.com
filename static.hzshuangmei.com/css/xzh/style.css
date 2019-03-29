@@ -5214,3 +5214,34 @@ body {
 
     border-radius: 4px;
 }
+
+.tags_list .tbox h6 {
+    padding: 20px;
+
+    font-size: 24px;
+    font-weight: bolder;
+
+    text-align: center;
+
+    color: #6e4292;
+}
+
+.tags_list .tbox ul {
+    display: block;
+    width: 100%;
+    padding: 1px;
+    overflow: hidden;
+
+    word-break: break-all;
+}
+
+.tags_list .tbox li {
+    display: block;
+    float: left;
+    padding: 8px 6px;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    word-break: break-all;
+}
