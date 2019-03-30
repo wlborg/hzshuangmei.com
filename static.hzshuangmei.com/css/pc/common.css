@@ -691,7 +691,8 @@ footer {
 }
 footer .left {
     float: left;
-    width: 545px;
+    /* width: 545px; */
+    width: 600px;
 }
 footer .left h2 {
     padding-top: 49px;
@@ -729,8 +730,10 @@ footer .middle {
 }
 footer .right {
     float: left;
+    width: 570px;
     margin-top: 120px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    margin-left: 20px;
 }
 footer .right .right_t > div {
     float: left;
