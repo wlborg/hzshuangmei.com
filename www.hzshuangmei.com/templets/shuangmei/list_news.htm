@@ -10,9 +10,9 @@ $ntime = time();
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js" as="script" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css"/>
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330" as="script" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -66,5 +66,5 @@ $ntime = time();
 </body>
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/list_news.js"></script>
+<script src="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330"></script>
 </html>
