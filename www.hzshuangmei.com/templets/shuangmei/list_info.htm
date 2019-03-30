@@ -33,7 +33,7 @@
                 <!-- {dede:myad name='infospic_pc'/} -->
         </h3>
         <ul class="list_information_nav">
-       <li class="nav_list"> <a href="{dede:field name='typeurl'/}" class="nav_link">{dede:field name='typename'/} </a></li>
+       <li class="nav_list"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="nav_link" title="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
         {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
         </li>
          {/dede:channel}
