@@ -999,7 +999,7 @@ body {
     position: relative;
 
     float: left;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .sitenav ul > li:hover {
@@ -1432,7 +1432,7 @@ body {
     }
 
     .sitenav ul li {
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     .searchform .sinput {
