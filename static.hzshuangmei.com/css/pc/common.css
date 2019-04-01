@@ -323,6 +323,14 @@ header .top .shuang_m1 .qq {
 
     color: #999;
 }
+._CNav_div2 > span {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 4px;
+}
+._CNav_div2 > span > a {
+    color: rgb(165,165,165);
+}
 ._CNav_link button {
     position: absolute;
     top: -2px;
