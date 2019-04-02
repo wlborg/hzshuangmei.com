@@ -315,6 +315,8 @@ header .top .shuang_m1 .qq {
     margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
 }
 ._CNav_div2 {
     position: relative;
@@ -335,25 +337,24 @@ header .top .shuang_m1 .qq {
     position: absolute;
     top: -2px;
     right: 0;
-
     width: 58px;
     height: 31px;
-
     cursor: pointer;
-
     color: rgb(181,181,181);
     background: none;
+    border: none;
+    z-index: 2;
 }
 .sear {
     z-index: 11;
-
     display: block;
     float: right;
     width: 224px;
     height: 26px;
-
     border: none;
     background: #fff;
+    outline: medium;
+    text-indent: 4px;
 }
 /* header .sm_logo {
     height: 131px;
