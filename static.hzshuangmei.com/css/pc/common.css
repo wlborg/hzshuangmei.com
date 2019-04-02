@@ -243,6 +243,8 @@ header .top .shuang_m1 .qq {
 ._CNav_link {
     width: 100%;
     height: 130px;
+
+    background: rgb(236,236,236);
 }
 ._CNav_N1 {
     width: 100%;
@@ -287,6 +289,11 @@ header .top .shuang_m1 .qq {
     float: right;
 
     line-height: 25px;
+
+    color: #fff;
+}
+._CNav_link ._CNav_TH a {
+    color: #fff;
 }
 ._CNav_N2 {
     width: 1160px;
@@ -310,9 +317,43 @@ header .top .shuang_m1 .qq {
     margin-bottom: 5px;
 }
 ._CNav_div2 {
+    position: relative;
+
     font-size: 14px;
 
     color: #999;
+}
+._CNav_div2 > span {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 4px;
+}
+._CNav_div2 > span > a {
+    color: rgb(165,165,165);
+}
+._CNav_link button {
+    position: absolute;
+    top: -2px;
+    right: 0;
+
+    width: 58px;
+    height: 31px;
+
+    cursor: pointer;
+
+    color: rgb(181,181,181);
+    background: none;
+}
+.sear {
+    z-index: 11;
+
+    display: block;
+    float: right;
+    width: 224px;
+    height: 26px;
+
+    border: none;
+    background: #fff;
 }
 /* header .sm_logo {
     height: 131px;
