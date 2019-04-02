@@ -275,7 +275,9 @@ header .top .shuang_m1 .qq {
 ._CNav_link ._CNav_TH a {
     color: rgb(153,153,153);
 }
-
+._CNav_link ._CNav_TH a:hover{
+    color: #4d4d4d;
+}
 ._CNav_N2 {
     width: 1200px;
     height: 107px;
@@ -318,7 +320,10 @@ header .top .shuang_m1 .qq {
 }
 
 ._CNav_div2>span>a {
-    color: #a5a5a5
+    color: #a5a5a5;
+}
+._CNav_div2>span>a:hover{
+    color: #4d4d4d;
 }
 
 ._CNav_link button {
