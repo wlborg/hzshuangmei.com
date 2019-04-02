@@ -257,7 +257,11 @@ header .top .shuang_m1 .qq {
     margin-left: 30px;
     /* line-height: 25px */
 }
-
+._CNav_TW>img{
+    margin-top: 7px;
+    float: left;
+    margin-right: 8px;
+}
 ._CNav_link ._CNav_TW>span {
     color: rgb(153,153,153);
 }
@@ -285,8 +289,8 @@ header .top .shuang_m1 .qq {
 }
 
 ._CNav_N2T {
+    margin-top: 31px;
     float: right;
-    margin: 23px 23px 0 23px
 }
 
 ._CNav_N2Th {
@@ -319,18 +323,17 @@ header .top .shuang_m1 .qq {
 
 ._CNav_link button {
     position: absolute;
-    top: -2px;
+    top: 0px;
     right: 0;
-    width: 58px;
+    width: 54px;
     height: 32px;
     cursor: pointer;
     color: #b5b5b5;
     background: none;
     border: none;
     z-index: 2;
-    background: rgb(65,14,107);
+    background: url("//img.hzshuangmei.com/pc/ser.jpg");
 }
-
 .sear {
     z-index: 11;
     display: block;
