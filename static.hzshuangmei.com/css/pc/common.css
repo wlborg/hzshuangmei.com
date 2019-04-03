@@ -769,15 +769,15 @@ nav>ul>li ul .n_button a {
 
 .index_items_n {
     height: 274px;
-     display:none;
+    display:none;
     background-color: #f0f0f0;
 }
 
 .index_items_n .shuang_m1>div {
     float: left;
     width: 298px;
-    height: 222px;
-    margin-top: 35px
+    height: 220px;
+    margin-top: 35px;
 }
 
 .index_items_n .shuang_m1 .border-r {
@@ -819,7 +819,7 @@ nav>ul>li ul .n_button a {
 
 .index_items_n .shuang_m1>div .icon {
     float: left;
-    padding-top: 14px;
+    padding-top: 10px;
     margin-left: 48px;
 }
 
@@ -833,7 +833,9 @@ nav>ul>li ul .n_button a {
 .index_items_n .shuang_m1>div ul a {
     color: #593d79
 }
-
+.index_items_n .shuang_m1>div ul a:hover{
+    color: #6a157d
+}
 .index_items_n .shuang_m1>div:first-child ul {
     margin-top: 35px;
 }
