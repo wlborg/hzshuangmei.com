@@ -769,7 +769,7 @@ nav>ul>li ul .n_button a {
 
 .index_items_n {
     height: 274px;
-    /* display:none; */
+     display:none;
     background-color: #f0f0f0;
 }
 
