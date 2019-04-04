@@ -365,6 +365,8 @@ effects.goToJump("doctor_nav","doctor_nav");
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.lightCurNav("#case_nav", "currnet1");
+    //测试中的项目导航
+    effects.lightCurNav("#project_nav_", "currnet2_n");
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
