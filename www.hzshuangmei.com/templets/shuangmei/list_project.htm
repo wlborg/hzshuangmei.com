@@ -34,7 +34,7 @@ $ntime = time();
         <!-- 测试用的 -->
                <div id="project_con1" style="display: none">
                  <div class="pro_con1_con1"><span>美容项目</span></div>
-        <div class="pro_con1_con2">
+        <div class="pro_con1_con2" id="pro_con1_con2">
              <ul class="pro_conT">
               <li><a href="">整形外科项目</a></li>
               <li><a href="">激光美容项目</a></li>
@@ -44,112 +44,37 @@ $ntime = time();
              </ul>
                    <ul class="pro_con1_con2_1">
                            <p>&nbsp;</p>
-                          <li>
-                             <a href="">红妆鼻部整形 </a>
-                          </li>
-                          <li>
-                            <a href="">红妆眼部整形</a>
-                          </li>
-                           <li>
-                             <a href="">红妆面部整形</a>
-                           </li>
-                           <li>
-                              <a href="">红妆胸部整形</a>
-                           </li>
-                           <li>
-                             <a href=""> 红妆私密整形</a>
-                           </li>
-                           <li>
-                             <a href="">红妆唇部整形</a>
-                           </li>
+                           {dede:channel typeid='7'}
+                                <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                           {/dede:channel}
                            <span style="clear: both;">&nbsp;</span>
                      </ul>
               <ul class="pro_con1_con2_1 pro_con1_con2_2">
                    <p>&nbsp;</p>
-                  <li>
-                     <a href="">红妆鼻部整形 </a>
-                  </li>
-                  <li>
-                    <a href="">红妆眼部整形</a>
-                  </li>
-                   <li>
-                     <a href="">红妆面部整形</a>
-                   </li>
-                   <li>
-                      <a href="">红妆胸部整形</a>
-                   </li>
-                   <li>
-                     <a href=""> 红妆私密整形</a>
-                   </li>
-                   <li>
-                     <a href="">红妆唇部整形</a>
-                   </li>
+                  {dede:channel typeid='8'}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
                    <span style="clear: both;">&nbsp;</span>
              </ul>
               <ul class="pro_con1_con2_1 pro_con1_con2_3">
                    <p>&nbsp;</p>
-                  <li>
-                     <a href="">红妆鼻部整形 </a>
-                  </li>
-                  <li>
-                    <a href="">红妆眼部整形</a>
-                  </li>
-                   <li>
-                     <a href="">红妆面部整形</a>
-                   </li>
-                   <li>
-                      <a href="">红妆胸部整形</a>
-                   </li>
-                   <li>
-                     <a href=""> 红妆私密整形</a>
-                   </li>
-                   <li>
-                     <a href="">红妆唇部整形</a>
-                   </li>
+                  {dede:channel typeid='9'}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
                    <span style="clear: both;">&nbsp;</span>
              </ul>
               <ul class="pro_con1_con2_1 pro_con1_con2_4">
                    <p>&nbsp;</p>
-                  <li>
-                     <a href="">红妆鼻部整形 </a>
-                  </li>
-                  <li>
-                    <a href="">红妆眼部整形</a>
-                  </li>
-                   <li>
-                     <a href="">红妆面部整形</a>
-                   </li>
-                   <li>
-                      <a href="">红妆胸部整形</a>
-                   </li>
-                   <li>
-                     <a href=""> 红妆私密整形</a>
-                   </li>
-                   <li>
-                     <a href="">红妆唇部整形</a>
-                   </li>
+                  {dede:channel typeid='20'}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
                    <span style="clear: both;">&nbsp;</span>
              </ul>
               <ul class="pro_con1_con2_1 pro_con1_con2_5">
                    <p>&nbsp;</p>
-                  <li>
-                     <a href="">红妆鼻部整形 </a>
-                  </li>
-                  <li>
-                    <a href="">红妆眼部整形</a>
-                  </li>
-                   <li>
-                     <a href="">红妆面部整形</a>
-                   </li>
-                   <li>
-                      <a href="">红妆胸部整形</a>
-                   </li>
-                   <li>
-                     <a href=""> 红妆私密整形</a>
-                   </li>
-                   <li>
-                     <a href="">红妆唇部整形</a>
-                   </li>
+                  {dede:channel typeid='240'}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
                    <span style="clear: both;">&nbsp;</span>
              </ul>
         </div>
@@ -159,14 +84,11 @@ $ntime = time();
              <span>热门项目</span>
            </ul>
             <ul id="project_nav_n" class="btn1 clearFix">
-           <!--      <li class="nav_list"><a href="/projects" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi0.jpg" alt="全部项目"/></a></li> -->
                 <li class="nav_list"><a href="/projects/eye" class="nav_link">
                   眼部
-                  <!-- <img src="{dede:global.cfg_imgpath/}/pc/project_hi1.jpg" alt="眼部项目"/> -->
                 </a></li>
                 <li class="nav_list"><a href="/projects/nose" class="nav_link">
                   鼻部
-                  <!-- <img src="{dede:global.cfg_imgpath/}/pc/project_hi2.jpg" alt="鼻部项目"/> -->
                 </a></li>
                 <li class="nav_list">
                  <a href="/projects/face" class="nav_link">
@@ -201,7 +123,8 @@ $ntime = time();
                 <li class="nav_list">
                     <a href="/projects/beaut" class="nav_link">
                         美容SPA
-                    </a></li>
+                    </a>
+                </li>
             </ul>
        </div>
         <!-- 测试用的 -->

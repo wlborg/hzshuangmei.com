@@ -2242,10 +2242,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro_conT > li a.conT {
     color: rgb(110,54,147);
 }
-.currnet2_n {
+#ptab2_n .currnet2_n {
     color: #fff;
     background: #8150a1;
 }
+
 .project_content #ptab2_n li {
     float: left;
 
@@ -2253,4 +2254,13 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     line-height: 52px;
 
     text-align: center;
+}
+.project_content #ptab2_n li:hover {
+    color: #fff;
+    background: #8150a1;
+}
+.pro_con1_con2_act{
+    color: rgb(110,54,147);
+    font-size: 15px;
+    text-decoration: underline;
 }
