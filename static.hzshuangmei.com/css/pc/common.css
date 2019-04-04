@@ -2246,3 +2246,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     color: #fff;
     background: #8150a1;
 }
+.project_content #ptab2_n li {
+    float: left;
+
+    font-size: 18px;
+    line-height: 52px;
+
+    text-align: center;
+}
