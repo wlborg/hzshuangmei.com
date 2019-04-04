@@ -374,7 +374,7 @@ $(function() {
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
-    effects.goToJump("info_nav", "info_nav");
+    effects.goToJump("list_information_nav", "list_information_nav");
     //资讯如果是二级,重定义激活状态颜色
      if(window.location.pathname.indexOf("Tinfo")!=-1){
              $(".currnet4").css("background","#F6A7B6");
