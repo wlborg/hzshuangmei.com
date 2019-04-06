@@ -23,14 +23,13 @@
     </div>
     <div class="line"></div>
     <h2 class="h2_tit">
-        <!-- <img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/> -->
     </h2>
     <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
         {dede:myad name='infospic_pc'/}
     </div>
     <div class="news_content information_content">
         <h3 id="news_nav">
-                <!-- {dede:myad name='infospic_pc'/} -->
+
         </h3>
         <ul class="list_information_nav" id="list_information_nav">
        <li class="nav_list"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="nav_link" title="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
@@ -51,9 +50,7 @@
                     <h4><i class="i1"></i><a href="[field:arcurl/]">[field:fulltitle function='cn_substr(@me,50)'/]</a></h4>
                     <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,130)'/]...<span>[详细]</span></a></p>
                     <p class="list_infor_tag">
-                        <!-- <span class="list_infor_tag_active">红妆纹绣</span> -->
                          [field:id function='GetTags_list(@me)' /]
-                       <!--  {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">[field:tag /]</a>{/dede:tag} -->
                     </p>
                 </div>
                 <div class="date"><i class="i3T"></i><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></div>
@@ -125,17 +122,6 @@
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
 <script src="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330"></script>
-
-<!-- <script>
-  $(function(){
-          var tagHtml="";
-          var length=$(".typeIdRight>a").length;
-          for(var i=0;i<length;i++){
-                  tagHtml+=tagHtml+$(".typeIdRight>a").eq(i).clone();
-          }
-          $(".pro2 ul").html(tagHtml);
-  })
-</script> -->
 <script>
     $(function(){
          new WOW().init();

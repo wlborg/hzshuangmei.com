@@ -154,9 +154,16 @@ $(function() {
                    $(obj).removeClass(className);
                    $(this).addClass(className);
               };
+              //判断顶部导航的下标
+              module.sonPar=function(TObj,opacvClass,obj){
+                  var index=parseInt($(opacvClass).parents(obj).index())-1;
+                  $(TObj).removeClass("conT");
+                  $(TObj).eq(index).addClass();
+              };
           return module;
      }
     )(window.tools_pro || {});
     tools_pro.getProLig(".pro_conT>li","conT",".pro_con1_con2_1","pro_pr");
     tools_pro.hoverSon("#pro_con1_con2>.pro_con1_con2_1>li","hoverClass");
+    tools_pro.sonPar(".pro_conT",".pro_con1_con2_act",".pro_con1_con2_1");
 });

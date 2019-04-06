@@ -206,19 +206,14 @@ body {
 }
 .tab-nav-wrap {
     padding: 0;
-    /* height: 53rem/@fb; */
     margin: 0;
-
     list-style: none;
-
     text-align: center;
-
     border-bottom: solid 1px #d2d2d2;
     background-color: #fff;
 }
 .tab-nav {
     display: inline-block;
-    /* margin: 0 30rem/@fb; */
     width: 28%;
 
     list-style: none;
