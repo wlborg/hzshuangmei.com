@@ -365,6 +365,10 @@ effects.goToJump("doctor_nav","doctor_nav");
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.lightCurNav("#case_nav", "currnet1");
+    //测试中的项目导航
+    effects.lightCurNav("#project_nav_n", "currnet2_n");
+    effects.lightCurNav("#pro_con1_con2", "pro_con1_con2_act");
+    //------------------------------------
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
@@ -374,7 +378,7 @@ $(function() {
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
-    effects.goToJump("info_nav", "info_nav");
+    effects.goToJump("list_information_nav", "list_information_nav");
     //资讯如果是二级,重定义激活状态颜色
      if(window.location.pathname.indexOf("Tinfo")!=-1){
              $(".currnet4").css("background","#F6A7B6");

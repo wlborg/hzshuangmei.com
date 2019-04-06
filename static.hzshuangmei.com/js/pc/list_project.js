@@ -135,4 +135,19 @@ function preReady() {
 }
 $(function() {
     //preReady();
+    var tools_pro = (
+      function(module) {
+              //导航高亮显示
+               module.getProLig = function(obj,className,conObj,conClassName) {
+                    $(obj).hover(function(){
+                          var index=$(this).index();
+                          $(obj+">a").removeClass(className);
+                          $(obj).eq(index).find("a").addClass(className);
+                            $(conObj).removeClass(conClassName);
+                            $(conObj).eq(index).addClass(conClassName);
+                    }
+               };
+     }
+    )(window.tools_pro || {});
+    tools_pro.getProLig(".pro_conT>li","conT","",".pro_con1_con2_1","pro_pr");
 });
