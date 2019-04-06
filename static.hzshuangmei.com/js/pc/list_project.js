@@ -139,7 +139,9 @@ $(function() {
       function(module) {
               //导航高亮显示
                module.getProLig = function(obj,className,conObj,conClassName) {
+                   console.log("fun");
                     $(obj).hover(function(){
+                        console.log("hover");
                           var index=$(this).index();
                           $(obj+">a").removeClass(className);
                           $(obj).eq(index).find("a").addClass(className);
