@@ -1314,7 +1314,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 200px;
 
     -webkit-animation: tada2 10s -9s ease both infinite;
-       -moz-animation: tada2 10s -9s ease both infinite;
+    -moz-animation: tada2 10s -9s ease both infinite;
 }
 
 .lazyload,
@@ -1340,10 +1340,10 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
 .Double_Eleven_Button_anima {
     -webkit-animation: scaleAC 1.5s linear .3s infinite;
-       -moz-animation: scaleAC 1.5s linear .3s infinite;
-        -ms-animation: scaleAC 1.5s linear .3s infinite;
-         -o-animation: scaleAC 1.5s linear .3s infinite;
-            animation: scaleAC 1.5s linear .3s infinite;
+    -moz-animation: scaleAC 1.5s linear .3s infinite;
+    -ms-animation: scaleAC 1.5s linear .3s infinite;
+    -o-animation: scaleAC 1.5s linear .3s infinite;
+    animation: scaleAC 1.5s linear .3s infinite;
 }
 
 @-webkit-keyframes scaleAC {
@@ -2066,7 +2066,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 /* 项目列表页测试样式 */
 #ptab2_n ul li:first-child {
-    background: none;
+    /* background: none; */
 }
 #ptab2_n {
     width: 1200px;
@@ -2186,24 +2186,23 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 .pro_con1_con2_1 {
     position: relative;
-
     display: none;
     height: auto;
-    padding-top: 23px;
-    padding-bottom: 21px;
+    padding-top: 21px;
+    padding-bottom: 25px;
     padding-left: 24px;
     /* overflow: hidden; */
     margin-top: 16px;
     margin-left: 41px;
     clear: both;
-
     background: rgb(245,242,254);
 }
 .pro_con1_con2_1 > li {
     position: relative;
-
     float: left;
     margin-right: 47px;
+    line-height: 27px;
+    /* padding: 6px 0px; */
 }
 .pro_con1_con2_1 > p {
     position: absolute;
@@ -2220,8 +2219,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     color: rgb(110,54,147);
 }
 .pro_con1_con2_1 > li > a:hover {
-    text-decoration: underline;
-
+    text-decoration: none;
     color: rgb(110,54,147);
 }
 .pro_pr {
@@ -2242,12 +2240,12 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro_conT > li a.conT {
     color: rgb(110,54,147);
 }
-#ptab2_n .currnet2_n {
-    background: #8150a1!important;
-}
+#ptab2_n .currnet2_n {background: #8150a1;/* border-right: none; */}
 #ptab2_n .currnet2_n a{
-    color: #fff!important;
+    color: #fff;
+
 }
+
 .project_content #ptab2_n li {
     float: left;
 
@@ -2255,6 +2253,10 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     line-height: 52px;
 
     text-align: center;
+}
+.project_content #ptab2_n li:hover {
+    color: #fff;
+    background: #8150a1;
 }
 .project_content #ptab2_n li:hover {
     background: #8150a1;
@@ -2265,5 +2267,20 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro_con1_con2_act{
     color: rgb(110,54,147);
     font-size: 15px;
+    border-bottom: 1px solid rgb(110,54,147);
+}
+.pro_con1_con2_act a{
+    color: rgb(110,54,147);
+    font-size: 15px;
     text-decoration: underline;
+    text-decoration: none;
+    /* border-bottom:1px solid rgb(110,54,147); */
+    /* line-height:40px; */
+}
+.pro_con1_con2_1 a{
+    /* padding:6px 0px; */
+    display:block;
+}
+#pro_con1_con2>.pro_con1_con2_1>li.hoverClass{
+    border-bottom: 1px solid rgb(110,54,147);
 }
