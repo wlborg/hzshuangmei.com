@@ -599,17 +599,16 @@ protection.geturl();
 protection.shield(["disableCopy", "disableSource", "disableF12"]);
 
 // 增加PC端公告
-
-$(document).ready( function(){
-    $( '#howdy' ).howdyDo({
-        action      : 'hover',
-        effect      : 'slide',
-        easing      : 'easeInOutExpo',
-        duration    : 600,
-        openAnchor  : '<img src="//img.hzshuangmei.com/pc/down-arr-16x16.png" border=0 />',
-        closeAnchor : '<img src="//img.hzshuangmei.com/pc/close-16x16.png" border=0 />'
-    });
-});
+//$(document).ready( function(){
+//    $( '#howdy' ).howdyDo({
+//        action      : 'hover',
+//        effect      : 'slide',
+//        easing      : 'easeInOutExpo',
+//        duration    : 600,
+//        openAnchor  : '<img src="//img.hzshuangmei.com/pc/down-arr-16x16.png" border=0 />',
+//        closeAnchor : '<img src="//img.hzshuangmei.com/pc/close-16x16.png" border=0 />'
+//    });
+//});
 
 
 // https://github.com/GoogleChromeLabs/quicklink/tree/master/translations/zh-cn
