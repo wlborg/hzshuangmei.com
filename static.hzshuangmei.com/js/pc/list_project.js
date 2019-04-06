@@ -148,10 +148,15 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     });
-
                };
+              //经过二级导航下边框出现
+              module.hoverSon=function(obj,className){
+                   $(obj).removeClass(className);
+                   $(this).addClass(className);
+              };
           return module;
      }
     )(window.tools_pro || {});
     tools_pro.getProLig(".pro_conT>li","conT",".pro_con1_con2_1","pro_pr");
+    tools_pro.hoverSon("#pro_con1_con2>.pro_con1_con2_1>li","hoverClass");
 });
