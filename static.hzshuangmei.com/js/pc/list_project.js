@@ -148,6 +148,7 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     });
+                   return module;
                };
      }
     )(window.tools_pro || {});
