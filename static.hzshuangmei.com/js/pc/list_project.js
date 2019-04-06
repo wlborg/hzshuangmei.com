@@ -15,24 +15,6 @@ function pchange1(obj) {
         }
     }
 }
-//var ptabs2=document.getElementById("ptab2").getElementsByTagName("li");
-//var pdivs2=document.getElementById("ptabCon2").getElementsByTagName("li");
-//for(var k=0;k<ptabs2.length;k++){
-//    ptabs2[k].onclick=function(){pchange2(this);}
-//}
-//function pchange2(obj){
-//    for(var k=0;k<ptabs2.length;k++){
-//        if(ptabs2[k]==obj){
-//            ptabs2[k].className="pli2";
-//            pdivs2[k].className="pdiv2";
-//
-//        }else{
-//            ptabs2[k].className="";
-//            pdivs2[k].className="";
-//
-//        }
-//    }
-//}
 $(function() {
     $(".project_con").eq(0).show();
     $(".btn1 li").click(function() {
@@ -157,13 +139,13 @@ $(function() {
               //判断顶部导航的下标
               module.sonPar=function(TObj,opacvClass,obj){
                   var index=parseInt($(opacvClass).parents(obj).index())-1;
-                  $(TObj).removeClass("conT");
-                  $(TObj).eq(index).addClass();
+                  $(TObj).find("a").removeClass("conT");
+                  $(TObj).eq(index).find("a").addClass("conT");
               };
           return module;
      }
     )(window.tools_pro || {});
     tools_pro.getProLig(".pro_conT>li","conT",".pro_con1_con2_1","pro_pr");
     tools_pro.hoverSon("#pro_con1_con2>.pro_con1_con2_1>li","hoverClass");
-    tools_pro.sonPar(".pro_conT",".pro_con1_con2_act",".pro_con1_con2_1");
+    tools_pro.sonPar(".pro_conT li",".pro_con1_con2_act",".pro_con1_con2_1");
 });
