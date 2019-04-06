@@ -132,31 +132,6 @@ var swiper7 = new Swiper('.swiper-container5_3', {
     prevButton: '.swiper-button-prev5_3',
     autoplayDisableOnInteraction : false
 });
-
-//pre render
-// function preReady() {
-//     $("a:not([href=''][href='#'])").on('mouseenter', function(event) {
-//         var bool = false;
-//         var pre_url = $(this).attr("href");
-//         $("link").each(function() {
-//             if (($(this).attr("href") == pre_url)) {
-//                 bool = true;
-//             }
-//         });
-//         if (!bool) {
-//             $("head").stop().append('<link rel="preconnect" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-//             $("head").stop().append('<link rel="prefetch" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-//             $("head").stop().append('<link rel="prerender" href="https://www.hzshuangmei.com/' + pre_url +'"'+ '>');
-//         }
-//     });
-//     $("a:not([href=''][href='#'])").on('mouseleave', function(event) {
-//         var pre_url = $(this).attr("href");
-//         $('link[rel="preconnect"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-//         $('link[rel="prefetch"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-//         $('link[rel="prerender"][href="https://www.hzshuangmei.com/"' + pre_url + '"' + ']').stop().remove();
-//         console.log("输出了mouseleave");
-//     });
-// }
 function preReady() {
     $("a:not([href='javascript:void(0)'])").hover(
         function(event) {
@@ -230,39 +205,6 @@ $(function() {
 
              }
 });
-
-
-// merry Xmas snow
-//var minSize = 5;
-//var maxSize = 50;
-//var newOn = 80;
-//var flake = $("<div></div>").css({ "position": "absolute", "top": "-50px"}).html("❅");
-//$(function () {
-//    var documentHeight = $(document).height();
-//    var documentWidth = $(document).width();
-//    setInterval(function () {
-//        var startPositionLeft = Math.random() * documentWidth;
-//        var sizeFlake = minSize + Math.random() * maxSize;
-//        var endPositionLeft = Math.random() * documentWidth;
-//        var durationFall = documentHeight * 10 + Math.random() * 1000;
-//        var startOpacity = 0.7 + 0.3 * Math.random();
-//        var endOpacity = 0.5 * Math.random();
-//        flake.clone().appendTo($("body")).css({
-//            "left": startPositionLeft,
-//            "opacity": startOpacity,
-//            "font-size": sizeFlake,
-//            "color": "#fff"
-//        }).animate({
-//            "top": documentHeight - 40,
-//            "left": endPositionLeft,
-//            "opacity": endOpacity
-//        }, durationFall, function () {
-//            $(this).remove();
-//        });
-//    }, newOn);
-//});
-// 红妆历程
-//品牌历程
 function LcSlideLedt() {
     $(".lc_list_box").append($(".lc_list_box .lc_list_con").eq(0).clone(true));
     var SlideBox = $(".lc_list_box"),
@@ -362,8 +304,6 @@ function LcSlideLedt() {
         slideTimer = setInterval(autoSlide,20);
     });
 }
-
-
 $(function () {
     LcSlideLedt();
-})
+});

@@ -22,14 +22,12 @@
     </div>
     <div class="line"></div>
     <h2 class="h2_tit">
-        <!-- <img src="{dede:global.cfg_imgpath/}/pc/news_title.png" alt="[field:title/]"/> -->
     </h2>
     <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
         {dede:myad name='infospic_pc'/}
     </div>
     <div class="news_content information_content">
         <h3 id="news_nav">
-            <!-- <img src="{dede:global.cfg_imgpath/}/pc/ns_01.png" alt="红妆双美新闻"/> -->
         </h3>
         <ul class="list_information_nav" id="info_nav">
            {dede:channel type='self'}<li class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>{/dede:channel}
@@ -47,9 +45,7 @@
                     <h4><i class="i1"></i><a href="[field:arcurl/]">[field:fulltitle function='cn_substr(@me,50)'/]</a></h4>
                     <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,140)'/]...<span>[详细]</span></a></p>
                     <p class="list_infor_tag">
-                        <!-- <span class="list_infor_tag_active">红妆纹绣</span> -->
                          [field:id function='GetTags_list(@me)' /]
-                       <!--  {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">[field:tag /]</a>{/dede:tag} -->
                     </p>
                 </div>
                 <div class="date"><i class="i3T"></i><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></div>
@@ -63,13 +59,11 @@
         </ul>
         <!-- 左边导航栏开始 -->
                {dede:FIELD.typeid function='MoreHotProjectAboutInfo(@me)'/}
-              <!-- <img src="" class="pro1" alt=""> -->
               <div class="pro2">
                     <p class="pro2Line">&nbsp;</p>
                     <span>{dede:field name="typename"/}</span>
                     <p class="pro2_info">POPULAR PROJECT</p>
                     <ul class="pro2_tag">
-                       <!-- {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/} -->
                     </ul>
               </div>
              <ul class="pro3">
@@ -79,7 +73,7 @@
 </div>
 <!-- 右侧边栏对应的tag -->
 <div class="typeIdRight">
-                     <!-- {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/} -->
+
 </div>
 {dede:include filename="_footer.htm"/}
 </body>
@@ -96,14 +90,4 @@
 
     })
 </script>
-<!-- <script>
-  $(function(){
-          var tagHtml="";
-          var length=$(".typeIdRight>a").length;
-          for(var i=0;i<length;i++){
-                  tagHtml+=tagHtml+$(".typeIdRight>a").eq(i).clone();
-          }
-          $(".pro2 ul").html(tagHtml);
-  })
-</script> -->
 </html>
