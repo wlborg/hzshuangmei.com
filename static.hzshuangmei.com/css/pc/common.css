@@ -2243,10 +2243,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     color: rgb(110,54,147);
 }
 #ptab2_n .currnet2_n {
-    color: #fff;
-    background: #8150a1;
+    background: #8150a1!important;
 }
-
+#ptab2_n .currnet2_n a{
+    color: #fff!important;
+}
 .project_content #ptab2_n li {
     float: left;
 
