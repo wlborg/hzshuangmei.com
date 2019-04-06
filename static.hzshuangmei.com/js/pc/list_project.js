@@ -145,7 +145,7 @@ $(function() {
                           $(obj).eq(index).find("a").addClass(className);
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
-                    }
+                    });
                };
      }
     )(window.tools_pro || {});
