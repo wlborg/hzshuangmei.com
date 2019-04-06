@@ -148,8 +148,9 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     });
-                   return module;
+
                };
+          return module;
      }
     )(window.tools_pro || {});
     tools_pro.getProLig(".pro_conT>li","conT","",".pro_con1_con2_1","pro_pr");
