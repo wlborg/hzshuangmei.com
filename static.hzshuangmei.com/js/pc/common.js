@@ -6,7 +6,6 @@ $(function($) {
         } else {
             $("#nav").removeClass('fixed');
         }
-        // console.log($("#nav").offset().top);
     });
    // 顶部轮播图双十一按钮鼠标经过处理
       $(".Double_Eleven_Button").bind(
@@ -98,14 +97,10 @@ var tools = (
                 document.documentElement.appendChild(scriptE);
             }
         }
-
-
               //添加快商通
                 module.addKSTScript = function(value) {
                     addScript(value);
                 };
-
-
         //添加百度统计代码
         module.addBaiduScript = function(value) {
             addScript(value);
@@ -175,9 +170,6 @@ var tools = (
                     }
                 });
                 if (!bool) {
-                    // $("head").append('<link rel="prefetch" href="//' + hostname +"/"+ pre_url + '">');
-                    // $("head").append('<link rel="preconnect" href="//' + hostname+"/" + pre_url + '">');
-                    // $("head").append('<link rel="prerender" href="//' + hostname +"/"+ pre_url + '">');
                     $("head").append('<link rel="prefetch" href="' + hostname + "/" + pre_url + '">');
                     $("head").append('<link rel="preconnect" href="' + hostname + "/" + pre_url + '">');
                     $("head").append('<link rel="prerender" href="' + hostname + "/" + pre_url + '">');
@@ -185,9 +177,6 @@ var tools = (
             });
             $("a:not([href=''],[href='#'])").on('mouseleave', function(event) {
                 var pre_url = $(this).attr("href"); //只要鼠标移出就删除  不用判断
-                // $('link[rel="prefetch"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                // $('link[rel="preconnect"][href="//' + hostname +"/"+ pre_url + '"]').remove();
-                // $('link[rel="prerender"][href="//' + hostname +"/"+ pre_url + '"]').remove();
                 $('link[rel="prefetch"][href="' + hostname + "/" + pre_url + '"]').remove();
                 $('link[rel="preconnect"][href="' + hostname + "/" + pre_url + '"]').remove();
                 $('link[rel="prerender"][href="' + hostname + "/" + pre_url + '"]').remove();
