@@ -148,7 +148,7 @@ $(function() {
             //获取一级导航显示的下标显示对应内容
              module.parNav=function(ulClassname,obj,className){
                  if (!$(ulClassname)) return;
-                 var inedx=$(ulClassname).index();
+                 var index=$(ulClassname).index();
                  $(obj).eq(index).addClass(className);
             };
           return module;
