@@ -333,7 +333,7 @@ effects.goToJump("doctor_nav","doctor_nav");
                 $(this).on('click', function() {
                     //判断当前在哪个页面 项目？专家？日记？新闻?
                     if (infos.href.indexOf('projects') > 0) {
-                        var href = $(this).attr('href') + "#project_nav";
+                        var href = $(this).attr('href') + "#project_con1";
                     } else if (infos.href.indexOf('doctors') > 0) {
                         var href = $(this).attr('href') + "#doctor_nav";
                     } else if (infos.href.indexOf('cases') > 0) {
@@ -364,6 +364,9 @@ $(function() {
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
+    // 测试中的项目导航
+     effects.goToJump("project_nav_n", "project_nav_n");
+
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
