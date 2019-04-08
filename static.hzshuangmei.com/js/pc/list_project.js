@@ -125,8 +125,8 @@ $(function() {
                     $(obj).hover(function(){
                         console.log("hover");
                           var index=$(this).index();
-                          $(obj+">a").removeClass(className);
-                          $(obj).eq(index).find("a").addClass(className);
+                          $(obj).removeClass(className);
+                          $(obj).eq(index).addClass(className);
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     });
