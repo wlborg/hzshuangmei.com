@@ -145,10 +145,17 @@ $(function() {
                       $(opacvClass).parents(obj).addClass('pro_pr');
                   }
               };
+            //获取一级导航显示的下标显示对应内容
+             module.parNav=function(ulClassname,obj,className){
+                 if (!$(ulClassname)) return;
+                 var inedx=$(ulClassname).index();
+                 $(obj).eq(index).addClass(className);
+            };
           return module;
      }
     )(window.tools_pro || {});
     tools_pro.getProLig(".pro_conT>li","conT",".pro_con1_con2_1","pro_pr");
     tools_pro.hoverSon("#pro_con1_con2>.pro_con1_con2_1>li","hoverClass");
     tools_pro.sonPar(".pro_conT li",".pro_con1_con2_act",".pro_con1_con2_1");
+    tools_pro.parNav(".pconT","#pro_conTc>ul","pro_pr");
 });
