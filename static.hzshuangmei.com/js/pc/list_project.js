@@ -125,8 +125,8 @@ $(function() {
                     $(obj).hover(function(){
                         console.log("hover");
                           var index=$(this).index();
-                          $(obj+">a").removeClass(className);
-                          $(obj).eq(index).find("a").addClass(className);
+                          //$(obj).removeClass(className);
+                          //$(obj).eq(index).addClass(className);
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     });
@@ -139,8 +139,9 @@ $(function() {
               //判断顶部导航的下标
               module.sonPar=function(TObj,opacvClass,obj){
                   var index=parseInt($(opacvClass).parents(obj).index())-1;
-                  $(TObj).find("a").removeClass("conT");
-                  $(TObj).eq(index).find("a").addClass("conT");
+                  $(TObj).removeClass("conT");
+                  $(TObj).eq(index).addClass("conT");
+                  $(opacvClass).parents(obj).addClass('pro_pr');
               };
           return module;
      }

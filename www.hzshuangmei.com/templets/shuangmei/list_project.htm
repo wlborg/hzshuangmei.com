@@ -12,9 +12,8 @@ $ntime = time();
       <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_project.css?v=20190330" as="style"  crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_project.js?v=20190330" as="script" crossorigin>
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_project.css?v=20190330"/>
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_project.css?v=2019040802" as="style"  crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_project.css?v=2019040802"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -32,23 +31,24 @@ $ntime = time();
     </div>
     <div class="project_content" id="pro_01">
         <!-- 测试用的 -->
-               <div id="project_con1" style="display: none">
+               <div id="project_con1">
                  <div class="pro_con1_con1"><span>美容项目</span></div>
         <div class="pro_con1_con2" id="pro_con1_con2">
-             <ul class="pro_conT">
-              <li><a href="">整形外科项目</a></li>
-              <li><a href="">激光美容项目</a></li>
-              <li><a href="">微创整形项目</a></li>
-              <li><a href="">医学纹绣美容</a></li>
-              <li class="pro_conTLast"><a href="">生活美容SPA</a></li>
+             <ul class="pro_conT" id="pro_conT">
+              <li  class="nav_list"><a href="/projects/surgery" class="nav_link">整形外科项目</a></li>
+              <li  class="nav_list"><a href="/projects/laser" class="nav_link">激光美容项目</a></li>
+              <li  class="nav_list"><a href="/projects/mini" class="nav_link">微创整形项目</a></li>
+              <li  class="nav_list"><a href="/projects/mini " class="nav_link">医学纹绣美容</a></li>
+              <li class="nav_list pro_conTLast"><a href="/projects/liv" class="nav_link">生活美容SPA</a></li>
              </ul>
-                   <ul class="pro_con1_con2_1">
+            <div id="pro_conTc">
+              <ul class="pro_con1_con2_1">
                            <p>&nbsp;</p>
                            {dede:channel typeid='7'}
                                 <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
                            {/dede:channel}
                            <span style="clear: both;">&nbsp;</span>
-                     </ul>
+              </ul>
               <ul class="pro_con1_con2_1 pro_con1_con2_2">
                    <p>&nbsp;</p>
                   {dede:channel typeid='8'}
@@ -77,9 +77,10 @@ $ntime = time();
                   {/dede:channel}
                    <span style="clear: both;">&nbsp;</span>
              </ul>
+            </div>
         </div>
       </div>
-      <div id="ptab2_n" style="display: none">
+      <div id="ptab2_n" >
             <ul class="proTop">
              <span>热门项目</span>
            </ul>
@@ -128,7 +129,7 @@ $ntime = time();
             </ul>
        </div>
         <!-- 测试用的 -->
-        <div id="ptab2">
+    <!--     <div id="ptab2">
             <ul id="project_nav" class="btn1 clearFix">
                 <li class="nav_list"><a href="/projects" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi0.jpg" alt="全部项目"/></a></li>
                 <li class="nav_list"><a href="/projects/eye" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi1.jpg" alt="眼部项目"/></a></li>
@@ -143,7 +144,7 @@ $ntime = time();
                 <li class="nav_list"><a href="/projects/botox" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi10.jpg" alt="botox"/></a></li>
                 <li class="nav_list"><a href="/projects/hengli" class="nav_link"><img src="{dede:global.cfg_imgpath/}/pc/project_hi11.jpg" alt="衡力"/></a></li>
             </ul>
-        </div>
+        </div> -->
 
         <div id="ptabCon2" class="project_con">
             <div class="clearFix">
@@ -175,5 +176,6 @@ $ntime = time();
 </body>
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/list_project.js?v=2019040403"></script>
+<link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_project.js?v=2019040805" as="script" crossorigin>
+<script src="{dede:global.cfg_jspath/}/pc/list_project.js?v=2019040805"></script>
 </html>

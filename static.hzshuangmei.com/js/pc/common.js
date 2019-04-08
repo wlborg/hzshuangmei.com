@@ -246,7 +246,7 @@ var effects = (
             });
             var selector = "." + curClassname;
             if (!$(ulClassname).find(selector).length) {
-                $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
+                // $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
             }
         };
         module.showCaseBigImage = function(modalClassName, imgSelectorName) {
@@ -333,7 +333,7 @@ effects.goToJump("doctor_nav","doctor_nav");
                 $(this).on('click', function() {
                     //判断当前在哪个页面 项目？专家？日记？新闻?
                     if (infos.href.indexOf('projects') > 0) {
-                        var href = $(this).attr('href') + "#project_nav";
+                        var href = $(this).attr('href') + "#pro_01";
                     } else if (infos.href.indexOf('doctors') > 0) {
                         var href = $(this).attr('href') + "#doctor_nav";
                     } else if (infos.href.indexOf('cases') > 0) {
@@ -356,7 +356,8 @@ $(function() {
     effects.lightCurNav("#case_nav", "currnet1");
     //测试中的项目导航
     effects.lightCurNav("#project_nav_n", "currnet2_n");
-    effects.lightCurNav("#pro_con1_con2", "pro_con1_con2_act");
+    effects.lightCurNav("#pro_conT", "conT");
+    effects.lightCurNav("#pro_conTc", "pro_con1_con2_act");
     //------------------------------------
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
@@ -364,6 +365,10 @@ $(function() {
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
+    // 测试中的项目导航
+     effects.goToJump("project_nav_n", "pro_01");
+     effects.goToJump("pro_con1_con2", "pro_01");
+
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");

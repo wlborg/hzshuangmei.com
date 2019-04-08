@@ -2136,6 +2136,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 139px;
     margin-right: 59px;
 }
+#pro_conT li a:hover{
+    color: #6e3693;
+}
 .pro_con1_con1 {
     width: 200px;
     height: 179px;
@@ -2158,7 +2161,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     clear: both;
 }
 #pro_01 {
-    margin-top: 70px;
+    padding-top: 70px;
 }
 .pro_con1_con2 {
     /*border: 1px solid red;*/
@@ -2236,6 +2239,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 .pro_con1_con2_5 > p {
     left: 840px;
+}
+.pro_conT > li.conT a{
+    color: rgb(110,54,147);
 }
 .pro_conT > li a.conT {
     color: rgb(110,54,147);

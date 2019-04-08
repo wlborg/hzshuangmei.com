@@ -75,6 +75,7 @@
 }
 
 #ptab2 {
+    display: none;
     width: 1178px;
     margin: 85px auto 0;
 }
