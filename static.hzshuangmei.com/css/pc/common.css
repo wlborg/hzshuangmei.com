@@ -1537,7 +1537,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
-    background: rgb(65,14,107,.7)
+    background: rgba(65,14,107,.7)
 }
 
 .information_right>ul>li>a {
@@ -1881,7 +1881,8 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 #project_con1 .pro_conT>li {
     float: left;
     width: 139px;
-    margin-right: 59px
+    margin-right: 59px;
+    position: relative;
 }
 
 #pro_conT li a:hover {
@@ -1929,7 +1930,40 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     font-size: 18px;
     color: #434343
 }
-
+.pro_conT>li>span{
+    position: absolute;
+    display: none;
+}
+.pro_conT li:nth-of-type(1) span{
+    background: url("//img.hzshuangmei.com/pc/pro_zx_t.png");
+}
+.pro_conT li:nth-of-type(2) span{
+    background: url("//img.hzshuangmei.com/pc/pro_jg_t.png");
+}
+.pro_conT li:nth-of-type(3) span{
+    background: url("//img.hzshuangmei.com/pc/pro_wc_t.png");
+}
+.pro_conT li:nth-of-type(4) span{
+    background: url("//img.hzshuangmei.com/pc/pro_wc_mr.png");
+}
+.pro_conT li:nth-of-type(5) span{
+    background: url("//img.hzshuangmei.com/pc/pro_sh_t.png");
+}
+.pro_conT li:nth-of-type(1).conT span{
+    background: url("//img.hzshuangmei.com/pc/pro_zx_t_act.png");
+}
+.pro_conT li:nth-of-type(2).conT span{
+    background: url("//img.hzshuangmei.com/pc/pro_jg_t_act.png");
+}
+.pro_conT li:nth-of-type(3).conT span{
+    background: url("//img.hzshuangmei.com/pc/pro_wc_t_act.png");
+}
+.pro_conT li:nth-of-type(4).conT span{
+    background: url("//img.hzshuangmei.com/pc/pro_wc_mr_act.png");
+}
+.pro_conT li:nth-of-type(5).conT span{
+    background: url("//img.hzshuangmei.com/pc/pro_sh_t_act.png");
+}
 .pro_con1_con2_1 {
     background: #f5f2fe
 }
