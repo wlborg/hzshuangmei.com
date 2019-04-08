@@ -139,9 +139,11 @@ $(function() {
               //判断顶部导航的下标
               module.sonPar=function(TObj,opacvClass,obj){
                   var index=parseInt($(opacvClass).parents(obj).index())-1;
-                  $(TObj).removeClass("conT");
-                  $(TObj).eq(index).addClass("conT");
-                  $(opacvClass).parents(obj).addClass('pro_pr');
+                  if(index>=0){
+                      $(TObj).removeClass("conT");
+                      $(TObj).eq(index).addClass("conT");
+                      $(opacvClass).parents(obj).addClass('pro_pr');
+                  }
               };
           return module;
      }
