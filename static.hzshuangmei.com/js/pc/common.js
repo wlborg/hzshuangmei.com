@@ -365,7 +365,8 @@ $(function() {
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
     // 测试中的项目导航
-     effects.goToJump("project_nav_n", "project_nav_n");
+     effects.goToJump("project_nav_n", "pro_01");
+     effects.goToJump("pro_con1_con2", "pro_01");
 
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
