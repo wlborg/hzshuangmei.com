@@ -333,7 +333,7 @@ effects.goToJump("doctor_nav","doctor_nav");
                 $(this).on('click', function() {
                     //判断当前在哪个页面 项目？专家？日记？新闻?
                     if (infos.href.indexOf('projects') > 0) {
-                        var href = $(this).attr('href') + "#project_con1";
+                        var href = $(this).attr('href') + "#pro_01";
                     } else if (infos.href.indexOf('doctors') > 0) {
                         var href = $(this).attr('href') + "#doctor_nav";
                     } else if (infos.href.indexOf('cases') > 0) {
@@ -356,7 +356,8 @@ $(function() {
     effects.lightCurNav("#case_nav", "currnet1");
     //测试中的项目导航
     effects.lightCurNav("#project_nav_n", "currnet2_n");
-    effects.lightCurNav("#pro_con1_con2", "pro_con1_con2_act");
+    effects.lightCurNav("#pro_conT", "conT");
+    effects.lightCurNav("#pro_conTc", "pro_con1_con2_act");
     //------------------------------------
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
