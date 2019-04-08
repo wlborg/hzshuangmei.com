@@ -157,5 +157,5 @@ $(function() {
     tools_pro.getProLig(".pro_conT>li","conT",".pro_con1_con2_1","pro_pr");
     tools_pro.hoverSon("#pro_con1_con2>.pro_con1_con2_1>li","hoverClass");
     tools_pro.sonPar(".pro_conT li",".pro_con1_con2_act",".pro_con1_con2_1");
-    tools_pro.parNav("conT","#pro_conTc>ul","pro_pr");
+    tools_pro.parNav(".conT","#pro_conTc>ul","pro_pr");
 });
