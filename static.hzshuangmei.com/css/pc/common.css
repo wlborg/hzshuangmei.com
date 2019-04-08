@@ -2237,6 +2237,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro_con1_con2_5 > p {
     left: 840px;
 }
+.pro_conT > li.conT a{
+    color: rgb(110,54,147);
+}
 .pro_conT > li a.conT {
     color: rgb(110,54,147);
 }
