@@ -1881,7 +1881,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 #project_con1 .pro_conT>li {
     float: left;
     width: 139px;
-    margin-right: 59px;
+    margin-right: 56px;
     position: relative;
 }
 
@@ -1932,7 +1932,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 .pro_conT>li>span{
     position: absolute;
-    display: none;
+    display: block;
+    top: 3px;
+    right: 0px;
+    width:  22px;
+    height: 21px;
 }
 .pro_conT li:nth-of-type(1) span{
     background: url("//img.hzshuangmei.com/pc/pro_zx_t.png");
