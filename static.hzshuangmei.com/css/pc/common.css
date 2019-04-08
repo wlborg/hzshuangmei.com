@@ -2136,6 +2136,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 139px;
     margin-right: 59px;
 }
+#pro_conT li a:hover{
+    color: #6e3693;
+}
 .pro_con1_con1 {
     width: 200px;
     height: 179px;
