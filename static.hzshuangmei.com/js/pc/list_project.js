@@ -141,7 +141,7 @@ $(function() {
                   var index=parseInt($(opacvClass).parents(obj).index())-1;
                   $(TObj).find("a").removeClass("conT");
                   $(TObj).eq(index).find("a").addClass("conT");
-                  $(opacvClass).parents(pro_con1_con2_1).addClass('pro_pr');
+                  $(opacvClass).parents(obj).addClass('pro_pr');
               };
           return module;
      }
