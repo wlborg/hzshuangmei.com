@@ -1,401 +1,329 @@
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td {
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 body {
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
     font-size: 14px;
-
     color: #555;
-    background: #fff;
+    background: #fff
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: normal;
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal
 }
 
 a {
     text-decoration: none;
-
-    color: #555;
+    color: #555
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: none
 }
 
 img {
-    border: none;
+    border: none
 }
 
-ol,
-ul,
-li {
-    list-style: none;
+ol,ul,li {
+    list-style: none
 }
 
-input,
-textarea,
-select,
-button {
+input,textarea,select,button {
     font: 14px Verdana,Helvetica,Arial,sans-serif;
-
-    border: 1px solid #999;
+    border: 1px solid #999
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse
 }
 
 .clearFix:after {
     display: block;
     clear: both;
-
-    content: "";
+    content: ""
 }
 
 .sr-only {
     position: absolute;
-
     width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0,0,0,0);
-
-    border: 0;
+    border: 0
 }
 
 .shuang_m1 {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 header .top {
     height: 90px;
-
     font-size: 12px;
-
-    background-color: #ececec;
+    background-color: #ececec
 }
 
 header .top .shuang_m1 {
-    padding-top: 12px;
+    padding-top: 12px
 }
 
 header .top .shuang_m1 .top_l {
     position: relative;
     top: -5px;
-
     display: flex;
     float: left;
     height: 31px;
     padding-left: 16px;
-
     line-height: 31px;
-
-    color: #999;
+    color: #999
 }
 
 header .top .shuang_m1 .top_l img {
     position: relative;
-
     display: block;
     width: 361px;
     height: 56px;
     padding-right: 6px;
     margin: 12px 0 0 216px;
-
-    text-align: center;
+    text-align: center
 }
 
 header .top .shuang_m1 .top_l span {
     padding-left: 0;
-    margin-top: 45px;
+    margin-top: 45px
 }
 
 header .top .top_c {
     top: -5px;
-
     float: left;
     height: 31px;
     margin-left: 50px;
-
-    line-height: 31px;
+    line-height: 31px
 }
 
 header .top .top_c .search_box {
-    margin-top: -5px;
+    margin-top: -5px
 }
 
 header .top .top_c form {
     position: relative;
-
     width: 300px;
     height: 30px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
-header .top .top_c input,
-header .top .top_c button {
+header .top .top_c input,header .top .top_c button {
     border: none;
-    outline: none;
+    outline: none
 }
 
 header .top .top_c input {
     width: 100%;
     height: 42px;
-    padding-left: 13px;
+    padding-left: 13px
 }
 
 header .top .top_c button {
     position: absolute;
-
     width: 42px;
     height: 31px;
-
-    cursor: pointer;
+    cursor: pointer
 }
 
 header .top .top_c .search_box form {
-    height: 31px;
+    height: 31px
 }
 
 header .top .top_c .search_box input {
     float: right;
     width: 250px;
     height: 31px;
-
     transition: .3s linear;
-
     border-radius: 42px;
-    background: #f9f0da;
+    background: #f9f0da
 }
 
 header .top .top_c .search_box input:focus {
-    width: 300px;
+    width: 300px
 }
 
 header .top .top_c .search_box button {
     top: -2px;
     right: 0;
-
-    background: none;
+    background: none
 }
 
 header .top .top_c .search_box button:before {
     font-family: FontAwesome;
-
     content: "\f002";
-
-    color: #324b4e;
+    color: #324b4e
 }
 
 header .top .shuang_m1 .top_r {
     float: right;
-    margin-top: 47px;
+    margin-top: 47px
 }
 
 header .top .shuang_m1 a {
-    display: inline-block;
+    display: inline-block
 }
 
 header .top .shuang_m1 .top_r span {
     position: relative;
     top: -4px;
-
-    color: #7c7c7c;
+    color: #7c7c7c
 }
 
 header .top .shuang_m1 .top_r i {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-right: 6px;
+    margin-right: 6px
 }
 
 header .top .shuang_m1 .top_r .pad_r {
-    padding-right: 9px;
+    padding-right: 9px
 }
 
 header .top .shuang_m1 .top_r .pad_l {
-    padding-left: 4px;
+    padding-left: 4px
 }
 
 header .top .shuang_m1 .tel {
-    background: url(//img.hzshuangmei.com/pc/xh_phone.png,qv=0.1.pagespeed.ic.19codryaAO.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/xh_phone.png,qv=0.1.pagespeed.ic.19codryaAO.png) no-repeat center
 }
 
 header .top .shuang_m1 .wbo {
-    background: url(//img.hzshuangmei.com/pc/h_weibo.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/h_weibo.png) no-repeat center
 }
 
 header .top .shuang_m1 .wxin {
-    background: url(//img.hzshuangmei.com/pc/h_weixin.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/h_weixin.png) no-repeat center
 }
 
 header .top .shuang_m1 .qq {
-    background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/h_qq.png) no-repeat center
 }
 
 ._CNav_link {
     width: 100%;
     height: 130px;
-
-    background: #fff;
+    background: #fff
 }
 
 ._CNav_N1 {
     width: 100%;
     height: 33px;
     overflow: hidden;
-
     line-height: 33px;
-
-    background: #eaeaea;
+    background: #eaeaea
 }
 
-._CNav_N1 > div {
+._CNav_N1>div {
     width: 1200px;
     height: 100%;
     padding-bottom: 2px;
     margin: 0 auto;
-
     font-size: 14px;
-
-    color: #999;
+    color: #999
 }
 
 ._CNav_NO {
-    float: left;
+    float: left
 }
 
-._CNav_NO > span {
+._CNav_NO>span {
     display: inline-block;
     height: 100%;
-
     opacity: 1;
-    color: #999;
+    color: #999
 }
 
-._CNav_link ._CNav_NO > span > a {
+._CNav_link ._CNav_NO>span>a {
     font-size: 13px;
-
-    color: #410e6b;
+    color: #410e6b
 }
 
 ._CNav_link ._CNav_TW {
     float: left;
-    margin-left: 30px;
+    margin-left: 30px
 }
 
-._CNav_TW > img {
+._CNav_TW>img {
     float: left;
     margin-top: 7px;
-    margin-right: 8px;
+    margin-right: 8px
 }
 
-._CNav_link ._CNav_TW > span {
-    color: #999;
+._CNav_link ._CNav_TW>span {
+    color: #999
 }
 
 ._CNav_link ._CNav_TH {
     float: right;
-
-    color: #999;
+    color: #999
 }
 
 ._CNav_link ._CNav_TH a {
-    color: #999;
+    color: #999
 }
 
 ._CNav_link ._CNav_TH a:hover {
-    color: #4d4d4d;
+    color: #4d4d4d
 }
 
 ._CNav_N2 {
     width: 1200px;
     height: 107px;
     margin: 0 auto;
-
-    background: #fff;
+    background: #fff
 }
 
 ._CNav_N2O {
     float: left;
-    margin-top: 25px;
+    margin-top: 25px
 }
 
 ._CNav_N2T {
     float: right;
-    margin-top: 31px;
+    margin-top: 31px
 }
 
 ._CNav_N2Th {
-    float: right;
+    float: right
 }
 
 ._CNav_div {
     position: relative;
-
     margin-top: 30px;
     margin-right: 30px;
     margin-bottom: 5px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 ._CNav_div2 {
     position: relative;
-
     font-size: 14px;
-
-    color: #999;
+    color: #999
 }
 
-._CNav_div2 > span {
+._CNav_div2>span {
     display: inline-block;
     margin-top: 0;
-    margin-right: 4px;
+    margin-right: 4px
 }
 
-._CNav_div2 > span > a {
-    color: #a5a5a5;
+._CNav_div2>span>a {
+    color: #a5a5a5
 }
 
-._CNav_div2 > span > a:hover {
-    color: #4d4d4d;
+._CNav_div2>span>a:hover {
+    color: #4d4d4d
 }
 
 ._CNav_link button {
@@ -403,43 +331,36 @@ header .top .shuang_m1 .qq {
     top: 0;
     right: 0;
     z-index: 2;
-
     width: 54px;
     height: 32px;
-
     cursor: pointer;
-
     color: #b5b5b5;
     border: none;
     background: none;
-    background: url(//img.hzshuangmei.com/pc/xser.jpg.pagespeed.ic.JsljxxL1et.jpg);
+    background: url(//img.hzshuangmei.com/pc/xser.jpg.pagespeed.ic.JsljxxL1et.jpg)
 }
 
 .sear {
     z-index: 11;
-
     display: block;
     float: right;
     width: 407px;
     height: 29px;
-
     text-indent: 4px;
-
     border: none;
     border: 1px solid #410e6b;
     outline: medium;
-    background: #fff;
+    background: #fff
 }
 
 #nav {
     width: 100%;
     height: 59px;
-
-    background-color: #410e6b;
+    background-color: #410e6b
 }
 
 .sy_nav {
-    background-color: #64b1e6!important;
+    background-color: #64b1e6!important
 }
 
 .fixed {
@@ -447,11 +368,9 @@ header .top .shuang_m1 .qq {
     top: 0;
     left: 0;
     z-index: 99999;
-
     width: 100%;
-
     animation: show;
-    animation-duration: .5s;
+    animation-duration: .5s
 }
 
 @keyframes show {
@@ -464,168 +383,152 @@ header .top .shuang_m1 .qq {
     }
 }
 
-#nav > ul {
-    display: flex;
+#nav>ul {
+    display: flex
 }
 
 #nav a {
-    display: block;
+    display: block
 }
 
-#nav > ul > li {
+#nav>ul>li {
     height: 59px;
-
-    flex: 1;
+    flex: 1
 }
 
-#nav > ul > li > a {
+#nav>ul>li>a {
     position: relative;
     top: 0;
-
     height: 41px;
     padding-top: 18px;
-
     line-height: 3px;
-
     text-align: center;
-
-    color: #fff;
+    color: #fff
 }
 
-#nav > ul > li > a span:first-child {
-    font-size: 18px;
+#nav>ul>li>a span:first-child {
+    font-size: 18px
 }
 
-#nav > ul > li > a span:last-child {
+#nav>ul>li>a span:last-child {
     font-size: 12px;
     line-height: 3.333;
-
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 #nav .bor_r {
-    border-right: 1px solid #360d57;
+    border-right: 1px solid #360d57
 }
 
 #nav .bor_l {
-    border-left: 1px solid #580d95;
+    border-left: 1px solid #580d95
 }
 
 #sy_nav_ul .bor_r {
-    border-right: 1px solid #5792bb!important;
+    border-right: 1px solid #5792bb!important
 }
 
 #sy_nav_ul .bor_l {
-    border-right: 1px solid #5792bb!important;
+    border-right: 1px solid #5792bb!important
 }
 
-#nav > ul > li #project {
+#nav>ul>li #project {
     position: absolute;
     z-index: 100;
-
     display: none;
     width: 1200px;
     height: 460px;
     margin-left: -400px;
-
     border: 1px solid #efebeb;
-    background-color: #fff;
+    background-color: #fff
 }
 
 #nav ul li:hover #project {
-    display: block;
+    display: block
 }
 
 .currnet {
     font-weight: bold;
-
-    background: #6a157d;
+    background: #6a157d
 }
 
 .sy_nav .currnet {
-    background: #5d819a!important;
+    background: #5d819a!important
 }
 
 .sy_currnet .currnet {
     font-weight: bold;
-
-    background: #6a157d!important;
+    background: #6a157d!important
 }
 
-#nav > ul > li:hover {
-    background: #6a157d;
+#nav>ul>li:hover {
+    background: #6a157d
 }
 
-.sy_nav > ul > li:hover {
-    background: #5d819a!important;
+.sy_nav>ul>li:hover {
+    background: #5d819a!important
 }
 
 #nav .nav_list:nth-child(5) span::before {
     position: absolute;
     top: 5px;
     right: 60px;
-
     width: 10px;
     height: 10px;
-
     content: "";
-
     border-radius: 50%;
-    background: #ef4550;
+    background: #ef4550
 }
 
 #project ul {
     float: left;
     width: 158px;
     margin-top: -2px;
-    margin-left: 12px;
+    margin-left: 12px
 }
 
 #project img {
     width: 152px;
     height: 86px;
     padding: 1px;
-
-    border: 1px solid #e7e7e7;
+    border: 1px solid #e7e7e7
 }
 
 #expert {
     position: absolute;
     z-index: 100;
-
     display: none;
     width: 1200px;
     height: 460px;
     margin: 0 auto 0;
     margin-left: -600px;
-
     border: 1px solid #efebeb;
-    background-color: #fff;
+    background-color: #fff
 }
 
 #expert a {
     width: 188px;
     height: 169px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 #expert .last-one {
     width: 342px;
-    height: 362px;
+    height: 362px
 }
 
 #expert img {
     width: 98%;
-    padding: 1px;
+    padding: 1px
 }
 
 #expert img:last-child {
     width: 340px;
-    height: 360px;
+    height: 360px
 }
 
 nav ul li:hover #expert {
-    display: block;
+    display: block
 }
 
 #expert ul {
@@ -633,36 +536,36 @@ nav ul li:hover #expert {
     width: 158px;
     margin-top: -2px;
     margin-right: 22px;
-    margin-left: 23px;
+    margin-left: 23px
 }
 
 .n_r {
-    color: #ac0000;
+    color: #ac0000
 }
 
 #expert .moon a {
     display: block;
-    width: 344px;
+    width: 344px
 }
 
 #project ul li {
-    padding-bottom: 15px;
+    padding-bottom: 15px
 }
 
-nav > ul > li ul li {
-    text-align: center;
+nav>ul>li ul li {
+    text-align: center
 }
 
-nav > ul > li ul li a p {
-    font-size: 12px;
+nav>ul>li ul li a p {
+    font-size: 12px
 }
 
-nav > ul > li #project > ul > li a p span {
-    color: #000;
+nav>ul>li #project>ul>li a p span {
+    color: #000
 }
 
 nav > ul > li #project > ul > li:nth-child(2) a p span {
-    color: #ac0000;
+    color: #ac0000
 }
 
 nav > ul > li #project > ul > li:nth-child(2) a p i {
@@ -670,27 +573,24 @@ nav > ul > li #project > ul > li:nth-child(2) a p i {
     width: 11px;
     height: 11px;
     padding-right: 5px;
-
     background: url(//img.hzshuangmei.com/pc/nav_star.png+f_address.png+f_phone.png+f_feather.png.pagespeed.is.Rc0pSjLoEg.png) no-repeat center;
-    background-position: 0 0;
+    background-position: 0 0
 }
 
-nav > ul > li ul li h5 {
+nav>ul>li ul li h5 {
     width: 158px;
     height: 23px;
     margin-top: 28px;
-
     font-size: 16px;
     font-weight: bold;
     line-height: 15px;
-
     color: #666;
-    border-bottom: 2px solid rgba(206,206,206,.8);
+    border-bottom: 2px solid rgba(206,206,206,.8)
 }
 
-nav > ul > li ul li h5 a {
+nav>ul>li ul li h5 a {
     display: block!important;
-    height: 18px!important;
+    height: 18px!important
 }
 
 .n_button {
@@ -698,19 +598,15 @@ nav > ul > li ul li h5 a {
     height: 12px;
     margin: 0 auto;
     margin-top: 15px;
-
     font-size: 12px;
-
     border: 1px solid #b992c2;
-    background-color: #6a157d;
+    background-color: #6a157d
 }
 
-nav > ul > li ul .n_button a {
+nav>ul>li ul .n_button a {
     width: 61px;
-
     line-height: 26px;
-
-    color: #fff;
+    color: #fff
 }
 
 #expert ul li {
@@ -719,287 +615,271 @@ nav > ul > li ul .n_button a {
     padding-bottom: 0;
     margin-top: -10px;
     margin-bottom: 31px;
-
-    border: 1px solid #e7e7e7;
+    border: 1px solid #e7e7e7
 }
 
 #expert ul li:first-child {
     height: 50px;
     padding-top: 5px;
     margin-bottom: 26px;
-
-    border: none;
+    border: none
 }
 
 #expert h5 {
-    width: 187px;
+    width: 187px
 }
 
 #expert .moon {
-    width: 344px;
+    width: 344px
 }
 
 #expert p {
     position: relative;
     top: -84px;
-
     width: 187px;
     height: 26px;
-
     line-height: 26px;
-
-    background-color: rgba(255,255,255,.502);
+    background-color: rgba(255,255,255,.502)
 }
 
 .n_f {
     padding-right: 8px;
-
     font-size: 14px;
-
-    color: #000;
+    color: #000
 }
 
 .n_b {
-    color: #000;
+    color: #000
 }
 
 .banner a {
-    display: block;
+    display: block
 }
 
-.banner > img {
-    vertical-align: bottom;
+.banner>img {
+    vertical-align: bottom
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: 100%
 }
 
 .banner .banner_swiper .swiper-slide img {
-    display: block;
+    display: block
 }
 
 .banner .banner-pagination .swiper-pagination-bullet {
     display: inline-block;
     width: 16px;
     height: 16px;
-
     opacity: 1;
     border-radius: 100%;
-    background: #dfdfdf;
+    background: #dfdfdf
 }
 
 .banner .banner-pagination .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #59277d;
+    background: #59277d
 }
 
 .sy_banner .banner-pagination .swiper-pagination-bullet-active {
-    background: #59277d!important;
+    background: #59277d!important
 }
 
 .index_items {
     height: 285px;
-
-    background-color: #f0f0f0;
+    background-color: #f0f0f0
 }
 
-.index_items .shuang_m1 > div {
+.index_items .shuang_m1>div {
     float: left;
     width: 298px;
     height: 222px;
-    margin-top: 35px;
+    margin-top: 35px
 }
 
 .index_items .shuang_m1 .border-r {
-    border-right: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1
 }
 
 .index_items .shuang_m1 .border-l {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #fff
 }
 
-.index_items .shuang_m1 > div span {
+.index_items .shuang_m1>div span {
     font-size: 18px;
-
-    color: #4f3d79;
+    color: #4f3d79
 }
 
-.index_items .shuang_m1 > div i {
+.index_items .shuang_m1>div i {
     display: block;
     width: 69px;
     height: 68px;
-    margin-top: 24px;
+    margin-top: 24px
 }
 
-.index_items .shuang_m1 > div:first-child i {
-    background: url(//img.hzshuangmei.com/pc/p5_01.png) no-repeat center;
+.index_items .shuang_m1>div:first-child i {
+    background: url(//img.hzshuangmei.com/pc/p5_01.png) no-repeat center
 }
 
 .index_items .shuang_m1 > div:nth-child(2) i {
-    background: url(//img.hzshuangmei.com/pc/p5_02.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/p5_02.png) no-repeat center
 }
 
 .index_items .shuang_m1 > div:nth-child(3) i {
-    background: url(//img.hzshuangmei.com/pc/p5_03.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/p5_03.png) no-repeat center
 }
 
-.index_items .shuang_m1 > div:last-child i {
-    background: url(//img.hzshuangmei.com/pc/p5_04.png) no-repeat center;
+.index_items .shuang_m1>div:last-child i {
+    background: url(//img.hzshuangmei.com/pc/p5_04.png) no-repeat center
 }
 
-.index_items .shuang_m1 > div .icon {
+.index_items .shuang_m1>div .icon {
     float: left;
     padding-top: 22px;
-    margin-left: 48px;
+    margin-left: 48px
 }
 
-.index_items .shuang_m1 > div ul {
+.index_items .shuang_m1>div ul {
     float: left;
     margin-left: 37px;
-
     font-size: 12px;
-    line-height: 24px;
+    line-height: 24px
 }
 
-.index_items .shuang_m1 > div ul a {
-    color: #593d79;
+.index_items .shuang_m1>div ul a {
+    color: #593d79
 }
 
-.index_items .shuang_m1 > div:first-child ul {
-    margin-top: 42px;
+.index_items .shuang_m1>div:first-child ul {
+    margin-top: 42px
 }
 
 .index_items .shuang_m1 > div:nth-child(2) ul {
-    margin-top: 12px;
+    margin-top: 12px
 }
 
 .index_items .shuang_m1 > div:nth-child(3) ul {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
-.index_items .shuang_m1 > div:last-child ul {
-    margin-top: 20px;
+.index_items .shuang_m1>div:last-child ul {
+    margin-top: 20px
 }
 
 .index_items_n {
     display: none;
     height: 274px;
-
-    background-color: #f0f0f0;
+    background-color: #f0f0f0
 }
 
-.index_items_n .shuang_m1 > div {
+.index_items_n .shuang_m1>div {
     float: left;
     width: 298px;
     height: 220px;
-    margin-top: 35px;
+    margin-top: 35px
 }
 
 .index_items_n .shuang_m1 .border-r {
-    border-right: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1
 }
 
 .index_items_n .shuang_m1 .border-l {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #fff
 }
 
-.index_items_n .shuang_m1 > div span {
+.index_items_n .shuang_m1>div span {
     font-size: 18px;
-
-    color: #4f3d79;
+    color: #4f3d79
 }
 
-.index_items_n .shuang_m1 > div i {
+.index_items_n .shuang_m1>div i {
     display: block;
     width: 69px;
     height: 68px;
     margin-top: 24px;
-    margin-bottom: 9px;
+    margin-bottom: 9px
 }
 
-.index_items_n .shuang_m1 > div:first-child i {
-    background: url(//img.hzshuangmei.com/pc/xp5_05.png.pagespeed.ic.gEdvfzCGWK.png) no-repeat center;
+.index_items_n .shuang_m1>div:first-child i {
+    background: url(//img.hzshuangmei.com/pc/xp5_05.png.pagespeed.ic.gEdvfzCGWK.png) no-repeat center
 }
 
 .index_items_n .shuang_m1 > div:nth-child(2) i {
-    background: url(//img.hzshuangmei.com/pc/xp5_06.png.pagespeed.ic.kaLCcBfZAp.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/xp5_06.png.pagespeed.ic.kaLCcBfZAp.png) no-repeat center
 }
 
 .index_items_n .shuang_m1 > div:nth-child(3) i {
-    background: url(//img.hzshuangmei.com/pc/xp5_07.png.pagespeed.ic.h7b-9Z701X.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/xp5_07.png.pagespeed.ic.h7b-9Z701X.png) no-repeat center
 }
 
-.index_items_n .shuang_m1 > div:last-child i {
-    background: url(//img.hzshuangmei.com/pc/xp5_08.png.pagespeed.ic.ZKiJtZljM8.png) no-repeat center;
+.index_items_n .shuang_m1>div:last-child i {
+    background: url(//img.hzshuangmei.com/pc/xp5_08.png.pagespeed.ic.ZKiJtZljM8.png) no-repeat center
 }
 
-.index_items_n .shuang_m1 > div .icon {
+.index_items_n .shuang_m1>div .icon {
     float: left;
     padding-top: 10px;
-    margin-left: 48px;
+    margin-left: 48px
 }
 
-.index_items_n .shuang_m1 > div ul {
+.index_items_n .shuang_m1>div ul {
     float: left;
     margin-left: 37px;
-
     font-size: 12px;
-    line-height: 24px;
+    line-height: 24px
 }
 
-.index_items_n .shuang_m1 > div ul a {
-    color: #593d79;
+.index_items_n .shuang_m1>div ul a {
+    color: #593d79
 }
-.index_items_n .shuang_m1 > div ul a:hover {
-    color: #000;
+
+.index_items_n .shuang_m1>div ul a:hover {
+    color: #000
 }
-.index_items_n .shuang_m1 > div:first-child ul {
-    margin-top: 35px;
+
+.index_items_n .shuang_m1>div:first-child ul {
+    margin-top: 35px
 }
 
 .index_items_n .shuang_m1 > div:nth-child(2) ul {
-    margin-top: 35px;
+    margin-top: 35px
 }
 
 .index_items_n .shuang_m1 > div:nth-child(3) ul {
-    margin-top: 35px;
+    margin-top: 35px
 }
 
-.index_items_n .shuang_m1 > div:last-child ul {
-    margin-top: 35px;
+.index_items_n .shuang_m1>div:last-child ul {
+    margin-top: 35px
 }
 
 #expert i {
     position: relative;
     top: -86px;
     left: 79px;
-
     display: block;
     width: 26px;
     height: 2px;
-
-    background-color: #8a5ea8;
+    background-color: #8a5ea8
 }
 
 footer {
     width: 100%;
     height: 398px;
-
     color: #fff;
-    background-color: #300a4e;
+    background-color: #300a4e
 }
 
 footer .left {
     float: left;
-    width: 600px;
+    width: 600px
 }
 
 footer .left h2 {
     padding-top: 49px;
     margin-left: 180px;
-
-    text-align: left;
+    text-align: left
 }
 
 footer .left i {
@@ -1007,43 +887,39 @@ footer .left i {
     width: 16px;
     height: 21px;
     margin-right: 5px;
-
     background: url(//img.hzshuangmei.com/pc/nav_star.png+f_address.png+f_phone.png+f_feather.png.pagespeed.is.Rc0pSjLoEg.png) no-repeat center;
-    background-position: 0 -11px;
+    background-position: 0 -11px
 }
 
 footer .left p {
     margin-left: 33px;
-
     font-size: 12px;
-    line-height: 25px;
+    line-height: 25px
 }
 
 footer .left .addr {
     margin: 20px 0 10px;
     margin-left: 24px;
-
-    font-size: 18px;
+    font-size: 18px
 }
 
 footer .middle {
     float: left;
     height: 206px;
     margin-top: 120px;
-
     border-right: 1px solid #55128d;
-    border-left: 1px solid #300a4e;
+    border-left: 1px solid #300a4e
 }
 
 footer .right {
     float: left;
     width: 570px;
     margin-top: 120px;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
-footer .right .right_t > div {
-    float: left;
+footer .right .right_t>div {
+    float: left
 }
 
 footer .right .right_t .ewm {
@@ -1051,43 +927,39 @@ footer .right .right_t .ewm {
     width: 105px;
     height: 107px;
     margin-right: 10px;
-
     background: url(//img.hzshuangmei.com/pc/xWeChatApplet.jpg.pagespeed.ic.GfIqr9G0eK.jpg) no-repeat center;
-    background-size: contain;
+    background-size: contain
 }
 
 footer .right .right_t .f_phone {
     width: 71px;
     height: 72px;
     margin: 7px 10px 0 28px;
-
     background: url(//img.hzshuangmei.com/pc/nav_star.png+f_address.png+f_phone.png+f_feather.png.pagespeed.is.Rc0pSjLoEg.png) no-repeat center;
-    background-position: 0 -32px;
+    background-position: 0 -32px
 }
 
-footer .right .right_t > div > div {
+footer .right .right_t>div>div {
     float: left;
-
     font-size: 12px;
-    line-height: 27px;
+    line-height: 27px
 }
 
-footer .right .right_t > div > div .fon1 {
-    font-size: 18px;
+footer .right .right_t>div>div .fon1 {
+    font-size: 18px
 }
 
-footer .right .right_t > div > div .fon2 {
-    font-size: 28px;
+footer .right .right_t>div>div .fon2 {
+    font-size: 28px
 }
 
-footer .right .right_t > div > div .fon3 {
-    font-size: 14px;
+footer .right .right_t>div>div .fon3 {
+    font-size: 14px
 }
 
 footer .right .right_b {
     margin-top: 30px;
-
-    line-height: 25px;
+    line-height: 25px
 }
 
 footer .right .right_b i {
@@ -1095,57 +967,52 @@ footer .right .right_b i {
     width: 12px;
     height: 16px;
     margin-right: 3px;
-
     background: url(//img.hzshuangmei.com/pc/nav_star.png+f_address.png+f_phone.png+f_feather.png.pagespeed.is.Rc0pSjLoEg.png) no-repeat center;
-    background-position: 0 -104px;
+    background-position: 0 -104px
 }
 
 footer .right .right_b span {
-    font-size: 16px;
+    font-size: 16px
 }
 
 footer .right .right_b a {
     margin: 0 6px;
-
     font-size: 12px;
-
-    color: #fff;
+    color: #fff
 }
 
 footer .humanstxt {
     position: relative;
-    top: 10px;
+    top: 10px
 }
 
 footer .left a {
-    color: #fff;
+    color: #fff
 }
 
 footer .copyright {
     padding-top: 22px;
-
-    color: #c1b6ca;
+    color: #c1b6ca
 }
 
 footer .copyright a {
-    color: #c1b6ca;
+    color: #c1b6ca
 }
 
 footer .copyright a:hover {
-    color: #ceb3e0;
+    color: #ceb3e0
 }
 
 footer .right1 {
-    margin-top: 150px;
+    margin-top: 150px
 }
 
 .yb_conct {
     position: fixed;
     right: -128px;
     z-index: 999999;
-
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all .3s ease
 }
 
 .yb_bar ul li {
@@ -1153,100 +1020,88 @@ footer .right1 {
     height: 56px;
     margin-bottom: 1px;
     overflow: hidden;
-
     font: 16px/53px "Microsoft YaHei";
-
     transition: all .5s ease;
     text-indent: 80px;
-
     color: #fff;
-    border-radius: 3px;
+    border-radius: 3px
 }
 
 .yb_bar .yb_QQ {
     text-indent: 0;
-
-    background: #7d64c3 url(//img.hzshuangmei.com/pc/chat.png) no-repeat;
+    background: #7d64c3 url(//img.hzshuangmei.com/pc/chat.png) no-repeat
 }
 
 .yb_bar .yb_phone {
-    background: #c364b2 url(//img.hzshuangmei.com/pc/info.png) no-repeat;
+    background: #c364b2 url(//img.hzshuangmei.com/pc/info.png) no-repeat
 }
 
 .yb_bar .yb_ercode {
-    background: #64a9c3 url(//img.hzshuangmei.com/pc/qrcode.png) no-repeat;
+    background: #64a9c3 url(//img.hzshuangmei.com/pc/qrcode.png) no-repeat
 }
 
 .yb_bar .yb_top {
-    background: #91c364 url(//img.hzshuangmei.com/pc/top.png) no-repeat;
+    background: #91c364 url(//img.hzshuangmei.com/pc/top.png) no-repeat
 }
 
 .hd_qr {
-    padding: 10px 29px 25px 30px;
+    padding: 10px 29px 25px 30px
 }
 
 .yb_QQ a {
     display: block;
     width: 100%;
     height: 100%;
-
     text-indent: 80px;
-
-    color: #fff;
+    color: #fff
 }
 
 .yb_phone a {
     display: block;
     width: 100%;
     height: 100%;
-
     text-indent: 80px;
-
-    color: #fff;
+    color: #fff
 }
 
 body .popup {
     border-radius: 10px;
-    background-color: transparent;
+    background-color: transparent
 }
 
 body .popup .layui-layer-content {
-    height: 385px!important;
+    height: 385px!important
 }
 
 body .popup .layui-layer-content img {
     display: block;
     width: 100%;
-
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 10px
 }
 
 body .popup .layui-layer-btn .layui-layer-btn0 {
     width: 120px;
     margin: 5px 15px 0;
-
     color: #999;
     border: 1px solid #cecece;
-    background-color: #fff;
+    background-color: #fff
 }
 
 body .popup .layui-layer-btn .layui-layer-btn1 {
     width: 120px;
     margin: 5px 15px 0;
-
     color: #7d64c3;
     border: 1px solid #cbbeef;
-    background-color: #fff;
+    background-color: #fff
 }
 
 body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 120px;
     margin: 5px 15px 0;
-
     color: #fff;
     border: 1px solid #dedede;
-    background-color: #7d64c3;
+    background-color: #7d64c3
 }
 
 @-moz-keyframes tada2 {
@@ -1254,21 +1109,15 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
         -moz-transform: scale(1);
     }
 
-    91%,
-    92% {
+    91%, 92% {
         -moz-transform: scale(.9) rotate(-3deg);
     }
 
-    93%,
-    95%,
-    97%,
-    99% {
+    93%, 95%, 97%, 99% {
         -moz-transform: scale(1.2) rotate(3deg);
     }
 
-    94%,
-    96%,
-    98% {
+    94%, 96%, 98% {
         -moz-transform: scale(1.2) rotate(-3deg);
     }
 
@@ -1282,21 +1131,15 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
         -webkit-transform: scale(1);
     }
 
-    91%,
-    92% {
+    91%, 92% {
         -webkit-transform: scale(.9) rotate(-3deg);
     }
 
-    93%,
-    95%,
-    97%,
-    99% {
+    93%, 95%, 97%, 99% {
         -webkit-transform: scale(1.2) rotate(3deg);
     }
 
-    94%,
-    96%,
-    98% {
+    94%, 96%, 98% {
         -webkit-transform: scale(1.2) rotate(-3deg);
     }
 
@@ -1310,32 +1153,27 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     right: 20px;
     bottom: 20px;
     z-index: 998;
-
     width: 200px;
-
     -webkit-animation: tada2 10s -9s ease both infinite;
-    -moz-animation: tada2 10s -9s ease both infinite;
+    -moz-animation: tada2 10s -9s ease both infinite
 }
 
-.lazyload,
-.lazyloading {
-    opacity: 0;
+.lazyload,.lazyloading {
+    opacity: 0
 }
 
 .lazyloaded {
     transition: opacity 500ms;
-
-    opacity: 1;
+    opacity: 1
 }
 
 .Double_Eleven_Button {
     position: absolute;
     bottom: 14.5%;
     left: 50%;
-
     display: block;
     width: 10%!important;
-    height: 7%;
+    height: 7%
 }
 
 .Double_Eleven_Button_anima {
@@ -1343,65 +1181,53 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     -moz-animation: scaleAC 1.5s linear .3s infinite;
     -ms-animation: scaleAC 1.5s linear .3s infinite;
     -o-animation: scaleAC 1.5s linear .3s infinite;
-    animation: scaleAC 1.5s linear .3s infinite;
+    animation: scaleAC 1.5s linear .3s infinite
 }
 
 @-webkit-keyframes scaleAC {
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(.9);
-
         opacity: 1;
     }
 
     50% {
         transform: scale(1);
-
         opacity: 1;
     }
 }
 
 @-moz-keyframes scaleAC {
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(.9);
-
         opacity: 1;
     }
 
     50% {
         transform: scale(1);
-
         opacity: 1;
     }
 }
 
 @-o-keyframes scaleAC {
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(.9);
-
         opacity: 1;
     }
 
     50% {
         transform: scale(1);
-
         opacity: 1;
     }
 }
 
 @keyframes scaleAC {
-    0%,
-    100% {
+    0%, 100% {
         transform: scale(.9);
-
         opacity: 1;
     }
 
     50% {
         transform: scale(1);
-
         opacity: 1;
     }
 }
@@ -1409,230 +1235,209 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 #k_s_ol_inviteWin {
     display: block!important;
     margin-top: -192.5px!important;
-    margin-left: -300px!important;
+    margin-left: -300px!important
 }
 
 #howdy {
     font-size: 17px;
-
-    color: #f8e7db;
+    color: #f8e7db
 }
 
 #howdy span#heading {
     font-size: 18px;
     font-weight: bold;
-
-    color: #fff;
+    color: #fff
 }
 
 #howdy small {
     font-size: 12px;
-
-    color: #f8e7db;
+    color: #f8e7db
 }
 
 #howdy a {
-    color: #fff;
+    color: #fff
 }
 
 #howdy a:link {
-    color: #fff;
+    color: #fff
 }
 
 #howdy a:visited {
-    color: #fff;
+    color: #fff
 }
 
 .howdydo-style {
     text-align: center;
-
     border-bottom: #999 0 solid;
-    background-color: #ea3333;
+    background-color: #ea3333
 }
 
 #howdydo-wrapper {
     position: relative;
     z-index: 1000;
-
     width: 100%;
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    overflow: visible;
+    overflow: visible
 }
 
 .howdydo-box {
     z-index: 9999;
-
     display: none;
     width: 100%;
     padding-top: 10px;
     padding-right: 0;
     padding-bottom: 15px;
-    padding-left: 0;
+    padding-left: 0
 }
 
 #howdydo-close {
     position: absolute;
     right: 30px;
-    bottom: 10px;
+    bottom: 10px
 }
 
 #howdydo-open {
     position: absolute;
     top: 0;
     right: 20px;
-
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 10px
 }
 
 .howdydo-hover {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0
 }
 
 .howdydo-scroll {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0
 }
 
 .howdydo-push {
     position: relative;
-
     float: left;
     margin-bottom: 1px;
-    clear: both;
+    clear: both
 }
 
 #div3 {
     top: 333px!important;
-    left: 331px!important;
+    left: 331px!important
 }
 
 #div36 {
     left: 448px!important;
-
-    width: 122px!important;
+    width: 122px!important
 }
 
 .list_information_nav li.currnet4 {
-    background: #6a157d;
+    background: #6a157d
 }
 
 .list_information_nav li.currnet4 a {
-    color: #fff;
+    color: #fff
 }
 
 #nav .nav_list:nth-child(5) span::before {
     position: absolute;
     top: 5px;
     right: 44px;
-
     width: 10px;
     height: 10px;
-
     content: "";
-
     border-radius: 50%;
-    background: #ef4550;
+    background: #ef4550
 }
 
 #information {
     position: absolute;
     z-index: 100;
-
     display: none;
     width: 1200px;
     height: 503px;
     margin-left: -1000px;
-
     border: 1px solid #efebeb;
-    background-color: #fff;
+    background-color: #fff
 }
 
 #nav ul li:hover #information {
-    display: block;
+    display: block
 }
 
 .information_con1 {
     width: 810px;
     margin-top: 58px;
-    margin-left: 47px;
+    margin-left: 47px
 }
 
-.information_con1 > ul {
+.information_con1>ul {
     position: relative;
-
-    height: 18px;
+    height: 18px
 }
 
-.information_con1 > ul > li {
-    float: left;
+.information_con1>ul>li {
+    float: left
 }
 
 .information_zx {
     margin-right: 0!important;
-
     font-size: 18px;
     font-weight: bold;
-
-    color: #4d4d4d;
+    color: #4d4d4d
 }
 
 .information_zx span {
     margin: 0 34px 0 13px;
-
-    color: #999;
+    color: #999
 }
 
 .information_zx {
-    width: auto!important;
+    width: auto!important
 }
 
 .information_con1 li {
     height: 17px;
     min-width: 64px;
     margin-right: 27px;
-
     line-height: 17px;
-
-    text-align: center;
+    text-align: center
 }
 
 .information_con1 li a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .information_con1 li a:hover {
-    color: #410e6b;
+    color: #410e6b
 }
 
 .information_con1 {
-    overflow: hidden;
+    overflow: hidden
 }
 
-.information_con1 > ul {
-    margin-bottom: 38px;
+.information_con1>ul {
+    margin-bottom: 38px
 }
 
 .list_information {
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .list_information_nav {
     width: 1072px;
     height: 40px;
     margin: auto;
-
-    line-height: 40px;
+    line-height: 40px
 }
 
 .list_information_nav li {
@@ -1640,279 +1445,243 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 150px;
     height: 100%;
     margin-left: 3px!important;
-
-    background: #eae8ea;
+    background: #eae8ea
 }
 
 .list_information_nav li:nth-of-type(1) {
-    margin-left: 0!important;
+    margin-left: 0!important
 }
 
 .list_information_nav li a {
     display: block;
     width: 100%;
     height: 100%;
-
     font-size: 18px;
-
     text-align: center;
-
-    color: #6a157d;
+    color: #6a157d
 }
 
 .active_infor_List {
     color: #fff!important;
-    background: #6a157d;
+    background: #6a157d
 }
 
 .list_information_nav li:hover {
-    background: #6a157d;
+    background: #6a157d
 }
 
-.list_information_nav li > a:hover {
-    color: #fff!important;
+.list_information_nav li>a:hover {
+    color: #fff!important
 }
 
 .information_tag span {
     display: inline-block;
     padding: 2px 8px;
     margin-right: 20px;
-
     cursor: pointer;
-
     color: #fff;
     border-radius: 6px;
-    background: #c2c7f5;
+    background: #c2c7f5
 }
 
-.information_tag span > a {
+.information_tag span>a {
     display: inline-block;
     width: 100%;
     height: 100%;
-
-    color: #fff;
+    color: #fff
 }
 
 .information_tag {
     margin-top: 20px;
-    margin-left: 43px;
+    margin-left: 43px
 }
 
 .information_right {
     position: absolute;
     top: 34px;
     right: 23px;
-
     width: 226px;
     height: 439px;
-
     border: 1px solid #f2f2f2;
-    box-shadow: 3px 4px 13px rgba(224,224,224,.24);
+    box-shadow: 3px 4px 13px rgba(224,224,224,.24)
 }
 
-.information_right > ul > li {
+.information_right>ul>li {
     position: relative;
-
     width: 201px;
     height: 118px;
     margin: auto;
-    margin-bottom: 13px;
+    margin-bottom: 13px
 }
 
-.information_right > ul > li > img {
+.information_right>ul>li>img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
-.information_right > ul > li > a > img {
+.information_right>ul>li>a>img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
-.information_right > ul > li > a > span {
+.information_right>ul>li>a>span {
     position: absolute;
     bottom: 0;
-
     display: block;
     width: 100%;
     height: 22px;
     overflow: hidden;
-
     line-height: 22px;
-
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
-
-    background: rgb(65,14,107,.7);
+    background: rgba(65,14,107,.7)
 }
 
-.information_right > ul > li > a {
+.information_right>ul>li>a {
     display: block;
     width: 100%;
     height: 100%;
-
-    color: #fff;
+    color: #fff
 }
 
 .information_right > ul > li:nth-of-type(1) {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .list_information {
     width: 1200px;
-    height: 200px;
+    height: 200px
 }
 
 .list_information_nav li {
     margin: 0 0!important;
-
-    border-bottom: none!important;
+    border-bottom: none!important
 }
 
 .information_content h3 {
     margin: 30px 0 1px;
-
-    border-bottom: none!important;
+    border-bottom: none!important
 }
 
 .information_content .news_main {
     position: relative;
-
     width: 856px;
     padding-left: 21px;
     margin-top: 50px!important;
     margin-top: 50px!important;
     margin-bottom: 150px;
-
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31)
 }
 
 .news_content .news_main .i3T {
     position: relative;
     top: 2px;
-
     display: inline-block;
     width: 14px;
     height: 14px;
     margin-right: 5px;
-
     background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
-    background-position: 0 -37px;
+    background-position: 0 -37px
 }
 
 .information_content {
-    position: relative;
+    position: relative
 }
 
 .information_content ul li {
-    position: relative;
+    position: relative
 }
 
 .information_content .date {
     position: absolute;
     top: 16px;
-    right: 0;
+    right: 0
 }
 
 .information_content ul li h4 {
-    width: 385px!important;
+    width: 385px!important
 }
 
 .list_infor_tag a {
     display: inline-block;
     padding: 1px 6px;
     margin-right: 16px;
-
     font-size: 14px;
-
     cursor: pointer;
-
-    border-radius: 6px;
+    border-radius: 6px
 }
 
 .list_infor_tag a:hover {
     color: #fff!important;
-    background: #c2c7f5;
+    background: #c2c7f5
 }
 
-.news_content > .news_main > p {
+.news_content>.news_main>p {
     width: 1px;
     height: 36px;
     margin-top: 29px;
-
-    background: #d5cfe5;
+    background: #d5cfe5
 }
 
 .infor_Btitle {
     position: absolute;
     top: 24px;
     left: 31px;
-
     font-size: 24px;
-
-    color: #693290;
+    color: #693290
 }
 
 .infor_infotitle {
     position: absolute;
-
     font-size: 10px;
-
-    color: #d5cfe5;
+    color: #d5cfe5
 }
 
 .infor_infotitle {
     position: absolute;
     top: 53px;
     left: 32px;
-
     font-size: 10px;
-
-    color: #d5cfe5;
+    color: #d5cfe5
 }
 
 .list_infor_tag {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .information_content .ns_pa {
     position: relative;
-
-    margin: 55px auto 59px!important;
+    margin: 55px auto 59px!important
 }
 
 .infor_right {
-    width: 306px;
+    width: 306px
 }
 
 .pro1 {
     position: absolute;
     top: 90px;
     right: 0;
-
     display: block;
     width: 282px;
     height: 164px;
     padding: 12px 13px;
-
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31)
 }
 
 .pro2 {
     position: absolute;
     top: 288px;
     right: 0;
-
     width: 306px;
     height: 544px;
-
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31)
 }
 
 .pro2Line {
@@ -1920,39 +1689,34 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     height: 31px;
     margin-top: 31px;
     margin-left: 18px;
-
-    background: #d5cfe5;
+    background: #d5cfe5
 }
 
-.pro2 > span {
+.pro2>span {
     position: absolute;
     top: 27px;
     left: 0;
     left: 24px;
-
     font-size: 18px;
-
-    color: #693290;
+    color: #693290
 }
 
 .pro2_info {
     position: absolute;
     top: 49px;
     left: 25px;
-
     font-size: 10px;
-
-    color: #d5cfe5;
+    color: #d5cfe5
 }
 
 .typeIdRight {
-    display: none;
+    display: none
 }
 
 .pro2_tag {
     margin-top: 27px;
     margin-left: 18px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .pro2_tag li {
@@ -1960,25 +1724,22 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 124px;
     margin: 0 20px 17px 0!important;
     overflow: hidden;
-
     white-space: nowrap;
     text-overflow: ellipsis;
-
-    border-bottom: none!important;
+    border-bottom: none!important
 }
 
-.pro2_tag li > a {
-    color: #666!important;
+.pro2_tag li>a {
+    color: #666!important
 }
 
-.pro2_tag li > a:hover {
+.pro2_tag li>a:hover {
     text-decoration: underline;
-
-    color: #693290!important;
+    color: #693290!important
 }
 
-.pro2_tag li > a > span:hover {
-    text-decoration: underline;
+.pro2_tag li>a>span:hover {
+    text-decoration: underline
 }
 
 .pro2_tag li > a > span:nth-of-type(1) {
@@ -1986,20 +1747,17 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 12px;
     height: 12px;
     margin-right: 8px;
-
     font-size: 12px;
     line-height: 10px;
-
     text-align: center;
-
     color: #fff;
-    background: #d5cfe5;
+    background: #d5cfe5
 }
 
-.pro3 > li > a {
+.pro3>li>a {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
 .pro3 > li > a > span:nth-of-type(1) {
@@ -2007,11 +1765,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     right: 0;
     bottom: 0;
     left: 0;
-
     height: 30px;
-
     opacity: .4;
-    background: #2d014c;
+    background: #2d014c
 }
 
 .pro3 > li > a > span:nth-of-type(2) {
@@ -2019,174 +1775,233 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     right: 0;
     bottom: 0;
     left: 0;
-
     height: 30px;
-
     line-height: 30px;
-
     text-align: center;
-
-    color: #fff;
+    color: #fff
 }
 
 .actvie_T {
-    background: #f6a7b6!important;
+    background: #f6a7b6!important
 }
 
 .actvie_T a {
-    color: #fff!important;
+    color: #fff!important
 }
 
 .actvie_Th {
-    background: #b17e6b!important;
+    background: #b17e6b!important
 }
 
 .actvie_Th a {
-    color: #f6a7b6!important;
+    color: #f6a7b6!important
 }
 
 .infors_main_T ul li p span {
-    color: #8c64a0!important;
+    color: #8c64a0!important
 }
 
 .infors_main_Th ul li p span {
-    color: #8c64a0!important;
+    color: #8c64a0!important
 }
 
-.information_con1 > ul > span {
+.information_con1>ul>span {
     position: absolute;
     right: 0;
     bottom: -16px;
     z-index: 112;
-
     display: block;
     width: 674px;
+    border-bottom: 1px dashed #e5e5e5
+}
 
-    border-bottom: 1px dashed #e5e5e5;
-}
-/* 项目列表页测试样式 */
 #ptab2_n ul li:first-child {
-    /* background: none; */
 }
+
 #ptab2_n {
-    width: 1200px;
+    width: 1200px
 }
-#ptab2_n > ul {
-    float: left;
+
+#ptab2_n>ul {
+    float: left
 }
+
 #project_nav_n {
-    width: 998px;
+    width: 998px
 }
+
 .proTop {
     float: left;
     width: 199px;
     height: 100%;
     height: 105px;
-
     text-align: center;
-
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     border-left: 1px solid #e7e7e7;
-    background: #f5f5f5;
+    background: #f5f5f5
 }
-.proTop > span {
+
+.proTop>span {
     display: block;
     margin-top: 17px;
-
     font-size: 18px;
+    color: #000
+}
 
-    color: rgb(0,0,0);
-}
-#ptab2_n ul li:nth-of-type(1),
-#ptab2_n ul li:nth-of-type(2),
-#ptab2_n ul li:nth-of-type(3),
-#ptab2_n ul li:nth-of-type(4),
-#ptab2_n ul li:nth-of-type(5) {
+#ptab2_n ul li:nth-of-type(1), #ptab2_n ul li:nth-of-type(2), #ptab2_n ul li:nth-of-type(3), #ptab2_n ul li:nth-of-type(4), #ptab2_n ul li:nth-of-type(5) {
     border-bottom: none;
-    border-left: none;
+    border-left: none
 }
-#ptab2_n ul li:nth-of-type(6),
-#ptab2_n ul li:nth-of-type(7),
-#ptab2_n ul li:nth-of-type(8),
-#ptab2_n ul li:nth-of-type(9),
-#ptab2_n ul li:nth-of-type(10) {
-    border-left: none;
+
+#ptab2_n ul li:nth-of-type(6), #ptab2_n ul li:nth-of-type(7), #ptab2_n ul li:nth-of-type(8), #ptab2_n ul li:nth-of-type(9), #ptab2_n ul li:nth-of-type(10) {
+    border-left: none
 }
+
 #ptab2_n ul li {
     width: 198px;
     height: 52px;
     overflow: hidden;
-
     cursor: pointer;
+    border: 1px solid #e7e7e7
+}
 
-    border: 1px solid #e7e7e7;
-}
 #ptab2_n ul li a {
-    height: 100%;
+    height: 100%
 }
+
 #project_con1 {
-    clear: both;
+    clear: both
 }
-#project_con1 > div {
-    float: left;
+
+#project_con1>div {
+    float: left
 }
-#project_con1 .pro_conT > li {
+
+#project_con1 .pro_conT>li {
     float: left;
     width: 139px;
-    margin-right: 59px;
+    margin-right: 56px;
+    position: relative
 }
-#pro_conT li a:hover{
-    color: #6e3693;
+
+#pro_conT li a:hover {
+    color: #6e3693
 }
+
 .pro_con1_con1 {
     width: 200px;
     height: 179px;
-
     text-align: center;
-
     border-top: 1px solid #e7e7e7;
     border-left: 1px solid #e7e7e7;
-    background: rgb(245,245,245);
+    background: #f5f5f5
 }
-.pro_con1_con1 > span {
+
+.pro_con1_con1>span {
     display: block;
     margin-top: 23px;
-
     font-size: 18px;
+    color: #000
+}
 
-    color: rgb(0,0,0);
-}
 #ptab2_n {
-    clear: both;
+    clear: both
 }
+
 #pro_01 {
-    padding-top: 70px;
+    padding-top: 70px
 }
+
 .pro_con1_con2 {
-    /*border: 1px solid red;*/
     width: 993px;
     height: 179px;
-
     border-top: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7
 }
+
 .pro_conT {
     margin-top: 28px;
     margin-left: 39px;
+    overflow: hidden
+}
+
+.pro_conT>li a {
+    font-size: 18px;
+    color: #434343
+}
+
+.pro_conT>li>span {
+    position: absolute;
+    display: block;
+    top: 3px;
+    right: 0;
+    width: 22px;
+    height: 21px;
     overflow: hidden;
 }
-.pro_conT > li a {
-    font-size: 18px;
 
-    color: rgb(67,67,67);
+.pro_conT li:nth-of-type(1) span {
+    background: url(//img.hzshuangmei.com/pc/xpro_zx_t.png.pagespeed.ic.XhsdgGaAMi.png) center center;
 }
+.pro_conT li:nth-of-type(1):hover span{
+    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png.pagespeed.ic.XhsdgGaAMi.png);
+}
+.pro_conT li:nth-of-type(2) span {
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t.png.pagespeed.ic.sIHrgdeYic.png)
+}
+.pro_conT li:nth-of-type(2):hover span{
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png.pagespeed.ic.sIHrgdeYic.png)
+}
+
+.pro_conT li:nth-of-type(3) span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t.png.pagespeed.ic.Ury_k7DyJT.png)
+}
+.pro_conT li:nth-of-type(3):hover span{
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png.pagespeed.ic.Ury_k7DyJT.png);
+    top:1.5px;
+}
+.pro_conT li:nth-of-type(4) span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr.png.pagespeed.ic.Mic8SwGgoV.png) center center;
+    padding-top:0.5px;
+}
+.pro_conT li:nth-of-type(4):hover span{
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr_act.png.pagespeed.ic.Mic8SwGgoV.png) center center;
+}
+.pro_conT li:nth-of-type(5) span {
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t.png.pagespeed.ic.UPRp-NjkgP.png)
+}
+.pro_conT li:nth-of-type(5):hover span{
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png.pagespeed.ic.UPRp-NjkgP.png)
+}
+.pro_conT li:nth-of-type(1).conT span {
+    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png.pagespeed.ic.RK-RMdt_Dv.png)
+}
+
+.pro_conT li:nth-of-type(2).conT span {
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png.pagespeed.ic.hvMeLjSTWj.png)
+}
+
+.pro_conT li:nth-of-type(3).conT span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png.pagespeed.ic.peQ-LrtelP.png)
+}
+
+.pro_conT li:nth-of-type(4).conT span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr_act.png.pagespeed.ic.F0m2dheBqO.png)
+}
+
+.pro_conT li:nth-of-type(5).conT span {
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png.pagespeed.ic.PMs6zQCCyn.png)
+}
+
 .pro_con1_con2_1 {
-    background: rgb(245,242,254);
+    background: #f5f2fe
 }
+
 .pro_conT .pro_conTLast {
-    margin-right: 0!important;
+    margin-right: 0!important
 }
+
 .pro_con1_con2_1 {
     position: relative;
     display: none;
@@ -2194,99 +2009,116 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     padding-top: 21px;
     padding-bottom: 25px;
     padding-left: 24px;
-    /* overflow: hidden; */
     margin-top: 16px;
     margin-left: 41px;
     clear: both;
-    background: rgb(245,242,254);
+    background: #f5f2fe;
+    width: 894px
 }
-.pro_con1_con2_1 > li {
+
+.pro_con1_con2_1>li {
     position: relative;
     float: left;
     margin-right: 47px;
-    line-height: 27px;
-    /* padding: 6px 0px; */
+    line-height: 27px
 }
-.pro_con1_con2_1 > p {
+
+.pro_con1_con2_1>p {
     position: absolute;
     top: -6px;
-
     width: 0;
     height: 0;
-
     border-right: 7px solid transparent;
-    border-bottom: 7px solid rgb(241,236,254);
-    border-left: 7px solid transparent;
+    border-bottom: 7px solid #f1ecfe;
+    border-left: 7px solid transparent
 }
-.pro_conT > li > a:hover {
-    color: rgb(110,54,147);
-}
-.pro_con1_con2_1 > li > a:hover {
-    text-decoration: none;
-    color: rgb(110,54,147);
-}
-.pro_pr {
-    display: block;
-}
-.pro_con1_con2_2 > p {
-    left: 243px;
-}
-.pro_con1_con2_3 > p {
-    left: 440px;
-}
-.pro_con1_con2_4 > p {
-    left: 640px;
-}
-.pro_con1_con2_5 > p {
-    left: 840px;
-}
-.pro_conT > li.conT a{
-    color: rgb(110,54,147);
-}
-.pro_conT > li a.conT {
-    color: rgb(110,54,147);
-}
-#ptab2_n .currnet2_n {background: #8150a1;/* border-right: none; */}
-#ptab2_n .currnet2_n a{
-    color: #fff;
 
+.pro_conT>li>a:hover {
+    color: #6e3693
+}
+
+.pro_con1_con2_1>li>a:hover {
+    text-decoration: none;
+    color: #6e3693
+}
+
+.pro_pr {
+    display: block
+}
+
+.pro_con1_con2_2>p {
+    left: 243px
+}
+
+.pro_con1_con2_3>p {
+    left: 440px
+}
+
+.pro_con1_con2_4>p {
+    left: 640px
+}
+
+.pro_con1_con2_5>p {
+    left: 840px
+}
+
+.pro_conT>li.conT a {
+    color: #6e3693
+}
+
+.pro_conT>li a.conT {
+    color: #6e3693
+}
+
+#ptab2_n .currnet2_n {
+    background: #8150a1
+}
+
+#ptab2_n .currnet2_n a {
+    color: #fff
 }
 
 .project_content #ptab2_n li {
     float: left;
-
     font-size: 18px;
     line-height: 52px;
-
-    text-align: center;
+    text-align: center
 }
+
 .project_content #ptab2_n li:hover {
     color: #fff;
-    background: #8150a1;
+    background: #8150a1
 }
+
 .project_content #ptab2_n li:hover {
-    background: #8150a1;
+    background: #8150a1
 }
-.project_content #ptab2_n li:hover a{
-    color:#fff;
+
+.project_content #ptab2_n li:hover a {
+    color: #fff
 }
-.pro_con1_con2_act{
-    color: rgb(110,54,147);
+
+.pro_con1_con2_act {
+    color: #6e3693;
     font-size: 15px;
-    border-bottom: 1px solid rgb(110,54,147);
+    border-bottom: 1px solid #6e3693
 }
-.pro_con1_con2_act a{
-    color: rgb(110,54,147);
+
+.pro_con1_con2_act a {
+    color: #6e3693;
     font-size: 15px;
     text-decoration: underline;
-    text-decoration: none;
-    /* border-bottom:1px solid rgb(110,54,147); */
-    /* line-height:40px; */
+    text-decoration: none
 }
-.pro_con1_con2_1 a{
-    /* padding:6px 0px; */
-    display:block;
+
+.pro_con1_con2_1 a {
+    display: block
 }
-#pro_con1_con2>.pro_con1_con2_1>li.hoverClass{
-    border-bottom: 1px solid rgb(110,54,147);
+
+#pro_con1_con2>.pro_con1_con2_1>li.hoverClass {
+    border-bottom: 1px solid #6e3693
+}
+
+.pro_con1_con2_1 li:hover {
+    border-bottom: 1px solid #6e3693
 }

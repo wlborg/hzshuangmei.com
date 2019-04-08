@@ -1029,3 +1029,12 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
         opacity: 1;
     }
 }
+#div4{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    cursor: pointer;
+    line-height: 0px;
+}
