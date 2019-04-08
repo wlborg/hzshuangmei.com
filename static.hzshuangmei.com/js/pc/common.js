@@ -246,7 +246,7 @@ var effects = (
             });
             var selector = "." + curClassname;
             if (!$(ulClassname).find(selector).length) {
-                $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
+                // $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
             }
         };
         module.showCaseBigImage = function(modalClassName, imgSelectorName) {
