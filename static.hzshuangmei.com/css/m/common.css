@@ -343,7 +343,8 @@ body {
     color: #afa7b6;
 }
 body {
-    padding-bottom: 2.4rem !important;
+    /*padding-bottom: 2.4rem !important;*/
+    padding-bottom: 1rem !important;
 }
 .footer {
     position: fixed;

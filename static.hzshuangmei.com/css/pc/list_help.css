@@ -1,0 +1,235 @@
+.m1 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.location {
+    margin: 19px 8px 6px 29px
+}
+.location i {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url(//img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
+    background-position: 0 0
+}
+.location span {
+    font-size: 14px;
+    color: #9d85c1
+}
+
+.location a {
+    font-size: 12px;
+    color: #696969
+}
+
+.line {
+    width: 1199px;
+    height: 7px;
+    background: url(//img.hzshuangmei.com/pc/home.png+line.png+ns_02.png+ns_03.png+share_011.png.pagespeed.is.P2ekrn8epB.png) no-repeat center;
+    background-position: 0 -16px
+}
+
+.help_main{
+    width: 604px;
+    position: relative;
+    padding-left: 31px;
+    padding-right:  31px;
+    margin-bottom: 150px;
+    height: 2000px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.help_main>li{
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    background: #f2f2ff;
+}
+.help_main>li>div>h4{
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-indent: 77px;
+    background: #fff;
+}
+.help_main>li>div>h4>img{
+    position: absolute;
+    left: 0px;
+    top: 26px;
+    left: 32px;
+}
+.help_main>li>div>h4>a{
+    color: rgb(110,99,168);
+    font-size: 18px;
+}
+.help_content>.help_main>p {
+    width: 1px;
+    height: 36px;
+    margin-top: 29px;
+    background: #d5cfe5;
+}
+.help_content ul li{
+    margin: 28px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.help_content ul li{
+    margin: 28px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.help_main>li>div>p{
+    padding-top: 29px;
+    position: relative;
+    margin-right: 27px;
+}
+.help_main>li>div>p>img{
+    position: absolute;
+    left: 33px;
+    top: 39px;
+}
+.help_main>li>div{
+    position: relative;
+}
+.help_main>li>div>p>a{
+    color: rgb(102,102,102);
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 75px;
+    display: block;
+}
+.help_main>li>div>span:nth-of-type(1) {
+    display: block;
+    color: rgb(189,189,189);
+    font-size: 12px;
+    width: 67px;
+    margin-left: 73px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+}
+.help_main>li>div>span:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    background: rgb(110,99,168);
+    border-radius: 5px;
+    color: #fff;
+    width: 77px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    right: 27px;
+    bottom: -3px;
+    cursor: pointer;
+}
+.help_left{
+    height: 500px;
+    width: 192px;
+    border: 1px solid rgb(242,242,242);
+    margin-right:  15px;
+    position: relative;
+    box-shadow: 0 5px 13px rgba(224,224,224,0.31);
+}
+.help_content{
+    overflow: hidden;
+}
+.help_content>ul{
+    float: left;
+}
+.help_left>p{
+    width: 1px;
+    height: 36px;
+    margin-top: 29px;
+    margin-left: 14px;
+    background: #d5cfe5;
+}
+.help_left .help_Btitle{
+    position: absolute;
+    top: 24px;
+    left: 31px;
+    font-size: 24px;
+    color: #693290;
+}
+.help_left .help_infotitle{
+    position: absolute;
+    top: 53px;
+    left: 32px;
+    font-size: 10px;
+    color: #d5cfe5;
+}
+.help_main .ns_pa {
+    position: relative;
+    margin: 55px auto 59px!important
+}
+.help_main .ns_pa>ul{
+    float: right;
+    margin-left:  0px;
+}
+.help_main .pagination>li {
+    float: left;
+    padding: 8px 14px;
+    margin: 5px;
+    border: 1px solid #e6e6e6;
+}
+.help_main_Btitle{
+    position: absolute;
+    top: 24px;
+    left: 41px;
+    font-size: 22px;
+    color: #693290;
+}
+.help_main_infotitle{
+    position: absolute;
+    top: 53px;
+    left: 42px;
+    font-size: 10px;
+    color: #d5cfe5;
+}
+.pro2 {
+    top: 63px;
+}
+.pro3 {
+    position: absolute;
+    top: 858px;
+    right: 0;
+    width: 306px;
+    height: 537px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.pro3 li:nth-of-type(1) {
+    margin-top: 14px!important
+}
+
+.pro3>li {
+    position: relative;
+    width: 281px;
+    height: 164px;
+    margin: 10px auto 0!important;
+    cursor: pointer;
+    border-bottom: none!important
+}
+
+.pro3>li>a,.pro3>li>a>img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.pro3 > li > a > span:nth-of-type(1) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    opacity: .4;
+    background: #2d014c
+}
+
+.pro3 > li > a > span:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff
+}

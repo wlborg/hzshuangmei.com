@@ -6,11 +6,11 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330" as="script" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330"/>
-       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
-       <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_infos.css?v=20190330"/>
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_help.css" as="style" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css"/>
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_help.css" as="style" crossorigin />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -22,119 +22,175 @@
         <i></i><span>当前位置：</span>{dede:field name='position'/}
     </div>
     <div class="line"></div>
-    <h2 class="h2_tit">
-    </h2>
-    <div id="list_information news_banner" style="width: 1200px;height: 200px;cursor: pointer;">
-        {dede:myad name='infospic_pc'/}
-    </div>
-    <div class="news_content information_content">
-        <h3 id="news_nav">
-
-        </h3>
-        <ul class="list_information_nav" id="list_information_nav">
-       <li class="nav_list"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="nav_link" title="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
-        {dede:channel type='son' noself='yes'}<li><a href="[field:typeurl/]">[field:typename/]</a>
-        </li>
-         {/dede:channel}
-      </ul>
-        <ul class="news_main infors_main">
-             <p>&nbsp;</p>
-             <span class="infor_Btitle">{dede:field name="typename"/}资讯</span>
-             <span class="infor_infotitle">POPULAR PROJECT</span>
-            {dede:list pagesize='10' orderby='id' addfields="pc_list"}
-            <li class="clearFix">
-                <div>
-                    <a href="[field:arcurl/]"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]" ></a>
-                </div>
-                <div>
-                    <h4><i class="i1"></i><a href="[field:arcurl/]">[field:fulltitle function='cn_substr(@me,50)'/]</a></h4>
-                    <p><a href="[field:arcurl/]">[field:description function='cn_substr(@me,130)'/]...<span>[详细]</span></a></p>
-                    <p class="list_infor_tag">
-                         [field:id function='GetTags_list(@me)' /]
-                    </p>
-                </div>
-                <div class="date"><i class="i3T"></i><span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></div>
-            </li>
-            {/dede:list}
-             <div class="ns_pa clearFix">
-            <ul class="pagination clearFix">
-                {dede:pagelist istitem="pre,next,pageno,index,end" listsize="3"/}
+    <div class="help_content">
+            <ul class="help_left">
+                <p>&nbsp;</p>
+                <span class="help_Btitle">问题分类</span>
+                <span class="help_infotitle">EVERYBODY ASK</span>
+                <ul id="tree_root">
+                    <li>
+                        <span class="tree2"><b class="Off">一级分类</b><input type="checkbox" name="checkbox" id="checkbox_rt"></span>
+                        <ul style="display: none; height: auto;">
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="tree2"><b class="Off">一级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span>
+                        <ul style="display: none; height: auto;">
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="tree2"><b class="On">一级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span>
+                        <ul style="display: block; height: auto;">
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                            <li><span class="tree3"><b>二级分类</b><input type="checkbox" name="checkbox" id="checkbox"></span></li>
+                        </ul>
+                    </li>
+                </ul>
             </ul>
-        </div>
+            <ul class="help_main">
+                <p>&nbsp;</p>
+                <span class="help_main_Btitle">大家在问</span>
+                <span class="help_main_infotitle">EVERYBODY ASK</span>
+                <li class="clearFix">
+
+                    <div>
+                        <h4>
+                            <img src="/n/quest.png" alt="问题图标"><a href="https://www.hzshuangmei.com/2_2/c/3034.html">海南激光嫩肤的发展史</a></h4>
+                        <p>
+                            <img src="/n/ans.png" alt="回答图标"><a href="https://www.hzshuangmei.com/2_2/c/3034.html">黑头是硬化油脂阻塞物，通常出现在颜面的额头、鼻子等部位 当油脂腺受到过分刺激，在鼻头及其周围部分其周围部，经常会...<span>[详细]</span></a>
+                        </p>
+                        <span>2014-09-23</span>
+                        <span>未解决问题</span>
+                    </div>
+                </li>
+                <div class="ns_pa clearFix">
+                    <ul class="pagination clearFix">
+                        <li class="thisclass">1</li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_2.html">2</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_3.html">3</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_4.html">4</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_5.html">5</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_6.html">6</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_7.html">7</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_2.html">下一页</a></li>
+                        <li><a href="https://www.hzshuangmei.com/info/list_89_42.html">末页</a></li>
+                        <li><select name="sldd" style="width:42px" onchange="location.href=this.options[this.selectedIndex].value;">
+                            <option value="/info/list_89_1.html" selected="">1</option>
+                            <option value="/info/list_89_2.html">2</option>
+                            <option value="/info/list_89_3.html">3</option>
+                            <option value="/info/list_89_4.html">4</option>
+                            <option value="/info/list_89_5.html">5</option>
+                            <option value="/info/list_89_6.html">6</option>
+                            <option value="/info/list_89_7.html">7</option>
+                            <option value="/info/list_89_8.html">8</option>
+                            <option value="/info/list_89_9.html">9</option>
+                            <option value="/info/list_89_10.html">10</option>
+                            <option value="/info/list_89_11.html">11</option>
+                            <option value="/info/list_89_12.html">12</option>
+                            <option value="/info/list_89_13.html">13</option>
+                            <option value="/info/list_89_14.html">14</option>
+                            <option value="/info/list_89_15.html">15</option>
+                            <option value="/info/list_89_16.html">16</option>
+                            <option value="/info/list_89_17.html">17</option>
+                            <option value="/info/list_89_18.html">18</option>
+                            <option value="/info/list_89_19.html">19</option>
+                            <option value="/info/list_89_20.html">20</option>
+                            <option value="/info/list_89_21.html">21</option>
+                            <option value="/info/list_89_22.html">22</option>
+                            <option value="/info/list_89_23.html">23</option>
+                            <option value="/info/list_89_24.html">24</option>
+                            <option value="/info/list_89_25.html">25</option>
+                            <option value="/info/list_89_26.html">26</option>
+                            <option value="/info/list_89_27.html">27</option>
+                            <option value="/info/list_89_28.html">28</option>
+                            <option value="/info/list_89_29.html">29</option>
+                            <option value="/info/list_89_30.html">30</option>
+                            <option value="/info/list_89_31.html">31</option>
+                            <option value="/info/list_89_32.html">32</option>
+                            <option value="/info/list_89_33.html">33</option>
+                            <option value="/info/list_89_34.html">34</option>
+                            <option value="/info/list_89_35.html">35</option>
+                            <option value="/info/list_89_36.html">36</option>
+                            <option value="/info/list_89_37.html">37</option>
+                            <option value="/info/list_89_38.html">38</option>
+                            <option value="/info/list_89_39.html">39</option>
+                            <option value="/info/list_89_40.html">40</option>
+                            <option value="/info/list_89_41.html">41</option>
+                            <option value="/info/list_89_42.html">42</option>
+                        </select></li>
+                    </ul>
+                </div>
+            </ul>
+
+     </div>
+    <!-- 左边导航栏开始 -->
+    <div class="pro2 pro2N">
+        <p class="pro2Line">&nbsp;</p>
+        <span>热门问题</span>
+        <p class="pro2_info">EVERYBODY ASK</p>
+        <ul class="pro2_tag">
+            <li><a href="/1_1/a" target="_blank"><span>?</span><span>鼻部整形价格</span></a></li>
+            <li><a href="/1_2/a" target="_blank"><span>?</span><span>眼部整形价格</span></a></li>
+            <li><a href="/1_3/a" target="_blank"><span>?</span><span>面部整形价格</span></a></li>
+            <li><a href="/1_4/a" target="_blank"><span>?</span><span>胸部整形价格</span></a></li>
+            <li><a href="/1_5/a" target="_blank"><span>?</span><span>私密整形价格</span></a></li>
+            <li><a href="/1_6/a" target="_blank"><span>?</span><span>吸脂手术价格</span></a></li>
+            <li><a href="/1_7/a" target="_blank"><span>?</span><span>唇部整形价格</span></a></li>
+            <!-- 激光美容分类 -->
+            <li><a href="/2_1/a" target="_blank"><span>?</span><span>祛痣价格</span></a></li>
+            <li><a href="/2_2/a" target="_blank"><span>?</span><span>皮肤激光价格</span></a></li>
+            <li><a href="/2_3/a" target="_blank"><span>?</span><span>激光祛痘价格</span></a></li>
+            <li><a href="/2_4/a" target="_blank"><span>?</span><span>激光祛斑价格</span></a></li>
+            <li><a href="/2_5/a" target="_blank"><span>?</span><span>激光除皱价格</span></a></li>
+            <li><a href="/2_6/a" target="_blank"><span>?</span><span>疤痕修复价格</span></a></li>
+            <li><a href="/2_7/a" target="_blank"><span>?</span><span>激光脱毛价格</span></a></li>
+            <!-- 微创手术分类 -->
+            <li><a href="/3_1/a" target="_blank"><span>?</span><span>注射玻尿酸价格</span></a></li>
+            <li><a href="/3_2/a" target="_blank"><span>?</span><span>注射Botox价格</span></a></li>
+            <!-- 纹绣  -->
+            <li><a href="/4_1/a" target="_blank"><span>?</span><span>纹唇价格</span></a></li>
+            <li><a href="/4_2/a" target="_blank"><span>?</span><span>纹眉价格</span></a></li>
+            <li><a href="/4_3/a" target="_blank"><span>?</span><span>艺术纹绣价格</span></a></li>
+            <li><a href="/4_4/a" target="_blank"><span>?</span><span>纹眼线价格</span></a></li>
+            <!-- 生活美容分类 -->
+            <li><a href="/5_1/a" target="_blank"><span>?</span><span>皮肤美白价格</span></a></li>
+            <li><a href="/5_2/a" target="_blank"><span>?</span><span>去黑头价格</span></a></li>
+            <img src="{dede:global.cfg_imgpath/}/pc/info_kst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
         </ul>
-        <!-- 左边导航栏开始 -->
-               {dede:FIELD.typeid function='MoreHotProjectAboutInfo(@me)'/}
-              <!-- <img src="" class="pro1" alt=""> -->
-              <div class="pro2 pro2N">
-                    <p class="pro2Line">&nbsp;</p>
-                    <span>美容手术价格</span>
-                    <p class="pro2_info">POPULAR PROJECT</p>
-                    <ul class="pro2_tag">
-                      <li><a href="/1_1/a" target="_blank"><span>?</span><span>鼻部整形价格</span></a></li>
-                      <li><a href="/1_2/a" target="_blank"><span>?</span><span>眼部整形价格</span></a></li>
-                      <li><a href="/1_3/a" target="_blank"><span>?</span><span>面部整形价格</span></a></li>
-                      <li><a href="/1_4/a" target="_blank"><span>?</span><span>胸部整形价格</span></a></li>
-                      <li><a href="/1_5/a" target="_blank"><span>?</span><span>私密整形价格</span></a></li>
-                      <li><a href="/1_6/a" target="_blank"><span>?</span><span>吸脂手术价格</span></a></li>
-                      <li><a href="/1_7/a" target="_blank"><span>?</span><span>唇部整形价格</span></a></li>
-                       <!-- 激光美容分类 -->
-                      <li><a href="/2_1/a" target="_blank"><span>?</span><span>祛痣价格</span></a></li>
-                      <li><a href="/2_2/a" target="_blank"><span>?</span><span>皮肤激光价格</span></a></li>
-                      <li><a href="/2_3/a" target="_blank"><span>?</span><span>激光祛痘价格</span></a></li>
-                      <li><a href="/2_4/a" target="_blank"><span>?</span><span>激光祛斑价格</span></a></li>
-                      <li><a href="/2_5/a" target="_blank"><span>?</span><span>激光除皱价格</span></a></li>
-                      <li><a href="/2_6/a" target="_blank"><span>?</span><span>疤痕修复价格</span></a></li>
-                      <li><a href="/2_7/a" target="_blank"><span>?</span><span>激光脱毛价格</span></a></li>
-                      <!-- 微创手术分类 -->
-                       <li><a href="/3_1/a" target="_blank"><span>?</span><span>注射玻尿酸价格</span></a></li>
-                       <li><a href="/3_2/a" target="_blank"><span>?</span><span>注射Botox价格</span></a></li>
-                        <!-- 纹绣  -->
-                      <li><a href="/4_1/a" target="_blank"><span>?</span><span>纹唇价格</span></a></li>
-                      <li><a href="/4_2/a" target="_blank"><span>?</span><span>纹眉价格</span></a></li>
-                      <li><a href="/4_3/a" target="_blank"><span>?</span><span>艺术纹绣价格</span></a></li>
-                      <li><a href="/4_4/a" target="_blank"><span>?</span><span>纹眼线价格</span></a></li>
-                      <!-- 生活美容分类 -->
-                      <li><a href="/5_1/a" target="_blank"><span>?</span><span>皮肤美白价格</span></a></li>
-                      <li><a href="/5_2/a" target="_blank"><span>?</span><span>去黑头价格</span></a></li>
-                      <img src="{dede:global.cfg_imgpath/}/pc/info_kst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
-                    </ul>
-              </div>
-             <ul class="pro3">
-                {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
-             </ul>
-              <div class="pro2 pro4">
-                    <p class="pro2Line">&nbsp;</p>
-                    <span>{dede:field name="typename"/}</span>
-                    <p class="pro2_info">POPULAR PROJECT</p>
-                    <ul class="pro2_tag">
-                       {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/}
-                    </ul>
-              </div>
     </div>
+    <ul class="pro3">
+        {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
+    </ul>
 </div>
 <!-- 右侧边栏对应的tag -->
 <div class="typeIdRight">
-                     {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/}
+    {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/}
 </div>
 {dede:include filename="_footer.htm"/}
 </body>
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
-<script src="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330"></script>
 <script>
     $(function(){
-         new WOW().init();
-         //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
-           var pro1=$(".pro1").height();
-           var pro2=$(".pro2").height();
-           var pro3=$(".pro3").height();
-           var pro4=$(".pro4").height();
-           var proH=pro1+pro2+pro3+pro4;//
-           var inforHg=$(".infors_main").height();
-           if(inforHg<proH){
-             $(".infors_main").height(proH+"px");
-           }
+        new WOW().init();
+        //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
+        var pro1=$(".pro1").height();
+        var pro2=$(".pro2").height();
+        var pro3=$(".pro3").height();
+        var pro4=$(".pro4").height();
+        var proH=pro1+pro2+pro3+pro4;//
+        var inforHg=$(".infors_main").height();
+        if(inforHg<proH){
+            $(".infors_main").height(proH+"px");
+        }
     })
 </script>
 </html>
