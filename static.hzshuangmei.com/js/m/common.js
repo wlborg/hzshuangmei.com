@@ -384,6 +384,13 @@
                    }, 500);
                })
            }
+           //获取当前URL文档文件名
+           module.getHtmlDocNAme=function(){
+               var  str = window.location.href;
+                    str = str.substring(str.lastIndexOf("/") + 1);
+                    str = str.substring(0, str.lastIndexOf("."));
+                    return str;
+           }
            //增加外部脚本
            function addScript(src) {
                var bldyE = document.getElementsByTagName("body");
