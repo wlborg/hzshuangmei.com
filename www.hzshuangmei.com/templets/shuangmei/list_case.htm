@@ -10,9 +10,9 @@ $ntime = time();
 
  @me=MyDate('Y',$ntime);{/dede:php}{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_case.css?v=20190330" as="style" crossorigin />
+    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_case.css?v=2019041101" as="style" crossorigin />
     <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_case.js?v=20190330" as="script" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_case.css?v=20190330" />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_case.css?v=2019041101" />
 <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
 </head>
@@ -21,8 +21,77 @@ $ntime = time();
         <div class="location"><i></i><span>当前位置：</span>{dede:field name='position'/}</div>
         <div class="line"></div>
         <h2 class="h2_tit" id="ca_01"><img src="{dede:global.cfg_imgpath/}/pc/case_title.png" alt="红妆双美整形日记"/></h2>
+        <!-- 测试栏目 -->
+              <!-- 测试用的 -->
+<div id="cases_con1">
+                 <div class="cases_con1_con1"><span>美容回顾</span></div>
+        <div class="cases_con1_con2" id="cases_con1_con2">
+             <ul class="cases_conT" id="cases_conT">
+              <li  class="nav_list">
+                  <a href="/cases/surgery/" class="nav_link">整形外科回顾</a>
+                  <span>&nbsp;</span>
+              </li>
+              <li  class="nav_list">
+                  <a href="/cases/laser/" class="nav_link">激光美容回顾</a>
+                  <span>&nbsp;</span>
+              </li>
+              <li  class="nav_list">
+                  <a href="/cases/mini/" class="nav_link">微创整形回顾</a>
+                  <span>&nbsp;</span>
+              </li>
+              <li  class="nav_list">
+                  <a href="/cases/tattoo/" class="nav_link">医学纹绣回顾</a>
+                  <span>&nbsp;</span>
+              </li>
+              <li class="nav_list cases_conTLast">
+                  <a href="/cases/liv/" class="nav_link">SPA美容回顾</a>
+                  <span>&nbsp;</span>
+              </li>
+             </ul>
+            <div id="cases_conTc">
+              <ul class="cases_con1_con2_1">
+                           <p>&nbsp;</p>
+                           {dede:channel typeid='11'}
+                                <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
+                           {/dede:channel}
+                           <span style="clear: both;">&nbsp;</span>
+              </ul>
+              <ul class="cases_con1_con2_1 cases_con1_con2_2">
+                   <p>&nbsp;</p>
+                  {dede:channel typeid='12'}
+                  <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
+                  {/dede:channel}
+                   <span style="clear: both;">&nbsp;</span>
+             </ul>
+              <ul class="cases_con1_con2_1 cases_con1_con2_3">
+                   <p>&nbsp;</p>
+                  {dede:channel typeid='13'}
+                  <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
+                  {/dede:channel}
+                   <span style="clear: both;">&nbsp;</span>
+             </ul>
+              <ul class="cases_con1_con2_1 cases_con1_con2_4">
+                   <p>&nbsp;</p>
+                  {dede:channel typeid='41'}
+                  <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
+                  {/dede:channel}
+                   <span style="clear: both;">&nbsp;</span>
+             </ul>
+              <ul class="cases_con1_con2_1 cases_con1_con2_5">
+                   <p>&nbsp;</p>
+                  {dede:channel typeid='257'}
+                  <li  class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></li>
+                  {/dede:channel}
+                   <span style="clear: both;">&nbsp;</span>
+             </ul>
+            </div>
+        </div>
+      </div>
+
+        <!-- 测试用的 -->
+
         <div class="case_content">
-            <div id="case_tab">
+           <!--  <div id="case_tab">
                 <ul class="btn" id="case_nav">
                     <li class="nav_list"><a href="/cases" class="nav_link">美丽回顾 ></a></li>
                     <li class="nav_list"><a href="/cases/eye/" class="nav_link">眼部 ></a></li>
@@ -37,7 +106,7 @@ $ntime = time();
                     <li class="nav_list"><a href="/cases/botox/" class="nav_link">botox ></a></li>
                     <li class="nav_list"><a href="/cases/hengli/" class="nav_link">衡力 ></a></li>
                 </ul>
-            </div>
+            </div> -->
             <div id="case_tabCon">
                 <div class="case_con">
                     <div class="clearFix">
@@ -72,6 +141,6 @@ $ntime = time();
         </div>
     </div>{dede:include filename="_footer.htm"/}</body>{dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/list_case.js?v=20190330"></script>
+<script src="{dede:global.cfg_jspath/}/pc/list_case.js?v=20190411"></script>
 
 </html>
