@@ -137,19 +137,10 @@
         <span>热门问题</span>
         <p class="pro2_info">EVERYBODY ASK</p>
         <ul class="pro2_tag">
-            <li><a href="/1_1/a" target="_blank"><span>?</span><span>鼻部整形价格</span></a></li>
-            <li><a href="/1_2/a" target="_blank"><span>?</span><span>眼部整形价格</span></a></li>
-            <li><a href="/1_3/a" target="_blank"><span>?</span><span>面部整形价格</span></a></li>
-            <li><a href="/1_4/a" target="_blank"><span>?</span><span>胸部整形价格</span></a></li>
-            <li><a href="/1_5/a" target="_blank"><span>?</span><span>私密整形价格</span></a></li>
-            <li><a href="/1_6/a" target="_blank"><span>?</span><span>吸脂手术价格</span></a></li>
-            <li><a href="/1_7/a" target="_blank"><span>?</span><span>唇部整形价格</span></a></li>
-            <li><a href="/2_1/a" target="_blank"><span>?</span><span>祛痣价格</span></a></li>
-            <li><a href="/2_2/a" target="_blank"><span>?</span><span>皮肤激光价格</span></a></li>
-            <li><a href="/2_3/a" target="_blank"><span>?</span><span>激光祛痘价格</span></a></li>
-            <li><a href="/2_4/a" target="_blank"><span>?</span><span>激光祛斑价格</span></a></li>
+            {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
+            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
 
-            <img src="{dede:global.cfg_imgpath/}/pc/info_kst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
+            <img src="{dede:global.cfg_imgpath/}/pc/helpKst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
         </ul>
     </div>
     <ul class="pro3">
@@ -169,12 +160,10 @@
     $(function(){
         new WOW().init();
         //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
-        var pro1=$(".pro1").height();
         var pro2=$(".pro2").height();
         var pro3=$(".pro3").height();
-        var pro4=$(".pro4").height();
-        var proH=pro1+pro2+pro3+pro4;//
-        var inforHg=$(".infors_main").height();
+        var proH=pro2+pro3;//
+        var inforHg=$(".help_main").height();
         if(inforHg<proH){
             $(".infors_main").height(proH+"px");
         }
