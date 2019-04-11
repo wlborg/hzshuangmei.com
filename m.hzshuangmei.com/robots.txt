@@ -31,9 +31,12 @@ Disallow: /5_3/
 Disallow: /5_4/   
 Disallow: /6_1/   
 Disallow: /6_2/   
-Disallow: /mip/
-Disallow: /incl*
+Allow: /tags.php
+Allow: /tags.php?*
 Disallow: /*?*
+Disallow: /mip/
+Disallow: /search/
+Disallow: /incl*
 User-Agent:YandexBot/3.0
 Disallow: /
 User-Agent: Exabot
@@ -81,5 +84,6 @@ Allow: /
 User-agent: Yisouspider
 Allow: /
 User-agent: Bingbot
+Allow: /
 
 Sitemap: https://m.hzshuangmei.com/sitemap.xml
