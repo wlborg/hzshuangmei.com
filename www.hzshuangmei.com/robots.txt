@@ -1,5 +1,5 @@
 User-agent: * 
-Alow: /tags.php
+Allow: /tags.php
 Allow: /tags.php?*
 Disallow: /*?*
 Disallow: /mip/
