@@ -2024,7 +2024,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$shorttitle = cn_substr($row["title"],80,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
 $repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
@@ -2114,12 +2114,18 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],36,0);
-$shorttitle = cn_substr($row["shorttitle"],36,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
 $relateproject.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'......</span></a></li>';
 }
- return $relateproject;
+  if($ns>0){
+    if($ns<11){
+      $res2.=getProjectArticleFormInfoToFour($ns);
+    }
+    $relateproject=$relateproject.$res2;
+  }
+  return $relateproject;
 }
 
