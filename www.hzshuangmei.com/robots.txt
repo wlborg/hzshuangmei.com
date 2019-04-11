@@ -1,8 +1,10 @@
 User-agent: * 
+Alow: /tags.php
+Allow: /tags.php?*
+Disallow: /*?*
 Disallow: /mip/
 Disallow: /search/
 Disallow: /incl*
-Disallow: /*?*
 User-Agent:YandexBot/3.0
 Disallow: /
 User-Agent: Exabot
@@ -43,6 +45,8 @@ User-agent: ichiro
 Disallow: /    
 User-agent: Baiduspider
 Allow: /
+User-agent: Baiduspider-image
+Allow: /
 User-agent: 360Spider
 Allow: /
 User-agent: HaoSouSpider
@@ -50,5 +54,6 @@ Allow: /
 User-agent: Yisouspider
 Allow: /
 User-agent: Bingbot
+Allow: /
 
 Sitemap: https://www.hzshuangmei.com/sitemap.xml
