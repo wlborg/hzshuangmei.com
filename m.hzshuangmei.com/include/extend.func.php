@@ -1707,8 +1707,15 @@ $shorttitle = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
+$relateproject.='<a href="https://m.hzshuangmei.com'.$url.'" class="clickParameter"><img src="https://m.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$shorttitle.'</span></a>';
 }
 if($ns>0){
+  if($ns<4){
+     $relateproject.=getProjectArticleFormInfoToSix($ns);
+      $relateproject.=$relateproject;
+  }
+  return $relateproject;
+}
 }
 /**
  *
@@ -1716,6 +1723,7 @@ if($ns>0){
 *  如果不足够4条，补到4条
 *
 */
+function getProjectArticleFormInfoToSix($typeNum)
 {
 global $dsql;
 $repairRes="";
@@ -1733,6 +1741,7 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
 $shorttitle = cn_substr($row["title"],80,0);
+$repairRes.='<a href="https://m.hzshuangmei.com'.$url.'" class="clickParameter"><img src="https://m.hzshuangmei.com'.$litpic.'" alt="'.$title.'"><span>'.$shorttitle.'</span></a>';
 }
 if($ns>0){
 $repairRes=$repairRes;
