@@ -184,3 +184,9 @@ $("#case_nav").find('a').each(function(index, el) {
                     $(this).attr('href', href);
             })
 });
+$("#cases_conT").find('a').each(function(index, el) {
+            $(this).on('click',function(){
+                      var href = $(this).attr('href') + "#ca_01";
+                    $(this).attr('href', href);
+            })
+});
