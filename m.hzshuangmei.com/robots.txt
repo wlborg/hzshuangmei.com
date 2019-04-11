@@ -31,7 +31,7 @@ Disallow: /5_3/
 Disallow: /5_4/   
 Disallow: /6_1/   
 Disallow: /6_2/   
-Alow: /tags.php
+Allow: /tags.php
 Allow: /tags.php?*
 Disallow: /*?*
 Disallow: /mip/
