@@ -2024,7 +2024,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
+$shorttitle = cn_substr($row["$shorttitle"],80,0);
 $repairRes.='<a href="'.$url.'" target="_blank"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
 }
 if($ns>0){
@@ -2035,12 +2035,14 @@ return $repairRes;
 /**
 * 帮助中心对应的热门问题
 * @param   $typeid   当前资讯文档所在的栏目ID
+* @$defatypeid 默认所有的栏目ID
  */
 function GetHelp_list_typeid($typeid)
 {
 global $dsql;
 $relateproject="";
 $relatetypeid = 0;
+$defatypeid = '268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
 switch ($typeid)
 {
 case 226 :
@@ -2118,14 +2120,45 @@ $shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'......</span></a></li>';
+$relateproject.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
 }
   if($ns>0){
     if($ns<11){
-      $res2.=getProjectArticleFormInfoToFour($ns);
+      $res2.=getHelpArticleToEvl($typeid,$defatypeid,$ns);
     }
     $relateproject=$relateproject.$res2;
   }
   return $relateproject;
 }
 
+/**
+ *
+*  帮助中心读取11条数据
+*  如果不足够11条，补到11条
+*  $typeid     当前栏目id
+*  $defatypeid 帮助栏目下所有id(及默认id)
+*/
+function getHelpArticleToEvl($typeid,$defatypeid,$typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=11-$typeNum;
+$dsql->SetQuery( "SELECT  *  FROM #@__archives AS a where a.typeid in ( $defatypeid ) and a.typeid <> $typeid a.arcrank=0 order by click desc limit $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
+$repairRes.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
+}
