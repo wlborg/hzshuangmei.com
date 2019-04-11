@@ -147,7 +147,7 @@
 
 .help_content {
     overflow: hidden;
-    margin-top:  30px;
+    margin-top: 30px
 }
 
 .help_content>ul {
@@ -214,10 +214,20 @@
 .pro2 {
     top: 63px
 }
-.pro2_tag li {width: 218px;margin: 0 20px 13px 0!important;}
+
+.pro2_tag li {
+    width: 273px;
+    margin: 0 20px 13px 0!important;
+}
+.pro2_tag li:nth-of-type(1){
+    background:url("https://img.hzshuangmei.com/pc/helpHot.png") no-repeat right;
+}
+.pro2_tag li:nth-of-type(2){
+    background:url("https://img.hzshuangmei.com/pc/helpHot.png") no-repeat right;
+}
 .pro3 {
     position: absolute;
-    top: 578px;
+    top: 620px;
     right: 0;
     width: 306px;
     height: 537px;
@@ -264,9 +274,10 @@
     text-align: center;
     color: #fff
 }
+
 .info_kst {
     display: block;
     padding-top: 18px;
     margin: auto;
-    cursor: pointer;
+    cursor: pointer
 }
