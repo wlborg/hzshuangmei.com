@@ -370,7 +370,8 @@ $(function() {
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
     // 案例
-    effects.lightCurNav("#cases_con1", "conT");
+    effects.lightCurNav("#cases_conT", "conT");
+    effects.lightCurNav("#cases_conTc", "cases_con1_con2_act");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
