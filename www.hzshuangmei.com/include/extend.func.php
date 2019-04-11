@@ -2032,4 +2032,94 @@ $repairRes.=$repairRes;
 }
 return $repairRes;
 }
+/**
+* 帮助中心对应的热门问题
+* @param   $typeid   当前资讯文档所在的栏目ID
+ */
+function GetHelp_list_typeid($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 226 :
+$relatetypeid= '268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
+break;
+case 267 :
+$relatetypeid='268,269,270';
+break;
+case 268:
+case 269:
+case 270:
+$relatetypeid=$typeid;
+break;
+case 271:
+$relatetypeid='272,273,274,275';
+break;
+case 272:
+case 273:
+case 274:
+case 275:
+$relatetypeid=$typeid;
+break;
+case 276:
+$relatetypeid='277,278,279,280,281,282,283,284,285,286';
+break;
+case 277:
+case 278:
+case 279:
+case 280:
+case 281:
+case 282:
+case 283:
+case 284:
+case 285:
+case 286:
+$relatetypeid=$typeid;
+break;
+case 287:
+$relatetypeid='288,289,290,291,292,293';
+break;
+case 288:
+case 289:
+case 290:
+case 291:
+case 292:
+case 293:
+$relatetypeid=$typeid;
+break;
+case 294:
+$relatetypeid='295,296,297,298,299,300,301,302,303,304';
+break;
+case 295:
+case 296:
+case 297:
+case 298:
+case 299:
+case 300:
+case 301:
+case 302:
+case 303:
+case 304:
+$relatetypeid=$typeid;
+break;
+default:
+$relatetypeid='268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where  a.typeid in ( $relatetypeid ) and a.arcrank=0  order by click desc limit 9");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],36,0);
+$shorttitle = cn_substr($row["shorttitle"],36,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relateproject.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'......</span></a></li>';
+}
+ return $relateproject;
+}
 
