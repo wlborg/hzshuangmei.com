@@ -361,7 +361,7 @@ effects.goToJump("doctor_nav","doctor_nav");
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
     effects.lightCurNav("#case_nav", "currnet1");
-    //测试中的项目导航
+    //项目的项目导航
     effects.lightCurNav("#project_nav_n", "currnet2_n");
     effects.lightCurNav("#pro_conT", "conT");
     effects.lightCurNav("#pro_conTc", "pro_con1_con2_act");
@@ -369,6 +369,8 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
+    // 案例
+    effects.lightCurNav("#cases_con1", "cases_con1_con2_act");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
