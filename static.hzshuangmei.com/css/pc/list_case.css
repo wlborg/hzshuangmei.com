@@ -93,8 +93,8 @@
     margin-bottom: 55px;
 
     -webkit-transition: .3s;
-         -o-transition: .3s;
-            transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
     text-align: center;
 
     border: 1px solid #ededed;
@@ -113,11 +113,11 @@
     height: 180px;
     padding: 0 36px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 
     -webkit-transition: .2s;
-         -o-transition: .2s;
-            transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
 
     background: #fff;
 }
@@ -218,7 +218,7 @@
 #case_tabCon .list:hover {
     color: #666;
     -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, .2);
-            box-shadow: 0 0 4px 3px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, .2);
 }
 
 #case_tabCon .list:hover .ltt {
@@ -334,6 +334,7 @@
 
 #cases_con1 {
     clear: both;
+    overflow: hidden;
 }
 
 #cases_con1 > div {
@@ -614,4 +615,10 @@
 
 .cases_con1_con2_1 li:hover {
     border-bottom: 1px solid #6e3693;
+}
+#cases_con1 .cases_conT>li {
+    float: left;
+    width: 139px;
+    margin-right: 51px;
+    position: relative;
 }
