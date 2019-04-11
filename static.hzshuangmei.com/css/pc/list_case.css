@@ -35,7 +35,7 @@
 }
 
 .h2_tit {
-    margin: 25px 0 30px;
+    margin: 39px 0 30px;
 
     text-align: center;
 }
@@ -335,6 +335,8 @@
 #cases_con1 {
     clear: both;
     overflow: hidden;
+    border-bottom: 1px solid rgb(231,231,231);
+    margin-bottom: 25px;
 }
 
 #cases_con1 > div {
