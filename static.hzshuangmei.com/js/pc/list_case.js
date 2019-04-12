@@ -8,7 +8,7 @@ $(function() {
     })
 // 导航控制跳转显示
        //preReady();
-    var tools_pro = (
+    var tools_cases = (
       function(module) {
               //导航高亮显示
                module.getProLig = function(obj,className,conObj,conClassName) {
@@ -45,16 +45,13 @@ $(function() {
           return module;
      }
     )(window.tools_pro || {});
-    tools_pro.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
-    tools_pro.hoverSon("#cases_con1_con2>.cases_con1_con2_1>li","hoverClass");
-    tools_pro.sonPar(".cases_conT li",".cases_con1_con2_act",".cases_con1_con2_1");
-    tools_pro.parNav(".conT","#cases_conTc>ul","cases_pr");
+    tools_cases.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
+    tools_cases.hoverSon("#cases_con1_con2>.cases_con1_con2_1>li","hoverClass");
+    tools_cases.sonPar(".cases_conT li",".cases_con1_con2_act",".cases_con1_con2_1");
+    tools_cases.parNav(".conT","#cases_conTc>ul","cases_pr");
 
 });
 $(function() {
-    var position = $(window).height();
-    var po_left = $("#case_tab").height();
-    $("#case_tab").css('top', position / 2 - po_left / 2);
     //点击顶部导航
     $("#cases_conT").find('a').each(function(index, el) {
         $(this).on('click',function(){
@@ -64,15 +61,18 @@ $(function() {
     });
 
 });
-$(function($) {
-    $(window).scroll(function(event) {
-        if ($(window).scrollTop() > 400) {
-            $("#case_tab").addClass('case_tab');
-        } else {
-            $("#case_tab").removeClass('case_tab');
-        }
-    });
-});
+//$(function($) {
+var position = $(window).height();
+        //var po_left = $("#case_tab").height();
+        //$("#case_tab").css('top', position / 2 - po_left / 2);
+//    $(window).scroll(function(event) {
+//        if ($(window).scrollTop() > 400) {
+//            $("#case_tab").addClass('case_tab');
+//        } else {
+//            $("#case_tab").removeClass('case_tab');
+//        }
+//    });
+//});
 /*
   prerender
 */
