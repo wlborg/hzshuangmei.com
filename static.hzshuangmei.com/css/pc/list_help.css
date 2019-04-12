@@ -295,3 +295,10 @@
 .help_left #tree_root li>ul{
     background:rgb(245,245,245);
 }
+.help_left #tree_root li ul li {
+    height: 30px;
+    line-height: 30px;
+}
+.help_left #tree_root li>span{
+  margin-bottom: 15px;
+}
