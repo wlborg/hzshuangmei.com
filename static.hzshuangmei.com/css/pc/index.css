@@ -566,15 +566,14 @@ h3 img {
     line-height: 34px;
 
     text-align: center;
-
     color: #6a157d;
-    background-color: #e3dee3;
+    background-color: rgb(194,185,201);
 }
 .index_clients #tab4 .fli4 {
     cursor: pointer;
 
     color: #fff;
-    background-color: rgb(194,185,201);
+    background-color: rgb(110,54,146);
 }
 .index_clients #tab4 .fli4 a{
     cursor: pointer;
@@ -589,7 +588,7 @@ h3 img {
 #tabCon4>ul:nth-of-type(4) .fdiv4Ol{
     left: 581px;
 }
-#tabCon4>ul:nth-of-type(4) .fdiv4Ol{
+#tabCon4>ul:nth-of-type(5) .fdiv4Ol{
     left: 701px;
 }
 #tabCon4>ul>ol{
