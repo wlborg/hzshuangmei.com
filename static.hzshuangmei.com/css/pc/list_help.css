@@ -76,7 +76,7 @@
     background: #d5cfe5
 }
 
-.help_content ul li {
+.help_content ul.help_main li {
     margin: 28px 0;
     border-bottom: 1px dashed #e5e5e5
 }
@@ -290,3 +290,14 @@
      display:block;
      width:100%;
  }
+ #help_left  #tree_root .conT{
+     color: rgb(140,106,168);
+     font-size: 14px;
+ }
+#help_left  #tree_root .conT a{
+    color: rgb(140,106,168);
+    font-size: 14px;
+}
+.help_left #tree_root li>ul{
+    background:rgb(245,245,245);
+}
