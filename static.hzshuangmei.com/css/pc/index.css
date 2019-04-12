@@ -363,17 +363,16 @@ h3 img {
     font-size: 14px;
     font-weight: bold;
     line-height: 34px;
-
     cursor: pointer;
     text-align: center;
 
-    color: #6a157d;
     background-color: #eae8ea;
 }
 .index_project #tab2 li a{
     display: block;
     width: 100%;
     height: 100%;
+    color: rgb(255,255,255);
 }
 .index_project #tab2 li a {
     color: #6a157d;
@@ -566,8 +565,10 @@ h3 img {
     line-height: 34px;
 
     text-align: center;
-    color: #6a157d;
     background-color: rgb(194,185,201);
+}
+.index_clients #tab4 ul li a{
+    color: #fff;
 }
 .index_clients #tab4 .fli4 {
     cursor: pointer;
