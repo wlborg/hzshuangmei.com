@@ -6,10 +6,7 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_help.css" as="style" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css"/>
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_help.css" as="style" crossorigin />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=20190412"/>
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
@@ -31,101 +28,115 @@
                 <li>
                     <span class="tree2 nav_list">
                         <b class="Off">
-                            <a href="" class="nav_link">一级分类</a>
+                            {dede:type typeid='267'}
+                            <a href="[field:typeurl/]" class="nav_link">
+                                [field:typename/]
+                            </a>
+                            {/dede:type}
                         </b>
                     </span>
-                    <ul style="display: none; height: auto;">
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
+                    <ul >
+                        {dede:channel typeid='267'}
+                        <li class="nav_list">
+                        <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
+                        {/dede:channel}
                     </ul>
                 </li>
                 <li>
                     <span class="tree2 nav_list">
                         <b class="Off">
-                            <a href="" class="nav_link">一级分类</a>
+                            {dede:type typeid='271'}
+                            <a href="[field:typeurl/]" class="nav_link">
+                                [field:typename/]
+                            </a>
+                            {/dede:type}
                         </b>
                     </span>
-                    <ul style="display: none; height: auto;">
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
-                        <li class="nav_list"><span class="tree3"><b><a href="" class="nav_link">二级分类</a></b></span></li>
+                    <ul>
+                        {dede:channel typeid='271'}
+                        <li class="nav_list">
+                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
+                        {/dede:channel}
                     </ul>
                 </li>
-
+                <li>
+                    <span class="tree2 nav_list">
+                        <b class="Off">
+                            {dede:type typeid='276'}
+                            <a href="[field:typeurl/]" class="nav_link">
+                                [field:typename/]
+                            </a>
+                            {/dede:type}
+                        </b>
+                    </span>
+                    <ul>
+                        {dede:channel typeid='276'}
+                        <li class="nav_list">
+                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
+                        {/dede:channel}
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree2 nav_list">
+                        <b class="Off">
+                            {dede:type typeid='287'}
+                            <a href="[field:typeurl/]" class="nav_link">
+                                [field:typename/]
+                            </a>
+                            {/dede:type}
+                        </b>
+                    </span>
+                    <ul>
+                        {dede:channel typeid='287'}
+                        <li class="nav_list">
+                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
+                        {/dede:channel}
+                    </ul>
+                </li>
+                <li>
+                    <span class="tree2 nav_list">
+                        <b class="Off">
+                            {dede:type typeid='294'}
+                            <a href="[field:typeurl/]" class="nav_link">
+                                [field:typename/]
+                            </a>
+                            {/dede:type}
+                        </b>
+                    </span>
+                    <ul>
+                        {dede:channel typeid='294'}
+                        <li class="nav_list">
+                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
+                        {/dede:channel}
+                    </ul>
+                </li>
             </ul>
         </ul>
             <ul class="help_main">
                 <p>&nbsp;</p>
                 <span class="help_main_Btitle">大家在问</span>
                 <span class="help_main_infotitle">EVERYBODY ASK</span>
+                {dede:list pagesize='10' orderby='id'}
                 <li class="clearFix">
-
                     <div>
                         <h4>
-                            <img src="{dede:global.cfg_imgpath/}/pc/quest.png" alt="问题图标"><a href="https://www.hzshuangmei.com/2_2/c/3034.html" title="">海南激光嫩肤的发展史</a></h4>
+                            <img src="{dede:global.cfg_imgpath/}/pc/quest.png" alt="帮助中心问题图标">
+                            <a href="[field:arcurl/]" title="[field:fulltitle/]">[field:fulltitle function='cn_substr(@me,50)'/]</a>
+                        </h4>
                         <p>
-                            <img src="{dede:global.cfg_imgpath/}/pc/ans.png" alt="回答图标"><a href="https://www.hzshuangmei.com/2_2/c/3034.html" title="">黑头是硬化油脂阻塞物，通常出现在颜面的额头、鼻子等部位 当油脂腺受到过分刺激，在鼻头及其周围部分其周围部，经常会...<span>[详细]</span></a>
+                            <img src="{dede:global.cfg_imgpath/}/pc/ans.png" alt="回答图标">
+                            <a href="[field:arcurl/]" title="[field:fulltitle/]">
+                                [field:description function='cn_substr(@me,200)'/]...<span>[详细]</span>
+                            </a>
                         </p>
-                        <span>2014-09-23</span>
+                        <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>
                         <span>未解决问题</span>
                     </div>
                 </li>
+                {/dede:list}
                 <div class="ns_pa clearFix">
                     <ul class="pagination clearFix">
-                        <li class="thisclass">1</li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_2.html">2</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_3.html">3</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_4.html">4</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_5.html">5</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_6.html">6</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_7.html">7</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_2.html">下一页</a></li>
-                        <li><a href="https://www.hzshuangmei.com/info/list_89_42.html">末页</a></li>
-                        <li><select name="sldd" style="width:42px" onchange="location.href=this.options[this.selectedIndex].value;">
-                            <option value="/info/list_89_1.html" selected="">1</option>
-                            <option value="/info/list_89_2.html">2</option>
-                            <option value="/info/list_89_3.html">3</option>
-                            <option value="/info/list_89_4.html">4</option>
-                            <option value="/info/list_89_5.html">5</option>
-                            <option value="/info/list_89_6.html">6</option>
-                            <option value="/info/list_89_7.html">7</option>
-                            <option value="/info/list_89_8.html">8</option>
-                            <option value="/info/list_89_9.html">9</option>
-                            <option value="/info/list_89_10.html">10</option>
-                            <option value="/info/list_89_11.html">11</option>
-                            <option value="/info/list_89_12.html">12</option>
-                            <option value="/info/list_89_13.html">13</option>
-                            <option value="/info/list_89_14.html">14</option>
-                            <option value="/info/list_89_15.html">15</option>
-                            <option value="/info/list_89_16.html">16</option>
-                            <option value="/info/list_89_17.html">17</option>
-                            <option value="/info/list_89_18.html">18</option>
-                            <option value="/info/list_89_19.html">19</option>
-                            <option value="/info/list_89_20.html">20</option>
-                            <option value="/info/list_89_21.html">21</option>
-                            <option value="/info/list_89_22.html">22</option>
-                            <option value="/info/list_89_23.html">23</option>
-                            <option value="/info/list_89_24.html">24</option>
-                            <option value="/info/list_89_25.html">25</option>
-                            <option value="/info/list_89_26.html">26</option>
-                            <option value="/info/list_89_27.html">27</option>
-                            <option value="/info/list_89_28.html">28</option>
-                            <option value="/info/list_89_29.html">29</option>
-                            <option value="/info/list_89_30.html">30</option>
-                            <option value="/info/list_89_31.html">31</option>
-                            <option value="/info/list_89_32.html">32</option>
-                            <option value="/info/list_89_33.html">33</option>
-                            <option value="/info/list_89_34.html">34</option>
-                            <option value="/info/list_89_35.html">35</option>
-                            <option value="/info/list_89_36.html">36</option>
-                            <option value="/info/list_89_37.html">37</option>
-                            <option value="/info/list_89_38.html">38</option>
-                            <option value="/info/list_89_39.html">39</option>
-                            <option value="/info/list_89_40.html">40</option>
-                            <option value="/info/list_89_41.html">41</option>
-                            <option value="/info/list_89_42.html">42</option>
-                        </select></li>
+                        {dede:pagelist istitem="pre,next,pageno,index,end" listsize="3"/}
                     </ul>
                 </div>
             </ul>
@@ -138,18 +149,6 @@
         <p class="pro2_info">EVERYBODY ASK</p>
         <ul class="pro2_tag">
             {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-            <!--<li><a href="/1_1/a" target="_blank"><span>?</span><span>竞价广告术前后对比图怎么办......</span></a></li>-->
-
             <img src="{dede:global.cfg_imgpath/}/pc/helpKst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
         </ul>
     </div>

@@ -39,7 +39,6 @@
     padding-left: 31px;
     padding-right: 31px;
     margin-bottom: 150px;
-    /*height: 2000px;*/
     border: 1px solid #f2f2f2;
     box-shadow: 0 5px 13px rgba(224,224,224,.31)
 }
@@ -217,14 +216,17 @@
 
 .pro2_tag li {
     width: 273px;
-    margin: 0 20px 13px 0!important;
+    margin: 0 20px 13px 0!important
 }
-.pro2_tag li:nth-of-type(1){
-    background:url("https://img.hzshuangmei.com/pc/helpHot.png") no-repeat right;
+
+.pro2_tag li:nth-of-type(1) {
+    background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right
 }
-.pro2_tag li:nth-of-type(2){
-    background:url("https://img.hzshuangmei.com/pc/helpHot.png") no-repeat right;
+
+.pro2_tag li:nth-of-type(2) {
+    background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right
 }
+
 .pro3 {
     position: absolute;
     top: 620px;
@@ -232,7 +234,7 @@
     width: 306px;
     height: 537px;
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 5px 13px rgba(224,224,224,.31)
 }
 
 .pro3 li:nth-of-type(1) {
@@ -281,3 +283,10 @@
     margin: auto;
     cursor: pointer
 }
+.help_left #tree_root li{
+    border-bottom:none;
+    text-indent: 24px;
+}.help_left #tree_root li>span{
+     display:block;
+     width:100%;
+ }
