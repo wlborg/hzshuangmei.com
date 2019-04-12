@@ -378,7 +378,8 @@ $(function() {
     // 项目导航
      effects.goToJump("project_nav_n", "pro_01");
      effects.goToJump("pro_con1_con2", "pro_01");
-     effects.goToJump("cases_con1", "ca_01");
+     //effects.goToJump("cases_conT", "ca_01");
+    effects.goToJump("cases_conTc", "ca_01");
     effects.goToJump("expert", "doctor_nav");
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
