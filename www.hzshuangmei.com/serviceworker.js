@@ -16,7 +16,7 @@ const ignoreFetch = [
     /https?:\/\/static.ws.126.net\//,
     /https?:\/\/hm.baidu.com\//,
     /https?:\/\/sp0.baidu.com\//,
-    s/https?:\/\/ers.baidu.com\//,
+    /https?:\/\/ers.baidu.com\//,
     /https?:\/\/lxbjs.baidu.com\//,
     /https?:\/\/tag.baidu.com\//,
     /pma/,
