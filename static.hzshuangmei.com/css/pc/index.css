@@ -374,9 +374,6 @@ h3 img {
     height: 100%;
     color: rgb(255,255,255);
 }
-.index_project #tab2 li a {
-    color: #6a157d;
-}
 .index_project .sy-tab2 li,
 .index_clients .sy-tab2 li {
     color: #fff !important;
