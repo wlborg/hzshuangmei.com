@@ -204,6 +204,14 @@ $(function() {
                     }
 
              }
+    //案例经过显示二级导航
+    $("#tab4>ul>li").hover(function(){
+        var index=$(this).index();
+        $("#tabCon4>ul").eq(index).find("ol").addClass("fdiv4Ol");
+    })
+    $("#tabCon4>ul>ol").hover(function(){
+             $(this).addClass("fdiv4Ol");
+    })
 });
 function LcSlideLedt() {
     $(".lc_list_box").append($(".lc_list_box .lc_list_con").eq(0).clone(true));
