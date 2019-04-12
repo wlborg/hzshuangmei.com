@@ -1,20 +1,4 @@
-//
-//var case_tabs=document.getElementById("case_tab").getElementsByTagName("li");
-//var case_divs=document.getElementById("case_tabCon").getElementsByTagName("li");
-//for(var i=0;i<case_tabs.length;i++){
-//    case_tabs[i].onclick=function(){case_change(this);}
-//}
-//function case_change(obj){
-//    for(var i=0;i<case_tabs.length;i++){
-//        if(case_tabs[i]==obj){
-//            case_tabs[i].className="case_fli";
-//            case_divs[i].className="case_fdiv clearFix";
-//        }else{
-//            case_tabs[i].className="";
-//            case_divs[i].className="clearFix";
-//        }
-//    }
-//}
+
 $(function() {
     $(".case_con").eq(0).show();
     $(".btn li").click(function() {
@@ -49,7 +33,7 @@ $(function() {
                   if(index>=0){
                       $(TObj).removeClass("conT");
                       $(TObj).eq(index).addClass("conT");
-                      $(opacvClass).parents(obj).addClass('pro_pr');
+                      $(opacvClass).parents(obj).addClass('cases_pr');
                   }
               };
             //获取一级导航显示的下标显示对应内容
@@ -71,6 +55,14 @@ $(function() {
     var position = $(window).height();
     var po_left = $("#case_tab").height();
     $("#case_tab").css('top', position / 2 - po_left / 2);
+    //点击顶部导航
+    $("#cases_conT").find('a').each(function(index, el) {
+        $(this).on('click',function(){
+            var href = $(this).attr('href') + "#ca_01";
+            $(this).attr('href', href);
+        })
+    });
+
 });
 $(function($) {
     $(window).scroll(function(event) {
@@ -175,18 +167,3 @@ function preReady() {
             $('link[rel="prerender"][href="https://www.hzshuangmei.com/cases/' + pre_url + '"' + ']').remove();
         });
 }
-/*
-案例列表页，左侧锚定位优化
- */
-$("#case_nav").find('a').each(function(index, el) {
-            $(this).on('click',function(){
-                      var href = $(this).attr('href') + "#ca_01";
-                    $(this).attr('href', href);
-            })
-});
-$("#cases_conT").find('a').each(function(index, el) {
-            $(this).on('click',function(){
-                      var href = $(this).attr('href') + "#ca_01";
-                    $(this).attr('href', href);
-            })
-});
