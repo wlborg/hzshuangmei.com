@@ -208,7 +208,9 @@ $(function() {
     $("#tab4>ul>li").hover(function(){
         var index=$(this).index();
         $("#tabCon4>ul").eq(index).find("ol").addClass("fdiv4Ol");
-    })
+    },function(){
+        $("#tabCon4>ul>ol").removeClass("fdiv4Ol");
+    });
     $("#tabCon4>ul>ol").hover(function(){
              $(this).addClass("fdiv4Ol");
     })

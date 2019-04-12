@@ -590,6 +590,7 @@ h3 img {
     display: none;
     left: 159px;
     padding-left: 10px;
+    padding-right: 15px;
     overflow: hidden;
     border: 1px solid rgb(110,54,146);
 }
