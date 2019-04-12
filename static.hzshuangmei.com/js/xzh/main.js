@@ -2308,11 +2308,15 @@ protection.shield(["disableCopy", "disableSource", "disableF12"]);
 window.addEventListener('load', () =>{
    quicklink({
        priority:true,
-       ignores:[
-             /baidu/,
-             /kuaishang/,
-              uri => uri.includes('.php'),
-            ]
+            origins:[
+        'xzh.hzshuangmei.com'
+       'www.hzshuangmei.com',
+       'm.hzshuangmei.com',
+       'uploads.hzshuangmei.com',
+       'js.hzshuangmei.com',
+       'css.hzshuangmei.com',
+        'img.hzshuangmei.com'
+       ]
       });
 });
 

@@ -872,19 +872,14 @@
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink({ priority:true,
-           ignores:[
-             /baidu/,
-             /kuaishang/,
-              uri => uri.includes('.php'),
-       ],
+   quicklink({ priority:true,,
        origins:[
        'm.hzshuangmei.com',
        'www.hzshuangmei.com',
        'uploads.hzshuangmei.com',
        'js.hzshuangmei.com',
-        'css.hzshuangmei.com',
-         'img.hzshuangmei.com'
+       'css.hzshuangmei.com',
+       'img.hzshuangmei.com'
        ]
     });
 });
