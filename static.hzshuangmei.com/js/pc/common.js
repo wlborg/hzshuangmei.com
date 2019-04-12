@@ -360,7 +360,9 @@ effects.goToJump("doctor_nav","doctor_nav");
 )(window.effects || {});
 $(function() {
     effects.lightCurNav(".nav_ul", "currnet");
-    effects.lightCurNav("#case_nav", "currnet1");
+    // 案例
+    effects.lightCurNav("#cases_conT", "conT");
+    effects.lightCurNav("#cases_conTc", "cases_con1_con2_act");
     //项目的项目导航
     effects.lightCurNav("#project_nav_n", "currnet2_n");
     effects.lightCurNav("#pro_conT", "conT");
@@ -369,9 +371,7 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
-    // 案例
-    effects.lightCurNav("#cases_conT", "conT");
-    effects.lightCurNav("#cases_conTc", "cases_con1_con2_act");
+
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
