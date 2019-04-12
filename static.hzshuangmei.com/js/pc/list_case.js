@@ -12,9 +12,7 @@ $(function() {
       function(module) {
               //导航高亮显示
                module.getProLig = function(obj,className,conObj,conClassName) {
-                   console.log("fun");
                     $(obj).hover(function(){
-                        console.log("hover");
                           var index=$(this).index();
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
