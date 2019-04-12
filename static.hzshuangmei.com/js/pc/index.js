@@ -213,6 +213,8 @@ $(function() {
     });
     $("#tabCon4>ul>ol").hover(function(){
              $(this).addClass("fdiv4Ol");
+    },function(){
+        $(this).removeClass("fdiv4Ol");
     })
 });
 function LcSlideLedt() {
