@@ -144,26 +144,6 @@
 #ptab2 li:last-child {
     background: url(//img.hzshuangmei.com/pc/project_i11.jpg) no-repeat center;
 }
-
-
-/*#ptab2 .gengduo {*/
-/*width: 194px;*/
-/*height: 50px;*/
-/*overflow: hidden;*/
-
-/*font-size: 22px;*/
-/*line-height: 50px;*/
-
-/*cursor: pointer;*/
-/*text-align: center;*/
-
-/*color: #b28acd;*/
-/*border: 1px solid #e7e7e7;*/
-/*background: url(//img.hzshuangmei.com/pc/project_bg2.jpg) no-repeat center;*/
-/*}*/
-/*#ptab2 .gengduo:hover {*/
-/*color: #7e4d9f;*/
-/*}*/
 #ptabCon2 > div {
     /*display: none;*/
     margin-top: 5px;
@@ -230,12 +210,9 @@
     display: inline-block;
     width: 71px;
     height: 31px;
-
     font-size: 14px;
     line-height: 53px;
-
     text-align: center;
-
     color: #8b8b8b;
     border: 1px solid #e1e1e1;
 }
@@ -270,23 +247,3 @@
     /*background-color: #64b1e6;*/
     background-color: #8a59a7;
 }
-/*.m1 .ask{*/
-/*display:block;*/
-/*border:1px solid #ada5d7;*/
-/*width: 111px;*/
-/*height: 51px;*/
-/*font-size:16px;*/
-/*font-weight:bold;*/
-/*color:#9f96cd;*/
-/*text-align: center;*/
-/*line-height: 35px;*/
-/*margin:42px auto 63px;*/
-/*}*/
-/*.m1 .ask i{*/
-/*display:block;*/
-/*width:19px;*/
-/*height:16px;*/
-/*background:url(//img.hzshuangmei.com/pc/doctors_ask.png) no-repeat center;*/
-/*margin:-6px auto 0;*/
-
-/*}*/
