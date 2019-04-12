@@ -17,6 +17,8 @@ const ignoreFetch = [
     /https?:\/\/hm.baidu.com\//,
     /https?:\/\/sp0.baidu.com\//,
     /https?:\/\/lxbjs.baidu.com\//,
+    /https?:\/\/ers.baidu.com\//,
+    /https?:\/\/tag.baidu.com\//,
     /.php$/,
     /houtai/,
 ];
