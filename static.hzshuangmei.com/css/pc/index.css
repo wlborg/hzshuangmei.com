@@ -574,15 +574,23 @@ h3 img {
     cursor: pointer;
 
     color: #fff;
-    background-color: rgb(106, 21, 125);
+    background-color: rgb(194,185,201);
 }
 .index_clients #tab4 .fli4 a{
     cursor: pointer;
     color: #fff;
-    background-color: rgb(106, 21, 125);
 }
 #tabCon4{
     position: relative;
+}
+#tabCon4>ul:nth-of-type(3) .fdiv4Ol{
+    left: 512px;
+}
+#tabCon4>ul:nth-of-type(4) .fdiv4Ol{
+    left: 581px;
+}
+#tabCon4>ul:nth-of-type(4) .fdiv4Ol{
+    left: 701px;
 }
 #tabCon4>ul>ol{
     position: absolute;
