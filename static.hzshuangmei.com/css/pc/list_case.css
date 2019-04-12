@@ -416,67 +416,67 @@
 }
 
 .cases_conT li:nth-of-type(1) span {
-    background: url(//img.hzshuangmei.com/pc/xpro_zx_t.png.pagespeed.ic.XhsdgGaAMi.png) center center;
+    background: url(//img.hzshuangmei.com/pc/pro_zx_t.png?v=0.1) center center;
 }
 
 .cases_conT li:nth-of-type(1):hover span {
-    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png.pagespeed.ic.XhsdgGaAMi.png);
+    background: url(//img.hzshuangmei.com/pc/pro_zx_t_act.png?v=0.1);
 }
 
 .cases_conT li:nth-of-type(2) span {
-    background: url(//img.hzshuangmei.com/pc/xpro_jg_t.png.pagespeed.ic.sIHrgdeYic.png);
+    background: url(//img.hzshuangmei.com/pc/pro_jg_t.png?v=0.1);
 }
 
 .cases_conT li:nth-of-type(2):hover span {
-    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png.pagespeed.ic.sIHrgdeYic.png);
+    background: url(//img.hzshuangmei.com/pc/pro_jg_t_act.png?v=0.1);
 }
 
 .cases_conT li:nth-of-type(3) span {
-    background: url(//img.hzshuangmei.com/pc/xpro_wc_t.png.pagespeed.ic.Ury_k7DyJT.png);
+    background: url(//img.hzshuangmei.com/pc/pro_wc_t.png?v=0.1);
 }
 
 .cases_conT li:nth-of-type(3):hover span {
     top: 1.5px;
 
-    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png.pagespeed.ic.Ury_k7DyJT.png);
+    background: url(//img.hzshuangmei.com/pc/pro_wc_t_act.png?v=0.1);
 }
 
 .cases_conT li:nth-of-type(4) span {
     padding-top: .5px;
 
-    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr.png.pagespeed.ic.Mic8SwGgoV.png) center center;
+    background: url(//img.hzshuangmei.com/pc/pro_wc_mr.png?v=0.1) center center;
 }
 
 .cases_conT li:nth-of-type(4):hover span {
-    background: url(//img.hzshuangmei.com/pc/pro_wc_mr_act.png?v=0.2) center center;
+    background: url(//img.hzshuangmei.com/pc/pro_wc_mr_act.png?v=0.3) center center;
 }
 
 .cases_conT li:nth-of-type(5) span {
-    background: url(//img.hzshuangmei.com/pc/pro_sh_t.png?v=0.2) center center;
+    background: url(//img.hzshuangmei.com/pc/pro_sh_t.png?v=0.3) center center;
 }
 
 .cases_conT li:nth-of-type(5):hover span {
-    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png.pagespeed.ic.UPRp-NjkgP.png);
+    background: url(//img.hzshuangmei.com/pc/pro_sh_t_act.png?v=0.3);
 }
 
 .cases_conT li:nth-of-type(1).conT span {
-    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png.pagespeed.ic.RK-RMdt_Dv.png);
+    background: url(//img.hzshuangmei.com/pc/pro_zx_t_act.png?v=0.3);
 }
 
 .cases_conT li:nth-of-type(2).conT span {
-    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png.pagespeed.ic.hvMeLjSTWj.png);
+    background: url(//img.hzshuangmei.com/pc/pro_jg_t_act.png?v=0.3);
 }
 
 .cases_conT li:nth-of-type(3).conT span {
-    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png.pagespeed.ic.peQ-LrtelP.png);
+    background: url(//img.hzshuangmei.com/pc/pro_wc_t_act.png?v=0.3);
 }
 
 .cases_conT li:nth-of-type(4).conT span {
-    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr_act.png.pagespeed.ic.F0m2dheBqO.png);
+    background: url(//img.hzshuangmei.com/pc/pro_wc_mr_act.png?v=0.3);
 }
 
 .cases_conT li:nth-of-type(5).conT span {
-    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png.pagespeed.ic.PMs6zQCCyn.png);
+    background: url(//img.hzshuangmei.com/pc/pro_sh_t_act.png?v=0.3);
 }
 
 .cases_con1_con2_1 {
