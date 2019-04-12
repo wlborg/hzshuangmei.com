@@ -615,7 +615,7 @@ h3 img {
     position: absolute;
     background: rgb(110,54,146);
 }
-.fdiv4Ol{
+#tabCon4>ul>ol.fdiv4Ol{
     display: block;
 }
 .index_clients #tabCon4 ul>li {
