@@ -109,7 +109,7 @@ function preReady() {
         });
     //子导航区域
     //项目
-    $("#project").find("li:not([class='n_button'])").find("a:not([href='javascript:void(0)'][)").hover(
+    $("#project").find("li:not([class='n_button'])").find("a:not([href='javascript:void(0)'])").hover(
         function(event) {
             var bool = false;
             var pre_url = $(this).attr("href");
