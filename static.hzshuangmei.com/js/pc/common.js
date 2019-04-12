@@ -347,6 +347,8 @@ effects.goToJump("doctor_nav","doctor_nav");
                         var href = $(this).attr('href') + "#ca_01";
                     }else if (infos.href.indexOf('info') > 0) {
                         var href = $(this).attr('href') + "#info_nav";
+                    }else if (infos.href.indexOf('help') > 0) {
+                        var href = $(this).attr('href') + "#help_content";
                     }
                     else {
                         var href = $(this).attr('href') + "#news_nav";
@@ -371,7 +373,7 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
-
+    effects.lightCurNav("#help_left", "conT");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
@@ -384,6 +386,7 @@ $(function() {
     effects.goToJump("project_nav", "project_nav");
     effects.goToJump("doctor_nav", "doctor_nav");
     effects.goToJump("list_information_nav", "list_information_nav");
+    effects.goToJump("help_left", "help_content");
     //资讯如果是二级,重定义激活状态颜色
      if(window.location.pathname.indexOf("Tinfo")!=-1){
              $(".currnet4").css("background","#F6A7B6");
