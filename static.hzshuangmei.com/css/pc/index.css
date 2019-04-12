@@ -359,14 +359,12 @@ h3 img {
     width: 123px;
     height: 34px;
     margin: 0 2px;
-
     font-size: 14px;
     font-weight: bold;
     line-height: 34px;
     cursor: pointer;
     text-align: center;
-
-    background-color: #eae8ea;
+    background-color: rgb(194,185,201);
 }
 .index_project #tab2 li a{
     display: block;
