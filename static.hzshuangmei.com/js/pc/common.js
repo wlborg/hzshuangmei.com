@@ -623,11 +623,6 @@ protection.shield(["disableCopy", "disableSource", "disableF12"]);
 //初始化 quicklink
 window.addEventListener('load', () =>{
    quicklink({ priority:true,
-         ignores:[
-             /baidu/,
-             /kuaishang/,
-              uri => uri.includes('.php'),
-            ],
         origins:[
        'www.hzshuangmei.com',
        'm.hzshuangmei.com',
