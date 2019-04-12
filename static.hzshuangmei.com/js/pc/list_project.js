@@ -121,14 +121,16 @@ $(function() {
       function(module) {
               //导航高亮显示
                module.getProLig = function(obj,className,conObj,conClassName) {
-                   console.log("fun");
                     $(obj).hover(function(){
-                        console.log("hover");
                           var index=$(this).index();
                           //$(obj).removeClass(className);
                           //$(obj).eq(index).addClass(className);
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
+                    },function(){
+                        $(conObj).removeClass(conClassName);
+                        var tIndex=$(className).index();
+                        $(conObj).eq(tIndex).addClass(conClassName);
                     });
                };
               //经过二级导航下边框出现
