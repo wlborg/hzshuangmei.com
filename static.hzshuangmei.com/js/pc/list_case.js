@@ -16,11 +16,13 @@ $(function() {
                     $(obj).hover(function(){
                         console.log("hover");
                           var index=$(this).index();
-                          //$(obj).removeClass(className);
-                          //$(obj).eq(index).addClass(className);
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
-                    });
+                    },function(){
+                        $(conObj).removeClass(conClassName);
+                        var tIndex=$(className).index();
+                        $(conObj).eq(tIndex).addClass(conClassName);
+                   });
                };
               //经过二级导航下边框出现
               module.hoverSon=function(obj,className){
