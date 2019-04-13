@@ -872,7 +872,7 @@
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink({ priority:true,,
+   quicklink({ priority:true,
        origins:[
        'm.hzshuangmei.com',
        'www.hzshuangmei.com',
