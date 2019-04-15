@@ -926,11 +926,10 @@ self.addEventListener('error', function (event) {
   // report error msg
 });
 
-self.addEventListener('unhandledrejection', function (event) {
-  // event.reason
-  if (/Quota exceeded/i.test(event.reason)) {
-    // maybe clean some cache here
-  }
+self.addEventListener('unhandledrejection', function(event) {
+    reportError({
+        message: event.reason
+    })
 });
 
 
