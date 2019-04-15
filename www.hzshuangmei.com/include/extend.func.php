@@ -2154,7 +2154,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],30,0))>30?cn_substr($row["title"],30,0)."......":cn_substr($row["title"],30,0);
 $repairRes.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
 }
 if($ns>0){
