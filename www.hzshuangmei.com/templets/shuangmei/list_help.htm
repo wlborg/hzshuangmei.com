@@ -170,17 +170,6 @@
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
-<script>
-    $(function(){
-        new WOW().init();
-        //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
-        var pro2=$(".pro2").height();
-        var pro3=$(".pro3").height();
-        var proH=pro2+pro3;//
-        var helpHg=$(".help_main").height();
-        if(helpHg<proH){
-            $(".help_main").height(proH+"px");
-        }
-    })
-</script>
+<script src="{dede:global.cfg_jspath/}/pc/list_help.js"></script>
+
 </html>
