@@ -2116,7 +2116,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],36,0);
-$shorttitle =strlen(cn_substr($row["shorttitle"],26,0))>26?cn_substr($row["title"],26,0)."......":cn_substr($row["title"],26,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],30,0))>30?cn_substr($row["title"],30,0)."......":cn_substr($row["title"],30,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
