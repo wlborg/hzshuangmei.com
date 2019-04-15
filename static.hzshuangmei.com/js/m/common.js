@@ -872,7 +872,7 @@
 
 //初始化 quicklink
 window.addEventListener('load', () =>{
-   quicklink({ priority:true,,
+   quicklink({ priority:true,
        origins:[
        'm.hzshuangmei.com',
        'www.hzshuangmei.com',
@@ -926,11 +926,10 @@ self.addEventListener('error', function (event) {
   // report error msg
 });
 
-self.addEventListener('unhandledrejection', function (event) {
-  // event.reason
-  if (/Quota exceeded/i.test(event.reason)) {
-    // maybe clean some cache here
-  }
+self.addEventListener('unhandledrejection', function(event) {
+    reportError({
+        message: event.reason
+    })
 });
 
 
