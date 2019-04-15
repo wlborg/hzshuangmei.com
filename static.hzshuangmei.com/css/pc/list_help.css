@@ -303,6 +303,7 @@
     padding-top:  10px;
     padding-bottom: 10px;
     text-indent: 50px;
+    display: none;
 }
 .help_left #tree_root li ul li {
     height: 30px;
