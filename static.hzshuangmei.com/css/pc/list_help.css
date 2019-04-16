@@ -130,12 +130,13 @@
 }
 
 .help_left {
-    height: 500px;
+    /* height: 500px; */
     width: 192px;
+    padding-bottom:  23px;
     border: 1px solid #f2f2f2;
     margin-right: 15px;
     position: relative;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
 }
 
 .help_content {
@@ -278,28 +279,86 @@
     margin: auto;
     cursor: pointer
 }
-.help_left #tree_root li{
+.help_left #tree_root>li{
     border-bottom:none;
     text-indent: 24px;
+    margin-top: 28px;
 }.help_left #tree_root li>span{
      display:block;
      width:100%;
  }
- #help_left  #tree_root .conT{
-     color: rgb(140,106,168);
-     font-size: 14px;
- }
-#help_left  #tree_root .conT a{
+#help_left  #tree_root .conT{
     color: rgb(140,106,168);
     font-size: 14px;
 }
-.help_left #tree_root li>ul{
+#help_left  #tree_root .conT a{
+    color: rgb(140,106,168);
+    /* font-size: 14px; */
+}
+#help_left  #tree_root>ul>li>ul a{
+    font-size:12px;
+}
+.help_left #tree_root>li>ul{
     background:rgb(245,245,245);
+    padding-top:  10px;
+    padding-bottom: 10px;
+    text-indent: 50px;
+    display: none;
 }
 .help_left #tree_root li ul li {
     height: 30px;
     line-height: 30px;
 }
 .help_left #tree_root li>span{
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.help_left #tree_root li>span a{
+    font-size:14px;
+}
+.help_left #tree_root li ul span a{
+    color: rgb(102,102,102);
+    font-size: 12px;
+}
+.help_left #tree_root li>span a:hover{
+    color:rgb(140,106,168);
+}
+#tree_root>li b.Off i{
+    display: block;
+    font-size: 0;
+    cursor: pointer;
+    top: 0px;
+    right: 38px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: solid 1px transparent;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(134deg);
+    position: absolute;
+    top: 0px;
+    border-top-color:#999;
+    border-right-color:#999;
+}
+#tree_root>li b.On i{
+    display: block;
+    font-size: 0;
+    cursor: pointer;
+    right: 38px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: solid 1px transparent;
+    transform: rotate(200deg);
+    -o-transform: rotate(200deg);
+    -ms-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    -webkit-transform: rotate(315deg);
+    position: absolute;
+    top: 8px;
+    border-top-color: #999;
+    border-right-color: #999;
 }

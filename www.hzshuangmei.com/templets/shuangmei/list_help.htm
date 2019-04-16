@@ -6,7 +6,7 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019041301"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019041501"/>
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
@@ -32,6 +32,7 @@
                             <a href="[field:typeurl/]" class="nav_link">
                                 [field:typename/]
                             </a>
+                            <i>&nbsp;</i>
                             {/dede:type}
                         </b>
                     </span>
@@ -50,6 +51,7 @@
                                 [field:typename/]
                             </a>
                             {/dede:type}
+                            <i>&nbsp;</i>
                         </b>
                     </span>
                     <ul>
@@ -67,6 +69,7 @@
                                 [field:typename/]
                             </a>
                             {/dede:type}
+                            <i>&nbsp;</i>
                         </b>
                     </span>
                     <ul>
@@ -84,6 +87,7 @@
                                 [field:typename/]
                             </a>
                             {/dede:type}
+                            <i>&nbsp;</i>
                         </b>
                     </span>
                     <ul>
@@ -101,6 +105,7 @@
                                 [field:typename/]
                             </a>
                             {/dede:type}
+                            <i>&nbsp;</i>
                         </b>
                     </span>
                     <ul>
@@ -165,17 +170,6 @@
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
-<script>
-    $(function(){
-        new WOW().init();
-        //，列表高度小于侧边栏高度时，获取侧边栏高度，给列表高度重新赋值
-        var pro2=$(".pro2").height();
-        var pro3=$(".pro3").height();
-        var proH=pro2+pro3;//
-        var helpHg=$(".help_main").height();
-        if(helpHg<proH){
-            $(".help_main").height(proH+"px");
-        }
-    })
-</script>
+<script src="{dede:global.cfg_jspath/}/pc/list_help.js"></script>
+
 </html>
