@@ -2144,7 +2144,7 @@ global $dsql;
 $repairRes="";
 $repair=0;
 $repair=11-$typeNum;
-$dsql->SetQuery( "SELECT  *  FROM #@__archives AS a where a.typeid in ( $defatypeid ) and a.typeid <> $typeid a.arcrank=0 order by click desc limit $repair");
+$dsql->SetQuery( "SELECT  *  FROM #@__archives AS a where a.typeid in ( $defatypeid ) and a.typeid <> $typeid and a.arcrank=0 order by click desc limit $repair");
 $dsql->Execute();
 $ns = $dsql->GetTotalRow();
 while($row=$dsql->GetArray())
