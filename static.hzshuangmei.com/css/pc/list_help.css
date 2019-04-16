@@ -76,7 +76,7 @@
     background: #d5cfe5
 }
 
-.help_content ul.help_main li {
+.help_content ul.help_main>li {
     margin: 28px 0;
     border-bottom: 1px dashed #e5e5e5
 }
@@ -393,4 +393,52 @@
 }
 #help_left #tree_root .doNameSpan+ul a:hover{
     color:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan a{
+    color: #f6a7b6;
+}
+/*分页样式*/
+.help_main .pagination > li {
+    float: left;
+    padding: 8px 14px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-image: initial;
+}
+.help_main .pagination li:hover {
+    background-color: #8a59a7;
+}
+
+.help_main .pagination li:hover a {
+    color: #fff;
+}
+.help_main .pagination .thisclass {
+    color: #fff;
+    background-color: #8a59a7;
+}
+.help_content ul.help_main>li:hover{
+    box-shadow: 0 5px 5px rgba(110,99,168,0.54);
+}
+.help_main>li>div>p>a>span{
+    color: rgb(105,50,144);
+
+}
+.help_main.help_main_name>li>div>p>a>span{
+    color: rgb(216,102,124);
+
+}
+.help_main.help_main_name>li>div>span:nth-of-type(2) {
+
+    background: rgb(246,167,182);
+
+}
+/*二级导航样式重写*/
+.help_main .nameNs_pa .pagination .thisclass {
+    color: #fff;
+    background-color: rgb(246,167,182);
+}
+.help_main .nameNs_pa .pagination li:hover {
+    background-color: rgb(246,167,182);
 }
