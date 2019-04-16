@@ -14,7 +14,7 @@ $(function() {
             module.retunHref=function(){
                 var res=false;
                 var href=window.location.pathname;
-                var doNameTwo = /^[13456789]_[13456789]h$/;
+                var doNameTwo =/^\/[13456789]_[13456789]h\/$/;
                 if(doNameTwo.test(href)){
                     $(".conT").addClass("conT2");
                     $(".conT").addClass("help_main_name");//为主要内容区域加上二级域名标识
