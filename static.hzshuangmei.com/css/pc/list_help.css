@@ -399,7 +399,7 @@
 #help_left #tree_root .doNameSpan a{
     color: #f6a7b6;
 }
-/*åˆ†é¡µæ ·å¼*/
+/*Ã¥Ë†â€ Ã©Â¡ÂµÃ¦Â Â·Ã¥Â¼Â*/
 .help_main .pagination > li {
     float: left;
     padding: 8px 14px;
@@ -458,7 +458,7 @@
 .pro2N_name .pro2_tag li>a>span:hover {
     text-decoration: none;
 }
-/*äºŒçº§å¯¼èˆªæ ·å¼é‡å†™*/
+/*Ã¤ÂºÅ’Ã§ÂºÂ§Ã¥Â¯Â¼Ã¨Ë†ÂªÃ¦Â Â·Ã¥Â¼ÂÃ©â€¡ÂÃ¥â€ â„¢*/
 .help_main .nameNs_pa .pagination .thisclass {
     color: #fff;
     background-color: rgb(246,167,182);
@@ -478,10 +478,10 @@
 .pro2N_name .pro2_tag li>a{
     border-bottom:1px solid #fff;
 }
-.pro2_tag li>a:hover{
+.pro2N_name .pro2_tag li>a:hover{
     border-bottom:1px solid rgb(246,167,182);
     color:rgb(246,167,182)!important;
 }
-.pro2_tag li>a:hover span:nth-of-type(1){
+.pro2N_name .pro2_tag li>a:hover span:nth-of-type(1){
     background:rgb(246,167,182);
 }
