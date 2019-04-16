@@ -5,7 +5,7 @@ $(function() {
         var num = $(".btn li").index(this);
         $(".case_con").hide();
         $(".case_con").eq(num).show().slblings().hide();
-    })
+    });
 // 导航控制跳转显示
        //preReady();
     var tools_cases = (
@@ -20,7 +20,9 @@ $(function() {
                         $(conObj).removeClass(conClassName);
                         var tIndex=$(className).index();
                         $(conObj).eq(tIndex).addClass(conClassName);
+                        console.log("tIndex:"+tIndex)
                    });
+                   //tools_cases.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
                };
               //经过二级导航下边框出现
               module.hoverSon=function(obj,className){
