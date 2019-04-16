@@ -2116,7 +2116,7 @@ while($row=$dsql->GetArray())
 {
 $id = $row["id"];
 $title = cn_substr($row["title"],36,0);
-$shorttitle =strlen(cn_substr($row["shorttitle"],34,0))>34?cn_substr($row["title"],34,0)."......":cn_substr($row["title"],34,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title"],36,0)."......":cn_substr($row["title"],36,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
@@ -2154,7 +2154,7 @@ $title = cn_substr($row["title"],80,0);
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$shorttitle =strlen(cn_substr($row["shorttitle"],34,0))>34?cn_substr($row["title"],34,0)."......":cn_substr($row["title"],34,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title"],36,0)."......":cn_substr($row["title"],36,0);
 $repairRes.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
 }
 if($ns>0){

@@ -362,9 +362,9 @@
     border-top-color: #999;
     border-right-color: #999;
 }
-.doNameSpan  a{
-    color:rgb(246,167,182);
-    opacity: 1;
+#help_left #tree_root .conT.doNameSpan a {
+    color: #f6a7b6;
+    opacity: 1
 }
 #tree_root>li span.doNameSpan b.Off i{
     border-top-color: rgb(246,167,182);
