@@ -256,6 +256,7 @@ h3 {
 }
 .article_case_content .main .main_content div {
     margin: 0 0 52px 28px;
+    text-align: center;
 }
 .article_case_content .main .main_content div > img {
     float: left;
