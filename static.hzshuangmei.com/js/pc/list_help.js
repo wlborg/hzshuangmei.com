@@ -17,9 +17,9 @@ $(function() {
                 var doNameTwo =/^\/[13456789]_[13456789]h\/$/;
                 if(doNameTwo.test(href)){
                     $(".conT").addClass("conT2");
-                    $(".conT").addClass("help_main_name");//为主要内容区域加上二级域名标识
+                    $(".help_main").addClass("help_main_name");//为主要内容区域加上二级域名标识
                     $(".ns_pa").addClass("nameNs_pa");//为分页加上二级域名标识
-                    $(".help_main>li>div>h4>img").attr("src","https://img.hzshuangmei.com/pc/nameQuest.png.");//更换问题图标
+                    $(".help_main>li>div>h4>img").attr("src","https://img.hzshuangmei.com/pc/nameQuest.png");//更换问题图标
                     $(".info_kst").attr("src","https://img.hzshuangmei.com/pc/helpKst_name.png");//更换热门问题快商通图标
                     //右侧热门问题加二级导航标识
                     $(".pro2N").addClass("pro2N_name");

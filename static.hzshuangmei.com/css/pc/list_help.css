@@ -421,18 +421,37 @@
 .help_content ul.help_main>li:hover{
     box-shadow: 0 5px 5px rgba(110,99,168,0.54);
 }
+.help_content ul.help_main.help_main_name>li:hover{
+    box-shadow: 0 5px 5px rgba(246,167,182,0.54);
+}
 .help_main>li>div>p>a>span{
     color: rgb(105,50,144);
-
+}
+.help_main.help_main_name>li>div>p>a>span{
+    color: rgb(246,167,182);
 }
 .help_main.help_main_name>li>div>p>a>span{
     color: rgb(216,102,124);
-
 }
 .help_main.help_main_name>li>div>span:nth-of-type(2) {
-
     background: rgb(246,167,182);
-
+}
+.pro2_tag li>a {
+    color: #666!important;
+}
+.pro2N  .pro2_tag li>a:hover {
+    text-decoration: none;
+    color: #693290;
+}
+.pro2N  .pro2_tag li>a>span:hover {
+    text-decoration: none;
+}
+.pro2N_name .pro2N_name .pro2_tag li>a:hover {
+    text-decoration: none;
+    color: #693290;
+}
+.pro2N_name .pro2_tag li>a>span:hover {
+    text-decoration: none;
 }
 /*二级导航样式重写*/
 .help_main .nameNs_pa .pagination .thisclass {
