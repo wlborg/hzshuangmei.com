@@ -362,3 +362,35 @@
     border-top-color: #999;
     border-right-color: #999;
 }
+.doNameSpan  a{
+    color:rgb(246,167,182);
+    opacity: 1;
+}
+#tree_root>li span.doNameSpan b.Off i{
+    border-top-color: rgb(246,167,182);
+    border-right-color: rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul .conT span::before{
+    background:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul .conT a{
+    color:rgb(246,167,182);
+}
+.help_left #tree_root li>span.tree3::before{
+    width:3px;
+    height:3px;
+    content:"";
+    background:rgb(113,113,113);
+    position:absolute;
+    left:36px;
+    top:15px;
+}
+.help_left #tree_root li>span.tree3:hover::before{
+    background:rgb(140,106,168);
+}
+#help_left #tree_root .doNameSpan+ ul li>span.tree3:hover::before{
+    background:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul a:hover{
+    color:rgb(246,167,182);
+}
