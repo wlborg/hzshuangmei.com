@@ -17,10 +17,10 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     },function(){
-                        $(conObj).removeClass(conClassName);
-                        var tIndex=$(className).index();
-                        $(conObj).eq(tIndex).addClass(conClassName);
-                        console.log("tIndex:"+tIndex)
+                        //$(conObj).removeClass(conClassName);
+                        //var tIndex=$(className).index();
+                        //$(conObj).eq(tIndex).addClass(conClassName);
+                        //console.log("tIndex:"+tIndex);
                    });
                    //tools_cases.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
                };
@@ -47,7 +47,7 @@ $(function() {
           return module;
      }
     )(window.tools_pro || {});
-    tools_cases.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
+    tools_cases.getProLig(".cases_conT>li",".conT",".cases_con1_con2_1","cases_pr");
     tools_cases.hoverSon("#cases_con1_con2>.cases_con1_con2_1>li","hoverClass");
     tools_cases.sonPar(".cases_conT li",".cases_con1_con2_act",".cases_con1_con2_1");
     tools_cases.parNav(".conT","#cases_conTc>ul","cases_pr");

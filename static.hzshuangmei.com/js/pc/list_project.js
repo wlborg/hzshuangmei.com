@@ -128,9 +128,9 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     },function(){
-                        $(conObj).removeClass(conClassName);
-                        var tIndex=$(className).index();
-                        $(conObj).eq(tIndex).addClass(conClassName);
+                        //$(conObj).removeClass(conClassName);
+                        //var tIndex=$(className).index();
+                        //$(conObj).eq(tIndex).addClass(conClassName);
                     });
                };
               //经过二级导航下边框出现
