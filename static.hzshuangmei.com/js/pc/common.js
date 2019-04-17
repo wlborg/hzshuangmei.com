@@ -276,12 +276,14 @@ var effects = (
                 casemodalimg.attr('src', "");
             })
             casetargetimgs.each(function(index) {
-                $(this).on('click', function() {
-                    var num = index + 1;
-                    casecurrentbigimgnum = num;
-                    addimgurl(num);
-                    casemodal.addClass('case-show');
-                })
+                if($(this).attr("class")!="cases_nobig"){
+                    $(this).on('click', function() {
+                        var num = index + 1;
+                        casecurrentbigimgnum = num;
+                        addimgurl(num);
+                        casemodal.addClass('case-show');
+                    })
+                }
             });
             casenextbtn.click(function() {
                 var num = casecurrentbigimgnum + 1;

@@ -6,7 +6,7 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019041501"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019041606"/>
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
@@ -131,7 +131,7 @@
                         <p>
                             <img src="https://img.hzshuangmei.com/pc/ans.png" alt="回答图标">
                             <a href="[field:arcurl/]" title="[field:fulltitle/]">
-                                [field:description function='cn_substr(@me,160)'/]...<span>[详细]</span>
+                                [field:description function='cn_substr(@me,160)'/]...<span>【详情】</span>
                             </a>
                         </p>
                         <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>
@@ -170,6 +170,6 @@
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
-<script src="{dede:global.cfg_jspath/}/pc/list_help.js"></script>
+<script src="{dede:global.cfg_jspath/}/pc/list_help.js?v=2019041606"></script>
 
 </html>

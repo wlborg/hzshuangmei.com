@@ -76,7 +76,7 @@
     background: #d5cfe5
 }
 
-.help_content ul.help_main li {
+.help_content ul.help_main>li {
     margin: 28px 0;
     border-bottom: 1px dashed #e5e5e5
 }
@@ -214,7 +214,9 @@
     width: 273px;
     margin: 0 20px 13px 0!important
 }
-
+.pro2_tag li {
+    /* border-bottom: 1px solid red!important; */
+}
 .pro2_tag li:nth-of-type(1) {
     background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right
 }
@@ -361,4 +363,125 @@
     top: 8px;
     border-top-color: #999;
     border-right-color: #999;
+}
+#help_left #tree_root .conT.doNameSpan a {
+    color: #f6a7b6;
+    opacity: 1
+}
+#tree_root>li span.doNameSpan b.Off i{
+    border-top-color: rgb(246,167,182);
+    border-right-color: rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul .conT span::before{
+    background:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul .conT a{
+    color:rgb(246,167,182);
+}
+.help_left #tree_root li>span.tree3::before{
+    width:3px;
+    height:3px;
+    content:"";
+    background:rgb(113,113,113);
+    position:absolute;
+    left:36px;
+    top:15px;
+}
+.help_left #tree_root li>span.tree3:hover::before{
+    background:rgb(140,106,168);
+}
+#help_left #tree_root .doNameSpan+ ul li>span.tree3:hover::before{
+    background:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan+ul a:hover{
+    color:rgb(246,167,182);
+}
+#help_left #tree_root .doNameSpan a{
+    color: #f6a7b6;
+}
+/*Ã¥Ë†â€ Ã©Â¡ÂµÃ¦Â Â·Ã¥Â¼Â*/
+.help_main .pagination > li {
+    float: left;
+    padding: 8px 14px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-image: initial;
+}
+.help_main .pagination li:hover {
+    background-color: #8a59a7;
+}
+
+.help_main .pagination li:hover a {
+    color: #fff;
+}
+.help_main .pagination .thisclass {
+    color: #fff;
+    background-color: #8a59a7;
+}
+.help_content ul.help_main>li:hover{
+    box-shadow: 0 5px 5px rgba(110,99,168,0.54);
+}
+.help_content ul.help_main.help_main_name>li:hover{
+    box-shadow: 0 5px 5px rgba(246,167,182,0.54);
+}
+.help_main>li>div>p>a>span{
+    color: rgb(105,50,144);
+}
+.help_main.help_main_name>li>div>p>a>span{
+    color: rgb(246,167,182);
+}
+.help_main.help_main_name>li>div>p>a>span{
+    color: rgb(216,102,124);
+}
+.help_main.help_main_name>li>div>span:nth-of-type(2) {
+    background: rgb(246,167,182);
+}
+.pro2_tag li>a {
+    color: #666;
+    display: block;
+    /* border-bottom: 1px solid red!important; */
+    width: fit-content;
+}
+.pro2N  .pro2_tag li>a:hover {
+    text-decoration: none;
+    color: #693290;
+}
+.pro2N  .pro2_tag li>a>span:hover {
+    text-decoration: none;
+}
+.pro2N_name .pro2N_name .pro2_tag li>a:hover {
+    text-decoration: none;
+    color: #693290;
+}
+.pro2N_name .pro2_tag li>a>span:hover {
+    text-decoration: none;
+}
+/*Ã¤ÂºÅ’Ã§ÂºÂ§Ã¥Â¯Â¼Ã¨Ë†ÂªÃ¦Â Â·Ã¥Â¼ÂÃ©â€¡ÂÃ¥â€ â„¢*/
+.help_main .nameNs_pa .pagination .thisclass {
+    color: #fff;
+    background-color: rgb(246,167,182);
+}
+.help_main .nameNs_pa .pagination li:hover {
+    background-color: rgb(246,167,182);
+}
+.pro2_tag li>a{
+    border-bottom:1px solid #fff;
+}
+.pro2_tag li>a:hover{
+    border-bottom:1px solid rgb(105,50,144);
+}
+.pro2_tag li>a:hover span:nth-of-type(1){
+    background:rgb(105,50,144);
+}
+.pro2N_name .pro2_tag li>a{
+    border-bottom:1px solid #fff;
+}
+.pro2N_name .pro2_tag li>a:hover{
+    border-bottom:1px solid rgb(246,167,182);
+    color:rgb(246,167,182)!important;
+}
+.pro2N_name .pro2_tag li>a:hover span:nth-of-type(1){
+    background:rgb(246,167,182);
 }
