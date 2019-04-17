@@ -17,10 +17,10 @@ $(function() {
                             $(conObj).removeClass(conClassName);
                             $(conObj).eq(index).addClass(conClassName);
                     },function(){
-                        $(conObj).removeClass(conClassName);
-                        var tIndex=$(className).index();
-                        $(conObj).eq(tIndex).addClass(conClassName);
-                        console.log("tIndex:"+tIndex)
+                        //$(conObj).removeClass(conClassName);
+                        //var tIndex=$(className).index();
+                        //$(conObj).eq(tIndex).addClass(conClassName);
+                        //console.log("tIndex:"+tIndex);
                    });
                    //tools_cases.getProLig(".cases_conT>li","conT",".cases_con1_con2_1","cases_pr");
                };
