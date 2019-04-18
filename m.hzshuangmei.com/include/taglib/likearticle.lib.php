@@ -89,17 +89,27 @@ function lib_likearticle(&$ctag,&$refObj)
             }
     }
     $arcid = (!empty($refObj->Fields['id']) ? $refObj->Fields['aid'] : 0);
-    if( empty($arcid) || $byabs==0 )
+    /*if( empty($arcid) || $byabs==0 )
     {
         $orderquery = " ORDER BY arc.id desc ";     
     }
     else {
         $orderquery = " ORDER BY ABS(arc.id - ".$arcid.") ";
-    }
+    }*/
+    if($orderby=='hot' || $orderby=='click') $orderquery = " order by arc.click";
+        
+        else if($orderby == 'id') $orderquery = " order by arc.id asc";  
+        else if($orderby == 'ids') $orderquery = " order by arc.id desc";    
+        else if($orderby == 'lastpost') $orderquery = " order by arc.lastpost";
+        else if($orderby == 'scores') $orderquery = " order by arc.scores";
+        else if($orderby == 'rand') $orderquery = " order by rand()";      
+        else $orderquery = " order by arc.sortrank";
     if($keyword != '')
     {
              if(!empty($typeid)) {
-                     $typeid = " AND arc.typeid IN($typeid) AND arc.id<>$arcid ";
+                      //栏目关联or全站关联
+                     /*$typeid = " AND arc.typeid IN($typeid) AND arc.id<>$arcid ";*/
+                     $typeid = " AND arc.id<>$arcid ";
              }
              $query = "SELECT arc.*,tp.typedir,tp.typename,tp.corank,tp.isdefault,tp.defaultname,tp.namerule,
                   tp.namerule2,tp.ispart,tp.moresite,tp.siteurl,tp.sitepath
