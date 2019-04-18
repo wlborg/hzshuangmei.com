@@ -1271,8 +1271,13 @@ body  #hltd .hltd img {
     width: 1200px;
     height: 478px;
 }
-.tab4_step {
+.index_clients #tabCon4 ul li .clients_b p.tab4_step {
     font-size: 24px;
     font-weight: bold;
     line-height: 20px;
+}
+.index_clients #tabCon4 ul li .clients_b p.tab4_step>img{
+    position: absolute;
+    left: 193px;
+    top: 353px;
 }
