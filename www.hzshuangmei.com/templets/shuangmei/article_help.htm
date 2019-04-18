@@ -10,8 +10,7 @@
     <meta property="article:published_time" content="{dede:field.pubdate function=" MyDate( 'Y-m-d',@me) "/}T{dede:field.pubdate function="MyDate( 'H:i:s',@me) "/}+08:00">
     <meta property="article:tag" content="{dede:field name='keywords'/}"> {dede:include filename="_link.htm"/}
      <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_common.css" />
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_help.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/article_help.css?v=20190418" />
      <script type="application/ld+json">
     {
         "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
@@ -112,17 +111,20 @@
                 <div>
                     <img src="{dede:global.cfg_imgpath/}/pc/artQuest.png" class="artQuest" alt="帮助中心详情页问题图标">
                     <img src="{dede:global.cfg_imgpath/}/pc/essence.png" class="essence" alt="帮助中心详情页精华问题标注">
-                    <h1>海口红妆双美门店测试标题3</h1>
+                    <h1>{dede:field.title/}</h1>
                     <p class="tit">
                     <span>
-                        196 浏览
+                        {dede:field.click /} 浏览
                         <i>&nbsp;</i>
                     </span>
                     <span><img src="{dede:global.cfg_imgpath/}/pc/time.png" alt="帮助中心详情页时间图标">
-                        2019-04-15
+                        {dede:field.pubdate function="MyDate('Y-m-d',@me)" /
                         <i>&nbsp;</i>
                     </span>
-                        <span>来源 : 红妆双美</span>
+                        <span>来源 : {dede:channel}
+                              <a href="[field:typelink/]">[field:typename/]</a>
+                       {/dede:channel}
+                        </span>
                         <a href="javascript:void(0)" class="j-consult" rel="nofollow"></a></p>
                     <div class="ar_ar  ar_ar1">
                         <p class="helpInfo">
@@ -153,120 +155,136 @@
                                 <p><span>下一篇：</span><a href="https://www.hzshuangmei.com/1_1h/3114.html">海口红妆双美门店测试标题2</a></p>           </div>
                         </div>
                     </div>
+                    <div class="share clearFix">
+                        <p><i class="share_01"></i><span>分享到：</span></p>
+                        <!-- 百度分享 -->
+                        <div class="bdsharebuttonbox bdshare-button-style1-24" data-bd-bind="1555385336023">
+                            <!--     <a href="#" class="bds_more" data-cmd="more"></a> --><a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a> </div>
+                        <!-- 百度分享 -->
+                        <div class="share_ewm">
+                            <!-- <img src="https://img.hzshuangmei.com/pc/share_ewm.jpg" alt="" /> -->
+                            <img alt="红妆双美小程序二维码" width="107" height="107" src="./海口红妆双美门店测试标题3_[海南红妆双美官网]_files/107x107xWeChatApplet.jpg.pagespeed.ic.hjPEyluGKM.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                            <p>微信
+                                <br>扫一扫
+                                <br>拿福利</p>
+                        </div>
+                        <div class="zixun"> <a href="javascript:void(0)" class="j-consult" rel="nofollow"><i class="share_07"></i>官网预约通道</a>
+                            <a href="javascript:void(0)" class="j-consult" rel="nofollow"><i class="share_08"></i>在线咨询客服</a> </div>
+                    </div>
+                    <div class="correlation">
+                        <div class="cor_tit">
+                            <img alt="相关问答图标" src="{dede:global.cfg_imgpath/}/pc/RQAnswers.png"></div>
+                        <div id="help_tab">
+                            <ul>
+                                {dede:type typeid='267'}
+                                <li class="fli2_tab">
+                                    <a href="[field:typeurl/]">
+                                        [field:typename/]
+                                    </a>
+                                </li>
+                                {/dede:type}
+                                {dede:type typeid='271'}
+                                <li>
+                                    <a href="[field:typeurl/]">
+                                        [field:typename/]
+                                    </a>
+                                </li>
+                                {/dede:type}
+                                {dede:type typeid='276'}
+                                <li>
+                                    <a href="[field:typeurl/]">
+                                        [field:typename/]
+                                    </a>
+                                </li>
+                                {/dede:type}
+                                {dede:type typeid='287'}
+                                <li>
+                                    <a href="[field:typeurl/]">
+                                        [field:typename/]
+                                    </a>
+                                </li>
+                                {/dede:type}
+                                {dede:type typeid='294'}
+                                <li>
+                                    <a href="[field:typeurl/]">
+                                        [field:typename/]
+                                    </a>
+                                </li>
+                                {/dede:type}
+                            </ul>
+                        </div>
+                        <div class="cor_content clearFix">
+                            <ul id="helpCon2">
+                                <li class="hdiv2">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                        <tr>
+                                            <td width="50%">
+                                                <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>海口红妆双美门店测试标题2</a>
+                                            </td>
+                                            <td width="50%">
+                                                <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                        <tr>
+                                            <td width="50%">
+                                                <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>2海口红妆双美门店测试标题2</a>
+                                            </td>
+                                            <td width="50%">
+                                                <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">
+                                            </td>
+                                            <td width="50%">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
 
-                    <div class="art_info_tag">
+                        </div>
                     </div>
                 </div>
-                <div class="share clearFix">
-                    <p><i class="share_01"></i><span>分享到：</span></p>
-                    <!-- 百度分享 -->
-                    <div class="bdsharebuttonbox bdshare-button-style1-24" data-bd-bind="1555385336023">
-                        <!--     <a href="#" class="bds_more" data-cmd="more"></a> --><a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a> <a href="https://www.hzshuangmei.com/1_1h/3115.html#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a> </div>
-                    <!-- 百度分享 -->
-                    <div class="share_ewm">
-                        <!-- <img src="https://img.hzshuangmei.com/pc/share_ewm.jpg" alt="" /> -->
-                        <img alt="红妆双美小程序二维码" width="107" height="107" src="./海口红妆双美门店测试标题3_[海南红妆双美官网]_files/107x107xWeChatApplet.jpg.pagespeed.ic.hjPEyluGKM.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
-                        <p>微信
-                            <br>扫一扫
-                            <br>拿福利</p>
-                    </div>
-                    <div class="zixun"> <a href="javascript:void(0)" class="j-consult" rel="nofollow"><i class="share_07"></i>官网预约通道</a>
-                        <a href="javascript:void(0)" class="j-consult" rel="nofollow"><i class="share_08"></i>在线咨询客服</a> </div>
-                </div>
-                <div class="correlation">
-                    <div class="cor_tit">
-                        <img alt="相关问答图标" src="{dede:global.cfg_imgpath/}/pc/RQAnswers.png"></div>
-                    <div id="help_tab">
-                        <ul>
-                            {dede:type typeid='267'}
-                            <li class="fli2_tab">
-                                <a href="[field:typeurl/]">
-                                    [field:typename/]
-                                </a>
-                            </li>
-                            {/dede:type}
-                            {dede:type typeid='271'}
-                            <li>
-                                <a href="[field:typeurl/]">
-                                    [field:typename/]
-                                </a>
-                            </li>
-                            {/dede:type}
-                            <li class=""><a href="projects/mini">微创注射美容</a></li>
-                            <li class=""><a href="projects/tattoo">医学纹绣</a></li>
-                            <li class=""><a href="projects/liv">生活美容SPA</a></li>
-                        </ul>
-                    </div>
-                    <div class="cor_content clearFix">
-                        <ul id="helpCon2">
-                            <li class="hdiv2">
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                    <tbody>
-                                    <tr>
-                                        <td width="50%">
-                                            <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>海口红妆双美门店测试标题2</a>
-                                        </td>
-                                        <td width="50%">
-                                            <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </li>
-                            <li>
-                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                    <tbody>
-                                    <tr>
-                                        <td width="50%">
-                                            <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>2海口红妆双美门店测试标题2</a>
-                                        </td>
-                                        <td width="50%">
-                                            <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="50%">
-                                        </td>
-                                        <td width="50%">
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </li>
-                        </ul>
 
-                    </div>
-                </div>
             </div>
             <div class="gdyb"> <div class="ar_aside" id="ar_aside">
                 <div class="aside">
