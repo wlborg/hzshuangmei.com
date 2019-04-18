@@ -57,8 +57,18 @@
                     <a class="j-consult" href="javascript:void(0)">&nbsp;</a>
                 </div>
                 <div class="page clearFix">
-                    <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
-                    <p><span>下一篇：</span>{dede:prenext get='pre'/}</p>
+                    <!-- <p><span>上一篇：</span>{dede:prenext get='next'/}</p>
+                    <p><span>下一篇：</span>{dede:prenext get='pre'/}</p> -->
+                    <p>
+                        <span>上一篇：</span> {dede:likearticle orderby='ids' row='1'}
+                                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                                             {/dede:likearticle}
+                 
+                    </p>
+                    <p><span>下一篇：</span>  {dede:likearticle orderby='id' row='1'}
+                                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                                             {/dede:likearticle}
+                     </p>
                 </div> {dede:include filename="article_bottom.htm"/} </div>
             <div class="gdyb"> {dede:include filename="article_aside.htm"/} </div>
         </div>
