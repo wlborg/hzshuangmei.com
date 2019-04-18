@@ -120,8 +120,16 @@
                     <!--</script>-->
                 </div>
                 <nav class="article-nav">
-                    <span class="article-nav-prev">上一篇<br>{dede:prenext get='next'/}</span>
-                    <span class="article-nav-next">下一篇<br>{dede:prenext get='pre'/}</span>
+                    <span class="article-nav-prev">上一篇<br>
+                        {dede:likearticle orderby='ids' row='1'}
+                          <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                        {/dede:likearticle}
+                    </span>
+                    <span class="article-nav-next">下一篇<br>
+                        {dede:likearticle orderby='id' row='1'}
+                          <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                        {/dede:likearticle}
+            </span>
                 </nav>
                 <div style="display: none" id="art_title">{dede:field.title/}</div>
                 <div class="postitems">
