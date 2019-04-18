@@ -2117,3 +2117,16 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro_con1_con2_1 li:hover {
     border-bottom: 1px solid #6e3693
 }
+._CNav_div input::-webkit-input-placeholder{
+    color:#a5a5a5;
+}
+._CNav_div input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#a5a5a5;
+}
+._CNav_div input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#a5a5a5;
+}
+._CNav_div input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a5a5a5;
+}
