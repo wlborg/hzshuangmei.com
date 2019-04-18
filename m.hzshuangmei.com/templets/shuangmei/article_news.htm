@@ -52,8 +52,16 @@
 
                   </div>
                  <div class="relate-link f-cb">
-                    <div class="prev"> {dede:prenext get='pre'/}</div>
-                    <div class="next">{dede:prenext get='next'/}</div>
+                    <div class="prev"> 
+                      {dede:likearticle orderby='ids' row='1'}
+                          <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                      {/dede:likearticle}
+                     </div>
+                    <div class="next">
+                      {dede:likearticle orderby='id' row='1'}
+                           <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                      {/dede:likearticle}
+                    </div>
                  </div>
             </div>
             {dede:include filename="_sj_copyright.htm"/}
