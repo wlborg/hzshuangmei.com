@@ -395,7 +395,7 @@ tr {
     font-size: 12px;
     position: absolute;
     left: 316px;
-    top: 289px;
+    top: 291px;
 }
 
 .art_help_kst {
@@ -439,7 +439,7 @@ tr {
     padding-bottom: 37px;
 }
 
-.article_help_content .con p {
+.article_help_content .con .page p {
     margin: 1em 0px;
     width: 268px;
     line-height: 28px;
