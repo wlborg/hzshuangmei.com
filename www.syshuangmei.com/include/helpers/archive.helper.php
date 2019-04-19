@@ -294,3 +294,251 @@ if ( ! function_exists('InsertOneTag'))
         }
     }
 }
+//资讯列表页读取每条资讯的tag
+function GetTags_list($aid)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE aid='$aid' limit 6";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a>" : ' '."<a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a>");
+
+
+
+        }
+
+        return $tags;
+
+    }
+    //资讯列表页读取每条资讯的tag
+function GetTags_list_typeid($typeid)
+
+    {
+        global $dsql;
+        $relatetypeid = 0;
+        $tags = '';
+        switch ($typeid)
+        {
+        case 222:
+        $relatetypeid= '222';
+        break;
+        case 90:
+        $relatetypeid= '92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138';
+        break;
+        case 91:
+        $relatetypeid= '92,93,94,95,96,97';
+        break;
+        case 98:
+        $relatetypeid= '99,100,101,102,103,104,105,106,107';
+        break;
+        case 108:
+        $relatetypeid= '109,110,111,112,113,114';
+        break;
+        case 115:
+        $relatetypeid= '116,117,118,119,120,121 ';
+        break;
+        case 122:
+        $relatetypeid= '123,124,125';
+        break;
+        case 126:
+        $relatetypeid= '127,128,129,130,131,132,133,134,135';
+        break;
+        case 136:
+        $relatetypeid= '137,138';
+        break;
+        case 140:
+        $relatetypeid= '142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172';
+        break;
+        case 141:
+        $relatetypeid= '142,143,144,145,146';
+        break;
+        case 147:
+        $relatetypeid= '148,149,150,151,152';
+        break;
+        case 153:
+        $relatetypeid= '154,155,156';
+        break;
+        case 157:
+        $relatetypeid= '158,159,160,161,162';
+        break;
+        case 163:
+        $relatetypeid= '164,165';
+        break;
+        case 166:
+        $relatetypeid= '167,168,224,225';
+        break;
+        case 169:
+        $relatetypeid= '170,171,172';
+        break;
+        case 173:
+        $relatetypeid= '175,176,177,178,179,180,182,183,184,185';
+        break;
+        case 174:
+        $relatetypeid= '175,176,177,178,179,180';
+        break;
+        case 181:
+        $relatetypeid= '182,183,184,185';
+        break;
+        case 186:
+        $relatetypeid= '188,189,223,226,191,192,193,195,196,227,198,199,228';
+        break;
+        case 187:
+        $relatetypeid= '188,189,223';
+        break;
+        case 190:
+        $relatetypeid= '226,191,192,193';
+        break;
+        case 194:
+        $relatetypeid= '195,196,227';
+        break;
+        case 197:
+        $relatetypeid= '198,199,228';
+        break;
+        case 200:
+        $relatetypeid= '202,203,204,205,229,207,208,209,211,212,213,215,216,217,218';
+        break;
+        case 201:
+        $relatetypeid= '202,203,204,205,229';
+        break;
+        case 206:
+        $relatetypeid= '207,208,209';
+        break;
+        case 210:
+        $relatetypeid= '211,212,213';
+        break;
+        case 214:
+        $relatetypeid= '215,216,217,218';
+        break;
+        case 219:
+        $relatetypeid= '220,221';
+        break;
+        default:
+        $relatetypeid= '92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138';
+        }
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in ($relatetypeid) limit 24";
+        $dsql->Execute('tag',$query);
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<li><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'><span>?</span><span>".$row['tag']."</span></a></li>" : ' '."<li><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'><span>?</span><span>".$row['tag']."</span></a></li>");
+        }
+
+        return $tags;
+
+    }
+ //资讯列表导航顶部tag读取整形栏目中2条
+function GetTags_nav_typeid_zx2($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (92,93,94,95,96,97,99,100,101,102,103,104,105,106,107) limit 2";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+
+
+
+        }
+
+        return $tags;
+
+    }
+
+ //资讯列表导航顶部tag读取激光栏目中2条
+function GetTags_nav_typeid_jg2($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172) limit 2";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+
+
+
+        }
+
+        return $tags;
+
+    }
+//资讯列表导航顶部tag读取生活栏目中2条
+function GetTags_nav_typeid_sh2($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (202,203,204,205,229,207,208,209,211,212,213,215,216,217,218) limit 2";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+
+
+
+        }
+
+        return $tags;
+
+    }
+//资讯列表导航顶部tag读取纹绣栏目中2条
+function GetTags_nav_typeid_wx2($id)
+
+    {
+
+        global $dsql;
+
+        $tags = '';
+
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (188,189,223,226,191,192,193,195,196,227,198,199,228) limit 2";
+
+        $dsql->Execute('tag',$query);
+
+        while($row = $dsql->GetArray('tag'))
+
+        {
+
+            $tags .= ($tags=='' ? "<span><a href='/tags.php?/".urlencode($row['tag'])."'  target='_blank'>".$row['tag']."</a></span>" : ' '."<span><a href='/tags.php?/".urlencode($row['tag'])."' target='_blank'>".$row['tag']."</a></span>");
+
+
+
+        }
+
+        return $tags;
+
+    }
