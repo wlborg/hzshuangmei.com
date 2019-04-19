@@ -2167,24 +2167,3 @@ return $repairRes;
 *  帮助中心详情页读取医生的名字,根据文档填写医生的文档id
 *  $typeid     当前栏目id
 */
-function getDoctorHeadFormId($doctorid)
-{
-global $dsql;
-$relateInfo="";
-if($doctorid!=""){
-      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
-      $dsql->Execute();
-      $ns = $dsql->GetTotalRow();
-      while($row=$dsql->GetArray())
-      {
-      $litpic =replaceurl($row["litpic"]);
-      $relateInfo.='<img src="'.$litpic.'" alt="'.$litpic.'" />';
-      }
-      if($ns>0){
-      $relateInfo.=$relateInfo;
-      }
-}else{
-    $relateInfo.="<img src="https://img.hzshuangmei.com/pc/tl_logo.png" alt="默认客服头像" />";
-}
- return $relateInfo;
-}
