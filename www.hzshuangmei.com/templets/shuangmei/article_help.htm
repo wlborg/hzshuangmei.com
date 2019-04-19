@@ -128,9 +128,12 @@
                         <p class="helpInfo">
                             {dede:FIELD.doctorid function='getDoctorHeadFormId(@me)'/}
                         </p>
-                        <p class="docName"> {dede:FIELD.doctorid function='getDoctorHeadFormName(@me)'/}</p>
+                        <p class="docName">
+                            {dede:FIELD.doctorid function='getDoctorHeadFormName(@me)'/}
+                            <img src="{dede:global.cfg_imgpath/}/pc/helpV.png" class="helpV" alt="帮助中心V标识">
+                        </p>
                         <p class="category">{dede:FIELD.doctorid function='getDoctorHeadFormZhiwei(@me)'/}</p>
-                        <img src="{dede:global.cfg_imgpath/}/pc/helpV.png" class="helpV" alt="帮助中心V标识">
+
                         <img src="{dede:global.cfg_imgpath/}/pc/help_start.png" class="help_start" alt="帮助中心医生满意度">
                         <p class="help_fraction">5:0</p>
                         <p class="art_help_kst">未解决问题?</p>
