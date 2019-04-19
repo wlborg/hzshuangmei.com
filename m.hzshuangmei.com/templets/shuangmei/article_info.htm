@@ -49,65 +49,23 @@
                 <!-- /顶部banner -->
             </div>
             <div class="article art_info">
-                  <div class="heading">
-                      <h1 class="title">{dede:field.title/}</h1>
-                      <div class="line">
-                          <span></span>
-                      </div>
-                      <p class="info"><span class="date">时间{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /} </span><span class="source">来源:红妆双美</span> <span class="click">点击量:{dede:field.click /}</span><span class="consult j-consult"><span class="sr-only">QQ咨询</span></span></p>
-                  </div>
-                  <div class="article-main">
-                      {dede:field.body /}
-                  </div>
-                    <div class="art_info_tag">
-                      {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">#[field:tag /]</a>{/dede:tag}
-                </div>
-                 <div class="relate-link f-cb">
-                    <div class="prev"> 上一篇:{dede:prenext get='pre'/}</div>
-                    <div class="next">下一篇:{dede:prenext get='next'/}</div>
-                 </div>
-                 <!-- 当前栏目和子集栏目 -->
-      <!--             <div class="news_list info_list">
-                <div class="g-container nav" id="infonav">
-                    <div class="g-doc">
-                        <ul class="f-cb">
-                           <li class="nav_list"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="nav_link" title="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
-                {dede:channel type='son' noself='yes'}<li class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a>
-                           </li>
-                 {/dede:channel}
-                        </ul>
-                    </div>
-                </div>
-            <div class="g-container news">
-                <div class="g-doc">
-                    <div class="g-title">
-                        <h2><span class="sr-only">news/</span>{dede:field name="typename"/}资讯</h2>
-                    </div>
-                    <div class="g-content">
-                                {dede:list pagesize='10' orderby='id' addfields="pc_list"}
-                        <div class="item">
-                            <div class="content">
-                                <a href="[field:arcurl/]" class="pic"><img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"></a>
-                                <div class="des">
-                                    <h3>[field:fulltitle function='cn_substr(@me,30)'/]</h3>
-                                    <p>[field:description function='cn_substr(@me,70)'/].....</p>
-                                    <div class="des-footer">
-                                        <span>
-                                            <i class="icon_time"></i>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]
-                                        </span>
-                                        <a href="[field:arcurl/]">
-                                            查看详情
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tag">
-                                [field:id function='GetTags_list(@me)' /]
-                                <!-- 更新 -->
-                              <!--   <span class="special">红妆纹绣</span> <span>#红妆纹绣</span> <span>#海南纹绣</span> <span>#纹绣效果怎么样？</span> -->
-                            <!--</div>-->
-                        <!--</div>-->
-                                   <!--{/dede:list}-->
+                              <div class="heading">
+                                  <h1 class="title">{dede:field.title/}</h1>
+                                  <div class="line">
+                                      <span></span>
+                                  </div>
+                                  <p class="info"><span class="date">时间{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)" /} </span><span class="source">来源:红妆双美</span> <span class="click">点击量:{dede:field.click /}</span><span class="consult j-consult"><span class="sr-only">QQ咨询</span></span></p>
+                              </div>
+                              <div class="article-main">
+                                  {dede:field.body /}
+                              </div>
+                                <div class="art_info_tag">
+                                  {dede:tag sort='month'}<a href="[field:link/]" target="_blank" class="hot-tag">#[field:tag /]</a>{/dede:tag}
+                               </div>
+                                     <div class="relate-link f-cb">
+                                        <div class="prev"> 上一篇:{dede:prenext get='pre'/}</div>
+                                        <div class="next">下一篇:{dede:prenext get='next'/}</div>
+                                     </div>
                                      <div class="pageindex">
                                         <ul>
                                            {dede:pagelist istitem="pre,next,pageno,index,end" listsize="1"/}
@@ -115,13 +73,12 @@
                                       </div>
                                     {dede:include filename="_info_aside.htm"/}
                     </div>
-
-                </div>
-            </div>
-    </div> -->
+            <!--</div>-->
+            <!--</div>-->
+           <!--</div>-->
                  <!-- 推荐项目 -->
                  {dede:include filename="_info_aside.htm"/}
-            </div>
+          </div>
 
             {dede:include filename="_sj_copyright.htm"/}
         </div>
