@@ -1087,3 +1087,663 @@ $repairRes=$repairRes;
 }
 return $repairRes;
 }
+
+/*
+----------------------------资讯栏目对应的项目栏目
+@param   $typeid   当前资讯文档所在的栏目ID最前2条
+ */
+function MoreHotProjectAboutInfoT($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+switch ($typeid)
+{
+case 222 :
+$relatetypeid= '14,15,24,25,26,17,18,19';
+break;
+case 90 :
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 91:
+$relatetypeid=14;
+break;
+case 92:
+$relatetypeid=14;
+break;
+case 93:
+$relatetypeid=14;
+case 94:
+$relatetypeid=14;
+break;
+case 95:
+$relatetypeid=14;
+break;
+case 96:
+$relatetypeid=14;
+break;
+case 97:
+$relatetypeid=14;
+break;
+case 98:
+$relatetypeid=9;
+break;
+case 99:
+$relatetypeid=9;
+break;
+case 100:
+$relatetypeid=9;
+break;
+case 101:
+$relatetypeid=9;
+break;
+case 102:
+$relatetypeid=9;
+break;
+case 103:
+$relatetypeid=9;
+break;
+case 104:
+$relatetypeid=9;
+break;
+case 105:
+$relatetypeid=9;
+break;
+case 106:
+$relatetypeid=9;
+break;
+case 107:
+$relatetypeid=9;
+break;
+case 108:
+$relatetypeid='24,25,26';
+break;
+case 109:
+$relatetypeid='24,25,26';
+break;
+case 110:
+$relatetypeid='24,25,26';
+break;
+case 111:
+$relatetypeid=25;
+break;
+case 112:
+$relatetypeid=24;
+break;
+case 113:
+$relatetypeid=25;
+break;
+case 114:
+$relatetypeid=25;
+break;
+case 115:
+$relatetypeid=17;
+break;
+case 116:
+$relatetypeid=17;
+break;
+case 117:
+$relatetypeid=17;
+break;
+case 118:
+$relatetypeid=17;
+break;
+case 119:
+$relatetypeid=17;
+break;
+case 120:
+$relatetypeid=17;
+break;
+case 121:
+$relatetypeid=17;
+break;
+case 122:
+$relatetypeid=18;
+break;
+case 123:
+$relatetypeid=18;
+break;
+case 124:
+$relatetypeid=18;
+break;
+case 125:
+$relatetypeid=18;
+break;
+case 126:
+$relatetypeid=19;
+break;
+case 127:
+$relatetypeid=19;
+break;
+case 128:
+$relatetypeid=19;
+break;
+case 129:
+$relatetypeid=19;
+break;
+case 130:
+$relatetypeid=19;
+break;
+case 131:
+$relatetypeid=19;
+break;
+case 132:
+$relatetypeid=19;
+break;
+case 133:
+$relatetypeid=19;
+break;
+case 134:
+$relatetypeid=19;
+break;
+case 135:
+$relatetypeid=19;
+break;
+case 136:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 137:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 138:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 139:
+$relatetypeid='14,15,24,25,26,17,18,19';
+break;
+case 140:
+$relatetypeid='20,27,28,29,30,31,32,33';
+break;
+case 141:
+$relatetypeid='27';
+break;
+case 142:
+$relatetypeid='27';
+break;
+case 143:
+$relatetypeid='27';
+break;
+case 144:
+$relatetypeid='27';
+break;
+case 145:
+$relatetypeid='27';
+break;
+case 146  :
+$relatetypeid='27';
+break;
+case 147  :
+$relatetypeid='27,28,29,30,31,32,33';
+break;
+case 148  :
+$relatetypeid='30,29';
+break;
+case 149  :
+$relatetypeid='30,29';
+break;
+case 150  :
+$relatetypeid='29';
+break;
+case 150  :
+$relatetypeid='29';
+break;
+case 151  :
+$relatetypeid='30,31';
+break;
+case 152  :
+$relatetypeid='28,29,30,31,32,33';
+break;
+case 153  :
+$relatetypeid='32,31';
+break;
+case 154  :
+$relatetypeid='32,31';
+break;
+case 155  :
+$relatetypeid='32,31';
+break;
+case 156  :
+$relatetypeid='32,31';
+break;
+default:
+$relatetypeid='14,15,24,25,26,17,18,19';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid='$relatetypeid'  and a.arcrank=0 order by id desc limit 2");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
+}
+if($ns>0){
+  if($ns<2){
+     $relateproject.=getProjectArticleFormProToOne($ns);
+      $relateproject.=$relateproject;
+  }
+  return $relateproject;
+}
+}
+/*
+资讯列表页和详情页底部 更多项目按钮
+@param   $typeid   当前文档所在的栏目ID
+ */
+function MoreHotProjectAboutInfo($typeid)
+{
+global $dsql;
+//对应的栏目URL
+$relateprojecturl="";
+switch ($typeid)
+{
+case 89 :
+$relateprojecturl="/projects";
+break;
+case 90 :
+$relateprojecturl="/projects/surgery";
+break;
+case 91 :
+case 92 :
+case 93 :
+case 94 :
+case 95 :
+case 96 :
+case 97 :
+$relateprojecturl="/projects/nose";
+break;
+case 98:
+case 99:
+case 100:
+case 101:
+case 102:
+case 103:
+case 104:
+case 105:
+case 106:
+case 107:
+$relateprojecturl="/projects/eye";
+break;
+case 108 :
+case 109 :
+case 113 :
+case 114 :
+$relateprojecturl="/projects/face";
+break;
+case 110 :
+case 111 :
+$relateprojecturl="/projects/zhifang";
+break;
+case  112 :
+$relateprojecturl="/projects/xiaba";
+break;
+case 115 :
+case 116 :
+case 117 :
+case 118 :
+case 119 :
+case 120 :
+case 121 :
+$relateprojecturl="/projects/chest";
+break;
+case 122 :
+case 123 :
+case 124 :
+case 125 :
+$relateprojecturl="/projects/private";
+break;
+case 126 :
+case 127 :
+case 128 :
+case 129 :
+case 130 :
+case 131 :
+case 132 :
+case 133 :
+case 134 :
+case 135 :
+$relateprojecturl="/projects/body";
+break;
+case 136:
+case 137:
+case 138:
+$relateprojecturl="/projects/lip";
+break;
+case 140:
+$relateprojecturl="/projects/laser/";
+break;
+case 141:
+case 142:
+case 143:
+case 144:
+case 145:
+case 146:
+case 152:
+$relateprojecturl="/projects/skin";
+break;
+case 147:
+$relateprojecturl="/projects/skin";
+break;
+case 148:
+$relateprojecturl="/projects/skin";
+break;
+case 149:
+case 150:
+$relateprojecturl="/projects/meibai";
+break;
+case 151:
+$relateprojecturl="/projects/tuomao";
+break;
+case 153:
+case 154:
+case 155:
+case 156:
+$relateprojecturl="/projects/racne";
+break;
+case 157:
+case 158:
+case 159:
+case 160:
+case 161:
+case 162:
+$relateprojecturl="/projects/rebev";
+break;
+case 163:
+case 164:
+case 165:
+$relateprojecturl="/projects/rhyt";
+break;
+case 166:
+case 167:
+case 168:
+case 224:
+case 225:
+$relateprojecturl="/projects/scar";
+break;
+case 169:
+case 170:
+case 171:
+case 172:
+$relateprojecturl="/projects/shed";
+break;
+case 173:
+$relateprojecturl="/projects/mini";
+break;
+case 174:
+$relateprojecturl="/projects/ha";
+break;
+case 181:
+$relateprojecturl="/projects/botox";
+break;
+case 186:
+$relateprojecturl="/projects/tattoo";
+break;
+case 187:
+case 188:
+case 189:
+$relateprojecturl="/projects/tatt";
+break;
+case 190:
+case 191:
+case 192:
+case 193:
+case 226:
+$relateprojecturl="/projects/brow";
+break;
+case 194:
+case 195:
+case 196:
+case 227:
+$relateprojecturl="/projects/embr";
+break;
+case 197:
+case 198:
+case 199:
+case 228:
+$relateprojecturl="/projects/tattoo/projects/poli";
+break;
+case 200:
+$relateprojecturl="/projects/liv";
+break;
+case 201:
+case 202:
+case 203:
+case 204:
+case 205:
+case 229:
+$relateprojecturl="/projects/whi";
+break;
+case 206:
+case 207:
+case 208:
+case 209:
+$relateprojecturl="/projects/black";
+break;
+case 206:
+case 207:
+case 208:
+case 209:
+$relateprojecturl="/projects/black";
+break;
+case 210:
+case 211:
+case 212:
+case 213:
+$relateprojecturl="/projects/liv/projects/hydr";
+break;
+case 214:
+case 215:
+case 216:
+case 217:
+case 218:
+$relateprojecturl="/projects/beaut";
+break;
+case 219:
+case 220:
+case 221:
+$relateprojecturl="/projects/nose";
+break;
+default:
+$relateprojecturl="/projects/";
+}
+$relateprojecturl='<a href="'.$relateprojecturl.'" class="more">更多项目</a>';
+return $relateprojecturl;
+}
+/*
+/*
+资讯栏目对应的项目栏目,不足2条补到2条
+@param   $typeid   当前资讯文档所在的栏目ID
+ */
+function getProjectArticleFormProToOne($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=2-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid=14  and a.arcrank=0 order by id desc limit $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$repairRes.='<a href="'.$url.'"><img src="'.$litpic.'" class="pro1" alt="'.$title.'"></a>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
+}
+/**
+*  专题增加获双美资讯文章(最新)
+*  获取相关最新文章4条
+*  $res2补缺少数据
+*
+*/
+function getProjectArticleFormInfo($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$res2="-";
+switch ($typeid)
+{
+case 6 :
+case 7 :
+$relatetypeid= '92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+break;
+case 14 :
+$relatetypeid='92,93,94,95,96,97';
+break;
+case 15:
+$relatetypeid='99,100,101,102,103,104,105,106,107';
+break;
+case 16:
+$relatetypeid='109,110,111,112,113,114';
+break;
+case 17:
+$relatetypeid='116,117,118,119,120,121';
+break;
+case 18 :
+$relatetypeid='123,124,125';
+break;
+case 19 :
+$relatetypeid='127,128,129,130,131,132,133,134,135';
+break;
+case 230 :
+$relatetypeid='137,138';
+break;
+case  8 :
+$relatetypeid='142,143,144,145,146,147,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172';
+break;
+case  21 :
+$relatetypeid=147;
+break;
+case  231 :
+$relatetypeid='142,143,144,145,146';
+break;
+case  232 :
+$relatetypeid='154,155,156';
+break;
+case  233 :
+$relatetypeid='158,159,160,161,162';
+break;
+case  234 :
+$relatetypeid=166;
+break;
+case  235 :
+$relatetypeid='170,171,172';
+break;
+case  262 :
+$relatetypeid='164,165';
+break;
+case  9 :
+$relatetypeid='175,176,177,178,179,180,182,183,184,185';
+break;
+case  22 :
+$relatetypeid='175,176,177,178,179,180';
+break;
+case  23 :
+$relatetypeid='182,183,184,185';
+break;
+case  20 :
+$relatetypeid='188,189,223,226,191,192,193,195,196,227,198,199,228';
+break;
+case  236 :
+$relatetypeid='188,189,223';
+break;
+case  237 :
+$relatetypeid='236,191,192,193';
+break;
+case  238 :
+$relatetypeid='195,196,227';
+break;
+case  239 :
+$relatetypeid='198,199,228';
+break;
+case  61 :
+$relatetypeid='220,221';
+break;
+case  245 :
+$relatetypeid='221';
+break;
+case  246 :
+$relatetypeid='220';
+break;
+case  240 :
+$relatetypeid='202,203,204,205,229,207,208,209,211,212,213,215,216,217,218';
+break;
+case  241 :
+$relatetypeid='202,203,204,205,229';
+break;
+case  242 :
+$relatetypeid='207,208,209';
+break;
+case  243 :
+$relatetypeid='211';
+break;
+case  244 :
+$relatetypeid='215,216,217,218';
+break;
+default:
+$relatetypeid='92,93,94,95,96,97,99,100,101,102,103,104,105,106,107,109,110,111,112,113,114,116,117,118,119,120,121,123,124,125,127,128,129,130,131,132,133,134,135,137,138,142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172,175,176,177,178,179,180,182,183,184,185,188,189,223,226,191,192,193,195,196,227,198,199,228,202,203,204,205,229,207,208,209,211,212,213,215,216,217,218,220,221';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a
+where  a.typeid in($relatetypeid) and a.arcrank=0 order by rand() limit 4 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$shorttitle = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relateproject.='<a href="'.$url.'" class="clickParameter"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$shorttitle.'</span></a>';
+}
+if($ns>0){
+  if($ns<4){
+     $relateproject.=getProjectArticleFormInfoToSix($ns);
+      $relateproject.=$relateproject;
+  }
+  return $relateproject;
+}
+}
+/**
+ *
+*  专题增加获取资讯文章(最新)
+*  如果不足够4条，补到4条
+*
+*/
+function getProjectArticleFormInfoToSix($typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=4-$typeNum;
+$dsql->SetQuery("SELECT  * FROM #@__archives AS a where  a.typeid in(93,95) and a.arcrank=0 order by rand() limit
+  $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$shorttitle = cn_substr($row["title"],80,0);
+$repairRes.='<a href="'.$url.'" class="clickParameter"><img src="'.$litpic.'" alt="'.$title.'"><span>'.$shorttitle.'</span></a>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
+}
