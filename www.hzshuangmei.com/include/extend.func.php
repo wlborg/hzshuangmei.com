@@ -2178,7 +2178,7 @@ if($doctorid!=""){
       while($row=$dsql->GetArray())
       {
       $thumb =replaceurl($row["thumb"]);
-      $relateInfo.='<img src="'.$litpic.'" alt="'.$thumb.'" />';
+      $relateInfo.='<img src="'.$thumb.'" alt="'.$thumb.'" />';
       }
       if($ns>0){
       $relateInfo=$relateInfo;

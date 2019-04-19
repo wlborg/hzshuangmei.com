@@ -370,12 +370,15 @@ tr {
     font-size: 22px;
     line-height: 24px;
     margin: 62px 0px 0px 185px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .helpV {
     position: absolute;
-    top: 237px;
-    left: 253px;
+    top: 3px;
+    right: -27px;
 }
 
 .category {
@@ -383,12 +386,12 @@ tr {
     font-size: 14px;
     line-height: 24px;
     margin-top: 4px;
-    margin-left: 185px;
+    margin-left: 189px;
 }
 
 .help_start {
     display: block;
-    margin-left: 183px;
+    margin-left: 187px;
     margin-top: 3px;
 }
 
