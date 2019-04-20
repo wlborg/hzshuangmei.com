@@ -2,9 +2,11 @@
     width: 1200px;
     margin: 0 auto;
 }
+
 .location {
     margin: 19px 8px 6px 29px;
 }
+
 .line {
     width: 870px;
     height: 7px;
@@ -12,6 +14,7 @@
     background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ar_case_qq.png+share_01.png+share_07.png+share_08.png+ar_case_jou.png.pagespeed.is.MMKbL5m-5A.png) no-repeat top left;
     background-position: 0 -16px;
 }
+
 .location i {
     display: inline-block;
     width: 17px;
@@ -22,6 +25,7 @@
     background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ar_case_qq.png+share_01.png+share_07.png+share_08.png+ar_case_jou.png.pagespeed.is.MMKbL5m-5A.png) no-repeat center;
     background-position: 0 0;
 }
+
 .article_help_content {
     padding-top: 31px;
 }
@@ -46,14 +50,12 @@
 
     font-size: 24px;
 
-    color: rgb(77,77,77);
+    color: #4d4d4d;
 }
 
 .article_help_content .tit {
     width: 530px;
-    /* margin: 0 auto */
     margin-left: 133px;
-    /* line-height: 25px; */
     overflow: hidden;
     clear: both;
 
@@ -88,19 +90,14 @@
 
 .article_help_content .tit span:nth-of-type(3) {
     width: auto;
-    /* padding-top: 24px; */
     padding: 0 4px;
-    /* overflow: hidden; */
     margin-top: 1px;
-    /* display:block; */
 
     font-size: 12px;
 
-    color: rgb(255,255,255);
+    color: #fff;
     border-radius: 6px;
-    background: rgb(194,199,245);
-    /* float: left; */
-    /* height:  12px; */
+    background: #c2c7f5;
 }
 
 .article_help_content .tit span i {
@@ -111,19 +108,13 @@
     width: 1px;
     height: 8px;
 
-    background: rgb(219,220,223);
+    background: #dbdcdf;
 }
 
-/*.article_help_content .tit a {*/
-/*display: inline-block;*/
-/*width: 66px;*/
-/*height: 19px;*/
-/*background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ar_help_qq.png+share_01.png+share_07.png+share_08.png+ar_help_jou.png.pagespeed.is.MMKbL5m-5A.png) no-repeat center;*/
-/*background-position: 0 -23px*/
-/*}*/
 .tit a {
-    color: rgb(255,255,255);
+    color: #fff;
 }
+
 .ar_ar {
     width: 750px;
     margin: 45px auto 0;
@@ -159,7 +150,7 @@
     height: 125px;
     margin-top: 20px;
 
-    background-color: rgb(246,240,255);
+    background-color: #f6f0ff;
 }
 
 .article_help_content .share i {
@@ -222,7 +213,7 @@
     height: 19px;
     margin-right: 3px;
 
-    background: url("./gw.png") no-repeat center;
+    background: url(gw.png) no-repeat center;
     background-position: 0 -57px;
 }
 
@@ -262,7 +253,6 @@
 .article_help_content .cor_content {
     width: 790px;
     margin: 25px auto 30px;
-    /* border-top: 2px solid #e5e5e5 */
 }
 
 .article_help_content .cor_content a {
@@ -277,22 +267,18 @@
     line-height: 40px;
 
     color: #4a4a4a;
-    /* border-bottom: 1px dashed #bababa */
 }
 
 .article_help_content .cor_content a:hover {
     color: #340b56;
 }
 
-.article_help_content .ar_aside {
-    /* margin-top: -5px */
-}
+
 
 .article_help_content .aside {
     width: 305px;
     margin-bottom: 14px;
-
-    border: 1px solid #ebebeb;
+    /* border: 1px solid #ebebeb */
 }
 
 .article_help_content .aside a {
@@ -414,7 +400,7 @@ tr {
     margin-bottom: 18px;
     overflow: hidden;
 
-    background: rgb(246, 246, 246);
+    background: #f6f6f6;
 }
 
 .docName {
@@ -428,7 +414,7 @@ tr {
 
     vertical-align: middle;
 
-    color: rgb(113,103,170);
+    color: #7167aa;
 }
 
 .helpV {
@@ -444,7 +430,7 @@ tr {
     font-size: 14px;
     line-height: 24px;
 
-    color: rgb(102,102,102);
+    color: #666;
 }
 
 .help_start {
@@ -460,7 +446,7 @@ tr {
 
     font-size: 12px;
 
-    color: rgb(254,168,2);
+    color: #fea802;
 }
 
 .art_help_kst {
@@ -476,9 +462,9 @@ tr {
     cursor: pointer;
     text-align: center;
 
-    color: rgb(255,255,255);
+    color: #fff;
     border-radius: 5px;
-    background: rgb(105, 50, 144);
+    background: #693290;
 }
 
 .article_help_content .lined {
@@ -499,7 +485,7 @@ tr {
     font-size: 22px;
     line-height: 24px;
 
-    color: rgb(26,26,26);
+    color: #1a1a1a;
 }
 
 .article_help_content .con {
@@ -509,7 +495,7 @@ tr {
 
     font-size: 18px;
 
-    color: rgb(102,102,102);
+    color: #666;
 }
 
 .article_help_content .con .page p {
@@ -523,13 +509,13 @@ tr {
     text-align: left;
     text-indent: 20px;
 
-    color: rgb(102,102,102);
-    border: 1px solid rgb(77,27,107);
+    color: #666;
+    border: 1px solid #4d1b6b;
     border-radius: 5px;
 }
 
 .center > div {
-    border: 1px solid rgb(242,242,242);
+    border: 1px solid #f2f2f2;
     box-shadow: 3px 4px 13px rgba(224,224,224,.31);
 }
 
@@ -543,7 +529,7 @@ tr {
 }
 
 #help_tab .fli2_tab {
-    background-color: rgb(106,21,125);
+    background-color: #6a157d;
 }
 
 #help_tab .fli2_tab a {
@@ -563,7 +549,7 @@ tr {
     cursor: pointer;
     text-align: center;
 
-    background-color: rgb(234,232,234);
+    background-color: #eae8ea;
 }
 
 #helpCon2 > li {
@@ -577,7 +563,7 @@ tr {
 
     font-size: 16px;
 
-    color: rgb(106,21,125);
+    color: #6a157d;
 }
 
 .article_help_content .center tr {
@@ -585,7 +571,7 @@ tr {
 
     line-height: 57px;
 
-    border-bottom: 1px dashed rgb(242,242,242);
+    border-bottom: 1px dashed #f2f2f2;
 }
 
 .article_help_content .center tr:last-child {
@@ -614,7 +600,7 @@ tr {
 }
 
 .helpInfo img {
-    position: ABSOLUTE;
+    position: absolute;
     top: 4px;
     left: 0;
 
@@ -696,32 +682,37 @@ tr {
     border: 1px solid #f2f2f2!important;
     box-shadow: 0 5px 13px rgba(224,224,224,.31)!important;
 }
+
 .btn-gif {
     width: 396px;
     height: 60px;
     margin: 0 auto;
 
-    background: url("//img.hzshuangmei.com/pc/btn-gif.gif") no-repeat;
+    background: url(//img.hzshuangmei.com/pc/btn-gif.gif) no-repeat;
     background-size: 100%;
 }
+
 .btn-gif a {
     display: block;
     width: 100%;
     height: 100%;
 }
-/*新的*/
+
 .pro2,
 .pro3 {
     position: relative;
     top: 0!important;
     right: 0!important;
 }
+
 .pro3 {
+    height: 537px;
     margin-top: 10px;
 
-    border: 1px solid rgb(242,242,242);
+    border: 1px solid #f2f2f2;
     box-shadow: 0 5px 13px rgba(224,224,224,.31);
 }
+
 .art_info_tag a {
     display: inline-block;
     height: 23px;
@@ -731,23 +722,27 @@ tr {
     font-size: 16px;
     line-height: 23px;
 
-    color: rgb(154,154,154);
-    border: 1px solid rgb(153,153,153);
+    color: #9a9a9a;
+    border: 1px solid #999;
     border-radius: 11px;
 }
+
 .art_info_tag a:hover {
-    color: rgb(105,50,144);
-    background: rgb(230,230,230);
+    color: #693290;
+    background: #e6e6e6;
 }
+
 .pro3 > li > a,
 .pro3 > li > a > img {
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .pro3 li:nth-of-type(1) {
     margin-top: 14px!important;
 }
+
 .pro3 > li {
     position: relative;
 
@@ -757,26 +752,66 @@ tr {
 
     border-bottom: none!important;
 }
+
 .info_kst {
     display: block;
     padding-top: 11px;
-    margin: auto
-
-    cursor: pointer;
+    margin: auto cursor: pointer;
 }
+
 .pro2N {
     height: 559px!important;
 }
+
 .article_case_content .aside {
     border: none!important;
 }
+
 .aside_ex.center1 {
-    border: 1px solid rgb(242,242,242)!important;
+    border: 1px solid #f2f2f2!important;
     box-shadow: 0 5px 13px rgba(224,224,224,.31)!important;
 }
+
 .article_help_content .pro2_tag li:nth-of-type(1) {
     background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right;
 }
+
 .article_help_content .pro2_tag li:nth-of-type(2) {
     background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right;
+}
+
+.pro2N .pro2_tag li > a > span:hover {
+    text-decoration: none;
+}
+
+.pro2N_name .pro2N_name .pro2_tag li > a:hover {
+    text-decoration: none;
+
+    color: #693290;
+}
+
+.article_help_content .pro2_tag li {
+    width: 273px;
+    margin: 0 20px 13px 0;
+}
+.pro2_tag li > a {
+    border-bottom: 1px solid #fff;
+}
+.article_help_content .docAsi {
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+}
+.article_help_content .pro2_tag li > a:hover {
+    text-decoration: none;
+
+    border-bottom: 1px solid #693290;
+}
+.article_help_content .pro2_tag li > a {
+    display: block;
+    width: fit-content;
+
+    color: #666;
+}
+.article_help_content .pro2_tag li > a:hover span:nth-of-type(1) {
+    background: #693290;
 }
