@@ -635,6 +635,9 @@ window.addEventListener('load', () =>{
        'js.hzshuangmei.com',
        'css.hzshuangmei.com',
         'img.hzshuangmei.com'
+       ],
+       ignores:[
+       /\/search\/?/,
        ]
       });
 });
