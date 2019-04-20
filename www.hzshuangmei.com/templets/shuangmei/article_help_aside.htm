@@ -1,0 +1,25 @@
+<div class="ar_aside" id="ar_aside">
+    <div class="aside">
+        <div class="aside docAsi">
+            <div class="aside_tit center1 clearFix">
+                 {dede:FIELD.typeid function='getDoctorArticleToAriHelp(@me)'/}
+            </div>
+            <div class="aside_ex center1">
+                {dede:FIELD.typeid function='getDoctorArticleProToAriHelp(@me)'/}
+            </div>
+        </div>
+            <!-- 左边导航栏开始 -->
+        <div class="pro2 pro2N">
+            <p class="pro2Line">&nbsp;</p>
+            <span>热门问题</span>
+            <p class="pro2_info">EVERYBODY ASK</p>
+            <ul class="pro2_tag">
+                {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
+                <img src="{dede:global.cfg_imgpath/}/pc/helpKst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
+            </ul>
+        </div>
+        <ul class="pro3">
+           {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
+        </ul>
+    </div>
+</div>
