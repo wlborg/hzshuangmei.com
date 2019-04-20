@@ -2184,7 +2184,7 @@ if($doctorid!=""){
       $relateInfo=$relateInfo;
       }
 }else{
-    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/tl_logo.png" alt="默认客服头像" />';
+    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.jpg" alt="帮助问答默认客服头像" />';
 }
  return $relateInfo;
 }
@@ -2241,4 +2241,135 @@ if($doctorid!=""){
     $relateInfo.='客服服务';
 }
  return $relateInfo;
+}
+/**
+* 帮助中心详情页对应的医生顶部导航链接
+* @param   $typeid   当前资讯文档所在的栏目ID
+ */
+function getDoctorArticleToAriHelp($typeid)
+{
+global $dsql;
+//对应的栏目URL
+$relateprojecturl="";
+switch ($typeid)
+{
+case 268 :
+case 269 :
+case 270 :
+case 288 :
+case 293 :
+$relateprojecturl="https://www.hzshuangmei.com/doctors/#doctor_nav";
+break;
+case 272 :
+case 273 :
+case 290 :
+case 295 :
+case 296 :
+case 297 :
+case 298 :
+case 299 :
+case 303 :
+$relateprojecturl="https://www.hzshuangmei.com/doctors/surgery/#doctor_nav";
+break;
+case 274:
+case 275:
+case 282 :
+case 283 :
+case 286 :
+case 277 :
+case 278 :
+case 279 :
+case 280 :
+case 281 :
+case 285 :
+case 289 :
+case 291 :
+case 300 :
+case 301 :
+case 304 :
+$relateprojecturl="https://www.hzshuangmei.com/doctors/laser/#doctor_nav";
+break;
+case 284 :
+case 292 :
+case 302 :
+$relateprojecturl="https://www.hzshuangmei.com/doctors/tattoo/#doctor_nav";
+break;
+default:
+$relateprojecturl="https://www.hzshuangmei.com/doctors/#doctor_nav";
+}
+$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">权威解答</a><br/><a href="'.$relateprojecturl.'" target="_blank">POPULAR PROJECT</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
+return $relateprojecturl;
+}
+
+/*  帮助中心详情页相关的推荐医师
+  typeid 为当前案例文档所在栏目ID
+*/
+function getDoctorArticleProToAriHelp($typeid)
+{
+ global $dsql;
+$relatedoctortypeid="";
+$relatedoctor = "";
+// 判断当前日记文档案例属于哪种类型
+// 并根据类型设置对应的调取专家类型
+switch ($typeid)
+{
+case 268 :
+case 269 :
+case 270 :
+case 277 :
+case 278 :
+case 279 :
+case 280 :
+case 281 :
+case 293 :
+$relatedoctortypeid= '3,4,5';
+break;
+case 272 :
+case 273 :
+case 285 :
+case 288 :
+case 290 :
+case 295 :
+case 296 :
+case 297 :
+case 298 :
+case 299 :
+case 303 :
+$relatedoctortypeid=3 ;
+break;
+case 274:
+case 275:
+case 282:
+case 283:
+case 286:
+case 289:
+case 291:
+case 301:
+$relatedoctortypeid= 4;
+break;
+case 284:
+case 292:
+case 300:
+case 302:
+case 304:
+$relatedoctortypeid= 5;
+break;
+default:
+$relatedoctortypeid= '3,4,5';
+}
+$dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b
+where a.id =b.aid and a.typeid='$relatedoctortypeid'  and  a.arcrank=0 and  b.aid  not in (36,148,149,151,154,155,156,157,158,159) order by rand() limit 2 ");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$shorttitle = $row["shorttitle"];
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt="'.$title.'" width="281" height="193"/></a>';
+}
+return $relatedoctor;
 }
