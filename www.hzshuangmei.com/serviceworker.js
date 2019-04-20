@@ -8,6 +8,7 @@ const offlineResources = [
     '/offline.svg'
 ];
 const ignoreFetch = [
+    /https?:\/\/www.hzshuangmei.com\/search/,
     /https?:\/\/cdn.bootcss.com\//,
     /https?:\/\/file.kuaishang.cn\//,
     /https?:\/\/pv.kuaishang.cn\//,
