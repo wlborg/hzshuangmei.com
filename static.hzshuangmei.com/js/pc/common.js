@@ -261,19 +261,12 @@ var effects = (
             var helpRg =/^\/[123456789]_[123456789]h\/$/;
             $(ulClassname).find(".nav_list").each(function(element, index) {
                 var href = $(this).find(".nav_link").attr("href");
-                var pathname=href.pathname;
                 var lastpath = tools.getLastPath(href);
                 var lastpath1 = lastpath[0];
                 var lastpath2 = lastpath[1];
-                if (lastpath1) {
-                    if (helpRg.test(pathname)) {
+                    if (helpRg.test(infos.href.pathname)) {
                         $(this).addClass(curClassname).siblings().removeClass(curClassname);
                     }
-                } else {
-                    if (lastpath2 && helpRg.test(pathname)) {
-                        $(this).addClass(curClassname).siblings().removeClass(curClassname);
-                    }
-                }
             });
             var selector = "." + curClassname;
             if (!$(ulClassname).find(selector).length) {
