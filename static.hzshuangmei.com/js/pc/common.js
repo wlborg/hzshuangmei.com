@@ -262,11 +262,20 @@ var effects = (
             $(ulClassname).find(".nav_list").each(function(element, index) {
                 var href = $(this).find(".nav_link").attr("href");
                 var lastpath = tools.getLastPath(href);
-                var lastpath1 = lastpath[0];
+                var lastpath1 = "/"+lastpath[0]+"/";
                 var lastpath2 = lastpath[1];
-                    if (helpRg.test(href)) {
+                if (lastpath1) {
+                            if (infos.href.indexOf(lastpath1) >= 0) {
+                                $(this).addClass(curClassname).siblings().removeClass(curClassname);
+                            }
+                } else {
+                    if (lastpath2 && infos.href.indexOf(lastpath2) >= 0) {
                         $(this).addClass(curClassname).siblings().removeClass(curClassname);
                     }
+                }
+                console.log('lastpath1:'+lastpath1);
+                console.log('lastpath1:'+lastpath2);
+                console.log('infos.href:'+infos.href+"<br/>");
             });
             var selector = "." + curClassname;
             if (!$(ulClassname).find(selector).length) {
