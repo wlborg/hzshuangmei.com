@@ -598,3 +598,7 @@
 .pro2N_name .pro2_tag li > a:hover span:nth-of-type(1) {
     background: #f6a7b6;
 }
+#tree_root > li .doNameSpan b.On i {
+    border-top-color: #f6a7b6;
+    border-right-color: #f6a7b6;
+}
