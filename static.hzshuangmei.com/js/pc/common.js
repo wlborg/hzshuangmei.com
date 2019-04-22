@@ -264,7 +264,7 @@ var effects = (
                 var lastpath = tools.getLastPath(href);
                 var lastpath1 = lastpath[0];
                 var lastpath2 = lastpath[1];
-                    if (helpRg.test(infos.pathname)) {
+                    if (helpRg.test(href)) {
                         $(this).addClass(curClassname).siblings().removeClass(curClassname);
                     }
             });
