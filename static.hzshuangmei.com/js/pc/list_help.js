@@ -25,13 +25,14 @@ $(function() {
                     $(".pro2N").addClass("pro2N_name");
                 }
             };
-            module.showTopform=function(obj,className,el,addClass){
+            module.showTopform=function(obj,className,el,addClass,on){
                 if($(obj).find(className).length==1){
                     $(className).parent().css({
                         display:"block",
                         height:"auto"
                     });
                     $(className).parent().siblings(el).addClass(addClass);
+                    $(className).parent().siblings(el).find(".Off").attr("class",on);
                 }
             };
             module.clickNav=function(obj){
@@ -44,7 +45,7 @@ $(function() {
     )(window.tools_Help || {});
     tools_Help.reMainHg(".pro2",".pro3",".help_main");//主要内容高度小于右侧侧边栏高度，进行主要内容高度=右侧侧边栏高度
     tools_Help.retunHref();//二级导航更换左侧导航样式
-    tools_Help.showTopform("#tree_root>li>ul",".conT","span","doNameSpan");//二级导航时对应的一级导航也显示
+    tools_Help.showTopform("#tree_root>li>ul",".conT","span","doNameSpan","On");//二级导航时对应的一级导航也显示
     tools_Help.clickNav("#tree_root li .Off i");
     //目录树折叠按钮 -------------------------------
     function setTreeStyle(obj) {
