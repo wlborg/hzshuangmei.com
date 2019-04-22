@@ -5,9 +5,8 @@
     {dede:include filename="_meta.htm"/}
     <title>_{dede:global.cfg_webname/}</title>
     {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330" as="script" crossorigin />
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/A.default.css" />
 </head>
 
 <body>
@@ -43,7 +42,7 @@
     // 重新赋值关键字
     $("head").append('<meta name="keywords" content="'+q+'" />');
     //赋值描述
-     var des='<meta name="description" content="海南"'+q+'"整形医院_"'+q+'"哪里好"'+q+'","'+q+'"整形医院,"'+q+'"哪里好【标题】哪里好，"'+q+'整形医院信息覆盖海南海口、三亚、儋州那大、琼海加积、万宁、陵水等"'+q+'"整形美容信息 />"';
+      var des='<meta name="description" content=海南'+q+'整形医院_'+q+'哪里好'+q+','+q+'整形医院,'+q+'哪里好'+q+'哪里好，'+q+'整形医院信息覆盖海南海口、三亚、儋州那大、琼海加积、万宁、陵水等'+q+'整形美容信息 />"';
     $("head").append(des);
 </script>
 </html>
