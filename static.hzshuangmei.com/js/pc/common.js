@@ -266,11 +266,11 @@ var effects = (
                 var lastpath1 = lastpath[0];
                 var lastpath2 = lastpath[1];
                 if (lastpath1) {
-                    if (helpRg.test(pathname) {
+                    if (helpRg.test(pathname)) {
                         $(this).addClass(curClassname).siblings().removeClass(curClassname);
                     }
                 } else {
-                    if (lastpath2 && helpRg.test(pathname) {
+                    if (lastpath2 && helpRg.test(pathname)) {
                         $(this).addClass(curClassname).siblings().removeClass(curClassname);
                     }
                 }
