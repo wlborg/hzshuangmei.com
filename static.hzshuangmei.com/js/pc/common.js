@@ -256,6 +256,30 @@ var effects = (
                 // $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
             }
         };
+         module.lightCurNavHelp = function(ulClassname, curClassname) {
+            if (!$(ulClassname)) return;
+            var helpRg =/^\/[123456789]_[123456789]h\/$/;
+            $(ulClassname).find(".nav_list").each(function(element, index) {
+                var href = $(this).find(".nav_link").attr("href");
+                var pathname=href.pathname;
+                var lastpath = tools.getLastPath(href);
+                var lastpath1 = lastpath[0];
+                var lastpath2 = lastpath[1];
+                if (lastpath1) {
+                    if (helpRg.test(pathname) {
+                        $(this).addClass(curClassname).siblings().removeClass(curClassname);
+                    }
+                } else {
+                    if (lastpath2 && helpRg.test(pathname) {
+                        $(this).addClass(curClassname).siblings().removeClass(curClassname);
+                    }
+                }
+            });
+            var selector = "." + curClassname;
+            if (!$(ulClassname).find(selector).length) {
+                // $(ulClassname).find(".nav_list").eq(0).addClass(curClassname);
+            }
+        };
         module.showCaseBigImage = function(modalClassName, imgSelectorName) {
             var casemodal = $(modalClassName);
             if (!casemodal) return;
@@ -375,7 +399,7 @@ $(function() {
     effects.lightCurNav("#project_nav", "currnet2");
     effects.lightCurNav("#doctor_nav", "currnet3");
     effects.lightCurNav(".list_information_nav", "currnet4");
-    effects.lightCurNav("#help_left", "conT");
+    effects.lightCurNavHelp("#help_left", "conT");
     effects.showCaseBigImage(".case-article-modal", '#case-modal-img');
     //点击顶部项目子导航直接定位
     effects.goToJump("project", "project_nav");
