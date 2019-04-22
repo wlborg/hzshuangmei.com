@@ -273,12 +273,9 @@
     color: #340b56;
 }
 
-
-
 .article_help_content .aside {
     width: 305px;
     margin-bottom: 14px;
-    /* border: 1px solid #ebebeb */
 }
 
 .article_help_content .aside a {
@@ -286,12 +283,13 @@
 }
 
 .article_help_content .aside .center1 {
-    margin-left: 10px;
+    margin-bottom: 33px;
+    margin-left: 12px;
 }
 
 .article_help_content .aside .aside_tit {
     height: 36px;
-    margin: 20px 0 20px 11px;
+    margin: 20px 0 31px 11px;
 
     border-left: 1px solid #dadada;
 }
@@ -320,7 +318,7 @@
 
     text-transform: uppercase;
 
-    color: #b3b3b3;
+    color: rgb(213,207,229);
 }
 
 .article_help_content .aside .aside_tit > a {
@@ -330,7 +328,7 @@
     height: 20px;
     margin: -28px 20px 0 0;
 
-    font-size: 8px;
+    font-size: 12px;
     line-height: 20px;
 
     text-align: center;
@@ -343,7 +341,7 @@
 .article_help_content .aside .aside_ex a {
     max-width: 281px;
     max-height: 193px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     overflow: hidden;
 }
 
@@ -679,8 +677,8 @@ tr {
 }
 
 .aside_ex.center1 {
-    border: 1px solid #f2f2f2!important;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)!important;
+    /* border:1px solid #f2f2f2!important; */
+    /* box-shadow:0 5px 13px rgba(224,224,224,.31)!important; */
 }
 
 .btn-gif {
@@ -768,8 +766,8 @@ tr {
 }
 
 .aside_ex.center1 {
-    border: 1px solid #f2f2f2!important;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)!important;
+    /* border:1px solid #f2f2f2!important; */
+    /* box-shadow:0 5px 13px rgba(224,224,224,.31)!important; */
 }
 
 .article_help_content .pro2_tag li:nth-of-type(1) {
@@ -794,24 +792,29 @@ tr {
     width: 273px;
     margin: 0 20px 13px 0;
 }
+
 .pro2_tag li > a {
     border-bottom: 1px solid #fff;
 }
+
 .article_help_content .docAsi {
     border: 1px solid #f2f2f2;
     box-shadow: 0 5px 13px rgba(224,224,224,.31);
 }
+
 .article_help_content .pro2_tag li > a:hover {
     text-decoration: none;
 
     border-bottom: 1px solid #693290;
 }
+
 .article_help_content .pro2_tag li > a {
     display: block;
     width: fit-content;
 
     color: #666;
 }
+
 .article_help_content .pro2_tag li > a:hover span:nth-of-type(1) {
     background: #693290;
 }
