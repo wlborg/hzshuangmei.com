@@ -207,7 +207,7 @@ a.m:visited {
     float: left;
 }
 .s_ipt_wr_pre {
-    width:582px;
+    width:582px!important;
     height:32px;
     display:inline-block;
     margin-right:10px;
@@ -1196,7 +1196,7 @@ body{_height:100%;/*_overflow:auto;*/}
 }
 /*适配版css*/
 .all-cut-box {
-    width: 542px;
+    width: 842px;
     margin: 0 auto;
     overflow: hidden;
 }
