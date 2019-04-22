@@ -47,6 +47,7 @@ $(function() {
     tools_Help.retunHref();//二级导航更换左侧导航样式
     tools_Help.showTopform("#tree_root>li>ul",".conT","span","doNameSpan","On");//二级导航时对应的一级导航也显示
     tools_Help.clickNav("#tree_root li .Off i");
+    tools_Help.clickNav("#tree_root li .On i");
     //目录树折叠按钮 -------------------------------
     function setTreeStyle(obj) {
         var objStyle = obj.parents("b");
