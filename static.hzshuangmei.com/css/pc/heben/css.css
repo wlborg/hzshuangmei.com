@@ -1,594 +1,855 @@
 ﻿@charset "UTF-8";
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "微软雅黑"; }
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    font-family: "微软雅黑";
+}
 
 * {
-  padding: 0;
-  margin: 0; }
+    padding: 0;
+    margin: 0;
+}
 
 ul li {
-  list-style: none; }
+    list-style: none;
+}
 
 a {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 a:hover {
-  text-decoration: none; }
+    text-decoration: none;
+}
 
 img {
-  display: block;
-  border: none;
-  /*width: 100%;*/
-  margin-top: -1px; }
+    display: block;
+    /*width: 100%;*/
+    margin-top: -1px; 
+
+    border: none;
+}
 
 .row {
-  min-width: 1227px;
-  text-align: center;
-  margin: 0; }
+    min-width: 1227px;
+    margin: 0; 
+
+    text-align: center;
+}
 
 .main {
-  width: 1200px;
-  margin: 0 auto; }
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .banner {
-  width: 100%;
-  height: 803px;
-  background: url("//img.hzshuangmei.com/pc/heben/banner.jpg") center top no-repeat; }
+    width: 100%;
+    height: 803px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/banner.jpg") center top no-repeat;
+}
 
 .button {
-  display: block;
-  width: 256px;
-  height: 60px;
-  border: 4px solid #fff;
-  border-radius: 10px;
-  margin: 55px auto;
-  margin-bottom: 3px; }
+    display: block;
+    width: 256px;
+    height: 60px;
+    margin: 55px auto;
+    margin-bottom: 3px;
+
+    font-size: 22px;
+    line-height: 52px;
+
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 10px;
+}
 .button a {
-  font-size: 22px;
-  color: #fff;
-  line-height: 52px; }
+    font-size: 22px;
+    line-height: 52px; 
+
+    color: #fff;
+}
 .part6 .contain .button a {
-  font-size: 22px;
-  color: #000;
-  line-height: 46px;
-  margin-left: 6px; }
+    margin-left: 6px; 
+
+    font-size: 22px;
+    line-height: 46px;
+
+    color: #000;
+}
 .title .line {
-  position: relative;
-  display: block;
-  font-size: 22px;
-  color: #fff; }
+    position: relative;
+
+    display: block;
+
+    font-size: 22px;
+
+    color: #fff;
+}
 .title .line:after,
 .title .line:before {
-  content: '';
-  position: absolute;
-  height: 1px;
-  background: #fff;
-  top: 50%;
-  width: 54px; }
+    position: absolute;
+    top: 50%;
+
+    width: 54px; 
+    height: 1px;
+
+    content: "";
+
+    background: #fff;
+}
 .title .line:after {
-  left: 50%;
-  margin-left: 70px; }
+    left: 50%;
+
+    margin-left: 70px;
+}
 .title .line:before {
-  left: 50%;
-  margin-left: -126px; }
+    left: 50%;
+
+    margin-left: -126px;
+}
 .title h2 {
-  position: relative;
-  margin-top: 64px;
-  font-size: 50px;
-  letter-spacing: 2px;
-  font-weight: 900;
-  color: #fff; }
+    position: relative;
+
+    margin-top: 64px;
+
+    font-size: 50px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+}
 .title h2 span {
-  display: block;
-  top: 50%;
-  left: 50%;
-  margin-top: -14px;
-  margin-left: -36px;
-  position: absolute;
-  font-size: 20px; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    margin-top: -14px;
+    margin-left: -36px;
+
+    font-size: 20px;
+}
 
 .part1 {
-  width: 100%;
-  background: #c43838; }
+    width: 100%;
+
+    background: #c43838;
+}
 .part1 .contain_1 {
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part1_top.jpg") center top no-repeat;
-  margin-top: -1px; }
+    margin-top: -1px; 
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part1_top.jpg") center top no-repeat;
+}
 .part1 .contain_1 p {
-  margin-top: 30px;
-  font-size: 22px;
-  color: #fff; }
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    color: #fff;
+}
 .part1 .contain_1 .advan {
-  position: relative;
-  width: 408px;
-  background: #fff;
-  padding-bottom: 19px; }
+    position: relative;
+
+    width: 408px;
+    padding-bottom: 19px; 
+
+    background: #fff;
+}
 .part1 .contain_1 .advan h2 {
-  font-size: 50px;
-  font-size: 50px;
-  letter-spacing: 2px;
-  font-weight: 900;
-  color: #fff;
-  text-align: left;
-  line-height: 52px;
-  color: #242020;
-  margin-top: 61px;
-  padding-left: 90px;
-  padding-top: 30px; }
+    padding-top: 30px; 
+    padding-left: 90px;
+    margin-top: 61px;
+
+    font-size: 50px;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 52px;
+
+    text-align: left;
+    letter-spacing: 2px;
+
+    color: #fff;
+    color: #242020;
+}
 .part1 .contain_1 .advan span {
-  display: block;
-  text-align: left;
-  position: relative;
-  font-size: 20px;
-  padding-left: 136px;
-  color: #242020; }
+    position: relative;
+
+    display: block;
+    padding-left: 136px;
+
+    font-size: 20px;
+
+    text-align: left;
+
+    color: #242020;
+}
 .part1 .contain_1 .advan span i {
-  font-size: 14px;
-  font-style: normal; }
+    font-size: 14px;
+    font-style: normal;
+}
 .part1 .contain_1 .advan span:after,
 .part1 .contain_1 .advan span:before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  height: 1px;
-  width: 30px;
-  background: #242020; }
+    position: absolute;
+    top: 50%;
+
+    width: 30px;
+    height: 1px;
+
+    content: "";
+
+    background: #242020;
+}
 .part1 .contain_1 .advan span:before {
-  left: 100px; }
+    left: 100px;
+}
 .part1 .contain_1 .advan span:after {
-  left: 250px; }
+    left: 250px;
+}
 .part1 .contain_1 .advan:after {
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  left: 100%;
-  border-right: 91px solid transparent;
-  border-left: 91px solid #fff;
-  border-top: 66px solid transparent;
-  border-bottom: 66px solid #fff; }
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    width: 0;
+    height: 0;
+
+    content: "";
+
+    border-top: 66px solid transparent;
+    border-right: 91px solid transparent;
+    border-bottom: 66px solid #fff; 
+    border-left: 91px solid #fff;
+}
 .part1 .contain_2 {
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part1_dowm.jpg") center top no-repeat; }
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part1_dowm.jpg") center top no-repeat;
+}
 .part1 .contain_2 ul {
-  width: 100%; }
+    width: 100%;
+}
 .part1 .contain_2 ul li {
-  position: relative;
-  float: left;
-  width: 400px;
-  height: 277px;
-  background: #fff;
-  box-shadow: 4px 4px 10px #eebcbc inset; }
+    position: relative;
+
+    float: left;
+    width: 400px;
+    height: 277px;
+
+    background: #fff;
+    box-shadow: 4px 4px 10px #eebcbc inset;
+}
 .part1 .contain_2 ul li p {
-  position: relative;
-  font-size: 22px;
-  color: #404040;
-  margin-bottom: 10px; }
+    position: relative;
+
+    margin-bottom: 10px; 
+
+    font-size: 22px;
+
+    color: #404040;
+}
 .part1 .contain_2 ul li p span {
-  position: absolute;
-  display: block;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 52%;
-  border-radius: 50%;
-  color: #fff;
-  background: #c43838; }
+    position: absolute;
+    top: 0;
+    left: 52%;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 50%;
+    background: #c43838;
+}
 .part1 .contain_2 ul li p:nth-child(4) {
-  line-height: 27px;
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #666666; }
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #666;
+}
 .part1 .contain_2 ul li .traingle {
-  position: absolute;
-  left: 2px;
-  width: 124px;
-  height: 120px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part1_li.png") no-repeat; }
+    position: absolute;
+    left: 2px;
+
+    width: 124px;
+    height: 120px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part1_li.png") no-repeat;
+}
 .part1 .contain_2 ul li .traingle p {
-  text-align: left;
-  padding-left: 14px;
-  padding-top: 10px;
-  font-size: 40px;
-  color: #fff; }
+    padding-top: 10px;
+    padding-left: 14px;
+
+    font-size: 40px;
+
+    text-align: left;
+
+    color: #fff;
+}
 .part1 .contain_2 ul li img {
-  width: 74px;
-  margin: 0 auto;
-  margin-top: 56px;
-  margin-bottom: 20px; }
+    width: 74px;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 20px;
+}
 
 .part2 {
-  background: #c43838; }
+    background: #c43838;
+}
 .part2 .part2_top {
-  padding-bottom: 16px;
-  margin-top: -1px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part2-top.jpg") center top no-repeat; }
+    padding-bottom: 16px;
+    margin-top: -1px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part2-top.jpg") center top no-repeat;
+}
 .part2 .part2_contain {
-  width: 1226px;
-  overflow: hidden;
-  margin: 0 auto;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part2-center.jpg") left top no-repeat; }
+    width: 1226px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part2-center.jpg") left top no-repeat;
+}
 .part2 .part2_contain ul {
-  width: 100%;
-  background: #fff;
-  padding-bottom: 23px; }
+    width: 100%;
+    padding-bottom: 23px; 
+
+    background: #fff;
+}
 .part2 .part2_contain ul li {
-  position: relative;
-  float: left;
-  width: 214px;
-  padding-top: 25px;
-  margin-right: 28px; }
+    position: relative;
+
+    float: left;
+    width: 214px;
+    padding-top: 25px;
+    margin-right: 28px;
+}
 .part2 .part2_contain ul li img {
-  position: absolute;
-  z-index: 1;
-  top: 26px;
-  left: 10px;
-  width: 222px;
-  border-radius: 80px;
-  margin: 0 auto; }
+    position: absolute;
+    top: 26px;
+    left: 10px;
+    z-index: 1;
+
+    width: 222px;
+    margin: 0 auto; 
+
+    border-radius: 80px;
+}
 .part2 .part2_contain ul li img:hover {
-  filter: alpha(opacity=0);
-  -moz-opacity: 0;
-  opacity: 0; }
+         opacity: 0; 
+
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+}
 .part2 .part2_contain ul li p:first-child {
-  width: 222px;
-  height: 222px;
-  padding-top: 34%;
-  border-radius: 80px;
-  margin: 0 auto;
-  margin-left: 10px;
-  color: #737373;
-  font-size: 18px;
-  margin-top: 0.5px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part2_li-p.jpg") no-repeat; }
+    width: 222px;
+    height: 222px;
+    padding-top: 34%;
+    margin: 0 auto;
+    margin-top: .5px;
+    margin-left: 10px;
+
+    font-size: 18px;
+
+    color: #737373;
+    border-radius: 80px;
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part2_li-p.jpg") no-repeat;
+}
 .part2 .part2_contain ul li .p_3 {
-  font-size: 22px;
-  color: #1a1a1a; }
+    font-size: 22px;
+
+    color: #1a1a1a;
+}
 .part2 .part2_contain ul .no-right {
-  margin-right: 0; }
+    margin-right: 0;
+}
 .part2 .part2_contain ul li:nth-child(1) p:first-child,
 .part2 .part2_contain ul li:nth-child(3) p:first-child,
 .part2 .part2_contain ul li:nth-child(6) p:first-child {
-  padding-top: 40%; }
+    padding-top: 40%;
+}
 .part2 .part2_bottom {
-  width: 1228px;
-  height: 123px;
-  margin: 0 auto;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part2-bottom.jpg") center top no-repeat; }
+    width: 1228px;
+    height: 123px;
+    margin: 0 auto;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part2-bottom.jpg") center top no-repeat;
+}
 
 .part3 {
-  background: #c43838; }
+    background: #c43838;
+}
 .part3 .part3_top {
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part3-top.jpg") center top no-repeat; }
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part3-top.jpg") center top no-repeat;
+}
 .part3 .part3_top .title h2 {
-  margin-top: 128px; }
+    margin-top: 128px;
+}
 .part3 .part3_top .title span {
-  margin-bottom: 12px; }
+    margin-bottom: 12px;
+}
 .part3 .part3_top .title span:after {
-  margin-left: 120px; }
+    margin-left: 120px;
+}
 .part3 .part3_top .title span:before {
-  margin-left: -174px; }
+    margin-left: -174px;
+}
 .part3 .contain {
-  height: 846px;
-  overflow: hidden;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part3-contain.jpg") center top no-repeat; }
+    height: 846px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part3-contain.jpg") center top no-repeat;
+}
 .part3 .contain p {
-  color: #f2f2f2;
-  font-size: 16px; }
+    font-size: 16px; 
+
+    color: #f2f2f2;
+}
 .part3 .contain .p_1 {
-  font-size: 22px;
-  margin-top: 20px;
-  line-height: 40px; }
+    margin-top: 20px;
+
+    font-size: 22px;
+    line-height: 40px;
+}
 .part3 .contain .p_2 {
-  margin-top: 186px;
-  margin-left: -60px; }
+    margin-top: 186px;
+    margin-left: -60px;
+}
 .part3 .contain .p_3 {
-  margin-top: 70px;
-  margin-left: -70px; }
+    margin-top: 70px;
+    margin-left: -70px;
+}
 .part3 .contain .p_4 {
-  margin-top: 28px;
-  margin-left: -20px; }
+    margin-top: 28px;
+    margin-left: -20px;
+}
 .part3 .contain .p_5 {
-  margin-top: 56px;
-  margin-left: 190px; }
+    margin-top: 56px;
+    margin-left: 190px;
+}
 .part3 .contain .p_6 {
-  margin-left: 92px;
-  margin-top: 10px; }
+    margin-top: 10px; 
+    margin-left: 92px;
+}
 .part3 .bottom {
-  height: 180px;
-  overflow: hidden;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part3-bottom.jpg") center top no-repeat; }
+    height: 180px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part3-bottom.jpg") center top no-repeat;
+}
 
 .part4 {
-  background: #c43838; }
+    background: #c43838;
+}
 .part4 .top {
-  height: 168px;
-  overflow: hidden;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part4-top.jpg") center top no-repeat; }
+    height: 168px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part4-top.jpg") center top no-repeat;
+}
 .part4 .top .title h2 {
-  margin-top: 0; }
+    margin-top: 0;
+}
 .part4 .top .title span:before {
-  margin-left: -170px; }
+    margin-left: -170px;
+}
 .part4 .top .title span:after {
-  margin-left: 116px; }
+    margin-left: 116px;
+}
 .part4 .contain {
-  height: 588px;
-  overflow: hidden;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part4-contain.jpg") center top no-repeat; }
+    height: 588px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part4-contain.jpg") center top no-repeat;
+}
 .part4 .contain ul {
-  width: 1200px;
-  margin: 0 auto; }
+    width: 1200px;
+    margin: 0 auto;
+}
 .part4 .contain ul img {
-  position: absolute;
-  width: 50px;
-  top: 67%;
-  left: 70%; }
+    position: absolute;
+    top: 67%;
+    left: 70%; 
+
+    width: 50px;
+}
 .part4 .contain ul li {
-  float: left;
-  position: relative;
-  width: 320px;
-  margin-left: 44px; }
+    position: relative;
+
+    float: left;
+    width: 320px;
+    margin-left: 44px;
+}
 .part4 .contain ul li h3 {
-  margin-top: 390px;
-  font-size: 24px;
-  color: #1a1a1a;
-  margin-bottom: 15px; }
+    margin-top: 390px;
+    margin-bottom: 15px; 
+
+    font-size: 24px;
+
+    color: #1a1a1a;
+}
 .part4 .contain ul li p {
-  color: #737373;
-  font-size: 16px; }
+    font-size: 16px; 
+
+    color: #737373;
+}
 .part4 .contain ul .li_2,
 .part4 .contain ul .li_3 {
-  margin-left: 75px; }
+    margin-left: 75px;
+}
 .part4 .bottom {
-  height: 197px;
-  overflow: hidden;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part4-bottom.jpg") center top no-repeat; }
+    height: 197px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part4-bottom.jpg") center top no-repeat;
+}
 
 .part5 {
-  background: #c43838; }
+    background: #c43838;
+}
 .part5 .top {
-  overflow: hidden;
-  height: 116px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part5-top.jpg") center top no-repeat; }
+    height: 116px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part5-top.jpg") center top no-repeat;
+}
 .part5 .top .title h2 {
-  margin-top: 0; }
+    margin-top: 0;
+}
 .part5 .contain {
-  width: 1227px;
-  margin: 0 auto;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part5_contain-right.jpg") right top no-repeat; }
+    width: 1227px;
+    margin: 0 auto;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part5_contain-right.jpg") right top no-repeat;
+}
 .part5 .contain .main {
-  -webkit-box-shadow: 0 0 14px #360101;
-  margin-top: -1px;
-  background: -webkit-radial-gradient(circle, #d55831, #e88942); }
+    margin-top: -1px;
+
+    background: -webkit-radial-gradient(circle, #d55831, #e88942); 
+    -webkit-box-shadow: 0 0 14px #360101;
+}
 .part5 .contain .main ul {
-  position: relative;
-  padding-top: 10px;
-  width: 100%; }
+    position: relative;
+
+    width: 100%; 
+    padding-top: 10px;
+}
 .part5 .contain .main ul .icon {
-  position: absolute;
-  width: 55px;
-  top: 50%;
-  left: 50%;
-  margin-left: -27.5px;
-  margin-top: -32.5px; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 55px;
+    margin-top: -32.5px; 
+    margin-left: -27.5px;
+}
 .part5 .contain .main ul li {
-  float: left;
-  padding-top: 16px;
-  margin-left: 10px;
-  margin: 10px 10px 30px;
-  width: 580px;
-  border: 1px dashed #fff;
-  border-radius: 0 40px 40px 40px; }
+    float: left;
+    width: 580px;
+    padding-top: 16px;
+    margin: 10px 10px 30px;
+    margin-left: 10px;
+
+    border: 1px dashed #fff;
+    border-radius: 0 40px 40px 40px;
+}
 .part5 .contain .main ul li div {
-  padding-left: 10px; }
+    padding-left: 10px;
+}
 .part5 .contain .main ul li div img {
-  position: static;
-  width: 265px;
-  float: left;
-  margin-left: 10px; }
+    position: static;
+
+    float: left;
+    width: 265px;
+    margin-left: 10px;
+}
 .part5 .contain .main ul li p {
-  flex: 1;
-  color: #fff;
-  font-size: 22px;
-  margin-top: 20px;
-  margin-bottom: 16px; }
+    margin-top: 20px;
+    margin-bottom: 16px; 
+
+    font-size: 22px;
+
+    color: #fff;
+
+    flex: 1;
+}
 .part5 .contain .main ul li:nth-child(3),
 .part5 .contain .main ul li:nth-child(5) {
-  border-radius: 40px 0px 40px 40px; }
+    border-radius: 40px 0 40px 40px;
+}
 .part5 .bottom {
-  overflow: hidden;
-  height: 156px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part5_bottom.png") center top no-repeat; }
+    height: 156px;
+    overflow: hidden;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part5_bottom.png") center top no-repeat;
+}
 
 .part6 {
-  padding-bottom: 20px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part6_top.png") center top no-repeat, url("//img.hzshuangmei.com/pc/heben/bg_part6_bottom.png") center bottom no-repeat;
-  background-color: #c43838; }
+    padding-bottom: 20px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part6_top.png") center top no-repeat, url("//img.hzshuangmei.com/pc/heben/bg_part6_bottom.png") center bottom no-repeat;
+    background-color: #c43838;
+}
 .part6 .slider {
-  width: 5616px; }
+    width: 5616px;
+}
 .part6 .top .title h2 {
-  margin-top: 0; }
+    margin-top: 0;
+}
 .part6 .top .title span:before {
-  margin-left: -165px; }
+    margin-left: -165px;
+}
 .part6 .top .title span:after {
-  margin-left: 110px; }
+    margin-left: 110px;
+}
 .part6 .contain {
-  position: relative; }
+    position: relative;
+}
 .part6 .contain .prev,
 .part6 .contain .next {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  margin-top: -25px; }
+    position: absolute;
+    top: 50%;
+
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+}
 .part6 .contain .prev {
-  margin-left: -25px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_prev.jpg") no-repeat; }
+    margin-left: -25px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_prev.jpg") no-repeat;
+}
 .part6 .contain .next {
-  margin-left: 1087px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_next.jpg") no-repeat; }
+    margin-left: 1087px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/bg_next.jpg") no-repeat;
+}
 .part6 .contain .main {
-  width: 1112px;
-  margin: 0 auto;
-  margin-top: 72px;
-  border: 1px solid #ef5252;
-  overflow: hidden; }
+    width: 1112px;
+    margin: 0 auto;
+    margin-top: 72px;
+    overflow: hidden; 
+
+    border: 1px solid #ef5252;
+}
 .part6 .contain .main .list {
-  position: absolute; }
+    position: absolute;
+}
 .part6 .contain .main .list li {
-  position: relative;
-  float: left;
-  margin-left: 30px;
-  margin-top: -50px;
-  border-radius: 50%; }
+    position: relative;
+
+    float: left;
+    margin-top: -50px;
+    margin-left: 30px;
+
+    border-radius: 50%;
+}
 .part6 .contain .main .list img {
-  width: 95px; }
+    width: 95px;
+}
 .part6 .contain .main .list .dark::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 95px;
-  background: #000;
-  top: -1px;
-  left: 0;
-  border-radius: 50%;
-  filter: alpha(Opacity=80);
-  opacity: 0.3; }
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 95px;
+
+    content: "";
+
+    opacity: .3; 
+    border-radius: 50%;
+    background: #000;
+
+    filter: alpha(Opacity=80);
+}
 .part6 .contain .main .wrap {
-  width: 936px;
-  margin: 0 auto;
-  margin-top: 30px;
-  overflow: hidden; }
+    width: 936px;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
 .part6 .contain .main .wrap .slider .box {
-  float: left;
-  width: 936px;
-  overflow: hidden;
-  text-align: left; }
+    float: left;
+    width: 936px;
+    overflow: hidden;
+
+    text-align: left;
+}
 .part6 .contain .main .wrap .slider .box .button {
-  height: 42px;
-  border: none;
-  background: #fff;
-  width: 140px;
-  margin: 24px auto 82px 12px; }
+    width: 140px;
+    height: 42px;
+    margin: 24px auto 82px 12px; 
+
+    border: none;
+    background: #fff;
+}
 .part6 .contain .main .wrap .slider .box .button p {
-  font-size: 22px;
-  line-height: 42px;
-  color: #000000;
-  text-align: center;
-  background: none; }
+    font-size: 22px;
+    line-height: 42px;
+
+    text-align: center;
+
+    color: #000;
+    background: none;
+}
 .part6 .contain .main .wrap .slider .box div {
-  margin-top: 70px;
-  width: 170px;
-  height: 160px;
-  border: 2px solid #fff;
-  margin-bottom: 34px; }
+    width: 170px;
+    height: 160px;
+    margin-top: 70px;
+    margin-bottom: 34px; 
+
+    border: 2px solid #fff;
+}
 .part6 .contain .main .wrap .slider .box div h2 {
-  font-size: 40px;
-  font-weight: 100;
-  color: #1a1a1a;
-  margin-left: 34px;
-  margin-top: 10px;
-  width: 266px;
-  background: #c43838; }
+    width: 266px;
+    margin-top: 10px;
+    margin-left: 34px;
+
+    font-size: 40px;
+    font-weight: 100;
+
+    color: #1a1a1a;
+    background: #c43838;
+}
 .part6 .contain .main .wrap .slider .box div h2 span {
-  font-size: 18px;
-  color: #fff; }
+    font-size: 18px;
+
+    color: #fff;
+}
 
 
 .part6 .contain .main .wrap .slider .box .liuzhikun {
-  font-size: 40px;
-  font-weight: 100;
-  color: #1a1a1a;
-  margin-left: 34px;
-  width: 266px;
-  background: #c43838;
-  margin-top: 80px;
-  /*width: 170px;*/
-  height: 45px;
-  margin-bottom: 34px;}
+    width: 266px;
+    /*width: 170px;*/
+    height: 45px;
+    margin-top: 80px;
+    margin-bottom: 34px;
+    margin-left: 34px;
+
+    font-size: 40px;
+    font-weight: 100;
+
+    color: #1a1a1a;
+    background: #c43838;
+}
 .part6 .contain .main .wrap .slider .box .liuzhikun span {
-  font-size: 18px;
-  color: #fff; }
+    font-size: 18px;
+
+    color: #fff;
+}
 .part6 .contain .main .wrap .slider .box div h3 {
-  font-size: 28px;
-  font-weight: 900;
-  color: #fff;
-  width: 224px;
-  background: #c43838;
-  margin-left: 34px; }
+    width: 224px;
+    margin-left: 34px; 
+
+    font-size: 28px;
+    font-weight: 900;
+
+    color: #fff;
+    background: #c43838;
+}
 .part6 .contain .main .wrap .slider .box p {
-  font-size: 18px;
-  color: #fff;
-  line-height: 30px;
-  padding-left: 16px;
-  background: url("//img.hzshuangmei.com/pc/heben/bg_part6_p.jpg") left center no-repeat; }
+    padding-left: 16px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #fff;
+    background: url("//img.hzshuangmei.com/pc/heben/bg_part6_p.jpg") left center no-repeat;
+}
 .part6 .contain .main .wrap .slider .box h4 {
-  color: #fff;
-  font-size: 20px;
-  margin-top: 18px; }
+    margin-top: 18px; 
+
+    font-size: 20px;
+
+    color: #fff;
+}
 .part6 .contain .main .wrap .slider .box ul {
-  width: 420px;
-  text-align: center; }
+    width: 420px;
+
+    text-align: center;
+}
 .part6 .contain .main .wrap .slider .box ul li {
-  float: left;
-  margin-right: 16px;}
+    float: left;
+    margin-right: 16px;
+}
 .part6 .contain .main .wrap .slider .box ul li p {
-  background: none;
-  font-size: 16px;
-  padding-left: 0;
-  line-height: 24px; }
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px; 
+
+    background: none;
+}
 .part6 .contain .main .wrap .slider .box ul li img {
-  width: 45px;
-  margin: 0 auto; }
+    width: 45px;
+    margin: 0 auto;
+}
 .part6 .contain .main .wrap .slider .yuzhiliang {
-  padding-bottom: 84px;
-  background: url("//img.hzshuangmei.com/pc/heben/img_yuanzhliang.jpg") right top no-repeat; }
+    padding-bottom: 84px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/img_yuanzhliang.jpg") right top no-repeat;
+}
 .part6 .contain .main .wrap .slider .zhuzhenhong {
-  padding-bottom: 74px;
-  background: url("//img.hzshuangmei.com/pc/heben/img_zhuzhenhong.jpg") right top no-repeat; }
+    padding-bottom: 74px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/img_zhuzhenhong.jpg") right top no-repeat;
+}
 .part6 .contain .main .wrap .slider .guanhaitao {
-  padding-bottom: 86px;
-  background: url("//img.hzshuangmei.com/pc/heben/img_guanhaixoa.jpg") right top no-repeat; }
+    padding-bottom: 86px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/img_guanhaixoa.jpg") right top no-repeat;
+}
 .part6 .contain .main .wrap .slider .guanhaitao p:nth-child(6) {
-  background-position: left 10px; }
+    background-position: left 10px;
+}
 .part6 .contain .main .wrap .slider .guanhaitao p:nth-child(8) {
-  background: none;
-  padding-left: 0; }
+    padding-left: 0; 
+
+    background: none;
+}
 .part6 .contain .main .wrap .slider .like p:nth-child(8) {
-  background: none;
-  padding-left: 0;
+    padding-left: 0;
+
+    background: none;
 }
 .part6 .contain .main .wrap .slider .like {
-  padding-bottom: 7px;
-  background: url("//img.hzshuangmei.com/pc/heben/img_like.jpg") right top no-repeat; }
+    padding-bottom: 7px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/img_like.jpg") right top no-repeat;
+}
 .part6 .contain .main .wrap .slider .luoyong {
-  padding-bottom: 34px;
-  background: url("//img.hzshuangmei.com/pc/heben/img_luoyong.jpg") right top no-repeat; }
+    padding-bottom: 34px;
+
+    background: url("//img.hzshuangmei.com/pc/heben/img_luoyong.jpg") right top no-repeat;
+}
 .part6 .contain .main .wrap .slider .luoyong div h3 {
-  width: 300px; }
+    width: 300px;
+}
 img.icon {
-  position: relative;
-  top: 624px;
-  left: 572px;
+    position: relative;
+    top: 624px;
+    left: 572px;
 }
 #nav > ul > li > a {
-  margin-top: 18px;
-  padding-top:0
+    padding-top: 0;
+    margin-top: 18px;
 }
 .n_button {
-  height: 28px;
-  margin-top:0
+    height: 28px;
+    margin-top: 0;
 }
 
-.n_button a span{
-  color: #000;
+.n_button a span {
+    color: #000;
 }
 .n_button a:hover span {
-  color: #000;
+    color: #000;
 }
 #project span {
-  color: #000;
+    color: #000;
 }

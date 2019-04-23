@@ -207,8 +207,11 @@ body {
 .tab-nav-wrap {
     padding: 0;
     margin: 0;
+
     list-style: none;
+
     text-align: center;
+
     border-bottom: solid 1px #d2d2d2;
     background-color: #fff;
 }
@@ -938,15 +941,21 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     max-width: 7.6rem;
     padding-right: .125rem;
     margin: .125rem;
+    overflow: hidden;
 
     font-size: .45rem;
     line-height: 1rem;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     color: #fff;
     background: rgba(51, 51, 51, .57);
 }
 .xzhporject a {
     position: relative;
+
+    display: inline;
 }
 /* 顶部轮播图双十一按钮样式 */
 .Double_Eleven_Button {
