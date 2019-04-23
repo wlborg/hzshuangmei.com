@@ -99,13 +99,12 @@ img {
 }
 
 .part1 .title_part1 h2 {
-    width: 620px;
+       width: 1052px;
     margin: 0 auto;
     font-size: 60px;
     color: #5b598b;
     text-align: left;
     border-bottom: 2px solid #b8b7c9;
-    background: url("https://img.hzshuangmei.com/pc/longbijiage/bg_part1_title-h2.jpg") right center no-repeat;
 }
 
 .part1 .main ul {
