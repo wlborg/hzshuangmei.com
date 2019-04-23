@@ -67,7 +67,13 @@ function networkedAndCache(request) {
             var copy = response.clone();
             caches.open(cacheKey('resources'))
                 .then((cache) => {
+                    //判断网络协议
+                    if(window.location.protocol=="chrome-extension"){
+                        return;
+                    } 
+                     else { 
                     cache.put(request, copy);
+                    }
                 });
             log("(network: cache write)", request.method, request.url,request.mode);
             return response;
