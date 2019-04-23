@@ -573,6 +573,7 @@ body {
 }
 
 .m6 .content table {
+    width: 800px;
     margin: 0 auto;
 
     border-collapse: collapse;
