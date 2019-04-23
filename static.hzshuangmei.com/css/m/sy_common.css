@@ -922,20 +922,13 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 0 !important; */
 }
 #div23 {
-    top: .9rem!important;
-    left: 11.8rem!important;
+    top: .3rem !important;
+    left: 11.5rem !important;
 
-    width: 1rem!important;
-    height: .99rem!important;
+    width: 1rem !important;
+    height: .99rem !important;
 
-    line-height: 0!important;
-    /*  top: .9rem!important;
-    left: 11.8rem!important;
-
-    width: 1rem!important;
-    height: .99rem!important;
-
-    line-height: 0!important; */
+    line-height: 0 !important;
 }
 .relateporject .contents {
     padding: .55rem 3.5% 0rem;
