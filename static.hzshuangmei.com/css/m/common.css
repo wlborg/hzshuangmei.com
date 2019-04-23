@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -906,8 +906,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     line-height: 0 !important;
 }
 #div23 {
-    top: 0rem !important;
-    left: 0rem !important;
+    top: .3rem !important;
+    left: 11.5rem !important;
 
     width: 1rem !important;
     height: .99rem !important;
