@@ -71,8 +71,15 @@
                         <div class="con">
                             {dede:field.body /}
                             <div class="page clearFix">
-                                <p><span>上一篇：</span>没有了 </p>
-                                <p><span>下一篇：</span><a href="https://www.hzshuangmei.com/1_1h/3114.html">海口红妆双美门店测试标题2</a></p>           </div>
+                                <p>  <span>上一篇：</span> {dede:likearticle orderby='ids' row='1'}
+                                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                                             {/dede:likearticle} </p>
+                                <p>
+                                   <span>下一篇：</span>  {dede:likearticle orderby='id' row='1'}
+                                               <a href="[field:arcurl/]"  title="[field:fulltitle/]" target="_blank">[field:title/]</a>
+                                             {/dede:likearticle}
+                                </p>
+                                 </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +90,7 @@
                         <div id="help_tab">
                             <ul>
                                 {dede:type typeid='267'}
-                                <li class="fli2_tab">
+                                <li>
                                     <a href="[field:typeurl/]">
                                         [field:typename/]
                                     </a>
@@ -123,68 +130,10 @@
                         <div class="cor_content clearFix">
                             <ul id="helpCon2">
                                 <li class="hdiv2">
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                        <tr>
-                                            <td width="50%">
-                                                <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>海口红妆双美门店测试标题2</a>
-                                            </td>
-                                            <td width="50%">
-                                                <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                   {dede:likearticle mytypeid='268,269,270' col='2' row='8' titlelen='160' eregtype=all|tag|keyword} <a href="[field:arcurl/]"><span>[field:global runphp='yes' name=autoindex][/field:global]</span>[field:title/]</a> {/dede:likearticle}
                                 </li>
                                 <li>
-                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                        <tr>
-                                            <td width="50%">
-                                                <a href="https://www.hzshuangmei.com/1_1h/3114.html"><span>1</span>2海口红妆双美门店测试标题2</a>
-                                            </td>
-                                            <td width="50%">
-                                                <a href="https://www.hzshuangmei.com/1_1h/3074.html"><span>2</span>海口红妆双美门店测试标题</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="50%">
-                                            </td>
-                                            <td width="50%">
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                    {dede:likearticle mytypeid='272,273,274,275' col='2' row='8' titlelen='160' eregtype=all|tag|keyword} <a href="[field:arcurl/]"><span>[field:global runphp='yes' name=autoindex][/field:global]</span>[field:title/]</a> {/dede:likearticle}
                                 </li>
                             </ul>
 
