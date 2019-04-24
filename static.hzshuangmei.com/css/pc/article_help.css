@@ -813,7 +813,10 @@ tr {
     background: #693290;
 }
 /* 分享部分 */
-.article_help_content bdshare-button-style1-24 .bds_tsina {
+.article_help_content .bdshare-button-style1-24 a {
+    background-position: 0 0;
+}
+.article_help_content .bdshare-button-style1-24 .bds_tsina {
     width: 44px;
     height: 44px;
 
@@ -840,4 +843,7 @@ tr {
 .article_help_content .bdshare-button-style1-24 a,
 .bdshare-button-style1-24 .bds_more {
     padding-left: 3px;
+}
+.article_help_content #helpCon2 {
+    overflow: hidden;
 }
