@@ -185,11 +185,11 @@
 }
 
 .article_help_content .share .bdsharebuttonbox {
-    margin-top: 47px;
+    margin-top: 38px;
 }
 
 .article_help_content .share .share_ewm {
-    margin: 9px 75px 0 75px;
+    margin: 9px 75px 0 70px;
 }
 
 .article_help_content .share .share_ewm p {
@@ -753,26 +753,17 @@ tr {
 
     border-bottom: none!important;
 }
-
 .info_kst {
     display: block;
     padding-top: 11px;
     margin: auto cursor: pointer;
 }
-
 .pro2N {
     height: 559px!important;
 }
-
 .article_case_content .aside {
     border: none!important;
 }
-
-.aside_ex.center1 {
-    /* border:1px solid #f2f2f2!important; */
-    /* box-shadow:0 5px 13px rgba(224,224,224,.31)!important; */
-}
-
 .article_help_content .pro2_tag li:nth-of-type(1) {
     background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right;
 }
@@ -820,4 +811,39 @@ tr {
 
 .article_help_content .pro2_tag li > a:hover span:nth-of-type(1) {
     background: #693290;
+}
+/* 分享部分 */
+.article_help_content .bdshare-button-style1-24 a {
+    background-position: 0 0;
+}
+.article_help_content .bdshare-button-style1-24 .bds_tsina {
+    width: 44px;
+    height: 44px;
+
+    background-image: url(https://img.hzshuangmei.com/pc/share_02.png);
+}
+.article_help_content .bdshare-button-style1-24 .bds_sqq {
+    width: 44px;
+    height: 44px;
+
+    background-image: url(https://img.hzshuangmei.com/pc/qq.png);
+}
+.article_help_content .bdshare-button-style1-24 .bds_qzone {
+    width: 44px;
+    height: 44px;
+
+    background-image: url(https://img.hzshuangmei.com/pc/qqzon.png);
+}
+.article_help_content .bdshare-button-style1-24 .bds_weixin {
+    width: 44px;
+    height: 44px;
+
+    background-image: url(https://img.hzshuangmei.com/pc/share_05.png);
+}
+.article_help_content .bdshare-button-style1-24 a,
+.bdshare-button-style1-24 .bds_more {
+    padding-left: 3px;
+}
+.article_help_content #helpCon2 {
+    overflow: hidden;
 }

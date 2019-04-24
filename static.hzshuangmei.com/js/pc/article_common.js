@@ -22,6 +22,23 @@ $(document).ready(function() {
             $("#ar_aside").removeClass("fixed2");
         }
     });
+    // 帮助中心详情页底部导航切换
+    var tabs4=document.getElementById("help_tab").getElementsByTagName("li");
+    var divs4=document.getElementById("helpCon2").getElementsByTagName("li");
+    for(var i=0;i<tabs4.length;i++){
+        tabs4[i].onmouseover=function(){change4(this);}
+    }
+    function change4(obj){
+        for(var i=0;i<tabs4.length;i++){
+            if(tabs4[i]==obj){
+                tabs4[i].className="fli2_tab";
+                divs4[i].className="hdiv2 clearFix";
+            }else{
+                tabs4[i].className="";
+                divs4[i].className="clearFix";
+            }
+        }
+    }
 });
 //prerender Cases Big images
 function preReadyCaseBigPics() {
@@ -54,20 +71,4 @@ $('.aside_tit').find('a').each(function(index, el) {
         $(this).attr('href', href);
     });
 });
-    // 帮助中心详情页底部导航切换
-    var tabs4=document.getElementById("help_tab").getElementsByTagName("li");
-    var divs4=document.getElementById("helpCon2").getElementsByTagName("li");
-    for(var i=0;i<tabs4.length;i++){
-        tabs4[i].onmouseover=function(){change4(this);}
-    }
-    function change4(obj){
-        for(var i=0;i<tabs4.length;i++){
-            if(tabs4[i]==obj){
-                tabs4[i].className="fli2_tab";                                                                         ar
-                divs4[i].className="hdiv2 clearFix";
-            }else{
-                tabs4[i].className="";
-                divs4[i].className="clearFix";
-            }
-        }
-    }
+
