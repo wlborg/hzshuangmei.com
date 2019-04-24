@@ -86,15 +86,8 @@
     color: #fc4679;
 }
 
-/*.ar_ar h3,*/
-/*.ar_ar h4,*/
-/*.ar_ar h5,*/
-/*.ar_ar h6 {*/
-/*text-align: center;*/
-/*}*/
 .ar_ar p img {
     display: block;
-    /* width: 100%; */
     margin: 1em auto;
 
     text-align: center;
@@ -303,7 +296,6 @@
     border-bottom: none;
 }
 .article_case_content .ar_aside {
-    /* float:left; */
     margin-top: -5px;
 }
 .article_case_content .aside {

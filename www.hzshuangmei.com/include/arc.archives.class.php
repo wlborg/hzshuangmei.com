@@ -225,6 +225,9 @@ $this->Fields[$nk] = $this->ReplaceKeyword($this->Fields['keywords'],$this->Fiel
 }
 //设置全局环境变量
 $this->Fields['typename'] = $this->TypeLink->TypeInfos['typename'];
+//设置全局环境变量
+$this->Fields['typelink'] = $this->TypeLink->GetOneTypeLink($this->TypeLink->TypeInfos);
+$this->Fields['typeurl'] = $this->TypeLink->GetOneTypeUrl($this->TypeLink->TypeInfos);
 @SetSysEnv($this->Fields['typeid'],$this->Fields['typename'],$this->Fields['id'],$this->Fields['title'],'archives');
 
 }

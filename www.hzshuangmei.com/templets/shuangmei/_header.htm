@@ -1,36 +1,4 @@
 
-  <header>
-    <div class="top">
-        <div class="shuang_m1 clearFix">
-            <div class="top_l">
-                <!--<span>香港红瑞集团 旗下品牌 海南红妆双美连锁</span>-->
-                <span>门诊时间：周一周日9:00--21:00</span>
-                <img src="{dede:global.cfg_imgpath/}/pc/tl_logo.png?v=0.1" alt="logo" />
-            </div>
-            <!-- 增加百度站内搜索 -->
-          <!--   <div class="top_c">
-                <div class="search_box">
-                    <form action="https://www.hzshuangmei.com/search/" target="_blank" autocomplete="off" id="bdcs-search-form" class="site-search-form">
-                        <input type="hidden" name="s" value="5257607230163915007">
-                         <input type="hidden" name="entry" value="1">
-                        <input type="text" placeholder="请输入您要搜索的内容..." id="bdcsMain" name="q">
-                        <button type="submit" id="bdcs-search-form-submit">搜索</button>
-                    </form>
-                </div>
-            </div> -->
-            <div class="top_r">
-                <a href="" class="pad_r"><i class="tel"></i><span>0898-66208922</span></a>
-                <span>关注我们：</span>
-                <a href="" class="pad_l"><i class="wbo"></i></a>
-                <a href=""><i class="wxin"></i></a>
-                <a href=""><i class="qq"></i></a>
-            </div>
-        </div>
-    </div>
-   <!--  <div class="sm_logo">
-        <a href="/"><img src="{dede:global.cfg_imgpath/}/pc/h_logo.png" alt=""/></a>
-    </div> -->
- </header>
   {dede:include filename="_nav_Top.htm"/}
 <nav id="nav">
     <ul class="shuang_m1 nav_ul">
@@ -168,7 +136,7 @@
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <p><span class="n_f">[field:shorttitle/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -182,7 +150,7 @@
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <p><span class="n_f">[field:shorttitle/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -196,7 +164,7 @@
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
                             <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <p><span class="n_f">[field:shorttitle/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -210,7 +178,7 @@
                     <li>
                         <a href="[field:arcurl/]" target="_blank" rel="noopener">
                              <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
+                            <p><span class="n_f">[field:shorttitle/]</span><span class="n_b">[field:zhiwei /]</span></p>
                             <i></i>
                         </a>
                     </li>
@@ -229,7 +197,7 @@
             </div>
         </li>
         <li class="nav_list">
-              <a href="/cases/nose/" class="nav_link bor_l bor_r" target="_blank" rel="noopener">
+              <a href="/kst.html" class="nav_link bor_l bor_r" target="_blank" rel="noopener">
                 <span>真人秀</span><br/>
                 <span>Show</span>
             </a>

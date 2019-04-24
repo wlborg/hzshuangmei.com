@@ -94,6 +94,7 @@
 
     border-bottom: 1px dashed #e5e5e5;
 }
+
 .help_main > li > div > p {
     position: relative;
 
@@ -154,7 +155,6 @@
 
 .help_left {
     position: relative;
-    /* height: 500px; */
 
     width: 192px;
     padding-bottom: 23px;
@@ -250,9 +250,9 @@
     width: 273px;
     margin: 0 20px 13px 0!important;
 }
-.pro2_tag li {
-    /* border-bottom: 1px solid red!important; */
-}
+
+
+
 .pro2_tag li:nth-of-type(1) {
     background: url(https://img.hzshuangmei.com/pc/xhelpHot.png.pagespeed.ic.BzNqolW5O5.png) no-repeat right;
 }
@@ -330,29 +330,34 @@
 
     cursor: pointer;
 }
+
 .help_left #tree_root > li {
     margin-top: 28px;
 
     text-indent: 24px;
 
     border-bottom: none;
-}.help_left #tree_root li > span {
+}
 
+.help_left #tree_root li > span {
     display: block;
     width: 100%;
 }
-#help_left  #tree_root .conT {
+
+#help_left #tree_root .conT {
     font-size: 14px;
 
-    color: rgb(140,106,168);
+    color: #8c6aa8;
 }
-#help_left  #tree_root .conT a {
-    color: rgb(140,106,168);
-    /* font-size: 14px; */
+
+#help_left #tree_root .conT a {
+    color: #8c6aa8;
 }
-#help_left  #tree_root > ul > li > ul a {
+
+#help_left #tree_root > ul > li > ul a {
     font-size: 12px;
 }
+
 .help_left #tree_root > li > ul {
     display: none;
     padding-top: 10px;
@@ -360,29 +365,35 @@
 
     text-indent: 50px;
 
-    background: rgb(245,245,245);
+    background: #f5f5f5;
 }
+
 .help_left #tree_root li ul li {
     height: 30px;
 
     line-height: 30px;
 }
+
 .help_left #tree_root li > span {
     position: relative;
 
     margin-bottom: 15px;
 }
+
 .help_left #tree_root li > span a {
     font-size: 14px;
 }
+
 .help_left #tree_root li ul span a {
     font-size: 12px;
 
-    color: rgb(102,102,102);
+    color: #666;
 }
+
 .help_left #tree_root li > span a:hover {
-    color: rgb(140,106,168);
+    color: #8c6aa8;
 }
+
 #tree_root > li b.Off i {
     position: absolute;
     top: 0;
@@ -401,12 +412,13 @@
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
          -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+            transform: rotate(135deg);
 
     border: solid 1px transparent;
     border-top-color: #999;
     border-right-color: #999;
 }
+
 #tree_root > li b.On i {
     position: absolute;
     top: 8px;
@@ -424,26 +436,31 @@
        -moz-transform: rotate(200deg);
         -ms-transform: rotate(200deg);
          -o-transform: rotate(200deg);
-            transform: rotate(200deg);
+            transform: rotate(315deg);
 
     border: solid 1px transparent;
     border-top-color: #999;
     border-right-color: #999;
 }
+
 #help_left #tree_root .conT.doNameSpan a {
     opacity: 1;
     color: #f6a7b6;
 }
+
 #tree_root > li span.doNameSpan b.Off i {
-    border-top-color: rgb(246,167,182);
-    border-right-color: rgb(246,167,182);
+    border-top-color: #f6a7b6;
+    border-right-color: #f6a7b6;
 }
+
 #help_left #tree_root .doNameSpan + ul .conT span::before {
-    background: rgb(246,167,182);
+    background: #f6a7b6;
 }
+
 #help_left #tree_root .doNameSpan + ul .conT a {
-    color: rgb(246,167,182);
+    color: #f6a7b6;
 }
+
 .help_left #tree_root li > span.tree3::before {
     position: absolute;
     top: 15px;
@@ -454,21 +471,25 @@
 
     content: "";
 
-    background: rgb(113,113,113);
+    background: #717171;
 }
+
 .help_left #tree_root li > span.tree3:hover::before {
-    background: rgb(140,106,168);
+    background: #8c6aa8;
 }
+
 #help_left #tree_root .doNameSpan + ul li > span.tree3:hover::before {
-    background: rgb(246,167,182);
+    background: #f6a7b6;
 }
+
 #help_left #tree_root .doNameSpan + ul a:hover {
-    color: rgb(246,167,182);
+    color: #f6a7b6;
 }
+
 #help_left #tree_root .doNameSpan a {
     color: #f6a7b6;
 }
-/*Ã¥Ë†â€ Ã©Â¡ÂµÃ¦Â Â·Ã¥Â¼Â*/
+
 .help_main .pagination > li {
     float: left;
     padding: 8px 14px;
@@ -476,9 +497,10 @@
 
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(230, 230, 230);
+    border-color: #e6e6e6;
     border-image: initial;
 }
+
 .help_main .pagination li:hover {
     background-color: #8a59a7;
 }
@@ -486,75 +508,97 @@
 .help_main .pagination li:hover a {
     color: #fff;
 }
+
 .help_main .pagination .thisclass {
     color: #fff;
     background-color: #8a59a7;
 }
+
 .help_content ul.help_main > li:hover {
     box-shadow: 0 5px 5px rgba(110,99,168,.54);
 }
+
 .help_content ul.help_main.help_main_name > li:hover {
     box-shadow: 0 5px 5px rgba(246,167,182,.54);
 }
+
 .help_main > li > div > p > a > span {
-    color: rgb(105,50,144);
+    color: #693290;
 }
+
 .help_main.help_main_name > li > div > p > a > span {
-    color: rgb(246,167,182);
+    color: #f6a7b6;
 }
+
 .help_main.help_main_name > li > div > p > a > span {
-    color: rgb(216,102,124);
+    color: #d8667c;
 }
+
 .help_main.help_main_name > li > div > span:nth-of-type(2) {
-    background: rgb(246,167,182);
+    background: #f6a7b6;
 }
+
 .pro2_tag li > a {
     display: block;
-    /* border-bottom: 1px solid red!important; */
     width: fit-content;
 
     color: #666;
 }
-.pro2N  .pro2_tag li > a:hover {
+
+.pro2N .pro2_tag li > a:hover {
     text-decoration: none;
 
     color: #693290;
 }
-.pro2N  .pro2_tag li > a > span:hover {
+
+.pro2N .pro2_tag li > a > span:hover {
     text-decoration: none;
 }
+
 .pro2N_name .pro2N_name .pro2_tag li > a:hover {
     text-decoration: none;
 
     color: #693290;
 }
+
 .pro2N_name .pro2_tag li > a > span:hover {
     text-decoration: none;
 }
-/*Ã¤ÂºÅ’Ã§ÂºÂ§Ã¥Â¯Â¼Ã¨Ë†ÂªÃ¦Â Â·Ã¥Â¼ÂÃ©â€¡ÂÃ¥â€ â„¢*/
+
 .help_main .nameNs_pa .pagination .thisclass {
     color: #fff;
-    background-color: rgb(246,167,182);
+    background-color: #f6a7b6;
 }
+
 .help_main .nameNs_pa .pagination li:hover {
-    background-color: rgb(246,167,182);
+    background-color: #f6a7b6;
 }
+
 .pro2_tag li > a {
     border-bottom: 1px solid #fff;
 }
+
 .pro2_tag li > a:hover {
-    border-bottom: 1px solid rgb(105,50,144);
+    border-bottom: 1px solid #693290;
 }
+
 .pro2_tag li > a:hover span:nth-of-type(1) {
-    background: rgb(105,50,144);
+    background: #693290;
 }
+
 .pro2N_name .pro2_tag li > a {
     border-bottom: 1px solid #fff;
 }
+
 .pro2N_name .pro2_tag li > a:hover {
-    color: rgb(246,167,182)!important;
-    border-bottom: 1px solid rgb(246,167,182);
+    color: #f6a7b6!important;
+    border-bottom: 1px solid #f6a7b6;
 }
+
 .pro2N_name .pro2_tag li > a:hover span:nth-of-type(1) {
-    background: rgb(246,167,182);
+    background: #f6a7b6;
+}
+#tree_root > li .doNameSpan b.On i {
+    border-top-color: #f6a7b6;
+    border-right-color: #f6a7b6;
 }

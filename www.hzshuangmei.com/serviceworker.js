@@ -1,5 +1,5 @@
 'use strict';
-const version = 'v2019040402';
+const version = 'v20190420';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = false;
 const offlineResources = [
@@ -8,6 +8,7 @@ const offlineResources = [
     '/offline.svg'
 ];
 const ignoreFetch = [
+    /https?:\/\/www.hzshuangmei.com\/search/,
     /https?:\/\/cdn.bootcss.com\//,
     /https?:\/\/file.kuaishang.cn\//,
     /https?:\/\/pv.kuaishang.cn\//,

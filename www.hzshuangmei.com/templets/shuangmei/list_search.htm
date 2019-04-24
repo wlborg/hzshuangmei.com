@@ -3,12 +3,10 @@
 
 <head>
     {dede:include filename="_meta.htm"/}
-    <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
-    <meta name="keywords" content="{dede:field name='keywords'/}" />
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" /> {dede:include filename="_link.htm"/}
-    <link rel="preload" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" as="style" crossorigin />
-    <link rel="preload" href="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330" as="script" crossorigin />
+    <title>_{dede:global.cfg_webname/}</title>
+    {dede:include filename="_link.htm"/}
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_news.css?v=20190330" />
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/A.default.css?v=20190422" />
 </head>
 
 <body>
@@ -21,26 +19,31 @@
         <div class="news_content">
             <div id="bdcs-frame-box"></div>
             <script type="text/javascript">
-            var bdcsFrameSid = "5257607230163915007";
-            var bdcsFrameCharset = "utf-8";
-            var bdcsFrameWidth = 1200 ; //宽度请自行调整
-            var bdcsFrameHeight = 0;
-            var bdcsFrameWt = 1;
-            var bdcsFrameHt = 1;  //隐藏搜索框
-            var bdcsFrameResultNum = 10;
-            var bdcsFrameBgColor = "#fff";
-            var bdcsRecommend = 0;
-            var bdcsDefaultQuery = 0;
-            var bdcsRemoveUrl = 0;
+                var bdcsFrameSid="5257607230163915007";
+                var bdcsFrameWidth = 1200;
+                var bdcsFrameWt = 1;
+                var bdcsFrameHt = 2;
+                var bdcsFrameResultNum = 10;
+                var bdcsFrameBgColor = "#ffffff";
             </script>
-            <!-- 按照实际情况修改下面js地址 -->
-            <script type="text/javascript" src="https://www.hzshuangmei.com/baidusearch.js"></script>
+            <script type="text/javascript" src="{dede:global.cfg_jspath/}/pc/baidusearch.js?v=2019042002"></script>
+
         </div>
     </div>
     {dede:include filename="_footer.htm"/}
 </body>
 {dede:include filename="_script.htm"/}
 <script src="{dede:global.cfg_jspath/}/pc/list_news.js?v=20190330"></script>
-
+<script>
+    var q=decodeURI(window.location.search.split("q=")[1]);//获取搜索的关键字
+    // 获取titie值重新赋值
+    var title=document.title;
+    document.title=q+title;
+    // 重新赋值关键字
+    $("head").append('<meta name="keywords" content="'+q+'" />');
+    //赋值描述
+      var des='<meta name="description" content=海南'+q+'整形医院_'+q+'哪里好'+q+','+q+'整形医院,'+q+'哪里好'+q+'哪里好，'+q+'整形医院信息覆盖海南海口、三亚、儋州那大、琼海加积、万宁、陵水等'+q+'整形美容信息 />"';
+    $("head").append(des);
+</script>
 </html>
 

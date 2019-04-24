@@ -66,7 +66,7 @@ function networkedAndCache(request) {
         .then((response) => {
             var copy = response.clone();
             caches.open(cacheKey('resources'))
-                .then((cache) => {
+                .then((cache) => { 
                     cache.put(request, copy);
                 });
             log("(network: cache write)", request.method, request.url,request.mode);

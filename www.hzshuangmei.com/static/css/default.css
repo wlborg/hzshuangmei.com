@@ -207,7 +207,7 @@ a.m:visited {
     float: left;
 }
 .s_ipt_wr_pre {
-    width:536px;
+    width:582px!important;
     height:32px;
     display:inline-block;
     margin-right:10px;
@@ -893,7 +893,7 @@ h3 a font {
 
 }
 .content-main {
-    width: 540px;
+    width: 740px;
     margin: 0 130px 0 15px;
 }
 #footer{margin:25px 0 40px 210px}
@@ -935,7 +935,7 @@ a:visited{color:#606}
 }
 .s3 .c-image td {height:77px;}
 .c-abstract-image {float:left; }
-.s0 .c-abstract-image {margin-left:5px; width: 420px; }
+.s0 .c-abstract-image {margin-left:5px; width: 620px; }
 .s1 .c-abstract-image {margin-left:10px; width: 407px; }
 .s2 .c-abstract-image {margin-left:10px;width:407px;}
 .s3 .c-abstract-image {margin-left:10px;margin-top:5px;width:397px;}
@@ -1196,7 +1196,7 @@ body{_height:100%;/*_overflow:auto;*/}
 }
 /*适配版css*/
 .all-cut-box {
-    width: 542px;
+    width: 842px;
     margin: 0 auto;
     overflow: hidden;
 }
