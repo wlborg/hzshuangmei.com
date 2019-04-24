@@ -31,7 +31,7 @@ $(document).ready(function() {
     function change4(obj){
         for(var i=0;i<tabs4.length;i++){
             if(tabs4[i]==obj){
-                tabs4[i].className="fli2_tab";                                                                         ar
+                tabs4[i].className="fli2_tab";
                 divs4[i].className="hdiv2 clearFix";
             }else{
                 tabs4[i].className="";
