@@ -1,5 +1,4 @@
 'use strict';
-const that= window;
 const version = '20190321';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = false;
@@ -67,14 +66,8 @@ function networkedAndCache(request) {
         .then((response) => {
             var copy = response.clone();
             caches.open(cacheKey('resources'))
-                .then((cache) => {
-                    //判断网络协议
-                    if(that.location.protocol=="chrome-extension"){
-                        return;
-                    } 
-                     else { 
+                .then((cache) => { 
                     cache.put(request, copy);
-                    }
                 });
             log("(network: cache write)", request.method, request.url,request.mode);
             return response;
