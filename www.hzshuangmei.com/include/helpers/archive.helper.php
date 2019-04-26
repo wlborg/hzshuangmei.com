@@ -446,7 +446,7 @@ function GetTags_nav_typeid_zx2($id)
 
         $tags = '';
 
-        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (92,93,94,95,96,97,99,100,101,102,103,104,105,106,107) order by rand()limit 2";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (92,93,94,95,96,97,100,101,102,103,104,105,106,107) and typeid not in (76,77,78,79,80,81,82,83,84,85,86,87) order by rand()limit 2";
 
         $dsql->Execute('tag',$query);
 
@@ -473,7 +473,7 @@ function GetTags_nav_typeid_jg2($id)
 
         $tags = '';
 
-        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (142,143,144,145,146,148,149,150,151,152,154,155,156,158,159,160,161,162,164,165,167,168,224,225,170,171,172) order by rand() limit 2";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (144,146,149,150,151,154,155,156,159,160,161,162,165,168,224,225,170,171) and typeid not in (76,77,78,79,80,81,82,83,84,85,86,87) order by rand() limit 2";
 
         $dsql->Execute('tag',$query);
 
@@ -499,7 +499,7 @@ function GetTags_nav_typeid_sh2($id)
 
         $tags = '';
 
-        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (202,203,204,205,229,207,208,209,211,212,213,215,216,217,218) order by rand() limit 2";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (208,209,212,216,218) and typeid not in (76,77,78,79,80,81,82,83,84,85,86,87) order by rand() limit 2";
 
         $dsql->Execute('tag',$query);
 
@@ -525,7 +525,7 @@ function GetTags_nav_typeid_wx2($id)
 
         $tags = '';
 
-        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (188,189,223,226,191,192,193,195,196,227,198,199,228) order by rand() limit 2";
+        $query = "SELECT tag FROM `sm_taglist` WHERE typeid in (188,189,223,226,191,192,193,198,199) and typeid not in (76,77,78,79,80,81,82,83,84,85,86,87) order by rand() limit 2";
 
         $dsql->Execute('tag',$query);
 
