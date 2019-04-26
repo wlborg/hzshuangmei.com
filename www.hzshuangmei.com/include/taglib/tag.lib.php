@@ -46,7 +46,7 @@ function lib_tag(&$ctag,&$refObj)
 
     if($getall==0 && isset($refObj->Fields['tags']) && !empty($refObj->Fields['aid']))
     {
-        $dsql->SetQuery("SELECT tid FROM `#@__taglist` WHERE aid = '{$refObj->Fields['aid']}' ");
+        $dsql->SetQuery("SELECT tid FROM `#@__taglist` WHERE aid = '{$refObj->Fields['aid']}' and tag.typeid not in (76,77,78,79,80,81,82,83,84,85,86,87) ");
         $dsql->Execute();
         $ids = '';
         while($row = $dsql->GetArray())
