@@ -992,7 +992,8 @@ footer .left a {
 
 footer .copyright {
     padding-top: 22px;
-    color: #c1b6ca
+    color: #c1b6ca;
+    float: left;
 }
 
 footer .copyright a {
