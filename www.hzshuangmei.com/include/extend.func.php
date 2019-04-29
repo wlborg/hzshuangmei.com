@@ -2184,7 +2184,7 @@ if($doctorid!=""){
       $relateInfo=$relateInfo;
       }
 }else{
-    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.jpg" alt="帮助问答默认客服头像" />';
+    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.png" alt="帮助问答默认客服头像" />';
 }
  return $relateInfo;
 }
