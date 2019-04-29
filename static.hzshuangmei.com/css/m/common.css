@@ -1409,3 +1409,106 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 .Wrapcon_Right a:active {
     color: rgb(65,14,107);
 }
+.contentWrap {
+    position: fixed;
+    top: 2.35rem;
+    z-index: 1;
+
+    display: none;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+
+    width: 100%;
+    height: 2.4rem;
+    max-width: 16rem;
+    margin: auto;
+
+    background: #f7f7f7;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+
+    width: 100%;
+    height: 2.4rem;
+    max-width: 16rem;
+    margin: auto;
+
+    background: #f7f7f7;
+}
+
+.footer a {
+    position: relative;
+
+    display: block;
+    float: left;
+    height: 2.4rem;
+
+    text-align: center;
+
+    outline: mediumaquamarine;
+    background: #f7f7f7;
+}
+
+.footer img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    margin: auto;
+}
+
+.footer a:nth-child(1),
+.footer a:nth-child(2) {
+    width: 22%;
+}
+
+.footer a:nth-child(1) img {
+    width: 1.075rem;
+}
+
+.footer a:nth-child(2) img {
+    width: 1.125rem;
+}
+.footer a:nth-child(3) {
+    width: 25%;
+
+    outline: medium;
+    background: none;
+}
+
+.footer a:nth-child(3) img {
+    top: .05rem;
+
+    width: 2.075rem;
+
+    vertical-align: bottom;
+}
+
+.footer a:nth-child(4) {
+    z-index: 222;
+
+    width: 31%;
+}
+
+.footer a:nth-child(4) img {
+    width: 5.25rem;
+}
+.footer > span {
+    position: absolute;
+    top: .0213rem;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+
+    background: rgb(238,238,238);
+}
