@@ -2297,7 +2297,7 @@ break;
 default:
 $relateprojecturl="https://www.hzshuangmei.com/doctors/#doctor_nav";
 }
-$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">权威解答</a><br/><a href="'.$relateprojecturl.'" target="_blank">POPULAR PROJECT</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
+$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">解答指导</a><br/><a href="'.$relateprojecturl.'" target="_blank">POPULAR PROJECT</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
 return $relateprojecturl;
 }
 
