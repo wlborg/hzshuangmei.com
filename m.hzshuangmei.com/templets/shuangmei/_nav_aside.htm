@@ -24,10 +24,10 @@
 
                       <div class="footerPro">
                      {dede:channelartlist typeid='7'}
-                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}项目</a></p>
                                                 <ul>
                                                    {dede:arclist titlelen='42' row='10' }
-                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
                                                     {/dede:arclist}
                                                 </ul>
                        {/dede:channelartlist}
@@ -35,30 +35,30 @@
 
                  <div class="footerPro">
                       {dede:channelartlist typeid='8'}
-                                             <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                             <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}项目</a></p>
                                                 <ul>
                                                    {dede:arclist titlelen='42' row='10' }
-                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
                                                     {/dede:arclist}
                                                 </ul>
                        {/dede:channelartlist}
                  </div>
                  <div class="footerPro">
                       {dede:channelartlist typeid='9'}
-                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                                  <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}项目</a></p>
                                                 <ul>
                                                    {dede:arclist titlelen='42' row='10' }
-                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
                                                     {/dede:arclist}
                                                 </ul>
                        {/dede:channelartlist}
                  </div>
                  <div class="footerPro">
                         {dede:channelartlist typeid='20'}
-                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}项目</a></p>
                                                 <ul>
                                                    {dede:arclist titlelen='42' row='10' }
-                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:title/]</a></li>
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
                                                     {/dede:arclist}
                                                 </ul>
                        {/dede:channelartlist}
@@ -67,109 +67,155 @@
              <!--资讯部分-->
              <div class="Wrapcon">
                       <div>
-                               <p><a href="">整形手术</a></p>
+                               <p>
+                                   {dede:type typeid='90'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
                                <ul>
-                                 <li><a href="">鼻部整形</a></li>
-                                 <li><a href="">眼部整形</a></li>
-                                 <li><a href="">胸部整形</a></li>
-                                 <li><a href="">面部整形</a></li>
-                                 <li><a href="">私密整形</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">唇部整形</a></li>
+                                  {dede:channel typeid='90'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
                                </ul>
                       </div>
 
                        <div>
-                               <p><a href="">整形手术</a></p>
+                               <p>
+                                   {dede:type typeid='140'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
                                <ul>
-                                 <li><a href="">鼻部整形</a></li>
-                                 <li><a href="">眼部整形</a></li>
-                                 <li><a href="">胸部整形</a></li>
-                                 <li><a href="">面部整形</a></li>
-                                 <li><a href="">私密整形</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">唇部整形</a></li>
+                                  {dede:channel typeid='140'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
                                </ul>
                       </div>
 
                        <div>
-                               <p><a href="">整形手术</a></p>
+                               <p>
+                                   {dede:type typeid='173'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
                                <ul>
-                                 <li><a href="">鼻部整形</a></li>
-                                 <li><a href="">眼部整形</a></li>
-                                 <li><a href="">胸部整形</a></li>
-                                 <li><a href="">面部整形</a></li>
-                                 <li><a href="">私密整形</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">唇部整形</a></li>
+                                  {dede:channel typeid='173'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
                                </ul>
                       </div>
 
                         <div>
-                               <p><a href="">整形手术</a></p>
+                                <p>
+                                   {dede:type typeid='186'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
                                <ul>
-                                 <li><a href="">鼻部整形</a></li>
-                                 <li><a href="">眼部整形</a></li>
-                                 <li><a href="">胸部整形</a></li>
-                                 <li><a href="">面部整形</a></li>
-                                 <li><a href="">私密整形</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">形体雕塑</a></li>
-                                 <li><a href="">唇部整形</a></li>
+                                  {dede:channel typeid='173'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
                                </ul>
                       </div>
                        <div>
-                                 <p><a href="">整形手术</a></p>
-                                 <ul>
-                                   <li><a href="">鼻部整形</a></li>
-                                   <li><a href="">眼部整形</a></li>
-                                   <li><a href="">胸部整形</a></li>
-                                   <li><a href="">面部整形</a></li>
-                                   <li><a href="">私密整形</a></li>
-                                   <li><a href="">形体雕塑</a></li>
-                                   <li><a href="">形体雕塑</a></li>
-                                   <li><a href="">唇部整形</a></li>
-                                 </ul>
+                                  <p>
+                                   {dede:type typeid='200'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
+                               <ul>
+                                  {dede:channel typeid='200'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                               </ul>
+                      </div>
+                       <div>
+                                  <p>
+                                   {dede:type typeid='219'}
+                                    <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                      {/dede:type}
+                              </p>
+                               <ul>
+                                  {dede:channel typeid='219'}
+                                 <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                                 {/dede:channel}
+                               </ul>
                       </div>
              </div>
              <!--医师-->
              <div class="Wrapcon">
                  <div>
-                     <p><a href="">整形美容医师</a></p>
+                     <p>
+                                 {dede:type typeid='3'}
+                                      <a href="[field:typeurl/]">
+                                      [field:typename/]
+                                      </a>
+                                 {/dede:type}
+                       </p>
                      <ul>
-                         <li><a href="">【朱红振】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
+
+                       {dede:arclist typeid=3 channelid="17"  orderby='id' addfields="zhiwei"}
+                          <li>
+                              <a href="[field:arcurl/]">
+                                  【[field:shorttitle /]】[field:zhiwei /]
+                              </a>
+                          </li>
+                       {/dede:arclist}
                      </ul>
                  </div>
                  <div>
-                     <p><a href="">皮肤美容医师</a></p>
+                     <p>
+                                   {dede:type typeid='4'}
+                                      <a href="[field:typeurl/]">
+                                      [field:typename/]
+                    </p>
                      <ul>
-                         <li><a href="">【朱红振】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
+                         {dede:arclist typeid=4 channelid="17"  orderby='id' addfields="zhiwei"}
+                          <li>
+                              <a href="[field:arcurl/]">
+                                  【[field:shorttitle /]】[field:zhiwei /]
+                              </a>
+                          </li>
+                       {/dede:arclist}
                      </ul>
                  </div>
                  <div>
-                     <p><a href="">医学纹绣</a></p>
+                     <p>
+                                   {dede:type typeid='5'}
+                                      <a href="[field:typeurl/]">
+                                      [field:typename/]
+                     </p>
                      <ul>
-                         <li><a href="">【朱红振】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
-                         <li><a href="">【薛开兴】整形外科院长</a></li>
+                         {dede:arclist typeid=5 channelid="17"  orderby='id' addfields="zhiwei"}
+                          <li>
+                              <a href="[field:arcurl/]">
+                                  【[field:shorttitle /]】[field:zhiwei /]
+                              </a>
+                          </li>
+                       {/dede:arclist}
                      </ul>
                  </div>
              </div>
              <div class="Wrapcon">
-                 <img src="footBrand.jpg" class="footBrand" alt="品牌介绍页面"/>
-                 <a href="/index.html" class="brandMore">
-                     <img src="brandBtn.png" alt="品牌跳转按钮" class="brandBtn"/>
+                 <img src="{dede:global.cfg_imgpath/}/pc/footBrand.jpg" class="footBrand" alt="品牌介绍页面"/>
+                 <a href="/brand/" class="brandMore">
+                     <img src="{dede:global.cfg_imgpath/}/pc/brandBtn.png" alt="品牌跳转按钮" class="brandBtn"/>
                      <span>品牌简介</span>
                  </a>
              </div>
              <!-- 上下滑动按钮提升 -->
-             <img src="SlidDown.png" class="SlidDown" alt="上下滑动按钮提升" />
+             <img src="{dede:global.cfg_imgpath/}/pc/SlidDown.png" class="SlidDown" alt="上下滑动按钮提升" />
           </div>
      </div>
