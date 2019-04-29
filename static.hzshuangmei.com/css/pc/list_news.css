@@ -235,6 +235,3 @@
 .ns_pa > div > div {
     float: left;
 }
-.news_content .news_main>li:nth-of-type(1){
-    display: none;
-}
