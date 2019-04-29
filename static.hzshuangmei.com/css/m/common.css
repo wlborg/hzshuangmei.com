@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none;
 
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a,
 body {
@@ -1311,7 +1311,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background-image: url(zx.png)!important;
+    background-image: url(https://img.hzshuangmei.com/m/zx.png)!important;
     background-repeat: no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
@@ -1321,7 +1321,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background-image: url(zx_act.png)!important;
+    background-image: url(https://img.hzshuangmei.com/m/zx_act.png)!important;
     background-repeat: no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
@@ -1331,7 +1331,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background: url(jg.png) no-repeat;
+    background: url(https://img.hzshuangmei.com/m/jg.png) no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
     background-size: .9rem .9rem;
@@ -1341,7 +1341,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background-image: url(jg_act.png)!important;
+    background-image: url(https://img.hzshuangmei.com/m/jg_act.png)!important;
     background-repeat: no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
@@ -1351,7 +1351,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background: url(wc.png) no-repeat;
+    background: url(https://img.hzshuangmei.com/m/wc.png) no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
     background-size: .9rem .9rem;
@@ -1361,7 +1361,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background-image: url(wc_act.png)!important;
+    background-image: url(https://img.hzshuangmei.com/m/wc_act.png)!important;
     background-repeat: no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
@@ -1371,7 +1371,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background: url(wx.png) no-repeat;
+    background: url(https://img.hzshuangmei.com/m/wx.png) no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
     background-size: .9rem .9rem;
@@ -1382,7 +1382,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
     display: block;
     margin: AUTO;
 
-    background-image: url(wx_act.png)!important;
+    background-image: url(https://img.hzshuangmei.com/m/wx_act.png)!important;
     background-repeat: no-repeat;
     background-position-x: 1.6rem;
     background-position-y: .35rem;
