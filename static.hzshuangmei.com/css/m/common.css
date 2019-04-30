@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -1412,7 +1412,7 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 .contentWrap {
     position: fixed;
     top: 2.35rem;
-    z-index: 1;
+    z-index: 9999;
 
     display: none;
     width: 100%;
