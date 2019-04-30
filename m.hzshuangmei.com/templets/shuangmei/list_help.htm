@@ -19,7 +19,7 @@
             <h1><span class="sr-only">{dede:field.seotitle/}_{dede:global.cfg_webname/}</span></h1>
              <!-- 顶部banner -->
             {dede:myad name='topbanner_sj'/}
-         <div class="news_list info_list">
+         <div class="help_list">
                 <div class="g-container nav" id="infonav">
                     <div class="g-doc">
                         <ul class="f-cb">
@@ -36,66 +36,40 @@
                         </ul>
                     </div>
                 </div>
-            <div class="g-container news">
-                <div class="g-doc">
-                    <div class="g-title">
-                        <h2><span class="sr-only">news/</span>{dede:field name="typename"/}资讯</h2>
-                    </div>
-
-                </div>
-            </div>
             <!-- 内容部分 -->
                  <div class="g-container helps">
                   <div class="g-doc">
                         <div class="g-title">
                             <h2>大家在问</h2>
                         </div>
+   {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc" }
                         <li class="clearFix">
                             <div>
                             <h4>
-                            <img alt="帮助中心问题图标" src="quest.png">
-                            <a href="/1_1h/3114.html" title="海口红妆双美门店测试标题2">海口红妆双美门店测试标题2</a>
+                            <img alt="帮助中心问题图标" src="https://img.hzshuangmei.com/m/quest.png">
+                            <a href="[field:arcurl/]" title="[field:title]">[field:shorttitle/]</a>
                             </h4>
                             <p>
-                            <img alt="回答图标" src="ans.png">
-                            <a href="/1_1h/3114.html" title="海口红妆双美门店测试标题2">
-                            海口红妆双美门店测试标题2摘要黑头是硬化油脂阻塞物，通常出现在颜面的额头、鼻子等部位 ...
+                            <img alt="回答图标" src="https://img.hzshuangmei.com/m/ans.png">
+                            <a href="[field:arcurl/]" title="[field:title]">
+                           [field:description function='cn_substr(@me,100)'/] ...
                             </a>
                             </p>
-                            <img src="time.png" class="time" alt="问答时间icon">
-                            <span>2019-04-15</span>
-                            <span>了解答案</span>
+                            <img src="https://img.hzshuangmei.com/m/time.png" class="time" alt="问答时间icon">
+                            <span>[field:pubdate function="GetDateTimeMK(@me)"/]</span>
+                            <span class="j-consult">了解答案</span>
                             </div>
                          </li>
-                            <li class="clearFix">
-                            <div>
-                            <h4>
-                            <img alt="帮助中心问题图标" src="quest.png">
-                            <a href="/1_1h/3114.html" title="海口红妆双美门店测试标题2">海口红妆双美门店测试标题2</a>
-                            </h4>
-                            <p>
-                            <img alt="回答图标" src="ans.png">
-                            <a href="/1_1h/3114.html" title="海口红妆双美门店测试标题2">
-                            海口红妆双美门店测试标题2摘要黑头是硬化油脂阻塞物，通常出现在颜面的额头、鼻子等部位 ...
-                            </a>
-                            </p>
-                            <img src="time.png" class="time" alt="问答时间icon">
-                            <span>2019-04-15</span>
-                            <span>了解答案</span>
-                            </div>
-                         </li>
+
                   </div>
                  </div>
             <!-- 分页 -->
                  <div class="pageindex">
                     <ul>
-                    <li class="thisclass">1</li>
-                    <li><a href="list_2.html">2</a></li>
-                    <li><a href="list_3.html">3</a></li>
-                    <li><a href="list_2.html">下一页</a></li>
-                    <li><a href="list_81.html">末页</a></li>
+                      {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
                     </ul>
                </div>
+                {/dede:list}
                <!-- 项目推荐 -->
                <div class="g-container project list_pro_help">
                     <div class="g-doc">
@@ -104,16 +78,16 @@
                     <a href="/projects" class="more">更多项目</a>
                     </div>
                     <div class="g-content ">
-                    <a href="/projects/nose/zslb.html"><img class="pro1" alt="海口红妆注射隆鼻材料严格按SFDA标准规范注射美容产品" src="https://uploads.hzshuangmei.com/180510/x1-1P51011150W92.jpg.pagespeed.ic.lrzNZpJJ_R.jpg"></a>
-                    <a href="/projects/nose/longbijiage.html"><img class="pro1" alt="海口隆鼻多少钱 红妆双美整形来给您解密隆鼻价格" src="https://uploads.hzshuangmei.com/180209/x1-1P2091524433K.jpg.pagespeed.ic.VDIVIPH2X-.jpg"></a>
+                          {dede:FIELD.typeid function='MoreHotProjectAboutInfoT(@me)'/}
                     </div>
                     </div>
               </div>
               <!-- 热门问题 --><div class="pro2 pro2N">
                     <img src="pro2N_title.png" class="pro2N_title" alt="热门问题">
-                    <img src="help_kst.png" class="help_kst" alt="更多问题">
+                    <img src="{dede:global.cfg_imgpath/}/m/help_kst.png" class="help_kst" alt="更多问题">
                     <ul class="pro2_tag">
-                    <li><a href="/1_1h/3115.html" target="_blank" title="海口红妆双美门店测试标题3"><span>?</span><span>海口红妆双美门店测试标题3......</span></a></li><li><a href="/3_4h/3100.html" target="_blank" title="红妆唇部整形测试标题"><span>?</span><span>红妆唇部整形测试标题</span></a></li><li><a href="/1_1h/3074.html" target="_blank" title="海口红妆双美门店测试标题"><span>?</span><span>海口红妆双美门店测试标题</span></a></li><li><a href="/2_2h/3097.html" target="_blank" title="红妆隆胸材料测试标题？"><span>?</span><span>红妆隆胸材料测试标题？</span></a></li><li><a href="/2_1h/3076.html" target="_blank" title="红妆隆鼻材料测试标题？"><span>?</span><span>红妆隆鼻材料测试标题？</span></a></li><li><a href="/3_1h/3080.html" target="_blank" title="红妆眼部整形测试标题？"><span>?</span><span>红妆眼部整形测试标题？</span></a></li><li><a href="/3_2h/3098.html" target="_blank" title="红妆面部整形测试标题"><span>?</span><span>红妆面部整形测试标题</span></a></li><li><a href="/1_1h/3114.html" target="_blank" title="海口红妆双美门店测试标题2"><span>?</span><span>海口红妆双美门店测试标题2......</span></a></li><li><a href="/3_3h/3099.html" target="_blank" title="红妆鼻部整形测试标题？"><span>?</span><span>红妆鼻部整形测试标题？</span></a></li><li><a href="/4_1h/3101.html" target="_blank" title="外科手术须知测试标题？"><span>?</span><span>外科手术须知测试标题？</span></a></li><li><a href="/1_2h/3075.html" target="_blank" title="三亚红妆双美门店测试标题？"><span>?</span><span>三亚红妆双美门店测试标题？</span></a></li>
+                      {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
+                    <!--   <li><a href="/1_1h/3115.html" target="_blank" title="海口红妆双美门店测试标题3"><span>?</span><span>海口红妆双美门店测试标题3......</span></a></li> -->
                     </ul>
                  </div>
     </div>
