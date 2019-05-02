@@ -353,6 +353,164 @@
            navmain.removeClass('hidden');
            navmore.removeClass('show');
        })
+       //底部导航切换
+        //点击左侧导航判断右边内容是否出现滚动条
+    function footerHg(index){
+             // 获取当前页面字体大小
+            var htmlFont =$("html").css('font-size').split("px")[0];
+            $(".Wrapcon_Right").css("height","100%");
+             // 获取窗口可视高度
+             var bodyHg = $(window).height();
+             // 获取头部高度
+            var headerHg = $(".custom-wrapper").height();
+            // 获取底部高度
+            var footerHg=$(".footer").height();
+            // 获取主要内容高度
+            var wrapActiveHg=bodyHg-headerHg-footerHg;
+             // 获取实际主要内容高度
+            var wrapActiveSj=$(".Wrapcon").eq(index).height();
+             // 获取实际左侧栏内容高度
+            var WrapnavSj=$(".Wrapnav").height();
+            // 赋值可视高度
+             $(".Wrapcon_Right").height(wrapActiveHg);
+             $(".Wrapnav").height(wrapActiveHg);
+            if(wrapActiveSj>wrapActiveHg){
+                     var btt=(parseInt(htmlFont))*2;
+                    $(".Wrapcon").eq(index).height(wrapActiveSj+btt);
+            }
+            if(WrapnavSj>wrapActiveHg){
+                     var btt=(parseInt(htmlFont))*2;
+                     $(".Wrapnav>ul").height(WrapnavSj+btt);
+            }
+           showBtn(index);
+
+     }
+     // 点击项目四个导航给对应项目内容重新赋值
+     function proFour(index){
+               // 获取当前页面字体大小
+               var htmlFont =$("html").css('font-size').split("px")[0];
+                 $(".Wrapcon_Right").css("height","100%");
+                 $(".wrapActive").css("height","100%");
+             // 获取窗口可视高度
+             var bodyHg = $(window).height();
+             // 获取头部高度
+            var headerHg = $(".custom-wrapper").height();
+            // 获取底部高度
+            var footerHg=$(".footer").height();
+            // 获取主要内容高度
+            var wrapActiveHg=bodyHg-headerHg-footerHg;
+             // 获取实际主要内容高度
+            var wrapActiveSj=$(".wrapActive").height();
+             // 获取实际左侧栏内容高度
+            var WrapnavSj=$(".Wrapnav").height();
+            // 赋值可视高度
+             $(".Wrapcon_Right,.Wrapnav").height(wrapActiveHg);
+             //获取项目遮罩层高度
+             var proZzHG=$(".proZz").height();
+             //获取项目小导航对应的内容高度
+             var proNa=$(".proNa").height();
+             var zzNa=proZzHG+proNa;//实际项目小导航对应的内容高度
+            if(zzNa<wrapActiveHg){
+
+                     var btt=(parseInt(htmlFont))*2;
+
+                     $(".wrapActive").height(zzNa+btt);
+            }
+
+     }
+
+     //页面尺寸变化重新赋值
+    $(window).resize(function(){
+      footerHg();
+    });
+    //通过下标显示对应的右边侧边栏
+     function showWrapcon_Right(obj,index){
+                   $(obj).removeClass('wrapActive');
+                   $(obj).eq(index).addClass('wrapActive');
+            }
+       //通过下标显示对应的左边侧边栏
+        function showWrapnav_Left(obj,index){
+                   $(obj).removeClass('wrapnavActive');
+                   $(obj).eq(index).addClass('wrapnavActive');
+            }
+    $(".footer>a").click(function(event) {
+        /* Act on the event */
+         var index=$(this).index();
+         if(index==1){
+               $(".contentWrap").show();
+                footerHg("0");//对首页底部导航栏赋值
+         }
+           $(".footer>a").removeClass('footerA');
+            $(this).addClass('footerA');
+
+            // showWrapcon_Right(".Wrapcon_Right>.Wrapcon",index);
+
+    });
+    // 底部导航侧边栏点击事件绑定
+    $(".Wrapnav>ul>li").click(function(){
+        var index=$(this).index();
+         showWrapnav_Left(".Wrapnav>ul>li",index);
+         showWrapcon_Right(".Wrapcon_Right>.Wrapcon",index);
+         footerHg(index);
+    });
+    function proShow(){
+        //项目对应显示对应box
+        var index=$(".footProNav").index();
+        showP(index);
+        $(".WrapconPro>li").click(function(){
+            var index=$(this).index();
+            $(".WrapconPro>li").removeClass("footProNav");
+            $(this).addClass("footProNav");
+            showP(index);
+            $(".Wrapcon_Right").scrollTop(0);
+            proFour(index);
+            showBtnPRO(index);
+        });
+        function showP(index){
+            $(".footerPro").removeClass("proNa");
+            $(".footerPro").eq(index).addClass("proNa");
+        }
+    }
+    proShow();
+    //判断内容高度需要显示滑动按钮
+    function showBtn(index){
+             var WrapnavHG=$(".Wrapnav").height();
+             //显示的内容高度
+             var box=$(".wrapActive").height();
+             if(WrapnavHG>=box){
+                  $(".SlidDown").hide();
+             }else {
+                  $(".SlidDown").show();
+             }
+    }
+        //项目小导航判断内容高度需要显示滑动按钮
+    function showBtnPRO(index){
+             var WrapnavHG=$(".Wrapnav").height();
+              //获取项目遮罩层高度
+             var proZzHG=$(".proZz").height();
+             //获取项目小导航对应的内容高度
+             var proNa=$(".proNa").height();
+
+             var zzNa=proZzHG+proNa;//实际项目小导航对应的内容高度
+
+             if(WrapnavHG>zzNa){
+                  $(".SlidDown").hide();
+             }else {
+                  $(".SlidDown").show();
+             }
+    }
+    $("body").on("touchmove",function(){
+
+                 $(".SlidDown").hide();
+            }
+        )
+    // 首页点击首页时隐藏分类
+    $(".footer a").eq(0).click(function(){
+        if(window.location.href=="http://192.168.0.24:8080/test/index.html"){
+            $(".contentWrap").hide();
+              return false;
+        }
+    });
    })
    // 顶部菜单导航tab切换结束
    // common.js 公共js文件  必须引用 JQ 库文件，将common.js文件放在 JQ的引用后面

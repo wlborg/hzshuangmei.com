@@ -11,6 +11,7 @@ with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createEle
 
 //prerender
 function preReady() {
+    .news_content .news_main>li:nth-of-type(1)
 //顶部主导航区域
     $(".nav_list").children("a:not([href='javascript:void(0)'])").hover(
         function(event) {

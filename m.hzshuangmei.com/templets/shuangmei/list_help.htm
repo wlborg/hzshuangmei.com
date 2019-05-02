@@ -2,174 +2,103 @@
 <html lang="cmn-hans">
 <head>
     {dede:include filename="_meta.htm"/}
+    <meta name="author" content="设计师姚俊，前端陈庭奋" />
+     <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
     <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
-    <meta name="keywords" content="{dede:field name='keywords'/}"/>
-    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
-    {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019041606"/>
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
-    <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
+    {dede:include filename="_link.htm"/}
+    <link rel="stylesheet"  href="{dede:global.cfg_csspath/}/m/list_help.css">
 </head>
 <body>
-{dede:include filename="_header.htm"/}
-{dede:myad name='topbanner_pc'/}
-<div class="m1">
-    <div class="location">
-        <i></i><span>当前位置：</span>{dede:field name='position'/}
-    </div>
-    <div class="line"></div>
-    <div class="help_content" id="help_content">
-        <ul class="help_left" id="help_left">
-            <p>&nbsp;</p>
-            <span class="help_Btitle">问题分类</span>
-            <span class="help_infotitle">EVERYBODY ASK</span>
-            <ul id="tree_root">
-                <li>
-                    <span class="tree2 nav_list">
-                        <b class="Off">
-                            {dede:type typeid='267'}
-                            <a href="[field:typeurl/]" class="nav_link">
-                                [field:typename/]
-                            </a>
-                            <i>&nbsp;</i>
-                            {/dede:type}
-                        </b>
-                    </span>
-                    <ul >
-                        {dede:channel typeid='267'}
-                        <li class="nav_list">
-                        <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
-                        {/dede:channel}
-                    </ul>
-                </li>
-                <li>
-                    <span class="tree2 nav_list">
-                        <b class="Off">
-                            {dede:type typeid='271'}
-                            <a href="[field:typeurl/]" class="nav_link">
-                                [field:typename/]
-                            </a>
-                            {/dede:type}
-                            <i>&nbsp;</i>
-                        </b>
-                    </span>
-                    <ul>
-                        {dede:channel typeid='271'}
-                        <li class="nav_list">
-                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
-                        {/dede:channel}
-                    </ul>
-                </li>
-                <li>
-                    <span class="tree2 nav_list">
-                        <b class="Off">
-                            {dede:type typeid='276'}
-                            <a href="[field:typeurl/]" class="nav_link">
-                                [field:typename/]
-                            </a>
-                            {/dede:type}
-                            <i>&nbsp;</i>
-                        </b>
-                    </span>
-                    <ul>
-                        {dede:channel typeid='276'}
-                        <li class="nav_list">
-                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
-                        {/dede:channel}
-                    </ul>
-                </li>
-                <li>
-                    <span class="tree2 nav_list">
-                        <b class="Off">
-                            {dede:type typeid='287'}
-                            <a href="[field:typeurl/]" class="nav_link">
-                                [field:typename/]
-                            </a>
-                            {/dede:type}
-                            <i>&nbsp;</i>
-                        </b>
-                    </span>
-                    <ul>
-                        {dede:channel typeid='287'}
-                        <li class="nav_list">
-                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
-                        {/dede:channel}
-                    </ul>
-                </li>
-                <li>
-                    <span class="tree2 nav_list">
-                        <b class="Off">
-                            {dede:type typeid='294'}
-                            <a href="[field:typeurl/]" class="nav_link">
-                                [field:typename/]
-                            </a>
-                            {/dede:type}
-                            <i>&nbsp;</i>
-                        </b>
-                    </span>
-                    <ul>
-                        {dede:channel typeid='294'}
-                        <li class="nav_list">
-                            <span class="tree3"><b><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a></b></span></li>
-                        {/dede:channel}
-                    </ul>
-                </li>
-            </ul>
-        </ul>
-            <ul class="help_main">
-                <p>&nbsp;</p>
-                <span class="help_main_Btitle">大家在问</span>
-                <span class="help_main_infotitle">EVERYBODY ASK</span>
-                {dede:list pagesize='10' orderby='id'}
-                <li class="clearFix">
-                    <div>
-                        <h4>
-                            <img src="https://img.hzshuangmei.com/pc/quest.png" alt="帮助中心问题图标">
-                            <a href="[field:arcurl/]" title="[field:fulltitle/]">[field:fulltitle function='cn_substr(@me,50)'/]</a>
-                        </h4>
-                        <p>
-                            <img src="https://img.hzshuangmei.com/pc/ans.png" alt="回答图标">
-                            <a href="[field:arcurl/]" title="[field:fulltitle/]">
-                                [field:description function='cn_substr(@me,160)'/]...<span>【详情】</span>
-                            </a>
-                        </p>
-                        <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>
-                        <span>未解决问题</span>
+    <div class="wrapper">
+        <!-- menu -->
+        {dede:include filename="_header.htm"/}
+        <!-- /menu -->
+        <div class="contents">
+            <h1><span class="sr-only">{dede:field.seotitle/}_{dede:global.cfg_webname/}</span></h1>
+             <!-- 顶部banner -->
+            {dede:myad name='topbanner_sj'/}
+         <div class="help_list">
+                <div class="g-container nav" id="infonav">
+                    <div class="g-doc">
+                        <ul class="f-cb">
+                           <li class="nav_list"> <a href="{dede:type row=1}[field:typelink /]{/dede:type}" class="nav_link" title="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+                {dede:channel type='son' noself='yes'}<li class="nav_list"><a href="[field:typeurl/]" class="nav_link">[field:typename/]</a>
+                           </li>
+                 {/dede:channel}
+                 <li>&nbsp;</li>
+                 <li>&nbsp;</li>
+                 <li>&nbsp;</li>
+                 <li>&nbsp;</li>
+                 <li>&nbsp;</li>
+                 <li>&nbsp;</li>
+                        </ul>
                     </div>
-                </li>
-                {/dede:list}
-                <div class="ns_pa clearFix">
-                    <ul class="pagination clearFix">
-                        {dede:pagelist istitem="pre,next,pageno,index,end" listsize="3"/}
-                    </ul>
                 </div>
-            </ul>
+            <!-- 内容部分 -->
+                 <div class="g-container helps">
+                  <div class="g-doc">
+                        <div class="g-title">
+                            <h2>大家在问</h2>
+                        </div>
+   {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc" }
+                        <li class="clearFix">
+                            <div>
+                            <h4>
+                            <img alt="帮助中心问题图标" src="https://img.hzshuangmei.com/m/quest.png">
+                            <a href="[field:arcurl/]" title="[field:title]">[field:shorttitle/]</a>
+                            </h4>
+                            <p>
+                            <img alt="回答图标" src="https://img.hzshuangmei.com/m/ans.png">
+                            <a href="[field:arcurl/]" title="[field:title]">
+                           [field:description function='cn_substr(@me,100)'/] ...
+                            </a>
+                            </p>
+                            <img src="https://img.hzshuangmei.com/m/time.png" class="time" alt="问答时间icon">
+                            <span>[field:pubdate function="GetDateTimeMK(@me)"/]</span>
+                            <span class="j-consult">了解答案</span>
+                            </div>
+                         </li>
 
-     </div>
-    <!-- 左边导航栏开始 -->
-    <div class="pro2 pro2N">
-        <p class="pro2Line">&nbsp;</p>
-        <span>热门问题</span>
-        <p class="pro2_info">EVERYBODY ASK</p>
-        <ul class="pro2_tag">
-            {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
-            <img src="{dede:global.cfg_imgpath/}/pc/helpKst.png" class="j-consult info_kst wow pulse animated" alt="快商通" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s"/>
-        </ul>
+                  </div>
+                 </div>
+            <!-- 分页 -->
+                 <div class="pageindex">
+                    <ul>
+                      {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
+                    </ul>
+               </div>
+                {/dede:list}
+               <!-- 项目推荐 -->
+               <div class="g-container project list_pro_help">
+                    <div class="g-doc">
+                    <div class="g-title">
+                    <h2>项目推荐</h2>
+                    <a href="/projects" class="more">更多项目</a>
+                    </div>
+                    <div class="g-content ">
+                          {dede:FIELD.typeid function='MoreHotProjectAboutInfoT(@me)'/}
+                    </div>
+                    </div>
+              </div>
+              <!-- 热门问题 --><div class="pro2 pro2N">
+                    <img src="pro2N_title.png" class="pro2N_title" alt="热门问题">
+                    <img src="{dede:global.cfg_imgpath/}/m/help_kst.png" class="help_kst" alt="更多问题">
+                    <ul class="pro2_tag">
+                      {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
+                    <!--   <li><a href="/1_1h/3115.html" target="_blank" title="海口红妆双美门店测试标题3"><span>?</span><span>海口红妆双美门店测试标题3......</span></a></li> -->
+                    </ul>
+                 </div>
     </div>
-    <ul class="pro3">
-        {dede:FIELD.typeid function='MoreHotProjectAboutInfoTF(@me)'/}
-    </ul>
-</div>
-<!-- 右侧边栏对应的tag -->
-<div class="typeIdRight">
-    {dede:FIELD.typeid function='GetTags_list_typeid(@me)'/}
-</div>
-{dede:include filename="_footer.htm"/}
-</body>
-{dede:include filename="_script.htm"/}
-{dede:include filename="_list_Factor.htm"/}
-<script src="{dede:global.cfg_jspath/}/pc/wow.min.js?v=20190330"></script>
-<script src="{dede:global.cfg_jspath/}/pc/list_help.js?v=2019041606"></script>
 
+            {dede:include filename="_sj_copyright.htm"/}
+        </div>
+    </div>
+    <!-- footer -->
+    {dede:include filename="_footer.htm"/}
+    <!-- /footer -->
+    {dede:include filename="_script.htm"/}
+    {dede:include filename="_list_Factor.htm"/}
+</body>
 </html>

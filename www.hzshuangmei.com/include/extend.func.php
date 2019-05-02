@@ -2184,7 +2184,7 @@ if($doctorid!=""){
       $relateInfo=$relateInfo;
       }
 }else{
-    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.jpg" alt="帮助问答默认客服头像" />';
+    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.png" alt="帮助问答默认客服头像" />';
 }
  return $relateInfo;
 }
@@ -2297,7 +2297,7 @@ break;
 default:
 $relateprojecturl="https://www.hzshuangmei.com/doctors/#doctor_nav";
 }
-$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">权威解答</a><br/><a href="'.$relateprojecturl.'" target="_blank">POPULAR PROJECT</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
+$relateprojecturl='<h2><a href="'.$relateprojecturl.'" target="_blank">解答指导</a><br/><a href="'.$relateprojecturl.'" target="_blank">POPULAR PROJECT</a></h2><a href="'.$relateprojecturl.'" target="_blank">more+</a>';
 return $relateprojecturl;
 }
 
