@@ -1748,3 +1748,213 @@ $repairRes=$repairRes;
 }
 return $repairRes;
 }
+/**
+* 帮助中心对应的热门问题
+* @param   $typeid   当前资讯文档所在的栏目ID
+* @$defatypeid 默认所有的栏目ID
+ */
+function GetHelp_list_typeid($typeid)
+{
+global $dsql;
+$relateproject="";
+$relatetypeid = 0;
+$defatypeid = '268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
+switch ($typeid)
+{
+case 226 :
+$relatetypeid= '268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
+break;
+case 267 :
+$relatetypeid='268,269,270';
+break;
+case 268:
+case 269:
+case 270:
+$relatetypeid=$typeid;
+break;
+case 271:
+$relatetypeid='272,273,274,275';
+break;
+case 272:
+case 273:
+case 274:
+case 275:
+$relatetypeid=$typeid;
+break;
+case 276:
+$relatetypeid='277,278,279,280,281,282,283,284,285,286';
+break;
+case 277:
+case 278:
+case 279:
+case 280:
+case 281:
+case 282:
+case 283:
+case 284:
+case 285:
+case 286:
+$relatetypeid=$typeid;
+break;
+case 287:
+$relatetypeid='288,289,290,291,292,293';
+break;
+case 288:
+case 289:
+case 290:
+case 291:
+case 292:
+case 293:
+$relatetypeid=$typeid;
+break;
+case 294:
+$relatetypeid='295,296,297,298,299,300,301,302,303,304';
+break;
+case 295:
+case 296:
+case 297:
+case 298:
+case 299:
+case 300:
+case 301:
+case 302:
+case 303:
+case 304:
+$relatetypeid=$typeid;
+break;
+default:
+$relatetypeid='268,269,270,272,273,274,275,277,278,279,280,281,282,283,284,285,286,288,289,290,291,292,293,295,296,297,298,299,300,301,302,303,304';
+}
+$dsql->SetQuery( "SELECT  * FROM #@__archives AS a where  a.typeid in ( $relatetypeid ) and a.arcrank=0  order by click desc limit 6");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],36,0);
+$shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title"],36,0)."......":cn_substr($row["title"],36,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$relateproject.='<li><a href="'.$url.'"  title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
+}
+  if($ns>0){
+    if($ns<6){
+      $res2.=getHelpArticleToEvl($typeid,$defatypeid,$ns);
+    }
+    $relateproject=$relateproject.$res2;
+  }
+  return $relateproject;
+}
+
+/**
+ *
+*  帮助中心读取6条数据
+*  如果不足够6条，补到6条
+*  $typeid     当前栏目id
+*  $defatypeid 帮助栏目下所有id(及默认id)
+*/
+function getHelpArticleToEvl($typeid,$defatypeid,$typeNum)
+{
+global $dsql;
+$repairRes="";
+$repair=0;
+$repair=6-$typeNum;
+$dsql->SetQuery( "SELECT  *  FROM #@__archives AS a where a.typeid in ( $defatypeid ) and a.typeid <> $typeid and a.arcrank=0 order by click desc limit $repair");
+$dsql->Execute();
+$ns = $dsql->GetTotalRow();
+while($row=$dsql->GetArray())
+{
+$id = $row["id"];
+$title = cn_substr($row["title"],80,0);
+$urlarray = GetOneArchive($id);
+$url = $urlarray['arcurl'];
+$litpic =replaceurl($row["litpic"]);
+$shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title"],36,0)."......":cn_substr($row["title"],36,0);
+$repairRes.='<li><a href="'.$url.'"  title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
+}
+if($ns>0){
+$repairRes=$repairRes;
+}
+return $repairRes;
+}
+/**
+ *
+*  帮助中心详情页读取医生的头像,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*/
+function getDoctorHeadFormId($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $thumb =replaceurl($row["thumb"]);
+      $relateInfo.='<img src="'.$thumb.'" alt="'.$thumb.'" />';
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.png" alt="帮助问答默认客服头像" />';
+}
+ return $relateInfo;
+}
+/**
+ *
+*  帮助中心详情页读取医生的名字,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*
+*/
+function getDoctorHeadFormName($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $title =$row["title"];
+      $relateInfo.=$title;
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='客服';
+}
+ return $relateInfo;
+}
+/**
+ *
+*  帮助中心详情页读取医生的职位,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*
+*/
+function getDoctorHeadFormZhiwei($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $zhiwei =$row["zhiwei"];
+      $relateInfo.=$zhiwei;
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='客服服务';
+}
+ return $relateInfo;
+}

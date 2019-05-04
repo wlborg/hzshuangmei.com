@@ -58,7 +58,7 @@ ul {
 
 .help_list .nav ul li a,
 .art_info .nav ul li a {
-    padding: 0 .9rem!important;
+    padding: 0 .1rem!important;
 }
 
 .help_list .nav ul li a {
@@ -84,7 +84,7 @@ a {
 
 .help_list {
     width: 15.4rem;
-    margin: 44px auto 0;
+    margin: .93867rem auto 0;
 }
 
 .help_list .helps .g-title {
@@ -108,7 +108,7 @@ a {
 }
 
 .helps li {
-    margin: 28px 0;
+    margin: .59733rem 0;
 
     border-bottom: 1px dashed #e5e5e5;
 }
@@ -118,43 +118,43 @@ a {
 
     border: 1px solid #e0e0ff;
     background: #f2f2ff;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 .10667rem .27733rem rgba(224,224,224,.31);
 }
 
 .helps li > div {
     position: relative;
 
-    height: 282px;
+    height: 6.016rem;
     overflow: hidden;
 }
 
 .helps li > div > h4 {
     position: relative;
 
-    height: 95px;
+    height: 2.02667rem;
 
-    line-height: 105px;
+    line-height: 2.24rem;
 
-    text-indent: 77px;
+    text-indent: 1.64267rem;
 
     background: #fff;
 }
 
 .helps li > div > h4 > img {
     position: absolute;
-    top: 31px;
+    top: .66133rem;
     left: 0;
-    left: 32px;
+    left: .68267rem;
 
-    width: 43px;
-    height: 43px;
+    width: .91733rem;
+    height: .91733rem;
 }
 
 .helps li > div > h4 > a {
-    margin-left: 12px;
+    margin-left: .256rem;
 
-    font-size: 18px;
-    font-size: 23px;
+    font-size: .384rem;
+    font-size: .49067rem;
 
     color: #676767;
 }
@@ -162,22 +162,22 @@ a {
 .helps li > div > p {
     position: relative;
 
-    padding-top: 39px;
-    margin-right: 27px;
+    padding-top: .832rem;
+    margin-right: .576rem;
 }
 
 .helps li > div > p > img {
     position: absolute;
-    top: 51px;
-    left: 33px;
+    top: 1.088rem;
+    left: .704rem;
 }
 
 .helps li > div > p > a {
     display: block;
-    margin-left: 90px;
+    margin-left: 1.92rem;
 
-    font-size: 21px;
-    line-height: 36px;
+    font-size: .448rem;
+    line-height: .768rem;
 
     color: #666;
 }
@@ -188,41 +188,41 @@ a {
 
 .helps li > div > span:nth-of-type(1) {
     display: block;
-    margin-top: 32px;
-    margin-bottom: 15px;
-    margin-left: 117px;
+    margin-top: .68267rem;
+    margin-bottom: .32rem;
+    margin-left: 2.496rem;
 
-    font-size: 19px;
+    font-size: .40533rem;
 
     color: #bdbdbd;
 }
 
 .helps li > div > span:nth-of-type(2) {
     position: absolute;
-    right: 27px;
-    bottom: 26px;
+    right: .576rem;
+    bottom: .55467rem;
 
     display: block;
-    width: 125px;
+    width: 2.66667rem;
 
-    font-size: 19px;
-    line-height: 32px;
+    font-size: .40533rem;
+    line-height: .68267rem;
 
     cursor: pointer;
     text-align: center;
 
     color: #fff;
-    border-radius: 5px;
+    border-radius: .10667rem;
     background: #6e63a8;
 }
 
 .helps .time {
     position: absolute;
-    top: 241px;
-    left: 90px;
+    top: 5.14133rem;
+    left: 1.92rem;
 
-    width: 18px;
-    height: 18px;
+    width: .384rem;
+    height: .384rem;
 }
 
 .help_list .pageindex {
@@ -292,8 +292,8 @@ a {
 
 .list_pro_help {
     position: relative;
+    /* width:15.65rem; */
 
-    width: 15.65rem;
     padding-top: 1rem;
     margin: .35rem auto;
 
@@ -337,8 +337,8 @@ a {
 
 .list_pro_help .g-title .more {
     position: absolute;
-    top: 53px;
-    right: 12px;
+    top: 1.13067rem;
+    right: .256rem;
 
     width: 2.05rem;
     height: .55rem;
@@ -390,39 +390,39 @@ a {
 .pro2 {
     position: relative;
 
-    width: 734px;
+    width: 15.65867rem;
     margin: auto;
 
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31);
+    box-shadow: 0 .10667rem .27733rem rgba(224,224,224,.31);
 }
 
 .pro2Line {
     width: 1px;
-    height: 31px;
-    margin-top: 31px;
-    margin-left: 18px;
+    height: .66133rem;
+    margin-top: .66133rem;
+    margin-left: .384rem;
 
     background: #d5cfe5;
 }
 
 .pro2 > span {
     position: absolute;
-    top: 27px;
+    top: .576rem;
     left: 0;
-    left: 24px;
+    left: .512rem;
 
-    font-size: 18px;
+    font-size: .384rem;
 
     color: #693290;
 }
 
 .pro2_info {
     position: absolute;
-    top: 49px;
-    left: 25px;
+    top: 1.04533rem;
+    left: .53333rem;
 
-    font-size: 10px;
+    font-size: .21333rem;
 
     color: #d5cfe5;
 }
@@ -432,15 +432,15 @@ a {
 }
 
 .pro2_tag {
-    margin-top: 27px;
-    margin-left: 18px;
+    margin-top: .576rem;
+    margin-left: .384rem;
     overflow: hidden;
 }
 
 .pro2_tag li {
     float: left;
-    width: 124px;
-    margin: 0 20px 17px 0!important;
+    width: 2.64533rem;
+    margin: 0 .42667rem .36267rem 0!important;
     overflow: hidden;
 
     white-space: nowrap;
@@ -450,14 +450,14 @@ a {
 }
 
 .pro2_tag li {
-    width: 671px;
-    margin: 0 20px 39px 0!important;
+    width: 14.31467rem;
+    margin: 0 .42667rem .832rem 0!important;
 
-    line-height: 24px;
+    line-height: .512rem;
 }
 
 .pro2_tag li > a {
-    font-size: 27px;
+    font-size: .576rem;
 
     color: #666!important;
 }
@@ -474,12 +474,12 @@ a {
 
 .pro2_tag li > a > span:nth-of-type(1) {
     display: inline-block;
-    width: 25px;
-    height: 24px;
-    margin-right: 8px;
+    width: .53333rem;
+    height: .512rem;
+    margin-right: .17067rem;
 
-    font-size: 26px;
-    line-height: 24px;
+    font-size: .55467rem;
+    line-height: .512rem;
 
     text-align: center;
 
@@ -497,15 +497,15 @@ a {
 
 .pro2N_title {
     display: block;
-    width: 367px;
-    margin: 47px 0 35px 13px;
+    width: 7.82933rem;
+    margin: 1.00267rem 0 .74667rem .27733rem;
 }
 
 .help_kst {
     position: absolute;
-    top: 47px;
-    right: 22px;
+    top: 1.00267rem;
+    right: .46933rem;
 
     display: block;
-    width: 142px;
+    width: 3.02933rem;
 }

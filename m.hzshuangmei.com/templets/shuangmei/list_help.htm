@@ -8,7 +8,7 @@
     <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet"  href="{dede:global.cfg_csspath/}/m/list_help.css">
+    <link rel="stylesheet"  href="{dede:global.cfg_csspath/}/m/list_help.css?v=0.2" />
 </head>
 <body>
     <div class="wrapper">
@@ -42,7 +42,7 @@
                         <div class="g-title">
                             <h2>大家在问</h2>
                         </div>
-   {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc" }
+               {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
                         <li class="clearFix">
                             <div>
                             <h4>
@@ -60,7 +60,6 @@
                             <span class="j-consult">了解答案</span>
                             </div>
                          </li>
-
                   </div>
                  </div>
             <!-- 分页 -->
@@ -83,18 +82,19 @@
                     </div>
               </div>
               <!-- 热门问题 --><div class="pro2 pro2N">
-                    <img src="pro2N_title.png" class="pro2N_title" alt="热门问题">
+                    <img src="{dede:global.cfg_imgpath/}/m/pro2N_title.png" class="pro2N_title" alt="热门问题">
                     <img src="{dede:global.cfg_imgpath/}/m/help_kst.png" class="help_kst" alt="更多问题">
                     <ul class="pro2_tag">
                       {dede:FIELD.typeid function='GetHelp_list_typeid(@me)'/}
-                    <!--   <li><a href="/1_1h/3115.html" target="_blank" title="海口红妆双美门店测试标题3"><span>?</span><span>海口红妆双美门店测试标题3......</span></a></li> -->
                     </ul>
                  </div>
     </div>
 
-            {dede:include filename="_sj_copyright.htm"/}
+
         </div>
+
     </div>
+     {dede:include filename="_sj_copyright.htm"/}
     <!-- footer -->
     {dede:include filename="_footer.htm"/}
     <!-- /footer -->
