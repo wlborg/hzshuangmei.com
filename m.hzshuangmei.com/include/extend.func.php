@@ -1836,7 +1836,7 @@ $shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title
 $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
-$relateproject.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
+$relateproject.='<li><a href="'.$url.'"  title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
 }
   if($ns>0){
     if($ns<6){
@@ -1871,10 +1871,90 @@ $urlarray = GetOneArchive($id);
 $url = $urlarray['arcurl'];
 $litpic =replaceurl($row["litpic"]);
 $shorttitle =strlen(cn_substr($row["shorttitle"],36,0))>36?cn_substr($row["title"],36,0)."......":cn_substr($row["title"],36,0);
-$repairRes.='<li><a href="'.$url.'" target="_blank" title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
+$repairRes.='<li><a href="'.$url.'"  title="'.$title.'"><span>?</span><span>'.$shorttitle.'</span></a></li>';
 }
 if($ns>0){
 $repairRes=$repairRes;
 }
 return $repairRes;
+}
+/**
+ *
+*  帮助中心详情页读取医生的头像,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*/
+function getDoctorHeadFormId($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $thumb =replaceurl($row["thumb"]);
+      $relateInfo.='<img src="'.$thumb.'" alt="'.$thumb.'" />';
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='<img src="https://img.hzshuangmei.com/pc/helpKf.png" alt="帮助问答默认客服头像" />';
+}
+ return $relateInfo;
+}
+/**
+ *
+*  帮助中心详情页读取医生的名字,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*
+*/
+function getDoctorHeadFormName($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $title =$row["title"];
+      $relateInfo.=$title;
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='客服';
+}
+ return $relateInfo;
+}
+/**
+ *
+*  帮助中心详情页读取医生的职位,根据文档填写医生的文档id
+*  $typeid     当前栏目id
+*
+*/
+function getDoctorHeadFormZhiwei($doctorid)
+{
+global $dsql;
+$relateInfo="";
+if($doctorid!=""){
+      $dsql->SetQuery( "SELECT * FROM #@__archives AS a,#@__addondoctors AS b where a.id =b.aid  and a.id = '$doctorid' and a.arcrank=0  order by rand() limit 1");
+      $dsql->Execute();
+      $ns = $dsql->GetTotalRow();
+      while($row=$dsql->GetArray())
+      {
+      $zhiwei =$row["zhiwei"];
+      $relateInfo.=$zhiwei;
+      }
+      if($ns>0){
+      $relateInfo=$relateInfo;
+      }
+}else{
+    $relateInfo.='客服服务';
+}
+ return $relateInfo;
 }
