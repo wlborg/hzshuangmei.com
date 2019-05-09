@@ -870,6 +870,9 @@ footer {
     color: #fff;
     background-color: #300a4e
 }
+footer .addres a{
+    font-size: 18px;
+}
 footer .left {
     float: left;
     width: 600px
