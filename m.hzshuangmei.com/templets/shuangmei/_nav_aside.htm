@@ -6,6 +6,8 @@
                       <li><span>&nbsp;</span>资讯</li>
                       <li><span>&nbsp;</span>医师</li>
                       <li><span>&nbsp;</span>品牌</li>
+                      <li><span>&nbsp;</span>门店</li>
+                      <li><span>&nbsp;</span>帮助</li>
                   </ul>
          </div>
          <div class="Wrapcon_Right">
@@ -216,6 +218,32 @@
                      <img src="https://img.hzshuangmei.com/m/brandBtn.png" alt="品牌跳转按钮" class="brandBtn"/>
                      <span>品牌简介</span>
                  </a>
+             </div>
+             <!-- 门店 -->
+             <div class="Wrapcon">
+                      <div>
+                       {dede:channelartlist typeid='305'}
+                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                                <ul>
+                                                   {dede:arclist titlelen='42' row='10' }
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
+                                                    {/dede:arclist}
+                                                </ul>
+                       {/dede:channelartlist}
+                      </div>
+             </div>
+              <!-- 帮助中心 -->
+             <div class="Wrapcon">
+                      <div>
+                       {dede:channelartlist typeid='266'}
+                                                <p><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></p>
+                                                <ul>
+                                                   {dede:arclist titlelen='42' row='10' }
+                                                    <li><a href="[field:arcurl /]" title="[field:title/]">[field:shorttitle/]</a></li>
+                                                    {/dede:arclist}
+                                                </ul>
+                       {/dede:channelartlist}
+                      </div>
              </div>
              <!-- 上下滑动按钮提升 -->
              <img src="https://img.hzshuangmei.com/m/SlidDown.png" class="SlidDown" alt="上下滑动按钮提升" />

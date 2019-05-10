@@ -1,4 +1,0 @@
-<url>
-<loc>[field:aid runphp='yes']if($GLOBALS['cfg_multi_site']='N'){@me='https://www.hzshuangmei.com';}[/field:aid][field:arcurl /]</loc>
-<lastmod>[field:stime /]</lastmod>
-</url>
