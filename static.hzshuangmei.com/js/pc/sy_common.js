@@ -45,6 +45,8 @@ $(function() {
             'scrollTop': '0px'
         }, 300);
     });
+    // 隐藏专题案例，加类名 zt_case
+    $(".zt_case").hide();
 });
 // 顶部菜单导航tab切换结束
 // common.js 公共js文件  必须引用 JQ 库文件，将common.js文件放在 JQ的引用后面
