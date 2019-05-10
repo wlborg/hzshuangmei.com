@@ -215,7 +215,7 @@
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                       <a href="[field:arcurl/]" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
                    </div>
                </li>
                {/dede:arclist}
@@ -242,7 +242,7 @@
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
+                       <a href="[field:arcurl/]" class="j-consult xiangqing" target="_blank" rel="noopener">查看详情</a>
                    </div>
                </li>
                {/dede:arclist}
@@ -269,7 +269,7 @@
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                       <a href="[field:arcurl/]" class="j-consult xiangqing">查看详情</a>
                    </div>
                </li>
                {/dede:arclist}
@@ -296,7 +296,7 @@
                        <p>塑美方案：[field:project/]</p>
 
                        <p>塑美医师：[field:doctor/]</p>
-                       <a href="javascript:void(0)" class="j-consult xiangqing">查看详情</a>
+                       <a href="[field:arcurl/]" class="j-consult xiangqing">查看详情</a>
                    </div>
                </li>
                {/dede:arclist}
@@ -323,14 +323,6 @@
                 <!-- Swiper -->
                 <div class="swiper-container swiper-container4">
                     <div class="swiper-wrapper">
-                        <!--            {dede:arclist typeid=3 isweight='y' orderby='weight' orderway='asc' addfields="thumb2,zhiwei" channelid="17"  row="20"}
-                                   <div class="swiper-slide">
-                                       <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                                           <img src="[field:thumb2 function='replaceurl(@me)/]" alt="[field:title/]"/>
-                                           <p>[[field:zhiwei/]] [field:title/]</p>
-                                       </a>
-                                   </div>
-                                   {/dede:arclist} -->
                         {dede:sql sql="select * from  sm_archives as a,sm_addondoctors as b where a.id=b.aid and  a.channel=17  and  a.typeid=3  and  a.id not in(36,151,154) order by  a.weight asc }
                         <div class="swiper-slide">
                             <a href="[field:id `                                                                                                                                                         runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
