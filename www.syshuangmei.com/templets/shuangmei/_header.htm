@@ -123,14 +123,7 @@
                     <li>
                         <h5><a href="/projects/face/" target="_blank" rel="noopener">面部整形</a></h5>
                     </li>
-                    <!--                {dede:arclist typeid=16 orderby='weight' row='3'  orderway='desc' isweight='Y'}
-                    <li class="star">
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
-                            <p><i></i><span>[field:title/]</span></p>
-                        </a>
-                    </li>
-                    {/dede:arclist} -->
+
                     {dede:sql sql="select * from sm_archives as a,sm_addonproject as b where a.id=b.aid and a.channel=18 and a.typeid in (16,24,25,26) and a.arcrank=0 order by a.weight desc limit 0,3"}
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
@@ -145,14 +138,6 @@
                     <li>
                         <h5><a href="/projects/skin/" target="_blank" rel="noopener">皮肤美容</a></h5>
                     </li>
-                    <!--                 {dede:arclist typeid=21 orderby='weight' row='3'  orderway='desc' isweight='Y'}
-                    <li>
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
-                            <p><i></i><span>[field:title/]</span></p>
-                        </a>
-                    </li>
-                    {/dede:arclist} -->
                     {dede:sql sql="select * from sm_archives as a,sm_addonproject as b where a.id=b.aid and a.channel=18 and a.typeid in (27,28,29,30,31,32,33) and a.arcrank=0 order by a.weight desc limit 0,3"}
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
@@ -189,14 +174,6 @@
                     <li>
                         <h5><a href="/projects/body/" target="_blank" rel="noopener">形体雕塑</a></h5>
                     </li>
-                    <!-- {dede:arclist typeid=19 orderby='desc' row='3' isweight='Y'}
-                    <li>
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:picname function='replaceurl(@me)/]" alt=""/>
-                            <p><i></i><span>[field:title/]</span></p>
-                       </a>
-                    </li>
-                    {/dede:arclist} -->
                     {dede:sql sql="select * from sm_archives as a,sm_addonproject as b where a.id=b.aid and a.channel=18 and a.typeid=19 and a.arcrank=0 order by a.weight desc limit 0,3"}
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
@@ -210,7 +187,7 @@
             </div>
         </li>
         <li class="nav_list">
-            <a href="/doctors" class="nav_link bor_l bor_r" target="_blank" rel="noopener">
+            <a href="/kst.html" class="nav_link bor_l bor_r" target="_blank" rel="noopener">
                 <span>医 师</span><br/>
                 <span>experts</span>
             </a>
@@ -219,14 +196,6 @@
                     <li>
                         <h5><a href="/doctors/surgery" target="_blank" rel="noopener">整形美容医师</a></h5>
                     </li>
-                    <!--                     {dede:arclist typeid=3  channelid="17"  isweight='y'  orderby='weight'  row='2' addfields="zhiwei,thumb"}
-                    <li>
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
-                            <i></i>
-                        </a>
-                    </li> {/dede:arclist} -->
                     {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=3 and a.arcrank=0 order by a.weight asc limit 0,2"}
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
@@ -241,15 +210,6 @@
                     <li>
                         <h5><a href="/doctors/laser" target="_blank" rel="noopener">激光美容医师</a></h5>
                     </li>
-                    <!--             {dede:arclist typeid=4   channelid="17" isweight='y' orderby='weight'  row='2' addfields="zhiwei,thumb"}
-                    <li>
-                        <a href="[field:arcurl/]" target="_blank" rel="noopener">
-                            <img src="[field:thumb function=replaceurl(@me)/]" alt="[field:title/]"/>
-                            <p><span class="n_f">[field:title/]</span><span class="n_b">[field:zhiwei /]</span></p>
-                            <i></i>
-                        </a>
-                    </li>
-                    {/dede:arclist} -->
                     {dede:sql sql="select * from sm_archives as a,sm_addondoctors as b where a.id=b.aid and a.channel=17 and a.typeid=4 and a.arcrank=0 order by a.weight asc limit 0,2"}
                     <li>
                         <a href="[field:id runphp='yes']$arcRow=GetOneArchive(@me);@me=$arcRow['arcurl'];[/field:id]" target="_blank" rel="noopener">
@@ -313,11 +273,6 @@
             </div>
         </li>
         <li class="nav_list">
-           <!--  <a href="javascript:void(0)" class="nav_link bor_l bor_r j-consult" target="_blank" rel="noopener">
-                <span>在线留言</span><br/>
-                <span>MESSAGE</span>
-            </a> -->
-              <!-- <a href="/cases/" class="nav_link bor_l bor_r" target="_blank" rel="noopener"> -->
                 <a href="/kst.html" class="nav_link bor_l bor_r" target="_blank" rel="noopener">
                 <span>真人秀</span><br/>
                 <span>Show</span>
