@@ -35,13 +35,13 @@
         </div>
         <div class="news">
             <h2 class="news_h active">
-                <a href="/news/" target="_blank" rel="noopener">
+                <a href="javascript:;" target="_blank" rel="noopener" class="j-consult">
                     <span>红妆新闻</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png"  alt="latest activity"/>
                 </a>
             </h2>
              <h2 class="news_h">
-                <a href="/info/" target="_blank" rel="noopener">
+                <a href="javascript:;" target="_blank" rel="noopener" class="j-consult">
                     <span>双美资讯</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity_infos.png"  alt="latest activity"/>
                 </a>
@@ -52,7 +52,7 @@
                 <div class="swiper-container news_swiper">
                     <div class="swiper-wrapper">
                         {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
-                        <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
+                        <a href="javascript:;" class="swiper-slide" target="_blank" rel="noopener">
                             <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:fulltitle/]">
 
                             <div class="timu">[field:fulltitle/]</div>
@@ -70,7 +70,7 @@
 
                 <ul class="swiper-container">
                     {dede:arclist typeid=89 orderby='id' flag="c" row='6'  channelid="22"}
-                       <li><a href="[field:arcurl/]"><span class="cire">&nbsp;</span>[field:fulltitle/]
+                       <li><a href="javascript:;"><span class="cire">&nbsp;</span>[field:fulltitle/]
                         <span class="infos_time">
                        </span>
                        <span class="time">[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></a></li>
@@ -87,7 +87,7 @@
                         <div class="swiper-slide">
                             <p class="recommend">
                                 <i></i>
-                                <a href="[field:arcurl/]" class="conment_a">[field:fulltitle/]</a>
+                                <a href="javascript:;" class="conment_a j-consult">[field:fulltitle/]</a>
                             </p>
 
                             <p class="clock">
@@ -270,7 +270,7 @@
     </div>
 </div>
 <!-- 恢复过来开始 -->
-<div class="index_clients j-consult">
+<div class="index_clients zt_case">
     <div class="m1">
         <h3><img  src="{dede:global.cfg_imgpath/}/pc/title3.png"  alt="整形案例 真人代言 现身说法"/></h3>
         <div id="tab4">
