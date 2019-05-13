@@ -1331,15 +1331,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     clear: both
 }
 
-#div3 {
-    top: 333px!important;
-    left: 331px!important
-}
 
-#div36 {
-    left: 448px!important;
-    width: 122px!important
-}
 
 .list_information_nav li.currnet4 {
     background: #6a157d
@@ -2133,3 +2125,14 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     /* Internet Explorer 10-11 */
     color: #a5a5a5;
 }
+/* #div3 {
+    top: 333px!important;
+    left: 331px!important;
+}
+
+#div36 {
+    left: 448px!important;
+
+    width: 122px!important;
+}
+ */
