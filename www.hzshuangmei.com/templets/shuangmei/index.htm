@@ -19,11 +19,11 @@
 <div class="banner">
     {dede:myad name='topbanner_pc'/}
 </div>
-<div class="index_news">
+<div class="index_news j-consult">
     <div class="m1 clearFix">
         <div class="video">
                 <h2>
-                <a href="/video/" target="_blank" rel="noopener">
+                <a class="j-consult" href="javascript:;" target="_blank" rel="noopener">
                     <span>视频中心</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/n_video_center.png"   alt="video center"/>
                 </a>
@@ -35,13 +35,13 @@
         </div>
         <div class="news">
             <h2 class="news_h active">
-                <a href="/news/" target="_blank" rel="noopener">
+                <a href="javascript:;" target="_blank" rel="noopener" class="j-consult">
                     <span>红妆新闻</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity.png"  alt="latest activity"/>
                 </a>
             </h2>
              <h2 class="news_h">
-                <a href="/info/" target="_blank" rel="noopener">
+                <a href="javascript:;" target="_blank" rel="noopener" class="j-consult">
                     <span>双美资讯</span><br/>
                     <img src="{dede:global.cfg_imgpath/}/pc/latest_activity_infos.png"  alt="latest activity"/>
                 </a>
@@ -52,7 +52,7 @@
                 <div class="swiper-container news_swiper">
                     <div class="swiper-wrapper">
                         {dede:arclist typeid=1 orderby='id' flag="c" row='3' addfields="thumb" channelid="20"}
-                        <a href="[field:arcurl/]" class="swiper-slide" target="_blank" rel="noopener">
+                        <a href="javascript:;" class="swiper-slide" target="_blank" rel="noopener">
                             <img src="[field:thumb function='replaceurl(@me)/]"  alt="[field:fulltitle/]">
 
                             <div class="timu">[field:fulltitle/]</div>
@@ -70,7 +70,7 @@
 
                 <ul class="swiper-container">
                     {dede:arclist typeid=89 orderby='id' flag="c" row='6'  channelid="22"}
-                       <li><a href="[field:arcurl/]"><span class="cire">&nbsp;</span>[field:fulltitle/]
+                       <li><a href="javascript:;"><span class="cire">&nbsp;</span>[field:fulltitle/]
                         <span class="infos_time">
                        </span>
                        <span class="time">[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></a></li>
@@ -87,7 +87,7 @@
                         <div class="swiper-slide">
                             <p class="recommend">
                                 <i></i>
-                                <a href="[field:arcurl/]" class="conment_a">[field:fulltitle/]</a>
+                                <a href="javascript:;" class="conment_a j-consult">[field:fulltitle/]</a>
                             </p>
 
                             <p class="clock">
@@ -511,9 +511,9 @@
        </div>
 <!--  恢复过来结束  -->
 <!--红妆历程-->
-<div class="lic">{dede:myad name='pc_hzslrz'/}</div>
+<div class="lic j-consult">{dede:myad name='pc_hzslrz'/}</div>
 <!--红妆历程-->
-<div class="index_environment">
+<div class="index_environment zt_case">
     <div class="m1">
         <ul class="clearFix">
             <li>
