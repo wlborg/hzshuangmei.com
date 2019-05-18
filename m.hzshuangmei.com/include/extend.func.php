@@ -904,7 +904,6 @@ $list.= '
   <div class="zhuanjia-info">
     <h2 class="zhuanjia-title"><a href="'.$url.'" class="pro-link clickParameter">'.$shorttitle.'</a></h2>
     <p class="zhiwei">'.$zhiwei.'</p>
-    <p class="shanchang">擅长项目：'.$shanchang.' </p>
     <a href="'.$url.'" class="zhuanjia-more clickParameter">了解更多 &nbsp;》</a>
   </div>
 </div>';
