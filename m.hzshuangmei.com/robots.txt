@@ -1,6 +1,7 @@
 User-agent: *  
 Allow: /tags.php
 Allow: /tags.php?*
+Disallow: /kst.html
 Disallow: /*?*
 Disallow: /mip/
 Disallow: /search/
