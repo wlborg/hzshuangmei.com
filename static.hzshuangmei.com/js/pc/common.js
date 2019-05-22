@@ -21,7 +21,7 @@ $(function($) {
         event.preventDefault();
     });
      // 隐藏专题案例，加类名 zt_case
-    $(".zt_case").hide();
+        $(".zt_case").hide();
 });
 var banner_swiper = new Swiper('.banner_swiper', {
     loop: true,
