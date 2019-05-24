@@ -743,15 +743,9 @@ $list.= '
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
     </div>
   </div>
   <div class="label f-cb">
@@ -769,15 +763,9 @@ $list.= '
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
     </div>
   </div>
   <div class="label f-cb">

@@ -738,15 +738,9 @@ where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0  order by ra
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
     </div>
   </div>
   <div class="label f-cb">
@@ -764,15 +758,9 @@ where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0  order by ra
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
     </div>
   </div>
   <div class="label f-cb">
