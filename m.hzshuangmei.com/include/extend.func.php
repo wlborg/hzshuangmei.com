@@ -168,14 +168,12 @@ where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0 order by ran
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <p class="info">术前</p>
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
-      <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
   </div>
@@ -189,14 +187,13 @@ where a.id =b.aid and a.typeid in ( $relatetypeid ) and a.arcrank=0 order by ran
     <p class="pro"><span class="icon">塑美项目</span>'.$project.'</p>
     <div class="before">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <p class="info">术前</p>
+
       <span class="angle"></span>
     </div>
   </div>
   <div class="right">
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="'.$title.'"></a>
-      <p class="info">术后</p>
       <a href="javascript:void(0)" class="consult j-consult" rel="nofollow">立即<br>咨询</a>
     </div>
   </div>
@@ -248,15 +245,10 @@ where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' and a.arcrank=0  orde
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+
     </div>
   </div>
   <div class="label f-cb">
@@ -274,15 +266,11 @@ where a.id =b.aid and a.typeid='$typeid' and a.id <> '$id' and a.arcrank=0  orde
   <div class="pic f-cb">
     <div class="before ">
       <a href="'.$url.'"><img src="'.$imgbefore.'" alt="术前"></a>
-      <div class="flag">
-        术前
-      </div>
+
     </div>
     <div class="after">
       <a href="'.$url.'"><img src="'.$imgafter.'" alt="术后"></a>
-      <div class="flag">
-        术后
-      </div>
+
     </div>
   </div>
   <div class="label f-cb">
