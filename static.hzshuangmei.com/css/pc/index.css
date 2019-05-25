@@ -350,7 +350,8 @@ h3 img {
 }
 .index_project #tab2 ul {
     /*width: 381px;*/
-    width: 637px;
+    /* width: 637px; */
+    width: 508px;
     height: 34px;
     margin: 17px auto 32px;
 }
@@ -1276,8 +1277,8 @@ body  #hltd .hltd img {
     font-weight: bold;
     line-height: 20px;
 }
-.index_clients #tabCon4 ul li .clients_b p.tab4_step>img{
+.index_clients #tabCon4 ul li .clients_b p.tab4_step > img {
     position: absolute;
-    left: 193px;
     top: 353px;
+    left: 193px;
 }
