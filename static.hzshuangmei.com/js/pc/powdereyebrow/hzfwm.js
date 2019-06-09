@@ -16,7 +16,7 @@ rem();
   var swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
-        autoplay: 2000,
+        autoplay: 200000,
         slidesPerView: "auto",
         centeredSlides:true,
         loop: true,
