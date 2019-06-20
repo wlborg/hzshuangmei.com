@@ -68,7 +68,7 @@ video::-webkit-media-controls-panel {
 
     text-align: center;
 
-    color: #693290;
+    color: #46a7c8;
 }
 .infos_content {
     border: 1px solid rgb(234,234,234);
@@ -101,10 +101,10 @@ video::-webkit-media-controls-panel {
     background: rgb(153,153,153);
 }
 .infos_content li a:hover {
-    color: rgb(105,50,144);
+    color:#46a7c8;
 }
 .infos_content li a:hover span {
-    background: rgb(105,50,144);
+    background: #46a7c8;
 }
 .infos_content li:last-of-type a {
     border-bottom: none;
@@ -178,7 +178,7 @@ video::-webkit-media-controls-panel {
     font-size: 22px;
     line-height: 18px;
 
-    color: #693290;
+    color: #46a7c8;
     /*border-left:1px solid #dadada;*/
     /*margin-left:22px;*/
     /*color:#693290;*/
@@ -196,7 +196,7 @@ video::-webkit-media-controls-panel {
     color: rgb(153,153,153);
 }
 .index_news h2.active a {
-    color: #693290;
+    color: #46a7c8;
 }
 /* ä¸‰äºšåŒç¾Ž */
 .sy_banner .index_news h2 a {
@@ -219,7 +219,7 @@ video::-webkit-media-controls-panel {
     text-align: center;
 
     color: #fff;
-    background-color: rgba(105, 50, 144, .9);
+    background-color: rgba(70, 167, 200, 0.9);
 }
 /* ä¸‰äºšåŒç¾Ž */
 .sy_index_news .news .date {
@@ -274,7 +274,7 @@ video::-webkit-media-controls-panel {
 
     text-align: center;
 
-    color: #693290;
+    color: #46a7c8;
 }
 .index_news .news .inform.active {
     display: block;
@@ -368,7 +368,7 @@ h3 img {
     cursor: pointer;
     text-align: center;
 
-    background-color: rgb(194,185,201);
+    background-color:#a4d7e8;
 }
 .index_project #tab2 li a {
     display: block;
@@ -393,7 +393,7 @@ h3 img {
 }
 .index_project #tab2 .fli2 {
     color: #fff;
-    background-color: #6a157d;
+    background-color: #46a7c8;
 }
 .index_project #tab2 .fli2 a {
     color: #fff;
@@ -445,8 +445,8 @@ h3 img {
 
     text-align: center;
 
-    color: #875aa6;
-    border: 1px solid #875aa6;
+    color: #46a7c8;
+    border: 1px solid #46a7c8;
 }
 /* ä¸‰äºšåŒç¾Ž */
 .sy_index_clients .ask {
@@ -903,7 +903,7 @@ h3 img {
 }
 .news .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #59277d;
+    background: #46a7c8;
 }
 .index_news .news .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
