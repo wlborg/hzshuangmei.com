@@ -7,7 +7,8 @@ body {
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #555;
-    background: #fff
+    background: #fff;
+    overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
