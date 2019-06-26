@@ -191,6 +191,7 @@ video::-webkit-media-controls-panel {
 .index_news .news .news_content.active {
     display: block;
     clear: both;
+    overflow: hidden;
 }
 .index_news h2 a {
     color: rgb(153,153,153);
