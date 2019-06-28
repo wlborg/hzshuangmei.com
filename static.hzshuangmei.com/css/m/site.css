@@ -2559,6 +2559,7 @@ hr {
 }
 .articlerelatedoctor {
     height: 13.15rem;
+    clear: both;
 
     background: #76449e;
 }

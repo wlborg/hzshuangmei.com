@@ -1,5 +1,5 @@
 'use strict';
-const version = '20190321';
+const version = '20190521';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = false;
 const offlineResources = [
@@ -66,7 +66,7 @@ function networkedAndCache(request) {
         .then((response) => {
             var copy = response.clone();
             caches.open(cacheKey('resources'))
-                .then((cache) => { 
+                .then((cache) => {
                     cache.put(request, copy);
                 });
             log("(network: cache write)", request.method, request.url,request.mode);

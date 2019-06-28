@@ -336,6 +336,8 @@
    // 顶部菜单导航结束
    // 顶部菜单导航tab切换
    $(function() {
+       // 隐藏专题案例，加类名 zt_case
+       $(".zt_case").hide();
        var topnavs = $('#menu').find('.tab-nav');
        var tabcontents = $('#menu').find('.tab-content');
        topnavs.click(function() {

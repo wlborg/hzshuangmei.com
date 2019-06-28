@@ -6,9 +6,10 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_salesrooms.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_salesrooms.css?v=0.1"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
+        <script src="../../../static.hzshuangmei.com/js/pc/list_salesroom.js"></script>
     </head>
     <body>
       {dede:include filename="_header.htm"/}
@@ -22,7 +23,7 @@
               </a>
               <ul class="sale_ul _po_abs">
                 {dede:arclist titlelen=42 row=6}
-                  <li><a href="[field:typeurl /]" title="">[field:title/]</a></li>
+                  <li><a href="[field:typeurl /]" title="">[field:shorttitle/]</a></li>
                   {/dede:arclist}
               </ul>
                {dede:type typeid='307'}
@@ -67,7 +68,7 @@
                {/dede:type}
          </div>
          <div class="sale_list">
-                    {dede:list pagesize="1"  titlelen="120" orderby="id" orderway="desc"  addfields="thumb1" channelid='24'}
+                    {dede:list pagesize="10"  titlelen="120" orderby="id" orderway="desc"  addfields="thumb1" channelid='24'}
                 <li>
                     <a href="[field:arcurl/]">
                    <p><img src="[field:thumb1 function='replaceurl(@me)' /]" alt="[field:title/]" />

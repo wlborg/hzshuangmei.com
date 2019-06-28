@@ -737,6 +737,8 @@
        }
    )(window.effects || {});
    $(function() {
+       // 隐藏专题案例，加类名 zt_case
+       $(".zt_case").hide();
        effects.lightCurNav("#doctornav", "active");
        effects.lightCurNav("#projectnav", "active");
        effects.lightCurNav("#casenav", "active");

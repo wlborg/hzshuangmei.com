@@ -2373,3 +2373,51 @@ $relatedoctor.= '<a href="'.$url .'" target="_blank"><img src="'.$litpic.'" alt=
 }
 return $relatedoctor;
 }
+
+/**
+* 取出所有分类
+* $channel  频道ID
+* 调用{dede:global.getalltype function='getalltype()'/}
+*/
+function getalltype($channel=0,$line=10){
+ 
+$line = empty($line) ? 10 : $line;
+ 
+global $dsql,$result;
+ 
+ 
+$dsql->SetQuery("SELECT id,typename,typedir,isdefault,ispart,defaultname,namerule2,moresite,siteurl,sitepath FROM `#@__arctype` WHERE reid='$channel' And ishidden<>1 And id not in (222,75,265,76) order by sortrank asc limit 0, $line ");
+ 
+$dsql->Execute($channel);
+ 
+if($dsql->GetTotalRow($channel)>0)
+ 
+{
+ //样式开始----------------------
+$result .= "<ul>"; 
+ 
+while($row = $dsql->GetArray($channel))
+ 
+{
+ 
+$id = $row['id'];
+ 
+$typename = $row['typename'];
+ 
+$typelink = GetOneTypeUrlA($row);
+ 
+$result .= "<li>";
+ 
+$result .= "<a href='{$typelink}' target='_blank'>{$typename}</a>";
+ 
+getalltype($id,$line);
+ 
+$result .= "</li>";
+ 
+}
+ 
+        $result .= "</ul>";
+ //样式结束-----------------------
+}
+ 
+return $result;}

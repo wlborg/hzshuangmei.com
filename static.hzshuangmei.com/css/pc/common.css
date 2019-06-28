@@ -1,16 +1,17 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
     padding: 0;
     margin: 0
 }
 
 body {
-    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #555;
-    background: #fff
+    background: #fff;
+    overflow-x:hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal
 }
 
@@ -27,12 +28,12 @@ img {
     border: none
 }
 
-ol,ul,li {
+ol, ul, li {
     list-style: none
 }
 
-input,textarea,select,button {
-    font: 14px Verdana,Helvetica,Arial,sans-serif;
+input, textarea, select, button {
+    font: 14px Verdana, Helvetica, Arial, sans-serif;
     border: 1px solid #999
 }
 
@@ -53,7 +54,7 @@ table {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0
 }
 
@@ -117,7 +118,7 @@ header .top .top_c form {
     margin: 0 auto
 }
 
-header .top .top_c input,header .top .top_c button {
+header .top .top_c input, header .top .top_c button {
     border: none;
     outline: none
 }
@@ -224,7 +225,7 @@ header .top .shuang_m1 .qq {
     background: #eaeaea
 }
 
-._CNav_N1>div {
+._CNav_N1 > div {
     width: 1200px;
     height: 100%;
     padding-bottom: 2px;
@@ -237,16 +238,16 @@ header .top .shuang_m1 .qq {
     float: left
 }
 
-._CNav_NO>span {
+._CNav_NO > span {
     display: inline-block;
     height: 100%;
     opacity: 1;
     color: #999
 }
 
-._CNav_link ._CNav_NO>span>a {
+._CNav_link ._CNav_NO > span > a {
     font-size: 13px;
-    color: #410e6b
+    color: #46a7c8;
 }
 
 ._CNav_link ._CNav_TW {
@@ -254,13 +255,13 @@ header .top .shuang_m1 .qq {
     margin-left: 30px
 }
 
-._CNav_TW>img {
+._CNav_TW > img {
     float: left;
     margin-top: 7px;
     margin-right: 8px
 }
 
-._CNav_link ._CNav_TW>span {
+._CNav_link ._CNav_TW > span {
     color: #999
 }
 
@@ -312,17 +313,17 @@ header .top .shuang_m1 .qq {
     color: #999
 }
 
-._CNav_div2>span {
+._CNav_div2 > span {
     display: inline-block;
     margin-top: 0;
     margin-right: 4px
 }
 
-._CNav_div2>span>a {
+._CNav_div2 > span > a {
     color: #a5a5a5
 }
 
-._CNav_div2>span>a:hover {
+._CNav_div2 > span > a:hover {
     color: #4d4d4d
 }
 
@@ -356,11 +357,11 @@ header .top .shuang_m1 .qq {
 #nav {
     width: 100%;
     height: 59px;
-    background-color: #410e6b
+    background-color: #46a7c8
 }
 
 .sy_nav {
-    background-color: #64b1e6!important
+    background-color: #64b1e6 !important
 }
 
 .fixed {
@@ -383,7 +384,7 @@ header .top .shuang_m1 .qq {
     }
 }
 
-#nav>ul {
+#nav > ul {
     display: flex
 }
 
@@ -391,12 +392,12 @@ header .top .shuang_m1 .qq {
     display: block
 }
 
-#nav>ul>li {
+#nav > ul > li {
     height: 59px;
     flex: 1
 }
 
-#nav>ul>li>a {
+#nav > ul > li > a {
     position: relative;
     top: 0;
     height: 41px;
@@ -406,33 +407,33 @@ header .top .shuang_m1 .qq {
     color: #fff
 }
 
-#nav>ul>li>a span:first-child {
+#nav > ul > li > a span:first-child {
     font-size: 18px
 }
 
-#nav>ul>li>a span:last-child {
+#nav > ul > li > a span:last-child {
     font-size: 12px;
     line-height: 3.333;
     text-transform: uppercase
 }
 
 #nav .bor_r {
-    border-right: 1px solid #360d57
+    border-right: 1px solid #3090b1
 }
 
 #nav .bor_l {
-    border-left: 1px solid #580d95
+    border-left:1px solid #84c8dd
 }
 
 #sy_nav_ul .bor_r {
-    border-right: 1px solid #5792bb!important
+    border-right: 1px solid #5792bb !important
 }
 
 #sy_nav_ul .bor_l {
-    border-right: 1px solid #5792bb!important
+    border-right: 1px solid #5792bb !important
 }
 
-#nav>ul>li #project {
+#nav > ul > li #project {
     position: absolute;
     z-index: 100;
     display: none;
@@ -453,20 +454,20 @@ header .top .shuang_m1 .qq {
 }
 
 .sy_nav .currnet {
-    background: #5d819a!important
+    background: #5d819a !important
 }
 
 .sy_currnet .currnet {
     font-weight: bold;
-    background: #6a157d!important
+    background: #6a157d !important
 }
 
-#nav>ul>li:hover {
-    background: #6a157d
+#nav > ul > li:hover {
+    background: #66b7d4
 }
 
-.sy_nav>ul>li:hover {
-    background: #5d819a!important
+.sy_nav > ul > li:hover {
+    background: #5d819a !important
 }
 
 #nav .nav_list:nth-child(5) span::before {
@@ -552,15 +553,15 @@ nav ul li:hover #expert {
     padding-bottom: 15px
 }
 
-nav>ul>li ul li {
+nav > ul > li ul li {
     text-align: center
 }
 
-nav>ul>li ul li a p {
+nav > ul > li ul li a p {
     font-size: 12px
 }
 
-nav>ul>li #project>ul>li a p span {
+nav > ul > li #project > ul > li a p span {
     color: #000
 }
 
@@ -577,7 +578,7 @@ nav > ul > li #project > ul > li:nth-child(2) a p i {
     background-position: 0 0
 }
 
-nav>ul>li ul li h5 {
+nav > ul > li ul li h5 {
     width: 158px;
     height: 23px;
     margin-top: 28px;
@@ -585,12 +586,12 @@ nav>ul>li ul li h5 {
     font-weight: bold;
     line-height: 15px;
     color: #666;
-    border-bottom: 2px solid rgba(206,206,206,.8)
+    border-bottom: 2px solid rgba(206, 206, 206, .8)
 }
 
-nav>ul>li ul li h5 a {
-    display: block!important;
-    height: 18px!important
+nav > ul > li ul li h5 a {
+    display: block !important;
+    height: 18px !important
 }
 
 .n_button {
@@ -603,7 +604,7 @@ nav>ul>li ul li h5 a {
     background-color: #6a157d
 }
 
-nav>ul>li ul .n_button a {
+nav > ul > li ul .n_button a {
     width: 61px;
     line-height: 26px;
     color: #fff
@@ -639,7 +640,7 @@ nav>ul>li ul .n_button a {
     width: 187px;
     height: 26px;
     line-height: 26px;
-    background-color: rgba(255,255,255,.502)
+    background-color: rgba(255, 255, 255, .502)
 }
 
 .n_f {
@@ -656,7 +657,7 @@ nav>ul>li ul .n_button a {
     display: block
 }
 
-.banner>img {
+.banner > img {
     vertical-align: bottom
 }
 
@@ -683,7 +684,7 @@ nav>ul>li ul .n_button a {
 }
 
 .sy_banner .banner-pagination .swiper-pagination-bullet-active {
-    background: #59277d!important
+    background: #59277d !important
 }
 
 .index_items {
@@ -691,7 +692,7 @@ nav>ul>li ul .n_button a {
     background-color: #f0f0f0
 }
 
-.index_items .shuang_m1>div {
+.index_items .shuang_m1 > div {
     float: left;
     width: 298px;
     height: 222px;
@@ -706,19 +707,19 @@ nav>ul>li ul .n_button a {
     border-left: 1px solid #fff
 }
 
-.index_items .shuang_m1>div span {
+.index_items .shuang_m1 > div span {
     font-size: 18px;
-    color: #4f3d79
+    color: #66b7d4
 }
 
-.index_items .shuang_m1>div i {
+.index_items .shuang_m1 > div i {
     display: block;
     width: 69px;
     height: 68px;
     margin-top: 24px
 }
 
-.index_items .shuang_m1>div:first-child i {
+.index_items .shuang_m1 > div:first-child i {
     background: url(//img.hzshuangmei.com/pc/p5_01.png) no-repeat center
 }
 
@@ -730,28 +731,28 @@ nav>ul>li ul .n_button a {
     background: url(//img.hzshuangmei.com/pc/p5_03.png) no-repeat center
 }
 
-.index_items .shuang_m1>div:last-child i {
+.index_items .shuang_m1 > div:last-child i {
     background: url(//img.hzshuangmei.com/pc/p5_04.png) no-repeat center
 }
 
-.index_items .shuang_m1>div .icon {
+.index_items .shuang_m1 > div .icon {
     float: left;
     padding-top: 22px;
     margin-left: 48px
 }
 
-.index_items .shuang_m1>div ul {
+.index_items .shuang_m1 > div ul {
     float: left;
     margin-left: 37px;
     font-size: 12px;
     line-height: 24px
 }
 
-.index_items .shuang_m1>div ul a {
-    color: #593d79
+.index_items .shuang_m1 > div ul a {
+    color: #46a7c8
 }
 
-.index_items .shuang_m1>div:first-child ul {
+.index_items .shuang_m1 > div:first-child ul {
     margin-top: 42px
 }
 
@@ -763,7 +764,7 @@ nav>ul>li ul .n_button a {
     margin-top: 20px
 }
 
-.index_items .shuang_m1>div:last-child ul {
+.index_items .shuang_m1 > div:last-child ul {
     margin-top: 20px
 }
 
@@ -773,7 +774,7 @@ nav>ul>li ul .n_button a {
     background-color: #f0f0f0
 }
 
-.index_items_n .shuang_m1>div {
+.index_items_n .shuang_m1 > div {
     float: left;
     width: 298px;
     height: 220px;
@@ -788,12 +789,12 @@ nav>ul>li ul .n_button a {
     border-left: 1px solid #fff
 }
 
-.index_items_n .shuang_m1>div span {
+.index_items_n .shuang_m1 > div span {
     font-size: 18px;
     color: #4f3d79
 }
 
-.index_items_n .shuang_m1>div i {
+.index_items_n .shuang_m1 > div i {
     display: block;
     width: 69px;
     height: 68px;
@@ -801,7 +802,7 @@ nav>ul>li ul .n_button a {
     margin-bottom: 9px
 }
 
-.index_items_n .shuang_m1>div:first-child i {
+.index_items_n .shuang_m1 > div:first-child i {
     background: url(//img.hzshuangmei.com/pc/xp5_05.png.pagespeed.ic.gEdvfzCGWK.png) no-repeat center
 }
 
@@ -813,32 +814,32 @@ nav>ul>li ul .n_button a {
     background: url(//img.hzshuangmei.com/pc/xp5_07.png.pagespeed.ic.h7b-9Z701X.png) no-repeat center
 }
 
-.index_items_n .shuang_m1>div:last-child i {
+.index_items_n .shuang_m1 > div:last-child i {
     background: url(//img.hzshuangmei.com/pc/xp5_08.png.pagespeed.ic.ZKiJtZljM8.png) no-repeat center
 }
 
-.index_items_n .shuang_m1>div .icon {
+.index_items_n .shuang_m1 > div .icon {
     float: left;
     padding-top: 10px;
     margin-left: 48px
 }
 
-.index_items_n .shuang_m1>div ul {
+.index_items_n .shuang_m1 > div ul {
     float: left;
     margin-left: 37px;
     font-size: 12px;
     line-height: 24px
 }
 
-.index_items_n .shuang_m1>div ul a {
+.index_items_n .shuang_m1 > div ul a {
     color: #593d79
 }
 
-.index_items_n .shuang_m1>div ul a:hover {
+.index_items_n .shuang_m1 > div ul a:hover {
     color: #000
 }
 
-.index_items_n .shuang_m1>div:first-child ul {
+.index_items_n .shuang_m1 > div:first-child ul {
     margin-top: 35px
 }
 
@@ -850,7 +851,7 @@ nav>ul>li ul .n_button a {
     margin-top: 35px
 }
 
-.index_items_n .shuang_m1>div:last-child ul {
+.index_items_n .shuang_m1 > div:last-child ul {
     margin-top: 35px
 }
 
@@ -868,11 +869,13 @@ footer {
     width: 100%;
     height: 398px;
     color: #fff;
-    background-color: #300a4e
+    background-color: #46a7c8
 }
-footer .addres a{
-    font-size: 18px;
+
+footer .addres a {
+    font-size: 18px
 }
+
 footer .left {
     float: left;
     width: 600px
@@ -920,7 +923,7 @@ footer .right {
     margin-left: 20px
 }
 
-footer .right .right_t>div {
+footer .right .right_t > div {
     float: left
 }
 
@@ -941,21 +944,21 @@ footer .right .right_t .f_phone {
     background-position: 0 -32px
 }
 
-footer .right .right_t>div>div {
+footer .right .right_t > div > div {
     float: left;
     font-size: 12px;
     line-height: 27px
 }
 
-footer .right .right_t>div>div .fon1 {
+footer .right .right_t > div > div .fon1 {
     font-size: 18px
 }
 
-footer .right .right_t>div>div .fon2 {
+footer .right .right_t > div > div .fon2 {
     font-size: 28px
 }
 
-footer .right .right_t>div>div .fon3 {
+footer .right .right_t > div > div .fon3 {
     font-size: 14px
 }
 
@@ -995,7 +998,7 @@ footer .left a {
 footer .copyright {
     padding-top: 22px;
     color: #c1b6ca;
-    float: left;
+    float: left
 }
 
 footer .copyright a {
@@ -1073,7 +1076,7 @@ body .popup {
 }
 
 body .popup .layui-layer-content {
-    height: 385px!important
+    height: 385px !important
 }
 
 body .popup .layui-layer-content img {
@@ -1161,7 +1164,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     -moz-animation: tada2 10s -9s ease both infinite
 }
 
-.lazyload,.lazyloading {
+.lazyload, .lazyloading {
     opacity: 0
 }
 
@@ -1175,7 +1178,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     bottom: 14.5%;
     left: 50%;
     display: block;
-    width: 10%!important;
+    width: 10% !important;
     height: 7%
 }
 
@@ -1236,9 +1239,9 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 #k_s_ol_inviteWin {
-    display: block!important;
-    margin-top: -192.5px!important;
-    margin-left: -300px!important
+    display: block !important;
+    margin-top: -192.5px !important;
+    margin-left: -300px !important
 }
 
 #howdy {
@@ -1331,16 +1334,6 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     clear: both
 }
 
-#div3 {
-    top: 333px!important;
-    left: 331px!important
-}
-
-#div36 {
-    left: 448px!important;
-    width: 122px!important
-}
-
 .list_information_nav li.currnet4 {
     background: #6a157d
 }
@@ -1381,17 +1374,17 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     margin-left: 47px
 }
 
-.information_con1>ul {
+.information_con1 > ul {
     position: relative;
     height: 18px
 }
 
-.information_con1>ul>li {
+.information_con1 > ul > li {
     float: left
 }
 
 .information_zx {
-    margin-right: 0!important;
+    margin-right: 0 !important;
     font-size: 18px;
     font-weight: bold;
     color: #4d4d4d
@@ -1403,7 +1396,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .information_zx {
-    width: auto!important
+    width: auto !important
 }
 
 .information_con1 li {
@@ -1428,7 +1421,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     overflow: hidden
 }
 
-.information_con1>ul {
+.information_con1 > ul {
     margin-bottom: 38px
 }
 
@@ -1447,12 +1440,12 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     float: left;
     width: 150px;
     height: 100%;
-    margin-left: 3px!important;
+    margin-left: 3px !important;
     background: #eae8ea
 }
 
 .list_information_nav li:nth-of-type(1) {
-    margin-left: 0!important
+    margin-left: 0 !important
 }
 
 .list_information_nav li a {
@@ -1465,7 +1458,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .active_infor_List {
-    color: #fff!important;
+    color: #fff !important;
     background: #6a157d
 }
 
@@ -1473,8 +1466,8 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #6a157d
 }
 
-.list_information_nav li>a:hover {
-    color: #fff!important
+.list_information_nav li > a:hover {
+    color: #fff !important
 }
 
 .information_tag span {
@@ -1487,7 +1480,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #c2c7f5
 }
 
-.information_tag span>a {
+.information_tag span > a {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -1506,10 +1499,10 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 226px;
     height: 439px;
     border: 1px solid #f2f2f2;
-    box-shadow: 3px 4px 13px rgba(224,224,224,.24)
+    box-shadow: 3px 4px 13px rgba(224, 224, 224, .24)
 }
 
-.information_right>ul>li {
+.information_right > ul > li {
     position: relative;
     width: 201px;
     height: 118px;
@@ -1517,19 +1510,19 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     margin-bottom: 13px
 }
 
-.information_right>ul>li>img {
+.information_right > ul > li > img {
     display: block;
     width: 100%;
     height: 100%
 }
 
-.information_right>ul>li>a>img {
+.information_right > ul > li > a > img {
     display: block;
     width: 100%;
     height: 100%
 }
 
-.information_right>ul>li>a>span {
+.information_right > ul > li > a > span {
     position: absolute;
     bottom: 0;
     display: block;
@@ -1540,10 +1533,10 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
-    background: rgba(65,14,107,.7)
+    background: rgba(65, 14, 107, .7)
 }
 
-.information_right>ul>li>a {
+.information_right > ul > li > a {
     display: block;
     width: 100%;
     height: 100%;
@@ -1560,24 +1553,24 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .list_information_nav li {
-    margin: 0 0!important;
-    border-bottom: none!important
+    margin: 0 0 !important;
+    border-bottom: none !important
 }
 
 .information_content h3 {
     margin: 30px 0 1px;
-    border-bottom: none!important
+    border-bottom: none !important
 }
 
 .information_content .news_main {
     position: relative;
     width: 856px;
     padding-left: 21px;
-    margin-top: 50px!important;
-    margin-top: 50px!important;
+    margin-top: 50px !important;
+    margin-top: 50px !important;
     margin-bottom: 150px;
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)
+    box-shadow: 0 5px 13px rgba(224, 224, 224, .31)
 }
 
 .news_content .news_main .i3T {
@@ -1606,7 +1599,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .information_content ul li h4 {
-    width: 385px!important
+    width: 385px !important
 }
 
 .list_infor_tag a {
@@ -1619,11 +1612,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .list_infor_tag a:hover {
-    color: #fff!important;
+    color: #fff !important;
     background: #c2c7f5
 }
 
-.news_content>.news_main>p {
+.news_content > .news_main > p {
     width: 1px;
     height: 36px;
     margin-top: 29px;
@@ -1658,7 +1651,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 
 .information_content .ns_pa {
     position: relative;
-    margin: 55px auto 59px!important
+    margin: 55px auto 59px !important
 }
 
 .infor_right {
@@ -1674,7 +1667,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     height: 164px;
     padding: 12px 13px;
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)
+    box-shadow: 0 5px 13px rgba(224, 224, 224, .31)
 }
 
 .pro2 {
@@ -1684,7 +1677,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 306px;
     height: 544px;
     border: 1px solid #f2f2f2;
-    box-shadow: 0 5px 13px rgba(224,224,224,.31)
+    box-shadow: 0 5px 13px rgba(224, 224, 224, .31)
 }
 
 .pro2Line {
@@ -1695,7 +1688,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #d5cfe5
 }
 
-.pro2>span {
+.pro2 > span {
     position: absolute;
     top: 27px;
     left: 0;
@@ -1725,23 +1718,23 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 .pro2_tag li {
     float: left;
     width: 124px;
-    margin: 0 20px 17px 0!important;
+    margin: 0 20px 17px 0 !important;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    border-bottom: none!important
+    border-bottom: none !important
 }
 
-.pro2_tag li>a {
-    color: #666!important
+.pro2_tag li > a {
+    color: #666 !important
 }
 
-.pro2_tag li>a:hover {
+.pro2_tag li > a:hover {
     text-decoration: underline;
-    color: #693290!important
+    color: #693290 !important
 }
 
-.pro2_tag li>a>span:hover {
+.pro2_tag li > a > span:hover {
     text-decoration: underline
 }
 
@@ -1757,7 +1750,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #d5cfe5
 }
 
-.pro3>li>a {
+.pro3 > li > a {
     display: block;
     width: 100%;
     height: 100%
@@ -1785,30 +1778,30 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
 }
 
 .actvie_T {
-    background: #f6a7b6!important
+    background: #f6a7b6 !important
 }
 
 .actvie_T a {
-    color: #fff!important
+    color: #fff !important
 }
 
 .actvie_Th {
-    background: #b17e6b!important
+    background: #b17e6b !important
 }
 
 .actvie_Th a {
-    color: #f6a7b6!important
+    color: #f6a7b6 !important
 }
 
 .infors_main_T ul li p span {
-    color: #8c64a0!important
+    color: #8c64a0 !important
 }
 
 .infors_main_Th ul li p span {
-    color: #8c64a0!important
+    color: #8c64a0 !important
 }
 
-.information_con1>ul>span {
+.information_con1 > ul > span {
     position: absolute;
     right: 0;
     bottom: -16px;
@@ -1825,7 +1818,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     width: 1200px
 }
 
-#ptab2_n>ul {
+#ptab2_n > ul {
     float: left
 }
 
@@ -1845,7 +1838,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #f5f5f5
 }
 
-.proTop>span {
+.proTop > span {
     display: block;
     margin-top: 17px;
     font-size: 18px;
@@ -1877,11 +1870,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     clear: both
 }
 
-#project_con1>div {
+#project_con1 > div {
     float: left
 }
 
-#project_con1 .pro_conT>li {
+#project_con1 .pro_conT > li {
     float: left;
     width: 139px;
     margin-right: 56px;
@@ -1901,7 +1894,7 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #f5f5f5
 }
 
-.pro_con1_con1>span {
+.pro_con1_con1 > span {
     display: block;
     margin-top: 23px;
     font-size: 18px;
@@ -1929,78 +1922,91 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     overflow: hidden
 }
 
-.pro_conT>li a {
+.pro_conT > li a {
     font-size: 18px;
     color: #434343
 }
 
-.pro_conT>li>span {
+.pro_conT > li > span {
     position: absolute;
     display: block;
     top: 3px;
     right: 0;
     width: 22px;
     height: 21px;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .pro_conT li:nth-of-type(1) span {
-    background: url(//img.hzshuangmei.com/pc/pro_zx_t.png.pagespeed?v=0.3) center center;
+    background: url(//img.hzshuangmei.com/pc/pro_zx_t.png.pagespeed?v=0.3) center center
 }
-.pro_conT li:nth-of-type(1):hover span{
-    background: url(//img.hzshuangmei.com/pc/pro_zx_t_act.png?v=0.3);
+
+.pro_conT li:nth-of-type(1):hover span {
+    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png,qv=0.3.pagespeed.ic.RK-RMdt_Dv.png)
 }
+
 .pro_conT li:nth-of-type(2) span {
-    background: url(//img.hzshuangmei.com/pc/pro_jg_t.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t.png,qv=0.3.pagespeed.ic.sIHrgdeYic.png)
 }
-.pro_conT li:nth-of-type(2):hover span{
-    background: url(//img.hzshuangmei.com/pc/pro_jg_t_act.png?v=0.3)
+
+.pro_conT li:nth-of-type(2):hover span {
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png,qv=0.3.pagespeed.ic.hvMeLjSTWj.png)
 }
 
 .pro_conT li:nth-of-type(3) span {
-    background: url(//img.hzshuangmei.com/pc/pro_wc_t.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t.png,qv=0.3.pagespeed.ic.Ury_k7DyJT.png)
 }
-.pro_conT li:nth-of-type(3):hover span{
-    background: url(//img.hzshuangmei.com/pc/pro_wc_t_act.png?v=0.3);
-    top:1.5px;
+
+.pro_conT li:nth-of-type(3):hover span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png,qv=0.3.pagespeed.ic.peQ-LrtelP.png);
+    top: 1.5px
 }
+
 .pro_conT li:nth-of-type(4) span {
-    background: url(//img.hzshuangmei.com/pc/pro_wc_mr.png?v=0.3) center center;
-    padding-top:0.5px;
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr.png,qv=0.3.pagespeed.ic.Mic8SwGgoV.png) center center;
+    padding-top: .5px
 }
-.pro_conT li:nth-of-type(4):hover span{
-    background: url(//img.hzshuangmei.com/pc/pro_wc_mr_act.png?v=0.3) center center;
+
+.pro_conT li:nth-of-type(4):hover span {
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr_act.png,qv=0.3.pagespeed.ic.BsHK0vKcgm.png) center center
 }
+
 .pro_conT li:nth-of-type(5) span {
-    background: url(//img.hzshuangmei.com/pc/pro_sh_t.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t.png,qv=0.3.pagespeed.ic.UPRp-NjkgP.png)
 }
-.pro_conT li:nth-of-type(5):hover span{
-    background: url(//img.hzshuangmei.com/pc/pro_sh_t_act.png?v=0.3)
+
+.pro_conT li:nth-of-type(5):hover span {
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png,qv=0.3.pagespeed.ic.gDX6aXUIH5.png)
 }
+
 .pro_conT li:nth-of-type(1).conT span {
-    background: url(//img.hzshuangmei.com/pc/pro_zx_t_act.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_zx_t_act.png,qv=0.3.pagespeed.ic.RK-RMdt_Dv.png)
 }
 
 .pro_conT li:nth-of-type(2).conT span {
-    background: url(//img.hzshuangmei.com/pc/pro_jg_t_act.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_jg_t_act.png,qv=0.3.pagespeed.ic.hvMeLjSTWj.png)
 }
 
 .pro_conT li:nth-of-type(3).conT span {
-    background: url(//img.hzshuangmei.com/pc/pro_wc_t_act.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_t_act.png,qv=0.3.pagespeed.ic.peQ-LrtelP.png)
 }
 
 .pro_conT li:nth-of-type(4).conT span {
-    background: url(//img.hzshuangmei.com/pc/pro_wc_mr_act.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_wc_mr_act.png,qv=0.3.pagespeed.ic.BsHK0vKcgm.png)
 }
+
 .pro_conT li:nth-of-type(5).conT span {
-    background: url(//img.hzshuangmei.com/pc/pro_sh_t_act.png?v=0.3)
+    background: url(//img.hzshuangmei.com/pc/xpro_sh_t_act.png,qv=0.3.pagespeed.ic.gDX6aXUIH5.png)
 }
+
 .pro_con1_con2_1 {
     background: #f5f2fe
 }
+
 .pro_conT .pro_conTLast {
-    margin-right: 0!important
+    margin-right: 0 !important
 }
+
 .pro_con1_con2_1 {
     position: relative;
     display: none;
@@ -2014,14 +2020,15 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     background: #f5f2fe;
     width: 894px
 }
-.pro_con1_con2_1>li {
+
+.pro_con1_con2_1 > li {
     position: relative;
     float: left;
     margin-right: 47px;
     line-height: 27px
 }
 
-.pro_con1_con2_1>p {
+.pro_con1_con2_1 > p {
     position: absolute;
     top: -6px;
     width: 0;
@@ -2031,11 +2038,11 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     border-left: 7px solid transparent
 }
 
-.pro_conT>li>a:hover {
+.pro_conT > li > a:hover {
     color: #6e3693
 }
 
-.pro_con1_con2_1>li>a:hover {
+.pro_con1_con2_1 > li > a:hover {
     text-decoration: none;
     color: #6e3693
 }
@@ -2044,27 +2051,27 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     display: block
 }
 
-.pro_con1_con2_2>p {
+.pro_con1_con2_2 > p {
     left: 243px
 }
 
-.pro_con1_con2_3>p {
+.pro_con1_con2_3 > p {
     left: 440px
 }
 
-.pro_con1_con2_4>p {
+.pro_con1_con2_4 > p {
     left: 640px
 }
 
-.pro_con1_con2_5>p {
+.pro_con1_con2_5 > p {
     left: 840px
 }
 
-.pro_conT>li.conT a {
+.pro_conT > li.conT a {
     color: #6e3693
 }
 
-.pro_conT>li a.conT {
+.pro_conT > li a.conT {
     color: #6e3693
 }
 
@@ -2113,23 +2120,26 @@ body .popup .layui-layer-btn .layui-layer-btn2 {
     display: block
 }
 
-#pro_con1_con2>.pro_con1_con2_1>li.hoverClass {
+#pro_con1_con2 > .pro_con1_con2_1 > li.hoverClass {
     border-bottom: 1px solid #6e3693
 }
 
 .pro_con1_con2_1 li:hover {
     border-bottom: 1px solid #6e3693
 }
-._CNav_div input::-webkit-input-placeholder{
-    color:#a5a5a5;
+
+._CNav_div input::-webkit-input-placeholder {
+    color: #a5a5a5
 }
-._CNav_div input::-moz-placeholder{   /* Mozilla Firefox 19+ */
-    color:#a5a5a5;
+
+._CNav_div input::-moz-placeholder {
+    color: #a5a5a5
 }
-._CNav_div input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
-    color:#a5a5a5;
+
+._CNav_div input:-moz-placeholder {
+    color: #a5a5a5
 }
+
 ._CNav_div input:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #a5a5a5;
+    color: #a5a5a5
 }
