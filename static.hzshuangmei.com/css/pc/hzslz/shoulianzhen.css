@@ -1,0 +1,214 @@
+body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, html, input, label, ol, li, p, textarea, ul {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #555
+}
+a:hover {
+    text-decoration: none
+}
+ol, ul, li {
+    list-style: none
+}
+body {
+    font-family: "Alibaba-PuHuiTi-Bold","Alibaba-PuHuiTi-Heavy","Alibaba-PuHuiTi-Light","Alibaba-PuHuiTi-Medium","Alibaba-PuHuiTi-Regular","Microsoft YaHei",Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Alibaba-PuHuiTi-Bold.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Bold.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Bold.svg") format("svg");
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Heavy";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Alibaba-PuHuiTi-Heavy.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Heavy.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Heavy.svg") format("svg");
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Alibaba-PuHuiTi-Light.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Light.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Light.svg") format("svg");
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Medium.svg") format("svg");
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Regular.svg") format("svg");
+}
+
+
+
+._w1400{width: 1400px;margin: 0 auto;}
+.banner{width: 100%;line-height: 0;}
+.banner img{width: 100%;min-width: 1400px;}
+.part1{width: 100%;background: #f9f9f9;padding-top: 90px;padding-bottom: 65px;}
+.part_title{text-align: center;}
+.part_title_p1{font-size: 75px;color: rgb(82,171,200);font-family: "Alibaba-PuHuiTi-Regular";}
+.part_title_p1 span{color: rgb(250,140,171);}
+.part_title_p2{font-size: 48px;color: rgb(82,171,200);font-family: "Alibaba-PuHuiTi-Regular";}
+.part1_box .part_title_p2{width: 535px;background: url("../images/t1_icon.png") no-repeat 50%;margin: 0 auto;}
+.part1_box_min1{width: 100%; margin-top: 60px;font-size: 22px;color: rgb(102,102,102);font-family: "Alibaba-PuHuiTi-Regular";text-align: center;line-height: 35px;}
+.part1_box_min2{margin-top: 50px;overflow: hidden;}
+.part1_box_min2 li{width: 209px;height: 275px;float: left;margin-right: 28px;position: relative;}
+.part1_box_min2 li:last-of-type{margin-right: 0;}
+.part1_box_min2 li p{width: 100%;height: 67px;position: absolute;left: 0;bottom: 0;font-size: 31px;color: #ffffff;font-family: "Alibaba-PuHuiTi-Regular";text-align: center;line-height: 67px;}
+.part1_box_zx{margin-top: 54px;}
+.part1_box_zx a{width: 552px;height: 83px;margin: 0 auto;background: rgb(82,171,200);font-size: 35px;color: #ffffff;text-align: center;line-height: 83px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part1_box_zx a img{vertical-align: -6%;}
+
+.part2{padding-top: 90px;padding-bottom: 65px;}
+.part2 .part_title_p2{width:465px;background: url("../images/t2_icon.png") no-repeat 50%;margin: 0 auto;}
+.part2_box_min {margin-top: 95px;margin-bottom: 60px;overflow: hidden;}
+.part2_box_min_left{float: left;}
+.part2_box_min_right{float: left;width: 601px;margin-left: 100px;position: relative;}
+.part2_right_title{font-size: 64px;color: rgb(82,171,200);font-family: "Alibaba-PuHuiTi-Regular";text-align: center;line-height: 64px;}
+.part2_right_title span{font-size: 29px;}
+.part2_right_milld{width: 100%;height: 188px;border: 2px solid rgb(195,233,243);border-radius: 19px;margin-top: 28px;box-sizing: border-box;padding: 40px 30px;font-size: 24px;color: rgb(102,102,102);text-align: justify;font-family: "Alibaba-PuHuiTi-Regular";line-height: 28px;}
+.part2_right_milld_ab{width: 349px;height: 38px;background: rgb(133,201,223);font-size: 24px;text-align: center;line-height: 38px;color: #ffffff;position: absolute;left: 126px;top:88px;font-family: "Alibaba-PuHuiTi-Regular";}
+.part2_right_zx{margin-top: 12px;}
+.part2_right_zx a{width: 295px;height: 50px;margin: 0 auto;background: rgb(82,171,200);font-size: 35px;color: #ffffff;text-align: center;line-height: 50px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part2_right_zx a img{vertical-align: -6%;}
+
+.part3{width: 100%;background: #f9f9f9;padding-top: 80px;padding-bottom: 75px;}
+.part3 .part_title_p2{width:507px;background: url("../images/t3_icon.png") no-repeat 50%;margin: 0 auto;}
+.part3_box_min{margin-top: 80px;overflow: hidden;}
+.part3_min_top{width: 347px;height: 431px;float: left; line-height: 0;position: relative;}
+.part3_min_top img{width: 347px;height: 215px;}
+.part3_min_top_wen{background: rgb(70,167,200);width: 100%;height: 214px;padding: 28px 32px;box-sizing: border-box;}
+.part3_min_top_wen2{background: rgb(70,167,200);width: 100%;height: 214px;padding: 28px 32px;box-sizing: border-box;}
+.part3_min_top_wen:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 170px;
+    top: 194px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 22px solid rgb(70,167,200);
+}
+.part3_min_top_wen p:nth-of-type(1){font-size: 32px;color: #ffffff;text-align: center;line-height: 32px;font-family: "Alibaba-PuHuiTi-Regular";}
+.part3_min_top_wen hr{width: 280px;border:none; border-top: 2px dotted #ffffff;margin-top: 23px;}
+.part3_min_top_wen p:nth-of-type(2){font-size: 18px;color: #ffffff;line-height: 23px;font-family: "Alibaba-PuHuiTi-Regular";text-align: justify;margin-top: 10px;}
+.part3_min_top_wen2:before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 170px;
+    top: 214px;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 22px solid rgb(70,167,200);
+}
+.part3_min_top_wen2 p:nth-of-type(1){font-size: 32px;color: #ffffff;text-align: center;line-height: 32px;font-family: "Alibaba-PuHuiTi-Regular";}
+.part3_min_top_wen2 hr{width: 280px;border:none; border-top: 2px dotted #ffffff;margin-top: 23px;}
+.part3_min_top_wen2 p:nth-of-type(2){font-size: 18px;color: #ffffff;line-height: 23px;font-family: "Alibaba-PuHuiTi-Regular";text-align: justify;margin-top: 10px;}
+
+.part3_box_zx{width: 1400px;margin: 0 auto;margin-top: 50px;margin-bottom: 90px;}
+.part3_box_zx a{width: 552px;height: 83px;margin: 0 auto;background: rgb(82,171,200);font-size: 35px;color: #ffffff;text-align: center;line-height: 83px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part3_box_zx a img{vertical-align: -6%;}
+
+.part4{width: 100%;background: #f9f9f9;padding-top: 80px;padding-bottom: 75px;}
+.part4 .part_title_p2{width:622px;background: url("../images/t4_icon.png") no-repeat 50%;margin: 0 auto;}
+.part4_box ul{overflow: hidden;width: 1050px;margin: 0 auto;margin-top: 47px;}
+.part4_box li{width: 500px;height: 331px;float: left;margin-right: 40px;margin-bottom: 2px;}
+.part4_box li:nth-of-type(2n){margin-right: 0;}
+.part4_box_zx{width: 1400px;margin: 0 auto; margin-top: 75px;margin-bottom: 90px;}
+.part4_box_zx a{width: 552px;height: 83px;margin: 0 auto;background: rgb(82,171,200);font-size: 35px;color: #ffffff;text-align: center;line-height: 83px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part4_box_zx a img{vertical-align: -6%;}
+
+.part5{width: 100%;position: relative;}
+.part5 .part_title{width: 1400px;margin: 0 auto;}
+.part5 .part_title_p2{width:335px;background: url("../images/t5_icon.png") no-repeat 50%;margin: 0 auto;}
+.part5_box{width: 100%;min-width: 1400px;background: url("../images/part5_bg.jpg") no-repeat center;;margin-top: 300px;height: 1030px;}
+.part5_box_min{padding-top: 209px;padding-left: 46px;position: relative;box-sizing: border-box;}
+.part5_box_min_title{font-size: 40px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-left: 76px;}
+.part5_box_doctor{font-size: 40px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-top: 67px;}
+.part5_box_doctor_js{font-size: 24px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-top:20px;}
+.part5_box_doctor_js span{display: block;line-height: 38px;}
+.part5_box_doctor_pro{font-size: 30px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-top: 22px;}
+.part5_box_min_ul{margin-top: 30px;overflow: hidden;width: 400px;}
+.part5_box_min_ul li{width: 188px;float: left;height: 40px;color: #ffffff;font-family: "Alibaba-PuHuiTi-Regular";font-size: 24px;line-height: 40px;}
+.part5_box_min_ul li span{display: inline-block;width: 7px;height: 7px;border-radius: 50%;vertical-align: 10%;background: #ffffff;}
+.part5_box_wen{width: 480px; font-size: 18px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-top:70px;text-align: justify;line-height: 23px;}
+.part5_box_zx{margin-top: 40px;}
+.part5_box_zx a{width: 407px;height: 83px;background: rgb(19,118,150);font-size: 35px;color: #ffffff;text-align: center;line-height: 83px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part5_box_zx a img{vertical-align: -6%;}
+.part5_ab{position: absolute;left: 0px;top:-255px;width: 1400px;margin: 0 auto;}
+.part5_ab ul{overflow: hidden;}
+.part5_ab li{width: 350px;height: 398px;background: rgb(82,171,200);float: left;position: relative;}
+.part5_ab_anjiao{position: absolute;top:16px;right:17px;}
+.part5_ab_title{font-size: 40px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;margin-top: 64px;margin-left: 35px;}
+.part5_ab_con{font-size: 24px;font-family: "Alibaba-PuHuiTi-Regular";color: #ffffff;width: 270px;text-align: justify;margin-left: 35px;margin-top: 30px;line-height: 28px;}
+
+.part6{margin-top: 100px;}
+.part6 .part_title_p2{width:410px;background: url("../images/t6_icon.png") no-repeat 50%;margin: 0 auto;}
+.part6_p{width: 1090px; font-size: 24px;font-family: "Alibaba-PuHuiTi-Regular";text-align: center;color: rgb(103,103,103);margin: 0 auto;margin-top: 30px;line-height: 36px;}
+.part6_p span{color: rgb(250,140,171);}
+.part6_box{width: 100%;margin-top: 150px;background: rgb(249,249,249);padding-bottom: 68px;}
+.part6_box_min{padding-top: 322px;position: relative;}
+.part6_p2{width: 1185px; font-size: 24px;font-family: "Alibaba-PuHuiTi-Regular";text-align: center;color: rgb(103,103,103);margin: 0 auto;margin-top: 30px;line-height: 36px;}
+.part6_box_ab{position: absolute;left: 280px;top:-118px;}
+.part6_box_ab img{margin-right: 58px;}
+.part6_box_zx{margin-top: 54px;}
+.part6_box_zx a{width: 694px;height: 83px;margin: 0 auto;background: rgb(82,171,200);font-size: 35px;color: #ffffff;text-align: center;line-height: 83px;font-family: "Alibaba-PuHuiTi-Regular";display: block;}
+.part6_box_zx a img{vertical-align: -6%;}
+
+.part7{margin-top: 96px;}
+.part7 .part_title_p2{width:442px;background: url("../images/t7_icon.png") no-repeat 50%;margin: 0 auto;}
+.part7 ul{margin-top: 60px;margin-bottom: 100px;overflow: hidden;}
+.part7 li{width: 324px;height: 398px;background: rgb(82,171,200);margin-right: 34px;float: left;position: relative;}
+.part7 li:last-of-type{margin-right: 0;}
+.part7 li a{display: block;}
+.part7 li img:nth-of-type(1){margin-top: 19px;margin-left: 39px;}
+.part7 li span{color: #ffffff;display: block;}
+.part7_sp1{margin-top: 35px;margin-left: 50px;font-size: 46px;width: 230px;font-family: "Alibaba-PuHuiTi-Bold";line-height: 50px;}
+.part7_sp2{position: absolute;bottom: 43px;right:20px; font-size: 29px;font-family: "Alibaba-PuHuiTi-Regular";line-height: 50px;width: 115px;line-height: 35px;}
+.part7_sp3{margin-top: 35px;margin-left: 25px;font-size: 46px;width: 272px;font-family: "Alibaba-PuHuiTi-Bold";line-height: 50px;}
+
+.part7 li img:nth-of-type(2){margin-top: 35px;margin-left: 107px;}
+
+
+
+
+.zx{animation: myfirst 1s infinite;}
+
+@keyframes myfirst {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
