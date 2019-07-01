@@ -239,7 +239,7 @@ if ( ! function_exists('InsertTags'))
         foreach($tags as $tag)
         {
             $tag = trim($tag);
-            if(isset($tag[20]) || $tag!=stripslashes($tag))
+            if(isset($tag[255]) || $tag!=stripslashes($tag))
             {
                 continue;
             }
