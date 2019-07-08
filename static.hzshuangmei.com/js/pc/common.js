@@ -22,17 +22,6 @@ $(function($) {
     });
      // 隐藏专题案例，加类名 zt_case
         $(".zt_case").hide();
-});
-var banner_swiper = new Swiper('.banner_swiper', {
-    loop: true,
-    autoplay: 8000,
-    pagination: '.banner-pagination',
-    paginationClickable: true,
-    spaceBetween: 30,
-      lazy: {
-            loadPrevNext: true,
-        },
-});
     //此js为懒加载对象
     function loadLazyFn() {
         $("img.lay_com").lazyload({
@@ -50,6 +39,18 @@ var banner_swiper = new Swiper('.banner_swiper', {
         });
     }
     loadLazyFn();
+});
+var banner_swiper = new Swiper('.banner_swiper', {
+    loop: true,
+    autoplay: 8000,
+    pagination: '.banner-pagination',
+    paginationClickable: true,
+    spaceBetween: 30,
+      lazy: {
+            loadPrevNext: true,
+        },
+});
+
 //右边固定
 $(function() {
     //获取当前适口高度
