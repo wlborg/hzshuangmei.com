@@ -125,7 +125,7 @@ body {
 .part6_min_left img{width:100%;}
 .part6_min_right{width: 7.744rem;float: left;height: 7.296rem;background: rgb(249,249,249);}
 .part6_min_right a{font-size: 0.448rem;color: rgb(77,171,201);display: block;line-height: 0.64rem;height: 0.64rem;margin-left: 0.362667rem;margin-bottom: 0.490667rem;font-family: "Alibaba-PuHuiTi-Regular";}
-.part6_min_right a img{vertical-align: -23%;margin-right: 0.256rem;}
+.part6_min_right a img{vertical-align: -23%;margin-right: 0.256rem;width: 0.64rem;height: 0.64rem;}
 .part6_min_right a:nth-of-type(1){margin-top: 0.512rem;}
 
 .part7{margin-top: 1.877333rem;width: 100%;background: rgb(249,249,249);padding: 1.173333rem 0;}
