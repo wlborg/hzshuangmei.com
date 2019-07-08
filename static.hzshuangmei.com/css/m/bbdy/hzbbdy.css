@@ -59,8 +59,8 @@ body {
 .part1_min1_r{width: 5.717333rem;height: 1.514667rem;float: left; border: 0.042667rem solid transparent;
     border-image: linear-gradient(to left,rgb(68,202,244),rgb(129,217,246),rgb(189,231,248),rgb(68,202,244))25;
 }
-.part1_min1_r p{width: 4.48rem;font-size: 0.469333rem;line-height: 0.597333rem;font-family: "Alibaba-PuHuiTi-Regular";color: rgb(82,171,200);margin-top: 0.170667rem;margin-left: 0.213333rem;}
-.part1_min2{width: 7.786667rem;margin-top: 0.64rem;}
+.part1_min1_r p{width: 4.88rem;font-size: 0.469333rem;line-height: 0.597333rem;font-family: "Alibaba-PuHuiTi-Regular";color: rgb(82,171,200);margin-top: 0.170667rem;margin-left: 0.213333rem;}
+.part1_min2{width: 7.886667rem;margin-top: 0.64rem;}
 .part1_min2 p{font-size: 0.426667rem;color: rgb(102,102,102);font-family: "Alibaba-PuHuiTi-Regular";line-height: 0.853333rem;text-align: justify;}
 .part1_min2 p span{color: rgb(82,171,200);}
 .part1_right{width: 5.12rem;float: left;margin-left: 0.789333rem;margin-top: 0.170667rem;}
@@ -76,15 +76,15 @@ body {
 .part2 ul{margin-top: 0.853333rem;overflow: hidden;}
 .part2 li{float: left;margin-right: 0.938667rem;position: relative;margin-bottom: 0.682667rem;}
 .part2 li:nth-of-type(3n){margin-right: 0;}
-.part2 li p{line-height: 0.896rem;color: #fff;font-size: 0.426667rem;font-family: "Alibaba-PuHuiTi-Regular";position: absolute;left:0;bottom: 0.213333rem;text-align: center;width: 100%;}
-.part2 li:last-of-type p{width: 2.517333rem;left: 0.704rem;bottom: 1.024rem;font-size: 0.618667rem;}
+.part2 li p{line-height: 0.896rem;color: #fff;font-size: 0.426667rem;font-family: "Alibaba-PuHuiTi-Regular";position: absolute;left:0;bottom: 0.413333rem;text-align: center;width: 100%;}
+.part2 li:last-of-type p{width: 2.617333rem;left: 0.704rem;bottom: 1.324rem;font-size: 0.618667rem;}
 .part2 li:last-of-type p img{vertical-align: -4%;}
-.part2 li a{display: block;}
+.part2 li a{display: block;color:#ffffff;}
 
 .part3{margin-top: 1.066667rem; }
-.part_title_min{width: 5.226667rem;background: url("../images/part3_title_icon.png") no-repeat center;font-family: "Alibaba-PuHuiTi-Regular";font-size: 0.512rem;color: rgb(82,171,200);margin: 0 auto;text-align: center;}
+.part_title_min{width: 5.226667rem;background: url("//img.hzshuangmei.com/m/bbdy/part3_title_icon.png") no-repeat center;font-family: "Alibaba-PuHuiTi-Regular";font-size: 0.512rem;color: rgb(82,171,200);margin: 0 auto;text-align: center;}
 .part3 ul{margin-top: 0.96rem;overflow: hidden;padding: 0 1.258667rem;}
-.part3 li{width: 6.421333rem;height: 8.213333rem;background: url("../images/part3_bg.jpg");margin-right: 0.618667rem;margin-bottom: 0.554667rem;float: left;}
+.part3 li{width: 6.421333rem;height: 8.213333rem;background: url("//img.hzshuangmei.com/m/bbdy/part3_bg.jpg");margin-right: 0.618667rem;margin-bottom: 0.554667rem;float: left;}
 .part3 li:nth-of-type(2n){margin-right: 0;}
 .part3_lip1{font-size: 1.429333rem;font-family: "Alibaba-PuHuiTi-Bold";color: rgb(255,255,255);opacity: 0.52;width: 100%;text-align: center;line-height: 1.024rem;margin-top: 1.152rem;}
 .part3_lip2{font-size: 0.469333rem;font-family: "Alibaba-PuHuiTi-Medium";color: #fff;line-height: 0.469333rem;margin-top: 0.704rem;width: 100%;text-align: center;}
@@ -100,13 +100,14 @@ body {
 .part5_pro{width: 100%;height: 5.248rem;background: rgb(100,183,211);}
 .part5_pro_cla{width: 10.432rem;margin: 0 auto;}
 .part5_pro_cla p{font-size: 0.832rem;font-family: "Alibaba-PuHuiTi-Regular";width: 100%;color: #fff;line-height: 0.832rem;padding-top: 0.725333rem;text-align: center;}
+.part5_pro_cla p a{color:#ffffff;}
 .dianxian{width: 100%;display: block;border-bottom: 0.042667rem dotted #fff;margin-top: 0.533333rem;}
 .part5_pro_cla ul{margin: 0 auto;overflow: hidden;margin-top: 0.64rem;}
 .part5_pro_cla li{width: 4.906667rem;float: left;font-size: 0.661333rem;color: #fff;font-family: "Alibaba-PuHuiTi-Regular";line-height: 0.661333rem;margin-right: 0.618667rem;margin-bottom: 0.426667rem;}
 .part5_pro_cla li span{width: 0.192rem;height: 0.170667rem;background: #fff;border-radius: 50%;vertical-align: 22%;display: inline-block;margin-right: 0.106667rem;}
 .part5_pro_cla li:nth-of-type(2n){margin-right: 0;}
 .part5_pro_cla ul.part5_zj{width: 7.253333rem;}
-.part5_pro_cla ul.part5_zj li{width: 2.986667rem;margin-right: 1.28rem;}
+.part5_pro_cla ul.part5_zj li{width: 2.986667rem;margin-right: 1.18rem;}
 .part5_pro_cla ul.part5_zj li:nth-of-type(2n){margin-right: 0;}
 .part5 .part_zx{width: 6.549333rem;margin-top: 0.426667rem}
 .part5_swiper{padding-bottom: 1.066667rem;}
