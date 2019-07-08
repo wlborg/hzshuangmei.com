@@ -108,6 +108,7 @@ body {
 .dianxian{width: 100%;display: block;border-bottom: 0.042667rem dotted #fff;margin-top: 0.533333rem;}
 .part5_pro_cla ul{margin: 0 auto;overflow: hidden;margin-top: 0.64rem;}
 .part5_pro_cla li{width: 4.906667rem;float: left;font-size: 0.661333rem;color: #fff;font-family: "Alibaba-PuHuiTi-Regular";line-height: 0.661333rem;margin-right: 0.618667rem;margin-bottom: 0.426667rem;}
+.part5_pro_cla li a{color:#ffffff;}
 .part5_pro_cla li span{width: 0.192rem;height: 0.170667rem;background: #fff;border-radius: 50%;vertical-align: 22%;display: inline-block;margin-right: 0.106667rem;}
 .part5_pro_cla li:nth-of-type(2n){margin-right: 0;}
 .part5_pro_cla ul.part5_zj{width: 7.253333rem;}
