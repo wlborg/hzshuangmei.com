@@ -43,7 +43,7 @@ body {
 
 .main{width: 16.0rem;margin: 0 auto;overflow: hidden;}
 .banner{width: 100%;position: relative;line-height: 0;}
-.banner a img{}
+.banner a img{width: 100%;}
 .banner_zx{width: 5.589333rem;height: 0.853333rem;border: 0.042667rem solid rgb(68,202,244);border-radius: 0.32rem;display: block;background: #26a1cc;position: absolute;top:6.506667rem;
     left:1.429333rem;font-family: "Alibaba-PuHuiTi-Light";color: rgb(254,254,254);font-size: 0.554667rem;line-height: 0.853333rem;text-align: center;}
 .part1{margin-top: 1.493333rem;padding: 0 1.173333rem;overflow: hidden;}
@@ -122,7 +122,7 @@ body {
 .part6{margin-top: 1.28rem;}
 .part6_min{width: 13.141333rem;margin: 0 auto;margin-top: 0.597333rem;overflow: hidden;}
 .part6_min_left{width: 5.397333rem;float: left;}
-..part6_min_left img{width:100%;}
+.part6_min_left img{width:100%;}
 .part6_min_right{width: 7.744rem;float: left;height: 7.296rem;background: rgb(249,249,249);}
 .part6_min_right a{font-size: 0.448rem;color: rgb(77,171,201);display: block;line-height: 0.64rem;height: 0.64rem;margin-left: 0.362667rem;margin-bottom: 0.490667rem;font-family: "Alibaba-PuHuiTi-Regular";}
 .part6_min_right a img{vertical-align: -23%;margin-right: 0.256rem;}
