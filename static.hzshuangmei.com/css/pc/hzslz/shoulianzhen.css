@@ -58,6 +58,7 @@ body {
 .part_title{text-align: center;}
 .part_title_p1{font-size: 75px;color: rgb(82,171,200);font-family: "Alibaba-PuHuiTi-Regular";}
 .part_title_p1 span{color: rgb(250,140,171);}
+.part_title_p1 a{color: rgb(82,171,200);}
 .part_title_p2{font-size: 48px;color: rgb(82,171,200);font-family: "Alibaba-PuHuiTi-Regular";}
 .part1_box .part_title_p2{width: 535px;background: url("//img.hzshuangmei.com/pc/hzslz/t1_icon.png") no-repeat 50%;margin: 0 auto;}
 .part1_box_min1{width: 100%; margin-top: 60px;font-size: 22px;color: rgb(102,102,102);font-family: "Alibaba-PuHuiTi-Regular";text-align: center;line-height: 35px;}
