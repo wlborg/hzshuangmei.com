@@ -99,6 +99,7 @@ body {
 .box4_min{margin-top: 0.853333rem;}
 .box4_min img{width: 14.634667rem;height: 3.648rem;margin: 0 auto;display: block;}
 .box4_min p{width: 13.589333rem;margin: 0 auto;font-size: 0.533333rem;color: rgb(110,114,115);font-family: "PalatinoLinotype-Roman";line-height: 0.853333rem;margin-top: 0.64rem;}
+.box4_min p span{color: rgb(246,122,156);}
 .box4 .box_zx:nth-of-type(1){width: 5.226667rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_zx1.png");margin-right: 0.533333rem;}
 .box4 .box_zx:nth-of-type(2){width: 4.522667rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_zx2.png");}
 .box4_zx{width: 10.453333rem;margin: 0 auto;margin-top:1.173333rem;overflow: hidden;}
@@ -118,7 +119,7 @@ body {
 
 .box6{width: 100%;overflow: hidden;}
 .box6 .box_title{margin-top: 1.386667rem;}
-.box6 .box_title_e{width: 8.277333rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
+.box6 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
 .box6_min{margin-top: 0.853333rem;position: relative;}
 .box6_min img{width: 14.144rem;height: 9.493333rem;margin: 0 auto;display: block;}
 .box6_min p{width: 7.744rem;height: 1.024rem;font-size: 0.533333rem;color: #ffffff;font-family: "SourceHanSansCN-Regular";position: absolute;right:1.024rem;bottom: 0.533333rem;line-height: 1.024rem;text-align: center;}
@@ -127,7 +128,7 @@ body {
 
 .box7{width: 100%;overflow: hidden;}
 .box7 .box_title{margin-top: 1.386667rem;}
-.box7 .box_title_e{width: 8.128rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
+.box7 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
 .box7 ul{overflow: hidden;margin-top: 1.130667rem;margin-left: 0.661333rem;}
 .box7 li{float: left;position: relative;margin-right: 0.256rem;}
 .box7 li:nth-of-type(3n){margin-right: 0;}
