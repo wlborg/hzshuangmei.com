@@ -61,7 +61,7 @@ body {
 
 .box2{width: 100%;background: url("//img.hzshuangmei.com/m/kyj2/box2_bg.jpg");overflow: hidden;margin-top: 1.856rem;height: 7.424rem;}
 .box_title{margin-top: 1.066667rem;text-align: center;}
-.box_title_z img{width: 1.450667rem;height: 0.768rem;margin: 0 0.106667rem;}
+.box_title_z img{width: 1.450667rem;height: 0.768rem;margin: 0 0.106667rem;vertical-align: -10%;}
 .box_line{width: 1.088rem;height: 0.085333rem;background: rgb(94,189,219);display: block;margin: 0 auto;}
 .box_title_z{font-size: 0.746667rem;font-family: "SourceHanSansCN-Medium";color: rgb(36,141,176);line-height: 0.746667rem;margin-top: 0.618667rem;}
 .box_title_z span{color: rgb(255,136,170);}
