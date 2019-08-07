@@ -21,19 +21,19 @@ body {
     font-family: "Alibaba-PuHuiTi-Regular";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Regular.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.svg") format("svg");
 }
 @font-face {
     font-family: "Alibaba-PuHuiTi-Medium";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Medium.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.svg") format("svg");
 }
 @font-face {
     font-family: "arialmt";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/arialmt.ttf") format("truetype"),url("../fonts/arialmt.woff") format("woff"), url("../fonts/arialmt.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/arialmt.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/arialmt.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/arialmt.svg") format("svg");
 }
 .main{
     width: 16.304347826086957rem;
@@ -64,7 +64,7 @@ body {
     text-align: center
 }
 .box1_en_tit{
-    background: url(../images/entit_bg.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/m/bbqb/entit_bg.png) no-repeat center;
     background-size: 100%;
     width: 6.695652173913044rem;
     text-align: center;
@@ -73,7 +73,7 @@ body {
     margin-top: 0.2608695652173913rem;
 }
 .en_tit_bg {
-    background: url(../images/entit2_bg.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/m/bbqb/entit2_bg.png) no-repeat center;
     background-size: 100%;
     width: 7.217391304347826rem;
     text-align: center;
@@ -169,7 +169,7 @@ body {
 .box1_btn{
     width: 6.913043478260869rem;
     height: 1.4782608695652173rem;
-    background: url(../images/box1_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box1_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -233,7 +233,7 @@ body {
 .box2_btn{
     width: 8.41304347826087rem;
     height: 1.5rem;
-    background: url(../images/box2_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box2_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -355,7 +355,7 @@ body {
 .box3_btn{
     width: 8.608695652173912rem;
     height: 1.5rem;
-    background: url(../images/box3_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box3_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -384,7 +384,7 @@ body {
     overflow: hidden;
 }
 .box4_en_tit{
-    background: url(../images/entit3_bg.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/m/bbqb/entit3_bg.png) no-repeat center;
     background-size: 100%;
     width: 8.608695652173912rem;
     text-align: center;
@@ -420,7 +420,7 @@ body {
 .box4_btn{
     width: 8.608695652173912rem;
     height: 1.5rem;
-    background: url(../images/box3_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box3_btn.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 8.391304347826088rem;
@@ -567,7 +567,7 @@ body {
 .box5_btn{
     width: 8.41304347826087rem;
     height: 1.5rem;
-    background: url(../images/box2_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box2_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -637,7 +637,7 @@ body {
 .box6_btn{
     width: 6.913043478260869rem;
     height: 1.4782608695652173rem;
-    background: url(../images/box1_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box1_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -721,7 +721,7 @@ body {
 .box7_btn{
     width: 3.608695652173913rem;
     height: 0.9782608695652174rem;
-    background: url(../images/box7_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box7_btn.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 3.891304347826087rem;
@@ -750,7 +750,7 @@ body {
 .box8_btn{
     width: 5.391304347826087rem;
     height: 1.4782608695652173rem;
-    background: url(../images/box8_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/m/bbqb/box8_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
