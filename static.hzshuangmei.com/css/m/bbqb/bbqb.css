@@ -100,7 +100,7 @@ body {
 .en_tit{
     font-family: "ArialMT";
     color: rgb(82,171,200);
-    font-size: 0.2608695652173913rem;
+    font-size: 0.1rem;
     line-height: 0.5rem;
 }
 .con{
@@ -661,6 +661,8 @@ body {
     margin-top: 1.7173913043478262rem;
 }
 .box7_tit img{
+    width: 0.7391304347826086rem;
+    height: 0.7608695652173914rem;
     margin-left: 0.32608695652173914rem;
     vertical-align: -5%
 }
