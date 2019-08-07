@@ -540,7 +540,7 @@ body {
     display: inline-block;
     background-color: white;
     border-radius: 50%;
-    vertical-align: 12%;
+    vertical-align: -40%;
     margin-right: 0.06521739130434782rem;
 }
 .doc_txt ol li:nth-of-type(2n){
