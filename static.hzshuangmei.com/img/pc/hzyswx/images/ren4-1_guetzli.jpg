@@ -1,7 +1,0 @@
-{dede:list}
-<li><a href=[field:arcurl/]>
-
-[filed:title/]
-</a></li>
-
-{/dede:list}

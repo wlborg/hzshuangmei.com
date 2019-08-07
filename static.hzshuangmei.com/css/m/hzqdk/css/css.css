@@ -2,12 +2,13 @@
 body {
     width: 100%;
     padding-top: 40px;
-    font-family: "微软雅黑";
     padding-bottom: 2.5rem;
+
+    font-family: "微软雅黑";
 }
 
 #banner {
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -25,6 +26,7 @@ body {
     width: 3.35rem;
     height: 1.1rem;
     margin: 1rem auto 0 auto;
+
     background: url(//img.hzshuangmei.com/m/hzqdk/images/bg_buttom.png) no-repeat;
     background-size: contain;
 }
@@ -33,15 +35,18 @@ body {
     display: block;
     width: 3.35rem;
     height: 1.1rem;
-    font-size: 0.6rem;
+
+    font-size: .6rem;
     line-height: 1.1rem;
+
     text-align: center;
+
     color: #fff;
 }
 
 .title {
     width: 100%;
-    margin-top: 0.25rem;
+    margin-top: .25rem;
 }
 
 .title img {
@@ -60,6 +65,7 @@ body {
 .part1_main img {
     position: absolute;
     z-index: -1;
+
     display: block;
     width: 6.775rem;
     height: 5.125rem;
@@ -70,17 +76,21 @@ body {
 }
 
 .part1_main .font18px {
-    font-size: 0.45rem;
-    color: #fff;
     padding-top: 2.1rem;
     margin-left: 1.75rem;
+
+    font-size: .45rem;
+
+    color: #fff;
 }
 
 .part1_main .font24px {
-    font-size: 0.6rem;
-    color: #39800a;
     margin-top: 2.7rem;
     margin-left: 2.25rem;
+
+    font-size: .6rem;
+
+    color: #39800a;
 }
 
 .part1_main .right .font24px {
@@ -141,15 +151,17 @@ body {
 }
 
 .part2_main li {
-    color: #666;
     float: left;
     width: 4.1rem;
-    font-size: 0.45rem;
-    margin-top: 0.3rem;
+    margin-top: .3rem;
+
+    font-size: .45rem;
+
+    color: #666;
 }
 
 .part2_li_1 {
-    margin-left: 0.35rem;
+    margin-left: .35rem;
 }
 
 .li_right {
@@ -171,29 +183,33 @@ body {
 
 .part2 .descri {
     margin: 0 auto;
-    margin-top: 0.6rem;
+    margin-top: .6rem;
 }
 
 .part2 .descri h2 {
-    color: #659a62;
-    font-size: 0.55rem;
-    line-height: 1.45rem;
-    width: 9.75rem;
     display: block;
+    width: 9.75rem;
     margin: 0 auto;
+
+    font-size: .55rem;
+    line-height: 1.45rem;
+
+    color: #659a62;
 }
 
 .part2 .descri span {
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 
 .part2 .descri p {
     display: block;
-    font-size: 0.45rem;
     width: 11.6rem;
-    margin: 0 auto;
     padding: 1.6rem 2.45rem 1rem 1rem;
-    line-height: 0.75rem;
+    margin: 0 auto;
+
+    font-size: .45rem;
+    line-height: .75rem;
+
     color: #fff;
     background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_part2_descri.jpg") center no-repeat;
     background-size: contain;
@@ -204,32 +220,38 @@ body {
 }
 
 .part3 .main h2 {
-    color: #47851e;
-    font-size: 0.65rem;
+    padding-left: .5rem;
+
+    font-size: .65rem;
     line-height: 1.25rem;
-    padding-left: 0.5rem;
+
+    color: #47851e;
 }
 
 .part3 .main h1 {
+    padding-left: .5rem;
+
+    font-size: .5rem;
+    line-height: .6rem;
+
     color: #acd094;
-    font-size: 0.5rem;
-    padding-left: 0.5rem;
-    line-height: 0.6rem;
 }
 
 .part3 .main p {
-    font-size: 0.45rem;
+    padding-top: .35rem;
+    padding-left: .5rem;
+
+    font-size: .45rem;
+    line-height: .75rem;
+
     color: #b6b4b4;
-    padding-left: 0.5rem;
-    padding-top: 0.35rem;
-    line-height: 0.75rem;
 }
 
 .part3 .main .under .font h2,
 .part3 .main .under .font h1,
 .part3 .main .under .font p {
+    padding-right: .15rem;
     padding-left: 0;
-    padding-right: 0.15rem;
 }
 
 .part3 .main .under .font h2 {
@@ -237,7 +259,7 @@ body {
 }
 
 .part3 .main .under .font h1 {
-    line-height: 0.6rem;
+    line-height: .6rem;
 }
 
 .part3 .main img {
@@ -256,9 +278,10 @@ body {
 
 .part4 li {
     position: relative;
-    padding-top: 0.425rem;
-    padding-bottom: 0.3rem;
-    margin-bottom: 0.5rem;
+
+    padding-top: .425rem;
+    padding-bottom: .3rem;
+    margin-bottom: .5rem;
 }
 
 .part4 li h1,
@@ -267,23 +290,28 @@ body {
 }
 
 .part4 li h1 {
-    font-size: 0.55rem;
-    margin-top: 0.25rem;
+    margin-top: .25rem;
+
+    font-size: .55rem;
+
     color: #47851e;
 }
 
 .part4 li p {
-    font-size: 0.45rem;
+    padding-bottom: .3rem;
+
+    font-size: .45rem;
+
     color: #b6b2b2;
-    padding-bottom: 0.3rem;
 }
 
 .part4 .main img {
-    display: block;
     position: absolute;
+    left: 2rem;
+
+    display: block;
     width: 2rem;
     height: 2rem;
-    left: 2rem;
 }
 
 .part5 .main {
@@ -303,25 +331,29 @@ body {
 
 .missl p,
 .missl h2 {
-    margin-left: 0.25rem;
+    margin-left: .25rem;
 }
 
 .part5 .main h2 {
-    font-size: 0.7rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+
+    font-size: .7rem;
+
     color: #47851e;
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
     background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_part5-h2.jpg") left bottom no-repeat;
 }
 
 .part5 .main span {
-    font-size: 0.5rem;
+    font-size: .5rem;
+
     color: #47851e;
 }
 
 .part5 .main p {
-    font-size: 0.45rem;
-    line-height: 0.75rem;
+    font-size: .45rem;
+    line-height: .75rem;
+
     color: #a3a3a3;
 }
 
@@ -332,8 +364,9 @@ body {
 .part5 .main img {
     display: block;
     width: 7rem;
-    border: 0.075rem solid #c8dbbb;
-    padding: 0.15rem;
+    padding: .15rem;
+
+    border: .075rem solid #c8dbbb;
 }
 
 .sirw {
@@ -341,12 +374,13 @@ body {
 }
 
 .part5 #buttom {
-    margin-top: 20.9rem;
     width: 4.85rem;
     height: 5.85rem;
+    margin-top: 20.9rem;
     overflow: hidden;
-    background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_buttom.png") 0.9rem bottom no-repeat;
-    background-size: 3.375rem 0.9rem;
+
+    background: url("//img.hzshuangmei.com/m/hzqdk/images/bg_buttom.png") .9rem bottom no-repeat;
+    background-size: 3.375rem .9rem;
 }
 
 .part5 #buttom a {
@@ -357,33 +391,42 @@ body {
     display: block;
     width: 4.65rem;
     height: 4.775rem;
+
     border: none;
 }
 
 .part5 #buttom a {
-    margin-top: -0.25rem;
-    padding-left: 0.85rem;
+    padding-left: .85rem;
+    margin-top: -.25rem;
+
     color: #fff;
 }
 
 .part6 {
-    margin-bottom: 0.9rem;
+    height: 648px;
+    margin-bottom: .9rem;
 }
 
 .part6 h2 {
     float: left;
-    font-size: 0.7rem;
-    color: #47851e;
     margin-top: 2rem;
+
+    font-size: .7rem;
+
+    color: #47851e;
 }
 
 .part6 .main {
     position: relative;
+
+    height: 366px;
 }
 
 .part6 .main p {
     display: block;
-    font-size: 0.45rem;
+
+    font-size: .45rem;
+
     color: #363636;
 }
 
@@ -391,20 +434,22 @@ body {
 
 .shu {
     float: left;
-    margin-right: 0.25rem;
+    width: .1rem;
     padding-bottom: 1.25rem;
-    width: 0.1rem;
-    margin-left: 0.1rem;
     margin-top: 2rem;
+    margin-right: .25rem;
+    margin-left: .1rem;
+
     background: #94bc79;
 }
 
 .part6 .main img {
     display: block;
     float: left;
-    border-right: 0.1rem solid #94bc79;
-    margin-top: 2rem;
     width: 1.15rem;
+    margin-top: 3rem;
+
+    border-right: .1rem solid #94bc79;
 }
 
 .top {
@@ -413,61 +458,74 @@ body {
 
 .detail {
     position: relative;
+
+    padding-bottom: .34rem;
     margin-top: 1.35rem;
-    padding-bottom: 0.34rem;
-    border: 0.25rem solid #a8c892;
+
+    border: .25rem solid #a8c892;
 }
 
 .part6 .main .detail p {
-    display: block;
     position: relative;
+
+    display: block;
     width: 99%;
-    font-size: 0.5rem;
-    color: #363636;
+    margin-left: .1rem;
+
+    font-size: .5rem;
+    line-height: .9rem;
+
     text-align: left;
-    margin-left: 0.1rem;
-    line-height: 0.9rem;
+
+    color: #363636;
     background: #fff;
 }
 
 .part6 .main .detail img {
     position: absolute;
-    display: block;
-    z-index: 1;
-    border: none;
     top: 34%;
-    left: -0.225rem;
-    width: 0.25rem;
+    left: -.225rem;
+    z-index: 1;
+
+    display: block;
+    width: .25rem;
     margin-top: 0;
+
+    border: none;
 }
 .part6 .main .detail .lijie {
     position: absolute;
+    top: -1.46rem;
+    left: 7.45rem;
     z-index: 1;
-    border: none;
-    top: -5.46rem;
+
     display: block;
     width: 8.25rem;
-    margin-top:0;
-    left: 7.45rem;
+    margin-top: 0;
+
+    border: none;
 }
 
 /* .part6 #buttom{
-  margin-top: 
+  margin-top:
   } */
 
 .part6 .main .detail .part6-font {
-    margin-top: -0.4rem;
+    margin-top: -.4rem;
 }
 
 .footer {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid #e1e1e1;
-    font-size: 16px;
     position: fixed;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: #fafafa;
     z-index: 9999;
+
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 16px;
+
+    border: 1px solid #e1e1e1;
+    background-color: #fafafa;
 }

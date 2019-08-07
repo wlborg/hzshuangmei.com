@@ -14,7 +14,16 @@
     background: url(https://img.hzshuangmei.com/pc/home.png+line.png+ar_case_qq.png+share_01.png+share_07.png+share_08.png+ar_case_jou.png.pagespeed.is.MMKbL5m-5A.png) no-repeat top left;
     background-position: 0 -16px;
 }
+.ar_ar p {
+    margin: 1em 0;
 
+    line-height: 30px;
+
+    text-align: left;
+    text-indent: 2em;
+
+    color: #727272;
+}
 .location i {
     display: inline-block;
     width: 17px;

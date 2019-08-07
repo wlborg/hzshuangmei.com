@@ -8,7 +8,7 @@
     <title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet"  href="{dede:global.cfg_csspath/}/m/list_help.css?v=0.2" />
+    <link rel="stylesheet"  href="{dede:global.cfg_csspath/}/m/list_help.css?v=20190523" />
 </head>
 <body>
     <div class="wrapper">
@@ -47,11 +47,11 @@
                             <div>
                             <h4>
                             <img alt="帮助中心问题图标" src="https://img.hzshuangmei.com/m/quest.png">
-                            <a href="[field:arcurl/]" title="[field:title]">[field:shorttitle/]</a>
+                            <a href="[field:arcurl/]" title="[field:title /]">[field:shorttitle/]</a>
                             </h4>
                             <p>
-                            <img alt="回答图标" src="https://img.hzshuangmei.com/m/ans.png">
-                            <a href="[field:arcurl/]" title="[field:title]">
+                            <img alt="回答图标" src="https://img.hzshuangmei.com/m/ans.png" class="ans">
+                            <a href="[field:arcurl/]" title="[field:title /]">
                            [field:description function='cn_substr(@me,100)'/] ...
                             </a>
                             </p>
@@ -60,15 +60,17 @@
                             <span class="j-consult">了解答案</span>
                             </div>
                          </li>
+                           {/dede:list}
                   </div>
                  </div>
+
             <!-- 分页 -->
                  <div class="pageindex">
                     <ul>
                       {dede:pagelist listitem='pre,next,pageno,index,end' listsize='1'/}
                     </ul>
                </div>
-                {/dede:list}
+
                <!-- 项目推荐 -->
                <div class="g-container project list_pro_help">
                     <div class="g-doc">

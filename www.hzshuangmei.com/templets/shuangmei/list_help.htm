@@ -6,7 +6,7 @@
     <meta name="keywords" content="{dede:field name='keywords'/}"/>
     <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}"/>
     {dede:include filename="_link.htm"/}
-    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=2019042201"/>
+    <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/list_help.css?v=201906"/>
     <link rel="stylesheet" href="{dede:global.cfg_csspath/}/pc/animate.min.css?v=20190330"/>
     <link rel="canonical" href="https://www.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}">
     <link rel="alternate" media="only screen and(max-width: 640px)"     href="https://m.hzshuangmei.com{dede:type typeid=0 row=1}[field:typelink /]{/dede:type}" >
@@ -126,7 +126,7 @@
                     <div>
                         <h4>
                             <img src="https://img.hzshuangmei.com/pc/quest.png" alt="帮助中心问题图标">
-                            <a href="[field:arcurl/]" title="[field:fulltitle/]">[field:fulltitle function='cn_substr(@me,50)'/]</a>
+                            <a href="[field:arcurl/]" title="[field:fulltitle/]">[field:fulltitle function='cn_substr(@me,160)'/]</a>
                         </h4>
                         <p>
                             <img src="https://img.hzshuangmei.com/pc/ans.png" alt="回答图标">
@@ -135,7 +135,7 @@
                             </a>
                         </p>
                         <span>[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span>
-                        <span>未解决问题</span>
+                        <span>未解决帮助</span>
                     </div>
                 </li>
                 {/dede:list}
