@@ -59,7 +59,7 @@ body {
 .box_zx img{width: 0.405333rem;height: 0.384rem;vertical-align: -4%;margin-left: 0.213333rem;}
 .box1 .box_zx{margin-top: 0.256rem;}
 
-.box2{width: 100%;background: url("//img.hzshuangmei.com/m/kyj2/box2_bg.jpg");overflow: hidden;margin-top: 1.856rem;height: 7.424rem;}
+.box2{width: 100%;background: url("//img.hzshuangmei.com/m/kyj2/box2_bg.jpg")center no-repeat;background-size: 100%;overflow: hidden;margin-top: 1.856rem;height: 7.424rem;}
 .box_title{margin-top: 1.066667rem;text-align: center;}
 .box_title_z img{width: 1.450667rem;height: 0.768rem;margin: 0 0.106667rem;vertical-align: -10%;}
 .box_line{width: 1.088rem;height: 0.085333rem;background: rgb(94,189,219);display: block;margin: 0 auto;}
@@ -94,7 +94,7 @@ body {
 .box2_m2_min3 li p:nth-of-type(2){font-size: 0.512rem;color: rgb(70,167,200);font-family: "SourceHanSansCN-Medium";width: 100%;height: 0.938667rem;line-height: 0.938667rem;position: absolute;bottom:0;left:0;text-align: center;}
 .box2_m2_min2 li.buyi{width: 3.989333rem;}
 
-.box4{width: 100%;height: 14.357333rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_bg.jpg");margin-top: 1.706667rem;overflow: hidden;}
+.box4{width: 100%;height: 14.357333rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_bg.jpg")center no-repeat;background-size: 100%;margin-top: 1.706667rem;overflow: hidden;}
 .box4 .box_title{margin-top: 1.386667rem;}
 .box4_min{margin-top: 0.853333rem;}
 .box4_min img{width: 14.634667rem;height: 3.648rem;margin: 0 auto;display: block;}
@@ -141,7 +141,7 @@ body {
 .box7 .box_zx{width: 5.696rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box8_zx.png")center no-repeat;margin-top: 1.472rem;background-size: 100%;}
 .box7 .box_zx .box_zx_dian{width: 0.106667rem;height: 0.106667rem;border-radius: 50%;background: #ffffff;display: inline-block;vertical-align: -45%;margin: 0 0.106667rem;}
 
-.box8{width: 100%;margin-top: 1.6rem;background: url("//img.hzshuangmei.com/m/kyj2/box8_bg.jpg");overflow: hidden;height: 15.850667rem;}
+.box8{width: 100%;margin-top: 1.6rem;background: url("//img.hzshuangmei.com/m/kyj2/box8_bg.jpg")center no-repeat;background-size: 100%;overflow: hidden;height: 15.850667rem;}
 .box8 .box_title{margin-top: 1.834667rem;}
 .box8 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
 .box8_min{margin-top: 1.152rem;margin-left: 0.213333rem;overflow: hidden;}
