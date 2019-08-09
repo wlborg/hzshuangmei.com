@@ -1,0 +1,182 @@
+html,body{width: 100%;padding: 0;margin: 0;}
+a{ -webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;-webkit-user-select: none;text-decoration: none;}
+a:hover{text-decoration: none;}
+p,ul, ol{list-style: none;margin: 0;padding: 0;}
+
+body {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@font-face {
+    font-family: "SourceHanSansCN-Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Medium.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Medium.woff") format("woff"), url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Medium.svg") format("svg");
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/kyj2/MyriadPro-Regular.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/kyj2/MyriadPro-Regular.woff") format("woff"), url("//css.hzshuangmei.com/fonts/kyj2/MyriadPro-Regular.svg") format("svg");
+}
+@font-face {
+    font-family: "PalatinoLinotype-Roman";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/kyj2/PalatinoLinotype-Roman.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/kyj2/PalatinoLinotype-Roman.woff") format("woff"), url("//css.hzshuangmei.com/fonts/kyj2/PalatinoLinotype-Roman.svg") format("svg");
+}
+@font-face {
+    font-family: "SourceHanSansCN-Normal";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Normal.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/kyj2/vSourceHanSansCN-Normal.woff") format("woff"), url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Normal.svg") format("svg");
+}
+@font-face {
+    font-family: "SourceHanSansCN-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Regular.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Regular.woff") format("woff"), url("//css.hzshuangmei.com/fonts/kyj2/SourceHanSansCN-Regular.svg") format("svg");
+}
+
+
+.main{width: 16.0rem;margin: 0 auto;}
+.banner a{line-height: 0;display: block;}
+.banner img{width: 100%;height: auto;}
+.box1{width: 100%;margin-top: 1.386667rem;overflow: hidden;}
+.box1_left{margin-left: 0.768rem;width: 4.437333rem;float: left;}
+.box1_left img{width: 4.437333rem;height: 7.168rem;}
+.box1_right{margin-left: 0.917333rem;width: 9.109333rem;float: left;}
+.box1 .box_line{width: 1.088rem;height: 0.085333rem;background: rgb(94,189,219);display: block;margin: 0;}
+.box1 .box_title_z{font-size: 0.746667rem;font-family: "SourceHanSansCN-Medium";color: rgb(36,141,176);line-height: 0.746667rem;margin-top: 0.490667rem;}
+.box1 .box_title_z span{color: rgb(255,136,170);}
+.box1 .box_title_e{font-size: 0.384rem;color: rgb(153,157,158);font-family: "MyriadPro-Regular";line-height: 0.384rem;margin-top: 0.170667rem;}
+.box1_p1{font-size: 0.426667rem;color: rgb(69,75,76);font-family: "SourceHanSansCN-Normal";line-height: 0.64rem;margin-top: 0.490667rem;text-align: justify;letter-spacing: -0.021333rem;}
+.box1_p1 span{color: rgb(255,136,170);}
+.box1_p2{font-size: 0.426667rem;color: rgb(255,136,170);font-family: "SourceHanSansCN-Regular";margin-top: 0.746667rem;line-height: 0.426667rem;}
+.box_zx{width: 4.693333rem;height: 0.96rem;display: block;background: url("//img.hzshuangmei.com/m/kyj2/box1_zx.png")center no-repeat;text-align: center;line-height: 0.98rem;font-size: 0.426667rem;color: #ffffff;font-family: "SourceHanSansCN-Normal";background-size: 100%;}
+.box_zx img{width: 0.405333rem;height: 0.384rem;vertical-align: -4%;margin-left: 0.213333rem;}
+.box1 .box_zx{margin-top: 0.256rem;}
+
+.box2{width: 100%;background: url("//img.hzshuangmei.com/m/kyj2/box2_bg.jpg");overflow: hidden;margin-top: 1.856rem;height: 7.424rem;}
+.box_title{margin-top: 1.066667rem;text-align: center;}
+.box_title_z img{width: 1.450667rem;height: 0.768rem;margin: 0 0.106667rem;vertical-align: -10%;}
+.box_line{width: 1.088rem;height: 0.085333rem;background: rgb(94,189,219);display: block;margin: 0 auto;}
+.box_title_z{font-size: 0.746667rem;font-family: "SourceHanSansCN-Medium";color: rgb(36,141,176);line-height: 0.746667rem;margin-top: 0.618667rem;}
+.box_title_z span{color: rgb(255,136,170);}
+.box_title_e{font-size: 0.384rem;color: rgb(153,157,158);font-family: "MyriadPro-Regular";line-height: 0.384rem;margin-top: 0.234667rem;}
+.box2_min{margin-top: 0.682667rem;}
+.box2_min p{width: 7.786667rem;font-size: 0.426667rem;color: rgb(59,134,159);font-family: "SourceHanSansCN-Regular";margin-left: 0.597333rem;text-align: justify;float: left;line-height: 0.746667rem;margin-top: 0.213333rem;letter-spacing: -0.021333rem;}
+.box2_min p span{color: rgb(255,136,170);}
+.box2_min img{width: 6.357333rem;height: 2.538667rem;float: left;margin-left: 0.426667rem;}
+
+.box2_m2{margin-top: 1.066667rem;margin-left: 0.64rem;}
+.box2_m2_ti{font-size: 0.554667rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Regular";}
+.box2_m2_ti i{font-size: 0.746667rem;font-family: "PalatinoLinotype-Roman";margin-right: 0.213333rem;letter-spacing: 0.021333rem;}
+.box2_m2_ti img{width: 1.109333rem;height: 0.661333rem;vertical-align: -10%;margin-left: 0.213333rem;}
+.box2_m2_min1 ul{margin-top: 0.533333rem;overflow: hidden;}
+.box2_m2_min1 li{width: 3.178667rem;float: left;margin-right: 0.64rem;}
+.box2_m2_min1 li:last-of-type{margin-right: 0;}
+.box2_m2_min1 li img{width: 3.178667rem;height: 2.389333rem;}
+.box2_m2_min1 li p{font-size: 0.426667rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Normal";line-height: 0.426667rem;margin-top: 0.298667rem;letter-spacing: 0.021333rem;}
+.box2_m2_min2{margin-top: 1.152rem;}
+.box2_m2_min2 ul{margin-top: 0.426667rem;overflow: hidden;}
+.box2_m2_min2 li{width: 3.370667rem;height: 1.514667rem; float: left;margin-right: 0.362667rem;box-sizing: border-box;border: 0.042667rem solid rgb(103,184,212);border-radius: 0.213333rem;
+    font-size: 0.469333rem;color: rgb(70,167,200);text-align: center;line-height: 1.514667rem;font-family: "SourceHanSansCN-Medium";}
+.box2_m2_min2 li:last-of-type{margin-right: 0;}
+.box2_m2_min3{margin-top: 1.194667rem;}
+.box2_m2_min3 ul{margin-top: 0.426667rem;overflow: hidden;}
+.box2_m2_min3 li{width: 2.922667rem;float: left;margin-right: 0.682667rem;position: relative;height: 2.389333rem;}
+.box2_m2_min3 li:last-of-type{margin-right: 0;}
+.box2_m2_min3 li img{width: 2.922667rem;height: 2.389333rem;}
+.box2_m2_min3 li p:nth-of-type(1){font-size: 0.512rem;color: #ffffff;font-family: "SourceHanSansCN-Regular";width: 100%;height: 1.493333rem;line-height: 1.493333rem;position: absolute;top:0;left:0;text-align: center;}
+.box2_m2_min3 li p:nth-of-type(2){font-size: 0.512rem;color: rgb(70,167,200);font-family: "SourceHanSansCN-Medium";width: 100%;height: 0.938667rem;line-height: 0.938667rem;position: absolute;bottom:0;left:0;text-align: center;}
+.box2_m2_min2 li.buyi{width: 3.989333rem;}
+
+.box4{width: 100%;height: 14.357333rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_bg.jpg");margin-top: 1.706667rem;overflow: hidden;}
+.box4 .box_title{margin-top: 1.386667rem;}
+.box4_min{margin-top: 0.853333rem;}
+.box4_min img{width: 14.634667rem;height: 3.648rem;margin: 0 auto;display: block;}
+.box4_min p{width: 13.589333rem;margin: 0 auto;font-size: 0.533333rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Normal";line-height: 0.853333rem;margin-top: 0.64rem;text-align: justify;}
+.box4_min p span{color: rgb(246,122,156);}
+.box4 .box_zx:nth-of-type(1){width: 5.226667rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_zx1.png")center no-repeat;margin-right: 0.533333rem;}
+.box4 .box_zx:nth-of-type(2){width: 4.522667rem;background: url("//img.hzshuangmei.com/m/kyj2/box4_zx2.png")center no-repeat;}
+.box4_zx{width: 10.453333rem;margin: 0 auto;margin-top:1.173333rem;overflow: hidden;}
+.box4_zx a{float: left;}
+
+.box5{width: 100%;overflow: hidden;}
+.box5 .box_title{margin-top: 1.386667rem;}
+.box5_min{margin-top: 1.28rem;}
+.box5_cla{width: 14.506667rem;margin: 0 auto;position: relative;margin-bottom: 1.066667rem;}
+.box5_cla img{width: 14.421333rem;height: 4.096rem;}
+.box5_wen_rig{position: absolute;top:0.746667rem;left:4.416rem;}
+.box5_wen_tit{font-size: 0.512rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Medium";line-height: 0.512rem;}
+.box5_wen_con{font-size: 0.405333rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Normal";width: 9.6rem;line-height: 0.64rem;margin-top: 0.405333rem;letter-spacing: -0.021333rem;text-align: justify;}
+.box5_wen_con span{color: rgb(246,122,156);}
+.box5_wen_left{position: absolute;top:0.746667rem;left:0.405333rem;}
+.box5 .box_zx{width: 5.205333rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box5_zx.png")center no-repeat;}
+
+.box6{width: 100%;overflow: hidden;}
+.box6 .box_title{margin-top: 1.386667rem;}
+.box6 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
+.box6_min{margin-top: 0.853333rem;position: relative;}
+.box6_min img{width: 14.144rem;height: 9.493333rem;margin: 0 auto;display: block;}
+.box6_min p{width: 7.744rem;height: 1.024rem;font-size: 0.533333rem;color: #ffffff;font-family: "SourceHanSansCN-Regular";position: absolute;right:1.024rem;bottom: 0.533333rem;line-height: 1.024rem;text-align: center;}
+.box6_wen{width: 13.333333rem;font-size: 0.490667rem;color: rgb(110,114,115);font-family: "SourceHanSansCN-Normal";line-height: 0.768rem;margin: 0 auto;margin-top: 0.554667rem;text-align: justify;}
+.box6 .box_zx{width: 5.696rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box8_zx.png")center no-repeat;margin-top: 1.472rem;}
+
+.box7{width: 100%;overflow: hidden;}
+.box7 .box_title{margin-top: 1.386667rem;}
+.box7 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
+.box7 ul{overflow: hidden;margin-top: 1.130667rem;margin-left: 0.661333rem;}
+.box7 li{float: left;position: relative;margin-right: 0.256rem;}
+.box7 li:nth-of-type(3n){margin-right: 0;}
+.box7 li img{width: 4.714667rem;height: 9.088rem;}
+.box7_doc_name{font-size: 0.448rem;color: #ffffff;font-family: "SourceHanSansCN-Normal";position: absolute;top:5.95rem;left:1.92rem;}
+.box7_doc_pro{font-size: 0.533333rem;color: #ffffff;font-family: "SourceHanSansCN-Medium";position: absolute;top:6.933333rem;left:0;line-height: 0.533333rem;width: 4.714667rem;text-align: center;}
+.box7 li .box7_doc_pro img{width: 0.512rem;height: 0.490667rem;margin-right: 0.213333rem;}
+.box7_doc_ty{font-size: 0.405333rem;color: #ffffff;font-family: "SourceHanSansCN-Normal";position: absolute;top:7.765333rem;left:0.32rem;line-height: 0.533333rem;width: 4.266667rem;}
+.box7_doc_ty span{display: block;width: 2.133333rem;float: left;}
+.box7 .box_zx{width: 5.696rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box8_zx.png")center no-repeat;margin-top: 1.472rem;}
+.box7 .box_zx .box_zx_dian{width: 0.106667rem;height: 0.106667rem;border-radius: 50%;background: #ffffff;display: inline-block;vertical-align: -45%;margin: 0 0.106667rem;}
+
+.box8{width: 100%;margin-top: 1.6rem;background: url("//img.hzshuangmei.com/m/kyj2/box8_bg.jpg");overflow: hidden;height: 15.850667rem;}
+.box8 .box_title{margin-top: 1.834667rem;}
+.box8 .box_title_e{width: 8.5rem;margin: 0 auto;margin-top: 0.298667rem;line-height: 0.533333rem;}
+.box8_min{margin-top: 1.152rem;margin-left: 0.213333rem;overflow: hidden;}
+.box8_min img{width: 7.658667rem;height: 7.765333rem;float: left;margin-right: 0.341333rem;}
+.box8_min img:nth-of-type(2){margin-right: 0;}
+.box8 .box_zx{width: 5.696rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box8_zx.png")center no-repeat;margin-top: 1.066667rem;}
+
+.box9{width: 100%;overflow: hidden;padding-bottom: 1.066667rem;}
+.box9 .box_title{margin-top: 1.216rem;text-align: left;position: relative;}
+.box9 .box_title img{margin-left: 2.069333rem;width: 2.645333rem;height: 2.069333rem;}
+.box9 .box_title_z{position: absolute;top:0.0rem;left:4.906667rem;}
+.box9 .box_title_e{position: absolute;top:1.28rem;left:4.906667rem;}
+.box9_min{width: 14.506667rem;margin: 0 auto;margin-top: 0.981333rem;overflow: hidden;}
+.box9_min a{display: block;float: left;width: 7.082667rem;height: 1.258667rem;background: rgb(247,122,156);border-radius: 0.213333rem;font-size: 0.597333rem;line-height: 1.258667rem;
+    text-align: center;color: #ffffff;margin-right: 0.32rem;margin-bottom: 0.64rem;font-family: "SourceHanSansCN-Regular";}
+.box9_min a:nth-of-type(2n){margin-right: 0;}
+.box9_min a:last-of-type{margin-left: 3.541333rem;}
+.box9 .box_zx{width: 4.224rem;margin: 0 auto;background: url("//img.hzshuangmei.com/m/kyj2/box9_zx.png")center no-repeat;margin-top: 0.426667rem;}
+
+
+.zx{animation: myfirst 1s infinite;}
+
+@keyframes myfirst {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
