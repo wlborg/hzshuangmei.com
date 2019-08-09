@@ -22,20 +22,20 @@ body {
     font-family: "Alibaba-PuHuiTi-Regular";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Regular.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.svg") format("svg");
 }
 @font-face {
     font-family: "Alibaba-PuHuiTi-Medium";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("../fonts/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("../fonts/Alibaba-PuHuiTi-Medium.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.svg") format("svg");
 }
 
 @font-face {
     font-family: "arialmt";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/arialmt.ttf") format("truetype"),url("../fonts/arialmt.woff") format("woff"), url("../fonts/arialmt.svg") format("svg");
+    src: url("//css.hzshuangmei.com/fonts/bbqb/arialmt.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/arialmt.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/arialmt.svg") format("svg");
 }
 
 ._w1400{ width: 1440px; margin: 0 auto}
@@ -53,11 +53,11 @@ body {
 .box1{margin-top: 127px; overflow: hidden;}
 .box1_con{width: 1163px;margin: 0 auto;margin-top: 53px;text-align: center;}
 .box1_tit{ text-align: center}
-.box1_en_tit{background: url(../images/entit_bg.png) no-repeat center;background-size: 100%;
+.box1_en_tit{background: url(//img.hzshuangmei.com/pc/bbqb/entit_bg.png) no-repeat center;background-size: 100%;
     width: 543px;  text-align: center;  height: 38px; background-size: 100%;  margin: 0 auto;  margin-top: 25px;}
 
 .en_tit_bg {
-    background: url(../images/entit_bg.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/bbqb/entit_bg.png) no-repeat center;
     background-size: 100%;
     width: 543px;
     text-align: center;
@@ -85,7 +85,7 @@ body {
 .box1_btn{
     width: 422px;
     height: 85px;
-    background: url(../images/box1_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box1_btn.png) no-repeat;
     background-size: 100%;
     margin: 0 auto;
     margin-top: 23px;
@@ -103,7 +103,7 @@ body {
 .box2_btn{
     width: 469px;
     height: 86px;
-    background: url(../images/box2_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box2_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -118,10 +118,10 @@ body {
 .box3_min{width: 1440px;margin: 0 auto;position: relative;overflow: hidden;margin-top: 91px;height: 500px;padding-top: 9px;}
 .box3_part_l{ float: left; width: 683px;
     height:481px;}
-.box3_part_l ul li{ background: url("../images/box3_conbg.png") center no-repeat;background-size: 100%; width: 683px; height: 191px;}
+.box3_part_l ul li{ background: url("//img.hzshuangmei.com/pc/bbqb/box3_conbg.png") center no-repeat;background-size: 100%; width: 683px; height: 191px;}
 .box3_part_l ul li:first-child{margin-bottom: 99px;}
 .box3_part_r{ float: right}
-.box3_part_r ul li{ background: url("../images/box3_conbg2.png") center no-repeat;background-size: 100%; width: 683px; height: 191px;}
+.box3_part_r ul li{ background: url("//img.hzshuangmei.com/pc/bbqb/box3_conbg2.png") center no-repeat;background-size: 100%; width: 683px; height: 191px;}
 .box3_part_r ul li:first-child{margin-bottom: 99px;}
 
 .box3_part_l .span1{line-height: 32px;font-size: 32px;font-family: "Alibaba-PuHuiTi-Regular";color: rgb(254,254,254);min-width: 92px;display: block;width: 153px;float: left;}
@@ -160,7 +160,7 @@ body {
 .box3_btn{
     width: 511px;
     height: 82px;
-    background: url(../images/box3_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box3_btn.png) no-repeat;
     background-size: 100%;
     position: relative;
     margin: 0 auto;
@@ -169,10 +169,10 @@ body {
 .box3_btn span{padding-left: 43px;height: 70px;line-height: 70px;}
 
 
-.box4{ background: url("../images/box4_bg.jpg") no-repeat center;background-size: 100%; width: 1920px; height: 903px; margin-top:120px; overflow: hidden;position: relative }
+.box4{ background: url("//img.hzshuangmei.com/pc/bbqb/box4_bg.jpg") no-repeat center;background-size: 100%; width: 1920px; height: 903px; margin-top:120px; overflow: hidden;position: relative }
 .box4_min{ width: 1440px; height: 691px; background: rgba(255,255,255,0.87); margin: 0 auto; margin-top: 106px; overflow: hidden;  }
 .box4_en_tit{
-    background: url(../images/entit_bg.png) no-repeat center;
+    background: url(//img.hzshuangmei.com/pc/bbqb/entit_bg.png) no-repeat center;
     background-size: 100%;
     width: 655px;
     text-align: center;
@@ -181,7 +181,7 @@ body {
     margin-top: 25px;
 }
 .box4_tit{margin-top: 100px;text-align: center;}
-.box4_con{background: url("../images/box4_conbg.png") no-repeat center;background-size: 100%;width: 1297px;height: 326px;margin: 0 auto;overflow: hidden;}
+.box4_con{background: url("//img.hzshuangmei.com/pc/bbqb/box4_conbg.png") no-repeat center;background-size: 100%;width: 1297px;height: 326px;margin: 0 auto;overflow: hidden;}
 .box4_part{
     font-size: 30px;
     font-family: "Alibaba-PuHuiTi-Regular";
@@ -197,7 +197,7 @@ body {
 .box4_btn{
     width: 510px;
     height: 83px;
-    background: url(../images/box4_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box4_btn.png) no-repeat;
     background-size: 100%;
     position: absolute;
     top: 620px;
@@ -267,7 +267,7 @@ body {
 .wol4 .liw{margin-right: 10px;}
 .box5_btn{width: 428px;
     height: 83px;
-    background: url(../images/box5_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box5_btn.png) no-repeat;
     background-size: 100%;
     position: relative;  margin: 0 auto; margin-top: 50px;}
 .box5_btn span{padding-left: 32px;height: 70px;line-height: 70px;}
@@ -294,7 +294,7 @@ body {
 .title4_3 {top: 685px;right: 26px;}
 .box6_btn{width: 382px;
     height: 84px;
-    background: url(../images/box6_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box6_btn.png) no-repeat;
     background-size: 100%;
     position: relative;  margin: 0 auto; margin-top: 96px; margin-bottom: 100px;}
 .box6_btn span{ padding-left: 59px; height: 70px; line-height: 70px;}
@@ -306,7 +306,7 @@ body {
 .box7_con{width: 1397px;height: 283px;border:3px solid rgba(130,81,33,0.09);margin: 0 auto;margin-top: 41px;position: relative;}
 .box7_min{width: 855px;height: 182px;margin-top: 51px;margin-left: 35px;}
 .box7_num{
-    background: url("../images/box7_num.png") no-repeat;
+    background: url("//img.hzshuangmei.com/pc/bbqb/box7_num.png") no-repeat;
     background-size: 100%;
     width: 22px;
     height: 20px;
@@ -323,14 +323,14 @@ body {
 .box7_min li a{color: rgb(82,171,200);margin-left: 19px;}
 .box7_ren{position: absolute;top: -99px;right: 90px;}
 .box7_ren img{width: 205px; height: 409px}
-.box7_btn{width: 281px;height: 73px;background: url(../images/box7_btn.png) no-repeat;background-size: 100%;position: absolute;top: 251px;right: 50px;}
+.box7_btn{width: 281px;height: 73px;background: url(//img.hzshuangmei.com/pc/bbqb/box7_btn.png) no-repeat;background-size: 100%;position: absolute;top: 251px;right: 50px;}
 .box7_btn span{padding-left: 51px;height: 160px;line-height: 38px;font-size: 30px;}
 
 .box8{ background-color: rgb(249,249,249);overflow: hidden; width: 100%;}
 .box8_img{text-align: center;width: 1864px;height: 1281px;margin: 0 auto;display: block;margin-top: 71px;}
 .box8_btn{width: 342px;
     height: 84px;
-    background: url(../images/box8_btn.png) no-repeat;
+    background: url(//img.hzshuangmei.com/pc/bbqb/box8_btn.png) no-repeat;
     background-size: 100%;
     position: relative;  margin: 0 auto; margin-top: 63px; margin-bottom: 145px;}
 .box8_btn span{ padding-left: 62px; height: 70px; line-height: 70px;}
