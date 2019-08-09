@@ -18,8 +18,8 @@ a {
     border: none;
     outline: none;
 
-    -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 a,
 body {
@@ -876,8 +876,8 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 /*系统快商通样式更改 图片尺寸520px*/
 #_ks_ol_inviteWin {
+    /* display: none!important; */
     display: block!important;
-    /* display: block!important; */
     margin-top: -6.21rem !important;
     margin-left: -6.5rem !important;
 }
@@ -890,30 +890,34 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 #div3 {
     top: 10.7rem!important;
     left: 6.24rem!important;
-    width: 5.63rem!important;
-    height: 1.2rem!important;
-    font-size: .78rem!important;
-    line-height: 1.13rem!important;
     /* border: 1px solid red; */
     z-index: 2;
+
+    width: 5.63rem!important;
+    height: 1.2rem!important;
+
+    font-size: .78rem!important;
+    line-height: 1.13rem!important;
 }
 #div1 {
     top: 10.7rem!important;
     left: 1.4rem!important;
+    z-index: 2;
+
     width: 4.13rem!important;
     height: 1.2rem!important;
+
     line-height: 0!important;
-    z-index: 2;
 }
 #div2 {
     top: .3rem !important;
     left: 11.5rem !important;
+    z-index: 2;
 
     width: 1rem !important;
     height: .99rem !important;
 
     line-height: 0 !important;
-    z-index: 2;
 }
 #ks_ol_floatWin_img {
     width: 1.26rem !important;
@@ -1032,9 +1036,10 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #div4 {
     position: absolute!important;
+    z-index: 1;
+
     width: 100%!important;
     height: 100%!important;
-    z-index: 1;
 }
 .hidePadeindex {
     display: none;

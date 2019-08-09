@@ -1,0 +1,778 @@
+body, dd, dl, dt, form, h1, h2, h3, h4, h5, h6, html, input, label, ol, li, p, textarea, ul {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #555
+}
+a:hover {
+    text-decoration: none
+}
+ol, ul, li {
+    list-style: none
+}
+body {
+    font-family: Helvetica,"Alibaba-PuHuiTi-Regular","Alibaba-PuHuiTi-Medium",Arial,sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Regular.svg") format("svg");
+}
+@font-face {
+    font-family: "Alibaba-PuHuiTi-Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/Alibaba-PuHuiTi-Medium.svg") format("svg");
+}
+@font-face {
+    font-family: "arialmt";
+    font-style: normal;
+    font-weight: normal;
+    src: url("//css.hzshuangmei.com/fonts/bbqb/arialmt.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/arialmt.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/arialmt.svg") format("svg");
+}
+.main{
+    width: 16.304347826086957rem;
+    margin: 0 auto;
+}
+.banner a{
+    display: block;
+    line-height: 0;
+}
+.banner a img{
+    width: 16.304347826086957rem;
+    height: 8.434782608695652rem;
+}
+.box1{
+    margin-top: 1.608695652173913rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.box1_con{
+    width: 14.08695652173913rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.5217391304347826rem;
+    text-align: center;
+}
+.box1_tit{
+    text-align: center
+}
+.box1_en_tit{
+    background: url(//img.hzshuangmei.com/m/bbqb/entit_bg.png) no-repeat center;
+    background-size: 100%;
+    width: 6.695652173913044rem;
+    text-align: center;
+    height: 0.4782608695652174rem;
+    margin: 0 auto;
+    margin-top: 0.2608695652173913rem;
+}
+.en_tit_bg {
+    background: url(//img.hzshuangmei.com/m/bbqb/entit2_bg.png) no-repeat center;
+    background-size: 100%;
+    width: 8.26086956521739rem;
+    text-align: center;
+    height: 0.4782608695652174rem;
+    margin: 0 auto;
+    margin-top: 0.2608695652173913rem;
+}
+.tit{
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.8260869565217391rem;
+    color: rgb(82,171,200);
+    line-height: 0.8260869565217391rem;
+}
+.tit span{
+    font-family: "Alibaba-PuHuiTi-Medium";
+    color: rgb(250,140,171)
+}
+.tit2{
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(82,171,200);
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+}
+.en_tit{
+    font-family: "ArialMT";
+    color: rgb(82,171,200);
+    font-size: 0.1rem;
+    line-height: 0.5rem;
+}
+.con{
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.4782608695652174rem;
+    color: rgb(102,102,102);
+    line-height: 0.9565217391304348rem;
+}
+.box1_min{
+    width: 15.58695652173913rem;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 0.8913043478260869rem;
+}
+.box1_min li{
+    width: 4.3478260869565215rem;
+    float: left;
+    position: relative;
+    margin-right: 1.2391304347826086rem;
+    margin-bottom: 1.2391304347826086rem;
+}
+.box1_min li img{
+    width: 4.3478260869565215rem;
+    height: 4.304347826086956rem;
+}
+.box1_min li a{
+    width: 6.521739130434782rem;
+    display: block;
+}
+.box1_min li:nth-of-type(3n){
+    margin-right: 0rem;
+}
+.box1_min li span{
+    width: 3.869565217391304rem;
+    height: 0.782608695652174rem;
+    background-color: rgb(129,204,227);
+    display: block;
+    border-radius: 0.2608695652173913rem;
+    font-size: 0.391304347826087rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(255,255,255);
+    text-align: center;
+    line-height: 0.8260869565217391rem;
+    position: absolute;
+    top: 3.891304347826087rem;
+}
+.box1_min li p{
+    font-family: "Alibaba-PuHuiTi-Medium";
+    font-size: 0.5434782608695652rem;
+    color: rgb(130,81,33);
+    margin-top: 0.8695652173913043rem;
+}
+.box1_icon{
+    vertical-align: -4%;
+    margin-right: 0.1956521739130435rem;
+}
+.btn{
+    color: rgb(255,255,255);
+    font-size: 0.6086956521739131rem;
+    font-family:"Alibaba-PuHuiTi-Regular";
+}
+.btn a{
+    display: block;
+    color: white;
+}
+.box1_btn{
+    width: 6.913043478260869rem;
+    height: 1.4782608695652173rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box1_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.32608695652173914rem;
+}
+.box1_btn span{
+    padding-left: 0.9565217391304348rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box2{
+    background-color: rgb(249,249,249);
+    margin-top: 1.0869565217391304rem;
+    overflow: hidden;
+    width: 100%;
+}
+.box2_en_tit{
+    margin-top: 0.41304347826086957rem;
+    text-align: center
+}
+.box2_tit{
+    margin-top: 1.3043478260869565rem;
+    text-align: center
+}
+.box2_banner {
+    width: 13.521739130434783rem;
+    z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 0.9347826086956522rem;
+}
+.box2_swiper img{
+    width:13.521739130434783rem;
+    height: 17.869565217391305rem;
+}
+.box2_swiper{
+    height: 19.608695652173914rem;
+}
+.box2_swiper a{
+    width: 13.521739130434783rem;
+    height: 17.869565217391305rem;
+    display: block;
+}
+.box2_swiper a:nth-of-type(2){
+    margin-right: 0rem;
+}
+.box2_swiper .swiper-pagination-bullets{
+    bottom: 0rem;
+    text-align: center;
+}
+.box2_swiper .swiper-pagination-bullet{
+    width: 0.2391304347826087rem;
+    height: 0.2391304347826087rem;
+}
+.box2_swiper .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 0.32608695652173914rem
+}
+.box2_swiper .swiper-pagination-bullet-active{
+    background: rgb(82,171,200);
+}
+.box2_btn{
+    width: 8.41304347826087rem;
+    height: 1.5rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box2_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.43478260869565216rem;
+    margin-bottom: 1.1956521739130435rem;
+}
+.box2_btn span{
+    padding-left: 0.9565217391304348rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box3{
+    overflow: hidden;
+    width: 100%;
+}
+.box3_con{
+    width: 13.891304347826088rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.434782608695652rem;
+    text-align: center;
+}
+.box3_tit{
+    margin-top: 1.8043478260869565rem;
+    text-align: center
+}
+.box3_min{
+    width: 15.543478260869565rem;
+    margin: 0 auto;
+    position: relative;
+}
+.box3_part{
+    width: 100%;
+    margin-top: 1.434782608695652rem;
+}
+.box3_part ul li{
+    background: url("//img.hzshuangmei.com/m/bbqb/box3_conbg.png") center no-repeat;
+    background-size: 100%;
+    width: 12.76086956521739rem;
+    height: 2.6956521739130435rem;
+}
+.box3_part ul li:first-child{
+    margin-bottom: 0.3695652173913043rem;
+}
+.box3_part .span1{
+    line-height: 0.6521739130434783rem;
+    font-size: 0.5652173913043478rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(254,254,254);
+    width: 2.260869565217391rem;
+    height: 2.0217391304347827rem;
+}
+.box3_part .span2{
+    font-size: 0.391304347826087rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(254,254,254);
+    width: 6.956521739130435rem;
+    height: 1.326086956521739rem;
+    display: block;
+    line-height: 0.45652173913043476rem;
+}
+.box3_con_part1 {
+    float: left;
+    padding-top: 0.6521739130434783rem;
+    text-align: left;
+    padding-left: 0.2826086956521739rem;
+}
+.box3_con_part2 {
+    float: left;
+    padding-top: 0.6521739130434783rem;
+    text-align: left;
+    padding-left: 0.4782608695652174rem;
+}
+.box3_con_part3 {
+    float: left;
+    padding-top: 0.391304347826087rem;
+    text-align: left;
+    padding-left: 0.5869565217391305rem;
+}
+.box3_con_part4 {
+    float: left;
+    padding-top: 0.391304347826087rem;
+    text-align: left;
+    padding-left: 0.15217391304347827rem;
+}
+.box3_con_part5 {
+    float: left;
+    padding-top: 0.6521739130434783rem;
+    text-align: left;
+    padding-left: 0.5869565217391305rem;
+}
+.box3_con_part6 {
+    float: left;
+    padding-top: 0.6521739130434783rem;
+    text-align: left;
+    padding-left: 0.15217391304347827rem;
+}
+.box3_img{
+    width: 5.8478260869565215rem;
+    height: 5.934782608695652rem;
+    position: absolute;
+    top: 1.3695652173913044rem;
+    right: 0rem;
+    z-index: 9999;
+}
+.box3_swiper{
+    height: 9.347826086956522rem;
+}
+.box3_swiper .swiper-pagination-bullet{
+    width: 0.2391304347826087rem;
+    height: 0.2391304347826087rem;
+}
+.box3_swiper .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 0.32608695652173914rem
+}
+.box3_swiper .swiper-pagination-bullet-active{
+    background: rgb(82,171,200);
+}
+.box3_btn{
+    width: 8.608695652173912rem;
+    height: 1.5rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box3_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.43478260869565216rem;
+}
+.box3_btn span{
+    padding-left: 0.4782608695652174rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box4{
+    background: url("//img.hzshuangmei.com/m/bbqb/box4_bg.jpg") no-repeat center;
+    background-size: 100%;
+    width: 16.304347826086957rem;
+    height: 12.130434782608695rem;
+    margin-top:1.7391304347826086rem;
+    overflow: hidden;
+    position: relative
+}
+.box4_min{
+    width: 15.717391304347826rem;
+    height: 8.978260869565217rem;
+    background: rgba(255,255,255,0.87);
+    margin: 0 auto;
+    margin-top: 1.5869565217391304rem;
+    overflow: hidden;
+}
+.box4_en_tit{
+    background: url(//img.hzshuangmei.com/m/bbqb/entit3_bg.png) no-repeat center;
+    background-size: 100%;
+    width: 8.608695652173912rem;
+    text-align: center;
+    height: 0.5rem;
+    margin: 0 auto;
+    margin-top: 0.30434782608695654rem;
+}
+.box4_tit{
+    margin-top: 0.9130434782608695rem;
+    text-align: center
+}
+.box4_con{
+    background: url("//img.hzshuangmei.com/m/bbqb/box4_conbg.png") no-repeat center;
+    background-size: 100%;
+    width: 14.521739130434783rem;
+    height: 4.934782608695652rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.box4_part{
+    font-size: 0.4782608695652174rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(102,102,102);
+    width:13.630434782608695rem;
+    height: 2.3260869565217392rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.7608695652173914rem;
+}
+.box4_part span{
+    color:rgb(250,140,171);
+}
+.box4_btn{
+    width: 8.608695652173912rem;
+    height: 1.5rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box3_btn.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 8.391304347826088rem;
+    left: 3.9565217391304346rem;
+}
+.box4_btn span{
+    padding-left: 0.4782608695652174rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box5{
+    overflow: hidden;
+    width: 100%;
+}
+.box5_en_tit{
+    margin-top: 0.41304347826086957rem;
+    text-align: center
+}
+.box5_tit{
+    margin-top: 1.5217391304347827rem;
+    text-align: center
+}
+.box5_banner {
+    width: 11.608695652173912rem;
+    z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 1.0869565217391304rem;
+    position: relative;
+}
+.box5_swiper img{
+    width:11.608695652173912rem;
+    height: 13.978260869565217rem;
+}
+.box5_swiper{
+    height: 20.652173913043477rem;
+}
+.box5_swiper a{
+    width: 11.608695652173912rem;
+    display: block;
+    line-height: 0
+}
+.box5_swiper a:nth-of-type(2){
+    margin-right: 0rem;
+}
+.box5 .swiper-pagination-bullets{
+    bottom: 0rem;
+    text-align: center;
+}
+.box5 .swiper-pagination-bullet{
+    width: 0.2391304347826087rem;
+    height: 0.2391304347826087rem;
+}
+.box5 .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 0.32608695652173914rem
+}
+.box5 .swiper-pagination-bullet-active{
+    background: rgb(82,171,200);
+}
+.doc_pos{
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.717391304347826rem;
+    color:rgb(255,255,255);
+    width: 4.5rem;
+    height: 1.173913043478261rem;
+    background-color: rgb(250,140,171);
+    position: absolute;
+    top:12.391304347826088rem;
+    left: 0rem;
+    border-radius: 0rem 0.45652173913043476rem 0.45652173913043476rem 0rem;
+}
+.doc_pos span{
+    margin-left: 0.45652173913043476rem;
+}
+.doc_txt{
+    width: 100%;
+    height:4.673913043478261rem;
+    text-align: center;
+    background: -webkit-linear-gradient(left, rgb(100,183,211) , rgb(133,201,223));
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, rgb(100,183,211), rgb(133,201,223));
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgb(100,183,211), rgb(133,201,223));
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, rgb(100,183,211) , rgb(133,201,223));
+    /* 标准的语法（必须放在最后） */
+}
+.doc_txt_p1{
+    font-size: 0.7391304347826086rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(255,255,255);
+    width: 9.282608695652174rem;
+    height: 1.2391304347826086rem;
+    border-bottom: 0.043478260869565216rem dotted white;
+    margin: 0 auto;
+    line-height: 0.6521739130434783rem;
+    padding-top: 0.6521739130434783rem;
+}
+.doc_txt ol{
+    font-size: 0.5869565217391305rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    color: rgb(255,255,255);
+}
+.ol_w1{
+    width: 6.804347826086956rem;
+    height: 1.5434782608695652rem;
+    margin: 0 auto;
+    margin-top: 0.5434782608695652rem;
+}
+.doc_txt ol li{
+    float: left;
+    margin-right: 1.6956521739130435rem;
+}
+.doc_txt ol li span{
+    width: 0.17391304347826086rem;
+    height: 0.17391304347826086rem;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: -40%;
+    margin-right: 0.06521739130434782rem;
+}
+.doc_txt ol li:nth-of-type(2n){  margin-right: 0rem;  }
+.pos_w{
+    width: 7.173913043478261rem;
+}
+.wol1{
+    width: 9.130434782608695rem;
+}
+.wol2{
+    width: 9.565217391304348rem;
+}
+.wol3{
+    width: 9.565217391304348rem;
+}
+.wol2 .liw{
+    margin-right: 0.41304347826086957rem;
+}
+.wol3 .liw{
+    margin-right: 0.21739130434782608rem;
+}
+.box5_btn{
+    width: 8.41304347826087rem;
+    height: 1.5rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box2_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.8695652173913043rem;
+}
+.box5_btn span{
+    padding-left: 0.9565217391304348rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box6{
+    background-color: rgb(249,249,249);
+    margin-top: 1.0869565217391304rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.box6_min{
+    width: 14.804347826086957rem;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 1.065217391304348rem;
+}
+.box6_min img{
+    width: 14.804347826086957rem;
+    height: 13.73913043478261rem;
+}
+.title3 {
+    position: absolute;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.6739130434782609rem;
+    line-height: 0.6739130434782609rem;
+    color: #fff;
+}
+.title4 {
+    position: absolute;
+    width: 6.934782608695652rem;
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.43478260869565216rem;
+    line-height: 0.5434782608695652rem;
+    color: #fff;
+}
+.title3_1 {
+    top: 4.586956521739131rem;
+    right: 3.1739130434782608rem;
+}
+.title3_2 {
+    top: 9.108695652173912rem;
+    left: 3.0434782608695654rem;
+}
+.title3_3 {
+    top: 13.521739130434783rem;
+    right: 2.8260869565217392rem;
+}
+.title4_1 {
+    top: 6.173913043478261rem;
+    right: 0.6521739130434783rem;
+}
+.title4_2 {
+    top: 10.608695652173912rem;
+    left: 1.2826086956521738rem;
+}
+.title4_3 {
+    top: 14.891304347826088rem;
+    right: 0.5652173913043478rem;
+}
+.box6_btn{
+    width: 6.913043478260869rem;
+    height: 1.4782608695652173rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box1_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1.0869565217391304rem;
+    margin-bottom: 1.3478260869565217rem;
+}
+.box6_btn span{
+    padding-left: 0.9565217391304348rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.box7{
+    overflow: hidden;
+    width: 100%;
+    height: 8.978260869565217rem;
+}
+.box7_tit{
+    color: rgb(82,171,200);
+    font-size: 0.8260869565217391rem;
+    line-height: 0.9130434782608695rem;
+    font-family: "Alibaba-PuHuiTi-Medium";
+    text-align: center;
+    margin-top: 1.7173913043478262rem;
+}
+.box7_tit img{
+    width: 0.7391304347826086rem;
+    height: 0.7608695652173914rem;
+    margin-left: 0.32608695652173914rem;
+    vertical-align: -5%
+}
+.box7_tit span{
+    display: inline-block
+}
+.box7_con{
+    width: 15.543478260869565rem;
+    height: 4.304347826086956rem;
+    border:3px solid rgba(130,81,33,0.09);
+    margin: 0 auto;
+    margin-top: 0.4782608695652174rem;
+    position: relative;
+}
+.box7_con img{width: 2.4782608695652173rem;height: 4.934782608695652rem }
+.box7_min{
+    width: 9.717391304347826rem;
+    height: 3.0217391304347827rem;
+    margin-top: 0.6739130434782609rem;
+    margin-left: 0.7608695652173914rem;
+}
+.box7_num{
+    background: url("//img.hzshuangmei.com/m/bbqb/box7_num.png") no-repeat;
+    background-size: 100%;
+    width: 0.391304347826087rem;
+    height: 0.3695652173913043rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.32608695652173914rem;
+    color:rgb(249,249,249);
+    font-family: "Alibaba-PuHuiTi-Regular";
+    font-size: 0.32608695652173914rem;
+    vertical-align: 18%;
+}
+.box7_min li{
+    font-family: "Alibaba-PuHuiTi-Regular";
+    width: 4.782608695652174rem;
+    font-size: 0.43478260869565216rem;
+    color: rgb(82,171,200);
+    float: left;
+    margin-right: 0rem;
+    line-height: 1.0434782608695652rem;
+}
+.box7_min li:nth-of-type(2n){
+    margin-right: 0rem;
+}
+.box7_min li a{
+    color: rgb(82,171,200);
+    margin-left: 0.32608695652173914rem;
+}
+.box7_ren{
+    position: absolute;
+    top: -0.30434782608695654rem;
+    right: 0.6521739130434783rem;
+}
+.box7_btn{
+    width: 3.608695652173913rem;
+    height: 0.9782608695652174rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box7_btn.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 3.891304347826087rem;
+    right: 0.2608695652173913rem;
+}
+.box7_btn span{
+    padding-left: 0.6086956521739131rem;
+    height: 3.4782608695652173rem;
+    line-height: 0.7608695652173914rem;
+    font-size: 0.41304347826086957rem;
+    vertical-align: 10%
+}
+.box8{
+    background-color: rgb(249,249,249);
+    overflow: hidden;
+    width: 100%;
+}
+.box8_img{
+    text-align: center;
+    width: 16rem;
+    height: 11rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.1956521739130435rem;
+}
+.box8_btn{
+    width: 5.391304347826087rem;
+    height: 1.4782608695652173rem;
+    background: url(//img.hzshuangmei.com/m/bbqb/box8_btn.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.6956521739130435rem;
+    margin-bottom: 1.9565217391304348rem;
+}
+.box8_btn span{
+    padding-left: 0.9565217391304348rem;
+    height: 1.2391304347826086rem;
+    line-height: 1.2391304347826086rem;
+}
+.zx{
+    animation: myfirst 1s infinite;
+}
+@keyframes myfirst {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
