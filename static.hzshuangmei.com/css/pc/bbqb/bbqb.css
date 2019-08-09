@@ -38,11 +38,7 @@ body {
     src: url("//css.hzshuangmei.com/fonts/bbqb/arialmt.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/bbqb/arialmt.woff") format("woff"), url("//css.hzshuangmei.com/fonts/bbqb/arialmt.svg") format("svg");
 }
 
-._w1400{ width: 1440px; margin: 0 auto}
-._bone {  min-width: 1440px;  }
-.main{ background-color: white; padding: 0px;}
-.banner{ width: 100%;  position: relative;}
-.banner a img { width: 100%;  min-width: 1440px;  }
+
 
 ._w1400{ width: 1440px; margin: 0 auto}
 ._bone {  min-width: 1440px;  }
