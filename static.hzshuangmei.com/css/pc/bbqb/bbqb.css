@@ -49,17 +49,15 @@ body {
 .box1{margin-top: 127px; overflow: hidden;}
 .box1_con{width: 1163px;margin: 0 auto;margin-top: 53px;text-align: center;}
 .box1_tit{ text-align: center}
-.box1_en_tit{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg.png") no-repeat center;
-    width: 543px;  text-align: center;  height: 38px; margin: 0 auto;  margin-top: 25px; background-size:100%}
-
+.short_tit522{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg522.png") no-repeat center; width: 522px;}
+.short_tit543{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg543.png") no-repeat center; width: 543px;}
+.short_tit655{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg655.png") no-repeat center; width: 655px;}
+.short_tit587{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg587.png") no-repeat center; width: 587px;}
 .en_tit_bg {
-    background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg.png") no-repeat center;
-    width: 543px;
     text-align: center;
-    height: 15px;
     margin: 0 auto;
     margin-top: 26px;
-	background-size:100%
+    background-size:100%
 }
 .tit{ font-family: "Alibaba-PuHuiTi-Regular"; font-size: 60px; color: rgb(82,171,200); line-height: 60px;}
 .tit span{ font-family: "Alibaba-PuHuiTi-Medium"; color: rgb(250,140,171)}
