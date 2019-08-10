@@ -63,21 +63,14 @@ body {
 .box1_tit{
     text-align: center
 }
-.box1_en_tit{
-    background: url(//img.hzshuangmei.com/m/bbqb/entit_bg.png) no-repeat center;
-    background-size: 100%;
-    width: 6.695652173913044rem;
-    text-align: center;
-    height: 0.4782608695652174rem;
-    margin: 0 auto;
-    margin-top: 0.2608695652173913rem;
-}
+.short_tit301{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg301.png") no-repeat center; width: 301px;}
+.short_tit308{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg308.png") no-repeat center; width: 308px;}
+.short_tit332{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg332.png") no-repeat center; width: 332px;}
+.short_tit396{background: url("//img.hzshuangmei.com/pc/bbqb/entit_bg396.png") no-repeat center; width: 396px;}
+
 .en_tit_bg {
-    background: url(//img.hzshuangmei.com/m/bbqb/entit2_bg.png) no-repeat center;
     background-size: 100%;
-    width: 8.26086956521739rem;
     text-align: center;
-    height: 0.4782608695652174rem;
     margin: 0 auto;
     margin-top: 0.2608695652173913rem;
 }
@@ -382,15 +375,6 @@ body {
     margin: 0 auto;
     margin-top: 1.5869565217391304rem;
     overflow: hidden;
-}
-.box4_en_tit{
-    background: url(//img.hzshuangmei.com/m/bbqb/entit3_bg.png) no-repeat center;
-    background-size: 100%;
-    width: 8.608695652173912rem;
-    text-align: center;
-    height: 0.5rem;
-    margin: 0 auto;
-    margin-top: 0.30434782608695654rem;
 }
 .box4_tit{
     margin-top: 0.9130434782608695rem;
