@@ -312,8 +312,8 @@ body {
 .box7_btn{width: 281px;height: 73px;background: url("//img.hzshuangmei.com/pc/bbqb/box7_btn.png") no-repeat;position: absolute;top: 251px;right: 50px;}
 .box7_btn span{padding-left: 51px;height: 160px;line-height: 38px;font-size: 30px;}
 
-.box8{ background-color: rgb(249,249,249);overflow: hidden; width: 100%;}
-.box8_img{text-align: center;width: 1864px;height: 1281px;margin: 0 auto;display: block;margin-top: 71px;}
+.box8{ background-color: rgb(249,249,249);overflow: hidden; width: 100%; padding:0px 28px; box-sizing: border-box;}
+.box8_img{text-align: center;width: 100%;height: auto; min-width:1400px; margin: 0 auto;display: block;margin-top: 71px;}
 .box8_btn{width: 342px;
     height: 84px;
     background: url("//img.hzshuangmei.com/pc/bbqb/box8_btn.png") no-repeat;
