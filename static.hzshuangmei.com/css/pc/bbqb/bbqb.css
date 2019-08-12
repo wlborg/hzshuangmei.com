@@ -246,10 +246,10 @@ body {
 .doc_txt ol li span{width: 7px;height: 6px;display: inline-block;background-color: white;border-radius: 50%;vertical-align: -40%;margin-right: 3px;}
 .doc_txt ol li:nth-of-type(2n){ margin-right: 0px;}
 .pos_w4{ width: 260px;}
-.wol1{width: 350px;}
-.wol2{width: 240px;}
+.wol1{width: 355px;}
+.wol2{width: 242px;}
 .wol3{width: 340px;}
-.wol4{width: 355px;}
+.wol4{width: 360px;}
 .wol1 .liw{margin-right: 5px;}
 .wol2 .liw{ margin-right: 45px;}
 .wol3 .liw{margin-right: 56px;}
