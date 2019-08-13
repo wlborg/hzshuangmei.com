@@ -136,6 +136,7 @@ body {
 .box7_swiper .swiper-pagination-bullets{bottom: 0;}
 .box7_swiper .swiper-pagination-bullet{width: 0.234667rem;height: 0.234667rem;background: rgb(176,176,176);}
 .box7_swiper .swiper-pagination-bullet-active{background: rgb(82,171,200);}
+.box7_swiper .swiper-slide img{width: 13.269333rem;height: 8.746667rem;}
 .box7 .box_zx{width: 7.701333rem;margin-top: 0.64rem;}
 .box7 .box_zx span{width: 5.824rem;}
 
