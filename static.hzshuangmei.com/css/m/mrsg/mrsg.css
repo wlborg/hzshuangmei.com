@@ -43,7 +43,7 @@ body {
 .box_title_z span{font-family:"Alibaba-PuHuiTi-Medium";color: rgb(250,140,171); }
 .box_title_z span img{width: 0.576rem;height: 0.874667rem;vertical-align: -16%;margin-right: 0.32rem;}
 .box_title_e{width: 6.037333rem;margin: 0 auto; text-align: center;font-size: 0.256rem;color: rgb(82,171,200);font-family: "arialmt";
-    background: url("//img.hzshuangmei.com/m/mrsg/box1_ti_icon.png")no-repeat top;background-size: 100%;line-height: 0.256rem;margin-top: 0.341333rem;}
+    background: url("//img.hzshuangmei.com/m/mrsg/box1_ti_icon.png?v=0.1")no-repeat top;background-size: 100%;line-height: 0.256rem;margin-top: 0.341333rem;}
 .box1_min{width: 14.72rem;margin: 0 auto;margin-top: 0.64rem;position: relative;}
 .box1_min img{width: 14.72rem;height: 4.074667rem;}
 .box1_min p{width: 12.693333rem;position: absolute;top:0.554667rem;left: 0.96rem;font-size: 0.426667rem;line-height: 1.002667rem;font-family: "Alibaba-PuHuiTi-Regular";color: rgb(102,102,102);text-align: justify;}
