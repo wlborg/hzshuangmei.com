@@ -132,7 +132,7 @@ body {
 
 .box7{width: 100%;overflow: hidden;margin-top: 1.066667rem;}
 .box7_min{width: 13.269333rem;margin: 0 auto;margin-top: 1.493333rem;}
-.box7_swiper{padding-bottom: 1.386667rem;}
+.box7_swiper{padding-bottom: 1.386667rem;line-height: 0;}
 .box7_swiper .swiper-pagination-bullets{bottom: 0;}
 .box7_swiper .swiper-pagination-bullet{width: 0.234667rem;height: 0.234667rem;background: rgb(176,176,176);}
 .box7_swiper .swiper-pagination-bullet-active{background: rgb(82,171,200);}
