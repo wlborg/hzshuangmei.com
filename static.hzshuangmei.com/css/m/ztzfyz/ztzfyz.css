@@ -146,7 +146,7 @@ body {
 .box8 ul{width: 10.048rem;margin: 0 auto;margin-top: 0.853333rem;}
 .box8 ul li{width: 100%;height: 1.066667rem;background: rgb(248,252,255);border-radius: 0.106667rem;font-size: 0.597333rem;color: rgb(119,120,120);padding-left: 1.152rem;line-height: 1.066667rem;
     margin-bottom: 0.362667rem;box-sizing: border-box;font-family: "DFPYuanW5";}
-.box8 ul li a{display:none;color:rgb(119,120,120);}
+.box8 ul li a{display:block;color:rgb(119,120,120);}
 
 .zx{animation: myfirst 1s infinite;}
 
