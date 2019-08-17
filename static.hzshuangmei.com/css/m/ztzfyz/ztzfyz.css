@@ -95,8 +95,8 @@ body {
 .box3_min_right{position: absolute;top:1.514667rem;left:9.5rem;}
 .box3_min_ca{margin-bottom: 0.682667rem;}
 .box3_min_ca p:nth-of-type(1){width: 2.666667rem;height: 0.832rem;background:rgb(255,170,176);font-size: 0.426667rem;color: rgb(255,255,255);font-family: "DFPYuanW5";
-    text-align: center;line-height: 0.832rem;border-radius: 0.106667rem;}
-.box3_min_ca p:nth-of-type(2){font-size: 0.426667rem;color: rgb(119,120,120);font-family: "DFPYuanW5";line-height: 0.426667rem;margin-top: 0.149333rem;}
+    text-align: center;line-height: 0.92rem;border-radius: 0.106667rem;}
+.box3_min_ca p:nth-of-type(2){font-size: 0.426667rem;color: rgb(119,120,120);font-family: "DFPYuanW5";line-height: 0.426667rem;margin-top: 0.2rem;}
 .box3 .box_zx{width: 5.717333rem;margin-top: 1.002667rem;}
 .box3 .box_zx span{width: 4.8rem;}
 
