@@ -388,13 +388,11 @@ body {
 }
 .box4_right .line{
     width: 2.3260869565217392rem;
-    height: 0.043478260869565216rem;
-    background-color: rgb(82,171,200);
     display: inline-block;
-    vertical-align: 20%;
-    /* margin-left: 0rem;
-     */
+    border-bottom: 0.043478260869565216rem solid rgb(82,171,200);
+    vertical-align: 40%;
 }
+
 .box4_right .en_item{
     width: 0.8913043478260869rem;
     height: 0.34782608695652173rem;
