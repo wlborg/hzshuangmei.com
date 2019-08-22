@@ -84,7 +84,7 @@ body {
 
 
 .box1_con{
-    width: 14.23913043478261rem;
+    width: 14.26086956521739rem;
     margin: 0 auto;
     text-align: center;
     margin-top: 0.5217391304347826rem;
@@ -236,7 +236,7 @@ body {
     height: 0.30434782608695654rem;
 }
 .box2_swiper .swiper-pagination-bullets .swiper-pagination-bullet{
-    margin: 0.1956521739130435rem 0.5217391304347826rem;
+    margin: 0.10869565217391304rem 0.21739130434782608rem;
 }
 .box2_swiper .swiper-pagination-bullet-active{
     background: rgb(108,202,227);
@@ -304,9 +304,10 @@ body {
     right: 1.6304347826086956rem;
 }
 .jin .box3_p2{
-    margin-left: 0.6304347826086957rem;
-    width: 3.130434782608696rem;
+    margin-left: 0.5652173913043478rem;
+    width: 3.5434782608695654rem;
 }
+
 .la .box3_p2{
     margin-left: 0.782608695652174rem;
     width: 3.108695652173913rem;
@@ -390,8 +391,10 @@ body {
     width: 2.3260869565217392rem;
     display: inline-block;
     border-bottom: 0.043478260869565216rem solid rgb(82,171,200);
-    vertical-align: 40%;
+    line-height: 0.21739130434782608rem;
+    margin-right: 0.10869565217391304rem;
 }
+
 
 .box4_right .en_item{
     width: 0.8913043478260869rem;
@@ -512,18 +515,18 @@ body {
     width: 1.8043478260869565rem;
 }
 .pro_widtwo{
-    width: 6.5rem;
+    width: 7.5rem;
     overflow: hidden;
 }
 .pro_widtwo li{
-    width: 3.108695652173913rem;
+    width: 3.369565217391304rem;
 }
 .pro_widthree{
-    width: 6.456521739130435rem;
+    width: 7.826086956521739rem;
     overflow: hidden;
 }
 .pro_widthree li{
-    width: 3.0869565217391304rem;
+    width: 3.6956521739130435rem;
 }
 .box5_btn span{
     padding-left: 0.5652173913043478rem;
