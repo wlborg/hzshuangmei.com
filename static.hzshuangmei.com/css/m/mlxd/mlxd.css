@@ -53,13 +53,6 @@ body {
     background: url("//img.hzshuangmei.com/m/mlxd/box1_bg.jpg");
     background-size: 100%;
     height: 21.03rem;
-    padding-top: 1.108695652173913rem;
-}
-.box1{
-    overflow: hidden;
-    width: 100%;
-    background: url("//img.hzshuangmei.com/m/mlxd/box1_bg.jpg");
-    height: 21.434782608695652rem;
 }
 .box1 .tit{
     margin-top: 1.108695652173913rem
@@ -78,7 +71,7 @@ body {
 .en_tit {
     background: url("//img.hzshuangmei.com/m/mlxd/en_tit_bg.png") no-repeat center;
     background-size: 100%;
-    width: 6.521739130434782rem;
+    width: 6.956521739130435rem;
     text-align: center;
     height: 0.2608695652173913rem;
     margin: 0 auto;
