@@ -36,7 +36,7 @@ body {
     src: url("//css.hzshuangmei.com/fonts/mlxd/arialmt.ttf") format("truetype"),url("//css.hzshuangmei.com/fonts/mlxd/arialmt.woff") format("woff"), url("//css.hzshuangmei.com/fonts/mlxd/arialmt.svg") format("svg");
 }
 .main{
-    width: 16.304347826086957rem;
+    width: 16rem;
     margin: 0 auto;
 }
 .banner a{
@@ -226,7 +226,6 @@ body {
 }
 .box2_swiper .swiper-pagination-bullets{
     text-align: center;
-    width: 0.43478260869565216rem;
     top: 6.956521739130435rem;
 }
 .box2_swiper .swiper-pagination-bullet{
@@ -267,7 +266,6 @@ body {
 .box3_p2{
     font-family: "Alibaba-PuHuiTi-Regular";
     font-size: 0.43478260869565216rem;
-    width: 3.4565217391304346rem;
     margin: 0 auto;
     margin-top: 0.30434782608695654rem;
     text-align: left
@@ -303,22 +301,28 @@ body {
     right: 1.6304347826086956rem;
 }
 .jin .box3_p2{
-    margin-left: 0.5rem
+    margin-left: 0.6304347826086957rem;
+    width: 3.130434782608696rem;
 }
 .la .box3_p2{
-    margin-left: 0.5869565217391305rem
+    margin-left: 0.782608695652174rem;
+    width: 3.108695652173913rem;
 }
 .neng .box3_p2{
-    margin-left: 0.8043478260869565rem
+    margin-left: 0.8260869565217391rem;
+    width: 3.0869565217391304rem;
 }
 .ti .box3_p2{
-    margin-left: 0.7608695652173914rem
+    margin-left: 0.7608695652173914rem;
+    width: 3.0869565217391304rem;
 }
 .xi .box3_p2{
-    margin-left: 0.5434782608695652rem
+    margin-left: 0.5434782608695652rem;
+    width: 3.4565217391304346rem;
 }
 .bai .box3_p2{
-    margin-left: 0.5869565217391305rem
+    margin-left: 0.782608695652174rem;
+    width: 3.108695652173913rem;
 }
 .box3_btn{
     background: url("//img.hzshuangmei.com/m/mlxd/box3_btn.png") no-repeat;
