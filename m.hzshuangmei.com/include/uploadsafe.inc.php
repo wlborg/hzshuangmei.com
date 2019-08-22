@@ -30,6 +30,7 @@ foreach($_FILES as $_key=>$_value)
     ${$_key.'_name'} = $_FILES[$_key]['name'];
     ${$_key.'_type'} = $_FILES[$_key]['type'] = preg_replace('#[^0-9a-z\./]#i', '', $_FILES[$_key]['type']);
     ${$_key.'_size'} = $_FILES[$_key]['size'] = preg_replace('#[^0-9]#','',$_FILES[$_key]['size']);
+
     if(!empty(${$_key.'_name'}) && (preg_match("#\.(".$cfg_not_allowall.")$#i",${$_key.'_name'}) || !preg_match("#\.#", ${$_key.'_name'})) )
     {
         if(!defined('DEDEADMIN'))
@@ -41,10 +42,27 @@ foreach($_FILES as $_key=>$_value)
     {
         ${$_key.'_size'} = @filesize($$_key);
     }
-    
+   $imtypes = array("image/pjpeg", "image/jpeg", "image/gif", "image/png", "image/xpng", "image/wbmp", "image/bmp");
+
+    if(in_array(strtolower(trim(${$_key.'_type'})), $imtypes)){
+
+        $image_dd = @getimagesize($$_key); if($image_dd == false){
+
+            continue;
+
+        }
+
+        if (!is_array($image_dd)) {
+
+            exit('Upload filetype not allow !');
+
+        }
+
+    }
+
     $imtypes = array
     (
-        "image/pjpeg", "image/jpeg", "image/gif", "image/png", 
+        "image/pjpeg", "image/jpeg", "image/gif", "image/png",
         "image/xpng", "image/wbmp", "image/bmp"
     );
 
