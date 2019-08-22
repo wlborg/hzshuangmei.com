@@ -631,12 +631,12 @@ body {
 .box7_min li:nth-of-type(4){
     margin-left:2.347826086956522rem;
 }
-.box7_min .box7_link{
-    width: 0.5217391304347826rem;
-    height: 0.043478260869565216rem;
+.box7_min .box7_link {
+    width: .5217391304347826rem;
+    height: .043478260869565216rem;
     background-color: rgb(252,153,182);
     display: inline-block;
-    vertical-align: 20%
+    vertical-align: -50%;
 }
 .box7_min .box7_p1{
     font-family: "Alibaba-PuHuiTi-Regular";
@@ -658,13 +658,13 @@ body {
 .box7_wid4{
     width: 3.347826086956522rem;
 }
-.box7_btn{
-    background: url("//img.hzshuangmei.com/m/mlxd/box7_btn.png") no-repeat;
+.box7_btn {
+    background: url(//img.hzshuangmei.com/m/mlxd/xbox7_btn.png.pagespeed.ic.O1fBh2nI1W.png) no-repeat;
     background-size: 100%;
-    width:5.369565217391305rem;
-    height:2.3043478260869565rem;
+    width: 5.369565217391305rem;
+    height: 2.3043478260869565rem;
     margin: 0 auto;
-    margin-top: 1.1304347826086956rem;
+    margin-top: 0.5rem;
 }
 .box7_btn span{
     padding-left: 0.717391304347826rem;
