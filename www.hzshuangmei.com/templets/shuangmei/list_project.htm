@@ -148,7 +148,7 @@ $ntime = time();
             <div class="clearFix">
                 {dede:list pagesize="12" titlelen="120" orderby="weight" orderway="desc"}
 
-                <a href="[field:arcurl/]" title="[field:title/]" target="_blank">
+                <a href="/kst.html" title="[field:title/]" target="_blank">
                     <img src="[field:picname function='replaceurl(@me)/]" alt="[field:fulltitle/]"/>
                     <div>
                         <p>
@@ -174,5 +174,10 @@ $ntime = time();
 </body>
 {dede:include filename="_script.htm"/}
 {dede:include filename="_list_Factor.htm"/}
+<script>
+    $(function () {
+        window.location='/kst.html';
+    })
+</script>
 <script src="{dede:global.cfg_jspath/}/pc/list_project.js?v=2019040813"></script>
 </html>
