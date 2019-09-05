@@ -75,7 +75,7 @@ body {
     /* padding-left: 0.021739130434782608rem;
      */
     margin-left: 0.043478260869565216rem;
-    width: 9.608695652173912rem;
+    width: 9.7rem;
 }
 .small_tit{
     font-family: "Alibaba-PuHuiTi-Medium";
@@ -757,8 +757,7 @@ body {
     line-height: 0.1956521739130435rem;
 }
 .box7 .mtop{
-    /* line-height: 1.108695652173913rem;
-     */
+    width: 7.4rem;
     margin-top: 0.9130434782608695rem;
 }
 .box7 .big_tit span{
