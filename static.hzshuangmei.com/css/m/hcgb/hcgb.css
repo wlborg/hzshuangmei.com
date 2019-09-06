@@ -189,7 +189,7 @@ body {
     background: url("//img.hzshuangmei.com/m/hcgb/box2_bg.png") no-repeat center;
     background-size: 100%;
     width: 100%;
-    height: 23.189rem;
+    height: 23.6rem;
     overflow: hidden;
 }
 .box2 .box1_con{
@@ -267,7 +267,7 @@ body {
     background: url("//img.hzshuangmei.com/m/hcgb/box2_ystx.png") no-repeat center;
     background-size: 100%;
     width:15.869565217391305rem;
-    height: 3.630434782608696rem;
+    height: 3.56rem;
     margin: 0 auto;
     font-family: "Alibaba-PuHuiTi-Regular";
     font-size: 0.43478260869565216rem;
@@ -331,6 +331,8 @@ body {
     position: relative;
 }
 .box3_min1_con img{
+    width: 14.25rem;
+    height: 3.73rem;
     margin-top: 0.9565217391304348rem;
 }
 .box3_ul{
@@ -375,12 +377,18 @@ body {
     margin: 0 auto;
     margin-top: -0.6956521739130435rem;
 }
+.box3_min2_tit img{
+    width: 7.06rem;
+    height: 2.176rem;
+}
 .box3_min2_con{
     width: 14.521739130434783rem;
     margin: 0 auto;
     position: relative;
 }
 .box3_min2_con img{
+    width: 14.25rem;
+    height: 3.73rem;
     margin-top: 0.6521739130434783rem;
 }
 .box3_min2_con p{
@@ -402,7 +410,7 @@ body {
     background: url("//img.hzshuangmei.com/m/hcgb/box4_bg.png") no-repeat center;
     background-size: 100%;
     width: 100%;
-    height: 37.034rem;
+    height: 37rem;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -644,6 +652,7 @@ body {
     position: absolute;
     top: 2.5217391304347827rem;
     left: 0.43478260869565216rem;
+    z-index: 1000;
 }
 .tab li{
     width: 3.0869565217391304rem;
@@ -788,63 +797,63 @@ body {
     font-size: 0.6521739130434783rem;
     line-height: 0.6521739130434783rem;
     color: rgb(15,160,191);
-    top: 6.282608695652174rem;
+    top: 6.1rem;
     left: 5.934782608695652rem;
 }
 .box7_msg2{
     font-size: 0.34782608695652173rem;
     line-height: 0.34782608695652173rem;
     color: #94d8e9;
-    top: 8rem;
+    top: 7.89rem;
     left: 4.478260869565218rem;
 }
 .box7_msg3{
     font-size: 0.5217391304347826rem;
     line-height: 0.5217391304347826rem;
     color: rgb(218,101,122);
-    top: 8.565217391304348rem;
+    top: 8.35rem;
     left: 9.391304347826088rem;
 }
 .box7_msg4{
     font-size: 0.6521739130434783rem;
     line-height: 0.6521739130434783rem;
     color: rgb(15,160,191);
-    top: 9.956521739130435rem;
+    top: 9.68rem;
     left: 1.565217391304348rem;
 }
 .box7_msg5{
     font-size: 0.45652173913043476rem;
     line-height: 0.45652173913043476rem;
     color: #94d8e9;
-    top: 10.782608695652174rem;
+    top: 10.5rem;
     left: 10.630434782608695rem;
 }
 .box7_msg6{
     font-size: 0.34782608695652173rem;
     line-height: 0.34782608695652173rem;
     color: #94d8e9;
-    top: 12.065217391304348rem;
+    top: 11.87rem;
     left: 1.7608695652173914rem;
 }
 .box7_msg7{
     font-size: 0.782608695652174rem;
     line-height: 0.782608695652174rem;
     color: rgb(218,101,122);
-    top: 12.173913043478262rem;
+    top: 11.85rem;
     left: 6.8478260869565215rem;
 }
 .box7_msg8{
     font-size: 0.5217391304347826rem;
     line-height: 0.5217391304347826rem;
     color: rgb(15,160,191);
-    top: 13.978260869565217rem;
+    top: 13.7rem;
     left: 1.391304347826087rem;
 }
 .box7_msg9{
     font-size: 0.6521739130434783rem;
     line-height: 0.6521739130434783rem;
     color: rgb(15,160,191);
-    top: 14.826086956521738rem;
+    top: 14.45rem;
     left: 9.847826086956522rem;
 }
 .box7 .box_btn{
