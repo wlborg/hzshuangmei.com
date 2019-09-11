@@ -62,7 +62,7 @@ body {
 .box2_myd .box2_myd_p1{font-size: 0.469333rem;color: rgb(14,137,177);font-family: "Alibaba-PuHuiTi-Regular";}
 .box2_myd .box2_myd_p1 img{width: 0.32rem;height: 0.341333rem;margin: 0 0.213333rem;}
 .box2_myd .box2_myd_p2{font-size: 0.469333rem;color: rgb(14,137,177);font-family: "Alibaba-PuHuiTi-Regular";}
-.box2_myd .box2_myd_p3{margin-top: 0.106667rem;}
+.box2_myd .box2_myd_p3{margin-top: 0.106667rem;line-height: 0;}
 .box2_myd .box2_myd_p3 img{width: 2.133333rem;height: 0.256rem;}         
 .box2 .box_zx{margin-top: 1.2rem;}
 .box2 .box_zx span{padding-left: 0.32rem;}
@@ -92,6 +92,7 @@ body {
 .box4_min3{position: absolute;top:17.322667rem;left:10.026667rem;}
 .box4_min4{position: absolute;top:17.322667rem;left:2.581333rem;}
 .box4_min5{position: absolute;top:10.901333rem;left:1.002667rem;}
+.box4_min5 p:nth-of-type(2){width: 4rem;}
 .box4 .box_zx{margin-top: 18.965333rem;width: 7.125333rem;}
 .box4 .box_zx img{width: 7.125333rem;}
 .box4 .box_zx span{padding-left: 0.32rem;width: 5.674667rem;}
