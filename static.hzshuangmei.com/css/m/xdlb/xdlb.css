@@ -58,11 +58,12 @@ body {
 .box2_min .box2_min_ca1>img{width: 8.448rem;height: 3.669333rem;}
 .box2_min .box2_min_ca1:nth-of-type(2)>img{width: 9.429333rem;}
 .box2_min .box2_min_ca1:nth-of-type(3)>img{width: 8.256rem;}
-.box2_myd{width: 2.517333rem;position: absolute;top:0.789333rem;right:0.64rem;text-align: center;}
+.box2_myd{width: 3rem;position: absolute;top:0.789333rem;right:0.4rem;text-align: center;}
 .box2_myd .box2_myd_p1{font-size: 0.469333rem;color: rgb(14,137,177);font-family: "Alibaba-PuHuiTi-Regular";}
 .box2_myd .box2_myd_p1 img{width: 0.32rem;height: 0.341333rem;margin: 0 0.213333rem;}
 .box2_myd .box2_myd_p2{font-size: 0.469333rem;color: rgb(14,137,177);font-family: "Alibaba-PuHuiTi-Regular";}
 .box2_myd .box2_myd_p3{margin-top: 0.106667rem;}
+.box2_myd .box2_myd_p3 img{width: 2.133333rem;height: 0.256rem;}         
 .box2 .box_zx{margin-top: 1.2rem;}
 .box2 .box_zx span{padding-left: 0.32rem;}
 
@@ -71,7 +72,7 @@ body {
 .box3_min{margin-top: 1.92rem;position: relative;}
 .box3_min>p:nth-of-type(1){font-size: 0.512rem;color: rgb(76,76,76);font-family: "Alibaba-PuHuiTi-Medium";}
 .box3_min>p:nth-of-type(1) span{width: 0.106667rem;height: 0.106667rem;background: rgb(87,189,222);border-radius: 1.066667rem;display: inline-block;vertical-align: -42%;margin: 0 0.213333rem;}
-.box3_min>p:nth-of-type(2){width: 8.533333rem;font-size: 0.426667rem;color: rgb(76,76,76);line-height: 0.853333rem;margin-top: 0.32rem;margin-left: 0.512rem; text-align: justify;font-family: "Alibaba-PuHuiTi-Regular";}
+.box3_min>p:nth-of-type(2){width: 8.533333rem;font-size: 0.426667rem;color: rgb(76,76,76);line-height: 0.853333rem;margin-top: 0.32rem;margin-left: 0.512rem; text-align: justify;font-family: "Alibaba-PuHuiTi-Regular";letter-spacing: -0.021333rem;}
 .box3_min>img{width: 6.528rem;height: 6.976rem;position: absolute;top:-0.426667rem;right:0.0rem;}
 .box3_min ul{width: 15.189333rem;margin: 0 auto; margin-top: 1.28rem;overflow: hidden;}
 .box3_min li{width: 4.949333rem;float: left;margin-right: 0.170667rem;position: relative;}
@@ -85,7 +86,7 @@ body {
     box-sizing: border-box;overflow: hidden;position: relative;}
 .box4 .box_title img{width: 10.986667rem;height: 2.368rem;}
 .box4_min1{position: absolute;top:6.037333rem;left:6.186667rem;}
-.box4_min p:nth-of-type(1){font-size: 0.768rem;color: rgb(41,160,193);font-family: "Alibaba-PuHuiTi-Medium";text-align: center;margin-left: 0.576rem;}
+.box4_min p:nth-of-type(1){font-size: 0.768rem;color: rgb(41,160,193);font-family: "Alibaba-PuHuiTi-Medium";text-align: center;margin-left: 0.576rem;letter-spacing: -0.021333rem;}
 .box4_min p:nth-of-type(2){font-size: 0.426667rem;color: rgb(24,145,183);font-family: "Alibaba-PuHuiTi-Regular";width: 3.861333rem;}
 .box4_min2{position: absolute;top:10.901333rem;left:11.669333rem;}
 .box4_min3{position: absolute;top:17.322667rem;left:10.026667rem;}
@@ -107,7 +108,7 @@ body {
 .box6 .box_title img{width: 7.978667rem;height: 2.368rem;}
 .box6_min{width: 15.274667rem;margin: 0 auto; margin-top: 1.173333rem;}
 .box6_min li{position: relative;margin-bottom: 0.384rem;}
-.box6_min li img{width: 15.274667rem;height: 3.754667rem;}
+.box6_min li img{width: 15.274667rem;height: 3.754667rem;letter-spacing: -0.021333rem;}
 .box6_min li p{width: 5.546667rem;font-size: 0.426667rem;color: rgb(77,77,77);position: absolute;top:0.938667rem;left:9.002667rem;line-height: 0.917333rem;font-family: "Alibaba-PuHuiTi-Regular";}
 .box6_min li:nth-of-type(4) p:nth-of-type(1){top:0.490667rem;left:0.469333rem;}
 .box6_min li:nth-of-type(4) p:nth-of-type(2){top:0.938667rem;left:9.386667rem;font-size: 0.704rem;color: rgb(24,145,183);line-height: 0.96rem;width: 5.44rem;}
@@ -126,6 +127,19 @@ body {
 .box7_min li p{font-size: 0.597333rem;color: rgb(255,255,255);font-family: "Alibaba-PuHuiTi-Regular";width: 5.013333rem;position: absolute;top:0.0rem;left: 1.301333rem;line-height: 1.173333rem;}
 
 
+.zx{animation: myfirst 1s infinite;}
+
+@keyframes myfirst {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 
