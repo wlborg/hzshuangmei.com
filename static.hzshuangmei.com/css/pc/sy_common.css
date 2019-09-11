@@ -713,6 +713,7 @@ footer .middle {
     border-left: 1px solid #5d819a;
 }
 footer .right {
+	width:570px;
     float: left;
     margin-top: 120px;
     margin-left: 60px;
