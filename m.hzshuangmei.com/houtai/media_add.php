@@ -23,7 +23,7 @@ if($dopost=="upload")
     $uptime = time();
     $adminid = $cuserLogin->getUserID();
     $width = $height = '';
-    
+
     for($i=0; $i<=40; $i++)
     {
         if(isset(${"upfile".$i}) && is_uploaded_file(${"upfile".$i}))
@@ -69,9 +69,9 @@ if($dopost=="upload")
               if (preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename))){
 		ShowMsg("你指定的文件名被系统禁止！",'java script:;');
 		exit();
-		
+
              }
-            $fullfilename = $cfg_basedir.$filename;
+           if (preg_match('#\.(php|pl|cgi|asp|aspx|jsp|php5|php4|php3|shtm|shtml)[^a-zA-Z0-9]+$#i', trim($filename))) { ShowMsg("你指定的文件名被系统禁止！",'java script:;'); exit(); } $fullfilename = $cfg_basedir.$filename;
             if($mediatype==1)
             {
                 @move_uploaded_file(${"upfile".$i}, $fullfilename);
