@@ -884,33 +884,39 @@ body #LXB_CONTAINER.lxb-container-mobile-4 .lxb-cb-input-feedback {
 }
 #divbg {
     width: 13rem !important;
-    height: 12.4rem !important;
+    height: 12.3rem !important;
 
     background-size: 100%;
 }
 #div19 {
-   top: 10.9rem!important;
+    top: 10.5rem!important;
     left: 6.84rem!important;
     z-index: 2;
+
     width: 5.63rem!important;
     height: 1.2rem!important;
+
     font-size: .78rem!important;
     line-height: 1.13rem!important;
 }
 #div1 {
-   top: 10.9rem!important;
+    top: 10.5rem!important;
     left: 1rem!important;
     z-index: 2;
+
     width: 4.83rem!important;
     height: 1.2rem!important;
+
     line-height: 0!important;
 }
 #div23 {
-       top: .3rem !important;
-    left: 12rem !important;
+    top: .3rem !important;
+    left: 11.4rem !important;
     z-index: 2;
+
     width: 1rem !important;
     height: .99rem !important;
+
     line-height: 0 !important;
 }
 .relateporject .contents {
