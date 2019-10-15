@@ -88,7 +88,7 @@ a {
     left: 0;
     width: 4.675rem;
     height: 1.35rem;
-    font-size: 1.05rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     text-align: center;
     color: #4d286f;
@@ -874,8 +874,8 @@ a {
 }
 .consult-like {
     position: absolute;
-    top: 0.45rem;
-    right: 1.325rem;
+    top: 8.45rem;
+    right: 7.7rem;
     width: 6.25rem;
     height: 1.5rem;
     border-radius: .075rem;
