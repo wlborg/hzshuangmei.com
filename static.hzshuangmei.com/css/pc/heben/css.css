@@ -140,8 +140,8 @@ img {
     background: #c43838;
 }
 .part1 .contain_1 {
-    margin-top: -1px; 
-
+    margin-top: -1px;
+    height: 482px;
     background: url("//img.hzshuangmei.com/pc/heben/bg_part1_top.jpg") center top no-repeat;
 }
 .part1 .contain_1 p {
@@ -221,7 +221,7 @@ img {
 
     border-top: 66px solid transparent;
     border-right: 91px solid transparent;
-    border-bottom: 66px solid #fff; 
+    border-bottom: 63px solid #fff;
     border-left: 91px solid #fff;
 }
 .part1 .contain_2 {
