@@ -8,6 +8,15 @@ html {
     margin: 0;
     padding: 0
 }
+.aq-r div p {
+    font-size: .5rem;
+    line-height: .6rem;
+}
+.aq-r div {
+    float: right;
+    padding-top: .075rem;
+    margin-right: 2.8rem;
+}
 
 h1,
 h2,
@@ -502,7 +511,7 @@ a {
 .aq-r span {
     font-size: .55rem;
     float: right;
-    margin-right: .25rem
+    margin-right: 1.65rem
 }
 
 .aq-r strong,
@@ -530,7 +539,7 @@ a {
 .k-r div {
     float: right;
     padding-top: .075rem;
-    margin-right: .25rem
+    margin-right: 0.75rem
 }
 
 .k-r div p {
@@ -812,7 +821,7 @@ a {
     font-size: .5rem;
     line-height: .65rem;
     color: #454648;
-    padding-top: .25rem
+    padding-top: .25rem;
 }
 
 .zj-yy {
@@ -826,8 +835,8 @@ a {
     font-size: 1rem;
     color: #ffa722;
     position: absolute;
-    top: 3.75rem;
-    left: 4.25rem;
+    top: 5.75rem;
+    left: 6.25rem;
     line-height: 1
 }
 
