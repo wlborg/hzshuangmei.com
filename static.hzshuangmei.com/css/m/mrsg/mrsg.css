@@ -88,7 +88,7 @@ body {
 .box3 ul li:nth-of-type(2n) .box3_li_min{position: absolute;top:0.213333rem;left:0.426667rem;}
 .box3_li_min p:nth-of-type(1){font-size: 0.554667rem;color: rgb(102,102,102);font-family:"Alibaba-PuHuiTi-Medium";}
 .box3_li_min p:nth-of-type(2){font-size: 0.384rem;width: 4.053333rem;color: rgb(102,102,102);line-height: 0.512rem;}
-.box3 ul li:nth-of-type(3) .box3_li_min p:nth-of-type(2){width: 4.6rem;}
+.box3 ul li:nth-of-type(3) .box3_li_min p:nth-of-type(2){width: 4.5rem;}
 .box3 .box_zx{width: 8.490667rem;margin-top: 0.76rem;}
 .box3 .box_zx span{width: 6.613333rem;}
 
