@@ -67,6 +67,7 @@ body {
 
     border-radius: 10px;
     background-color: #9c3921;
+    text-align: center;
 }
 .zszx::after {
     position: absolute;
@@ -87,7 +88,7 @@ body {
 /*.m1zx::after{*/
 /*}*/
 .zszx span {
-    margin-left: 27px;
+   /* margin-left: 27px;*/
     /* margin-left: 109px; */
 }
 .m5zx span {
@@ -530,6 +531,7 @@ body {
     line-height: 29px;
 
     color: #f6e2c3;
+    text-align: center;
 }.m6ys div p:nth-child(2) {
 
     margin-top: 14px;

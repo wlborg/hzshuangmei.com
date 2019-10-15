@@ -318,6 +318,9 @@
 .part4 .txt-wrap .title p:nth-child(1) {
     margin-bottom: -5px;
 }
+.part4 .txt-wrap .title p:nth-child(1) a{
+   color: #5ebcb5
+}
 .part4 .txt-con .txt-item {
     margin-top: 26px;
 

@@ -3,12 +3,12 @@
         var timer = null
             //  检查dom是否执行完成
         function check() {
-            var dom = document.getElementById('div36')
+            var dom = document.getElementById('div2')
             if(dom) {
                   $("#k_s_ol_inviteWin").css("margin-left","-300px");
                    $("#k_s_ol_inviteWin").css("margin-top","-192.5px");
                   // 点击稍后咨询按钮隐藏，12秒后出现
-                 $(document).on("click","#div3",function(){
+                 $(document).on("click","#div2",function(){
                     $("#k_s_ol_inviteWin").attr("id","kReomve");
                      TwShow();
 
