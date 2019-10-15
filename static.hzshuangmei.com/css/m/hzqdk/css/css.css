@@ -403,7 +403,6 @@ body {
 }
 
 .part6 {
-    height: 648px;
     margin-bottom: .9rem;
 }
 
@@ -419,7 +418,7 @@ body {
 .part6 .main {
     position: relative;
 
-    height: 366px;
+    height: 1022px;
 }
 
 .part6 .main p {
