@@ -9,6 +9,9 @@ html {
     padding: 0;
     margin: 0;
 }
+.main3arc div:nth-child(1) {
+    padding-left: 38px;
+}
 
 h1,
 h2,

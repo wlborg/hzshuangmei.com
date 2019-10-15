@@ -431,7 +431,7 @@ body {
 .m7right {
     position: absolute;
     top: 6.075rem;
-    right: 0;
+    right: 175px;
 }
 .m7right > :first-child {
     position: absolute;
