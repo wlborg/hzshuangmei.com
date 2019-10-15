@@ -77,7 +77,7 @@ img {
     color: #5b598b;
     text-align: left;
     border-bottom: 0.05rem solid #b8b7c9;
-    background: url("https://img.hzshuangmei.com/m/longbijiage/bg_part1_title-h2.jpg") right center no-repeat;
+    background: url("https://img.hzshuangmei.com/m/longbijiage/bg_part1_title-h2.jpg") right bottom no-repeat;
     background-size: 3.75rem 1.4rem; }
 .part1 .main ul {
   position: relative;
@@ -543,8 +543,8 @@ img {
           margin-top: -0.4rem; }
       .part6 .main .doctor .discrib {
         float: right;
-        width: 13.5rem;
-        height: 8.25rem;
+        width: 10.13rem;
+        height: 7.06rem;
         margin-top: 0.15rem;
         background: #5b598b; }
         .part6 .main .doctor .discrib p {
@@ -581,8 +581,8 @@ img {
           float: left;
           width: 3.05rem;
           height: 0.75rem;
-          margin-left: 0.625rem;
-          margin-top: 0.6rem;
+          margin-left: 1rem;
+          margin-top: 3rem;
           box-shadow: 0 0 0.1rem 0.1rem #4f456e; }
           .part6 .main .doctor .discrib a .click_xq {
             margin-left: 0;
