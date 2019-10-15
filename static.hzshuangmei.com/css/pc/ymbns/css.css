@@ -681,7 +681,7 @@ button, input, select, textarea {
 
 .like-arc {
     width: 509px;
-    height: 609px;
+    height: 579px;
     border: 1px solid #68a4a1;
     float: right;
     margin-top: 77px;
@@ -689,15 +689,15 @@ button, input, select, textarea {
 }
 
 .arc-in {
-    width: 423px;
-    height: 546px;
+    width: 421px;
+    height: 575px;
     background: url(//img.hzshuangmei.com/pc/ymbns/images/likebg.jpg) top center no-repeat;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     padding: 34px 52px 0 36px;
     color: #454648;
-    font-size: 18px
+    font-size: 18px;
 }
 
 .arc-in h3 {
@@ -737,8 +737,8 @@ button, input, select, textarea {
     width: 305px;
     height: 73px;
     border-radius: 5px;
-    bottom: -40px;
-    left: 110px
+    bottom: 250px;
+    left: 110px;
 }
 
 .consult-like span {
