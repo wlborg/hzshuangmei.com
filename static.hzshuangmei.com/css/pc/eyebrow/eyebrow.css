@@ -15,6 +15,9 @@ img {
 .po {
 	position: relative;
 }
+.inline_keywords{
+    color:white;
+}
 /*公共样式结束*/
 
 /*banner开始*/
