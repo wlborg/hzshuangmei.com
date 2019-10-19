@@ -600,6 +600,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 .part_Four {
     /* height: 32.96rem; */
     background: url(//img.hzshuangmei.com/m/rlbls/part_Four_banner.jpg) no-repeat center;
+	padding-bottom: 3rem;
 }
 .part_Four>section>img:nth-of-type(1) {
     width: 2.24rem;
@@ -751,10 +752,10 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     top: 19.456rem;
     left: 1.38667rem;
 }
-.part_Four>section>p:nth-of-type(1){color: rgb(164,150,160);font-size: 0.64rem;top: 21.14133rem;left: 1.024rem;}
+.part_Four>section>p:nth-of-type(1){color: rgb(164,150,160);font-size: 0.54rem;top: 21.14133rem;left: 1.024rem;}
 .part_Four>section>p:nth-of-type(2){
     top: 21.14133rem;
-    left: 3.776rem;
+    left: 4.4rem;
 }
 .part_Four_icon2{
     width: 3.43467rem;
@@ -765,9 +766,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 .part_Four>section>p:nth-of-type(3){
     color: rgb(164,150,160);
     font-size: 0.64rem;
-    left: 8.55467rem;
-    top: 20.90667rem;
-    width: 2.56rem;
+    left: 5.55467rem;
+    top: 28.2rem;
+    width: 6.56rem;
 }
 .part_Four>section>p:nth-of-type(4){
     left: 11.43467rem;
@@ -790,7 +791,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 .part_Four_right_aworr{
     width: 3.2rem;
     height: 0.64rem;
-    bottom: 0.40533rem;
+    bottom: -2.3rem;
     left: 6.54933rem;
 }
 .part_Fou_Go{
@@ -798,7 +799,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     height: 2.304rem;
     display: block;
     /* border: 1px solid red; */
-    bottom: -0.04267rem;
+    bottom: -2.7rem;
     left: 3.49867rem;
 }
 /*ÃƒÂ§Ã‚Â¬Ã‚Â¬ÃƒÂ¤Ã‚ÂºÃ¢â‚¬ÂÃƒÂ©Ã†â€™Ã‚Â¨ÃƒÂ¥Ã‹â€ Ã¢â‚¬Â */
