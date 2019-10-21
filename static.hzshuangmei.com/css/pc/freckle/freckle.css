@@ -13,7 +13,19 @@ img {
 	margin: 0 auto;
 }
 /*公共样式结束*/
-
+.part2-btn .btn-left span {
+    color: #e46e2e;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    text-indent: 7px;
+}
+.part2-btn .btn-left span a{
+   
+    color: #fff;
+  
+}
 /*banner 开始*/
 .banner {
 	width: 100%;
